@@ -1,0 +1,46 @@
+IF
+	OR(2)
+		Contains("MISC7L",Myself) // Valygar's Body
+		Contains("MISCBSIM",Myself) // Sime's Body
+	Global("CleanseVampire","AR1401",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CleanseVampire","AR1401",1)
+END
+
+IF
+	Contains("MISC7L",Myself) // Valygar's Body
+	Contains("MISCBP",Myself) // Bodhi's Black Heart
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("CleanseVampire","AR1401",2)
+		DestroyItem("MISC7L") // Valygar's Body
+		DestroyItem("MISCBP") // Bodhi's Black Heart
+		CreateVisualEffect("SPMETSW2",[2592.1701])
+		CreateVisualEffect("SPMETSW2",[2645.1742])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[2565.1677])
+		Wait(1)
+		MoveGlobal("AR1401","Valygar",[2565.1677])
+		SetInterrupt(TRUE)
+END
+
+IF
+	Contains("MISCBSIM",Myself)  // Sime’s Body
+	Contains("MISCBP",Myself)  // Bodhi's Black Heart
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("CleanseVampire","AR1401",2)
+		SetGlobal("VP_Return_Veter","GLOBAL",1)
+		DestroyItem("MISCBSIM")  // Sime’s Body
+		DestroyItem("MISCBP")  // Bodhi's Black Heart
+		CreateVisualEffect("SPMETSW2",[2592.1701])
+		CreateVisualEffect("SPMETSW2",[2645.1742])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[2565.1677])
+		Wait(1)
+		MoveGlobal("AR1401","Sime",[2565.1677])  // Sime
+		SetInterrupt(TRUE)
+END

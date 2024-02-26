@@ -1,0 +1,42 @@
+REPLACE_ACTION_TEXT MINSCJ
+~SetGlobal("MinscReminder","LOCALS",1)~
+~~
+
+REPLACE_ACTION_TEXT MINSCJ
+~SetGlobal("MinscReminder","LOCALS",2)~
+~~
+
+ADD_TRANS_ACTION MINSCJ
+BEGIN 218 END
+BEGIN 0 1 END
+~SetGlobal("MinscReminder","LOCALS",1)~
+
+ADD_TRANS_ACTION MINSCJ
+BEGIN 219 END
+BEGIN 0 END
+~SetGlobal("MinscReminder","LOCALS",1)~
+
+ADD_TRANS_ACTION MINSCJ
+BEGIN 221 END
+BEGIN 0 END
+~SetGlobal("MinscReminder","LOCALS",1)~
+
+REPLACE_STATE_TRIGGER MINSCJ 223
+~Global("TalkedToLloyd","GLOBAL",0)
+Global("VillageSaved","GLOBAL",0)
+Global("MinscReminder","LOCALS",1)~
+
+ADD_TRANS_ACTION MINSCJ
+BEGIN 224 END
+BEGIN 0 END
+~SetGlobal("MinscReminder","LOCALS",2)~
+
+REPLACE_STATE_TRIGGER MINSCJ 225
+~Global("TalkedToLloyd","GLOBAL",0)
+Global("VillageSaved","GLOBAL",0)
+Global("MinscReminder","LOCALS",2)~
+
+ADD_TRANS_ACTION MINSCJ
+BEGIN 225 END
+BEGIN 0 END
+~SetGlobal("MinscReminder","LOCALS",3)~

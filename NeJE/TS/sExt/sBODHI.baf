@@ -1,0 +1,10 @@
+IF
+	AreaCheck("TT0303")
+	See([PC])
+	Global("Start_Island","GLOBAL",1)
+	Global("VP_Bodhi_Joins","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Bodhi_Joins","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END

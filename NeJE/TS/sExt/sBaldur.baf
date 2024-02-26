@@ -1,0 +1,123 @@
+IF
+	Global("ValygarMatch","GLOBAL",0)
+	Global("CheckValygarMatch","GLOBAL",0)
+	Gender(Player1,FEMALE)
+	OR(4)
+		Race(Player1,HUMAN)
+		Race(Player1,ELF)
+		Race(Player1,HALF_ELF)
+		Race(Player1,HALFLING)
+THEN
+	RESPONSE #100
+		SetGlobal("CheckValygarMatch","GLOBAL",1)
+		SetGlobal("ValygarMatch","GLOBAL",1)
+END
+
+IF
+	Global("SimeMatch","GLOBAL",0)
+	Global("CheckSimeMatch","GLOBAL",0)
+	!Alignment(Player1,CHAOTIC_EVIL)
+	!Alignment(Player1,LAWFUL_EVIL)
+	!Alignment(Player1,NEUTRAL_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("CheckSimeMatch","GLOBAL",1)
+		SetGlobal("SimeMatch","GLOBAL",1)
+END
+
+IF
+	OR(2)
+		Global("ValygarRomanceActive","GLOBAL",1)
+		Global("ValygarRomanceActive","GLOBAL",2)
+	!InPartyAllowDead("Valygar")
+	Dead("Valygar")
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarRomanceActive","GLOBAL",3)
+END
+
+IF
+	OR(2)
+		Global("SimeRomanceActive","GLOBAL",1)
+		Global("SimeRomanceActive","GLOBAL",2)
+	!InPartyAllowDead("Sime")
+	Dead("Sime")
+THEN
+	RESPONSE #100
+		SetGlobal("SimeRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("ValygarRomanceActive","GLOBAL",2)
+	InParty("Valygar")
+	!Dead("Valygar")
+THEN
+	RESPONSE #100
+		SetGlobal("SimeRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("ValygarRomanceActive","GLOBAL",1)
+	Global("ValygarRomanceOut","GLOBAL",0)
+	!InPartyAllowDead("Valygar")
+	!Dead("Valygar")
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarRomanceOut","GLOBAL",1)
+		SetGlobalTimer("ValygarOutOfParty","GLOBAL",THREE_DAYS)
+END
+
+IF
+	Global("ValygarRomanceActive","GLOBAL",1)
+	Global("ValygarRomanceOut","GLOBAL",1)
+	GlobalTimerExpired("ValygarOutOfParty","GLOBAL")
+	!InPartyAllowDead("Valygar")
+	!Dead("Valygar")
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("ValygarRomanceActive","GLOBAL",1)
+	Global("ValygarRomanceOut","GLOBAL",1)
+	!GlobalTimerExpired("ValygarOutOfParty","GLOBAL")
+	InPartyAllowDead("Valygar")
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarRomanceOut","GLOBAL",0)
+		RealSetGlobalTimer("ValygarRomance","GLOBAL",3600)
+END
+
+IF
+	Global("SimeRomanceActive","GLOBAL",1)
+	Global("SimeRomanceOut","GLOBAL",0)
+	!InPartyAllowDead("Sime")
+	!Dead("Sime")
+THEN
+	RESPONSE #100
+		SetGlobal("SimeRomanceOut","GLOBAL",1)
+		SetGlobalTimer("SimeOutOfParty","GLOBAL",THREE_DAYS)
+END
+
+IF
+	Global("SimeRomanceActive","GLOBAL",1)
+	Global("SimeRomanceOut","GLOBAL",1)
+	GlobalTimerExpired("SimeOutOfParty","GLOBAL")
+	!InPartyAllowDead("Sime")
+	!Dead("Sime")
+THEN
+	RESPONSE #100
+		SetGlobal("SimeRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("SimeRomanceActive","GLOBAL",1)
+	Global("SimeRomanceOut","GLOBAL",1)
+	!GlobalTimerExpired("SimeOutOfParty","GLOBAL")
+	InPartyAllowDead("Sime")
+THEN
+	RESPONSE #100
+		SetGlobal("SimeRomanceOut","GLOBAL",0)
+		RealSetGlobalTimer("SimeRomance","GLOBAL",3600)
+END

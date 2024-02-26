@@ -1,0 +1,28 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("ADJUTANT",DestroySelf())
+		ActionOverride("CRAUMER",DestroySelf())
+		ActionOverride("CRGUARD1",DestroySelf())
+		ActionOverride("CRGUARD2",DestroySelf())
+		ActionOverride("CRGUARD3",DestroySelf())
+		Wait(1)
+		LeaveAreaLUAPanic("KR0010","",[3308.2251],3)
+		LeaveAreaLUA("KR0010","",[3308.2251],3)
+		ActionOverride(Player2,LeaveAreaLUA("KR0010","",[3373.2264],3))
+		ActionOverride(Player3,LeaveAreaLUA("KR0010","",[3305.2300],3))
+		ActionOverride(Player4,LeaveAreaLUA("KR0010","",[3352.2306],3))
+		ActionOverride(Player5,LeaveAreaLUA("KR0010","",[3287.2406],2))
+		ActionOverride(Player6,LeaveAreaLUA("KR0010","",[3351.2356],3))
+		MultiPlayerSync()
+		Wait(1)
+		TextScreen("SCRTXT64")
+		Wait(1)
+		FadeFromColor([20.0],0)
+		UnhideGUI()
+		EndCutSceneMode()
+END

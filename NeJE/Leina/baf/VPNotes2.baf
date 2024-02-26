@@ -1,0 +1,19 @@
+IF
+	Range([PC],5)
+	Global("VP_ResqueLeina","GLOBAL",3)
+	InParty("Hrothgar")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ResqueLeina","GLOBAL",4)
+		ActionOverride("Hrothgar",StartDialogueNoSet(Player1))
+END
+
+IF
+	Range([PC],5)
+	Global("VP_ResqueLeina","GLOBAL",3)
+	!InParty("Hrothgar")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ResqueLeina","GLOBAL",4)
+		ActionOverride(Player1,StartDialog("Player1",Player1))
+END

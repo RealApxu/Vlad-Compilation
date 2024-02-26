@@ -1,0 +1,22 @@
+IF
+	Global("VP_EnhancedItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_EnhancedItems","MYAREA",1)
+		ActionOverride("Container1",CreateItem("HELM35",0,0,0))
+		ActionOverride("Container2",CreateItem("BLUN30A",0,0,0))
+		ActionOverride("Container2",CreateItem("RING41",0,0,0))
+		ActionOverride("Container11",CreateItem("BLUN30B",0,0,0))
+		ActionOverride("Container11",CreateItem("BOOT01",0,0,0))
+		ActionOverride("Container17",CreateItem("AROW08",80,0,0))
+		ActionOverride("Container17",CreateItem("AROW15",120,0,0))
+END
+
+IF
+	Global("ENDOFBG1","GLOBAL",0)
+	Global("VP_Place_VampRev","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Place_VampRev","MYAREA",1)
+		ActionOverride("Container1",CreateItem("SW1H19",0,0,0))
+END

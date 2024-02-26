@@ -1,0 +1,64 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Keldorn")
+	Global("KeldornBio","GLOBAL",0)
+	Global("VP_Kr_Epilogue","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("KeldornBio","GLOBAL",1)
+		TextScreen("KELDORND")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Keldorn")
+	Global("KeldornBio","GLOBAL",0)
+	Global("VP_Kr_Epilogue","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("KeldornBio","GLOBAL",1)
+		TextScreen("KELDORD1")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Keldorn")
+	Global("KeldornBio","GLOBAL",0)
+	Global("VP_Kr_Epilogue","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("KeldornBio","GLOBAL",1)
+		TextScreen("KELDORD2")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Keldorn")
+	Global("KeldornBio","GLOBAL",0)
+	Global("VP_Kr_Epilogue","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("KeldornBio","GLOBAL",1)
+		TextScreen("KELDORD3")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Keldorn")
+	Global("KeldornBio","GLOBAL",0)
+	Global("VP_Kr_Epilogue","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("KeldornBio","GLOBAL",1)
+		TextScreen("KELDORD4")
+		SmallWait(1)
+		Continue()
+END

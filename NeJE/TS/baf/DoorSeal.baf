@@ -1,0 +1,21 @@
+IF
+	IsOverMe([PC])
+	Global("Nakanishi_Hostile","GLOBAL",0)
+	!PartyHasItem("ExitWard")
+THEN
+	RESPONSE #100
+		SetGlobal("Nakanishi_Hostile","GLOBAL",1)
+		DisplayStringHead([PC],~Doors to Nakanishi underground compound are sealed. An invisible wall prevents your advancement into thier territory. Nakanishi are all hostile.~)
+END
+
+IF
+	IsOverMe([PC])
+	Global("Nakanishi_Hostile","GLOBAL",1)
+	PartyHasItem("ExitWard")
+THEN
+	RESPONSE #100
+		SetGlobal("Nakanishi_Hostile","GLOBAL",2)
+		DisplayStringHead([PC],~You cannot move back to the caves. Doors to the underground compound have been sealed forever.~)
+END
+
+

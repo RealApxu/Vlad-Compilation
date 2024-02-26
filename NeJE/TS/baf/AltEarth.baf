@@ -1,0 +1,41 @@
+IF
+	Clicked([ANYONE])
+	!PartyHasItem("KEYCOPP")
+	Global("VP_EarthAltar","GLOBAL",0)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~This altar requires a key of some sort.~)
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItem("KEYCOPP")
+	Global("VP_EarthAltar","GLOBAL",0)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_EarthAltar","GLOBAL",1)
+		DestroyItem("KEYCOPP")
+		TakePartyItem("KEYCOPP")
+		GiveItemCreate("USPOT4B",Player1,0,0,0)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,9)
+	Global("VP_EarthAltar","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~There is nothing else to do with this altar.~)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702) // You are too far away to use that.
+END
+
+

@@ -1,0 +1,67 @@
+//Valygar
+IF
+	Global("CleanseVampire","AR1401",2)
+	Global("ValygarVampire","GLOBAL",3)
+	Name("Valygar",Myself)
+	AreaCheck("AR1401")
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarVampire","GLOBAL",4)
+		DialogInterrupt(TRUE)
+		ChangeAIScript("Valygar",OVERRIDE)
+END
+
+IF
+	Global("ValygarVampire","GLOBAL",1)
+	Global("RomanceVampire","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RomanceVampire","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ValygarVampire","GLOBAL",1)
+	Global("RomanceVampire","GLOBAL",1)
+	Global("RomanceVampireTeleport","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RomanceVampireTeleport","GLOBAL",1)
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		Wait(2)
+		DestroySelf()
+END
+
+//Sime
+IF
+	Global("CleanseVampire","AR1401",2)
+	Global("VP_SimeVampire","GLOBAL",3)
+	Name("Sime",Myself)
+	AreaCheck("AR1401")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_SimeVampire","GLOBAL",4)
+		DialogInterrupt(TRUE)
+		ChangeAIScript("Sime",OVERRIDE)
+END
+
+IF
+	Global("VP_SimeVampire","GLOBAL",1)
+	Global("RomanceVampire","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RomanceVampire","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("VP_SimeVampire","GLOBAL",1)
+	Global("RomanceVampire","GLOBAL",1)
+	Global("RomanceVampireTeleport","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("RomanceVampireTeleport","GLOBAL",1)
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		Wait(2)
+		DestroySelf()
+END

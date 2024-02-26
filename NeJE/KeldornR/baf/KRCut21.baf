@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		StorePartyLocations()
+		LeaveAreaLUAPanic("KR0001","",[751.511],9)
+		LeaveAreaLUA("KR0001","",[751.511],9)
+		ActionOverride(Player2,LeaveAreaLUA("KR0001","",[860.474],3))
+		ActionOverride(Player3,LeaveAreaLUA("KR0001","",[744.462],12))
+		ActionOverride(Player4,LeaveAreaLUA("KR0001","",[823.509],3))
+		ActionOverride(Player5,LeaveAreaLUA("KR0001","",[762.448],14))
+		ActionOverride(Player6,LeaveAreaLUA("KR0001","",[828.492],4))
+		CreateCreature("LADYALIA",[808.462],2)
+		MultiPlayerSync()
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(3)
+		EndCutSceneMode()
+END

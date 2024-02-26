@@ -1,0 +1,11 @@
+IF
+	Global("NaliaTorgalDies","GLOBAL",0)
+	InParty(Myself)
+	Dead("Torgal")
+	CombatCounter(0)
+	Global("TorgalDies","LOCALS",0)
+	Global("NaliaKeepPlot","GLOBAL",0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END

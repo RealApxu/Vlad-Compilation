@@ -1,0 +1,12 @@
+IF
+	Global("OohGoody","LOCALS",2)
+	See([PC])
+	!StateCheck([PC],STATE_SLEEPING)
+	HPGT([PC],0)
+THEN
+	RESPONSE #100
+		SetGlobal("OohGoody","LOCALS",1)
+		Wait(2)
+		StartDialogueNoSet([PC])
+END
+

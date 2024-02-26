@@ -1,0 +1,108 @@
+IF
+	Global("VP_KeldornMatch","GLOBAL",0)
+	Gender(Player1,FEMALE)
+	!Class(Player1,THIEF)
+	!Class(Player1,THIEF_ALL)
+	!Class(Player1,FIGHTER_MAGE_THIEF)
+	!Class(Player1,FIGHTER_THIEF)
+	!Class(Player1,MAGE_THIEF)
+	!Class(Player1,CLERIC_THIEF)
+	OR(3)
+		Race(Player1,HUMAN)
+		Race(Player1,HALF_ELF)
+		Race(Player1,ELF)
+	OR(5)
+		Alignment(Player1,CHAOTIC_GOOD)
+		Alignment(Player1,LAWFUL_GOOD)
+		Alignment(Player1,LAWFUL_NEUTRAL)
+		Alignment(Player1,NEUTRAL_GOOD)
+		Alignment(Player1,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KeldornMatch","GLOBAL",1)
+END
+
+IF
+	OR(2)
+		Global("VP_KrRomanceActive","GLOBAL",1)
+		Global("VP_KrRomanceActive","GLOBAL",2)
+	!InPartyAllowDead("Keldorn")
+	Dead("Keldorn")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",1)
+	Global("VP_KrRomanceOut","GLOBAL",0)
+	!InPartyAllowDead("Keldorn")
+	!Dead("Keldorn")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrRomanceOut","GLOBAL",1)
+		SetGlobalTimer("VP_KrOutOfParty","GLOBAL",TEN_DAYS)
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",1)
+	Global("VP_KrRomanceOut","GLOBAL",1)
+	GlobalTimerExpired("VP_KrOutOfParty","GLOBAL")
+	!InPartyAllowDead("Keldorn")
+	!Dead("Keldorn")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrRomanceActive","GLOBAL",3)
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",1)
+	Global("VP_KrRomanceOut","GLOBAL",1)
+	!GlobalTimerExpired("VP_KrOutOfParty","GLOBAL")
+	InPartyAllowDead("Keldorn")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrRomanceOut","GLOBAL",0)
+		RealSetGlobalTimer("VP_KeldornRomance","GLOBAL",3600)
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KrIsOver","GLOBAL",1)
+	OR(2)
+		Alignment(Player1,LAWFUL_GOOD)
+		Alignment(Player1,LAWFUL_NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrIsOver","GLOBAL",2)
+		ChangeAlignment(Player1,LAWFUL_EVIL)
+		DisplayStringHead(Player1,14055) // Alignment Change
+		Wait(1)
+		DisplayStringHead(Player1,1103) // Lawful Evil
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KrIsOver","GLOBAL",1)
+	Alignment(Player1,NEUTRAL_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrIsOver","GLOBAL",2)
+		ChangeAlignment(Player1,NEUTRAL_EVIL)
+		DisplayStringHead(Player1,14055) // Alignment Change
+		Wait(1)
+		DisplayStringHead(Player1,1107) // Neutral Evil
+END
+
+IF
+	Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KrIsOver","GLOBAL",1)
+	Alignment(Player1,CHAOTIC_GOOD)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrIsOver","GLOBAL",2)
+		ChangeAlignment(Player1,CHAOTIC_EVIL)
+		DisplayStringHead(Player1,14055) // Alignment Change
+		Wait(1)
+		DisplayStringHead(Player1,1110) // Chaotic Evil
+END

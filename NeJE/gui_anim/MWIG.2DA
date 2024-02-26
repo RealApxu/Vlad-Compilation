@@ -1,0 +1,41 @@
+MWIG /wight2/
+***
+						SOUND
+ATTACK          		wight02 nosound nosound
+ATTACK          		2 0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0 0 0 0
+DAMAGE          		wight07a wight07b wight08a wight08b
+DAMAGE          		0 0 0 0
+DIE             		wight09a wight09b wight10a wight10b
+DIE             		0
+HEAD_TURN       		***
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		***
+SHOOT           		0
+TWITCH          		***
+TWITCH          		0
+WALK            		wight11
+WALK            		0
+ATTACK_SLASH    		wight03A wight03B nosound
+ATTACK_SLASH    		2 0 0
+ATTACK_BACKSLASH		wight04A wight04B wight04C
+ATTACK_BACKSLASH		2 0 0
+ATTACK_JAB      		wight05 wight06 nosound
+ATTACK_JAB      		2 0 0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry					wight01 wight02
+Battle_Cry					0 0
+Selection           wight01
+Selection           0

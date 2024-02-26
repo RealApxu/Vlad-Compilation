@@ -1,0 +1,197 @@
+IF
+	HPPercentLT("Leina",50)
+	HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		Spell("Leina",CLERIC_HEAL)
+END
+
+IF
+	HaveSpell(CLERIC_FREE_ACTION)
+	See("Leina")
+	StateCheck("Leina",STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell("Leina",CLERIC_FREE_ACTION)
+END
+
+IF
+	Dead("Leina")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Calls_Mom","GLOBAL",0)
+		DestroySelf()
+END
+
+IF
+	CombatCounter(0)
+	OR(2)
+		HPPercentGT("Leina",49)
+		!HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Calls_Mom","GLOBAL",0)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	Global("prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,CLERIC_REGENERATE)
+		ApplySpell(Myself,CLERIC_DEATH_WARD)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DEFENSIVE_HARMONY)
+		SetGlobal("prep","LOCALS",1)
+END
+
+IF
+	See([ENEMY.0.SKELETON.0.0.SUMMONED])
+	HaveSpell(CLERIC_SUNRAY)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_SUNRAY)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CONFUSION)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_CONFUSION)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	HaveSpell(CLERIC_MASS_CURE)
+	HPPercentLT(Myself,80)
+	OR(3)
+		HPPercentLT(LastSeenBy(Myself),80)
+		HPPercentLT(SecondNearestMyGroupOfType,80)
+		HPPercentLT(ThirdNearestMyGroupOfType,80)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_MASS_CURE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_NPC_SYMBOL_FEAR)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_FLAME_STRIKE)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_RIGHTEOUS_MAGIC)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_RIGHTEOUS_MAGIC)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_TRUE_SIGHT)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_TRUE_SIGHT)
+END
+
+IF
+	HaveSpell(CLERIC_SILENCE_15_FOOT)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CHARM_PERSON)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_CHARM_PERSON)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_HOLD_PERSON)
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CLOAK_OF_FEAR)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CLOAK_OF_FEAR)
+END
+
+IF
+	HPPercentLT("Leina",30)
+	HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		Spell("Leina",CLERIC_HEAL)
+END
+
+IF
+	HaveSpell(CLERIC_FREE_ACTION)
+	See("Leina")
+	StateCheck("Leina",STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell("Leina",CLERIC_FREE_ACTION)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+

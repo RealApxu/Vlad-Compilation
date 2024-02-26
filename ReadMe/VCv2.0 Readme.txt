@@ -1,0 +1,586 @@
+*********************************************************************
+***
+***Vlad's Compilation Version 2.1
+***
+***Merge of Baldurdash-WeiDU, TS and Keldorn Romance
+***
+*********************************************************************
+
+Keldorn Romance Readme:
+*********************************************************************
+***
+*** Version 1.0
+***
+*********************************************************************
+- The author of Keldorn's Romance is Natalia Parnovskaya (aka Senka). All kudos for writing this fine mod to her. She is also my long-time penpal, tester and adviser (for almost 20 years!)
+- Most of the area graphics is by me, but some areas were touched by Gorion. Our sincere thanks to him!
+- Third Path is specifically adapted to Keldorn, who will never work for thieves or vampires. He will also refuse to romance a thief.
+- Most of the hints are available at our BWL forum boards. 
+
+THANKS TO:
+
+Gingerrr for translation of SoA
+Jan (aka Larrienne), who is my long-time NeJ co-author, for proof-reading
+CreateR for translation of TOB
+SirChet for proof-reading
+ADD-players Turalion and Romuald for discussion and understanding of paladin oddities and rules
+
+MUSIC:
+
+Mortuary theme by Paul Romero
+Slayer theme by Joseph LoDuca
+"Love's not for me" by Graham Gouldman
+War theme from Lord of the Dance
+Keldorn theme by Secret Garden
+
+RHYMES:
+
+Bard songs by David Moursund 
+Elf song - Kania Gratchianskaya. Translated by Shadenuat.
+
+ESSENTIAL TIPS:
+
+1.  Your protagonist must be a human, elf or half-elf of any good or lawful neutral alignment and any class except a thief. Keldorn won't romance thieves and opposite alignments. True and chaotic neutral characters are possible but risky.
+2.  Minimum intelligence and charisma of your protagonist should be 13.
+3.  Playing this mod please remember that Torm is a god of duty, loyalty, and righteousness. So please be very considerate when communicating with Keldorn, be nice, be wise, be patient, don’t be rude and selfish. Keldorn as a true follower of Torm appreciates wisdom and willingness to sacrifice yourself for your friends.
+4.  There are a lot of possibilities to ruin the romance at any moment during the game by acting against Keldorn's principles or saying something that he wouldn't accept. So please choose your answers wisely and save a lot.
+5.  There is a concurrent romance with Anomen, and everything may turn badly and end up in tears if you find yourself inside this triangle. Therefore, if you want to continue with both of them, we strongly recommend to cool Anomen off as soon as possible, after a couple of his love talks. Otherwise, you may loose Keldorn or even both of them.
+6.  Keldorn won't associate himself with thieves or Bodhi. Therefore, there is a third path (installed via Baldurdash) to reach the Spellhold. However, if you first buy the assistance of Aran in this matter and then join Keldorn, he may live with that. But again, please remember that this is a risky business since Keldorn is very sensitive to anything relating to thieves.
+7.  Keldorn has a new kit "Redeemer" based on his original Inquisitor kit.
+8.  Do not put Lady Maria in jail, and I'm repeating that - don't put her in jail! And of course, let Keldorn rest one day with his family.
+9.  Speaking with Kelemvor in Mortuary, do not hesitate to sacrifice yourself - you will be awarded as well as Keldorn.
+10. Rest often, particularly after Spellhold. Don't rush with your game, do major and minor quests - Keldorn has a lot of things to say. Moreover, there are many cool items including weapons spread in the game, for example Vampire Revenge. If you do the quests, you'll find them. 
+11. Don't romance Valygar even if you're tempted to do so. If you want to play Valygar Romance, do it in a separate game without Keldorn.
+12. We strongly recommend you to join Sarevok in ToB.
+13. After the battle for Keldorn's castle, don't run out of the area. You have some time to loot the bodies, identify items etc.
+14. Don't use the portal in Spellhold to Underdark, but please come back to Brynnlaw. This is a temporary requirement, and I'll fix it in the future releases.
+15. You may want to visit the group of mercenaries led by Captain Dennis in the Delosar's Inn when you have collected enough evidences that Riatavin is planning the war against Amn. The best time to do that when you have completed most of the quests in Amn but before going to Spellhold. Dispatching Captain Dennis and his group will trigger the new chapter when you go outside the inn.
+16. After leaving Underdark and going back to Athkatla, you are strongly recommended to visit all three areas on the way including the Small Teeth Pass.
+
+
+Comilation Readme:
+*********************************************************************
+***
+*** Version 2.1
+***
+*********************************************************************
+
+***************************************************************************
+***
+The compilation allows Imoen to start out the game as a straight thief with a custom kit called the Charming Rogue. She will start with enough XP to either levelup, or to dualclass to a mage. Additionally, she will become a "continious" character. When the party returns to Amn and Imoen is taken to spellhold, all the XP and changes made to the character will transfer over to the same character  you pick up at Spellhold. 
+
+CHARMING ROGUE: This thief kit was especially created for Imoen to reflect her unique personality.
+
+Advantages:
+-  +1 bonus to AC for every 5 levels of experience
+-  +1 to hit, and +1 to damage with any missile weapon for every 5 levels
+-  +1 to movement rate for every 7 levels
+-  She can specialize in any ranged weapon that a thief can use
+-  She can cast a limited number of enhanting spells, which become available from her innate slots as she advances levels
+-  Immune to Charm spell
+-  She can create illusions
+
+Disadvantages:
+-  None
+***
+***************************************************************************
+
+- Shar-Teel and Leina along with all their banters, quests, items and interjections are now available as stand-alone versions and optional components of this compilation.
+
+***************************************************************************
+
+Leina's bard kit called the Bard of Melody:
+
+BARD OF MELODY: This kit was created especially for Leina. She was blessed with both the gift of music and an inquisitive mind inherited from her mother. Her music reflects not only her passion but also her dreams about love and devotion which unfortunately did not come true for her.
+
+Advantages:
+
+-  The bard's song is different from the typical bard and varies with level:
+
+7th level: *Ballad Of The Forsaken*. Part I. The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard.
+
+15th level: *Ballad Of The Forsaken*. Part II. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.
+
+-  A few additional songs become available from the innate slots as Leina advances levels:
+
+*The Oath of Kudain* - A Song Of Revenge
+
+This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator's family, from the very old to the youngest babe in arms. When sung, this song will cause fear in the hearts of all enemies.
+
+*The Making Of Bryn Candour* - A Song Of Wisdom Gained
+
+This amusing tale tells of an arrogant young man, forced to change places with, and live as one whom he had slated and derided mercilessly. It tells of the shame and remorse the young man gradually learns and takes with him when restored to his proper self. When sung this song will give all allied to the bard a +4 to saving throws against all magic based attacks and 25% magic resistance.
+
+*Alystra's Lament* - A Song Of Love Lost
+
+This song tells the story of Alystra de'Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra's hopes and dreams for her future now shattered and never to be fulfilled. When this mournful melody is sung, it will instil hopelessness in the hearts off all enemies.
+
+*A Song Of Tomorrow* - A Song Of Devotion
+
+This spirited song tells of a young boy's hopes and dreams for the future when he becomes a man and he has shaken off the shackles of the slavery into which he was born. When sung this spirited song will heal all those allied to the bard.
+
+Disadvantages:
+-  None
+
+***************************************************************************
+- Leina's quest is large, followed by frequent fights in Athkatla
+- Leina and Sime can talk with a protagonist by pushing the talk button
+- The same is for the Priest Of Sylvanus kit and new portraits for Jaheira
+- The same is for the Conitnuous and Custom Kit Imoen
+- Restored anti-dragon items and powerfull swords
+- New Item Upgrades - Cromwell and Cespenar can now upgrade even more items, just don't sell or throw their components
+- Even more enhanced Copper Coronet and Slaver's Quest with a new encounter in the Sewers under Copper Coronet
+- Improved Shadows, new types of Shadows and improved Shadow Dragon
+- Improved original NPCs with their new items and/or kits: Anomen, Aerie, Jan, Nalia, Edwin, Viconia
+- Enhanced encounters in ToB with Illasera, Gromnir, Yaga-Shura, Abazigal
+- New options in dialogues with Sendai and Baltazar
+- Partial multi-stronghold is returned. Dual classes can get two strongholds.
+
+***************************************************************************
+The compilation allows Jaheira to start out the game with a custom kit called the Priest of Sylvanus.
+
+PRIEST OF SYLVANUS: This druid kit was especially created for Jaheira to reflect her unique personality.
+
+Advantages:
+-  She may gain the grand mastery in any missile weapons she can use including light crossbows.
+-  She gains +1 to hit, and +1 to damage with any missile weapon for every six levels of experience.
+-  She has access to three innate abilities, which become available from her innate slots as she advances levels:
+
+    1. Sylvanus Mental Agility. This spell creates the energetic channel between Jaheira and her god that quickens the thought processes allowing her to cast spells more quickly than normally. Jaheira gains this spell at levels:
+        Level 1, +1 to casting speed factor for 2 rounds,
+
+        Level 6, +2 to casting speed factor for 7 rounds,
+
+        Level 12, +3 to casting speed factor for 9 rounds,
+
+        Level 18, +4 to casting speed factor for 12 rounds.
+    2. Sylvanus Physical Agility. This spell quickens Jaheira's reflexes, enabling faster and more effective combat. Jaheira gains this spell at levels:
+
+        Level 3, +1 to attack speed factor and dexterity for 2 rounds,
+        Level 9, +2 to attack speed factor and +1 to dexterity for 7 rounds,
+
+        Level 15, +3 to attack speed factor and +1 to dexterity for 9 rounds,
+        Level 21, +4 to attack speed factor and +2 to dexterity for 11 rounds.
+    3. Sylvanus Shape Change. Jaheira gains this spell at levels 12th, 24th and 36th. With this spell, she is able to assume the form of a powerful creature (mind flayer, iron golem, greater wolfwere, earth elemental, fire elemental, or giant troll), and becomes the creature she wishes, gaining almost all of its abilities. Thus, she can change into a mind flayer to stun her opponents and then become an earth elemental to crush her foes. These creatures have whatever hit points Jaheira had at the time of the shape change. Each alteration in form requires only a second, and no system shock is incurred. Note that the although the assumed form has the combat characteristics of the real creature, it may not have all of its immunities.
+
+Disadvantages:
+-  No regular shapeshifting abilities.
+
+
+*********************************************************************
+Baldurdash-WeiDU ReadMe:
+
+*********************************************************************
+***
+*** Version 1.75
+***
+*********************************************************************
+- Additional items upgrade by Cromwell and Cespenar
+	* Don't throw or sell valuable items, such as rithelium or some rare swords.
+	Some of the items can be upgraded into new powerful items. 
+- Miscellaneous fixes
+
+*********************************************************************
+***
+*** Version 1.74
+***
+*********************************************************************
+- Most of the optional components from NeJ have been moved to BD-WeiDU:
+	* Continuous and custom kit for Imoen
+	* Boo - familiar of Minsc
+- Optional components for BGT game:
+	* Merchant League Bank
+	* Improved items and stores
+	* Fixed and improved BG1->BG2 transition (please place all your items into containers before the final dialogue with Belt)
+	* Tougher Black Talone Elites and several other improved opponents including Aec’Letec
+	* Stats and Portraits of BG2 NPCs in BG1
+	* Improved Viconia, Xan and Minsc
+- New ToB fixes
+
+
+*********************************************************************
+***
+*** Version 1.73
+***
+*********************************************************************
+- 'Third Path' allows to choose working neither for Shadow Thieves nor for Bodhi, but instead going your own way.
+  You'll need to kill Gaelan and take the key from Aran's inner sanctum.
+  If you do so, prepare to be frequently attacked by thieves in Athkatla.
+- Partial multi-stronghold is returned. It modifies the fighter and mage
+	strongholds in two ways:
+	1) any class can get both fighter and mage stronghols;
+	2) they can be combined with any other stronghold dependent on the class
+	of the protagonist.
+- Improved Character Nalia - Stats and Items (highly recommended for Nalia's lovers)
+- Improved Character Aerie (Priest of Lathander) - Stats and Items (highly recommended for Aerie's lovers)
+- Silver Horn of Valhala now summons a formiddable 10th-level berserker, heavily equipped and having excellent stats.
+- Dressed Avatar Fix by Galactygon
+- Improved Monk Class
+- Improved Copper Coronet now brings the slavers vengeance upon you.
+  Prepare to be frequently attacked by slavers in Athkatla.
+- Restored anti-dragon items (sword and shield)
+- Cromwell now comes to Brynnlaw to visit his apprentice.
+- Miscellaneous fixes.
+
+*********************************************************************
+***
+*** Version 1.69
+***
+*********************************************************************
+- Multi-stronghold component is removed
+- Removed annoying and bugged rotating orb animation over head
+
+*********************************************************************
+***
+*** Version 1.68
+***
+*********************************************************************
+- Twisted Rune Quest is revisited and refixed.
+- Imoen's banter file BIMOEN2 is added to INTERDIA.2DA.
+- Copper Coronet's guards in "Restored Copper Coronet" downgraded.
+- Guarded Compound encounter is connected to Twisted Rune Quest,
+	like originally planned; and added new items therein. 
+
+*********************************************************************
+***
+*** Version 1.67
+***
+*********************************************************************
+- Rearranging installation order of the components.
+
+*********************************************************************
+***
+*** Version 1.66
+***
+*********************************************************************
+- Rogue Stone fix in Twisted Rune Quest
+- Restored Copper Coronet
+
+*********************************************************************
+***
+*** Version 1.65
+***
+*********************************************************************
+- Added an optional component *Dak'kon's Blade Restored*, which
+	returns the upgradable abilities of the original PST blade to
+	its non-upgradable copy in BG2.
+- Added fix for two indestructible golems in Irenicus dungeon, which
+	spawn every time when the game is saved therein, even though they
+	have been already dismissed before the save.
+- Removed spell animation of rotating orbs around a head of Cavalier,
+	when cast fear or panic on him, since he/she is in fact immune to
+	such effetcs (SPCL221).
+
+*********************************************************************
+
+*********************************************************************
+***
+*** Version 1.64
+***
+*********************************************************************
+- Component *Nalia Initial Spell Slots Fixes* removed.
+	Thanks to Senka for the nice report on this very rare bug.
+
+*********************************************************************
+
+*********************************************************************
+***
+*** Version 1.63
+***
+*********************************************************************
+- CHEVIL10.ITM fixed
+
+*********************************************************************
+***
+*** Version 1.62
+***
+*********************************************************************
+- RING29 fixed
+- NoCD patch removed (because of legal issues)
+
+******************************************************************************************************************************************
+***
+***  Version 1.61
+***
+*********************************************************************
+- Miscellaneous fixes
+- NoCD patch (optional)
+
+*********************************************************************
+***
+***  Version 1.6
+***
+*********************************************************************
+- Miscellaneous fixes and optional components
+- Full compatibility with TS and NeJ2
+
+Credits to James Shumacher, Goeran Rimen, aVENGER and Extremist for their bugfixes, which were included in this cummulative pack.
+Thanks to Idobek for his KIT.IDS. 
+
+OPTIONAL COMPONENTS:
+
+1. MULTI-STRONGHOLD
+
+This is my own version of multi-strongholds. All the warrior classes (fighters, rangers and paladins) and monks may get the De’Arnise Keep as their stronghold in addition to another stronghold which is accessible according to their class. Also all dual- and multi-classes have no restrictions to the number of strongholds they may obtain.
+
+2. GRAND MASTERY FIX
+
+This fix originally created by James Schumacher you may get from various sources including Baldurdash tweaks and cheats. It fixes the weapon proficiency table for fighters according to the original D&D rules implemented in BG1 and IWD. If you have not installed it yet I would strongly recommend to do so.
+
+3. IMPROVED COPPER CORONET
+
+Now feel the wrath of the slavers!
+
+4. RESTORED DAK'KON'S BLADE
+
+This component restores the famous Dak'kon's Blade, and returns its original PST powers.
+
+5. IMPROVED NYMPH (Woodland Being)
+
+This is the script by Goeran Rimen, which makes the nymphs a formidable enemy.
+
+6. DUAL WIELDING FIX
+
+This is the fix by by aVENGER from his Rogie Rebalancing pack. It gives bards and thieves three slots into dual wielding proficiency. Please note that the fix may be incompatible with some newer mods based on WeiDU after v185. If you install a bunch of mods, you may wish to avoid this fix. My mods based on WeiDU v185 are fully compatible with this fix, and I sincerely recommend it to anyone who plays with thieves or bards.
+
+
+*********************************************************************
+***
+***  Version 1.5
+***
+*********************************************************************
+ - WeiDU v185;
+ - German translation;
+ - patch for SPWI608, SPWI322, SPWI513, SPWI514, SPWI903, SPWISH26, SPWISH38.SPL:
+   description says they shouldn't be affected by target's resistance, so all effects set to Not Dispell/Bypass Resistance(0);
+ - patch for SPWI423.SPL: summoning spell should bypass resistance;
+ - patch for DEVAHEAL, SENSPIHE, SPPR317, SPIN201, SPPR404, SPIN679, SPIN699, SPPR607.SPL - healing spells, they should bypass resistance;
+ - patch for SPWI103: lvl 6 Pause caster effect had invalid Dispell/Not bypass - must bypass resistance;
+ - patch for SPWI408, SPWI512 - all efefcts should be Dispell/Bypass res.;
+ 
+ - MISC2A: carried icon;
+ - UNDHIT2.EFF: THAC0 bonus vs Undead - must be 2 there, not 3;
+ - RING97.ITM : all effects must bypass resistance;
+
+ - 
+   SPCL122
+   SPCL131
+   SPCL133
+   SPCL141
+   SPCL142
+   SPCL143
+   SPCL151
+   SPCL153
+   SPCL154
+   SPCL221
+   SPCL233b
+   SPCL234
+   SPCL235
+   SPCL241
+   SPCL242
+   SPCL331
+   SPCL332
+   SPCL341
+   SPCL351
+   SPCL417
+   SPCL421
+   SPCL441
+   SPCL541
+   SPCL812
+   SPCL813
+   SPCL814
+   SPCL816
+   SPCL817
+   SPCL818
+   SPCL819
+   SPCL821
+   SPCL924
+   SPCL925
+   SPCL926
+   SPCL927
+   SPCL931
+   SPCL932
+   SPCL933
+   SPCL934
+   
+   SPCL915
+   SPCL920
+   SPCL928
+   SPCL929
+   SPCL930
+
+     : as for kit's AL_ spell all effects must bypass resistance;
+
+ - SPCL611
+   SPCL612
+   SPCL613
+   SPCL621
+   SPCL632
+   SPCL633
+   SPCL634
+   SPCL643
+   SPCL644
+   
+   SPIN107 and many many others
+
+   : as shapeshifting spells, effects must bypass resistance;
+
+ - SPCL144
+   SPCL152
+   SPCL321
+   SPCL423
+   
+   SPCL900
+   
+   SPCL913
+   SPCL914
+   SPCL916
+   SPCL917
+   SPCL918
+   SPCL919
+   SPCL921
+   SPCL922
+
+   : as spec. abil. combat modifiers, effects must bypass resistance;
+
+
+ - SPCL642.SPL: as AVENGER kit description says STR and CON bonuses should be -2, not 0 ;)
+
+ - SPWI505.SPL: all effects must have the same flags (Dispell/Bypass);
+
+ - SPWI425.SPL: as for a summoning spell, effects must bypass resistance;
+
+ - patch for SPPR505, SPPR505D, SPCL232, SPCL232D, SPCL732, SPIN633, SPIN684, SPPR950, SPWI609, SPWI609D.SPL :
+   description says they shouldn't be affected by target's resistance, so all effects set to Dispell/Bypass Resistance(3);
+
+
+
+*********************************************************************
+***
+***  Version 1.2
+***
+*********************************************************************
+
+13-04-2005 - invalid Dead("...") triggers in 164 ToB scripts fixed.
+
+
+
+
+-----------------------------------------------------------------------------------
+ Dozens of incorrect resources references fixed (BAM, ITM, CRE etc.)
+-----------------------------------------------------------------------------------
+ BG1 Baldurdash fixes implemented for BGT.
+-----------------------------------------------------------------------------------
+1) APPRENTI.BCS - there was an invalid VVC reference: CreateVisualEffectObject("ANCALL",Myself)
+                  Must be CreateVisualEffectObject("AMCALL",Myself).
+
+2) AR2200.BCS   - there was a reference to nonexisting creature "jeloli01". Changed to "jelgre01".
+
+3) AR3020.BCS   - incorrect parameters:
+  		            ActionOverride("SHUPOL01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGAR01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGFG01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGMG01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGPR01",ChangeAIScript("one",OVERRIDE))
+                  Must be: ChangeAIScript("",OVERRIDE)
+
+4) AR4000.BCS   - item name typo: was "DWCSW1H01" instead of "DWSW1H01".
+
+5) BHCRYPT.BCS  - local var typo for "LOCALCastHorror" fixed:
+                  Global("CastHorror","LOCALS",0) &
+                  SetGlobal("CastHorror","LOCALS",1).
+
+6) CAULDRON.BCS - sound name typo: was "EFF_38" instead of "EFF_M38".
+
+7) CUT01.BCS and CUTD1.BCS - SetDialog("") for Imoen.
+
+8) CUT215A.BCS - used effect name fix: "SPDIMNDR" instead of old "SPDOOR".
+
+9) CUT218B.BCS - removed nonexisting effects usage:
+                  CreateVisualEffectObject("SPIMPPT",Player1).
+                  
+10) CUT31Q.BCS - reference to unexisting creature "bdcoun04" removed.
+
+11) CUT49E.BCS - sound name typo fixed: was "ISC_03A" instead of "MISC_03A" (for BGT only).
+
+12) CUT57C.BCS - visual effect name typo fixed: was "SPOWWRD" instead of "SPPOWWRD".
+
+13) DDGUARD7.BCS - typo fixed:
+                    CreateVisualEffectObject("yself","SPFLESHS") to
+                    CreateVisualEffectObject("SPFLESHS","DDGUARD7").
+
+14) FINSOL04.BCS - effect name typo fixed: was "SPPLOYMP" instead of "SPPOLYMP".
+
+15) IDIOT01.BCS - OR() fixed. 30 triggers - not 31.
+
+16) KILLGOOD.BCS - script name typo fixed: was "DEATHK" instead of "DEATHKNI" (?).
+
+17) PIPE04.BCS - wrong sound name fixed: was "MISC_02A" instead of "MISC_01A" (for BGT only).
+
+18) PPSHAD01-PPSHAD06.BCS - wrong sound name fixed: was "MISC_15A,B" instead of "MISC_03A,B" (for BGT only).
+
+19) RUFPAL.BCS - global var typo fixed: Global("PitFight","AR0406",3).
+
+20) SPWNRAK.BCS - incorrect creature reference: was "dogre01" instead of "ogre01".
+
+21) VICG, VICG1.BCS - OR() fixed. 2 triggers - not 4.
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+22) AATAQAH.DLG - 1 statement fixed for trigger 25: Name("Imoen",LastTalkedToBy).
+23) AERIE.DLG - fixed: StartDialogueNoSet() to StartDialogueNoSet([ANYONE]).
+24) "OUTSIDE" changed to "OUTDOOR". This makes "happy" AERIEJ, BANOMEN, MINSCJ, YOSHJ.DLG.
+25) BANOMEN.DLG - NEUTRAL_UPPER typo fixed.
+26) AMMAN02.DLG - was ApplySpell("runrun",Myself), changed to
+                      ApplySpellRES("runrun",Myself)
+27) BAERIE.DLG - 2 fixes for MoveGlobal("AR0607","Aerie",[1034.1034]) - extra parameters removed.
+28) A LOADS of other dialogs typos are fixed (too many for detailed descriptions :P ).
+   
+ Total number of various fixes - ~200.
+
+
+*********************************************************************
+***
+***  Version 1.1
+***
+*********************************************************************
+
+- custom fixes, not included in the original Baldurdash.
+
+ 'Misc' category set for several books (now it's possible to use them from the quickitem slots):
+     BOOK05.ITM, BOOK07.ITM, BOOK08.ITM
+
+ 'Books' category set for several books (instead of 'Misc'):
+     BOOK32.ITM, BOOK94.ITM, BOOK95.ITM, BOOK96.ITM
+    They can't be put to a quickitem slot.
+
+
+ Items Category fixed for many weapons:
+     BOW07.ITM - Proficiency - Long Bow (was Short Bow)
+     BRUENAXE.ITM - Proficiency - Axe (was 0)
+     CHEVIL10.ITM - Category : Great Swords instead of Short Swords
+     DAGG10.ITM - Category : Daggers instead of Misc
+
+
+ Items usability and proficience fixes:
+     MISC5T.ITM - Proficiency - quarterstaff
+     
+     MISC72.ITM, MISC73.ITM, MISC9Q.ITM, MISC9W.ITM, 
+     PLAT05.ITM, POTN56.ITM, RING08.ITM, RING22.ITM, RING35.ITM, RING36.ITM, RING40.ITM,
+     RODS01.ITM, RODS04.ITM, RODS05.ITM, RODS06.ITM, SENDAI.ITM, WA2RING.ITM - usability fixes
+
+
+- detectable spells compatibility implemented (BP compatible)
+
+- BGT compatibility for texts
+
+
+
+
+*********************************************************************
+***
+***  Version 1.0
+***
+*********************************************************************
+
+Original Baldurdash fixes implemented (see BG2ToBFixPack112ReadMe.txt
+for more details).

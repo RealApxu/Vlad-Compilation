@@ -1,0 +1,248 @@
+*********************************************************************
+***
+***  Version 1.6
+***
+*********************************************************************
+- Miscellaneous fixes and optional components
+- Full compatibility with TS and NeJ2
+
+*********************************************************************
+***
+***  Version 1.5
+***
+*********************************************************************
+ - WeiDU v185;
+ - German translation;
+ - patch for SPWI608, SPWI322, SPWI513, SPWI514, SPWI903, SPWISH26, SPWISH38.SPL:
+   description says they shouldn't be affected by target's resistance, so all effects set to Not Dispell/Bypass Resistance(0);
+ - patch for SPWI423.SPL: summoning spell should bypass resistance;
+ - patch for DEVAHEAL, SENSPIHE, SPPR317, SPIN201, SPPR404, SPIN679, SPIN699, SPPR607.SPL - healing spells, they should bypass resistance;
+ - patch for SPWI103: lvl 6 Pause caster effect had invalid Dispell/Not bypass - must bypass resistance;
+ - patch for SPWI408, SPWI512 - all efefcts should be Dispell/Bypass res.;
+ 
+ - MISC2A: carried icon;
+ - UNDHIT2.EFF: THAC0 bonus vs Undead - must be 2 there, not 3;
+ - RING97.ITM : all effects must bypass resistance;
+
+ - 
+   SPCL122
+   SPCL131
+   SPCL133
+   SPCL141
+   SPCL142
+   SPCL143
+   SPCL151
+   SPCL153
+   SPCL154
+   SPCL221
+   SPCL233b
+   SPCL234
+   SPCL235
+   SPCL241
+   SPCL242
+   SPCL331
+   SPCL332
+   SPCL341
+   SPCL351
+   SPCL417
+   SPCL421
+   SPCL441
+   SPCL541
+   SPCL812
+   SPCL813
+   SPCL814
+   SPCL816
+   SPCL817
+   SPCL818
+   SPCL819
+   SPCL821
+   SPCL924
+   SPCL925
+   SPCL926
+   SPCL927
+   SPCL931
+   SPCL932
+   SPCL933
+   SPCL934
+   
+   SPCL915
+   SPCL920
+   SPCL928
+   SPCL929
+   SPCL930
+
+     : as for kit's AL_ spell all effects must bypass resistance;
+
+ - SPCL611
+   SPCL612
+   SPCL613
+   SPCL621
+   SPCL632
+   SPCL633
+   SPCL634
+   SPCL643
+   SPCL644
+   
+   SPIN107 and many many others
+
+   : as shapeshifting spells, effects must bypass resistance;
+
+ - SPCL144
+   SPCL152
+   SPCL321
+   SPCL423
+   
+   SPCL900
+   
+   SPCL913
+   SPCL914
+   SPCL916
+   SPCL917
+   SPCL918
+   SPCL919
+   SPCL921
+   SPCL922
+
+   : as spec. abil. combat modifiers, effects must bypass resistance;
+
+
+ - SPCL642.SPL: as AVENGER kit description says STR and CON bonuses should be -2, not 0 ;)
+
+ - SPWI505.SPL: all effects must have the same flags (Dispell/Bypass);
+
+ - SPWI425.SPL: as for a summoning spell, effects must bypass resistance;
+
+ - patch for SPPR505, SPPR505D, SPCL232, SPCL232D, SPCL732, SPIN633, SPIN684, SPPR950, SPWI609, SPWI609D.SPL :
+   description says they shouldn't be affected by target's resistance, so all effects set to Dispell/Bypass Resistance(3);
+
+
+
+*********************************************************************
+***
+***  Version 1.2
+***
+*********************************************************************
+
+13-04-2005 - invalid Dead("...") triggers in 164 ToB scripts fixed.
+
+
+
+
+-----------------------------------------------------------------------------------
+ Dozens of incorrect resources references fixed (BAM, ITM, CRE etc.)
+-----------------------------------------------------------------------------------
+ BG1 Baldurdash fixes implemented for BGT.
+-----------------------------------------------------------------------------------
+1) APPRENTI.BCS - there was an invalid VVC reference: CreateVisualEffectObject("ANCALL",Myself)
+                  Must be CreateVisualEffectObject("AMCALL",Myself).
+
+2) AR2200.BCS   - there was a reference to nonexisting creature "jeloli01". Changed to "jelgre01".
+
+3) AR3020.BCS   - incorrect parameters:
+  		            ActionOverride("SHUPOL01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGAR01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGFG01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGMG01",ChangeAIScript("one",OVERRIDE))
+		            ActionOverride("SHUGPR01",ChangeAIScript("one",OVERRIDE))
+                  Must be: ChangeAIScript("",OVERRIDE)
+
+4) AR4000.BCS   - item name typo: was "DWCSW1H01" instead of "DWSW1H01".
+
+5) BHCRYPT.BCS  - local var typo for "LOCALCastHorror" fixed:
+                  Global("CastHorror","LOCALS",0) &
+                  SetGlobal("CastHorror","LOCALS",1).
+
+6) CAULDRON.BCS - sound name typo: was "EFF_38" instead of "EFF_M38".
+
+7) CUT01.BCS and CUTD1.BCS - SetDialog("") for Imoen.
+
+8) CUT215A.BCS - used effect name fix: "SPDIMNDR" instead of old "SPDOOR".
+
+9) CUT218B.BCS - removed nonexisting effects usage:
+                  CreateVisualEffectObject("SPIMPPT",Player1).
+                  
+10) CUT31Q.BCS - reference to unexisting creature "bdcoun04" removed.
+
+11) CUT49E.BCS - sound name typo fixed: was "ISC_03A" instead of "MISC_03A" (for BGT only).
+
+12) CUT57C.BCS - visual effect name typo fixed: was "SPOWWRD" instead of "SPPOWWRD".
+
+13) DDGUARD7.BCS - typo fixed:
+                    CreateVisualEffectObject("yself","SPFLESHS") to
+                    CreateVisualEffectObject("SPFLESHS","DDGUARD7").
+
+14) FINSOL04.BCS - effect name typo fixed: was "SPPLOYMP" instead of "SPPOLYMP".
+
+15) IDIOT01.BCS - OR() fixed. 30 triggers - not 31.
+
+16) KILLGOOD.BCS - script name typo fixed: was "DEATHK" instead of "DEATHKNI" (?).
+
+17) PIPE04.BCS - wrong sound name fixed: was "MISC_02A" instead of "MISC_01A" (for BGT only).
+
+18) PPSHAD01-PPSHAD06.BCS - wrong sound name fixed: was "MISC_15A,B" instead of "MISC_03A,B" (for BGT only).
+
+19) RUFPAL.BCS - global var typo fixed: Global("PitFight","AR0406",3).
+
+20) SPWNRAK.BCS - incorrect creature reference: was "dogre01" instead of "ogre01".
+
+21) VICG, VICG1.BCS - OR() fixed. 2 triggers - not 4.
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+22) AATAQAH.DLG - 1 statement fixed for trigger 25: Name("Imoen",LastTalkedToBy).
+23) AERIE.DLG - fixed: StartDialogueNoSet() to StartDialogueNoSet([ANYONE]).
+24) "OUTSIDE" changed to "OUTDOOR". This makes "happy" AERIEJ, BANOMEN, MINSCJ, YOSHJ.DLG.
+25) BANOMEN.DLG - NEUTRAL_UPPER typo fixed.
+26) AMMAN02.DLG - was ApplySpell("runrun",Myself), changed to
+                      ApplySpellRES("runrun",Myself)
+27) BAERIE.DLG - 2 fixes for MoveGlobal("AR0607","Aerie",[1034.1034]) - extra parameters removed.
+28) A LOADS of other dialogs typos are fixed (too many for detailed descriptions :P ).
+   
+ Total number of various fixes - ~200.
+
+
+*********************************************************************
+***
+***  Version 1.1
+***
+*********************************************************************
+
+- custom fixes, not included in the original Baldurdash.
+
+ 'Misc' category set for several books (now it's possible to use them from the quickitem slots):
+     BOOK05.ITM, BOOK07.ITM, BOOK08.ITM
+
+ 'Books' category set for several books (instead of 'Misc'):
+     BOOK32.ITM, BOOK94.ITM, BOOK95.ITM, BOOK96.ITM
+    They can't be put to a quickitem slot.
+
+
+ Items Category fixed for many weapons:
+     BOW07.ITM - Proficiency - Long Bow (was Short Bow)
+     BRUENAXE.ITM - Proficiency - Axe (was 0)
+     CHEVIL10.ITM - Category : Great Swords instead of Short Swords
+     DAGG10.ITM - Category : Daggers instead of Misc
+
+
+ Items usability and proficience fixes:
+     MISC5T.ITM - Proficiency - quarterstaff
+     
+     MISC72.ITM, MISC73.ITM, MISC9Q.ITM, MISC9W.ITM, 
+     PLAT05.ITM, POTN56.ITM, RING08.ITM, RING22.ITM, RING35.ITM, RING36.ITM, RING40.ITM,
+     RODS01.ITM, RODS04.ITM, RODS05.ITM, RODS06.ITM, SENDAI.ITM, WA2RING.ITM - usability fixes
+
+
+- detectable spells compatibility implemented (BP compatible)
+
+- BGT compatibility for texts
+
+
+
+
+*********************************************************************
+***
+***  Version 1.0
+***
+*********************************************************************
+
+Original Baldurdash fixes implemented (see BG2ToBFixPack112ReadMe.txt
+for more details).

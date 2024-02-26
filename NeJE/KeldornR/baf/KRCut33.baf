@@ -1,0 +1,14 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride("Keldorn",SetLeavePartyDialogFile())
+		ActionOverride("Keldorn",ChangeAIScript("",DEFAULT))
+		ActionOverride("Keldorn",LeaveParty())
+		ActionOverride("Keldorn",MoveGlobal("AR0086",Myself,[100.100]))
+		Wait(1)
+		EndCutSceneMode()
+END
+

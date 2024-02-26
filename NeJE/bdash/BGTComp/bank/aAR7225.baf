@@ -1,0 +1,10 @@
+IF
+	Global("SarevokBoutToDie","GLOBAL",2)
+	ReputationLT(Player1,9)
+THEN
+	RESPONSE #100
+		ActionOverride(Player1,Kill("Sarevok"))
+		SetGlobal("SarevokBoutToDie","GLOBAL",3)
+		ReputationSet(9)
+		Continue()
+END

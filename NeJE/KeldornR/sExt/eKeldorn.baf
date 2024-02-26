@@ -1,0 +1,1113 @@
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("E3FadeRomanceActive","GLOBAL",1)
+    Global("E3FadeRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("E3FadeRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("ChloeRomanceActiveCR","GLOBAL",1)
+    Global("ChloeRomanceActiveCR","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("ChloeRomanceActiveCR","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("J#KelseyRomanceActive","GLOBAL",1)
+    Global("J#KelseyRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("J#KelseyRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("TsujathaRomanceActive","GLOBAL",1)
+    Global("TsujathaRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("TsujathaRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("NathRomanceActive","GLOBAL",1)
+    Global("NathRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("NathRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("VanimEvilRomanceActive","GLOBAL",1)
+    Global("VanimEvilRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("VanimEvilRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+	Global("VP_KrRomanceActive","GLOBAL",2)
+	OR(2)
+		Global("ValygarRomanceActive","GLOBAL",1)
+		Global("ValygarRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+	InParty("Anomen")
+	Global("AnomenHatesKeldorn","GLOBAL",0)
+	OR(2)
+		Global("VP_KrRomanceActive","GLOBAL",1)
+  		Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  		Global("AnomenRomanceActive","GLOBAL",1)
+    	Global("AnomenRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("AnomenHatesKeldorn","GLOBAL",2) //to prevent the early fight
+END
+
+IF
+	InParty(Myself)
+	InParty("Edwin")
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("EdwinRomanceActive","GLOBAL",1)
+    Global("EdwinRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("EdwinRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("imoenromanceactive","GLOBAL",1)
+    Global("imoenromanceactive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("imoenromanceactive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("H#ValygarRomanceActive","GLOBAL",1)
+    Global("H#ValygarRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("H#ValygarRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+  OR(2)
+  	Global("O#XanRomanceActive","GLOBAL",1)
+    Global("O#XanRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("O#XanRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+	InParty("Sime")
+	OR(2)
+		Global("SimeRomanceActive","GLOBAL",0)
+		Global("SimeRomanceActive","GLOBAL",1)
+   	Global("VP_KrRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("SimeRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+	InParty("Sime")
+	Global("SimeRomanceActive","GLOBAL",2)
+   !Global("VP_KrRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_KrRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+	Global("SolaTalk","GLOBAL",9)
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_KrRomanceActive","GLOBAL",3)
+END
+
+IF
+	InParty(Myself)
+  	Dead("Maria")
+  OR(2)
+    Global("VP_KrRomanceActive","GLOBAL",1)
+    Global("VP_KrRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_KrRomanceActive","GLOBAL",3)
+END
+
+//Vampire plot ending
+
+IF
+	!InParty(Myself)
+	Global("VP_KeldornVampire","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KeldornVampire","GLOBAL",5)
+		StartDialogueNoSet(Player1)
+END
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+//LT2
+IF
+	AreaCheck("AR0900")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_KeldornMatch","GLOBAL",1)
+	Global("VP_LoveTalk","LOCALS",0)
+THEN
+	RESPONSE #100
+  		SetGlobal("VP_LoveTalk","LOCALS",1)
+  		SetGlobal("VP_GovD_Comment","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//LT4 - My lady, you've been on the road for more than a year now. Do you miss Candlekeep perchance?
+IF
+	OR(2)
+		PartyRested()
+		RealGlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	GlobalGT("VP_LoveTalk","LOCALS",1)
+	GlobalLT("VP_LoveTalk","LOCALS",5)
+	Global("LadyMaria","GLOBAL",0)
+	Global("MariaFight","LOCALS",0)
+	Global("VP_CK_Banter","LOCALS",0)
+	Global("VP_Kr_WarMessTimer","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CK_Banter","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT6 - when entering AR1000 for the first time
+IF
+	InParty(Myself)
+	Global("VP_Entered_AR1000","LOCALS",0)
+	Global("VP_GovD_Comment","GLOBAL",1)
+	AreaCheck("AR1000")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",5)
+		SetGlobal("VP_Entered_AR1000","LOCALS",1)
+		SetGlobal("KeldornEstate","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT8
+//I'll make this LT as an optional start for the romance,
+//in other words, this LT is not linked to previous LTs,
+//so if player has missed them, he/she can start a romance
+//from here without pre-requirements - enjoy this feature!
+IF
+	Global("LadyMaria","GLOBAL",3)
+	InParty(Myself)
+	Global("VP_KeldornMatch","GLOBAL",1)
+	Global("VP_SirWilliam_Talk","LOCALS",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_SirWilliam_Talk","LOCALS",1)
+  	RealSetGlobalTimer("VP_Willi_TalkDelay","GLOBAL",5)
+END
+
+IF
+	OR(2)
+		RealGlobalTimerExpired("VP_Willi_TalkDelay","GLOBAL")
+		AreaCheck("AR0700")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_SirWilliam_Talk","LOCALS",1)
+	GlobalLT("VP_LoveTalk","LOCALS",7)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_SirWilliam_Talk","LOCALS",2)
+  		SetGlobal("VP_LoveTalk","LOCALS",7)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//Keldorn reminds about visiting Maria after talk with Sir William (in 2 days)
+IF
+	GlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",8)
+	Global("LadyMaria","GLOBAL",3)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_Keldorn_Reminds","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Keldorn_Reminds","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+//LT10a - Maria is in jail
+IF
+	GlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",8)
+	Global("LadyMaria","GLOBAL",4)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",9)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//LT10 - Keldor rested with his family
+//Another LT to be an optional start for the romance,
+//in other words, this LT is not linked to previous LTs,
+//so if player has missed them, he/she can start a romance
+//from here without pre-requirements - enjoy this feature!
+IF
+	InParty(Myself)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	GlobalGT("LadyMaria","GLOBAL",4)
+	GlobalGT("KeldornLeave","GLOBAL",4)
+	Global("VP_KrLastStart","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrLastStart","LOCALS",1)
+  		SetGlobal("VP_LoveTalk","LOCALS",10)
+  		RealSetGlobalTimer("VP_KrRejoin_Delay","GLOBAL",1800)
+END
+
+IF
+	RealGlobalTimerExpired("VP_KrRejoin_Delay","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",10)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",11)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+//		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT12 - before sleep
+//If Keldorn didn't rest with his family, LT10 is passed by.
+//Player can start a romance from here without pre-requirements.
+IF
+	InParty(Myself)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	GlobalGT("LadyMaria","GLOBAL",4)
+	!GlobalGT("KeldornLeave","GLOBAL",4)
+	Global("VP_KrLastStart","LOCALS",0)
+	Global("VP_KeldornMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KrLastStart","LOCALS",1)
+  		SetGlobal("VP_LoveTalk","LOCALS",12)
+  		RealSetGlobalTimer("VP_KrRomance_Timer","GLOBAL",1800)
+END
+
+IF
+	InParty(Myself)
+	!See([ENEMY])
+	CombatCounter(0)	
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KeldornMatch","GLOBAL",1)
+	RealGlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	GlobalGT("LadyMaria","GLOBAL",4)
+	Global("VP_KrLastStart","LOCALS",1)
+	Global("VP_LoveTalk","LOCALS",12)
+	!AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",13)
+		SetGlobal("VP_Kr_Messenger","LOCALS",1)
+		SetGlobalTimer("VP_Kr_Mess_Timer","GLOBAL",ONE_DAY)
+		SetGlobal("VP_AnomenJealous","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT12 - after sleep
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KeldornMatch","GLOBAL",1)
+	RealGlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	Global("VP_LoveTalk","LOCALS",14)
+	!AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",15)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//Messenger
+IF
+	GlobalTimerExpired("VP_Kr_Mess_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Messenger","LOCALS",1)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KeldornMatch","GLOBAL",1)
+	OR(12)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+		AreaCheck("AR1100")
+		AreaCheck("AR1304")
+		AreaCheck("AR1900")
+		AreaCheck("AR2000")
+	!InWatchersKeep()
+	Global("VP_In_IWD","GLOBAL",0)
+	Global("VP_In_Halruaa","GLOBAL",0)
+	Global("VP_On_Island","GLOBAL",0)
+	!Global("Chapter","GLOBAL",4)
+	!Global("Chapter","GLOBAL",5)
+	!Global("Chapter","GLOBAL",7)
+	!Exists("av#mess")
+THEN
+	RESPONSE #100
+		CreateCreatureObject("av#mess",Myself,0,0,0)
+		SetGlobal("VP_Kr_Messenger","LOCALS",2)
+END
+
+//Keldorn's estate - dialogue with Maria
+IF
+	AreaCheck("AR1003")
+	Global("VP_Kr_Funneral","GLOBAL",2)
+	OR(3)
+		Detect("Maria")
+		See("Maria")
+		InMyArea("Maria")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Funneral","GLOBAL",3)
+		Dialogue("Maria")
+END
+
+//LT14
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	GlobalTimerExpired("VP_Kr_BylannaTimer","GLOBAL")
+	Global("VP_Kr_Funneral","GLOBAL",7)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_KeldornMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Funneral","GLOBAL",8)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//City Hall - dialogue with Lady Bylanna
+IF
+	AreaCheck("AR1002")
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Funneral","GLOBAL",9)
+	Global("VP_Talk_Bylanna","GLOBAL",0)
+	InMyArea("BYLANNA")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Talk_Bylanna","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		Wait(1)
+		MoveToPointNoInterrupt([536.637])
+		Wait(1)
+		Dialogue("BYLANNA")
+		EndCutSceneMode()
+END
+	
+//LT16 (after LT20)
+
+//LT18
+IF
+	InParty(Myself)
+	AreaCheck("AR1000")
+	Global("VP_Kr_Funneral","GLOBAL",10)
+	Global("VP_Kr_TalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_Kr_TalkDelay","GLOBAL",1)
+  	RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",30)
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Funneral","GLOBAL",10)
+	RealGlobalTimerExpired("VP_Kr_DelayTimer","GLOBAL")
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_Kr_TalkDelay","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TalkDelay","GLOBAL",0)
+		SetGlobal("VP_Kr_Funneral","GLOBAL",11)
+		SetGlobal("VP_Kr_Quest","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+//Leona's Ring (LT20)
+IF
+	AreaCheck("AR0318")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Quest","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Quest","LOCALS",3)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		Wait(1)
+		MoveToPointNoInterrupt([625.500])
+		Wait(1)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//LT16 (after LT20)
+IF
+	InParty(Myself)
+	Global("VP_LoveTalk","LOCALS",16)
+	Global("VP_Kr_Quest","LOCALS",4)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	GlobalTimerExpired("VP_KrRomance_GTime","GLOBAL")
+	Global("VP_Kr_TalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_Kr_TalkDelay","GLOBAL",1)
+  	RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",30)
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",16)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	RealGlobalTimerExpired("VP_Kr_DelayTimer","GLOBAL")
+	Global("VP_Kr_TalkDelay","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TalkDelay","GLOBAL",0)
+		SetGlobal("VP_LoveTalk","LOCALS",17)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//Kamir & Risa
+IF
+	InParty(Myself)
+	Global("KamirWard","GLOBAL",3)
+	Global("VP_Kr_Kamir_Talk","LOCALS",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_Kr_Kamir_Talk","LOCALS",1)
+  	RealSetGlobalTimer("VP_Kr_Kamir_Timer","GLOBAL",5)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Kr_Kamir_Timer","GLOBAL")
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Kamir_Talk","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Kamir_Talk","LOCALS",2)
+		StartDialogueNoSet(Player1)
+END
+
+//Garren
+IF
+	InParty(Myself)
+	Global("FollowGarren","GLOBAL",1)
+	Global("VP_Kr_Garren_Talk","LOCALS",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_Kr_Garren_Talk","LOCALS",1)
+  	RealSetGlobalTimer("VP_Kr_Garren_Timer","GLOBAL",5)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Kr_Garren_Timer","GLOBAL")
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_Garren_Talk","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Garren_Talk","LOCALS",2)
+		StartDialogueNoSet(Player1)
+END
+
+//Carsomyr
+IF
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Class(Player1,PALADIN_ALL)
+	PartyHasItem("SW2H10")
+	OR(2)
+		Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)
+		Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)
+	Global("VP_Kr_CarsomyrTalk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_CarsomyrTalk","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+//War Messenger (Global variable "VP_Kr_TheWar" 0-->1)
+IF
+	GlobalGT("VP_Kr_Quest","LOCALS",3)
+	Global("VP_Kr_WarMessTimer","GLOBAL",0)
+	Global("VP_LoveTalk","LOCALS",18)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	OR(12)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+		AreaCheck("AR1100")
+		AreaCheck("AR1304")
+		AreaCheck("AR1900")
+		AreaCheck("AR2000")
+	!InWatchersKeep()
+	Global("VP_In_IWD","GLOBAL",0)
+	Global("VP_In_Halruaa","GLOBAL",0)
+	Global("VP_On_Island","GLOBAL",0)
+	!Global("Chapter","GLOBAL",4)
+	!Global("Chapter","GLOBAL",5)
+	!Global("Chapter","GLOBAL",7)
+	PartyHasItem("spylett1")
+	PartyHasItem("spylett2")
+	PartyHasItem("spylett3")
+	PartyHasItem("spylett4")
+	PartyHasItem("spylett5")
+	PartyHasItem("spylett6")
+	OR(2)
+		GlobalTimerExpired("VP_Kr_NewWarTimer","GLOBAL")
+		Global("SPRITE_IS_DEADDennis","GLOBAL",1)
+THEN
+	RESPONSE #100
+  		SetGlobal("VP_Kr_WarMessTimer","GLOBAL",1)
+  		RealSetGlobalTimer("VP_Kr_WarTimer","GLOBAL",10)
+END
+
+IF
+	Global("VP_Kr_WarMessTimer","GLOBAL",1)
+	RealGlobalTimerExpired("VP_Kr_WarTimer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_TheWar","GLOBAL",0)
+	OR(12)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+		AreaCheck("AR1100")
+		AreaCheck("AR1304")
+		AreaCheck("AR1900")
+		AreaCheck("AR2000")
+	!InWatchersKeep()
+	Global("VP_In_IWD","GLOBAL",0)
+	Global("VP_In_Halruaa","GLOBAL",0)
+	Global("VP_On_Island","GLOBAL",0)
+	!Global("Chapter","GLOBAL",4)
+	!Global("Chapter","GLOBAL",5)
+	!Global("Chapter","GLOBAL",7)
+	!Exists("krwarmes")
+THEN
+	RESPONSE #100
+		CreateCreatureObject("krwarmes",Myself,0,0,0)
+		SetGlobal("VP_Kr_TheWar","GLOBAL",1)
+END
+
+IF
+	Global("VP_Kr_Casle_Siege","GLOBAL",1)
+	RealGlobalTimerExpired("VP_Kr_CasleSiege_T","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	!Exists("siegemes")
+THEN
+	RESPONSE #100
+		CreateCreatureObject("siegemes",Myself,0,0,0)
+		SetGlobal("VP_Kr_Casle_Siege","GLOBAL",2)
+END
+
+IF
+	Global("SPRITE_IS_DEADSythill1","GLOBAL",10)
+	Global("SPRITE_IS_DEADSythill2","GLOBAL",4)
+	Global("SPRITE_IS_DEADSythill3","GLOBAL",2)
+	Global("SPRITE_IS_DEADSythill4","GLOBAL",2)
+	Global("SPRITE_IS_DEADSythill5","GLOBAL",2)
+	CombatCounter(0)
+	InParty(Myself)
+	!See([ENEMY])
+	CombatCounter(0)
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Kr_CyricPlot","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_CyricPlot","GLOBAL",1)
+		StorePartyLocations()
+		RealSetGlobalTimer("VP_KrCyric_Timer","GLOBAL",600)
+END
+
+IF
+	Global("VP_Kr_CyricPlot","GLOBAL",1)
+	RealGlobalTimerExpired("VP_KrCyric_Timer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_CyricPlot","GLOBAL",2)
+		CreateCreature("Zornnag",[4506.98],13) // Captain Amlos Zornnag
+		CreateCreature("SKnight1",[4530.148],0) // Sythillisian Knight
+		CreateCreature("SKnight2",[4573.131],0) // Sythillisian Knight
+		CreateCreature("PrCyric",[4555.107],4) // Priest of Cyric
+		CreateCreature("KrSPY",[4550.90],9) // No such index
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut08")
+END
+
+/*IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_CyricPlot","GLOBAL",10)
+	AreaCheck("KR0003")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_CyricPlot","GLOBAL",11)
+		StartDialogueNoSet(Player1)
+END*/
+
+//Breakfast Time (LT22)
+IF
+	InParty(Myself)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_CyricPlot","GLOBAL",12)
+	Global("VP_LoveTalk","LOCALS",19)
+	AreaCheck("KR0003")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",20)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+//LT24 - Asylum
+//Starts when the PC steps on the stairs in AR1512
+
+//LT27 (First sleep after Spellhold and after Slayer ttransformation dream)
+IF
+	InParty(Myself)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_LoveTalk","LOCALS",25)
+	Global("VP_NightTalk","LOCALS",0)
+	GlobalGT("ASYLUMPLOT","GLOBAL",54)
+	Global("GivePowerSlayer","GLOBAL",2)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("VP_LoveTalkDelay","LOCALS",10)
+		SetGlobal("VP_NightTalk","LOCALS",1)
+END
+
+//LT27 - morning talk
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_NightTalk","LOCALS",1)
+	Global("VP_LoveTalk","LOCALS",27)
+	Global("VP_MorningTalk","LOCALS",0)
+	GlobalGT("ASYLUMPLOT","GLOBAL",54)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_MorningTalk","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",27)
+	Global("VP_MorningTalk","LOCALS",2)
+	GlobalGT("ASYLUMPLOT","GLOBAL",54)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",28)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT32, Drow banter in Ust-Natha
+
+IF
+	InParty(Myself)
+	AreaCheck("AR2200")
+	Global("Kr_DrowBanter","LOCALS",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("Kr_DrowBanterTimer","GLOBAL",10)
+		SetGlobal("Kr_DrowBanter","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	AreaCheck("AR2200")
+	Global("Kr_DrowBanter","LOCALS",1)
+	RealGlobalTimerExpired("Kr_DrowBanterTimer","GLOBAL")
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_DrowBanter","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+// After exit from Underdark, just after Elhan’s conversation
+
+IF
+	InParty(Myself)
+	Global("ElhanFinishedSpeaking","GLOBAL",1)
+	Global("Kr_ElfBanter","LOCALS",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("Kr_ElfBanterTimer","GLOBAL",10)
+		SetGlobal("Kr_ElfBanter","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	Global("Kr_ElfBanter","LOCALS",1)
+	RealGlobalTimerExpired("Kr_ElfBanterTimer","GLOBAL")
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_ElfBanter","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT34, Small Teeth Path or North Forest 
+IF
+	InParty(Myself)
+	OR(2)
+		AreaCheck("AR1700")
+		AreaCheck("AR1800")
+	Global("Kr_LakeBanter","LOCALS",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_LakeBanter","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//PreWedding
+IF
+	InParty(Myself)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_PreWedding","GLOBAL",1)
+	RealGlobalTimerExpired("VP_Kr_PreWedding_T","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_PreWedding","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut21")
+END
+
+//LT40 - last SoA talk
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	RealGlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	Global("VP_LoveTalk","LOCALS",36)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",37)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut26")
+END
+
+//Spy note
+IF
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	PartyHasItem("spylett2")
+	Global("VP_Spy_Letter","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Spy_Letter","GLOBAL",1)
+		RealSetGlobalTimer("VP_SpyLetter_Timer","GLOBAL",10)
+END
+
+IF
+	InParty(Myself)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Spy_Letter","GLOBAL",1)
+	RealGlobalTimerExpired("VP_SpyLetter_Timer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Spy_Letter","GLOBAL",2)
+		StartDialogueNoSet([PC])
+END

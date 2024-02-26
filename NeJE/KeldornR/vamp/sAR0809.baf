@@ -1,0 +1,17 @@
+IF
+	Global("VP_KeldornVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KeldornVampire","GLOBAL",2)
+		CreateCreature("vampkel",[1473.332],2)
+END
+
+IF
+	Dead("C6Bodhi")
+	InMyArea("vampkel")
+	Global("VP_KeldVamp_Alive","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KeldVamp_Alive","GLOBAL",1)
+		ActionOverride("vampkel",StartDialogueNoSet([PC]))
+END

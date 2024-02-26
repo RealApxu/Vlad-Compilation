@@ -1,0 +1,14 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateVisualEffect("SPFLESHS",[1454.1398])
+		CreateVisualEffect("SPFLESHS",[1450.1395])
+		Wait(1)
+		CreateCreature("lvleona",[1454.1398],14)
+		CreateCreature("lvvesper",[1450.1395],13)
+		ActionOverride("lvvesper",StartDialogueNoSet("Keldorn"))
+END
+
+

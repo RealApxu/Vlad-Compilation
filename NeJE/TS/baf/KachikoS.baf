@@ -1,0 +1,28 @@
+IF
+	SpellCastOnMe([PC],CLERIC_RAISE_DEAD)
+	Global("Kachiko_Saved","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Kachiko_Saved","GLOBAL",2)
+		SetGlobal("Kachiko_Reborn","GLOBAL",1)
+		Wait(2)
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		Wait(1)
+		MoveGlobal("TT0307","Kachiko",[1392.736])
+		ActionOverride("Kachiko",SetName(~Kachiko~))
+		EndCutSceneMode()
+		DestroySelf()
+		StartCutSceneMode()
+		StartCutScene("TSCutK04")
+END
+
+IF
+	SpellCastOnMe([PC],CLERIC_RAISE_DEAD)
+	Global("Kachiko_Saved","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Hitomi_Attacked","GLOBAL",1)
+END
+
+

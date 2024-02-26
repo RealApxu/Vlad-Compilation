@@ -1,0 +1,68 @@
+IF
+	OnCreation()
+	InParty("Sime")
+	Global("Kachiko_Saved","GLOBAL",2)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreatureDoor("NajokiA",[392.500],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+END
+
+IF
+	OnCreation()
+	InParty("Sime")
+	Global("Kachiko_Saved","GLOBAL",3)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+END
+
+IF
+	OnCreation()
+	Global("Kachiko_Saved","GLOBAL",2)
+	!InParty("Sime")
+	Global("ThiefGroup","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreatureDoor("NajokiA",[392.500],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+		CreateCreature("ppsime",[130.1201],8) // Sime
+END
+
+IF
+	OnCreation()
+	Global("Kachiko_Saved","GLOBAL",3)
+	!InParty("Sime")
+	Global("ThiefGroup","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+		CreateCreature("ppsime",[130.1201],8) // Sime
+END
+
+IF
+	OnCreation()
+	Global("Kachiko_Saved","GLOBAL",2)
+	!Global("ThiefGroup","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreatureDoor("NajokiA",[392.500],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+END
+
+IF
+	OnCreation()
+	Global("Kachiko_Saved","GLOBAL",3)
+	!Global("ThiefGroup","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureDoor("AinoA",[326.495],8)
+		CreateCreature("ppsaem",[68.1209],8) // Saemon Havarian
+END
+
+

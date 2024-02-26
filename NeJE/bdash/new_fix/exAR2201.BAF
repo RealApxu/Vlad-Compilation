@@ -1,0 +1,9 @@
+IF
+	Global("PhaereJob","GLOBAL",8)
+	Global("VP_EscapeAreaFixPh","GLOBAL",1)
+	!InMyArea("Phaere")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_EscapeAreaFixPh","GLOBAL",2)
+		CreateCreature("udphae01",[1014.1253],0)
+END

@@ -1,0 +1,120 @@
+IF
+	InMyArea("Nalia")
+	XPLT(Player1,160000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		ActionOverride("Nalia",DestroySelf())
+		CreateCreature("Nalia8",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	InMyArea("Nalia")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		ActionOverride("Nalia",DestroySelf())
+		CreateCreature("Nalia10",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	InMyArea("Nalia")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		ActionOverride("Nalia",DestroySelf())
+		CreateCreature("Nalia11",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	InMyArea("Nalia")
+	XPGT(Player1,849999)
+	XPLT(Player1,1250000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		ActionOverride("Nalia",DestroySelf())
+		CreateCreature("Nalia13",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	InMyArea("Nalia")
+	XPGT(Player1,1249999)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		ActionOverride("Nalia",DestroySelf())
+		CreateCreature("Nalia15",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	!InMyArea("Nalia")
+	XPLT(Player1,160000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		CreateCreature("Nalia8",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	!InMyArea("Nalia")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		CreateCreature("Nalia10",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	!InMyArea("Nalia")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		CreateCreature("Nalia11",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	!InMyArea("Nalia")
+	XPGT(Player1,849999)
+	XPLT(Player1,1250000)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		CreateCreature("Nalia13",[1015.1500],3) // Nalia
+		Continue()
+END
+
+IF
+	!InMyArea("Nalia")
+	XPGT(Player1,1249999)
+	Global("VP_CreateNalia","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateNalia","GLOBAL",1)
+		CreateCreature("Nalia15",[1015.1500],3) // Nalia
+		Continue()
+END

@@ -1,0 +1,25 @@
+IF
+	Global("ValygarVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarVampire","GLOBAL",2)
+		CreateCreature("Vampval",[1473.332],2)
+END
+
+IF
+	Global("VP_SimeVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_SimeVampire","GLOBAL",2)
+		CreateCreature("Vampsime",[1473.332],2)
+END
+
+IF
+	Dead("C6Bodhi")
+	InMyArea("vampval")
+	Global("VP_ValygarVamp_Alive","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ValygarVamp_Alive","GLOBAL",1)
+		ActionOverride("vampval",StartDialogueNoSet([PC]))
+END

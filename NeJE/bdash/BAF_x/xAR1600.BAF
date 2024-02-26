@@ -1,0 +1,12 @@
+IF
+	Dead("ppvalen") // Valen
+	Dead("ppparis") // Parisa
+	Dead("ppdel") // Del
+	OR(2)
+		Global("AsylumPlot","GLOBAL",3)
+		Global("AsylumPlot","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("AsylumPlot","GLOBAL",5)
+		ActionOverride("uhostile",DestroySelf())
+END

@@ -1,0 +1,61 @@
+IF
+	XPLT(Player1,375000)
+	Global("VP_CreateLeina","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateLeina","GLOBAL",1)
+		CreateCreature("Leina11",[515.2585],0) // Leina
+END
+
+IF
+	XPGT(Player1,374999)
+	XPLT(Player1,625000)
+	Global("VP_CreateLeina","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateLeina","GLOBAL",1)
+		CreateCreature("Leina12",[515.2585],0) // Leina
+END
+
+IF
+	XPGT(Player1,624999)
+	XPLT(Player1,825000)
+	Global("VP_CreateLeina","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateLeina","GLOBAL",1)
+		CreateCreature("Leina13",[515.2585],0) // Leina
+END
+
+IF
+	XPGT(Player1,824999)
+	Global("VP_CreateLeina","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateLeina","GLOBAL",1)
+		CreateCreature("Leina14",[515.2585],0) // Leina
+END
+
+IF
+	InParty("Leina")
+	Global("VP_GovanAppears","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_GovanAppears","GLOBAL",1)
+		CreateCreature("Govan2",[568.1134],0) // Govan Duvaine
+		CreateCreature("GovDude",[536.1173],1) // Dude
+		CreateCreature("GovBud",[623.1112],15) // Bud
+END
+
+IF
+	!InParty("Leina")
+	Global("VP_GovanAppears","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_GovanAppears","GLOBAL",2)
+		ActionOverride("Govan2",DestroySelf())
+		ActionOverride("GovDude",DestroySelf())
+		ActionOverride("GovBud",DestroySelf())
+END
+
+

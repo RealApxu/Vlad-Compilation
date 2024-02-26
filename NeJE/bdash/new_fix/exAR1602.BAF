@@ -1,0 +1,10 @@
+IF
+	Global("create","AR1602",1)
+	Global("StealShip","GLOBAL",1)
+	InMyArea("ppsaem3")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ActionOverride("ppsaem3",DestroySelf())
+		SetGlobal("create","AR1602",2)
+END

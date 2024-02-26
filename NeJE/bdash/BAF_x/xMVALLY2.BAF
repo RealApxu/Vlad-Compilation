@@ -1,0 +1,9 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+	!Global("MaeVarExposed","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateCreatureObject("STDEATH",Player1,0,0,0) // Arkanis Gath
+		SetGlobal("AttackedThieves","GLOBAL",1)
+END

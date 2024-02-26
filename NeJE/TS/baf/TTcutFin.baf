@@ -1,0 +1,13 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("End_Island","GLOBAL",1)
+		ActionOverride("NajokiA",ForceSpell(Myself,DRYAD_TELEPORT))
+		ActionOverride("AinoA",ForceSpell(Myself,DRYAD_TELEPORT))
+		Wait(1)
+		EndCutSceneMode()
+END
+
+

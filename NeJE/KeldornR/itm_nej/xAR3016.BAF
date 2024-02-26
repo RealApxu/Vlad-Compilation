@@ -1,0 +1,11 @@
+IF
+	OR(4)
+		Global("VP_FlailAges_Done","GLOBAL",1)
+		PartyHasItem("BLUN30C")  // Flail of Ages +4
+		PartyHasItem("BLUN30A")  // Flail Head (Poison)
+		PartyHasItem("BLUN30")  // Flail of Ages +5
+	Contains("BLUN30A","SlimePit")  // Flail Head (Poison)
+THEN
+	RESPONSE #100
+		ActionOverride("SlimePit",DestroyItem("BLUN30A"))  // Flail Head (Poison)
+END

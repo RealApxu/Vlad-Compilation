@@ -1,0 +1,390 @@
+IF
+  Global("VP_Yoshimo_Kachiko","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Yoshimo_Kachiko","GLOBAL",0)
+    MoveGlobal("AR0406",Myself,[1368.1922])
+END
+
+IF
+  Global("VP_Kachiko_Yoshimo","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",0)
+    ChangeAIScript("",DEFAULT)
+		SetLeavePartyDialogueFile()
+		SetGlobal("Kicked_Out","LOCALS",1)
+		LeaveParty()
+    MoveGlobal("AR0313",Myself,[723.319])
+END
+
+IF
+  Global("VP_Kachiko_Yoshimo","GLOBAL",4)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",0)
+    ChangeAIScript("",DEFAULT)
+		SetLeavePartyDialogueFile()
+		SetGlobal("Kicked_Out","LOCALS",1)
+		LeaveParty()
+    MoveGlobal("TT0102",Myself,[225.683])
+END
+
+IF
+  InParty("Kachiko")  // Kachiko
+  !InParty(Myself)
+  Global("VP_JoinYoshimo","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_JoinYoshimo","GLOBAL",0)
+    SetGlobal("Kicked_Out","LOCALS",0)
+    JoinParty()
+END
+
+IF
+  !InParty(Myself)
+  InParty("Kachiko")  // Kachiko
+  See("Kachiko")  // Kachiko
+  GlobalGT("VP_YoshimoSearch","GLOBAL",0)
+  GlobalLT("VP_YoshimoSearch","GLOBAL",4)
+  Global("VP_YoshimoIsFound","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_YoshimoIsFound","GLOBAL",1)
+    StartDialogNoSet([PC])
+END
+
+// Kachiko is wounded or dead
+
+IF
+  InParty(Myself)
+  InParty("Kachiko")  // Kachiko
+  HPPercentLT("Kachiko",20)  // Kachiko
+  !Dead("Kachiko")  // Kachiko
+  !CombatCounter(0)
+  Exists(LastAttackerOf("Kachiko"))  // Kachiko
+  Allegiance(LastAttackerOf("Kachiko"),ENEMY)  // Kachiko
+  Global("VP_Kachiko_Dies","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Dies","GLOBAL",1)
+    EquipMostDamagingMelee()
+    DisplayStringHead(Myself,~Kachiko, don’t give up, I will help you!~)  // ~Kachiko, don’t give up, I will help you!~
+    MoveToObjectNoInterrupt(LastAttackerOf("Kachiko"))
+    AttackReevaluate(LastAttackerOf("Kachiko"),75)
+    Continue()
+END
+
+IF
+  InParty(Myself)
+  Dead("Kachiko")  // Kachiko
+  CombatCounter(0)
+  Global("VP_Kachiko_Is_Dead","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Is_Dead","GLOBAL",1)
+    SetGlobal("VP_Kachiko_Dies","GLOBAL",2)
+END
+
+IF
+  InParty(Myself)
+  CombatCounter(0)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  Global("VP_Kachiko_Dies","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Dies","GLOBAL",3)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  InParty(Myself)
+  InParty("Kachiko")  // Kachiko
+  !Dead("Kachiko")  // Kachiko
+  Global("VP_Kachiko_Dies","GLOBAL",1)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Kachiko_Dies","GLOBAL",0)
+END
+
+IF
+  InParty("Kachiko")  // Kachiko
+  !InParty(Myself)
+  Global("VP_JoinYoshimo","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_JoinYoshimo","GLOBAL",0)
+    SetGlobal("Kicked_Out","LOCALS",0)
+    JoinParty()
+END
+
+IF
+  Global("MyHome_Attacked","GLOBAL",1)
+  Global("Hashimoto_Attacked","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Hashimoto_Attacked","LOCALS",1)
+    LeaveParty()
+    Enemy()
+END
+
+IF
+  Global("Kachiko_Kidnapped","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+IF
+  InParty(Myself)
+  AreaCheck("AR0300")
+  !Global("WorkingForBodhi","GLOBAL",1)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  Global("YoshimoMentionsRenal","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  GlobalTimerExpired("YoshimoRemindsRenal","GLOBAL")
+  InParty(Myself)
+  Global("TalkedToRenal","GLOBAL",0)
+  !Global("WorkingForBodhi","GLOBAL",1)
+  AreaType(0)
+  AreaType(CITY)
+  !AreaCheck("AR2000")
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  GlobalLT("YoshimoReminder","LOCALS",2)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  InParty(Myself)
+  InParty("Mazzy")  // Mazzy
+  See("Mazzy")  // Mazzy
+  !Dead("Mazzy")  // Mazzy
+  !StateCheck("Mazzy",STATE_SLEEPING)  // Mazzy
+  HPLT("Mazzy",20)  // Mazzy
+  CombatCounter(0)
+  Global("BYoshimo1","LOCALS",0)
+THEN
+  RESPONSE #100
+    Interact("Mazzy")
+END
+
+IF
+  InParty(Myself)
+  GlobalTimerExpired("YoshimoTalksPC","GLOBAL")
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  Global("BYoshimo3","LOCALS",0)
+THEN
+  RESPONSE #100
+    Interact(Player1)
+END
+
+IF
+  InParty(Myself)
+  GlobalTimerExpired("YoshimoTalksPC2","GLOBAL")
+  Global("PCYosh","LOCALS",1)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  Global("BYoshimo4","LOCALS",0)
+THEN
+  RESPONSE #100
+    Interact(Player1)
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")  // Edwin
+  Gender("Edwin",FEMALE)  // Edwin
+  Global("SetItOnce","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SetItOnce","LOCALS",1)
+    SetGlobalTimer("YoshimoMakesFun","GLOBAL",ONE_DAY)
+END
+
+IF
+  InParty(Myself)
+  GlobalTimerExpired("YoshimoMakesFun","GLOBAL")
+  InParty("Edwin")  // Edwin
+  Gender("Edwin",FEMALE)  // Edwin
+  See("Edwin")  // Edwin
+  !Dead("Edwin")  // Edwin
+  !StateCheck("Edwin",STATE_SLEEPING)  // Edwin
+  CombatCounter(0)
+  Global("BYoshimo14","LOCALS",0)
+THEN
+  RESPONSE #100
+    Interact("Edwin")
+END
+
+IF
+  PartyHasItem("misc5m")  // ~Inspector's Body~
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  OR(3)
+    !InParty("Keldorn")  // Keldorn
+    Dead("Keldorn")  // Keldorn
+    StateCheck("Keldorn",STATE_SLEEPING)  // Keldorn
+  OR(3)
+    !InParty("Anomen")  // Anomen
+    Dead("Anomen")  // Anomen
+    StateCheck("Anomen",STATE_SLEEPING)  // Anomen
+  Global("FoundAegis","GLOBAL",0)
+  Global("FoundAegis2","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("FoundAegis2","LOCALS",1)
+    StartDialogNoSet(Player1)
+END
+
+IF
+  InParty(Myself)
+  InParty("Dar")
+  Global("VP_Yoshi_Dar_Talk","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Yoshi_Dar_Talk","LOCALS",1)
+    RealSetGlobalTimer("VP_Yoshi_Dar_Timer","GLOBAL",2400)
+END
+
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("VP_Yoshi_Dar_Timer","GLOBAL")
+  InParty("Dar")
+  See("Dar")
+  !Dead("Dar")
+  !StateCheck("Dar",STATE_SLEEPING)
+  CombatCounter(0)
+  Global("VP_Yoshi_Dar_Talk","LOCALS",1)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_Yoshi_Dar_Talk","LOCALS",2)
+    	Interact("Dar")
+END
+
+IF
+  InParty(Myself)
+  InParty("Hrothgar")
+  Global("VP_Yoshi_InHalruaa","LOCALS",0)
+  Global("VP_InHalruaa","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_Yoshi_InHalruaa","LOCALS",1)
+    RealSetGlobalTimer("VP_Yoshi_Halruaa_T","GLOBAL",30)
+END
+
+IF
+  InParty(Myself)
+  RealGlobalTimerExpired("VP_Yoshi_Halruaa_T","GLOBAL")
+  OR(2)
+  	!Global("VP_InHalruaa","GLOBAL",0)
+  	!Global("VP_In_Halruaa","GLOBAL",0)
+  InParty("Hrothgar")
+  See("Hrothgar")
+  !Dead("Hrothgar")
+  !StateCheck("Hrothgar",STATE_SLEEPING)
+  CombatCounter(0)
+  Global("VP_Yoshi_InHalruaa","LOCALS",1)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_Yoshi_InHalruaa","LOCALS",2)
+    	Interact("Hrothgar")
+END
+
+IF
+  InParty(Myself)
+  !StateCheck(Myself,STATE_SLEEPING)
+  InParty("Minsc") 
+  !Dead("Minsc")
+  See("Minsc") 
+  HPLT("Minsc",20) 
+  CombatCounter(0)
+  Global("BYoshimo13","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BYoshimo13","LOCALS",1)
+    Interact("Minsc")
+END
+
+IF
+  InParty(Myself)
+  InParty("Aerie")
+  Dead("Aerie")
+  Global("VP_BanterFix","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_BanterFix","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  !StateCheck(Myself,STATE_SLEEPING)
+  InParty("Aerie")
+  !Dead("Aerie")
+  See("Aerie")
+  !StateCheck("Aerie",STATE_SLEEPING)
+  Global("VP_BanterFix","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_BanterFix","LOCALS",2)
+    Interact("Aerie")
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !InParty(Myself)
+  Global("NPCFight","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("NPCFight","LOCALS",1)
+    ChangeAIScript("yoshx",SPECIFICS)
+    ChangeAIScript("useitem",GENERAL)
+    ChangeAIScript("",DEFAULT)
+    SetDialogue("")
+    Continue()
+END
+
+IF
+  Allegiance(Myself,NEUTRAL)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    ChangeAIScript("yoshx",SPECIFICS)
+    ChangeAIScript("useitem",GENERAL)
+    ChangeAIScript("",DEFAULT)
+    Enemy()
+    Continue()
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  !InParty(Myself)
+  Global("NPCFight","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("NPCFight","LOCALS",0)
+    ChangeAIScript("",GENERAL)
+    ChangeAIScript("",SPECIFICS)
+    Continue()
+END
+

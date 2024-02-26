@@ -1,0 +1,41 @@
+Mbas(1)basilisk
+***
+						SOUND
+ATTACK          		basil04 nosound nosound
+ATTACK          		0 0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0
+DAMAGE          		basil08
+DAMAGE          		0
+DIE             		basil02
+DIE             		0 0
+HEAD_TURN       		***
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		basil05 nosound nosound
+SHOOT           		0
+TWITCH          		basil01 nosound nosound
+TWITCH          		0
+WALK            		***
+WALK            		0
+ATTACK_SLASH    		basil09 nosound nosound
+ATTACK_SLASH    		0 0 0
+ATTACK_BACKSLASH		basil06 nosound nosound
+ATTACK_BACKSLASH		0 0 0
+ATTACK_JAB      		basil07 nosound nosound
+ATTACK_JAB      		0 0 0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry			basil03 nosound nosound
+Battle_Cry			0 0
+Selection                       basil01 nosound nosound
+Selection                       0

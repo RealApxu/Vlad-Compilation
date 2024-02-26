@@ -1,0 +1,16 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Keldorn")
+		FadeToColor([30.0],0)
+		Wait(1)
+		ActionOverride("TormVoic",DestroySelf())
+		Wait(1)
+		FadeFromColor([30.0],0)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+		

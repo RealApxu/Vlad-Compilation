@@ -1,0 +1,9 @@
+IF
+	GlobalTimerExpired("eggGuardDoesWarn","GLOBAL")
+	Global("aware","AR2201",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("aware","AR2201",1)
+		StartDialogueNoSet([PC])
+END

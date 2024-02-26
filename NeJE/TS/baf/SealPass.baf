@@ -1,0 +1,10 @@
+IF
+	IsOverMe([PC])
+	Global("SealPass_Inform","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SealPass_Inform","GLOBAL",1)
+		DisplayStringHead([PC],~These stairs have collapsed. You will have to find another route.~)
+END
+
+

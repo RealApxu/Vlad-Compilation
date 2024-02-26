@@ -1,0 +1,13 @@
+IF
+	!Exists("ppvalen")
+	!Exists("ppparis")
+	!Exists("ppdel")
+	Global("ThiefGroup","GLOBAL",1)//Thanks to Ardanis
+	OR(2)
+		Global("AsylumPlot","GLOBAL",3)
+		Global("AsylumPlot","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("AsylumPlot","GLOBAL",5)
+		ActionOverride("uhostile",DestroySelf())
+END

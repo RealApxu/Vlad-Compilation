@@ -1,0 +1,21 @@
+IF
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	Global("VP_Talk_To_Keldorn","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Talk_To_Keldorn","LOCALS",1)
+		Dialogue("Keldorn")
+END
+
+IF
+	See("Keldorn")
+	InParty("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	Global("VP_Talk_To_Keldorn","LOCALS",1)
+	GlobalGT("Chapter","GLOBAL",5)
+	AreaCheck("KR0001")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Talk_To_Keldorn","LOCALS",2)
+		Dialogue("Keldorn")
+END

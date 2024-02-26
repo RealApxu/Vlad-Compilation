@@ -1,0 +1,13 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Valygar")
+		SetGlobal("VP_Merella_Dies","GLOBAL",1)
+		MoveToObjectNoInterrupt("UHRANG01")
+		Wait(1)
+		Interact("UHRANG01")
+		EndCutSceneMode()
+END
+
+

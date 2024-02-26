@@ -1,0 +1,41 @@
+MBET /beetle copper/
+***
+						SOUND
+ATTACK          		bomba01 nosound nosound
+ATTACK          		0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0
+DAMAGE          		bomba07 bomba08
+DAMAGE          		0 0
+DIE             		bomba09a bomba09b
+DIE             		0 0
+HEAD_TURN       		bomba11
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		***
+SHOOT           		0
+TWITCH          		***
+TWITCH          		0
+WALK            		bomba11
+WALK            		0
+ATTACK_SLASH    		bomba03a bomba03b bomba03c
+ATTACK_SLASH    		2 0 0
+ATTACK_BACKSLASH		bomba03a bomba03b bomba03c
+ATTACK_BACKSLASH		2 2 0
+ATTACK_JAB      		***
+ATTACK_JAB      		0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry					bomba02 bomba02
+Battle_Cry					0 0
+Selection           bomba11
+Selection           0

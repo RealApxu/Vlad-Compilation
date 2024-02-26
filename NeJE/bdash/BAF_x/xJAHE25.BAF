@@ -1,0 +1,11 @@
+IF
+	OR(2)
+		GlobalGT("LoveTalk","LOCALS",50)
+		Global("JaheiraRomanceActive","GLOBAL",2)
+	Global("ExpLoveTalk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JaheiraRomanceActive","GLOBAL",2)
+		SetGlobal("ExpLoveTalk","LOCALS",1)
+		RealSetGlobalTimer("JaheiraRomance","GLOBAL",2400)
+END

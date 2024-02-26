@@ -1,0 +1,16 @@
+IF
+	InParty(Myself)
+	Dead("Torgal")
+	Global("NaliaKeepPlot","GLOBAL",0)
+	!Global("Chapter","GLOBAL",4)
+	!Global("Chapter","GLOBAL",5)
+	!Global("Chapter","GLOBAL",7)
+	AreaType(OUTDOOR)
+	AreaCheck("AR1300")
+	CombatCounter(0)
+	Global("NaliaRaised","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("NaliaMessenger","GLOBAL",SEVEN_DAYS)
+		StartDialogNoSet(Player1)
+END

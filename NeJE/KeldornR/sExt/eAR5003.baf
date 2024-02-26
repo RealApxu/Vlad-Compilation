@@ -1,0 +1,10 @@
+IF
+	InParty("Keldorn")
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	Global("VP_Kr_Create_Bard","GLOBAL",0)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_Kr_Create_Bard","GLOBAL",1)
+  	CreateCreature("SarBard",[1214.942],0)
+END
+

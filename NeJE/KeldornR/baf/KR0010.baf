@@ -1,0 +1,53 @@
+IF
+	Global("VP_Kr_TheWar","GLOBAL",7)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TheWar","GLOBAL",8)
+		Explore()
+		CreateCreature("LADYALIA",[3400.2034],10) // Lady Alia
+		CreateCreature("KRGUARD1",[3386.1991],2) // Firecams's Guard Captain
+		CreateCreature("KRGUARD2",[3445.1997],2) // Firecams's Guard
+END
+
+IF
+	Global("VP_Kr_Casle_Siege","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_Casle_Siege","GLOBAL",6)
+		CreateCreature("KKpCapt",[1568.3106],2) // Firecam Castle Lieutenant
+		CreateCreature("KKpSold",[1452.3092],2) // Firecam Castle Guard
+		CreateCreature("KKpSold",[1513.3103],2) // Firecam Castle Guard
+		CreateCreature("KKpSold",[1428.3130],2) // Firecam Castle Guard
+		CreateCreature("KKpSold",[1467.3186],2) // Firecam Castle Guard
+		CreateCreature("KKpSold",[1553.3141],2) // Firecam Castle Guard
+		CreateCreature("KKpSold",[1534.3196],2) // Firecam Castle Guard
+		CreateCreature("KKnight1",[1505.3317],2) //
+		CreateCreature("KKnight2",[1446.3305],2) //
+		CreateCreature("KKnight3",[1476.3310],2) // 
+		CreateCreature("Sythill1",[1229.3383],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1196.3416],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1349.3375],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1315.3419],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1421.3397],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1527.3408],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1463.3466],10) // Sythillisian Elite
+		CreateCreature("Sythill1",[1363.3502],10) // Sythillisian Elite
+		CreateCreature("Sythill4",[1392.3292],10) // Sythillisian Warlord
+		CreateCreature("Sythill5",[1329.3275],10) // Sythillisian Warlord
+		CreateCreature("Sythill5",[1402.3339],10) // Sythillisian Warlord
+		CreateCreature("Sythill4",[1460.3219],10) // Sythillisian Warlord
+		CreateCreature("Sythill2",[1217.3462],12) // Sythillisian Archer
+		CreateCreature("Sythill2",[1233.3461],12) // Sythillisian Archer
+		CreateCreature("Sythill2",[1276.3414],4) // Sythillisian Archer
+		CreateCreature("Sythill2",[1257.3466],4) // Sythillisian Archer
+		CreateCreature("Sythill3",[1167.3463],10) // Sythillisian Battle Mage
+		CreateCreature("Sythill1",[1196.3458],10) // Sythillisian Elite
+		CreateCreature("Sythill3",[1283.3481],10) // Sythillisian Battle Mage
+		CreateCreature("Sythill1",[1251.3488],10) // Sythillisian Elite
+///////////////////////////////////////////////////////////////////////////////////////////
+		CreateCreature("Sythill1",[469.1405],1) // Sythillisian Elite
+		CreateCreature("Sythill1",[390.1377],0) // Sythillisian Elite
+		CreateCreature("Sythill1",[539.1379],15) // Sythillisian Elite
+		CreateCreature("Sythill4",[365.1436],14) // Sythillisian Warlord
+		CreateCreature("Sythill4",[554.1440],2) // Sythillisian Warlord				
+END

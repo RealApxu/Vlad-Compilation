@@ -1,0 +1,19 @@
+IF
+	See("Keldorn")
+	InParty("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	Global("VP_Talk_To_Keldorn","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Talk_To_Keldorn","LOCALS",1)
+		StartDialogueNoSet("Keldorn")
+END
+
+IF
+	OR(2)
+		!InParty("Keldorn")
+		Dead("Keldorn")
+THEN
+	RESPONSE #100
+		EscapeArea()
+END

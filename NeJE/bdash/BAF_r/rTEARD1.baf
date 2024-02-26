@@ -1,0 +1,57 @@
+IF
+	Clicked([ANYONE])
+	InPartySlot(LastTrigger,0)
+	Range(LastTrigger,16)
+	PartyHasItem("miscb5") // Tears of Bhaal
+	GlobalLT("Player1Fear","GLOBAL",2)
+	Global("BhaalDoor","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ScreenShake([4.4],5)
+		CreateVisualEffect("spnpoisi",[1850.433])
+		PlaySound("EFF_M18a")
+		Wait(1)
+		DisplayString(Myself,302) // You take a Tear of Bhaal from your pack and place it in an eye. The eye closes and guards the door no longer.
+		DisplayString(Myself,6473) // You have become immune to +1 weapons and less.
+		TakePartyItem("miscb5") // Tears of Bhaal
+		CloseDoor("Eye01")
+		SetGlobal("TearEye1","GLOBAL",1)
+		IncrementGlobal("TearDoor","GLOBAL",1)
+		ApplySpell(Player1,HELL_FEAR_GOOD)
+END
+
+IF
+	Clicked([ANYONE])
+	InPartySlot(LastTrigger,0)
+	Range(LastTrigger,16)
+	PartyHasItem("miscb5") // Tears of Bhaal
+	Global("Player1Fear","GLOBAL",2)
+	Global("BhaalDoor","GLOBAL",1)
+	!Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("DisplayAlignmentChange","AR2900",1)
+		Continue()
+END
+
+IF
+	Clicked([ANYONE])
+	InPartySlot(LastTrigger,0)
+	Range(LastTrigger,16)
+	PartyHasItem("miscb5") // Tears of Bhaal
+	Global("Player1Fear","GLOBAL",2)
+	Global("BhaalDoor","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ScreenShake([4.4],5)
+		CreateVisualEffect("spnpoisi",[1850.433])
+		PlaySound("EFF_M18a")
+		Wait(1)
+		DisplayString(Myself,302) // You take a Tear of Bhaal from your pack and place it in an eye. The eye closes and guards the door no longer.
+		DisplayString(Myself,6470) // You have been granted +2 to your constitution.
+		TakePartyItem("miscb5") // Tears of Bhaal
+		CloseDoor("Eye01")
+		SetGlobal("TearEye1","GLOBAL",1)
+		IncrementGlobal("TearDoor","GLOBAL",1)
+		ApplySpell(Player1,HELL_FEAR_EVIL)
+END

@@ -1,0 +1,43 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Valygar")
+	Global("ValygarBio","GLOBAL",0)
+	OR(2)
+		Global("ValygarRomanceActive","GLOBAL",0)
+		Global("ValygarRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarBio","GLOBAL",1)
+		TextScreen("VALYGND")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Valygar")
+	OR(2)
+		!Global("ValygarRomanceActive","GLOBAL",2)
+		Global("PlayerChoseEssence","GLOBAL",1)
+	Global("ValygarBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarBio","GLOBAL",1)
+		TextScreen("VALYGFND")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Valygar")
+	Global("PlayerChoseEssence","GLOBAL",0)
+	Global("ValygarRomanceActive","GLOBAL",2)
+	Global("ValygarBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarBio","GLOBAL",1)
+		TextScreen("VALYGND2")
+		SmallWait(1)
+		Continue()
+END

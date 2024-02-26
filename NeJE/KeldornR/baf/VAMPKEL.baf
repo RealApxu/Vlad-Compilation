@@ -1,0 +1,16 @@
+IF
+	Global("C6BodhiFight","AR0809",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		AttackReevaluate("c6bodhi",75)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KeldornVampire","GLOBAL",3)
+		DropInventory()
+		DestroySelf()
+END

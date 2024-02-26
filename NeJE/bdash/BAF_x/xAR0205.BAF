@@ -1,0 +1,27 @@
+IF
+	PartyHasItem("MISC5A")
+	PartyHasItem("MISC5B")
+	!Dead("UnseeingEye")
+THEN
+	RESPONSE #100
+		TakePartyItem("MISC5A")
+		TakePartyItem("MISC5B")
+		GiveItemCreate("MISC5C",Player1,1,0,0)
+		AddexperienceParty(26250)
+		DisplayStringHead(Player1,31215)
+		Wait(7)
+		CreateCreature("BHEYE",[2528.1897],12)
+END
+
+IF
+	PartyHasItem("MISC5A")
+	PartyHasItem("MISC5B")
+THEN
+	RESPONSE #100
+		TakePartyItem("MISC5A")
+		TakePartyItem("MISC5B")
+		GiveItemCreate("MISC5C",Player1,0,0,0)
+		DisplayStringHead(Player1,31215)
+END
+
+

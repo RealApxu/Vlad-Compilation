@@ -1,0 +1,11 @@
+IF
+	OR(2)
+		TimeLT(5)
+		TimeGT(19)
+	!Exists("Welther")
+	Global("SpawnWelther","GLOBAL",1)
+	Global("ElgeaGone","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("WELTHER",[2041.2673],13) // Welther
+END

@@ -1,0 +1,9 @@
+IF
+	InMyArea("Imoen2")
+	InMyArea("Imoen3")
+	Global("VP_Immy_Second_Fix","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Immy_Second_Fix","GLOBAL",1)
+		ActionOverride("Imoen3",DestroySelf())
+END

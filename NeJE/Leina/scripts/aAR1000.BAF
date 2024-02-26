@@ -1,0 +1,20 @@
+IF
+	Global("BodhiJob","GLOBAL",2)
+	Global("VP_UnlockDoor1004","AR1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_UnlockDoor1004","AR1000",1)
+		Unlock("DOOR1007")
+		Continue()
+END
+
+IF
+	Global("BodhiJob","GLOBAL",0)
+	Global("VP_Guild_Attacked","GLOBAL",1)
+	Global("VP_UnlockDoor1004","AR1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_UnlockDoor1004","AR1000",1)
+		Unlock("DOOR1007")
+		Continue()
+END

@@ -1,0 +1,8 @@
+IF
+	IsOverMe([PC])
+	Global("VP_Bodhi_Joins","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Bodhi_Joins","GLOBAL",4)
+		ActionOverride("ppbodhi3",StartDialogueNoSet([PC]))
+END

@@ -1,0 +1,9 @@
+IF
+	NumTimesTalkedTo(0)
+	See("Keldorn")
+	CombatCounter(0)
+THEN
+  RESPONSE #100
+		StartDialogueNoSet("Keldorn")
+END
+

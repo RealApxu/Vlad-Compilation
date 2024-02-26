@@ -1,0 +1,41 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Leina")
+	Global("VP_LeinaBio","GLOBAL",0)
+	!Global("VP_LeinaRomanceAct","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaBio","GLOBAL",1)
+		TextScreen("LEINAD")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Leina")
+	OR(2)
+		!Global("VP_LeinaRomanceAct","GLOBAL",2)
+		Global("PlayerChoseEssence","GLOBAL",1)
+	Global("VP_LeinaBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaBio","GLOBAL",1)
+		TextScreen("LEINAFND")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Leina")
+	Global("PlayerChoseEssence","GLOBAL",0)
+	Global("VP_LeinaRomanceAct","GLOBAL",2)
+	Global("VP_LeinaBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaBio","GLOBAL",1)
+		TextScreen("LEINAND2")
+		SmallWait(1)
+		Continue()
+END

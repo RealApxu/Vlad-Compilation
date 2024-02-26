@@ -1,0 +1,29 @@
+IF
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	Global("ValygarRomanceActive","GLOBAL",2)
+	See(Player1)
+	CombatCounter(0)
+	Global("ExpLoveTalk","LOCALS",7)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ExpLoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	Global("ValygarRomanceActive","GLOBAL",2)
+	See(Player1)
+	CombatCounter(0)
+	OR(3)
+		Global("ExpLoveTalk","LOCALS",9)
+		Global("ExpLoveTalk","LOCALS",11)
+		Global("ExpLoveTalk","LOCALS",13)
+THEN
+	RESPONSE #100
+		DayNight(MIDNIGHT)
+		IncrementGlobal("ExpLoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END

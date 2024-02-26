@@ -1,0 +1,44 @@
+IF
+	Clicked([ANYONE])
+	InPartySlot(LastTrigger,0)
+	Range(LastTrigger,16)
+	PartyHasItem("miscb7") // Tears of Bhaal
+	GlobalLT("Player1Greed","GLOBAL",2)
+	Global("BhaalDoor","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ScreenShake([4.4],5)
+		CreateVisualEffect("spnpoisi",[2015.182])
+		PlaySound("EFF_M18a")
+		Wait(1)
+		DisplayString(Myself,302) // You take a Tear of Bhaal from your pack and place it in an eye. The eye closes and guards the door no longer.
+		DisplayString(Myself,61968) // You have been granted +2 to all of your saving throws.
+		TakePartyItem("miscb7") // Tears of Bhaal
+		CloseDoor("Eye03")
+		SetGlobal("TearEye3","GLOBAL",1)
+		IncrementGlobal("TearDoor","GLOBAL",1)
+		ApplySpell(Player1,HELL_GREED_GOOD)
+END
+
+IF
+	Clicked([ANYONE])
+	InPartySlot(LastTrigger,0)
+	Range(LastTrigger,16)
+	PartyHasItem("miscb7") // Tears of Bhaal
+	Global("Player1Greed","GLOBAL",2)
+	Global("BhaalDoor","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ScreenShake([4.4],5)
+		CreateVisualEffect("spnpoisi",[2015.182])
+		PlaySound("EFF_M18a")
+		Wait(1)
+		DisplayString(Myself,302) // You take a Tear of Bhaal from your pack and place it in an eye. The eye closes and guards the door no longer.
+		DisplayString(Myself,6478) // You have been granted +15 to your hit points.
+		TakePartyItem("miscb7") // Tears of Bhaal
+		CloseDoor("Eye03")
+		SetGlobal("TearEye3","GLOBAL",1)
+		IncrementGlobal("TearDoor","GLOBAL",1)
+		ApplySpell(Player1,HELL_GREED_EVIL)
+END
+

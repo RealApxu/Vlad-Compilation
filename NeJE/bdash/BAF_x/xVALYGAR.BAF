@@ -1,0 +1,19 @@
+IF
+	GlobalGT("MazzyValygar","GLOBAL",1)
+	Allegiance("Mazzy",ENEMY)
+	InParty(Myself)
+THEN
+	RESPONSE #100
+		LeaveParty()
+		Enemy()
+END
+
+IF
+	GlobalGT("MazzyValygar","GLOBAL",1)
+	Allegiance("Mazzy",ENEMY)
+	Allegiance(Myself,NEUTRAL)
+	!InParty(Myself)
+THEN
+	RESPONSE #100
+		Enemy()
+END

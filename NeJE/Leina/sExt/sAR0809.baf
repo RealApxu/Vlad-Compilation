@@ -1,0 +1,7 @@
+IF
+	Global("VP_LeinaVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaVampire","GLOBAL",2)
+		CreateCreature("VampLei",[1473.332],2)
+END

@@ -1,0 +1,16 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		StorePartyLocations()
+		FadeToColor([30.0],0)
+		Wait(1)
+		LeaveAreaLUAPanic("KR0000","",[310.389],8)
+		LeaveAreaLUA("KR0000","",[310.389],8)
+		Wait(1)
+		MultiPlayerSync()
+		FadeFromColor([30.0],0)
+		Wait(1)
+		EndCutSceneMode()
+END

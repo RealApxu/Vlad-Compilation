@@ -1,0 +1,9 @@
+IF
+	Global("VP_Kr_Funneral","GLOBAL",1)
+	Global("KeldornFamilyGone","GLOBAL",2)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_Kr_Funneral","GLOBAL",2)
+  	CreateCreature("Maria",[530.490],12)
+END
+

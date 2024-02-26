@@ -1,0 +1,90 @@
+IF
+	Global("IHavePants","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHavePants","GLOBAL",2)
+		SetGlobal("BG1Pantaloons","GLOBAL",1)
+		ActionOverride("Picture1",CreateItem("MISC47",0,0,0)) // Golden Pantaloons
+		Continue()
+END
+
+IF
+	Global("IHaveRing","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveRing","GLOBAL",2)
+		ActionOverride("Shelf1",CreateItem("ring25",0,0,0)) // Koveras' Ring of Protection
+		Continue()
+END
+
+IF
+	Global("IHaveMoonblade","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveMoonblade","GLOBAL",2)
+		ActionOverride("Picture1",CreateItem("sw1h13",0,0,0)) // Moonblade
+		Continue()
+END
+
+IF
+	Global("IHaveBalduran","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveBalduran","GLOBAL",2)
+		ActionOverride("Shelf1",CreateItem("HELM07",0,0,0)) // Helm of Balduran
+		Continue()
+END
+
+IF
+	Global("IHaveClaw","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveClaw","GLOBAL",2)
+		ActionOverride("Shelf1",CreateItem("MISC72",0,0,0)) // The Claw of Kazgaroth
+		Continue()
+END
+
+IF
+	Global("IHaveHorn","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveHorn","GLOBAL",2)
+		ActionOverride("Shelf1",CreateItem("MISC73",10,0,0)) // The Horn of Kazgaroth
+		Continue()
+END
+
+IF
+	Global("IHaveSecond","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveSecond","GLOBAL",2)
+		ActionOverride("Table1",CreateItem("LEAT03",0,0,0)) // Protector of the Second +2
+		Continue()
+END
+
+IF
+	Global("IHavePlate","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHavePlate","GLOBAL",2)
+		ActionOverride("Table1",CreateItem("PLAT02",0,0,0)) // Plate Mail +1
+		Continue()
+END
+
+IF
+	Global("IHaveMissile","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveMissile","GLOBAL",2)
+		ActionOverride("Table1",CreateItem("LEAT06",0,0,0)) // Missile Attraction +2
+		Continue()
+END
+
+IF
+	Global("IHaveChain","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("IHaveChain","GLOBAL",2)
+		ActionOverride("Table1",CreateItem("CHAN07",0,0,0)) // Chain Mail +3
+		Continue()
+END

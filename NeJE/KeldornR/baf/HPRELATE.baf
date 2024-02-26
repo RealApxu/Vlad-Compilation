@@ -1,0 +1,50 @@
+//Viccy is InParty
+IF
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_TheWar","GLOBAL",3)
+	Global("VP_Kr_ViccyWarTalk","GLOBAL",2)
+	InParty("Viconia")
+	!Dead("Viconia")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TheWar","GLOBAL",4)
+		SetGlobal("VP_Kr_ViccyWarTalk","GLOBAL",3)
+		StartDialogueNoSet(Player1)
+END
+
+//Viccy is not InParty
+IF
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_TheWar","GLOBAL",3)
+	GlobalLT("VP_Kr_ViccyWarTalk","GLOBAL",2)
+	OR(2)
+		!InParty("Viconia")
+		Dead("Viconia")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_ViccyWarTalk","GLOBAL",4)
+		SetGlobal("VP_Kr_TheWar","GLOBAL",4)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Global("TempleShout0903","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TempleShout0903","GLOBAL",1)
+END
+
+IF
+	Global("TempleShout0903","GLOBAL",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END

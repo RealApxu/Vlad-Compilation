@@ -1,0 +1,11 @@
+IF
+	Global("VP_Kr_Funneral","GLOBAL",4)
+THEN
+  RESPONSE #100
+  	SetGlobal("VP_Kr_Funneral","GLOBAL",5)
+		CreateCreature("KRPRELAT",[1854.1565],2)
+		CreateCreature("KRMELVIN",[1782.1507],0)
+		CreateCreature("KRKAYL",[1752.1543],12)
+		CreateCreature("KRKNIGHT",[1959.1554],2)
+		CreateCreature("KRWOMAN",[1880.1589],4)
+END

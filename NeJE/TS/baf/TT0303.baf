@@ -1,0 +1,11 @@
+IF
+	OnCreation()
+	Global("ThiefGroup","GLOBAL",2)
+	Global("VP_Bodhi_Island","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Bodhi_Island","GLOBAL",1)
+		CreateCreatureObject("PPBODHI3",Player1,0,0,0) // Bodhi
+END
+
+

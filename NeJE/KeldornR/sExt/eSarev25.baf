@@ -1,0 +1,54 @@
+//First Banter with Keldorn
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	Global("VP_BKeldorn","LOCALS",0)
+	Global("VP_Kr_NextTalk","GLOBAL",1)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_BKeldorn","LOCALS",1)
+  	RealSetGlobalTimer("VP_KBanter_Delay","GLOBAL",10)
+END
+
+IF
+	RealGlobalTimerExpired("VP_KBanter_Delay","GLOBAL")
+	InParty(Myself)
+	InParty("Keldorn")
+	See("Keldorn")
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_BKeldorn","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BKeldorn","LOCALS",2)
+		Interact("Keldorn")
+END
+
+//Second Banter with Keldorn
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	Global("VP_BKeldorn","LOCALS",3)
+	Global("VP_Kr_Bard_Song","GLOBAL",2)
+	Global("VP_Kr_NextTalk","GLOBAL",2)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_BKeldorn","LOCALS",4)
+  	RealSetGlobalTimer("VP_KBanter_Delay","GLOBAL",5)
+END
+
+IF
+	RealGlobalTimerExpired("VP_KBanter_Delay","GLOBAL")
+	InParty(Myself)
+	InParty("Keldorn")
+	See("Keldorn")
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_BKeldorn","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BKeldorn","LOCALS",5)
+		Interact("Keldorn")
+END

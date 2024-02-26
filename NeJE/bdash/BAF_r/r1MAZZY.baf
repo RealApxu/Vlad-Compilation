@@ -1,0 +1,11 @@
+IF
+	Global("MazzyNoCure","GLOBAL",1)
+	!AreaCheck("AR2002")
+	!InParty(Myself)
+	Global("MazzyFindsOwnCure","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MazzyFindsOwnCure","LOCALS",1)
+		SetGlobal("Pala","GLOBAL",10)
+		EscapeArea()
+END

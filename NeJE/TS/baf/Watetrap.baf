@@ -1,0 +1,8 @@
+IF
+	Opened([ANYONE])
+THEN
+	RESPONSE #100
+		CreateCreatureObjectOffScreen("WATERELT",Player1,0,0,0) // Water Elemental
+END
+
+

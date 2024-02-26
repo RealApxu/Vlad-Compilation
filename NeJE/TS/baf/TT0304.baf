@@ -1,0 +1,26 @@
+IF
+	Global("VP_Sime_Dragon","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Sime_Dragon","GLOBAL",2)
+		ActionOverride("ChrDrag",DestroySelf())
+		CreateCreature("ChrDrag2",[852.709],0)
+		CreateCreature("CDMaid1",[1019.249],0)
+		CreateCreature("CDMaid2",[1190.835],1)
+		CreateCreature("CDMaid3",[782.1227],0)
+		CreateCreature("CDMaid4",[856.1200],2)
+		CreateCreature("CDMaid5",[935.1254],0)
+END
+
+IF
+	Global("SPRITE_IS_DEADChrDrag2","GLOBAL",1)
+	Global("VP_Sime_Dragon","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Sime_Dragon","GLOBAL",3)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("VPCutS04")
+END
+
+

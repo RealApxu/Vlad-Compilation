@@ -1,0 +1,243 @@
+IF
+	GlobalTimerExpired("VP_Duvaines_Spawn","GLOBAL")
+	Global("VP_DuvainesRevenge","GLOBAL",1)
+	Global("SPRITE_IS_DEADAuberon","GLOBAL",0)
+	OR(2)
+		Global("SPRITE_IS_DEADGovan2","GLOBAL",1)
+		Global("SPRITE_IS_DEADGovan3","GLOBAL",1)
+	OR(6)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_DuvainesRevenge","GLOBAL",2)
+		SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY)
+		CreateCreatureObjectOffScreen("Auberon",Player1,0,0,0)  // Duke Duvaine - Duke Auberon Duvaine
+		Continue()
+END
+
+IF
+	GlobalTimerExpired("VP_Duvaines_Spawn","GLOBAL")
+	Global("SPRITE_IS_DEADAuberon","GLOBAL",1)
+	OR(2)
+		!Global("VP_DuvainesRevenge","GLOBAL",0)
+		Global("VP_DuvainesAttack","GLOBAL",1)
+	OR(6)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY)
+		CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)  // Mercenary
+		Continue()
+END
+
+IF
+	!GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
+	Global("VP_LiedToSamuel","GLOBAL",0)
+	Global("VP_DuvainesRevenge","GLOBAL",0)
+	!InParty("Leina")  // Leina
+	Global("SPRITE_IS_DEADAuberon","GLOBAL",0)
+	OR(2)
+		Global("SPRITE_IS_DEADGovan2","GLOBAL",1)
+		Global("SPRITE_IS_DEADGovan3","GLOBAL",1)
+	OR(6)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LiedToSamuel","GLOBAL",1)
+		SetGlobal("VP_DuvainesRevenge","GLOBAL",2)
+		SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY)
+		CreateCreatureObjectOffScreen("Auberon",Player1,0,0,0)  // Duke Duvaine - Duke Auberon Duvaine
+		Continue()
+END
+
+IF
+	!GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
+	Global("VP_LiedToSamuel","GLOBAL",0)
+	Global("VP_DuvainesRevenge","GLOBAL",0)
+	!InParty("Leina")  // Leina
+	Global("SPRITE_IS_DEADAuberon","GLOBAL",1)
+	OR(6)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LiedToSamuel","GLOBAL",1)
+		SetGlobal("VP_DuvainesRevenge","GLOBAL",1)
+		SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY)
+		CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)  // Mercenary
+		CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)  // Mercenary
+		Continue()
+END
+
+IF
+	GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
+	Global("VP_LiedToSamuel","GLOBAL",0)
+	InParty("Leina")  // Leina
+	!AreaCheck("AR0020")
+	!AreaCheck("AR0021")
+	!AreaCheck("AR0022")
+	!AreaCheck("AR0300")
+	!AreaCheck("AR0313")
+	!AreaCheck("AR0314")
+	!AreaCheck("AR0319")
+	!AreaCheck("AR0400")
+	!AreaCheck("AR0406")
+	!AreaCheck("AR0500")
+	!AreaCheck("AR0509")
+	!AreaCheck("AR0510")
+	!AreaCheck("AR0511")
+	!AreaCheck("AR0512")
+	!AreaCheck("AR0513")
+	!AreaCheck("AR0514")
+	!AreaCheck("AR0515")
+	!AreaCheck("AR0700")
+	!AreaCheck("AR0702")
+	!AreaCheck("AR0703")
+	!AreaCheck("AR0800")
+	!AreaCheck("AR0900")
+	!AreaCheck("AR0901")
+	!AreaCheck("AR0902")
+	!AreaCheck("AR0903")
+	!AreaCheck("AR0904")
+	!AreaCheck("AR0905")
+	!AreaCheck("AR0906")
+	!AreaCheck("AR0907")
+	!AreaCheck("AR1000")
+	!AreaCheck("AR1001")
+	!AreaCheck("AR1002")
+	!AreaCheck("AR1003")
+	!AreaCheck("AR1004")
+	!AreaCheck("AR1005")
+	!AreaCheck("AR1006")
+	!AreaCheck("AR1007")
+	!AreaCheck("AR1009")
+	!AreaCheck("AR1010")
+	OR(2)
+		!Global("VP_DuvainesRevenge","GLOBAL",0)
+		!Global("VP_DuvainesAttack","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_DuvainesRevenge","GLOBAL",0)
+		SetGlobal("VP_DuvainesAttack","GLOBAL",0)
+		Continue()
+END
+
+IF
+	Dead("UnseeingEye")
+	AreaCheck("AR0900")
+	OR(2)
+		!InParty("Leina")
+		Dead("Leina")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+	Global("VP_Leina_NoClericQ","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_NoClericQ","GLOBAL",1)
+END
+
+IF
+	AreaCheck("AR1304")
+	Global("KeepPlot","GLOBAL",1)
+	Global("PCKeepOwner","GLOBAL",1)
+	OR(2)
+		!InParty("Leina")
+		Dead("Leina")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+	Global("VP_Leina_NoDeArniQ","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_NoDeArniQ","GLOBAL",1)
+END
+
+IF
+	AreaCheck("AR0400")
+	Global("VP_SphereTalk","GLOBAL",1)
+	Dead("lavok02")
+	OR(2)
+		!InParty("Leina")
+		Dead("Leina")
+	Global("LavokDead","GLOBAL",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+	Global("VP_Leina_NoSphereQ","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_NoSphereQ","GLOBAL",1)
+END
+
+IF
+	AreaCheck("AR0509")
+	OR(2)
+		!InParty("Leina")
+		Dead("Leina")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	GlobalGT("PlanarPrison","GLOBAL",1)
+	Global("VP_Leina_NoTheatrQ","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_NoTheatrQ","GLOBAL",1)
+END
+
+IF
+	OR(12)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR0903")
+		AreaCheck("AR1000")
+		AreaCheck("AR1304")
+		AreaCheck("AR1900")
+		AreaCheck("AR2000")
+	OR(2)
+		Global("PaladinOrder","GLOBAL",1)
+		Global("VP_EnhancedFirkrag","GLOBAL",1)
+	OR(2)
+		!InParty("Leina")
+		Dead("Leina")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Leina_NoRadianQ","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_NoRadianQ","GLOBAL",1)
+END

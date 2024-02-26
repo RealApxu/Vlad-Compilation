@@ -1,0 +1,110 @@
+IF
+	InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyLT(9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		ActionOverride("Edwin",DestroySelf())
+		CreateCreature("EDWIN7",[852.340],0)  // Edwin
+END
+
+IF
+	InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(8)
+	LevelPartyLT(10)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		ActionOverride("Edwin",DestroySelf())
+		CreateCreature("EDWIN9",[852.340],0)  // Edwin
+END
+
+IF
+	InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(9)
+	LevelPartyLT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		ActionOverride("Edwin",DestroySelf())
+		CreateCreature("EDWIN11",[852.340],0)  // Edwin
+END
+
+IF
+	InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(11)
+	LevelPartyLT(13)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		ActionOverride("Edwin",DestroySelf())
+		CreateCreature("EDWIN12",[852.340],0)  // Edwin
+END
+
+IF
+	InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		ActionOverride("Edwin",DestroySelf())
+		CreateCreature("EDWIN13",[852.340],0)  // Edwin
+END
+
+IF
+	!InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyLT(9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		CreateCreature("EDWIN7",[852.340],0)  // Edwin
+END
+
+IF
+	!InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(8)
+	LevelPartyLT(10)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		CreateCreature("EDWIN9",[852.340],0)  // Edwin
+END
+
+IF
+	!InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(9)
+	LevelPartyLT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		CreateCreature("EDWIN11",[852.340],0)  // Edwin
+END
+
+IF
+	!InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(11)
+	LevelPartyLT(13)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		CreateCreature("EDWIN12",[852.340],0)  // Edwin
+END
+
+IF
+	!InMyArea("Edwin")  // Edwin
+	Global("VP_Create_Edwin","GLOBAL",0)
+	LevelPartyGT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Edwin","GLOBAL",1)
+		CreateCreature("EDWIN13",[852.340],0)  // Edwin
+END

@@ -1,0 +1,18 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		StorePartyLocations()
+		DropInventory()
+		Wait(1)
+		LeaveAreaLUAPanic("TT0303","",[2054.1396],14)
+		LeaveAreaLUA("TT0303","",[2054.1396],14)
+		MultiPlayerSync()
+		MoveViewPoint([2054.1396],INSTANT)
+		Wait(1)
+		CreateCreature("SimeSl",[2104.1502],1)
+		EndCutSceneMode()
+END
+
+

@@ -1,0 +1,64 @@
+IF
+	See([PC])
+	Global("Kr_Slayer_Talk","GLOBAL",0)
+	Global("Kr_SlayerTalk_Fix","GLOBAL",0)
+	Global("VP_Kr_PreWedding","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_SlayerTalk_Fix","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	See([PC])
+	Global("Kr_Slayer_Talk","GLOBAL",0)
+	Global("Kr_SlayerTalk_Fix2","GLOBAL",0)
+	!Global("VP_Kr_PreWedding","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_SlayerTalk_Fix2","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		Wait(3)
+		StartDialogueNoSet([PC])
+		EndCutSceneMode()
+END
+
+IF
+	See([PC])
+	Global("Kr_Slayer_Talk","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Kr_Slayer_Talk","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		Wait(3)
+		StartDialogueNoSet([PC])
+		EndCutSceneMode()
+END
+
+IF
+	See([PC])
+	Global("VP_Slayer_Again","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Slayer_Again","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		Wait(3)
+		StartDialogueNoSet([PC])
+		EndCutSceneMode()
+END
+
+IF
+	See([PC])
+	Global("VP_Slayer_Farewell","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Slayer_Farewell","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		Wait(3)
+		StartDialogueNoSet([PC])
+		EndCutSceneMode()
+END

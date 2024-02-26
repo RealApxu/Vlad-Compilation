@@ -1,0 +1,231 @@
+IF
+	RealGlobalTimerExpired("VP_SimeFlirtTimer","GLOBAL")
+	See(Player1)
+	CombatCounter(0)
+	Global("VP_MyFlirt","LOCALS",3)
+	!AreaType(DUNGEON)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100 
+		SetGlobal("VP_MyFlirt","LOCALS",4)
+		PlaySong(999999)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_SimeRomance","GLOBAL")
+	!Global("SimeRomanceActive","GLOBAL",0)
+	!Global("SimeRomanceActive","GLOBAL",3)
+	Global("SimeMatch","GLOBAL",1)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	OR(5)
+		Global("LoveTalk","LOCALS",3)
+		Global("LoveTalk","LOCALS",13)
+		Global("LoveTalk","LOCALS",15)
+		Global("LoveTalk","LOCALS",27)
+		Global("LoveTalk","LOCALS",33)
+THEN
+	RESPONSE #100
+		IncrementGlobal("LoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_SimeRomance","GLOBAL")
+	!Global("SimeRomanceActive","GLOBAL",0)
+	!Global("SimeRomanceActive","GLOBAL",3)
+	Global("SimeMatch","GLOBAL",1)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("LoveTalk","LOCALS",21)
+	!AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		IncrementGlobal("LoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_SimeRomance","GLOBAL")
+	!Global("SimeRomanceActive","GLOBAL",0)
+	!Global("SimeRomanceActive","GLOBAL",3)
+	Global("SimeMatch","GLOBAL",1)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("LoveTalk","LOCALS",35)
+	Global("VP_Sime_DreamIsland","GLOBAL",0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("LoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+/////////////////////////////////////
+///////////// BANTERS ///////////////
+/////////////////////////////////////
+
+IF
+	GlobalTimerExpired("VP_Sime_Korgan","GLOBAL") 
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Korgan")
+	See("Korgan")
+	!Dead("Korgan")
+	CombatCounter(0)
+	Global("VP_BSime4","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime4","LOCALS",2)
+		Interact("Korgan")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Valygar","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Valygar")
+	See("Valygar")
+	!Dead("Valygar")
+	CombatCounter(0)
+	Global("VP_BSime6","LOCALS",1)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime6","LOCALS",2)
+		Interact("Valygar")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Jan","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Jan")
+	See("Jan")
+	!Dead("Jan")
+	CombatCounter(0)
+	Global("VP_BSime9","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime9","LOCALS",2)
+		Interact("Jan")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Mazzy","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Mazzy")
+	See("Mazzy")
+	!Dead("Mazzy")
+	CombatCounter(0)
+	Global("VP_BSime16","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime16","LOCALS",2)
+		Interact("Mazzy")
+END
+
+// Viconia Romance Stopper
+
+IF
+	InParty(Myself)
+	InParty("Viconia")
+	!Dead("Viconia")
+	!AreaCheck("AR1300")
+	See(Player1)
+	CombatCounter(0)
+	Global("SimeRomanceActive","GLOBAL",2)
+	Global("VP_Sime_vs_Viconia","GLOBAL",0)
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	OR(2)
+		Global("ViconiaRomanceActive","GLOBAL",1)
+		Global("ViconiaRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Sime_vs_Viconia","GLOBAL",1)
+		Interact("Viconia")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Imoen","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Imoen2")
+	See("Imoen2")
+	!Dead("Imoen2")
+	CombatCounter(0)
+	Global("VP_BSime23","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime23","LOCALS",2)
+		Interact("Imoen2")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Edwin","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Edwin")
+	See("Edwin")
+	!Dead("Edwin")
+	Gender("Edwin",MALE)
+	CombatCounter(0)
+	Global("VP_BSime28","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime28","LOCALS",2)
+		Interact("Edwin")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Edwin","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Edwin")
+	See("Edwin")
+	!Dead("Edwin")
+	Gender("Edwin",MALE)
+	CombatCounter(0)
+	Global("VP_BSime29","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime29","LOCALS",2)
+		Interact("Edwin")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_Cernd","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Cernd")
+	See("Cernd")
+	!Dead("Cernd")
+	CombatCounter(0)
+	Global("VP_BSime32","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime32","LOCALS",2)
+		Interact("Cernd")
+END
+
+IF
+	GlobalTimerExpired("VP_Sime_HaerDalis","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("HaerDalis")
+	See("HaerDalis")
+	!Dead("HaerDalis")
+	CombatCounter(0)
+	Global("VP_BSime38","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSime38","LOCALS",2)
+		Interact("HaerDalis")
+END

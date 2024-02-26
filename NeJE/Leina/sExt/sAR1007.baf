@@ -1,0 +1,22 @@
+IF
+	InMyArea("Vulova")  // Senior Armagaran Vulova
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_RemoveVulovBody","AR1007",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RemoveVulovBody","AR1007",2)
+		SetGlobalTimer("VP_VulovaBodyTimer","GLOBAL",TWO_DAYS)
+		Continue()
+END
+
+IF
+	InMyArea("Vulova")  // Senior Armagaran Vulova
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_RemoveVulovBody","AR1007",2)
+	GlobalTimerExpired("VP_VulovaBodyTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RemoveVulovBody","AR1007",3)
+		ActionOverride("Vulova",DestroySelf())
+		Continue()
+END

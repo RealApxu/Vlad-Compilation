@@ -1,0 +1,35 @@
+IF
+	Global("VP_Save_GenBag","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_GenBag","GLOBAL",2)
+		ActionOverride("Chest7",CreateItem("VPGenBag",0,0,0)) // Cloth Sack
+		Continue()
+END
+
+IF
+	Global("VP_Save_PotionCase","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_PotionCase","GLOBAL",2)
+		ActionOverride("Chest7",CreateItem("vpptnbag",0,0,0)) // Potion Case
+		Continue()
+END
+
+IF
+	Global("VP_Save_ScrollTub","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_ScrollTub","GLOBAL",2)
+		ActionOverride("Chest7",CreateItem("vpscrbag",0,0,0)) // Scroll Tubus
+		Continue()
+END
+
+IF
+	Global("VP_Save_Quiver","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_Quiver","GLOBAL",2)
+		ActionOverride("Chest7",CreateItem("vpambelt",0,0,0)) // Quiver
+		Continue()
+END

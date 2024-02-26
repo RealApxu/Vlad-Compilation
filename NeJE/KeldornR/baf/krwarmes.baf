@@ -1,0 +1,28 @@
+IF
+	!See("Keldorn")
+	InParty("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		MoveToObject("Keldorn")
+END
+
+IF
+	Global("VP_Kr_TheWar","GLOBAL",1)
+	See("Keldorn")
+	InParty("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TheWar","GLOBAL",2)
+		Dialogue("Keldorn")
+END
+
+IF
+	OR(2)
+		!InParty("Keldorn")
+		Dead("Keldorn")
+THEN
+	RESPONSE #100
+		EscapeArea()
+END

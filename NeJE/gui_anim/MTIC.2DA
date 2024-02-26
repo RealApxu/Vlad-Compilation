@@ -1,0 +1,41 @@
+mtic / Belhifeit
+***
+						SOUND
+ATTACK          		belhif1a belhif2a belhif7b
+ATTACK          		2 0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0
+DAMAGE          		belhif7a belhif8a
+DAMAGE          		0 0
+DIE             		belhif9 belhif9
+DIE             		0 0
+HEAD_TURN       		***
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		***
+SHOOT           		0
+TWITCH          		***
+TWITCH          		0
+WALK            		***
+WALK            		0
+ATTACK_SLASH    		belhif3a belhif3b belhif8b
+ATTACK_SLASH    		2 2 0
+ATTACK_BACKSLASH		belhif3c belhif4c nosound
+ATTACK_BACKSLASH		2 0 0
+ATTACK_JAB      		belhif4a belhif4b nosound
+ATTACK_JAB      		0 0 0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry			belhif1b belhif2b
+Battle_Cry			0 0
+Selection                       belhif2a
+Selection                       0

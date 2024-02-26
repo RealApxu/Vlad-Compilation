@@ -1,0 +1,16 @@
+REPLACE ~ALBERT~
+
+IF ~Global("Rufie","GLOBAL",2)
+!Dead("Rufie")
+~ THEN BEGIN 7 // from:
+  SAY ~RUFIE!!  Who's a fuzzy Rufie?  Whoooooo's a fuzzy little guy?  Thank you just ever so much!  I better take this lost little puppy home right away.  Here, take this.  It's another of his chew things, but we can get more where we're going.  Thanks again.~ /* #6500 */
+  IF ~~ THEN DO ~TakePartyItem("MISC63")
+GiveItemCreate("MISC86",LastTalkedToBy,0,0,0)
+SetGlobal("Rufie","GLOBAL",3)
+AddexperienceParty(1000)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("Rufcut01")~ JOURNAL ~I um... rescued "little" Rufie and returned him to the... child... named Albert.  I do not wish to know where they went.  With luck I will never find out.~ /* #6509 */ EXIT
+END
+
+END

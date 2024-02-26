@@ -1,0 +1,8 @@
+IF
+	Range([PC],5)
+	Global("VP_ResqueLeina","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ResqueLeina","GLOBAL",3)
+		ActionOverride(Player1,DisplayStringHead(Myself,~It looks as if a struggle has taken place here. Someone was dragged out of the room. There are a few footprints on the carpet, and some items are tossed carelessly into corners.~))
+END

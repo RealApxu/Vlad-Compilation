@@ -1,0 +1,123 @@
+IF
+	Global("A6StartARAM00","ARAM00",0)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		SetGlobal("A6StartARAM00","ARAM00",1)
+		SetGlobal("VP_In_BG1","GLOBAL",0)
+		FadeToColor([30.0],0)
+		Wait(3)
+		ActionOverride(Player1,DropInventory())
+		ActionOverride(Player2,DropInventory())
+		ActionOverride(Player3,DropInventory())
+		ActionOverride(Player4,DropInventory())
+		ActionOverride(Player5,DropInventory())
+		ActionOverride(Player6,DropInventory())
+		Wait(1)
+		DayNight(MIDNIGHT)
+		Explore()
+		MoveViewPoint([618.210],INSTANT)
+		ActionOverride(Player1,JumpToPoint([618.210]))
+		ActionOverride(Player2,JumpToPoint([756.267]))
+		ActionOverride(Player2,FaceObject(Player1))
+		ActionOverride(Player3,JumpToPoint([862.329]))
+		ActionOverride(Player3,FaceObject(Player1))
+		ActionOverride(Player4,JumpToPoint([847.368]))
+		ActionOverride(Player4,FaceObject(Player2))
+		ActionOverride(Player5,JumpToPoint([659.278]))
+		ActionOverride(Player5,FaceObject(Player1))
+		ActionOverride(Player6,JumpToPoint([638.291]))
+		ActionOverride(Player6,FaceObject(Player3))
+		ApplySpellRES("BGSLEEP",Player2) // Sleep
+		ApplySpellRES("BGSLEEP",Player3) // Sleep
+		ApplySpellRES("BGSLEEP",Player4) // Sleep
+		ApplySpellRES("BGSLEEP",Player5) // Sleep
+		ApplySpellRES("BGSLEEP",Player6) // Sleep
+		ApplySpellRES("BGSLEEP",Player1) // Sleep
+		CreateCreature("AMBMAEVR",[515.360],4) // Mae'Var
+		CreateCreature("AMBTHIF2",[568.394],2) // Shadow Thief
+		CreateCreature("AMBSTHF0",[561.205],5) // Shadow Thief
+		CreateCreature("AMBSTHF0",[720.260],5) // Shadow Thief
+		CreateCreature("AMBSTHF0",[959.292],10) // Shadow Thief
+		CreateCreature("AMBSTHF0",[706.352],2) // Shadow Thief
+		CreateCreature("AMBSTHF0",[588.320],5) // Shadow Thief
+		CreateCreature("AMBSTHF0",[739.176],5) // Shadow Thief
+		CreateCreature("AMBSTHF0",[486.266],5) // Shadow Thief
+		CreateCreature("AMBSTHF0",[634.386],10) // Shadow Thief
+		CreateCreature("AMBSTHF0",[657.142],2) // Shadow Thief
+		CreateCreature("AMBSTHF0",[509.401],5) // Shadow Thief
+		ActionOverride("AMBMAEVR",FaceObject(Player1))
+		ActionOverride("AMBTHIF2",FaceObject(Player1))
+		ActionOverride("AMBSTHF0",FaceObject(Player1))
+		FadeFromColor([30.0],0)
+		Wait(3)
+		ActionOverride("AMBTHIF2",DisplayStringWait("AMBTHIF2",~We have incapacitated them all, Mae'Var.  What should be done now?~))
+		Wait(6)
+		ActionOverride("AMBMAEVR",DisplayStringWait("AMBMAEVR",~Take them all back to Amn.  Our client awaits.~))
+		Wait(3)
+		FadeToColor([30.0],0)
+		Wait(3)
+		SetGlobal("SPRITE_IS_DEADIMOEN2","GLOBAL",0)
+		ActionOverride("Imoen2",LeaveParty())
+		ActionOverride("Imoen2",ChangeAIScript("",DEFAULT))
+		SetGlobal("ImoenPartyBG1","GLOBAL",1)
+		ActionOverride("Imoen2",MoveBetweenAreas("AR0602",[3198.2837],6))
+		SetGlobal("SPRITE_IS_DEADJAHEIRA","GLOBAL",0)
+		ApplySpellRES("BGDEX17","Jaheira") // No such index
+		ActionOverride("Jaheira",LeaveParty())
+		ActionOverride("Jaheira",ChangeAIScript("",DEFAULT))
+		SetGlobal("JaheiraPartyBG1","GLOBAL",1)
+		ActionOverride("Jaheira",MoveBetweenAreas("AR0602",[3898.2676],6))
+		SetGlobal("SPRITE_IS_DEADMINSC","GLOBAL",0)
+		ActionOverride("Minsc",LeaveParty())
+		ActionOverride("Minsc",ChangeAIScript("",DEFAULT))
+		SetGlobal("MinscPartyBG1","GLOBAL",1)
+		ActionOverride("Minsc",MoveBetweenAreas("AR0602",[4029.2759],6))
+		SetGlobal("SPRITE_IS_DEADVICONIA","GLOBAL",0)
+		ActionOverride("Viconia",LeaveParty())
+		ActionOverride("Viconia",ChangeAIScript("",DEFAULT))
+		SetGlobal("ViconiaPartyBG1","GLOBAL",1)
+		ActionOverride("Viconia",MoveBetweenAreas("AR1000",[1821.1081],11))
+		SetGlobal("SPRITE_IS_DEADEDWIN","GLOBAL",0)
+		ApplySpellRES("BGSTR10","Edwin") // No such index
+		ApplySpellRES("BGWIS10","Edwin") // No such index
+		ActionOverride("Edwin",LeaveParty())
+		ActionOverride("Edwin",ChangeAIScript("",DEFAULT))
+		SetGlobal("EdwinPartyBG1","GLOBAL",1)
+		ActionOverride("Edwin",MoveBetweenAreas("AR0304",[852.340],4))
+		SetGlobal("VP_AddSharTeelHere","GLOBAL",0) //this is to add SharTeel here if NeJ is installed
+		Wait(1)
+		ActionOverride(Player2,LeaveParty())
+		ActionOverride(Player2,EscapeArea())
+		ActionOverride(Player3,LeaveParty())
+		ActionOverride(Player3,EscapeArea())
+		ActionOverride(Player4,LeaveParty())
+		ActionOverride(Player4,EscapeArea())
+		ActionOverride(Player5,LeaveParty())
+		ActionOverride(Player5,EscapeArea())
+		ActionOverride(Player6,LeaveParty())
+		ActionOverride(Player6,EscapeArea())
+		SetGlobal("SPRITE_IS_DEADCALAHAN","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADCARBOS","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADDIANA","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADEDWIN","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADFTOWNNASH3","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADGORF","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADKING","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADKNIGHT1","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADPAWN","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADQUEEN","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADROGER","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADSENDAI","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADSHANK","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADTARNOR","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADTAZOK","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADWILLIAM","GLOBAL",0)
+		Wait(1)
+		ActionOverride(Player1,LeaveAreaLUAPanic("AR0602","",[3744.2805],12))
+		ActionOverride(Player1,LeaveAreaLUA("AR0602","",[3744.2805],12))
+		Wait(1)
+		FadeFromColor([30.0],0)
+		Wait(3)
+		EndCutSceneMode()
+END

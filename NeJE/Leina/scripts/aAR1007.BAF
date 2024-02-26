@@ -1,0 +1,45 @@
+IF
+	GlobalGT("VP_ResqueLeina","GLOBAL",7)
+	Global("VP_ActivateMaze","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ActivateMaze","MYAREA",1)
+		TriggerActivation("ToTT0080",TRUE)
+END
+
+IF
+	Global("VP_Govan_Bribes_Me","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Govan_Bribes_Me","GLOBAL",4)
+		ActionOverride("Vulova",DestroySelf())
+		CreateCreature("Govan3",[694.570],10)
+		MoveGlobal("AR1007","Leina",[625.610])
+		CreateCreature("GovBud",[254.580],10)
+		CreateCreature("GovDude",[693.186],0)
+		Continue()
+END
+
+IF
+	Global("VP_Killian_Bribes_Me","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Killian_Bribes_Me","GLOBAL",2)
+		ActionOverride("Vulova",DestroySelf())
+		CreateCreature("Govan3",[694.570],10)
+		CreateCreature("Auberon",[625.610],10)
+		CreateCreature("Beatrice",[625.600],10)
+		Continue()
+END
+
+IF
+	Global("BodhiJob","GLOBAL",0)
+	Global("VP_Guild_Attacked","GLOBAL",1)
+	Global("VulovaSpawn","AR1007",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VulovaSpawn","AR1007",1)
+		CreateCreature("VULOVA",[617.607],10)  // Senior Armagaran Vulova
+		CreateCreature("VULFGT01",[609.518],12)  // Laen Torg
+		CreateCreature("VULFGT02",[528.893],12)  // Vulova Wizard
+END

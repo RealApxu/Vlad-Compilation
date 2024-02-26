@@ -1,0 +1,14 @@
+IF
+	OnCreation()
+	Global("VP_Kr_TheWar","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_TheWar","GLOBAL",6)
+		CreateCreature("ADJUTANT",[488.558],10)
+		CreateCreature("CRGUARD1",[500.454],10)
+		CreateCreature("CRAUMER",[552.476],10)
+		CreateCreature("CRGUARD2",[427.548],10)
+		CreateCreature("CRGUARD3",[525.591],10)
+END
+
+

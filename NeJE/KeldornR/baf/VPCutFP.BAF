@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		SetGlobal("VP_Anarg_Is_Good","GLOBAL",1)
+		ActionOverride("kaypall",EscapeArea())
+		ActionOverride("kaypala",EscapeArea())
+		EndCutSceneMode()
+END

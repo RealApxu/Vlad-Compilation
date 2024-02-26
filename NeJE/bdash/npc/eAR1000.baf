@@ -1,0 +1,87 @@
+IF
+	InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyLT(9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		ActionOverride("Viconia",DestroySelf())
+		CreateCreature("Viconi8",[1821.1080],0)
+END
+
+IF
+	InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(8)
+	LevelPartyLT(10)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		ActionOverride("Viconia",DestroySelf())
+		CreateCreature("Viconi9",[1821.1080],0)
+END
+
+IF
+	InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(9)
+	LevelPartyLT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		ActionOverride("Viconia",DestroySelf())
+		CreateCreature("Viconi11",[1821.1080],0)
+END
+
+IF
+	InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(11)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		ActionOverride("Viconia",DestroySelf())
+		CreateCreature("Viconi13",[1821.1080],0)
+END
+
+IF
+	!InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyLT(9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		CreateCreature("Viconi8",[1821.1080],0)
+END
+
+IF
+	!InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(8)
+	LevelPartyLT(10)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		CreateCreature("Viconi9",[1821.1080],0)
+END
+
+IF
+	!InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(9)
+	LevelPartyLT(12)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		CreateCreature("Viconi11",[1821.1080],0)
+END
+
+IF
+	!InMyArea("Viconia")
+	Global("VP_Create_Viconia","GLOBAL",0)
+	LevelPartyGT(11)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Create_Viconia","GLOBAL",1)
+		CreateCreature("Viconi13",[1821.1080],0)
+END

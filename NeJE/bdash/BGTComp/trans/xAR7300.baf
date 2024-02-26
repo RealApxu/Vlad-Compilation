@@ -1,0 +1,39 @@
+IF
+	Global("ENDOFBG1","GLOBAL",1)
+	PartyHasItem("VPGenBag") // Cloth Sack
+	Global("VP_Save_GenBag","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_GenBag","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ENDOFBG1","GLOBAL",1)
+	PartyHasItem("vpptnbag") // Potion Case
+	Global("VP_Save_PotionCase","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_PotionCase","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ENDOFBG1","GLOBAL",1)
+	PartyHasItem("vpscrbag") // Scroll Tubus
+	Global("VP_Save_ScrollTub","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_ScrollTub","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("ENDOFBG1","GLOBAL",1)
+	PartyHasItem("vpambelt") // Quiver
+	Global("VP_Save_Quiver","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Save_Quiver","GLOBAL",1)
+		Continue()
+END

@@ -1,0 +1,18 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Keldorn")  // Keldorn
+		FadeToColor([30.0],0)
+		Wait(1)
+		LeaveAreaLUAPanic("KR0002","",[1160.716],10)
+		LeaveAreaLUA("KR0002","",[1160.716],10)
+		ActionOverride(Player1,LeaveAreaLUA("KR0002","",[1160.716],10))
+		Wait(1)
+		CreateCreature("SlayerDr",[1202.680],2)  // Slayer
+		CreateCreature("KrRing",[1202.680],2)  // Ring
+		Wait(1)
+		FadeFromColor([30.0],0)
+		Wait(1)
+		EndCutSceneMode()
+END

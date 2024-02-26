@@ -1,0 +1,510 @@
+IF
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	InMyArea(Player1)
+	HPPercentLT(Player1,20)
+	InParty(Myself)
+	Exists(LastAttackerOf(Player1))
+	See(LastAttackerOf(Player1))
+	ActionListEmpty()
+	!CombatCounter(0)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastAttackerOf(Player1),75)
+END
+
+IF
+	Global("ValygarSummoned","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!InParty(Myself)
+	Global("NPCFight","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NPCFight","LOCALS",1)
+		ChangeAIScript("valygx",SPECIFICS)
+		ChangeAIScript("useitem",GENERAL)
+		ChangeAIScript("",DEFAULT)
+		SetDialog("")
+		Continue()
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		ChangeAIScript("valygx",SPECIFICS)
+		ChangeAIScript("useitem",GENERAL)
+		Enemy()
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!InParty(Myself)
+	Global("NPCFight","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NPCFight","LOCALS",0)
+		ChangeAIScript("",GENERAL)
+		ChangeAIScript("",SPECIFICS)
+		Continue()
+END
+
+// ToB Romance
+
+IF
+	OR(2)
+		Global("ValygarRomanceActive","GLOBAL",1)
+		Global("ValygarRomanceActive","GLOBAL",2)
+	Global("ExpLoveTalk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ExpLoveTalk","LOCALS",1)
+		RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
+END
+
+IF
+	InParty(Myself)
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	!AreaCheck("AR1300")
+	See(Player1)
+	CombatCounter(0)
+	OR(3)
+		Global("ExpLoveTalk","LOCALS",1)
+		Global("ExpLoveTalk","LOCALS",3)
+		Global("ExpLoveTalk","LOCALS",5)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("VP_ValygarRomanceD","GLOBAL",10)
+		SetGlobal("VP_LoveTalkDelay","LOCALS",1)
+END
+
+
+IF
+	InParty(Myself)
+	RealGlobalTimerExpired("VP_ValygarRomanceD","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",1)
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	OR(3)
+		Global("ExpLoveTalk","LOCALS",1)
+		Global("ExpLoveTalk","LOCALS",3)
+		Global("ExpLoveTalk","LOCALS",5)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ExpLoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+// ToB Banters
+
+IF
+	InParty(Myself)
+	InParty("Imoen2")
+	!Dead("Imoen2")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar1","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar1","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Imoen1","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Imoen1","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Imoen2")
+	See("Imoen2")
+	!Dead("Imoen2")
+	!StateCheck("Imoen2",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar1","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar1","LOCALS",2)
+		Interact("Imoen2")
+END
+
+IF
+	InParty(Myself)
+	InParty("Imoen2")
+	!Dead("Imoen2")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar2","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar2","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Imoen2","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Imoen2","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Imoen2")
+	See("Imoen2")
+	!Dead("Imoen2")
+	!StateCheck("Imoen2",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar2","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar2","LOCALS",2)
+		Interact("Imoen2")
+END
+
+IF
+	InParty(Myself)
+	InParty("Mazzy")
+	!Dead("Mazzy")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar3","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar3","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Mazzy","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Mazzy","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Mazzy")
+	See("Mazzy")
+	!Dead("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar3","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar3","LOCALS",2)
+		Interact("Mazzy")
+END
+
+IF
+	InParty(Myself)
+	InParty("Sarevok")
+	!Dead("Sarevok")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar4","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar4","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Sarevok1","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Sarevok1","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Sarevok")
+	See("Sarevok")
+	!Dead("Sarevok")
+	!StateCheck("Sarevok",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar4","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar4","LOCALS",2)
+		Interact("Sarevok")
+END
+
+IF
+	InParty(Myself)
+	InParty("Sarevok")
+	!Dead("Sarevok")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar5","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar5","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Sarevok2","GLOBAL",FOUR_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Sarevok2","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Sarevok")
+	See("Sarevok")
+	!Dead("Sarevok")
+	!StateCheck("Sarevok",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar5","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar5","LOCALS",2)
+		Interact("Sarevok")
+END
+
+IF
+	InParty(Myself)
+	InParty("Sarevok")
+	!Dead("Sarevok")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar6","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar6","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Sarevok3","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Sarevok3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Sarevok")
+	See("Sarevok")
+	!Dead("Sarevok")
+	!StateCheck("Sarevok",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar6","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar6","LOCALS",2)
+		Interact("Sarevok")
+END
+
+IF
+	InParty(Myself)
+	InParty("Sarevok")
+	!Dead("Sarevok")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar7","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar7","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Sarevok4","GLOBAL",EIGHT_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Sarevok4","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Sarevok")
+	See("Sarevok")
+	!Dead("Sarevok")
+	!StateCheck("Sarevok",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar7","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar7","LOCALS",2)
+		Interact("Sarevok")
+END
+
+IF
+	InParty(Myself)
+	InParty("Kachiko")
+	!Dead("Kachiko")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar8","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar8","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Kachiko3","GLOBAL",SEVEN_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Kachiko3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Kachiko")
+	See("Kachiko")
+	!Dead("Kachiko")
+	!StateCheck("Kachiko",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar8","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar8","LOCALS",2)
+		Interact("Kachiko")
+END
+
+IF
+	InParty(Myself)
+	InParty("Kachiko")
+	!Dead("Kachiko")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar9","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar9","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Kachiko4","GLOBAL",TEN_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Kachiko4","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Kachiko")
+	See("Kachiko")
+	!Dead("Kachiko")
+	!StateCheck("Kachiko",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar9","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar9","LOCALS",2)
+		Interact("Kachiko")
+END
+
+IF
+	InParty(Myself)
+	InParty("Anomen")
+	!Dead("Anomen")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar10","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar10","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Anomen6","GLOBAL",FIVE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Anomen6","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Anomen")
+	See("Anomen")
+	!Dead("Anomen")
+	!StateCheck("Anomen",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar10","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar10","LOCALS",2)
+		Interact("Anomen")
+END
+
+IF
+	InParty(Myself)
+	InParty("Aerie")
+	!Dead("Aerie")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar11","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar11","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Aerie3","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Aerie3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Aerie")
+	See("Aerie")
+	!Dead("Aerie")
+	!StateCheck("Aerie",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar11","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar11","LOCALS",2)
+		Interact("Aerie")
+END
+
+IF
+	InParty(Myself)
+	InParty("Yoshimo")
+	!Dead("Yoshimo")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar12","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar12","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Yoshimo3","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Yoshimo3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Yoshimo")
+	See("Yoshimo")
+	!Dead("Yoshimo")
+	!StateCheck("Yoshimo",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar12","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar12","LOCALS",2)
+		Interact("Yoshimo")
+END
+
+IF
+	InParty(Myself)
+	InParty("Nalia")
+	!Dead("Nalia")
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BExpValygar13","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar13","LOCALS",1)
+		SetGlobalTimer("VP_Valygar_Nalia3","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Nalia3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Nalia")
+	See("Nalia")
+	!Dead("Nalia")
+	!StateCheck("Nalia",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BExpValygar13","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BExpValygar13","LOCALS",2)
+		Interact("Nalia")
+END
+
+IF
+	InParty(Myself)
+	Global("AnomenValygarFight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AnomenValygarFight","GLOBAL",2)
+		SetLeavePartyDialogFile()
+		LeaveParty()
+		ChangeAIScript("valvsan",SPECIFICS)
+		ChangeAIScript("useitem",GENERAL)
+		ChangeAIScript("",DEFAULT)
+END
+
+

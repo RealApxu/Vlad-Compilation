@@ -1,0 +1,95 @@
+IF
+	InMyArea("Keldorn")
+	XPLT(Player1,160000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		ActionOverride("Keldorn",DestroySelf())
+		CreateCreature("Keldor8",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	InMyArea("Keldorn")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		ActionOverride("Keldorn",DestroySelf())
+		CreateCreature("Keldor9",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	InMyArea("Keldorn")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		ActionOverride("Keldorn",DestroySelf())
+		CreateCreature("Keldor10",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	InMyArea("Keldorn")
+	XPGT(Player1,849999)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		ActionOverride("Keldorn",DestroySelf())
+		CreateCreature("Keldor12",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	!InMyArea("Keldorn")
+	XPLT(Player1,160000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		CreateCreature("Keldor8",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	!InMyArea("Keldorn")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		CreateCreature("Keldor9",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	!InMyArea("Keldorn")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		CreateCreature("Keldor10",[587.811],7) // Keldorn
+		Continue()
+END
+
+IF
+	!InMyArea("Keldorn")
+	XPGT(Player1,849999)
+	Global("VP_CreateKeldorn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKeldorn","GLOBAL",1)
+		CreateCreature("Keldor12",[587.811],7) // Keldorn
+		Continue()
+END

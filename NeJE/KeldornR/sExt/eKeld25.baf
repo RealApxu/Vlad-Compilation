@@ -1,0 +1,259 @@
+//Trigger
+IF
+	AreaCheck("AR4000")
+	Global("VP_KeldornMatch","GLOBAL",1)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	Global("VP_ToB_KrBanters","GLOBAL",0)
+THEN
+	RESPONSE #100
+  		SetGlobal("VP_ToB_KrBanters","GLOBAL",1)
+END
+
+//Banter with PC about Sarevok
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	InParty(Myself)
+	InParty("Sarevok")
+	Global("VP_BSarevok","LOCALS",0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+  	SetGlobal("VP_BSarevok","LOCALS",1)
+  	RealSetGlobalTimer("VP_SBanter_Delay","GLOBAL",5)
+END
+
+IF
+	RealGlobalTimerExpired("VP_SBanter_Delay","GLOBAL")
+	InParty(Myself)
+	InParty("Sarevok")
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_BSarevok","LOCALS",1)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BSarevok","LOCALS",2)
+		StartDialogueNoSet(Player1)
+END
+
+//LT4-TOB - after meeting the bard girl in Saradush
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	InParty(Myself)
+	InParty("Sarevok")
+	Global("VP_Kr_NextTalk","GLOBAL",3)
+	Global("VP_ToB_LoveTalk","LOCALS",0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+	Global("VP_Kr_Bard_Song","GLOBAL",2)
+THEN
+	RESPONSE #100
+  		SetGlobal("VP_ToB_LoveTalk","LOCALS",1)
+  	  	RealSetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",60)
+END
+
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	InParty(Myself)
+	!InParty("Sarevok")
+	Global("VP_ToB_LoveTalk","LOCALS",0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+	Global("VP_Kr_Bard_Song","GLOBAL",2)
+THEN
+	RESPONSE #100
+  		SetGlobal("VP_ToB_LoveTalk","LOCALS",1)
+  	  	RealSetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",60)
+END
+
+IF
+	RealGlobalTimerExpired("VP_ToB_Kr_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_ToB_LoveTalk","LOCALS",1)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ToB_LoveTalk","LOCALS",2)
+		StartDialogueNoSet(Player1)
+END
+
+//LT8-TOB
+IF
+	InParty(Myself)
+	OR(2)
+		Global("SPRITE_IS_DEADhgwra01","GLOBAL",1)
+		Global("VP_Kr_LovedOne","GLOBAL",1)
+	!AreaCheck("AR5202")
+	Global("VP_Kr_NextTalk","GLOBAL",5)
+	RealGlobalTimerExpired("VP_ToB_Kr_RTimer","GLOBAL")
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+	Global("VP_Kr_GorionWard","GLOBAL",0)
+THEN
+	RESPONSE #100
+	SetGlobal("VP_Kr_GorionWard","GLOBAL",1)
+  	SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",1)
+  	RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",10)
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_GorionWard","GLOBAL",1)
+  	Global("VP_Kr_ToBTalkDelay","GLOBAL",1)
+	RealGlobalTimerExpired("VP_Kr_DelayTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",0)
+		SetGlobal("VP_Kr_GorionWard","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT10-TOB - Yaga-Shura is dead
+IF
+	Global("SPRITE_IS_DEADyaga01","GLOBAL",1)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_YagaSh_Dead","LOCALS",0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+	Global("VP_Kr_NextTalk","GLOBAL",6)
+	RealGlobalTimerExpired("VP_ToB_Kr_RTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_YagaSh_Dead","LOCALS",1)
+  		SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",1)
+  		RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",10)
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_YagaSh_Dead","LOCALS",1)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",1)
+	RealGlobalTimerExpired("VP_Kr_DelayTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",0)
+		SetGlobal("VP_Kr_YagaSh_Dead","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT12-TOB - Dialogue with Torm, then morning dialogue
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	Global("VP_ToB_LoveTalk","LOCALS",7)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ToB_LoveTalk","LOCALS",9)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut30")
+END
+
+//LT14-TOB - Slayer's last Talk
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	GlobalTimerExpired("VP_ToB_Kr_Timer","GLOBAL")
+	Global("VP_ToB_LoveTalk","LOCALS",11)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ToB_LoveTalk","LOCALS",12)
+		SetGlobal("VP_Slayer_Farewell","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut28")
+END
+
+//LT16-TOB - Ravager is dead
+IF
+	InParty(Myself)
+	Global("SPRITE_IS_DEADCHALRV01","GLOBAL",1)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+	Global("VP_Kr_LastLT","LOCALS",0)
+	Global("VP_KrRomanceActive","GLOBAL",2)
+THEN
+	RESPONSE #100
+	SetGlobal("VP_Kr_LastLT","LOCALS",1)
+  	SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",1)
+  	RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",10)
+END
+
+IF
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Kr_LastLT","LOCALS",1)
+  	Global("VP_Kr_ToBTalkDelay","GLOBAL",1)
+  	Global("VP_KrRomanceActive","GLOBAL",2)
+	RealGlobalTimerExpired("VP_Kr_DelayTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_ToBTalkDelay","GLOBAL",0)
+		SetGlobal("VP_Kr_LastLT","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Keldorn",INSTANT)
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//Disabling ToB original banters
+IF
+	Global("ExpBKeldorn4","LOCALS",0)
+	!Global("VP_ToB_KrBanters","GLOBAL",0)
+THEN
+	RESPONSE #100
+	SetGlobal("ExpBKeldorn4","LOCALS",1)
+END
+
+IF
+	Global("ExpBKeldorn5","LOCALS",0)
+	!Global("VP_ToB_KrBanters","GLOBAL",0)
+THEN
+	RESPONSE #100
+	SetGlobal("ExpBKeldorn5","LOCALS",1)
+END

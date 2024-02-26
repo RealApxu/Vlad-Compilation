@@ -1,0 +1,11 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Valygar")
+	Global("ValygarBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ValygarBio","GLOBAL",1)
+		TextScreen("VALYGND")
+		SmallWait(1)
+		Continue()
+END

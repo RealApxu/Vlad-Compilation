@@ -1,0 +1,9 @@
+IF
+	GlobalGT("AsylumPlot","GLOBAL",55)
+	Global("ButtPluggingCumBubble","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ButtPluggingCumBubble","GLOBAL",1)
+		Kill(Myself)
+END
+

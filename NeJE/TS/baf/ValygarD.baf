@@ -1,0 +1,188 @@
+IF
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	Global("LoveTalk","LOCALS",15)
+	See(Player1)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("LoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF 
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	See(Player1)
+	CombatCounter(0)
+	OR(3)
+		Global("LoveTalk","LOCALS",23)
+		Global("LoveTalk","LOCALS",25)
+		Global("LoveTalk","LOCALS",43)
+THEN
+	RESPONSE #100
+		IncrementGlobal("LoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_DrowBanterTimer","GLOBAL")
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	See(Player1)
+	CombatCounter(0)
+	Global("VP_DrowBanter","LOCALS",2)
+	RealGlobalTimerExpired("VP_DrowBanterTimer","GLOBAL")
+	OR(10)
+		AreaCheck("AR2100")
+		AreaCheck("AR2200")
+		AreaCheck("AR2201")
+		AreaCheck("AR2202")
+		AreaCheck("AR2203")
+		AreaCheck("AR2204")
+		AreaCheck("AR2205")
+		AreaCheck("AR2206")
+		AreaCheck("AR2207")
+		AreaCheck("AR2209")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_DrowBanter","LOCALS",3)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	InParty(Myself)
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	!Global("ValygarRomanceActive","GLOBAL",0)
+	!Global("ValygarRomanceActive","GLOBAL",3)
+	Global("ValygarMatch","GLOBAL",1)
+	!AreaCheck("AR1300")
+	See(Player1)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("LoveTalk","LOCALS",41)
+THEN
+	RESPONSE #100
+		SetGlobal("LoveTalk","LOCALS",42)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Mazzy1","GLOBAL") 
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Mazzy")
+	See("Mazzy")
+	!Dead("Mazzy")
+	CombatCounter(0)
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BValygar2","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar2","LOCALS",2)
+		Interact("Mazzy")
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Viconia3","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Viconia")
+	See("Viconia")
+	!Dead("Viconia")
+	CombatCounter(0)
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BValygar19","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar19","LOCALS",2)
+		Interact("Viconia")
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Viconia4","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Viconia")
+	See("Viconia")
+	!Dead("Viconia")
+	CombatCounter(0)
+	Global("ValygarMatch","GLOBAL",1)
+	Global("VP_BValygar20","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar20","LOCALS",2)
+		Interact("Viconia")
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Yoshimo1","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Yoshimo")
+	See("Yoshimo")
+	!Dead("Yoshimo")
+	CombatCounter(0)
+	Global("VP_BValygar26","LOCALS",1)
+	TimeGT(DUSK_END)
+	TimeLT(DAWN_START)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar26","LOCALS",2)
+		Interact("Yoshimo")
+END
+
+IF
+	GlobalTimerExpired("VP_Valygar_Yoshimo2","GLOBAL")
+	Global("VP_LoveTalkDelay","LOCALS",0)
+	InParty(Myself)
+	InParty("Yoshimo")
+	See("Yoshimo")
+	!Dead("Yoshimo")
+	CombatCounter(0)
+	Global("VP_BValygar27","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar27","LOCALS",2)
+		Interact("Yoshimo")
+END
+
+//This is ToB sleep script, which is copied in valyg25d.bcs just for case
+IF
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	Global("ValygarRomanceActive","GLOBAL",2)
+	See(Player1)
+	CombatCounter(0)
+	Global("ExpLoveTalk","LOCALS",7)
+THEN
+	RESPONSE #100
+		IncrementGlobal("ExpLoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END
+
+IF
+	RealGlobalTimerExpired("VP_ValygarRomance","GLOBAL")
+	Global("ValygarRomanceActive","GLOBAL",2)
+	See(Player1)
+	CombatCounter(0)
+	OR(3)
+		Global("ExpLoveTalk","LOCALS",9)
+		Global("ExpLoveTalk","LOCALS",11)
+		Global("ExpLoveTalk","LOCALS",13)
+THEN
+	RESPONSE #100
+		DayNight(MIDNIGHT)
+		IncrementGlobal("ExpLoveTalk","LOCALS",1)
+		PlaySong(999999)
+		Interact(Player1)
+END

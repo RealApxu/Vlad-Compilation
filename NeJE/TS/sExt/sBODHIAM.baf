@@ -1,0 +1,15 @@
+IF
+	Global("ValygarVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate0801","AR0800",3)
+		ForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+	Global("VP_SimeVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate0801","AR0800",3)
+		ForceSpell(Myself,DRYAD_TELEPORT)
+END

@@ -1,0 +1,19 @@
+IF
+	Global("VP_Govan_Bribes_Me","GLOBAL",1)
+	Global("VP_KillianSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KillianSpawn","GLOBAL",1)
+		CreateCreature("Killian",[600.690],4) // Killian - Thug
+END
+
+IF
+	GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
+	Global("VP_Samuel_Helps","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Samuel_Helps","GLOBAL",2)
+		CreateCreature("FFBART",[348.411],14) // Samuel Thunderburp
+END
+
+

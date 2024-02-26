@@ -1,0 +1,10 @@
+IF
+	OnCreation()
+	Global("VP_Place_DragArm","MYAREA",0)
+	Global("TeleportDialog","GLOBAL",0)
+	Global("StartIWD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Place_DragArm","MYAREA",1)
+		ActionOverride("Bones1",CreateItem("DRAGARM",0,0,0))
+END

@@ -1,0 +1,120 @@
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	Global("VP_BPC","LOCALS",12)
+	See(Player1)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_BPC","LOCALS",1)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",THREE_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	See(Player1)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",16)
+	Global("VP_BPC_Buffer2","LOCALS",2)
+	Global("VP_Bathe_Talk","LOCALS",0)
+	!AreaCheck("AR0313")
+	!AreaCheck("AR0314")
+	!AreaCheck("AR0406")
+	!AreaCheck("AR0509")
+	!AreaCheck("AR0510")
+	!AreaCheck("AR0511")
+	!AreaCheck("AR0704")
+	!AreaCheck("AR0709")
+	!AreaCheck("AR1105")
+	!AreaCheck("AR2010")
+	!AreaCheck("AR0021")
+	!AreaType(CITY)
+	!AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_BPC_Buffer2","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",13)
+	Global("VP_LookAtStars","LOCALS",1)
+	Gender(Player1,MALE)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LookAtStars","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Anomen","GLOBAL")
+	Global("AnomenIsKnight","GLOBAL",0)
+	Global("AnomenIsNotKnight","GLOBAL",0)
+	InParty(Myself)
+	InParty("Anomen")
+	See("Anomen")
+	!Dead("Anomen")
+	CombatCounter(0)
+	Global("VP_BAnomen","LOCALS",1)
+	!See([ENEMY])
+	TimeGT(DUSK_START)
+	TimeLT(DAWN_START)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAnomen","LOCALS",2)
+		Interact("Anomen")
+END
+
+IF
+	GlobalTimerExpired("VP_NewLT_Timer","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	Global("VP_LoveTalk","LOCALS",19)
+	Gender(Player1,MALE)
+	See(Player1)
+	CombatCounter(0)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_LoveTalk","LOCALS",1)
+		SetGlobalTimer("VP_NewLT_Timer","GLOBAL",ONE_DAY)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END

@@ -1,0 +1,29 @@
+IF
+	Global("ItemMaker","GLOBAL",97)
+	Global("ImpForgeStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ImpForgeStuff","GLOBAL",0)
+		GiveItemCreate("UMHULK2",Player1,0,0,0)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Global("ItemMaker","GLOBAL",98)
+	Global("ImpForgeStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ImpForgeStuff","GLOBAL",0)
+		GiveItemCreate("BLACKNI2",Player1,0,0,0)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Global("ItemMaker","GLOBAL",99)
+	Global("ImpForgeStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ImpForgeStuff","GLOBAL",0)
+		GiveItemCreate("SW2HSAR",Player1,0,0,0)
+		StartDialogueNoSet(Player1)
+END

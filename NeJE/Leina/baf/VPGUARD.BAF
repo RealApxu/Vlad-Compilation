@@ -1,0 +1,37 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		Shout(89)
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy,30)
+END
+
+IF
+	!See([PC])
+THEN
+	RESPONSE #100
+		Shout(89)
+		MoveToObject([PC])
+END
+
+IF
+	Heard([ANYONE],89)
+	Allegiance(Myself,NEUTRAL)
+	!Class(Myself,INNOCENT)
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],89)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+

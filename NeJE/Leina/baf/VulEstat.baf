@@ -1,0 +1,18 @@
+IF
+	GlobalGT("VP_ResqueLeina","GLOBAL",6)
+	GlobalLT("VP_ResqueLeina","GLOBAL",10)
+	Global("VP_Spawn_HoodedMan","AR1000",0)
+	Global("WorkingForAran","GLOBAL",0)
+	OR(2)
+		Global("BodhiJob","GLOBAL",0)
+		GlobalLT("BodhiAppear","GLOBAL",2)
+	OR(2)
+		PickLockFailed("DOOR1007")
+		Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Spawn_HoodedMan","AR1000",1)
+		CreateCreatureObject("HoodMan",LastTrigger,0,0,0)
+END
+
+

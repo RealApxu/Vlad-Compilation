@@ -1,0 +1,8 @@
+IF
+	Global("AnomenSummoned","GLOBAL",1)
+	Global("AnomenIsKnight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,ANOMEN_TITLE)
+		Continue()
+END

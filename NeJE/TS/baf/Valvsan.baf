@@ -1,0 +1,43 @@
+IF
+	See("Anomen")
+	!Dead("Anomen")
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	OR(2)
+		Dead("Anomen")
+		!Detect("Anomen")
+	CombatCounter(0)
+	!Allegiance(Myself,ENEMY)
+	Global("AnomenValygarFight","GLOBAL",2)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("AnomenValygarFight","GLOBAL",3)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	OR(2)
+		Dead("Anomen")
+		!Detect("Anomen")
+	CombatCounter(0)
+	Global("AnomenValygarFight","GLOBAL",2)
+	!See([PC])
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+

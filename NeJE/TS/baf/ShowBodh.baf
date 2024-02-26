@@ -1,0 +1,9 @@
+IF
+	IsOverMe([PC])
+	Global("ThiefGroup","GLOBAL",2)
+	Global("VP_BodhiIsland_Fix","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BodhiIsland_Fix","MYAREA",1)
+		CreateCreature("ppbodhi3",[130.1201],8)  // Bodhi
+END

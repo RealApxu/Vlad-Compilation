@@ -1,0 +1,16 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Masaki")
+		ReallyForceSpell("Kachiko",WIZARD_POWER_WORD_STUN)
+		ActionOverride("Kachiko",SetLeavePartyDialogFile())
+		ActionOverride("Kachiko",ChangeAIScript("",DEFAULT))
+		ActionOverride("Kachiko",LeaveParty())
+		ActionOverride("Kachiko",MoveGlobal("AR0086",Myself,[100.100]))
+		Wait(1)
+		ForceSpell(Myself,DRYAD_TELEPORT)
+		EndCutSceneMode()
+END
+
+

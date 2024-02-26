@@ -1,0 +1,2 @@
+ADD_TRANS_TRIGGER ~VALRAN01~ 0 ~Global("HiredByCowled","GLOBAL",1)~ DO 2
+

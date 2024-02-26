@@ -1,0 +1,22 @@
+IF
+	OnCreation()
+	Global("VP_Mortuary_Entered","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Mortuary_Entered","MYAREA",1)
+		Explore()
+		CreateCreature("Mummy",[947.2397],12) // Mummy
+		CreateCreature("Mummy",[1520.2328],11) // Mummy
+		CreateCreature("Mummy",[1417.2564],10) // Mummy
+		CreateCreature("Mummy",[909.1781],1) // Mummy
+		CreateCreature("Mummy",[335.1693],14) // Mummy
+		CreateCreature("Mummy",[680.1041],0) // Mummy
+		CreateCreature("Mummy",[860.1142],2) // Mummy
+		CreateCreature("Mummy",[1011.932],5) // Mummy
+		CreateCreature("Mummy",[1303.894],12) // Mummy
+		CreateCreature("Mummy",[2942.772],2) // Mummy
+		CreateCreature("Mummy",[3205.661],3) // Mummy
+		CreateCreature("Mummy",[2979.967],9) // Mummy
+		CreateCreature("Mummy",[3379.965],1) // Mummy
+		CreateCreature("Kelemvor",[3272.2144],1) // Kelemvor
+END

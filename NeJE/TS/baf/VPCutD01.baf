@@ -1,0 +1,18 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(2)
+		CreateCreatureObject("DynaheiS","Minsc",0,0,0)
+		// ActionOverride("Minsc",DropInventory())
+		ActionOverride("Minsc",LeaveParty())
+		ActionOverride("Minsc",MoveGlobal("AR0086",Myself,[100.100]))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		ActionOverride("Sime",Interact(Player1))
+		EndCutSceneMode()
+END

@@ -1,0 +1,24 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(3)
+		LeaveAreaLUAPanic("KR0002","",[713.450],10)
+		LeaveAreaLUA("KR0002","",[713.450],10)
+		ActionOverride(Player2,LeaveAreaLUA("KR0002","",[747.476],10))
+		ActionOverride(Player3,LeaveAreaLUA("KR0002","",[784.509],10))
+		ActionOverride(Player4,LeaveAreaLUA("KR0002","",[794.351],2))
+		ActionOverride(Player5,LeaveAreaLUA("KR0002","",[828.375],2))
+		ActionOverride(Player6,LeaveAreaLUA("KR0002","",[867.402],2))
+		MultiPlayerSync()
+		Wait(1)
+		Explore()
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(2)
+		PlaySong(999999)
+		ActionOverride("Keldorn",Interact(Player1))
+		EndCutSceneMode()
+END

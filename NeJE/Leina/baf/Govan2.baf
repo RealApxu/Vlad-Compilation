@@ -1,0 +1,11 @@
+IF
+	InParty("Leina")
+	!Dead("Leina")
+	See([PC])
+	Allegiance(Myself,NEUTRAL)
+	Global("VP_NumTimesTalked","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_NumTimesTalked","LOCALS",1)
+		StartDialogueNoSet([PC])
+END

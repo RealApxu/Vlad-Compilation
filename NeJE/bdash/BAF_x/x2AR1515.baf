@@ -1,0 +1,13 @@
+IF
+	Global("ppattackedJon","GLOBAL",1)
+	Global("onlyOnce","AR1515",0)
+THEN
+	RESPONSE #100
+		SetGlobal("onlyOnce","AR1515",1)
+		SetGlobal("ppattackedJon","GLOBAL",2)
+		SetGlobal("createdJon","AR1515",1)
+		SetGlobal("AsylumPlot","GLOBAL",19)
+		SetGlobal("onlyOnce","AR1515",1)
+		CreateCreatureObjectDoor("ppireni2",Player1,0,0,0) // Jon Irenicus
+		ActionOverride("ppireni2",StartDialogueNoSet(Player1))
+END

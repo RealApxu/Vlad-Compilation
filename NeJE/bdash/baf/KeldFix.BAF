@@ -1,0 +1,10 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride("Keldorn",EscapeAreaMove("AR0903",1634,368,3))
+		Wait(3)
+		EndCutSceneMode()
+END

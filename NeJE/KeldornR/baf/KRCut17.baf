@@ -1,0 +1,27 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("VP_Kr_CyricPlot","GLOBAL",11)
+		FadeToColor([20.0],0)
+		Wait(3)
+		LeaveAreaLUAPanic("KR0003","",[904.822],9)
+		LeaveAreaLUA("KR0003","",[904.822],9)
+		ActionOverride(Player2,LeaveAreaLUA("KR0003","",[663.605],10))
+		ActionOverride(Player3,LeaveAreaLUA("KR0003","",[653.564],12))
+		ActionOverride(Player4,LeaveAreaLUA("KR0003","",[699.535],14))
+		ActionOverride(Player5,LeaveAreaLUA("KR0003","",[739.567],1))
+		ActionOverride(Player6,LeaveAreaLUA("KR0003","",[733.612],4))
+		MultiPlayerSync()
+		Wait(1)
+		Explore()
+		MoveViewPoint([904.822],VERY_FAST)
+		Wait(2)
+		FadeFromColor([20.0],0)
+		Wait(3)
+		ActionOverride("Keldorn",MoveToPoint([901.793]))
+		Wait(5)
+		ActionOverride("Keldorn",StartDialogueNoSet(Player1))
+		EndCutSceneMode()
+END

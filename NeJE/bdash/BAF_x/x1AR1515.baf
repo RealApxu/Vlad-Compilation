@@ -1,0 +1,30 @@
+IF
+	OnCreation()
+	Global("HasAsylumWardstone","GLOBAL",1)
+	Global("createdJon","AR1515",0)
+	Global("PPdeshSend","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("ppireni1",[1498.1182],12) // Coordinator
+		SetGlobal("createdJon","AR1515",1)
+		Unlock("Door01")
+		Unlock("Door02")
+		Unlock("Door03")
+		Unlock("Door04")
+		Unlock("Door05")
+		Unlock("Door10")
+		OpenDoor("Door01")
+		OpenDoor("Door02")
+		OpenDoor("Door03")
+		OpenDoor("Door04")
+		OpenDoor("Door05")
+		OpenDoor("Door10")
+		CreateCreature("ppdili",[1098.537],12) // Dili
+		CreateCreature("ppwanev",[950.453],12) // Wanev
+		CreateCreature("ppnalj",[796.348],12) // Naljier Skal
+		CreateCreature("ppaphril",[609.447],12) // Aphril
+		CreateCreature("pptiax",[388.594],12) // Tiax
+		CreateCreature("ppdradee",[707.813],12) // Dradeel
+		CreateCreature("ppimoen",[937.1229],12) // Imoen
+		Continue()
+END

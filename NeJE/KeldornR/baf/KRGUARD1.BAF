@@ -1,0 +1,19 @@
+IF
+	See([ENEMY])
+	HPGT(LastSeenBy(Myself),0)
+	Global("VP_Castle_Seige","MYAREA",0)
+	OR(2)
+		See([PC])
+		Detect([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Castle_Seige","MYAREA",1)
+END
+
+IF
+	Global("VP_Castle_Seige","MYAREA",1)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),75)
+END

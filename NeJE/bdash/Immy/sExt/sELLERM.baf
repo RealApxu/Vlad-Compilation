@@ -1,0 +1,8 @@
+IF
+	IsOverMe("Imoen2")
+	CombatCounter(0)
+	Global("ImoenEllesime","AR0602",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ImoenEllesime","AR0602",1)
+END

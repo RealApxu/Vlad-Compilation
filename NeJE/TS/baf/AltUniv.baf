@@ -1,0 +1,68 @@
+IF
+	Clicked([ANYONE])
+	!PartyHasItem("KEYPLAT")
+	Global("VP_UnivAltar","GLOBAL",0)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~This altar requires a key of some sort.~)
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItem("KEYPLAT")
+	Global("VP_UnivAltar","GLOBAL",0)
+	Range(LastTrigger,9)
+	OR(4)
+		!PartyHasItem("USPOT1A")
+		!PartyHasItem("USPOT3C")
+		!PartyHasItem("USPOT4B")
+		!PartyHasItem("USPOT5B")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~Upon thorough investigation of the altar, you find the ancient carvings, which form the words: "BRING ME YOUR ACTION, STRENGTH, LIFE AND HOLY WATER"~) 
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItem("KEYPLAT")
+	PartyHasItem("USPOT1A")
+	PartyHasItem("USPOT3C")
+	PartyHasItem("USPOT4B")
+	PartyHasItem("USPOT5B")
+	Global("VP_UnivAltar","GLOBAL",0)
+	Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_UnivAltar","GLOBAL",1)
+		DestroyItem("KEYPLAT")
+		DestroyItem("USPOT1A")
+		DestroyItem("USPOT3C")
+		DestroyItem("USPOT4B")
+		DestroyItem("USPOT5B")
+		TakePartyItem("KEYPLAT")
+		TakePartyItem("USPOT1A")
+		TakePartyItem("USPOT3C")
+		TakePartyItem("USPOT4B")
+		TakePartyItem("USPOT5B")
+		GiveItemCreate("USPOT4C",Player1,0,0,0)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,9)
+	Global("VP_UnivAltar","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,~There is nothing else to do with this altar.~) 
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,9)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702) // You are too far away to use that.
+END
+
+

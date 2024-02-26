@@ -1,0 +1,12 @@
+IF
+	AreaCheck("AR0903")
+	Global("VP_Kr_TheWar","GLOBAL",3)
+	Global("VP_Kr_ViccyWarTalk","GLOBAL",0)
+	OR(2)
+		Detect("HPRELATE")
+		See("HPRELATE")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kr_ViccyWarTalk","GLOBAL",1)
+		StartDialogueNoSet(Player1)
+END

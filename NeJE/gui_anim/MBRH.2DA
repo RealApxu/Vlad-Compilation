@@ -1,0 +1,41 @@
+MBRH /beetle rhinoceros/
+***
+						SOUND
+ATTACK          		rhino01 nosound nosound
+ATTACK          		0 0
+AWAKE           		***
+AWAKE           		0
+CAST            		***
+CAST            		0
+CONJURE         		***
+CONJURE         		0
+DAMAGE          		rhino07a rhino08a
+DAMAGE          		0 0
+DIE             		rhino09a rhino09b
+DIE             		0 0
+HEAD_TURN       		rhino11
+HEAD_TURN       		0
+READY           		***
+READY           		0
+SHOOT           		***
+SHOOT           		0
+TWITCH          		***
+TWITCH          		0
+WALK            		rhino11
+WALK            		0
+ATTACK_SLASH    		rhino03a rhino03b rhino03b
+ATTACK_SLASH    		2 0 0
+ATTACK_BACKSLASH		rhino04a rhino04b rhino04b
+ATTACK_BACKSLASH		2 2 0
+ATTACK_JAB      		rhino07b rhino08b
+ATTACK_JAB      		0 0
+EMERGE          		***
+EMERGE          		0
+HIDE            		***
+HIDE            		0
+SLEEP          			***
+SLEEP          			0
+Battle_Cry					rhino02 rhino02
+Battle_Cry					0 0
+Selection           rhino11
+Selection           0

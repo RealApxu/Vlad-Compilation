@@ -1,0 +1,19 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride("LADYALIA",EscapeArea())
+		ActionOverride("FRIDA",EscapeArea())
+		Wait(2)
+		FadeToColor([20.0],0)
+		Wait(1)
+		DayNight(DUSK_START)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(3)
+		PlaySong(999999)
+		ActionOverride("Keldorn",Interact(Player1))
+		EndCutSceneMode()
+END

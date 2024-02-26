@@ -1,0 +1,85 @@
+IF
+	IsOverMe(Player1)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+IF
+	IsOverMe(Player2)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+IF
+	IsOverMe(Player3)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+IF
+	IsOverMe(Player4)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+IF
+	IsOverMe(Player5)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+IF
+	IsOverMe(Player6)
+	Global("Katana_Warning","GLOBAL",0)
+	OR(4)
+		PartyHasItem("ELEMKATA")
+		PartyHasItem("ELEMKATE")
+		PartyHasItem("ELEMKATF")
+		PartyHasItem("ELEMKATW")
+THEN
+	RESPONSE #100
+		SetGlobal("Katana_Warning","GLOBAL",1)
+		DisplayStringHead(Player1,~Be warned, these powerful katanas cannot be taken outside the fighting arena. Their power would surely destroy you.~)
+END
+
+

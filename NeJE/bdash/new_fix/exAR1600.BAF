@@ -1,0 +1,9 @@
+IF
+	Global("StealShip","GLOBAL",1)
+	Global("VP_EscapeAreaFixSm","GLOBAL",1)
+	!InMyArea("ppsaem3")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_EscapeAreaFixSm","GLOBAL",2)
+		CreateCreature("ppsaem3",[2949.2504],8)
+END

@@ -1,0 +1,300 @@
+IF
+	InParty("Imoen2")
+	!InParty(Myself)
+	Global("hf_Hide_Old_Immy","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("hf_Hide_Old_Immy","GLOBAL",1)
+		DestroySelf()
+END
+
+IF
+      Global("hf_XPup_Imoen","GLOBAL",0)
+      XPLT(Player1,150000)
+THEN
+   RESPONSE #100
+      AddXPObject(Myself,350000)
+      SetGlobal("hf_XPup_Imoen","GLOBAL",1)
+END
+
+IF
+      Global("hf_XPup_Imoen","GLOBAL",0)
+      XPGT(Player1,150000)
+THEN
+   RESPONSE #100
+      SetGlobal("hf_XPup_Imoen","GLOBAL",1)
+      AddXPObject(Myself,1000000)
+END
+
+//NEJ BANTERS
+
+//Banter 1 - Day 1
+IF
+	InParty(Myself)
+	Global("VP_BPC","LOCALS",0)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",1)
+		RealSetGlobalTimer("VP_Imoen_PC","GLOBAL",300)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Imoen_PC","GLOBAL")
+	OR(7)
+		AreaCheck("TT1000")
+		AreaCheck("TT1200")
+		AreaCheck("TT2000")
+		AreaCheck("TT2001")
+		AreaCheck("TT3000")
+		AreaCheck("TT3600")
+		AreaCheck("TT4000")	
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",1)
+	Global("VP_NEJ_BanterDelay","GLOBAL",0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_NEJ_BanterDelay","GLOBAL",1)
+		RealSetGlobalTimer("VP_NEJ_DelayTimer","GLOBAL",10)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Imoen_PC","GLOBAL")
+	RealGlobalTimerExpired("VP_NEJ_DelayTimer","GLOBAL")
+	Global("VP_NEJ_BanterDelay","GLOBAL",1)
+	OR(7)
+		AreaCheck("TT1000")
+		AreaCheck("TT1200")
+		AreaCheck("TT2000")
+		AreaCheck("TT2001")
+		AreaCheck("TT3000")
+		AreaCheck("TT3600")
+		AreaCheck("TT4000")	
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",2)
+		SetGlobal("VP_NEJ_BanterDelay","GLOBAL",0)
+		StartDialogueNoSet(Player1)
+END
+
+//Banter 2 - Day 1
+IF
+	InParty(Myself)
+	InParty("Hrothgar")
+	!Dead("Hrothgar")
+	Global("VP_BHrothgar","LOCALS",0)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+	Global("VP_Start_Banters","GLOBAL",1)
+	Global("VP_BPC","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BHrothgar","LOCALS",1)
+		RealSetGlobalTimer("VP_Imoen_Hrothgar","GLOBAL",300)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Imoen_Hrothgar","GLOBAL")
+	InParty(Myself)
+	InParty("Hrothgar")
+	See("Hrothgar")
+	!Dead("Hrothgar")
+	!StateCheck("Hrothgar",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BHrothgar","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BHrothgar","LOCALS",2)
+		StartDialogueNoSet("Hrothgar")
+END
+
+//Banter 3 - Day 1
+IF
+	InParty(Myself)
+	InParty("Dar")
+	!Dead("Dar")
+	Global("VP_BDar","LOCALS",0)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+	Global("VP_Start_Banters","GLOBAL",1)
+	Global("VP_BHrothgar","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",1)
+		RealSetGlobalTimer("VP_Imoen_Dar","GLOBAL",300)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Imoen_Dar","GLOBAL")
+	OR(5)
+		AreaCheck("TT2000")
+		AreaCheck("TT2001")
+		AreaCheck("TT3000")
+		AreaCheck("TT3600")
+		AreaCheck("TT4000")	
+	InParty(Myself)
+	InParty("Dar")
+	See("Dar")
+	!Dead("Dar")
+	!StateCheck("Dar",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BDar","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",2)
+		StartDialogueNoSet("Dar")
+END
+
+//Banter 4 - Day 6
+IF
+	InParty(Myself)
+	InParty("Minsc")
+	!Dead("Minsc")
+	Global("VP_BMinsc","LOCALS",0)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+	Global("VP_Start_Banters","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMinsc","LOCALS",1)
+		SetGlobalTimer("VP_Imoen_Minsc","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Imoen_Minsc","GLOBAL")
+	InParty(Myself)
+	InParty("Minsc")
+	See("Minsc")
+	!Dead("Minsc")
+	!StateCheck("Minsc",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BMinsc","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMinsc","LOCALS",2)
+		StartDialogueNoSet("Minsc")
+END
+
+//Banter 5 - Day 10
+IF
+	InParty(Myself)
+	InParty("Accalia")
+	!Dead("Accalia")
+	Global("VP_BAccalia","LOCALS",0)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+	Global("VP_Start_Banters","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAccalia","LOCALS",1)
+		SetGlobalTimer("VP_Imoen_Accalia","GLOBAL",TEN_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Imoen_Accalia","GLOBAL")
+	InParty(Myself)
+	InParty("Accalia")
+	See("Accalia")
+	!Dead("Accalia")
+	!StateCheck("Accalia",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BAccalia","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAccalia","LOCALS",2)
+		StartDialogueNoSet("Accalia")
+END
+
+//Banter 6 - Day 10
+IF
+	InParty(Myself)
+	InParty("Accalia")
+	!Dead("Accalia")
+	Global("VP_BAccalia","LOCALS",3)
+	Global("VP_In_IWD_Part1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAccalia","LOCALS",4)
+		RealSetGlobalTimer("VP_Imoen_Accalia","GLOBAL",300)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Imoen_Accalia","GLOBAL")
+	InParty(Myself)
+	InParty("Accalia")
+	See("Accalia")
+	!Dead("Accalia")
+	!StateCheck("Accalia",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BAccalia","LOCALS",4)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAccalia","LOCALS",5)
+		StartDialogueNoSet("Accalia")
+END
+
+IF
+	InParty(Myself)
+	InParty("Hrothgar")
+	!Dead("Hrothgar")
+	CombatCounter(0)
+	!StateCheck("Hrothgar",STATE_SLEEPING)
+	!See([ENEMY])
+	Global("SPRITE_IS_DEADYXUNOMEI","GLOBAL",1)
+	Global("VP_YxunomeiDead","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_YxunomeiDead","GLOBAL",1)
+		StartDialogueNoSet("Hrothgar")
+END
+
+IF
+	InParty(Myself)
+	!InParty("Jaheira")
+	Global("VP_Imoen_In_IWD","GLOBAL",1)
+	Global("VP_Jaheira_In_IWD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Imoen_In_IWD","GLOBAL",2)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	InParty(Myself)
+	InParty("Leina")
+	!Dead("Leina")
+	Gender(Player1,MALE)
+	Global("VP_BLeina","LOCALS",0)
+	Global("VP_Imoen_Returns","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BLeina","LOCALS",1)
+		SetGlobalTimer("VP_Imoen_Leina","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Imoen_Leina","GLOBAL")
+	InParty(Myself)
+	InParty("Leina")
+	See("Leina")
+	!Dead("Leina")
+	!StateCheck("Leina",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BLeina","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BLeina","LOCALS",2)
+		Interact("Leina")
+END

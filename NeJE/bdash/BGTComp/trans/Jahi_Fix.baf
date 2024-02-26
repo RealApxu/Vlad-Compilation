@@ -1,0 +1,24 @@
+IF
+	Global("JaheiraImport","GLOBAL",0)
+	Global("JaheiraPartyBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("JaheiraImport","GLOBAL",1)
+		ReallyForceSpellRES("BGJAPORT","Jaheira") // No such index
+		ActionOverride("Jaheira",ChangeAIScript("Jaheira",OVERRIDE))
+		ActionOverride("Jaheira",ChangeAIScript("dplayer",DEFAULT))
+		ActionOverride("Jaheira",ChangeAIScript("SBTJAH",RACE))
+		ActionOverride("Jaheira",SetDialog("Jaheira"))
+		ActionOverride("Jaheira",SetNumTimesTalkedTo(0))
+		Continue()
+END
+
+IF
+	Global("JaheiraImport","GLOBAL",0)
+	Global("JaheiraPartyBG1","GLOBAL",0)
+	Dead("Jaheira")
+THEN
+	RESPONSE #100
+		SetGlobal("JaheiraImport","GLOBAL",2)
+		Continue()
+END

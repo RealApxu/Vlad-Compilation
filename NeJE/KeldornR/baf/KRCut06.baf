@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		LeaveAreaLUAPanic("KR0009","",[810.253],3)
+		LeaveAreaLUA("KR0009","",[810.253],3)
+		ActionOverride(Player2,LeaveAreaLUA("KR0009","",[877.283],3))
+		ActionOverride(Player3,LeaveAreaLUA("KR0009","",[871.209],3))
+		ActionOverride(Player4,LeaveAreaLUA("KR0009","",[912.267],3))
+		ActionOverride(Player5,LeaveAreaLUA("KR0009","",[940.203],2))
+		ActionOverride(Player6,LeaveAreaLUA("KR0009","",[1075.3],3))
+		MultiPlayerSync()
+		Wait(1)
+		TextScreen("SCRTXT63")
+		Wait(1)
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+END

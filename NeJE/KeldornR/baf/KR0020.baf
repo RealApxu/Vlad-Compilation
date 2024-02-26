@@ -1,0 +1,24 @@
+IF
+	OnCreation()
+	Global("VP_Baator_Entered","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Baator_Entered","MYAREA",1)
+		Explore()
+		CreateCreature("Eye",[1159.1147],1) // Meganarri - Baator Guard
+		CreateCreature("Abishai",[764.841],1)
+		CreateCreature("Abishai",[616.942],1) 
+		CreateCreature("Abishai",[695.1066],1) 
+		CreateCreature("Abishai",[859.1084],1) 
+		CreateCreature("Abishai",[947.980],1) 
+		CreateCreature("Abishai",[834.1210],1) 
+		CreateCreature("Abishai",[976.1322],1) 
+		CreateCreature("Abishai",[1101.1458],1)
+		CreateCreature("Abishai",[1145.1288],1)
+		CreateCreature("Abishai",[1267.1142],1)
+		CreateCreature("Abishai",[1382.971],1) 
+		CreateCreature("Abishai",[1633.869],1) 
+		CreateCreature("Abishai",[1743.1052],1)
+		CreateCreature("Abishai",[1804.1180],1)
+		CreateCreature("Abishai",[1516.1150],1)
+END

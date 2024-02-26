@@ -1,0 +1,52 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Keldorn")
+		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","Keldorn")
+		SetGlobal("VP_KeldornVampire","GLOBAL",1)
+		Wait(1)
+		CreateVisualEffectObject("SPDISPMA",Myself)
+		DropInventory()
+		SetLeavePartyDialogFile()
+		ChangeAIScript("VAMPAMB",OVERRIDE)
+		ChangeAIScript("",DEFAULT)
+		DialogInterrupt(FALSE)
+		LeaveParty()
+		EndCutSceneMode()
+END
+
+/*IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","Keldorn")
+		SetGlobal("VP_KeldornVampire","GLOBAL",1)
+		SetGlobal("RomanceVampire","GLOBAL",1)
+		Wait(1)
+		CreateVisualEffectObject("SPDISPMA","Keldorn")
+		ActionOverride("Keldorn",DropInventory())
+		ActionOverride("Keldorn",SetLeavePartyDialogFile())
+		ActionOverride("Keldorn",ChangeAIScript("VAMPAMB",OVERRIDE))
+		ActionOverride("Keldorn",ChangeAIScript("",DEFAULT))
+		ActionOverride("Keldorn",DialogInterrupt(FALSE))
+		ActionOverride("Keldorn",LeaveParty())
+		Wait(1)
+		CreateVisualEffectObject("SPDIMNDR","Keldorn")
+		Wait(2)
+		MoveGlobal("AR0086","Keldorn",[100.100])
+		EndCutSceneMode()
+END*/
+		
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("bodhiamb")
+		DialogInterrupt(FALSE)
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+END

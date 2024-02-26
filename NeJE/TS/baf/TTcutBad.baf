@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("Kachiko",Enemy())
+		CreateCreature("Michio",[1435.793],14)
+		CreateCreature("Momoko",[1576.824],1)
+		CreateCreature("Masaki",[1515.801],0)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		ActionOverride("Kachiko",Enemy())
+		ActionOverride("Michio",Enemy())
+		ActionOverride("Momoko",Enemy())
+		ActionOverride("Masaki",Enemy())
+		EndCutSceneMode()
+END
+
+

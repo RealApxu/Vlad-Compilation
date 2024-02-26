@@ -1,0 +1,17 @@
+BEGIN ~SOL~
+
+IF ~~ THEN BEGIN 0
+  SAY ~Oh, beautiful daughter of Aran Linvail! Never you spared a tender word for me in life. I praise my order to deliver you to the Mistress. I was promised that in undeath you shall be mine, Sime Linvail.~
+  IF ~~ THEN EXTERN ~SOLA~ 0
+END
+
+IF ~~ THEN BEGIN 1
+  SAY ~ 
+
+One evening made of pink and mystical blue,
+We will exchange a single flash from afar,
+Like a long sob, charged with adieux; 
+
+This evening is tonight, my dear Sime... Accept the death from me and we shall live forever, powerful and passionate.~
+  IF ~~ THEN EXTERN ~SIMEJ~ 29
+END

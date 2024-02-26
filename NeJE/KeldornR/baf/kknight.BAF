@@ -1,0 +1,25 @@
+IF
+	OR(2)
+		!InParty("Keldorn")
+		Dead("Keldorn")
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+	Global("SPRITE_IS_DEADSythill1","GLOBAL",10)
+	Global("SPRITE_IS_DEADSythill2","GLOBAL",4)
+	Global("SPRITE_IS_DEADSythill3","GLOBAL",2)
+	Global("SPRITE_IS_DEADSythill4","GLOBAL",2)
+	Global("SPRITE_IS_DEADSythill5","GLOBAL",2)
+	Global("VP_BackToCastle","LOCALS",0)
+	Global("VP_Kr_CyricPlot","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("BackToCastle","LOCALS",1)
+		MoveToPointNoInterrupt([3308.2251])
+		DestroySelf()
+END
+
+

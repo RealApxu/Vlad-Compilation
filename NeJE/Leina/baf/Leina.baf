@@ -1,0 +1,1833 @@
+IF
+	!InParty(Myself)
+	Global("VP_LeinaVampire","GLOBAL",4)
+THEN
+	RESPONSE #100
+		Wait(1)
+		SetGlobal("VP_LeinaVampire","GLOBAL",5)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+	CombatCounter(0)
+	!Allegiance(Myself,ENEMY)
+	Global("SPRITE_IS_DEADDCAI","GLOBAL",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		Dialogue([PC])
+END
+
+IF
+	!CombatCounter(0)
+	HasItem("LeiAmulM",Myself)
+	Global("VP_Leina_Calls_Mom","GLOBAL",0)
+	HPPercentLT(Myself,50)
+	OR(2)
+		HasItemEquiped("LeiAmulM",Myself)
+		HasItemSlot(Myself,0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Calls_Mom","GLOBAL",1)
+		CreateCreatureObject("LeinaMum",Myself,0,0,0)
+END
+
+IF
+	HasItem("LeiAmulF",Myself)
+	PartyHasItem("LeiAmulM")
+	Global("VP_Dual_Pendant","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Dual_Pendant","LOCALS",1)
+		DestroyItem("LeiAmulF")
+		DestroyItem("LeiAmulM")
+		GiveItemCreate("LeiAmul",Myself,3,3,0)
+END
+
+IF
+	InParty(Myself)
+	Global("SPRITE_IS_DEADGovan2","GLOBAL",1)
+	Global("VP_ResqueLeina","GLOBAL",14)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ResqueLeina","GLOBAL",15)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	InParty(Myself)
+	See("Vulova")
+	AreaCheck("AR1007")
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_DadIsDeadEstate","LOCALS",0)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_DadIsDeadEstate","LOCALS",1)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	See("Vulova")
+	AreaCheck("AR1000")
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_DadIsDeadEstate","LOCALS",0)
+	Global("VP_DadIsDeadStreet","LOCALS",0)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_DadIsDeadStreet","LOCALS",1)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(3)
+		StartDialogueNoSet(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	Global("VP_MyFatherIsDead","LOCALS",3)
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	AreaCheck("AR1000")
+	Global("VP_Break_Point","LOCALS",0)
+	Global("VP_BreakPointDelay","LOCALS",0)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BreakPointDelay","LOCALS",1)
+		RealSetGlobalTimer("VP_BreakPointTimer","GLOBAL",10)
+END
+
+IF
+	Global("VP_MyFatherIsDead","LOCALS",3)
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_Break_Point","LOCALS",0)
+	Global("VP_BreakPointDelay","LOCALS",1)
+	RealGlobalTimerExpired("VP_BreakPointTimer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Break_Point","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	See([PC])
+	OR(2)
+		Global("SPRITE_IS_DEADGovan3","GLOBAL",1)
+		Global("SPRITE_IS_DEADAuberon","GLOBAL",1)
+	Global("VP_LeinaThanks","GLOBAL",0)
+	!Global("VP_MyFatherIsDead","LOCALS",3)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaThanks","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	GlobalGT("VP_Killian_Bribes_Me","GLOBAL",1)
+	Global("VP_LeinaAppears","GLOBAL",0)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaAppears","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	See([PC])
+	Global("VP_AuberonBribesMe","GLOBAL",1)
+	Global("VP_LeinaThanks2","GLOBAL",0)
+	!Global("VP_MyFatherIsDead","LOCALS",3)
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LeinaThanks2","GLOBAL",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	InParty(Myself)
+	Global("VP_Leina_Samuel","GLOBAL",0)
+	OR(3)
+		Global("VP_ResqueLeina","GLOBAL",18)
+		Global("VP_LeinaReturns","GLOBAL",1)
+		Global("VP_Samuel_Helps","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Samuel","GLOBAL",1)
+		SetGlobalTimer("VP_LetsVisitSamuel","GLOBAL",NINE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_LetsVisitSamuel","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_Leina_Samuel","GLOBAL",1)
+	!See([ENEMY])
+	OR(8)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Samuel","GLOBAL",2)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_LetsVisitSamuel","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_Leina_Samuel","GLOBAL",3)
+	!See([ENEMY])
+	AreaType(CITY)
+	!Global("VP_InHalruaa","GLOBAL",1)
+	!AreaCheck("AR2000")
+	GlobalLT("chapter","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Samuel","GLOBAL",4)
+		SetGlobal("VP_Leina_In_City","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_LetsVisitSamuel","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_Leina_Samuel","GLOBAL",3)
+	!See([ENEMY])
+	OR(3)
+		AreaType(FOREST)
+		AreaType(DUNGEON)
+		AreaCheck("AR2000")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Samuel","GLOBAL",4)
+		SetGlobal("VP_Leina_Outdoor","LOCALS",1)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_LetsVisitSamuel","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_Leina_Samuel","GLOBAL",5)
+	!See([ENEMY])
+	AreaType(CITY)
+	!Global("VP_InHalruaa","GLOBAL",1)
+	!AreaCheck("AR2000")
+	GlobalLT("chapter","GLOBAL",4)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Samuel","GLOBAL",6)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	CombatCounter(0)
+	Global("VP_Errant_Husband","GLOBAL",1)
+	AreaCheck("AR0500")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Errant_Husband","GLOBAL",2)
+		CreateCreatureObject("Bjorn",Myself,0,0,0)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!InParty(Myself)
+	Global("NPCFight","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("NPCFight","LOCALS",1)
+		ChangeAIScript("",DEFAULT)
+		ChangeAIScript("useitem",GENERAL)
+		ChangeAIScript("LeinaX",SPECIFICS)
+		SetDialog("")
+		Continue()
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		ChangeAIScript("useitem",GENERAL)
+		ChangeAIScript("LeinaX",SPECIFICS)
+		Enemy()
+		Continue()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!InParty(Myself)
+	Global("NPCFight","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("NPCFight","LOCALS",0)
+		ChangeAIScript("",GENERAL)
+		ChangeAIScript("",SPECIFICS)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	InParty("Kachiko")
+	!Dead("Kachiko")
+	Global("VP_BKachiko","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BKachiko","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Kachiko","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Kachiko","GLOBAL")
+	InParty(Myself)
+	InParty("Kachiko")
+	See("Kachiko")
+	!Dead("Kachiko")
+	!StateCheck("Kachiko",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BKachiko","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BKachiko","LOCALS",2)
+		Interact("Kachiko")
+END
+
+IF
+	InParty(Myself)
+	InParty("Dar")
+	!Dead("Dar")
+	Global("VP_BDar","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Dar","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Dar","GLOBAL")
+	InParty(Myself)
+	InParty("Dar")
+	See("Dar")
+	!Dead("Dar")
+	!StateCheck("Dar",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BDar","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",2)
+		Interact("Dar")
+END
+
+IF
+	InParty(Myself)
+	Global("VP_BPC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",1)
+		SetGlobalTimer("VP_Leina_PC","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_PC","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	InParty("Dar")
+	!Dead("Dar")
+	Global("VP_BDar","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",4)
+		SetGlobalTimer("VP_Leina_Dar","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Dar","GLOBAL")
+	InParty(Myself)
+	InParty("Dar")
+	See("Dar")
+	!Dead("Dar")
+	!StateCheck("Dar",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BDar","LOCALS",4)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BDar","LOCALS",5)
+		Interact("Dar")
+END
+
+IF
+	InParty(Myself)
+	Global("VP_BPC","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",4)
+		SetGlobalTimer("VP_Leina_PC","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_PC","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",4)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",5)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	Global("VP_BPC","LOCALS",6)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",7)
+		SetGlobalTimer("VP_Leina_PC","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_PC","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",7)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",8)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	OR(2)
+		Global("VP_Break_Point","LOCALS",2)
+		Global("VP_MyFatherIsDead","LOCALS",3)
+	Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	Global("VP_BPC","LOCALS",9)
+	InParty(Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",12)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalLT("VP_MyFatherIsDead","LOCALS",3)
+	GlobalLT("VP_Break_Point","LOCALS",2)
+	!Global("SPRITE_IS_DEADVulova","GLOBAL",1)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	Global("VP_BPC","LOCALS",9)
+	InParty(Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",10)
+		SetGlobalTimer("VP_Leina_PC","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_PC","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BPC","LOCALS",10)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC","LOCALS",11)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	OR(2)
+		Global("VP_BPC","LOCALS",14)
+		Global("VP_BPC","LOCALS",16)
+	Global("VP_BPC_Buffer1","LOCALS",0)
+	!See([ENEMY])
+	AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC_Buffer1","LOCALS",1)
+		SetGlobal("VP_BPC","LOCALS",15)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	OR(2)
+		Global("VP_BPC","LOCALS",14)
+		Global("VP_BPC","LOCALS",16)
+	Global("VP_BPC_Buffer2","LOCALS",0)
+	!See([ENEMY])
+	!AreaType(FOREST)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC_Buffer2","LOCALS",1)
+		SetGlobal("VP_BPC","LOCALS",15)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_BPC","LOCALS",16)
+	OR(2)
+		Global("VP_BPC_Buffer2","LOCALS",2)
+		Global("VP_BPC_Buffer2","LOCALS",4)
+	Global("VP_Bathe_Talk","LOCALS",0)
+	OR(10)
+		AreaCheck("AR0313")
+		AreaCheck("AR0314")
+		AreaCheck("AR0406")
+		AreaCheck("AR0510")
+		AreaCheck("AR0511")
+		AreaCheck("AR0704")
+		AreaCheck("AR0709")
+		AreaCheck("AR1105")
+		AreaCheck("AR2010")
+		AreaCheck("AR0021")
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_BPC_Buffer2","LOCALS",1)
+		SetGlobal("VP_Bathe_Talk","LOCALS",1)
+		RealSetGlobalTimer("VP_BPC_LT","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	PartyRested()
+	RealGlobalTimerExpired("VP_BPC_LT","GLOBAL")
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	Global("VP_BPC","LOCALS",16)
+	Global("VP_BPC_Buffer2","LOCALS",4)
+	Global("VP_Bathe_Talk","LOCALS",1)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BPC_Buffer2","LOCALS",5)
+		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	OR(2)
+		Global("VP_BPC_Buffer2","LOCALS",6)
+		GlobalGT("VP_BPC","LOCALS",11)
+	Global("VP_LoveTalk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",1)
+		SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",1)
+	Gender(Player1,MALE)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",2)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",1)
+	Gender(Player1,FEMALE)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",2)
+		Interact(Player1)
+END
+
+IF
+	InParty(Myself)
+	InParty("Jaheira")
+	!Dead("Jaheira")
+	Global("VP_BJaheira","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BJaheira","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Jaheira","GLOBAL",FIVE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Jaheira","GLOBAL")
+	InParty(Myself)
+	InParty("Jaheira")
+	See("Jaheira")
+	!Dead("Jaheira")
+	!StateCheck("Jaheira",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BJaheira","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BJaheira","LOCALS",2)
+		Interact("Jaheira")
+END
+
+IF
+	InParty(Myself)
+	InParty("Minsc")
+	!Dead("Minsc")
+	Global("VP_BMinsc","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMinsc","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Minsc","GLOBAL",SEVEN_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Minsc","GLOBAL")
+	InParty(Myself)
+	InParty("Minsc")
+	See("Minsc")
+	!Dead("Minsc")
+	!StateCheck("Minsc",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BMinsc","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMinsc","LOCALS",2)
+		Interact("Minsc")
+END
+
+IF
+	InParty(Myself)
+	InParty("Aerie")
+	!Dead("Aerie")
+	Global("VP_BAerie","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAerie","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Aerie","GLOBAL",NINE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Aerie","GLOBAL")
+	InParty(Myself)
+	InParty("Aerie")
+	See("Aerie")
+	!Dead("Aerie")
+	!StateCheck("Aerie",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BAerie","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAerie","LOCALS",2)
+		Interact("Aerie")
+END
+
+IF
+	InParty(Myself)
+	InParty("Valygar")
+	!Dead("Valygar")
+	Global("VP_BValygar","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Valygar","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Valygar","GLOBAL")
+	InParty(Myself)
+	InParty("Valygar")
+	See("Valygar")
+	!Dead("Valygar")
+	!StateCheck("Valygar",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BValygar","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BValygar","LOCALS",2)
+		Interact("Valygar")
+END
+
+IF
+	InParty(Myself)
+	InParty("Nalia")
+	!Dead("Nalia")
+	Global("VP_BNalia","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BNalia","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Nalia","GLOBAL",TEN_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Nalia","GLOBAL")
+	InParty(Myself)
+	InParty("Nalia")
+	See("Nalia")
+	!Dead("Nalia")
+	!StateCheck("Nalia",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BNalia","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BNalia","LOCALS",2)
+		Interact("Nalia")
+END
+
+IF
+	InParty(Myself)
+	InParty("Edwin")
+	!Dead("Edwin")
+	Global("VP_BEdwin","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BEdwin","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Edwin","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Edwin","GLOBAL")
+	InParty(Myself)
+	InParty("Edwin")
+	See("Edwin")
+	!Dead("Edwin")
+	!StateCheck("Edwin",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BEdwin","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BEdwin","LOCALS",2)
+		Interact("Edwin")
+END
+
+IF
+	InParty(Myself)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	OR(2)
+		Global("VP_BPC_Buffer2","LOCALS",6)
+		GlobalGT("VP_BPC","LOCALS",11)
+	Global("VP_LoveTalk","LOCALS",3)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",4)
+		SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",ONE_DAY)
+END
+
+IF
+  GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("VP_LoveTalk","LOCALS",4)
+  Gender(Player1,MALE)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",5)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",4)
+	Gender(Player1,FEMALE)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",5)
+		Interact(Player1)
+END
+
+IF
+	InParty(Myself)
+  	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+  	OR(2)
+  		Global("VP_BPC_Buffer2","LOCALS",6)
+  		GlobalGT("VP_BPC","LOCALS",11)
+  	Global("VP_LoveTalk","LOCALS",6)
+THEN
+  RESPONSE #100
+  		SetGlobal("VP_LoveTalk","LOCALS",7)
+    	SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",TWO_DAYS)
+END
+
+IF
+  GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("VP_LoveTalk","LOCALS",7)
+  Gender(Player1,FEMALE)
+THEN
+  RESPONSE #100
+    SetGlobal("VP_LoveTalk","LOCALS",8)
+		Interact(Player1)
+END
+
+IF
+  GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("VP_LoveTalk","LOCALS",7)
+  Gender(Player1,MALE)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",8)
+    	SetGlobal("VP_LeinaRomanceAct","GLOBAL",2)
+		ClearAllActions()
+		StartCutSceneMode()
+    	MoveViewObject("Leina",INSTANT)
+    	Wait(1)
+    	PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+  	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+  	OR(2)
+  		Global("VP_BPC_Buffer2","LOCALS",6)
+  		GlobalGT("VP_BPC","LOCALS",11)
+  	Global("VP_LoveTalk","LOCALS",9)
+THEN
+  RESPONSE #100
+  		SetGlobal("VP_LoveTalk","LOCALS",10)
+  		SetGlobal("VP_LeinaRomanceAct","GLOBAL",2)
+		SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",TWO_DAYS)
+    	SetGlobalTimer("VP_Dance_Timer","GLOBAL",ONE_DAY)
+END
+
+IF
+  GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("VP_LoveTalk","LOCALS",10)
+  Gender(Player1,FEMALE)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",11)
+		SetGlobal("VP_LeinaRomanceAct","GLOBAL",2)
+		Interact(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_Dance_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	OR(11)
+		AreaCheck("AR0313")
+		AreaCheck("AR0314")
+		AreaCheck("AR0406")
+		AreaCheck("AR0509")
+		AreaCheck("AR0510")
+		AreaCheck("AR0511")
+		AreaCheck("AR0704")
+		AreaCheck("AR0709")
+		AreaCheck("AR1105")
+		AreaCheck("AR2010")
+		AreaCheck("AR0021")
+	GlobalGT("VP_LoveTalk","LOCALS",9)
+	Global("VP_Danicng_Queen","GLOBAL",0)
+  Gender(Player1,MALE)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Danicng_Queen","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+       MoveViewObject("Leina",INSTANT)
+       Wait(1)
+       PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	InParty("Jaheira")
+	!Dead("Jaheira")
+	Global("VP_JahiNoDancing","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_JahiNoDancing","LOCALS",2)
+		SetGlobalTimer("VP_JahiNoDancingT","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_JahiNoDancingT","GLOBAL")
+	InParty(Myself)
+	InParty("Jaheira")
+	See("Jaheira")
+	!Dead("Jaheira")
+	!StateCheck("Jaheira",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_JahiNoDancing","LOCALS",2)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_JahiNoDancing","LOCALS",3)
+		Interact("Jaheira")
+END
+
+IF
+	InParty(Myself)
+	InParty("Aerie")
+	!Dead("Aerie")
+	Global("VP_AerieNoDancing","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_AerieNoDancing","LOCALS",2)
+		SetGlobalTimer("VP_AerieNoDancingT","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_AerieNoDancingT","GLOBAL")
+	InParty(Myself)
+	InParty("Aerie")
+	See("Aerie")
+	!Dead("Aerie")
+	!StateCheck("Aerie",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_AerieNoDancing","LOCALS",2)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_AerieNoDancing","LOCALS",3)
+		Interact("Aerie")
+END
+
+IF
+	InParty(Myself)
+	InParty("Viconia")
+	!Dead("Viconia")
+	Global("VP_VickyNoDancing","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_VickyNoDancing","LOCALS",2)
+		SetGlobalTimer("VP_VickyNoDancingT","GLOBAL",THREE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_VickyNoDancingT","GLOBAL")
+	InParty(Myself)
+	InParty("Viconia")
+	See("Viconia")
+	!Dead("Viconia")
+	!StateCheck("Viconia",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_VickyNoDancing","LOCALS",2)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_VickyNoDancing","LOCALS",3)
+		Interact("Viconia")
+END
+
+IF
+	InParty(Myself)
+	InParty("Korgan")
+	!Dead("Korgan")
+	Global("VP_KorganNoDancing","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KorganNoDancing","LOCALS",2)
+		SetGlobalTimer("VP_KorganNoDancingT","GLOBAL",FOUR_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_KorganNoDancingT","GLOBAL")
+	InParty(Myself)
+	InParty("Korgan")
+	See("Korgan")
+	!Dead("Korgan")
+	!StateCheck("Korgan",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_KorganNoDancing","LOCALS",2)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KorganNoDancing","LOCALS",3)
+		Interact("Korgan")
+END
+
+IF
+	InParty(Myself)
+	InParty("Korgan")
+	!Dead("Korgan")
+	Global("VP_KorganNoDancing","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KorganNoDancing","LOCALS",5)
+		SetGlobalTimer("VP_KorganNoDancingT","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_KorganNoDancingT","GLOBAL")
+	InParty(Myself)
+	InParty("Korgan")
+	See("Korgan")
+	!Dead("Korgan")
+	!StateCheck("Korgan",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_KorganNoDancing","LOCALS",5)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_KorganNoDancing","LOCALS",6)
+		Interact(Player1)
+END
+
+IF
+  GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+  InParty(Myself)
+  See(Player1)
+  !StateCheck(Player1,STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("VP_LoveTalk","LOCALS",10)
+  Gender(Player1,MALE)
+THEN
+  RESPONSE #100
+       SetGlobal("VP_LoveTalk","LOCALS",11)
+		ClearAllActions()
+		StartCutSceneMode()
+       MoveViewObject("Leina",INSTANT)
+       Wait(1)
+       PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+  Global("VP_MyFlirt_Is_Over","LOCALS",0)
+  OR(2)
+  	Global("VP_BPC_Buffer2","LOCALS",6)
+  	GlobalGT("VP_BPC","LOCALS",11)
+  Global("VP_LoveTalk","LOCALS",12)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",13)
+		SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",TWO_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",13)
+	Gender(Player1,FEMALE)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",14)
+		Interact(Player1)
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkN_Timer","GLOBAL")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",13)
+	OR(2)
+		Global("VP_NoRomantics","LOCALS",1)
+		Global("VP_LookAtStars","LOCALS",3)
+	Gender(Player1,MALE)
+	PartyRested()
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",14)
+		ClearAllActions()
+		StartCutSceneMode()
+		DayNight(MIDNIGHT)
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+  Global("VP_MyFlirt_Is_Over","LOCALS",0)
+  OR(2)
+  	Global("VP_BPC_Buffer2","LOCALS",6)
+  	GlobalGT("VP_BPC","LOCALS",11)
+  Global("VP_LoveTalk","LOCALS",15)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",16)
+		SetGlobalTimer("VP_LoveTalkL_Timer","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_LoveTalkL_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_LoveTalk","LOCALS",16)
+	Gender(Player1,MALE)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN
+  RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",17)
+		ClearAllActions()
+		StartCutSceneMode()
+		DayNight(MIDNIGHT)
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	InParty("Jan")
+	!Dead("Jan")
+	Global("VP_BJan","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BJan","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Jan","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Jan","GLOBAL")
+	InParty(Myself)
+	InParty("Jan")
+	See("Jan")
+	!Dead("Jan")
+	!StateCheck("Jan",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BJan","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BJan","LOCALS",2)
+		Interact("Jan")
+END
+
+IF
+	InParty(Myself)
+	InParty("Anomen")
+	!Dead("Anomen")
+	Global("VP_BAnomen","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BAnomen","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Anomen","GLOBAL",ONE_DAY)
+END
+
+IF
+	InParty(Myself)
+	InParty("Mazzy")
+	!Dead("Mazzy")
+	Global("VP_BMazzy","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMazzy","LOCALS",1)
+		SetGlobalTimer("VP_Leina_Mazzy","GLOBAL",NINE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Leina_Mazzy","GLOBAL")
+	InParty(Myself)
+	InParty("Mazzy")
+	See("Mazzy")
+	!Dead("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	CombatCounter(0)
+	Global("VP_BMazzy","LOCALS",1)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_BMazzy","LOCALS",2)
+		Interact("Mazzy")
+END
+
+////////////////////////
+// Ric_Cleric_Quest
+////////////////////////
+
+//Marker
+/*IF
+	Global("VP_RicClericQ_Mark","LOCALS",0)
+	!Global("VP_Leina_NoClericQ","GLOBAL",1)
+	OR(6)
+		AreaCheck("AR0201")
+		AreaCheck("AR0202")
+		AreaCheck("AR0203")
+		AreaCheck("AR0204")
+		AreaCheck("AR0205")
+		AreaCheck("AR0206")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RicClericQ_Mark","LOCALS",1)
+END
+
+IF
+	Dead("UnseeingEye")
+	AreaCheck("AR0900")
+	Global("VP_RicClericQ_Mark","LOCALS",1)
+	Global("VP_Ric_ClericQuest","LOCALS",0)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_ClericQuest","LOCALS",1)
+		PlaySong(666)
+		Interact([PC])
+END
+
+IF
+	Dead("UnseeingEye")
+	OR(3)
+		AreaCheck("AR0901")
+		AreaCheck("AR0902")
+		AreaCheck("AR0904")
+	Global("VP_Ric_ClericQuest","LOCALS",2)	
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_ClericQuest","LOCALS",3)
+		Interact([PC])
+END
+
+IF
+	Dead("UnseeingEye")
+	AreaCheck("AR0900")
+	Global("VP_Ric_ClericQuest","LOCALS",4)	
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_ClericQuest","LOCALS",5)
+		Interact([PC])
+END*/
+
+////////////////////////////
+// Ric_DeArnise_Quest
+////////////////////////////
+
+//Marker
+/*IF
+	Global("VP_RicDeArniQ_Mark","LOCALS",0)
+	!Global("VP_Leina_NoDeArniQ","GLOBAL",1)
+	AreaCheck("AR1300")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RicDeArniQ_Mark","LOCALS",1)
+END
+
+IF
+	AreaCheck("AR1304")
+	Global("KeepPlot","GLOBAL",1)
+	Global("PCKeepOwner","GLOBAL",1)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_DeArnise","LOCALS",0)
+	Global("VP_RicDeArniQ_Mark","LOCALS",1)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_DeArnise","LOCALS",1)
+		PlaySong(666)
+		Interact([PC])
+END*/
+
+IF
+	AreaCheck("AR1304")
+	Global("RoenalControl","GLOBAL",1)
+	InParty(Myself)
+	InParty("Korgan")
+	See("Korgan")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_DeArnise","LOCALS",0)
+	Global("VP_RicDeArniQ_Mark","LOCALS",1)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_DeArnise","LOCALS",1)
+		Interact("Korgan")
+END
+
+IF
+	AreaCheck("AR1304")
+	Global("RoenalControl","GLOBAL",1)
+	InParty(Myself)
+	OR(2)
+		!InParty("Korgan")
+		!See("Korgan")
+	InParty("Mazzy")
+	See("Mazzy")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_DeArnise","LOCALS",0)
+	Global("VP_RicDeArniQ_Mark","LOCALS",1)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_DeArnise","LOCALS",1)
+		Interact("Mazzy")
+END
+
+IF
+	Global("RoenalControl","GLOBAL",1)
+	InParty(Myself)
+	OR(2)
+		!InParty("Korgan")
+		!See("Korgan")
+	OR(2)
+		!InParty("Mazzy")
+		!See("Mazzy")
+	InParty("Hrothgar")
+	See("Hrothgar")
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_DeArnise","LOCALS",0)
+	Global("VP_RicDeArniQ_Mark","LOCALS",1)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_DeArnise","LOCALS",1)
+		Interact("Hrothgar")
+END
+
+////////////////////////////
+// Ric_Sphere_Quest
+////////////////////////////
+
+//Marker
+IF
+	Global("VP_RicSphereQ_Mark","LOCALS",0)
+	!Global("VP_Leina_NoSphereQ","GLOBAL",1)
+	OR(5)
+		AreaCheck("AR0410")
+		AreaCheck("AR0411")
+		AreaCheck("AR0412")
+		AreaCheck("AR0413")
+		AreaCheck("AR0414")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RicSphereQ_Mark","LOCALS",1)
+END
+	
+IF
+	AreaCheck("AR0400")
+	Global("VP_SphereTalk","GLOBAL",1)
+	Dead("lavok02")
+	InParty(Myself)
+	Global("LavokDead","GLOBAL",1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_Sphere","LOCALS",0)
+	Global("VP_RicSphereQ_Mark","LOCALS",1)		
+THEN
+	RESPONSE #100
+		SetGlobal("VP_SphereTalk","GLOBAL",2)
+		RealSetGlobalTimer("VP_LeinaSphereT","GLOBAL",10)
+END
+
+IF
+	RealGlobalTimerExpired("VP_LeinaSphereT","GLOBAL")
+	Global("VP_SphereTalk","GLOBAL",2)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_Sphere","LOCALS",0)
+	Global("VP_RicSphereQ_Mark","LOCALS",1)		
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_Sphere","LOCALS",1)
+		PlaySong(666)
+		Interact(Player1)
+END
+
+IF
+	InParty(Myself)
+	Global("VP_MyFlirt_Is_Over","LOCALS",0)
+	OR(2)
+		Global("VP_BPC_Buffer2","LOCALS",6)
+		GlobalGT("VP_BPC","LOCALS",11)
+	OR(2)
+		Global("VP_LoveTalk","LOCALS",18)
+		Global("VP_LoveTalk","LOCALS",21)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_LoveTalk","LOCALS",1)
+		SetGlobalTimer("VP_NewLT_Timer","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_NewLT_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Gender(Player1,MALE)
+	!AreaType(DUNGEON)
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+	OR(2)
+		Global("VP_LoveTalk","LOCALS",19)
+		Global("VP_LoveTalk","LOCALS",22)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_LoveTalk","LOCALS",1)
+		SetGlobalTimer("VP_NewLT_Timer","GLOBAL",ONE_DAY)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	InParty("HaerDalis")
+	Global("VP_Leina_HaerDalis","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_HaerDalis","LOCALS",1)
+		SetGlobalTimer("VP_Lei_HaerD_Timer","GLOBAL",TWELVE_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Lei_HaerD_Timer","GLOBAL")
+	Global("VP_Leina_HaerDalis","LOCALS",1)
+	InParty(Myself)
+	InParty("HaerDalis")
+	See("HaerDalis")
+	!Dead("HaerDalis")
+	!StateCheck("HaerDalis",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_HaerDalis","LOCALS",2)
+		Interact("HaerDalis")
+END
+
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	Global("VP_Leina_Keldorn","LOCALS",0)
+	Global("VP_Kr_Messenger","LOCALS",0)
+	!Global("LadyMaria","GLOBAL",4)
+	Global("VP_Kr_Funneral","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Keldorn","LOCALS",1)
+		RealSetGlobalTimer("VP_Lei_Keld_Timer","GLOBAL",300)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Lei_Keld_Timer","GLOBAL")
+	Global("VP_Kr_Messenger","LOCALS",0)
+	!Global("LadyMaria","GLOBAL",4)
+	Global("VP_Leina_Keldorn","LOCALS",1)
+	Global("VP_Kr_Funneral","GLOBAL",0)
+	InParty(Myself)
+	InParty("Keldorn")
+	See("Keldorn")
+	!Dead("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Keldorn","LOCALS",2)
+		Interact("Keldorn")
+END
+
+IF
+	GlobalTimerExpired("VP_NewLT_Timer","GLOBAL")
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Gender(Player1,MALE)
+	Global("VP_LoveTalk","LOCALS",24)
+	PartyRested()
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_LoveTalk","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Leina",INSTANT)
+		Wait(1)
+		PlaySong(666)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+IF
+	InParty(Myself)
+	InParty("Melora")
+	!Dead("Melora")
+	Global("VP_Leina_Melora","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Melora","LOCALS",1)
+		RealSetGlobalTimer("VP_Lei_Mel_Timer","GLOBAL",1800)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Lei_Mel_Timer","GLOBAL")
+	Global("VP_Leina_Melora","LOCALS",1)
+	InParty(Myself)
+	InParty("Melora")
+	See("Melora")
+	!Dead("Melora")
+	!StateCheck("Melora",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Melora","LOCALS",2)
+		Interact("Melora")
+END
+
+IF
+	InParty(Myself)
+	InParty("Melora")
+	!Dead("Melora")
+	Global("VP_Leina_Melora","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Melora","LOCALS",4)
+		SetGlobalTimer("VP_Lei_Mel_Timer","GLOBAL",SIX_DAYS)
+END
+
+IF
+	GlobalTimerExpired("VP_Lei_Mel_Timer","GLOBAL")
+	Global("VP_Leina_Melora","LOCALS",4)
+	InParty(Myself)
+	InParty("Melora")
+	See("Melora")
+	!Dead("Melora")
+	!StateCheck("Melora",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Leina_Melora","LOCALS",5)
+		Interact("Melora")
+END
+
+////////////////////////////
+// Ric_Theatre_Quest
+////////////////////////////
+
+//Marker
+/*IF
+	Global("VP_RicTheatrQ_Mark","LOCALS",0)
+	Global("PlanarPrison","GLOBAL",2)
+	AreaCheck("AR0509")
+	!Global("VP_Leina_NoTheatrQ","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RicTheatrQ_Mark","LOCALS",1)
+END
+	
+IF
+	AreaCheck("AR0509")
+	See("FFBART")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_RicTheatrQ_Mark","LOCALS",1)
+	OR(2)
+		Global("VP_Ric_TheatrQuest","LOCALS",0)
+		Global("VP_Ric_TheatrQuest","LOCALS",99)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_TheatrQuest","LOCALS",1)
+		PlaySong(666)
+		Interact(Player1)
+END
+
+IF
+	AreaCheck("AR0509")
+	!See("FFBART")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_TheatrQuest","LOCALS",0)
+	Global("VP_RicTheatrQ_Mark","LOCALS",1)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_TheatrQuest","LOCALS",99)
+END*/
+
+////////////////////////////
+// Ric_Paladin_Quest
+////////////////////////////
+
+IF
+	OR(12)
+		AreaCheck("AR0020")
+		AreaCheck("AR0300")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0700")
+		AreaCheck("AR0800")
+		AreaCheck("AR0900")
+		AreaCheck("AR0903")
+		AreaCheck("AR1000")
+		AreaCheck("AR1304")
+		AreaCheck("AR1900")
+		AreaCheck("AR2000")
+	OR(2)
+		Global("PaladinOrder","GLOBAL",1)
+		Global("VP_EnhancedFirkrag","GLOBAL",1)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_RadianQuest","LOCALS",0)
+	!Global("VP_Leina_NoRadianQ","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_RadianQuest","LOCALS",1)
+		RealSetGlobalTimer("VP_Ric_RadianTimer","GLOBAL",5)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Ric_RadianTimer","GLOBAL")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("VP_Ric_RadianQuest","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Ric_RadianQuest","LOCALS",2)
+		PlaySong(666)
+		Interact(Player1)
+END
+

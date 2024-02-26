@@ -1,0 +1,92 @@
+IF
+	XPLT(Player1,100001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime06",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,100000)
+	XPLT(Player1,200001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime07",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,200000)
+	XPLT(Player1,400001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime08",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,400000)
+	XPLT(Player1,700001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime09",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,700000)
+	XPLT(Player1,1000001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime109",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,1000000)
+	XPLT(Player1,1300001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime10",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,1300000)
+	XPLT(Player1,1600001)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime110",[4642.2000],0)
+END
+
+IF
+	XPGT(Player1,1600000)
+	Global("VP_CreateSime","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateSime","GLOBAL",1)
+		CreateCreature("Sime121",[4642.2000],0)
+END
+
+IF
+	Global("KillArntra04","AR0307",1)
+THEN
+	RESPONSE #100
+		SetGlobal("KillArntra04","AR0307",2)
+		ActionOverride("arntra04",Face(10))
+		Wait(1)
+		ForceSpell("arntra04",CLERIC_FLAME_STRIKE)
+		Wait(1)
+		Kill("arntra04")
+		CreateCreature("Arntra05",[3213.485],0) // Shadow Thief
+END
+
+

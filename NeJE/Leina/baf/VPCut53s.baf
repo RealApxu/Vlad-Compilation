@@ -1,0 +1,31 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Leina")
+		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","Leina")
+		SetGlobal("VP_LeinaVampire","GLOBAL",1)
+		Wait(1)
+		CreateVisualEffectObject("SPDISPMA",Myself)
+		DropInventory()
+		SetLeavePartyDialogFile()
+		ChangeAIScript("VAMPAMB",OVERRIDE)
+		ChangeAIScript("",DEFAULT)
+		DialogInterrupt(FALSE)
+		LeaveParty()
+		EndCutSceneMode()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("bodhiamb")
+		DialogInterrupt(FALSE)
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampire
+END
+
+

@@ -1,0 +1,73 @@
+IF
+	RealGlobalTimerExpired("VP_LoveTalkDelay","LOCALS")
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	CombatCounter(0)
+	Global("VP_NightTalk","LOCALS",1)
+	Global("VP_LoveTalk","LOCALS",25)
+	GlobalGT("ASYLUMPLOT","GLOBAL",54)
+	Global("GivePowerSlayer","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_LoveTalk","LOCALS",26)
+		ClearAllActions()
+		StartCutSceneMode()
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+		
+IF
+	GlobalTimerExpired("VP_KrRomance_Timer","GLOBAL")
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	CombatCounter(0)
+	Global("VP_LoveTalk","LOCALS",29)
+	GlobalGT("ASYLUMPLOT","GLOBAL",54)
+THEN
+	RESPONSE #100
+		IncrementGlobal("VP_LoveTalk","LOCALS",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//LT6-TOB - Slayer's Talk
+IF
+	Global("VP_ToB_KrBanters","GLOBAL",1)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	GlobalTimerExpired("VP_ToB_Kr_Timer","GLOBAL")
+	Global("VP_Kr_NextTalk","GLOBAL",4)
+	Global("VP_ToB_LoveTalk","LOCALS",3)
+	CombatCounter(0)
+	Global("VP_Kr_ToBTalkDelay","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ToB_LoveTalk","LOCALS",4)
+		SetGlobal("VP_Slayer_Again","GLOBAL",1)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("KRCut28")
+END
+
+//LT12-TOB
+IF
+	Global("VP_ToB_LoveTalk","LOCALS",4)
+	Global("VP_Slayer_Again","GLOBAL",3)
+	GlobalTimerExpired("VP_ToB_Kr_Timer","GLOBAL")
+	Global("VP_Kr_NextTalk","GLOBAL",7)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_ToB_LoveTalk","LOCALS",5)
+		ClearAllActions()
+		StartCutSceneMode()
+		PlaySong(999999)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END

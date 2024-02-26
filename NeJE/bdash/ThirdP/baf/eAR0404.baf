@@ -1,0 +1,14 @@
+IF
+	Global("VP_EnhancedArea","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_EnhancedArea","MYAREA",1)
+		ActionOverride("hobsha01",DestroySelf())
+		CreateCreature("mackm",[1385.640],6)
+		CreateCreature("lincoln",[1339.696],6)
+		CreateCreature("philc",[1370.673],6)
+		CreateCreature("daisyj",[1375.723],6)
+		CreateCreature("melindam",[1417.677],6)
+		CreateCreature("leof",[1459.700],6)
+		CreateCreature("jemmas",[1418.720],6)
+END

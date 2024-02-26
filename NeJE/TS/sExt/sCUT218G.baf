@@ -1,0 +1,19 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("loveone5")
+		CreateVisualEffectObject("SPFLESHS",Myself)
+		Wait(1)
+		ChangeAnimation("HGWRA02") // Devil Shade
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("loveone6")
+		CreateVisualEffectObject("SPFLESHS",Myself)
+		Wait(1)
+		ChangeAnimation("HGWRA02") // Devil Shade
+END

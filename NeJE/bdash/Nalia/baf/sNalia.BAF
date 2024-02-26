@@ -1,0 +1,12 @@
+IF
+	See([PC])
+	InParty(Myself)
+	AreaCheck("AR1300")
+	Global("EnteredAR1300","GLOBAL",0)
+	Global("NaliaKeepPlot","GLOBAL",0)
+	Global("VP_NaliaDialogFix","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_NaliaDialogFix","GLOBAL",1)
+		StartDialogNoSet(Player1)
+END

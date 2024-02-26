@@ -1,0 +1,93 @@
+IF
+	InParty(Myself)
+	InParty("Kachiko")
+	HPPercentLT("Kachiko",50)
+	!HP("Kachiko",1)
+	Exists(LastAttackerOf("Kachiko"))
+	Global("VP_Kachiko_Dies","GLOBAL",0)
+	Exists(LastAttackerOf("Kachiko"))
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kachiko_Dies","GLOBAL",1)
+		EquipMostDamagingMelee()
+		DisplayStringHead(Myself,~Kachiko, don't give up, I will help you!~)
+		MoveToObjectNoInterrupt(LastAttackerOf("Kachiko"))
+		AttackReevaluate(LastAttackerOf("Kachiko"),75)
+		Continue()
+END
+
+IF
+	InParty(Myself)
+	Dead("Kachiko")
+	Global("VP_Kachiko_Dies","GLOBAL",1)
+	Exists(LastAttackerOf("Kachiko"))
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Kachiko_Dies","GLOBAL",2)
+		DisplayStringHead(Myself,~Kachiko! Nooooo!!!~)
+		Attack(LastAttackerOf("Kachiko"))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		Hide()
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(Myself,STATE_INVISIBLE)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),5)
+	Range(LastSeenBy(Myself),30)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		RunAwayFrom(LastSeenBy(Myself),10)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),5)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),30)
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Detect(NearestEnemyOf(Myself))
+	CombatCounter(0)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+

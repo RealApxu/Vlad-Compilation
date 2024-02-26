@@ -1,0 +1,95 @@
+IF
+	InMyArea("Aerie")
+	XPLT(Player1,160000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		ActionOverride("Aerie",DestroySelf())
+		CreateCreature("Aerie7",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	InMyArea("Aerie")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		ActionOverride("Aerie",DestroySelf())
+		CreateCreature("Aerie9",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	InMyArea("Aerie")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		ActionOverride("Aerie",DestroySelf())
+		CreateCreature("Aerie10",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	InMyArea("Aerie")
+	XPGT(Player1,849999)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		ActionOverride("Aerie",DestroySelf())
+		CreateCreature("Aerie11",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	!InMyArea("Aerie")
+	XPLT(Player1,160000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		CreateCreature("Aerie7",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	!InMyArea("Aerie")
+	XPGT(Player1,159999)
+	XPLT(Player1,450000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		CreateCreature("Aerie9",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	!InMyArea("Aerie")
+	XPGT(Player1,449999)
+	XPLT(Player1,850000)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		CreateCreature("Aerie10",[828.673],1) // Aerie
+		Continue()
+END
+
+IF
+	!InMyArea("Aerie")
+	XPGT(Player1,849999)
+	Global("VP_CreateAerie","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateAerie","GLOBAL",1)
+		CreateCreature("Aerie11",[828.673],1) // Aerie
+		Continue()
+END

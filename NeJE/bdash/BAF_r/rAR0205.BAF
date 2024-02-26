@@ -1,0 +1,23 @@
+IF
+	PartyHasItem("MISC5A") // Rift Device Part
+	PartyHasItem("MISC5B") // Rift Device Part
+THEN
+	RESPONSE #100
+		TakePartyItem("MISC5A") // Rift Device Part
+		TakePartyItem("MISC5B") // Rift Device Part
+		GiveItemCreate("MISC5C",Player1,0,0,0) // Rift Device
+		DisplayStringHead(Player1,31215) // The two parts meld into one, and the assembled rod seethes with power, feeding your crueler emotions.  Greed, hate, lust, and violence all surge within you and you now know why this device has been hidden away.  The rod can be used like a wand and has but one charge.  You should equip it in your quick slot immediately.
+		AddexperienceParty(26250)
+END
+
+IF
+	PartyHasItem("MISC5C") // Rift Device
+	!Dead("UnseeingEye")
+	Global("VP_UE_Appears","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Wait(6)
+		CreateCreature("BHEYE",[2528.1897],12) // Unseeing Eye
+		SetGlobal("VP_UE_Appears","GLOBAL",1)
+END
+

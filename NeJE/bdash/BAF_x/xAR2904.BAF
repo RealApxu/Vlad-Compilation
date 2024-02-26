@@ -1,0 +1,21 @@
+IF
+	Global("OpenedDoor6","AR2904",1)
+	Global("PaladinGone","AR2904",0)
+	Class(Player1,PALADIN_ALL)
+THEN
+	RESPONSE #100
+		SetGlobal("PaladinGone","AR2904",1)
+		ActionOverride(Player1,RemovePaladinHood())
+END
+
+IF
+	Global("OpenedDoor6","AR2904",1)
+	Global("RangerGone","AR2904",0)
+	Class(Player1,RANGER_ALL)
+THEN
+	RESPONSE #100
+		SetGlobal("RangerGone","AR2904",1)
+		ActionOverride(Player1,RemoveRangerHood())
+END
+
+

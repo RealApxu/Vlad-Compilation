@@ -1,0 +1,106 @@
+IF
+	See([PC])
+	OR(3)
+		Global("VP_ResqueLeina","GLOBAL",10)
+		Global("VP_ResqueLeina","GLOBAL",16)
+		Global("VP_ResqueLeina","GLOBAL",17)
+	Global("VP_MyQuest_Is_Over","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_MyQuest_Is_Over","LOCALS",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	InParty("Leina")
+	See("Leina")
+	Global("VP_MyQuest_Is_Over","LOCALS",0)
+	OR(2)
+		Global("VP_ResqueLeina","GLOBAL",16)
+		Global("VP_MyFatherIsDead","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_MyQuest_Is_Over","LOCALS",1)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	InParty("Leina")
+	See("Leina")
+	Global("VP_MyLastTalk","LOCALS",0)
+	OR(3)
+		GlobalGT("VP_Leina_Samuel","GLOBAL",0)
+		GlobalLT("VP_Leina_Samuel","GLOBAL",6)
+		GlobalTimerExpired("VP_Sam_Misses_Leina","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("VP_MyLastTalk","LOCALS",1)
+		SetGlobal("VP_Leina_Samuel","GLOBAL",7)
+		StartDialogueNoSet("Leina")
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Shout(99)
+		Enemy()
+END
+
+IF
+	HitBy([GOODCUTOFF],CRUSHING)
+THEN
+	RESPONSE #100
+		Shout(99)
+		Continue()
+END
+
+IF
+	Heard([ANYONE],99)
+	Allegiance(Myself,NEUTRAL)
+	!Class(Myself,INNOCENT)
+THEN
+	RESPONSE #100
+		Shout(57)
+		Enemy()
+		MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+	Heard([ANYONE],99)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],57)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Heard([ANYONE],99)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+IF
+	Heard([ANYONE],57)
+	!Class(Myself,INNOCENT)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToObject(LastHeardBy(Myself))
+		Continue()
+END
+
+

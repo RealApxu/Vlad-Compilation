@@ -1,0 +1,53 @@
+IF
+	LevelPartyLT(9)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi08",[3351.1753],0)
+END
+
+IF
+	LevelParty(9)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi09",[3351.1753],0)
+END
+
+IF
+	LevelParty(10)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi10",[3351.1753],0)
+END
+
+IF
+	LevelParty(11)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi11",[3351.1753],0)
+END
+
+IF
+	LevelParty(12)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi12",[3351.1753],0)
+END
+
+IF
+	LevelPartyGT(12)
+	Global("VP_CreateKachiko","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_CreateKachiko","GLOBAL",1)
+		CreateCreature("Kachi13",[3351.1753],0)
+END

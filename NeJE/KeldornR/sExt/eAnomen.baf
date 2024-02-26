@@ -1,0 +1,162 @@
+//Hatred - Talk 1
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	Alignment(Myself,LAWFUL_NEUTRAL)
+	Global("VP_Anom_TimerDelay","LOCALS",0)
+	Global("VP_AnomenJealous","GLOBAL",1)
+	!Global("AnomenRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",1)
+		RealSetGlobalTimer("VP_Anomen_Keldorn","GLOBAL",30)
+END
+
+IF
+	RealGlobalTimerExpired("VP_Anomen_Keldorn","GLOBAL")
+	Global("VP_Anom_TimerDelay","LOCALS",1)
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	See("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_AnomenJealous","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_AnomenJealous","GLOBAL",2)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",0)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Anomen",INSTANT)
+		Wait(3)
+		Interact("Keldorn")
+		EndCutSceneMode()
+END
+
+//Hatred - Talk 2 (after passing the test)
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	Alignment(Myself,LAWFUL_GOOD)
+	Global("VP_AnomenJealous","GLOBAL",3)
+	Global("VP_Anom_TimerDelay","LOCALS",0)
+	!Global("AnomenRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)	
+THEN
+	RESPONSE #100
+		SetGlobal("LoveTalk","LOCALS",99)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",1)
+		SetGlobalTimer("VP_Anomen_KeldornG","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Anomen_KeldornG","GLOBAL")
+	Global("VP_Anom_TimerDelay","LOCALS",1)
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	See("Keldorn")
+	!StateCheck("Keldorn",STATE_SLEEPING)
+	CombatCounter(0)
+	!See([ENEMY])
+	Global("VP_AnomenJealous","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_AnomenJealous","GLOBAL",4)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",0)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Anomen",INSTANT)
+		Wait(3)
+		Interact("Keldorn")
+		EndCutSceneMode()
+END
+
+//Hatred - Talk 3
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	Global("VP_AnomenJealous","GLOBAL",5)
+	Global("VP_Anom_TimerDelay","LOCALS",0)
+	!Global("AnomenRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)	
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",1)
+		SetGlobalTimer("VP_Anomen_KeldornG","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Anomen_KeldornG","GLOBAL")
+	Global("VP_Anom_TimerDelay","LOCALS",1)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_AnomenJealous","GLOBAL",5)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_AnomenJealous","GLOBAL",6)
+		SetGlobal("AnomenRomanceActive","GLOBAL",3)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",0)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Anomen",INSTANT)
+		PlaySong(35)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END
+
+//Hatred - Talk 4
+IF
+	InParty(Myself)
+	InParty("Keldorn")
+	!Dead("Keldorn")
+	Alignment(Myself,CHAOTIC_NEUTRAL)
+	GlobalGT("VP_AnomenJealous","GLOBAL",0)
+	Global("VP_Anom_Frustrated","GLOBAL",0)
+	Global("VP_Anom_TimerDelay","LOCALS",0)
+	!Global("AnomenRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",0)
+	!Global("VP_KrRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("LoveTalk","LOCALS",99)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",1)
+		SetGlobal("VP_Anom_Frustrated","GLOBAL",1)
+		SetGlobalTimer("VP_Anomen_KeldornG","GLOBAL",ONE_DAY)
+END
+
+IF
+	GlobalTimerExpired("VP_Anomen_KeldornG","GLOBAL")
+	Global("VP_Anom_TimerDelay","LOCALS",1)
+	InParty(Myself)
+	See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("VP_Anom_Frustrated","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_Anom_Frustrated","GLOBAL",2)
+		SetGlobal("AnomenRomanceActive","GLOBAL",3)
+		SetGlobal("VP_Anom_TimerDelay","LOCALS",0)
+		ClearAllActions()
+		StartCutSceneMode()
+		MoveViewObject("Anomen",INSTANT)
+		PlaySong(35)
+		Wait(3)
+		Interact(Player1)
+		EndCutSceneMode()
+END

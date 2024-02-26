@@ -1,0 +1,50 @@
+IF
+	Global("VP_RemDuplBoo","LOCALS",0)
+	HasItemSlot(Myself,SLOT_MISC3)
+	HasItem("MISC84",Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("VP_RemDuplBoo","LOCALS",1)
+		DestroyItem("MISC84") // Boo
+		GiveItemCreate("BOO",Myself,0,0,0) // Boo
+END
+
+IF
+    PartyHasItem("Boo")
+    !Global("VP_Boo","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetGlobal("VP_Boo","GLOBAL",1)
+END
+
+IF
+    !PartyHasItem("Boo")
+    GlobalTimerExpired("VP_NoBoo","GLOBAL")
+    Global("VP_Boo","GLOBAL",2)
+THEN
+    RESPONSE #100
+        SetGlobal("VP_Boo","GLOBAL",1)
+        GiveItemCreate("Boo",Myself,0,0,0)
+END
+
+IF
+    !PartyHasItem("Boo")
+    Global("VP_Boo","GLOBAL",0)
+    !GlobalTimerNotExpired("VP_NoBoo","GLOBAL")
+    !InMyArea("Boo")
+THEN
+    RESPONSE #100
+        MoveGlobalObject("Boo","Minsc")
+        ChangeEnemyAlly("Boo",CONTROLLED)
+        Continue()
+END
+
+IF
+    Global("VP_BooRest","GLOBAL",0)
+    PartyRested()
+    Detect("Boo")
+THEN
+    RESPONSE #100
+        SetGlobal("VP_BooRest","GLOBAL",1)
+        Continue()
+END

@@ -1,0 +1,43 @@
+IF
+	Global("StartEndBios","AR6200",1)
+	OR(2)
+		InParty("Kachiko")
+		InParty("Yoshimo")
+	Global("YoshimoBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("YoshimoBio","GLOBAL",1)
+		TextScreen("YOSHIMOD")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Sime")
+	OR(2)
+		!Global("SimeRomanceActive","GLOBAL",2)
+		Global("PlayerChoseEssence","GLOBAL",1)
+	Global("SimeBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SimeBio","GLOBAL",1)
+		TextScreen("SIMEFND")
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Global("StartEndBios","AR6200",1)
+	InParty("Sime")
+	Gender(Player1,MALE)
+	Global("PlayerChoseEssence","GLOBAL",0)
+	Global("SimeRomanceActive","GLOBAL",2)
+	Global("SimeBio","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SimeBio","GLOBAL",1)
+		TextScreen("SIMEND2")
+		SmallWait(1)
+		Continue()
+END
