@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN 2
   SAY ~You should reconsider <GABBER>, for I leave Halruaa very shortly to attend to another matter at hand and I may be away a while.~
   IF ~~ THEN REPLY ~That is unfortunate but I really cannot spare the time at this exact moment. Farewell Mordecai.~ DO ~ClearAllActions()
 StartCutSceneMode()
-StartCutScene("VPCutT28")~ EXIT //Quest is lost to PC. 
+StartCutScene("VPCutT28")~ EXIT //Quest is lost to PC.
   IF ~~ THEN REPLY ~Perhaps if you tell me what is required I can then decide if I have time.~ GOTO 3
 END
 
@@ -53,10 +53,10 @@ END
 IF ~~ THEN BEGIN 7
   SAY ~The first will be to cast a spell that could prevent offensive magic being cast against you. I will ask you to cast the spell *Power Word Silence* on the tutor standing near me. Her name is Ghiala, please meet her.~
   IF ~~ THEN EXTERN ~TUCONJ~ 1
-END  
-  
+END
+
 IF ~~ THEN BEGIN 8
-  SAY ~It will be to your advantage if you have the spell ready, but as I have specified which to use I will not penalise you if you do not have it, and the same goes for the second test which will be for you to summon a powerful ally, a creature from any of the elemental planes. Do you have any of the spells readied <GABBER>?~ 
+  SAY ~It will be to your advantage if you have the spell ready, but as I have specified which to use I will not penalise you if you do not have it, and the same goes for the second test which will be for you to summon a powerful ally, a creature from any of the elemental planes. Do you have any of the spells readied <GABBER>?~
   IF ~~ THEN REPLY ~I have both spells  Mordecai.~ GOTO 23
   IF ~~ THEN REPLY ~I know the spells Mordecai, but I have not had the opportunity to memorise them.~ GOTO 16
   IF ~~ THEN REPLY ~I do not have the required spells.~ GOTO 17
@@ -68,7 +68,7 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-  SAY ~You can be assured she will take no action against you as she has taken part in many such tests. It will be to your advantage if you have the spell ready, but as I have specified which to use I will not penalise you if you do not have it, and the same goes for the second test which will be for you to summon a powerful ally, a creature from any of the elemental planes. Do you have any of the spells readied <GABBER>?~ 
+  SAY ~You can be assured she will take no action against you as she has taken part in many such tests. It will be to your advantage if you have the spell ready, but as I have specified which to use I will not penalise you if you do not have it, and the same goes for the second test which will be for you to summon a powerful ally, a creature from any of the elemental planes. Do you have any of the spells readied <GABBER>?~
   IF ~~ THEN REPLY ~I have both spells  Mordecai.~ GOTO 23
   IF ~~ THEN REPLY ~I know the spells Mordecai, but I have not had the opportunity to memorise them.~ GOTO 16
   IF ~~ THEN REPLY ~I do not have the required spells.~ GOTO 17
@@ -87,8 +87,8 @@ END
 IF ~~ THEN BEGIN 11
   SAY ~My tasks are such that they will test your ability to cast conjuration spells, and only conjuration spells, in two different situations.~
   IF ~~ THEN GOTO 12
-END  
-  
+END
+
 IF ~~ THEN BEGIN 12
   SAY ~I will ask you to cast the spell *Power Word Silence* on the tutor standing near me. Her name is Ghiala, please meet her.~
   IF ~~ THEN EXTERN ~TUCONJ~ 3
@@ -108,11 +108,11 @@ Kit(Player1,MAGESCHOOL_DIVINER)~ THEN REPLY ~Perhaps another time Mordecai, I ha
   IF ~InParty("Kachiko")
 !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ67
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, All I can say is I hope your cousin Willy isn’t sitting too comfortably on his chair, because he is about to take a tumble when he hears you have passed this exam. After all, how can you possibly fail when Mordecai is giving you the spells.~ EXTERN ~JANJ~ NEJ197 
+!Dead("Jan")~ THEN REPLY ~Jan, All I can say is I hope your cousin Willy isnï¿½t sitting too comfortably on his chair, because he is about to take a tumble when he hears you have passed this exam. After all, how can you possibly fail when Mordecai is giving you the spells.~ EXTERN ~JANJ~ NEJ197
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, what luck! Little does Mordecai realise that he stands in the presence of one of the most illustrious... correction... *the* most illustrious of conjurers to walk Faerun. There’s not a mage here at Halruaa who can hold a candle to your brilliance Edwin. I know its not much of a test for one such as yourself, but it will give you the opportunity to show him what being a conjurer really means and we will gain some valuable prizes at the same time.~ EXTERN ~EDWINJ~ NEJ196
+!Dead("Edwin")~ THEN REPLY ~Edwin, what luck! Little does Mordecai realise that he stands in the presence of one of the most illustrious... correction... *the* most illustrious of conjurers to walk Faerun. Thereï¿½s not a mage here at Halruaa who can hold a candle to your brilliance Edwin. I know its not much of a test for one such as yourself, but it will give you the opportunity to show him what being a conjurer really means and we will gain some valuable prizes at the same time.~ EXTERN ~EDWINJ~ NEJ196
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, even you shouldn’t be able to mess this one up seeing as how the spells are being handed to you.~ EXTERN ~TAFFICJ~ conjurer
+!Dead("Taffic")~ THEN REPLY ~Taffic, even you shouldnï¿½t be able to mess this one up seeing as how the spells are being handed to you.~ EXTERN ~TAFFICJ~ conjurer
 END
 
 IF ~~ THEN BEGIN 14
@@ -147,7 +147,7 @@ IF ~~ THEN BEGIN 18
 END
 
 IF ~~ THEN BEGIN 19
-  SAY ~Beneath you! You are a student and yet you say it is beneath you to take a tutor’s test? If you wish to do well at Halruaa <GABBER> I suggest you learn some respect for those who are here to aid you in bettering yourself. Now, I have students who do wish to learn to see, so I bid you farewell.~
+  SAY ~Beneath you! You are a student and yet you say it is beneath you to take a tutorï¿½s test? If you wish to do well at Halruaa <GABBER> I suggest you learn some respect for those who are here to aid you in bettering yourself. Now, I have students who do wish to learn to see, so I bid you farewell.~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT28")~ EXIT
@@ -159,7 +159,7 @@ IF ~~ THEN BEGIN 20
 StartCutSceneMode()
 StartCutScene("VPCutT28")~ EXIT //Quest is lost to PC.
   IF ~~ THEN REPLY ~If that is so, perhaps I should make the time for your tests now Mordecai.~ GOTO 21
-END 
+END
 
 IF ~~ THEN BEGIN 21
   SAY ~Then you know what is required of you <GABBER>, are you prepared?~
@@ -226,15 +226,15 @@ IF ~~ THEN BEGIN 29
   SAY ~(*Smiling back at Ghiala*) Ah but Ghiala, maybe I will have more sense than to volunteer as a guinea pig. Anyway, please return to your students now, farewell Ghiala.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",3)~ EXTERN ~TUCONJ~ 6
 END
-  
+
 IF ~Global("VP_My_Test","LOCALS",4)
 !RealGlobalTimerExpired("VP_Conjurer_Tests","GLOBAL")~ THEN BEGIN 30
-  SAY ~So <CHARNAME>, we still have one more task to see through.~ 
+  SAY ~So <CHARNAME>, we still have one more task to see through.~
   IF ~~ THEN GOTO 31
-END 
+END
 
 IF ~~ THEN BEGIN 31
-  SAY ~I must say that went very well. Ghiala’s speeches are always long and I swear it is because she likes the sound of her own voice. I am sure her students would enjoy the short respite if you cast your spell in her class. Now onto your second casting, are you ready?~ 
+  SAY ~I must say that went very well. Ghialaï¿½s speeches are always long and I swear it is because she likes the sound of her own voice. I am sure her students would enjoy the short respite if you cast your spell in her class. Now onto your second casting, are you ready?~
   IF ~OR(2)
 !InParty("Minsc")
 Dead("Minsc")~ THEN REPLY ~Sure, just say when Mordecai.~ GOTO 32
@@ -253,14 +253,14 @@ END //=> Test 2: To summon and control Air Elemental
 
 IF ~Global("VP_My_Test","LOCALS",6)
 !RealGlobalTimerExpired("VP_Conjurer_Tests","GLOBAL")~ THEN BEGIN 33
-  SAY ~Congratulations, you have successfully completed both tasks. I see in you the potential to become an accomplished conjurer, I will be watching your progress with keen interest as I have a feeling you will do great things in the future. I wish you luck in your studies here at Halruaa. Farewell.~ 
+  SAY ~Congratulations, you have successfully completed both tasks. I see in you the potential to become an accomplished conjurer, I will be watching your progress with keen interest as I have a feeling you will do great things in the future. I wish you luck in your studies here at Halruaa. Farewell.~
   IF ~~ THEN REPLY ~One moment Mordecai, what do you suggest we do with the big guy here, it was your idea to summon him?~ GOTO 34
   IF ~~ THEN REPLY ~And the Elemental... Mordecai? ~ GOTO 34
-  IF ~~ THEN REPLY ~Then I guess I can leave our friend (*indicating the Elemental*)... with you Mordecai!~ GOTO 34 
-END 
+  IF ~~ THEN REPLY ~Then I guess I can leave our friend (*indicating the Elemental*)... with you Mordecai!~ GOTO 34
+END
 
 IF ~~ THEN BEGIN 34
-  SAY ~Mmm... I think the safest place for it would be here. Just get it to stand here and it should stay put until unsummoned and you can all be on your way. Farewell.~ 
+  SAY ~Mmm... I think the safest place for it would be here. Just get it to stand here and it should stay put until unsummoned and you can all be on your way. Farewell.~
 IF ~~ THEN DO ~GiveItemCreate("InsectSw",Player1,1,0,0)
 AddexperienceParty(18000)
 EscapeArea()~ EXIT
@@ -280,7 +280,7 @@ IF ~~ THEN BEGIN 36
 END
 
 IF ~Global("VP_My_Test","LOCALS",9)~ THEN BEGIN 37
-  SAY ~I am sorry, a brave attempt on your part,  but to pass both tasks must be performed successfully. For now, you have a little extra time for further study before you can attempt another test. Farewell.~ 
+  SAY ~I am sorry, a brave attempt on your part,  but to pass both tasks must be performed successfully. For now, you have a little extra time for further study before you can attempt another test. Farewell.~
   IF ~Global("VP_Nalia_ConQuest","GLOBAL",0)
 Global("VP_Kachi_ConQuest","GLOBAL",0)
 Global("VP_Aerie_ConQuest","GLOBAL",0)
@@ -313,7 +313,7 @@ IF ~~ THEN BEGIN 38
 END
 
 IF ~Global("VP_My_Test","LOCALS",10)~ THEN BEGIN 39
-  SAY ~I am sorry my young scholar, but to pass you have to complete both tasks successfully. For now, you have a little extra time for further study before you can attempt another test. Farewell.~ 
+  SAY ~I am sorry my young scholar, but to pass you have to complete both tasks successfully. For now, you have a little extra time for further study before you can attempt another test. Farewell.~
   IF ~Global("VP_Nalia_ConQuest","GLOBAL",0)
 Global("VP_Kachi_ConQuest","GLOBAL",0)
 Global("VP_Aerie_ConQuest","GLOBAL",0)

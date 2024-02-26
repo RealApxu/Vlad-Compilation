@@ -90,7 +90,7 @@ IF ~~ THEN BEGIN 11 // from: 7.0
   IF ~~ THEN REPLY ~I really do not want to kill you, Vulova, but your death is the only means of my getting to my own goal. Do not let your daughter also become a victim here.~ GOTO 12
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~I have no intentions of killing either of you Vulova. Let me at least take Leina to the Five Flagons where she will be safe.~ GOTO 12
 END
-  
+
 IF ~~ THEN BEGIN 12 // from: 7.0
   SAY ~Liar! You take me for a fool! Do you think that I do not know what manner of creature has sent you here, or that your purpose is to ensure that neither I nor my daughter remain alive? You may take me but you will not find Leina!~
   IF ~~ THEN DO ~Shout(89)

@@ -11,19 +11,19 @@ END
 
 IF ~~ THEN BEGIN KRst1
   SAY ~(Making fun of you) Shameless person... It's you who is really shameless. You are not even married to him. And don't be all saints with me, sister.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0 
-END  
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0
+END
 
 IF ~~ THEN BEGIN KRst2
   SAY ~(Her eyes are glowing brightly) Oh, I so want to see him, at least with one eye! But you are even bathing in your clothes.~
 =
 ~Oh, you can't imagine how much I envy you, <CHARNAME>. There is much more divinity in you, and what a great man you've got for yourself, and look at me... always the younger sister.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0 
-END  
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0
+END
 
 IF ~~ THEN BEGIN KRst3
   SAY ~(Pouting) You are so mean!~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Im0
 END
 
 IF ~~ THEN BEGIN KRst4
@@ -31,7 +31,7 @@ IF ~~ THEN BEGIN KRst4
   	IF ~~ THEN EXTERN ~FINSOL01~ KR10
 END
 
-IF ~~ THEN BEGIN KRst5 
+IF ~~ THEN BEGIN KRst5
   SAY #68091 /* ~So you're going to stay a mortal?  Wow!  After all that, we're going to end up on the road again.  Must feel good, though, to have your own future ahead of you again, though, no?~ [IMOE2525] */
   	IF ~~ THEN GOTO KRst6
 END
@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN KRst7
   	IF ~~ THEN EXTERN ~FINSOL01~ KR8
 END
 
-IF ~~ THEN BEGIN KRst8 
+IF ~~ THEN BEGIN KRst8
   SAY #68091 /* ~So you're going to stay a mortal?  Wow!  After all that, we're going to end up on the road again.  Must feel good, though, to have your own future ahead of you again, though, no?~ [IMOE2525] */
   	IF ~~ THEN GOTO KRst9
 END

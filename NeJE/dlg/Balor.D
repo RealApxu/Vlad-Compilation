@@ -34,14 +34,14 @@ END
 IF ~~ THEN BEGIN 4
 	SAY ~(*Its next thoughts seem to be mocking you.*)~
 =
-~I am in your head prime as is the way I communicate with all inferior beings, the only way that I will communicate with such as you.~ 
+~I am in your head prime as is the way I communicate with all inferior beings, the only way that I will communicate with such as you.~
 =
 ~You intrigue me, as does this one, (*indicating Hrothgar*), how is it that he was able to break through when my mind was directed at you alone, something it appears that you are also able to do?~
 =
 ~I would study his mind further but he is preventing me, he is hiding something. He is different, you are different, and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~Forgive my impatience but that is a mystery that will have to remain hidden, I have no time for in depth explanations. The gem, please?~ GOTO 5
   IF ~~ THEN REPLY ~Sorry, but I am not about to let you poke about in my mind. Now if you do not mind, the gem?~ GOTO 5
-  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so’s I can leave peaceably?~ GOTO 5
+  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me soï¿½s I can leave peaceably?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -56,7 +56,7 @@ END
 IF ~~ THEN BEGIN 6
 	SAY ~(*You sense ripples of what you presume to be demon laughter pass over your mind*) Oh no, dear me no.~
 =
-~Shendru’s agenda is much simpler. He wants the gem for himself because it is the only way of keeping his beasts at bay.~
+~Shendruï¿½s agenda is much simpler. He wants the gem for himself because it is the only way of keeping his beasts at bay.~
 =
 ~He knows that I guard it and he knows the price for my leaving this plane, he cannot afford to pay it and still continue what he calls his game.~
 =
@@ -67,20 +67,20 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-	SAY ~(*Once again you feel the strange ripples as they form in your head*) Let me make this easier for you to understand and tell you my price.~ 
+	SAY ~(*Once again you feel the strange ripples as they form in your head*) Let me make this easier for you to understand and tell you my price.~
 =
-~I am here through a misunderstanding on my own plane, what you would call a wager, one which I was unfortunate to lose. Now, in order to return to my own plane I need to collect some souls to take with me, to pay off this wager.~ 
+~I am here through a misunderstanding on my own plane, what you would call a wager, one which I was unfortunate to lose. Now, in order to return to my own plane I need to collect some souls to take with me, to pay off this wager.~
 =
-~Shendru knows that if I take the souls of anyone that reaches here, the gem will be his for the taking. If however, his beasts prevent anyone getting this far, then I remain here for a while longer, waiting.~ 
+~Shendru knows that if I take the souls of anyone that reaches here, the gem will be his for the taking. If however, his beasts prevent anyone getting this far, then I remain here for a while longer, waiting.~
 =
-~You cannot leave here with your lives in tact and the gem. So, maybe the druid is not as insane as one would first presume. What say you, now you know my price?~ 
+~You cannot leave here with your lives in tact and the gem. So, maybe the druid is not as insane as one would first presume. What say you, now you know my price?~
 	IF ~~ THEN REPLY ~Such arrogance! Shendru obviously has not considered the possibility of me killing you, taking the gem and keeping my soul!~ GOTO 8
   IF ~~ THEN REPLY ~Then Shendru has underestimated me demon! I am taking the gem and my soul when I leave here.~ GOTO 8
   IF ~InParty("Melora")
 !Dead("Melora")~ THEN REPLY ~If it is souls that you want, I know where there are some ripe ones for the taking and not too far from where we stand. They will be no match for one such as you, what do you say, their souls for the gem and I take care of the Druid on my way out?~ EXTERN ~MELORAJ~ MQ5A
   IF ~OR(2)
 !InParty("Melora")
-Dead("Melora")~ THEN REPLY ~If it is souls that you want, I know where there are some ripe ones for the taking and not too far from where we stand. They will be no match for one such as you, what do you say, their souls for the gem and I take care of the Druid on my way out?~ GOTO 10 
+Dead("Melora")~ THEN REPLY ~If it is souls that you want, I know where there are some ripe ones for the taking and not too far from where we stand. They will be no match for one such as you, what do you say, their souls for the gem and I take care of the Druid on my way out?~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 8
@@ -107,13 +107,13 @@ Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
-	SAY ~(*You sense the demon is interested and at the same time amused by your answer*) The souls of those in the cave, yes, I sense them in your thoughts.~ 
+	SAY ~(*You sense the demon is interested and at the same time amused by your answer*) The souls of those in the cave, yes, I sense them in your thoughts.~
 =
-~Your will to survive is stronger than I anticipated, you do not worry about repercussions for your actions.~ 
+~Your will to survive is stronger than I anticipated, you do not worry about repercussions for your actions.~
 =
 ~You would certainly be a worthy opponent and might even best me should we do battle prime, but why put it to the test when it is not necessary?~
 =
-~I will exchange the gem for those souls but only when they are mine.~ 
+~I will exchange the gem for those souls but only when they are mine.~
 =
 ~Come, I will follow you, I do not trust you at my back.~
   IF ~InParty("Taffic")
@@ -138,14 +138,14 @@ StartCutScene("VPCutM09")~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
-	SAY ~(*Its next thoughts seem to be mocking you*) Oh, I think not prime!~ 
+	SAY ~(*Its next thoughts seem to be mocking you*) Oh, I think not prime!~
 =
-~I have waited a long time for my release from this plane, I am not about to let you walk away and take valuable souls with you.~ 
+~I have waited a long time for my release from this plane, I am not about to let you walk away and take valuable souls with you.~
 =
 ~There is more here, you and this one (*indicating Hrothgar*), you are both... different, hiding something and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~I... I have no idea what you mean. I came looking for a light gem, I was told it would help me leave this place.~ GOTO 5	
   IF ~~ THEN REPLY ~Maybe we can aid each other. We are both looking for our freedom, the gem will secure mine, tell me, what will secure yours?~ GOTO 5	
-  IF ~~ THEN REPLY ~I did not mean to disturb you. I see now that this search for the light gem was another ploy on the druid’s part to amuse himself further at my expense. I will leave you in peace.~ GOTO 5
+  IF ~~ THEN REPLY ~I did not mean to disturb you. I see now that this search for the light gem was another ploy on the druidï¿½s part to amuse himself further at my expense. I will leave you in peace.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 12
@@ -158,7 +158,7 @@ IF ~~ THEN BEGIN 12
 ~I would study his mind further but he is preventing me, he is hiding something. He is different, you are different, and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~Forgive my impatience but that is a mystery that will have to remain hidden, I have no time for in depth explanations. The gem, please?~ GOTO 5
   IF ~~ THEN REPLY ~Sorry, but I am not about to let you poke about in my mind. Now if you do not mind, the gem?~ GOTO 5	
-  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so’s I can leave peaceably?~ GOTO 5
+  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me soï¿½s I can leave peaceably?~ GOTO 5
 END
 
 IF ~Global("VP_EvilAct","GLOBAL",2)~ THEN BEGIN 13

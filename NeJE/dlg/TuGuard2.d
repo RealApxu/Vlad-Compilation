@@ -10,22 +10,22 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~There is no excuse for weapons being on the premises. The rules are plain enough so that even an imbecile knows the consequences for flouting them.~
-  IF ~~ THEN GOTO 2    
-END  
-  
+  IF ~~ THEN GOTO 2
+END
+
 IF ~~ THEN BEGIN 2
-  SAY ~I‘ll take this sword and talk to Lavallin. You shall be warned only once. The rules must and will be upheld by all!~
+  SAY ~Iï¿½ll take this sword and talk to Lavallin. You shall be warned only once. The rules must and will be upheld by all!~
   IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60)
 TakePartyItem("TuSwordP")
 DestroyItem("TuSwordP")
 EscapeArea()~ EXIT
-END   
+END
 
 IF ~~ THEN BEGIN 3
   SAY ~There is no excuse for weapons being on the premises. The rules are plain enough so that even an imbecile knows the consequences for flouting them.~
-  IF ~~ THEN GOTO 4    
-END  
-  
+  IF ~~ THEN GOTO 4
+END
+
 IF ~~ THEN BEGIN 4
   SAY ~You shall be warned only once. The rules must and will be upheld by all!~
   IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60)

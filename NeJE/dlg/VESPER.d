@@ -37,5 +37,5 @@ END
 IF ~~ THEN BEGIN KR1
   SAY ~(Crying) We are so lonely here, daddy...~
   IF ~~ THEN EXTERN ~LEONA~ KR3
-END  
+END
 END

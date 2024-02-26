@@ -37,7 +37,7 @@ IF ~InParty("Sharteel")
 END
 
 IF ~~ THEN BEGIN 2
- SAY ~I admit a strong pull to visit the Severed Hand and to visit a famous locale of my people. However, adventure in <CHARNAME>'s time would be an unprecedented opportunity. Whatever you choose, <CHARNAME>, I shall follow you.~  
+ SAY ~I admit a strong pull to visit the Severed Hand and to visit a famous locale of my people. However, adventure in <CHARNAME>'s time would be an unprecedented opportunity. Whatever you choose, <CHARNAME>, I shall follow you.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ EXTERN ~HROTHJ~ 162
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
@@ -48,7 +48,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
- SAY ~As I said, wherever you go <CHARNAME>, I shall go as well. It has been awhile since adventuring has caught my heart racing so! It shall be quite enlightening to see the world of your time period.~  
+ SAY ~As I said, wherever you go <CHARNAME>, I shall go as well. It has been awhile since adventuring has caught my heart racing so! It shall be quite enlightening to see the world of your time period.~
  IF ~Global("VP_End_IWD","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ NEJ63
  IF ~!Global("VP_End_IWD","GLOBAL",2)~ THEN EXTERN ~HROTHJ~ 403
  IF ~InParty("Dar")~ THEN EXTERN ~PLAYER1~ NEJ64
@@ -68,7 +68,7 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
- SAY ~Rightly so! Getting away from this Icy Anvil will be most welcome!~  
+ SAY ~Rightly so! Getting away from this Icy Anvil will be most welcome!~
  IF ~Global("VP_End_IWD","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ NEJ63
  IF ~!Global("VP_End_IWD","GLOBAL",2)~ THEN EXTERN ~HROTHJ~ 403
  IF ~InParty("Dar")~ THEN EXTERN ~PLAYER1~ NEJ64
@@ -80,7 +80,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
- SAY ~What strange magic got us here Hrothgar? Such power is common amongst the most powerful of mages. Of which you do not appear to be.~ 
+ SAY ~What strange magic got us here Hrothgar? Such power is common amongst the most powerful of mages. Of which you do not appear to be.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 196
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 43
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ314
@@ -107,7 +107,7 @@ IF ~~ THEN BEGIN 9
 =
 ~This is Hanali Celanil, goddess of love and beauty. That is Labelas Enoreth, god of time and longevity. The rest are more difficult for me to decipher. Damn the beasts responsible for this.~
  IF ~~ THEN DO ~SetGlobal("VP_Denaini_Erevain","LOCALS",1)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 10
  SAY ~We have truly done a great deed here <CHARNAME>. Now, the souls of these elves may yet rest and join with the Seldarine. You have my respect. Never again must a thing like this be permitted to happen.~
@@ -116,22 +116,22 @@ END
 
 IF ~~ THEN BEGIN 11
  SAY ~Greetings again Pomab. You seem to be just as out of place this time as when I first met you.~
- IF ~~ THEN EXTERN ~DPOMAB~ 18 
-END 
- 
+ IF ~~ THEN EXTERN ~DPOMAB~ 18
+END
+
 IF ~~ THEN BEGIN 12
  SAY ~I do love to travel it's true. Your homeland, Calimshan, is one region I've never visited. The dunes, the hot sand, what a sight it must be.~
- IF ~~ THEN EXTERN ~DPOMAB~ 19 
-END 
- 
+ IF ~~ THEN EXTERN ~DPOMAB~ 19
+END
+
 IF ~~ THEN BEGIN 13
  SAY ~Perhaps one day I'll find my way down there and you will have moved on and be able to give me a tour.~
- IF ~~ THEN EXTERN ~DPOMAB~ 20 
+ IF ~~ THEN EXTERN ~DPOMAB~ 20
 END
 
 IF ~~ THEN BEGIN 14
  SAY ~Boorish fool. Your head hurts because nothing is there! Dolle naa lost!~
- IF ~~ THEN EXTERN ~DOGRE~ 9 
+ IF ~~ THEN EXTERN ~DOGRE~ 9
 END
 
 IF ~~ THEN BEGIN 15
@@ -142,7 +142,7 @@ Dead("Dar")
 !See("Dar")~ THEN EXTERN ~DGOBLINC~ 11
  IF ~InParty("Dar")
 !Dead("Dar")
-See("Dar")~ THEN EXTERN ~DARJ~ EREVDAR1  
+See("Dar")~ THEN EXTERN ~DARJ~ EREVDAR1
 END
 
 IF ~~ THEN BEGIN 16

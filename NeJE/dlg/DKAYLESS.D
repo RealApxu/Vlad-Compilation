@@ -161,15 +161,15 @@ END
 IF ~~ THEN BEGIN 19 //2
   SAY ~I am not the person you should be asking, I know no more than what I have said. I am a soldier and I have no interest in the ways of the wizard.~
   IF ~~ THEN REPLY ~Then I guess I will have to continue my search for Larrel and take my questions to him.~ GOTO 20 //-->3
-  IF ~~ THEN REPLY ~Larrel’s astrolabe  may be our only means of escaping this place Kaylessa. Please, anything you know or may have heard will be a great help.~ GOTO 21 //-->4
-  IF ~~ THEN REPLY ~This is very important, please Kaylissa is there nothing you can recall of Larrel’s research?~ GOTO 21 //-->4
-  IF ~~ THEN REPLY ~I can not believe this. Our way home may be within our grasp yet you say you know nothing about this device, Larrel... the wizard who had the machine built... wanders the tower in a state of utter confusion. Is there no one sane enough to talk with?~ GOTO 21 //-->4 
+  IF ~~ THEN REPLY ~Larrelï¿½s astrolabe  may be our only means of escaping this place Kaylessa. Please, anything you know or may have heard will be a great help.~ GOTO 21 //-->4
+  IF ~~ THEN REPLY ~This is very important, please Kaylissa is there nothing you can recall of Larrelï¿½s research?~ GOTO 21 //-->4
+  IF ~~ THEN REPLY ~I can not believe this. Our way home may be within our grasp yet you say you know nothing about this device, Larrel... the wizard who had the machine built... wanders the tower in a state of utter confusion. Is there no one sane enough to talk with?~ GOTO 21 //-->4
 END
 
 IF ~~ THEN BEGIN 20 //3
   SAY ~I am afraid you will get little from Larrel, or anyone here. When the hand fell, so did the mind and reason of almost all who dwelt within. Few escaped the curse.~
   IF ~~ THEN REPLY ~Then tell me of those who did escape, maybe I can find one among them who can tell me what I need to know?~ GOTO 21 //-->4
-  IF ~~ THEN REPLY ~Is it possible that any who did escape the curse still wander these rooms?~ GOTO 21 //-->4 
+  IF ~~ THEN REPLY ~Is it possible that any who did escape the curse still wander these rooms?~ GOTO 21 //-->4
   IF ~~ THEN REPLY ~I have no choice, I must speak with Larrel, and the need has become more urgent since learning of this astrolabe.~ GOTO 21 //-->4
 END
 

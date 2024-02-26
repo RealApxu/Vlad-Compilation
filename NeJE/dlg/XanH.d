@@ -21,24 +21,24 @@ IF ~~ THEN BEGIN 2
   SAY ~Me a tutor. Now why should I take on such a thankless task as teaching? The mere idea fills me with a sense of dread. With so many absent, this is only one of such tasks that have fallen upon me. It is not my place to refuse, no matter how tiresome I find them.~
   IF ~~ THEN REPLY ~Then what may I ask is it that you do here?~ JOURNAL ~Meeting Xan.
 
-I couldn’t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn’t bring him any joy.~ GOTO 3
+I couldnï¿½t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesnï¿½t bring him any joy.~ GOTO 3
   IF ~~ THEN REPLY ~So, if not tutor than you must be a pupil. Is that correct?~ JOURNAL ~Meeting Xan.
 
-I couldn’t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn’t bring him any joy.~ GOTO 3
+I couldnï¿½t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesnï¿½t bring him any joy.~ GOTO 3
   IF ~~ THEN REPLY ~(*As will most things, Xan!*) Ah, then you must be a student, Xan?~ JOURNAL ~Meeting Xan.
 
-I couldn’t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn’t bring him any joy.~ GOTO 3
+I couldnï¿½t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesnï¿½t bring him any joy.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
   SAY ~I am a senior student of Halruaa, studying the arts of Enchantment magic. As a senior student I am sometimes called upon to perform the hapless task of imparting some of my knowledge to our more junior pupils.~
   IF ~~ THEN GOTO 4
-END  
-  
+END
+
 IF ~~ THEN BEGIN 4
-  SAY ~A dismal and thankless task, but with the absence of so many, the job has fallen more and more to me. Given the conditions here, I am amazed that anyone manages to learn anything.~  
+  SAY ~A dismal and thankless task, but with the absence of so many, the job has fallen more and more to me. Given the conditions here, I am amazed that anyone manages to learn anything.~
   IF ~~ THEN REPLY ~You do not seem too pleased with the position thrust upon you. I take it you were you not given any choice in the matter?~ GOTO 5
-  IF ~~ THEN REPLY ~Have you any idea what has caused so many absences?~ GOTO 5 
+  IF ~~ THEN REPLY ~Have you any idea what has caused so many absences?~ GOTO 5
   IF ~CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Was there no indication that a spate of absenteeism was about to occur so that measures could have been taken to prevent such disruption?~ GOTO 5
 END
 
@@ -86,8 +86,8 @@ END
 IF ~~ THEN BEGIN 10
   SAY ~I see what I see, <CHARNAME>. I give you that the Academy building is bright enough, but the area that surrounds Halruaa itself is dismal. Nothing to see but sand and the air here is either too hot or too cold to enjoy being outdoors. Still, its purpose is to educate and it does that well enough.~
   IF ~~ THEN GOTO 11
-END   
-  
+END
+
 IF ~~ THEN BEGIN 11
   SAY ~Now as you so rightly point out, I must return to my duties. As thankless as they are, if I do not attend to them no one else will. Goodbye, <CHARNAME>.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Meeting_Xan","GLOBAL",1)
@@ -104,23 +104,23 @@ END
 
 IF WEIGHT #1 ~Global("VP_My_Test","LOCALS",0)
 NumTimesTalkedToGT(0)~ THEN BEGIN 12
-  SAY ~Is there no end to these tiresome tests! Hello. I surmise you are here for the ability tests? ~ 
+  SAY ~Is there no end to these tiresome tests! Hello. I surmise you are here for the ability tests? ~
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well met, Xan, so this is one of those hapless task thrust upon you is it?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well then, tell me, what it is an ability test?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Can you tell me why such a test is necessary?~ GOTO 13
-  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa’s students?~ GOTO 13
+  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaaï¿½s students?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~I know my capabilities and I do not need a  test to prove myself to you or anyone else.~ GOTO 13
-  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that’s our Xan!*) Ahem... I’ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 13
+  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, thatï¿½s our Xan!*) Ahem... Iï¿½ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 13
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well met, Xan, so this is one of those hapless task thrust upon you is it?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well then, tell me, what it is an ability test?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Can you tell me why such a test is necessary?~ GOTO 43
-  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa’s students?~ GOTO 43
+  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaaï¿½s students?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~I know my capabilities and I do not need a  test to prove myself to you or anyone else.~ GOTO 43
-  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that’s our Xan!*) Ahem... I’ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 43
+  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, thatï¿½s our Xan!*) Ahem... Iï¿½ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 43
 END
 
 IF ~~ THEN BEGIN 13
-  SAY ~All students have to be tested after each stage of learning, as tiresome as it is!~ 
+  SAY ~All students have to be tested after each stage of learning, as tiresome as it is!~
   IF ~~ THEN GOTO 14
 END
 
@@ -128,12 +128,12 @@ IF ~~ THEN BEGIN 14
   SAY ~We need to be sure that the student has learnt all that is required before moving on to the next phase of learning.~
   IF ~~ THEN GOTO 15
 END
-  
+
 IF ~~ THEN BEGIN 15
   SAY ~To move a student forward before understanding what has gone before could prove hazardous not only to the student but also to the students who work alongside him. No student will be permitted to proceed or graduate if they refuse a test at any stage.~
   IF ~~ THEN REPLY ~A sensible enough reason I suppose, but does the student benefit in anyway?~ GOTO 16
   IF ~~ THEN REPLY ~What advantage does a student who has graduated have over one who has obtained all the certificates and not graduated?~ GOTO 16
-  IF ~~ THEN REPLY ~Tell me, Xan, what incentive is offered to encourage students to take these tests?~ GOTO 16 
+  IF ~~ THEN REPLY ~Tell me, Xan, what incentive is offered to encourage students to take these tests?~ GOTO 16
   IF ~~ THEN REPLY ~So the tutors set the tests for reasons of safety, I imagine it is their safety they worry for about more than the students. Now, what do I as a student gain from this?~ GOTO 16
 END
 
@@ -145,10 +145,10 @@ END
 IF ~~ THEN BEGIN 17
   SAY ~Despite its dismal surroundings, the academy is renown for its high standards of discipline, and to maintain this high esteem only students that graduate are granted a final diploma of Halruaa. In order to graduate, all students must produce certificates of each stage passed.~
   IF ~~ THEN GOTO 18
-END  
-  
+END
+
 IF ~~ THEN BEGIN 18
-  SAY ~To earn that diploma is the reason students strive in such a hapless place as this. Is that not after all why you are here, <CHARNAME>, or are your questions leading somewhere else?~ 
+  SAY ~To earn that diploma is the reason students strive in such a hapless place as this. Is that not after all why you are here, <CHARNAME>, or are your questions leading somewhere else?~
   IF ~~ THEN REPLY ~No... no other reason than to prove myself, Xan.~ GOTO 19
   IF ~~ THEN REPLY ~I am here for you assessment, Xan, nothing more than that.~ GOTO 19
   IF ~~ THEN REPLY ~I know of the prestige gained, Xan, I merely ask whether there was a personal reward for each certificate gained. Set your tests, I will not fail!~ GOTO 19
@@ -158,18 +158,18 @@ END
 IF ~~ THEN BEGIN 19
   SAY ~The tasks are not of my setting, <CHARNAME>. Around here I just do as I am told.~
   IF ~~ THEN GOTO 20
-END   
-  
+END
+
 IF ~~ THEN BEGIN 20
   SAY ~(*Indicating a young student that is standing quietly beside him*) This is Sharia, she has volunteered to help in the first task, I should probably have said *she was* volunteered to help.~
   IF ~~ THEN EXTERN ~TUENCH~ 1
 END
-  
+
 IF ~~ THEN BEGIN 21
   SAY ~Enchantment magic depends on the ability to influence the behaviour of those around. Both of these tasks are set to test your capability as an Enchanter, <CHARNAME>.~
   IF ~~ THEN GOTO 22
-END    
-  
+END
+
 IF ~~ THEN BEGIN 22
   SAY ~ The first will be for the would be mage to take Sharia here from my side and bring her to their side as an ally, using any enchantment spell at hand. The second will be to cast a new spell that I have been given, devised by one of the master enchanters here at the academy especially for this test. If successful, the student gets to keep a copy of the scroll. Do you have your spells ready?~
   IF ~~ THEN REPLY ~I have, Xan.~ GOTO 23
@@ -190,19 +190,19 @@ Kit(Player1,MAGESCHOOL_INVOKER)~ THEN REPLY ~I do not have the required spells i
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic is a great believer in fate and destiny, he therefore feels competent to take your test.~ EXTERN ~TAFFICJ~ xantest1
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, can’t you just see the pride you’ll bring to ma Jansen’s eyes when you tell her you’ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193 
+!Dead("Jan")~ THEN REPLY ~Jan, canï¿½t you just see the pride youï¿½ll bring to ma Jansenï¿½s eyes when you tell her youï¿½ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin don’t glare at Xan, please, he doesn’t know you and you are not supposed to know him. I just know that I am going to regret asking this, especially as your intellect is way above his, but could you, would you please put whatever you are feeling aside and take this infantile test of his? Please, a few minutes of your time is all that I am asking.~ EXTERN ~EDWINJ~ NEJ192
+!Dead("Edwin")~ THEN REPLY ~Edwin donï¿½t glare at Xan, please, he doesnï¿½t know you and you are not supposed to know him. I just know that I am going to regret asking this, especially as your intellect is way above his, but could you, would you please put whatever you are feeling aside and take this infantile test of his? Please, a few minutes of your time is all that I am asking.~ EXTERN ~EDWINJ~ NEJ192
 END
 
 IF ~~ THEN BEGIN 23
-  SAY ~You are prepared, well I never! You do amaze me, so many come here unprepared and expecting to be given time to learn their spells. It’s very depressing at times to discover how little students do learn whilst here and yet they still expect to pass their exams. I tell you, ours is a hapless task. Now where was I... oh yes... you may proceed when ready.~
+  SAY ~You are prepared, well I never! You do amaze me, so many come here unprepared and expecting to be given time to learn their spells. Itï¿½s very depressing at times to discover how little students do learn whilst here and yet they still expect to pass their exams. I tell you, ours is a hapless task. Now where was I... oh yes... you may proceed when ready.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",1)
 RealSetGlobalTimer("VP_Xan_Tests","GLOBAL",360)~ EXIT
 END //=> Test 1: To charm Sharia
 
 IF ~~ THEN BEGIN 24
-  SAY ~Why am I not surprised! I knew this was not going to be a good day. How do you expect to pass any test without preparing for it, <CHARNAME>?~ 
+  SAY ~Why am I not surprised! I knew this was not going to be a good day. How do you expect to pass any test without preparing for it, <CHARNAME>?~
   IF ~~ THEN REPLY ~I was preoccupied with my studies, Xan, I guess I left it too late to memorise spells.~ GOTO 26
   IF ~~ THEN REPLY ~I have no excuses, Xan. I forgot about the assessment.~ GOTO 25
   IF ~~ THEN REPLY ~How am I expected to have the required spells memorised when I have no idea what would be expected of me?~ GOTO 26
@@ -212,15 +212,15 @@ END
 IF ~~ THEN BEGIN 25
   SAY ~Spare me the excuses, <CHARNAME>. I am here to assess your spell casting abilities and as such I have been instructed to offer you a choice of scrolls, seems it is not uncommon for you students to arrive ill-prepared.~
   IF ~~ THEN GOTO 27
-END   
-  
+END
+
 IF ~~ THEN BEGIN 26
   SAY ~You're wasting both our time, <CHARNAME>. I am here to assess your spell casting abilities and as such I have been instructed to offer you a choice of scrolls, seems it is not uncommon for you students to arrive ill-prepared.~
   IF ~~ THEN GOTO 27
 END
-   
+
 IF ~~ THEN BEGIN 27
-  SAY ~I will however have to mark you down for not preparing beforehand. You may choose one which will you take?~ 
+  SAY ~I will however have to mark you down for not preparing beforehand. You may choose one which will you take?~
   IF ~~ THEN REPLY ~Charm Person.~ DO ~SetGlobal("VP_My_Test","LOCALS",1)
 RealSetGlobalTimer("VP_Xan_Tests","GLOBAL",360)
 GiveItem("SCRL69",Player1)~ EXIT
@@ -256,10 +256,10 @@ END //=> Test 1: To charm Sharia
 IF ~~ THEN BEGIN 30
   SAY ~This is not a good start for you, <CHARNAME>! You call yourself Enchanter and yet you do not have the simplest of enchantment spells in your book. You are not deserving of the name Enchanter.~
   IF ~~ THEN GOTO 31
-END   
-  
+END
+
 IF ~~ THEN BEGIN 31
-  SAY ~Please go away and do not return until you have prepared yourself. You would be wise not to delay your return as I have other thankless tasks as well as these to perform. Until then, good day to you.~ 
+  SAY ~Please go away and do not return until you have prepared yourself. You would be wise not to delay your return as I have other thankless tasks as well as these to perform. Until then, good day to you.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 SetGlobalTimer("VP_Xan_Waiting","GLOBAL",ONE_DAY)~ EXIT
 END //=> Test 1: Postponed.
@@ -286,7 +286,7 @@ IF WEIGHT #2 ~Global("VP_My_Test","LOCALS",2)~ THEN BEGIN 33
 IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic is a great believer in fate and destiny, he therefore feels competent to take your test.~ EXTERN ~TAFFICJ~ xantest1
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, can’t you just see the pride you’ll bring to ma Jansen’s eyes when you tell her you’ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
+!Dead("Jan")~ THEN REPLY ~Jan, canï¿½t you just see the pride youï¿½ll bring to ma Jansenï¿½s eyes when you tell her youï¿½ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
 END
 
 IF ~~ THEN BEGIN 34
@@ -309,7 +309,7 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~I am.~ DO ~SetGlobal("VP_G
 SetGlobal("VP_My_Test","LOCALS",3)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("VPCutT10")~ EXIT 
+StartCutScene("VPCutT10")~ EXIT
   IF ~Global("VP_Nalia_EnchQuest","GLOBAL",0)
 Global("VP_Kachi_EnchQuest","GLOBAL",0)
 Global("VP_Aerie_EnchQuest","GLOBAL",0)
@@ -381,11 +381,11 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~Come, Xan, who will know i
   IF ~Global("VP_Kachi_EnchQuest","GLOBAL",1)~ THEN REPLY ~Kachiko, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ EXTERN ~KACHIJ~ NEJ62
   IF ~Global("VP_Aerie_EnchQuest","GLOBAL",1)~ THEN REPLY ~Aerie, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ EXTERN ~AERIEJ~ NEJ226
   IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ EXTERN ~JANJ~ NEJ194
-  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ EXTERN ~TAFFICJ~ xantest2  
+  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ EXTERN ~TAFFICJ~ xantest2
 END
 
 IF ~~ THEN BEGIN 37
-  SAY ~I am instructed to allow students only one attempt at these tasks. I am sorry but I don’t make the rules, I only follow them. You should now return to your studies as it will be while before a tutor will be available to assess you again, as for myself, I have other thankless tasks I must see to. Good day.~
+  SAY ~I am instructed to allow students only one attempt at these tasks. I am sorry but I donï¿½t make the rules, I only follow them. You should now return to your studies as it will be while before a tutor will be available to assess you again, as for myself, I have other thankless tasks I must see to. Good day.~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT12")~ EXIT
@@ -415,7 +415,7 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~Is that it, Xan? One attem
   IF ~Global("VP_Kachi_EnchQuest","GLOBAL",1)~ THEN REPLY ~Kachiko, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~KACHIJ~ NEJ62
   IF ~Global("VP_Aerie_EnchQuest","GLOBAL",1)~ THEN REPLY ~Aerie, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~AERIEJ~ NEJ226
   IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~JANJ~ NEJ194
-  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2 
+  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2
 END
 
 IF WEIGHT #6 ~Global("VP_My_Test","LOCALS",3)
@@ -481,8 +481,8 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~Come, Xan, who will know i
   IF ~Global("VP_Nalia_EnchQuest","GLOBAL",1)~ THEN REPLY ~Nalia, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~NALIAJ~ NEJ324
   IF ~Global("VP_Kachi_EnchQuest","GLOBAL",1)~ THEN REPLY ~Kachiko, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~KACHIJ~ NEJ62
   IF ~Global("VP_Aerie_EnchQuest","GLOBAL",1)~ THEN REPLY ~Aerie, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~AERIEJ~ NEJ226
-  IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~JANJ~ NEJ194 
-  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2 
+  IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~JANJ~ NEJ194
+  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2
 END
 
 IF WEIGHT #4 ~Global("VP_My_Test","LOCALS",1)
@@ -504,7 +504,7 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~I am.~ DO ~SetGlobal("VP_G
 SetGlobal("VP_My_Test","LOCALS",3)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("VPCutT10")~ EXIT 
+StartCutScene("VPCutT10")~ EXIT
   IF ~Global("VP_Nalia_EnchQuest","GLOBAL",0)
 Global("VP_Kachi_EnchQuest","GLOBAL",0)
 Global("VP_Aerie_EnchQuest","GLOBAL",0)
@@ -556,12 +556,12 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY #7932 DO ~SetGlobal("VP_My_
 END
 
 IF ~~ THEN BEGIN 43
-  SAY ~You’ll have to excuse me but it always amazes me when someone feels they’ve actually learnt enough in this hapless place to pass an examination.~
+  SAY ~Youï¿½ll have to excuse me but it always amazes me when someone feels theyï¿½ve actually learnt enough in this hapless place to pass an examination.~
   IF ~~ THEN GOTO 44
 END
-  
+
 IF ~~ THEN BEGIN 44
-  SAY ~Now I’ll explain your tasks which let me quickly say were not set by myself. Around 	here I just do as I am told.~
+  SAY ~Now Iï¿½ll explain your tasks which let me quickly say were not set by myself. Around 	here I just do as I am told.~
   IF ~~ THEN GOTO 20
 END
 
@@ -571,12 +571,12 @@ IF ~~ THEN BEGIN 45
 END
 
 IF ~~ THEN BEGIN 46
-  SAY ~(*Sighs*) Oh well, I can’t say that I am surprised, I blame the tutors lack of discipline. There was a time that when a student presented himself for an assessment, he was committed to taking it.~
+  SAY ~(*Sighs*) Oh well, I canï¿½t say that I am surprised, I blame the tutors lack of discipline. There was a time that when a student presented himself for an assessment, he was committed to taking it.~
   IF ~~ THEN GOTO 47
 END
 
 IF ~~ THEN BEGIN 47
-  SAY ~Nowadays the student gets to decide after the test is announced, it’s no wonder the standards of passes are dropping and of course the oppressive atmosphere that continually hangs over this place doesn’t help or inspire the students.~
+  SAY ~Nowadays the student gets to decide after the test is announced, itï¿½s no wonder the standards of passes are dropping and of course the oppressive atmosphere that continually hangs over this place doesnï¿½t help or inspire the students.~
   IF ~~ THEN GOTO 48
 END
 
@@ -609,6 +609,6 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~Come, Xan, who will know i
   IF ~Global("VP_Nalia_EnchQuest","GLOBAL",1)~ THEN REPLY ~Nalia, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~NALIAJ~ NEJ324
   IF ~Global("VP_Kachi_EnchQuest","GLOBAL",1)~ THEN REPLY ~Kachiko, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~KACHIJ~ NEJ62
   IF ~Global("VP_Aerie_EnchQuest","GLOBAL",1)~ THEN REPLY ~Aerie, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~AERIEJ~ NEJ226
-  IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~JANJ~ NEJ194 
-  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2 
+  IF ~Global("VP_Jan_EnchQuest","GLOBAL",1)~ THEN REPLY ~Jan, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~JANJ~ NEJ194
+  IF ~Global("VP_Taffic_EnchQuest","GLOBAL",1)~ THEN REPLY ~Taffic, that test was designed for students not fully fledged mages! Maybe you should take the time and get some extra education whilst we are here. You may be of more use to me then.~ DO ~SetGlobal("VP_Guards_Fix","GLOBAL",0)~ EXTERN ~TAFFICJ~ xantest2
 END

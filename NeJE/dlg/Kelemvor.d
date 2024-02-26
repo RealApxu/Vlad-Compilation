@@ -95,7 +95,7 @@ END
 IF ~~ THEN BEGIN ext8
 	SAY ~He is, but he is not here. We will talk about him later. Now you will go.~
 		IF ~~ THEN EXIT
-END 
+END
 	
 IF ~~ THEN BEGIN 3
 	SAY ~Thank you.~
@@ -235,7 +235,7 @@ IF ~~ THEN BEGIN 17
 END
 
 IF ~~ THEN BEGIN 18
-	SAY	~If you are so certain that you are right, then go and persuade him.~ 
+	SAY	~If you are so certain that you are right, then go and persuade him.~
 		IF ~~ THEN DO ~SetGlobal("VP_Kr_CyricPlot","GLOBAL",8)
 ClearAllActions()
 StartCutSceneMode()
@@ -245,7 +245,7 @@ END
 IF ~~ THEN BEGIN K3
 	SAY	~I am surprised, <CHARNAME>. In sending you here I was certain your plan was doomed to fail. You've surpassed my expectations.~
 =
-~There is however one “impediment” to your leaving. You see that portal over there... Well, you are a semi-god and you can walk through it easily as many times as you wish without any harm to yourself... Keldorn is but a mere mortal, only one way is open to him... the way here. He may leave this place only by giving some of his life energy to the guard.~
+~There is however one ï¿½impedimentï¿½ to your leaving. You see that portal over there... Well, you are a semi-god and you can walk through it easily as many times as you wish without any harm to yourself... Keldorn is but a mere mortal, only one way is open to him... the way here. He may leave this place only by giving some of his life energy to the guard.~
 =
 ~<CHARNAME>, I have no power over that guard, and neither I nor Jergal can do anything. You see I'm not so... almighty.~
 		IF ~~ THEN REPLY ~There is nothing else that can be done? Can I sacrifice some of my own divine blood?~ GOTO K4
@@ -322,7 +322,7 @@ IF ~~ THEN BEGIN K11
 =
 ~As to your power, the ring of Cyric disturbed the balance, the dark part had the opportunity to break away and is now out of control. Be careful if you do not want it to possess you.~
 		IF ~~ THEN REPLY ~All right. I'll try.~ GOTO K12
-END 
+END
 
 IF ~~ THEN BEGIN K12
 	SAY	~And one more thing... Your courage and self-sacrifice touched me. Please take this chain mail as a gift from me. Only those who serve me can wear this armor, but you are an exceptional person.~

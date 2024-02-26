@@ -18,12 +18,12 @@ END
 IF ~~ THEN BEGIN 3
  SAY ~Do not worry so much over things that you do not know, <CHARNAME>. Hrothgar is a brave and honourable man, you are safe under his guidance and you can trust him completely.~ [tilorn08]
  IF ~~ THEN GOTO 4
-END 
- 
+END
+
 IF ~~ THEN BEGIN 4
  SAY ~Your instincts have led you right this far, never doubt those instincts, <CHARNAME>, trust in them.~ [tilorn09]
  IF ~~ THEN REPLY ~More obscurity, Tilorn, as if I have not had enough from Hrothgar. Are you at least going say why it is that you are here and obviously waiting for us?~ EXTERN ~HROTHJ~ 58
- IF ~~ THEN REPLY ~You and Hrothgar put a great deal of emphasis on the word "trust", Tilorn, yet neither of you are prepared to trust me and let me in on what it is that you are doing. Does trust not work two ways?~ EXTERN ~HROTHJ~ 58 
+ IF ~~ THEN REPLY ~You and Hrothgar put a great deal of emphasis on the word "trust", Tilorn, yet neither of you are prepared to trust me and let me in on what it is that you are doing. Does trust not work two ways?~ EXTERN ~HROTHJ~ 58
  IF ~~ THEN REPLY ~"Trust"! There is that word again! "Trust" Hrothgar! "Trust" my instincts! Both my "trust" and my patience are wearing a bit thin with all this secrecy! Now Tilorn, why is it that you have turned up here and what do you know of these keys that Hrothgar searches for so vehemently?~ EXTERN ~HROTHJ~ 58
  IF ~~ THEN REPLY ~Like Hrothgar, you dance around my questions, Tilorn, this in itself tells me to be wary of you and has nothing to do with what my "instincts" say. Is there some conspiracy between you and Hrothgar that brings you here?~ EXTERN ~HROTHJ~ 58
 END
@@ -36,15 +36,15 @@ END
 IF ~~ THEN BEGIN 6
  SAY ~(*Abruptly interrupts you, his voicing taking on a severe tone.*) <CHARNAME>, if you will let me finish I will answer you as to why I am here!~ [tilorn12]
  IF ~~ THEN EXTERN ~PLAYER1~ NEJ75
-END 
+END
 
 IF ~~ THEN BEGIN 7
  SAY ~Good. I see that I have your attention. Now, it is my belief that these ruins where we now stand should not be ruins, Ulcaster Academy should stand here intact along with all the knowledge that its walls contained. Knowledge that I feel is crucial to understanding how The Realms of today are shaped.~ [tilorn13]
  IF ~~ THEN GOTO 8
-END  
- 
+END
+
 IF ~~ THEN BEGIN 8
- SAY ~If the fall of Ulcaster and everything that resulted from its destruction can be prevented from taking place then we will have made a start in setting things straight.~ [tilorn14] 
+ SAY ~If the fall of Ulcaster and everything that resulted from its destruction can be prevented from taking place then we will have made a start in setting things straight.~ [tilorn14]
  IF ~~ THEN REPLY ~Setting things straight, Tilorn? What an odd thing to say. What things are you wanting to set straight? Furthermore, how do you intend to go about preventing something that happened many years in the past?~ GOTO 9
  IF ~~ THEN REPLY ~You say that this is what you believe, Tilorn, you do not say that this is what you know. So, who are you to say that the past should be changed because of what you believe? Surely, if such a thing were possible then it is best left to the gods to decide if it should be done?~ GOTO 9
  IF ~~ THEN REPLY ~You are not making any more sense than Hrothgar did when he started talking of the wrong place and the wrong time, Tilorn. How can a man possibly change what has already come to pass?~ GOTO 9
@@ -54,8 +54,8 @@ END
 IF ~~ THEN BEGIN 9
  SAY ~I do not expect you to understand that when I say, if it is what I believe then it is almost certainly so. The past can be changed, but not on a whim, <CHARNAME>, it is not something to be undertaken lightly.~ [tilorn15]
  IF ~~ THEN GOTO 10
-END 
- 
+END
+
 IF ~~ THEN BEGIN 10
  SAY ~I have thought long and hard on what I am about to ask of you, but I feel that it is the necessary course to take. I ask that you go back to the past, to The Academy of Halruaa. A school of specialist magic and the place where the destruction of Ulcaster was instigated by its mages.~ [tilorn16]
  IF ~~ THEN GOTO 11
@@ -69,22 +69,22 @@ END
 IF ~~ THEN BEGIN 12
  SAY ~Hrothgar is right, <CHARNAME>, but we must attempt it all the same. I have been to Halruaa myself and was unable to prevent the disaster. I arrived too late and found that events had already begun. All I found was the confirmation of what I have already told you.~ [tilorn17]
  IF ~~ THEN GOTO 13
-END 
+END
 
 IF ~~ THEN BEGIN 13
- SAY ~Ulcaster must be saved, the balance between the magics, like balance in all things, must be preserved and that can only be done by correcting the point at which it went awry.~ [tilorn18] 
+ SAY ~Ulcaster must be saved, the balance between the magics, like balance in all things, must be preserved and that can only be done by correcting the point at which it went awry.~ [tilorn18]
  IF ~~ THEN GOTO 14
-END  
- 
+END
+
 IF ~~ THEN BEGIN 14
- SAY ~You must find what tipped the balance in their favour, <CHARNAME>, and as I have said, correct it. Speak to whoever you feel you need to but be careful with your dealings with any wizard that you encounter.~ [tilorn19] 
+ SAY ~You must find what tipped the balance in their favour, <CHARNAME>, and as I have said, correct it. Speak to whoever you feel you need to but be careful with your dealings with any wizard that you encounter.~ [tilorn19]
  IF ~True()~ THEN GOTO 15
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ545
- IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 11 
-END  
- 
+ IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 11
+END
+
 IF ~~ THEN BEGIN 15
- SAY ~I have the means to send you to Halruaa, all that it needs is for you to agree to aid me in this.~ [tilorn30] 
+ SAY ~I have the means to send you to Halruaa, all that it needs is for you to agree to aid me in this.~ [tilorn30]
  IF ~~ THEN REPLY ~You have the means to send us into the past, Tilorn! What manner of person are you that can do such a thing?~ GOTO 16
  IF ~~ THEN REPLY ~You speak so casually of sending us into the past, Tilorn, as though it is something that you have done often. Is that so?~ GOTO 16
  IF ~~ THEN REPLY ~Now hold on a minute, Tilorn! Send us back to the past! Can you also bring us back to here? Can you, because I sure as hell do not relish being trapped in some place that puts Irenicus out of my reach?~ GOTO 16
@@ -94,8 +94,8 @@ IF ~~ THEN BEGIN 16
  SAY ~True, it is no simple thing to do, <CHARNAME>, but I can deliver you safely to Halruaa and bring you safely back to the present time when the task is completed. How it is that I can do this is not for me to say. Are you prepared to help me?~ [tilorn20]
  IF ~~ THEN REPLY ~You appear to have the same sense of right about you as Hrothgar does, Tilorn, I see no reason for mistrust in either of you. I will quell my curiosity for the time being and aid you.~ GOTO 17
  IF ~~ THEN REPLY ~I will aid you, Tilorn, and hope that you will trust me enough to give me some answers soon.~ GOTO 17
- IF ~~ THEN REPLY ~Cast your magic, Tilorn, or whatever it is that you have to do to transport us to this Halruaa. We shall see what we shall see, when and ‘if‘ we arrive at the right time or even the right place.~ GOTO 17
- IF ~~ THEN REPLY ~This is madness, Tilorn! You stretch the meaning of the word ‘trust‘ too far! I will not embark on so foolish a mission because it is what you believe should be done. I will return and seek out Irenicus before the chance is lost. If it is your decision to follow Tilorn, Hrothgar, then I will say goodbye to you both.~ GOTO 20
+ IF ~~ THEN REPLY ~Cast your magic, Tilorn, or whatever it is that you have to do to transport us to this Halruaa. We shall see what we shall see, when and ï¿½ifï¿½ we arrive at the right time or even the right place.~ GOTO 17
+ IF ~~ THEN REPLY ~This is madness, Tilorn! You stretch the meaning of the word ï¿½trustï¿½ too far! I will not embark on so foolish a mission because it is what you believe should be done. I will return and seek out Irenicus before the chance is lost. If it is your decision to follow Tilorn, Hrothgar, then I will say goodbye to you both.~ GOTO 20
  IF ~~ THEN REPLY ~I told Hrothgar that I would travel with him as far as Ulcaster, Tilorn. Well I am here and I find myself still without answers as to why. You, Tilorn, and Hrothgar are very much the same, in what way I am still unsure, but I see no answers forthcoming from either of you. I have delayed my search for Imoen too long, this is as far as that trust you both asked for goes. If you feel that you must follow Tilorn, Hrothagr, then I bid you both farewell.~ GOTO 20
 END
 
@@ -103,7 +103,7 @@ IF ~~ THEN BEGIN 17
  SAY ~Before I transport you there is one last thing to be done. You cannot enter Halruaa armed as you are, to do so would result in instant death the moment you set foot on academy grounds.~ [tilorn23]
  IF ~~ THEN GOTO 18
 END
- 
+
 IF ~~ THEN BEGIN 18
  SAY ~Instead you must leave your armour and your weapons here among the ruins, and whilst you are on Halruaa grounds you must wear these robes that I have procured for you. Only robes and weapons that a mage can use are allowed. ~ [tilorn31]
  IF ~True()~ THEN GOTO 19
@@ -143,7 +143,7 @@ InParty("Kachiko")
 !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ NEJ223
  IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ halruaa
-END 
+END
 
 IF ~~ THEN BEGIN 19
  SAY ~Now, make haste, secure a safe place for your equipment and return when you are done.~ [tilorn32]
@@ -166,7 +166,7 @@ IF ~~ THEN BEGIN 20
  SAY ~Then it is for Hrothgar and myself that the task falls upon. We cannot delay if we are to arrive at Halruaa in time. Come Hrothgar.~ [tilorn22]
  IF ~~ THEN EXTERN ~HROTHJ~ 61
 END
- 
+
 IF WEIGHT #0 ~Global("VP_Move_To_Halruaa","GLOBAL",1)
 OR(6)
 HasWeaponEquiped(Player1)
@@ -704,13 +704,13 @@ StartCutScene("VPCutH05")~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
- SAY ~I cannot... (*sighs*) It‘s too late, my friend.~ [tilorn01]
+ SAY ~I cannot... (*sighs*) Itï¿½s too late, my friend.~ [tilorn01]
  IF ~~ THEN DO ~PlaySound("EFF_M17B")
 ScreenShake([50.50],30)~ EXTERN ~EURICH~ 1
 END
 
 IF ~~ THEN BEGIN 25
- SAY ~Why are you all so persistent? Even if I resurrect <PRO_HIMHER>, <PRO_HESHE> won‘t remember a thing.~ [tilorn02]
+ SAY ~Why are you all so persistent? Even if I resurrect <PRO_HIMHER>, <PRO_HESHE> wonï¿½t remember a thing.~ [tilorn02]
  IF ~~ THEN EXTERN ~LARIA~ 3
 END
 
@@ -728,7 +728,7 @@ StartCutScene("VP_Mov05")~ EXIT
 END
 
 IF ~!Global("VP_Leaving_Halruaa","GLOBAL",0)~ THEN BEGIN 28
- SAY ~(*Angrily*) Mages and their damn pride! Magic is indeed a terrible force if wielded indiscriminately. I look at the destruction around us and pray today’s mages have learnt from past mistakes, this should never have happened!~
+ SAY ~(*Angrily*) Mages and their damn pride! Magic is indeed a terrible force if wielded indiscriminately. I look at the destruction around us and pray todayï¿½s mages have learnt from past mistakes, this should never have happened!~
  IF ~~ THEN EXTERN ~HROTHJ~ 339
 END
 
@@ -745,17 +745,17 @@ END
 IF ~~ THEN BEGIN 31
  SAY ~(*Turning to you*)... Forgive my outburst <CHARNAME>. Hrothgar is right, I suppose I always knew the quest was ultimately futile and, what I like to call the *pasenture* or the *past-present-future*, could not be changed in our favour but I had to try...~
  IF ~~ THEN GOTO 32
-END 
- 
+END
+
 IF ~~ THEN BEGIN 32
  SAY ~But when I found and took the second key from Halruaa, I was not able to discover how it had come to be at the academy. I had hoped, that my taking the key and your search for relevant information, our combined actions would send a quiver through the time line.~
  IF ~~ THEN GOTO 33
 END
- 
+
 IF ~~ THEN BEGIN 33
- SAY ~Even a minor tremor, I thought, might be enough to alter the future in some significant way... I was wrong... now the mission becomes yours and Hrothgar’s.~
+ SAY ~Even a minor tremor, I thought, might be enough to alter the future in some significant way... I was wrong... now the mission becomes yours and Hrothgarï¿½s.~
  IF ~~ THEN GOTO 34
-END 
+END
 
 IF ~~ THEN BEGIN 34
  SAY ~All hope for the multi-universe I place in your hands, keep it safe, Hrothgar will explain. Remember that as long as there is hope there will be *the future* we require, where I am sure we will meet again.~
@@ -777,12 +777,12 @@ AddXPObject(Player4,38500)
 AddXPObject(Player5,38500)
 AddXPObject(Player6,38500)
 EscapeArea()~ JOURNAL ~"Pasenture"... a strange term for Tilorn to use? Yet he spoke of it as though it were just another state in which time exists, a state that I of this time, have no comprehension of but one he is obviously accustomed to making references to.
-Does this mean that the future has been changed before by his brethren’s excursions into the past? If it is so then I can’t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
+Does this mean that the future has been changed before by his brethrenï¿½s excursions into the past? If it is so then I canï¿½t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
 It has always seemed to me that my life was not my own, that my path was set no matter which way I chose... set by the gods or by fate whatever you choose to call it. Or so I thought but now, now I am not so sure.
 If the past can be tampered with so easily by these... these travellers in time then how am I to know what is real and what is not?
 Does all that I believe in have any place in this reality... does it even matter what I believe anymore? Am I but a pawn to be used and manipulated by those wishing to harness the divine power that I carry within?
 How many times I ask, how many times have I been turned around?
-DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to! 
+DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to!
 DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to... and DAMN these Moonknights, who believe they have the right to pick and choose the events they feel should have an alternative course!! What exactly is it, that gives them the right, or the authority?!?~ EXIT
 END
 
@@ -806,11 +806,11 @@ AddXPObject(Player4,57300)
 AddXPObject(Player5,57300)
 AddXPObject(Player6,57300)
 EscapeArea()~ JOURNAL ~"Pasenture"... a strange term for Tilorn to use? Yet he spoke of it as though it were just another state in which time exists, a state that I of this time, have no comprehension of but one he is obviously accustomed to making references to.
-Does this mean that the future has been changed before by his brethren’s excursions into the past? If it is so then I can’t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
+Does this mean that the future has been changed before by his brethrenï¿½s excursions into the past? If it is so then I canï¿½t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
 It has always seemed to me that my life was not my own, that my path was set no matter which way I chose... set by the gods or by fate whatever you choose to call it. Or so I thought but now, now I am not so sure.
 If the past can be tampered with so easily by these... these travellers in time then how am I to know what is real and what is not?
 Does all that I believe in have any place in this reality... does it even matter what I believe anymore? Am I but a pawn to be used and manipulated by those wishing to harness the divine power that I carry within?
 How many times I ask, how many times have I been turned around?
-DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to! 
+DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to!
 DAMN Bhaal and his cursed blood... DAMN him and the life it has brought me to... and DAMN these Moonknights, who believe they have the right to pick and choose the events they feel should have an alternative course!! What exactly is it, that gives them the right, or the authority?!?~ EXIT
 END

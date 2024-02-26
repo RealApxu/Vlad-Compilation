@@ -6,7 +6,7 @@ APPEND ~BKELDO25~
 IF ~~ THEN BEGIN TS171
   SAY ~And my heart aches with every step. But I gather yours do too.~
   IF ~~ THEN EXTERN ~BSIME~ TSTOB9
-END 
+END
 
 IF ~~ THEN BEGIN TS172
   SAY ~Mayhap, is that the reason why you are always on the road, Sime?~
@@ -14,7 +14,7 @@ IF ~~ THEN BEGIN TS172
 END
 
 IF ~~ THEN BEGIN TS173
-  SAY ~Will you also tire from the company of the same people?~ 
+  SAY ~Will you also tire from the company of the same people?~
   IF ~~ THEN EXTERN ~BSIME~ TSTOB11
 END
 
@@ -121,7 +121,7 @@ END
 IF WEIGHT #-4 ~Global("VP_Kr_YagaSh_Dead","LOCALS",2)~ THEN BEGIN LT10_st0
   SAY ~I know, what you are feeling right now, <CHARNAME>. I still can hear the roar of falling walls and the screams of the people being crushed under the debris.~
 =
-~Lazarus the mage, sister Farielle from the temple of Waukeen, the boy whose father you raised from the dead, poor young bardess, who sang so beautifully, countess Santele and her child Ardic, his friend Mateo and even Volo... they are all dead. We couldn't save them, though we have killed Yaga-Shura.~ 
+~Lazarus the mage, sister Farielle from the temple of Waukeen, the boy whose father you raised from the dead, poor young bardess, who sang so beautifully, countess Santele and her child Ardic, his friend Mateo and even Volo... they are all dead. We couldn't save them, though we have killed Yaga-Shura.~
   	IF ~~ THEN REPLY ~Keldorn! Please, don't... don't.~ GOTO LT10_st1
   	IF ~~ THEN REPLY ~Volo? No, he managed to save himself, I hope.~ GOTO LT10_st2
   	IF ~~ THEN REPLY ~(Sadly) Another corpses in my wake. God of Murder's daughter! Oh, Keldorn, why is this happening to me, why?!~ GOTO LT10_st3
@@ -183,7 +183,7 @@ IF WEIGHT #-5 ~Global("VP_ToB_LoveTalk","LOCALS",5)~ THEN BEGIN LT12_st0
 =
 ~It frightens me... That blood, which you did give me in order to leave Kelemvor's kingdom, affects me more and more!~
 =
-~I am having dreams, I see rivers of blood, and then comes this light, <CHARNAME>, not blinding, but radiant and warming, and the rivers change their color, become brighter with  time.~ 
+~I am having dreams, I see rivers of blood, and then comes this light, <CHARNAME>, not blinding, but radiant and warming, and the rivers change their color, become brighter with  time.~
   	IF ~~ THEN REPLY ~Keldorn, Irenicus has not taken away your essence of Bhaal, and now it is evolving. But I honestly do not know why you are seeing a light! Maybe it is the light of your soul, Keldorn, and it is capable of defeating Bhaal's darkness!~ GOTO LT12_st1
   	IF ~~ THEN REPLY ~(Laughing) You are becoming younger? This is really good news, Keldorn, considering the fact that I hope to marry you some day.~ GOTO LT12_st2
   	IF ~~ THEN REPLY ~(Smile) You are wrong to be afraid, my dear, but I understand... You have seen the slayer. No, you are not in danger. I am sure.~ GOTO LT12_st3
@@ -267,7 +267,7 @@ END
 
 
 IF ~~ THEN BEGIN LT12st11
-  SAY ~(His eyes are glowing) Really? Are you sure? We shouldn't delay it, then.~ 
+  SAY ~(His eyes are glowing) Really? Are you sure? We shouldn't delay it, then.~
 	IF ~~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",7) //--> to dialogue with Torm
 SetGlobal("VP_ToB_Kr_HadSex","LOCALS",1)
 RealSetGlobalTimer("VP_Kr_DelayTimer","GLOBAL",5)
@@ -308,7 +308,7 @@ GlobalLT("VP_ToB_LoveTalk","LOCALS",7)~ THEN REPLY ~Maybe I've been poisoned. Ho
 END
 
 IF ~~ THEN BEGIN LT16_st1
-  SAY ~(He hugs you gently) My poor girl. It is going to be all right, we will win the last battle, as we should, and after we will go to Esmeltaran so we can finally be married. I hope, you have not changed your mind, hmm?~ 
+  SAY ~(He hugs you gently) My poor girl. It is going to be all right, we will win the last battle, as we should, and after we will go to Esmeltaran so we can finally be married. I hope, you have not changed your mind, hmm?~
   	IF ~~ THEN REPLY ~(You hug him too) No! Why should I change my mind? I still want to be your wife.~ GOTO LT16_st5
   	IF ~~ THEN REPLY ~I... I do not know, please, don't ask me! What if we all are going to die?~ GOTO LT16_st6
   	IF ~~ THEN REPLY ~(Freeing yourself from his embraces) But my father's throne awaits me! Who else will take it, if not me?~ GOTO LT16_st7

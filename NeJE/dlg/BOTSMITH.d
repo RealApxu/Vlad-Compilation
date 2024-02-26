@@ -11,7 +11,7 @@ END
 APPEND ~BOTSMITH~
 
 IF ~~ THEN BEGIN N1
-  SAY ~Ooo!  Such a rare and shining sword...~ 
+  SAY ~Ooo!  Such a rare and shining sword...~
   IF ~!PartyHasItem("JHOSWD2")
 !PartyHasItem("SW2H08")~ THEN GOTO N2
   IF ~PartyHasItem("JHOSWD2")
@@ -52,7 +52,7 @@ DestroyGold(50000)~ GOTO 11
 END
 
 IF ~~ THEN BEGIN N5
-  SAY ~Ooo!  A shaddy oriental sword...~ 
+  SAY ~Ooo!  A shaddy oriental sword...~
   IF ~!PartyHasItem("WUHALTAI")
 !PartyHasItem("WUJEN")~ THEN GOTO N6
   IF ~!PartyHasItem("WUJEN")
@@ -84,7 +84,7 @@ DestroyGold(40000)~ GOTO 11
 END
 
 IF ~~ THEN BEGIN N8
-  SAY ~Ooo!  A green plate made from a diggy monster...~ 
+  SAY ~Ooo!  A green plate made from a diggy monster...~
   IF ~!PartyHasItem("BLOOD")
 !PartyHasItem("PLATBLK")~ THEN GOTO N9
   IF ~!PartyHasItem("BLOOD")
@@ -101,7 +101,7 @@ IF ~~ THEN BEGIN N9
 END
 
 IF ~~ THEN BEGIN N10
-  SAY ~Has recipe for making your Umber Hulk Plate much better. Is combined with Kresselack‘s Plate Mail and Bathed-In-Blood. That and 30,000 gp and I will do it for you. Want you that?~
+  SAY ~Has recipe for making your Umber Hulk Plate much better. Is combined with Kresselackï¿½s Plate Mail and Bathed-In-Blood. That and 30,000 gp and I will do it for you. Want you that?~
   IF ~PartyGoldLT(30000)~ THEN REPLY #66594 /* ~I don't have that much money.~ */ GOTO 10
   IF ~PartyGoldGT(29999)~ THEN REPLY #66595 /* ~Sure... put them together.~ */ DO ~SetGlobal("ItemMaker","GLOBAL",97)
 TakePartyGold(30000)

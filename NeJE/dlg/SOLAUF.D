@@ -1,7 +1,7 @@
 BEGIN ~SOLAUF~
 
 IF ~~ THEN BEGIN 0
-  SAY ~Bodhi gives power, true power to those who serve her. Your father is doomed. Come with us, Sime. Join us in undeath... And bring the Bhaalchild along. 
+  SAY ~Bodhi gives power, true power to those who serve her. Your father is doomed. Come with us, Sime. Join us in undeath... And bring the Bhaalchild along.
 
 We will have beds of fleeting odors,
 Couches deep as memorials,

@@ -27,7 +27,7 @@ END
 IF WEIGHT #-1 ~Global("VP_Kr_ViccyWarTalk","GLOBAL",1)~ THEN BEGIN Kr_WarTk
   SAY ~(Thoughtfully) I know not what to do. You have saved my life more than once, <CHARNAME>, and I am certain you will find a use for my clerical skills.~
 		IF ~~ THEN GOTO Kr_WarT1
-END  
+END
 
 IF ~~ THEN BEGIN Kr_WarT1
   SAY ~It might be strange for you, more so for your paladin, to hear, but we drow do understand the meaning of duty and I do want to stay with your party, but... I... (she lowers her voice) I fear being recognized should I join this army <CHARNAME>.~
@@ -38,7 +38,7 @@ END
 IF ~~ THEN BEGIN Kr_WarT2
   SAY ~It will only bring trouble to us all. It does not matter what you know or think of me.~
 		IF ~~ THEN EXTERN ~KELDORJ~ KRVIWAR1
-END 
+END
 
 IF ~~ THEN BEGIN Kr_WarT3
   SAY #33986
@@ -80,7 +80,7 @@ IF ~~ THEN BEGIN Kelem0
 END
 
 IF ~~ THEN BEGIN Kelem1
-  SAY ~What? Is that you... you heard? You should not have heard my words, nobody should. Leave me be! I know you have come for me, but leave me in peace. I don't want to go with you. The gods do not wish me to live.~ 
+  SAY ~What? Is that you... you heard? You should not have heard my words, nobody should. Leave me be! I know you have come for me, but leave me in peace. I don't want to go with you. The gods do not wish me to live.~
   	IF ~~ THEN REPLY ~Viconia, stop this nonsense. You have nothing to blame yourself for! You can't... there is no way for you to know everything concerning the pantheon of humans. After all, I myself should have guessed about Kelemvor, but we all were too anxious to think straight.~ GOTO Kelem3
 END
 
@@ -145,7 +145,7 @@ IF ~~ THEN BEGIN NEJ187
   SAY ~You are expecting me to set foot in a school of mages! In Drow society no female would lower herself to do such a thing unless bidden to do so by the priestesses. Magic, fighting and the bedchamber are the only thing males serve any useful purpose in.~
   IF ~~ THEN GOTO NEJ188
 END
-  
+
 IF ~~ THEN BEGIN NEJ188
   SAY ~Magic is therefore considered an inferior power in comparison to the power the priestesses wield. The magic schools, being for the male is a lowly place indeed! I will however, for your sake, try to hide my distaste whilst we are at this Halruaa.~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
@@ -188,7 +188,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Ha! See what your male pride has brought you to gnome!~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")

@@ -24,8 +24,8 @@ END
 IF ~~ THEN BEGIN 2
   SAY ~Unfortunately, nearly all of Halruaa's prominent mages are away on other business at the moment. At least I think they are, I have not seen some of them for a while now and you cannot usually walk far without bumping into one of them strutting around doing something or other.~
   IF ~~ THEN GOTO 3
-END  
-  
+END
+
 IF ~~ THEN BEGIN 3
   SAY ~There appears to be even more secrecy than is normal for even this place. Not that they tell us, students, a lot anyway. There are of course some of the tutors about, perhaps you should seek one of them out.~
   IF ~~ THEN REPLY ~Maybe that is what I will do. Could you possibly give me a brief description of the Academy, Matej? It will save time if I do not keep getting lost.~ GOTO 4
@@ -35,10 +35,10 @@ END
 IF ~~ THEN BEGIN 4
   SAY ~As you can see, this is the main building. The Academy itself is made up of several floors, but it is not too difficult to find your way around after a while. However, you may now access only the ground floor... There is usually a few more senior teachers about to make sure you do not get lost, but not today as you can see.~
   IF ~~ THEN GOTO 5
-END    
-  
+END
+
 IF ~~ THEN BEGIN 5
-  SAY ~The much smaller buildings that you passed on your way in are Halruaa's living quarters. You should also probably know that it gets pretty hot during the day so evenings are best suited to outdoor activities.~ 
+  SAY ~The much smaller buildings that you passed on your way in are Halruaa's living quarters. You should also probably know that it gets pretty hot during the day so evenings are best suited to outdoor activities.~
   IF ~~ THEN REPLY ~Thank you, Matej. You have been most helpful. Farewell.~ GOTO 6
   IF ~~ THEN REPLY ~Thank you, Matej. I will take my leave of you now, I should be able to find my way from here.~ GOTO 6
 END

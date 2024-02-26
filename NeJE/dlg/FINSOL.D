@@ -87,7 +87,7 @@ For you is it fine? For me is it fine?
 
 For you is it fine? For me is it fine.)~
 =
-~(Your soul has responded. And, despite of being strange, it helped you to make a decision.)~ 
+~(Your soul has responded. And, despite of being strange, it helped you to make a decision.)~
 	IF ~Global("VP_Kr_She_Pregnant","GLOBAL",1)~ THEN REPLY ~(You have firmly looked into the Solar's golden eyes) But my child, Solar... Why do I need Bhaal's throne, if I have my child? He is most important to me now. I can't deprive him of his mother, or his father. I am staying, Solar. Take my legacy. I have dreamed the most of marrying Keldorn Firecam. I am carrying his child, I can't refuse him now? No, never. I love him and I will stay with him.~ GOTO KR2
 	IF ~GlobalLT("PPEvilChoices","GLOBAL",2)
 Global("VP_Kr_She_Pregnant","GLOBAL",1)~ THEN REPLY ~I... I... I must! I must take my father's throne and defeat the evil. Forgive me, my love, forgive me! But it is my duty. You have always taught me of a duty and I am acting now as a worthy student! I must sacrifice myself, Keldorn, my love... My child will be born in time, and you will see him, beloved. And I... I won't leave you forever.~ GOTO KR3_1

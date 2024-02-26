@@ -69,7 +69,7 @@ SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
 END
 
 IF ~~ THEN BEGIN LT4TOB_3
-  SAY ~(Hugs you) We will choose the perfect time and the place, my dear. I will think long and hard on this.~ 
+  SAY ~(Hugs you) We will choose the perfect time and the place, my dear. I will think long and hard on this.~
   IF ~~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3)
 SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
 END
@@ -96,18 +96,18 @@ END
 IF ~~ THEN BEGIN LoveOne1
   SAY ~How dare you speak so, Leona! Where did you learn such words?~
    IF ~~ THEN EXTERN ~LEONA~ KR1
-END 
-  
+END
+
 IF ~~ THEN BEGIN LoveOne2
   SAY ~Leona! Leona, dear, how can you say that? I have always loved you and Vesper, it is my service in the Order that took so much of my time. I've always wanted to be with you, but your mother...~
    IF ~~ THEN EXTERN ~LEONA~ KR2
-END   
-  
+END
+
 IF ~~ THEN BEGIN LoveOne3
   SAY ~(Choking with tears) I... I truly am guilty! I couldn't show you my love and I couldn't find your murderers, you are right... If only I could have been there with you...~
     IF ~~ THEN EXTERN ~LEONA~ KR4
-END  
-  
+END
+
 IF ~~ THEN BEGIN LoveOne4
   SAY ~Leona!~
   	IF ~~ THEN REPLY ~Leona, do not torture your father, he has been tortured enough. I am the one who is guilty of your death!~ EXTERN ~HGWRA01~ 25
@@ -119,7 +119,7 @@ END
 IF WEIGHT #-3 ~Global("VP_ToB_LoveTalk","LOCALS",9)~ THEN BEGIN LT12st15
   SAY ~Torm, my lord, my master! Was I right to do this? Should I have been so fast to take her virginity? Have I destroyed her power? I am still not sure I had the right to do that. Please, grant me guidance, Torm!~
     IF ~~ THEN EXTERN ~TORM~ 3
-END  
+END
 
 IF ~~ THEN BEGIN LT12Tor1
   SAY ~Perhaps? Are you not sure, my lord?~
@@ -218,33 +218,33 @@ END
 
 IF ~~ THEN BEGIN LT12_Mz0
 	SAY ~(Smiles imperceptibly) Mazzy, of course, my girl.~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst1 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst1
+END
 
 IF ~~ THEN BEGIN LT12_Mz1
 	SAY ~Mazzy...~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst2 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst2
+END
 
 IF ~~ THEN BEGIN LT12_Mz2
 	SAY ~In common sense of this word, no.~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst3 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst3
+END
 
 IF ~~ THEN BEGIN LT12_Mz3
 	SAY ~(Takes her hand) Mazzy, are you judging me?~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst4 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst4
+END
 
 IF ~~ THEN BEGIN LT12_Mz4
 	SAY ~I love her. She loves me. We were going to have a wedding, but you do know what happened.~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst5 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst5
+END
 
 IF ~~ THEN BEGIN LT12_Mz5
 	SAY ~The slayer is torturing her, confusing her. I had to interfere! Do you understand?~
-  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst6 
-END 
+  		IF ~~ THEN EXTERN ~MAZZY25J~ KRst6
+END
 
 IF ~~ THEN BEGIN LT12_Mz6
 	SAY ~(Thinks for himself) You are a good girl, that's why you understand. But, The High Order of the Radiant Heart might not be so easily persuaded without Torm's interference.~
@@ -259,13 +259,13 @@ END
 
 IF ~~ THEN BEGIN LT12_Sr0
 	SAY ~(Firmly clasps the offered hand) Thank you, Sarevok. I am glad you understood and supported us.~
-  		IF ~~ THEN EXTERN ~SAREV25J~ KRst1 
+  		IF ~~ THEN EXTERN ~SAREV25J~ KRst1
 END 	
 	
 IF ~~ THEN BEGIN LT12_Sr1
 	SAY ~(With a smile on his face) But now are you sure she is happy?~
-  		IF ~~ THEN EXTERN ~SAREV25J~ KRst2 
-END 
+  		IF ~~ THEN EXTERN ~SAREV25J~ KRst2
+END
 
 IF ~~ THEN BEGIN LT12_Sr2
 	SAY ~(Returning a smile) Good to know that~
@@ -278,17 +278,17 @@ END
 
 IF ~~ THEN BEGIN LT12_Jh0
 	SAY ~Jaheira, my dear, what are you talking about?~
-  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst1 
+  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst1
 END 	
 
 IF ~~ THEN BEGIN LT12_Jh1
 	SAY ~(Laughingly) Dear Jaheira, I have never doubted that we would have this discussion. What do you want to tell me? Are you judging us?~
-  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst2 
+  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst2
 END
 
 IF ~~ THEN BEGIN LT12_Jh2
 	SAY ~(Smiling) So what is it that you want to say, Jaheira?~
-  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst3 
+  		IF ~~ THEN EXTERN ~JAHEI25J~ KRst3
 END
 
 IF ~~ THEN BEGIN LT12_Jh3
@@ -307,42 +307,42 @@ END
 IF ~~ THEN BEGIN Bz0
 	SAY ~You fail to understand your duty, Balthazar. You're not seeing the obvious. You consider yourself as a righteous person, having your sister accused in advance without giving her a chance to prove you wrong.~
   		IF ~~ THEN EXTERN ~BALTH~ KR0
-END 
+END
 
 IF ~~ THEN BEGIN Bz1
 	SAY ~Yes, I will. I am a paladin of Torm, God of duty, and I am going to teach you, monk. And you will listen to what I have to say, even if you do not want to.~
   		IF ~~ THEN EXTERN ~BALTH~ KR1
-END 
+END
 
 IF ~~ THEN BEGIN Bz2
 	SAY ~Your duty, Balthazar, is to serve the powers of Good. Help those who are in the service of these powers. Trust them. Tell me, why don't you believe your sister, my bride?~
   		IF ~~ THEN EXTERN ~BALTH~ KR2
-END 
+END
 
 IF ~~ THEN BEGIN Bz2n
 	SAY ~Your duty, Balthazar, is to serve the powers of Good. Help those who are in the service of these powers. Trust them. Tell me, why don't you believe your sister?~
   		IF ~~ THEN EXTERN ~BALTH~ KR3
-END 
+END
 
 IF ~~ THEN BEGIN Bz3
 	SAY ~Yes. When this all ends, we are going to be married.~
   		IF ~~ THEN EXTERN ~BALTH~ KR3
-END 
+END
 
 IF ~~ THEN BEGIN Bz4
 	SAY ~I am truly hoping that she does not. You do understand that one can not be absolutely sure in something?~
   		IF ~~ THEN EXTERN ~BALTH~ KR4
-END 
+END
 
 IF ~~ THEN BEGIN Bz5
 	SAY ~But what if you... won't be able to kill her? Or yourself? Have you thought about that, Balthazar?~
   		IF ~~ THEN EXTERN ~BALTH~ KR5
-END 
+END
 
 IF ~~ THEN BEGIN Bz6
 	SAY ~(Shaking his head) There is nothing heroic in pointless death, Balthazar. If you do not want to become a new god, then give up your legacy!~
   		IF ~~ THEN EXTERN ~BALTH~ KR6
-END 
+END
 
 //IF ~~ THEN BEGIN Bz7
 //	SAY ~You are going to have to trust our word. Her word and mine. There is no other way, Balthazar. It is your duty to trust.~
@@ -454,7 +454,7 @@ EXTEND_BOTTOM KELDO25J 0
   IF ~Global("VP_ToB_KrBanters","GLOBAL",1)~ THEN GOTO KREND_0
 END
 
-CHAIN IF WEIGHT #-15 ~Global("VP_BKeldorn","LOCALS",2)~ THEN  
+CHAIN IF WEIGHT #-15 ~Global("VP_BKeldorn","LOCALS",2)~ THEN
 BSAREV25 SarKeld1
   ~I have a question for you, Paladin. What kind of relationship do you have with my sister?~
 DO ~SetGlobal("VP_BKeldorn","LOCALS",3)
@@ -467,7 +467,7 @@ SetGlobal("VP_Kr_NextTalk","GLOBAL",2)~
 == BSAREV25 ~Last chance? Well... So be it, Keldorn. Speak with my sister. I will not influence her on this matter. I'll let her make her own decision.~
 EXIT
 
-CHAIN IF WEIGHT #-16 ~Global("VP_BKeldorn","LOCALS",5)~ THEN  
+CHAIN IF WEIGHT #-16 ~Global("VP_BKeldorn","LOCALS",5)~ THEN
 BSAREV25 SarKeld2
   ~Though my sister hasn't given her final answer, paladin, we can celebrate our meeting with a glass of good wine.~
 DO ~SetGlobal("VP_BKeldorn","LOCALS",6)

@@ -32,13 +32,13 @@ IF ~~ THEN BEGIN 3
 ~All students know that a graduation pass from Halruaa will afford them the highest of respect wherever they travel.~
   IF ~~ THEN GOTO 4
 END
-  
+
 IF ~~ THEN BEGIN 4
   SAY ~The Academy is renown for its high standards of discipline, and to maintain this high esteem only students that graduate are granted a final diploma of Halruaa.~
 =
 ~In order to graduate, all students must produce certificates of each stage passed.~
   IF ~~ THEN GOTO 5
-END  
+END
 
 IF ~~ THEN BEGIN 5
   SAY ~To gain that diploma and the prestige that it affords is all the reward that students here strive for, but as a student yourself, <CHARNAME>, you know this or you would not be here for assessment, would you? Or..., is there some other reason that you are here?~
@@ -85,9 +85,9 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Jan")
 !Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn’t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage’s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldnï¿½t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mageï¿½s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker  
+!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END
 
 IF ~~ THEN BEGIN 7
@@ -99,13 +99,13 @@ StartCutScene("VPCutT13")~ EXIT
 END //=> Invoker: Test 1
 
 IF ~~ THEN BEGIN 8
-  SAY ~I would have thought you would have come better prepared, <GABBER>! However did you expect to pass without any preparation on your part?~ 
+  SAY ~I would have thought you would have come better prepared, <GABBER>! However did you expect to pass without any preparation on your part?~
   IF ~~ THEN REPLY ~I was preoccupied with my studies, Theodoran, I guess I left it too late to memorise spells.~ GOTO 15
   IF ~~ THEN REPLY ~I have no excuses, Theodoran, I forgot about the assessment.~ GOTO 15
   IF ~~ THEN REPLY ~How am I expected to have the required spells memorised when I have no idea what would be expected of me?~ GOTO 15
   IF ~~ THEN REPLY ~I am an Invoker not a Diviner! However was I supposed to know what spells would be required today?~ GOTO 15
 END
-  
+
 IF ~~ THEN BEGIN 9
   SAY ~Then, <GABBER>, I suggest you come back when you have memorised the appropriate spells, but you would be wise to make it soon as I have an important duty that will call me away shortly. So until then, farewell.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)~ EXIT
@@ -118,7 +118,7 @@ IF ~~ THEN BEGIN 10
   IF ~~ THEN REPLY ~I am more than capable as an Invoker to pass your tests, Theodoran, if only you will give me the opportunity.~ GOTO 18
   IF ~~ THEN REPLY ~Please, Theodoran, I can pass your test if only will give me the chance.~ GOTO 18
 END
- 
+
 IF ~~ THEN BEGIN 11
   SAY ~You call yourself Invoker, <GABBER>, and yet you do not have some of the most versatile of evocation spells at your disposal!~
 =
@@ -131,7 +131,7 @@ IF ~~ THEN BEGIN 12
   IF ~~ THEN REPLY ~Farewell, Theodoran.~ GOTO 13
   IF ~~ THEN REPLY ~If that is so, perhaps I should make the time for your tests now, Theodoran.~ GOTO 14
 END
-  
+
 IF ~~ THEN BEGIN 13
   SAY ~Goodbye, <GABBER>.~
   IF ~~ THEN DO ~EscapeArea()~ EXIT
@@ -157,11 +157,11 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Kachiko")
 !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ64
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker 
+!Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn’t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage’s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldnï¿½t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mageï¿½s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker  
+!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END
 
 IF ~~ THEN BEGIN 15
@@ -235,7 +235,7 @@ Global("VP_My_Test","LOCALS",4)~ THEN BEGIN 19
 !Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker2
   IF ~InParty("Edwin")
 !Dead("Edwin")
-Global("VP_My_Test","LOCALS",2)~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn’t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage’s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+Global("VP_My_Test","LOCALS",2)~ THEN REPLY ~Edwin, I know this is beneath you and I shouldnï¿½t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mageï¿½s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
 
 END
 
@@ -250,7 +250,7 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT15")~ EXIT
 END //=> Invoker: Test 1
- 
+
 IF ~Global("VP_Invoker_Test","GLOBAL",1)
 OR(2)
 Global("VP_My_Test","LOCALS",1)
@@ -283,13 +283,13 @@ Global("VP_Jan_InvQuest","GLOBAL",0)~ THEN REPLY ~So, under the guise of perform
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO 34
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO 34
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO 34
-  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO tafftest                                                 
+  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO tafftest
   IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO tafftest
-  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO tafftest            
-  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO edwdone                                                 
+  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO tafftest
+  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO edwdone
   IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO edwdone
   IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO edwdone
-  IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO jandone                                                 
+  IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO jandone
   IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO jandone
   IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO jandone
 END
@@ -306,7 +306,7 @@ IF ~!Global("VP_Invoker_Test","GLOBAL",1)
 OR(2)
 Global("VP_My_Test","LOCALS",1)
 Global("VP_My_Test","LOCALS",5)~ THEN BEGIN 23
-  SAY ~Now that didn’t go very well at all did it? I know the test was a little out of the ordinary but it certainly shouldn’t have been beyond your capabilities.~
+  SAY ~Now that didnï¿½t go very well at all did it? I know the test was a little out of the ordinary but it certainly shouldnï¿½t have been beyond your capabilities.~
 =
 ~However, at Halruaa it is not our policy to put our students lives in jeopardy for these tests and that is why I had to abort the test and pull you out quickly.~
 =
@@ -431,7 +431,7 @@ Global("VP_My_Test","LOCALS",5)~ THEN BEGIN 35
   SAY ~Well, that did not go very well did it? In fact that was an abysmal attempt. You're bleeding, and I had no choice but to interrupt the test and bring you back here.~
   IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)~ GOTO 36
 END
-  
+
 IF ~~ THEN BEGIN 36
   SAY ~Now you should return to your studies and I will see you again when I return.~
   IF ~Global("VP_My_Test","LOCALS",1)~ THEN REPLY ~Please, Theodoran, let me attempt the task once more. I will not fail again.~ GOTO 24
@@ -477,13 +477,13 @@ Global("VP_Jan_InvQuest","GLOBAL",0)~ THEN REPLY ~So, under the guise of perform
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO 34
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO 34
   IF ~Global("VP_Aerie_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO 34
-  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO tafftest                                                 
+  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO tafftest
   IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO tafftest
-  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO tafftest   
-  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO edwdone                                                 
+  IF ~Global("VP_Taffic_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO tafftest
+  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO edwdone
   IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO edwdone
-  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO edwdone   
-  IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO jandone                                                 
+  IF ~Global("VP_Edwin_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO edwdone
+  IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~I certainly did not expect to serve as an exterminator during my time at Halruaa, Theodoran.~ GOTO jandone
   IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~Hardly a task for an Invoker, Theodoran. Still, I suppose using your students as exterminators means you do not have to dirty your own hands.~ GOTO jandone
   IF ~Global("VP_Jan_InvQuest","GLOBAL",1)~ THEN REPLY ~So, under the guise of performing tests, Halruaa's students have to clear the vermin, is that not what this was about, Theodoran?~ GOTO jandone
 END
@@ -600,7 +600,7 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Jan")
 !Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn’t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage’s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldnï¿½t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mageï¿½s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker  
+!Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END

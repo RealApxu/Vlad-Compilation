@@ -3,12 +3,12 @@ BEGIN ~Leina~
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~Who... who are you people? You are not employees of my father, that much is obvious.~ [leina_01]
   IF ~~ THEN REPLY ~No, we are not employees of your father, Leina. There is no time to explain, you are free but we must make haste and leave here quickly.~ GOTO 1
-  IF ~~ THEN REPLY ~Do not be afraid, Leina, you are free but I am not sure for how long. There may be more of your father’s guards about so we should move quickly.~ GOTO 1
+  IF ~~ THEN REPLY ~Do not be afraid, Leina, you are free but I am not sure for how long. There may be more of your fatherï¿½s guards about so we should move quickly.~ GOTO 1
   IF ~~ THEN REPLY ~You girl, Leina is it? You have your freedom but I suggest you take it whilst you can.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~I will gladly leave this place, but not before I know more of my rescuer and how you came to be here? My father would not have relinquished the key to my prison easily, unless... unless as D’Cai says, he is dead.~ [leina_02]
+  SAY ~I will gladly leave this place, but not before I know more of my rescuer and how you came to be here? My father would not have relinquished the key to my prison easily, unless... unless as Dï¿½Cai says, he is dead.~ [leina_02]
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~Forgive my manners Leina, I am <CHARNAME>. Samuel Thunderburp, the bartender of The Five Flagons was concerned for your safety and bid us to find you. Further answers will have to wait until we are safely out of here.~ GOTO 2
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~I am called <CHARNAME>. We were promised a reward by the old barkeep of The Five Flagons if we found you safe. Well, we have found you and you seem to be unharmed so we guess we have earned our reward.~ GOTO 2
   IF ~~ THEN REPLY ~My name is <CHARNAME>. Forgive my haste, Leina, but this is not the time for questions, I urge you to hurry.~ GOTO 3
@@ -23,7 +23,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~I can well understand your urgency to leave this place, so my questions will wait, however, my appreciation for your aid will not, I thank you, <CHARNAME>.~ 
+  SAY ~I can well understand your urgency to leave this place, so my questions will wait, however, my appreciation for your aid will not, I thank you, <CHARNAME>.~
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~You can thank me later, Leina, and I assure you, that you will have your answers, just not now. For the moment it is safer if you make your way to The Five Flagons. Samuel will be relieved to have you safely under his roof again.~ GOTO 4
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~Thanks is all well and good, but my interest is in the reward. When you return to the tavern be sure to tell that old barkeep that I am close behind you.~ GOTO 4
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",0)~ THEN REPLY ~You can thank me later, Leina, and I assure you, that you will have your answers, just not now. For the moment it is safer if we make our way out of here.~ GOTO 11
@@ -36,10 +36,10 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~My only reason for doing so was the hope of a reconciliation with my father but my mother’s death has changed him so, I am not even sure that I want a reconciliation with the man he has become.~ [leina_05]
+  SAY ~My only reason for doing so was the hope of a reconciliation with my father but my motherï¿½s death has changed him so, I am not even sure that I want a reconciliation with the man he has become.~ [leina_05]
   IF ~~ THEN GOTO 6
 END
-  
+
 IF ~~ THEN BEGIN 6
   SAY ~Nor do I wish to remain at The Five Flagons with the memories of the last few days keeping me from my sleep each night.~ [leina05a]
   IF ~~ THEN REPLY ~To leave the safety of the inn at this time, do you see that as a wise decision Leina?~ GOTO 7
@@ -51,7 +51,7 @@ IF ~~ THEN BEGIN 7
   SAY ~I have little choice now, <CHARNAME>, other than to leave Athkatla. My father will not miss me, and Samuel will understand my reasons for going.~ [leina_06]
   IF ~~ THEN GOTO 8
 END
-  
+
 IF ~~ THEN BEGIN 8
   SAY ~I would feel much safer in your company if you have room for me in your group, but be it with you or be it alone, either way I will be taking to the road.~ [leina06a]
   IF ~~ THEN REPLY ~It is an uncertain and hostile road that I travel. One that I feel you will not find easy Leina, but if you are sure that this is the right path for you then you are welcome to join me. I would sleep better knowing that you are safe.~ GOTO 10
@@ -114,6 +114,6 @@ END
 IF ~~ THEN BEGIN 18
   SAY ~(*She looks about the room and sighs*)... This lowly inn has afforded me more comfort and warmth than any place I have called home... I will not stay away long.~
   IF ~~ THEN EXTERN ~FFBART~ NEJ91
-END   
+END
 
-  
+

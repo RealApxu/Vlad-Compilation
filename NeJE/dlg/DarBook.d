@@ -3,9 +3,9 @@ BEGIN ~DARBOOK~
 IF ~True()~ THEN BEGIN 0
   SAY ~(*Suddenly an etheral voice resounds within your head*) Prove your worth and solve the riddle, then you'll get your life and freedom.
 
-My first you put on glowing coal 
-And into it you put my whole 
-My second really is the first 
+My first you put on glowing coal
+And into it you put my whole
+My second really is the first
 My third mislikes the winter's cold.
 
 What is it?~

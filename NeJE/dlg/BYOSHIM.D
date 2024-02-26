@@ -5,14 +5,14 @@ See("Minsc")
 HPLT("Minsc",20)
 !StateCheck("Minsc",STATE_SLEEPING)
 CombatCounter(0)
-Global("BYoshimo13","LOCALS",1)~ 
+Global("BYoshimo13","LOCALS",1)~
 
 REPLACE_STATE_TRIGGER BYOSHIM 0
 ~InParty("Aerie")
 !Dead("Aerie")
 See("Aerie")
 !StateCheck("Aerie",STATE_SLEEPING)
-Global("VP_BanterFix","LOCALS",2)~ 
+Global("VP_BanterFix","LOCALS",2)~
 
 ALTER_TRANS BYOSHIM // file name
 BEGIN 0 END // state number (can be more than one)
@@ -59,15 +59,15 @@ IF ~~ THEN BEGIN NEJ7
 END
 
 IF ~~ THEN BEGIN NEJ8
-  SAY ~What I had learnt cherry blossom? I could only stand in amazement at what you had learnt! I am sure you didn’t learn that on Kara Tur!~
+  SAY ~What I had learnt cherry blossom? I could only stand in amazement at what you had learnt! I am sure you didnï¿½t learn that on Kara Tur!~
   IF ~~ THEN EXTERN ~BKACHI~ NEJ1
 END
 
 IF ~~ THEN BEGIN NEJ9
   SAY ~(*Bows to Kachiko*) Will the lovely Kachiko put away her swords for one night and take the hand of Yoshimo in them instead?~
   IF ~~ THEN EXTERN ~BKACHI~ NEJ2
-END  
-  
+END
+
 IF ~~ THEN BEGIN NEJ10
   SAY ~Then you are in for a pleasant surprise my cherry blossom for I have learnt many things in my absence. The pleasure that comes from  dancing with a beautiful girl for one... what does this beautiful girl say?~
   IF ~~ THEN EXTERN ~BKACHI~ NEJ3
@@ -92,7 +92,7 @@ IF ~~ THEN BEGIN LeiSpher3
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere20
 	IF ~InParty("Kachiko")
 !Dead("Kachiko")~ THEN EXTERN ~BKACHI~ LeiSpher3
-END 
+END
 
 IF ~~ THEN BEGIN TS84
   SAY ~Ouch! A moment to catch my breath, fierce warrior!~
@@ -140,7 +140,7 @@ IF ~~ THEN BEGIN TS92
 END
 
 IF ~~ THEN BEGIN TS93
-  SAY ~Cherry Blossom, our last conversation keeps nagging me. The way you said "honorable noble"... I remember craving honor. Until I stared in Naoko’s dead face and realized that one of my own "honor-bound" kin must have killed him. I do not believe in honor any more.~
+  SAY ~Cherry Blossom, our last conversation keeps nagging me. The way you said "honorable noble"... I remember craving honor. Until I stared in Naokoï¿½s dead face and realized that one of my own "honor-bound" kin must have killed him. I do not believe in honor any more.~
   IF ~~ THEN EXTERN ~BKACHI~ 10
 END
 
@@ -150,12 +150,12 @@ IF ~~ THEN BEGIN TS94
 END
 
 IF ~~ THEN BEGIN TS95
-  SAY ~No, Kachiko. You are mistaken. I had done something terrible, which robbed me of honor forever. In a moment of weakness, I allowed a creature of pure evil to despoil my soul. I never thought I’d become a traitor, yet I am. Please, do not ask anymore, Kachiko, for I do not wish to cast a shade on your innocent heart.~
+  SAY ~No, Kachiko. You are mistaken. I had done something terrible, which robbed me of honor forever. In a moment of weakness, I allowed a creature of pure evil to despoil my soul. I never thought Iï¿½d become a traitor, yet I am. Please, do not ask anymore, Kachiko, for I do not wish to cast a shade on your innocent heart.~
   IF ~~ THEN EXTERN ~BKACHI~ 12
 END
 
 IF ~~ THEN BEGIN TS96
-  SAY ~No, Kachiko, what’s done cannot be undone. I will not allow you to be touched by my curse and my taint. That much I can do.~
+  SAY ~No, Kachiko, whatï¿½s done cannot be undone. I will not allow you to be touched by my curse and my taint. That much I can do.~
   IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY)~ EXIT
 END
 
@@ -186,7 +186,7 @@ is among us...
 END
 
 IF ~~ THEN BEGIN TS101
-  SAY ~Eh, it’s finished actually...~
+  SAY ~Eh, itï¿½s finished actually...~
   IF ~~ THEN EXTERN ~BANOMEN~ TS589
 END
 
@@ -226,12 +226,12 @@ IF ~~ THEN BEGIN TS108
 END
 
 IF ~~ THEN BEGIN TS109
-  SAY ~And that was my answer. I was drunk. I was disgusted with myself. Once a city guard gave me a job to trace a man who was a suspected rapist. I found him easily and brought to the Magistrate. The man was immediately sentenced and thrown into the prison. Later I heard that he hanged himself in jail and that his only fault was that he found the favor of a general’s daughter, but did not have the approval of the general.~
+  SAY ~And that was my answer. I was drunk. I was disgusted with myself. Once a city guard gave me a job to trace a man who was a suspected rapist. I found him easily and brought to the Magistrate. The man was immediately sentenced and thrown into the prison. Later I heard that he hanged himself in jail and that his only fault was that he found the favor of a generalï¿½s daughter, but did not have the approval of the general.~
   IF ~~ THEN EXTERN ~BKACHI~ 74
 END
 
 IF ~~ THEN BEGIN TS110
-  SAY ~I never bothered to check the city guard’s story and I felt like a fool. I did not listen to the poor man’s words; I just trusted the authorities. I did my job and I got paid. An innocent man died. So I got drunk. Then Irenicus showed up with his malicious tongue. He understood my mood quickly and before I knew it I was hanging to his every word and he convinced me that the world is one big snake pit... Do you want me to continue?~
+  SAY ~I never bothered to check the city guardï¿½s story and I felt like a fool. I did not listen to the poor manï¿½s words; I just trusted the authorities. I did my job and I got paid. An innocent man died. So I got drunk. Then Irenicus showed up with his malicious tongue. He understood my mood quickly and before I knew it I was hanging to his every word and he convinced me that the world is one big snake pit... Do you want me to continue?~
   IF ~~ THEN EXTERN ~BKACHI~ 75
 END
 
@@ -271,7 +271,7 @@ IF ~~ THEN BEGIN TS117
 END
 
 IF ~~ THEN BEGIN TS118
-  SAY ~Now Valygar, you have had time to decide upon a tale to tell us. There must surely be many bizarre yarns in your family’s chronicles.~
+  SAY ~Now Valygar, you have had time to decide upon a tale to tell us. There must surely be many bizarre yarns in your familyï¿½s chronicles.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS520
 END
 
@@ -281,12 +281,12 @@ IF ~~ THEN BEGIN TS119
 END
 
 IF ~~ THEN BEGIN TS120
-  SAY ~I apologise my friend. We all need a good night’s sleep.~
+  SAY ~I apologise my friend. We all need a good nightï¿½s sleep.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS522
 END
 
 IF ~~ THEN BEGIN TS121
-  SAY ~Yet I have no doubts that you’d press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
+  SAY ~Yet I have no doubts that youï¿½d press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
   IF ~~ THEN EXTERN ~BKACHI25~ 1
 END
 
@@ -336,7 +336,7 @@ IF ~~ THEN BEGIN TS130
 END
 
 IF ~~ THEN BEGIN TS131
-  SAY ~I’ll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
+  SAY ~Iï¿½ll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
   IF ~~ THEN EXTERN ~BKACHI25~ 20
 END
 
@@ -391,7 +391,7 @@ IF ~~ THEN BEGIN TS141
 END
 
 IF ~~ THEN BEGIN TS142
-  SAY ~And yet you are the only one who would mourn his death, Sime. That’s an ally.~
+  SAY ~And yet you are the only one who would mourn his death, Sime. Thatï¿½s an ally.~
   IF ~~ THEN EXTERN ~BSIME~ 67
 END
 
@@ -401,7 +401,7 @@ IF ~~ THEN BEGIN TS143
 END
 
 IF ~~ THEN BEGIN TS144
-  SAY ~You have no love for thieves, I take it? Why so? You must have seen deserving ones among Aran’s cohorts.~
+  SAY ~You have no love for thieves, I take it? Why so? You must have seen deserving ones among Aranï¿½s cohorts.~
   IF ~~ THEN EXTERN ~BSIME~ 70
 END
 
@@ -436,7 +436,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -456,7 +456,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -476,7 +476,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -540,7 +540,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -560,7 +560,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -580,7 +580,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -644,7 +644,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -664,7 +664,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Kachiko")
 !IsValidForPartyDialogue("Minsc")
 !IsValidForPartyDialogue("Edwin")
@@ -684,7 +684,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")

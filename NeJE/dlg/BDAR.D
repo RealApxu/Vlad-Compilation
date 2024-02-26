@@ -56,18 +56,18 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-  SAY ~I’m sure that in time, <CHARNAME>, all of your questions will be answered. Have patience my friend.~ [DAR_29]
+  SAY ~Iï¿½m sure that in time, <CHARNAME>, all of your questions will be answered. Have patience my friend.~ [DAR_29]
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~Whether you believe in fate or not, <CHARNAME>, life has a way of revealing it’s purpose when it is ready.~ [DAR_30]
+  SAY ~Whether you believe in fate or not, <CHARNAME>, life has a way of revealing itï¿½s purpose when it is ready.~ [DAR_30]
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 12
   SAY ~It is no shame to admit that you feel fear my friend. It is how you deal with that fear that makes you the person I look to and trust with my life. Do not underestimate yourself, <CHARNAME>.~ [DAR_31]
-  IF ~~ THEN REPLY ~If it’s confidence that you think you are seeing Dar, I suggest you look more closely in my eyes next time we have cause to raise our weapons.~ GOTO 13
+  IF ~~ THEN REPLY ~If itï¿½s confidence that you think you are seeing Dar, I suggest you look more closely in my eyes next time we have cause to raise our weapons.~ GOTO 13
 END
 
 IF ~~ THEN BEGIN 13
@@ -106,7 +106,7 @@ IF ~~ THEN BEGIN 19
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~But that doesn’t give you any rights to rob the people no matter they are rich or not... I do not wish this conversation to turn into a debate on the rights and wrongs of society, so let us put it aside for now. Agreed, Melora?~ [DAR_39]
+  SAY ~But that doesnï¿½t give you any rights to rob the people no matter they are rich or not... I do not wish this conversation to turn into a debate on the rights and wrongs of society, so let us put it aside for now. Agreed, Melora?~ [DAR_39]
   IF ~~ THEN EXTERN ~BMELORA~ 9
 END
 
@@ -153,7 +153,7 @@ END
 IF ~Global("VP_BPC","LOCALS",4)
 Race(Player1,HALFORC)~ THEN BEGIN 29
   SAY ~I see the respect your friends have for you as a leader and I believe they would follow you through the Nine Hells if you asked them. You are fortunate to have such loyal companions.~
-  IF ~~ THEN REPLY ~I wouldn’t go as far as to say that Dar, but let’s hope I never have to ask them to.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 30
+  IF ~~ THEN REPLY ~I wouldnï¿½t go as far as to say that Dar, but letï¿½s hope I never have to ask them to.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 30
   IF ~~ THEN REPLY ~The respect is mutual Dar, I admire and respect them and their skills.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 40
   IF ~~ THEN REPLY ~They see in me a strong and capable leader. That is what they respect and follow.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 40
 END
@@ -167,21 +167,21 @@ IF ~~ THEN BEGIN 30
 END
 
 IF ~~ THEN BEGIN 31
-  SAY ~Our lives are very similar in that respect. My father I never knew nor wish to know and my mother’s mind was so ravaged by the rape that she said very little to me. The priests told me that she came from one of the barbarian tribes living in the outlying areas.~
+  SAY ~Our lives are very similar in that respect. My father I never knew nor wish to know and my motherï¿½s mind was so ravaged by the rape that she said very little to me. The priests told me that she came from one of the barbarian tribes living in the outlying areas.~
   IF ~~ THEN GOTO 32
 END
-  
+
 IF ~~ THEN BEGIN 32
-  SAY ~They were all slaughtered, and left for dead during a confrontation with orcs, all except my mother that is. She was all that remained of her tribe and it is a pitiful life that she now leads, and that my friend, is the sum of all that I know of my mother’s people.~
+  SAY ~They were all slaughtered, and left for dead during a confrontation with orcs, all except my mother that is. She was all that remained of her tribe and it is a pitiful life that she now leads, and that my friend, is the sum of all that I know of my motherï¿½s people.~
   IF ~~ THEN GOTO 33
-END  
-  
+END
+
 IF ~~ THEN BEGIN 33
   SAY ~Did your Gorion tell you anything of your people <CHARNAME>?~
-  IF ~~ THEN REPLY ~No, he did not. I have had to discover what I know for myself.~ GOTO 34 
-  IF ~~ THEN REPLY ~He kept much hidden from me and I wish to this day that it had stayed hidden.~ GOTO 34 
+  IF ~~ THEN REPLY ~No, he did not. I have had to discover what I know for myself.~ GOTO 34
+  IF ~~ THEN REPLY ~He kept much hidden from me and I wish to this day that it had stayed hidden.~ GOTO 34
   IF ~~ THEN REPLY ~No, he was not honest with me and I will always resent him for this. My life could have been easier had I known more, been prepared.~ GOTO 34
-END  
+END
 
 IF ~~ THEN BEGIN 34
   SAY ~I am sure he had his reasons and if your mother suffered as did my own, at least you have been spared the pain of seeing her constant despair. Not a day has passed that I wish she could have been spared her pain even if it meant I was never born.~
@@ -193,7 +193,7 @@ END
 IF ~~ THEN BEGIN 35
   SAY ~But... but that is extraordinary! How... or even why... I never thought or even heard of a human male laying with an orc female by choice. Why would a man pursue such a union?~
   IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 36
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 47
   IF ~~ THEN REPLY ~I have told you all you need to know. We are not alike and never will be, so I will thank you not to compare yourself with me again.~ GOTO 47
 END
@@ -201,8 +201,8 @@ END
 IF ~~ THEN BEGIN 36
   SAY ~Bhaal you say. You carry the taint of the orc and the taint of the god of murder in you, we are indeed very different <CHARNAME>!~
   IF ~~ THEN GOTO 37
-END  
-  
+END
+
 IF ~~ THEN BEGIN 37
   SAY ~How do you live with this knowledge of yourself and still maintain your distance from all that it must mean? You must carry turmoil within you constantly.~
   IF ~~ THEN REPLY ~As you say, we are very different and that is all you need to know of me. I tire of you prying into my life and will answer no more of your questions.~ GOTO 47
@@ -213,8 +213,8 @@ END
 IF ~~ THEN BEGIN 38
   SAY ~If you are as you say aware of the taint of both the orc and Bhaal that runs through you, and still remain true to all that you have been taught, then I understand why your friends respect and remain loyal to you.~
   IF ~~ THEN GOTO 39
-END   
-  
+END
+
 IF ~~ THEN BEGIN 39
   SAY ~Please accept the hand of Dar The Half-Orc, and be assured that my loyalty will remain as constant as that of your companions.~
   IF ~~ THEN EXIT
@@ -223,8 +223,8 @@ END
 IF ~~ THEN BEGIN 40
   SAY ~You are a strong leader yes, but no leader can maintain his place through strength alone. Those who follow need to know that they can trust who leads or they stop following. Either that or they choose another to lead.~
   IF ~~ THEN GOTO 41
-END   
-   
+END
+
 IF ~~ THEN BEGIN 41
   SAY ~We are both half orc, and yet I would never expect to command the respect that you do my friend.~
   IF ~~ THEN REPLY ~(*Laughs*) Choose another leader you say, and who out of this lot is capable of taking my place do you think Dar?~ GOTO 42
@@ -234,9 +234,9 @@ END
 
 IF ~~ THEN BEGIN 42
   SAY ~With an attitude like that I wonder they follow at all! Perhaps it is not respect that I see in their eyes after all. In which case, you would be wise to watch more closely in the future <CHARNAME>, especially if your life should depend on the respect of those you deem loyal to you.~
-  IF ~~ THEN REPLY ~Whatever. As long as they continue to do as I tell them that is all that concerns me.~ GOTO 43 
+  IF ~~ THEN REPLY ~Whatever. As long as they continue to do as I tell them that is all that concerns me.~ GOTO 43
   IF ~~ THEN REPLY ~They need me a darn sight more than I need them and that is why they follow and I lead.~ GOTO 43
-  IF ~~ THEN REPLY ~You know nothing of me nor anything of them, so I’ll not have you preaching to me on how to lead.~ GOTO 44
+  IF ~~ THEN REPLY ~You know nothing of me nor anything of them, so Iï¿½ll not have you preaching to me on how to lead.~ GOTO 44
 END
 
 IF ~~ THEN BEGIN 43
@@ -252,15 +252,15 @@ END
 IF ~~ THEN BEGIN 45
   SAY ~A stronger taint you say, how so my friend?~
   IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 36
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 47
   IF ~~ THEN REPLY ~I have told you all you need to know. We are not alike and never will be, so I will thank you not to compare yourself with me again.~ GOTO 47
 END
 
 IF ~~ THEN BEGIN 46
   SAY ~We are both born of human and orc, so how is your heritage different to that of my own?~
-  IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 36 
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
+  IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 36
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 47
   IF ~~ THEN REPLY ~I have told you all you need to know. We are not alike and never will be, so I will thank you not to compare yourself with me again.~ GOTO 47
 END
@@ -268,10 +268,10 @@ END
 IF ~~ THEN BEGIN 47
   SAY ~I did not mean to pry <CHARNAME>. You have to understand that it is a rare sight for me to see a half orc not only traveling in the company of men but also regarded as their leader. Please forgive my inquisitive mind, I will trouble you no more with my questions.~
   IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 48
-  SAY ~Often pain is encountered when in the pursuit of one’s true self. Not so much physical pain, more the pain in discovering that which we would rather not know, but I suspect you are talking about physical pain here. Right my friend?~
+  SAY ~Often pain is encountered when in the pursuit of oneï¿½s true self. Not so much physical pain, more the pain in discovering that which we would rather not know, but I suspect you are talking about physical pain here. Right my friend?~
   IF ~~ THEN REPLY ~Too right Dar! My darned heritage has caused me a lot of pain, but not half as much as the pain those who inflicted it will suffer in time!~ GOTO 49
   IF ~~ THEN REPLY ~I have endured both for the sake of my heritage Dar and both leave scars equally as deep.~ GOTO 49
   IF ~~ THEN REPLY ~I have suffered much for the sake of who I am my friend.~ GOTO 49
@@ -280,14 +280,14 @@ END
 
 IF ~~ THEN BEGIN 49
   SAY ~I know well the pain of being born half orc, of being scorned and reviled wherever I show my face, but you <CHARNAME>, you have friends around you, a luxury I have never known until now. Come tell me why such vehemence when you speak of your heritage when you have been blessed so?~
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 47
   IF ~~ THEN REPLY ~I have told you all you need to know. We are not alike and never will be, so I will thank you not to compare yourself with me again.~ GOTO 47
 END
 
 IF ~~ THEN BEGIN 50
   SAY ~I know well the pain of being born half orc, but I have never known the pain of losing a friend. I have never been able to call anyone friend until now. You are blessed <CHARNAME>, what is there about you that draws people to you, people that are prepared to stand by and die for you?~
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 36
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 47
   IF ~~ THEN REPLY ~I have told you all you need to know. We are not alike and never will be, so I will thank you not to compare yourself with me again.~ GOTO 47
 END
@@ -298,12 +298,12 @@ IF ~~ THEN BEGIN 51
 END
 
 IF ~~ THEN BEGIN 52
-  SAY ~So you have also been alone and come up against the prejudices of this world. I am sorry to hear this Minsc, but it sounds as though you found a true friend in Dynaheir. She sounds like a very wise woman Minsc. I would like to meet her some day.~ 
+  SAY ~So you have also been alone and come up against the prejudices of this world. I am sorry to hear this Minsc, but it sounds as though you found a true friend in Dynaheir. She sounds like a very wise woman Minsc. I would like to meet her some day.~
   IF ~~ THEN EXTERN ~BMINSC~ NEJ101
 END
 
 IF ~~ THEN BEGIN 53
-  SAY ~Once again I am sorry Minsc. To lose a true friend always leaves an empty space in one’s heart, but there are always people that see past our differences and the emptiness of such a loss can be partly filled again. This I have recently come to discover for myself.~
+  SAY ~Once again I am sorry Minsc. To lose a true friend always leaves an empty space in oneï¿½s heart, but there are always people that see past our differences and the emptiness of such a loss can be partly filled again. This I have recently come to discover for myself.~
   IF ~~ THEN EXTERN ~BMINSC~ NEJ102
 END
 
@@ -318,7 +318,7 @@ IF ~~ THEN BEGIN 55
 END
 
 IF ~~ THEN BEGIN 56
-  SAY ~You are lucky Minsc, if I’d had a Boo when I was travelling the road, it would not have been such a lonely time for me.~
+  SAY ~You are lucky Minsc, if Iï¿½d had a Boo when I was travelling the road, it would not have been such a lonely time for me.~
   IF ~~ THEN EXTERN ~BMINSC~ NEJ106
 END
 
@@ -343,7 +343,7 @@ IF ~~ THEN BEGIN 60
 END
 
 IF ~~ THEN BEGIN 61
-  SAY ~(*Sighs*) Ah but Jaheira... you were born from a union of love, whereas I was given life through an act of vicious cruelty. Because love created you and your race, half elves are more readily accepted than are half orcs. No human could ever love an orc, so to look upon me and others of my race is to see beings that are not created according to nature’s plans.~
+  SAY ~(*Sighs*) Ah but Jaheira... you were born from a union of love, whereas I was given life through an act of vicious cruelty. Because love created you and your race, half elves are more readily accepted than are half orcs. No human could ever love an orc, so to look upon me and others of my race is to see beings that are not created according to natureï¿½s plans.~
   IF ~~ THEN EXTERN ~BJAHEIR~ NEJ478
 END
 
@@ -358,7 +358,7 @@ IF ~~ THEN BEGIN 63
 END
 
 IF ~Global("VP_BHrothgar","LOCALS",2)~ THEN BEGIN 64
-  SAY ~Arundel and you go back a long way don’t you Hrothgar? I can see it in the determination in your face to help Kuldahar.~
+  SAY ~Arundel and you go back a long way donï¿½t you Hrothgar? I can see it in the determination in your face to help Kuldahar.~
   IF ~~ THEN DO ~SetGlobal("VP_BHrothgar","LOCALS",3)~ EXTERN ~BHROTH~ 68
 END
 
@@ -368,7 +368,7 @@ IF ~~ THEN BEGIN 65
 END
 
 IF ~~ THEN BEGIN 66
-  SAY ~Unfortunately the gods rewards usually come at the end of one’s life, not half way through it. I have hopes of finding some peace and acceptance before my time is over. I long for the end of my lonely road Hrothgar.~
+  SAY ~Unfortunately the gods rewards usually come at the end of oneï¿½s life, not half way through it. I have hopes of finding some peace and acceptance before my time is over. I long for the end of my lonely road Hrothgar.~
   IF ~~ THEN EXTERN ~BHROTH~ 70
 END
 
@@ -385,13 +385,13 @@ END
 IF ~Global("VP_BPC","LOCALS",4)
 !Race(Player1,HALFORC)~ THEN BEGIN 69
   SAY ~I see the respect your friends have for you as a leader and I believe they would follow you through the Nine Hells if you asked them. You are fortunate to have such loyal companions.~
-  IF ~~ THEN REPLY ~I wouldn’t go as far as to say that Dar, but let’s hope I never have to ask them to.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 70
+  IF ~~ THEN REPLY ~I wouldnï¿½t go as far as to say that Dar, but letï¿½s hope I never have to ask them to.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 70
   IF ~~ THEN REPLY ~The respect is mutual Dar, I admire and respect them and their skills.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 70
   IF ~~ THEN REPLY ~They see in me a strong and capable leader. That is what they respect and follow.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 80
 END
 
 IF ~~ THEN BEGIN 70
-  SAY ~But there is something more. I have struggled enough with my own heritage not to notice the plight of another trying to come to terms with who they are when I meet them. Whereas I have the priests of Ilmater to thank for who I am, I often wonder what it must be like to be raised by one’s parents and learn who you are through them. Does it make accepting oneself easier <CHARNAME>?~
+  SAY ~But there is something more. I have struggled enough with my own heritage not to notice the plight of another trying to come to terms with who they are when I meet them. Whereas I have the priests of Ilmater to thank for who I am, I often wonder what it must be like to be raised by oneï¿½s parents and learn who you are through them. Does it make accepting oneself easier <CHARNAME>?~
   IF ~~ THEN REPLY ~Unfortunately I never knew my parents, I was raised by my foster father Gorion, a good man. I try to follow his ways as a tribute to him.~ GOTO 71
   IF ~~ THEN REPLY ~I never knew my parents, I was raised by Gorion, a man too afraid to tell me the truth of who I am.~ GOTO 71
   IF ~~ THEN REPLY ~You are very observant Dar. The taint I carry though, is more fearsome than that of the orc.~ GOTO 85
@@ -399,33 +399,33 @@ IF ~~ THEN BEGIN 70
 END
 
 IF ~~ THEN BEGIN 71
-  SAY ~Our lives are very similar in that respect. My father I never knew nor wish to know and my mother’s mind was so ravaged by the rape that she said very little to me. The priests told me that she came from one of the barbarian tribes living in the outlying areas.~
+  SAY ~Our lives are very similar in that respect. My father I never knew nor wish to know and my motherï¿½s mind was so ravaged by the rape that she said very little to me. The priests told me that she came from one of the barbarian tribes living in the outlying areas.~
   IF ~~ THEN GOTO 72
 END
-  
+
 IF ~~ THEN BEGIN 72
-  SAY ~They were all slaughtered, and left for dead during a confrontation with orcs, all except my mother that is. She was all that remained of her tribe and it is a pitiful life that she now leads, and that my friend, is the sum of all that I know of my mother’s people.~
+  SAY ~They were all slaughtered, and left for dead during a confrontation with orcs, all except my mother that is. She was all that remained of her tribe and it is a pitiful life that she now leads, and that my friend, is the sum of all that I know of my motherï¿½s people.~
   IF ~~ THEN GOTO 73
-END  
-  
+END
+
 IF ~~ THEN BEGIN 73
   SAY ~Did your Gorion tell you anything of your parents <CHARNAME>?~
-  IF ~~ THEN REPLY ~No, he did not. I have had to discover what I know for myself.~ GOTO 74 
-  IF ~~ THEN REPLY ~He kept much hidden from me and I wish to this day that it had stayed hidden.~ GOTO 74 
+  IF ~~ THEN REPLY ~No, he did not. I have had to discover what I know for myself.~ GOTO 74
+  IF ~~ THEN REPLY ~He kept much hidden from me and I wish to this day that it had stayed hidden.~ GOTO 74
   IF ~~ THEN REPLY ~No, he was not honest with me and I will always resent him for this. My life could have been easier had I known more, been prepared.~ GOTO 74
-END  
+END
 
 IF ~~ THEN BEGIN 74
-  SAY ~Until I left the temple of Ilmater, I was living daily with the pain of seeing my mother’s constant despair. Not a day has passed that I have not wished I could have spared her pain, even to the extent of cursing my own birth. Perhaps your Gorion was hiding such a truth from you, trying to spare you a similar pain?~
-  IF ~~ THEN REPLY ~No, it wasn’t like that. Gorion kept my heritage from me because he was afraid others would discover it and seek to destroy the taint and me with it.~ GOTO 75
+  SAY ~Until I left the temple of Ilmater, I was living daily with the pain of seeing my motherï¿½s constant despair. Not a day has passed that I have not wished I could have spared her pain, even to the extent of cursing my own birth. Perhaps your Gorion was hiding such a truth from you, trying to spare you a similar pain?~
+  IF ~~ THEN REPLY ~No, it wasnï¿½t like that. Gorion kept my heritage from me because he was afraid others would discover it and seek to destroy the taint and me with it.~ GOTO 75
   IF ~~ THEN REPLY ~Very noble of you Dar, but my mother never suffered as did your own. Although my father carried the taint of murder within him, she still lay willingly with him.~ GOTO 75
   IF ~~ THEN REPLY ~The only suffering has been my own in the course of my discovering my true self.~ GOTO 88
 END
 				
 IF ~~ THEN BEGIN 75
-  SAY ~You speak of taint and heritage, something we both carry and both inherited from our fathers. Perhaps we are not so different. What I can not understand is why a woman would bear a child for such a man, knowing the child would surely be tainted by the father’s corruption? Was it an act of love <CHARNAME>, did your mother love your father, or did he force his child upon her?~
+  SAY ~You speak of taint and heritage, something we both carry and both inherited from our fathers. Perhaps we are not so different. What I can not understand is why a woman would bear a child for such a man, knowing the child would surely be tainted by the fatherï¿½s corruption? Was it an act of love <CHARNAME>, did your mother love your father, or did he force his child upon her?~
   IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 76
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 87
   IF ~~ THEN REPLY ~I have told you all you need to know. We are both slave to who we are but it does not make us in any way alike, so I will thank you not to compare yourself with me again.~ GOTO 87
 END
@@ -433,8 +433,8 @@ END
 IF ~~ THEN BEGIN 76
   SAY ~Bhaal! You carry the taint of the god of murder within you! I can only imagine how difficult that must be for you to fight even more than my own battle with the brutish orc within myself.~
   IF ~~ THEN GOTO 77
-END  
-  
+END
+
 IF ~~ THEN BEGIN 77
   SAY ~How do you live with this knowledge of yourself and still maintain your distance from all that it must mean? You must surely carry turmoil within you constantly.~
   IF ~~ THEN REPLY ~As you say, I carry a much darker heritage than yourself and that is all you need to know of me. I will answer no more of your questions.~ GOTO 87
@@ -443,10 +443,10 @@ IF ~~ THEN BEGIN 77
 END
 
 IF ~~ THEN BEGIN 78
-  SAY ~You are an exceptional person <CHARNAME>, to be aware of Bhaal’s taint and yet you still remain true to all that you have been taught, now I understand why your friends respect and remain loyal to you.~
+  SAY ~You are an exceptional person <CHARNAME>, to be aware of Bhaalï¿½s taint and yet you still remain true to all that you have been taught, now I understand why your friends respect and remain loyal to you.~
   IF ~~ THEN GOTO 79
-END   
-  
+END
+
 IF ~~ THEN BEGIN 79
   SAY ~Please accept the hand of Dar The Half-Orc, and be assured that my loyalty will remain as constant as that of your companions.~
   IF ~~ THEN EXIT
@@ -455,8 +455,8 @@ END
 IF ~~ THEN BEGIN 80
   SAY ~You are a strong leader yes, but no leader can maintain his place through strength alone. Those who follow need to know that they can trust who leads or they stop following. Either that or they choose another to lead.~
   IF ~~ THEN GOTO 81
-END   
-   
+END
+
 IF ~~ THEN BEGIN 81
   SAY ~Not all strong leaders command the respect that you do my friend.~
   IF ~~ THEN REPLY ~(*Laughs*) Choose another leader you say, and who out of this lot is capable of taking my place do you think Dar?~ GOTO 82
@@ -466,9 +466,9 @@ END
 
 IF ~~ THEN BEGIN 82
   SAY ~With an attitude like that I wonder they follow at all! Perhaps it is not respect that I see in their eyes after all. In which case, you would be wise to watch more closely in the future <CHARNAME>, especially if your life should depend on the respect of those you deem loyal to you.~
-  IF ~~ THEN REPLY ~Whatever. As long as they continue to do as I tell them that is all that concerns me.~ GOTO 83 
+  IF ~~ THEN REPLY ~Whatever. As long as they continue to do as I tell them that is all that concerns me.~ GOTO 83
   IF ~~ THEN REPLY ~They need me a darn sight more than I need them and that is why they follow and I lead.~ GOTO 83
-  IF ~~ THEN REPLY ~You know nothing of me nor anything of them, so I’ll not have you preaching to me on how to lead.~ GOTO 84
+  IF ~~ THEN REPLY ~You know nothing of me nor anything of them, so Iï¿½ll not have you preaching to me on how to lead.~ GOTO 84
 END
 
 IF ~~ THEN BEGIN 83
@@ -484,7 +484,7 @@ END
 IF ~~ THEN BEGIN 85
   SAY ~A more fearsome taint you say...  how so my friend?~
   IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 76
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 87
   IF ~~ THEN REPLY ~I have told you all you need to know. We are both slave to who we are but it does not make us in any way alike, so I will thank you not to compare yourself with me again.~ GOTO 87
 END
@@ -492,7 +492,7 @@ END
 IF ~~ THEN BEGIN 86
   SAY ~We are both fated to carry the genes of our fathers and yet you say yours is the much darker heritage. Tell me my friend, what makes this true?~
   IF ~~ THEN REPLY ~My father was no ordinary man. He was a god, Bhaal, the god of murder and I was conceived through necessity to continue his line. Neither love nor lust had anything to do with it.~ GOTO 76
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 87
   IF ~~ THEN REPLY ~I have told you all you need to know. We are both slave to who we are but it does not make us in any way alike, so I will thank you not to compare yourself with me again.~ GOTO 87
 END
@@ -500,10 +500,10 @@ END
 IF ~~ THEN BEGIN 87
   SAY ~I did not mean to pry <CHARNAME>, but for you to have accepted a half orc into your company surprised me greatly. I was curious to know more of the <PRO_MANWOMAN> who has offered me this hand of friendship. Please forgive my inquisitive mind, I will trouble you no more with my questions.~
   IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 88
-  SAY ~Often pain is encountered when in the pursuit of one’s true self. Not so much physical pain, more the pain in discovering that which we would rather not know, but I suspect you are talking about physical pain here. Right my friend?~
+  SAY ~Often pain is encountered when in the pursuit of oneï¿½s true self. Not so much physical pain, more the pain in discovering that which we would rather not know, but I suspect you are talking about physical pain here. Right my friend?~
   IF ~~ THEN REPLY ~Too right Dar! My darned heritage has caused me a lot of pain, but not half as much as the pain those who inflicted it will suffer in time!~ GOTO 89
   IF ~~ THEN REPLY ~I have endured both for the sake of my heritage Dar and both leave scars equally as deep.~ GOTO 89
   IF ~~ THEN REPLY ~I have suffered much for the sake of who I am my friend.~ GOTO 89
@@ -512,14 +512,14 @@ END
 
 IF ~~ THEN BEGIN 89
   SAY ~I was born half orc, and I have become accustomed to only scorn and revulsion wherever I show my face, but you <CHARNAME>, you have friends around you, a luxury I have never known until now. Come tell me why such vehemence when you speak of your heritage when you have been blessed so?~
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 87
   IF ~~ THEN REPLY ~I have told you all you need to know. We are both slave to who we are but it does not make us in any way alike, so I will thank you not to compare yourself with me again.~ GOTO 87
 END
 
 IF ~~ THEN BEGIN 90
   SAY ~Physical pain I know well. I have been persecuted, spat on and worse, I have been looked upon as no more than a thing to be hunted, my head a trophy for whoever got lucky, but I have never known the pain of losing a friend. I have never been able to call anyone friend until now. You are blessed <CHARNAME>, what is it about you that draws people to you, people that are prepared to stand by and die for you?~
-  IF ~~ THEN REPLY ~For starters, my father wasn’t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
+  IF ~~ THEN REPLY ~For starters, my father wasnï¿½t human, he was the god Bhaal, god of murder. People are always drawn to those touched by the gods, regardless of which god it may be.~ GOTO 76
   IF ~~ THEN REPLY ~The answer to that is not something I speak of often. Perhaps another place another time my friend.~ GOTO 87
   IF ~~ THEN REPLY ~I have told you all you need to know. We are both slave to who we are but it does not make us in any way alike, so I will thank you not to compare yourself with me again.~ GOTO 87
 END
@@ -641,8 +641,8 @@ END
 
 IF ~~ THEN BEGIN 114
   SAY ~Of course and I will  take that in to account as I listen.
-  
-	(*Slowly, the dulcet sound of Leina’s low contralto voice starts to tell of Dar’s life.*)~
+
+	(*Slowly, the dulcet sound of Leinaï¿½s low contralto voice starts to tell of Darï¿½s life.*)~
   IF ~~ THEN EXTERN ~BLEINA~ 31
 END
 
@@ -659,7 +659,7 @@ END
 IF ~Global("VP_BPC_Halruaa","LOCALS",2)~ THEN BEGIN 117
   SAY ~Tell me <CHARNAME>. Does this not make you uneasy, being once again in a time that has past?~
   IF ~~ THEN REPLY ~It does Dar but I have seen many extraordinary things in my life. However, this must be very disconcerting for you my friend.~ GOTO 118
-  IF ~~ THEN REPLY ~Not as much as I think it does you Dar.~ GOTO 118  
+  IF ~~ THEN REPLY ~Not as much as I think it does you Dar.~ GOTO 118
   IF ~~ THEN REPLY ~Are you asking me because you are uneasy yourself?~ GOTO 118
   IF ~~ THEN REPLY ~My life has never been conventional Dar. I am learning to accept its strangeness.~ GOTO 120
 END
@@ -765,7 +765,7 @@ Gender(Player1,MALE)~ THEN EXTERN ~BNALIA~ NEJ60
 END
 
 IF ~~ THEN BEGIN 129
-  SAY ~The underground is one thing but sewer sloshing...that’s something else altogether!~
+  SAY ~The underground is one thing but sewer sloshing...thatï¿½s something else altogether!~
 	IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest2
 	IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ140
@@ -786,9 +786,9 @@ IF ~~ THEN BEGIN 131
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ 88
 	IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ2 
+!Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ2
 	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ500 
+!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ500
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ1
 	IF ~InParty("Taffic")
@@ -800,18 +800,18 @@ IF ~~ THEN BEGIN 131
 END
 
 IF ~~ THEN BEGIN LeiDear1
-	SAY ~Now Leina, just because I am half-orc doesn’t mean I don’t know about being clean. I hope you are not trying to insult me because I never thought you one to judge others solely on their breeding?~
-	IF ~~ THEN EXTERN ~BLEINA~ DeArnise20	  
+	SAY ~Now Leina, just because I am half-orc doesnï¿½t mean I donï¿½t know about being clean. I hope you are not trying to insult me because I never thought you one to judge others solely on their breeding?~
+	IF ~~ THEN EXTERN ~BLEINA~ DeArnise20	
 END
 
 IF ~~ THEN BEGIN LeiDear2
-	SAY ~(*Looking at his feet*) As would I be honoured to dance with Leina, sadly though I must decline the lady’s offer. My feet move swift enough in battle but set to music they become clumsy, almost as bad as <CHARNAME>’s attempts at a song.~
-	IF ~~ THEN EXTERN ~BLEINA~ DeArnise21	  
+	SAY ~(*Looking at his feet*) As would I be honoured to dance with Leina, sadly though I must decline the ladyï¿½s offer. My feet move swift enough in battle but set to music they become clumsy, almost as bad as <CHARNAME>ï¿½s attempts at a song.~
+	IF ~~ THEN EXTERN ~BLEINA~ DeArnise21	
 END
 
 IF ~~ THEN BEGIN LeiSpher1
-	SAY ~<CHARNAME>, I have listened to many of your conversations and been silent but this once I am quite curious about. These two terms a brain tickle and a brain freeze, tell me, how does one tickle a brain and better yet, why would one want to freeze one’s brain?~
-	IF ~~ THEN EXTERN ~BLEINA~ Sphere15	  
+	SAY ~<CHARNAME>, I have listened to many of your conversations and been silent but this once I am quite curious about. These two terms a brain tickle and a brain freeze, tell me, how does one tickle a brain and better yet, why would one want to freeze oneï¿½s brain?~
+	IF ~~ THEN EXTERN ~BLEINA~ Sphere15	
 END
 
 IF ~~ THEN BEGIN LeiSpher2
@@ -832,11 +832,11 @@ IF ~~ THEN BEGIN LeiSpher2
 	IF ~InParty("Valygar")
 !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
 	IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3		  
+!Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3		
 END
 
 IF ~~ THEN BEGIN LeiSpher3
-	SAY ~I am getting this game now... how about a gauntlet, it would need to be big inside to fit Dar’s hand?~
+	SAY ~I am getting this game now... how about a gauntlet, it would need to be big inside to fit Darï¿½s hand?~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere19
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher2
@@ -851,7 +851,7 @@ IF ~~ THEN BEGIN LeiSpher3
 	IF ~InParty("Nalia")
 !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher2
 	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher2	  
+!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher2	
 END
 
 IF ~~ THEN BEGIN LeiSpher4
@@ -870,7 +870,7 @@ IF ~~ THEN BEGIN LeiSpher4
 	IF ~InParty("Nalia")
 !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher3
 	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher3		  
+!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher3		
 END
 
 IF ~Global("VP_BPC","LOCALS",7)~ THEN BEGIN 132
@@ -912,7 +912,7 @@ IF ~~ THEN BEGIN 136
 =
 ~What you say makes me even more certain that your path is my path for as long as you feel you have need of me that is.. I look upon you all as good and loyal friends.~
 =
-~Friends, you have no idea how long I have wanted to be able to speak that simple word. I have friends whom I trust and who trust me, it is a good feeling.~ 
+~Friends, you have no idea how long I have wanted to be able to speak that simple word. I have friends whom I trust and who trust me, it is a good feeling.~
   IF ~~ THEN REPLY ~Life is always more enjoyable when you have friends to share it with Dar, I cannot imagine being without mine.~ GOTO 137
   IF ~~ THEN REPLY ~Friendship and trust is something you have to earn Dar and once earned it should never be abused. Remember that and you will always have friends.~ GOTO 137
   IF ~~ THEN REPLY ~It is easy to see the goodness in you Dar, and I am sure it is that goodness that will draw many friends to you before it is time to face your god.~ GOTO 137
@@ -936,7 +936,7 @@ IF ~~ THEN BEGIN 138
 END
 
 IF ~~ THEN BEGIN 139
-  SAY ~I have never had friends and as such never suffered the disappointed you speak of in false friends, but I do know of deceit and the pain that it causes. I will heed your words when choosing my friends.~ 
+  SAY ~I have never had friends and as such never suffered the disappointed you speak of in false friends, but I do know of deceit and the pain that it causes. I will heed your words when choosing my friends.~
 =
 ~I know of your search for a way home, it is not easy to walk and not overhear the conversations of others, but it is not my place to question or pry even if I do not understand.~
 =
@@ -961,11 +961,11 @@ END
 IF ~~ THEN BEGIN LeiTheat
   SAY ~So my friend, what has suddenly inspired this idea of yours?~
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -975,11 +975,11 @@ END
 IF ~~ THEN BEGIN LeiThea3
   SAY ~I am not sure I understand your words <CHARNAME>. What does it mean to "have her this time?"~
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -989,11 +989,11 @@ END
 IF ~~ THEN BEGIN LeiThea4
   SAY ~I take it you mean to play a prank on Leina. I am not very good at games so I will watch and learn the purpose of this prank.~
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -1042,7 +1042,7 @@ END
 
 IF ~~ THEN BEGIN LeiRadia
   SAY ~Leina, it is a joy to have you in the party. For it is times like this and with each of these conversations that I learn more of the ways of your people.~
-	IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B  
+	IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
 	IF ~InParty("Taffic")
@@ -1056,7 +1056,7 @@ IF ~~ THEN BEGIN LeiRadia
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia  
+!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
 	IF ~InParty("Imoen2")
 !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiRadia
 END	
@@ -1077,27 +1077,27 @@ RealSetGlobalTimer("VP_Dar_Keldor_Time","GLOBAL",1800)~
 ~What I should have said is, you have that which I will never know or have, and whereas I am happy for you... I am sad for myself.~
 =
 ~I am resigned to the fact that I will never know the feeling of oneness that love brings to a man and a woman.~
-== BKELDOR ~(*He reaches up and puts his hand on the half orc’s shoulder*) My friend, I understand why you should feel that love will always elude you.~
+== BKELDOR ~(*He reaches up and puts his hand on the half orcï¿½s shoulder*) My friend, I understand why you should feel that love will always elude you.~
 =
-~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of another’s love.~
+~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of anotherï¿½s love.~
 == BDAR ~I have no illusions about my appearance, I know I am repulsive to the female eye.~
 =
-~It’s probably true also that no female orc would give me a second glance because of the human traits that are etched so clearly in my features.~
+~Itï¿½s probably true also that no female orc would give me a second glance because of the human traits that are etched so clearly in my features.~
 =
 ~So tell me Keldorn, what hope is there of a woman taking the time to look into my heart if she can not bear to look me in the eye?~
 == BKELDOR ~(*His voice takes on a tone of sadness*) I can not answer you truthfully for the female heart is a mystery to all men, but I do  know that women are very different to men in the way they perceive a worthy lover.~
 =
-~It is true, many will look at a man’s face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
+~It is true, many will look at a manï¿½s face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
 =
 ~Then there is the woman who is first your friend... she has taken the time, watched, spoken with you and found you worthy to be called friend.~
 =
 ~Neither of you seek anything more than the bond that the love of friends forge, but as the friendship strengthens, so her eyes become open to what lies beneath. Then she may open her heart to a different sort of love.~
 == BDAR ~If this is so, then dare I hope that there is such a woman, a woman prepared to look beyond my appearance and share her love and herself with this half orc?~
 == BKELDOR ~Once again, I do not know Dar, but I do know that such women are to be found and you my friend, are so much more than the half-orc that you perceive yourself as.~
-= 
+=
 ~Not only myself but also your friends here have witnessed, many times, the honour that dwells within your heart.~
 =
-~Should you be lucky enough to procure the love of such a woman, then you will be blessed because you’ll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
+~Should you be lucky enough to procure the love of such a woman, then you will be blessed because youï¿½ll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
 == BDAR ~I have never allowed myself to dream of the love and companionship that you speak of, but then, I never thought to see myself walk among, and be accepted in the world of men.~
 =
 ~I almost believe it possible for me to find love in this world of yours.~
@@ -1107,19 +1107,19 @@ RealSetGlobalTimer("VP_Dar_Keldor_Time","GLOBAL",1800)~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Melora","LOCALS",2)~ THEN BDAR darmel1
-  ~(*Looking up surprised*) Oh... hello Melora, I didn’t realise anyone was still awake.~
+  ~(*Looking up surprised*) Oh... hello Melora, I didnï¿½t realise anyone was still awake.~
 DO ~SetGlobal("VP_Dar_Melora","LOCALS",3)~
-== BMELORA ~Just me. I was off to my bed when I saw you sitting here engrossed in whatever it is you’re doing. Do you mind if I ask, what is it that you are doing?~
+== BMELORA ~Just me. I was off to my bed when I saw you sitting here engrossed in whatever it is youï¿½re doing. Do you mind if I ask, what is it that you are doing?~
 == BDAR ~(*Handing her a small object*) This... it is called scrimshaw, the carving of natural materials. As you can see, this one is carved from bone.~
-== BMELORA ~(*Turning the object over in her hand*) Why, it’s a butterfly... and so delicate! You did this Dar?~
-== BDAR ~Does it surprise you Melora that maybe these oversized hands of mine are good for something other than fighting? I am not so blind that I don’t appreciate beauty as much as the next man.~
-== BMELORA ~I didn’t mean... Oh heck... I’m sorry Dar. Of course it shouldn’t surprise me that you can create such beauty.~
+== BMELORA ~(*Turning the object over in her hand*) Why, itï¿½s a butterfly... and so delicate! You did this Dar?~
+== BDAR ~Does it surprise you Melora that maybe these oversized hands of mine are good for something other than fighting? I am not so blind that I donï¿½t appreciate beauty as much as the next man.~
+== BMELORA ~I didnï¿½t mean... Oh heck... Iï¿½m sorry Dar. Of course it shouldnï¿½t surprise me that you can create such beauty.~
 =
 ~It was rude of me to react so, but I am curious, where did you learn to do this scrimshaw carving? Was it taught to you by your priests?~
-== BDAR ~No it wasn’t, this is something I taught myself during the long nights I spent whilst on the road.~
+== BDAR ~No it wasnï¿½t, this is something I taught myself during the long nights I spent whilst on the road.~
 =
 ~I began by whittling the bone of a dead animal that I picked up along my way, and I have had many lonely nights to perfect the craft. Or as near perfect as I feel I can achieve.~
-== BMELORA ~I can’t see how more perfect you could have made this... it’s... it’s exquisite!~
+== BMELORA ~I canï¿½t see how more perfect you could have made this... itï¿½s... itï¿½s exquisite!~
 =
 ~Just look at the wings, I almost expect to see them flap and take flight as it sits in my hand. (*Putting her other hand protectively over it.*)~
 == BDAR ~It seems content to sit there Melora. Please, I give it to you, it is finished.~
@@ -1133,7 +1133,7 @@ DO ~SetGlobal("VP_Dar_Melora","LOCALS",3)~
 == BDAR ~Good night Melora. (*Before she turns away, she sees him take another piece of bone from his bag, and with his strange looking knife, he begins chipping away at it.*)~
 DO ~RestParty()~
 EXIT
-  
+
 CHAIN IF ~Global("VP_Dar_Keldorn","LOCALS",1)~ THEN BDAR darkel21
   ~A beautiful day is it not Sir Keldorn?~
 DO ~SetGlobal("VP_Dar_Keldorn","LOCALS",2)
@@ -1150,23 +1150,23 @@ SetGlobalTimer("VP_Dar_Keldor_Time","GLOBAL",TWO_DAYS)~
 =
 ~It is not an uncommon occurrence and may be sparked for many different reasons.~
 =
-~A man’s faith may be shaken when confronted by evil or depravity when he sees it permitted to live among, and take advantage of the innocent or the very young.~
+~A manï¿½s faith may be shaken when confronted by evil or depravity when he sees it permitted to live among, and take advantage of the innocent or the very young.~
 =
 ~He may then question that if the gods exist, why do they tolerate these things in this world they have built?~
 == BDAR ~I do not doubt my god, nor my faith, but of late, I feel that there is more that I should be doing to prove my worthiness to do his works.~
 =
-~I feel I may have allowed my oath to aid <CHARNAME> to take me away from the path Ilmater first intended for me?~ 
+~I feel I may have allowed my oath to aid <CHARNAME> to take me away from the path Ilmater first intended for me?~
 =
-~What if Ilmater sees Hrothgar’s quest as a man’s excuse to meddle where only the gods should and he is displeased because I have followed him to?~ 
+~What if Ilmater sees Hrothgarï¿½s quest as a manï¿½s excuse to meddle where only the gods should and he is displeased because I have followed him to?~
 =
 ~You see, I am floundering Keldorn, like the fish reeled in from the water and left gasping on the bank... you have toiled long and without question under the watchful eye of Torm.~
 =
 ~Tell me Keldorn, what makes you so certain all this time that you are doing his will?~
 == BKELDOR ~Easy my noble friend! I never said I was always so certain of my way. I too was young once and insecure in my faith.~
 =
-~The gods are ever watchful, and whereas you can not always be sure you are acting as they would have you act, you can be sure they’d soon let you know if your actions displeased them.~
+~The gods are ever watchful, and whereas you can not always be sure you are acting as they would have you act, you can be sure theyï¿½d soon let you know if your actions displeased them.~
 =
-~From what I have learnt of your early life, it is through your toil and perseverence that Ilmater has found you deserving of this better life.~ 
+~From what I have learnt of your early life, it is through your toil and perseverence that Ilmater has found you deserving of this better life.~
 =
 ~I am sure you are where your god intends you to be, and if this has been brought about through your aiding Hrothgar, then you can be assured that he is not displeased with either you, or with Hrothgar.~
 == BDAR ~I see the wisdom and the truth in your words. I will take counsel from them and pray that Ilmater will forgive this brief failing in his servant. Thank you Keldorn.~
@@ -1176,7 +1176,7 @@ SetGlobalTimer("VP_Dar_Keldor_Time","GLOBAL",TWO_DAYS)~
 =
 ~They may help you to see what is already there, but they can not restore faith where faith no longer wishes to live.~
 =
-~Take counsel from them by all means, but don’t forget to look into your heart as you do so.~
+~Take counsel from them by all means, but donï¿½t forget to look into your heart as you do so.~
 == BDAR ~Thank you again my friend, I appreciate you sparing me both your time and your counsel.~
 == BKELDOR ~Anytime Dar, anytime.~
 EXIT
@@ -1184,34 +1184,34 @@ EXIT
 CHAIN IF ~Global("VP_Dar_Keldorn","LOCALS",3)~ THEN BDAR darkel31
   ~Sir Kel... I am sorry I forget... Keldorn, I want you to know, that which we spoke of in our last conversation has now passed. Once again my path is clear to me.~
 DO ~SetGlobal("VP_Dar_Keldorn","LOCALS",4)~
-== BKELDOR ~As I said it would my friend. Ours is a much harder road than that of the warrior or the wizard, for it is not so easy to sustain a road dependent on faith.~ 
+== BKELDOR ~As I said it would my friend. Ours is a much harder road than that of the warrior or the wizard, for it is not so easy to sustain a road dependent on faith.~
 =
-~It is my belief that the gods take comfort in the testing of their servants, they are proud and need continual affirmation of our allegiance to them.~ 
+~It is my belief that the gods take comfort in the testing of their servants, they are proud and need continual affirmation of our allegiance to them.~
 =
 ~They know that they only wield power over us for as long as we fear their name...  without our adoration they are lost.~
 == BDAR ~During my early years in the temple, I read a little of the lost gods.~
 =
-~Of how their names became forgotten when their followers lost faith or, when through war, a god’s chosen people were wiped out leaving none to worship and keep his name sacred.~
+~Of how their names became forgotten when their followers lost faith or, when through war, a godï¿½s chosen people were wiped out leaving none to worship and keep his name sacred.~
 =
-~To lose the adulation of one’s followers and become, forgotten must be a great fear to any god.~
+~To lose the adulation of oneï¿½s followers and become, forgotten must be a great fear to any god.~
 =
-~I can see why they would feel the need to continually seek assurance of their divinity... who would have thought that the gods had cause to fear the fickleness of us mortals.~ 
+~I can see why they would feel the need to continually seek assurance of their divinity... who would have thought that the gods had cause to fear the fickleness of us mortals.~
 == BKELDOR ~My friend, a god will always be a god, but it is true... they only have power over those who believe in, and worship them.~
 =
-~It is a complex and somewhat fragile relationship that exists between mortals and gods. We look to them for guidance and hope, whereas they look to us for their very being.~ 
+~It is a complex and somewhat fragile relationship that exists between mortals and gods. We look to them for guidance and hope, whereas they look to us for their very being.~
 == BDAR ~It has always been the nature of all living things, that each, in someway, rely on others for their survival.~
 =
 ~The gods are no different, or so it now seems. The question now becomes who really fears who the most?~
 =
-~Does the mortal fear his god and the terrible power he wields or does the god fear the mortal, for without the mortal’s adoration, the god has no power over him?~
+~Does the mortal fear his god and the terrible power he wields or does the god fear the mortal, for without the mortalï¿½s adoration, the god has no power over him?~
 =
-~Now, there’s a thought to wonder on. What say you Keldorn?~
-== BKELDOR ~It most certainly is, but take heed, do not look for some way of holding this knowledge over your god’s head in exchange for some boon or other.~
+~Now, thereï¿½s a thought to wonder on. What say you Keldorn?~
+== BKELDOR ~It most certainly is, but take heed, do not look for some way of holding this knowledge over your godï¿½s head in exchange for some boon or other.~
 =
-~To him, the loss of one follower isn’t going to be significant enough to make even a dint in his divinity but his wrath will be dreadful indeed.~
+~To him, the loss of one follower isnï¿½t going to be significant enough to make even a dint in his divinity but his wrath will be dreadful indeed.~
 == BDAR ~I would not presume to be so foolish. Ilmater has already given me more than I would ever have asked of him.~
 =
-~He has brought me to this time and in doing so, has freed me from my half life. This boon alone earns him my love and my fealty until the day he welcomes my soul into his keeping.~ 
+~He has brought me to this time and in doing so, has freed me from my half life. This boon alone earns him my love and my fealty until the day he welcomes my soul into his keeping.~
 == BKELDOR ~Your faith is strong my young friend, I doubt you will question your way again.~
 =
 ~Your god, will I am sure, watch over you as you walk your road but just in case, let us be vigilant ourselves to what ever may lie ahead of us, the gods cannot have their eyes everywhere all of the time.~
@@ -1219,32 +1219,32 @@ DO ~SetGlobal("VP_Dar_Keldorn","LOCALS",4)~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Nalia","LOCALS",2)~ THEN BDAR darnal1
-  ~Nalia, what’s the matter? Your step is slow today. Are you hurt? Are you in need of healing?~
+  ~Nalia, whatï¿½s the matter? Your step is slow today. Are you hurt? Are you in need of healing?~
 DO ~SetGlobal("VP_Dar_Nalia","LOCALS",3)~
-== BNALIA ~No Dar, it’s just... well things aren’t exactly as I thought they would be. We don’t seem to be helping the needy at all, or at least not as much as I had hoped we would.~ 
-== BDAR ~Your desire to make life easier for the needy is admirable Nalia, but we shouldn’t forget that we are also looking for clues to the whereabouts of Imoen, <CHARNAME>’s friend.~
-== BNALIA ~I haven’t forgotten, but look at <CHARNAME>. <PRO_HESHE> has been chasing all over for Hrothgar without a thought for Imoen and for what, some stupid keys! Some friend!~
-== BDAR ~I am sure that’s not true, Hrothgar assures us that Imoen will be found, we just have to trust him. He is a good man and I don’t believe that he would delay our search  needlessly.~
+== BNALIA ~No Dar, itï¿½s just... well things arenï¿½t exactly as I thought they would be. We donï¿½t seem to be helping the needy at all, or at least not as much as I had hoped we would.~
+== BDAR ~Your desire to make life easier for the needy is admirable Nalia, but we shouldnï¿½t forget that we are also looking for clues to the whereabouts of Imoen, <CHARNAME>ï¿½s friend.~
+== BNALIA ~I havenï¿½t forgotten, but look at <CHARNAME>. <PRO_HESHE> has been chasing all over for Hrothgar without a thought for Imoen and for what, some stupid keys! Some friend!~
+== BDAR ~I am sure thatï¿½s not true, Hrothgar assures us that Imoen will be found, we just have to trust him. He is a good man and I donï¿½t believe that he would delay our search  needlessly.~
 =
-~To hear him speak, it’s as if our future and the future of everything we know weighs heavily on his shoulders... to look into the man’s face and you know it could well be true.~
-== BNALIA ~That’s just the sort of thing I am talking about. Coming from the past, how can he know so much about our time and the future... he seems pretty darn confident when he says *Imoen will be found?*~
+~To hear him speak, itï¿½s as if our future and the future of everything we know weighs heavily on his shoulders... to look into the manï¿½s face and you know it could well be true.~
+== BNALIA ~Thatï¿½s just the sort of thing I am talking about. Coming from the past, how can he know so much about our time and the future... he seems pretty darn confident when he says *Imoen will be found?*~
 =
-~He does look troubled... yes, but don’t you also see how at home he appears to be for a man out of his time. I can’t get my head around how easily he has accepted all this.~ 
-== BDAR ~You forget Nalia, I am also out of my time, but I feel very much at peace here. It’s as though this time, this life, has always been waiting for me.~
+~He does look troubled... yes, but donï¿½t you also see how at home he appears to be for a man out of his time. I canï¿½t get my head around how easily he has accepted all this.~
+== BDAR ~You forget Nalia, I am also out of my time, but I feel very much at peace here. Itï¿½s as though this time, this life, has always been waiting for me.~
 =
-~I feel that I belong, maybe it’s the same with Hrothgar.~
+~I feel that I belong, maybe itï¿½s the same with Hrothgar.~
 == BNALIA ~I was forgetting Dar, and you do look content but not in the same way Hrothgar looks.~
 =
-~It’s... it’s... oh fiddlesticks, I’ll come right out and say it... Hrothgar frightens me. There, now I’ve said it!~
+~Itï¿½s... itï¿½s... oh fiddlesticks, Iï¿½ll come right out and say it... Hrothgar frightens me. There, now Iï¿½ve said it!~
 == BDAR ~Frightens you? Whatever do you mean... why should you be frightened of Hrothgar?~
-== BNALIA ~I am not frightened of him... its more the things he says and the things that he doesn’t say that scares me.~ 
+== BNALIA ~I am not frightened of him... its more the things he says and the things that he doesnï¿½t say that scares me.~
 =
-~He knows things Dar, call it a mage’s intuition if you like, but he knows things and he is deliberately keeping them from us.~
-== BDAR ~We’ve all noticed this Nalia, but he has never denied it when asked. Doesn’t that say something about his honesty?~
+~He knows things Dar, call it a mageï¿½s intuition if you like, but he knows things and he is deliberately keeping them from us.~
+== BDAR ~Weï¿½ve all noticed this Nalia, but he has never denied it when asked. Doesnï¿½t that say something about his honesty?~
 =
 ~We just have to trust him and wait for him to tell us when he is ready.~
 == BNALIA ~Aunty taught me to always be wary of men who ask you to trust them and then to follow them solely on trust. It usually means that they are up to no good.~
-== BDAR ~And this aunty of yours... she’s had a lot of experience with men who were up to no good has she?~
+== BDAR ~And this aunty of yours... sheï¿½s had a lot of experience with men who were up to no good has she?~
 == BNALIA ~(*Putting her hand in front of her mouth to stifle a giggle*) Aunty... and men... yea gods no!~
 =
 ~If truth were known, she thought all men were up to no good, but I see what you are saying Dar. I guess a lot more of aunty has rubbed off on to me than I thought.~
@@ -1253,13 +1253,13 @@ EXIT
 CHAIN IF ~Global("VP_Dar_Aerie","LOCALS",2)~ THEN BDAR daraer1
   ~Can I give you a hand there Aerie? No point in having a strong arm lay idle whilst there are things to do.~
 DO ~SetGlobal("VP_Dar_Aerie","LOCALS",3)~
-== BAERIE ~It’s alright thank you Dar. I may not have your strong arm but I am more than capable of packing my own things.~
-== BDAR ~I am sorry, I meant no offense and of course you are capable, my words weren’t  meant to imply otherwise. It’s just, having stowed my own gear, I thought to help you with yours.~
-== BAERIE ~Oh... I am sorry, I didn’t mean to sound rude or ungrateful.~
+== BAERIE ~Itï¿½s alright thank you Dar. I may not have your strong arm but I am more than capable of packing my own things.~
+== BDAR ~I am sorry, I meant no offense and of course you are capable, my words werenï¿½t  meant to imply otherwise. Itï¿½s just, having stowed my own gear, I thought to help you with yours.~
+== BAERIE ~Oh... I am sorry, I didnï¿½t mean to sound rude or ungrateful.~
 =
-~Thank you for offering and all, but it’s important I pull my weight... or at least... what little there is of it, even if it’s only packing my own backpack.~
+~Thank you for offering and all, but itï¿½s important I pull my weight... or at least... what little there is of it, even if itï¿½s only packing my own backpack.~
 =
-~I don’t want to make myself a burden, it was very generous of <CHARNAME> to take me into the group and allow me to travel with them.~
+~I donï¿½t want to make myself a burden, it was very generous of <CHARNAME> to take me into the group and allow me to travel with them.~
 == BDAR ~Why should my offering to help make anyone look upon you as a burden?~
 =
 ~Your size has nothing to do with your skills as an extremely competent cleric-mage, a rare vocation among elves, or so I am told. Something I am sure the group are well aware of too.~
@@ -1269,7 +1269,7 @@ DO ~SetGlobal("VP_Dar_Aerie","LOCALS",3)~
 == BDAR ~Then let us about this monumental task.~
 =
 ~(*He smiles as he picks up her hair brush and a small mirror*) Mmm... how come so small a person needs to carry so much stuff?~
-== BAERIE ~(*She takes the brush from him and playfully swats him with it*) Don’t tease me so Dar.~
+== BAERIE ~(*She takes the brush from him and playfully swats him with it*) Donï¿½t tease me so Dar.~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Anomen","LOCALS",2)~ THEN BDAR daranom1
@@ -1279,84 +1279,84 @@ CHAIN IF ~Global("VP_Dar_Anomen","LOCALS",2)~ THEN BDAR daranom1
 DO ~SetGlobal("VP_Dar_Anomen","LOCALS",3)~
 == BANOMEN ~Tales... tales imply my exploits are naught but stories!~
 =
-~I’ll have you know orc, that there are many men willing to testify to the validity of my deeds... men who would not be alive to do so if it were not for my fearless actions.~ 
+~Iï¿½ll have you know orc, that there are many men willing to testify to the validity of my deeds... men who would not be alive to do so if it were not for my fearless actions.~
 == BDAR ~Hey take it easy, I am not doubting the truth of your words, but a true warrior priest has no need to sing his own praises.~
 =
-~He doesn’t crave recognition for his valour in the eyes of men, instead, he is content in the knowledge that what he does is seen to be right in the eyes of his god... incidently, I am half orc by birth... not orc!~
+~He doesnï¿½t crave recognition for his valour in the eyes of men, instead, he is content in the knowledge that what he does is seen to be right in the eyes of his god... incidently, I am half orc by birth... not orc!~
 == BANOMEN ~Orc, half orc, what does it matter... both races are known to have brutal tendencies!~
 =
 ~Your god knows well the beast that dwells within your soul, but does he turn his face from you?~
 =
-~He does not, so I doubt Helm will judge me for the pride I feel in my achievements. If he doesn’t judge me, then pray tell me, by what right do you think you have to try and do so?~
+~He does not, so I doubt Helm will judge me for the pride I feel in my achievements. If he doesnï¿½t judge me, then pray tell me, by what right do you think you have to try and do so?~
 == BDAR ~Forgive me, my words were not meant to be taken as judgemental.~
 =
-~Ilmater knows the way of my heart regardless of any heritage I carry in my blood and that is why he doesn’t turn aside from me.~
+~Ilmater knows the way of my heart regardless of any heritage I carry in my blood and that is why he doesnï¿½t turn aside from me.~
 =
-~A man cannot hide from a god’s gaze what is truly in his heart, I am sure Helm sees the courage and faith that fills yours.~ 
+~A man cannot hide from a godï¿½s gaze what is truly in his heart, I am sure Helm sees the courage and faith that fills yours.~
 =
-~Could it be that you do not and that is why you feel the need to hear of it so often?~ 
+~Could it be that you do not and that is why you feel the need to hear of it so often?~
 == BANOMEN ~Leave me be orc! Helm understands the pride I  have for all that I have achieved under his guidance and he knows the harsh path I was forced to follow when my father refused to aid me in my aspirations.~
 =
-~If you don’t wish to hear of the  battles I have fought and the glorious victories I have won in Helm’s name then leave me be... there are those who do.~
+~If you donï¿½t wish to hear of the  battles I have fought and the glorious victories I have won in Helmï¿½s name then leave me be... there are those who do.~
 == BDAR ~I meant no offense, please, my intention was to show you how unnecessary your stories are.~
 =
-~You don’t have to impress those around you by telling of past deeds, your present day actions show that your heart is bold, and it is in the heart that true courage and valour lies.~
+~You donï¿½t have to impress those around you by telling of past deeds, your present day actions show that your heart is bold, and it is in the heart that true courage and valour lies.~
 =
 ~I will leave you to consider my words.~
 == BANOMEN ~(*Turning away*) As if I need a lecture from a half breed on valour and what is in my heart!~
-EXIT 
+EXIT
 	
 CHAIN IF ~Global("VP_Dar_Korgan","LOCALS",2)~ THEN BDAR darkorg1
-  ~Sorry Korgan, I didn’t see you there. Is there something you want of me?~
+  ~Sorry Korgan, I didnï¿½t see you there. Is there something you want of me?~
 DO ~SetGlobal("VP_Dar_Korgan","LOCALS",3)~
-== BKORGAN ~Yer can slow those great feet of yers for starters! I aint about to talk to yer backside!~ 
+== BKORGAN ~Yer can slow those great feet of yers for starters! I aint about to talk to yer backside!~
 == BDAR ~(*Shortening his stride*) Sorry Korgan. Is this better?~
-== BKORGAN ~Aye, a little. I’ve a little proposition to put to yer, seeing as hows yer be mighty handy with that there weapon of yours.~
+== BKORGAN ~Aye, a little. Iï¿½ve a little proposition to put to yer, seeing as hows yer be mighty handy with that there weapon of yours.~
 =
-~Not much of a weapon for slitting a man open and getting a sight of his guts, but I seen you and that girly thing of yours spill a man’s brains down his face.~
+~Not much of a weapon for slitting a man open and getting a sight of his guts, but I seen you and that girly thing of yours spill a manï¿½s brains down his face.~
 =
 ~That be almost as good as dropping his guts over his toes.~
-== BDAR ~It may come as a surprise to you, but I don’t share the same enthusiasm in spilling a man’s brains as you do when it comes to disembowelling our enemy Korgan.~ 
+== BDAR ~It may come as a surprise to you, but I donï¿½t share the same enthusiasm in spilling a manï¿½s brains as you do when it comes to disembowelling our enemy Korgan.~
 =
 ~So if this little proposition of yours involves disembowelling, you are propositioning the wrong person.~
-== BKORGAN ~Ther’s no better way of making sure yer enemy stays dead than leaving his insides on his outsides.~
+== BKORGAN ~Therï¿½s no better way of making sure yer enemy stays dead than leaving his insides on his outsides.~
 =
 ~And if he aint quite dead, then he gets to see bits of himself that he aint never seen before, courtesy of Korgan here.~
-== BDAR ~I’ll take your word on that Korgan... just tell me what it is you want of me?~ 
+== BDAR ~Iï¿½ll take your word on that Korgan... just tell me what it is you want of me?~
 == BKORGAN ~I was a thinking, a fine cleric like yourself and a person with intelligence such as meself could go into the retrieval business.~
 =
-~There be lots of stuff that needs retrieving, artifacts, gems and the likes of. All locked away with folk that has no use for ‘em, such a waste don’t yer think?~ 
-== BDAR ~Folks that have no use for ‘em... I mean them, I am not sure I follow your meaning?~
+~There be lots of stuff that needs retrieving, artifacts, gems and the likes of. All locked away with folk that has no use for ï¿½em, such a waste donï¿½t yer think?~
+== BDAR ~Folks that have no use for ï¿½em... I mean them, I am not sure I follow your meaning?~
 =
-~If it’s thievery that you have in mind, then I am in no doubt that I want no part of this retrieval venture of yours.~
-== BKORGAN ~Aint you listening to here? I said retrieval, if I’d meant thievery I’d have said thievery.~
+~If itï¿½s thievery that you have in mind, then I am in no doubt that I want no part of this retrieval venture of yours.~
+== BKORGAN ~Aint you listening to here? I said retrieval, if Iï¿½d meant thievery Iï¿½d have said thievery.~
 =
-~I’m thinking to retrieve all the stuff the dead had buried with ‘emselves, thinking it would make ‘em rich when they got to wherever it was they thought they was going.~
+~Iï¿½m thinking to retrieve all the stuff the dead had buried with ï¿½emselves, thinking it would make ï¿½em rich when they got to wherever it was they thought they was going.~
 =
-~Only they didn’t go nowhere and nor did their treasures. Now surely they’d want ‘em retrieved, not left to rot, seeing as how they thought so highly of ‘em?~
+~Only they didnï¿½t go nowhere and nor did their treasures. Now surely theyï¿½d want ï¿½em retrieved, not left to rot, seeing as how they thought so highly of ï¿½em?~
 == BDAR ~(*Looking horrified at the dwarf*) What you are suggesting is sacrilege and cowardly!~
 =
 ~However you try to colour it, it is still thievery dwarf, and thievery of the worst kind, robbing those who no longer possess the life to protect their property?~
 =
-~You have no need of me for such a wicked scheme so why come to me with it?~ 
-== BKORGAN ~Cos a lot of ‘em aint properly dead, that’s why you numbskull!~
+~You have no need of me for such a wicked scheme so why come to me with it?~
+== BKORGAN ~Cos a lot of ï¿½em aint properly dead, thatï¿½s why you numbskull!~
 =
-~I see you hold out that symbol of yours and spout them fancy words. I seen how you can make ‘em pop, burst at the seams, and those that don’t... well me axe will lend an hand.~
+~I see you hold out that symbol of yours and spout them fancy words. I seen how you can make ï¿½em pop, burst at the seams, and those that donï¿½t... well me axe will lend an hand.~
 =
 ~If we get lucky we might even find that Hammer of Thunderbolts and then that smithy in the docks can make you a real weapon.~
 =
-~What with me an’ me axe, and you with *Crommy*, we’ll make a killing so’s to speak.~
+~What with me anï¿½ me axe, and you with *Crommy*, weï¿½ll make a killing soï¿½s to speak.~
 == BDAR ~(*Looking to the skies*) Ilmater, protect the dead from such depraved notions.~
 =
-~You disgust me dwarf, you and your distasteful scheme, I’ll have no part of it!~
+~You disgust me dwarf, you and your distasteful scheme, Iï¿½ll have no part of it!~
 =
 ~May your god look upon your soul with pity when you eventually come to kneel at his feet, for without his benevolence, you are surely bound for the abyss itself if you continue on your present road.~
 =
 ~Heed well my words dwarf! (*He turns sadly away from the dwarf.*)~
-== BKORGAN ~This is one dwarf who won’t be kneeling before anyone, god or otherwise!~
+== BKORGAN ~This is one dwarf who wonï¿½t be kneeling before anyone, god or otherwise!~
 =
-~I’m betting when all is done and told, a god’s guts don’t look no different to any man’s when they’re spilling out of their bellies. Let ‘em try and get me on me knees and we’ll be seeing if that aint right.~
-EXIT 
+~Iï¿½m betting when all is done and told, a godï¿½s guts donï¿½t look no different to any manï¿½s when theyï¿½re spilling out of their bellies. Let ï¿½em try and get me on me knees and weï¿½ll be seeing if that aint right.~
+EXIT
 
 CHAIN IF ~Global("VP_Dar_Edwin","LOCALS",2)~ THEN BDAR daredw1
   ~Edwin, may I ask why it is you persist in setting your bedroll so far from the safety of the group when we rest?~
@@ -1364,16 +1364,16 @@ DO ~SetGlobal("VP_Dar_Edwin","LOCALS",3)~
 == BEDWIN ~Where I choose to sleep is of no consequence to you nor to any man. (*How any of these morons can sleep amid the stench of orc is beyond me!*)~
 == BDAR ~You would do well to remember that us *half orcs* have very acute hearing when you mumble to yourself Edwin.~
 == BEDWIN ~*Orc*, *half orc*, what ever you call yourself. If your hearing is as good as you say, then your question has been answered, and there is no further need to discuss my sleeping arrangements.~
-== BDAR ~It was concern for your welfare that prompted me to speak.~ 
+== BDAR ~It was concern for your welfare that prompted me to speak.~
 =
 ~A person of your intelligence must surely see the danger he puts himself in when he retires outside of the group.~
 =
-~Even the beasts in the wilds know to keep close when resting. To be sent away, may be seen by the hunter, as a signal that the outsider no longer has the protection of the pack.~ 
+~Even the beasts in the wilds know to keep close when resting. To be sent away, may be seen by the hunter, as a signal that the outsider no longer has the protection of the pack.~
 == BEDWIN ~*BEASTS*... what has the behaviour of *BEASTS*, to do with *MY* choosing to sleep where I do?~
 =
-~I’ll have you know *ORC*, that I am no helpless outcast, and my power is such that I have no fear of predators, your concern is quite unnecessary!~ 
+~Iï¿½ll have you know *ORC*, that I am no helpless outcast, and my power is such that I have no fear of predators, your concern is quite unnecessary!~
 == BDAR ~You are I am sure, familiar with the adage about how *pride comes before a fall*, forgive me for saying this, but yours is the pride that the words were first directed to warn against.~
-== BEDWIN ~Quaint, very quaint, but please, your little clichés would be better spouted at those who seek your wisdom. (*Or at least, that which you profess to call wisdom!*)~
+== BEDWIN ~Quaint, very quaint, but please, your little clichï¿½s would be better spouted at those who seek your wisdom. (*Or at least, that which you profess to call wisdom!*)~
 =
 ~Whereas *I* have neither the need of your preachings, nor your concern for my welfare.~
 =
@@ -1381,7 +1381,7 @@ DO ~SetGlobal("VP_Dar_Edwin","LOCALS",3)~
 == BDAR ~As you wish. My intention was as I said, to point out the danger you were placing yourself in by your actions.~
 =
 ~Still, as you say, your welfare is your own responsibility and I apologise if my concern has offended you.~
-== BEDWIN ~At last you comprehend me orc, and yes you have offended me but I will accept your apology... this time.~ 
+== BEDWIN ~At last you comprehend me orc, and yes you have offended me but I will accept your apology... this time.~
 =
 ~Try not to offend me again. (*Rolls his eyes and walks off.*)~
 =
@@ -1394,18 +1394,18 @@ CHAIN IF ~Global("VP_Dar_Valygar","LOCALS",2)~ THEN BDAR darval1
 DO ~SetGlobal("VP_Dar_Valygar","LOCALS",3)~
 == BVALYGA ~I am but a woodsman, my knowledge of the woods, her creatures, is no more than the knowledge, that a man who lives in the city, gains of that city and her ways.~
 =
-~It is simple matter, if a man has time, has patience, if he walks and observes the ways of the forest, if he  doesn’t molest her creatures, then he too will gain her trust and be granted the knowledge.~ 
-== BDAR ~Even though I had time in abundance whilst I travelled alone, it is to my shame that I learnt very little of the land.~ 
+~It is simple matter, if a man has time, has patience, if he walks and observes the ways of the forest, if he  doesnï¿½t molest her creatures, then he too will gain her trust and be granted the knowledge.~
+== BDAR ~Even though I had time in abundance whilst I travelled alone, it is to my shame that I learnt very little of the land.~
 =
 ~Perhaps if I had travelled with my eyes open, my stomach would not have complained of the many days it went empty.~
 =
 ~As it was, all I learnt was that a man does not die if his stomach is denied food for a day or two.~
-== BVALYGA ~It’s true, most of us can survive on the excess we carry on our bones when  first we walk the paths of the forests and the wilderness, but still, when our bellies start to complain, the growing pangs of hunger are hard to ignore.~
+== BVALYGA ~Itï¿½s true, most of us can survive on the excess we carry on our bones when  first we walk the paths of the forests and the wilderness, but still, when our bellies start to complain, the growing pangs of hunger are hard to ignore.~
 == BDAR ~(*He chuckles*) Aye, those pangs I know well.~
 =
-~When I left the shelter of the temple, well fed and well rounded, hunger was as alien to me as was the land, but it wasn’t long before it became my constant companion.~
+~When I left the shelter of the temple, well fed and well rounded, hunger was as alien to me as was the land, but it wasnï¿½t long before it became my constant companion.~
 =
-~I soon became a lot less rounded than I was when first I began my journey.~ 
+~I soon became a lot less rounded than I was when first I began my journey.~
 == BVALYGA ~Ah my friend, if you had but known of the plants that are plentiful throughout the land, then you could have easily assuaged those pangs with a simple herbal infusion.~
 =
 ~You would still have been less rounded but your belly would not have complained so loudly.~
@@ -1415,18 +1415,18 @@ DO ~SetGlobal("VP_Dar_Valygar","LOCALS",3)~
 =
 ~She is a harsh mistress for those who choose to follow her, but she does, in her own way, provide for all her creatures.~
 =
-~I just didn’t have the sense to watch and learn from them all that she has to offer.~
+~I just didnï¿½t have the sense to watch and learn from them all that she has to offer.~
 == BVALYGA ~I have seen you watching me, and at first I thought I had somehow earned your mistrust, though I could never fathom a reason for it.~
 =
 ~Now I see what it is... you are indeed a rare gem among your race Dar.~
 =
-~(*Clapping his hand on the half orc’s shoulder*) If it is knowledge that you seek, then you must come with me when next I go in search of herbs to make our meal more palatable.~
+~(*Clapping his hand on the half orcï¿½s shoulder*) If it is knowledge that you seek, then you must come with me when next I go in search of herbs to make our meal more palatable.~
 =
 ~I will gladly teach you some of the ways of the ranger.~
 == BDAR ~Then that is an excursion I look forward. But in the meantime, perhaps you could teach me how it is you make that noise with your lips that calms the wild beast?~
 =
 ~As hard as I try, I can not seem to shape my mouth as you do... see. ~
-== BVALYGA ~(*Laughs gently at the half orc’s grimaces as he tries to purse his lips and whistle.*)~
+== BVALYGA ~(*Laughs gently at the half orcï¿½s grimaces as he tries to purse his lips and whistle.*)~
 =
 ~There is another way which you may find easier my friend, try putting your fingers to your mouth like so.~
 EXIT
@@ -1434,19 +1434,19 @@ EXIT
 CHAIN IF ~Global("VP_Dar_Mazzy","LOCALS",2)~ THEN BDAR darmazy1
   ~Hello Mazzy, I thought I was the only one awake. Can I get you something?~
 DO ~SetGlobal("VP_Dar_Mazzy","LOCALS",3)~
-== BMAZZY ~(*She sits down beside Dar and stretches her legs out*) Only if that something will make my legs a little longer so’s they don’t get so weary so quickly.~
+== BMAZZY ~(*She sits down beside Dar and stretches her legs out*) Only if that something will make my legs a little longer soï¿½s they donï¿½t get so weary so quickly.~
 =
 ~Seriously, no thank you Dar. I just thought to sit a while and unwind before sleeping. Sleep not only comes easier to a relaxed mind, but is also more beneficial.~
-== BDAR ~You shouldn’t worry about having longer legs Mazzy, your legs are very pretty as they are. Next time they feel weary you come see Dar and he will hoist you on his shoulders for a while.~
-== BMAZZY ~(*She laughs*) You think I won’t take you at your word? If <CHARNAME> insists on adding any more hours to the already extended day, you may yet regret that chivalrous offer of yours.~
-== BDAR ~Dar never says anything he doesn’t mean, he can easily carry Mazzy and her backpack should she get weary, but from what he has seen of Mazzy, she is well able to hold her own when it comes to keeping up with us bigger folk.~
+== BDAR ~You shouldnï¿½t worry about having longer legs Mazzy, your legs are very pretty as they are. Next time they feel weary you come see Dar and he will hoist you on his shoulders for a while.~
+== BMAZZY ~(*She laughs*) You think I wonï¿½t take you at your word? If <CHARNAME> insists on adding any more hours to the already extended day, you may yet regret that chivalrous offer of yours.~
+== BDAR ~Dar never says anything he doesnï¿½t mean, he can easily carry Mazzy and her backpack should she get weary, but from what he has seen of Mazzy, she is well able to hold her own when it comes to keeping up with us bigger folk.~
 =
 ~Some might even say her desire and readiness to fight injustice wherever it may be found, puts her ahead of many of those who do possess those longer legs she speaks of.~
 == BMAZZY ~I was joking about my legs, and well you know it Dar. However, I am earnest in my fight against injustice.~
 =
 ~I believe in justice for all people, regardless of race or station and as long as I have breath in my body, I will fight against any injustice that I see, whether it be for the lowliest beggar or for the richest of kings.~
 =
-~If I can help ease some of the misery brought upon man by man himself then I am content with my chosen path in this lifetime.~ 
+~If I can help ease some of the misery brought upon man by man himself then I am content with my chosen path in this lifetime.~
 == BDAR ~You have chosen a commendable path my friend, much like the one I have chosen for myself.~
 =
 ~Your goddess has favoured you and I am certain your name will be remembered, not only with honour, but also with pride as a true champion for justice and right.~
@@ -1456,7 +1456,7 @@ DO ~SetGlobal("VP_Dar_Mazzy","LOCALS",3)~
 =
 ~Its almost enough to make a girl blush, but I would like you to know that it is not for honour nor is it in order to gain a good name for myself that I live by my chosen code.~
 =
-~It is because my heart guides me and one must always be true to one’s own heart.~
+~It is because my heart guides me and one must always be true to oneï¿½s own heart.~
 =
 ~I tire now, whereas I have enjoyed talking with you, I must away to my bed. Sleep well Dar.~
 == BDAR ~Sleep well yourself.~
@@ -1464,13 +1464,13 @@ DO ~RestParty()~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_HaerDalis","LOCALS",2)~ THEN BDAR darhaer1
-  ~You are... how is it they say it... one of the planes touched Haer’Dalis.~
+  ~You are... how is it they say it... one of the planes touched Haerï¿½Dalis.~
 =
-~Your heritage is as clear in your features as is the orc in mine, and yet I can’t help but notice how easily you are accepted among the people here.~
+~Your heritage is as clear in your features as is the orc in mine, and yet I canï¿½t help but notice how easily you are accepted among the people here.~
 =
-~In fact, they appear a little in awe of you when in your presence. Could it be they fear the way of the fiend within you and don’t wish to anger you my friend?~
+~In fact, they appear a little in awe of you when in your presence. Could it be they fear the way of the fiend within you and donï¿½t wish to anger you my friend?~
 DO ~SetGlobal("VP_Dar_HaerDalis","LOCALS",3)~
-== BHAERDA ~(*Chuckling*) Ah, you think they are more afraid of the nature of a demon than the nature of the orc my friend?~ 
+== BHAERDA ~(*Chuckling*) Ah, you think they are more afraid of the nature of a demon than the nature of the orc my friend?~
 =
 ~Believe me, that is not so. I have met, many times, the same prejudices as you my raven and barely escaped with my life in tact.~
 =
@@ -1483,7 +1483,7 @@ DO ~SetGlobal("VP_Dar_HaerDalis","LOCALS",3)~
 ~Instead, he was chosen to clear the world of the mess other beasts leave behind, the decaying bodies of that which is left unburied. So, now knowing his nature what say you of the raven?~
 == BDAR ~I still say, he is a fine bird and like myself, he serves to keep the harmony of our world.~
 =
-~Tell me Haer’Dalis, you are not of this world, do you not miss your home, wherever it is you call home.~
+~Tell me Haerï¿½Dalis, you are not of this world, do you not miss your home, wherever it is you call home.~
 == BHAERDA ~Tell me, do you miss yours?~
 == BDAR ~I have no home, other than the wide expanse of the road.~
 =
@@ -1498,62 +1498,62 @@ DO ~SetGlobal("VP_Dar_HaerDalis","LOCALS",3)~
 =
 ~My life as a planes touched travelling bard, actor, whatever happened to be paying the gold at the time, came about through the need to survive the fear of those who saw only the fiend and not the man.~
 =
-~Of course, my natural charm and wit helps me to overcome many prejudices along my way. I also found it useful to be able to handle a sword, and better still two.~ 
+~Of course, my natural charm and wit helps me to overcome many prejudices along my way. I also found it useful to be able to handle a sword, and better still two.~
 == BDAR ~Me thinks that whilst we are worlds apart my friend, and yet our experiences perhaps make us akin to each other.~
 =
 ~Maybe the gods will take pity on two souls, journeying far from their worlds, and find a home for us both in this land.~
 == BHAERDA ~I am in no hurry to cease my travels, not yet a while.~
 =
-~There is much to see, much to learn about the strangeness of life, all life my friend and this bard aims to know everything before his eyes are closed to its wonders forever.~ 
+~There is much to see, much to learn about the strangeness of life, all life my friend and this bard aims to know everything before his eyes are closed to its wonders forever.~
 =
-~Once oblivion takes us, then all is lost, all is forgotten as we sleep in our graves.~ 
+~Once oblivion takes us, then all is lost, all is forgotten as we sleep in our graves.~
 == BDAR ~I perceive much darkness about you, maybe it is you who is the raven in all his dark beauty and not I.~
 =
 ~Still, such as our lives have been, surely one planes touched and one half orc can find something lighter of which to speak of on a day so bright and full of hope. What do you say?~
 == BHAERDA ~Death is inevitable my friend and no matter that we choose not to speak of it, how much we fear it, oblivion will claim us all.~
 =
 ~The only destiny we have, is the cold embrace of my lady death, and when she draws you to her, she will not be refused. So my raven, why fear that we cannot escape?~
-== BDAR ~On the contrary, I don’t fear death Haer’Dalis. Unlike you, I believe that this turmoil we call life is but the beginning of something far greater.~
+== BDAR ~On the contrary, I donï¿½t fear death Haerï¿½Dalis. Unlike you, I believe that this turmoil we call life is but the beginning of something far greater.~
 =
 ~Whatever that may be, depends on what we make of our lives in the now. But for you my dark friend, I see in your heart another direction.~
 =
-~So please, before your lady death is attracted to our dark words, let us walk on in the hope that she doesn’t take either of us under her notice for a long while yet.~
+~So please, before your lady death is attracted to our dark words, let us walk on in the hope that she doesnï¿½t take either of us under her notice for a long while yet.~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Jan","LOCALS",2)~ THEN BDAR darjan1
-  ~Jan, what are you doing? If there’s something you want you only have to ask. It is considered more polite than tugging at my belt, or are you trying to get into my backpack?~
+  ~Jan, what are you doing? If thereï¿½s something you want you only have to ask. It is considered more polite than tugging at my belt, or are you trying to get into my backpack?~
 DO ~SetGlobal("VP_Dar_Jan","LOCALS",3)~
-== BJAN ~(*Looking dismayed*) Hey just a minute my overly large friend, you think a Jansen would steal from a brother in arms? Never has such a thing been known in all the history of us Jansens!~ 
-== BDAR ~No, that’s not what I’m saying, but it’s obvious you’re up to something. So, what is it my light fingered friend?~ 
-== BJAN ~Light fingered! Well I suppose I have been known to help myself, but only when needs must and only when it is beneficial to the group... no Jansen lifts anything they don’t have a pressing need for.~ 
+== BJAN ~(*Looking dismayed*) Hey just a minute my overly large friend, you think a Jansen would steal from a brother in arms? Never has such a thing been known in all the history of us Jansens!~
+== BDAR ~No, thatï¿½s not what Iï¿½m saying, but itï¿½s obvious youï¿½re up to something. So, what is it my light fingered friend?~
+== BJAN ~Light fingered! Well I suppose I have been known to help myself, but only when needs must and only when it is beneficial to the group... no Jansen lifts anything they donï¿½t have a pressing need for.~
 =
-~Anyway, I wasn’t lifting, I have enough of my own stuff to carry without adding someone else’s. I was seeing just how much space you had in that pack of yours.~ 
+~Anyway, I wasnï¿½t lifting, I have enough of my own stuff to carry without adding someone elseï¿½s. I was seeing just how much space you had in that pack of yours.~
 == BDAR ~Mmm... I suspect you Jan, could find a pressing need for anything that happens to find its way into your hand.~
 =
-~So, why the interest in my pack and its space, you think I’m not carrying my share?~
-== BJAN ~No it’s not that! It’s... ahem... well you being so big and me being, well not quite so big, I got to thinking that maybe you wouldn’t mind if I put some of my stuff in with your stuff, nothing heavy of course.~
+~So, why the interest in my pack and its space, you think Iï¿½m not carrying my share?~
+== BJAN ~No itï¿½s not that! Itï¿½s... ahem... well you being so big and me being, well not quite so big, I got to thinking that maybe you wouldnï¿½t mind if I put some of my stuff in with your stuff, nothing heavy of course.~
 == BDAR ~As I said, you only have to ask Jan. What is this not too heavy stuff that you want me to carry?~
-== BJAN ~How much space you got there?~ 
+== BJAN ~How much space you got there?~
 =
 ~Do you know, it never did make a lot of sense to me why all backpacks hold the same amount of stuff when you bigger fellas can carry so much more than those of us of a more refined build. Do you understand it?~
 == BDAR ~I see your point, backpacks do seem to all come in the same size, one size fits all, is I believe the correct term.~
 =
-~Weight doesn’t seem to affect them, only the person carrying it so it would make more sense to have a pack that could hold a larger number of items.~ 
+~Weight doesnï¿½t seem to affect them, only the person carrying it so it would make more sense to have a pack that could hold a larger number of items.~
 =
 ~Often I find myself carrying most of our heaviest things but could still manage more if only my pack were bigger.~
-== BJAN ~A flaw in design, that’s what it is. My great, great grand pappy... or was it his great grand pappy?~
+== BJAN ~A flaw in design, thatï¿½s what it is. My great, great grand pappy... or was it his great grand pappy?~
 =
 ~It escapes me for now which grand pappy it was... anyway, one of them used to make high quality backpacks, made to measure for any size and shape of a person.~
 =
-~This way there wasn’t the room inside the packs he made X so even they could carry a backpack made special without the risk of straining or encumbering themselves.~
+~This way there wasnï¿½t the room inside the packs he made X so even they could carry a backpack made special without the risk of straining or encumbering themselves.~
 =
-~Today with this one size fits all malarky, I’m lucky I haven’t gotten myself a hernia, or worse, by now.~
+~Today with this one size fits all malarky, Iï¿½m lucky I havenï¿½t gotten myself a hernia, or worse, by now.~
 =
-~What with all the stuff I have to grab quickly when <CHARNAME> aks me to open a chest and then expects me to make a dash carrying what’s inside... very lucky!~
-== BDAR ~I’ll tell you what Jan, to save the risk to your good self, the next time <CHARNAME> calls a halt we’ll sort through your backpack and see how we can lighten your load.~
+~What with all the stuff I have to grab quickly when <CHARNAME> aks me to open a chest and then expects me to make a dash carrying whatï¿½s inside... very lucky!~
+== BDAR ~Iï¿½ll tell you what Jan, to save the risk to your good self, the next time <CHARNAME> calls a halt weï¿½ll sort through your backpack and see how we can lighten your load.~
 =
-~How’s that... one thing though, I am not carrying your dirty hose or soiled underclothes. Understood?~
-== BJAN ~(*A glint comes to the old gnome’s eye*) Hose, underclothes, and what would a wizard be needing with such frippery, everyone knows a wizard needs freedom of movement to channel the magical energies needed in the casting of spells.~
+~Howï¿½s that... one thing though, I am not carrying your dirty hose or soiled underclothes. Understood?~
+== BJAN ~(*A glint comes to the old gnomeï¿½s eye*) Hose, underclothes, and what would a wizard be needing with such frippery, everyone knows a wizard needs freedom of movement to channel the magical energies needed in the casting of spells.~
 == BDAR ~(*Looking aghast at the gnome*) Jan please, too much information! What do you say we leave further discussion on the contents, or the lack of contents of your backpack for later, much later!~
 == BJAN ~(*Chuckling*) Heh-heh-heh. Whatever you say Dar, whatever you say!~
 EXIT
@@ -1561,24 +1561,24 @@ EXIT
 CHAIN IF ~Global("VP_Dar_Viconia","LOCALS",2)~ THEN BDAR darvic1
   ~Viconia, may I say...~
 DO ~SetGlobal("VP_Dar_Viconia","LOCALS",3)~
-== BVICONI ~You may not! I didn’t give you leave to speak to me!~
-== BDAR ~I... I didn’t mean to offend you Viconia, but as allies, I thought we could all speak freely together. If my assumption is offensive to you then I apologise.~
+== BVICONI ~You may not! I didnï¿½t give you leave to speak to me!~
+== BDAR ~I... I didnï¿½t mean to offend you Viconia, but as allies, I thought we could all speak freely together. If my assumption is offensive to you then I apologise.~
 == BVICONI ~What offends me is your arrogance and belief that we are equal and this gives you the impertinence to approach me!~
 =
 ~Whereas <CHARNAME> has seen fit take you into this group, know that I would no more ally myself with your kind than I would a sewer rat!~
 == BDAR ~You condemn me for the deeds of my father?~
 =
-~No-one more than I, am ashamed of the circumstance of my birth and the ravage it brought to my mother’s mind, but tell me, do you truly condemn the child who is birthed through no choice of its own?~ 
+~No-one more than I, am ashamed of the circumstance of my birth and the ravage it brought to my motherï¿½s mind, but tell me, do you truly condemn the child who is birthed through no choice of its own?~
 == BVICONI ~Bah! You live because of the savage your father was and because of the misguided priests who rescued your mother.~
 =
 ~If it had been drow who found your mother, you would have been torn from her belly and fed to the dogs.~
 =
-~(*She spits her next words at him*) You’re not so ashamed that you persist in this obscenity that you call your life!~
+~(*She spits her next words at him*) Youï¿½re not so ashamed that you persist in this obscenity that you call your life!~
 == BDAR ~(*His face turning a paler shade of green*) My mother fought to give me life, to the extent of it costing her her sanity, and after my birth she fought harder against the priests who would slay me.~
 =
 ~If I was to end my life now, then all she suffered would be for naught. For her, I will make good this chance I have been given.~
 =
-~I... I hadn’t realised that there is so little compassion in your people, I’ve heard the stories of their cruelty but then so has everyone, but in my ignorance I thought them just that, stories.~
+~I... I hadnï¿½t realised that there is so little compassion in your people, Iï¿½ve heard the stories of their cruelty but then so has everyone, but in my ignorance I thought them just that, stories.~
 == BVICONI ~If what you say is true, then it was her madness, her delusion in failing to see the monstrosity she had birthed that kept your priests from doing what they knew was right.~
 =
 ~You and your kind have no place in this world half orc, even your priests knew this!~
@@ -1586,13 +1586,13 @@ DO ~SetGlobal("VP_Dar_Viconia","LOCALS",3)~
 ~In time, all will come to see the truth of my words.~
 =
 ~The rampant interbreeding will weaken all the races of this world, and then, it will be the drow who scourge the world of all its abominations, leaving the way clear for us to become mistresses of our destiny.~
-== BDAR ~Then I shall pray that the gods see your people for the cruel, evil race they... that they will instill the will and strength in all others to stand and fight against you.~ 
+== BDAR ~Then I shall pray that the gods see your people for the cruel, evil race they... that they will instill the will and strength in all others to stand and fight against you.~
 =
 ~I shall pray that should the day you speak of come to pass, then the sun herself will refuse to shine upon your people.~
 =
 ~That the world will be as cold and bleak as the Underdark that you are so eager to leave.~
 =
-~You will not feel the warmth, nor will you see the light of the sun as she rises and makes this world the most beautiful place to wake up in.~ 
+~You will not feel the warmth, nor will you see the light of the sun as she rises and makes this world the most beautiful place to wake up in.~
 =
 ~What use then will your people have for such a world Viconia?~
 == BVICONI ~(*Laughs haughtily*) Ha! What do we care for your sun?~
@@ -1603,7 +1603,7 @@ DO ~SetGlobal("VP_Dar_Viconia","LOCALS",3)~
 =
 ~We have learnt that imperfection only breeds imperfection and like any disease that threatens to weaken a people, the best way to deal with it is to prevent its onset in the beginning.~
 =
-~It’s too bad all the other races have become too soft to see the wisdom in this.~
+~Itï¿½s too bad all the other races have become too soft to see the wisdom in this.~
 =
 ~Bah! Why am I even talking with you? Begone, your presence begins to sicken me. (*She turns away.*)~
 == BDAR ~I have heard how the drow rid your race of these... imperfections that you speak of and I disagree with you, it is no bad thing that others do not follow your lead.~
@@ -1612,41 +1612,41 @@ DO ~SetGlobal("VP_Dar_Viconia","LOCALS",3)~
 =
 ~So, if my presence sickens you so much, maybe you should consider whether you can overcome your nausea enough to just get on with the task at hand.~
 =
-~Otherwise... Well... you do have an alternative option. I’ll say no more Viconia.~
+~Otherwise... Well... you do have an alternative option. Iï¿½ll say no more Viconia.~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Jaheira","LOCALS",2)~ THEN BDAR darjahi1
   ~Jaheira, please, if my conversation is unwelcome at this time I will leave you to your thoughts. I will take my lead from your wishes, whatever they may be.~
-DO ~SetGlobal("VP_Dar_Jaheira","LOCALS",3)~ 
+DO ~SetGlobal("VP_Dar_Jaheira","LOCALS",3)~
 == BJAHEIR ~I am fine Dar. I know I have been grouchy of late... grief is no excuse for me to be so short with you all.~
 =
 ~Khalid himself would reproach me severely if he could hear the way I have allowed it to get a grip of my tongue. Please, your company is not unwelcome.~
 == BDAR ~You have nothing to apologise for. I was clumsy with my words, but your pain struck at my heart and I wanted to reach out to you, offer some small comfort.~
 =
 ~I am only sorry my words proved so inadequate.~
-== BJAHEIR ~I realise that now, and without my grief clouding my mind, I can see your intentions for what they were, a friends concern for another’s pain.~
+== BJAHEIR ~I realise that now, and without my grief clouding my mind, I can see your intentions for what they were, a friends concern for anotherï¿½s pain.~
 =
 ~I am ashamed, you were not deserving of my cold words.~
-== BDAR ~It’s not important now.~
+== BDAR ~Itï¿½s not important now.~
 =
 ~I only wanted to take this opportunity to tell you that I admire the way you have fought through your pain and not once have you allowed it to compromise the safety of the group.~
 =
 ~You are a remarkable woman Jaheira.~
 == BJAHEIR ~Not so remarkable. Death has touched my life many times, even before my travels with <CHARNAME>, it is the way of nature.~
 =
-~As a druid I accept life and all its cycles, what is born will die, but it doesn’t mean that when life is returned to the balance when it has only come as far as its mid-cycle, that I am not saddened by the waste.~
+~As a druid I accept life and all its cycles, what is born will die, but it doesnï¿½t mean that when life is returned to the balance when it has only come as far as its mid-cycle, that I am not saddened by the waste.~
 =
-~But then maybe this is only a druid’s understanding.~
-== BDAR ~That’s the druid speaking, what of the woman’s pain?~
+~But then maybe this is only a druidï¿½s understanding.~
+== BDAR ~Thatï¿½s the druid speaking, what of the womanï¿½s pain?~
 =
 ~Death may be the only destiny of us all, this your teachings tell you is necessary to maintain balance and you accept it.~
 =
-~But having lost something which has lived for so long in your heart, can you so easily dismiss it as the way of life’s cycles?~ 
+~But having lost something which has lived for so long in your heart, can you so easily dismiss it as the way of lifeï¿½s cycles?~
 == BJAHEIR ~I can accept death when it comes at the end of the cycle or when through disease life becomes unbearable, even death through accidents I accept~
 =
-~But what I will never accept, is death when it is brought about to fuel another’s cruel depravity.~
+~But what I will never accept, is death when it is brought about to fuel anotherï¿½s cruel depravity.~
 =
-~Khalid’s death, had he lived long and come to the end of his time would have saddened me, but it would have been as it should have been.~
+~Khalidï¿½s death, had he lived long and come to the end of his time would have saddened me, but it would have been as it should have been.~
 =
 ~Instead, it will be a long time before I accept why the balance felt the need to take him in so cruel a manner.~
 =
@@ -1656,41 +1656,41 @@ DO ~SetGlobal("VP_Dar_Jaheira","LOCALS",3)~
 =
 ~It was Khalid who taught me that a man who is not afraid to wear his heart on his sleeve often does so because he is proud of who he is.~
 =
-~You can be sure that such a man will only ever speak the truth to you.~ 
+~You can be sure that such a man will only ever speak the truth to you.~
 == BDAR ~Then I believe you were both blessed Jaheira. I hope you find such happiness again one day, and I am sure your Khalid wishes you the same, wherever he may be.~
 EXIT
 
 CHAIN IF ~Global("VP_Dar_Imoen2","LOCALS",2)~ THEN BDAR darimmy2
   ~I thank Ilmater that you are back with us, but I feel that all is not well with you. Come Dar will heal what is missing.~
-DO ~SetGlobal("VP_Dar_Imoen2","LOCALS",3)~ 
+DO ~SetGlobal("VP_Dar_Imoen2","LOCALS",3)~
 == BIMOEN2 ~I'm not sure what is missing can be healed with simple magic's. It... it feels like something deeper is missing.~
 == BDAR ~I know a lot of healing magic's, I'm sure one of my spells will be able help you. Please tell me, what do you suspect is amiss?~
 == BIMOEN2 ~(*Tears start to well up in her eyes*) Oh Dar, it is my soul. That filthy sorcerer has touched me with those evil magics of his and ripped it from my body.~
 == BDAR ~(*He moves closer and though towering over her tiny frame, he clasps her in his arms*) Your soul! Oh my dear Imoen, are you sure?~
 == BIMOEN2 ~(*Sniffing, she struggles to free herself from the half orcs arms*) Sniff, please Dar I am suffocating.~
 == BDAR ~(*Quickly releasing her and taking a step back*) Oh, Dar is very sorry Imoen, I am so clumsy, sometimes I forget how big I am and how little Imoen is. Is this better?~
-== BIMOEN2 ~(*Sniff*) I don’t think anything is going to make it better Dar. I feel so empty, as though there is a gaping black hole inside me, a hollow where something should be, but it’s not there anymore.~
+== BIMOEN2 ~(*Sniff*) I donï¿½t think anything is going to make it better Dar. I feel so empty, as though there is a gaping black hole inside me, a hollow where something should be, but itï¿½s not there anymore.~
 =
 ~That bastard, he took my soul and left me like this!~
-== BDAR ~My poor Imoen, I was happy when Hrothgar assured me that in time you would be found, what I am not pleased with is the delay in which you were found.~ 
+== BDAR ~My poor Imoen, I was happy when Hrothgar assured me that in time you would be found, what I am not pleased with is the delay in which you were found.~
 =
-~Perhaps if we had got here sooner this... this abuse, this violation that Irenicus has inflicted upon you could have been prevented.~ 
+~Perhaps if we had got here sooner this... this abuse, this violation that Irenicus has inflicted upon you could have been prevented.~
 =
 ~Hrothgar has much to answer for! Let him be damned for taking us so far away when we should have been searching for you.~
-== BIMOEN2 ~You musn’t blame Hrothgar, he was only trying to do what he thought right.	 Anyway, it doesn’t matter now, all that matters is that you came, just as I knew you would.~ 
+== BIMOEN2 ~You musnï¿½t blame Hrothgar, he was only trying to do what he thought right.	 Anyway, it doesnï¿½t matter now, all that matters is that you came, just as I knew you would.~
 =
-~Irenicus is a sick, perverted and evil man, you’ve no need to blame yourself  because he sought to use me to satisfy his sadistic needs. You’re here and I feel safe now, that’s what counts.~
+~Irenicus is a sick, perverted and evil man, youï¿½ve no need to blame yourself  because he sought to use me to satisfy his sadistic needs. Youï¿½re here and I feel safe now, thatï¿½s what counts.~
 == BDAR ~Yes you are safe, and tonight I will pray to Ilmater for the knowledge to make you well again. Dar will make you whole again, even if it means giving up his own life to do it.~
-== BIMOEN2 ~Thank you Dar, but I don’t feel that prayers are the solution. A part of me is missing and I don't know if I will ever feel the same again.~
+== BIMOEN2 ~Thank you Dar, but I donï¿½t feel that prayers are the solution. A part of me is missing and I don't know if I will ever feel the same again.~
 =
-~How do we even know that you can return a person’s soul once it has been taken? Have you ever heard of such a thing?~
-== BDAR ~I wish I could bring you some comfort by saying yes, I have seen such a thing, but I haven’t. I know it is going to be hard for you, but please, trust me dear Imoen.~ 
+~How do we even know that you can return a personï¿½s soul once it has been taken? Have you ever heard of such a thing?~
+== BDAR ~I wish I could bring you some comfort by saying yes, I have seen such a thing, but I havenï¿½t. I know it is going to be hard for you, but please, trust me dear Imoen.~
 =
-~I will help you, I will pray every night, I will study hard and Ilmater will surely hear my plea for the lost soul of an innocent, he will grant us that which we seek.~ 
+~I will help you, I will pray every night, I will study hard and Ilmater will surely hear my plea for the lost soul of an innocent, he will grant us that which we seek.~
 =
-~I promise you, this will not be permanent, you have Dar’s word on this and even if we have to hunt down Irenicus himself, we will rescue you again.~
+~I promise you, this will not be permanent, you have Darï¿½s word on this and even if we have to hunt down Irenicus himself, we will rescue you again.~
 == BIMOEN2 ~(*Reaching up to give him a hug, she can only reach far enough to grasp him around his middle*) You make me feel as though I have a real chance Dar. You are so sweet, thank you.~
 =
-~(*Then pulling away*) D’ya know, I feel it’s time we sent that soul stealing brother and sister to the abyss, permanently! What do you say Dar? Let’s go do it?~
-== BDAR ~Now that’s more like the fighting talk we’ve all come to expect from our Imoen! Let’s in the words of Imoen, go do it!~
+~(*Then pulling away*) Dï¿½ya know, I feel itï¿½s time we sent that soul stealing brother and sister to the abyss, permanently! What do you say Dar? Letï¿½s go do it?~
+== BDAR ~Now thatï¿½s more like the fighting talk weï¿½ve all come to expect from our Imoen! Letï¿½s in the words of Imoen, go do it!~
 EXIT       

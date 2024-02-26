@@ -70,12 +70,12 @@ InParty("Kachiko")
 END
 
 IF ~~ THEN BEGIN NEJ224
-  SAY ~Don’t be such a load of wusses’, ‘tis only a bloody slab o’meat after all, like a dead cow!~
+  SAY ~Donï¿½t be such a load of wussesï¿½, ï¿½tis only a bloody slab oï¿½meat after all, like a dead cow!~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN firattak
-	SAY ~(*Licking his thumb and running it along the edge of his axe’s head*)... Jus getting her ready... in case ye ave an idea to go blowin fire at our backsides as we leave.~
+	SAY ~(*Licking his thumb and running it along the edge of his axeï¿½s head*)... Jus getting her ready... in case ye ave an idea to go blowin fire at our backsides as we leave.~
 	IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ firattak
@@ -94,8 +94,8 @@ IF ~~ THEN BEGIN firattak
 END
 
 IF ~~ THEN BEGIN tafficuh
-  SAY ~Never thought I’d git t’see a gnome bigger than m’self!~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+  SAY ~Never thought Iï¿½d git tï¿½see a gnome bigger than mï¿½self!~
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")

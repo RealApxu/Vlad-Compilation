@@ -7,15 +7,15 @@ Global("VP_Melora_Quest","GLOBAL",0)~ THEN BEGIN 0
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutM02")~ EXIT
-END 
+END
 	
 IF ~Global("VP_Back_To_CKeep","GLOBAL",0)
 Global("VP_Melora_Quest","GLOBAL",1)~ THEN BEGIN 1
 	SAY ~Ah, this is much quieter. Now, let me introduce myself <CHARNAME>, I am Daniel Trebois, you need not be so surprised at hearing your name, in my occupation it serves to keep abreast of rumours and gossip.~
 =
 ~You are known to this area, but have no fear, you are not my quarry this day. My interest is this hafling female you have amongst you and the gold her head will bring me.~	
-	IF ~~ THEN EXTERN ~MELORAJ~ MQ1 
-END 
+	IF ~~ THEN EXTERN ~MELORAJ~ MQ1
+END
 
 IF ~~ THEN BEGIN 2
 	SAY ~How I take you my dear girl does not concern me. The prize is the same if I take you or just your head, but let me ask your companion what <PRO_HESHE> has to say on the matter.~
@@ -47,17 +47,17 @@ END
 IF ~~ THEN BEGIN 5
 	SAY ~I am so glad you see things my way <CHARNAME>.~
 =
-~I really did not want to have to return here and sort through your body parts to find Melora’s head, that would have been... rather messy. Much better this way, for all of us.~
+~I really did not want to have to return here and sort through your body parts to find Meloraï¿½s head, that would have been... rather messy. Much better this way, for all of us.~
 	IF ~~ THEN EXTERN ~MELORAJ~ MQ2
 END
 
 IF ~~ THEN BEGIN 6
-	SAY ~Idle threats hafling, my employer has his own ideas on suitable punishments for thieves who steal from him, as you will learn to your cost. Farewell <CHARNAME>.~ 
+	SAY ~Idle threats hafling, my employer has his own ideas on suitable punishments for thieves who steal from him, as you will learn to your cost. Farewell <CHARNAME>.~
  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",2)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutM03")~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 7
 	SAY ~I have no intentions of fighting over this hafling. As I have said, I only need her head for payment.~

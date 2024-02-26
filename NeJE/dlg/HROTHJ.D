@@ -4,9 +4,9 @@ IF ~~ THEN BEGIN 0
  SAY ~<CHARNAME> has probably forgotten that this is my expedition. I came here looking for evil forces to destroy them. And I am going to continue my mission with or without you.~
  IF ~~ THEN GOTO 1
 END
- 
+
 IF ~~ THEN BEGIN 1
- SAY ~I understand it is too dangerous for you and your companions. Moreover, you don’t belong to my world. You are strangers in our lands, and I shall not blame you turning away from me.~
+ SAY ~I understand it is too dangerous for you and your companions. Moreover, you donï¿½t belong to my world. You are strangers in our lands, and I shall not blame you turning away from me.~
  IF ~~ THEN REPLY ~Sorry, Hrothgar. You are right. We shall continue on our mission. You lost many friends to come here, and we will not turn away from you.~ GOTO 2
  IF ~~ THEN REPLY ~Whatever.~ EXTERN ~DARUNDEL~ 42
 END
@@ -23,9 +23,9 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
- SAY ~<CHARNAME>, I really don’t like your tone. Are you serious? Why do you insult the hero druid? Why do you insult the old dying man? ~
- IF ~~ THEN REPLY ~Sorry, Hrothgar. It’s my fault. I didn’t intend to be rude with him. I’m really nervous about everything behind this portal.~ GOTO 5
- IF ~~ THEN REPLY ~It’s not your buisness.~ EXTERN ~ARUNDELH~ 8
+ SAY ~<CHARNAME>, I really donï¿½t like your tone. Are you serious? Why do you insult the hero druid? Why do you insult the old dying man? ~
+ IF ~~ THEN REPLY ~Sorry, Hrothgar. Itï¿½s my fault. I didnï¿½t intend to be rude with him. Iï¿½m really nervous about everything behind this portal.~ GOTO 5
+ IF ~~ THEN REPLY ~Itï¿½s not your buisness.~ EXTERN ~ARUNDELH~ 8
 END
 
 IF ~~ THEN BEGIN 5
@@ -44,10 +44,10 @@ IF ~~ THEN BEGIN 7
 END
 
 IF WEIGHT #0 ~Global("Presio_Journal","GLOBAL",2)~ THEN BEGIN 8
- SAY ~If this is the cavern of undead that Mother Egenia spoke of then we must be getting close to the snake queen’s lair.~
+ SAY ~If this is the cavern of undead that Mother Egenia spoke of then we must be getting close to the snake queenï¿½s lair.~
  IF ~~ THEN REPLY ~Curioser and curiouser. This puzzle develops a new twist at every turn.~ DO ~SetGlobal("Presio_Journal","GLOBAL",3)~ GOTO 281
- IF ~~ THEN REPLY ~Agreed. I wonder who this “Old Enemy” is, and how we fit into this new recipe?~ DO ~SetGlobal("Presio_Journal","GLOBAL",3)~ GOTO 282
- IF ~~ THEN REPLY ~Nervy or not, it’s just another enemy to dispatch.~ DO ~SetGlobal("Presio_Journal","GLOBAL",3)~ GOTO 283
+ IF ~~ THEN REPLY ~Agreed. I wonder who this ï¿½Old Enemyï¿½ is, and how we fit into this new recipe?~ DO ~SetGlobal("Presio_Journal","GLOBAL",3)~ GOTO 282
+ IF ~~ THEN REPLY ~Nervy or not, itï¿½s just another enemy to dispatch.~ DO ~SetGlobal("Presio_Journal","GLOBAL",3)~ GOTO 283
 END
 
 IF ~~ THEN BEGIN 9
@@ -112,7 +112,7 @@ IF ~~ THEN BEGIN 19
  SAY ~Thank the gods, <CHARNAME>! Come catch your breath. When we arrived in this strange place, which has all the appearances of a dungeon of sorts, you were not with us. Now, a minute or so after us you fall out of the portal quite breathless. You had me worried for a moment or two, can you tell me what happened to you?~ [HROT_51]
  IF ~~ THEN REPLY ~(*agitated*) I am not sure, Hrothgar. It... it was the strangest feeling, more like a dream than reality. I was back in Candlekeep! I saw myself in Candlekeep and you, Hrothgar, you were there, I saw you with Gorion, talking to him about the balance and how you were feeling the effects that this was having on The Realms! I could not understand what you were saying Hrothgar, it was so... so...~ DO ~SetGlobal("VP_Hrothgar_Interjects","GLOBAL",2)
 HideAreaOnMap("AR8700")~ GOTO 20
- IF ~~ THEN REPLY ~I am not sure, Hrothgar. It... it was the strangest feeling, more like a dream than reality. I don’t know... Tell me, Hrothgar, have you met Gorion before?~ DO ~SetGlobal("VP_Hrothgar_Interjects","GLOBAL",2)
+ IF ~~ THEN REPLY ~I am not sure, Hrothgar. It... it was the strangest feeling, more like a dream than reality. I donï¿½t know... Tell me, Hrothgar, have you met Gorion before?~ DO ~SetGlobal("VP_Hrothgar_Interjects","GLOBAL",2)
 HideAreaOnMap("AR8700")~ GOTO 21
 END
 
@@ -209,13 +209,13 @@ END
 
 IF ~~ THEN BEGIN 32
  SAY ~No, <CHARNAME>, I have no dealings with Irenicus, there may be others that do but I do not! As for how I know that Imoen will be found, it is something that I know and you will have to trust me that I am speaking the truth. More I cannot say.~ [HROT_60]
- IF ~~ THEN REPLY ~(*interrupts Hrothgar angrily*) Trust you, Hrothgar? You ask me to trust you when you are reluctant to say why I should abandon Imoen and follow you! What is that you are doing Hrothgar? Why all the secrecy surrounding these "keys" and what are their purpose? More to the point who is this Tilorn that Arundel spoke of? If he knows so much surely he should be the one to look to for help? Am I going to get some answers Hrothgar?~ JOURNAL ~Do I trust Hrothgar? 
+ IF ~~ THEN REPLY ~(*interrupts Hrothgar angrily*) Trust you, Hrothgar? You ask me to trust you when you are reluctant to say why I should abandon Imoen and follow you! What is that you are doing Hrothgar? Why all the secrecy surrounding these "keys" and what are their purpose? More to the point who is this Tilorn that Arundel spoke of? If he knows so much surely he should be the one to look to for help? Am I going to get some answers Hrothgar?~ JOURNAL ~Do I trust Hrothgar?
 
 The audacity of this man Hrothgar! He now asks that I abandon Imoen and join him on a journey to Ulcaster ruins to seek a key... no reasons just, *I have decided*. My protests at his callousness in suggesting I abandon her are met with the words... *Imoen will be found in time... trust the word of Hrothgar*. Trust he says and he not giving me any clues as to what is going on or even how he knows that Imoen will be found... and in what time, I ask myself, will she be found in? Given that I almost believe that this evasive man may be capable of bending time to his will... it is a question I am almost afraid to ask. The other alternative, and one I do not even wish to consider, is that he is in league with Irenicus and this is yet more torment visited upon me... will I never be left to live my life in peace?~ GOTO 33
- IF ~~ THEN REPLY ~I am finding it very difficult to trust you, Hrothgar! You say that you believe that I am to help you in your quest, that fate has a hand in all this and that I should just go along with what you say. What if our fate is what we make it Hrothgar? What if fate can be changed and that I believe finding Imoen is the right thing for me to do? Is there something that you can tell me about the importance of these keys that will give me cause to think that indeed my fate is in your hands, Hrothgar, can you? Arundel spoke of someone named Tilorn, it sounds to me that he is the man that you should be asking not me?~ JOURNAL ~Do I trust Hrothgar? 
+ IF ~~ THEN REPLY ~I am finding it very difficult to trust you, Hrothgar! You say that you believe that I am to help you in your quest, that fate has a hand in all this and that I should just go along with what you say. What if our fate is what we make it Hrothgar? What if fate can be changed and that I believe finding Imoen is the right thing for me to do? Is there something that you can tell me about the importance of these keys that will give me cause to think that indeed my fate is in your hands, Hrothgar, can you? Arundel spoke of someone named Tilorn, it sounds to me that he is the man that you should be asking not me?~ JOURNAL ~Do I trust Hrothgar?
 
 The audacity of this man Hrothgar! He now asks that I abandon Imoen and join him on a journey to Ulcaster ruins to seek a key... no reasons just, *I have decided*. My protests at his callousness in suggesting I abandon her are met with the words... *Imoen will be found in time... trust the word of Hrothgar*. Trust he says and he not giving me any clues as to what is going on or even how he knows that Imoen will be found... and in what time, I ask myself, will she be found in? Given that I almost believe that this evasive man may be capable of bending time to his will... it is a question I am almost afraid to ask. The other alternative, and one I do not even wish to consider, is that he is in league with Irenicus and this is yet more torment visited upon me... will I never be left to live my life in peace?~ GOTO 33
- IF ~~ THEN REPLY ~Mysterious keys, wrong place, wrong time, you really expect me to jump into action on so few words? I would suggest that you seek out this Tilorn that the old druid spoke of. Maybe he will help you. Or does he have more sense, is that why he is not here?~ JOURNAL ~Do I trust Hrothgar? 
+ IF ~~ THEN REPLY ~Mysterious keys, wrong place, wrong time, you really expect me to jump into action on so few words? I would suggest that you seek out this Tilorn that the old druid spoke of. Maybe he will help you. Or does he have more sense, is that why he is not here?~ JOURNAL ~Do I trust Hrothgar?
 
 The audacity of this man Hrothgar! He now asks that I abandon Imoen and join him on a journey to Ulcaster ruins to seek a key... no reasons just, *I have decided*. My protests at his callousness in suggesting I abandon her are met with the words... *Imoen will be found in time... trust the word of Hrothgar*. Trust he says and he not giving me any clues as to what is going on or even how he knows that Imoen will be found... and in what time, I ask myself, will she be found in? Given that I almost believe that this evasive man may be capable of bending time to his will... it is a question I am almost afraid to ask. The other alternative, and one I do not even wish to consider, is that he is in league with Irenicus and this is yet more torment visited upon me... will I never be left to live my life in peace?~ GOTO 33
 END
@@ -503,14 +503,14 @@ IF ~~ THEN BEGIN 48
 END
 
 IF ~~ THEN BEGIN 49
- SAY ~Then let’s get this over with. I’m tired of wandering in this city.~ [HROT_75]
+ SAY ~Then letï¿½s get this over with. Iï¿½m tired of wandering in this city.~ [HROT_75]
  IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-6 ~Global("VP_ResqueLeina","GLOBAL",4)
 Global("VP_NPC_LeinaRoom","GLOBAL",0)
 !PartyHasItem("GovanLet")~ THEN BEGIN 50
- SAY ~You shouldn’t drop the letter, <CHARNAME>. You may want to show it to the barkeep and to speak to him again. Maybe he can tell you where this Govan Duvaine can be found. But we really do not have the time to get involved in this affair. Our priorities do and must lie elsewhere.~
+ SAY ~You shouldnï¿½t drop the letter, <CHARNAME>. You may want to show it to the barkeep and to speak to him again. Maybe he can tell you where this Govan Duvaine can be found. But we really do not have the time to get involved in this affair. Our priorities do and must lie elsewhere.~
  IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ GOTO 47
  IF ~InParty("Valygar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~VALYGARJ~ NEJ157
  IF ~InParty("Minsc")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ259
@@ -526,7 +526,7 @@ END
 
 IF WEIGHT #-3 ~Global("VP_ResqueLeina","GLOBAL",9)
 Global("VP_Hrothgar_FFBart","GLOBAL",1)~ THEN BEGIN 51
- SAY ~<CHARNAME>, we have no clues as where to search next. I am sorry my friend, we can’t do more for this Leina. If she is with her father then I am sure she is safe enough. Even if he has her confined, I doubt he will do her any harm.~ [HROT_76]
+ SAY ~<CHARNAME>, we have no clues as where to search next. I am sorry my friend, we canï¿½t do more for this Leina. If she is with her father then I am sure she is safe enough. Even if he has her confined, I doubt he will do her any harm.~ [HROT_76]
  IF ~InParty("Melora")~ THEN EXTERN ~MELORAJ~ 3
  IF ~!InParty("Melora")~ THEN REPLY ~It would appear you are right Hrothgar. This Leina will have to take her chances with whatever fate has planned for her. Come my friends let us leave here.~ GOTO 52
  IF ~!InParty("Melora")~ THEN REPLY ~All this running around, I would put any amount of gold on it that Duvaine sent us halfway across the city to get us off his back. Come we are finished here but I am not done with him.~ GOTO 52
@@ -620,7 +620,7 @@ IF ~~ THEN BEGIN 64
 END
 
 IF ~~ THEN BEGIN 65
- SAY ~You could be right, <CHARNAME>. However, I was more concerned to learn that Halruaa’s mages seem to be readying themselves to move against Ulcaster even as we stand here I had hoped that we would have more time.~
+ SAY ~You could be right, <CHARNAME>. However, I was more concerned to learn that Halruaaï¿½s mages seem to be readying themselves to move against Ulcaster even as we stand here I had hoped that we would have more time.~
  IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")~ THEN REPLY ~We have no proof that they are making their way to Ulcaster yet, Hrothgar. Matej only said that he thought they had left. He did not say that he had seen them leave.~ GOTO 66
@@ -646,7 +646,7 @@ END
 IF WEIGHT #-9 ~Global("VP_Hrothgar_Lavallin","GLOBAL",1)~ THEN BEGIN 67
  SAY ~You should not have agreed to do this, <CHARNAME>, we have more important issues to address. Lavallin could not remember what items had been taken, for all we know he could just as easily misplaced them. We will have wasted time that could have been used in our own search.~ [HROT_93]
  IF ~~ THEN REPLY ~Lavallin has not locked the door, Hrothgar. We can always leave if nothing occurs soon.~ GOTO 68
- IF ~~ THEN REPLY ~Relax, Hrothgar. I cannot see this taking too long. We only have to wait, confront whoever appears and get them to return Lavallin’s property which then becomes our property.~ GOTO 68 
+ IF ~~ THEN REPLY ~Relax, Hrothgar. I cannot see this taking too long. We only have to wait, confront whoever appears and get them to return Lavallinï¿½s property which then becomes our property.~ GOTO 68
  IF ~~ THEN REPLY ~Let us just wait and see if anyone appears, Hrothgar. I am intrigued as to how they get into a room that is wizard locked and warded, not that it is at this moment.~ GOTO 68
 END
 
@@ -674,7 +674,7 @@ IF ~~ THEN BEGIN 71
 END
 
 IF ~~ THEN BEGIN 72
- SAY ~I am glad to hear that, <CHARNAME>. We are in a hostile environment and we can ill afford to be discovered. Let us see this incident as a lesson to to be cautious in any future dealings with Halruaa’s mages. Let us continue this search.~
+ SAY ~I am glad to hear that, <CHARNAME>. We are in a hostile environment and we can ill afford to be discovered. Let us see this incident as a lesson to to be cautious in any future dealings with Halruaaï¿½s mages. Let us continue this search.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Meeting_Xan","GLOBAL",1)
 ActionOverride("Xan",MoveToPointNoInterrupt([1801.455]))
 ActionOverride("Xan",Face(1))~ EXIT
@@ -697,17 +697,17 @@ END
 IF ~~ THEN BEGIN 75
  SAY ~It would appear that there is something being plotted here, <CHARNAME>.~
  IF ~~ THEN GOTO 76
-END 
- 
+END
+
 IF ~~ THEN BEGIN 76
- SAY ~Caius has confirmed that there has been a lot of meetings taking place recently, and he seemed to be in a hurry to cover his words when he realised what he had said. That and Matej thinking that some of Halruaa’s more prominent mages are away, does this not sound suspicious to you, <CHARNAME>?~
+ SAY ~Caius has confirmed that there has been a lot of meetings taking place recently, and he seemed to be in a hurry to cover his words when he realised what he had said. That and Matej thinking that some of Halruaaï¿½s more prominent mages are away, does this not sound suspicious to you, <CHARNAME>?~
  IF ~~ THEN REPLY ~What ever is happening here, Hrothgar, we still do not know that it has anything to do with Ulcaster.~ GOTO 77
  IF ~~ THEN REPLY ~I agree, Hrothgar, Caius did his best to make us think that these meetings that are taking place are common to Halruaa once he realised that he should not have mentioned them at all.~ GOTO 78
  IF ~CheckStatGT(Player1,11,WIS)~ THEN REPLY ~Caius was still expecting guests, Hrothgar, so I think it is safe to assume that not all the preparations are complete. That gives us hope that we are in time to stop things.~ GOTO 78
 END
 
 IF ~~ THEN BEGIN 77
- SAY ~We can pretty much assume that it has something to do with Ulcaster. We know how Ulcaster was destroyed and we know that something is afoot here. Tilorn’s belief that Halruaa was at the heart of the conspiracy is looking to be correct. We have made a good start, <CHARNAME>.~
+ SAY ~We can pretty much assume that it has something to do with Ulcaster. We know how Ulcaster was destroyed and we know that something is afoot here. Tilornï¿½s belief that Halruaa was at the heart of the conspiracy is looking to be correct. We have made a good start, <CHARNAME>.~
  IF ~~ THEN REPLY ~Then let us find and see what more we can learn from this Ray Von.~ EXIT
 END
 
@@ -717,10 +717,10 @@ IF ~~ THEN BEGIN 78
 END
 
 IF ~~ THEN BEGIN 79
- SAY ~This does not bode well, <CHARNAME>! We now know that the most of Halruaa’s senior mages have left and that they have the backing of specialist mages across The Realms.~
+ SAY ~This does not bode well, <CHARNAME>! We now know that the most of Halruaaï¿½s senior mages have left and that they have the backing of specialist mages across The Realms.~
  IF ~~ THEN GOTO 80
-END  
- 
+END
+
 IF ~~ THEN BEGIN 80
  SAY ~It is almost certain that all the planning took place here, why else would Halruaa play host to so many visiting mages in secret? The time is nigh and we are no closer to our goal, nor have we discovered any indication of the whereabouts of the second key.~
  IF ~~ THEN REPLY ~Then we will continue our search until we do discover something more, Hrothgar.~ GOTO 81
@@ -759,11 +759,11 @@ END
 
 IF WEIGHT #-11 ~Global("VP_Leaving_Halruaa","GLOBAL",2)~ THEN BEGIN 86
  SAY ~So, <CHARNAME>, we now know for sure that it was from Halruaa that the destruction of Ulcaster was plotted. Is it too late, do you think, to prevent it? Have we failed as did Tilorn?~
- IF ~~ THEN REPLY ~I do not know, Hrothgar, but let us not lose heart just yet. You heard Ray Von say that things were not quite ready. Whilst there is time, no matter how short, we should use it wisely.~ GOTO 87 
+ IF ~~ THEN REPLY ~I do not know, Hrothgar, but let us not lose heart just yet. You heard Ray Von say that things were not quite ready. Whilst there is time, no matter how short, we should use it wisely.~ GOTO 87
  IF ~~ THEN REPLY ~It sounds to me as though we have very little time, Hrothgar. So I suggest we stop asking is it too late and carry on until we know that it is too late.~ GOTO 87
- IF ~~ THEN REPLY ~It would appear that Tilorn was right, Hrothgar, Halruaa does hold the key to Ulcaster’s downfall. So far we have found nothing that can be done to prevent this from happening, but while we have some time on our side there is hope that we may discover something yet.~ GOTO 87 
+ IF ~~ THEN REPLY ~It would appear that Tilorn was right, Hrothgar, Halruaa does hold the key to Ulcasterï¿½s downfall. So far we have found nothing that can be done to prevent this from happening, but while we have some time on our side there is hope that we may discover something yet.~ GOTO 87
  IF ~~ THEN REPLY ~You are not suggesting that we give up are you, Hrothgar?~ GOTO 88
-END 
+END
 
 IF ~~ THEN BEGIN 87
  SAY ~The more we discover the more I fear that time is running out for Ulcaster, but as you say, <CHARNAME>, as long as we have some time left there is hope. I feel that we would do well to avoid contact with this Ray Von. He appears to know more than anyone that we have met so far and that could make him dangerous. Now, we really must get back to our search in earnest.~
@@ -772,16 +772,16 @@ IF ~~ THEN BEGIN 87
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN DO ~SetGlobal("VP_Leaving_Halruaa","GLOBAL",3)~ EXIT
-END 
- 
+END
+
 IF ~~ THEN BEGIN 88
- SAY ~No I am not, <CHARNAME>, but I do feel that time has run out for Ulcaster. From what we have heard, Halruaa’s mages are almost ready to launch their assault. I say *almost* ready, which means we do possibly have a small amount of time on our side. I suggest we avoid contact with this Ray Von, he appears to know more than anyone that we have met so far and that could make him dangerous. Now, we really must get back to our search in earnest.~
+ SAY ~No I am not, <CHARNAME>, but I do feel that time has run out for Ulcaster. From what we have heard, Halruaaï¿½s mages are almost ready to launch their assault. I say *almost* ready, which means we do possibly have a small amount of time on our side. I suggest we avoid contact with this Ray Von, he appears to know more than anyone that we have met so far and that could make him dangerous. Now, we really must get back to our search in earnest.~
  IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ550
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN DO ~SetGlobal("VP_Leaving_Halruaa","GLOBAL",3)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 89
  SAY ~What if the balance has been tipped deliberately in one direction, Jaheira? Is it not right to intervene and try to correct it before it is tipped too far?~
@@ -965,7 +965,7 @@ Dead("Minsc")~ THEN EXTERN ~DCONLAN~ 19
 END
 
 IF ~~ THEN BEGIN 116
- SAY ~So, we are to do this creature’s bidding?~
+ SAY ~So, we are to do this creatureï¿½s bidding?~
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")
@@ -974,7 +974,7 @@ OR(2)
 Dead("Accalia")
 OR(2)
 !InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~I don’t see any other means of completing our mission.~ GOTO 117
+Dead("Minsc")~ THEN REPLY ~I donï¿½t see any other means of completing our mission.~ GOTO 117
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")
@@ -992,9 +992,9 @@ OR(2)
 Dead("Accalia")
 OR(2)
 !InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~If this priestess is all that stands between the survival of Kuldahar, then her life is already forfeit.~ GOTO 117 
+Dead("Minsc")~ THEN REPLY ~If this priestess is all that stands between the survival of Kuldahar, then her life is already forfeit.~ GOTO 117
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ586 
+!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ586
  IF ~InParty("Accalia")
 !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 32
  IF ~InParty("Minsc")
@@ -1002,7 +1002,7 @@ Dead("Minsc")~ THEN REPLY ~If this priestess is all that stands between the surv
 END
 
 IF ~~ THEN BEGIN 117
- SAY ~I do not envy you your role <CHARNAME>, decisions that concern who lives and who dies should be left to the gods. Let’s hope they understand that sometimes a mortal has no choice other than to take up the mantle.~
+ SAY ~I do not envy you your role <CHARNAME>, decisions that concern who lives and who dies should be left to the gods. Letï¿½s hope they understand that sometimes a mortal has no choice other than to take up the mantle.~
  IF ~True()~ THEN EXIT
  IF ~InParty("Imoen")
 !Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ140
@@ -1022,7 +1022,7 @@ END
 IF ~~ THEN BEGIN 119
  SAY ~As often as not superstition has its roots in fact, so let us not dismiss it so lightly.~
  IF ~~ THEN REPLY ~Then I guess we should set about dealing with whatever *it* may be and retrieving the hearstone gem.~ GOTO 121
- IF ~~ THEN REPLY ~Then let us grab this heartstone gem as quickly and as quietly as we can.~ GOTO 121 
+ IF ~~ THEN REPLY ~Then let us grab this heartstone gem as quickly and as quietly as we can.~ GOTO 121
  IF ~~ THEN REPLY ~Well, if your friend Arundel is right we have no choice but to go in and retrieve the heartstone gem regardless of what might be guarding it.~ GOTO 121
  IF ~~ THEN REPLY ~We need the heartstone gem so I guess its onward and upward, or should that be upward and onward? No matter forward will do!~ GOTO 121
 END
@@ -1030,13 +1030,13 @@ END
 IF ~~ THEN BEGIN 120
  SAY ~Giants do not scare easily, size alone makes them formidable foes for any creature so what ever has these on the run will not be frightened easily.~
  IF ~~ THEN REPLY ~Then I guess we should set about dealing with whatever *it* may be and retrieving the hearstone gem.~ GOTO 121
- IF ~~ THEN REPLY ~Then let us grab this heartstone gem as quickly and as quietly as we can.~ GOTO 121 
+ IF ~~ THEN REPLY ~Then let us grab this heartstone gem as quickly and as quietly as we can.~ GOTO 121
  IF ~~ THEN REPLY ~Well, if your friend Arundel is right we have no choice but to go in and retrieve the heartstone gem regardless of what might be guarding it.~ GOTO 121
  IF ~~ THEN REPLY ~We need the heartstone gem so I guess its onward and upward, or should that be upward and onward? No matter forward will do!~ GOTO 121
 END
 
 IF ~~ THEN BEGIN 121
- SAY ~Arundel seemed sure the gem was here, for Kuldahar’s sake I pray he is right and we can return it to him swiftly.~
+ SAY ~Arundel seemed sure the gem was here, for Kuldaharï¿½s sake I pray he is right and we can return it to him swiftly.~
  IF ~~ THEN EXIT
 END
 
@@ -1048,15 +1048,15 @@ IF ~~ THEN BEGIN 122
 END
 
 IF ~~ THEN BEGIN 123
- SAY ~<CHARNAME>, you heard that cleric he said they weren’t going to be taken in by the same story twice.~ 
+ SAY ~<CHARNAME>, you heard that cleric he said they werenï¿½t going to be taken in by the same story twice.~
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
@@ -1064,11 +1064,11 @@ IF ~~ THEN BEGIN 123
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
@@ -1076,91 +1076,91 @@ IF ~~ THEN BEGIN 123
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
 !InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
 !InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
 InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~DARJ~ 28
 END
- 
+
 IF ~~ THEN BEGIN 124
  SAY ~You misjudge Arundel my friend, I have known him a long time and I am sure he is as much in the dark as we are.~
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~That’s hardly comforting my friend.~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~Thatï¿½s hardly comforting my friend.~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~Just once, I’d like to have the advantage. Is that too much to ask?~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~Just once, Iï¿½d like to have the advantage. Is that too much to ask?~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~At this point, I don’t suppose it matters what we think of Arundel. Our die has been cast.~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~At this point, I donï¿½t suppose it matters what we think of Arundel. Our die has been cast.~ EXIT
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~That’s hardly comforting my friend.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~Thatï¿½s hardly comforting my friend.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~Just once, I’d like to have the advantage. Is that too much to ask?~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~Just once, Iï¿½d like to have the advantage. Is that too much to ask?~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~At this point, I don’t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~At this point, I donï¿½t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~That’s hardly comforting my friend.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~Thatï¿½s hardly comforting my friend.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~Just once, I’d like to have the advantage. Is that too much to ask?~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~Just once, Iï¿½d like to have the advantage. Is that too much to ask?~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~At this point, I don’t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~At this point, I donï¿½t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~That’s hardly comforting my friend.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~Thatï¿½s hardly comforting my friend.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~Just once, I’d like to have the advantage. Is that too much to ask?~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~Just once, Iï¿½d like to have the advantage. Is that too much to ask?~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~At this point, I don’t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~At this point, I donï¿½t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~That’s hardly comforting my friend.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~Thatï¿½s hardly comforting my friend.~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~Just once, I’d like to have the advantage. Is that too much to ask?~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~Just once, Iï¿½d like to have the advantage. Is that too much to ask?~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~At this point, I don’t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~At this point, I donï¿½t suppose it matters what we think of Arundel. Our die has been cast.~ EXTERN ~DARJ~ 28
 END
 
 IF ~~ THEN BEGIN 125
@@ -1168,11 +1168,11 @@ IF ~~ THEN BEGIN 125
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXIT
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXIT
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
 !InParty("Dar")
@@ -1180,11 +1180,11 @@ IF ~~ THEN BEGIN 125
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~IMOENJ~ NEJ145
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~IMOENJ~ NEJ145
  IF ~InParty("Imoen")
 !Dead("Imoen")
 !InParty("Dar")
@@ -1192,30 +1192,30 @@ IF ~~ THEN BEGIN 125
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~IMOEN2J~ VP_FIX61
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 !InParty("Dar")
 !InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~IMOEN2J~ VP_FIX61
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-!InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~DARJ~ 29
+!InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
 !InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~DARJ~ 29
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~It looks like we’ve gone and stepped in it again.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~It looks like weï¿½ve gone and stepped in it again.~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
-InParty("Jaheira")~ THEN REPLY ~It’s too late to turn back now.~ EXTERN ~DARJ~ 28
+InParty("Jaheira")~ THEN REPLY ~Itï¿½s too late to turn back now.~ EXTERN ~DARJ~ 28
  IF ~InParty("Dar")
 !Dead("Dar")
 InParty("Jaheira")~ THEN REPLY ~Know any good jokes. I could use a good laugh about now.~ EXTERN ~DARJ~ 28
@@ -1231,7 +1231,7 @@ Global("VP_MissingGem_Talk","GLOBAL",0)~ THEN BEGIN 126
  IF ~InParty("Minsc")~ THEN DO ~SetGlobal("VP_MissingGem_Talk","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ287
  IF ~InParty("Imoen")~ THEN DO ~SetGlobal("VP_MissingGem_Talk","GLOBAL",1)~ EXTERN ~IMOENJ~ NEJ146
  IF ~InParty("Imoen2")~ THEN DO ~SetGlobal("VP_MissingGem_Talk","GLOBAL",1)~ EXTERN ~IMOEN2J~ VP_FIX62
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_MissingGem_Talk","GLOBAL",1)~ EXTERN ~JAHEIRAJ~ NEJ589 
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_MissingGem_Talk","GLOBAL",1)~ EXTERN ~JAHEIRAJ~ NEJ589
 END
 
 IF ~~ THEN BEGIN 127
@@ -1282,7 +1282,7 @@ IF WEIGHT #-13 ~Global("VP_ErevainJournal","GLOBAL",2)~ THEN BEGIN 132
  SAY ~Erevain was a good and brave elf, may he find peace in his final rest.~
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN DO ~SetGlobal("VP_ErevainJournal","GLOBAL",3)~ REPLY ~However did he come to be here? He didn’t leave with us and I am certain the avalanche has prevented anyone leaving Easthaven since our departure.~ GOTO 133
+Dead("Jaheira")~ THEN DO ~SetGlobal("VP_ErevainJournal","GLOBAL",3)~ REPLY ~However did he come to be here? He didnï¿½t leave with us and I am certain the avalanche has prevented anyone leaving Easthaven since our departure.~ GOTO 133
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN DO ~SetGlobal("VP_ErevainJournal","GLOBAL",3)~ REPLY ~A waste of a life... we could have maybe used his skills if we had known he was intent on leaving Easthaven.~ GOTO 134
@@ -1295,10 +1295,10 @@ END
 
 IF ~~ THEN BEGIN 133
  SAY ~Who knows? He may have left during the night, before we set out, after all, he knew these hills well.~
- IF ~~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
- IF ~~ THEN REPLY ~(*Reading Erevain’s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
+ IF ~~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
+ IF ~~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevain’s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626 
+!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626
 END
 
 IF ~~ THEN BEGIN 134
@@ -1308,14 +1308,14 @@ IF ~~ THEN BEGIN 134
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
+Dead("Imoen2")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
  IF ~InParty("Imoen")
-!Dead("Imoen")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOENJ~ NEJ188
+!Dead("Imoen")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOENJ~ NEJ188
  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOEN2J~ VP_FIX104
- IF ~~ THEN REPLY ~(*Reading Erevain’s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
+!Dead("Imoen2")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOEN2J~ VP_FIX104
+ IF ~~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevain’s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626 
+!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626
 END
 
 IF ~~ THEN BEGIN 135
@@ -1325,18 +1325,18 @@ IF ~~ THEN BEGIN 135
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
+Dead("Imoen2")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ GOTO 136
  IF ~InParty("Imoen")
-!Dead("Imoen")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOENJ~ NEJ188
+!Dead("Imoen")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOENJ~ NEJ188
  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN REPLY ~(*Reading Erevain’s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOEN2J~ VP_FIX104
- IF ~~ THEN REPLY ~(*Reading Erevain’s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
+!Dead("Imoen2")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Well, that was interesting. Are all Evereskan elves so pessimistic I wonder. I ran into his cousin Xan down near Nashkel. A depressing sort of a fellow... there were times I wondered why he even bothered to wake up in the morning.~ EXTERN ~IMOEN2J~ VP_FIX104
+ IF ~~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... I wonder, do all Evereskan elven folk feel the same way about the world?~ GOTO 136
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevain’s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626 
+!Dead("Jaheira")~ THEN REPLY ~(*Reading Erevainï¿½s journal*)... Tell me Jaheira, do your people have a different outlook on the world than this Evereskan?~ EXTERN ~JAHEIRAJ~ NEJ626
 END
 
 IF ~~ THEN BEGIN 136
- SAY ~I don’t know about all as I have not met many Everskan elves on my journeys, but Erevain did seem to be the pessimistic type.~
+ SAY ~I donï¿½t know about all as I have not met many Everskan elves on my journeys, but Erevain did seem to be the pessimistic type.~
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")
@@ -1360,7 +1360,7 @@ Dead("Imoen2")~ THEN REPLY ~We can do no more for the fool. Let us continue befo
  IF ~InParty("Imoen2")
 !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX104
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ626 
+!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ626
 END
 
 IF WEIGHT #-14 ~Global("VP_LizardKingDead","LOCALS",1)~ THEN BEGIN 137
@@ -1401,7 +1401,7 @@ IF ~~ THEN BEGIN 139
 END
 
 IF ~~ THEN BEGIN 140
- SAY ~It’s true Dar, that head wound of Minsc’s is old. Anything that could have been done for him needed to be done months ago. The best that can be done now is friendship and understanding. Minsc has a good heart.~
+ SAY ~Itï¿½s true Dar, that head wound of Minscï¿½s is old. Anything that could have been done for him needed to be done months ago. The best that can be done now is friendship and understanding. Minsc has a good heart.~
  IF ~~ THEN EXTERN ~DARJ~ 34
 END
 
@@ -1411,7 +1411,7 @@ IF ~~ THEN BEGIN 141
 END
 
 IF ~~ THEN BEGIN 142
- SAY ~Mother Egenia, we have cleared the upper reaches of Dragon’s Eye. Can you tell us of anything of what lies ahead?~
+ SAY ~Mother Egenia, we have cleared the upper reaches of Dragonï¿½s Eye. Can you tell us of anything of what lies ahead?~
  IF ~~ THEN EXTERN ~DEGENIA~ 12
 END
 
@@ -1422,18 +1422,18 @@ END
 
 IF ~~ THEN BEGIN 144
  SAY ~Thank you Mother Egenia. That should help our planning.~
- IF ~~ THEN REPLY ~Yes thank you Mother Egenia. Let’s take this one step at a time. All spells memorised and everybody as rested as possible?~ GOTO 277
+ IF ~~ THEN REPLY ~Yes thank you Mother Egenia. Letï¿½s take this one step at a time. All spells memorised and everybody as rested as possible?~ GOTO 277
  IF ~~ THEN REPLY ~One good thing about our opponent sitting back and waiting for us, we have time to regain our strength and plan between each major battle.~ GOTO 277
  IF ~~ THEN REPLY ~That means at least two more sets of caverns lie ahead. I am betting that there could be more.~ GOTO 278
 END
 
 IF ~~ THEN BEGIN 145
- SAY ~I’m not sure Minsc. Something isn’t what it seems.~
+ SAY ~Iï¿½m not sure Minsc. Something isnï¿½t what it seems.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 146
- SAY ~I don’t think she’s too worried about it Minsc.~
+ SAY ~I donï¿½t think sheï¿½s too worried about it Minsc.~
  IF ~True()~ THEN EXTERN ~MINSCJ~ NEJ296
  IF ~InParty("Imoen")
 !Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ151
@@ -1442,15 +1442,15 @@ IF ~~ THEN BEGIN 146
 END
 
 IF ~~ THEN BEGIN 147
- SAY ~When the time comes, I don’t think that will be a problem.~
+ SAY ~When the time comes, I donï¿½t think that will be a problem.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 148
- SAY ~That Imoen, was a very powerful and very ancient demon from the abyss itself. It is called a Marilith, one of the True Tanar’ri! I never thought to see such a creature on this plane... let alone have to do battle with the thing!~
+ SAY ~That Imoen, was a very powerful and very ancient demon from the abyss itself. It is called a Marilith, one of the True Tanarï¿½ri! I never thought to see such a creature on this plane... let alone have to do battle with the thing!~
  IF ~~ THEN REPLY ~She never did tell us what she planned on doing with the Heartstone Gem.~ GOTO 149
  IF ~~ THEN REPLY ~If she was one measure of this little problem, the "Ancient Enemy" must be just as old and just as powerful.~ GOTO 150
- IF ~~ THEN REPLY ~Yea gods, what are we letting ourselves in for this time?~ GOTO 150 
+ IF ~~ THEN REPLY ~Yea gods, what are we letting ourselves in for this time?~ GOTO 150
 END
 
 IF ~~ THEN BEGIN 149
@@ -1465,7 +1465,7 @@ IF ~~ THEN BEGIN 150
 !Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ153
  IF ~InParty("Imoen2")
 Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX69
-END 
+END
 
 IF ~~ THEN BEGIN 151
  SAY ~Although our work is done here, I fear we still have a long and perilous road ahead of us, we have won but half the battle today.~
@@ -1497,9 +1497,9 @@ IF ~~ THEN BEGIN 153
 END
 
 IF ~~ THEN BEGIN 154
- SAY ~Arundel struggled against the pain of his injuries to remain alive so’s he could tell us what he knew in the hope that we would continue our mission to save Kuldahar and maybe even Easthaven. Are we going to let all he suffered be for nothing?~ 
+ SAY ~Arundel struggled against the pain of his injuries to remain alive soï¿½s he could tell us what he knew in the hope that we would continue our mission to save Kuldahar and maybe even Easthaven. Are we going to let all he suffered be for nothing?~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ GOTO 162
- IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36 //--> FIRST PORTAL TALK 
+ IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36 //--> FIRST PORTAL TALK
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ299
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ596
@@ -1515,12 +1515,12 @@ IF ~~ THEN BEGIN 155
 END
 
 IF ~~ THEN BEGIN 156
- SAY ~Please Jaheira, I am not without compassion. I see how your heart aches to find your Khalid and I see also the anguish in your eyes whenever you think of him, but please, trust me when I say that our travelling to the Severed Hand will not affect yours or Khalid’s future.~
+ SAY ~Please Jaheira, I am not without compassion. I see how your heart aches to find your Khalid and I see also the anguish in your eyes whenever you think of him, but please, trust me when I say that our travelling to the Severed Hand will not affect yours or Khalidï¿½s future.~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ599
 END
 
 IF ~~ THEN BEGIN 157
- SAY ~I apologise for my choice of words Jaheira, I did not mean to cause you even more distress. All I am asking is that you trust me and help me do right by a dying man’s last request.~
+ SAY ~I apologise for my choice of words Jaheira, I did not mean to cause you even more distress. All I am asking is that you trust me and help me do right by a dying manï¿½s last request.~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ600
 END
 
@@ -1548,13 +1548,13 @@ IF ~~ THEN BEGIN 162
  SAY ~So my friend, I believe our next step together as a group and maybe the fate of Kuldahar lies in your hands.~
  IF ~!InParty("Sharteel")~ THEN REPLY ~I hear your words Hrothgar and I know Arundel was your friend. I also understand that you should want to do right by him, but I have friends of my own here, and I must do what I think is right by them.~ GOTO 163 //-->2
  IF ~!InParty("Sharteel")~ THEN REPLY ~If this portal takes us back to the future, my time as you put it, then these events will have occurred and passed. I see no sense in us remaining here to repeat them.~ GOTO 164 //-->3
- IF ~!InParty("Sharteel")~ THEN REPLY ~If we travel to this Severed Hand with you Hrothgar, then we all risk losing this portal and possibly our only chance to return home. That is some risk you are asking us to take when we don’t even know how to reach this place.~ GOTO 165 //-->4
+ IF ~!InParty("Sharteel")~ THEN REPLY ~If we travel to this Severed Hand with you Hrothgar, then we all risk losing this portal and possibly our only chance to return home. That is some risk you are asking us to take when we donï¿½t even know how to reach this place.~ GOTO 165 //-->4
  IF ~!InParty("Sharteel")~ THEN REPLY ~The problems of this time are not mine Hrothgar, in my time they have already been played out in the past. However the future, my future holds many questions of my own that I need to find answers to. I am sorry, but I am taking the portal.~ GOTO 166 //-->5
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ nearportal
 END
 
 IF ~~ THEN BEGIN 163 //2
- SAY ~You can’t even be sure that this portal will lead you home <CHARNAME>. As for your friends, they will follow where ever you lead, that I am sure. I have seen how they look to you for leadership and guidance since your arrival in what must seem like an alien land to you.~
+ SAY ~You canï¿½t even be sure that this portal will lead you home <CHARNAME>. As for your friends, they will follow where ever you lead, that I am sure. I have seen how they look to you for leadership and guidance since your arrival in what must seem like an alien land to you.~
  IF ~~ THEN GOTO 167
 END
 
@@ -1582,14 +1582,14 @@ IF ~~ THEN BEGIN 168
  SAY ~Please trust me when I say, that if you lose this portal, another will be found and you will see your time again, travelling to the Severed Hand will in no way effect your future, where as not travelling there could well effect the lives of those who, are at present, living in your future time.~
 	IF ~~ THEN REPLY ~I recall you asking me about portals Hrothgar and now you assure me that another will be found if this one is lost to us... why do I feel that you are keeping something from me?~ GOTO 166
 	IF ~~ THEN REPLY ~How can not travelling to the Severed hand possibly effect what has already come and gone?~ GOTO 164
-	IF ~~ THEN REPLY ~My friends’ futures belong in another time Hrothgar. It is not for me to tell them that they must forego perhaps their last chance to return there.~ GOTO 165
+	IF ~~ THEN REPLY ~My friendsï¿½ futures belong in another time Hrothgar. It is not for me to tell them that they must forego perhaps their last chance to return there.~ GOTO 165
 END
 
 IF ~~ THEN BEGIN 169
  SAY ~Your being here could have very easily set these events in motion again and if that is so then we must see them through in order to keep the future, yours and all those living there now, constant. Surely you can see the sense in my words?~
 	IF ~~ THEN REPLY ~You seem awfully concerned about my future. I find myself asking why as it can not effect your life here in the past?~ GOTO 170 //-->6
 	IF ~~ THEN REPLY ~I can see some truth in what you are saying but if I agree to go with you, we still have the problem of how do find our way to the Severed Hand from here?~ GOTO 183 //-->13
-	IF ~~ THEN REPLY ~My life hasn’t actually been a bed of roses since leaving Candlekeep, the possibility of change might just appeal to me.~ GOTO 186 //-->5.01
+	IF ~~ THEN REPLY ~My life hasnï¿½t actually been a bed of roses since leaving Candlekeep, the possibility of change might just appeal to me.~ GOTO 186 //-->5.01
 END
 
 IF ~~ THEN BEGIN 170 //6
@@ -1599,10 +1599,10 @@ END
 
 IF ~~ THEN BEGIN 171
  SAY ~I believe your travelling to the Severed Hand with me will help us to preserve the events of the past and safeguard the future as you know it.~
-	IF ~~ THEN REPLY ~What would you know of the troubles of the future Hrothgar? Odd words don’t you think from a man of the past?~ GOTO 172 //-->7
+	IF ~~ THEN REPLY ~What would you know of the troubles of the future Hrothgar? Odd words donï¿½t you think from a man of the past?~ GOTO 172 //-->7
 	IF ~~ THEN REPLY ~You presume to know a lot of what must be done to preserve the future Hrothgar, do you care to share with me how you come by such knowledge?~ GOTO 188 //-->8
 	IF ~~ THEN REPLY ~We started this mission to save Kuldahar and now you speak of preserving the future, what is really going on here?~ GOTO 190 //-->9
-	IF ~~ THEN REPLY ~What do you know of my life that prompts you to say that it must be allowed to play out? How can you, a man of the past, know of my life in the future? Come, I will have answers before I take another step further with you?~ GOTO 174 //-->10 
+	IF ~~ THEN REPLY ~What do you know of my life that prompts you to say that it must be allowed to play out? How can you, a man of the past, know of my life in the future? Come, I will have answers before I take another step further with you?~ GOTO 174 //-->10
 END
 
 IF ~~ THEN BEGIN 172 //7
@@ -1613,9 +1613,9 @@ END
 IF ~~ THEN BEGIN 173
  SAY ~The minute you stepped into Easthaven, my mission became your future and we should therefore tread carefully and keep events in the order they occurred. Please, trust me when I say I know what I am talking about and how we must proceed.~
  IF ~~ THEN REPLY ~You say your mission is tied to my future and ask me to trust you, then you refuse to say anything more... who are you Hrothgar?~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? I’ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
+ IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? Iï¿½ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
  IF ~~ THEN REPLY ~I give my trust only to those who have earned it Hrothgar and your reluctance to talk honestly with me is not doing anything to earn you that privilege. Either you tell me the truth or my friends and myself are taking this portal.~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10 
+ IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10
 END
 
 IF ~~ THEN BEGIN 174 //10
@@ -1671,7 +1671,7 @@ IF ~~ THEN BEGIN 181
 END
 
 IF ~~ THEN BEGIN 182
- SAY ~I must go to the Severed Hand, alone if necessary but I would prefer that you travel just this one step further with me. Please, won’t you give some consideration to my request?~
+ SAY ~I must go to the Severed Hand, alone if necessary but I would prefer that you travel just this one step further with me. Please, wonï¿½t you give some consideration to my request?~
  IF ~~ THEN REPLY ~You give me only cryptic answers, tell me that you can say no more and then expect me to trust you... to follow you? I am sorry Hrothgar but if you can not trust me with the truth then I can no longer aid you and this is where our paths divide.~ GOTO 176 //-->11
  IF ~~ THEN REPLY ~I would be a fool to continue with one who refuses to speak and who conceals his true intent. I see this portal as a safer option than travelling with a man who keeps much hidden and therefore it is my chosen path.~ GOTO 176 //-->11
  IF ~~ THEN REPLY ~Intuition tells me to trust you Hrothgar, but my need to return home is telling me to take this portal. Can you not give me some word that will allay my friends fears, to let them know that another way home will be found?~ GOTO 191 //-->12
@@ -1704,35 +1704,35 @@ END
 IF ~~ THEN BEGIN 186 //5.01
  SAY ~Whatever does or does not occur here will in no way affect a change to your life <CHARNAME>, that is set and must be allowed to play out. It is those that now live in what you know as the future that will feel the effects of these events, they are the ones that I fear for.~
  IF ~~ THEN GOTO 187
-END 
+END
 
 IF ~~ THEN BEGIN 187
  SAY ~I believe the way to safe guard the future and prevent further troubles is for us to continue to the Severed Hand, play the hand that has been dealt us, all of us. The past must be preserved for the sake of the future.~
-	IF ~~ THEN REPLY ~What would you know of the troubles of the future Hrothgar? Odd words don’t you think from a man of the past?~ GOTO 172 //-->7
+	IF ~~ THEN REPLY ~What would you know of the troubles of the future Hrothgar? Odd words donï¿½t you think from a man of the past?~ GOTO 172 //-->7
 	IF ~~ THEN REPLY ~You presume to know a lot of what must be done to preserve the future Hrothgar, do you care to share with me how you come by such knowledge?~ GOTO 188 //-->8
 	IF ~~ THEN REPLY ~We started this mission to save Kuldahar and now you speak of preserving the future, what is really going on here?~ GOTO 190 //-->9
-	IF ~~ THEN REPLY ~What do you know of my life that prompts you to say that it must be allowed to play out? How can you, a man of the past, know of my life in the future? Come, I will have answers before I take another step further with you?~ GOTO 174 //-->10 
+	IF ~~ THEN REPLY ~What do you know of my life that prompts you to say that it must be allowed to play out? How can you, a man of the past, know of my life in the future? Come, I will have answers before I take another step further with you?~ GOTO 174 //-->10
 END
 
 IF ~~ THEN BEGIN 188 //8
- SAY ~I am saying nothing more than that which anyone with an ounce of common sense could see for themselves. It doesn’t take any special knowledge to know that any change in past events is sure to have repercussions on the future.~
+ SAY ~I am saying nothing more than that which anyone with an ounce of common sense could see for themselves. It doesnï¿½t take any special knowledge to know that any change in past events is sure to have repercussions on the future.~
  IF ~~ THEN GOTO 189
 END
 
 IF ~~ THEN BEGIN 189
  SAY ~The minute you stepped into Easthaven, my mission became your future. Please I can say no more except that we must preserve the past in order to preserve the future. I ask only that you trust me in this matter.~
  IF ~~ THEN REPLY ~You say your mission is tied to my future and ask me to trust you, then you refuse to say anything more... who are you Hrothgar?~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? I’ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
+ IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? Iï¿½ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
  IF ~~ THEN REPLY ~I give my trust only to those who have earned it Hrothgar and your reluctance to talk honestly with me is not doing anything to earn you that privilege. Either you tell me the truth or my friends and myself are taking this portal.~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10 
+ IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10
 END
 
 IF ~~ THEN BEGIN 190 //9
  SAY ~The two became connected the minute you stepped through the portal and into Easthaven <CHARNAME>. I cannot explain how, all I can ask is that you trust me enough to continue on this mission a little further with me.~
  IF ~~ THEN REPLY ~You say your mission is tied to my future and ask me to trust you, then you refuse to say anything more... who are you Hrothgar?~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? I’ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
+ IF ~~ THEN REPLY ~You ask me to give up maybe my only hope of getting home merely by saying *trust me*? Iï¿½ll need a better reason than that if I am to aid you further.~ GOTO 174 //-->10
  IF ~~ THEN REPLY ~I give my trust only to those who have earned it Hrothgar and your reluctance to talk honestly with me is not doing anything to earn you that privilege. Either you tell me the truth or my friends and myself are taking this portal.~ GOTO 174 //-->10
- IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10 
+ IF ~~ THEN REPLY ~If you want my aid and my trust, then I suggest you do me the same courtesy and tell me the truth of this mission of yours.~ GOTO 174 //-->10
 END
 
 IF ~~ THEN BEGIN 191 //12
@@ -1749,7 +1749,7 @@ IF ~~ THEN BEGIN 193
  SAY ~If that is not enough for you to trust me and aid me further then there is no more to be said. I beseech you to come to the Severed Hand with me but the decision is yours... what do you say?~
 // IF ~~ THEN REPLY ~I am sorry Hrothgar but I can no longer endure your furtiveness, tell me that you can say no more and then expect me to trust you? If you can not trust me then I can no longer aid you and this is where our paths divide.~ GOTO 176 //11
 // IF ~~ THEN REPLY ~I see this portal as a safer option than travelling with a man who keeps much hidden and therefore it is my chosen path.~ GOTO 176 //11
- IF ~~ THEN REPLY ~If I agree to aid you further Hrothgar, how are we to find our way to Larrel and the Severed Hand?~ GOTO 183 //13 
+ IF ~~ THEN REPLY ~If I agree to aid you further Hrothgar, how are we to find our way to Larrel and the Severed Hand?~ GOTO 183 //13
 END
 
 ////////////////////////////////////////// END OF THE FIRST PORTAL TALK
@@ -1795,18 +1795,18 @@ END
 IF ~~ THEN BEGIN 198
 	SAY ~You have no need to fear betrayal from me, I have given you my word on this but come, we should not be wasting time standing around here, we must enter the tower and look for Larrel as Arundel bid us do.~
  IF ~~ THEN REPLY ~Yes, a warning would have been nice, but more to the point, who are you and how is it that you can teleport at will?~ GOTO 199
- IF ~~ THEN REPLY ~That doesn’t answer my question as to what manner of man are you Hrothgar?~ GOTO 199
+ IF ~~ THEN REPLY ~That doesnï¿½t answer my question as to what manner of man are you Hrothgar?~ GOTO 199
  IF ~~ THEN REPLY ~You display abilities deployed by magic users and yet it is clear you are no mage. Who, or dare I ask it, what are you?~ GOTO 199		
- IF ~~ THEN REPLY ~I want an explanation of what has just occurred here and I don’t want to hear any more vague answers! It’s time for YOU to show ME some trust.~ GOTO 200
+ IF ~~ THEN REPLY ~I want an explanation of what has just occurred here and I donï¿½t want to hear any more vague answers! Itï¿½s time for YOU to show ME some trust.~ GOTO 200
 END
 
 IF ~~ THEN BEGIN 199
 	SAY ~Who I am you... that you already know and anything else is irrelevant for the time being. Please, do not question me further, as I have said, I can not give you answers at this present time. What is important is the task we are here to do, I beseech you please, let us enter the tower to begin our search.~
  IF ~~ THEN REPLY ~You dance around my questions and answer with yet more vague answers. Do you really expect me to trust a man who takes great pains to hide the truth?~ GOTO 200
  IF ~~ THEN REPLY ~At this moment the most important thing to me is my life and the lives of my friends. I have fought and defeated treachery before, I will not hesitate to do so again if this is the intent behind your cryptic answers.~ GOTO 200
- IF ~~ THEN REPLY ~Do I Hrothgar? I thought I knew the man whom legend speaks so highly of, but is it not true that legend also glosses over that which it doesn’t want remembered? Is this the true reason for your evasiveness, is there more to the man than is told?~ GOTO 200
+ IF ~~ THEN REPLY ~Do I Hrothgar? I thought I knew the man whom legend speaks so highly of, but is it not true that legend also glosses over that which it doesnï¿½t want remembered? Is this the true reason for your evasiveness, is there more to the man than is told?~ GOTO 200
 END
- 
+
 IF ~~ THEN BEGIN 200
 	SAY ~I am sorry, I am not being vague without good reason. Those reasons will become known to you in time, for now all I ask is that you ask yourself, apart from my silence, and our sudden appearance here, have I given you any cause to mistrust me or to feel that I wish you harm <CHARNAME>?~
  IF ~~ THEN GOTO 201
@@ -1818,12 +1818,12 @@ IF ~~ THEN BEGIN 201
  IF ~~ THEN REPLY ~It is true, you have done nothing to cause me to mistrust you, but your silence is not comforting either. However, I will not risk the lives of my friends by walking away and looking for a road out of this place, so... I will aid you in return for safe passage when we are done.~ GOTO 202
  IF ~~ THEN REPLY ~Your reluctance to speak worries me greatly Hrothgar, but as I have seen no sign of malice in either your actions or your words, I will continue as we are. Come let us enter the tower together and find our answers.~ GOTO 203
  IF ~~ THEN REPLY ~I will aid you Hrothgar, but know that any sign of betrayal on your part and I will bury you among these ruins myself.~ GOTO 204
-END 
- 
+END
+
 IF ~~ THEN BEGIN 202
 	SAY ~I am sorry that you feel that I brought you here under deception. It is not my wish that you should feel compelled to aid me in exchange for the road home, but please know that I am grateful for your aid and that as soon as we have spoken with Larrel, we will all be leaving this place.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 203
 	SAY ~The only thing I am looking to do harm to is the evil which threatens innocent townsfolk. I have no intentions of allowing any ill to befall you or your friends <CHARNAME>.~
@@ -1872,34 +1872,34 @@ RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
 END
 
 IF ~~ THEN BEGIN 210
-	SAY ~I would have needed to be blind not to see the hope that sprang to your eyes when Kaylessa mentioned the purpose of Larrel’s astrolabe, and I saw the same look as you spoke to Geralith. All I am asking is that when you speak to Larrel, please remember the reason that I brought us here <CHARNAME>... to save Kuldahar and of your promise to help.~
- IF ~~ THEN REPLY ~I do not need reminding of our reason for being here Hrothgar, but you also have to understand that I have to explore any chance that comes along that may take me home.~ GOTO 211 //-->2 
+	SAY ~I would have needed to be blind not to see the hope that sprang to your eyes when Kaylessa mentioned the purpose of Larrelï¿½s astrolabe, and I saw the same look as you spoke to Geralith. All I am asking is that when you speak to Larrel, please remember the reason that I brought us here <CHARNAME>... to save Kuldahar and of your promise to help.~
+ IF ~~ THEN REPLY ~I do not need reminding of our reason for being here Hrothgar, but you also have to understand that I have to explore any chance that comes along that may take me home.~ GOTO 211 //-->2
  IF ~~ THEN REPLY ~I am not about to dismiss another chance to go home Hrothgar, but you need not worry, I will speak to Larrel about the heartstone gem.~ GOTO 212 //-->3
  IF ~~ THEN REPLY ~My abrupt arrival here and your reluctance to speak truthfully has not endeared me to your quest Hrothgar. My only concern now is to find a way home.~ GOTO 213 //-->4
 END
 
 IF ~~ THEN BEGIN 211 //2
-	SAY ~I have given you my word that you will find your way home. If Larrel’s astrolabe is capable of such a feat, then please, I ask only that you consider what he has to say when he looks into the heartstone gem before you make your decision.~
+	SAY ~I have given you my word that you will find your way home. If Larrelï¿½s astrolabe is capable of such a feat, then please, I ask only that you consider what he has to say when he looks into the heartstone gem before you make your decision.~
  IF ~~ THEN REPLY ~I will consider what Larrel has to say but I make no promise as to how I act on his words.~ GOTO 214 //-->5
  IF ~~ THEN REPLY ~We could be getting ahead of ourselves here. Let us just wait and see what this astrolabe is capable of and then we can start to think about decisions.~ GOTO 215 //-->6
- IF ~~ THEN REPLY ~I promise you, I will not make any hasty decisions until I have heard Larrel out.~ GOTO 215 //-->6 
+ IF ~~ THEN REPLY ~I promise you, I will not make any hasty decisions until I have heard Larrel out.~ GOTO 215 //-->6
 END
 
 IF ~~ THEN BEGIN 212 //3
 	SAY ~Then all that I ask is that you take time to consider your decision after he has spoken of the heartstone gem.~
  IF ~~ THEN REPLY ~I will consider what Larrel has to say but I make no promise as to how I act on his words.~ GOTO 214 //-->5
  IF ~~ THEN REPLY ~We could be getting ahead of ourselves here. Let us just wait and see what this astrolabe is capable of and then we can start to think about decisions.~ GOTO 215 //-->6
- IF ~~ THEN REPLY ~I promise you, I will not make any hasty decisions until I have heard Larrel out.~ GOTO 215 //-->6 
+ IF ~~ THEN REPLY ~I promise you, I will not make any hasty decisions until I have heard Larrel out.~ GOTO 215 //-->6
 END
 
 IF ~~ THEN BEGIN 213 //4
 	SAY ~If it was in my power to tell you more then I would... believe me, but I can not keep stressing that it is not! If you take my silence as a sign of betrayal or mistrust then I am sorry, for I do not have the words to change how you feel. Please, listen to whatever Larrel has to say when he looks into the heartstone gem before you abandon this mission.~
  IF ~~ THEN REPLY ~Whatever Hrothgar. I tire of hearing the same words or similar, so until you can tell me more, I am looking out for myself from this point on.~ GOTO 216 //-->7
- IF ~~ THEN REPLY ~If I decide to abandon this mission, it will be through your own stubborn reluctance not to be honest with me. You will have none but yourself to blame Hrothgar.~ GOTO 216 //-->7 
+ IF ~~ THEN REPLY ~If I decide to abandon this mission, it will be through your own stubborn reluctance not to be honest with me. You will have none but yourself to blame Hrothgar.~ GOTO 216 //-->7
 END
 
 IF ~~ THEN BEGIN 214 //5
-	SAY ~Not exactly the answer I had hoped for <CHARNAME>, but I will accept it. Now, without further delay, let us speak with Larrel.~ 
+	SAY ~Not exactly the answer I had hoped for <CHARNAME>, but I will accept it. Now, without further delay, let us speak with Larrel.~
  IF ~~ THEN EXIT
 END
 
@@ -1920,7 +1920,7 @@ END
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 IF ~~ THEN BEGIN 217 //H1
-	SAY ~Perhaps with the knowledge that Larrel’s research has uncovered and with Geralith’s knowledge of his machine, it can be modified and used as a time travel machine.~ 
+	SAY ~Perhaps with the knowledge that Larrelï¿½s research has uncovered and with Geralithï¿½s knowledge of his machine, it can be modified and used as a time travel machine.~
  IF ~~ THEN REPLY ~Hrothgar that is brilliant! What do you say Larrel?~ EXTERN ~DLARREL~ 49
  IF ~~ THEN REPLY ~What do you say Larrel, can this be done?~ EXTERN ~DLARREL~ 49
 END
@@ -1948,14 +1948,14 @@ END
 
 IF ~~ THEN BEGIN 221 //H5
  SAY ~I am disappointed to say the least <CHARNAME>. I had hoped that given the choice you would remember your promise to aid me in uncovering and defeating this evil that threatens my time and its people? You gave me hope that together we could best our enemy and bring a future to my people. Was I so wrong when I took you to be an honourable and stalwart ally.~
- IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 223 //-->H7 
+ IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 223 //-->H7
  IF ~~ THEN REPLY ~My friends and I have future elsewhere and the longer we stay here the less chance we have of finding it. I am sorry but the past is yours and the future is mine.~ GOTO 223 //-->H7
  IF ~~ THEN REPLY ~I will not allow myself to be dissuaded again Hrothgar. I am going home and you can choose to come with me or stay, but decide quickly.~ GOTO 223 //-->H7
 END
 
 IF ~~ THEN BEGIN 222 //H6
  SAY ~You know that I will not leave this place, not while its peace is under threat from such evil. Will you not stand by your word and aid me in this task? You gave me hope that together we could best our enemy and bring a future to my people. Was I so wrong when I took you to be an honourable and stalwart ally.~
- IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 223 //-->H7 
+ IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 223 //-->H7
  IF ~~ THEN REPLY ~My friends and I have future elsewhere and the longer we stay here the less chance we have of finding it. I am sorry but the past is yours and the future is mine.~ GOTO 223 //-->H7
  IF ~~ THEN REPLY ~I will not allow myself to be dissuaded again Hrothgar. I am going home and you can choose to come with me or stay, but decide quickly.~ GOTO 223 //-->H7
 END
@@ -1964,7 +1964,7 @@ IF ~~ THEN BEGIN 223 //H7
  SAY ~Then the responsibility for what ensues from your actions here will be yours to live with <CHARNAME>. Many will suffer as a result of you choosing to abandon them to the mercy of evil... well I will not leave them without hope.~
  IF ~~ THEN GOTO 224
 END
- 
+
 IF ~~ THEN BEGIN 224
  SAY ~Make haste, the astrolabe will take you to your future.~
  IF ~True()~ THEN GOTO 225
@@ -1978,13 +1978,13 @@ END
 
 IF ~~ THEN BEGIN 225
 	SAY ~You have to understand that, no matter how futile the attempt, I will not give up on my people... my conscience would not allow me any other path.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9 
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 227 //-->H9
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
 END
 
 IF ~~ THEN BEGIN 226 //H8
- SAY ~Accalia please, your words sadden me more than <CHARNAME>’s refusal to aid me further. If it is not the will of the god’s that we have this group’s aid when we travel to Dorn’s Deep then we must accept that is the way it has to be.~
+ SAY ~Accalia please, your words sadden me more than <CHARNAME>ï¿½s refusal to aid me further. If it is not the will of the godï¿½s that we have this groupï¿½s aid when we travel to Dornï¿½s Deep then we must accept that is the way it has to be.~
  IF ~~ THEN GOTO 225
 END
 
@@ -1995,17 +1995,17 @@ END
 
 IF ~~ THEN BEGIN 228
 	SAY ~My coming to the future would cause more disruption than your coming to the past ever could <CHARNAME>. No, my place is here where I must allow these events to play out. There is no other way. Unless...~
-	IF ~~ THEN REPLY ~Unless what?~ GOTO 229 //-->H11 
+	IF ~~ THEN REPLY ~Unless what?~ GOTO 229 //-->H11
 	IF ~~ THEN REPLY ~Hrothgar please, I am anxious to be gone, so if you have something to add, please be quick about it.~ GOTO 229 //-->H11
-	IF ~~ THEN REPLY ~I’ll not delay much longer, if you have something to say, then spit it out. If not then I am gone.~ GOTO 229 //-->H11
+	IF ~~ THEN REPLY ~Iï¿½ll not delay much longer, if you have something to say, then spit it out. If not then I am gone.~ GOTO 229 //-->H11
 END
 
 IF ~~ THEN BEGIN 229 //H11
-	SAY ~I believe that these events of the past must be allowed to be played out. However, maybe... just maybe it doesn’t matter when they are concluded as long as they are. If this is so and I come with you to the future, can I rely on you to return to Dorn’s Deep with me and to finish that which we started here when it becomes necessary?~
+	SAY ~I believe that these events of the past must be allowed to be played out. However, maybe... just maybe it doesnï¿½t matter when they are concluded as long as they are. If this is so and I come with you to the future, can I rely on you to return to Dornï¿½s Deep with me and to finish that which we started here when it becomes necessary?~
 	IF ~~ THEN REPLY ~Once I have dealt with Irenicus and found my answers, then yes, I will aid you again.~ GOTO 230 //-->H12
 	IF ~~ THEN REPLY ~You ask that I travel back to this time again at some future date? Your words give rise to yet more questions Hrothgar, but if you answer my questions and truthfully before the necessary time, then yes, I will aid you again.~ GOTO 230 //-->H12
 	IF ~~ THEN REPLY ~I make no promises, but I will consider your request when I know Hrothgar the man better. I can say no fairer.~ GOTO 230 //-->H12
-	IF ~~ THEN REPLY ~If you aid me in dealing with Irenicus, then yes, you have my aid in this task, but only after the wizard has been taken to task for the torment that he has visited upon me.~ GOTO 230 //-->H12 
+	IF ~~ THEN REPLY ~If you aid me in dealing with Irenicus, then yes, you have my aid in this task, but only after the wizard has been taken to task for the torment that he has visited upon me.~ GOTO 230 //-->H12
 END
 
 IF ~~ THEN BEGIN 230 //H12
@@ -2038,24 +2038,24 @@ IF ~~ THEN BEGIN 234
 END
 
 IF ~~ THEN BEGIN 235 //H7.01
-	SAY ~Ah... if only life were as simple as the way you perceive it Imoen! It isn’t, it is hard and it forces duties upon us, that if we have a conscience, we can not deny. I am sure <CHARNAME> understands what it is I am saying and if you do not, then as you travel with <PRO_HIMHER>, so will you learn understanding. Is this not right <CHARNAME>?~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9 
+	SAY ~Ah... if only life were as simple as the way you perceive it Imoen! It isnï¿½t, it is hard and it forces duties upon us, that if we have a conscience, we can not deny. I am sure <CHARNAME> understands what it is I am saying and if you do not, then as you travel with <PRO_HIMHER>, so will you learn understanding. Is this not right <CHARNAME>?~
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 227 //-->H9
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
 END
 
 IF ~~ THEN BEGIN 236 //H7.02
 	SAY ~You of all people should know of the duty we have to fight for those too weak to stand for themselves my friend. I can see the wisdom in the words of Minsc but I also have a conscience that will not let me rest if I abandon my people. Yes, I am probably going to die but at least my spirit will rest in the knowledge that I tried. That I am sure you can all understand.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9 
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 227 //-->H9
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
 END
 
 IF ~~ THEN BEGIN 237 //H7.03
 	SAY ~You my friend, know of the duty we have to fight for those too weak to stand for themselves. Yes, I am probably going to die but I have a conscience that will not let me rest if I abandon my people. At least if I fall trying then my spirit will rest in the knowledge that I have tried. That I am sure you can all understand.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9 
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 227 //-->H9
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 227 //-->H9
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 227 //-->H9
 END
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2065,10 +2065,10 @@ END
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 IF ~~ THEN BEGIN 238 //H15
-	SAY ~If you think to return to Kuldahar and take the portal in Arundel’s house, I would strongly advise against it <CHARNAME>. Time has shifted since it opened and there can be no guarantee that this shift has not affected where the portal now exits. That is, presuming the portal is still open.~
+	SAY ~If you think to return to Kuldahar and take the portal in Arundelï¿½s house, I would strongly advise against it <CHARNAME>. Time has shifted since it opened and there can be no guarantee that this shift has not affected where the portal now exits. That is, presuming the portal is still open.~
 	IF ~~ THEN REPLY ~Were we ever sure where the portal was going to take us Hrothgar?~ GOTO 239
 	IF ~~ THEN REPLY ~I fail to see how this shift in time makes the portal any less of a gamble then it did when first it opened?~ GOTO 239
-	IF ~~ THEN REPLY ~If there’s even the slightest chance that the portal is still open and Larrel can send me to Kuldahar then that is where I am going.~ GOTO 241
+	IF ~~ THEN REPLY ~If thereï¿½s even the slightest chance that the portal is still open and Larrel can send me to Kuldahar then that is where I am going.~ GOTO 241
 	IF ~~ THEN REPLY ~I will not be swayed this time Hrothgar, nor am I about let this opportunity to return to the portal and home slip away.~ GOTO 241
 END
 
@@ -2133,8 +2133,8 @@ END
 	
 IF ~~ THEN BEGIN 247
 	SAY ~You gave me hope that together we could best our enemy and bring a future to my people. Was I so wrong when I took you to be an honourable and stalwart ally.~
-	IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 248 
-	IF ~~ THEN REPLY ~My friends and I have future elsewhere and the longer we stay here the less chance we have of finding it. I am sorry but the past is yours and the future is mine.~ GOTO 248 
+	IF ~~ THEN REPLY ~I am sorry Hrothgar, but no matter how many times you might say *if one portal closes another will open*, I can not believe that there will be that many portals.~ GOTO 248
+	IF ~~ THEN REPLY ~My friends and I have future elsewhere and the longer we stay here the less chance we have of finding it. I am sorry but the past is yours and the future is mine.~ GOTO 248
 	IF ~~ THEN REPLY ~I will not allow myself to be dissuaded again Hrothgar. I am going home and you can choose to come with me or stay, but decide quickly.~ GOTO 248
 END
 
@@ -2142,7 +2142,7 @@ IF ~~ THEN BEGIN 248 //H21
 	SAY ~Then the responsibility for what ensues from your actions here will be yours to live with <CHARNAME>.~
 	IF ~~ THEN GOTO 249
 END	
-	 
+	
 IF ~~ THEN BEGIN 249
 	SAY ~Many will suffer as a result of you choosing to abandon them to the whims of evil... well I will not leave them without hope.~
  IF ~True()~ THEN GOTO 250 //-->H22
@@ -2153,16 +2153,16 @@ IF ~~ THEN BEGIN 249
   IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ633
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 52
 END
- 
+
 IF ~~ THEN BEGIN 250 //H22
 	SAY ~<CHARNAME>, you have to understand that, no matter how futile the attempt, I will not give up on my people... my conscience would not allow me any other path.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252 
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 252
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
 END
 
 IF ~~ THEN BEGIN 251
- SAY ~Accalia please, your words sadden me more than <CHARNAME>’s refusal to aid me further. If it is not the will of the god’s that we have this group’s aid when we travel to Dorn’s Deep then we must accept that is the way it has to be.~
+ SAY ~Accalia please, your words sadden me more than <CHARNAME>ï¿½s refusal to aid me further. If it is not the will of the godï¿½s that we have this groupï¿½s aid when we travel to Dornï¿½s Deep then we must accept that is the way it has to be.~
  IF ~~ THEN GOTO 250
 END
 
@@ -2173,13 +2173,13 @@ END
 
 IF ~~ THEN BEGIN 253
 	SAY ~My coming to the future would cause more disruption than your coming to the past ever could <CHARNAME>. No, my place is here where I must allow these events to play out. There is no other way. Unless...~
-	IF ~~ THEN REPLY ~Unless what?~ GOTO 254 
+	IF ~~ THEN REPLY ~Unless what?~ GOTO 254
 	IF ~~ THEN REPLY ~Hrothgar please, I am anxious to be gone, so if you have something to add, please be quick about it.~ GOTO 254
-	IF ~~ THEN REPLY ~I’ll not delay much longer, if you have something to say, then spit it out. If not then I am gone.~ GOTO 254
+	IF ~~ THEN REPLY ~Iï¿½ll not delay much longer, if you have something to say, then spit it out. If not then I am gone.~ GOTO 254
 END
 
 IF ~~ THEN BEGIN 254
-	SAY ~I believe that these events of the past must be allowed to be played out. However, maybe... just maybe it doesn’t matter when they are concluded as long as they are. If this is so and I come with you to the future, can I rely on you to return to Dorn’s Deep with me and to finish that which we started here when it becomes necessary?~
+	SAY ~I believe that these events of the past must be allowed to be played out. However, maybe... just maybe it doesnï¿½t matter when they are concluded as long as they are. If this is so and I come with you to the future, can I rely on you to return to Dornï¿½s Deep with me and to finish that which we started here when it becomes necessary?~
 	IF ~~ THEN REPLY ~Once I have dealt with Irenicus and found my answers, then yes, I will aid you again.~ GOTO 255
 	IF ~~ THEN REPLY ~You ask that I travel back to this time again at some future date? Your words give rise to yet more questions Hrothgar, but if you answer my questions and truthfully before the necessary time, then yes, I will aid you again.~ GOTO 255
 	IF ~~ THEN REPLY ~I make no promises, but I will consider your request when I know Hrothgar the man better. I can say no fairer.~ GOTO 255
@@ -2208,7 +2208,7 @@ IF ~~ THEN BEGIN 258
 END
 
 IF ~~ THEN BEGIN 259
-	SAY ~So <CHARNAME>, let’s go to Kuldahar.~
+	SAY ~So <CHARNAME>, letï¿½s go to Kuldahar.~
 	IF ~Global("VP_Farewell_Dar","GLOBAL",0)~ THEN EXTERN ~DLARREL~ 52
 	IF ~Global("VP_Farewell_Dar","GLOBAL",1)~ THEN EXTERN ~DLARREL~ 54
 END
@@ -2216,7 +2216,7 @@ END
 IF WEIGHT #-17 ~OR(2)
 Global("VP_Astrolabe_Talks","GLOBAL",6)
 Global("VP_BackTo_Kuldahar","GLOBAL",1)~ THEN BEGIN 260
- SAY ~We should make our way to Arundels’s house and hope that luck is on our side. Remember my warning though, if the portal is still open, we do not know where it may lead, but this was your choice <CHARNAME> and now we must see it through.~
+ SAY ~We should make our way to Arundelsï¿½s house and hope that luck is on our side. Remember my warning though, if the portal is still open, we do not know where it may lead, but this was your choice <CHARNAME> and now we must see it through.~
  IF ~!InParty("Imoen")
 !InParty("Imoen2")~ THEN REPLY ~A bit of confidence please Hrothgar, after all, I have had to make many choices and so far they have all come out right in the end.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO 261
@@ -2227,19 +2227,19 @@ SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO 261
 !InParty("Imoen2")~ THEN REPLY ~Stop fretting Hrothgar. Let us just go and see if the portal is still open.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO 262
  IF ~!InParty("Imoen")
-!InParty("Imoen2")~ THEN REPLY ~I heard your warning Hrothgar, now can we just get over to the druid’s house and see if I was right to return here?~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
+!InParty("Imoen2")~ THEN REPLY ~I heard your warning Hrothgar, now can we just get over to the druidï¿½s house and see if I was right to return here?~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO 262
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ186
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX102
 END
 
 IF ~~ THEN BEGIN 261
- SAY ~Well, we won’t see the wisdom in your decision by standing around here will we? Let us go over to Arundel’s house and see for ourselves how right you are this time... though, it will be strange not to have him greet me as I walk in.~
+ SAY ~Well, we wonï¿½t see the wisdom in your decision by standing around here will we? Let us go over to Arundelï¿½s house and see for ourselves how right you are this time... though, it will be strange not to have him greet me as I walk in.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 262
- SAY ~It will be strange walking into Arundel’s house and not have him greet me, he has over looked Kudahar for as long as I have known him. Still, all things change and we must learn to accept that which we can not control. Come let us see if your portal still stands <CHARNAME>.~
+ SAY ~It will be strange walking into Arundelï¿½s house and not have him greet me, he has over looked Kudahar for as long as I have known him. Still, all things change and we must learn to accept that which we can not control. Come let us see if your portal still stands <CHARNAME>.~
  IF ~~ THEN EXIT
 END
 
@@ -2264,7 +2264,7 @@ IF ~~ THEN BEGIN 266
 END
 
 IF ~~ THEN BEGIN 267
- SAY ~You seek to kill the innocent of the past in order to exact retribution on one in the future? If it’s vengeance you want my friend then you will have it soon enough, and there will be no need to shed the blood of those whose only crime is to be distant kin to this wizard you speak of. However, that is for a time yet to come, for now, I am concerned only with our immediate safety. It imperative that we speak to Arundel about what has occurred here, and soon... but hold, we are in luck, there is a stranger ahead, maybe he can tell us more.~
+ SAY ~You seek to kill the innocent of the past in order to exact retribution on one in the future? If itï¿½s vengeance you want my friend then you will have it soon enough, and there will be no need to shed the blood of those whose only crime is to be distant kin to this wizard you speak of. However, that is for a time yet to come, for now, I am concerned only with our immediate safety. It imperative that we speak to Arundel about what has occurred here, and soon... but hold, we are in luck, there is a stranger ahead, maybe he can tell us more.~
  IF ~~ THEN EXIT
 END
 
@@ -2304,7 +2304,7 @@ IF ~~ THEN BEGIN 272
 END
 
 IF ~~ THEN BEGIN 273
- SAY ~We have at least learnt who was responsible for the disappearance of so many people. I thank the gods that we were in time to save as many as we have and I pray for the gods to take into their keeping the souls of those for whom we came too late. If we had waited another day then... no,  I don’t even want to contemplate what we may have found within these caverns if we had not arrived when we did.~
+ SAY ~We have at least learnt who was responsible for the disappearance of so many people. I thank the gods that we were in time to save as many as we have and I pray for the gods to take into their keeping the souls of those for whom we came too late. If we had waited another day then... no,  I donï¿½t even want to contemplate what we may have found within these caverns if we had not arrived when we did.~
  IF ~Global("VP_Know_Yxunomei","GLOBAL",1)~ THEN REPLY ~Then our first task should be to seek out this Yxonmei and put her to rights.~ GOTO 138
  IF ~~ THEN REPLY ~Then our next step should be to return to Kuldahar and see that all of the villagers have returned safely.~ GOTO 139
 	IF ~OR(2)
@@ -2351,10 +2351,10 @@ InParty("Dar")
 !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 61
  IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ629
-END 
- 
+END
+
 IF ~~ THEN BEGIN 278
- SAY ~I certainly wouldn’t bet against you. Hopefully our opponents will continue to allow us to prepare for them one at a time.~
+ SAY ~I certainly wouldnï¿½t bet against you. Hopefully our opponents will continue to allow us to prepare for them one at a time.~
  IF ~True()~ THEN EXIT
  IF ~InParty("Minsc")
 !Dead("Minsc")
@@ -2367,10 +2367,10 @@ InParty("Dar")
 !Dead("Dar")~ THEN EXTERN ~DARJ~ 62
  IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ egenia
-END 
+END
 
 IF WEIGHT #-16 ~Global("VP_YxunomeiDead","GLOBAL",1)~ THEN BEGIN 279
- SAY ~A Marilith? I never expected to see such an abomination as one of the True Tanar’ri on this plane and I certainly never expected to face one in battle!~
+ SAY ~A Marilith? I never expected to see such an abomination as one of the True Tanarï¿½ri on this plane and I certainly never expected to face one in battle!~
  IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")
@@ -2399,7 +2399,7 @@ OR(2)
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the “Ancient Enemy” must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ GOTO 150
+Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the ï¿½Ancient Enemyï¿½ must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ GOTO 150
  IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")
@@ -2407,7 +2407,7 @@ OR(2)
 !InParty("Accalia")
 Dead("Accalia")
 InParty("Imoen")
-!Dead("Imoen")~ THEN REPLY ~If it was one measure of this little problem, then the “Ancient Enemy” must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ153
+!Dead("Imoen")~ THEN REPLY ~If it was one measure of this little problem, then the ï¿½Ancient Enemyï¿½ must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ153
  IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")
@@ -2415,7 +2415,7 @@ OR(2)
 !InParty("Accalia")
 Dead("Accalia")
 InParty("Imoen2")
-!Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the “Ancient Enemy” must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOEN2J~ VP_FIX69
+!Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the ï¿½Ancient Enemyï¿½ must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOEN2J~ VP_FIX69
  IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")
@@ -2439,7 +2439,7 @@ Dead("Dar")
 InParty("Accalia")
 !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 62
  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 63 
+!Dead("Dar")~ THEN EXTERN ~DARJ~ 63
 END
 
 IF ~~ THEN BEGIN 280
@@ -2454,13 +2454,13 @@ IF ~~ THEN BEGIN 281
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~For now, let’s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
+Dead("Imoen2")~ THEN REPLY ~For now, letï¿½s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
  IF ~OR(2)
 !InParty("Imoen")
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284 
+Dead("Imoen2")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284
  IF ~OR(2)
 !InParty("Imoen")
 Dead("Imoen")
@@ -2472,22 +2472,22 @@ Dead("Imoen2")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ GOTO 2
  IF ~InParty("Imoen2")
 !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX105
 END
-  
+
 
 IF ~~ THEN BEGIN 282
- SAY ~Whoever this “Old Enemy” is, I think we can safely assume that they are not our ally!~
+ SAY ~Whoever this ï¿½Old Enemyï¿½ is, I think we can safely assume that they are not our ally!~
  IF ~OR(2)
 !InParty("Accalia")
 Dead("Accalia")
 OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~For now, let’s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
+Dead("Jaheira")~ THEN REPLY ~For now, letï¿½s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
  IF ~OR(2)
 !InParty("Accalia")
 Dead("Accalia")
 OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284 
+Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284
  IF ~OR(2)
 !InParty("Accalia")
 Dead("Accalia")
@@ -2502,8 +2502,8 @@ END
 
 IF ~~ THEN BEGIN 283
  SAY ~Very true, so I suggest we best get on with the task at hand.~
- IF ~~ THEN REPLY ~For now, let’s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
- IF ~~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284 
+ IF ~~ THEN REPLY ~For now, letï¿½s just make sure that one of these enemies is unhappy with the outcome.~ GOTO 284
+ IF ~~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ GOTO 284
  IF ~~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ GOTO 284
 END
 
@@ -2515,29 +2515,29 @@ IF ~~ THEN BEGIN 284
 END
 
 IF ~~ THEN BEGIN 285
- SAY ~Patience my friend, I don’t believe this evil is in too much of a hurry to be leaving here. We will be upon it soon enough... then you will get the chance to show it how the righteous sword and the bootheels of Minsc deals with evil.~
+ SAY ~Patience my friend, I donï¿½t believe this evil is in too much of a hurry to be leaving here. We will be upon it soon enough... then you will get the chance to show it how the righteous sword and the bootheels of Minsc deals with evil.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 286
 	SAY ~You my friend, know of the duty we have to fight for those too weak to stand for themselves. Yes, I am probably going to die but I have a conscience that will not let me rest if I abandon my people. At least if I fall trying then my spirit will rest in the knowledge that I have tried. That I am sure you can all understand.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 252
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
 END
 
 IF ~~ THEN BEGIN 287
-	SAY ~Ah... if only life were as simple as the way you perceive it Imoen! It isn’t, it is hard and it forces duties upon us, that if we have a conscience, we can not deny. I am sure <CHARNAME> understands what it is I am saying and if you do not, then as you travel with <PRO_HIMHER>, so will you learn understanding. Is this not right <CHARNAME>?~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252
+	SAY ~Ah... if only life were as simple as the way you perceive it Imoen! It isnï¿½t, it is hard and it forces duties upon us, that if we have a conscience, we can not deny. I am sure <CHARNAME> understands what it is I am saying and if you do not, then as you travel with <PRO_HIMHER>, so will you learn understanding. Is this not right <CHARNAME>?~
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 252
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252
 END
 
 IF ~~ THEN BEGIN 288 //H7.02
 	SAY ~You of all people should know of the duty we have to fight for those too weak to stand for themselves my friend. I can see the wisdom in the words of Minsc but I also have a conscience that will not let me rest if I abandon my people. Yes, I am probably going to die but at least my spirit will rest in the knowledge that I tried. That I am sure you can all understand.~
-	IF ~~ THEN REPLY ~No, I don’t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252 //-->H9 
+	IF ~~ THEN REPLY ~No, I donï¿½t understand, in the future the outcome of this battle is decided. If you travel with me to the future there will be no need to put yourself through this hell.~ GOTO 252 //-->H9
 	IF ~~ THEN REPLY ~Think for a moment Hrothgar, would not travelling to the future mean your struggle here could end and because history will have already told of the events, then your conscience should not trouble you either?~ GOTO 252 //-->H9
-	IF ~~ THEN REPLY ~It’s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252 //-->H9
+	IF ~~ THEN REPLY ~Itï¿½s up to you, stay here and fight unnecessarily or come with me to a future where your struggle is over and is a story of legend.~ GOTO 252 //-->H9
 END
 
 IF ~Global("VP_Hrothgar_Tilorn","GLOBAL",4)
@@ -2594,10 +2594,10 @@ IF ~~ THEN BEGIN 291
 END
 
 IF ~Global("VP_Leveller_Quest","GLOBAL",1)~ THEN BEGIN 292
- SAY ~Leveller? What kind of infernal artifact would be given the name *leveller*? I don’t even want to think what it might be capable of! This could be just the thing we are looking for <CHARNAME>, a device that could have tipped the balance in Halruaa’s favour.~
+ SAY ~Leveller? What kind of infernal artifact would be given the name *leveller*? I donï¿½t even want to think what it might be capable of! This could be just the thing we are looking for <CHARNAME>, a device that could have tipped the balance in Halruaaï¿½s favour.~
  IF ~~ THEN GOTO 293
 END
- 
+
 IF ~~ THEN BEGIN 293
  SAY ~We have to take time out to find and destroy this thing, before it can be used against Ulcaster by this first wave.~
  IF ~~ THEN REPLY ~I am with you there Hrothagr, but first we have to find where this first wave of mages are hiding out.~ GOTO 294 // Then Hrothgar2.
@@ -2610,72 +2610,72 @@ END
 
 IF ~~ THEN BEGIN 294
  SAY ~We have a name, Brial, so maybe finding and searching her quarters might be a good place to start. Also, a far quicker route than searching for the mage herself, who after all, is not very likely to tell us anything even if we do manage to track her down.~ // Then CH.10-13.
- IF ~~ THEN REPLY ~Then what are we waiting for, let’s get searching.~ GOTO 305
- IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you don’t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305 
- IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Let’s get moving and find these errant mages.~ GOTO 305
- IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brial’s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcaster’s shores.~ GOTO 305 
+ IF ~~ THEN REPLY ~Then what are we waiting for, letï¿½s get searching.~ GOTO 305
+ IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you donï¿½t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305
+ IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Letï¿½s get moving and find these errant mages.~ GOTO 305
+ IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brialï¿½s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcasterï¿½s shores.~ GOTO 305
 END
 
 IF ~~ THEN BEGIN 295
- SAY ~Then it would make more sense to find and search her quarters <CHARNAME>. Even if we did manage to track her down she’s hardly likely to tell us where her friends are hiding out now is she?~ // Then CH.10-13.
- IF ~~ THEN REPLY ~Then what are we waiting for, let’s get searching.~ GOTO 305
- IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you don’t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305 
- IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Let’s get moving and find these errant mages.~ GOTO 305
- IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brial’s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcaster’s shores.~ GOTO 305 
+ SAY ~Then it would make more sense to find and search her quarters <CHARNAME>. Even if we did manage to track her down sheï¿½s hardly likely to tell us where her friends are hiding out now is she?~ // Then CH.10-13.
+ IF ~~ THEN REPLY ~Then what are we waiting for, letï¿½s get searching.~ GOTO 305
+ IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you donï¿½t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305
+ IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Letï¿½s get moving and find these errant mages.~ GOTO 305
+ IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brialï¿½s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcasterï¿½s shores.~ GOTO 305
 END
 
 IF ~~ THEN BEGIN 296
  SAY ~I hope so <CHARNAME>. Our search has proven fruitless so far and I am beginning to despair of finding anything that will aid him in his fight to save Ulcaster.~
  IF ~~ THEN GOTO 297
 END
- 
+
 IF ~~ THEN BEGIN 297
  SAY ~As for the second key... we have found no mention of it at all, I am beginning to suspect that Halruaa knows nothing of its existence.~
  IF ~~ THEN GOTO 298
-END 
- 
+END
+
 IF ~~ THEN BEGIN 298
- SAY ~I can only suggest that we find and search this Brial’s quarters for further clues as to where these mages are hiding out.~ // Then CH.14-16.
- IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Let’s get moving and find these errant mages.~ GOTO 305
- IF ~~ THEN REPLY ~Then what are we waiting for, let’s get searching.~ GOTO 305
- IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brial’s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcaster’s shores.~ GOTO 305 
+ SAY ~I can only suggest that we find and search this Brialï¿½s quarters for further clues as to where these mages are hiding out.~ // Then CH.14-16.
+ IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Letï¿½s get moving and find these errant mages.~ GOTO 305
+ IF ~~ THEN REPLY ~Then what are we waiting for, letï¿½s get searching.~ GOTO 305
+ IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brialï¿½s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcasterï¿½s shores.~ GOTO 305
 END
 
 IF ~~ THEN BEGIN 299
  SAY ~Sarcasm is the lowest form of wit <CHARNAME>, you will do well to remember that.~ // Then CH.7-9.
- IF ~~ THEN REPLY ~At least it’s wit Hrothgar, something you seem to be completely devoid of.~ GOTO 300 // Then Hrothgar6.
+ IF ~~ THEN REPLY ~At least itï¿½s wit Hrothgar, something you seem to be completely devoid of.~ GOTO 300 // Then Hrothgar6.
  IF ~~ THEN REPLY ~It was a jest Hrothgar, nothing more. Which, if you were capable of wit yourself, you would have recognised it for what it was.~ GOTO 300 // Then Hrothgar6.
- IF ~~ THEN REPLY ~Sarcasm was not intended Hrothgar. It’s just that you complain every time we get side tracked that I never expected to hear you say *we must take time out*.~ GOTO 302 // Then Hrothgar 6.1.
+ IF ~~ THEN REPLY ~Sarcasm was not intended Hrothgar. Itï¿½s just that you complain every time we get side tracked that I never expected to hear you say *we must take time out*.~ GOTO 302 // Then Hrothgar 6.1.
 END
 
 IF ~~ THEN BEGIN 300
  SAY ~I am not concerned with your opinion on whether I have wit or not <CHARNAME>. What I am concerned about is this leveller and the destruction its very name conjures up.~
  IF ~~ THEN GOTO 301
-END  
-  
+END
+
 IF ~~ THEN BEGIN 301
- SAY ~If Ulcaster is to stand any chance against this assault by Halruaa, we have to make sure they have no aces up their sleeves to pull out, and it seems our best chance for that is to find and search this Brial person’s quarters for more clues to the whereabouts of these mages.~ // Then CH.17-19.
- IF ~~ THEN REPLY ~I was about to suggest we do the exact same thing, if you’d have given me half a chance to speak Hrothgar! Now, let’s move it out of here, sharpish!~ GOTO 305
- IF ~~ THEN REPLY ~There is no have Hrothgar, only have not, but it doesn’t take wit to come up with the idea to search this Brial’s quarters. It was to be my next move anyway so let’s set about it.~ GOTO 305
- IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brial’s quarters and attempt to lessen the size of that wave due to crash onto Ulcaster’s shores.~ GOTO 305 
+ SAY ~If Ulcaster is to stand any chance against this assault by Halruaa, we have to make sure they have no aces up their sleeves to pull out, and it seems our best chance for that is to find and search this Brial personï¿½s quarters for more clues to the whereabouts of these mages.~ // Then CH.17-19.
+ IF ~~ THEN REPLY ~I was about to suggest we do the exact same thing, if youï¿½d have given me half a chance to speak Hrothgar! Now, letï¿½s move it out of here, sharpish!~ GOTO 305
+ IF ~~ THEN REPLY ~There is no have Hrothgar, only have not, but it doesnï¿½t take wit to come up with the idea to search this Brialï¿½s quarters. It was to be my next move anyway so letï¿½s set about it.~ GOTO 305
+ IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brialï¿½s quarters and attempt to lessen the size of that wave due to crash onto Ulcasterï¿½s shores.~ GOTO 305
 END
 
 IF ~~ THEN BEGIN 302
  SAY ~You only hear it from now because the word *leveller* conjures up visions of a very powerful and destructive weapon... a weapon we can not allow to be deployed against Ulcaster.~
  IF ~~ THEN GOTO 303
-END   
- 
+END
+
 IF ~~ THEN BEGIN 303
  SAY ~If this Brial can lead us to its hiding place then our best chance of finding any clue as to where that may be has to be a search of her quarters.~
  IF ~~ THEN GOTO 304
-END  
+END
 
 IF ~~ THEN BEGIN 304
  SAY ~We may even find the mage herself there, although, if we were to find her, I doubt she will surrender such information willingly.~ // Then CH.10-13.
- IF ~~ THEN REPLY ~Then what are we waiting for, let’s get searching.~ GOTO 305
- IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you don’t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305 
- IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Let’s get moving and find these errant mages.~ GOTO 305
- IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brial’s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcaster’s shores.~ GOTO 305 
+ IF ~~ THEN REPLY ~Then what are we waiting for, letï¿½s get searching.~ GOTO 305
+ IF ~~ THEN REPLY ~She might you know, if we threaten or torture her... but I can see by your face you donï¿½t like that idea. So then Hrothgar, the plan is to seek and given the opportunity, ask!~ GOTO 305
+ IF ~~ THEN REPLY ~Good suggestion Hrothgar, and one I was about to come up with myself. Letï¿½s get moving and find these errant mages.~ GOTO 305
+ IF ~~ THEN REPLY ~You took the words right out of my mouth Hrothgar. Let us find this Brialï¿½s quarters and attempt to lessen the size of that wave that is due to crash onto Ulcasterï¿½s shores.~ GOTO 305
 END
 
 IF ~~ THEN BEGIN 305
@@ -2684,24 +2684,24 @@ IF ~~ THEN BEGIN 305
 END
 
 IF ~~ THEN BEGIN 306
- SAY ~Unfortunately this is no children’s game Dar, and as you say the prize will more than likely try to kill us when found, but for Ulcaster’s sake, we have no choice other than to follow the clues until we eventually find the prize.~
+ SAY ~Unfortunately this is no childrenï¿½s game Dar, and as you say the prize will more than likely try to kill us when found, but for Ulcasterï¿½s sake, we have no choice other than to follow the clues until we eventually find the prize.~
  IF ~~ THEN GOTO 307
 END
 
 IF ~~ THEN BEGIN 307
  SAY ~At least we know what to expect when the prize is found and we can be prepared for when it is revealed. Now, what does the letter say <CHARNAME>?~
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Damn this mage how are we supposed to find her when she does not give directions?~ GOTO 308 // Then Hrothgar4.
- IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garron’s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
+ IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garronï¿½s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... This Garron appears to be a key player if he is to deploy the leveller. The more I hear about this damn leveller the less I like the sound of it.~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Bah, once again I am sent scurrying to and fro like a mouse looking for tidbits!~ GOTO 314 // Then Hrothgar9.
 END
 
 IF ~~ THEN BEGIN 308
- SAY ~She has <CHARNAME>, all we have to do is find this Garron’s quarters and hope Brial was unable to find him and has left directions to the meeting for him.~
- IF ~~ THEN REPLY ~(*Sigh*) Right you are Hrothgar, lets get out of here and go find Garron’s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
- IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garron’s quarters.~ GOTO 310 // Then Hrothgar6.
+ SAY ~She has <CHARNAME>, all we have to do is find this Garronï¿½s quarters and hope Brial was unable to find him and has left directions to the meeting for him.~
+ IF ~~ THEN REPLY ~(*Sigh*) Right you are Hrothgar, lets get out of here and go find Garronï¿½s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
+ IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garronï¿½s quarters.~ GOTO 310 // Then Hrothgar6.
  IF ~~ THEN REPLY ~This Garron had better not be in his quarters when we get there or it will go badly for him. I am in no mood for a confrontation with a contrary mage!~ GOTO 310 // Then Hrothgar6.
- IF ~~ THEN REPLY ~This is it Hrothgar, if Brial’s directions are not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
+ IF ~~ THEN REPLY ~This is it Hrothgar, if Brialï¿½s directions are not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
 END
 
 IF ~~ THEN BEGIN 309
@@ -2715,53 +2715,53 @@ IF ~~ THEN BEGIN 310
 END
 
 IF ~~ THEN BEGIN 311
- SAY ~If we can not find Brial’s directions to Garron then we will most certainly have to abandon our plan.~
+ SAY ~If we can not find Brialï¿½s directions to Garron then we will most certainly have to abandon our plan.~
  IF ~~ THEN GOTO 312
-END 
- 
+END
+
 IF ~~ THEN BEGIN 312
- SAY ~As much as it galls me to leave such a destructive sounding device for Halruaa to deploy against Ulcaster, I can not help but think that if we fail it is because what has been was meant to be, and Tilorn will finally have to except this, but come, let us not concede defeat just yet, not until we have searched Garron’s Quarters.~
+ SAY ~As much as it galls me to leave such a destructive sounding device for Halruaa to deploy against Ulcaster, I can not help but think that if we fail it is because what has been was meant to be, and Tilorn will finally have to except this, but come, let us not concede defeat just yet, not until we have searched Garronï¿½s Quarters.~
  IF ~~ THEN DO ~SetGlobal("VP_Leveller_Quest","GLOBAL",4)~ EXIT
 END
 	
 IF ~~ THEN BEGIN 313
- SAY ~This Vrielle has instructed Brial to leave directions to the meeting in Garron’s quarters if she can not find him... that does seem to be the obvious place for us to search next. Let us hope she was unable to find him and we find these directions. Then we shall surely know where our quarry is, and with luck, the whereabouts of their infernal artifact.~
- IF ~~ THEN REPLY ~(*Sigh*) Right you are Hrothgar, lets get out of here and go find Garron’s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
- IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garron’s quarters.~ GOTO 310 // Then Hrothgar6.
+ SAY ~This Vrielle has instructed Brial to leave directions to the meeting in Garronï¿½s quarters if she can not find him... that does seem to be the obvious place for us to search next. Let us hope she was unable to find him and we find these directions. Then we shall surely know where our quarry is, and with luck, the whereabouts of their infernal artifact.~
+ IF ~~ THEN REPLY ~(*Sigh*) Right you are Hrothgar, lets get out of here and go find Garronï¿½s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
+ IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garronï¿½s quarters.~ GOTO 310 // Then Hrothgar6.
  IF ~~ THEN REPLY ~This Garron had better not be in his quarters when we get there or it will go badly for him. I am in no mood for a confrontation with a contrary mage!~ GOTO 310 // Then Hrothgar6.
- IF ~~ THEN REPLY ~This is it Hrothgar, if Vrielle’s letter is not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
+ IF ~~ THEN REPLY ~This is it Hrothgar, if Vrielleï¿½s letter is not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
 END
 
 IF ~~ THEN BEGIN 314
  SAY ~But we have no need to scurry much further for our tidbits <CHARNAME>.~
  IF ~~ THEN GOTO 315
-END 
- 
+END
+
 IF ~~ THEN BEGIN 315
  SAY ~See, this Vrielle writes that if Brial can not find Garron, then she is to leave directions to the meeting in his quarters. All we have to do is find out where they are, and with luck... the directions.~
  IF ~~ THEN GOTO 316
-END  
- 
+END
+
 IF ~~ THEN BEGIN 316
  SAY ~Come, we are close to our quarry, and a step closer to aiding Ulcaster.~
- IF ~~ THEN REPLY ~(*Sighs*) Right you are Hrothgar, lets get out of here and go find Garron’s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
- IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garron’s quarters.~ GOTO 310 // Then Hrothgar6.
+ IF ~~ THEN REPLY ~(*Sighs*) Right you are Hrothgar, lets get out of here and go find Garronï¿½s quarters and put paid to these mages and their conspiracies once and for all!~ GOTO 309 // Then Hrothgar5.
+ IF ~~ THEN REPLY ~I am fast running out of patience with these mages. Why do they feel the need for all this secrecy when nearly all of  Halruaa knows what is afoot anyway? Come, let us go see what we can dig up in this Garronï¿½s quarters.~ GOTO 310 // Then Hrothgar6.
  IF ~~ THEN REPLY ~This Garron had better not be in his quarters when we get there or it will go badly for him. I am in no mood for a confrontation with a contrary mage!~ GOTO 310 // Then Hrothgar6.
- IF ~~ THEN REPLY ~This is it Hrothgar, if Vrielle’s letter is not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
+ IF ~~ THEN REPLY ~This is it Hrothgar, if Vrielleï¿½s letter is not there, then I am done chasing mages and secret artifacts.~ GOTO 311 // Then Hrothgar7
 END
 
 IF ~~ THEN BEGIN 317
  SAY ~I wish this was treasure hunting Minsc. When found, treasure is a lot more forgiving than mages who do not want be found. Let us hope this will be the last clue and we can be done with this hunt. What does it say <CHARNAME>?~
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Damn this mage how are we supposed to find her when she does not give directions?~ GOTO 308 // Then Hrothgar4.
- IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garron’s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
+ IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garronï¿½s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... This Garron appears to be a key player if he is to deploy the leveller. The more I hear about this damn leveller the less I like the sound of it.~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Bah, once again I am sent scurrying to and fro like a mouse looking for tidbits!~ GOTO 314 // Then Hrothgar9.
 END
 
 IF ~Global("VP_Leveller_Quest","GLOBAL",3)~ THEN BEGIN 318
-  SAY ~Well <CHARNAME>, does it tell us any more than Sebastian’s letter to Vrielle did? Does it gives anymore insight to what this leveller is or even where it can be found?~
+  SAY ~Well <CHARNAME>, does it tell us any more than Sebastianï¿½s letter to Vrielle did? Does it gives anymore insight to what this leveller is or even where it can be found?~
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Damn this mage how are we supposed to find her when she does not give directions?~ GOTO 308 // Then Hrothgar4.
- IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garron’s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
+ IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Let me guess, you are now going to suggest we search this Garronï¿½s quarters, right Hrothgar?~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... This Garron appears to be a key player if he is to deploy the leveller. The more I hear about this damn leveller the less I like the sound of it.~ GOTO 313 // Then Hrothgar8.
  IF ~~ THEN REPLY ~Here read it for yourself Hrothgar... Bah, once again I am sent scurrying to and fro like a mouse looking for tidbits!~ GOTO 314 // Then Hrothgar9.
 END
@@ -2769,14 +2769,14 @@ END
 IF ~Global("VP_Leveller_Quest","GLOBAL",5)~ THEN BEGIN 319
   SAY ~We now know where to find our mages <CHARNAME>. We should move quickly, find this place, see what this meeting is about and destroy their infernal artifact.~
  IF ~~ THEN GOTO 320
-END    
-  
+END
+
 IF ~~ THEN BEGIN 320
  SAY ~It might well have been the very thing Halruaa used to tip the balance in their favour in their assault on Ulcaster. If it was, and we manage to destroy it, then we have at least accomplished that which Tilorn sent us here to do.~
- IF ~~ THEN REPLY ~I am with you Hrothgar, let’s go.~ GOTO 321
+ IF ~~ THEN REPLY ~I am with you Hrothgar, letï¿½s go.~ GOTO 321
  IF ~~ THEN REPLY ~Then if this the break we have been looking for the sooner we sort these mages and find this leveller, the sooner we can get out of this rat hole.~ GOTO 321
  IF ~~ THEN REPLY ~The directions are clear enough, what are we waiting for?~ GOTO 321
- IF ~~ THEN REPLY ~According to these letters, this RayVon appears to have his finger in a lot of pies, I say we take him out after we have dealt with his first wave and their leveller.~ GOTO 321 
+ IF ~~ THEN REPLY ~According to these letters, this RayVon appears to have his finger in a lot of pies, I say we take him out after we have dealt with his first wave and their leveller.~ GOTO 321
 END
 
 IF ~~ THEN BEGIN 321
@@ -2789,7 +2789,7 @@ IF ~~ THEN BEGIN 321
 END
 
 IF ~~ THEN BEGIN 322
- SAY ~So it might to you Melora, but my concern is getting us all out of here in one piece, drawing attention to ourselves is a sure way of getting us all killed. Now I suggest we do as I said and continue *discreetly*, that way we don’t risk the wrath of Halruaa’s mages nor the likely hood of their magic bringing the building down around our heads.~
+ SAY ~So it might to you Melora, but my concern is getting us all out of here in one piece, drawing attention to ourselves is a sure way of getting us all killed. Now I suggest we do as I said and continue *discreetly*, that way we donï¿½t risk the wrath of Halruaaï¿½s mages nor the likely hood of their magic bringing the building down around our heads.~
  IF ~~ THEN EXIT
 END
 
@@ -2799,12 +2799,12 @@ IF ~~ THEN BEGIN 323
 END
 
 IF ~~ THEN BEGIN 324
- SAY ~(*Smiling at the ranger*) Don’t worry Minsc... when I said the whole *academy*, I was using the term *academy* as a collective name for all of Halruaa’s mages, not the building itself.~
+ SAY ~(*Smiling at the ranger*) Donï¿½t worry Minsc... when I said the whole *academy*, I was using the term *academy* as a collective name for all of Halruaaï¿½s mages, not the building itself.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ336
 END
 
 IF ~~ THEN BEGIN 325
- SAY ~I am with you there my friend, mages and their magic cause major headaches for us all. So now you see why we don’t want to bring the acad... all Halruaa’s mages down on our heads at once.~
+ SAY ~I am with you there my friend, mages and their magic cause major headaches for us all. So now you see why we donï¿½t want to bring the acad... all Halruaaï¿½s mages down on our heads at once.~
  IF ~~ THEN EXIT
 END
 
@@ -2812,19 +2812,19 @@ IF ~Global("VP_Leveller_Quest","GLOBAL",8)~ THEN BEGIN 326
   SAY ~We will have to move swiftly now <CHARNAME>, if we are to find this artifact and take it out of the picture. It will not be long  before news of what has happened here gets out.~
  IF ~OR(2)
 !InParty("Melora")
-Dead("Melora")~ THEN REPLY ~I agree, let’s go Hrothgar.~ GOTO 327
+Dead("Melora")~ THEN REPLY ~I agree, letï¿½s go Hrothgar.~ GOTO 327
  IF ~OR(2)
 !InParty("Melora")
 Dead("Melora")~ THEN REPLY ~As you say Hrothgar, let us move swiftly and not waste this opportunity to maybe make a difference.~ GOTO 327
  IF ~OR(2)
 !InParty("Melora")
-Dead("Melora")~ THEN REPLY ~I have a feeling that this artifact isn’t going to be left unguarded and although the thought of battling another group of established magic users doesn’t thrill me, as you say Hrothgar, we have to try.~ GOTO 327 
+Dead("Melora")~ THEN REPLY ~I have a feeling that this artifact isnï¿½t going to be left unguarded and although the thought of battling another group of established magic users doesnï¿½t thrill me, as you say Hrothgar, we have to try.~ GOTO 327
  IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 23
 END
 
 IF ~~ THEN BEGIN 327
- SAY ~Then for the honour of Ulcaster and maybe for the future of the Realms, let’s quickly find and destroy this artifact.~
+ SAY ~Then for the honour of Ulcaster and maybe for the future of the Realms, letï¿½s quickly find and destroy this artifact.~
  IF ~~ THEN DO ~SetGlobal("VP_Leveller_Quest","GLOBAL",9)~ EXIT
 END
 
@@ -2839,22 +2839,22 @@ IF ~~ THEN BEGIN 329
 END
 
 IF ~~ THEN BEGIN 330
- SAY ~So it follows, that killing all mages present in the academy now could inadvertently effect your birth. You may even cease to be Melora. A very good argument for not taking  Halruaa out don’t you think?~
+ SAY ~So it follows, that killing all mages present in the academy now could inadvertently effect your birth. You may even cease to be Melora. A very good argument for not taking  Halruaa out donï¿½t you think?~
  IF ~~ THEN GOTO 331
 END
 
 IF ~~ THEN BEGIN 331
  SAY ~However, we are wasting time standing here talking, there is a more pressing and urgent issue to address here. Right <CHARNAME>?~
- IF ~~ THEN REPLY ~I agree, let’s go Hrothgar.~ GOTO 327
+ IF ~~ THEN REPLY ~I agree, letï¿½s go Hrothgar.~ GOTO 327
  IF ~~ THEN REPLY ~As you say Hrothgar, let us move swiftly and not waste this opportunity to maybe make a difference.~ GOTO 327
- IF ~~ THEN REPLY ~I have a feeling that this artifact isn’t going to be left unguarded and although the thought of battling another group of established magic users doesn’t thrill me, as you say Hrothgar, we have to try.~ GOTO 327
+ IF ~~ THEN REPLY ~I have a feeling that this artifact isnï¿½t going to be left unguarded and although the thought of battling another group of established magic users doesnï¿½t thrill me, as you say Hrothgar, we have to try.~ GOTO 327
 END
 
 IF ~Global("VP_Leveller_Quest","GLOBAL",11)~ THEN BEGIN 332
   SAY ~(*Picking up and turning the artifact over in his hands.*) Mmm, no buttons to press or knobs to turn, I wonder how it works.~
 	IF ~~ THEN REPLY ~Anybody seen anything like it before?~ GOTO 333
-  IF ~~ THEN REPLY ~Ok, we found it but it doesn’t seem to come with instructions, so what do we do with it?~ GOTO 333
-  IF ~~ THEN REPLY ~Hmph, it doesn’t look very impressive for a secret weapon.~ GOTO 333
+  IF ~~ THEN REPLY ~Ok, we found it but it doesnï¿½t seem to come with instructions, so what do we do with it?~ GOTO 333
+  IF ~~ THEN REPLY ~Hmph, it doesnï¿½t look very impressive for a secret weapon.~ GOTO 333
   IF ~~ THEN REPLY ~So this little thing is the Leveller. Seems a bit small to have such an impressive name to me.~ GOTO 333
   IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~Looks no different to any other mages toy to me.~ GOTO 333
 END
@@ -2884,37 +2884,37 @@ IF ~~ THEN BEGIN 335
 Dead("Jaheira")~ THEN REPLY ~Then it is decided, we take it with us.~ GOTO 336
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~We’ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
+Dead("Jaheira")~ THEN REPLY ~Weï¿½ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN REPLY ~Why does everything seem to rely on keys around here?~ GOTO 337
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~If it’s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
+Dead("Jaheira")~ THEN REPLY ~If itï¿½s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
  IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ636
 END
 
 IF ~~ THEN BEGIN 336
- SAY ~Then I suggest we get out of here and we don’t let this artifact out of our sights whilst we are on Halruaa’s soil.~
+ SAY ~Then I suggest we get out of here and we donï¿½t let this artifact out of our sights whilst we are on Halruaaï¿½s soil.~
  IF ~~ THEN DO ~SetGlobal("VP_Leveller_Quest","GLOBAL",12)~ EXIT
 END
 
 IF ~~ THEN BEGIN 337
- SAY ~How it is operated is not important. What is important, is that we get it out of the academy’s hands as quickly as possible and make sure it stays out of their hands. Which means we need to get out of here and back to Tilorn quickly.~
+ SAY ~How it is operated is not important. What is important, is that we get it out of the academyï¿½s hands as quickly as possible and make sure it stays out of their hands. Which means we need to get out of here and back to Tilorn quickly.~
  IF ~~ THEN DO ~SetGlobal("VP_Leveller_Quest","GLOBAL",12)~ EXIT
 END
 
 IF ~~ THEN BEGIN 338
- SAY ~Then it would be a good idea if we all got out of here before RayVon finds us, tipping the balance back in Halruaa’s favour and opening the way for all hell to fall on our heads. Let us take the artifact, with or without its key and hope the little we have done is enough.~
+ SAY ~Then it would be a good idea if we all got out of here before RayVon finds us, tipping the balance back in Halruaaï¿½s favour and opening the way for all hell to fall on our heads. Let us take the artifact, with or without its key and hope the little we have done is enough.~
  IF ~~ THEN REPLY ~Then it is decided, we take it with us.~ GOTO 336
- IF ~~ THEN REPLY ~We’ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
+ IF ~~ THEN REPLY ~Weï¿½ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
  IF ~~ THEN REPLY ~Why does everything seem to rely on keys around here?~ GOTO 337
- IF ~~ THEN REPLY ~If it’s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
+ IF ~~ THEN REPLY ~If itï¿½s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
 END
 
 IF ~~ THEN BEGIN 339
- SAY ~Tilorn I am sorry, we have failed you my friend. The wheels were turning even as we entered Halruaa and once started there was no way we could stop what had begun. You were right in your theory that Halruaa’s mages instigated the downfall of Ulcaster but we found no proof that what is happening now in the Realms had any connection with that event.~ [hrot_501]
+ SAY ~Tilorn I am sorry, we have failed you my friend. The wheels were turning even as we entered Halruaa and once started there was no way we could stop what had begun. You were right in your theory that Halruaaï¿½s mages instigated the downfall of Ulcaster but we found no proof that what is happening now in the Realms had any connection with that event.~ [hrot_501]
  IF ~~ THEN GOTO 340
 END
 
@@ -2936,59 +2936,59 @@ END
 IF ~Global("VP_Leaving_Halruaa","GLOBAL",8)~ THEN BEGIN 343
  SAY ~(*Quietly almost to himself*) Farewell Tilorn my friend, I promise you, we will not fail this time... we cannot!~ [hrot_504]
  IF ~~ THEN REPLY ~When *will* you explain why we chase rainbows and waste time Hrothgar? Or is this to be another... *when the time is right <CHARNAME>?*~ GOTO 344
- IF ~~ THEN REPLY ~Yes Hrothgar, do explain why you took us on this fool’s errand, wasting all of our time?~ GOTO 344
+ IF ~~ THEN REPLY ~Yes Hrothgar, do explain why you took us on this foolï¿½s errand, wasting all of our time?~ GOTO 344
  IF ~~ THEN REPLY ~As the man said, explain why I am wasting my time following you on doomed missions?~ GOTO 344
  IF ~~ THEN REPLY ~I followed you in good faith Hrothgar, only to find you waste my time. Each day that passes the trail gets colder and lessens my chances to find Irenicus.~ GOTO 344
 END
 
 IF ~~ THEN BEGIN 344
- SAY ~Let me assure you <CHARNAME>, we have not lost much time, nor has your search for Irenicus and Imoen been delayed. Tilorn has returned us to the same place and time that we left. Yes it was an impossible feat, but if there was even the slightest chance that what Tilorn believed was true, then for all our sakes, we had to attempt it.~ [hrot_505] 
+ SAY ~Let me assure you <CHARNAME>, we have not lost much time, nor has your search for Irenicus and Imoen been delayed. Tilorn has returned us to the same place and time that we left. Yes it was an impossible feat, but if there was even the slightest chance that what Tilorn believed was true, then for all our sakes, we had to attempt it.~ [hrot_505]
  IF ~~ THEN REPLY ~I am not interested in your assurances, nor do I intend to follow blindly anymore. It is time to tell me the truth of what goes on here!~ GOTO 345
  IF ~~ THEN REPLY ~Assurances are all well and good, but now it is time to do as Tilorn says and explain.~ GOTO 345
  IF ~~ THEN REPLY ~This is getting freaky Hrothgar! I think it is about time you told me how Tilorn manages all these side trips through time.~ GOTO 345
- IF ~~ THEN REPLY ~No more Hrothgar, I demand the truth, no more dancing around words!~ GOTO 345 
+ IF ~~ THEN REPLY ~No more Hrothgar, I demand the truth, no more dancing around words!~ GOTO 345
 END
 
 IF ~~ THEN BEGIN 345
- SAY ~You are right, not only are you owed some explanations but there are things you now need to know. I had hoped Tilorn’s theory would enable us to correct things quickly, but since that has now failed, the artifact is our last best hope for the Realms.~ [hrot_506]
+ SAY ~You are right, not only are you owed some explanations but there are things you now need to know. I had hoped Tilornï¿½s theory would enable us to correct things quickly, but since that has now failed, the artifact is our last best hope for the Realms.~ [hrot_506]
  IF ~~ THEN REPLY ~Go on.~ GOTO 346
  IF ~~ THEN REPLY ~Some answers at last!~ GOTO 346
  IF ~~ THEN REPLY ~You are darn right I am owed some answers!~ GOTO 346
 END
- 
+
 IF ~~ THEN BEGIN 346
- SAY ~This will be difficult to express in words rather than in symbols but I will do my best so please bear with me. I don’t know what you understand about the true nature of the multi-universe but it is not what everyone generally thinks it is... or maybe it would be correct to say it is what people think... but either way, it is neither as straightforward nor as simple as most people believe.~ [hrot_523]
+ SAY ~This will be difficult to express in words rather than in symbols but I will do my best so please bear with me. I donï¿½t know what you understand about the true nature of the multi-universe but it is not what everyone generally thinks it is... or maybe it would be correct to say it is what people think... but either way, it is neither as straightforward nor as simple as most people believe.~ [hrot_523]
  IF ~~ THEN GOTO 347
 END
- 
+
 IF ~~ THEN BEGIN 347
  SAY ~What we do know is that by a terrible accident or possible malevolent design, something in the past, present or even in the future went horribly wrong. Tilorn was convinced that it was the destruction of Ulcaster that prevented the discovery of the true cause of the chaos that we are witnessing today. Now, whether Ulcasters demise was also by accident or design we cannot be sure.~ [hrot_507]
  IF ~~ THEN REPLY ~Go on.~ GOTO 348
  IF ~~ THEN REPLY ~Great... answers that make no sense!~ GOTO 348
- IF ~~ THEN REPLY ~Well Tilorn’s theory was wrong and I am not sure that yours is going to be any more believable but carry on.~ GOTO 348
+ IF ~~ THEN REPLY ~Well Tilornï¿½s theory was wrong and I am not sure that yours is going to be any more believable but carry on.~ GOTO 348
 END
 
 IF ~~ THEN BEGIN 348
- SAY ~The past, present and future can in theory be considered no more than, let us say, reflections of the world as you know it. Let us consider that if for every action and choice that you make there also exists a multitude of these “reflections” for the paths and choices you did not make. All of these possibilities of what is and what may have been need to be kept in balance...~ [hrot_508]
+ SAY ~The past, present and future can in theory be considered no more than, let us say, reflections of the world as you know it. Let us consider that if for every action and choice that you make there also exists a multitude of these ï¿½reflectionsï¿½ for the paths and choices you did not make. All of these possibilities of what is and what may have been need to be kept in balance...~ [hrot_508]
  IF ~~ THEN REPLY ~Hold on a minute here... are you saying that for every choice I did not make, that it is just possible other realities exist as if I had?~ GOTO 349
  IF ~~ THEN REPLY ~But surely we then have to consider also the possibility of all these paths, realities whatever you call them being pre-set... just awaiting my decisions? If that is so, then who set these paths?~ GOTO 355
 END
 
 IF ~~ THEN BEGIN 349
  SAY ~Reality or virtuality, which is which? You sleep and dream but who is to say which is the dream and which is not? You perceive your world as real, but what of these other realities, would those worlds seem any less real to those that live in them? Just as you would perceive them as virtual, is your world not virtual to them? The multi-universe is such that how can we know, what is real and what is virtual, if that question can be said to even mean anything, and does it really matter, even to those living or dreaming in them?~ [hrot_509]
- IF ~~ THEN REPLY ~Of course it matters! You tell me everything and every one I know, that even I, may not be real. That all is merely a reflection of another reality or a dream in someone’s fevered brain and just expect me to believe this?~ GOTO 350
- IF ~~ THEN REPLY ~This is all too weird for me Hrothgar. In laymen’s words, what are we doing here... what and where do we go next?~ GOTO 350
+ IF ~~ THEN REPLY ~Of course it matters! You tell me everything and every one I know, that even I, may not be real. That all is merely a reflection of another reality or a dream in someoneï¿½s fevered brain and just expect me to believe this?~ GOTO 350
+ IF ~~ THEN REPLY ~This is all too weird for me Hrothgar. In laymenï¿½s words, what are we doing here... what and where do we go next?~ GOTO 350
 END
 
 IF ~~ THEN BEGIN 350
  SAY ~I only ask that you consider all possibilities whilst I try to explain what has brought about this task that is set before us and how we are to end this cycle of chaos in order to restore the balance between past, present, future and... the *realities*.~ [hrot_511]
- IF ~~ THEN REPLY ~So you are saying that reality or this *multi-universe* that you talk about is falling apart. And that somehow, something connected to my life is causing this chaotic cycle of events leading to this collapse? I find this pretty hard to believe!~ GOTO 351 
- IF ~~ THEN REPLY ~Now you speak of cycle and balance Hrothgar and you lose me once again.~ GOTO 351  
+ IF ~~ THEN REPLY ~So you are saying that reality or this *multi-universe* that you talk about is falling apart. And that somehow, something connected to my life is causing this chaotic cycle of events leading to this collapse? I find this pretty hard to believe!~ GOTO 351
+ IF ~~ THEN REPLY ~Now you speak of cycle and balance Hrothgar and you lose me once again.~ GOTO 351
  IF ~~ THEN REPLY ~Hrothgar, now you are just being pretentious or you ought to seek help pretty damn quick from a priest of Illmater. This is obviously delusional... being a child of Bhaal is one thing but being the cause of a series of cyclic events leading to a *multi-universal* collapse beggers belief!~ GOTO 351
 END
 
 IF ~~ THEN BEGIN 351
- SAY ~I speak of the cycle that surrounds “your reality”. The repetitions that has become your life, whether malevolently controlled by someone else or a blind chaotic accident it cannot be allowed to continue or the very fabric of the multi-universe is in peril.~ [hrot_525]
+ SAY ~I speak of the cycle that surrounds ï¿½your realityï¿½. The repetitions that has become your life, whether malevolently controlled by someone else or a blind chaotic accident it cannot be allowed to continue or the very fabric of the multi-universe is in peril.~ [hrot_525]
  IF ~~ THEN GOTO 352
 END
 
@@ -3001,23 +3001,23 @@ IF ~~ THEN BEGIN 353
  SAY ~Because you cannot. It matters not whether you continue your search for Imoen and Irenicus, whether your destiny is attained or you die now. The eventual outcome will always be the same, it will all *begin again* or should I say *begin anew*. Unless this cycle I speak of is broken it will continue until the death of the multi-universe.~ [hrot_526]
  IF ~~ THEN GOTO 354
 END
- 
+
 IF ~~ THEN BEGIN 354
  SAY ~Even if the cycle is broken, there is no guarantee that it will be the end forever, nothing in the multi-universe can be guaranteed.~ [hrot_514]
  IF ~~ THEN REPLY ~Then how is this cycle to be broken?~ GOTO 358
  IF ~~ THEN REPLY ~(*Sighs*) I suppose it should come as no surprise to me that I am the one called upon when someone is needed to save a multi-universe. What do we do Hrothgar?~ GOTO 358
  IF ~~ THEN REPLY ~The dream when I travelled the portal from Kuldahar... it showed me...~ GOTO 357
 END
- 
+
 IF ~~ THEN BEGIN 355
  SAY ~Who indeed my friend? Most of us believe in a God or Deities of some sort, it could well be that we are here for their amusement or for some other reason beyond our comprehension. This could well be a world of their making and we move along to their design in such a way that we believe we have freedom over our own actions and choices.~ [hrot_524]
  IF ~~ THEN GOTO 356
 END
- 
+
 IF ~~ THEN BEGIN 356
  SAY ~Such that our freedom of choice, and predestination of their will, are only alternate faces of the same coin. The multi-universe is such, that how can we tell, what is real, virtual, freewill and destiny, and that is if these questions can be said to even mean anything; but does it really matter, even to those living or dreaming in them?~ [hrot_510]
  IF ~~ THEN REPLY ~Of course it matters! You tell me everything and every one I know, that even I, may not be real. That all is merely a reflection of another reality or a dream of some God and just expect me to believe this?~ GOTO 350
- IF ~~ THEN REPLY ~This is all too weird for me Hrothgar. In laymen’s words, what are we doing here... 	what and where do we go next?~ GOTO 350
+ IF ~~ THEN REPLY ~This is all too weird for me Hrothgar. In laymenï¿½s words, what are we doing here... 	what and where do we go next?~ GOTO 350
 END
 
 IF ~~ THEN BEGIN 357
@@ -3026,7 +3026,7 @@ IF ~~ THEN BEGIN 357
  IF ~~ THEN REPLY ~(*Sighs*) I suppose it should come as no surprise to me that I am the one called upon when someone is needed to save a multi-universe. What do we do Hrothgar?~ GOTO 358
  IF ~~ THEN REPLY ~If I refuse my aid, what then Hrothgar?~ GOTO 365 // Then Hrothgar22.
 END
- 
+
 IF ~~ THEN BEGIN 358
  SAY ~Tilorn has given you another of the keys, yes, that wardstone you hold in your hand. As well as being one of the keys I seek, it is a piece of a very powerful artifact, as are all the keys. Tilorn unfortunately had only two of the four, the one you now hold and the one he left with Arundel to pass on to me.~ [hrot_527]
  IF ~~ THEN GOTO 359
@@ -3034,8 +3034,8 @@ END
 
 IF ~~ THEN BEGIN 359
  SAY ~The other two exist in other *times and other planes*, my place is to guide you to these in order to find and restore the artifact. You <CHARNAME> will know when to use or where to place the artifact to restore the balance and thus ending the chaos that threatens all.~ [hrot_516]
- IF ~~ THEN REPLY ~But what of Imoen? This mission is going to take sometime if we are to travel as far as you say. Is it fair that I should leave her imprisoned whilst I walk free?~ GOTO 360 
- IF ~~ THEN REPLY ~What of Irenicus? Even now I can see him gloat as he slips further away from me?~ GOTO 360 
+ IF ~~ THEN REPLY ~But what of Imoen? This mission is going to take sometime if we are to travel as far as you say. Is it fair that I should leave her imprisoned whilst I walk free?~ GOTO 360
+ IF ~~ THEN REPLY ~What of Irenicus? Even now I can see him gloat as he slips further away from me?~ GOTO 360
  IF ~~ THEN REPLY ~And if I say no, what then Hrothgar?~ GOTO 365 // Then Hrothgar22.
 END
 
@@ -3052,7 +3052,7 @@ IF ~~ THEN BEGIN 361
  SAY ~Excellent, we have spent enough time on explanations for one day. Let us about the task ahead and talk some more when you have had time to take in and digest all that which you have learnt this day.~ [hrot_518]
  IF ~~ THEN DO ~SetGlobal("VP_Leaving_Halruaa","GLOBAL",9)~ EXIT
 END
- 
+
 IF ~~ THEN BEGIN 362
  SAY ~I had hoped with your experiences, that your mind would be open enough to at least give some thought to all that I have said and not make so hasty a decision. Come, <CHARNAME>, travel with me a little longer, give yourself time to ponder on my words and question those experiences of yours. More importantly, trust your instincts, I have said before, they will not lead you wrong.~ [hrot_519]
  IF ~~ THEN REPLY ~I have learnt to live by my wits, not my instincts and it is they which tell me it is time to choose my own path and forget this nonsense.~ GOTO 363
@@ -3065,7 +3065,7 @@ IF ~~ THEN BEGIN 363
  IF ~~ THEN DO ~SetGlobal("VP_Leaving_Halruaa","GLOBAL",9)
 LeaveParty()
 EscapeArea()~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 364
  SAY ~True, I know nothing of your instincts, they are an inborn part of you, there for you to act on. I only ask that you listen and consider my words, and hopefully what you then decide to do will come from what you feel to be right, not only for yourself but also for those entwined with you.~ [hrot_521]
@@ -3089,9 +3089,9 @@ END
 
 IF WEIGHT #-18 ~Global("VP_Know_KimSia","GLOBAL",3)~ THEN BEGIN 367
  SAY ~That was not necessary <CHARNAME>! Had you been more prudent in your answers, this could have been avoided. Now we have risked drawing attention to our presence so I suggest we get out quickly before this mess is discovered, and us along with it!~
- IF ~~ THEN REPLY ~I don’t have the time to listen to these pompous mages and their lies Hrothgar! We are here to do a job and I am doing it in the best way that I know how.~ GOTO 368
+ IF ~~ THEN REPLY ~I donï¿½t have the time to listen to these pompous mages and their lies Hrothgar! We are here to do a job and I am doing it in the best way that I know how.~ GOTO 368
  IF ~~ THEN REPLY ~Pussy footing around these mages takes time Hrothgar... time that we are rapidly running out of! Direct and swift action is what we now need, it yields results a lot quicker.~ GOTO 368
- IF ~~ THEN REPLY ~Stop complaining Hrothgar, remember, you ask me to accompany you on this mission of yours! So let’s quit whining and get it done!~ GOTO 368
+ IF ~~ THEN REPLY ~Stop complaining Hrothgar, remember, you ask me to accompany you on this mission of yours! So letï¿½s quit whining and get it done!~ GOTO 368
 END
 
 IF ~~ THEN BEGIN 368
@@ -3112,70 +3112,70 @@ IF ~~ THEN BEGIN 370
  SAY ~(*Pointing to the portal*)... As this is likely to be our only means of exiting from here, I suggest we take it... and quickly.~
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
-!InParty("Dar")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ GOTO 375
+!InParty("Dar")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ GOTO 375
  IF ~!InParty("Imoen")
-!InParty("Imoen2")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal can’t be any more menacing than the demon we vanquished.~ GOTO 378
+!InParty("Imoen2")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal canï¿½t be any more menacing than the demon we vanquished.~ GOTO 378
  IF ~!InParty("Imoen")
-!InParty("Imoen2")~ THEN REPLY ~I’m as ready as I’ll ever be and I swear, if Irenicus is on the other side of this portal, he’ll not catch me napping this time!~ GOTO 375
+!InParty("Imoen2")~ THEN REPLY ~Iï¿½m as ready as Iï¿½ll ever be and I swear, if Irenicus is on the other side of this portal, heï¿½ll not catch me napping this time!~ GOTO 375
  IF ~!InParty("Imoen")
 !InParty("Imoen2")
-InParty("Dar")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~DARJ~ 86
+InParty("Dar")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~DARJ~ 86
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ205
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ NEJ205
 END
 
 IF ~~ THEN BEGIN 371
  SAY ~I think he is wise enough to know that you, Imoen, would have any ordinary door, lock picked and opened in a flash... thus allowing his birds to fly the coop.~
- IF ~InParty("Dar")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~DARJ~ 86
+ IF ~InParty("Dar")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~DARJ~ 86
  IF ~!InParty("Dar")
-InParty("Imoen")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOENJ~ NEJ206
+InParty("Imoen")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOENJ~ NEJ206
  IF ~!InParty("Dar")
-InParty("Imoen2")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOEN2J~ NEJ206
- IF ~InParty("Imoen")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal can’t be any more menacing than the demon we vanquished.~ EXTERN ~IMOENJ~ NEJ209
- IF ~InParty("Imoen2")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal can’t be any more menacing than the demon we vanquished.~ EXTERN ~IMOEN2J~ NEJ209
- IF ~InParty("Imoen")~ THEN REPLY ~I’m as ready as I’ll ever be and I swear, if Irenicus is on the other side of this portal, he’ll not catch me napping this time!~ EXTERN ~IMOENJ~ NEJ212
- IF ~InParty("Imoen2")~ THEN REPLY ~I’m as ready as I’ll ever be and I swear, if Irenicus is on the other side of this portal, he’ll not catch me napping this time!~ EXTERN ~IMOEN2J~ NEJ212
+InParty("Imoen2")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOEN2J~ NEJ206
+ IF ~InParty("Imoen")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal canï¿½t be any more menacing than the demon we vanquished.~ EXTERN ~IMOENJ~ NEJ209
+ IF ~InParty("Imoen2")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal canï¿½t be any more menacing than the demon we vanquished.~ EXTERN ~IMOEN2J~ NEJ209
+ IF ~InParty("Imoen")~ THEN REPLY ~Iï¿½m as ready as Iï¿½ll ever be and I swear, if Irenicus is on the other side of this portal, heï¿½ll not catch me napping this time!~ EXTERN ~IMOENJ~ NEJ212
+ IF ~InParty("Imoen2")~ THEN REPLY ~Iï¿½m as ready as Iï¿½ll ever be and I swear, if Irenicus is on the other side of this portal, heï¿½ll not catch me napping this time!~ EXTERN ~IMOEN2J~ NEJ212
 IF ~!InParty("Dar")
 InParty("Imoen")
-!InParty("Sharteel")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOENJ~ NEJ206fix
+!InParty("Sharteel")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOENJ~ NEJ206fix
  IF ~!InParty("Dar")
 InParty("Imoen2")
-!InParty("Sharteel")~ THEN REPLY ~I’m all for not being around when Irenicus returns. He’s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOEN2J~ NEJ206fix
+!InParty("Sharteel")~ THEN REPLY ~Iï¿½m all for not being around when Irenicus returns. Heï¿½s as sure as hell missed us by now and will be one angry wizard.~ EXTERN ~IMOEN2J~ NEJ206fix
  IF ~InParty("Imoen")
-!InParty("Sharteel")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal can’t be any more menacing than the demon we vanquished.~ EXTERN ~IMOENJ~ NEJ209fix
+!InParty("Sharteel")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal canï¿½t be any more menacing than the demon we vanquished.~ EXTERN ~IMOENJ~ NEJ209fix
  IF ~InParty("Imoen2")
-!InParty("Sharteel")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal can’t be any more menacing than the demon we vanquished.~ EXTERN ~IMOEN2J~ NEJ209fix
+!InParty("Sharteel")~ THEN REPLY ~Then what are we waiting for... whatever is on the other side of this portal canï¿½t be any more menacing than the demon we vanquished.~ EXTERN ~IMOEN2J~ NEJ209fix
  IF ~InParty("Imoen")
-!InParty("Sharteel")~ THEN REPLY ~I’m as ready as I’ll ever be and I swear, if Irenicus is on the other side of this portal, he’ll not catch me napping this time!~ EXTERN ~IMOENJ~ NEJ212fix
+!InParty("Sharteel")~ THEN REPLY ~Iï¿½m as ready as Iï¿½ll ever be and I swear, if Irenicus is on the other side of this portal, heï¿½ll not catch me napping this time!~ EXTERN ~IMOENJ~ NEJ212fix
  IF ~InParty("Imoen2")
-!InParty("Sharteel")~ THEN REPLY ~I’m as ready as I’ll ever be and I swear, if Irenicus is on the other side of this portal, he’ll not catch me napping this time!~ EXTERN ~IMOEN2J~ NEJ212fix
+!InParty("Sharteel")~ THEN REPLY ~Iï¿½m as ready as Iï¿½ll ever be and I swear, if Irenicus is on the other side of this portal, heï¿½ll not catch me napping this time!~ EXTERN ~IMOEN2J~ NEJ212fix
 END
 
 IF ~~ THEN BEGIN 372
- SAY ~(*He puts his arm around the terrified girl*)... Believe me, if I thought it‘s possible then I would teleport us in an instant. Unfortunately, I have no idea how far beneath the ground this dungeon is, I couldn’t guarantee getting us all out safely.~
+ SAY ~(*He puts his arm around the terrified girl*)... Believe me, if I thought itï¿½s possible then I would teleport us in an instant. Unfortunately, I have no idea how far beneath the ground this dungeon is, I couldnï¿½t guarantee getting us all out safely.~
  IF ~~ THEN GOTO 373
-END 
-  
+END
+
 IF ~~ THEN BEGIN 373
  SAY ~This wizard is also very clever and cunning, I feel that he has wards of a sort around the place to prevent our use of teleportation. It would be too great a risk for me to attempt to teleport us past them...~
  IF ~~ THEN GOTO 374
-END  
+END
 
 IF ~~ THEN BEGIN 374
  SAY ~But come, take heart Imoen, maybe these last couple of steps are all that you need take to find your freedom, and to feel the warmth of your sun on your face again.~
  IF ~InParty("Imoen")~ THEN REPLY ~Hrothgar is right Imoen. We have already explored the whole of this area and we found only the two portals. If we hope to flee this place then this is the only option open to us.~ EXTERN ~IMOENJ~ NEJ208
- IF ~InParty("Imoen")~ THEN REPLY ~In our haste to leave we didn’t finish exploring this area, maybe we missed something Imoen... maybe there are hidden exits that Irenicus has forgotten about in his preference for portals. Perhaps a little further exploration wouldn’t go amiss.~ EXTERN ~IMOENJ~ NEJ208
- IF ~InParty("Imoen")~ THEN REPLY ~This is not the time to be blubbering Imoen, Irenicus may return at any moment. So, if you want your freedom, you’ll shut up and do as I say.... got it?~ EXTERN ~IMOENJ~ NEJ208
+ IF ~InParty("Imoen")~ THEN REPLY ~In our haste to leave we didnï¿½t finish exploring this area, maybe we missed something Imoen... maybe there are hidden exits that Irenicus has forgotten about in his preference for portals. Perhaps a little further exploration wouldnï¿½t go amiss.~ EXTERN ~IMOENJ~ NEJ208
+ IF ~InParty("Imoen")~ THEN REPLY ~This is not the time to be blubbering Imoen, Irenicus may return at any moment. So, if you want your freedom, youï¿½ll shut up and do as I say.... got it?~ EXTERN ~IMOENJ~ NEJ208
  IF ~InParty("Imoen2")~ THEN REPLY ~Hrothgar is right Imoen. We have already explored the whole of this area and we found only the two portals. If we hope to flee this place then this is the only option open to us.~ EXTERN ~IMOEN2J~ NEJ208
- IF ~InParty("Imoen2")~ THEN REPLY ~In our haste to leave we didn’t finish exploring this area, maybe we missed something Imoen... maybe there are hidden exits that Irenicus has forgotten about in his preference for portals. Perhaps a little further exploration wouldn’t go amiss.~ EXTERN ~IMOEN2J~ NEJ208
- IF ~InParty("Imoen2")~ THEN REPLY ~This is not the time to be blubbering Imoen, Irenicus may return at any moment. So, if you want your freedom, you’ll shut up and do as I say.... got it?~ EXTERN ~IMOEN2J~ NEJ208 
-END 
- 
+ IF ~InParty("Imoen2")~ THEN REPLY ~In our haste to leave we didnï¿½t finish exploring this area, maybe we missed something Imoen... maybe there are hidden exits that Irenicus has forgotten about in his preference for portals. Perhaps a little further exploration wouldnï¿½t go amiss.~ EXTERN ~IMOEN2J~ NEJ208
+ IF ~InParty("Imoen2")~ THEN REPLY ~This is not the time to be blubbering Imoen, Irenicus may return at any moment. So, if you want your freedom, youï¿½ll shut up and do as I say.... got it?~ EXTERN ~IMOEN2J~ NEJ208
+END
+
 IF ~~ THEN BEGIN 375
  SAY ~If this Irenicus uses these portals himself, then maybe we should explore this area further before committing ourselves. Perhaps we can find another means of escape that will lessen the risk of us running into him.~
- IF ~~ THEN REPLY ~I explored this area thoroughly before I took the decision to enter the portal. I found two portals and then... only the one which transported me to Easthaven was accessible at the time. As I see it, we have no other choice left to us, but to take this one.~ GOTO 376 
- IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldn’t go amiss.~ GOTO 376
- IF ~~ THEN REPLY ~I didn’t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ GOTO 376
+ IF ~~ THEN REPLY ~I explored this area thoroughly before I took the decision to enter the portal. I found two portals and then... only the one which transported me to Easthaven was accessible at the time. As I see it, we have no other choice left to us, but to take this one.~ GOTO 376
+ IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldnï¿½t go amiss.~ GOTO 376
+ IF ~~ THEN REPLY ~I didnï¿½t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ GOTO 376
 END
 
 IF ~~ THEN BEGIN 376
@@ -3187,24 +3187,24 @@ IF ~~ THEN BEGIN 377
  SAY ~I am sure that if there were another exit, our young friends here would not have taken the portal that stranded them in Easthaven. I am sorry Dar but I suspect this portal is our only escape.~
  IF ~~ THEN REPLY ~Not again Dar! Look, I am going through this portal with or without you... you decide!~ EXTERN ~DARJ~ 87
  IF ~~ THEN REPLY ~I explored this area thoroughly before I took the decision to enter the portal. I found two portals and then... only the one which transported me to Easthaven was accessible at the time. As I see it, we have no other choice left to us, but to take this one.~ EXTERN ~DARJ~ 87
- IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldn’t go amiss.~ EXTERN ~DARJ~ 87
- IF ~~ THEN REPLY ~I didn’t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ EXTERN ~DARJ~ 87
+ IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldnï¿½t go amiss.~ EXTERN ~DARJ~ 87
+ IF ~~ THEN REPLY ~I didnï¿½t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ EXTERN ~DARJ~ 87
 END
 
 IF ~~ THEN BEGIN 378
  SAY ~I agree my friend. I can not imagine that there would be two such abominations loose in our world, but there is still the problem of this Irenicus.~
  IF ~~ THEN GOTO 379
 END
- 
+
 IF ~~ THEN BEGIN 379
  SAY ~If he uses these portals himself then maybe we should explore this area further before committing ourselves. Perhaps we can find another means of escape that will lessen the risk of us running into him.~
- IF ~~ THEN REPLY ~I explored this area thoroughly before I took the decision to enter the portal. I found two portals and then... only the one which transported me to Easthaven was accessible at the time. As I see it, we have no other choice left to us, but to take this one.~ GOTO 376 
- IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldn’t go amiss.~ GOTO 376
- IF ~~ THEN REPLY ~I didn’t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ GOTO 376
+ IF ~~ THEN REPLY ~I explored this area thoroughly before I took the decision to enter the portal. I found two portals and then... only the one which transported me to Easthaven was accessible at the time. As I see it, we have no other choice left to us, but to take this one.~ GOTO 376
+ IF ~~ THEN REPLY ~I admit, in my haste to secure my freedom, I did leave areas unexplored... I suppose I could have missed something. Maybe a little further exploration wouldnï¿½t go amiss.~ GOTO 376
+ IF ~~ THEN REPLY ~I didnï¿½t just stumble blindly through the first portal I found! I searched this area completely before making that choice... there is no other way! Now I suggest we stop talking and start walking!~ GOTO 376
 END
 
 IF ~~ THEN BEGIN 380
- SAY ~Yet more intrigue designed to embroil us in the affaires of this city! We really don’t have time for these intrigues <CHARNAME>, there are far more important issues that need our attention right now.~
+ SAY ~Yet more intrigue designed to embroil us in the affaires of this city! We really donï¿½t have time for these intrigues <CHARNAME>, there are far more important issues that need our attention right now.~
  IF ~True()~ THEN EXTERN ~HOODMAN~ 5
  IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 31
@@ -3213,14 +3213,14 @@ IF ~~ THEN BEGIN 380
 END
 
 IF ~~ THEN BEGIN 381
- SAY ~No matter what we may think of our visitor’s cryptic message, we are no closer to speaking with Leina’s father. Our path is barred, so I suggest we report back to Samuel and explain the circumstances as they stand... we can do no more for now.~
+ SAY ~No matter what we may think of our visitorï¿½s cryptic message, we are no closer to speaking with Leinaï¿½s father. Our path is barred, so I suggest we report back to Samuel and explain the circumstances as they stand... we can do no more for now.~
  IF ~~ THEN EXTERN ~HOODMAN~ 5
 END
 
 IF ~~ THEN BEGIN 382
  SAY ~We all miss Leina, she was so full of life and brought so much joy with her love of music. All that she ever wanted to do was to show the rest of the world the joy that music could bring. If we can do one thing for her memory and that is to ensure that her music continues.~
  IF ~~ THEN GOTO 383
-END 
+END
 
 IF ~~ THEN BEGIN 383
  SAY ~Perhaps a book with all the songs and melodies that she ever gave birth to, as she likened the coming about of a new song or melody... written for all to read that they may experience the joy that her music can bring.~
@@ -3233,13 +3233,13 @@ IF ~~ THEN BEGIN 384
  IF ~InParty("Leina")
 !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 125
  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ167 
+!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ167
  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 33 
+!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 33
 END
 
 IF ~~ THEN BEGIN 385
-  SAY ~Be careful <CHARNAME>. If you mention Ezekiel’s involvement you can be sure he will mention ours.~
+  SAY ~Be careful <CHARNAME>. If you mention Ezekielï¿½s involvement you can be sure he will mention ours.~
   IF ~~ THEN EXTERN ~KHARESSE~ 2
 END
 
@@ -3260,21 +3260,21 @@ END
 IF ~~ THEN BEGIN 388
   SAY ~I am wondering how long we have until your lie is discovered <CHARNAME>? I could see the determination in her eyes.~
   IF ~~ THEN REPLY ~Relax Hrothgar. Sounds like Ezekiel is no stranger to trouble. She will expect him to try and lie his way out of it.~ GOTO 390
-  IF ~~ THEN REPLY ~You heard what she said, *banished this time*. Ezekiel has obviously been up to other dirty tricks, she’ll not believe anything he says.~ GOTO 390
+  IF ~~ THEN REPLY ~You heard what she said, *banished this time*. Ezekiel has obviously been up to other dirty tricks, sheï¿½ll not believe anything he says.~ GOTO 390
   IF ~~ THEN REPLY ~Sounds like this is not the first time those two have crossed paths. She is out to rid the academy of him and will regard anything he says as a ploy to shift blame.~ GOTO 390
   IF ~~ THEN REPLY ~Uh... excuse me Hrothgar, but I do not remember going into the tomb alone?~ GOTO 391
 END
 
 IF ~~ THEN BEGIN 389
-  SAY ~It’s just a way of saying that we do not want mages chasing behind us Minsc. Is that not so <CHARNAME>?~
+  SAY ~Itï¿½s just a way of saying that we do not want mages chasing behind us Minsc. Is that not so <CHARNAME>?~
   IF ~~ THEN REPLY ~Relax Hrothgar. Sounds like Ezekiel is no stranger to trouble. She will expect him to try and lie his way out of it.~ GOTO 390
-  IF ~~ THEN REPLY ~You heard what she said, *banished this time*. Ezekiel has obviously been up to other dirty tricks, she’ll not believe anything he says.~ GOTO 390
+  IF ~~ THEN REPLY ~You heard what she said, *banished this time*. Ezekiel has obviously been up to other dirty tricks, sheï¿½ll not believe anything he says.~ GOTO 390
   IF ~~ THEN REPLY ~Sounds like this is not the first time those two have crossed paths. She is out to rid the academy of him and will regard anything he says as a ploy to shift blame.~ GOTO 390
   IF ~~ THEN REPLY ~Uh... excuse me Hrothgar, but I do not remember going into the tomb alone?~ GOTO 391
 END
 
 IF ~~ THEN BEGIN 390
-  SAY ~All the same I wish you had not said anything, but it is too late now. Let us hope you are right and Ezekiel’s reputation will prevent us having to answer for your part in this sordid business.~
+  SAY ~All the same I wish you had not said anything, but it is too late now. Let us hope you are right and Ezekielï¿½s reputation will prevent us having to answer for your part in this sordid business.~
   IF ~~ THEN GOTO 392
 END
 
@@ -3292,9 +3292,9 @@ END
 
 IF WEIGHT #-19 ~Global("VP_Necro_Test","GLOBAL",10)~ THEN BEGIN 393
   SAY ~An unnecessary death! A death brought about by your insistence on interfering with academy affairs <CHARNAME>! We should be getting on with the real reason for our being here and not recklessly risking our necks as well as the mission.~
-  IF ~~ THEN REPLY ~Wow, what’s with the heavy words Hrothgar? We are still in one piece aren’t we?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 394
+  IF ~~ THEN REPLY ~Wow, whatï¿½s with the heavy words Hrothgar? We are still in one piece arenï¿½t we?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 394
   IF ~~ THEN REPLY ~We have to appear to be a part of this academy Hrothgar and I know no better way then getting involved in its affairs.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 395
-  IF ~~ THEN REPLY ~If you have a better way of finding what ever it is you are looking for then I am open to suggestions. If you don’t then we continue to do it my way!~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 395
+  IF ~~ THEN REPLY ~If you have a better way of finding what ever it is you are looking for then I am open to suggestions. If you donï¿½t then we continue to do it my way!~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 395
   IF ~~ THEN REPLY ~I have put my own responsibilities, namely the rescue of Imoen, and my search for Irenicus, to one side to help you in this search Hrothgar. The least you can do is cut me some slack.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",11)~ GOTO 396
 END
 
@@ -3311,7 +3311,7 @@ Dead("Jaheira")
 !InParty("Jaheira")
 OR(2)
 Dead("Dar")
-!InParty("Dar")~ THEN REPLY ~If you don’t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
+!InParty("Dar")~ THEN REPLY ~If you donï¿½t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
   IF ~OR(2)
 Dead("Jaheira")
 !InParty("Jaheira")
@@ -3325,7 +3325,7 @@ InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ638
 END
 
 IF ~~ THEN BEGIN 395
-  SAY ~There’s getting involved and there’s getting involved. I am not against discreet interaction with the mages here, but we are vulnerable. If we should accidentally alert the academy to our presence our chances of getting out of here with our lives is zero. All I am saying is we should be more circumspect than we have been up to now if we are to survive this place.~
+  SAY ~Thereï¿½s getting involved and thereï¿½s getting involved. I am not against discreet interaction with the mages here, but we are vulnerable. If we should accidentally alert the academy to our presence our chances of getting out of here with our lives is zero. All I am saying is we should be more circumspect than we have been up to now if we are to survive this place.~
   IF ~OR(2)
 Dead("Jaheira")
 !InParty("Jaheira")
@@ -3337,7 +3337,7 @@ Dead("Jaheira")
 !InParty("Jaheira")
 OR(2)
 Dead("Dar")
-!InParty("Dar")~ THEN REPLY ~If you don’t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
+!InParty("Dar")~ THEN REPLY ~If you donï¿½t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
   IF ~OR(2)
 Dead("Jaheira")
 !InParty("Jaheira")
@@ -3351,7 +3351,7 @@ InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ638
 END
 
 IF ~~ THEN BEGIN 396
-  SAY ~And I am grateful that you have enough trust in me to put Imoen’s welfare second to my request. However, we must be more circumspect than we have been up to now if we are to survive this place.~
+  SAY ~And I am grateful that you have enough trust in me to put Imoenï¿½s welfare second to my request. However, we must be more circumspect than we have been up to now if we are to survive this place.~
   IF ~OR(2)
 Dead("Jaheira")
 !InParty("Jaheira")
@@ -3363,7 +3363,7 @@ Dead("Jaheira")
 !InParty("Jaheira")
 OR(2)
 Dead("Dar")
-!InParty("Dar")~ THEN REPLY ~If you don’t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
+!InParty("Dar")~ THEN REPLY ~If you donï¿½t like the way I am going about this, you can always take off by yourself and do your own search Hrothgar.~ GOTO 399
   IF ~OR(2)
 Dead("Jaheira")
 !InParty("Jaheira")
@@ -3384,7 +3384,7 @@ END
 IF ~~ THEN BEGIN 398
   SAY ~Jaheira is right <CHARNAME> we are attracting attention stood here. Come, let us put our differences aside and leave this area quickly... before someone comes upon us and sees fit to summon a tutor... or two!~
   IF ~~ THEN DO ~SetGlobalTimer("VP_Reveal_Spies_B","GLOBAL",ONE_DAY)~ EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 399
   SAY ~Look about us <CHARNAME>, we are attracting too much attention stood here with a dead mage at our feet. For the safety of the group we should put our differences aside and get out of this area quickly... before someone comes upon us and sees fit to summon a tutor... or two!~
@@ -3400,7 +3400,7 @@ IF ~~ THEN BEGIN 401
  SAY ~We can do no more for the dead, we must worry for ourselves now.~
  IF ~~ THEN REPLY ~Then I suggest we say a quick prayer for those poor souls buried behind and make all haste to Kuldahar.~ GOTO 402
  IF ~~ THEN REPLY ~If our only portal home was in Easthaven, then I guess that avalanche has sealed our fate in more ways than one. We have no choice now but to go on to Kuldahar.~ GOTO 266
- IF ~~ THEN REPLY ~If this is that wizard’s doing to make sure we never return to Easthaven, I swear I will learn of any predecessors of his living in this time and hunt down and kill every last one of them! No matter how far I have to walk to find them!~ GOTO 267
+ IF ~~ THEN REPLY ~If this is that wizardï¿½s doing to make sure we never return to Easthaven, I swear I will learn of any predecessors of his living in this time and hunt down and kill every last one of them! No matter how far I have to walk to find them!~ GOTO 267
 END
 
 IF ~~ THEN BEGIN 402
@@ -3412,12 +3412,12 @@ IF ~~ THEN BEGIN 403
  SAY ~Yours is the decision to make <CHARNAME>.~
  IF ~~ THEN REPLY ~I hear your words Hrothgar and I know Arundel was your friend. I also understand that you should want to do right by him, but I have friends of my own here, and I must do what I think is right by them.~ GOTO 163 //-->2
  IF ~~ THEN REPLY ~If this portal takes us back to the future, my time as you put it, then these events will have occurred and passed. I see no sense in us remaining here to repeat them.~ GOTO 164 //-->3
- IF ~~ THEN REPLY ~If we travel to this Severed Hand with you Hrothgar, then we all risk losing this portal and possibly our only chance to return home. That is some risk you are asking us to take when we don’t even know how to reach this place.~ GOTO 165 //-->4
+ IF ~~ THEN REPLY ~If we travel to this Severed Hand with you Hrothgar, then we all risk losing this portal and possibly our only chance to return home. That is some risk you are asking us to take when we donï¿½t even know how to reach this place.~ GOTO 165 //-->4
  IF ~~ THEN REPLY ~The problems of this time are not mine Hrothgar, in my time they have already been played out in the past. However the future, my future holds many questions of my own that I need to find answers to. I am sorry, but I am taking the portal.~ GOTO 166 //-->5
 END
 
 IF ~~ THEN BEGIN 404
- SAY ~No need to worry, Shar-Teel. Let’s go.~
+ SAY ~No need to worry, Shar-Teel. Letï¿½s go.~
  IF ~~ THEN DO ~SetGlobal("VP_Hrothgar_Tilorn","GLOBAL",0)
 SetGlobal("VP_Ulcast_Journal","GLOBAL",1)
 ClearAllActions()
@@ -3438,19 +3438,19 @@ END
 IF ~~ THEN BEGIN 407
  SAY ~No we are not, nor were we ever going to blow up the academy Taffic. Melora is just being Melora, and expressing how much delight she would take in bringing Halruaa and its mages down permanently.~
  IF ~~ THEN EXTERN ~TAFFICJ~ 32
-END 
- 
+END
+
 IF ~~ THEN BEGIN shararu1
- SAY ~You’ve made your opinion of men very clear Shar-Teel... in fact you’ve reminded us so many times that I am beginning to wonder whether it’s us or yourself you are trying to convince.~
+ SAY ~Youï¿½ve made your opinion of men very clear Shar-Teel... in fact youï¿½ve reminded us so many times that I am beginning to wonder whether itï¿½s us or yourself you are trying to convince.~
  IF ~~ THEN EXTERN ~SHARTJ~ frellaru2
 END
 
 IF ~~ THEN BEGIN shararu2
- SAY ~(*Sternly*) Listen here my girl, you knew the nature of this mission before we left Easthaven! If you were not happy to follow with the rest of the group, then you should have stayed behind. I don’t recall anyone forcing this quest upon you.~
+ SAY ~(*Sternly*) Listen here my girl, you knew the nature of this mission before we left Easthaven! If you were not happy to follow with the rest of the group, then you should have stayed behind. I donï¿½t recall anyone forcing this quest upon you.~
 =
 ~Now if it is your intention to remain with the group, then please keep your disparaging remarks to yourself! No one here, least of all me, wants to listen to you harping on continuously.~
-= 
-~We all need to watch out for each other and quite frankly, your attitude is such that I’m not entirely sure that I want you watching my back Shar-Teel!~
+=
+~We all need to watch out for each other and quite frankly, your attitude is such that Iï¿½m not entirely sure that I want you watching my back Shar-Teel!~
  IF ~~ THEN EXTERN ~SHARTJ~ frellaru3
 END
 
@@ -3472,14 +3472,14 @@ IF ~~ THEN BEGIN stardead
 END
 
 IF ~~ THEN BEGIN shargrp
- SAY ~(*Sensing the group’s unease and fearing that things are about to get out of hand he interrupts*)~
+ SAY ~(*Sensing the groupï¿½s unease and fearing that things are about to get out of hand he interrupts*)~
 =
-~Enough! Shar-Teel, I see no point to this tirade other than to cause devilry so if you’ve nothing to say relevant to the situation, then hold that sharp tongue of yours and allow <CHARNAME> to make the decision!~
+~Enough! Shar-Teel, I see no point to this tirade other than to cause devilry so if youï¿½ve nothing to say relevant to the situation, then hold that sharp tongue of yours and allow <CHARNAME> to make the decision!~
  IF ~True()~ THEN GOTO 403
 END
 
 IF ~~ THEN BEGIN driadsint_hrt1
- SAY ~Yes, and we are very grateful for all this thought Minsc. I am sure Melora meant to say so... didn’t you Melora?~
+ SAY ~Yes, and we are very grateful for all this thought Minsc. I am sure Melora meant to say so... didnï¿½t you Melora?~
  IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel3
 END
 
@@ -3492,8 +3492,8 @@ IF WEIGHT #-21 ~Global("VP_End_IWD","GLOBAL",1)
 Global("VP_Final_Battle","GLOBAL",2)~ THEN BEGIN endtalk1
   SAY ~(*Wipping the sweat from his forehead*) I'm greatful, my friend, for all you have done for the people of Icewind Dale.~
   IF ~~ THEN REPLY ~Do you understand, Hrothgar, that today and now I have changed my history, the history of the whole world. I even don't know if I ever come back to my own time and to my world, the very same world I have left, and you're just saying "you're grateful".~ DO ~SetGlobal("VP_End_IWD","GLOBAL",2)~ GOTO endtalk2
-END  
-  
+END
+
 IF ~~ THEN BEGIN endtalk2
   SAY ~And what am I supposed to say? You saved the people of my town, of all Ten Towns in Icewind Dale and maybe of all Faerun. You saved my life. Of course, I am grateful.~
 =
@@ -3504,7 +3504,7 @@ IF ~~ THEN BEGIN endtalk2
 END
 
 IF ~~ THEN BEGIN endtalk3
-  SAY ~I cannot answer this question now, but you'll know the reason for being a chosen one very soon.~ 
+  SAY ~I cannot answer this question now, but you'll know the reason for being a chosen one very soon.~
 =
 ~I have been recruited into this particular society in order to make a specific change that would bring this society itself into being. Now my duties are over here, and I have to report to my brethren.~
 =
@@ -3530,44 +3530,44 @@ Global("VP_In_IWD_Part2","GLOBAL",1)
   SAY ~(*Looking around*) Good, Kuldahar still stands. We are in time and also in luck, the portal appears to have returned us not far from the date we left. The old enemy, or whatever name this evil goes by, will not have had time to gain the advantage.~
     IF ~!InParty("Imoen2")~ THEN DO ~SetGlobal("VP_TeleportDialog","GLOBAL",3)~ GOTO kuldback
   	IF ~InParty("Imoen2")~ THEN DO ~SetGlobal("VP_TeleportDialog","GLOBAL",3)~ EXTERN ~IMOEN2J~ kuldback
-END 
+END
 
 IF ~~ THEN BEGIN kulback1
  SAY ~It was time for our return. You are safe as I promised <CHARNAME> you would be, and now <PRO_HESHE> is free to aid me in finishing that which we started, putting an end to the evil which invades my home.~
   	IF ~~ THEN EXTERN ~IMOEN2J~ kulback1
-END 
+END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~Imoen please, I am not so insensitive that I don’t know how distressing the last weeks have been for you, for both you and <CHARNAME> but trust me, if I didn’t know that all will be well in time, then I would not have presumed to return so soon. As it is...~
+ SAY ~Imoen please, I am not so insensitive that I donï¿½t know how distressing the last weeks have been for you, for both you and <CHARNAME> but trust me, if I didnï¿½t know that all will be well in time, then I would not have presumed to return so soon. As it is...~
   	IF ~~ THEN EXTERN ~IMOEN2J~ kulback2
-END 
+END
 
 IF ~~ THEN BEGIN kulback3
- SAY ~(*Speaking sharply*) You’re an intelligent young woman, you don’t need me to point out that this time has nothing to do with yours or <CHARNAME>’s destiny.~
+ SAY ~(*Speaking sharply*) Youï¿½re an intelligent young woman, you donï¿½t need me to point out that this time has nothing to do with yours or <CHARNAME>ï¿½s destiny.~
 =
-~What lies ahead for you both does so in your own time, so the sooner we set about ridding my time of this evil, the sooner you’ll return to face whatever your future holds for you!~
+~What lies ahead for you both does so in your own time, so the sooner we set about ridding my time of this evil, the sooner youï¿½ll return to face whatever your future holds for you!~
   	IF ~~ THEN EXTERN ~IMOEN2J~ kulback3
-END 
+END
 
 IF ~~ THEN BEGIN kulback4
  SAY ~The portal is closed, Imoen, as you see. I'm really sorry, portals are accessible only for a short period of time.~
 =
  ~But as I said before, if you lose one portal, another will be found and you will see your time again.~
   	IF ~~ THEN GOTO kuldback
-END 
+END
 
 IF ~~ THEN BEGIN kuldback
- SAY ~We should make haste to Dorn’s Deep. Travelling to Dorn's Deep will in no way affect your future, where as not travelling there could well affect the lives of those who, are at present, living in your future time.~
+ SAY ~We should make haste to Dornï¿½s Deep. Travelling to Dorn's Deep will in no way affect your future, where as not travelling there could well affect the lives of those who, are at present, living in your future time.~
  	IF ~~ THEN REPLY ~Hold on one second here, I thought it was agreed, you help me take care of Irenicus and then we return?~ GOTO kulback5
- 	IF ~~ THEN REPLY ~Returns us now Hrothgar, or by the nine hells you’ll burn along with Irenicus and that demon he calls sister in the deepest pit of the abyss!~ GOTO kulback5
- 	IF ~~ THEN REPLY ~Curses on you Hrothgar! You’d better have a darn good reason for whisking me back here just when I had Irenicus in my sights!~ GOTO kulback5
- 	IF ~~ THEN REPLY ~What’s this Hrothgar? You ask me to trust you, to aid you, and then you go back on your promise to chase down Irenicus with me?~ GOTO kulback5
+ 	IF ~~ THEN REPLY ~Returns us now Hrothgar, or by the nine hells youï¿½ll burn along with Irenicus and that demon he calls sister in the deepest pit of the abyss!~ GOTO kulback5
+ 	IF ~~ THEN REPLY ~Curses on you Hrothgar! Youï¿½d better have a darn good reason for whisking me back here just when I had Irenicus in my sights!~ GOTO kulback5
+ 	IF ~~ THEN REPLY ~Whatï¿½s this Hrothgar? You ask me to trust you, to aid you, and then you go back on your promise to chase down Irenicus with me?~ GOTO kulback5
 END
 
 IF ~~ THEN BEGIN kulback5
  SAY ~Once again I find myself having to apologise for my hasty move. I am sorry my friend but I could feel time closing in and running out for my people.~
  =
- ~I sensed the flux of time as it pulsed from within the portal and knew I had to act quickly, act before the moment was lost and before irreparable harm was done to your future and to the future of my people.~ 
+ ~I sensed the flux of time as it pulsed from within the portal and knew I had to act quickly, act before the moment was lost and before irreparable harm was done to your future and to the future of my people.~
 =
 ~I was left with little choice other than to attune the portal to bring us here. I am sorry but time, as is always within these portals, was moving swiftly, I had but a few seconds to make the adjustments before we stepped through.~
  IF ~True()~ THEN GOTO kulback6
@@ -3620,7 +3620,7 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback6
- SAY ~You must all understand, my stay in the future was never meant to be permanent, although I had hoped it would be long enough to lend my hand to chasing down Irenicus and restoring that which he has stolen.~ 
+ SAY ~You must all understand, my stay in the future was never meant to be permanent, although I had hoped it would be long enough to lend my hand to chasing down Irenicus and restoring that which he has stolen.~
 =
 ~Unfortunately it is true what is said about time and tide waiting for no man.~
 =
@@ -3630,8 +3630,8 @@ IF ~~ THEN BEGIN kulback6
 =
 ~(*He takes an object from his pocket and gives it to you*) As long it is in your possession, this artifact will allow you to travel freely between our two times.~
  	IF ~~ THEN REPLY ~I am thinking that by returning us here you still need my aid. If that is so, then I need to hear more than "trust me" this time.~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
- 	IF ~~ THEN REPLY ~You hand me an artifact capable of teleporting me back and forth through time and that’s it, still no explanation as to what’s really going on here?~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
- 	IF ~~ THEN REPLY ~I am sorry, but unless you can explain what it is you are really doing, hurling us back and forth through time, I am returning for Irenicus and you’re on your own from here on!~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
+ 	IF ~~ THEN REPLY ~You hand me an artifact capable of teleporting me back and forth through time and thatï¿½s it, still no explanation as to whatï¿½s really going on here?~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
+ 	IF ~~ THEN REPLY ~I am sorry, but unless you can explain what it is you are really doing, hurling us back and forth through time, I am returning for Irenicus and youï¿½re on your own from here on!~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
  	IF ~~ THEN REPLY ~What do you mean "time was threatening to loosen itself from your control?"~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback9
  	IF ~~ THEN REPLY ~No more Hrothgar! My own salvation is now my priority, not the fate of strangers who live only in the annals of history. I am returning before it is too late, before I no longer have a life to return to. This is farewell.~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback7
  	IF ~~ THEN REPLY ~I am sorry Hrothgar, if it were but my own salvation at stake here, I would willingly take up arms and stand beside you. However, another innocent has suffered due to her association with me. I regret,  I must return and right the dreadful wrong Irenicus has wrought upon both Imoen and myself. Farewell my friend and good luck with your quest.~ DO ~GiveItemCreate("HBoxTT",Player1,0,0,0)~ GOTO kulback7
@@ -3648,11 +3648,11 @@ END
 IF ~~ THEN BEGIN kulback8
  SAY ~(*As he looks into your eyes, you in turn, see disappointment reflected in his*) Then there is no more to be said.~
 =
-~I will travel to Dorn’s Deep alone and pray that the gods grant me strength to do what must be done, or at least that I may find companions willing to take up the burden along the way.~
+~I will travel to Dornï¿½s Deep alone and pray that the gods grant me strength to do what must be done, or at least that I may find companions willing to take up the burden along the way.~
 =
 ~As for the fate of the realms, well that may yet be decided should we ever cross paths again, perhaps another time, another future.~
 =
-~Keep the artifact <CHARNAME>. I am not sure how long our two time lines will remain aligned, but whilst they are and should you return, look for me at Dorn’s Deep.~
+~Keep the artifact <CHARNAME>. I am not sure how long our two time lines will remain aligned, but whilst they are and should you return, look for me at Dornï¿½s Deep.~
 =
 ~Seek out Larrel in The Severed Hand, he will guide you to the dwarven hold. Farewell and good luck in your future.~
   	IF ~True()~ THEN DO ~LeaveParty()
@@ -3662,7 +3662,7 @@ EscapeArea()~ EXIT
 InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~TAFFICJ~ hrotleft
   	IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ hrotleft
-END 
+END
 
 IF ~~ THEN BEGIN kulback9
  SAY ~Yes, your questions are deserving of answers. You have been patient and now I will tell you some of why I have remained silent for so long.~
@@ -3679,42 +3679,42 @@ IF ~~ THEN BEGIN kulback9
  	IF ~~ THEN REPLY ~Woah, one minute here Hrothgar! 'YOU' would lose control over time! Are you saying you are able to control time, that you could have prevented all that Irenicus has put Imoen and myself through?~ GOTO kuback10
  	IF ~~ THEN REPLY ~Uh, you are losing me again Hrothgar. How is it possible for a man to control a sequence of events in time?~ GOTO kuback11
  	IF ~~ THEN REPLY ~Tell me Hrothgar, apart from yourself and Tilorn, how many others are there like you, going around altering time to suit yourselves?~ GOTO kuback11
- 	IF ~~ THEN REPLY ~Who are you Hrothgar, and don’t give me the mayor of Easthaven drivel? You’re not simply mayor of a little town on The Spine Of the World. I think it’s fair to assume somewhere along the way, a whole chunk of this legend got left out, or even mislaid, deliberately!~ GOTO kuback11
- 	IF ~~ THEN REPLY ~What are you Hrothgar, man, wizard, demon or something greater, because I’m as sure as hell that no ordinary man goes around professing to be in control of time?~ GOTO kuback11
+ 	IF ~~ THEN REPLY ~Who are you Hrothgar, and donï¿½t give me the mayor of Easthaven drivel? Youï¿½re not simply mayor of a little town on The Spine Of the World. I think itï¿½s fair to assume somewhere along the way, a whole chunk of this legend got left out, or even mislaid, deliberately!~ GOTO kuback11
+ 	IF ~~ THEN REPLY ~What are you Hrothgar, man, wizard, demon or something greater, because Iï¿½m as sure as hell that no ordinary man goes around professing to be in control of time?~ GOTO kuback11
 END
 
 IF ~~ THEN BEGIN kuback10
  SAY ~I am sorry, your destiny is such that even I dare not intervene. A far higher order than mine has decreed that none shall interfere, more about that I can not... dare not say.~
 =
-~My order only acts when the balance between the times shift, threatening to give a permanent advantage to either good or evil, not to ease a person’s road through this journey we call life.~
+~My order only acts when the balance between the times shift, threatening to give a permanent advantage to either good or evil, not to ease a personï¿½s road through this journey we call life.~
 =
-~Whereas we agree it is necessary to tolerate the presence of both good and evil in the world, it is also necessary that the balance between them be maintained.~ 
+~Whereas we agree it is necessary to tolerate the presence of both good and evil in the world, it is also necessary that the balance between them be maintained.~
 =
 ~It is true, there will always be the battle between the two and each in turn may gain advantage for a brief time, but if one or the other should gain a permanent hold then chaos will ensue.~
 =
-~To prevent this happening, it sometimes becomes necessary to travel to the past to correct an event in history when it’s outcome is discovered to be detrimental to this delicate balance in some future time.~
+~To prevent this happening, it sometimes becomes necessary to travel to the past to correct an event in history when itï¿½s outcome is discovered to be detrimental to this delicate balance in some future time.~
  	IF ~~ THEN REPLY ~What is this mysterious order that you mention and what does it have to do with these keys that you are so bent on finding?~ GOTO kuback12
- 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I don’t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
- 	IF ~~ THEN REPLY ~Yet more riddles and mystery! You’d have me believe you’re a member of some secret society of time travellers. If that is so, then how is it I’ve never met your like before?~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I donï¿½t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~Yet more riddles and mystery! Youï¿½d have me believe youï¿½re a member of some secret society of time travellers. If that is so, then how is it Iï¿½ve never met your like before?~ GOTO kuback12
  	IF ~~ THEN REPLY ~An order which goes around altering history, bah! This sounds like more fabrications to keep the truth from me and I am growing tired of them! I am done with them and with you. I am returning to my own future, or to whatever the future may hold for me. I bid you farewell Hrothgar of Easthaven, whoever you may be.~ GOTO kulback8
- 	IF ~~ THEN REPLY ~This mysterious order of yours didn’t help Ulcaster much did it?~ GOTO kuback15
+ 	IF ~~ THEN REPLY ~This mysterious order of yours didnï¿½t help Ulcaster much did it?~ GOTO kuback15
 END
 
 IF ~~ THEN BEGIN kuback11
- SAY ~Mine is an order that exists solely to watch and maintain the balance between the past, present and future. To do this we need to be able, to a certain extent, control time itself.~ 
+ SAY ~Mine is an order that exists solely to watch and maintain the balance between the past, present and future. To do this we need to be able, to a certain extent, control time itself.~
 =
 ~We are called into action when the balance between the times shift, threatening to give a permanent advantage to either good or evil.~
 =
-~Whereas we agree it is necessary to tolerate the presence of both good and evil in the world, it is also necessary that the balance between them be maintained.~ 
+~Whereas we agree it is necessary to tolerate the presence of both good and evil in the world, it is also necessary that the balance between them be maintained.~
 =
 ~It is true, there will always be the battle between the two and each in turn may gain advantage for a brief time, but if one or the other should gain a permanent hold then chaos will ensue.~
 =
-~To prevent this happening, it sometimes becomes necessary to travel to the past to correct an event in history when it’s outcome is discovered to be detrimental to this delicate balance in some future time.~
+~To prevent this happening, it sometimes becomes necessary to travel to the past to correct an event in history when itï¿½s outcome is discovered to be detrimental to this delicate balance in some future time.~
  	IF ~~ THEN REPLY ~What is this mysterious order that you mention and what does it have to do with these keys that you are so bent on finding?~ GOTO kuback12
- 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I don’t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
- 	IF ~~ THEN REPLY ~Yet more riddles and mystery! You’d have me believe you’re a member of some secret society of time travellers. If that is so, then how is it I’ve never met your like before?~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I donï¿½t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~Yet more riddles and mystery! Youï¿½d have me believe youï¿½re a member of some secret society of time travellers. If that is so, then how is it Iï¿½ve never met your like before?~ GOTO kuback12
  	IF ~~ THEN REPLY ~An order which goes around altering history, bah! This sounds like more fabrications to keep the truth from me and I am growing tired of them! I am done with them and with you. I am returning to my own future, or to whatever the future may hold for me. I bid you farewell Hrothgar of Easthaven, whoever you may be.~ GOTO kulback8
- 	IF ~~ THEN REPLY ~This mysterious order of yours didn’t help Ulcaster much did it?~ GOTO kuback15
+ 	IF ~~ THEN REPLY ~This mysterious order of yours didnï¿½t help Ulcaster much did it?~ GOTO kuback15
 END
 
 IF ~~ THEN BEGIN kuback12
@@ -3729,7 +3729,7 @@ IF ~~ THEN BEGIN kuback12
 END
 
 IF ~~ THEN BEGIN kuback13
- SAY ~It is not certain how we came by our name, but it is said that when the sun shines there is very little that can hide from her brilliance. However, when the moon shows herself the blackness of the night still hides much from a man’s sight.~ 
+ SAY ~It is not certain how we came by our name, but it is said that when the sun shines there is very little that can hide from her brilliance. However, when the moon shows herself the blackness of the night still hides much from a manï¿½s sight.~
 =
 ~Both however mark the passing of time and time being one of our tools, plus it is imperative that our work remains secret. Those who were before us, or so we have come to believe, took their name from the moon and the darkness about her.~
 =
@@ -3738,27 +3738,27 @@ IF ~~ THEN BEGIN kuback13
 ~Whether it be a pious hand which believes it is right to rid the world of all that is evil, or an evil hand that uses it to bring down all that is good. Neither must be allowed to become the single most power in the world.~
 =
 ~You see now why my silence has been necessary, not through any mistrust of you but to prevent word that a Brother of the Moon walked the land reaching the ears of the owners of those unscrupulous hands I speak of.~
- 	IF ~~ THEN REPLY ~I suppose it’s just possible it is as you say, but what of the keys you seek Hrothgar? How do they fit into all this?~ GOTO kuback16
+ 	IF ~~ THEN REPLY ~I suppose itï¿½s just possible it is as you say, but what of the keys you seek Hrothgar? How do they fit into all this?~ GOTO kuback16
  	IF ~~ THEN REPLY ~So, is it for this Brotherhood of the Moon that you seek theses keys? If so, then what do they want with them? What is their purpose?~ GOTO kuback16
- 	IF ~~ THEN REPLY ~From what has transpired of late, I can almost believe you speak the truth my friend, but you still haven’t said why it is these keys of yours are spread through out time. What are they the keys to? What mysteries do they unlock?~ GOTO kuback16
- 	IF ~~ THEN REPLY ~Yes, I understand a little more now and I also see the immense burden your order must shoulder my friend. If you truly believe that my aid is essential in finding these keys, for whatever purpose, then we’d best resolve those issues of yours here and get back to doing just that.~ GOTO kuback17
- 	IF ~~ THEN REPLY ~Yes, I understand a little more of the immense burden you shoulder my friend, but you must also understand that my destiny doesn’t lie in the past, it never has. Irenicus has changed the path I must now follow whether I wish to or not. I am sorry but I must wish you luck and take my leave of you.~ GOTO kulback8
- 	IF ~~ THEN REPLY ~Bah, such arrogance I’ve only heard in mention of the gods! If you truly believe that it is for you to alter history in the belief that you do so for the good of the future, then I want no part of your madness. I’ll not change my mind again. This is farewell Hrothgar.~ GOTO kulback8
+ 	IF ~~ THEN REPLY ~From what has transpired of late, I can almost believe you speak the truth my friend, but you still havenï¿½t said why it is these keys of yours are spread through out time. What are they the keys to? What mysteries do they unlock?~ GOTO kuback16
+ 	IF ~~ THEN REPLY ~Yes, I understand a little more now and I also see the immense burden your order must shoulder my friend. If you truly believe that my aid is essential in finding these keys, for whatever purpose, then weï¿½d best resolve those issues of yours here and get back to doing just that.~ GOTO kuback17
+ 	IF ~~ THEN REPLY ~Yes, I understand a little more of the immense burden you shoulder my friend, but you must also understand that my destiny doesnï¿½t lie in the past, it never has. Irenicus has changed the path I must now follow whether I wish to or not. I am sorry but I must wish you luck and take my leave of you.~ GOTO kulback8
+ 	IF ~~ THEN REPLY ~Bah, such arrogance Iï¿½ve only heard in mention of the gods! If you truly believe that it is for you to alter history in the belief that you do so for the good of the future, then I want no part of your madness. Iï¿½ll not change my mind again. This is farewell Hrothgar.~ GOTO kulback8
 END
 
 IF ~~ THEN BEGIN kuback15
- SAY ~Ah Tilorn, he has always believed that Ulcaster academy and all it’s knowledge should be standing today.~
+ SAY ~Ah Tilorn, he has always believed that Ulcaster academy and all itï¿½s knowledge should be standing today.~
 =
 ~It was his belief that Ulcaster had predicted much of how the realms would be shaped in future years and how eventually, many years after his passing, some catastrophe would strike, leaving chaos and ruin in its wake.~
-= 
-~All of which, or so he believes, Ulcaster recorded in the libraries of his academy. Hence Tilorn’s insistence that Ulcaster must be saved in order to preserve these records, maybe even return his memories to the  ghost Ulcaster, who could then pass his knowledge on to us.~
 =
-~Although I would not dare to say as much to Tilorn, but I hope his failure, and ours, to prevent the fall of  Ulcaster will make him realise that, whereas there are episodes in the past  that need us to correct, there are those that we never can change, no matter how much we may wish it.~ 
+~All of which, or so he believes, Ulcaster recorded in the libraries of his academy. Hence Tilornï¿½s insistence that Ulcaster must be saved in order to preserve these records, maybe even return his memories to the  ghost Ulcaster, who could then pass his knowledge on to us.~
+=
+~Although I would not dare to say as much to Tilorn, but I hope his failure, and ours, to prevent the fall of  Ulcaster will make him realise that, whereas there are episodes in the past  that need us to correct, there are those that we never can change, no matter how much we may wish it.~
 =
 ~I believe that time has, either a way of safeguarding that which must come to pass, or there are some things truly lay in the hands of the gods.~
  	IF ~~ THEN REPLY ~What is this mysterious order that you mention and what does it have to do with these keys that you are so bent on finding?~ GOTO kuback12
- 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I don’t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
- 	IF ~~ THEN REPLY ~Yet more riddles and mystery! You’d have me believe you’re a member of some secret society of time travellers. If that is so, then how is it I’ve never met your like before?~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~You are still only giving me half a story Hrothgar. I donï¿½t like secrets, especially when my life often depends on the one keeping them.~ GOTO kuback12
+ 	IF ~~ THEN REPLY ~Yet more riddles and mystery! Youï¿½d have me believe youï¿½re a member of some secret society of time travellers. If that is so, then how is it Iï¿½ve never met your like before?~ GOTO kuback12
  	IF ~~ THEN REPLY ~An order which goes around altering history, bah! This sounds like more fabrications to keep the truth from me and I am growing tired of them! I am done with them and with you. I am returning to my own future, or to whatever the future may hold for me. I bid you farewell Hrothgar of Easthaven, whoever you may be.~ GOTO kulback8
 END
 	
@@ -3771,16 +3771,16 @@ IF ~~ THEN BEGIN kuback16
 =
 ~All I can be sure of is that destiny, for whatever reason, has brought us together for the task.~
  	IF ~~ THEN REPLY ~Your words stir a memory... a vision... as I fell through the portal. I remember seeing  you having much the same discussion with Gorion. I am not so sure it was a dream now, but I do remember Gorion trusted you, so I too will trust your words and aid you in this task that you say has been set before us.~ GOTO kuback17
- 	IF ~~ THEN REPLY ~Then to the abyss with Irenicus, if what you say is true then he isn’t going anywhere! After all, we have time on our side but your people do not, so let us to Dorn’s Deep and chase this evil from your land once and for all.~ GOTO kuback17
- 	IF ~~ THEN REPLY ~Thank you for trusting me with the truth at last, it’s been a long time coming. As fantastic as your story sounds to me, I feel for once you are being straight with me, just as I feel it is right that I follow you to Dorns deep. So no more talk, let us be on our way.~ GOTO kuback17
- 	IF ~~ THEN REPLY ~Thank you for trusting me with the truth at last, it’s been a long time coming. However, you must understand that my destiny doesn’t lie in the past, it never has. Irenicus has changed the path I must now follow whether I wish to or not. I am sorry but I must wish you luck and take my leave of you.~ GOTO kulback8
+ 	IF ~~ THEN REPLY ~Then to the abyss with Irenicus, if what you say is true then he isnï¿½t going anywhere! After all, we have time on our side but your people do not, so let us to Dornï¿½s Deep and chase this evil from your land once and for all.~ GOTO kuback17
+ 	IF ~~ THEN REPLY ~Thank you for trusting me with the truth at last, itï¿½s been a long time coming. As fantastic as your story sounds to me, I feel for once you are being straight with me, just as I feel it is right that I follow you to Dorns deep. So no more talk, let us be on our way.~ GOTO kuback17
+ 	IF ~~ THEN REPLY ~Thank you for trusting me with the truth at last, itï¿½s been a long time coming. However, you must understand that my destiny doesnï¿½t lie in the past, it never has. Irenicus has changed the path I must now follow whether I wish to or not. I am sorry but I must wish you luck and take my leave of you.~ GOTO kulback8
  	IF ~~ THEN REPLY ~A pretty tale, it may be truth and it may not. However, nothing you have said convinces me that your concerns are mine. On the other hand, Irenicus is my concern... he, I will not find here in the past. It is time for me to return and take back that which is rightfully mine.~ GOTO kulback8
 END
 
 //Only characters who insisted that Hrothgar returns the group to the future will speak here
 
 IF ~~ THEN BEGIN kuback17
- SAY ~It seems my order was right to put their faith in you <CHARNAME>.~ 
+ SAY ~It seems my order was right to put their faith in you <CHARNAME>.~
 	IF ~True()~ THEN GOTO kback17a
 	IF ~InParty("Valygar")
 !Dead("Valygar")
@@ -3814,7 +3814,7 @@ END
 IF ~~ THEN BEGIN kback17a
  SAY ~I promise you, once I have resolved these events in my life, then it will be safe for me to return to the future and help you resolve your own.~
 =
-~Come, we must speak once more with Larrel at The Severed Hand. For if he has regained his power, then his hand is our quickest road to Dorn’s Deep.~ 
+~Come, we must speak once more with Larrel at The Severed Hand. For if he has regained his power, then his hand is our quickest road to Dornï¿½s Deep.~
 	IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")~ THEN DO ~ClearAllActions()
@@ -3822,10 +3822,10 @@ StartCutSceneMode()
 StartCutScene("VPCtSH2")~ EXIT
   	IF ~InParty("Imoen2")
 !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ kulback5
-END 
+END
 
 IF ~~ THEN BEGIN taffic01
-	SAY ~I believe the gnome’s obsession has caused his mind to become unbalanced we need to watch him further and be prepared to take action if he tries to endanger the group through his foolhardiness.~
+	SAY ~I believe the gnomeï¿½s obsession has caused his mind to become unbalanced we need to watch him further and be prepared to take action if he tries to endanger the group through his foolhardiness.~
 	IF ~True()~ THEN DO ~SetGlobal("VP_TafficQuest","GLOBAL",1)~ EXIT
 	IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ taffic01
@@ -3855,7 +3855,7 @@ IF ~~ THEN BEGIN rayvon
 END
 
 IF ~~ THEN BEGIN rayvon2
- SAY ~He isn’t going to wait much longer for an answer <CHARNAME>.~
+ SAY ~He isnï¿½t going to wait much longer for an answer <CHARNAME>.~
   IF ~~ THEN REPLY ~Curses! This I do not need!~ GOTO 93
   IF ~~ THEN REPLY ~I think the time for talking has just run out!~ GOTO 93
   IF ~~ THEN REPLY ~I have a bad feeling about this! I just know you are not going to listen to whatever I say!~ GOTO 93
@@ -3863,10 +3863,10 @@ IF ~~ THEN BEGIN rayvon2
 END
 
 IF ~~ THEN BEGIN vulova
- SAY ~Come off it you two, <CHARNAME> doesn’t need the hassle of your petty disagreements.~
+ SAY ~Come off it you two, <CHARNAME> doesnï¿½t need the hassle of your petty disagreements.~
 =
 ~Please, at least try to get along for all our sakes, we have enough worries without you two at each others throats all the time.~
-  IF ~~ THEN REPLY ~Thank you Hrothgar. Now, cut it out you two, or neither of you will be following anyone if you don’t learn to do as Hrothgar says.~ EXTERN ~MELORAJ~ vulova1
+  IF ~~ THEN REPLY ~Thank you Hrothgar. Now, cut it out you two, or neither of you will be following anyone if you donï¿½t learn to do as Hrothgar says.~ EXTERN ~MELORAJ~ vulova1
   IF ~~ THEN REPLY ~I decide who is leading who, not you Melora, nor you  Taffic. So will you two please quit arguing and get in line!~ EXTERN ~MELORAJ~ vulova1
   IF ~~ THEN REPLY ~Taffic, no one is asking you to follow Melora, but if you really feel you prefer the company of the demons of the abyss to those present, then please be my guest!~ EXTERN ~MELORAJ~ vulova1
 END
@@ -3874,11 +3874,11 @@ END
 IF ~~ THEN BEGIN vulova1
  SAY ~(*Sighs*) Why those two behave as they do towards each other beats me.~
 =
-~They both have barks worse than their bites and whereas I don’t ever see them coming to blows, it would be nice not to have to separate them so often just in case.~
-= 
+~They both have barks worse than their bites and whereas I donï¿½t ever see them coming to blows, it would be nice not to have to separate them so often just in case.~
+=
 ~Ah, well... I suppose as long as the rest of the group aren't disturbed by their little altercations, they are a useful enough pair.~
 	IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN leveler
  SAY ~You two please, this is not the place to be airing your differences. We are getting out of here now and taking the artifact with us.~
@@ -3891,13 +3891,13 @@ IF ~~ THEN BEGIN leveler
 Dead("Jaheira")~ THEN REPLY ~Then it is decided, we take it with us.~ GOTO 336
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~We’ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
+Dead("Jaheira")~ THEN REPLY ~Weï¿½ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ GOTO 336
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN REPLY ~Why does everything seem to rely on keys around here?~ GOTO 337
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~If it’s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
+Dead("Jaheira")~ THEN REPLY ~If itï¿½s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ GOTO 337
  IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ636
 END
@@ -3921,7 +3921,7 @@ IF ~~ THEN BEGIN darqest2
 END
 
 IF ~~ THEN BEGIN darqest3
- SAY ~Dar is right <CHARNAME>, I cannot sanction such an action! If you go ahead with this plan then your soul will be damned as surely as that of any slavers’!~
+ SAY ~Dar is right <CHARNAME>, I cannot sanction such an action! If you go ahead with this plan then your soul will be damned as surely as that of any slaversï¿½!~
   IF ~~ THEN EXTERN ~DARJ~ quest13
 END
 
@@ -3940,9 +3940,9 @@ END
 IF ~~ THEN BEGIN darqest4
  SAY ~Whilst it is a relief to hear you no longer intend to take the way of the slaver and now intend to help these people <CHARNAME>, but we really do not have the luxury of time being on our side.~
 =
-~Any detour we make now takes valuable time away from our search. There is more at stake here than the lives of a few unfortunate people.~ 
+~Any detour we make now takes valuable time away from our search. There is more at stake here than the lives of a few unfortunate people.~
   IF ~~ THEN REPLY ~I never thought to hear you say we have no time to help those in need Hrothgar. Well, I say we do have time and we start on the road immediately.~ GOTO darqest5
-  IF ~~ THEN REPLY ~I never thought to hear such words from a knight Hrothgar. Tell me again a knight’s code of conduct? No, on second thoughts don’t. I do not need to hear it. It is my decision to make for Candlekeep and that is where we are heading, now!~ GOTO darqest5 
+  IF ~~ THEN REPLY ~I never thought to hear such words from a knight Hrothgar. Tell me again a knightï¿½s code of conduct? No, on second thoughts donï¿½t. I do not need to hear it. It is my decision to make for Candlekeep and that is where we are heading, now!~ GOTO darqest5
   IF ~~ THEN REPLY ~We are going to Candlekeep Hrothgar. My decision is not up for debate!~ GOTO darqest5
 END
 
@@ -3971,7 +3971,7 @@ IF ~~ THEN BEGIN CK2
 END
 
 IF ~~ THEN BEGIN CK3
-  SAY ~Life has a habit of turning full circle at some point in most people’s lives <CHARNAME>.~
+  SAY ~Life has a habit of turning full circle at some point in most peopleï¿½s lives <CHARNAME>.~
 =
 ~Perhaps you will appreciate the tranquillity of Candlekeep more now after experiencing the bustle of the cities.~
   IF ~~ THEN REPLY ~Full circle you say Hrothgar, if you believe that than you must hope to return to Easthaven some day. When your quest is done?~ GOTO CK7
@@ -3994,7 +3994,7 @@ END
 IF ~~ THEN BEGIN CK5
   SAY ~That was, as I explained <CHARNAME>, a hallucination brought on through travel via the portal. Nothing sinister, it happens sometimes.~
 =
-~Now let us make for the inn, always a good place to listen and learn about the comings and goings of a town.~ 
+~Now let us make for the inn, always a good place to listen and learn about the comings and goings of a town.~
   IF ~~ THEN REPLY ~Once again, I know the futility in pursuing this with you Hrothgar, but soon you will have to answer my questions.~ GOTO CK8
   IF ~~ THEN REPLY ~I will let it go for now Hrothgar, but I will have my answers from you and sooner rather than later!~ GOTO CK8
 END
@@ -4031,7 +4031,7 @@ Dead("Melora")~ THEN DO ~SetGlobal("VP_Hrothgar_In_CK","GLOBAL",2)~ EXIT
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutM01")~ EXIT
-END  
+END
 
 IF ~~ THEN BEGIN CK9
   SAY ~We both know that we cannot change what has passed, it is after all the past that shapes us into the people fate destined us to be.~
@@ -4045,7 +4045,7 @@ Dead("Melora")~ THEN DO ~SetGlobal("VP_Hrothgar_In_CK","GLOBAL",2)~ EXIT
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutM01")~ EXIT
-END  
+END
 
 IF ~~ THEN BEGIN CK10
   SAY ~Imoen will have the rest of her life to see Candlekeep again <CHARNAME>, it is up to us to make sure that there will be a future for her to do so.~
@@ -4077,7 +4077,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Taffic, I see the misery mirrored in your eyes and it pains me to say this, but you have none but yourself to blame.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")
@@ -4140,14 +4140,14 @@ END
 
 IF ~~ THEN BEGIN returns1
  SAY ~Let us take a few moments to steady our heads before we begin our ascent of the tower.~	
-	IF ~~ THEN REPLY ~I’m not sure I’ll never get used to you doing that Hrothgar, my senses are still reeling from the experience.~ GOTO returns2
-	IF ~~ THEN REPLY ~I just love it when you do that Hrothgar...it’s so...so exhilarating!~ GOTO returns4
-	IF ~~ THEN REPLY ~Wow! I’m definitely going to have to get me one of those gadgets Hrothgar!~ GOTO returns4
+	IF ~~ THEN REPLY ~Iï¿½m not sure Iï¿½ll never get used to you doing that Hrothgar, my senses are still reeling from the experience.~ GOTO returns2
+	IF ~~ THEN REPLY ~I just love it when you do that Hrothgar...itï¿½s so...so exhilarating!~ GOTO returns4
+	IF ~~ THEN REPLY ~Wow! Iï¿½m definitely going to have to get me one of those gadgets Hrothgar!~ GOTO returns4
 	IF ~~ THEN REPLY ~Perhaps we could try walking next time Hrothgar.~ GOTO returns5
 END
 
 IF ~~ THEN BEGIN returns2
- SAY ~I know what you mean, even after my many years experience of teleportation travel, I still find it a little unsettling in my head. Believe me, it is a sensation you get used to in time.~ 
+ SAY ~I know what you mean, even after my many years experience of teleportation travel, I still find it a little unsettling in my head. Believe me, it is a sensation you get used to in time.~
 =
 ~It has even been said by some, that the euphoria experienced inside the vortex is highly addictive, brought on we think by the upset of chemicals in the brain as we are drawn into the energy that is the vortex.~
 =
@@ -4167,9 +4167,9 @@ END
 IF ~~ THEN BEGIN returns4
  SAY ~(*Laughing*) You too my friend. You are not the first to find teleportation through this device... exhilarating, I think is the word you used.~
 =
-~In fact, it has even been said by some, that the euphoria experienced inside the vortex is highly addictive, brought on we think by the upset of chemicals in the brain as we are drawn into the energy that is the vortex.~ 
+~In fact, it has even been said by some, that the euphoria experienced inside the vortex is highly addictive, brought on we think by the upset of chemicals in the brain as we are drawn into the energy that is the vortex.~
 =
-~For this reason, we try to limit our use of the device. One day though, we hope to make the journey a little less... shall we say... exhilarating, a little less addictive?~ 
+~For this reason, we try to limit our use of the device. One day though, we hope to make the journey a little less... shall we say... exhilarating, a little less addictive?~
 =
 ~Now, no more talk of vortexes, we still have much to do here.~
 	IF ~~ THEN GOTO returns3
@@ -4197,7 +4197,7 @@ IF ~~ THEN BEGIN immy2
 END
 
 IF ~~ THEN BEGIN immy3
-  SAY ~We came as and when time necessitated it was to be... as we were meant to.~ 
+  SAY ~We came as and when time necessitated it was to be... as we were meant to.~
 	IF ~~ THEN EXTERN ~IMOEN2~ hrothg4
 END
 
@@ -4214,19 +4214,19 @@ END
 IF ~~ THEN BEGIN immy6
   SAY ~No my dear Imoen, I care very much about your well being, as I do for all my companions.~
 =
-~We have travelled great lands together, battled horrendous creatures, but destiny was already written and it cannot be rewritten, this terrible thing would have happened no matter what.~ 
+~We have travelled great lands together, battled horrendous creatures, but destiny was already written and it cannot be rewritten, this terrible thing would have happened no matter what.~
 =
 ~Certain things must remain as they were intended to be, it is our best chance, our only chance of stemming the tide of the impending chaos.~
 	IF ~~ THEN EXTERN ~IMOEN2~ hrothg7
 END
 
 IF ~~ THEN BEGIN immy7
-  SAY ~Imoen you are angry with me at something I had no control over. I have told you that you are important, and that I haven’t put you second to anything. If you feel that I came too late then there is no more I can say, except trust me. All is as it should be.~
+  SAY ~Imoen you are angry with me at something I had no control over. I have told you that you are important, and that I havenï¿½t put you second to anything. If you feel that I came too late then there is no more I can say, except trust me. All is as it should be.~
 	IF ~~ THEN EXTERN ~IMOEN2~ hrothg8
 END
 
 IF ~~ THEN BEGIN immy8
-  SAY ~(*Putting an arm around the distraught girl*) I am sorry for your pain, but I couldn’t change things, nor can I change them now, no matter how much I want to.~
+  SAY ~(*Putting an arm around the distraught girl*) I am sorry for your pain, but I couldnï¿½t change things, nor can I change them now, no matter how much I want to.~
 =
 ~I know you have the strength within you to win through Imoen, and never forget that we are here to help you as well as <CHARNAME>.~
 	IF ~~ THEN EXTERN ~IMOEN2~ hrothg9
@@ -4240,7 +4240,7 @@ END
 IF ~~ THEN BEGIN immy10
   SAY ~All is forgiven, my young friend. Grudges should not be held in a time when alliances are needed.~
 =
-~I know that this must seem like a very dark time for you, but I don’t think Irenicus has taken all that was Imoen. I sense her spark was too bright for even him to extinguish.~
+~I know that this must seem like a very dark time for you, but I donï¿½t think Irenicus has taken all that was Imoen. I sense her spark was too bright for even him to extinguish.~
 	IF ~~ THEN EXTERN ~IMOEN2~ hrothg11
 END
 
@@ -4250,8 +4250,8 @@ IF ~~ THEN BEGIN immy11
 END
 
 IF ~~ THEN BEGIN slayerat
-  SAY ~What is it my friend, another bad drea... yea gods, what sort of dream brings such agony to the face? (*He tries to rouse you*) Come my friend, waken and send this nightmare of yours back to the ether.~ 
-	IF ~~ THEN REPLY ~Hrothgar I... I feel something... I... please my friend, I don’t know what it is I feel but I am losing my hold on it. You must step away from me... now my friend... NOW!~ GOTO slayer1
+  SAY ~What is it my friend, another bad drea... yea gods, what sort of dream brings such agony to the face? (*He tries to rouse you*) Come my friend, waken and send this nightmare of yours back to the ether.~
+	IF ~~ THEN REPLY ~Hrothgar I... I feel something... I... please my friend, I donï¿½t know what it is I feel but I am losing my hold on it. You must step away from me... now my friend... NOW!~ GOTO slayer1
 	IF ~~ THEN REPLY ~Hrothgar... what is happening? This is no dream, I am awake and yet I am losing control of my senses. Help me, please!~ GOTO slayer1
 END
 
@@ -4263,7 +4263,7 @@ END
 IF ~Global("VP_Hrothgar_Slayer","GLOBAL",2)~ THEN BEGIN slayertk
   SAY ~(*Looking at you with relief in his eyes*) Praise be, you are yourself again. I feared you would be lost to us permanently. Come, it is imperative that we step up our search for Irenicus!~
 	IF ~~ THEN REPLY ~I... what happened, did I hurt anyone? Yea gods Hrothgar, what does this mean, what have I become?~ DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",3)~ GOTO slayer2
-	IF ~~ THEN REPLY ~Hrothgar, it was terrible! I could see you, see you all and I wanted to kill, to murder, the urge was too powerful for me to control... what is thing that I have become?~ DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",3)~ GOTO slayer2 
+	IF ~~ THEN REPLY ~Hrothgar, it was terrible! I could see you, see you all and I wanted to kill, to murder, the urge was too powerful for me to control... what is thing that I have become?~ DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",3)~ GOTO slayer2
 	IF ~~ THEN REPLY ~The power... Hrothgar it was awesome, I have never before experienced so much energy, so much power! I must learn to control it, for if I had even half the power that creature  possessed then none would dare oppose me again... ever.~ DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",3)~ GOTO slayer3
 END
 
@@ -4279,7 +4279,7 @@ END
 
 IF ~~ THEN BEGIN slayer3
   SAY ~(*His eyes bore into your own... you shiver. If you had a soul you would swear he were looking straight into it*) You have had but a glimpse of what lies beneath... it is still weak and yet I see it is able to influence you.~
-= 
+=
 ~You will have to choose soon enough and there is no one who can guide you when that time comes. Only you can look into your heart and see what is right for you, but when that choice presents itself I ask that you remember these words, *with power also comes responsibility*.~
 =
 ~Now come, the longer we tally the further our quarry moves away.~
@@ -4288,10 +4288,10 @@ IF ~~ THEN BEGIN slayer3
 END
 				
 IF ~~ THEN BEGIN slayer11
-  SAY ~(*Seeing the fear in the eyes of everyone*) There’s nothing to fear my friends... the beast has been banished and <CHARNAME> is once again <CHARNAME>.~
+  SAY ~(*Seeing the fear in the eyes of everyone*) Thereï¿½s nothing to fear my friends... the beast has been banished and <CHARNAME> is once again <CHARNAME>.~
   IF ~True()~ THEN GOTO slayer4
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -4317,22 +4317,22 @@ InParty("Yoshimo")
   IF ~InParty("Imoen2")
 !Dead("Imoen2")~ EXTERN ~IMOEN2J~ slayerb1
 END
- 
+
 IF ~~ THEN BEGIN slayer4
   SAY ~I am not even going to try and second guess this place, the only thing I can say for sure is that we are not safe here. I say we step up our search for an exit, we can deal with anything else as and when it comes along.~
-	IF ~~ THEN REPLY ~Er... excuse me, in case you hadn’t noticed I am standing here and I still lead this group, so I’ll thank you not to speak for me!~ GOTO slayer5 
-	IF ~~ THEN REPLY ~Hrothgar is right, we need to get out of here and fast, before Irenicus learns we are still alive. We don’t need him coming down here to finish Bodhi’s job himself.~ GOTO slayer6
+	IF ~~ THEN REPLY ~Er... excuse me, in case you hadnï¿½t noticed I am standing here and I still lead this group, so Iï¿½ll thank you not to speak for me!~ GOTO slayer5
+	IF ~~ THEN REPLY ~Hrothgar is right, we need to get out of here and fast, before Irenicus learns we are still alive. We donï¿½t need him coming down here to finish Bodhiï¿½s job himself.~ GOTO slayer6
 	IF ~~ THEN REPLY ~So what are we waiting for... Irenicus is in for one hell of a shock if he thinks he can get rid of us so easily. With or without a soul, this child of Bhaal is not one he should have messed with!~ GOTO slayer6
 	IF ~~ THEN REPLY ~I agree, this place is so heavily steeped in magic, who knows what it is doing to our heads. We need to find an exit... and fast!~ GOTO slayer7
 END
 
 IF ~~ THEN BEGIN slayer5
-  SAY ~No one, least of all, me is disputing your leadership. All I am saying is some pretty weird things are going on around us and the sooner we leave this place, the sooner we can put a stop to it all. So, with your leave, let’s stop nattering and find that door!~
+  SAY ~No one, least of all, me is disputing your leadership. All I am saying is some pretty weird things are going on around us and the sooner we leave this place, the sooner we can put a stop to it all. So, with your leave, letï¿½s stop nattering and find that door!~
   IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN slayer6
-  SAY ~I think if Bodhi had gotten back to Irenicus he would have shown his face by now. I am thinking, hoping, that means he won’t be expecting us and we may still have the advantage of surprise over him...we need to bring him down before he opens that spell filled mouth of his. So let’s make the most of this opportunity and find that door.~
+  SAY ~I think if Bodhi had gotten back to Irenicus he would have shown his face by now. I am thinking, hoping, that means he wonï¿½t be expecting us and we may still have the advantage of surprise over him...we need to bring him down before he opens that spell filled mouth of his. So letï¿½s make the most of this opportunity and find that door.~
   IF ~~ THEN EXIT
 END
 
@@ -4342,7 +4342,7 @@ IF ~~ THEN BEGIN slayer7
 END
 
 IF ~~ THEN BEGIN slayerbi
-  SAY ~No, I believe there is but one such creature and it is linked to <CHARNAME> in some bizarre way. You Imoen, whereas we do need to restore your soul as quickly as possible in order to save you. You need not fear the beast taking you over.~ 
+  SAY ~No, I believe there is but one such creature and it is linked to <CHARNAME> in some bizarre way. You Imoen, whereas we do need to restore your soul as quickly as possible in order to save you. You need not fear the beast taking you over.~
 	IF ~~ THEN EXTERN ~IMOEN2J~ slayerb2
 END
 
@@ -4350,8 +4350,8 @@ IF ~~ THEN BEGIN slayer31
   SAY ~We are wasting time to try and second guess anything about this place. The only sure thing is that as long as we remain here, none of us are safe.~
 =
 ~I say we step up our search for an exit, we can deal with anything else as and when it comes along.~
-	IF ~~ THEN REPLY ~Er... excuse me, in case you hadn’t noticed I am standing here and I still lead this group, so I’ll thank you not to speak for me!~ GOTO slayer5 
-	IF ~~ THEN REPLY ~Hrothgar is right, we need to get out of here and fast, before Irenicus learns we are still alive. We don’t need him coming down here to finish Bodhi’s job himself.~ GOTO slayer6
+	IF ~~ THEN REPLY ~Er... excuse me, in case you hadnï¿½t noticed I am standing here and I still lead this group, so Iï¿½ll thank you not to speak for me!~ GOTO slayer5
+	IF ~~ THEN REPLY ~Hrothgar is right, we need to get out of here and fast, before Irenicus learns we are still alive. We donï¿½t need him coming down here to finish Bodhiï¿½s job himself.~ GOTO slayer6
 	IF ~~ THEN REPLY ~So what are we waiting for... Irenicus is in for one hell of a shock if he thinks he can get rid of us so easily. With or without a soul, this child of Bhaal is not one he should have messed with!~ GOTO slayer6
 	IF ~~ THEN REPLY ~I agree, this place is so heavily steeped in magic, who knows what it is doing to our heads. We need to find an exit... and fast!~ GOTO slayer7
 END
@@ -4477,14 +4477,14 @@ IF ~~ THEN BEGIN Eurich2
   SAY ~Farewell, Eurich. Take care in your travels, my friend.~
  IF ~~ THEN REPLY ~Hrothgar, what was that all about? Who is that man that approached you and seems to know me? Another "Tilorn" type of your friend? And what's that "temporal actuator"?~ GOTO Eurich3
  IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet.*) Hrothgar, is it possible that I have met this man before?~ GOTO Eurich4
- IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet. You are deciding not to ask Hrothgar anything about this man and this wierd encounter, but making a mental note on that.*)~ GOTO Eurich5  
+ IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet. You are deciding not to ask Hrothgar anything about this man and this wierd encounter, but making a mental note on that.*)~ GOTO Eurich5
 END
 
 IF ~~ THEN BEGIN Eurich3
   SAY ~(*Hrothgar abrupts you*) <CHARNAME>, I well understand your curiosity, but I cannot answer all these questions at the moment. You'll have all the answers in time, but for now you should know that Eurich is indeed another friend of mine and a very respectful man.~
 	IF ~~ THEN REPLY ~(*Sigh*) Again a very evasive answer from you, Hrothgar.~ GOTO Eurich6
  	IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet.*) Hrothgar, is it possible that I have met this man before?~ GOTO Eurich4
- 	IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet. You are deciding not to ask Hrothgar anything about this man and this wierd encounter, but making a mental note on that.*)~ GOTO Eurich5  
+ 	IF ~~ THEN REPLY ~(*Eurich... The name and the man seem familar to you. But you cannot remember where and when did you meet. You are deciding not to ask Hrothgar anything about this man and this wierd encounter, but making a mental note on that.*)~ GOTO Eurich5
 END
 
 IF ~~ THEN BEGIN Eurich4
@@ -4522,7 +4522,7 @@ APPEND ~JAHEIRAJ~
 IF ~~ THEN BEGIN kuldback
  SAY ~By the horns of Silvanus! By what right do you bring us to this place? Why now of all times do you choose to renege on your promise of help Hrothgar?~
 =
-~Your time and your people are dead to us, if you don’t wish to join them in their fate, I strongly suggest you return us and allow <CHARNAME> to reclaim that which has been stolen from <PRO_HIMHER>!~
+~Your time and your people are dead to us, if you donï¿½t wish to join them in their fate, I strongly suggest you return us and allow <CHARNAME> to reclaim that which has been stolen from <PRO_HIMHER>!~
 IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
  IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -4599,10 +4599,10 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~That was no creature conceived by nature! I can only surmise that it is a creature of the abyss and is somehow connected to <CHARNAME> through Bhaal’s blood. We can not condemn the child for the sins of the father, we can however remain wary should it return.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+ SAY ~That was no creature conceived by nature! I can only surmise that it is a creature of the abyss and is somehow connected to <CHARNAME> through Bhaalï¿½s blood. We can not condemn the child for the sins of the father, we can however remain wary should it return.~
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -4680,19 +4680,19 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~Hrothgar has said you shouldn’t feel any effects whilst here Imoen, but just in case Dar will be watching over you, ready to catch you should you fall.~ 
+ SAY ~Hrothgar has said you shouldnï¿½t feel any effects whilst here Imoen, but just in case Dar will be watching over you, ready to catch you should you fall.~
 =
-~I have never tried it but I am sure a resurrection spell works just as well on a person without a soul as it does on a person with their soul intact. Be assured I will always have such a spell memorised just for you.~ 
+~I have never tried it but I am sure a resurrection spell works just as well on a person without a soul as it does on a person with their soul intact. Be assured I will always have such a spell memorised just for you.~
 =
-~No one will be leaving Imoen in an icy grave, not whilst Dar is around.~ 
+~No one will be leaving Imoen in an icy grave, not whilst Dar is around.~
   	IF ~~ THEN EXTERN ~IMOEN2J~ kulback6
 END
 
 IF ~~ THEN BEGIN slayerb1
  SAY ~Whether or not this beast it is a thing to be feared is best answered by asking ourselves the question: why did the creature Bodhi retreat so swiftly? Could it be she sensed that she herself was outmatched and could not best the beast?~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31 
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -4713,7 +4713,7 @@ InParty("Yoshimo")
 !Dead("Jaheira")~ EXTERN ~JAHEIRAJ~ slayerb1
   IF ~InParty("Minsc")
 !Dead("Minsc")~ EXTERN ~MINSCJ~ slayerb1
-END 
+END
 END
 
 APPEND ~MINSCJ~
@@ -4779,9 +4779,9 @@ IF ~~ THEN BEGIN hrotleft
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~Minsc will keep his eye on Imoen, he doesn’t want her to be falling into all this snow.~ 
+ SAY ~Minsc will keep his eye on Imoen, he doesnï¿½t want her to be falling into all this snow.~
 =
-~She may catch new... newmonia I think Dynaheir called it one time when Minsc wouldn’t take off his wet clothes after he got wet jumping into the river.~ 
+~She may catch new... newmonia I think Dynaheir called it one time when Minsc wouldnï¿½t take off his wet clothes after he got wet jumping into the river.~
 =
 ~It was Boo who told Minsc he should jump into the water. Boo said he saw another miniature giant space hamster under the water and Minsc should jump in and save him.~
 =
@@ -4790,9 +4790,9 @@ IF ~~ THEN BEGIN kulback1
 END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~Oooh... you are a smart one Boo! You caught Minsc out there, but he’ll not jump in the river for that one again.~
+ SAY ~Oooh... you are a smart one Boo! You caught Minsc out there, but heï¿½ll not jump in the river for that one again.~
 =
-~(*Squeak*)~ [BOONEJ1] 
+~(*Squeak*)~ [BOONEJ1]
   	IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCtSH2")~ EXIT
@@ -4801,9 +4801,9 @@ END
 IF ~~ THEN BEGIN returnsh
  SAY ~This is great fun Hrothgar, first we were there and now *whoosh*, we are here!~
 =
-~With such a trick, evil will not see us coming, we will surprise it... we will *whoosh* and jump out right in front of it’s nose. If it has a nose to whoosh up to, we really don’t know what this evil looks like do we, and Boo says not all evil have noses.~
+~With such a trick, evil will not see us coming, we will surprise it... we will *whoosh* and jump out right in front of itï¿½s nose. If it has a nose to whoosh up to, we really donï¿½t know what this evil looks like do we, and Boo says not all evil have noses.~
 =
-~It matters not to Minsc, nose or no nose, because when we do at last see evil’s face, it will not be evil’s nose that feels the righteous fury of Minsc’s boot heels!~
+~It matters not to Minsc, nose or no nose, because when we do at last see evilï¿½s face, it will not be evilï¿½s nose that feels the righteous fury of Minscï¿½s boot heels!~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ returns1
  	IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ returnsh	
@@ -4820,10 +4820,10 @@ IF ~~ THEN BEGIN slayerb1
 =
 ~Oooh... this is confusing, what does Boo say?~
 =
-~(*Squeak*)~ [BOONEJ1] 
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+~(*Squeak*)~ [BOONEJ1]
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -4842,13 +4842,13 @@ InParty("Yoshimo")
 !Dead("Jan")~ EXTERN ~JANJ~ slayerb1
   IF ~InParty("Jaheira")
 !Dead("Jaheira")~ EXTERN ~JAHEIRAJ~ slayerb1
-END  
+END
 END
 
 APPEND ~LEINAJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~(*Angrily*) This is Kuldahar? For pity’s sake, what manner of man are you Hrothgar, you have seen the nature of the beast that Irenicus has freed and yet you allow the past to dictate your path when you should consider the future?~ 
+ SAY ~(*Angrily*) This is Kuldahar? For pityï¿½s sake, what manner of man are you Hrothgar, you have seen the nature of the beast that Irenicus has freed and yet you allow the past to dictate your path when you should consider the future?~
 =
 ~Our path is not for you to choose, so I beg you, if there is a shred of humanity in you, then return us... return us whilst we still have time to right the wrong that has been done in the future.~
 IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
@@ -4895,7 +4895,7 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~I hope you know what you are doing <CHARNAME>. We have gone through so much together I would hate to see it end in a time where it hasn’t yet begun.~
+ SAY ~I hope you know what you are doing <CHARNAME>. We have gone through so much together I would hate to see it end in a time where it hasnï¿½t yet begun.~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ kback17a
 	IF ~InParty("Valygar")
 !Dead("Valygar")
@@ -4926,20 +4926,20 @@ IF ~~ THEN BEGIN slayerb1
 ~We know whose blood it is that courses through <CHARNAME>, and now with <PRO_HISHER> soul torn away, Irenicus has left <PRO_HIMHER> powerless to deny the call of its taint.~
 =
 ~I say we move quickly to right this atrocity whilst the beast is still weak, for the longer we dally, the stronger it will become.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
 !Dead("Korgan")~ EXTERN ~KORGANJ~ slayerb1
-END 
+END
 END
 
 APPEND ~SIMEJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~(*Angrily*) This is Kuldahar? For pity’s sake, what manner of man are you Hrothgar, you have seen the nature of the beast that Irenicus has freed and yet you allow the past to dictate your path when you should consider the future?~ 
+ SAY ~(*Angrily*) This is Kuldahar? For pityï¿½s sake, what manner of man are you Hrothgar, you have seen the nature of the beast that Irenicus has freed and yet you allow the past to dictate your path when you should consider the future?~
 =
 ~Our path is not for you to choose, so I beg you, if there is a shred of humanity in you, then return us... return us whilst we still have time to right the wrong that has been done in the future.~
 IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
@@ -4986,7 +4986,7 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~I hope you know what you are doing <CHARNAME>. We have  gone through so much together I would hate to see it end in a time where it hasn’t yet begun.~
+ SAY ~I hope you know what you are doing <CHARNAME>. We have  gone through so much together I would hate to see it end in a time where it hasnï¿½t yet begun.~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ kback17a
 	IF ~InParty("Valygar")
 !Dead("Valygar")
@@ -5017,20 +5017,20 @@ IF ~~ THEN BEGIN slayerb1
 ~We know whose blood it is that courses through <CHARNAME>, and now with <PRO_HISHER> soul torn away, Irenicus has left <PRO_HIMHER> powerless to deny the call of its taint.~
 =
 ~I say we move quickly to right this atrocity whilst the beast is still weak, for the longer we dally, the stronger it will become.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
 !Dead("Korgan")~ EXTERN ~KORGANJ~ slayerb1
-END  
+END
 END
 
 APPEND ~TAFFICJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~By the nine hells, what do you think you’re doing man! Send me back so’s I can fulfil my destiny or by the gods you’ll find yourself without a present or a future!~
+ SAY ~By the nine hells, what do you think youï¿½re doing man! Send me back soï¿½s I can fulfil my destiny or by the gods youï¿½ll find yourself without a present or a future!~
 IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
  IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5073,12 +5073,12 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~Hmph, I wish a bounty hunter would take your head, it might wipe that self satisfied grin off your face, or at least silence that harpy tongue of yours for good!~ 
+ SAY ~Hmph, I wish a bounty hunter would take your head, it might wipe that self satisfied grin off your face, or at least silence that harpy tongue of yours for good!~
  IF ~~ THEN EXTERN ~MELORAJ~ kulback2
 END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~Don’t you be so cocky my arrogant harpy. Many a head has fallen to other than a bounty hunter.~
+ SAY ~Donï¿½t you be so cocky my arrogant harpy. Many a head has fallen to other than a bounty hunter.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5124,7 +5124,7 @@ IF ~~ THEN BEGIN hrotleft
 END
 
 IF ~~ THEN BEGIN hrotlef1
- SAY ~Tut tut, a might tetchy aren’t we! No need to be getting yourself so fired up. I’m not the one you need to be running from.~
+ SAY ~Tut tut, a might tetchy arenï¿½t we! No need to be getting yourself so fired up. Iï¿½m not the one you need to be running from.~
 =
 ~(*He walks away chortling to himself*) Mmm, maybe I should check the going price for that one, should have a risen quite a bit by the time we return.~
   	IF ~True()~ THEN DO ~ActionOverride("Hrothgar",LeaveParty())
@@ -5134,9 +5134,9 @@ ActionOverride("Hrothgar",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN kulback3
- SAY ~I suppose it may not be so bad. Could be I’ll find some artifact or such like to help me on my way to greatness.~
+ SAY ~I suppose it may not be so bad. Could be Iï¿½ll find some artifact or such like to help me on my way to greatness.~
 =
-~If such a thing lies hidden here in the past, it’ll save me the trouble in the  future of having to come all this way to dig through a hundred years of ice and snow to get at it.~
+~If such a thing lies hidden here in the past, itï¿½ll save me the trouble in the  future of having to come all this way to dig through a hundred years of ice and snow to get at it.~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ kback17a
 	IF ~InParty("Valygar")
 !Dead("Valygar")
@@ -5158,48 +5158,48 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN returns1
- SAY ~Now that’s the way to travel! No trekking over frozen, wet wasteland, not to mention not having to listen to you hafling, you and your endless wagging tongue, day in and day out.~
+ SAY ~Now thatï¿½s the way to travel! No trekking over frozen, wet wasteland, not to mention not having to listen to you hafling, you and your endless wagging tongue, day in and day out.~
  	IF ~~ THEN EXTERN ~MELORAJ~ returns1
 END
 	
 IF ~~ THEN BEGIN returns2
- SAY ~Haven’t I always said that hafling weren’t right in the head, her and her dumb prejudices!~
+ SAY ~Havenï¿½t I always said that hafling werenï¿½t right in the head, her and her dumb prejudices!~
 =
-~Next time we have a long trek ahead of us <CHARNAME>, remind me and it’ll be my pleasure to point her in the right direction, let her get on with it. Then we’ll see who’s head is screwed on properly and who’s isn’t.~
+~Next time we have a long trek ahead of us <CHARNAME>, remind me and itï¿½ll be my pleasure to point her in the right direction, let her get on with it. Then weï¿½ll see whoï¿½s head is screwed on properly and whoï¿½s isnï¿½t.~
 	IF ~~ THEN EXTERN ~HROTHJ~ returns1
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~I reckon all our lives are in danger as long as we let that thing roam free. Who’s to say when next it’ll pop up, and maybe next time it’ll succeed in slaughtering us all! I say we take action before it does!~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+ SAY ~I reckon all our lives are in danger as long as we let that thing roam free. Whoï¿½s to say when next itï¿½ll pop up, and maybe next time itï¿½ll succeed in slaughtering us all! I say we take action before it does!~
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
 !Dead("Melora")~ EXTERN ~MELORAJ~ slayerb1
 END
 
 IF ~~ THEN BEGIN slayerb2
- SAY ~Innocent... did it look innocent to you, to any of you? If you listen to the hafling, we’ll all be digging our own graves soon enough.~
+ SAY ~Innocent... did it look innocent to you, to any of you? If you listen to the hafling, weï¿½ll all be digging our own graves soon enough.~
   IF ~~ THEN EXTERN ~MELORAJ~ slayerb2
-END  
+END
 END
 	
 APPEND ~MELORAJ~
 
 IF ~~ THEN BEGIN kulback1
- SAY ~(*Spluttering*) I always thought you insane gnome! You would do well to hold your tongue and not toss threats at one who appears to wield power that is way over your head. Not that it has any great distance to go to be over your head.~ 
+ SAY ~(*Spluttering*) I always thought you insane gnome! You would do well to hold your tongue and not toss threats at one who appears to wield power that is way over your head. Not that it has any great distance to go to be over your head.~
 =
 ~Besides, I quite like it here, no bounty hunters trying to separate my own head from my shoulders.~
  IF ~~ THEN EXTERN ~TAFFICJ~ kulback1
 END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~(*Chuckling*) Not a cat’s chance in hell of that happening gnome. Not whilst we remain here. (*She turns and swaggers away.*)~
+ SAY ~(*Chuckling*) Not a catï¿½s chance in hell of that happening gnome. Not whilst we remain here. (*She turns and swaggers away.*)~
  IF ~~ THEN EXTERN ~TAFFICJ~ kulback2
 END
 
 IF ~~ THEN BEGIN kuldback
  SAY ~(*Excitedly*) Kuldahar, the past, this is ace Hrothgar! You realise what this means, no bounty hunters looking to profit from my demise, no more looking over my shoulder every second. Heck no-one here has even heard of the name Melora Tenarien!~
 =
-~I mean I am sorry about you losing your soul and all that <CHARNAME> but I’m sure you’ll get it back, as Hrothgar always says, "in time".~
+~I mean I am sorry about you losing your soul and all that <CHARNAME> but Iï¿½m sure youï¿½ll get it back, as Hrothgar always says, "in time".~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5240,56 +5240,56 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN hrotleft
- SAY ~(*She draws herself up to her full height and her fingers curl around the hilt of her sword*) A might more secure than yours will be if you don’t keep your mouth shut gnome!~
+ SAY ~(*She draws herself up to her full height and her fingers curl around the hilt of her sword*) A might more secure than yours will be if you donï¿½t keep your mouth shut gnome!~
  IF ~~ THEN EXTERN ~TAFFICJ~ hrotlef1
 END
 
 IF ~~ THEN BEGIN hrotlef1
- SAY ~I really appreciate that Minsc, and will you thank Boo for me too. I know I shouldn’t let that runt of an excuse for a gnome get to me, but he reeks of magic and wizardry, a stench I can not abide.~
+ SAY ~I really appreciate that Minsc, and will you thank Boo for me too. I know I shouldnï¿½t let that runt of an excuse for a gnome get to me, but he reeks of magic and wizardry, a stench I can not abide.~
 =
-~The gnome knows this and ‘tis the only reason he continues to walk under my nose. (*She sighs*) Ah well, the dream was good even if it was for a brief moment only. I suppose it’s back to the future, fraught as it is with danger, it’s where we belong.~
+~The gnome knows this and ï¿½tis the only reason he continues to walk under my nose. (*She sighs*) Ah well, the dream was good even if it was for a brief moment only. I suppose itï¿½s back to the future, fraught as it is with danger, itï¿½s where we belong.~
   	IF ~~ THEN DO ~ActionOverride("Hrothgar",LeaveParty())
 ActionOverride("Hrothgar",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN returnsh
- SAY ~I hate it when you do that Hrothgar, when anyone does that! We’re lucky it turned out alright this time, we do appear to have gotten here in one piece, but how long before our luck runs out and we end up with our bits scattered all over Faerun?~
+ SAY ~I hate it when you do that Hrothgar, when anyone does that! Weï¿½re lucky it turned out alright this time, we do appear to have gotten here in one piece, but how long before our luck runs out and we end up with our bits scattered all over Faerun?~
 =
-~In future, if it’s all the same to you, I’d rather suffer the cold and wet than risk travel by means of some artifact powered by magic.~
- 	IF ~True()~ THEN EXTERN ~HROTHJ~ returns1 
+~In future, if itï¿½s all the same to you, Iï¿½d rather suffer the cold and wet than risk travel by means of some artifact powered by magic.~
+ 	IF ~True()~ THEN EXTERN ~HROTHJ~ returns1
  	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ returns1
 END
 
 IF ~~ THEN BEGIN returns1
- SAY ~Hmm... good point there gnome. I mean my not having to tolerate you and your oversized ego through what could have been a very long march was a plus, but only a minor plus let me say. I’d still prefer to travel under my own steam, the way the gods intended us to.~
+ SAY ~Hmm... good point there gnome. I mean my not having to tolerate you and your oversized ego through what could have been a very long march was a plus, but only a minor plus let me say. Iï¿½d still prefer to travel under my own steam, the way the gods intended us to.~
  	IF ~~ THEN EXTERN ~TAFFICJ~ returns2
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~So speaks the great hero to be! You liver hearted, mangy cur... you have no idea whether the beast will even show itself again! We can’t be sure so I suggest we remain vigilant and maybe another innocent life won’t be lost.~ 
+ SAY ~So speaks the great hero to be! You liver hearted, mangy cur... you have no idea whether the beast will even show itself again! We canï¿½t be sure so I suggest we remain vigilant and maybe another innocent life wonï¿½t be lost.~
 =
 ~There are too many in this world who think *it is better to strike first, ask questions after*, and all of them are just as liver hearted as this gnome here!~
   IF ~~ THEN EXTERN ~TAFFICJ~ slayerb2
 END
 
 IF ~~ THEN BEGIN slayerb2
- SAY ~You want a hand to dig yours now gnome? Come, I’ll even help you into it when we’ve done digging!~ 
-  IF ~~ THEN EXTERN ~HROTHJ~ slayer31  
+ SAY ~You want a hand to dig yours now gnome? Come, Iï¿½ll even help you into it when weï¿½ve done digging!~
+  IF ~~ THEN EXTERN ~HROTHJ~ slayer31
 END
 
 IF ~~ THEN BEGIN slayerb3
- SAY ~We have no idea whether the beast will even show itself again! We can’t be sure so I suggest we refrain from doing something we may come to regret later. Instead, if we remain vigilant, maybe another innocent life needn’t be lost.~ 
+ SAY ~We have no idea whether the beast will even show itself again! We canï¿½t be sure so I suggest we refrain from doing something we may come to regret later. Instead, if we remain vigilant, maybe another innocent life neednï¿½t be lost.~
 =
-~There are too many in this world who think *it is better to strike first, ask questions after*, and besides, we’d only be doing the sorcerer’s dirty work for him if we went down that road.~
-  IF ~~ THEN EXTERN ~HROTHJ~ slayer31  
-END 
+~There are too many in this world who think *it is better to strike first, ask questions after*, and besides, weï¿½d only be doing the sorcererï¿½s dirty work for him if we went down that road.~
+  IF ~~ THEN EXTERN ~HROTHJ~ slayer31
+END
 END
 
 APPEND ~EDWINJ~
 
 IF ~~ THEN BEGIN kulback1
- SAY ~Damn fool hafling, only an imbecile would rejoice at being thrown back in time in order to save a world of uneducated peasants! What’s the use of progress if we use it to return ourselves to the dark ages!~
+ SAY ~Damn fool hafling, only an imbecile would rejoice at being thrown back in time in order to save a world of uneducated peasants! Whatï¿½s the use of progress if we use it to return ourselves to the dark ages!~
 =
 ~(*There should be penalties levied on those guilty of indiscriminate breeding, might put a stop to these accidents that birth imbeciles.*)~
 =
@@ -5297,7 +5297,7 @@ IF ~~ THEN BEGIN kulback1
 =
 ~ME, you know, Edwin Odesseiron, the ME to whom this magnificent, personification of male perfection belongs, and which, for some unfathomable reason, your misplaced brain seems to thinks it is yours to do with as you please!~
 =
-~Return me to my own time or it’ll be my pleasure to show you that you’re not the only one capable of moving bodies. Only difference is, I’ll send yours somewhere a darn sight warmer than this frozen hole you’ve brought me to!!~
+~Return me to my own time or itï¿½ll be my pleasure to show you that youï¿½re not the only one capable of moving bodies. Only difference is, Iï¿½ll send yours somewhere a darn sight warmer than this frozen hole youï¿½ve brought me to!!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5336,11 +5336,11 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kuldback
- SAY ~What the?! Paladin, you’d best start explaining fast why you have the gall to presume to move MY person, to this frozen lump of orc dung you call home without prior permission from ME!~ 
+ SAY ~What the?! Paladin, youï¿½d best start explaining fast why you have the gall to presume to move MY person, to this frozen lump of orc dung you call home without prior permission from ME!~
 =
 ~ME, you know, Edwin Odesseiron, the ME to whom this magnificent, personification of male perfection belongs, and which, for some unfathomable reason, your misplaced brain seems to thinks it is yours to do with as you please!~
 =
-~Return me to my own time or it’ll be my pleasure to show you that you’re not the only one capable of moving bodies. Only difference is, I’ll send yours somewhere a darn sight warmer than this frozen hole you’ve brought me to!~
+~Return me to my own time or itï¿½ll be my pleasure to show you that youï¿½re not the only one capable of moving bodies. Only difference is, Iï¿½ll send yours somewhere a darn sight warmer than this frozen hole youï¿½ve brought me to!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5380,7 +5380,7 @@ END
 
 IF ~~ THEN BEGIN kulback2
  SAY ~(*Murmurs to himself*) (*Once again I can see this is going to need my expertise to oversee these imbeciles, and to make sure they do nothing to disrupt the lineage of the noble Odesseiron family.*)~
-= 
+=
 ~(*Not that I imagine any Odesseirons hailing from these backwaters, still one can not take chances with simpletons loose in the past.*)~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ kback17a
 	IF ~InParty("Valygar")
@@ -5408,7 +5408,7 @@ OR(2)
 !Dead("Sime")~ THEN EXTERN ~SIMEJ~ kulback1
 	IF ~InParty("Leina")
 !Dead("Leina")~ THEN EXTERN ~LEINAJ~ kulback1
-END 
+END
 END
 
 APPEND ~KELDORJ~
@@ -5416,11 +5416,11 @@ APPEND ~KELDORJ~
 IF ~~ THEN BEGIN kuldback
  SAY ~Ho, my friend, you have always walked a fine line through this world of ours but I fear you may have just crossed it.~
 =
-~You may meddle and play around with time but you can not play around with people’s lives or indeed their futures.~ 
+~You may meddle and play around with time but you can not play around with peopleï¿½s lives or indeed their futures.~
 =
-~I am an old paladin and I came to my place in the scheme of things many years ago, but these young people still have far to go. You had no right bringing them here when so much needs reconciling in their own time.~ 
+~I am an old paladin and I came to my place in the scheme of things many years ago, but these young people still have far to go. You had no right bringing them here when so much needs reconciling in their own time.~
 =
-~If it is their choice then I must insist you return them immediately, but if it is Torm’s will, I will remain and together we will show evil that two men who stand with their god on their side are not to be trifled with.~ 
+~If it is their choice then I must insist you return them immediately, but if it is Tormï¿½s will, I will remain and together we will show evil that two men who stand with their god on their side are not to be trifled with.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5457,7 +5457,7 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN moonorde
- SAY ~It is true, I have heard whispers of such a brotherhood among those of my own order, but when questioned, Prelate Wesselan  always dismissed them as mere myths, nothing more than a bard’s imaginations and yet, his eye would take on a look that revealed more than he did.~
+ SAY ~It is true, I have heard whispers of such a brotherhood among those of my own order, but when questioned, Prelate Wesselan  always dismissed them as mere myths, nothing more than a bardï¿½s imaginations and yet, his eye would take on a look that revealed more than he did.~
 =
 ~I always felt there was something more than myth and imagination, but he would not say more.~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ kuback13
@@ -5469,9 +5469,9 @@ END
 APPEND ~KORGANJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~Now what t’blazes ‘ave yer gone an’done paladin! Yer better be telling a good story as t’why yer yanked us back here if yer don’t wanta feel me axe a slitting yer gizzard.~
+ SAY ~Now what tï¿½blazes ï¿½ave yer gone anï¿½done paladin! Yer better be telling a good story as tï¿½why yer yanked us back here if yer donï¿½t wanta feel me axe a slitting yer gizzard.~
 =
-~Won’t hurt fer  m’ears to hear the jingle of gold whilst yer be doing yer telling neither.~
+~Wonï¿½t hurt fer  mï¿½ears to hear the jingle of gold whilst yer be doing yer telling neither.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5506,12 +5506,12 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~(*Sidling up to the elf*) Quit yer whinging elf. After all, if this don’t put some hair on that chest of yers... or what passes for yer chest... yer can always snuggle up to Korgan here, he ‘as more than enough t’keep the both of us warm.~
+ SAY ~(*Sidling up to the elf*) Quit yer whinging elf. After all, if this donï¿½t put some hair on that chest of yers... or what passes for yer chest... yer can always snuggle up to Korgan here, he ï¿½as more than enough tï¿½keep the both of us warm.~
  IF ~~ THEN EXTERN ~AERIEJ~ kulback1
 END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~Just yer remember elfie, ‘t’aint an open offer I be giving yer here. A dwarf aint known fer ‘is patience yer know and ‘t’aint gonna get no warmer here.~
+ SAY ~Just yer remember elfie, ï¿½tï¿½aint an open offer I be giving yer here. A dwarf aint known fer ï¿½is patience yer know and ï¿½tï¿½aint gonna get no warmer here.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5528,9 +5528,9 @@ InParty("Yoshimo")
 END
 
 IF ~~ THEN BEGIN returnsh
- SAY ~That’s be a mighty useful gadget that yer got yerself paladin, could get a dwarf outa many a scrape. ‘Nother of yer guild’s workings yer don’t want others getting ther hands on I’m betting.~
+ SAY ~Thatï¿½s be a mighty useful gadget that yer got yerself paladin, could get a dwarf outa many a scrape. ï¿½Nother of yer guildï¿½s workings yer donï¿½t want others getting ther hands on Iï¿½m betting.~
 =
-~(*Still, if yer were to pop yer clogs, I reckon ‘twould only be fair fer who found yer first to sort yer stuff.*)~
+~(*Still, if yer were to pop yer clogs, I reckon ï¿½twould only be fair fer who found yer first to sort yer stuff.*)~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ returns1
  	IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ returnsh	
@@ -5539,13 +5539,13 @@ IF ~~ THEN BEGIN returnsh
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~	There aint a hell beast Korgan be afeared of. If the beastie dare rear its ugly head agin, it’ll find its brains splattered and me axe sticking out of em!~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+ SAY ~	There aint a hell beast Korgan be afeared of. If the beastie dare rear its ugly head agin, itï¿½ll find its brains splattered and me axe sticking out of em!~
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
-END 
+END
 END
 
 APPEND ~VALYGARJ~
@@ -5553,7 +5553,7 @@ APPEND ~VALYGARJ~
 IF ~~ THEN BEGIN kuldback
  SAY ~What trickery is this Hrothgar?! Do you deny that you dabble in the black arts of magic in order to bring us to this place?~
 =
-~I demand answers from you now and believe me, I will not balk from using any means necessary to get satisfaction!~ 
+~I demand answers from you now and believe me, I will not balk from using any means necessary to get satisfaction!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5588,17 +5588,17 @@ END
 IF ~~ THEN BEGIN kulback1
  SAY ~I should have expected no less of you <CHARNAME>. Hrothgar cannot be blamed for wanting to save his people and your insistence to help him makes me ashamed of my angry words.~
 =
-~Please understand, my only concern is that a good and beautiful soul may be lost to the world forever if we do not act swiftly to retrieve it.~ 
+~Please understand, my only concern is that a good and beautiful soul may be lost to the world forever if we do not act swiftly to retrieve it.~
 =
-~Forget my words and let us continue to Dorn’s Deep as is your wish. (*He turns away before you can answer him, leaving you, not for the first time, with unspoken thoughts whirling around inside your head.*)~
+~Forget my words and let us continue to Dornï¿½s Deep as is your wish. (*He turns away before you can answer him, leaving you, not for the first time, with unspoken thoughts whirling around inside your head.*)~
  	IF ~~ THEN EXTERN ~HROTHJ~ kback17a
 END
 
 IF ~~ THEN BEGIN slayerb1
  SAY ~(*Moans*) Yea gods no!! How many more family and friends will I be forced to murder solely because they have touched my life? Damn this curse, and damn me for caring!~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -5613,7 +5613,7 @@ END
 APPEND ~MAZZYJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~This is not the way to enlist aid Hrothgar, whisking us away without a moments notice. You know that Mazzy Fenton is always ready to fight for those unable to stand for themselves!~ 
+ SAY ~This is not the way to enlist aid Hrothgar, whisking us away without a moments notice. You know that Mazzy Fenton is always ready to fight for those unable to stand for themselves!~
 =
 ~It matters not to me whether the fight takes me to the past or to the moon, where ever the weak need a strong arm then I will lend them mine.~
 =
@@ -5651,11 +5651,11 @@ END
 APPEND ~NALIAJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~This isn’t quite how I envisioned helping the needy, but I suppose there are people in the past just as needy as those of the future.~ 
+ SAY ~This isnï¿½t quite how I envisioned helping the needy, but I suppose there are people in the past just as needy as those of the future.~
 =
-~Maybe even more because I remember auntie saying that the peasants of today should be grateful they aren’t living in the days gone by, because if they were, then they’d know what real hardship means.~
+~Maybe even more because I remember auntie saying that the peasants of today should be grateful they arenï¿½t living in the days gone by, because if they were, then theyï¿½d know what real hardship means.~
 =
-~"The peasants of today, live in luxury, compared to conditions back then", she’d say. I never did understand her. In all my visits to the poor, luxury was the last thing I found.~
+~"The peasants of today, live in luxury, compared to conditions back then", sheï¿½d say. I never did understand her. In all my visits to the poor, luxury was the last thing I found.~
 =
 ~Maybe being here in the past I will at last gain some understand to her words.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
@@ -5742,7 +5742,7 @@ IF ~~ THEN BEGIN kulback3
 OR(2)
 		Global("ValygarRomanceActive","GLOBAL",1)
 		Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ kulback1
-END 
+END
 
 IF ~~ THEN BEGIN kulback4
  SAY ~This may not be my fight but if you intend to see it through, never let it be said that Anomen Delryn shirked in his duty and allowed evil to roam free despoiling all in its path.~
@@ -5754,7 +5754,7 @@ IF ~~ THEN BEGIN kulback4
 OR(2)
 		Global("ValygarRomanceActive","GLOBAL",1)
 		Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ kulback1
-END 
+END
 END
 
 APPEND ~AERIEJ~
@@ -5764,7 +5764,7 @@ IF ~~ THEN BEGIN kuldback
 =
 ~Already I begin to feel the cold seeping through my skin. Avariel are not used to such conditions and I fear I do not have the constitution necessary to survive such a cold, inhospitable place!~
 =
-~Please Hrothgar, I beg of you, I don’t want to die so far from my home.~
+~Please Hrothgar, I beg of you, I donï¿½t want to die so far from my home.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5783,7 +5783,7 @@ InParty("Yoshimo")
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~Go away you disgusting creature I’d rather let the cold take me then have you come anywhere near me! (*She backs away from him.*)~
+ SAY ~Go away you disgusting creature Iï¿½d rather let the cold take me then have you come anywhere near me! (*She backs away from him.*)~
  IF ~~ THEN EXTERN ~KORGANJ~ kulback2
 END
 
@@ -5815,9 +5815,9 @@ IF ~~ THEN BEGIN kuldback
 =
 ~Great grandpappy of cousin Jan the third did that once when he brought the pesky beetles home in his trunk after being away on one of his sea faring adventures. Reckons some foreigner or other told him they were the fastest way to fertilise his crops.~
 =
-~How he rid the turnip fields of the pests is another story and I don’t reckon anyone is in a mind to hear it just now.~
+~How he rid the turnip fields of the pests is another story and I donï¿½t reckon anyone is in a mind to hear it just now.~
 =
-~However, cousin Jan the third’s great grandpappy had to do some quick thinking and smart talking before the other Jansen’s set about him, and it seems to Jan here that you need to be doing some of that smart talking yourself my friend.~
+~However, cousin Jan the thirdï¿½s great grandpappy had to do some quick thinking and smart talking before the other Jansenï¿½s set about him, and it seems to Jan here that you need to be doing some of that smart talking yourself my friend.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
   IF ~InParty("Sharteel")
 !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kuldback
@@ -5832,12 +5832,12 @@ InParty("Yoshimo")
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~	Ah, I know this one, a story told me by second cousin thrice removed. Went by the name of... now what was his name? Robby L... that’s it Robby Luis something, liked to be called RL.~
+ SAY ~	Ah, I know this one, a story told me by second cousin thrice removed. Went by the name of... now what was his name? Robby L... thatï¿½s it Robby Luis something, liked to be called RL.~
 =
-~Said he had an uncle, a doctor who had concocted a potion which would allow him to change between gnome and beast.  Mmm... strangest thing, I’m darned if I can recall this doctor’s name at this minute.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+~Said he had an uncle, a doctor who had concocted a potion which would allow him to change between gnome and beast.  Mmm... strangest thing, Iï¿½m darned if I can recall this doctorï¿½s name at this minute.~
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -5860,7 +5860,7 @@ APPEND ~VICONIJ~
 IF ~~ THEN BEGIN kuldback
  SAY ~Mal'ai kivvilen! Dos izin natha jaluk ulu lead l' i'dol lu' t'yin bemoan vel'klar ukt brainless shar plynnen dos!~
 =
-~You presume to make decisions for us? Such arrogance in a male should never be tolerated! I demand that he be punished severely for allowing his head to rise above his station!~ 
+~You presume to make decisions for us? Such arrogance in a male should never be tolerated! I demand that he be punished severely for allowing his head to rise above his station!~
 =
 ~Let his head be made to sit on the ground, so that it may never rise so high again!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
@@ -5885,7 +5885,7 @@ IF ~~ THEN EXTERN ~YOSHJ~ kulback1
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~(*Leaning into his embrace*) I hope you are right Yoshimo. Not for one second did I suspect that when I left Kara Tur,  Kachiko the huntress would become Kachiko the lover of her prey.~ 
+ SAY ~(*Leaning into his embrace*) I hope you are right Yoshimo. Not for one second did I suspect that when I left Kara Tur,  Kachiko the huntress would become Kachiko the lover of her prey.~
 =
 ~It has been a long and arduous journey my ignoble bounty hunter, but it is not one I will ever regret making.~
 IF ~~ THEN EXTERN ~YOSHJ~ kulback2
@@ -5897,9 +5897,9 @@ IF ~~ THEN BEGIN returnsh
 END
 
 IF ~~ THEN BEGIN returns1
- SAY ~The air Yoshimo, it was all around me, pulling at me, drawing me further and further into it! Then, for a moment, I lost sight of you, I couldn’t hear you, I was alone and afraid.~
+ SAY ~The air Yoshimo, it was all around me, pulling at me, drawing me further and further into it! Then, for a moment, I lost sight of you, I couldnï¿½t hear you, I was alone and afraid.~
 =
-~It reminded me of the island, of how you came to rescue me. Only it was different, I couldn’t see you, couldn’t hear you... I... I thought I was lost again.~
+~It reminded me of the island, of how you came to rescue me. Only it was different, I couldnï¿½t see you, couldnï¿½t hear you... I... I thought I was lost again.~
 	IF ~~ THEN EXTERN ~YOSHJ~ returns1
 END
 
@@ -5918,9 +5918,9 @@ END
 
 IF ~~ THEN BEGIN slayerb1
  SAY ~(*Moving closer to Yoshimo she puts both her arms around him*) Is this close enough my gallant Samurai? Know that Yoshimo needs no excuse to keep Kachiko close to his side. There is no place she would rather be.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")
@@ -5941,7 +5941,7 @@ IF ~~ THEN BEGIN kulback1
 =
 ~Tell your Yoshimo this, do you feel any differently towards him then you did before we stepped through the portal? Has you heart suddenly grown indifferent to his kisses?~
 =
-~I know that Yoshimo’s love for the lovely Katchiko still burns as strongly in his heart. It is strange, we are in a time before our birth and yet all remains the same.~
+~I know that Yoshimoï¿½s love for the lovely Katchiko still burns as strongly in his heart. It is strange, we are in a time before our birth and yet all remains the same.~
 =
 ~It is as though all that we have has remained with us, as though even time can not erase love once it enters the heart. I sense all will be well with us my beautiful girl.~
 IF ~~ THEN EXTERN ~KACHIJ~ kulback1
@@ -5962,18 +5962,18 @@ IF ~~ THEN BEGIN returnsh
  SAY ~(*Slipping his hand into hers*) I am here Kachiko, right beside you.~
 	IF ~~ THEN EXTERN ~KACHIJ~ returns1
 END
- 
+
 IF ~~ THEN BEGIN returns1
- SAY ~Hush now my turtle dove. Surely you know that even if all the wizards in Faerun, or indeed the world were to combine their powers, they still wouldn’t be able to conjure a force strong enough to keep me from your side.~
+ SAY ~Hush now my turtle dove. Surely you know that even if all the wizards in Faerun, or indeed the world were to combine their powers, they still wouldnï¿½t be able to conjure a force strong enough to keep me from your side.~
 =
 ~(*Pulling the anxious Kachiko to him*) Here, let your Yoshimo kiss away all those silly fears of yours.~
 	IF ~~ THEN EXTERN ~KACHIJ~ returns2
 END
 
 IF ~~ THEN BEGIN slayerb1
- SAY ~This isn’t good! Kachiko, if we are to continue with this group then I must insist you stay close to me... at least until we know what it is we face here.~
+ SAY ~This isnï¿½t good! Kachiko, if we are to continue with this group then I must insist you stay close to me... at least until we know what it is we face here.~
 =
-~You are far too precious my turtle dove to risk that beast taking us unawares again. Besides, Yoshimo swore to Kachiko’s family that he would keep their cherished daughter safe and as long as I draw breath, safe she will be.~
+~You are far too precious my turtle dove to risk that beast taking us unawares again. Besides, Yoshimo swore to Kachikoï¿½s family that he would keep their cherished daughter safe and as long as I draw breath, safe she will be.~
   IF ~~ THEN EXTERN ~KACHIJ~ slayerb1
 END
 END
@@ -5988,9 +5988,9 @@ IF ~~ THEN BEGIN kuldback
 END
 
 IF ~~ THEN BEGIN moonorde
- SAY ~Ah ha, there is never smoke without fire my friend, and many a bard’s tale has its roots firmly fixed in fact and not fiction.~
+ SAY ~Ah ha, there is never smoke without fire my friend, and many a bardï¿½s tale has its roots firmly fixed in fact and not fiction.~
 =
-~You my hawk, along with your kin, have flown high for eons, just out of the sight of a man’s eye, but the eye of Haer’Dalis caught sight of your kind when you were but a fledgling, and learned to recognise your nature.~
+~You my hawk, along with your kin, have flown high for eons, just out of the sight of a manï¿½s eye, but the eye of Haerï¿½Dalis caught sight of your kind when you were but a fledgling, and learned to recognise your nature.~
 =
 ~It was only a matter of time before the hawk would have need to leave the cloak of the clouds and reveal his true feathers.~
 	IF ~~ THEN EXTERN ~HROTHJ~ kuback13
@@ -6000,9 +6000,9 @@ END
 APPEND ~SHARTJ~
 
 IF ~~ THEN BEGIN kuldback
- SAY ~Yeah well, flux or no flux, what the bleeding hell is a flux anyway? What the heck, you’re right about time running out paladin? Only it’s not your people’s time you sense slipping away but your own!~
+ SAY ~Yeah well, flux or no flux, what the bleeding hell is a flux anyway? What the heck, youï¿½re right about time running out paladin? Only itï¿½s not your peopleï¿½s time you sense slipping away but your own!~
 =
-~(*Then drawing her sword she continues*) If you don’t want to be standing on the outside as your insides start falling to the outside, then you’d better explain what we’re doing here and in words we can all understand.~
+~(*Then drawing her sword she continues*) If you donï¿½t want to be standing on the outside as your insides start falling to the outside, then youï¿½d better explain what weï¿½re doing here and in words we can all understand.~
  IF ~~ THEN EXTERN ~HROTHJ~ kulback6
 END
 END
@@ -6015,10 +6015,10 @@ IF ~~ THEN BEGIN slayerb1
 END
 
 IF ~~ THEN BEGIN slayerb2
- SAY ~I sure as hell hope that is true Hrothgar! It was so... so ugly... so deformed. Eeew, I doubt even a mother could love a face such as that! Besides, I don’t fancy going through the rest of my life trapped in that hideous body!~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31  
+ SAY ~I sure as hell hope that is true Hrothgar! It was so... so ugly... so deformed. Eeew, I doubt even a mother could love a face such as that! Besides, I donï¿½t fancy going through the rest of my life trapped in that hideous body!~
+  IF ~True()~ THEN EXTERN ~HROTHJ~ slayer31
   IF ~InParty("Melora")
-!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3  
+!Dead("Melora")~ EXTERN ~MELORAJ~ slayerb3
   IF ~InParty("Taffic")
 !Dead("Taffic")~ EXTERN ~TAFFICJ~ slayerb1
   IF ~InParty("Korgan")

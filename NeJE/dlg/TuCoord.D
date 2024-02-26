@@ -22,7 +22,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-  SAY ~Each school at present consists of several colleges, and each school has an opposing one. Those who choose to specialise in one school, forfeit the ability to learn spells from the the opposing one.~   
+  SAY ~Each school at present consists of several colleges, and each school has an opposing one. Those who choose to specialise in one school, forfeit the ability to learn spells from the the opposing one.~
   IF ~~ THEN GOTO 5
 END
 
@@ -52,7 +52,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",2)~ THEN BEGIN 9
 END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",3)~ THEN BEGIN 10
-  SAY ~The college of *Abjuration* specialises in learning spells that counter magic effects. There are three general types of abjuration spells... they are, *protective*, *dispelling* and *dismissal* . Protection spells come in three types... protection from creatures, from weapons and protection from magic itself.  Dispelling will remove many magical effects present and dismissal will remove certain creatures at the casters discretion. Very useful tactics when in combat I’m sure you will agree.~
+  SAY ~The college of *Abjuration* specialises in learning spells that counter magic effects. There are three general types of abjuration spells... they are, *protective*, *dispelling* and *dismissal* . Protection spells come in three types... protection from creatures, from weapons and protection from magic itself.  Dispelling will remove many magical effects present and dismissal will remove certain creatures at the casters discretion. Very useful tactics when in combat Iï¿½m sure you will agree.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",4)~ EXIT
 END
 
@@ -75,7 +75,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",5)~ THEN BEGIN 14
   SAY ~Whereas the elemental wizard is a fairly new specialisation, elementalism is not a school in itself but an area of specialisation, focusing on spells of the four prime elements. We at Halruaa embrace all forms of specialisation and therefore include it as a school.~
 	IF ~~ THEN GOTO 15
 END
-  
+
 IF ~~ THEN BEGIN 15
   SAY ~The college of *Earth* holds spells which manipulate the first elemental material, that of earth and stone.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",6)~ EXIT
@@ -100,7 +100,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",9)~ THEN BEGIN 19
   SAY ~And finally we come to the symbol of the college of *Summoning*, which contains spells that concern the summoning of creatures of progressive power. Now I know how impressive that sounds to a new student, but the practising wizard must always be aware that certain summoned creatures, will not be too happy at having been yanked out of their own environment... I am sure I need say no more about summoning spells my young friend.~
 	IF ~~ THEN GOTO 20
 END
-  
+
 IF ~~ THEN BEGIN 20
   SAY ~Now let's move onto the *Mental* school of magic, which specialises in enchantment and charm magic. There are only two colleges in this school, the college of *Nature* and the college of *Enchantment*.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",10)~ EXIT
@@ -109,10 +109,10 @@ END
 IF ~Global("VP_HalruaaTour","GLOBAL",10)~ THEN BEGIN 21
   SAY ~This is the rune of the college of *Enchantment*. This college specialises in the learning of *enchantment* and *charm* type spells. Both of which imbue the subject with magical energy in order to create specific effects.~
 	IF ~~ THEN GOTO 22
-END  
-   
+END
+
 IF ~~ THEN BEGIN 22
-  SAY ~First there are the *enchantment* spells which invest non-living objects with magical powers. Then there are the *charm* spells which influence and control a creature’s behaviour by altering its  mental or emotional state... obviously, these spells have no effect on creatures that are mindless or undead. Also elves have a high innate resistance to this type of magic.~
+  SAY ~First there are the *enchantment* spells which invest non-living objects with magical powers. Then there are the *charm* spells which influence and control a creatureï¿½s behaviour by altering its  mental or emotional state... obviously, these spells have no effect on creatures that are mindless or undead. Also elves have a high innate resistance to this type of magic.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",11)~ EXIT
 END
 
@@ -127,7 +127,7 @@ IF ~~ THEN BEGIN 24
 END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",12)~ THEN BEGIN 25
-  SAY ~This is the symbol of the *Temporal* college which concerns spells that control the flow of time. There isn’t a lot I can say about the spells of this college, but I will say, be careful when using these spells, lest you suddenly find the years have slipped away quicker than you would like.~
+  SAY ~This is the symbol of the *Temporal* college which concerns spells that control the flow of time. There isnï¿½t a lot I can say about the spells of this college, but I will say, be careful when using these spells, lest you suddenly find the years have slipped away quicker than you would like.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",13)~ EXIT
 END
 
@@ -135,7 +135,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",13)~ THEN BEGIN 26
   SAY ~We then have the college of *Illusion*. Whereas illusion spells bend reality to create apparent changes in the environment, in the caster or in other creatures, they do not cause real change as do alteration spells, but instead, they alter the way creatures perceive reality... what we know as illusion. We do however, still include it as a college in the school of Alteration here at Halruaa.~
 	IF ~~ THEN GOTO 27	
 END
-  
+
 IF ~~ THEN BEGIN 27
   SAY ~There are illusionary spells which simulate reality, creating artificial conditions of light, colour, sound and scent. Then there are illusions which focus on extradimensional forces to alter the physical form of the wizard... often used to protect him from a variety of attack forms. Also included is Phantasm spells, these spells do not create images, instead they directly manipulate the perception of the target in order to induce varied responses.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",14)~ EXIT
@@ -159,8 +159,8 @@ END
 IF ~Global("VP_HalruaaTour","GLOBAL",16)~ THEN BEGIN 31
   SAY ~This rune we call *Force*, and it represents the only college of the *Invocation* school, which manipulates and directs the pure energy of substance. Once again there are two types of spells in this specialist magic.~
   IF ~~ THEN GOTO 32
-END  
-  
+END
+
 IF ~~ THEN BEGIN 32
   SAY ~*Invocation* spells call on the intervention of powerful extradimensional beings. Whereas *evocation* spells use the natural magical forces of the planes.~
   IF ~~ THEN GOTO 33
@@ -174,8 +174,8 @@ END
 IF ~Global("VP_HalruaaTour","GLOBAL",17)~ THEN BEGIN 34
   SAY ~Here you see the five runes surrounding the ancient fountain dating the foundation of the Academy. The upper rune symbolises the school of *Alteration*, and then clockwise are the symbols of the *Mental*, *Invocation*, *Meta* and *Elemental* schools.~
   IF ~~ THEN GOTO 35
-END  
-   
+END
+
 IF ~~ THEN BEGIN 35
   SAY ~Now you may meditate upon your choices for a short time, choose the school that most suits your personality, temperament and nature. Your choice will affect the rest of your life, and indeed, your suitability for your chosen school may well mean the difference between life or death in the future! All that remains is for me to wish you good luck in your studies and I hope to see you soon within our quarters. Farewell <CHARNAME>.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",18)

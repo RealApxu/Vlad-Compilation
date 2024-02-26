@@ -3,74 +3,74 @@ BEGIN ~ESMOND~
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 1
 	SAY ~Greetings, I am Esmond. Please, stay your weapons, I have no quarrel with you and neither I nor my friends wish you harm.~
 =
-~As wild as these creatures may appear we have grown together in our need for both aid and companionship. They will remain by my side unless I am threatened or until I indicate my wish for them to do otherwise.~ 
+~As wild as these creatures may appear we have grown together in our need for both aid and companionship. They will remain by my side unless I am threatened or until I indicate my wish for them to do otherwise.~
 =
 ~So please, just move along your way quickly and you will suffer no molestation from me or mine.~
 		IF ~~ THEN EXTERN ~SHARTJ~ esmond0
 END
 
 IF ~~ THEN BEGIN 2
-	SAY ~Master no more, but what of you? What makes you any better than me? For all your colourful words, you clearly do the dragon’s bidding, why else would you be here?~ 
+	SAY ~Master no more, but what of you? What makes you any better than me? For all your colourful words, you clearly do the dragonï¿½s bidding, why else would you be here?~
 		IF ~~ THEN EXTERN ~SHARTJ~ esmond3
 END
 
 IF ~~ THEN BEGIN 3
-	SAY ~Yours by right? What right? The dragon owed me, he took the best years of my life and proud I was at first to give them up into his service, but for what, only to be discarded when younger upstarts came begging, falling over themselves to be allowed to sit at his feet and kiss his tail!~ 
+	SAY ~Yours by right? What right? The dragon owed me, he took the best years of my life and proud I was at first to give them up into his service, but for what, only to be discarded when younger upstarts came begging, falling over themselves to be allowed to sit at his feet and kiss his tail!~
 =
-~So, when I left I made sure he’d regret ever thinking me expendable...now he’ll see how arrogant he was every time he remembers how it was me who outsmarted him and took his most prized treasure from under that fiery snout of his!~ 
+~So, when I left I made sure heï¿½d regret ever thinking me expendable...now heï¿½ll see how arrogant he was every time he remembers how it was me who outsmarted him and took his most prized treasure from under that fiery snout of his!~
 =
-~I know the story of how the dragon gained this treasure and I don’t recall mention of any jumped up would be girly fighter coming into it anywhere.~
+~I know the story of how the dragon gained this treasure and I donï¿½t recall mention of any jumped up would be girly fighter coming into it anywhere.~
 		IF ~~ THEN EXTERN ~SHARTJ~ esmond4
 END
 	
 IF ~~ THEN BEGIN 4
-	SAY ~Oh please, someone restrain this over excitable female before she hurts herself with that sword!~ 
+	SAY ~Oh please, someone restrain this over excitable female before she hurts herself with that sword!~
 =
-~(*Then pointing to you*) You... yes you, are you responsible for her? If so kindly tell her that I don’t wish her any harm but I am not about to give up that which I worked for, and risked my life for in the dragon’s lair, because of the threats from an obviously deranged female!~ 
-	IF ~~ THEN REPLY ~She is a tad unstable Esmond, I’ll give you that. So I suggest you give her that which she is asking for, otherwise... well trust me, you really don’t want to rile her anymore.~ GOTO 5 
-	IF ~~ THEN REPLY ~Just give us that which we came for and I’m sure I can persuade her to put the sword away.~ GOTO 5 
-	IF ~~ THEN REPLY ~No hard feelings but whereas Shar-Teel has my backing on this matter, no one’s responsible for anyone other than theirself here.~ GOTO 6
-	IF ~~ THEN REPLY ~Sorry Esmond, I don’t want to see you get hurt but Shar-Teel believes you have something that once belonged to her father and she wants it back.~ GOTO 6
+~(*Then pointing to you*) You... yes you, are you responsible for her? If so kindly tell her that I donï¿½t wish her any harm but I am not about to give up that which I worked for, and risked my life for in the dragonï¿½s lair, because of the threats from an obviously deranged female!~
+	IF ~~ THEN REPLY ~She is a tad unstable Esmond, Iï¿½ll give you that. So I suggest you give her that which she is asking for, otherwise... well trust me, you really donï¿½t want to rile her anymore.~ GOTO 5
+	IF ~~ THEN REPLY ~Just give us that which we came for and Iï¿½m sure I can persuade her to put the sword away.~ GOTO 5
+	IF ~~ THEN REPLY ~No hard feelings but whereas Shar-Teel has my backing on this matter, no oneï¿½s responsible for anyone other than theirself here.~ GOTO 6
+	IF ~~ THEN REPLY ~Sorry Esmond, I donï¿½t want to see you get hurt but Shar-Teel believes you have something that once belonged to her father and she wants it back.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 5
-	SAY ~I don’t scare easily and I’ve not kept one step ahead of the old dragon without the odd tussle with his minions... though none claiming a right to his property.~
+	SAY ~I donï¿½t scare easily and Iï¿½ve not kept one step ahead of the old dragon without the odd tussle with his minions... though none claiming a right to his property.~
 =
 ~Tell me, what stories has this girl been feeding you to make you travel so far for her? Must have been some tale to get you to venture into the lair of a red dragon.~
-	IF ~~ THEN REPLY ~Nothing the dragon didn’t confirm... but come, surely a few trinkets aren’t worth losing your life over?~ GOTO 7
-	IF ~~ THEN REPLY ~I’m not here to parley, just hand over the goods or this is going to get messy pretty quickly!~ GOTO 11
-	IF ~~ THEN REPLY ~Just give us the goods and maybe I’ll forget my promise to the dragon to return with your body in tow!~ GOTO 11
+	IF ~~ THEN REPLY ~Nothing the dragon didnï¿½t confirm... but come, surely a few trinkets arenï¿½t worth losing your life over?~ GOTO 7
+	IF ~~ THEN REPLY ~Iï¿½m not here to parley, just hand over the goods or this is going to get messy pretty quickly!~ GOTO 11
+	IF ~~ THEN REPLY ~Just give us the goods and maybe Iï¿½ll forget my promise to the dragon to return with your body in tow!~ GOTO 11
 END
 	
 IF ~~ THEN BEGIN 6
 	SAY ~So you stand by her claim do you? Tell me, what stories has this girl been feeding you to make you travel so far?  Must have been some tale to get you to venture into the lair of a red dragon.~
-	IF ~~ THEN REPLY ~Nothing the dragon didn’t confirm... but come, surely a few trinkets aren’t worth losing your life over?~ GOTO 7
-	IF ~~ THEN REPLY ~I’m not here to parley, just hand over the goods or this is going to get messy pretty quickly!~ GOTO 11
-	IF ~~ THEN REPLY ~Just give us the goods and maybe I’ll forget my promise to the dragon to return with your body in tow!~ GOTO 11
+	IF ~~ THEN REPLY ~Nothing the dragon didnï¿½t confirm... but come, surely a few trinkets arenï¿½t worth losing your life over?~ GOTO 7
+	IF ~~ THEN REPLY ~Iï¿½m not here to parley, just hand over the goods or this is going to get messy pretty quickly!~ GOTO 11
+	IF ~~ THEN REPLY ~Just give us the goods and maybe Iï¿½ll forget my promise to the dragon to return with your body in tow!~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 7
-	SAY ~Maybe not, but they must be pretty important for you to chase me down here. Now the question is, how much are they worth to you?~ 
+	SAY ~Maybe not, but they must be pretty important for you to chase me down here. Now the question is, how much are they worth to you?~
 =
-~They may not be of any use to me but that doesn’t mean I’m going to just hand them over to you, not without some compensation for the trouble I went to getting them out of the clutches of that stinking bag of bones of a dragon.~
+~They may not be of any use to me but that doesnï¿½t mean Iï¿½m going to just hand them over to you, not without some compensation for the trouble I went to getting them out of the clutches of that stinking bag of bones of a dragon.~
 	IF ~~ THEN GOTO 71
 END
 
 IF ~~ THEN BEGIN 71
-	SAY ~I don’t think 5,000 gold is too outrageous a sum to be asking, do you? Not when we consider the price *Old Red* will pay to get his claws back on them.~
+	SAY ~I donï¿½t think 5,000 gold is too outrageous a sum to be asking, do you? Not when we consider the price *Old Red* will pay to get his claws back on them.~
 =
-~That is of course if that is your intention, not that it’s any consequence to me what you do. What say you? Do we have a deal?~
-	IF ~PartyGoldGT(4999)~ THEN REPLY ~Fair enough, here’s your gold.~ GOTO 8
-	IF ~PartyGoldLT(5000)~ THEN REPLY ~Fair enough, here’s your gold.~ GOTO 9
+~That is of course if that is your intention, not that itï¿½s any consequence to me what you do. What say you? Do we have a deal?~
+	IF ~PartyGoldGT(4999)~ THEN REPLY ~Fair enough, hereï¿½s your gold.~ GOTO 8
+	IF ~PartyGoldLT(5000)~ THEN REPLY ~Fair enough, hereï¿½s your gold.~ GOTO 9
 	IF ~CheckStatGT(Player1,15,CHR)
-PartyGoldGT(2999)~ THEN REPLY ~I’ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 81
+PartyGoldGT(2999)~ THEN REPLY ~Iï¿½ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 81
 	IF ~CheckStatGT(Player1,15,CHR)
-PartyGoldLT(3000)~ THEN REPLY ~I’ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 9
+PartyGoldLT(3000)~ THEN REPLY ~Iï¿½ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 9
 	IF ~CheckStatGT(Player1,10,CHR)
-CheckStatLT(Player1,16,CHR)~ THEN REPLY ~I’ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 91	
-	IF ~CheckStatLT(Player1,11,CHR)~ THEN REPLY ~I’ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 10
-	IF ~~ THEN REPLY ~I give you how much?! I don’t think so. Leaving you your miserable life in tact is the only payment you’ll get from me!~ GOTO 10
-	IF ~~ THEN REPLY ~So, it’s a deal your looking for is it? Well, I have one for you. You hand over the items and there’ll be no need for Shar-Teel here to show you *her* deal!~ GOTO 10
+CheckStatLT(Player1,16,CHR)~ THEN REPLY ~Iï¿½ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 91	
+	IF ~CheckStatLT(Player1,11,CHR)~ THEN REPLY ~Iï¿½ll give you 3,000 gold and not one gold piece more. Take it or leave it!~ GOTO 10
+	IF ~~ THEN REPLY ~I give you how much?! I donï¿½t think so. Leaving you your miserable life in tact is the only payment youï¿½ll get from me!~ GOTO 10
+	IF ~~ THEN REPLY ~So, itï¿½s a deal your looking for is it? Well, I have one for you. You hand over the items and thereï¿½ll be no need for Shar-Teel here to show you *her* deal!~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 8
@@ -86,7 +86,7 @@ TakePartyGold(3000)~ GOTO 82
 END
 	
 IF ~~ THEN BEGIN 82
-	SAY ~You’ll forgive me if I don’t stay around to count each piece, but I am not foolish enough to trust that you won’t inform the dragon of my whereabouts.~
+	SAY ~Youï¿½ll forgive me if I donï¿½t stay around to count each piece, but I am not foolish enough to trust that you wonï¿½t inform the dragon of my whereabouts.~
 =
 ~Farewell and if you do return to *Old Red* then tell him from me that Esmond sends his regards and says that he would be wise to remain alert.~
 =
@@ -109,19 +109,19 @@ ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9
-	SAY ~Mmm, you cannot afford it. I think I’ll leave it.~
+	SAY ~Mmm, you cannot afford it. I think Iï¿½ll leave it.~
 	IF ~~ THEN GOTO 92
 END
 
 IF ~~ THEN BEGIN 91
-	SAY ~Mmm, I think I’ll leave it.~
+	SAY ~Mmm, I think Iï¿½ll leave it.~
 	IF ~~ THEN GOTO 92
 END
-	 
+	
 IF ~~ THEN BEGIN 92
 	SAY ~Before your untimely intrusion, I was on my way to meet colleagues who know their true worth and who will pay me accordingly.~
 =
-~However before I leave, if you’re thinking of returning to *Old Red* to tell him of your failure please, tell him from me that Esmond sends his regards and says that he would be wise to remain alert.~
+~However before I leave, if youï¿½re thinking of returning to *Old Red* to tell him of your failure please, tell him from me that Esmond sends his regards and says that he would be wise to remain alert.~
 =
 ~After all, when the world hears how I outwitted him, and what with his advancing years and senility, his hoard will be considered easy pickings by all. That is, if you dare brave his lair again.~
 =
@@ -142,13 +142,13 @@ ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
-	SAY ~Bah, we are all wasting our time here. If it is your choice that your bones lie for the vultures to pick, along with the other fools who came rushing to win the dragon’s favour then so be it.~
+	SAY ~Bah, we are all wasting our time here. If it is your choice that your bones lie for the vultures to pick, along with the other fools who came rushing to win the dragonï¿½s favour then so be it.~
 =
-~However before I leave, if you’re thinking of returning to *Old Red* to tell him of your failure please, tell him from me that Esmond sends his regards and says that he would be wise to remain alert.~
+~However before I leave, if youï¿½re thinking of returning to *Old Red* to tell him of your failure please, tell him from me that Esmond sends his regards and says that he would be wise to remain alert.~
 =
 ~After all, when the world hears how I outwitted him, and what with his advancing years and senility, his hoard will be considered easy pickings by all. That is, if you dare brave his lair again.~
 =
-~At them my faithful, don’t fail me and you’ll all feast well this day!~
+~At them my faithful, donï¿½t fail me and youï¿½ll all feast well this day!~
 =
 ~Ha-ha-ha! (*Suddenly, the dimension door opens, and Esmond teleports out leaving only the echo of his laughter behind.*)~
   IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",5)
@@ -167,11 +167,11 @@ ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
-	SAY ~(*Laughs*) Ho, so it has come to threats has it and not even a chance to bargain first!?  True, threats can prove productive if the one being threatened feels intimidated, but they are only words to my ears.~ 
+	SAY ~(*Laughs*) Ho, so it has come to threats has it and not even a chance to bargain first!?  True, threats can prove productive if the one being threatened feels intimidated, but they are only words to my ears.~
 =
 ~Hear me out and maybe then we can forget those silly words of bravado.~
 =
-~The items may not be of any use to me but that doesn’t mean I’m going to just hand them over to you, not without some compensation for the trouble I went to getting them out of the clutches of that stinking bag of bones of a dragon.~
+~The items may not be of any use to me but that doesnï¿½t mean Iï¿½m going to just hand them over to you, not without some compensation for the trouble I went to getting them out of the clutches of that stinking bag of bones of a dragon.~
 	IF ~~ THEN GOTO 71
 END
 			

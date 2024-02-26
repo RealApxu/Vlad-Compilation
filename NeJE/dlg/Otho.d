@@ -24,7 +24,7 @@ END
 IF ~RandomNum(4,3)
 Global("VP_Slave_Released","GLOBAL",0)
 GlobalLT("VP_Dar_Quest","GLOBAL",5)~ THEN BEGIN 3
-  SAY ~Don’t fail us. Our freedom is in your hands.~
+  SAY ~Donï¿½t fail us. Our freedom is in your hands.~
   IF ~~ THEN EXIT
 END
 
@@ -45,21 +45,21 @@ Global("VP_Dar_Quest","GLOBAL",6)~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~We was doin’ ok. We send our prophet to Candlekeep to find wisdom, to teach us more of the way. That was long time ago, we thinks he's dead, not sure what to do now?~
+  SAY ~We was doinï¿½ ok. We send our prophet to Candlekeep to find wisdom, to teach us more of the way. That was long time ago, we thinks he's dead, not sure what to do now?~
   IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")~ THEN REPLY ~Well, Dar was supposed to know that, and he would surely answer your question as it is actually his quest. In his absense, I wish you good luck and farewell.~ GOTO 7
 	IF ~InParty("Dar")
 !Dead("Dar")~ THEN EXTERN ~DARJ~ otho1
 END
-  
+
 IF ~~ THEN BEGIN 7
   SAY ~I wish you the same in return. Again, thank you for freeing us.~
   IF ~~ THEN DO ~SetGlobal("VP_Slave_Released","GLOBAL",2)
 SetGlobal("VP_Talked_to_Ottho","GLOBAL",1)
 EscapeArea()~ EXIT
-END  
-    
+END
+
 IF ~~ THEN BEGIN 8
   SAY ~We all thank you. We'll wait here for your word or return of prophet. Maybe we begin to build again and have new hope.~
   IF ~OR(2)

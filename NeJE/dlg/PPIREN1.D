@@ -43,10 +43,10 @@ EXTEND_BOTTOM PPIRENI1 45
   IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN EXTERN ~YOSHJ~ TS209
 END
 
-APPEND ~PPIRENI1~ 
+APPEND ~PPIRENI1~
 
 IF ~~ THEN BEGIN 47
-  SAY ~I don’t understand what are you talking about?~
+  SAY ~I donï¿½t understand what are you talking about?~
   IF ~~ THEN EXTERN ~YOSHJ~ TS210
 END
 
@@ -57,62 +57,62 @@ END
 
 IF ~~ THEN BEGIN 49
   SAY ~So, <CHARNAME>, you have been much more capable than I thought.~
-  IF ~~ THEN REPLY ~I hate to impose, but could you tell me what’s going on here?~ GOTO 50
+  IF ~~ THEN REPLY ~I hate to impose, but could you tell me whatï¿½s going on here?~ GOTO 50
   IF ~~ THEN REPLY ~What is he talking about, Yoshimo?~ EXTERN ~YOSHJ~ TS212
-  IF ~~ THEN REPLY ~I don’t know what’s going on here, but I know I don’t like it...~ GOTO 50
+  IF ~~ THEN REPLY ~I donï¿½t know whatï¿½s going on here, but I know I donï¿½t like it...~ GOTO 50
 END
 
 IF ~~ THEN BEGIN 50
-  SAY ~I knew you were strong, but I couldn’t imagine that you are so powerful... I congratulate you, though I am really disappointed. Yoshimo was my best servant, but now he is betraying me without any obvious reason. We had a deal, and I paid him well... So, Yoshimo, you betrayed me to <CHARNAME>. I thought I had earned your soul...~
+  SAY ~I knew you were strong, but I couldnï¿½t imagine that you are so powerful... I congratulate you, though I am really disappointed. Yoshimo was my best servant, but now he is betraying me without any obvious reason. We had a deal, and I paid him well... So, Yoshimo, you betrayed me to <CHARNAME>. I thought I had earned your soul...~
   IF ~~ THEN EXTERN ~YOSHJ~ TS212
 END
 
 IF ~~ THEN BEGIN 51
-  SAY ~Are you serious? Do you think you’ve saved anybody? They are all dead... they were dead long time ago, even before I met you.~
+  SAY ~Are you serious? Do you think youï¿½ve saved anybody? They are all dead... they were dead long time ago, even before I met you.~
   IF ~~ THEN EXTERN ~YOSHJ~ TS213
 END
 
 IF ~~ THEN BEGIN 52
-  SAY ~(*He laughs*) No, I would think not. But don’t be so upset, Yoshimo. You couldn’t help them, and believe me they got what they deserved. Remember that, and listen all of you to the words I have to say, since your time is short.~
+  SAY ~(*He laughs*) No, I would think not. But donï¿½t be so upset, Yoshimo. You couldnï¿½t help them, and believe me they got what they deserved. Remember that, and listen all of you to the words I have to say, since your time is short.~
 =
 ~What is life? Life is a miserable reflection of death. My life, in this world, seems so very distant... the memories clouded like those of a child. And a child I was, then... probing the darkest magic, given glimpses of the truths yet to come. Yes, look at me. And what do you see? A monster? An abomination?~
 =
 ~(*Again he laughs*) I was an elven mage of great power, perhaps the most powerful elven mage who has ever been. For 200 years I studied the magic of Necromancy... the arts of physical and spiritual healing, the resurrection of the souls of the dead... Perhaps it is just the way of humans, but what I had seen and learned was not enough.~
 =
-~My studies were of the souls of the dead. Once I had seen the darker side of Necromancy, I began to speak with those souls, to animate the soulless, to quench the lives of the living. The bodies I experimented upon were already dead! If I raised their souls to again quench them, who is to say I didn’t have the right?~
+~My studies were of the souls of the dead. Once I had seen the darker side of Necromancy, I began to speak with those souls, to animate the soulless, to quench the lives of the living. The bodies I experimented upon were already dead! If I raised their souls to again quench them, who is to say I didnï¿½t have the right?~
 =
 ~I craved knowledge, felt the shadow of my own mortality. And so I looked deeper, and the secrets of Black Necromancy were shown to me, and I reveled in the truths I had uncovered, and I shared them with my people.~
 =
-~They saw it differently than me, though... (*he laughs to himself*) They didn’t know what to think, and how could they? These were new discoveries, there were no precedents... and they listened to Her over the voice of their own reason, over my voice.~
+~They saw it differently than me, though... (*he laughs to himself*) They didnï¿½t know what to think, and how could they? These were new discoveries, there were no precedents... and they listened to Her over the voice of their own reason, over my voice.~
 =
 ~She had never loved me, She lied to me, She betrayed me, She waited for an opportunity to defame me, and when it came She viciously attacked.~
 =
-~I’m no monster... I know that the line between good and evil is a gray one, and perhaps all of my actions weren’t necessarily pure, but who are they to judge me? And banishment? Banishment for some questionable experiments?~
+~Iï¿½m no monster... I know that the line between good and evil is a gray one, and perhaps all of my actions werenï¿½t necessarily pure, but who are they to judge me? And banishment? Banishment for some questionable experiments?~
 =
 ~They prepared to exile me, to throw me out of their number... but no! Her jealousy turned them against me, forced their hand. Her words became the evidence against me, and they sentenced me to the Void.~
 =
-~That place has no time as you know it. I’ve been there for years uncounted, and yet I’ve not aged at all... I feel as I did the moment they sent me there, or as when the Dark Elves first called to me.~
+~That place has no time as you know it. Iï¿½ve been there for years uncounted, and yet Iï¿½ve not aged at all... I feel as I did the moment they sent me there, or as when the Dark Elves first called to me.~
 =
 ~Do you now see? Being there I can do everything I did in your world, but I am unfettered by the chains of mortality that time hangs upon us.~
 =
-~My reasons for returning aren’t what you’d think. I have no aspirations for power or domination like you. I need you powerful living soul to come back and pay an old debt of mine. I need your power to plan my revenge.~
-  IF ~~ THEN REPLY ~I have come to the conclusion that you are really insane. This asylum is the most suitable place for you where you may continue planning your revenge. I’ll just take Imoen and be going...~ GOTO 69
-  IF ~~ THEN REPLY ~The time for talk is over. Let’s finish this.~ GOTO 70
-  IF ~~ THEN REPLY ~Uh... I think that I’m still gonna kill you.~ GOTO 71
+~My reasons for returning arenï¿½t what youï¿½d think. I have no aspirations for power or domination like you. I need you powerful living soul to come back and pay an old debt of mine. I need your power to plan my revenge.~
+  IF ~~ THEN REPLY ~I have come to the conclusion that you are really insane. This asylum is the most suitable place for you where you may continue planning your revenge. Iï¿½ll just take Imoen and be going...~ GOTO 69
+  IF ~~ THEN REPLY ~The time for talk is over. Letï¿½s finish this.~ GOTO 70
+  IF ~~ THEN REPLY ~Uh... I think that Iï¿½m still gonna kill you.~ GOTO 71
 END
 
 IF ~~ THEN BEGIN 69
-  SAY ~I’m very sorry, but I’m afraid that you’ll be going nowhere.~
+  SAY ~Iï¿½m very sorry, but Iï¿½m afraid that youï¿½ll be going nowhere.~
   IF ~~ THEN GOTO 72
 END
 
 IF ~~ THEN BEGIN 70
-  SAY ~Oh, I don’t think so. Perhaps our conversation is coming to an end.~
+  SAY ~Oh, I donï¿½t think so. Perhaps our conversation is coming to an end.~
   IF ~~ THEN GOTO 72
 END
 
 IF ~~ THEN BEGIN 71
-  SAY ~I suppose you won’t be able to do that.~
+  SAY ~I suppose you wonï¿½t be able to do that.~
   IF ~~ THEN GOTO 72
 END
 

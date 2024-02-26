@@ -3,7 +3,7 @@ BEGIN ~ILRIANA~
 IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~What are you stopping for, you have rested once already today. Keep digging you lazy, misshapen... (*Then spinning around as she hears your approach*) Who the blazes are you?~
 =
-~You should know better than to creep up on a lady when she has her back to you, especially if the lady in question is an accomplished mage such as myself.~ 
+~You should know better than to creep up on a lady when she has her back to you, especially if the lady in question is an accomplished mage such as myself.~
   IF ~~ THEN REPLY ~I am <CHARNAME> and you are?~ GOTO 2
   IF ~~ THEN REPLY ~And hello to you too.  I am <CHARNAME>, Might I ask who you are?~ GOTO 2
   IF ~~ THEN REPLY ~I apologise for startling you. I am <CHARNAME>. Might I ask who you might be and what you are looking for down here?~ GOTO 3
@@ -12,14 +12,14 @@ END
 IF ~~ THEN BEGIN 2
   SAY ~I am Ilriana, please, now that the pleasantries are over, go away!~
   IF ~~ THEN REPLY ~A bit more civility please Ilriana. Tell me, what can possibly be down here to cause such frantic digging?~ GOTO 4
-  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You’re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
+  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? Youï¿½re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
   IF ~~ THEN REPLY ~I most certainly will not go away, not until you tell me why you have enslaved these gnomes?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 3
   SAY ~Apology accepted. I am Ilriana and what I am looking for is non of your business so please, go away!~
   IF ~~ THEN REPLY ~A bit more civility please Ilriana. Tell me, what can possibly be down here to cause such frantic digging?~ GOTO 4
-  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You’re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
+  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? Youï¿½re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
   IF ~~ THEN REPLY ~I most certainly will not go away, not until you tell me why you have enslaved these gnomes?~ GOTO 5
 END
 

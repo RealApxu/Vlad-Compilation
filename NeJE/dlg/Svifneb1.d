@@ -3,7 +3,7 @@ BEGIN ~Svifneb1~
 IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~Please, we did not wish to harm the world above, it is not our way.~
 =
-~Ilriana brought us here saying we will take riches back to our village and make things more comfortable for everyone, the drow allow us so little back home.~ 
+~Ilriana brought us here saying we will take riches back to our village and make things more comfortable for everyone, the drow allow us so little back home.~
 =
 ~She forced us to dig with no thought to what we might disturb, no plans, no observations. What is to become of us now?~
   IF ~~ THEN REPLY ~Tell me what it was Ilriana was searching for and then you will be free to leave.~ GOTO 2

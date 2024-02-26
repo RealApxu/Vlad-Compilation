@@ -50,8 +50,8 @@ END
 IF ~~ THEN BEGIN 5
   SAY ~Your hesitation has given me the time to glimpse your real purpose in coming to Halruaa. You are not students but spies for Ulcaster! Fools! Did you really think you could deceive us?~
 	IF ~~ THEN GOTO 6
-END  
-  
+END
+
 IF ~~ THEN BEGIN 6
   SAY ~Now you will pay the price for your deception! (*Turning to one of the accompanying mages*) Run Lon, call for guards.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaAlarm","MYAREA",1)

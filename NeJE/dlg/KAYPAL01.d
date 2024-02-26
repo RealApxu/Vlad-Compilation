@@ -17,7 +17,7 @@ BEGIN // list of changes, see below for flags
 END
 
 EXTEND_BOTTOM KAYPAL02 28
-  IF ~~ THEN REPLY ~Your Cup, Sir Anarg. I can not give it to you, but I ask you to listen to me. I beg you, please.~ EXTERN ~KAYPAL01~ A8 
+  IF ~~ THEN REPLY ~Your Cup, Sir Anarg. I can not give it to you, but I ask you to listen to me. I beg you, please.~ EXTERN ~KAYPAL01~ A8
 END
 
 ALTER_TRANS KAYPAL01 // file name
@@ -28,7 +28,7 @@ BEGIN // list of changes, see below for flags
 END
 
 EXTEND_BOTTOM KAYPAL01 3
-  IF ~~ THEN REPLY ~Your Cup, Sir Anarg. I can not give it to you, but I ask you to listen to me. I beg you, please.~ EXTERN ~KAYPAL01~ A8 
+  IF ~~ THEN REPLY ~Your Cup, Sir Anarg. I can not give it to you, but I ask you to listen to me. I beg you, please.~ EXTERN ~KAYPAL01~ A8
 END
 
 APPEND ~KAYPAL01~
@@ -86,7 +86,7 @@ IF ~~ THEN BEGIN A8
 	IF ~~ THEN REPLY ~Stop it! That's not true! Sirs, forgive me for lying to you, but I needed to see Sir Anarg. You did not give me other chance.~ GOTO A1
 	IF ~~ THEN REPLY ~Why do you think that I came to kill you, Sir Anarg? I'm not going to do that.~ GOTO A1
 	IF ~~ THEN REPLY ~Sir Anarg, can we talk before drawing our swords?~ GOTO A1
-END  
+END
 END
 
 APPEND ~KELDORJ~

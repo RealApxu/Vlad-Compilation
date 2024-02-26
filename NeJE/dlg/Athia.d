@@ -10,14 +10,14 @@ END
 IF ~~ THEN BEGIN 1
   SAY ~It was about three nights past and such a beautiful still evening that I thought to walk in the freshness of the evening.~
 =
-~Nature is so beautiful at night <CHARNAME>, the scents of the earth are so much more enhanced when one’s eyes are diminished by the darkness of the night. Do you not agree?~
+~Nature is so beautiful at night <CHARNAME>, the scents of the earth are so much more enhanced when oneï¿½s eyes are diminished by the darkness of the night. Do you not agree?~
   IF ~~ THEN REPLY ~Uh... yes of course Athia, please continue.~ GOTO 3
   IF ~~ THEN REPLY ~I never travel at night unless pressed to do so, and when I am I have better things to do then spend time sniffing the night air, but please Athia, continue.~ GOTO 3
   IF ~~ THEN REPLY ~Not really Athia, I like to see where I am going when I travel. You were saying?~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~Of course, well I passed close to that pond and heard what I took to be the sounds of the animals of the wood as they gathered to drink.~ 
+  SAY ~Of course, well I passed close to that pond and heard what I took to be the sounds of the animals of the wood as they gathered to drink.~
 =
 ~I did not venture closer as I know how shy natures creatures are and I did not want to disturb them, it has been many weeks since the animals have been heard in the grove.~
 =
@@ -36,15 +36,15 @@ END
 IF ~~ THEN BEGIN 5
   SAY ~That is what I said, I did not approach because I did not want to disturb them. Now, there is no more I can tell you.~
 =
-~I am sorry I could not be of more help <CHARNAME>. Farewell and I hope you have more luck in your investigations than Erhard has.~ 
+~I am sorry I could not be of more help <CHARNAME>. Farewell and I hope you have more luck in your investigations than Erhard has.~
 		IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~It is none of your business, but yes I do. I love how the night heightens one’s sense of smell when we are forced to use our noses and not our eyes.~
+  SAY ~It is none of your business, but yes I do. I love how the night heightens oneï¿½s sense of smell when we are forced to use our noses and not our eyes.~
 =
-~I feel so much closer to nature when I can sense the different scents she exudes. All can use their eyes and all can see the same, but with smell it is more subtle, more of an individual experience.~ 
+~I feel so much closer to nature when I can sense the different scents she exudes. All can use their eyes and all can see the same, but with smell it is more subtle, more of an individual experience.~
 =
-~That is why I love to walk at night, you should try it for yourself sometime. Now if you will excuse me, there really is no more I can tell you. Farewell <CHARNAME>.~ 
+~That is why I love to walk at night, you should try it for yourself sometime. Now if you will excuse me, there really is no more I can tell you. Farewell <CHARNAME>.~
 		IF ~~ THEN DO ~EscapeArea()~ EXIT
 END

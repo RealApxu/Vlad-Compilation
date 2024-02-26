@@ -18,10 +18,10 @@ END
 IF ~~ THEN BEGIN 3
  SAY ~One thing that is clearly true that the tales tell and that is that Hrothgar was an extremely brave man. I can see that he would indeed put the safety of his townsfolk before that of his own life. I do not know what it is that you seek Hrothgar and I will not ask as I feel sure that you have your own reasons for your silence, but knowing you for the short time that I have, I can see that you are indeed the sort of man that legends are made of.~
  IF ~~ THEN EXTERN ~BHROTH~ 36
-END 
+END
 
 IF ~~ THEN BEGIN 4
- SAY ~(*Smiling at him*)... You already have Hrothgar whether you realise it or not!~ 
+ SAY ~(*Smiling at him*)... You already have Hrothgar whether you realise it or not!~
  IF ~~ THEN EXIT
 END
 
@@ -76,11 +76,11 @@ IF ~~ THEN BEGIN 14
 END
 
 IF ~Global("VP_BPC","LOCALS",2)~ THEN BEGIN 15
- SAY ~Bards tell many tales of your exploits along The Sword Coast <CHARNAME>. The most significant being your battle under Baldur‘s Gate, but I wonder how many tell it true?~
+ SAY ~Bards tell many tales of your exploits along The Sword Coast <CHARNAME>. The most significant being your battle under Baldurï¿½s Gate, but I wonder how many tell it true?~
  IF ~~ THEN REPLY ~I have heard some of these tales Leina. Most have been exaggerated with the passing of time and the numerous tellings, but it is not something that bothers me.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO 16
  IF ~~ THEN REPLY ~I think they all contain some part of the truth but which part depends on the tale you happen to be listening to.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO 16
  IF ~~ THEN REPLY ~Are you looking to make another tale to tell Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO 17
- IF ~~ THEN REPLY ~Pleeeeease! I do not want to get into yet another discussion on what happened at Baldur‘s Gate!~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO 18
+ IF ~~ THEN REPLY ~Pleeeeease! I do not want to get into yet another discussion on what happened at Baldurï¿½s Gate!~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO 18
 END
 
 //To add state for non-NeJ banter
@@ -116,8 +116,8 @@ InParty("Hrothgar")
 Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double.~ GOTO 20A
  IF ~!InParty("Hrothgar")
 Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard.~ GOTO 20A
-END 
- 
+END
+
 IF ~~ THEN BEGIN 18
  SAY ~As you wish <CHARNAME>. I was curious as to the truth behind so many tales. To meet a hero before they pass into legend is always an honour. Will you at least tell me what brings you this way?~
  IF ~~ THEN REPLY ~I am here to seek out someone that I owe a debt of pain. He will wish that he had never messed with a child of Bhaal when we next meet, mark my words!~ GOTO 21
@@ -126,20 +126,20 @@ InParty("Hrothgar")
 !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am here for two reasons Leina. One, I allowed myself to be persuaded by Hrothgar to aid him in his search and when that is done comes two, revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ GOTO 21
  IF ~!InParty("Hrothgar")
 Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am here for one reason Leina: to revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ GOTO 21
-END 
+END
 
 IF ~~ THEN BEGIN 19
  SAY ~To think to take on Cowled wizards or any wizards for that matter is no mean task <CHARNAME>. You worry for the safety of your Imoen at their hands and yet you abandon her on the words of one man. I know you have followed Hrothgar far and you probably know him far better than I, but what warrants such faith may I ask?~
  IF ~~ THEN REPLY ~I am not sure myself Leina. Instinct, maybe nothing more.~ GOTO 22
  IF ~~ THEN REPLY ~It is not his words so much, more the way he speaks them. He is confident in what he says is so, and in return he instills that confidence in me.~ GOTO 22
  IF ~~ THEN REPLY ~I look into his face and I know I am looking at a man who speaks only truth and believes strongly in what he is doing.~ GOTO 22
-END 
+END
 
 IF ~~ THEN BEGIN 20
  SAY ~You seek revenge <CHARNAME>, do you truly believe that the pain you inflict back will erase the memory of the pain received? Only time will do that and then never completely. You will always carry with you some of the scars, that I know to be true. Perhaps this search with Hrothgar will give you some of that much needed time.~
  IF ~~ THEN REPLY ~Your words may be true, but I will gain immense satisfaction in exacting my revenge. That in itself will suffice.~ GOTO 23
  IF ~~ THEN REPLY ~All that this time with Hrothgar will bring me is the time to relish and savour my thoughts of when I eventually confront Irenicus!~ GOTO 23
- IF ~~ THEN REPLY ~I could probably forego revenge for what I suffered but I will never forgive him for what he did to Imoen. She is the gentlest and most generous of people I know. We are of the same age but she is still a child in so many ways. She did not deserve the abuse she suffered at Irenicus‘s hand and that is what he must and will pay for!~ GOTO 23
+ IF ~~ THEN REPLY ~I could probably forego revenge for what I suffered but I will never forgive him for what he did to Imoen. She is the gentlest and most generous of people I know. We are of the same age but she is still a child in so many ways. She did not deserve the abuse she suffered at Irenicusï¿½s hand and that is what he must and will pay for!~ GOTO 23
 END
 
 IF ~~ THEN BEGIN 21
@@ -193,9 +193,9 @@ IF ~~ THEN BEGIN 30
 END
 
 IF ~~ THEN BEGIN 31
- SAY ~I bring you this song, one of courage, of faith, 
+ SAY ~I bring you this song, one of courage, of faith,
 	of a hero who emerged from the north.
-	This hero was shunned, where e‘er that he walked,
+	This hero was shunned, where eï¿½er that he walked,
 	for this hero I speak of, is Dar The Half-Orc.
 
 		Dar took to the roads, in search of his dream,
@@ -203,27 +203,27 @@ IF ~~ THEN BEGIN 31
 
 	Despised and rejected in the land of his birth
 	his heart, he kept noble and pure.	
-	He travelled his road, helping where e‘er that he could,
+	He travelled his road, helping where eï¿½er that he could,
 	never leaving the path of the righteous and good.
 
 		Dar took to the roads, in search of his dream,
 		A dream of acceptance, a place to call home.
 
-	Fate, she watched o‘er him, of his dream she well knew,
+	Fate, she watched oï¿½er him, of his dream she well knew,
 	 of the truth of his heart, of all he aspired to do.
-	*I will give this Half-Orc a chance in this life, 
+	*I will give this Half-Orc a chance in this life,
 	will he trust, will he follow or will he continue his strife?*
 
 		Dar took to the roads, in search of his dream,
 		A dream of acceptance, a place to call home.
 
 	Dar looked at the portal, his face clouded with doubt,
-	new friends all around him, they urged he should follow. 
-	In their eyes was acceptance, ‘twas his dream that he saw,
+	new friends all around him, they urged he should follow.
+	In their eyes was acceptance, ï¿½twas his dream that he saw,
 	so with a prayer to Ilmater, he stepped through the strange door.
 
 		Dar entered the portal, hope leapt in his heart.		
-		A hope for his future, a place he‘d call home.			
+		A hope for his future, a place heï¿½d call home.			
 									
 		
 	(*As she finishes singing, she looks about her, the group has stopped to listen.*)~
@@ -263,18 +263,18 @@ END
 IF ~~ THEN BEGIN 36
  SAY ~Is that not always the way of things? True heroes seldom set out to make a name for themselves, fame and glory is often unwanted but thrust upon them anyway. Fate has her own plans for us all and she will not be thwarted.~
  IF ~~ THEN REPLY ~Then I wish fate would give me some respite from this battle weary life she has set before me.~ GOTO 50
- IF ~~ THEN REPLY ~If it was fate’s idea that I should be pitted against and kill my half-brother and then to be tortured at the hand of a mad man, then she is a cruel task mistress indeed.~ GOTO 51
+ IF ~~ THEN REPLY ~If it was fateï¿½s idea that I should be pitted against and kill my half-brother and then to be tortured at the hand of a mad man, then she is a cruel task mistress indeed.~ GOTO 51
  IF ~~ THEN REPLY ~I am not sure that I believe in fate. If she has already set our course why then are there decisions to be made and cross roads to negotiate?~ GOTO 52
  IF ~~ THEN REPLY ~Some call it fate, some call it the will of the gods but who really controls our lives I ask, them or us?~ GOTO 53
 END
 
 IF ~~ THEN BEGIN 37
- SAY ~I am not sure that I agree with you <CHARNAME>, to keep ones own counsel is good but sometimes another can see what we can not so we should not be afraid to at least listen to others, even if we decide that our own choice is the better... and that is something my life has taught me but if you don’t wish to talk of yourself then that is your prerogative.~
+ SAY ~I am not sure that I agree with you <CHARNAME>, to keep ones own counsel is good but sometimes another can see what we can not so we should not be afraid to at least listen to others, even if we decide that our own choice is the better... and that is something my life has taught me but if you donï¿½t wish to talk of yourself then that is your prerogative.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 38
- SAY ~Of course <CHARNAME>, forgive me for asking. It’s just that you show one face to the world and yet, I feel that there is much more hidden behind the face that you are reluctant to reveal. Still, as you so rightly say, it is no ones business but your own. Once again, forgive my inquisitive nature, I will now leave you to your own company as you seem to like it so much.~
+ SAY ~Of course <CHARNAME>, forgive me for asking. Itï¿½s just that you show one face to the world and yet, I feel that there is much more hidden behind the face that you are reluctant to reveal. Still, as you so rightly say, it is no ones business but your own. Once again, forgive my inquisitive nature, I will now leave you to your own company as you seem to like it so much.~
  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
 
@@ -282,7 +282,7 @@ IF ~~ THEN BEGIN 39
  SAY ~They are not as deep as they were yesterday and yesterday they were not as deep as the day before. If you had but seen me when I was left penniless and friendless, you would have seen only an open gash that refused to stop gushing.~
  IF ~~ THEN GOTO 40
 END
- 
+
 IF ~~ THEN BEGIN 40
  SAY ~It was only the need to keep the wolf from the door that forced me to turn to the only thing I knew, music. It was music that slowly brought me out of the darkness where I dwelt, it was music that showed me day always follows night. You might say it was my saviour, and has since become my one passion, my one love, the only love I will ever need.~
  IF ~~ THEN REPLY ~Music is a gift Leina and a gift to be nurtured and treasured, but music can not bring the comfort and warmth that love brings to a body.~ GOTO 41
@@ -293,24 +293,24 @@ IF ~~ THEN BEGIN 40
 END
 
 IF ~~ THEN BEGIN 41
- SAY ~I have no need for the love you speak of <CHARNAME>. The warmth I feel in my music fills any empty space within me to overflowing, but if I should find the need for the warmth of another to help me through life’s darkest hours, then I can play the game of love as well as any man, enjoy the moment and leave with the dawn.~
+ SAY ~I have no need for the love you speak of <CHARNAME>. The warmth I feel in my music fills any empty space within me to overflowing, but if I should find the need for the warmth of another to help me through lifeï¿½s darkest hours, then I can play the game of love as well as any man, enjoy the moment and leave with the dawn.~
  IF ~~ THEN GOTO 42
-END 
- 
+END
+
 IF ~~ THEN BEGIN 42
  SAY ~I have no desire to greet the day in the arms of a man nor do I wish to have a man waken in mine. I am content. (*She turns away.*)~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 43
- SAY ~We don’t <CHARNAME>, our failure to recognise it when it presents itself is often the reason that it eludes so many and those that do find it, are not always content. There are those who continually crave the excitement that new love always brings and that is when love brings pain.~
+ SAY ~We donï¿½t <CHARNAME>, our failure to recognise it when it presents itself is often the reason that it eludes so many and those that do find it, are not always content. There are those who continually crave the excitement that new love always brings and that is when love brings pain.~
  IF ~~ THEN GOTO 44
-END 
- 
+END
+
 IF ~~ THEN BEGIN 44
  SAY ~I have loved yes, but I was not loved in return and that is a pain that will never touch me again. I am content to live for my music, it will never bring the pain that love has brought to me. (*She turns away.*)~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 45
  SAY ~Then you have either been fortunate in your friends or you have distanced yourself and allowed none to get close to you. I can see no other way you could have avoided the pain that causes these wounds.~
@@ -321,12 +321,12 @@ IF ~~ THEN BEGIN 45
 END
 	
 IF ~~ THEN BEGIN 46
- SAY ~Then let’s hope you continue to be as fortunate in the future as you are now <CHARNAME>, and you never know the pain of betrayal.~
+ SAY ~Then letï¿½s hope you continue to be as fortunate in the future as you are now <CHARNAME>, and you never know the pain of betrayal.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 47
- SAY ~I didn’t expect so selfish a reply <CHARNAME>, after all you lead this group, and that makes you responsible for them and their lives. In my eyes that is considering the needs of others as well as your own, whatever you might say.~
+ SAY ~I didnï¿½t expect so selfish a reply <CHARNAME>, after all you lead this group, and that makes you responsible for them and their lives. In my eyes that is considering the needs of others as well as your own, whatever you might say.~
  IF ~~ THEN EXIT
 END
 
@@ -364,18 +364,18 @@ IF ~Global("VP_BPC","LOCALS",8)~ THEN BEGIN 54
  SAY ~I often look into your face and see the weariness in your eyes. Sometimes I even see confusion and another time I catch sight of a shadow that passes fleetingly over them, much like the shadows in my own.~
  IF ~~ THEN DO ~SetGlobal("VP_BPC","LOCALS",9)~ GOTO 55
 END
- 
+
 IF ~~ THEN BEGIN 55
  SAY ~You are surrounded by friends who would gladly share some of what haunts you and yet you prefer to keep your turmoil to yourself. Have you not heard that a problem shared is a problem halved <CHARNAME>?~
  IF ~~ THEN REPLY ~My thoughts are my own, and they are best left that way.~ GOTO 56
  IF ~~ THEN REPLY ~I am not very happy being scrutinised here Leina, so please keep your eyes... out of my eyes!~ GOTO 56
- IF ~~ THEN REPLY ~It’s because they are my friends that it so difficult to speak of my doubts to them.~ GOTO 58
+ IF ~~ THEN REPLY ~Itï¿½s because they are my friends that it so difficult to speak of my doubts to them.~ GOTO 58
  IF ~~ THEN REPLY ~They have their own doubts and fears, they do not need the added weight of mine.~ GOTO 58
 END
 
 IF ~~ THEN BEGIN 56
  SAY ~You may think that your thoughts are your own but you do not hide them very well. Anyone who looks into your face can see them mirrored in your eyes and I know, given the chance, your friends will gladly take some of that weight from your shoulders.~
- IF ~~ THEN REPLY ~That isn’t necessary. I do not feel the need to unburden myself to them or to you Leina.~ GOTO 57
+ IF ~~ THEN REPLY ~That isnï¿½t necessary. I do not feel the need to unburden myself to them or to you Leina.~ GOTO 57
  IF ~~ THEN REPLY ~Forget it Leina, I do not believe in all this a problem shared is a problem halved business. To share a problem means that two people are then burdened, whereas in the beginning it was the burden of only one.~ GOTO 57
  IF ~~ THEN REPLY ~Drop it Leina! I have already made it clear that I have no intentions of sharing anything with anyone.~ GOTO 57
 END
@@ -391,7 +391,7 @@ IF ~~ THEN BEGIN 58
 END
 
 IF ~~ THEN BEGIN 59
- SAY ~You do have dreams don’t you <CHARNAME>? Perhaps there are times when your thoughts turn to a future away from the hazards and the dust that living on the road brings?~ 
+ SAY ~You do have dreams donï¿½t you <CHARNAME>? Perhaps there are times when your thoughts turn to a future away from the hazards and the dust that living on the road brings?~
  IF ~~ THEN REPLY ~I have dreams Leina but never have the time to pursue them.~ GOTO 60
  IF ~~ THEN REPLY ~What good are dreams if fate persists in throwing obstacles in the way of them.~ GOTO 61
  IF ~~ THEN REPLY ~My dreams consist only of my hopes that I will be alive at the end of the day and have another morning to wake up to.~ GOTO 62
@@ -421,7 +421,7 @@ END
 IF WEIGHT #0 ~Global("VP_BPC","LOCALS",11)
 GlobalLT("VP_MyFatherIsDead","LOCALS",3)
 GlobalLT("VP_Break_Point","LOCALS",2)~ THEN BEGIN 64
- SAY ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father’s death.~
+ SAY ~<CHARNAME>, I cannot continue further with you until I know the truth of my my fatherï¿½s death.~
  IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ GOTO 65
  IF ~Global("BodhiJob","GLOBAL",0)
  Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ GOTO N65
@@ -444,7 +444,7 @@ END
 IF ~~ THEN BEGIN 66
  SAY ~(*Angrily*) And you believe that to be reason enough to commit cold blooded murder? Do you know or even care how heartless your words show you to be <CHARNAME>.~
  IF ~~ THEN REPLY ~I care for very little at the moment other than reaching Irenicus and ending his insane life.~ GOTO 67
- IF ~~ THEN REPLY ~I choose my words to suit my mood. I will do whatever is necessary to find Irenicus.~ GOTO 67 
+ IF ~~ THEN REPLY ~I choose my words to suit my mood. I will do whatever is necessary to find Irenicus.~ GOTO 67
  IF ~~ THEN REPLY ~I cannot help how you or others perceive me Leina, I am who I am.~ GOTO 67
 END
 
@@ -452,10 +452,10 @@ IF ~~ THEN BEGIN 67
  SAY ~I see no remorse, only coldness reflected in your eyes. I see no room for compassion in your heart and it is for that reason I show none to you and your cause.~
  IF ~~ THEN GOTO 68
 END
- 
+
 IF ~~ THEN BEGIN 68
  SAY ~My father is dead for no other reason than to aid your lust for revenge. I cannot forgive this wanton disregard for life that I see in you, it sickens me and as such I refuse to aid you further.~
- IF ~~ THEN REPLY ~Think for a second, if it were not for me you would still be a prisoner of your insane father, or worse married to the likes of Govan Duvaine. A little gratitude would not go amiss here!~ GOTO 69 
+ IF ~~ THEN REPLY ~Think for a second, if it were not for me you would still be a prisoner of your insane father, or worse married to the likes of Govan Duvaine. A little gratitude would not go amiss here!~ GOTO 69
  IF ~~ THEN REPLY ~That is your choice. Your talents, or lack of them will not be missed.~ GOTO 69
  IF ~~ THEN REPLY ~You ungrateful wench! Is this the thanks I get for risking my neck to rescue you?~ GOTO 69
 END
@@ -464,7 +464,7 @@ IF ~~ THEN BEGIN 69
  SAY ~I am grateful enough for my rescue, but had I known beforehand the cost of my freedom I would not have asked for it.~
  IF ~~ THEN GOTO 70
 END
- 
+
 IF ~~ THEN BEGIN 70
  SAY ~I pray that no more will pay the price my father has for your selfish agenda <CHARNAME>, but I fear that many will. Farewell.~
  IF ~~ THEN DO ~LeaveParty()
@@ -493,7 +493,7 @@ IF ~~ THEN BEGIN 73
 END
 
 IF ~~ THEN BEGIN 74
- SAY ~How can I believe that? I heard that Bodhi creature’s words. On her orders, you went to my father’s home fully intending to murder him and now he is dead, his blood is on your hands.~
+ SAY ~How can I believe that? I heard that Bodhi creatureï¿½s words. On her orders, you went to my fatherï¿½s home fully intending to murder him and now he is dead, his blood is on your hands.~
  IF ~~ THEN REPLY ~Bodhi sent me that is true, but I had no intentions of doing what she asked.~ GOTO 75
  IF ~~ THEN REPLY ~I thought only to scare him Leina, to get him to leave Athkatla until Bodhi had given me what she promised.~ GOTO 76
  IF ~~ THEN REPLY ~Yes his blood is on my hands, but they are hands that he forced by refusing to heed my words.~ GOTO 82
@@ -521,7 +521,7 @@ END
 
 IF ~~ THEN BEGIN 77
  SAY ~He was not a happy man, his own grief had engulfed him completely. I can no more be certain of his reactions than I can of your intentions that day, so it does not give me the right to judge you <CHARNAME>. One last question and then we will speak no more of it. Why did Bodhi want my father dead?~
- IF ~~ THEN REPLY ~Bodhi sought to use me as a pawn in her private war against the Shadow Thieves and your father’s death as an example to all who have dealings with them.~ GOTO 78
+ IF ~~ THEN REPLY ~Bodhi sought to use me as a pawn in her private war against the Shadow Thieves and your fatherï¿½s death as an example to all who have dealings with them.~ GOTO 78
  IF ~~ THEN REPLY ~I think solely to test my allegiance to her, nothing more.~ GOTO 78
 END
 
@@ -562,12 +562,12 @@ IF ~~ THEN BEGIN 83
  SAY ~Rage is a powerful emotion <CHARNAME> and revenge is a powerful spur. The blindness that comes to those who allow one such emotion to take hold leads to unpredictable results. To allow both emotions to take hold, then reason is also lost.~
  IF ~~ THEN GOTO 84
 END
- 
+
 IF ~~ THEN BEGIN 84
  SAY ~It is then the innocent that get in the way that suffer. Neither rage nor vengeance are valid excuses for the murder of my father, there is never a valid reason for cold blooded murder.~
  IF ~~ THEN REPLY ~My rage and anger may have been the cause of my siding with Bodhi but I did not lose my reason. What ever you choose to may believe, murder was never my intention.~ GOTO 75
  IF ~~ THEN REPLY ~I chose my path in haste, whilst anger raged in my heart that is true and once chosen their was no going back. By siding with Bodhi I had burnt all my bridges, it was she who wanted his death not me.~ GOTO 75
- IF ~~ THEN REPLY ~That was not meant as an excuse, only a reason. Bodhi’s price for her aid was the murder of your father, but I did not go to his home intending for him to die. You have to believe that.~ GOTO 75
+ IF ~~ THEN REPLY ~That was not meant as an excuse, only a reason. Bodhiï¿½s price for her aid was the murder of your father, but I did not go to his home intending for him to die. You have to believe that.~ GOTO 75
 END
 
 IF ~Global("VP_BPC","LOCALS",13)~ THEN BEGIN 85
@@ -626,7 +626,7 @@ IF ~~ THEN BEGIN 92
 END
 
 IF ~~ THEN BEGIN 93
- SAY ~I have always been a dreamer, an idealist but then given my upbringing, secluded and cosseted in my father’s house how could I be anything else but. All I ever knew was the warmth, goodness and love of my parents. I had no idea how cruel and materialistic people really are!~
+ SAY ~I have always been a dreamer, an idealist but then given my upbringing, secluded and cosseted in my fatherï¿½s house how could I be anything else but. All I ever knew was the warmth, goodness and love of my parents. I had no idea how cruel and materialistic people really are!~
  IF ~~ THEN REPLY ~You do not know how lucky you were Leina, to be surrounded by so much love and to know that you were brought into this world through an act of love, not necessity.~ GOTO 94
  IF ~~ THEN REPLY ~Not all people, but there are those who cannot except that there are those that have so little whilst others have so much.~ GOTO 97
  IF ~~ THEN REPLY ~Not everyone is out for their own gain, but you will never know that if you do not learn to trust.~ GOTO 97
@@ -640,7 +640,7 @@ IF ~~ THEN BEGIN 94
 END
 
 IF ~~ THEN BEGIN 95
- SAY ~Still, I should have looked closer at my mother’s life, asked why I spent so much time in the house, seldom allowed to play with other children. Now of course I see why, she sought to hide the prejudices that she endured from me, wanted me to know only love and goodness.~
+ SAY ~Still, I should have looked closer at my motherï¿½s life, asked why I spent so much time in the house, seldom allowed to play with other children. Now of course I see why, she sought to hide the prejudices that she endured from me, wanted me to know only love and goodness.~
  IF ~~ THEN GOTO 96
 END
 
@@ -663,7 +663,7 @@ IF ~~ THEN BEGIN 98
  SAY ~I no longer crave love, nor the warmth and passion it brings. To love is to open oneself to possible pain, your heart becomes vulnerable to the whims and moods of the one in whose hands you place it.~
  IF ~~ THEN GOTO 99
 END
- 
+
 IF ~~ THEN BEGIN 99
  SAY ~No, I shall not love again nor will my heart ever be laid open for a man to enter and tear apart with his touch. These eyes have shed their last tears over love and if any man should mistake the warmth I find in his embrace for love then let him shed his tears for me!~
  IF ~~ THEN REPLY ~Where do such angry words come from Leina? I cannot conceive that your heart is so cold?~ GOTO 100
@@ -676,7 +676,7 @@ IF ~~ THEN BEGIN 100
  SAY ~I... I did not mean for this conversation to become so personal <CHARNAME>. A while back I allowed pride to dictate my actions and now I have to live with the regrets that so often accompany prideful decisions.~
  IF ~~ THEN GOTO 101
 END
- 
+
 IF ~~ THEN BEGIN 101
  SAY ~These are the thoughts that haunt my mind, keeping sleep at bay each night. I have to find some way to combat them but I do not believe sharing them will help either of us rest easy tonight.~
  IF ~~ THEN REPLY ~That is a relief, I really was not up for another sob story, in fact I suggest we get some rest before the others awaken.~ GOTO 92
@@ -692,7 +692,7 @@ END
 
 IF ~Global("VP_BPC","LOCALS",15)
 Global("VP_BPC_Buffer1","LOCALS",1)~ THEN BEGIN 103
- SAY ~[The elven city of *Ael-el-Van-aira*, roughly translates to *The home in the great green forest*, pronounced Arl-el-Vahn-ara. Leina’s mother’s clan name *Tia’Llaeyth* pronounced Te-a-Lay-a-yith, roughly translated to mean *The people of magic and harmony*.]
+ SAY ~[The elven city of *Ael-el-Van-aira*, roughly translates to *The home in the great green forest*, pronounced Arl-el-Vahn-ara. Leinaï¿½s motherï¿½s clan name *Tiaï¿½Llaeyth* pronounced Te-a-Lay-a-yith, roughly translated to mean *The people of magic and harmony*.]
 
 (*Stops quite still*) Listen, do you hear that?~
  IF ~~ THEN REPLY ~What is it Leina, trouble? Curses, and us out in the open like this.~ DO ~SetGlobal("VP_BPC","LOCALS",16)
@@ -719,7 +719,7 @@ IF ~~ THEN BEGIN 105
 END
 
 IF ~~ THEN BEGIN 106
- SAY ~I did not mean to alarm, the familiarity of it caught me by surprise. I never expected to hear it again, for a moment I heard once again my mother’s voice as she sang of the joy of being alive. I thought to share the moment with you, that is all.~
+ SAY ~I did not mean to alarm, the familiarity of it caught me by surprise. I never expected to hear it again, for a moment I heard once again my motherï¿½s voice as she sang of the joy of being alive. I thought to share the moment with you, that is all.~
  IF ~~ THEN REPLY ~The twitterings of birds to my ears are no more than gibberish twitterings. Now that it has stopped can we please move on!~ GOTO 108
  IF ~~ THEN REPLY ~Try and think before you stop and say listen again. See how you have set the group on edge looking for the threat.~ GOTO 108
  IF ~~ THEN REPLY ~I am glad it brought you a few moments of joy but it did nothing for me so perhaps we can get a move on now.~ GOTO 108
@@ -728,7 +728,7 @@ IF ~~ THEN BEGIN 106
 END
 
 IF ~~ THEN BEGIN 107
- SAY ~No, I do not suppose it is. More’s the pity because there is joy to be heard in so simple a melody if you only take the time to listen. We all need a little joy in our lives sometimes.~
+ SAY ~No, I do not suppose it is. Moreï¿½s the pity because there is joy to be heard in so simple a melody if you only take the time to listen. We all need a little joy in our lives sometimes.~
  IF ~~ THEN REPLY ~The twitterings of birds to my ears are no more than gibberish twitterings. Now that it has stopped can we please move on!~ GOTO 108
  IF ~~ THEN REPLY ~Try and think before you stop and say listen again. See how you have set the group on edge looking for the threat.~ GOTO 108
  IF ~~ THEN REPLY ~I am glad it brought you a few moments of joy but it did nothing for me so perhaps we can get a move on now.~ GOTO 108
@@ -755,14 +755,14 @@ IF ~~ THEN BEGIN 110
 END
 
 IF ~~ THEN BEGIN 111
- SAY ~(*Hotly*) Be thankful that you will never know the pain that only the death of one’s mother brings because it is like a fire that can never be quenched!~
+ SAY ~(*Hotly*) Be thankful that you will never know the pain that only the death of oneï¿½s mother brings because it is like a fire that can never be quenched!~
  IF ~~ THEN GOTO 112
 END
 
 IF ~~ THEN BEGIN 112
  SAY ~They tell you that time will heal and yes, maybe the flames do abate for a while... after you have forgiven yourself for all the things you never said, the things you never did or even the things you did say and did do.~
  IF ~~ THEN GOTO 113
-END 
+END
 
 IF ~~ THEN BEGIN 113
  SAY ~Then one day something quite trivial occurs, you hear a word, a song and once again fuel is added to those flames and the pain begins all over again.~
@@ -774,7 +774,7 @@ END
 IF ~~ THEN BEGIN 114
  SAY ~Please... I am sorry... forgive me, you do not deserve such angry words. I have no idea where they came from.~
  IF ~~ THEN REPLY ~There is nothing to forgive, grief and anger often come hand in hand and talking is a very good release for these emotions.~ GOTO 115
- IF ~~ THEN REPLY ~I see my words have upset you, perhaps you would rather we spoke no more?~ GOTO 115 
+ IF ~~ THEN REPLY ~I see my words have upset you, perhaps you would rather we spoke no more?~ GOTO 115
 END
 
 IF ~~ THEN BEGIN 115
@@ -786,9 +786,9 @@ IF ~~ THEN BEGIN 116
  SAY ~She was from the elven city of Ael-el-Van-aira, north of The High Forest. The city has several large mithril mines known but to the few they permit trade with.~
  IF ~~ THEN GOTO 117
 END
- 
+
 IF ~~ THEN BEGIN 117
- SAY ~It was from a visiting elf from Ael-el-Van-aira that my father heard of possible trade with the city. This visiting elf very soon became his wife and later my mother.~ 
+ SAY ~It was from a visiting elf from Ael-el-Van-aira that my father heard of possible trade with the city. This visiting elf very soon became his wife and later my mother.~
  IF ~~ THEN REPLY ~Ael-el-Van-aira? Not a name I have heard before.~ GOTO 118
  IF ~~ THEN REPLY ~What was an elf from Ael-el-Van-aira doing in Athkatla?~ GOTO 118
 END
@@ -796,40 +796,40 @@ END
 IF ~~ THEN BEGIN 118
  SAY ~The city itself has very little contact with settlements this far south but the elven females of Ael-el-Van-aira are quite resourceful when it comes to looking for husbands and she met my father whilst he was overseeing business in Waterdeep.~
  IF ~~ THEN GOTO 119
-END 
- 
+END
+
 IF ~~ THEN BEGIN 119
  SAY ~It was unusual to see Ael-el-Van-airians in Waterdeep and my father was smitten by her ethereal exotic beauty the moment he saw her.~
  IF ~~ THEN GOTO 120
 END
- 
+
 IF ~~ THEN BEGIN 120
  SAY ~They married within weeks of meeting and instead of him taking her clan name as is traditional among her people she took his name believing it would make things less complicated for them living in Athkatla.~
- IF ~~ THEN REPLY ~She was an exceptional lady, very much like her daughter. Please continue.~ GOTO 121 
- IF ~~ THEN REPLY ~Your father was fortunate, such self sacrificing love is rare indeed, but please continue your tale.~ GOTO 121 
- IF ~~ THEN REPLY ~And they lived happily ever after, but not as long as they had expected to. What happened?~ GOTO 121 
+ IF ~~ THEN REPLY ~She was an exceptional lady, very much like her daughter. Please continue.~ GOTO 121
+ IF ~~ THEN REPLY ~Your father was fortunate, such self sacrificing love is rare indeed, but please continue your tale.~ GOTO 121
+ IF ~~ THEN REPLY ~And they lived happily ever after, but not as long as they had expected to. What happened?~ GOTO 121
 END
 
 IF ~~ THEN BEGIN 121
  SAY ~Do not rush me, I will tell it in my own time!~
  IF ~~ THEN GOTO 122
 END
- 
+
 IF ~~ THEN BEGIN 122
  SAY ~Not long after I married and left Athkatka my mother received news she was to attend a meeting of the High Council of Ael-el-Van-aira but the messenger would not say why in front of my father... Damn the elves and all their secrecy!~
  IF ~~ THEN GOTO 123
 END
- 
+
 IF ~~ THEN BEGIN 123
  SAY ~Later, he received news saying that she had succumbed to sickness whilst travelling and by the time she reached the city there was nothing they could do to save her.~
  IF ~~ THEN GOTO 124
 END
- 
+
 IF ~~ THEN BEGIN 124
  SAY ~Sadly she was cremated before my father could reach Ael-el-Van-aira... to prevent the spread of infection he was told, he did not even have a grave he could mourn beside. All he had to remember her by was her pendant.~
  IF ~~ THEN GOTO 125
-END 
- 
+END
+
 IF ~~ THEN BEGIN 125
  SAY ~He became convinced her clan was keeping something from him and he became paranoid to the point he was afraid the same fate might befall me should he lose sight of me.~
  IF ~~ THEN REPLY ~Poor Leina! So your marriage to Duvaine was a ploy to keep you in Athkatla, close to him.~ GOTO 126
@@ -840,25 +840,25 @@ END
 IF ~~ THEN BEGIN 126
  SAY ~Maybe my father was right to worry... one thing he knew for sure was that she could not have been wearing her pendant. If she had it would have sustained her life until she reached aid or until such a time she could be healed.~
  IF ~~ THEN GOTO 127
-END 
- 
+END
+
 IF ~~ THEN BEGIN 127
  SAY ~According to my father, she never removed it in case I ever had need to call on her, so someone must have removed it deliberately knowing that in doing so she would die...~
  IF ~~ THEN GOTO 128
-END 
- 
+END
+
 IF ~~ THEN BEGIN 128
- SAY ~(*Hotly*) I am Tia’Llaeyth my mother’s daughter and heir! I swear one day I will go to Ael-el-Van-aira and demand the truth from her clan. As a rightful daughter they cannot deny me!~
+ SAY ~(*Hotly*) I am Tiaï¿½Llaeyth my motherï¿½s daughter and heir! I swear one day I will go to Ael-el-Van-aira and demand the truth from her clan. As a rightful daughter they cannot deny me!~
  IF ~~ THEN REPLY ~And do you believe that by doing this you will end the counting of the stars on sleepless nights?~ GOTO 129
  IF ~~ THEN REPLY ~Why torture yourself so? I am sure it would aggrieve your mother to see her daughter so tormented.~ GOTO 129
- IF ~~ THEN REPLY ~Not all lies are conspiracies Leina, some are told to prevent further pain, could this not be your mother’s people’s intention?~ GOTO 129
+ IF ~~ THEN REPLY ~Not all lies are conspiracies Leina, some are told to prevent further pain, could this not be your motherï¿½s peopleï¿½s intention?~ GOTO 129
 END
 
 IF ~~ THEN BEGIN 129
  SAY ~I have to know! If she truly got sick whilst travelling then I could have aided her... (*Pulling at the pendant around her neck*)... if not for my own stupid pride I would have been wearing this around my neck!~
  IF ~~ THEN GOTO 130
-END 
- 
+END
+
 IF ~~ THEN BEGIN 130
  SAY ~Instead I shoved it in my backpack so she would not learn of my plight after being deserted by the rat I chose for a husband. In doing so, I severed the only connection that could have possibly saved her life.~
  IF ~~ THEN REPLY ~Storming into Ael-el-Van-aira and demanding answers will not change what has happened. You have to let go of your grief and anger, live the life your parents gave to you.~ GOTO 131
@@ -867,7 +867,7 @@ IF ~~ THEN BEGIN 130
 END
 
 IF ~~ THEN BEGIN 131
- SAY ~Maybe you are right <CHARNAME>, but knowing I could have aided my mother is as important as knowing that I could not. I need to know myself which it was in order to face and come to terms with her death in my own way. That is why, one day, I will travel to Ael-el-Van-aira, I will face her clan and they will tell me the truth of it.~ 
+ SAY ~Maybe you are right <CHARNAME>, but knowing I could have aided my mother is as important as knowing that I could not. I need to know myself which it was in order to face and come to terms with her death in my own way. That is why, one day, I will travel to Ael-el-Van-aira, I will face her clan and they will tell me the truth of it.~
  IF ~~ THEN REPLY ~Then I truly hope you find what you need Leina and that your journey when you undertake it will not cause you more pain.~ GOTO 132
  IF ~~ THEN REPLY ~If that is what you wish to do then I will accompany you on your journey once this task of mine is done.~ GOTO 132
  IF ~~ THEN REPLY ~Elves are tricky beings to deal with, they guard their secrets well. I fear you will be hard pressed to loosen their tongues and get you answers, no matter what your lineage may be.~ GOTO 132
@@ -893,7 +893,7 @@ END
 
 IF ~~ THEN BEGIN 134
  SAY ~(*Laughs*) On the contrary the life suits me very well <CHARNAME>. It would be nice to have a bath though, my pack is heavy enough without having to carry the added weight of the dust from the road.~
- IF ~~ THEN REPLY ~We have put a couple of tough travelling days behind us haven’t we, maybe we can all do with soft bed tonight.~ GOTO 138
+ IF ~~ THEN REPLY ~We have put a couple of tough travelling days behind us havenï¿½t we, maybe we can all do with soft bed tonight.~ GOTO 138
  IF ~~ THEN REPLY ~Mmm, now you come to mention it, we do all whiff a bit.~ GOTO 138
  IF ~~ THEN REPLY ~And here was I thinking it was the sun colouring your cheeks, however... now that I look closer I can see the little bits of pink in between the black.~ GOTO 138
  IF ~~ THEN REPLY ~A bath... what is one of those? Am I right in remembering that it has something to do with immersing oneself in water?!~ GOTO 138
@@ -902,7 +902,7 @@ END
 
 IF ~~ THEN BEGIN 135
  SAY ~(*Laughs*) At least if I was to smell fresher, I might attract some company during my walks and the night would not be so lonely. Seriously <CHARNAME>, I would kill for a bath.~
- IF ~~ THEN REPLY ~We have put a couple of tough travelling days behind us haven’t we, maybe we can all do with soft bed tonight.~ GOTO 138
+ IF ~~ THEN REPLY ~We have put a couple of tough travelling days behind us havenï¿½t we, maybe we can all do with soft bed tonight.~ GOTO 138
  IF ~~ THEN REPLY ~Mmm, now you come to mention it, we do all whiff a bit.~ GOTO 138
  IF ~~ THEN REPLY ~And here was I thinking it was the sun colouring your cheeks, however... now that I look closer I can see the little bits of pink in between the black.~ GOTO 138
  IF ~~ THEN REPLY ~A bath... what is one of those? Am I right in remembering that it has something to do with immersing oneself in water?!~ GOTO 138
@@ -927,8 +927,8 @@ IF ~~ THEN BEGIN 137
 END
 
 IF ~~ THEN BEGIN 138
- SAY ~Then you will consider it? An inn with a bath house, lots of hot steaming water and large fluffy towels to wrap oneself in. The perfect end to a hard day’s toil.~
- IF ~~ THEN REPLY ~If we do not find an inn Leina I promise you we will camp by a river, just so’s you can bathe. I am sure we can spare a blanket for you to wrap yourself in when you are done.~ GOTO 139
+ SAY ~Then you will consider it? An inn with a bath house, lots of hot steaming water and large fluffy towels to wrap oneself in. The perfect end to a hard dayï¿½s toil.~
+ IF ~~ THEN REPLY ~If we do not find an inn Leina I promise you we will camp by a river, just soï¿½s you can bathe. I am sure we can spare a blanket for you to wrap yourself in when you are done.~ GOTO 139
  IF ~~ THEN REPLY ~Let us see how far we get today and worry about where we will be sleeping when we tire Leina.~ GOTO 140
  IF ~~ THEN REPLY ~We will sleep as we usually do, where we drop. If you are lucky you will get your bath if not then we rest under the stars again.~ GOTO 140
 END
@@ -941,7 +941,7 @@ END
 IF ~~ THEN BEGIN 140 //Leina8:Reply to CH.9, 11-12, 21&23-24.
  SAY ~(*Laughing softly*) In that case <CHARNAME>, I have a song that will inspire us to keep going until we do sight an inn where we can drop. When we do, be sure to make use of the bath house youself <CHARNAME> or you will be marching well ahead of us all come tomorrow.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 141
  SAY ~Maybe so, but think how much more she would be pleased if we took the time to show our respect by standing before her shining almost as brightly as she herself. She may even illuminate our road more brightly with her radiance when we are forced to travel the night.~
@@ -950,22 +950,22 @@ END
 
 IF ~~ THEN BEGIN 142
  SAY ~Please <CHARNAME>, let us not force her to look upon our road weary faces again, please say that we will sleep in the comfort of an inn tonight and rid ourselves of the dust from the road?~
- IF ~~ THEN REPLY ~If we do not find an inn Leina I promise you we will camp by a river, just so’s you can bathe. I am sure we can spare a blanket for you to wrap yourself in when you are done.~ GOTO 139
+ IF ~~ THEN REPLY ~If we do not find an inn Leina I promise you we will camp by a river, just soï¿½s you can bathe. I am sure we can spare a blanket for you to wrap yourself in when you are done.~ GOTO 139
  IF ~~ THEN REPLY ~Let us see how far we get today and worry about where we will be sleeping when we tire Leina.~ GOTO 140
  IF ~~ THEN REPLY ~We will sleep as we usually do, where we drop. If you are lucky you will get your bath if not then we rest under the stars again.~ GOTO 140
 END
 
 IF ~~ THEN BEGIN 143
- SAY ~(*Laughs softly*) So you make light of the bards request, and you not smelling so sweetly yourself <CHARNAME>. If I can brave the rats so can *the hero of the sword coast*. So is to be an inn, or does the hero’s phobia of rats become another tale for the bards to tell?~
- IF ~~ THEN REPLY ~(*Smiling*) Oh the bard’s words, they are so cruel! You will get your bath Leina, I promise. If we do not find an inn, then we will camp by a river, just so’s you can bathe.~ GOTO 139
+ SAY ~(*Laughs softly*) So you make light of the bards request, and you not smelling so sweetly yourself <CHARNAME>. If I can brave the rats so can *the hero of the sword coast*. So is to be an inn, or does the heroï¿½s phobia of rats become another tale for the bards to tell?~
+ IF ~~ THEN REPLY ~(*Smiling*) Oh the bardï¿½s words, they are so cruel! You will get your bath Leina, I promise. If we do not find an inn, then we will camp by a river, just soï¿½s you can bathe.~ GOTO 139
  IF ~~ THEN REPLY ~Let us see how far we get today and worry about where we will be sleeping when we tire Leina.~ GOTO 140
  IF ~~ THEN REPLY ~We will sleep as we usually do, where we drop. If you are lucky you will get your bath if not then we rest under the stars again.~ GOTO 140
 END
 
-//If the group’s next rest is at an inn then banter Leina/PC2a followed by Leina/PC3a.
+//If the groupï¿½s next rest is at an inn then banter Leina/PC2a followed by Leina/PC3a.
 //If the group should rest outside before resting at an inn then banterLeina/PC4a. and Leina/PC2a& Leina/PC3a will occur when they do next rest at an inn.
 
-//Leina/PC.2a 
+//Leina/PC.2a
 //Takes place when the group next rest at an inn.
 
 IF ~Global("VP_BPC","LOCALS",16)
@@ -974,7 +974,7 @@ Global("VP_Bathe_Talk","LOCALS",1)~ THEN BEGIN 144
  SAY ~I have spoken to the barkeep, he has only the one bath but he has assured me that he has plenty of hot water for us all. So make the most of it my friends and follow my lead.~
  IF ~~ THEN REPLY ~So the bard wants to lead us into hot water does she?~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 145
  IF ~~ THEN REPLY ~You want us to follow you into the tub Leina, all of us? Interesting!~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 146
- IF ~~ THEN REPLY ~I don’t think we would emerge very fresh if we all followed you into your bath Leina.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 147
+ IF ~~ THEN REPLY ~I donï¿½t think we would emerge very fresh if we all followed you into your bath Leina.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 147
  IF ~~ THEN REPLY ~One at a time or all together Leina?~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 148
  IF ~~ THEN REPLY ~You take your bath Leina, I need a soft bed and rest first.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 149
  IF ~~ THEN REPLY ~Then you best enjoy the water whilst it is hot. See you in the morning Leina.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 149
@@ -984,9 +984,9 @@ END
 IF ~~ THEN BEGIN 145
  SAY ~(*Smiling*) Trust me, for the sake of all our noses, this is one time getting into hot water is definitely beneficial to all. Now, shall we toss for who gets first dip?~
  IF ~~ THEN REPLY ~And here was I thinking that the group who bathed together stayed together.~ GOTO 151
- IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and that’s non negotiable.~ GOTO 152
- IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeep’s fine ales.~ GOTO 153
- IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeep’s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
+ IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and thatï¿½s non negotiable.~ GOTO 152
+ IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeepï¿½s fine ales.~ GOTO 153
+ IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeepï¿½s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
  IF ~~ THEN REPLY ~In that case, I for one will gladly follow the bard... or should that be, follow after the bard?~ GOTO 154
  IF ~~ THEN REPLY ~Then I suggest you stop talking and start bathing before the rest of us drop whilst we wait.~ GOTO 155
 END
@@ -994,9 +994,9 @@ END
 IF ~~ THEN BEGIN 146
  SAY ~(*Smiling*) If it would get rid of the stench of the road, I can forego my modesty, but as I have secured enough hot water for all, our blushes have been spared.~
  IF ~~ THEN REPLY ~And here was I thinking that the group who bathed together stayed together.~ GOTO 151
- IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and that’s non negotiable.~ GOTO 152
- IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeep’s fine ales.~ GOTO 153
- IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeep’s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
+ IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and thatï¿½s non negotiable.~ GOTO 152
+ IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeepï¿½s fine ales.~ GOTO 153
+ IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeepï¿½s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
  IF ~~ THEN REPLY ~In that case, I for one will gladly follow the bard... or should that be, follow after the bard?~ GOTO 154
  IF ~~ THEN REPLY ~Then I suggest you stop talking and start bathing before the rest of us drop whilst we wait.~ GOTO 155
 END
@@ -1004,19 +1004,19 @@ END
 IF ~~ THEN BEGIN 147
  SAY ~(*Smiling*) I have no intention of washing off my own grime, only to emerge wearing yours, that is why I have secured hot water for us all, as you well know <CHARNAME>.~
  IF ~~ THEN REPLY ~And here was I thinking that the group who bathed together stayed together.~ GOTO 151
- IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and that’s non negotiable.~ GOTO 152
- IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeep’s fine ales.~ GOTO 153
- IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeep’s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
+ IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and thatï¿½s non negotiable.~ GOTO 152
+ IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeepï¿½s fine ales.~ GOTO 153
+ IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeepï¿½s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
  IF ~~ THEN REPLY ~In that case, I for one will gladly follow the bard... or should that be, follow after the bard?~ GOTO 154
  IF ~~ THEN REPLY ~Then I suggest you stop talking and start bathing before the rest of us drop whilst we wait.~ GOTO 155
 END
 
 IF ~~ THEN BEGIN 148
- SAY ~(*Smiling*) Well, as there is enough hot water for at least six we don’t have to all rush at once.~
+ SAY ~(*Smiling*) Well, as there is enough hot water for at least six we donï¿½t have to all rush at once.~
  IF ~~ THEN REPLY ~And here was I thinking that the group who bathed together stayed together.~ GOTO 151
- IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and that’s non negotiable.~ GOTO 152
- IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeep’s fine ales.~ GOTO 153
- IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeep’s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
+ IF ~~ THEN REPLY ~Then as it was you who set this up for us, you may take first dip, but I intend being second and thatï¿½s non negotiable.~ GOTO 152
+ IF ~~ THEN REPLY ~You take your bath Leina, the rest of us will decide after we have tasted a couple of the barkeepï¿½s fine ales.~ GOTO 153
+ IF ~~ THEN REPLY ~Then you best be quick if you want me to follow because the barkeepï¿½s ales are looking a lot more inviting than a hot tub at the moment.~ GOTO 153
  IF ~~ THEN REPLY ~In that case, I for one will gladly follow the bard... or should that be, follow after the bard?~ GOTO 154
  IF ~~ THEN REPLY ~Then I suggest you stop talking and start bathing before the rest of us drop whilst we wait.~ GOTO 155
 END
@@ -1042,17 +1042,17 @@ IF ~~ THEN BEGIN 152
 END
 
 IF ~~ THEN BEGIN 153
- SAY ~(*Smiling*) Then as I pass, I will whisper in the barkeep’s ear to ration his ales until all have partook of the hospitality of his bath house. (*She turns and heads for the bath house.*)~
+ SAY ~(*Smiling*) Then as I pass, I will whisper in the barkeepï¿½s ear to ration his ales until all have partook of the hospitality of his bath house. (*She turns and heads for the bath house.*)~
  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 154
- SAY ~I think, *when the bard emerges dressed and refreshed* is a better turn of phrase don’t you <CHARNAME>? (*She laughs and heads for the bath house.*)~
+ SAY ~I think, *when the bard emerges dressed and refreshed* is a better turn of phrase donï¿½t you <CHARNAME>? (*She laughs and heads for the bath house.*)~
  IF ~~ THEN DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~ EXIT //second flirt phase
 END
 
 IF ~~ THEN BEGIN 155
- SAY ~Don’t worry <CHARNAME>, should you all nod off waiting, I know a rousing tune that is guaranteed to wake the dead from their slumber. (*She laughs and heads for the bath house.*)~
+ SAY ~Donï¿½t worry <CHARNAME>, should you all nod off waiting, I know a rousing tune that is guaranteed to wake the dead from their slumber. (*She laughs and heads for the bath house.*)~
  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
 
@@ -1077,7 +1077,7 @@ IF ~~ THEN BEGIN 157
 END
 
 IF ~~ THEN BEGIN 158
- SAY ~Ah, me thinks <CHARNAME> does not have the ear to know a fine tune when it is sung. The acoustics of a bath house is great for trying out new compositions, but as you wouldn’t appreciate it, I am not about to share my new masterpiece with you.~
+ SAY ~Ah, me thinks <CHARNAME> does not have the ear to know a fine tune when it is sung. The acoustics of a bath house is great for trying out new compositions, but as you wouldnï¿½t appreciate it, I am not about to share my new masterpiece with you.~
  IF ~~ THEN REPLY ~Then my ears will be ever grateful for that.~ GOTO 169
  IF ~~ THEN REPLY ~Then perhaps you should reserve your singing for the bath house Leina.~ GOTO 169
  IF ~~ THEN REPLY ~Does the bard not know a jest when she hears one, come Leina, share your tune with us all.~ GOTO 170
@@ -1115,8 +1115,8 @@ END
 IF ~~ THEN BEGIN 164
  SAY ~It is also said that we learn through our pain but from what I know of pain it is the most unkind way to gain knowledge.~
  IF ~~ THEN GOTO 165
-END 
- 
+END
+
 IF ~~ THEN BEGIN 165
  SAY ~Come <CHARNAME>, enough talk of pain, let us find what joy there is to be had in this new day.~
  IF ~~ THEN EXIT
@@ -1126,7 +1126,7 @@ IF ~~ THEN BEGIN 166
  SAY ~I am not convinced that I will ever be truly free of the shadows <CHARNAME>, but I am grateful for each night that they lessen their grip on me.~
  IF ~~ THEN GOTO 167
 END
- 
+
 IF ~~ THEN BEGIN 167
  SAY ~However, we are not resting and there is no place for nightmares whilst the mind and body are occupied. I am free of them for a few hours so let us enjoy what lies ahead before they return.~
  IF ~~ THEN EXIT
@@ -1150,46 +1150,46 @@ END
 IF ~~ THEN BEGIN 171
  SAY ~(*Chuckles softly*) There is such a tale <CHARNAME>. The folk of the town would not pay the debt they owed to the bard, so he played his tune and lured their children away. A lesson to all that one should never cross a bard, for you never know what tune she might play when she is asked to lead the group.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 172
- SAY ~(*Laughs softly*) I’ll have you know I have entranced many an audience with my singing and dancing <CHARNAME>, but I see by the smile on your lips you do not believe me. I can see I will have to show you the magic of a real performance when time permits... but not today.~
+ SAY ~(*Laughs softly*) Iï¿½ll have you know I have entranced many an audience with my singing and dancing <CHARNAME>, but I see by the smile on your lips you do not believe me. I can see I will have to show you the magic of a real performance when time permits... but not today.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 173
  SAY ~(*Striking a chord as she speaks*) And it will be a merry dance that she leads you all in.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 174
- SAY ~But the enemy is often devious and stealthy <CHARNAME>. Many’s the time he has come upon us before we have time to draw swords. At least with a clean face he can see you are a person to be feared and not just some unkempt, undisciplined low life.~
+ SAY ~But the enemy is often devious and stealthy <CHARNAME>. Manyï¿½s the time he has come upon us before we have time to draw swords. At least with a clean face he can see you are a person to be feared and not just some unkempt, undisciplined low life.~
  IF ~~ THEN EXIT
-END 
+END
 	
 IF ~Global("VP_BPC","LOCALS",16)
 Global("VP_BPC_Buffer2","LOCALS",3)
 Global("VP_Bathe_Talk","LOCALS",0)~ THEN BEGIN 175
  SAY ~(*Sighs*) So, we are to rest once more under the skies <CHARNAME>, I suppose the extra layer of dust that I have collected today will help keep out the cold. I had so hoped to be rid of it and not depending on it to keep me warm.~
- IF ~~ THEN REPLY ~I didn’t make any promises as to where we would be resting next Leina.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 176
- IF ~~ THEN REPLY ~The group is tired Leina. It would not have been fair to expect them to press on just so’s you can take a bath.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 177
+ IF ~~ THEN REPLY ~I didnï¿½t make any promises as to where we would be resting next Leina.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 176
+ IF ~~ THEN REPLY ~The group is tired Leina. It would not have been fair to expect them to press on just soï¿½s you can take a bath.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 177
  IF ~~ THEN REPLY ~There will plenty of inns to rest in at other times Leina. If we continue any further in our present condition, not all of us, if any, may get to see those other times.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 177
- IF ~~ THEN REPLY ~(*Smiling and holding out a blanket*) Well, there’s always the river we passed a short way back. Fluffy towels are a bit short in supply but you can always take this blanket.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 178
+ IF ~~ THEN REPLY ~(*Smiling and holding out a blanket*) Well, thereï¿½s always the river we passed a short way back. Fluffy towels are a bit short in supply but you can always take this blanket.~ DO ~SetGlobal("VP_BPC_Buffer2","LOCALS",4)~ GOTO 178
 END
 
 IF ~~ THEN BEGIN 176
- SAY ~I know, we sleep where we drop! Still, I have to admit I am tired enough just to be thankful to be off my feet, but don’t you go getting any notions that I have given up on my inn with lashings of hot water and fluffy towels. It’s out there... awaiting our next stop. Sleep well <CHARNAME>.~
+ SAY ~I know, we sleep where we drop! Still, I have to admit I am tired enough just to be thankful to be off my feet, but donï¿½t you go getting any notions that I have given up on my inn with lashings of hot water and fluffy towels. Itï¿½s out there... awaiting our next stop. Sleep well <CHARNAME>.~
  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)
 RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 177
  SAY ~I know <CHARNAME>. I can see how weary the group is as well as you, but I fear my bedroll is recoiling at the thought of all the grime I am about to inflict on it again when I climb inside. Will it, or me for that matter, ever be able to scrub long enough and hard enough to be free of all this dirt I ask?~
- IF ~~ THEN REPLY ~(*Smiling and holding out a blanket*) Well, there’s always the river we passed a short way back. Fluffy towels are a bit short in supply but you can always take this blanket.~ GOTO 178
+ IF ~~ THEN REPLY ~(*Smiling and holding out a blanket*) Well, thereï¿½s always the river we passed a short way back. Fluffy towels are a bit short in supply but you can always take this blanket.~ GOTO 178
  IF ~~ THEN REPLY ~Speak to it nicely, promise it you will bathe tomorrow.~ GOTO 180
  IF ~~ THEN REPLY ~You have to be masterful when it comes to bedrolls Leina, or you will soon find its up and done a runner.~ GOTO 180
- IF ~~ THEN REPLY ~At the moment I am more interested in getting some sleep than getting clean. So if you don’t mind Leina, dirty or not my bedroll looks good to me.~ GOTO 181
- IF ~~ THEN REPLY ~Clean or dirty, if we don’t rest it will not matter, because we could all be getting dirt shovelled on us if we are tired when we next meet the enemy.~ GOTO 182
+ IF ~~ THEN REPLY ~At the moment I am more interested in getting some sleep than getting clean. So if you donï¿½t mind Leina, dirty or not my bedroll looks good to me.~ GOTO 181
+ IF ~~ THEN REPLY ~Clean or dirty, if we donï¿½t rest it will not matter, because we could all be getting dirt shovelled on us if we are tired when we next meet the enemy.~ GOTO 182
 END
 									
 IF ~~ THEN BEGIN 178
@@ -1203,12 +1203,12 @@ IF ~~ THEN BEGIN 179
 END
 
 IF ~~ THEN BEGIN 180
- SAY ~So, it is not unusual for bed rolls to be unruly and afraid of a little dirt? I thank you for your advice, I will try being gentle with it and if that does not work then I will grab it, throw it to the ground and be on it before it can make a getaway. Show it who’s boss, right? (*Laughing she turns and heads for her bed roll*)... Sleep well <CHARNAME>.~
+ SAY ~So, it is not unusual for bed rolls to be unruly and afraid of a little dirt? I thank you for your advice, I will try being gentle with it and if that does not work then I will grab it, throw it to the ground and be on it before it can make a getaway. Show it whoï¿½s boss, right? (*Laughing she turns and heads for her bed roll*)... Sleep well <CHARNAME>.~
  IF ~~ THEN DO ~RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 181
- SAY ~Then I’ll not keep you from it. I... (*yawning*)... I have to say mine is looking a little less grubby and a little more inviting through half closed eyes. Sleep well <CHARNAME>.~
+ SAY ~Then Iï¿½ll not keep you from it. I... (*yawning*)... I have to say mine is looking a little less grubby and a little more inviting through half closed eyes. Sleep well <CHARNAME>.~
  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)
 RestParty()~ EXIT
 END
@@ -1245,7 +1245,7 @@ IF ~~ THEN BEGIN 187
 END
 
 IF ~~ THEN BEGIN 188
- SAY ~That was spiteful and uncalled for! This Imoen’s abduction by Irenicus was not of her making. As for her insolence, perhaps you should look to yourself to see why she speaks to you in the way she does... and another thing, I have never professed to *knowing it all*!~
+ SAY ~That was spiteful and uncalled for! This Imoenï¿½s abduction by Irenicus was not of her making. As for her insolence, perhaps you should look to yourself to see why she speaks to you in the way she does... and another thing, I have never professed to *knowing it all*!~
  IF ~~ THEN EXTERN ~BJAHEIR~ NEJ495
 END
 
@@ -1265,7 +1265,7 @@ IF ~~ THEN BEGIN 191
 END
 
 IF ~~ THEN BEGIN 192
- SAY ~I don’t know, we are all different and as such so are our skills... the things we are good at. You are a ranger and know much more than me of the ways of the woods and its creatures, you are also a brave fearless warrior and those are your skills Minsc.~
+ SAY ~I donï¿½t know, we are all different and as such so are our skills... the things we are good at. You are a ranger and know much more than me of the ways of the woods and its creatures, you are also a brave fearless warrior and those are your skills Minsc.~
  IF ~~ THEN EXTERN ~BMINSC~ NEJ133
 END
 
@@ -1312,8 +1312,8 @@ END
 IF ~~ THEN BEGIN 201
  SAY ~(*Puts her arm around her*) Come Aerie, things will get better. It may not seem like it know but I promise you they will. Look how much better they are now to when you were caged and displayed as a freak in the circus.~
  IF ~~ THEN GOTO 202
-END 
- 
+END
+
 IF ~~ THEN BEGIN 202
  SAY ~Now walk with me and wipe your tears, I will sing you a song of the wind in you hair and the clouds beneath your feet. We will soar above the clouds together.~
  IF ~~ THEN GOTO 203
@@ -1358,7 +1358,7 @@ IF ~~ THEN BEGIN 209
 END
 
 IF ~Global("VP_BNalia","LOCALS",2)~ THEN BEGIN 210
- SAY ~Nalia, what’s wrong?~ [mute]
+ SAY ~Nalia, whatï¿½s wrong?~ [mute]
  IF ~~ THEN DO ~SetGlobal("VP_BNalia","LOCALS",3)~ EXTERN ~BNALIA~ NEJ51
 END
 
@@ -1410,15 +1410,15 @@ END
 
 IF ~Global("VP_LoveTalk","LOCALS",2)
 Gender(Player1,MALE)~ THEN BEGIN 220
- SAY ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isn’t right... My heart has no need to e’er... Drat, That’s no good either!~
+ SAY ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isnï¿½t right... My heart has no need to eï¿½er... Drat, Thatï¿½s no good either!~
  IF ~~ THEN REPLY ~Then Leina, let me hear some more and let me be the judge of whether it is any good or not.~ GOTO 221
- IF ~~ THEN REPLY ~Which part don’t you like Leina, the words or the tune?~ GOTO 221
+ IF ~~ THEN REPLY ~Which part donï¿½t you like Leina, the words or the tune?~ GOTO 221
  IF ~~ THEN REPLY ~Please Leina, not another *Leina will never love again* song.~ GOTO 222
  IF ~~ THEN REPLY ~I agree, its not. For someone who professes that music is her passion, her only passion, your songs all seem be sadly lacking this great passion you speak of.~ GOTO 223
 END
 
 IF ~~ THEN BEGIN 221
- SAY ~I... I didn’t realise anyone was listening. This blasted tune, I can feel it struggling to be free but for some reason, the words and melody will not fit together, no matter how I turn them around.~
+ SAY ~I... I didnï¿½t realise anyone was listening. This blasted tune, I can feel it struggling to be free but for some reason, the words and melody will not fit together, no matter how I turn them around.~
  IF ~~ THEN REPLY ~Why not first write the words and then add the melody?~ GOTO 224
  IF ~~ THEN REPLY ~Then change one to suit the other.~ GOTO 224
  IF ~~ THEN REPLY ~Why not leave it for a while and come back to it later? That nearly always works for me if I fail to get something right first go.~ GOTO 225
@@ -1434,9 +1434,9 @@ IF ~~ THEN BEGIN 222
 END
 
 IF ~~ THEN BEGIN 223
- SAY ~Real passion isn’t instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.17-20.
+ SAY ~Real passion isnï¿½t instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.17-20.
  IF ~~ THEN REPLY ~I have yet to hear that in anything you sing Leina.~ GOTO 232
- IF ~~ THEN REPLY ~How about when next you sing, you give me nod when you get to the part with the passion, that way I’ll not miss it.~ GOTO 233
+ IF ~~ THEN REPLY ~How about when next you sing, you give me nod when you get to the part with the passion, that way Iï¿½ll not miss it.~ GOTO 233
  IF ~~ THEN REPLY ~We definitely have different ideas of passion Leina.~ GOTO 234
  IF ~~ THEN REPLY ~Then I suppose if I want to feel some of this passion of yours, I will have to force myself to stick around past your opening strains Leina.~ GOTO 235
 END
@@ -1473,19 +1473,19 @@ IF ~~ THEN BEGIN 228
 END
 
 IF ~~ THEN BEGIN 229
- SAY ~(*Laughs softly*) Ah yes, the discord often heard before the wondrous sounds of love’s labours... a beautiful new melody.~
+ SAY ~(*Laughs softly*) Ah yes, the discord often heard before the wondrous sounds of loveï¿½s labours... a beautiful new melody.~
  IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 230
- SAY ~My eyes and my heart are my soul’s guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
+ SAY ~My eyes and my heart are my soulï¿½s guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
  IF ~~ THEN GOTO 231
 END
 
 IF ~~ THEN BEGIN 231
  SAY ~If I feel joy I sing of it, if I feel sorrow I sing of it, but I no longer feel the joy of love, so I no longer sing of it. I am sorry but that is how my music is born and I can not alter it nor would I wish to.~
  IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 232
  SAY ~(*Laughs softly*) Then <CHARNAME>, I guess there is neither music nor passion in your soul.~
@@ -1493,7 +1493,7 @@ IF ~~ THEN BEGIN 232
 END
 
 IF ~~ THEN BEGIN 233
- SAY ~I don’t prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
+ SAY ~I donï¿½t prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
  IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
 END
 
@@ -1509,16 +1509,16 @@ END
 
 IF ~Global("VP_LoveTalk","LOCALS",2)
 Gender(Player1,FEMALE)~ THEN BEGIN 236
- SAY ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isn’t right... My heart has no need to e’er... Drat, That’s no good either!~
+ SAY ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isnï¿½t right... My heart has no need to eï¿½er... Drat, Thatï¿½s no good either!~
  IF ~~ THEN REPLY ~It sounds pretty to me Leina, please continue.~ GOTO 237
- IF ~~ THEN REPLY ~Which part isn’t right, the words or the tune?~ GOTO 237
+ IF ~~ THEN REPLY ~Which part isnï¿½t right, the words or the tune?~ GOTO 237
  IF ~~ THEN REPLY ~Leina, you may not believe in love but there are some of us who hope to find it some day. Why not make this a happy song?~ GOTO 246
  IF ~~ THEN REPLY ~I admit, you have come up with better.~ GOTO 246
- IF ~~ THEN REPLY ~Leina, please say that you’ll sing something we can dance to tonight? I am tired of someone done Leina wrong songs.~ GOTO 254
+ IF ~~ THEN REPLY ~Leina, please say that youï¿½ll sing something we can dance to tonight? I am tired of someone done Leina wrong songs.~ GOTO 254
 END
 
 IF ~~ THEN BEGIN 237
- SAY ~I... I didn’t realise anyone was listening. This blasted tune, I can feel it struggling to be free but for some reason, the words and melody will not fit together, no matter how I turn them around.~ // Then CH.6-9.
+ SAY ~I... I didnï¿½t realise anyone was listening. This blasted tune, I can feel it struggling to be free but for some reason, the words and melody will not fit together, no matter how I turn them around.~ // Then CH.6-9.
  IF ~~ THEN REPLY ~Then let me help. Perhaps we can sort the words between us and then you can add the tune later.~ GOTO 238
  IF ~~ THEN REPLY ~Maybe if you concentrate on either the words or the tune, the other will follow.~ GOTO 238
  IF ~~ THEN REPLY ~Why not leave it for a while and come back to it later? That nearly always works for me if I fail to get something right first go.~ GOTO 238
@@ -1583,7 +1583,7 @@ IF ~~ THEN BEGIN 246
 END
 
 IF ~~ THEN BEGIN 247
- SAY ~My eyes and my heart are my soul’s guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
+ SAY ~My eyes and my heart are my soulï¿½s guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
  IF ~~ THEN GOTO 248
 END
 
@@ -1593,9 +1593,9 @@ IF ~~ THEN BEGIN 248
 END
 
 IF ~~ THEN BEGIN 249
- SAY ~Real passion isn’t instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.24-27.
+ SAY ~Real passion isnï¿½t instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.24-27.
  IF ~~ THEN REPLY ~I have yet to hear that in anything you sing Leina.~ GOTO 250
- IF ~~ THEN REPLY ~How about when next you sing, you give me nod when you get to the part with the passion, that way I’ll not miss it.~ GOTO 251
+ IF ~~ THEN REPLY ~How about when next you sing, you give me nod when you get to the part with the passion, that way Iï¿½ll not miss it.~ GOTO 251
  IF ~~ THEN REPLY ~I see that we definite passion differently Leina.~ GOTO 252
  IF ~~ THEN REPLY ~Then I suppose if I want to feel some of this passion of yours, I will have to force myself to stick around past your opening strains Leina.~ GOTO 253
 END
@@ -1606,12 +1606,12 @@ IF ~~ THEN BEGIN 250
 END
 
 IF ~~ THEN BEGIN 251
- SAY ~I don’t prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
+ SAY ~I donï¿½t prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
  IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 252
- SAY ~I don’t think we do. I can see the many faces of passion but you can only see the face that shows itself with love. I once lived my dreams of finding the passion that comes with loving a man but I quickly discovered that pain walks hand in hand with your sort of passion, something I hope you never discover for yourself <CHARNAME>.~
+ SAY ~I donï¿½t think we do. I can see the many faces of passion but you can only see the face that shows itself with love. I once lived my dreams of finding the passion that comes with loving a man but I quickly discovered that pain walks hand in hand with your sort of passion, something I hope you never discover for yourself <CHARNAME>.~
  IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
 END
 											
@@ -1625,7 +1625,7 @@ IF ~~ THEN BEGIN 254
  IF ~~ THEN REPLY ~Then we shall all eat, drink dance and make merry tonight as though we have no tomorrow. Providing we can buy the ale that is.~ GOTO 255
  IF ~~ THEN REPLY ~Then let us hope for a clement night so that we are not sent scurrying for the shelter of an inn.~ GOTO 256
  IF ~~ THEN REPLY ~This could be fun Leina. Maybe I should command that we all take part in the dance and those that refuse... well we shall just have to dance over them as they lay in their bed rolls.~ GOTO 257
- IF ~~ THEN REPLY ~To dance under the stars by firelight, and here’s me thinking that you had no time for romance Leina?~ GOTO 258
+ IF ~~ THEN REPLY ~To dance under the stars by firelight, and hereï¿½s me thinking that you had no time for romance Leina?~ GOTO 258
 END
 
 IF ~~ THEN BEGIN 255
@@ -1676,7 +1676,7 @@ Gender(Player1,MALE)~ THEN BEGIN PCM2Leina1
 END
 
 IF ~~ THEN BEGIN PCM2Leina2
-	SAY ~I can see that <CHARNAME>, and clearly you are not your father’s son, but given that your father was the god of murder, how do you distance yourself from the legacy that flows through your body? Surely there is some part of him fighting for recognition inside you?~
+	SAY ~I can see that <CHARNAME>, and clearly you are not your fatherï¿½s son, but given that your father was the god of murder, how do you distance yourself from the legacy that flows through your body? Surely there is some part of him fighting for recognition inside you?~
 	IF ~~ THEN REPLY ~I have to distance myself, if I was to give in even for a second and take pleasure in the death of one seeking mine, then I would start to become all that he was.~ GOTO PCM2Leina3
 	IF ~~ THEN REPLY ~I did not ask for this life, but it is the only one I have and I am trying to live it in a way that is best for who I am and not who my father was.~ GOTO PCM2Leina4
 	IF ~~ THEN REPLY ~Bhaal gave me life but there is nothing of him inside me. I know that it is wrong to take a life, but if someone tries to take mine, then it is inevitable that one will be forfeit, that is survival.~ GOTO PCM2Leina4
@@ -1684,7 +1684,7 @@ IF ~~ THEN BEGIN PCM2Leina2
 END
 
 IF ~~ THEN BEGIN PCM2Leina3
-	SAY ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a god’s intention that it would not be denied and yet, you deny it every time you are forced to kill. Not once have I ever seen a spark of pleasure in you eyes when you are forced to act.~
+	SAY ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a godï¿½s intention that it would not be denied and yet, you deny it every time you are forced to kill. Not once have I ever seen a spark of pleasure in you eyes when you are forced to act.~
 	IF ~~ THEN GOTO PCM2Leina3a
 END
 
@@ -1692,7 +1692,7 @@ IF ~~ THEN BEGIN PCM2Leina3a
 	SAY ~No son is forced to take on the mantle of his father if it is not within him and murder is not within you <CHARNAME>.~
 	IF ~~ THEN REPLY ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ GOTO PCM2Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ GOTO PCM2Leina7
-	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my father’s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
+	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my fatherï¿½s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
 	IF ~~ THEN REPLY ~I will not be like him Leina. I look back at the litter of bodies behind me and I take no pleasure in what I see. I just keep hoping that each time another falls that it will be the last.~ GOTO PCM2Leina8
 END
 
@@ -1702,10 +1702,10 @@ IF ~~ THEN BEGIN PCM2Leina4
 END
 
 IF ~~ THEN BEGIN PCM2Leina4a
-	SAY ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god’s name*)~
+	SAY ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead godï¿½s name*)~
 	IF ~~ THEN REPLY ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ GOTO PCM2Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ GOTO PCM2Leina7
-	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my father’s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
+	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my fatherï¿½s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
 	IF ~~ THEN REPLY ~I will not be like him Leina. I look back at the litter of bodies behind me and I take no pleasure in what I see. I just keep hoping that each time another falls that it will be the last.~ GOTO PCM2Leina8
 END
 
@@ -1715,10 +1715,10 @@ IF ~~ THEN BEGIN PCM2Leina5
 END
 	
 IF ~~ THEN BEGIN PCM2Leina5a
-	SAY ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god’s name*)... and will always set you apart from him.~
+	SAY ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead godï¿½s name*)... and will always set you apart from him.~
 	IF ~~ THEN REPLY ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ GOTO PCM2Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ GOTO PCM2Leina7
-	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my father’s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
+	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my fatherï¿½s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
 	IF ~~ THEN REPLY ~I will not be like him Leina. I look back at the litter of bodies behind me and I take no pleasure in what I see. I just keep hoping that each time another falls that it will be the last.~ GOTO PCM2Leina8
 END
 
@@ -1742,7 +1742,7 @@ IF ~~ THEN BEGIN PCM2Leina9
 	IF ~~ THEN REPLY ~I deplore all this killing and wasting of lives Leina, and do you know what I deplore even more... the fact that it is my hand that is dealing it!~ GOTO PCM2Leina10
 	IF ~~ THEN REPLY ~There is no excitement in fighting for my life every day Leina, I am sick of it!~ GOTO PCM2Leina10
 	IF ~~ THEN REPLY ~I need no excuse to take the lives of those who seek to take mine.~ GOTO PCM2Leina11
-	IF ~~ THEN REPLY ~Yes, there is excitement in the fight Leina and excitement when I emerge triumphant from it. If it as at the cost of another’s life then it only proves that the better man won.~ GOTO PCM2Leina11
+	IF ~~ THEN REPLY ~Yes, there is excitement in the fight Leina and excitement when I emerge triumphant from it. If it as at the cost of anotherï¿½s life then it only proves that the better man won.~ GOTO PCM2Leina11
 END
 
 IF ~~ THEN BEGIN PCM2Leina10
@@ -1751,18 +1751,18 @@ IF ~~ THEN BEGIN PCM2Leina10
 END	
 	
 IF ~~ THEN BEGIN PCM2Leina10a
-	SAY ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god’s name*)... You carry his blood but there is no murder in you <CHARNAME>, you are not your father’s son.~
+	SAY ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead godï¿½s name*)... You carry his blood but there is no murder in you <CHARNAME>, you are not your fatherï¿½s son.~
 	IF ~~ THEN REPLY ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ GOTO PCM2Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ GOTO PCM2Leina7
-	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my father’s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
+	IF ~~ THEN REPLY ~I hope you are right Leina and the day never dawns that I do become my fatherï¿½s son. Should I begin to relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCM2Leina8
 	IF ~~ THEN REPLY ~I will not be like him Leina. I look back at the litter of bodies behind me and I take no pleasure in what I see. I just keep hoping that each time another falls that it will be the last.~ GOTO PCM2Leina8
 END
 
 IF ~~ THEN BEGIN PCM2Leina11
-	SAY ~I am beginning to see the father in the son. Tell me <CHARNAME>, is the legacy that Bhaal has left you... (*She shivers visibly at the mention of the dead god’s name*)... truly the way of your own heart?~
+	SAY ~I am beginning to see the father in the son. Tell me <CHARNAME>, is the legacy that Bhaal has left you... (*She shivers visibly at the mention of the dead godï¿½s name*)... truly the way of your own heart?~
 	IF ~~ THEN REPLY ~It is who I am and who I am proud to be.~ GOTO PCM2Leina12
 	IF ~~ THEN REPLY ~My father gave me life solely to continue his work after his death and I will not disappoint him.~ GOTO PCM2Leina12
-	IF ~~ THEN REPLY ~I fought Sarevok for the right to take my father’s place and I will fight any who challenge my right to be here. Does that answer your question?~ GOTO PCM2Leina12
+	IF ~~ THEN REPLY ~I fought Sarevok for the right to take my fatherï¿½s place and I will fight any who challenge my right to be here. Does that answer your question?~ GOTO PCM2Leina12
 END
 
 IF ~~ THEN BEGIN PCM2Leina12
@@ -1771,7 +1771,7 @@ IF ~~ THEN BEGIN PCM2Leina12
 END
 		
 IF ~~ THEN BEGIN PCM2Leina12a
-	SAY ~I have no idea of what being touched by a god does to a man, so I do not know whether it is Bhaal’s spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
+	SAY ~I have no idea of what being touched by a god does to a man, so I do not know whether it is Bhaalï¿½s spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",6)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
@@ -1852,8 +1852,8 @@ IF ~~ THEN BEGIN PCF2Leina3a
 	SAY ~Come this is a night made for rejoicing and for being glad we are alive.~
 	IF ~~ THEN REPLY ~Now this is more like it Leina, you should sing such songs more often.~ GOTO PCF2Leina4a
 	IF ~~ THEN REPLY ~Promise me Leina, no more songs of sorrow and pain. Use this wonderful gift of yours to sing of hope for the future and not of the pain of the past.~ GOTO PCF2Leina8a
-	IF ~~ THEN REPLY ~The bard is right, let us enjoy tonight and worry not what tomorrow may bring.~ GOTO PCF2Leina11a 
-	IF ~~ THEN REPLY ~I am not about to prance about like some performing bear. I’ll just sit, enjoy the ale, the song and hope that tomorrow will be kind to us.~ GOTO PCF2Leina13a
+	IF ~~ THEN REPLY ~The bard is right, let us enjoy tonight and worry not what tomorrow may bring.~ GOTO PCF2Leina11a
+	IF ~~ THEN REPLY ~I am not about to prance about like some performing bear. Iï¿½ll just sit, enjoy the ale, the song and hope that tomorrow will be kind to us.~ GOTO PCF2Leina13a
 END
 
 IF ~~ THEN BEGIN PCF2Leina4a
@@ -1867,7 +1867,7 @@ IF ~~ THEN BEGIN PCF2Leina5a
 END	
 	
 IF ~~ THEN BEGIN PCF2Leina6a
-	SAY ~(*Smiling*) That doesn’t mean I get no enjoyment in a song such as this, all music excites me, whether I believe in it or not. (*Then laughing she whirls away to finish her song.*)~
+	SAY ~(*Smiling*) That doesnï¿½t mean I get no enjoyment in a song such as this, all music excites me, whether I believe in it or not. (*Then laughing she whirls away to finish her song.*)~
 	IF ~~ THEN GOTO PCF2Leina7a
 END		
 
@@ -1888,7 +1888,7 @@ IF ~~ THEN BEGIN PCF2Leina9a
 	SAY ~That I can not do <CHARNAME>. I can sing the songs of others but they are meaningless words to me. I feel the excitement in their music but it is my own songs which reflect that which is inside of me.~
 	IF ~~ THEN GOTO PCF2Leina10a
 END		
-	 
+	
 IF ~~ THEN BEGIN PCF2Leina10a
 	SAY ~To remain true to myself, I have to play my music, my own music and if you can not understand that then you do not understand me. (*Then laughing she whirls away to finish her song.*)~
 	IF ~~ THEN GOTO PCF2Leina7a
@@ -1902,7 +1902,7 @@ END
 IF ~~ THEN BEGIN PCF2Leina12a
 	SAY ~If we are not more frugal with the ale <CHARNAME>, we may find ourselves sleeping through tomorrow and missing whatever it had planned for us altogether. (*Then laughing she whirls away to finish her song.*)~
 	IF ~~ THEN REPLY ~We must make a point of doing this again Leina, and soon. Thank you for lifting our spirits tonight.~ GOTO PCF2Leina14a
-	IF ~~ THEN REPLY ~Nothing like a mix of ale and fine music to lull one towards sleep. Let us hope tomorrow arrives gently and doesn’t make us pay for tonight.~ GOTO PCF2Leina13a
+	IF ~~ THEN REPLY ~Nothing like a mix of ale and fine music to lull one towards sleep. Let us hope tomorrow arrives gently and doesnï¿½t make us pay for tonight.~ GOTO PCF2Leina13a
 	IF ~~ THEN REPLY ~I am not going to worry about tomorrow until it arrives. Which looking at the sky it will be upon us soon, so we should get some whilst we can. Good night Leina.~ GOTO PCF2Leina18a
 	IF ~~ THEN REPLY ~Tomorrow will be upon us soon enough, and the trials that come with it. We should rest now for the few hours that are left to us. Sleep well Leina.~ GOTO PCF2Leina18a
 	IF ~~ THEN REPLY ~So our playtime ends, for tomorrow we must be adults again. How sad that we forget how to play when we grow up, it is good to be reminded, thank you for Leina.~ GOTO PCF2Leina19a
@@ -2044,7 +2044,7 @@ IF ~~ THEN BEGIN PCF2Leina22a
 END	
 	
 IF ~~ THEN BEGIN PCF2Leina23a
-	SAY ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn’t matter.~
+	SAY ~I am not one for the jig Melora, but as long as you have fun what the dance is doesnï¿½t matter.~
 	IF ~True()~ THEN GOTO PCF2Leina2a
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
@@ -2087,7 +2087,7 @@ IF ~~ THEN BEGIN PCF2Leina24a
 END
 
 IF ~~ THEN BEGIN PCF2Leina25a
-	SAY ~(*Laughing*) Dar, I told you your name would be known in future times. I can see I have more to add to your life, ’Dar the first half orc person to dance’.~
+	SAY ~(*Laughing*) Dar, I told you your name would be known in future times. I can see I have more to add to your life, ï¿½Dar the first half orc person to danceï¿½.~
 	IF ~~ THEN EXTERN ~BDAR~ 128
 END
 
@@ -2129,7 +2129,7 @@ IF ~~ THEN BEGIN PCF2Leina29a
 END
 
 IF ~~ THEN BEGIN PCF2Leina30a
-	SAY ~I’ll ignore the lewd suggestion behind that remark dwarf... for now!~
+	SAY ~Iï¿½ll ignore the lewd suggestion behind that remark dwarf... for now!~
 	IF ~True()~ THEN GOTO PCF2Leina2a
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
@@ -2141,7 +2141,7 @@ IF ~~ THEN BEGIN PCF2Leina30a
 END
 
 IF ~~ THEN BEGIN PCF2Leina31a
-	SAY ~I have no idea what you said Viconia, and as it’s come out of your mouth I have no desire to know.~
+	SAY ~I have no idea what you said Viconia, and as itï¿½s come out of your mouth I have no desire to know.~
 	IF ~True()~ THEN GOTO PCF2Leina2a
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
@@ -2157,7 +2157,7 @@ IF ~~ THEN BEGIN PCF2Leina32a
 END
 
 IF ~~ THEN BEGIN PCF2Leina33a
-	SAY ~(*Smiling at the paladin’s flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
+	SAY ~(*Smiling at the paladinï¿½s flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 	IF ~True()~ THEN GOTO PCF2Leina2a
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
@@ -2184,12 +2184,12 @@ IF ~~ THEN BEGIN PCF2Leina35a
 END	
 
 IF ~~ THEN BEGIN PCF2Leina36a
-	SAY ~Then tonight we shall all dance in Khalid’s memory. Instead of mourning his death Jaheira it is now time to celebrate his life.~
+	SAY ~Then tonight we shall all dance in Khalidï¿½s memory. Instead of mourning his death Jaheira it is now time to celebrate his life.~
 	IF ~~ THEN EXTERN ~BJAHEIR~ NEJ498
 END
 
 IF ~~ THEN BEGIN PCF2Leina37a
-	SAY ~I wonder Nalia, how much your aunt’s fear for you were due to the circumstances of your mother’s death and how much was due to her own escapades as a young girl.~
+	SAY ~I wonder Nalia, how much your auntï¿½s fear for you were due to the circumstances of your motherï¿½s death and how much was due to her own escapades as a young girl.~
 	IF ~~ THEN EXTERN ~BNALIA~ NEJ59
 END
 
@@ -2209,7 +2209,7 @@ Gender(Player1,FEMALE)~ THEN BEGIN PCF3Leina1
 END
 
 IF ~~ THEN BEGIN PCF3Leina2
-	SAY ~I can see that <CHARNAME>, and clearly you are not your father’s daughter. I look into your face and I still can not reconcile that the gentle woman I see is the offspring of the god of murder. How do you distance yourself from his legacy, how do you deny that which is surely fighting for recognition within you?~
+	SAY ~I can see that <CHARNAME>, and clearly you are not your fatherï¿½s daughter. I look into your face and I still can not reconcile that the gentle woman I see is the offspring of the god of murder. How do you distance yourself from his legacy, how do you deny that which is surely fighting for recognition within you?~
 	IF ~~ THEN REPLY ~I have to distance myself, if I was to give in even for a second and take pleasure in the death of one seeking mine, then I would start to become all that he was.~ GOTO PCF3Leina3
 	IF ~~ THEN REPLY ~I did not ask for this life, but it is the only one I have and I am trying to live it in a way that is best for who I am and not who my father was.~ GOTO PCF3Leina4
 	IF ~~ THEN REPLY ~Bhaal gave me life but there is nothing of him inside me. I know that it is wrong to take a life, but if someone tries to take mine, then it is inevitable that one will be forfeit, that is survival.~ GOTO PCF3Leina4
@@ -2217,7 +2217,7 @@ IF ~~ THEN BEGIN PCF3Leina2
 END
 
 IF ~~ THEN BEGIN PCF3Leina3
-	SAY ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a god’s intention that it would not be denied and yet, you deny it every time you are forced to kill. I see regret, not pleasure in your eyes every time you are forced to act.~
+	SAY ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a godï¿½s intention that it would not be denied and yet, you deny it every time you are forced to kill. I see regret, not pleasure in your eyes every time you are forced to act.~
 	IF ~~ THEN GOTO PCF3Leina3a
 END
 
@@ -2235,7 +2235,7 @@ IF ~~ THEN BEGIN PCF3Leina4
 END
 
 IF ~~ THEN BEGIN PCF3Leina4a
-	SAY ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god’s name*)~
+	SAY ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead godï¿½s name*)~
 	IF ~~ THEN REPLY ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ GOTO PCF3Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ GOTO PCF3Leina7
 	IF ~~ THEN REPLY ~I hope you are right Leina, for if the day ever dawned that I should relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCF3Leina8
@@ -2248,7 +2248,7 @@ IF ~~ THEN BEGIN PCF3Leina5
 END
 	
 IF ~~ THEN BEGIN PCF3Leina5a
-	SAY ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god’s name*)... and will always set you apart from him.~
+	SAY ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead godï¿½s name*)... and will always set you apart from him.~
 	IF ~~ THEN REPLY ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ GOTO PCF3Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ GOTO PCF3Leina7
 	IF ~~ THEN REPLY ~I hope you are right Leina, for if the day ever dawned that I should relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCF3Leina8
@@ -2275,7 +2275,7 @@ IF ~~ THEN BEGIN PCF3Leina9
 	IF ~~ THEN REPLY ~I deplore all this killing and wasting of lives Leina, and do you know what I deplore even more... the fact that it is my hand that is dealing it!~ GOTO PCF3Leina10
 	IF ~~ THEN REPLY ~There is no excitement in fighting for my life every day Leina, I am sick of it!~ GOTO PCF3Leina10
 	IF ~~ THEN REPLY ~I need no excuse to take the lives of those who seek to take mine.~ GOTO PCF3Leina11
-	IF ~~ THEN REPLY ~Yes, there is excitement in the fight Leina and excitement when I emerge triumphant from it. If it as at the cost of another’s life then it only proves I am the better woman!~ GOTO PCF3Leina11
+	IF ~~ THEN REPLY ~Yes, there is excitement in the fight Leina and excitement when I emerge triumphant from it. If it as at the cost of anotherï¿½s life then it only proves I am the better woman!~ GOTO PCF3Leina11
 END
 
 IF ~~ THEN BEGIN PCF3Leina10
@@ -2284,7 +2284,7 @@ IF ~~ THEN BEGIN PCF3Leina10
 END	
 	
 IF ~~ THEN BEGIN PCF3Leina10a
-	SAY ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god’s name*)... You carry his blood but there is no murder in you <CHARNAME>.~
+	SAY ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead godï¿½s name*)... You carry his blood but there is no murder in you <CHARNAME>.~
 	IF ~~ THEN REPLY ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ GOTO PCF3Leina6
 	IF ~~ THEN REPLY ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ GOTO PCF3Leina7
 	IF ~~ THEN REPLY ~I hope you are right Leina, for if the day ever dawned that I should relish in bringing murder and grief to the world, then I will have failed Gorion and all that he taught me.~ GOTO PCF3Leina8
@@ -2292,10 +2292,10 @@ IF ~~ THEN BEGIN PCF3Leina10a
 END
 
 IF ~~ THEN BEGIN PCF3Leina11
-	SAY ~I am beginning to see the father in the daughter. Tell me <CHARNAME>, is the legacy that Bhaal has left you... (*She shivers visibly at the mention of the dead god’s name*)... truly the way of your own heart?~
+	SAY ~I am beginning to see the father in the daughter. Tell me <CHARNAME>, is the legacy that Bhaal has left you... (*She shivers visibly at the mention of the dead godï¿½s name*)... truly the way of your own heart?~
 	IF ~~ THEN REPLY ~It is who I am and who I am proud to be.~ GOTO PCF3Leina12
 	IF ~~ THEN REPLY ~My father gave me life solely to continue his work after his death and I will not disappoint him.~ GOTO PCF3Leina12
-	IF ~~ THEN REPLY ~I fought Sarevok for the right to take my father’s place and I will fight any who challenge my right to be here. Does that answer your question?~ GOTO PCF3Leina12
+	IF ~~ THEN REPLY ~I fought Sarevok for the right to take my fatherï¿½s place and I will fight any who challenge my right to be here. Does that answer your question?~ GOTO PCF3Leina12
 END
 
 IF ~~ THEN BEGIN PCF3Leina12
@@ -2304,7 +2304,7 @@ IF ~~ THEN BEGIN PCF3Leina12
 END
 		
 IF ~~ THEN BEGIN PCF3Leina12a
-	SAY ~I have no idea of what being touched by a god does to a person, so I do not know whether it is Bhaal’s spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
+	SAY ~I have no idea of what being touched by a god does to a person, so I do not know whether it is Bhaalï¿½s spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",9)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END	
@@ -2321,8 +2321,8 @@ END
 
 IF ~~ THEN BEGIN PCM3Leina2
 	SAY ~Then how does a person go about laying these ghosts to rest <CHARNAME>, and if you say time will see to it, I will feed you to the next hungry beast that we meet?~
-	IF ~~ THEN REPLY ~At the risk of being some creature’s next meal, that is the only answer I have. Time will gradually fade these memories, or ghosts as you call them, as new and more important events occur.~ GOTO PCM3Leina3
-	IF ~~ THEN REPLY ~As I do not want to end up as some creature’s dinner, I have to say that I have no answer for you.~ GOTO PCM3Leina4
+	IF ~~ THEN REPLY ~At the risk of being some creatureï¿½s next meal, that is the only answer I have. Time will gradually fade these memories, or ghosts as you call them, as new and more important events occur.~ GOTO PCM3Leina3
+	IF ~~ THEN REPLY ~As I do not want to end up as some creatureï¿½s dinner, I have to say that I have no answer for you.~ GOTO PCM3Leina4
 	IF ~~ THEN REPLY ~You just have to keep facing them until they see they no longer have a hold on you and then they give up bothering you.~ GOTO PCM3Leina5
 	IF ~~ THEN REPLY ~Talking sometimes helps to show things in their true light. It is often that which we are afraid to name that scares and haunts us Leina.~ GOTO PCM3Leina5
 END
@@ -2338,9 +2338,9 @@ IF ~~ THEN BEGIN PCM3Leina4
 END
 
 IF ~~ THEN BEGIN PCM3Leina5
-	SAY ~(*Sighs*) I know you are right but they are not easy to face alone and more difficult to find someone prepared to listen. You <CHARNAME>, are the first person I have felt enough at ease to talk with... would this perhaps be a good time to maybe talk a little more?~ 
+	SAY ~(*Sighs*) I know you are right but they are not easy to face alone and more difficult to find someone prepared to listen. You <CHARNAME>, are the first person I have felt enough at ease to talk with... would this perhaps be a good time to maybe talk a little more?~
 	IF ~~ THEN REPLY ~Not really, and besides, I believe the only one able to work through troubles of the mind is the troubled person herself.~ GOTO PCM3Leina6
-	IF ~~ THEN REPLY ~No it isn’t Leina, and nor will there ever be a good time. I am not a baby sitter, so please, sort your ghosts or keep them to yourself.~ GOTO PCM3Leina6
+	IF ~~ THEN REPLY ~No it isnï¿½t Leina, and nor will there ever be a good time. I am not a baby sitter, so please, sort your ghosts or keep them to yourself.~ GOTO PCM3Leina6
 	IF ~~ THEN REPLY ~The road seems peaceful enough, so yes, I guess we can talk.~ GOTO PCM3Leina7
 	IF ~~ THEN REPLY ~As long as we are not going to have a sit down discussion Leina. We still have a lot of road to put behind us today.~ GOTO PCM3Leina7
 END
@@ -2356,9 +2356,9 @@ IF ~~ THEN BEGIN PCM3Leina6a
 END
 
 IF ~~ THEN BEGIN PCM3Leina7
-	SAY ~You already know of my childhood, cosseted in my father’s house, away from the prejudices of the real world and you know a little of my mother’s death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
+	SAY ~You already know of my childhood, cosseted in my fatherï¿½s house, away from the prejudices of the real world and you know a little of my motherï¿½s death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
 	IF ~~ THEN REPLY ~You can not know that Leina, after only experiencing love once. There are I am sure, numerous couples out there prepared to argue that with you.~ GOTO PCM3Leina8
-	IF ~~ THEN REPLY ~If not for your mother’s untimely death, would you not say that your parents were on the way to a happy ever after life?~ GOTO PCM3Leina8
+	IF ~~ THEN REPLY ~If not for your motherï¿½s untimely death, would you not say that your parents were on the way to a happy ever after life?~ GOTO PCM3Leina8
 	IF ~~ THEN REPLY ~This is the real world Leina, people read those books to escape the harsh reality of it and of life itself.~ GOTO PCM3Leina8
 	IF ~~ THEN REPLY ~To have based your expectations on the imaginings of writers was a sure way of setting yourself up for a fall.~ GOTO PCM3Leina8
 END
@@ -2374,14 +2374,14 @@ IF ~~ THEN BEGIN PCM3Leina8a
 END	
 	
 IF ~~ THEN BEGIN PCM3Leina8b
-	SAY ~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~ 
+	SAY ~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
 	IF ~~ THEN REPLY ~This Bjorn was wrong to deceive you as he did, but could you not see the emptiness of his words when you looked closer into his face?~ GOTO PCM3Leina9
 	IF ~~ THEN REPLY ~A bard is gifted with his use of words Leina, but as often as not they reflect his ego and not his heart.~ GOTO PCM3Leina9
-	IF ~~ THEN REPLY ~Bard’s and their pretty words have broken many hearts Leina. You are not the first and you most certainly will not be the last.~ GOTO PCM3Leina9
+	IF ~~ THEN REPLY ~Bardï¿½s and their pretty words have broken many hearts Leina. You are not the first and you most certainly will not be the last.~ GOTO PCM3Leina9
 END
 
 IF ~~ THEN BEGIN PCM3Leina9
-	SAY ~It wasn’t only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
+	SAY ~It wasnï¿½t only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
 	IF ~~ THEN GOTO PCM3Leina9a
 END	
 	
@@ -2389,9 +2389,9 @@ IF ~~ THEN BEGIN PCM3Leina9a
 	SAY ~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
 	IF ~~ THEN GOTO PCM3Leina9b
 END	
-	 
+	
 IF ~~ THEN BEGIN PCM3Leina9b
-	SAY ~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~ 
+	SAY ~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
 	IF ~~ THEN REPLY ~Surely you can see now that he was a man only interested in his own comforts and not a man worthy of love?~ GOTO PCM3Leina901
 	IF ~~ THEN REPLY ~Men like him are no more than parasites. They take until there is no more to be taken, but they are shallow and empty inside and have nothing to give in return.~ GOTO PCM3Leina901
 	IF ~~ THEN REPLY ~His will be the sadder life when he can no longer charm a woman into keeping him Leina. I am sure his thoughts will then turn to the one who truly loved him and what he carelessly threw away.~ GOTO PCM3Leina901
@@ -2404,17 +2404,17 @@ IF ~~ THEN BEGIN PCM3Leina901
 	IF ~~ THEN REPLY ~Yes but why the ghosts Leina? You found the strength to re-build your life, why not use the same strength to lay those ghosts to rest?~ GOTO PCM3Leina10
 	IF ~~ THEN REPLY ~You gave your love to man not deserving of it Leina, why let his memory spoil your future?~ GOTO PCM3Leina10
 	IF ~~ THEN REPLY ~But your heart has recovered, your music is proof of that so why is it so difficult for you to let go?~ GOTO PCM3Leina10
-	IF ~~ THEN REPLY ~A tale worthy of any bard Leina, but a tad melodramatic don’t you think?~ GOTO PCM3Leina15
+	IF ~~ THEN REPLY ~A tale worthy of any bard Leina, but a tad melodramatic donï¿½t you think?~ GOTO PCM3Leina15
 END
 
 IF ~~ THEN BEGIN PCM3Leina10
 	SAY ~Have you not heard anything of what I just said? Bjorn still has that which he took from me.~
 =
 	~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
-	IF ~~ THEN REPLY ~I wish I could help you Leina , but I don’t know where to begin.~ GOTO PCM3Leina11
+	IF ~~ THEN REPLY ~I wish I could help you Leina , but I donï¿½t know where to begin.~ GOTO PCM3Leina11
 	IF ~~ THEN REPLY ~That sounds too complex for me. Apart from finding the guy and killing him I can not see how you are going to sort this one.~ GOTO PCM3Leina12
 	IF ~~ THEN REPLY ~Maybe if you were to allow love into your life again, that new love would replace that which Bjorn took from you.~ GOTO PCM3Leina13
-	IF ~~ THEN REPLY ~To love so completely and then to loose that love often leaves a feeling of emptiness, a feeling that a part of oneself was taken by the other, but you soon discover that it isn’t so. The pain passes and suddenly you are free of all ghosts. Until then, know that I have a strong shoulder should these ghosts become too much for you to bear.~ GOTO PCM3Leina14
+	IF ~~ THEN REPLY ~To love so completely and then to loose that love often leaves a feeling of emptiness, a feeling that a part of oneself was taken by the other, but you soon discover that it isnï¿½t so. The pain passes and suddenly you are free of all ghosts. Until then, know that I have a strong shoulder should these ghosts become too much for you to bear.~ GOTO PCM3Leina14
 	IF ~~ THEN REPLY ~I am sorry Leina, your ghosts are not the sort of ghosts I can help you with, but I can offer you a friendly shoulder should they become too much for you to bear. Come walk beside me a little further, we will speak no more of ghosts and if you prefer, we can walk in silence.~ GOTO PCM3Leina14
 END
 
@@ -2424,7 +2424,7 @@ IF ~~ THEN BEGIN PCM3Leina11
 END
 
 IF ~~ THEN BEGIN PCM3Leina12
-	SAY ~(*Sighs*) I don’t wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
+	SAY ~(*Sighs*) I donï¿½t wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
 END
 
@@ -2441,23 +2441,23 @@ IF ~~ THEN BEGIN PCM3Leina14
 END
 
 IF ~~ THEN BEGIN PCM3Leina15
-	SAY ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face one’s ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
-= 
+	SAY ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face oneï¿½s ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
+=
 	~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
 END
 	
 IF ~~ THEN BEGIN PCM3Leina16
-	SAY ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)...~ 
+	SAY ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)...~
 	IF ~~ THEN REPLY ~Then help me to understand Leina, tell me of these ghosts of yours?~ GOTO PCM3Leina7
-	IF ~~ THEN REPLY ~I said I didn’t believe in them, but that does not make them any less real to you. Tell me why they persist in haunting you?~ GOTO PCM3Leina7
-	IF ~~ THEN REPLY ~Bard’s are notorious romantics Leina, your ghosts are likely to be nothing more than memories or feelings of guilt that you refuse to address.~ GOTO PCM3Leina17
+	IF ~~ THEN REPLY ~I said I didnï¿½t believe in them, but that does not make them any less real to you. Tell me why they persist in haunting you?~ GOTO PCM3Leina7
+	IF ~~ THEN REPLY ~Bardï¿½s are notorious romantics Leina, your ghosts are likely to be nothing more than memories or feelings of guilt that you refuse to address.~ GOTO PCM3Leina17
 	IF ~~ THEN REPLY ~Sort your feelings of guilt and rejection Leina and you might find your ghosts have disappeared.~ GOTO PCM3Leina17
 END
 
 IF ~~ THEN BEGIN PCM3Leina17
-	SAY ~If it were that simple don’t you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
-= 
+	SAY ~If it were that simple donï¿½t you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
+=
 	~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
 END
@@ -2481,8 +2481,8 @@ END
 
 IF ~~ THEN BEGIN PCF4Leina2
 	SAY ~Then how does a person go about laying these ghosts to rest <CHARNAME>, and if you say time will see to it, I will feed you to the next hungry beast that we meet?~
-	IF ~~ THEN REPLY ~At the risk of being some creature’s next meal, that is the only answer I have. Time will gradually fade these memories, or ghosts as you call them, as new and more important events occur.~ GOTO PCF4Leina3
-	IF ~~ THEN REPLY ~As I do not want to end up as some creature’s dinner, I have to say that I have no answer for you.~ GOTO PCF4Leina4
+	IF ~~ THEN REPLY ~At the risk of being some creatureï¿½s next meal, that is the only answer I have. Time will gradually fade these memories, or ghosts as you call them, as new and more important events occur.~ GOTO PCF4Leina3
+	IF ~~ THEN REPLY ~As I do not want to end up as some creatureï¿½s dinner, I have to say that I have no answer for you.~ GOTO PCF4Leina4
 	IF ~~ THEN REPLY ~You just have to keep facing them until they see they no longer have a hold on you and then they give up bothering you.~ GOTO PCF4Leina5
 	IF ~~ THEN REPLY ~Talking sometimes helps to show things in their true light. It is often that which we are afraid to name that scares and haunts us Leina.~ GOTO PCF4Leina5
 END
@@ -2500,24 +2500,24 @@ END
 IF ~~ THEN BEGIN PCF4Leina5
 	SAY ~(*Sighs*) I know you are right, but it is not always easy to find one who will listen. You are a busy woman <CHARNAME> and perhaps you do not have the time for the problems of others but I will ask as we seem to have a quiet moment, might this be a good time to maybe talk a little more?~
 	IF ~~ THEN REPLY ~Not really, and besides, I believe the only one able to work through troubles of the mind is the troubled person herself.~ GOTO PCF4Leina6
-	IF ~~ THEN REPLY ~No it isn’t Leina, and nor will there ever be a good time. I am not a baby sitter, so please, sort your ghosts or keep them to yourself.~ GOTO PCF4Leina6
+	IF ~~ THEN REPLY ~No it isnï¿½t Leina, and nor will there ever be a good time. I am not a baby sitter, so please, sort your ghosts or keep them to yourself.~ GOTO PCF4Leina6
 	IF ~~ THEN REPLY ~The road seems peaceful enough, so yes, I guess we can talk.~ GOTO PCF4Leina7
 	IF ~~ THEN REPLY ~As long as we are not going to have a sit down discussion Leina. We still have a lot of road to put behind us today.~ GOTO PCF4Leina7
 END
 
 IF ~~ THEN BEGIN PCF4Leina6
 	SAY ~(*Sighs*) I should have expected such an answer from you <CHARNAME>, but I had hoped that... well as one woman to another... but never mind, I will not bother you further with my ghosts.~
-= 
+=
 	~I hope you never have cause to ask for help in laying ghosts of your own someday, because you may just get the same response from others that you have given me.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
 END
 
 IF ~~ THEN BEGIN PCF4Leina7
-	SAY ~You already know of my childhood, cosseted in my father’s house, away from the prejudices of the real world and you know a little of my mother’s death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
+	SAY ~You already know of my childhood, cosseted in my fatherï¿½s house, away from the prejudices of the real world and you know a little of my motherï¿½s death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
 	IF ~~ THEN REPLY ~You can not know that Leina, after only experiencing love once. There are I am sure, numerous couples out there prepared to argue that with you.~ GOTO PCF4Leina8
-	IF ~~ THEN REPLY ~If not for your mother’s untimely death, would you not say that your parents were on the way to a happy ever after life?~ GOTO PCF4Leina8
+	IF ~~ THEN REPLY ~If not for your motherï¿½s untimely death, would you not say that your parents were on the way to a happy ever after life?~ GOTO PCF4Leina8
 	IF ~~ THEN REPLY ~I have never had the time for such books myself Leina. Even as a girl growing up in Candlekeep I preferred to read of the deeds of real people and not the stories of some writers imaginings.~ GOTO PCF4Leina8
-	IF ~~ THEN REPLY ~I was also closeted as a girl and it wasn’t until I left Candlekeep that the harshness of the world became known to me, but its people still surprise me sometimes.~ GOTO PCF4Leina8
+	IF ~~ THEN REPLY ~I was also closeted as a girl and it wasnï¿½t until I left Candlekeep that the harshness of the world became known to me, but its people still surprise me sometimes.~ GOTO PCF4Leina8
 END
 
 IF ~~ THEN BEGIN PCF4Leina8
@@ -2525,20 +2525,20 @@ IF ~~ THEN BEGIN PCF4Leina8
 =
 	~Like me he had a great love for music and was a gifted bard. He told me tales of the joy that love between a man and a woman brings, he spoke to me in words that I had often heard my father say to my mother, how could I not love such a gentle and caring man.~
 =
-	~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~ 
-	IF ~~ THEN REPLY ~Ah, your husband was a bard. I too have heard the pretty words which fall from a bard’s lips, they are infamous for their glib tongues.~ GOTO PCF4Leina9
+	~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
+	IF ~~ THEN REPLY ~Ah, your husband was a bard. I too have heard the pretty words which fall from a bardï¿½s lips, they are infamous for their glib tongues.~ GOTO PCF4Leina9
 	IF ~~ THEN REPLY ~This Bjorn was wrong to deceive you as he did, but could you not see the emptiness of his words when you looked into his face?~ GOTO PCF4Leina9
-	IF ~~ THEN REPLY ~Bards! They seem to know just the right words to use at just the right time and they play a girl’s heart as easily as they strum their harps.~ GOTO PCF4Leina9
-	IF ~~ THEN REPLY ~A bard is great at boosting a girl’s ego Leina but he should never be trusted with her heart.~ GOTO PCF4Leina9
+	IF ~~ THEN REPLY ~Bards! They seem to know just the right words to use at just the right time and they play a girlï¿½s heart as easily as they strum their harps.~ GOTO PCF4Leina9
+	IF ~~ THEN REPLY ~A bard is great at boosting a girlï¿½s ego Leina but he should never be trusted with her heart.~ GOTO PCF4Leina9
 END
 
 IF ~~ THEN BEGIN PCF4Leina9
-	SAY ~It wasn’t only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
+	SAY ~It wasnï¿½t only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
 =
 	~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
-= 
+=
 	~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
-	IF ~~ THEN REPLY ~He was a selfish man, interested only in his own comforts and not worthy of a girl’s love.~ GOTO PCF4Leina10
+	IF ~~ THEN REPLY ~He was a selfish man, interested only in his own comforts and not worthy of a girlï¿½s love.~ GOTO PCF4Leina10
 	IF ~~ THEN REPLY ~Men like him are no more than parasites. They take until there is no more to be taken, but they are shallow and empty inside and have nothing to give in return.~ GOTO PCF4Leina10
 	IF ~~ THEN REPLY ~Men such as Bjorn will never find happiness Leina. In time they lose their charm, their good looks and then where will he find a girl to pay for his comforts I ask?~ GOTO PCF4Leina10
 END
@@ -2550,17 +2550,17 @@ IF ~~ THEN BEGIN PCF4Leina10
 	IF ~~ THEN REPLY ~Yes but why the ghosts Leina? You found the strength to re-build your life, why not use the same strength to lay those ghosts to rest?~ GOTO PCF4Leina11
 	IF ~~ THEN REPLY ~You gave your love to man not deserving of it Leina, why let his memory spoil your future?~ GOTO PCF4Leina11
 	IF ~~ THEN REPLY ~And you proved yourself stronger, your heart has recovered, your music is proof of that so why is it so difficult for you to let go?~ GOTO PCF4Leina11
-	IF ~~ THEN REPLY ~A tale worthy of any bard Leina, but a tad melodramatic don’t you think?~ GOTO PCF4Leina16
+	IF ~~ THEN REPLY ~A tale worthy of any bard Leina, but a tad melodramatic donï¿½t you think?~ GOTO PCF4Leina16
 END
 
 IF ~~ THEN BEGIN PCF4Leina11
 	SAY ~Have you not heard anything of what I just said? Bjorn still has that which he took from me.~
 =
 	~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
-	IF ~~ THEN REPLY ~I wish I could help you Leina , but I don’t know where to begin.~ GOTO PCF4Leina12
+	IF ~~ THEN REPLY ~I wish I could help you Leina , but I donï¿½t know where to begin.~ GOTO PCF4Leina12
 	IF ~~ THEN REPLY ~That sounds too complex for me. Apart from finding and killing Bjorn I can not see how you are going to sort this one.~ GOTO PCF4Leina13
 	IF ~~ THEN REPLY ~Maybe if you were to allow love into your life again, that new love would replace that which Bjorn took from you.~ GOTO PCF4Leina14
-	IF ~~ THEN REPLY ~To love so completely and then to loose that love often leaves a feeling of emptiness, a feeling that a part of oneself was taken by the other, but you soon discover that it isn’t so. The pain passes and suddenly you are free of all ghosts.~ GOTO PCF4Leina15
+	IF ~~ THEN REPLY ~To love so completely and then to loose that love often leaves a feeling of emptiness, a feeling that a part of oneself was taken by the other, but you soon discover that it isnï¿½t so. The pain passes and suddenly you are free of all ghosts.~ GOTO PCF4Leina15
 END
 
 IF ~~ THEN BEGIN PCF4Leina12
@@ -2569,7 +2569,7 @@ IF ~~ THEN BEGIN PCF4Leina12
 END
 
 IF ~~ THEN BEGIN PCF4Leina13
-	SAY ~(*Sighs*) I don’t wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
+	SAY ~(*Sighs*) I donï¿½t wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
 END
 
@@ -2584,23 +2584,23 @@ IF ~~ THEN BEGIN PCF4Leina15
 END
 
 IF ~~ THEN BEGIN PCF4Leina16
-	SAY ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face one’s ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
-= 
+	SAY ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face oneï¿½s ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
+=
 	~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
 END
 	
 IF ~~ THEN BEGIN PCF4Leina17
-	SAY ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)~ 
+	SAY ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)~
 	IF ~~ THEN REPLY ~Then help me to understand Leina, tell me of these ghosts of yours?~ GOTO PCF4Leina7
-	IF ~~ THEN REPLY ~I said I didn’t believe in them, but that does not make them any less real to you. Tell me why they persist in haunting you?~ GOTO PCF4Leina7
-	IF ~~ THEN REPLY ~Bard’s are notorious romantics Leina, your ghosts are likely to be nothing more than memories or feelings of guilt that you refuse to address.~ GOTO PCF4Leina18
+	IF ~~ THEN REPLY ~I said I didnï¿½t believe in them, but that does not make them any less real to you. Tell me why they persist in haunting you?~ GOTO PCF4Leina7
+	IF ~~ THEN REPLY ~Bardï¿½s are notorious romantics Leina, your ghosts are likely to be nothing more than memories or feelings of guilt that you refuse to address.~ GOTO PCF4Leina18
 	IF ~~ THEN REPLY ~Sort your feelings of guilt and rejection Leina and you might find your ghosts have disappeared.~ GOTO PCF4Leina18
 END
 
 IF ~~ THEN BEGIN PCF4Leina18
-	SAY ~If it were that simple don’t you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
-= 
+	SAY ~If it were that simple donï¿½t you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
+=
 	~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
 END
@@ -2614,11 +2614,11 @@ END
 
 IF ~Global("VP_Danicng_Queen","GLOBAL",1)
 Gender(Player1,MALE)~ THEN BEGIN PCM4Leina1
- SAY ~Ah, some respite from the road. Come I have spoken to the barkeep and he has agreed to let me sing. Now I will show you where real passion comes from <CHARNAME>... no arguments just prepare yourself to be... well just be prepared.~ 
+ SAY ~Ah, some respite from the road. Come I have spoken to the barkeep and he has agreed to let me sing. Now I will show you where real passion comes from <CHARNAME>... no arguments just prepare yourself to be... well just be prepared.~
 	IF ~~ THEN REPLY ~We are not here to make merry Leina. So you can tell the barkeep to find another entertainer.~ GOTO PCM4Leina2
-	IF ~~ THEN REPLY ~Leina please, we do not want to drive the good barkeep’s customers away.~ GOTO PCM4Leina2
+	IF ~~ THEN REPLY ~Leina please, we do not want to drive the good barkeepï¿½s customers away.~ GOTO PCM4Leina2
 	IF ~~ THEN REPLY ~Are you sure the patrons here are prepared for you Leina?~ GOTO PCM4Leina2
-	IF ~~ THEN REPLY ~Ok, as long as it’s not one of your somebody done Leina wrong songs.~ GOTO PCM4Leina3
+	IF ~~ THEN REPLY ~Ok, as long as itï¿½s not one of your somebody done Leina wrong songs.~ GOTO PCM4Leina3
 	IF ~~ THEN REPLY ~This should be good.~ GOTO PCM4Leina3
 END
 
@@ -2671,10 +2671,10 @@ InParty("Melora")~ THEN EXTERN ~BMELORA~ 55
 	IF ~InParty("Taffic")
 InParty("Melora")~ THEN EXTERN ~BMELORA~ 48
 END
-		 
+		
 IF ~~ THEN BEGIN PCM4Leina2a
-	SAY ~The question is... are you ready <CHARNAME>?~ 
-	IF ~~ THEN REPLY ~I will sit and I will listen but I don’t dance Leina.~ GOTO PCM4Leina4
+	SAY ~The question is... are you ready <CHARNAME>?~
+	IF ~~ THEN REPLY ~I will sit and I will listen but I donï¿½t dance Leina.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~I thought you were going to sing, (*groans*) I am already beginning to regret coming in here.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~That will depend on whether the song stirs the feet Leina.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~Are we talking or are we singing?~ GOTO PCM4Leina4
@@ -2682,8 +2682,8 @@ IF ~~ THEN BEGIN PCM4Leina2a
 END
 
 IF ~~ THEN BEGIN PCM4Leina2b
-	SAY ~And what of you <CHARNAME>?~ 
-	IF ~~ THEN REPLY ~I will sit and I will listen but I don’t dance Leina.~ GOTO PCM4Leina4
+	SAY ~And what of you <CHARNAME>?~
+	IF ~~ THEN REPLY ~I will sit and I will listen but I donï¿½t dance Leina.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~I thought you were going to sing, (*groans*) I am already beginning to regret coming in here.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~That will depend on whether the song stirs the feet Leina.~ GOTO PCM4Leina4
 	IF ~~ THEN REPLY ~Are we talking or are we singing?~ GOTO PCM4Leina4
@@ -2696,12 +2696,12 @@ IF ~~ THEN BEGIN PCM4Leina4
 END
 
 IF ~~ THEN BEGIN PCM4Leina401
-	SAY ~(*She disappears only to return few moments later dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash. This is clearly a Leina you haven’t seen before!*)~
+	SAY ~(*She disappears only to return few moments later dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash. This is clearly a Leina you havenï¿½t seen before!*)~
 	IF ~~ THEN GOTO PCM4Leina402
 END	
 
 IF ~~ THEN BEGIN PCM4Leina402
-	SAY ~What... you expected me to stomp around in my armour <CHARNAME>?~ 
+	SAY ~What... you expected me to stomp around in my armour <CHARNAME>?~
 	IF ~~ THEN REPLY ~Leina please...~ GOTO PCM4Leina403
 END
 
@@ -2716,11 +2716,11 @@ IF ~~ THEN BEGIN PCM4Leina404
 END
 
 IF ~~ THEN BEGIN PCM4Leina5
-	SAY ~Come, dance with me <CHARNAME>... (*She unties the sash from her waist and wraps it around you neck, playfully pulling you towards her*)... Come feel the music.~ 
-	IF ~~ THEN REPLY ~Uh... I... I don’t dance.~ GOTO PCM4Leina6
+	SAY ~Come, dance with me <CHARNAME>... (*She unties the sash from her waist and wraps it around you neck, playfully pulling you towards her*)... Come feel the music.~
+	IF ~~ THEN REPLY ~Uh... I... I donï¿½t dance.~ GOTO PCM4Leina6
 	IF ~~ THEN REPLY ~Leina, stop this nonsense, now!~ GOTO PCM4Leina6
 	IF ~~ THEN REPLY ~(*You slowly move to join her reaching for her hand*) Look out for your toes Leina.~ GOTO PCM4Leina6
-	IF ~~ THEN REPLY ~(*Grinning broadly you leap to your feet to join her, trying to slip your arm around her waist*) It’s been a while since I’ve been in a position to dance with a lovely lady.~ GOTO PCM4Leina6
+	IF ~~ THEN REPLY ~(*Grinning broadly you leap to your feet to join her, trying to slip your arm around her waist*) Itï¿½s been a while since Iï¿½ve been in a position to dance with a lovely lady.~ GOTO PCM4Leina6
 	IF ~~ THEN REPLY ~(*You look at her appreciatively*) The bard certainly knows how to move.~ GOTO PCM4Leina6
 END
 
@@ -2734,14 +2734,14 @@ IF ~~ THEN BEGIN PCM4Leina601
 	IF ~~ THEN REPLY ~(*You look at her, not at all sure of her intentions behind her little performance*)...~ GOTO PCM4Leina7
 	IF ~~ THEN REPLY ~What do you want me to say Leina, that yes your music does incite passion in a man?~ GOTO PCM4Leina7
 	IF ~~ THEN REPLY ~Are you teasing me bard?~ GOTO PCM4Leina7
-	IF ~~ THEN REPLY ~I said your music lacked passion Leina, whereas you obviously don’t.~ GOTO PCM4Leina8
+	IF ~~ THEN REPLY ~I said your music lacked passion Leina, whereas you obviously donï¿½t.~ GOTO PCM4Leina8
 	IF ~~ THEN REPLY ~So much passion is wasted on music Leina, it will not bring you comfort when you can no longer dance and sing.~ GOTO PCM4Leina9
 END
 
 IF ~~ THEN BEGIN PCM4Leina7
 	SAY ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
 	IF ~~ THEN GOTO PCM4Leina701
-END		 
+END		
 
 IF ~~ THEN BEGIN PCM4Leina701
 	SAY ~I merely try to show you why music incites a passion within me, a passion that will only be quenched by the release of the song. Unlike the risk of pain which the love and desire for a man can bring, music gives only joy in return... it is the only joy that I will ever need.~
@@ -2752,7 +2752,7 @@ IF ~~ THEN BEGIN PCM4Leina702
 	SAY ~Now, as I look into your face I can see that the music has touched you as I promised you it would.~
 	IF ~~ THEN GOTO PCM4Leina703
 END	
-	 
+	
 IF ~~ THEN BEGIN PCM4Leina703
 	SAY ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
 	IF ~~ THEN GOTO PCM4Leina704
@@ -2776,11 +2776,11 @@ END
 
 IF ~~ THEN BEGIN PCM4Leina8
 	SAY ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
-= 
+=
 	~Do not mistake what you see in me as my own passion, what you see comes from the music, if there were no music then there would be no passion.~
 =
 	~Deny it all you want but I see that you have been touched by the music, the excitement that I feel, you have felt. Perhaps you understand a little more now how music incites such a passion within me, a passion that will only be quenched by the release of the song.~
-= 
+=
 	~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
 =
 	~Oh, and please <CHARNAME>, keep the sash, I have others.~
@@ -2802,8 +2802,8 @@ IF ~~ THEN BEGIN PCM4Leina9
 	SAY ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
 =	
 	~When I can no longer dance and sing, then I shall turn my hand to writing or teaching others of the joy to found in music.~
-= 
-	~Music has become my life and it will not desert me because my face gathers a few lines or my body is no longer pert and young. Whereas a man’s love, all too often fades when the woman’s beauty can only be seen in the faces of her daughters.~
+=
+	~Music has become my life and it will not desert me because my face gathers a few lines or my body is no longer pert and young. Whereas a manï¿½s love, all too often fades when the womanï¿½s beauty can only be seen in the faces of her daughters.~
 =
 	~Ah, but what is this I see in your face... you have heard the music and you have been touched by its excitement.~
 =
@@ -2844,7 +2844,7 @@ IF ~~ THEN BEGIN PCM4Leina22a
 END	
 	
 IF ~~ THEN BEGIN PCM4Leina23a
-	SAY ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn’t matter.~
+	SAY ~I am not one for the jig Melora, but as long as you have fun what the dance is doesnï¿½t matter.~
 	IF ~True()~ THEN GOTO PCM4Leina2b
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
@@ -2908,7 +2908,7 @@ IF ~~ THEN BEGIN PCM4Leina29a
 END
 
 IF ~~ THEN BEGIN PCM4Leina30a
-	SAY ~I’ll ignore the lewd suggestion behind that remark dwarf... for now!~
+	SAY ~Iï¿½ll ignore the lewd suggestion behind that remark dwarf... for now!~
 	IF ~True()~ THEN GOTO PCM4Leina2b
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
@@ -2920,7 +2920,7 @@ IF ~~ THEN BEGIN PCM4Leina30a
 END
 
 IF ~~ THEN BEGIN PCM4Leina31a
-	SAY ~I have no idea what you said Viconia, and as it’s come out of your mouth I have no desire to know.~
+	SAY ~I have no idea what you said Viconia, and as itï¿½s come out of your mouth I have no desire to know.~
 	IF ~True()~ THEN GOTO PCM4Leina2b
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
@@ -2931,7 +2931,7 @@ IF ~~ THEN BEGIN PCM4Leina31a
 END
 
 IF ~~ THEN BEGIN PCM4Leina33a
-	SAY ~(*Smiling at the paladin’s flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
+	SAY ~(*Smiling at the paladinï¿½s flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 	IF ~True()~ THEN GOTO PCM4Leina2b
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
 	IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
@@ -2959,21 +2959,21 @@ END
 
 IF ~Global("VP_KorganNoDancing","LOCALS",6)~ THEN BEGIN PCM4bKorgan1
 	SAY ~That dwarf has to be the most odious creature I have met! He even rates one ahead of that slime ball I called husband.~
-	IF ~~ THEN REPLY ~I’m glad to see you can hold your own Leina, because I need a good fighter a lot more than I need a bard.~ GOTO PCM4bKorgan2
+	IF ~~ THEN REPLY ~Iï¿½m glad to see you can hold your own Leina, because I need a good fighter a lot more than I need a bard.~ GOTO PCM4bKorgan2
 	IF ~~ THEN REPLY ~You ok Leina or do want me to get rid of him and his nasty little mind.~ GOTO PCM4bKorgan3
-	IF ~~ THEN REPLY ~He is a loathsome beggar and I need his skills with the axe, but if he bothers you Leina I’ll get rid him now.~ GOTO PCM4bKorgan3
+	IF ~~ THEN REPLY ~He is a loathsome beggar and I need his skills with the axe, but if he bothers you Leina Iï¿½ll get rid him now.~ GOTO PCM4bKorgan3
 	IF ~~ THEN REPLY ~You certainly sent him off with flea in his ear, good on you.~ GOTO PCM4bKorgan3
 	IF ~~ THEN REPLY ~I felt the blood rise within me when I heard him speak as he did to you Leina. I was about to step in and shut that foul mouth of his for good... but you appeared to be holding your own so I stayed my hand.~ GOTO PCM4bKorgan5
 END
 
 IF ~~ THEN BEGIN PCM4bKorgan2
-	SAY ~As long as he keeps away from me, there will be no reason to lose either of us but if he comes near me again with so much as a smirk on his face, he’ll see that I wasn’t joking about using my sword. When I am through with him, you’ll still have your fighter <CHARNAME>, but he’ll not pose a threat to another female!~
+	SAY ~As long as he keeps away from me, there will be no reason to lose either of us but if he comes near me again with so much as a smirk on his face, heï¿½ll see that I wasnï¿½t joking about using my sword. When I am through with him, youï¿½ll still have your fighter <CHARNAME>, but heï¿½ll not pose a threat to another female!~
 	IF ~~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~ EXIT
 END
 
 IF ~~ THEN BEGIN PCM4bKorgan3
-	SAY ~I can handle the likes of him <CHARNAME>. I know that you would not tolerate his presence in the group if you didn’t think him necessary to your mission, so please, don’t worry on my behalf because I meant what I said about my sword and him singing opera.~
-	IF ~~ THEN REPLY ~Korgan isn’t one to take threats lightly Leina, and as much as I need his axe, I am also beginning to appreciate my bard’s value as well.~ GOTO PCM4bKorgan7
+	SAY ~I can handle the likes of him <CHARNAME>. I know that you would not tolerate his presence in the group if you didnï¿½t think him necessary to your mission, so please, donï¿½t worry on my behalf because I meant what I said about my sword and him singing opera.~
+	IF ~~ THEN REPLY ~Korgan isnï¿½t one to take threats lightly Leina, and as much as I need his axe, I am also beginning to appreciate my bardï¿½s value as well.~ GOTO PCM4bKorgan7
 	IF ~~ THEN REPLY ~If you are sure, but if you ever feel unsafe around him, do not hesitate to come to me. He will be out of here before he can blink that lecherous eye of his.~ GOTO PCM4bKorgan4
 	IF ~~ THEN REPLY ~I know how that nasty little mind of his thinks, so please, never allow yourself to be lured out of the earshot of myself or the group.~ GOTO PCM4bKorgan4
 END
@@ -2987,20 +2987,20 @@ IF ~~ THEN BEGIN PCM4bKorgan5
 	SAY ~(*Laughs softly*) Ah, it is as I feared, chivalry is dead my not so gallant champion.~
 	IF ~~ THEN REPLY ~If I had believed you to be in any danger from the dwarf, he would not be standing now.~ GOTO PCM4bKorgan6
 	IF ~~ THEN REPLY ~I was enjoying the sight of the little runt squirm under your sword Leina. I apologise if my manner appeared off hand. Then Leina~ GOTO PCM4bKorgan6
-	IF ~~ THEN REPLY ~I didn’t think you would thank me for interfering.~ GOTO PCM4bKorgan6
-	IF ~~ THEN REPLY ~I am sorry Leina. I didn’t see you as a woman needing a champion to defend her honour.~ GOTO PCM4bKorgan6
+	IF ~~ THEN REPLY ~I didnï¿½t think you would thank me for interfering.~ GOTO PCM4bKorgan6
+	IF ~~ THEN REPLY ~I am sorry Leina. I didnï¿½t see you as a woman needing a champion to defend her honour.~ GOTO PCM4bKorgan6
 END
 
 IF ~~ THEN BEGIN PCM4bKorgan6
 	SAY ~(*She puts her hand on your arm, a gesture she seems to be making a habit of and laughs softly*)~
 =
-	~I was jesting my dear <CHARNAME>, you did right not to intervene. If the dwarf thinks me incapable of holding my own, he will give me no piece from that obscene tongue of his until he does feel the edge of my sword. This way he knows that I’ll have none of his innuendos and you get to keep your fighter and your bard.~
+	~I was jesting my dear <CHARNAME>, you did right not to intervene. If the dwarf thinks me incapable of holding my own, he will give me no piece from that obscene tongue of his until he does feel the edge of my sword. This way he knows that Iï¿½ll have none of his innuendos and you get to keep your fighter and your bard.~
 	IF ~~ THEN REPLY ~Leina, you are worth 100 beserker dwarves!~ GOTO PCM4bKorgan7
 	IF ~~ THEN REPLY ~Leina, if I should have to choose between a beautiful, intelligent bard and a chaotic, beserker dwarf, I know who I would be prefer to have at my side.~ GOTO PCM4bKorgan7
 	IF ~~ THEN REPLY ~The dwarf is an impressive fighter, but I will not have him intimidating any member of this group. Please remember this if he should bother you again.~ GOTO PCM4bKorgan3
-	IF ~~ THEN REPLY ~Just be careful Leina, I know how the dwarf’s mind thinks.~ GOTO PCM4bKorgan3
+	IF ~~ THEN REPLY ~Just be careful Leina, I know how the dwarfï¿½s mind thinks.~ GOTO PCM4bKorgan3
 END
- 
+
 IF ~~ THEN BEGIN PCM4bKorgan7
 	SAY ~(*She looks up into your face, but looks away again quickly leaving you a little bewildered by the intensity of the look you see in those large almond shaped eyes of hers. When she speaks her voice is low with a hint of laughter.*)~
 =
@@ -3019,7 +3019,7 @@ Gender(Player1,MALE)~ THEN BEGIN PCM5Leina1
 END
 
 IF ~~ THEN BEGIN PCM5Leina2
-	SAY ~Then you don’t believe they visit us or make their presence known in our darkest hour or when we are in need of guidance and aid?~
+	SAY ~Then you donï¿½t believe they visit us or make their presence known in our darkest hour or when we are in need of guidance and aid?~
 	IF ~~ THEN REPLY ~No, but I get the feeling that you do.~ GOTO PCM5Leina5
 	IF ~~ THEN REPLY ~Do you?~ GOTO PCM5Leina5
 	IF ~~ THEN REPLY ~No, as I see it they set us upon this world and then lost interest, leaving us to make of it what we will.~ GOTO PCM5Leina4
@@ -3030,7 +3030,7 @@ IF ~~ THEN BEGIN PCM5Leina3
 	SAY ~So you believe that it is possible, that yes, they do come to our aid in our darkest hour and when we are in need of guidance?~
 	IF ~~ THEN REPLY ~Whether they come to help or to hinder is debatable, but your face tells me that you believe it to be so.~ GOTO PCM5Leina5
 	IF ~~ THEN REPLY ~Do you ask because you have reason to believe that they do?~ GOTO PCM5Leina5
-	IF ~~ THEN REPLY ~As I have never had any god come to my aid, and I have certainly called on them on many occasions, I am sceptical about their benevolence. Why the question?~ GOTO PCM5Leina5 
+	IF ~~ THEN REPLY ~As I have never had any god come to my aid, and I have certainly called on them on many occasions, I am sceptical about their benevolence. Why the question?~ GOTO PCM5Leina5
 END
 
 IF ~~ THEN BEGIN PCM5Leina4
@@ -3052,14 +3052,14 @@ IF ~~ THEN BEGIN PCM5Leina5
 END
 
 IF ~~ THEN BEGIN PCM5Leina6
-	SAY ~I hadn’t thought of that. I know that talking of my mother has brought the memory of things I had forgotten to mind, good memories and not the bitter angry ones that I have harboured for so long. It is difficult to know what to believe <CHARNAME>.~
+	SAY ~I hadnï¿½t thought of that. I know that talking of my mother has brought the memory of things I had forgotten to mind, good memories and not the bitter angry ones that I have harboured for so long. It is difficult to know what to believe <CHARNAME>.~
 	IF ~~ THEN REPLY ~Did she speak to you, give you a reason for her presence?~ GOTO PCM5Leina8
 	IF ~~ THEN REPLY ~Sounds spooky to me. Does she say what she wanted?~ GOTO PCM5Leina8
 	IF ~~ THEN REPLY ~What do you suggest, that maybe we should get a priest to perform an exorcism before we next rest Leina?~ GOTO PCM5Leina10
 END
 
 IF ~~ THEN BEGIN PCM5Leina7
-	SAY ~I... I don’t know. I am sure it was no dream or hallucination because when she appeared I was nowhere near ready for sleep to claim me, nor had I removed my armour or readied myself for sleep. It is difficult to know what to believe <CHARNAME>.~
+	SAY ~I... I donï¿½t know. I am sure it was no dream or hallucination because when she appeared I was nowhere near ready for sleep to claim me, nor had I removed my armour or readied myself for sleep. It is difficult to know what to believe <CHARNAME>.~
 	IF ~~ THEN REPLY ~Did she speak to you, give you a reason for her presence?~ GOTO PCM5Leina8
 	IF ~~ THEN REPLY ~Sounds spooky to me. Does she say what she wanted?~ GOTO PCM5Leina8
 	IF ~~ THEN REPLY ~What do you suggest, that maybe we should get a priest to perform an exorcism before we next rest Leina?~ GOTO PCM5Leina10
@@ -3067,13 +3067,13 @@ END
 
 IF ~~ THEN BEGIN PCM5Leina8
 	SAY ~She was only there for a few minutes and all she did was to raise her hand, smile at me, nod her head and then she was gone. Simple gestures and yet when she left, I feel safe and warm. I had the feeling that she came to reassure me and yet, not a word passed her lips.~
-	IF ~~ THEN REPLY ~That’s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCM5Leina9
-	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I don’t think she meant you any harm.~ GOTO PCM5Leina901
+	IF ~~ THEN REPLY ~Thatï¿½s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCM5Leina9
+	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I donï¿½t think she meant you any harm.~ GOTO PCM5Leina901
 	IF ~~ THEN REPLY ~If it bothers you Leina, I will sit with you tonight and then if she appears, we can confront this goddess together, maybe encourage her to speak.~ GOTO PCM5Leina11
 END
 
 IF ~~ THEN BEGIN PCM5Leina9
-	SAY ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I don’t know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
+	SAY ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I donï¿½t know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)
 SetGlobal("VP_NoRomantics","LOCALS",1)~ EXIT
 END	
@@ -3085,16 +3085,16 @@ SetGlobal("VP_NoRomantics","LOCALS",1)~ EXIT
 END	
 
 IF ~~ THEN BEGIN PCM5Leina10
-	SAY ~That will not be necessary, she gave me no reason to fear her. She didn’t stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
-	IF ~~ THEN REPLY ~That’s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCM5Leina9
-	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I don’t think she meant you any harm.~ GOTO PCM5Leina901
+	SAY ~That will not be necessary, she gave me no reason to fear her. She didnï¿½t stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
+	IF ~~ THEN REPLY ~Thatï¿½s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCM5Leina9
+	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I donï¿½t think she meant you any harm.~ GOTO PCM5Leina901
 	IF ~~ THEN REPLY ~If it bothers you Leina, I will sit with you tonight and then if she appears, we can confront this goddess together, maybe encourage her to speak.~ GOTO PCM5Leina11
 END
 
 IF ~~ THEN BEGIN PCM5Leina11
 	SAY ~(*She looks up into your face, but looks away again quickly. Leaving you a little bewildered by the bemused look you see in those large almond shaped eyes of hers*)~
 =
-	~Your company will be most welcome <CHARNAME>, but if her appearance is solely to bring me comfort or even my own mind’s way of dealing with the long nights, then I feel we will be waiting in vain, but we shall see.~
+	~Your company will be most welcome <CHARNAME>, but if her appearance is solely to bring me comfort or even my own mindï¿½s way of dealing with the long nights, then I feel we will be waiting in vain, but we shall see.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",12)
 SetGlobal("VP_LookAtStars","LOCALS",1)~ EXIT
 END	
@@ -3110,7 +3110,7 @@ Gender(Player1,FEMALE)~ THEN BEGIN PCF6Leina1
 END
 
 IF ~~ THEN BEGIN PCF6Leina2
-	SAY ~Then you don’t believe they visit us or make their presence known in our darkest hour or when we are in need of guidance and aid?~
+	SAY ~Then you donï¿½t believe they visit us or make their presence known in our darkest hour or when we are in need of guidance and aid?~
 	IF ~~ THEN REPLY ~No, but I get the feeling that you do.~ GOTO PCF6Leina5
 	IF ~~ THEN REPLY ~Do you?~ GOTO PCF6Leina5
 	IF ~~ THEN REPLY ~No, as I see it they set us upon this world and then lost interest, leaving us to make of it what we will.~ GOTO PCF6Leina4
@@ -3121,7 +3121,7 @@ IF ~~ THEN BEGIN PCF6Leina3
 	SAY ~So you believe that it is possible, that yes, they do come to our aid in our darkest hour and when we are in need of guidance?~
 	IF ~~ THEN REPLY ~Whether they come to help or to hinder is debatable, but your face tells me that you believe it to be so.~ GOTO PCF6Leina5
 	IF ~~ THEN REPLY ~Do you ask because you have reason to believe that they do?~ GOTO PCF6Leina5
-	IF ~~ THEN REPLY ~As I have never had any god come to my aid, and I have certainly called on them on many occasions, I am sceptical about their benevolence. Why the question?~ GOTO PCF6Leina5 
+	IF ~~ THEN REPLY ~As I have never had any god come to my aid, and I have certainly called on them on many occasions, I am sceptical about their benevolence. Why the question?~ GOTO PCF6Leina5
 END
 
 IF ~~ THEN BEGIN PCF6Leina4
@@ -3142,14 +3142,14 @@ IF ~~ THEN BEGIN PCF6Leina5
 END
 
 IF ~~ THEN BEGIN PCF6Leina6
-	SAY ~I hadn’t thought of that. I know that talking of my mother has brought the memory of things I had forgotten to mind, good memories and not the bitter angry ones that I have harboured for so long. It is difficult to know what to believe <CHARNAME>.~
+	SAY ~I hadnï¿½t thought of that. I know that talking of my mother has brought the memory of things I had forgotten to mind, good memories and not the bitter angry ones that I have harboured for so long. It is difficult to know what to believe <CHARNAME>.~
 	IF ~~ THEN REPLY ~Did she speak to you, give you a reason for her presence?~ GOTO PCF6Leina8
 	IF ~~ THEN REPLY ~Sounds spooky to me. Does she say what she wants?~ GOTO PCF6Leina8
 	IF ~~ THEN REPLY ~What do you suggest, that maybe we should get a priest to perform an exorcism before we next rest Leina?~ GOTO PCF6Leina10
 END
 
 IF ~~ THEN BEGIN PCF6Leina7
-	SAY ~I... I don’t know. I am sure it was no dream or hallucination because when she appeared I was nowhere near ready for sleep to claim me, nor had I removed my armour or readied myself for sleep. It is difficult to know what to believe <CHARNAME>.~
+	SAY ~I... I donï¿½t know. I am sure it was no dream or hallucination because when she appeared I was nowhere near ready for sleep to claim me, nor had I removed my armour or readied myself for sleep. It is difficult to know what to believe <CHARNAME>.~
 	IF ~~ THEN REPLY ~Did she speak to you, give you a reason for her presence?~ GOTO PCF6Leina8
 	IF ~~ THEN REPLY ~Sounds spooky to me. Does she say what she wanted?~ GOTO PCF6Leina8
 	IF ~~ THEN REPLY ~What do you suggest, that maybe we should get a priest to perform an exorcism before we next rest Leina?~ GOTO PCF6Leina10
@@ -3157,13 +3157,13 @@ END
 
 IF ~~ THEN BEGIN PCF6Leina8
 	SAY ~She was only there for a few minutes and all she did was to raise her hand, smile at me, nod her head and then she was gone. Simple gestures and yet when she left, I felt safe and warm. I had the feeling that she came to reassure me and yet, not a word passed her lips.~
-	IF ~~ THEN REPLY ~That’s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCF6Leina9
-	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I don’t think she meant you any harm.~ GOTO PCF6Leina901
-	IF ~~ THEN REPLY ~I recall a time when Imoen told me of a ghost she’d seen in old Winthrop’s inn and how we sat up all night in order to confront it. Maybe we should do the same and confront this mysterious lady of yours Leina.~ GOTO PCF6Leina11
+	IF ~~ THEN REPLY ~Thatï¿½s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCF6Leina9
+	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I donï¿½t think she meant you any harm.~ GOTO PCF6Leina901
+	IF ~~ THEN REPLY ~I recall a time when Imoen told me of a ghost sheï¿½d seen in old Winthropï¿½s inn and how we sat up all night in order to confront it. Maybe we should do the same and confront this mysterious lady of yours Leina.~ GOTO PCF6Leina11
 END
 
 IF ~~ THEN BEGIN PCF6Leina9
-	SAY ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I don’t know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
+	SAY ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I donï¿½t know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
 END	
 
@@ -3173,24 +3173,24 @@ IF ~~ THEN BEGIN PCF6Leina901
 END	
 
 IF ~~ THEN BEGIN PCF6Leina10
-	SAY ~That will not be necessary, she gave me no reason to fear her. She didn’t stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
-	IF ~~ THEN REPLY ~That’s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCF6Leina9
-	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I don’t think she meant you any harm.~ GOTO PCF6Leina901
+	SAY ~That will not be necessary, she gave me no reason to fear her. She didnï¿½t stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
+	IF ~~ THEN REPLY ~Thatï¿½s gods for you, if she is a goddess that is. They seldom show themselves and when they do, they like to be all mysterious and creepy.~ GOTO PCF6Leina9
+	IF ~~ THEN REPLY ~Does it matter who or what she was Leina? If she brought comfort to you I donï¿½t think she meant you any harm.~ GOTO PCF6Leina901
 	IF ~~ THEN REPLY ~If it bothers you Leina, I will sit with you tonight and then if she appears, we can confront this goddess together, maybe encourage her to speak.~ GOTO PCF6Leina11
 END
 
 IF ~~ THEN BEGIN PCF6Leina11
 	SAY ~Did you get to see your ghost?~
-	IF ~~ THEN REPLY ~No we didn’t but I wasn’t at all surprised, Imoen always did have an over active imagination.~ GOTO PCF6Leina12
-	IF ~~ THEN REPLY ~No we didn’t, we fell asleep and were caught by Winthrop the next morning. or at least I was, Imoen always manages to disappear at the first sign of trouble. He went, to Gorion, told him he’d caught me sampling his ales. I blame her over active imagination for my troubles that day.~ GOTO PCF6Leina12
-	IF ~~ THEN REPLY ~No but, knowing old Winthrop, Imoen’s ghost was more than likely him creeping into some elven lady’s bed. Imoen would not have it, said that was disgusting on account of Winthrop being so old. I still say it was either that, or her over active imagination.~ GOTO PCF6Leina12
+	IF ~~ THEN REPLY ~No we didnï¿½t but I wasnï¿½t at all surprised, Imoen always did have an over active imagination.~ GOTO PCF6Leina12
+	IF ~~ THEN REPLY ~No we didnï¿½t, we fell asleep and were caught by Winthrop the next morning. or at least I was, Imoen always manages to disappear at the first sign of trouble. He went, to Gorion, told him heï¿½d caught me sampling his ales. I blame her over active imagination for my troubles that day.~ GOTO PCF6Leina12
+	IF ~~ THEN REPLY ~No but, knowing old Winthrop, Imoenï¿½s ghost was more than likely him creeping into some elven ladyï¿½s bed. Imoen would not have it, said that was disgusting on account of Winthrop being so old. I still say it was either that, or her over active imagination.~ GOTO PCF6Leina12
 END
 
 IF ~~ THEN BEGIN PCF6Leina12
 	SAY ~(*Laughing*) I think I am going to like your Imoen when I eventually get to meet her.~
 =
-	~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen’s?~
-= 
+	~You think maybe my goddess is a ghost of my overactive imagination, like your Imoenï¿½s?~
+=
 	~You could be right of course and if her sole purpose is bring comfort to me through the long night then she is not going to appear if I am in company, but I thank you all the same for the offer <CHARNAME>.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
 END	
@@ -3198,10 +3198,10 @@ END
 IF ~Global("VP_LookAtStars","LOCALS",2)
 Gender(Player1,MALE)~ THEN BEGIN PCM6Leina1
 	SAY ~So, once again we count the stars together <CHARNAME>... (*She fidgets slightly*) I am not distracting you from your rest am I?~
-	IF ~~ THEN REPLY ~No of course you aren’t. Anyway, I volunteered if you remember.~ GOTO PCM6Leina2
+	IF ~~ THEN REPLY ~No of course you arenï¿½t. Anyway, I volunteered if you remember.~ GOTO PCM6Leina2
 	IF ~~ THEN REPLY ~If you are then I am enjoying the distraction.~ GOTO PCM6Leina2
-	IF ~~ THEN REPLY ~Stop worrying Leina, it’s not like I had anything else planned for tonight.~ GOTO PCM6Leina2
-	IF ~~ THEN REPLY ~Reminds me when Imoen swore she saw a ghost in old Winthrop’s inn. We crept from our beds intending to sit up all night to confront it.~ GOTO PCM6Leina9
+	IF ~~ THEN REPLY ~Stop worrying Leina, itï¿½s not like I had anything else planned for tonight.~ GOTO PCM6Leina2
+	IF ~~ THEN REPLY ~Reminds me when Imoen swore she saw a ghost in old Winthropï¿½s inn. We crept from our beds intending to sit up all night to confront it.~ GOTO PCM6Leina9
 END
 
 IF ~~ THEN BEGIN PCM6Leina2
@@ -3220,16 +3220,16 @@ IF ~~ THEN BEGIN PCM6Leina3
 END
 
 IF ~~ THEN BEGIN PCM6Leina4
-	SAY ~(*Sighs*) I love my music, I love the excitement when a new song is born. It’s just not what I envisioned for myself. If somebody had told me when I left Athkatla for the first time, that I would be travelling the road, me Leina Vulova-Katuron, a travelling bard, I would have laughed and told them that their brains were addled.~
-	IF ~~ THEN REPLY ~And how did you see yourself, married and cosseted in your husband’s house instead of your father’s?~ GOTO PCM6Leina5
+	SAY ~(*Sighs*) I love my music, I love the excitement when a new song is born. Itï¿½s just not what I envisioned for myself. If somebody had told me when I left Athkatla for the first time, that I would be travelling the road, me Leina Vulova-Katuron, a travelling bard, I would have laughed and told them that their brains were addled.~
+	IF ~~ THEN REPLY ~And how did you see yourself, married and cosseted in your husbandï¿½s house instead of your fatherï¿½s?~ GOTO PCM6Leina5
 	IF ~~ THEN REPLY ~I can not see you as anyone other than Leina the bard, but tell me, what path would you have chosen for yourself had circumstances been different?~ GOTO PCM6Leina5
 	IF ~~ THEN REPLY ~Then tell me of your dreams Leina, what were your hopes then?~ GOTO PCM6Leina5
 	IF ~~ THEN REPLY ~If someone had told me I would be travelling backwards and forwards in time searching for an insane wizard and a couple of mystical keys, I too would have laughed and told them that their brains were addled, but here I am doing just that.~ GOTO PCM6Leina501
 END
 
 IF ~~ THEN BEGIN PCM6Leina5
-	SAY ~I now see how narrow my selfish dreams were. I have learnt a lot since leaving my father’s house. Whilst I lived there, oblivious to the real world, all I could dream of was the love of a good man and to live in his love for the rest of my days.~
-= 
+	SAY ~I now see how narrow my selfish dreams were. I have learnt a lot since leaving my fatherï¿½s house. Whilst I lived there, oblivious to the real world, all I could dream of was the love of a good man and to live in his love for the rest of my days.~
+=
 	~Now I enjoy being plain Leina the bard, all I want is to build my life around music and show others the joy it can bring them. Quite different to the daydreams I once used to escape into.~
 	IF ~~ THEN REPLY ~Leina, you were born to sing and to dance. Yours is a joy that is meant to be shared and it seems to me that you are doing exactly what you should be doing.~ GOTO PCM6Leina6
 	IF ~~ THEN REPLY ~Does it matter if our dreams change as long as we get to achieve them and find fulfilment?~ GOTO PCM6Leina6
@@ -3250,14 +3250,14 @@ END
 
 IF ~~ THEN BEGIN PCM6Leina6
 	SAY ~(*She looks up at you, and not for the first time you notice a bemused look in those beautiful large eyes of hers.*)~
-= 
+=
 	~You are right. My foolish dreams as a girl were all about what I wanted and what I thought I would have. Whereas now I want only to share my own happiness with others.~
-= 
-	~We do not live in the idyllic place that I once thought the world to be, but with a good song and good friends to enjoy it, it isn’t half bad. (*She stands up to leave*)...~
-= 
-	~Thank you for your time but I don’t believe my goddess will be here tonight nor any other night. Sleep well <CHARNAME>.~
-	IF ~~ THEN REPLY ~(*You catch her hand as she turns to leave*) Leina... you don’t have to leave, please, sit a while longer?~ GOTO PCM6Leina7
-	IF ~~ THEN REPLY ~(*You catch her hand as she turns to leave*) She isn’t here but I am. Please, you don’t have to leave just yet... do you Leina?~ GOTO PCM6Leina7
+=
+	~We do not live in the idyllic place that I once thought the world to be, but with a good song and good friends to enjoy it, it isnï¿½t half bad. (*She stands up to leave*)...~
+=
+	~Thank you for your time but I donï¿½t believe my goddess will be here tonight nor any other night. Sleep well <CHARNAME>.~
+	IF ~~ THEN REPLY ~(*You catch her hand as she turns to leave*) Leina... you donï¿½t have to leave, please, sit a while longer?~ GOTO PCM6Leina7
+	IF ~~ THEN REPLY ~(*You catch her hand as she turns to leave*) She isnï¿½t here but I am. Please, you donï¿½t have to leave just yet... do you Leina?~ GOTO PCM6Leina7
 	IF ~~ THEN REPLY ~My pleasure Leina. I hope you sleep well.~ GOTO PCM6Leina8
 	IF ~~ THEN REPLY ~Then maybe you will accept at last that you are who you are destined to be and you sleep undisturbed tonight.~ GOTO PCM6Leina8
 	IF ~~ THEN REPLY ~Let us hope you are right Leina and your nights become a little less troubled. Good night Leina.~ GOTO PCM6Leina8
@@ -3266,7 +3266,7 @@ END
 
 IF ~~ THEN BEGIN PCM6Leina7
 	SAY ~(*She looks down at your hand and turning it over she scrutinises your palm. After a couple of seconds she turns it back over and releases it. Then smiling, she looks up into your face.*)~
-= 
+=
 	~But I do <CHARNAME>... for tonight anyway. Sleep well.~
 	IF ~~ THEN DO ~SetGlobal("VP_LookAtStars","LOCALS",3)
 SetGlobalTimer("VP_LoveTalkN_Timer","GLOBAL",ONE_DAY)
@@ -3282,15 +3282,15 @@ END
 	
 IF ~~ THEN BEGIN PCM6Leina9
 	SAY ~Did your ghost appear?~
-	IF ~~ THEN REPLY ~No it didn’t but I wasn’t surprised, Imoen always did have an over active imagination!~ GOTO PCM6Leina10
-	IF ~~ THEN REPLY ~I do not know, we fell asleep and were caught by Winthrop the next morning. or at least I was, Imoen always manages to disappear at the first sign of trouble. He went, to Gorion, told him he’d caught me sampling his ales. I blame her over active imagination for my troubles that day.~ GOTO PCM6Leina10
-	IF ~~ THEN REPLY ~No but, knowing old Winthrop, Imoen’s ghost was more than likely him creeping into some elven lady’s bed. Imoen would not have it, said that was disgusting on account of Winthrop being so old. I still say it was either that, or her over active imagination.~ GOTO PCM6Leina10
+	IF ~~ THEN REPLY ~No it didnï¿½t but I wasnï¿½t surprised, Imoen always did have an over active imagination!~ GOTO PCM6Leina10
+	IF ~~ THEN REPLY ~I do not know, we fell asleep and were caught by Winthrop the next morning. or at least I was, Imoen always manages to disappear at the first sign of trouble. He went, to Gorion, told him heï¿½d caught me sampling his ales. I blame her over active imagination for my troubles that day.~ GOTO PCM6Leina10
+	IF ~~ THEN REPLY ~No but, knowing old Winthrop, Imoenï¿½s ghost was more than likely him creeping into some elven ladyï¿½s bed. Imoen would not have it, said that was disgusting on account of Winthrop being so old. I still say it was either that, or her over active imagination.~ GOTO PCM6Leina10
 END
 
 IF ~~ THEN BEGIN PCM6Leina10
 	SAY ~(*Laughs*) I just know that I am going to like your Imoen when I eventually get to meet her <CHARNAME>.~
 =
-	~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen’s? I am also thinking that she may be, you see I have been giving some thought to your words and you could be right. I believe I understand at last why I feel the need for the assurance of *The Songstress*. ~
+	~You think maybe my goddess is a ghost of my overactive imagination, like your Imoenï¿½s? I am also thinking that she may be, you see I have been giving some thought to your words and you could be right. I believe I understand at last why I feel the need for the assurance of *The Songstress*. ~
 	IF ~~ THEN REPLY ~Why is that, surely you are not doubting your own abilities?~ GOTO PCM6Leina3
 	IF ~~ THEN REPLY ~Why do you say that you feel you need reassurance Leina, you are a very confident lady in my eyes?~ GOTO PCM6Leina3
 	IF ~~ THEN REPLY ~I am pleased my words were of some help.~ GOTO PCM6Leina3
@@ -3301,22 +3301,22 @@ Gender(Player1,MALE)~ THEN BEGIN PCM7Leina1
 	SAY ~(*Leina walks up you and plants a kiss on your mouth*) Thank you.~
 =
 	~(*You are taken aback by the sudden feel of soft warm lips on your own*)~
-	IF ~~ THEN REPLY ~You’re welcome Leina, but tell me, what have I done to deserve so pleasurable a reward?~ GOTO PCM7Leina2
-	IF ~~ THEN REPLY ~Mmm... tell me what I did and I’ll do it again?~ GOTO PCM7Leina2
+	IF ~~ THEN REPLY ~Youï¿½re welcome Leina, but tell me, what have I done to deserve so pleasurable a reward?~ GOTO PCM7Leina2
+	IF ~~ THEN REPLY ~Mmm... tell me what I did and Iï¿½ll do it again?~ GOTO PCM7Leina2
 	IF ~OR(6)
 Global("JaheiraRomanceActive","GLOBAL",1)
 Global("JaheiraRomanceActive","GLOBAL",2)
 Global("AerieRomanceActive","GLOBAL",1)
 Global("AerieRomanceActive","GLOBAL",2)
 Global("ViconiaRomanceActive","GLOBAL",1)
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we don’t want to give anyone the wrong impression?~ DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ GOTO PCM7Leina11
+Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we donï¿½t want to give anyone the wrong impression?~ DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ GOTO PCM7Leina11
 	IF ~!Global("JaheiraRomanceActive","GLOBAL",1)
 !Global("JaheiraRomanceActive","GLOBAL",2)
 !Global("AerieRomanceActive","GLOBAL",1)
 !Global("AerieRomanceActive","GLOBAL",2)
 !Global("ViconiaRomanceActive","GLOBAL",1)
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we don’t want to give anyone the wrong impression?~ GOTO PCM7Leina12 
-	IF ~~ THEN REPLY ~Leina, I didn’t know you cared... does this mean we are engaged?~ GOTO PCM7Leina13
+!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we donï¿½t want to give anyone the wrong impression?~ GOTO PCM7Leina12
+	IF ~~ THEN REPLY ~Leina, I didnï¿½t know you cared... does this mean we are engaged?~ GOTO PCM7Leina13
 END
 
 IF ~~ THEN BEGIN PCM7Leina2
@@ -3331,16 +3331,16 @@ END
 IF ~~ THEN BEGIN PCM7Leina3
 	SAY ~I still have no idea whether I saw my lady The Songstress or whether it was a vision my mind conjured in order to convince me of my path in this life. All I do know is that talking to you and bringing my doubts to the surface gave me the chance to look closer at them... close enough for me to deal with them.~
 	IF ~~ THEN REPLY ~That is good to hear Leina, and does this mean that I still have my bard to cheer the dark days that still lie ahead of us?~ GOTO PCM7Leina4
-	IF ~~ THEN REPLY ~I hope this doesn’t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
-	IF ~~ THEN REPLY ~Leina, please don’t say that you no longer see yourself as a bard and wish to leave my side! Your skills are needed... as are you. It’s no secret how dear you have become to me.~ GOTO PCM7Leina5
-	IF ~~ THEN REPLY ~I am pleased that you have found your way at last, but at the same time I’m afraid to ask your decision... afraid that I will lose my bard.~ GOTO PCM7Leina5
+	IF ~~ THEN REPLY ~I hope this doesnï¿½t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
+	IF ~~ THEN REPLY ~Leina, please donï¿½t say that you no longer see yourself as a bard and wish to leave my side! Your skills are needed... as are you. Itï¿½s no secret how dear you have become to me.~ GOTO PCM7Leina5
+	IF ~~ THEN REPLY ~I am pleased that you have found your way at last, but at the same time Iï¿½m afraid to ask your decision... afraid that I will lose my bard.~ GOTO PCM7Leina5
 END
 
 IF ~~ THEN BEGIN PCM7Leina4
 	SAY ~I am and always will be a bard <CHARNAME>... how can I be anything else when I have so great a love for music!~
 =
-	~I didn’t choose music as a career, it chose me from the moment I first drew breath. It has just taken me a long time to see, that to be able to give birth to a song, to a melody, is a gift and not a skill a person learns.~
-= 
+	~I didnï¿½t choose music as a career, it chose me from the moment I first drew breath. It has just taken me a long time to see, that to be able to give birth to a song, to a melody, is a gift and not a skill a person learns.~
+=
 	~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
 =
 	~Leina is a bard and she is content.~
@@ -3351,10 +3351,10 @@ END
 IF ~~ THEN BEGIN PCM7Leina5
 	SAY ~(*A frown crosses her forehead for a second*)...~
 =
-	~I... that is... you are very special to me too <CHARNAME> and I don’t want to leave the group, but none of us here know what tomorrow holds... there may come a time when parting is unavoidable.~
+	~I... that is... you are very special to me too <CHARNAME> and I donï¿½t want to leave the group, but none of us here know what tomorrow holds... there may come a time when parting is unavoidable.~
 =
 	~As for my career... well, I now know that I am and always will be a bard. It has just taken me a long time to see, that to be able to give birth to a song, to a melody is a gift and not a skill a person learns.~
-= 
+=
 	~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
 =
 	~Your bard is still a bard and she is content.~
@@ -3367,18 +3367,18 @@ IF ~~ THEN BEGIN PCM7Leina6
 =
 	~Yes <CHARNAME>... it was your words that made me look more closely at my doubts and in doing so I was able to deal with them... and discover who I am.~
 =
-	~I still have no idea whether I saw my lady The Songstress or not, but now and for some reason I can’t explain, I no longer feel the need to know... I know my way.~
+	~I still have no idea whether I saw my lady The Songstress or not, but now and for some reason I canï¿½t explain, I no longer feel the need to know... I know my way.~
 	IF ~~ THEN REPLY ~That is good to hear Leina, and does this mean that I still have my bard to cheer the dark days that still lie ahead of us?~ GOTO PCM7Leina4
-	IF ~~ THEN REPLY ~I hope this doesn’t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
-	IF ~~ THEN REPLY ~Leina, please don’t say that you no longer see yourself as a bard and wish to leave my side! Your skills are needed... as are you. It’s no secret how dear you have become to me.~ GOTO PCM7Leina5
-	IF ~~ THEN REPLY ~I am pleased that you have found your way at last, but at the same time I’m afraid to ask your decision... afraid that I will lose my bard.~ GOTO PCM7Leina5
+	IF ~~ THEN REPLY ~I hope this doesnï¿½t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
+	IF ~~ THEN REPLY ~Leina, please donï¿½t say that you no longer see yourself as a bard and wish to leave my side! Your skills are needed... as are you. Itï¿½s no secret how dear you have become to me.~ GOTO PCM7Leina5
+	IF ~~ THEN REPLY ~I am pleased that you have found your way at last, but at the same time Iï¿½m afraid to ask your decision... afraid that I will lose my bard.~ GOTO PCM7Leina5
 END
 
 IF ~~ THEN BEGIN PCM7Leina7
 	SAY ~(*She laughs as she draws her finger from your mouth and gently across your cheek*)...~
 =
 	~No, a man can not be blamed, for it is in the nature of a woman to ensure that many a man tastes but a sample of the honey, before she decides which man she gives the sweetest of delicacies to...~
-= 
+=
 	~Many a man is left yearning for that which he will never taste... whereas others acquire a sweet tooth too soon, and fail to recognise the delicacy for what it is when it is given.~
 	IF ~~ THEN REPLY ~Then perhaps the lady would be interested to know that this man does not have a sweet tooth and seldom seeks the honey pot. For him to express a desire for honey, it must be a very special honey that he seeks.~ GOTO PCM7Leina8
 	IF ~~ THEN REPLY ~Because I admit to having had a sweet tooth in the past Leina, am I to take it that you look upon me as shallow and insensitive?~ GOTO PCM7Leina9
@@ -3416,20 +3416,20 @@ SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
 END	
 
 IF ~~ THEN BEGIN PCM7Leina11
-	SAY ~(*She laughs softly*) I am sorry, that wasn’t very discreet of me I know, a spur of the moment thank you to a dear friend.~
-= 
+	SAY ~(*She laughs softly*) I am sorry, that wasnï¿½t very discreet of me I know, a spur of the moment thank you to a dear friend.~
+=
 	~I may not seek love for myself but I am not against those who do, nor would I deliberately set out to spoil it for those who believe they have found it. I have noticed how your eyes brighten when she is close by, we all have.~
-= 
+=
 	~If she brings a song to your heart then be happy and treasure her and every moment that you spend together, for today is a but a brief moment in time and tomorrow comes all too soon.~
 =
 	~Mine was but a kiss from a friend, to say thank you for taking the time to help me get my head straight again.~				
 	IF ~~ THEN REPLY ~Then I take it you have decided whether to be a bard or not to be a bard?~ GOTO PCM7Leina4
 	IF ~~ THEN REPLY ~That is good to hear Leina, and does this mean that the group can look forward you cheering us all through the dark days that still lie ahead of us?~ GOTO PCM7Leina4
-	IF ~~ THEN REPLY ~I hope this doesn’t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
+	IF ~~ THEN REPLY ~I hope this doesnï¿½t mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ GOTO PCM7Leina4
 END
 
 IF ~~ THEN BEGIN PCM7Leina12
-	SAY ~(*She laughs softly*) I am sorry <CHARNAME>, that wasn’t very discreet of me I know and I didn’t mean to embarrass you, but I see nothing wrong in one friend giving another dear friend a kiss as way of saying thank you.~
+	SAY ~(*She laughs softly*) I am sorry <CHARNAME>, that wasnï¿½t very discreet of me I know and I didnï¿½t mean to embarrass you, but I see nothing wrong in one friend giving another dear friend a kiss as way of saying thank you.~
 =
 	~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful...~
 =
@@ -3443,13 +3443,13 @@ IF ~~ THEN BEGIN PCM7Leina13
 	SAY ~(*She puts her hand to her mouth and feigns shock*)... <CHARNAME>... what sort of a girl do you take me for... I never engage after a first kiss!~
 	IF ~~ THEN REPLY ~Ah... and it was such a tender kiss my lovely Leina. Here I was hoping, that if we were betrothed, we would share many more such moments.~ GOTO PCM7Leina14
 	IF ~~ THEN REPLY ~Then if it takes two, please... (*Pursing your lips and closing your eyes you lean towards her*)...~ GOTO PCM7Leina14
-	IF ~~ THEN REPLY ~More’s the pity for me. If not to announce our betrothal, then tell me, what have I done to deserve so pleasurable a reward?~ GOTO PCM7Leina2
+	IF ~~ THEN REPLY ~Moreï¿½s the pity for me. If not to announce our betrothal, then tell me, what have I done to deserve so pleasurable a reward?~ GOTO PCM7Leina2
 END
 
 IF ~~ THEN BEGIN PCM7Leina14
 	SAY ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and presses it to your lips instead*)...~
 =
- ~Let’s not complicate our friendship with long term thoughts and wishes <CHARNAME>, even if they are spoken in jest.~
+ ~Letï¿½s not complicate our friendship with long term thoughts and wishes <CHARNAME>, even if they are spoken in jest.~
 =
 	~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful.~
 =
@@ -3465,22 +3465,22 @@ Gender(Player1,MALE)~ THEN BEGIN PCM8Leina1
 	IF ~~ THEN REPLY ~A wish, what are you babbling about girl?~ GOTO PCM8Leina2
 	IF ~~ THEN REPLY ~I have made many a wish on many a night such as this, why should this one be any different?~ GOTO PCM8Leina2
 	IF ~~ THEN REPLY ~I have only one wish in my heart, and if it should be granted me... it will not be by the grace of the gods nor by fate herself.~ GOTO PCM8Leina7
-	IF ~~ THEN REPLY ~Superstitious nonsense! I didn’t take you as a believer in superstition Leina.~ GOTO PCM8Leina11 
+	IF ~~ THEN REPLY ~Superstitious nonsense! I didnï¿½t take you as a believer in superstition Leina.~ GOTO PCM8Leina11
 END
 
 IF ~~ THEN BEGIN PCM8Leina2
 	SAY ~(*She points to the sky again*)... See, not only is there a full moon tonight but a star is falling as well... two omens that bring good luck if wished upon, but you must be quick, before the star touches the ground.~
 	IF ~~ THEN REPLY ~Then I wish good health to Leina, so that she may continue to bring the joy to the world that she has brought to me.~ GOTO PCM8Leina3
 	IF ~~ THEN REPLY ~I wish only for happiness to come your way Leina, "...and may she one day take the time to look closer to home and see that there is one who cares and wishes only to see her happy."~ GOTO PCM8Leina3
-	IF ~~ THEN REPLY ~If the gods grant me just the one wish, then I wish for a speedy end to this nightmare so’s I can set about making my life my own once more.~ GOTO PCM8Leina5
+	IF ~~ THEN REPLY ~If the gods grant me just the one wish, then I wish for a speedy end to this nightmare soï¿½s I can set about making my life my own once more.~ GOTO PCM8Leina5
 	IF ~~ THEN REPLY ~I ask only one thing... that the gods lift this curse from me and I become simply, <CHARNAME> of Candlekeep once again.~ GOTO PCM8Leina5
-	IF ~~ THEN REPLY ~Superstitious nonsense! I didn’t take you as a believer in superstition Leina.~ GOTO PCM8Leina11
+	IF ~~ THEN REPLY ~Superstitious nonsense! I didnï¿½t take you as a believer in superstition Leina.~ GOTO PCM8Leina11
 END
 
 IF ~~ THEN BEGIN PCM8Leina3
-	SAY ~(*She looks up at you, surprise on her face*)... With all that’s going on in your life, you give your wish to me? You are truly a remarkable person <CHARNAME>.~
+	SAY ~(*She looks up at you, surprise on her face*)... With all thatï¿½s going on in your life, you give your wish to me? You are truly a remarkable person <CHARNAME>.~
 =
-	~It’s just as well that I wished for a future free of conflict and persecution for you... seeing as how you didn’t.~
+	~Itï¿½s just as well that I wished for a future free of conflict and persecution for you... seeing as how you didnï¿½t.~
 	IF ~~ THEN REPLY ~(*You touch the hand, that is still held firmly by your own, to your lips*)... I thank the lady for her kind thoughts and her wish.~ GOTO PCM8Leina4
 	IF ~~ THEN REPLY ~Let us hope the gods grant both our wishes and we both get to live long, happy lives.~ GOTO PCM8Leina4
 	IF ~~ THEN REPLY ~If the gods grant but one wish per falling star, then I hope they look favourably upon mine.~ GOTO PCM8Leina4
@@ -3488,7 +3488,7 @@ END
 
 IF ~~ THEN BEGIN PCM8Leina4
 	SAY ~(*Sadly*) Look, the star, it is no more! Is it not sad that its brilliance is lost to us forever... no more will it shine for us to stare up and wonder at its beauty?~
-= 
+=
 	~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
 END		
@@ -3503,7 +3503,7 @@ IF ~~ THEN BEGIN PCM8Leina5
 	IF ~~ THEN REPLY ~(*You touch the hand, that is still held firmly by your own, to your lips*)... I thank the lady for her kind thoughts and her wish.~ GOTO PCM8Leina4
 	IF ~~ THEN REPLY ~I thank you... you have been generous with your wishes. Surely with you wishing on my behalf, the gods will look upon it as a selfless act and in granting you yours, give me mine also.~ GOTO PCM8Leina4
 	IF ~~ THEN REPLY ~Why thank you Leina, that is very thoughtful of you.~ GOTO PCM8Leina4
-	IF ~~ THEN REPLY ~Now I feel like a cad! I thought only of myself and how I want a change in my life, whilst you use your wish selflessly. I can not take it back but the next time a star falls, we will both wish for Leina’s happiness.~ GOTO PCM8Leina6
+	IF ~~ THEN REPLY ~Now I feel like a cad! I thought only of myself and how I want a change in my life, whilst you use your wish selflessly. I can not take it back but the next time a star falls, we will both wish for Leinaï¿½s happiness.~ GOTO PCM8Leina6
 END
 
 IF ~~ THEN BEGIN PCM8Leina6
@@ -3512,13 +3512,13 @@ IF ~~ THEN BEGIN PCM8Leina6
 	~I have a couple of issues still to work through but I am confident that when I confront them, I now have the strength to resolve them without the aid of wishes...~
 =
 	~...but look <CHARNAME>, the star, it is no more! Is it not sad that its brilliance is lost to us forever... no more will it shine for us to stare up and wonder at its beauty?~
-= 
+=
 	~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
 END	
 
 IF ~~ THEN BEGIN PCM8Leina7
-	SAY ~You can’t know that <CHARNAME>, no one knows how much the gods or even fate take a hand in our lives.~
+	SAY ~You canï¿½t know that <CHARNAME>, no one knows how much the gods or even fate take a hand in our lives.~
 =
 	~(*She points to the sky again*)... Come, make your wish, see, not only is there a full moon tonight but a star is falling as well... two omens that bring luck if wished upon, but you must be quick, before the star touches the ground.~
 	IF ~~ THEN REPLY ~I wish only for happiness to come your way Leina, "...and may she one day take the time to look closer to home and see that there is one who cares and wishes only to see her happy".~ GOTO PCM8Leina3
@@ -3528,20 +3528,20 @@ END
 
 IF ~~ THEN BEGIN PCM8Leina8
 	SAY ~(*She laughs*)... I thank you for your wish <CHARNAME>, but I think it is not as selfless as it first appears.~
-= 
-	~It has often been told to me that when it comes to raising one’s moral there is nothing like a good hearty song and who better to deliver the song than a bard.~
-= 
-	~Don’t worry that I have seen through your ruse, for this bard is more than content to remain in the company of those who appreciate her melodies.~
-= 
+=
+	~It has often been told to me that when it comes to raising oneï¿½s moral there is nothing like a good hearty song and who better to deliver the song than a bard.~
+=
+	~Donï¿½t worry that I have seen through your ruse, for this bard is more than content to remain in the company of those who appreciate her melodies.~
+=
 	~After all, what is music for if not to enrich the lives of others and to bring hope to everyone.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
 END	
 
 IF ~~ THEN BEGIN PCM8Leina9
 	SAY ~Aha! Me thinks <CHARNAME> has a secret fantasy, or maybe a secret desire he is too shy to share.~
-= 
+=
 	~Maybe he has his eye on a lady and he needs the gods intervention in getting her to look his way? What a wasted wish that would be, for if the lady has not looked your way on her own accord, and the gods force her head around, could you be sure that her feelings are true and not put in her heart by them?~
-	IF ~~ THEN REPLY ~Don’t be daft Leina!~ GOTO PCM8Leina10
+	IF ~~ THEN REPLY ~Donï¿½t be daft Leina!~ GOTO PCM8Leina10
 	IF ~~ THEN REPLY ~Oho... you are good Leina, but there is no way you will wheedle it out of me with your idle questions.~ GOTO PCM8Leina10
 	IF ~~ THEN REPLY ~Remember the fate of the cat who let curiosity get the better of it Leina?~ GOTO PCM8Leina10
 END
@@ -3550,31 +3550,31 @@ IF ~~ THEN BEGIN PCM8Leina10
 	SAY ~Then it is a shame that the star is no more, for I would have wished to know what it was that you wished so secretly for, but the moment is gone.~
 =
 	~As brilliantly as it shines as it travels across the skies, it is sad when a star falls for it is lost to us forever... no more will it shine for us to stare up and wonder at its beauty.~
-= 
+=
 	~I hope you get your wish, whatever it was, but for now we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
 END
 
 IF ~~ THEN BEGIN PCM8Leina11
-	SAY ~I don’t normally. I am well aware that the moon has her cycles and is regularly seen shining in all her splendour... I have even, on occasion, stood and watched a star as it dies and plunges to the ground, but I have never been witness to both events happening in the same sky.~
-= 
+	SAY ~I donï¿½t normally. I am well aware that the moon has her cycles and is regularly seen shining in all her splendour... I have even, on occasion, stood and watched a star as it dies and plunges to the ground, but I have never been witness to both events happening in the same sky.~
+=
 	~If there was a time to believe in omens then tonight is such a time.~
-= 
+=
 	~Come, before the star touches the ground, throw caution to the wind and make a wish.~
-	IF ~~ THEN REPLY ~Forget it, such nonsense is for lovers and bards.~ GOTO PCM8Leina12 
-	IF ~~ THEN REPLY ~I don’t believe in omens, and as for wishes, I have yet to meet someone whom the gods have looked on fondly enough to grant them a wish, but don’t let me stop you.~ GOTO PCM8Leina13
+	IF ~~ THEN REPLY ~Forget it, such nonsense is for lovers and bards.~ GOTO PCM8Leina12
+	IF ~~ THEN REPLY ~I donï¿½t believe in omens, and as for wishes, I have yet to meet someone whom the gods have looked on fondly enough to grant them a wish, but donï¿½t let me stop you.~ GOTO PCM8Leina13
 	IF ~~ THEN REPLY ~It is because I have been touched by a god that my life is as troubled as it is. I am not about to risk being touched again by begging for some boon from them.~ GOTO PCM8Leina14
-	IF ~~ THEN REPLY ~Let me guess, you are going to ask the gods to miraculously turn back time so’s you can put everything right and live happily ever after?~ GOTO PCM8Leina17
+	IF ~~ THEN REPLY ~Let me guess, you are going to ask the gods to miraculously turn back time soï¿½s you can put everything right and live happily ever after?~ GOTO PCM8Leina17
 END
 
 IF ~~ THEN BEGIN PCM8Leina12
 	SAY ~You forget <CHARNAME>, I am a bard, so maybe I will just go ahead and do the bardic nonsense thing. (*She turns her attention back to the skies.*)~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN PCM8Leina13
-	SAY ~Just because you haven’t met them it doesn’t mean they aren’t out there. Maybe there are those who prefer to keep their good fortune to themselves, fearing the consequence if they let it be known that they have been favoured by the gods.~
-= 
+	SAY ~Just because you havenï¿½t met them it doesnï¿½t mean they arenï¿½t out there. Maybe there are those who prefer to keep their good fortune to themselves, fearing the consequence if they let it be known that they have been favoured by the gods.~
+=
 	~You yourself should understand the implications of letting the world know you have been touched by a god.~
 =
 	~I know nothing of omens but maybe just this once I will throw caution to the wind and make my wish. (*Turning her back on you she looks once again to the skies.*)~
@@ -3582,9 +3582,9 @@ IF ~~ THEN BEGIN PCM8Leina13
 END 	
 
 IF ~~ THEN BEGIN PCM8Leina14
-	SAY ~There is but one god to blame for your troubles and he is dead. Regardless of your connection to Bhaal, who’s to say the others won’t look upon you favourable... make your wish, what have you to lose?~
+	SAY ~There is but one god to blame for your troubles and he is dead. Regardless of your connection to Bhaal, whoï¿½s to say the others wonï¿½t look upon you favourable... make your wish, what have you to lose?~
 	IF ~~ THEN REPLY ~Forget it, such nonsense is for lovers and bards.~ GOTO PCM8Leina12
-	IF ~~ THEN REPLY ~If the gods grant me just the one wish, then I wish for a speedy end to this nightmare so’s I can get on with my life unmolested.~ GOTO PCM8Leina15
+	IF ~~ THEN REPLY ~If the gods grant me just the one wish, then I wish for a speedy end to this nightmare soï¿½s I can get on with my life unmolested.~ GOTO PCM8Leina15
 	IF ~~ THEN REPLY ~Then I wish for the gods to protect me from bards and their childish notions.~ GOTO PCM8Leina16
 END
 	
@@ -3599,12 +3599,12 @@ IF ~~ THEN BEGIN PCM8Leina15
 =
 	~Now all we need is patience and we will see if the gods have favoured us tonight.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN PCM8Leina16
 	SAY ~Done! That is one wish you will not have to wait for the favour of the gods, as from this moment you will not be bothered by this bard. She will keep her notions to herself and her presence at a distance in future.~
 =
-	~Now, please leave me to reflect on the last moments of that star’s beauty before it is lost forever. (*Turning her back on you she looks once again to the skies.*)~
+	~Now, please leave me to reflect on the last moments of that starï¿½s beauty before it is lost forever. (*Turning her back on you she looks once again to the skies.*)~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END 	
@@ -3613,10 +3613,10 @@ IF ~~ THEN BEGIN PCM8Leina17
 	SAY ~I have had time to contemplate my life and whereas it has not been easy and I have a lot of regrets, I think I have grown into who I am because of them.~
 =	
 	~To change things now would undoubtably change me and whose to say I would like the person I became.~
-= 
+=
 	~No, I will not ask the gods to tamper with time, I am confident that I will work out any remaining issues I have without the aid of wishes.~
-= 
-	~I am happy and have no need to ask for a happy ever after life... as for my wish, that I will keep to myself, now if you’ll excuse me... (*Turning her back on you she looks once again to the skies.*)~
+=
+	~I am happy and have no need to ask for a happy ever after life... as for my wish, that I will keep to myself, now if youï¿½ll excuse me... (*Turning her back on you she looks once again to the skies.*)~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
 END
 
@@ -3634,16 +3634,16 @@ IF WEIGHT #-1 ~Global("VP_Ric_ClericQuest","LOCALS",1)~ THEN BEGIN ClericQuest1
 END		
 
 IF ~~ THEN BEGIN ClericQuest2
-	SAY ~Just look at the filth on my boots <CHARNAME>! I don’t think we would be welcome at the Mithrest Inn this day, but we could clean up at the Five Flagons, Samuel will understand. What say you?~
-	IF ~~ THEN REPLY ~Leina it can wait. Let’s collect our reward and get out of here.~ GOTO ClericQuest3
-	IF ~~ THEN REPLY ~To me, you look just as cute when dirty as you do clean, so let’s get our reward first.~ GOTO ClericQuest3
-	IF ~~ THEN REPLY ~I’m in charge here.. and I don’t recall asking for your opinion! So put a clamp on it until I do!~ GOTO ClericQuest6
+	SAY ~Just look at the filth on my boots <CHARNAME>! I donï¿½t think we would be welcome at the Mithrest Inn this day, but we could clean up at the Five Flagons, Samuel will understand. What say you?~
+	IF ~~ THEN REPLY ~Leina it can wait. Letï¿½s collect our reward and get out of here.~ GOTO ClericQuest3
+	IF ~~ THEN REPLY ~To me, you look just as cute when dirty as you do clean, so letï¿½s get our reward first.~ GOTO ClericQuest3
+	IF ~~ THEN REPLY ~Iï¿½m in charge here.. and I donï¿½t recall asking for your opinion! So put a clamp on it until I do!~ GOTO ClericQuest6
 	IF ~~ THEN REPLY ~Sounds like a great idea. What say you Leina, is it ale and rest for our weary bones now or later?~ GOTO ClericQuest7
 END
 
 IF ~~ THEN BEGIN ClericQuest3
-	SAY ~I don’t think you’re looking past your nose, or should that be not smelling with it right now.~
-	IF ~~ THEN REPLY ~Enough of your wise cracks, let’s get to the temple!~ GOTO ClericQuest4
+	SAY ~I donï¿½t think youï¿½re looking past your nose, or should that be not smelling with it right now.~
+	IF ~~ THEN REPLY ~Enough of your wise cracks, letï¿½s get to the temple!~ GOTO ClericQuest4
 	IF ~~ THEN REPLY ~I smell with it just fine. Anyway, you should look in a mirror now and then.~ GOTO ClericQuest5
 END
 
@@ -3653,12 +3653,12 @@ IF ~~ THEN BEGIN ClericQuest4
 END	
 
 IF ~~ THEN BEGIN ClericQuest5
-	SAY ~(*Sighing*) Yes, well I’m guessing you don’t have a clue which way the wind is blowing right now.~
+	SAY ~(*Sighing*) Yes, well Iï¿½m guessing you donï¿½t have a clue which way the wind is blowing right now.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~ EXIT
 END	
 
 IF ~~ THEN BEGIN ClericQuest6
-	SAY ~I’m not challenging your right to lead, so there’s no need for you to be getting so testy!~
+	SAY ~Iï¿½m not challenging your right to lead, so thereï¿½s no need for you to be getting so testy!~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~ EXIT
 END	
 
@@ -3667,7 +3667,7 @@ IF ~~ THEN BEGIN ClericQuest7
 	IF ~~ THEN REPLY ~Hmm... never one to say no to a bit of carousing and whatever else may follow!~ GOTO ClericQuest8
 	IF ~~ THEN REPLY ~I might hum a little but I will certainly enjoy *watching* the show more.~ GOTO ClericQuest8
 	IF ~~ THEN REPLY ~Ale and plenty of it... guaranteed to help one lose ones inhibitions eh?~ GOTO ClericQuest8
-	IF ~~ THEN REPLY ~I’m more than ready for a hot bath Leina but carousing after such a hard day... let’s just see how it goes.~ GOTO ClericQuest8a
+	IF ~~ THEN REPLY ~Iï¿½m more than ready for a hot bath Leina but carousing after such a hard day... letï¿½s just see how it goes.~ GOTO ClericQuest8a
 END
 
 IF ~~ THEN BEGIN ClericQuest8
@@ -3682,10 +3682,10 @@ END
 	
 IF WEIGHT #-2 ~Global("VP_Ric_ClericQuest","LOCALS",3)~ THEN BEGIN ClericQuest9
 	SAY ~Uh, please wait up a moment <CHARNAME>, I have something very important to ask you.~
-	IF ~~ THEN REPLY ~It can wait Leina... preferably until after we’ve concluded our business here.~ GOTO ClericQuest11
-	IF ~~ THEN REPLY ~I’m tired Leina, I’m not in the mood for twenty questions so let it rest.~ GOTO ClericQuest10
-	IF ~~ THEN REPLY ~You’re going to ask me no matter what so let’s get this over with now.~ GOTO ClericQuest15
-	IF ~~ THEN REPLY ~Shhhh... not so loud! We’re in a temple so keep your voice down. Now, what is it?~ GOTO ClericQuest16
+	IF ~~ THEN REPLY ~It can wait Leina... preferably until after weï¿½ve concluded our business here.~ GOTO ClericQuest11
+	IF ~~ THEN REPLY ~Iï¿½m tired Leina, Iï¿½m not in the mood for twenty questions so let it rest.~ GOTO ClericQuest10
+	IF ~~ THEN REPLY ~Youï¿½re going to ask me no matter what so letï¿½s get this over with now.~ GOTO ClericQuest15
+	IF ~~ THEN REPLY ~Shhhh... not so loud! Weï¿½re in a temple so keep your voice down. Now, what is it?~ GOTO ClericQuest16
 END
 
 IF ~~ THEN BEGIN ClericQuest10
@@ -3696,37 +3696,37 @@ END
 IF ~~ THEN BEGIN ClericQuest11
 	SAY ~No it can not wait. Unless of course you care little about what you do, or the impression you make on others!~
 	IF ~~ THEN REPLY ~I care about what I do but your constant chattering gets annoying sometimes.~ GOTO ClericQuest12
-	IF ~~ THEN REPLY ~I wouldn’t be here if it didn’t matter to me what I do.~ GOTO ClericQuest12
-	IF ~~ THEN REPLY ~I’m not here to worry about appearances...anyway after what we’ve just gone through I think we all look pretty impressive.~ GOTO ClericQuest12
+	IF ~~ THEN REPLY ~I wouldnï¿½t be here if it didnï¿½t matter to me what I do.~ GOTO ClericQuest12
+	IF ~~ THEN REPLY ~Iï¿½m not here to worry about appearances...anyway after what weï¿½ve just gone through I think we all look pretty impressive.~ GOTO ClericQuest12
 END
 
 IF ~~ THEN BEGIN ClericQuest12
 	SAY ~Still, may I make a suggestion before we go any farther?~
-	IF ~~ THEN REPLY ~In about five minutes you can, after we’ve collected our reward that is.~ GOTO ClericQuest13
-	IF ~~ THEN REPLY ~Oh and now it changes from a question to a suggestion... do you think that just because you use different words you’re going to get your way, missy?~ GOTO ClericQuest14
+	IF ~~ THEN REPLY ~In about five minutes you can, after weï¿½ve collected our reward that is.~ GOTO ClericQuest13
+	IF ~~ THEN REPLY ~Oh and now it changes from a question to a suggestion... do you think that just because you use different words youï¿½re going to get your way, missy?~ GOTO ClericQuest14
 END
 
 IF ~~ THEN BEGIN ClericQuest13
-	SAY ~If that is what you want to do then so be it but do try to remember that we are in a temple and a little decorum wouldn’t go amiss.~
+	SAY ~If that is what you want to do then so be it but do try to remember that we are in a temple and a little decorum wouldnï¿½t go amiss.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
 END
 
 IF ~~ THEN BEGIN ClericQuest14
-	SAY ~Whatever, but you may do well to remember it’s not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
+	SAY ~Whatever, but you may do well to remember itï¿½s not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
 END
 
 IF ~~ THEN BEGIN ClericQuest15
-	SAY ~Shhh, keep your voice down... we are in a temple, not some rag-tag tavern. Now since you didn’t listen to me when we were outside. Are you going to hush now?~
-	IF ~~ THEN REPLY ~Listen, if I want to yell I’ll yell! Now, are you going to tell me what it is you want or not?~ GOTO ClericQuest15a
+	SAY ~Shhh, keep your voice down... we are in a temple, not some rag-tag tavern. Now since you didnï¿½t listen to me when we were outside. Are you going to hush now?~
+	IF ~~ THEN REPLY ~Listen, if I want to yell Iï¿½ll yell! Now, are you going to tell me what it is you want or not?~ GOTO ClericQuest15a
 	IF ~~ THEN REPLY ~Listen, you, along with everyone else here thought this quest was a good idea! I know how we got here and why, so just spit out whatever it is you want or shut up!~ GOTO ClericQuest15a
 END
 
 IF ~~ THEN BEGIN ClericQuest16
-	SAY ~Don’t tell me to shush when your yelling enough to waken the dead yourself! Whose fault is it anyway we’re in this mess and we stink to high heaven?~
-	IF ~~ THEN REPLY ~Listen, if I want to yell I’ll yell! Now, are you going to tell me what it is you want or not?~ GOTO ClericQuest15a
+	SAY ~Donï¿½t tell me to shush when your yelling enough to waken the dead yourself! Whose fault is it anyway weï¿½re in this mess and we stink to high heaven?~
+	IF ~~ THEN REPLY ~Listen, if I want to yell Iï¿½ll yell! Now, are you going to tell me what it is you want or not?~ GOTO ClericQuest15a
 	IF ~~ THEN REPLY ~Listen, you, along with everyone else here thought this quest was a good idea! I know how we got here and why, so just spit out whatever it is you want or shut up!~ GOTO ClericQuest15a
-END 
+END
 
 IF ~~ THEN BEGIN ClericQuest15a
 	SAY ~Keep your voice done!~
@@ -3740,7 +3740,7 @@ IF ~~ THEN BEGIN ClericQuest15a
 	IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ141
 	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ499 
+!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ499
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ 87
 END	
@@ -3748,21 +3748,21 @@ END
 IF ~~ THEN BEGIN ClericQuest17
 	SAY ~If you would just stop and hear me out here <CHARNAME>, we can get out of here with a little dignity and without stinking the place out.~
 	IF ~~ THEN REPLY ~Look, all I want is to get done here and to get to an inn as quickly as possible.~ GOTO ClericQuest18
-	IF ~~ THEN REPLY ~Yes Leina, I know that we stink in more ways then one so let’s conclude our business and get out of here.~ GOTO ClericQuest18
+	IF ~~ THEN REPLY ~Yes Leina, I know that we stink in more ways then one so letï¿½s conclude our business and get out of here.~ GOTO ClericQuest18
 END
 
 IF ~~ THEN BEGIN ClericQuest18
-	SAY ~Yes that is just it. If you won’t be so darn hard headed, we could go to an inn first and come back when we have made ourselves a little more presentable.~
+	SAY ~Yes that is just it. If you wonï¿½t be so darn hard headed, we could go to an inn first and come back when we have made ourselves a little more presentable.~
 	IF ~~ THEN REPLY ~Why do we need to go to an in first... why traipse across the city only to have to traipse all the way back? We may as well finish up here first, save our legs.~ GOTO ClericQuest19
-	IF ~~ THEN REPLY ~Don’t you call me hard headed, you who is as stubborn as a mule herself! Let’s finish our business and then we can go to the inn... I may even let you pick which one!~ GOTO ClericQuest19
+	IF ~~ THEN REPLY ~Donï¿½t you call me hard headed, you who is as stubborn as a mule herself! Letï¿½s finish our business and then we can go to the inn... I may even let you pick which one!~ GOTO ClericQuest19
 END
 
 IF ~~ THEN BEGIN ClericQuest19
 	SAY ~Your nose may not be working, but are you blind as well as deaf? Look at the mess on the carpet and the sewer grime on our clothes. We will make a better impression if we partake in a hot bath and the luxury of warm fluffy warm towels first.~
 =
 	~The job is done the reward can wait, and please, keep your voice down.~
-	IF ~~ THEN REPLY ~Look who is calling the kettle black, just keep YOUR voice down and we’ll get to an inn soon enough.~ GOTO ClericQuest19a
-	IF ~~ THEN REPLY ~You’ll get to your bath soon enough! The reward first and then we can enjoy more of what the inn has to offer.~ GOTO ClericQuest19a
+	IF ~~ THEN REPLY ~Look who is calling the kettle black, just keep YOUR voice down and weï¿½ll get to an inn soon enough.~ GOTO ClericQuest19a
+	IF ~~ THEN REPLY ~Youï¿½ll get to your bath soon enough! The reward first and then we can enjoy more of what the inn has to offer.~ GOTO ClericQuest19a
 END
 
 IF ~~ THEN BEGIN ClericQuest19a
@@ -3771,9 +3771,9 @@ IF ~~ THEN BEGIN ClericQuest19a
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ 88
 	IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ2 
+!Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ2
 	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ500 
+!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ500
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ1
 	IF ~InParty("Taffic")
@@ -3793,32 +3793,32 @@ END
 
 IF ~~ THEN BEGIN ClericQuest21
 	SAY ~(*Leina laughs softly and touches your arm*) What are we like?~
-	IF ~~ THEN REPLY ~(*You put your hand over hers as it rests on your arm*) What’s so funny?~ GOTO ClericQuest22
-	IF ~~ THEN REPLY ~You push her hand away... Enough of this, we’ll talk after we get our reward.~ GOTO ClericQuest22a
+	IF ~~ THEN REPLY ~(*You put your hand over hers as it rests on your arm*) Whatï¿½s so funny?~ GOTO ClericQuest22
+	IF ~~ THEN REPLY ~You push her hand away... Enough of this, weï¿½ll talk after we get our reward.~ GOTO ClericQuest22a
 	IF ~~ THEN REPLY ~What is it that you find so amusing?~ GOTO ClericQuest22
 END
 
 IF ~~ THEN BEGIN ClericQuest22
-	SAY ~Look at us, stood here arguing in a temple and smelling like sewer rats. I think we really need to have hot baths with warm fluffy towels before we speak to anyone... after all, we don’t want to over power the incense.~
-	IF ~~ THEN REPLY ~You’re right... we may even get a better reward. So it’s off to The Five Flagons then?~ GOTO ClericQuest23
+	SAY ~Look at us, stood here arguing in a temple and smelling like sewer rats. I think we really need to have hot baths with warm fluffy towels before we speak to anyone... after all, we donï¿½t want to over power the incense.~
+	IF ~~ THEN REPLY ~Youï¿½re right... we may even get a better reward. So itï¿½s off to The Five Flagons then?~ GOTO ClericQuest23
 	IF ~~ THEN REPLY ~It will serve them right to get a wiff of what we have had to endure.~ GOTO ClericQuest22a
 END
 
 IF ~~ THEN BEGIN ClericQuest22a
-	SAY ~If that is what you want to do then so be it but do try to remember it’s not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
+	SAY ~If that is what you want to do then so be it but do try to remember itï¿½s not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END	
 	
 IF ~~ THEN BEGIN ClericQuest23
-	SAY ~I think you’ll clean up just fine. We’ll sneak in the back way so’s we don’t put Samuels patrons off their ale.~
+	SAY ~I think youï¿½ll clean up just fine. Weï¿½ll sneak in the back way soï¿½s we donï¿½t put Samuels patrons off their ale.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
 END
 
 IF WEIGHT #-3 ~Global("VP_Ric_ClericQuest","LOCALS",5)~ THEN BEGIN ClericQuest24
 	SAY ~<CHARNAME>, are you satisfied now?~
-	IF ~~ THEN REPLY ~Leina please, what now? You’ve got your wish we are now heading for the inn.~ GOTO ClericQuest25
-	IF ~~ THEN REPLY ~Look, I’m tired and we all smell, I know, but I am trying to be civil and it is hard. So will you spit out what ever it is that is bugging you and get it over with!~ GOTO ClericQuest26
+	IF ~~ THEN REPLY ~Leina please, what now? Youï¿½ve got your wish we are now heading for the inn.~ GOTO ClericQuest25
+	IF ~~ THEN REPLY ~Look, Iï¿½m tired and we all smell, I know, but I am trying to be civil and it is hard. So will you spit out what ever it is that is bugging you and get it over with!~ GOTO ClericQuest26
 END
 
 IF ~~ THEN BEGIN ClericQuest25
@@ -3827,31 +3827,31 @@ IF ~~ THEN BEGIN ClericQuest25
 END
 
 IF ~~ THEN BEGIN ClericQuest26
-	SAY ~You say you don’t want people to always be looking at you as a curiosity, so if you would stop once in awhile to listen to others we might be able to change that image of yours.~
-	IF ~~ THEN REPLY ~Can’t this conversation wait until after we’ve had an ale or two?~ GOTO ClericQuest26
-	IF ~~ THEN REPLY ~Your right of course, but can’t this conversation wait until we’re out of the temple?~ GOTO ClericQuest27
+	SAY ~You say you donï¿½t want people to always be looking at you as a curiosity, so if you would stop once in awhile to listen to others we might be able to change that image of yours.~
+	IF ~~ THEN REPLY ~Canï¿½t this conversation wait until after weï¿½ve had an ale or two?~ GOTO ClericQuest26
+	IF ~~ THEN REPLY ~Your right of course, but canï¿½t this conversation wait until weï¿½re out of the temple?~ GOTO ClericQuest27
 END
 
 IF ~~ THEN BEGIN ClericQuest27
 	SAY ~No, because this is the best place for this example. We are in a temple and look at how you have just behaved.~
 	IF ~~ THEN REPLY ~Yes we have smashed an evil cult and gotten our reward so what?~ GOTO ClericQuest28
-	IF ~~ THEN REPLY ~I have just collected what was due and now we can have some fun time tonight, what’s so wrong in that?~ GOTO ClericQuest28
+	IF ~~ THEN REPLY ~I have just collected what was due and now we can have some fun time tonight, whatï¿½s so wrong in that?~ GOTO ClericQuest28
 END
 
 IF ~~ THEN BEGIN ClericQuest28
 	SAY ~It is not about the quest or the reward. We are in this elegant temple and you march us in here as if it were a pig sty!~
-= 
-	~I can see by the puzzled look you don’t understand. We have just come from the sewers, what do you think we smell like and who do you think left those tracks on the clean floor?~
+=
+	~I can see by the puzzled look you donï¿½t understand. We have just come from the sewers, what do you think we smell like and who do you think left those tracks on the clean floor?~
 	IF ~~ THEN REPLY ~I see in your point another reason I need to keep you in the group. So what do you suggest we do?~ GOTO ClericQuest29
 	IF ~~ THEN REPLY ~I see and your point being we best get out of here before they try and make us clean it up, yes?~ GOTO ClericQuest32
-	IF ~~ THEN REPLY ~I really don’t care what these people think. I’m a Bhaalspawn and I deserve the fear they have of me.~ GOTO ClericQuest31
+	IF ~~ THEN REPLY ~I really donï¿½t care what these people think. Iï¿½m a Bhaalspawn and I deserve the fear they have of me.~ GOTO ClericQuest31
 END
 
 IF ~~ THEN BEGIN ClericQuest29
 	SAY ~I suggest we get out of here as quickly as possible before they ask us to clean it up... lets high tail it across to the Five Flagons for ale, hot bath, fluffy towels all round and song.~
 	IF ~~ THEN REPLY ~I think we should wipe our feet on the carpet and then run for it?~ GOTO ClericQuest30
 	IF ~~ THEN REPLY ~Why go to an Inn we could jump in the water outside. Perhaps we should have done that in the first place.~ GOTO ClericQuest30
-	IF ~~ THEN REPLY ~I am sure they have workers to deal with such messes and the Five flagons sounds good to me... I’m sure, after all we’ve done for them, they’ll forgive our hasty departure.~ GOTO ClericQuest33
+	IF ~~ THEN REPLY ~I am sure they have workers to deal with such messes and the Five flagons sounds good to me... Iï¿½m sure, after all weï¿½ve done for them, theyï¿½ll forgive our hasty departure.~ GOTO ClericQuest33
 END
 
 IF ~~ THEN BEGIN ClericQuest30
@@ -3860,12 +3860,12 @@ IF ~~ THEN BEGIN ClericQuest30
 END
 
 IF ~~ THEN BEGIN ClericQuest31
-	SAY ~You maybe a Bhaalspawn and deserve to be feared but that’s no excuse to go around smelling like a sewer rat... that’ll only give people cause to avoid you, not fear you.~
+	SAY ~You maybe a Bhaalspawn and deserve to be feared but thatï¿½s no excuse to go around smelling like a sewer rat... thatï¿½ll only give people cause to avoid you, not fear you.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
 END
 
 IF ~~ THEN BEGIN ClericQuest32
-	SAY ~My point exactly, let’s go to the Five Flagons for a hot bath, fluffy towels all round and ale.~
+	SAY ~My point exactly, letï¿½s go to the Five Flagons for a hot bath, fluffy towels all round and ale.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
 END
 
@@ -3888,21 +3888,21 @@ IF ~~ THEN BEGIN DeArnise2
 	SAY ~(*She tips her head and softens her voice*) Are you sure we can not just have a moment... please?~
 	IF ~~ THEN REPLY ~OK, you have your moment Leina.~ GOTO DeArnise4
 	IF ~~ THEN REPLY ~Well, since you put it that way I will hear you out.~ GOTO DeArnise4a
-	IF ~~ THEN REPLY ~No, when I say it’s time to go, then it’s time to go.  I’m the leader here!~ GOTO DeArnise4
+	IF ~~ THEN REPLY ~No, when I say itï¿½s time to go, then itï¿½s time to go.  Iï¿½m the leader here!~ GOTO DeArnise4
 END
 
 IF ~~ THEN BEGIN DeArnise3
 	SAY ~Hummmm... Let me have a look at you... not so sure about that, put a broom in one hand, a bucket in the other... (*She laughs softly*)... seriously, since you have just taken on the responsibility of the Keep do you think it such a good idea just to run off quite so soon?~
-	IF ~~ THEN REPLY ~I don’t need think swinging a sword and a broom are the same thing.~ GOTO DeArnise5
-	IF ~~ THEN REPLY ~I just make the mess I don’t clean it up.~ GOTO DeArnise6
-	IF ~~ THEN REPLY ~Do you really think they need us around to tell them what goes where... I’m hopeless at organizing?~ GOTO DeArnise6
+	IF ~~ THEN REPLY ~I donï¿½t need think swinging a sword and a broom are the same thing.~ GOTO DeArnise5
+	IF ~~ THEN REPLY ~I just make the mess I donï¿½t clean it up.~ GOTO DeArnise6
+	IF ~~ THEN REPLY ~Do you really think they need us around to tell them what goes where... Iï¿½m hopeless at organizing?~ GOTO DeArnise6
 	IF ~~ THEN REPLY ~Yes we have other things to do and that is final.~ GOTO DeArnise4a
 END
 	
 IF ~~ THEN BEGIN DeArnise4
 	SAY ~Since you have just taken on the responsibility of running of the Keep do you think it is a good idea to leave so quickly?~
-	IF ~~ THEN REPLY ~I just make the mess I don’t clean it up.~ GOTO DeArnise6
-	IF ~~ THEN REPLY ~Do you really think they need us around to tell them what goes where... I’m hopeless at 	organizing?~ GOTO DeArnise6
+	IF ~~ THEN REPLY ~I just make the mess I donï¿½t clean it up.~ GOTO DeArnise6
+	IF ~~ THEN REPLY ~Do you really think they need us around to tell them what goes where... Iï¿½m hopeless at 	organizing?~ GOTO DeArnise6
 	IF ~~ THEN REPLY ~Yes we have other things to do and that is final.~ GOTO DeArnise4a
 END
 
@@ -3912,33 +3912,33 @@ IF ~~ THEN BEGIN DeArnise4a
 END
 
 IF ~~ THEN BEGIN DeArnise4b
-	SAY ~(*Then screwing up her nose and to hide a smile, she turns away*)... And when you my dear <CHARNAME>, find yourself leading whilst the rest of us follow downwind and at a distance, you may well wish you’d taken advantage of the luxuries the keep has to offer... Life is about to get lonely at the front.~
+	SAY ~(*Then screwing up her nose and to hide a smile, she turns away*)... And when you my dear <CHARNAME>, find yourself leading whilst the rest of us follow downwind and at a distance, you may well wish youï¿½d taken advantage of the luxuries the keep has to offer... Life is about to get lonely at the front.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN DeArnise5
-	SAY ~(*A gleam comes to her eye*) Mmmm... an interesting thought. Now that you mention it, you do swing a sword a lot like a broom... Ooops... couldn’t resist that one <CHARNAME>. Anyway, I was just talking to Nalia and...~
+	SAY ~(*A gleam comes to her eye*) Mmmm... an interesting thought. Now that you mention it, you do swing a sword a lot like a broom... Ooops... couldnï¿½t resist that one <CHARNAME>. Anyway, I was just talking to Nalia and...~
 	IF ~~ THEN REPLY ~Flattery will get you nowhere missy.~ GOTO DeArnise7
 	IF ~~ THEN REPLY ~Oh are you going to bore me with some girl talk?~ GOTO DeArnise7
 	IF ~~ THEN REPLY ~So Nalia and you run our group now?~ GOTO DeArnise7
-	IF ~~ THEN REPLY ~(*You fail to see the humour in her words*) Enough bard! It’s time to go, follow my lead or not, it’s up to you!~ GOTO DeArnise4a
+	IF ~~ THEN REPLY ~(*You fail to see the humour in her words*) Enough bard! Itï¿½s time to go, follow my lead or not, itï¿½s up to you!~ GOTO DeArnise4a
 END
 
 IF ~~ THEN BEGIN DeArnise6
-	SAY ~(*A gleam comes to her eye*) I can tell. It really hasn’t done you any good to have been raised by all those men at Candlekeep. Nary a women around to balance you out, and your color co-ordination won’t win you any awards either. Now don’t you go getting upset at me for speaking as I see. Anyway, I was just talking to Nalia and...~
+	SAY ~(*A gleam comes to her eye*) I can tell. It really hasnï¿½t done you any good to have been raised by all those men at Candlekeep. Nary a women around to balance you out, and your color co-ordination wonï¿½t win you any awards either. Now donï¿½t you go getting upset at me for speaking as I see. Anyway, I was just talking to Nalia and...~
 	IF ~~ THEN REPLY ~Flattery will get you nowhere missy.~ GOTO DeArnise7
 	IF ~~ THEN REPLY ~Oh are you going to bore me with some girl talk?~ GOTO DeArnise7
 	IF ~~ THEN REPLY ~So Nalia and you run our group now?~ GOTO DeArnise7
-	IF ~~ THEN REPLY ~(*You fail to see the humour in her words*) Enough bard! It’s time to go, follow my lead or not, it’s up to you!~ GOTO DeArnise4a
+	IF ~~ THEN REPLY ~(*You fail to see the humour in her words*) Enough bard! Itï¿½s time to go, follow my lead or not, itï¿½s up to you!~ GOTO DeArnise4a
 END
 						
 IF ~~ THEN BEGIN DeArnise7
 	SAY ~If that is your best attempt at humour, then I think you best stick to dungeon crawling... and speaking of dungeon crawling, we did touch those nasty trolls and all. Since we are here in the Keep Nalia has assured me that the servants whom you saved will gladly provide us with hot water and fluffy towels. What say you?~
-	IF ~~ THEN REPLY ~You know, that sounds good after all we deserve it after what we did for ‘em.~ GOTO DeArnise30
-	IF ~~ THEN REPLY ~You’re absolutely right good as time as any for a little down time.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~You know, that sounds good after all we deserve it after what we did for ï¿½em.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~Youï¿½re absolutely right good as time as any for a little down time.~ GOTO DeArnise30
 	IF ~~ THEN REPLY ~(*You raise your eyebrows and smile at Leina*) Hummm.... that sounds pretty good, all of us in one big hot tub I think I like this place, no wonder Nalia wanted to keep it.~ GOTO DeArnise31
 	IF ~~ THEN REPLY ~The hot water sounds good but what ya trying to do, make a sissy out of me? Fluffy towels!~ GOTO DeArnise32
-	IF ~~ THEN REPLY ~Leina we really don’t have time for this, we must be on our way.~ GOTO DeArnise29
+	IF ~~ THEN REPLY ~Leina we really donï¿½t have time for this, we must be on our way.~ GOTO DeArnise29
 END
 
 IF WEIGHT #-5 ~Global("VP_Ric_DeArnise","LOCALS",1)
@@ -3950,7 +3950,7 @@ InParty("Korgan")
 END
 
 IF ~~ THEN BEGIN DeArnise9
-	SAY ~We shall not! It’s not only your mind that stinks, so does your body!~
+	SAY ~We shall not! Itï¿½s not only your mind that stinks, so does your body!~
 	IF ~~ THEN EXTERN ~BKORGAN~ LeiDear2
 END
 
@@ -3960,14 +3960,14 @@ IF ~~ THEN BEGIN DeArnise10
 END
 
 IF ~~ THEN BEGIN DeArnise11
-	SAY ~(*Smiles*) Believe me <CHARNAME>, I’ve had to endure and put down far odious creatures than him, but thank you anyway...~
+	SAY ~(*Smiles*) Believe me <CHARNAME>, Iï¿½ve had to endure and put down far odious creatures than him, but thank you anyway...~
 	IF ~~ THEN GOTO DeArnise11a
 END
 
 IF ~~ THEN BEGIN DeArnise11a
 	SAY ~Now, I was just talking with Nalia and she says it would be nice to have the servants draw hot water for all of us.~
-	IF ~~ THEN REPLY ~Leina, we don’t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
-	IF ~~ THEN REPLY ~Leina we... ah well, what’s the harm if they have enough ale to go around.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~Leina, we donï¿½t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
+	IF ~~ THEN REPLY ~Leina we... ah well, whatï¿½s the harm if they have enough ale to go around.~ GOTO DeArnise30
 	IF ~~ THEN REPLY ~Oh, and how grateful is she?~ GOTO DeArnise31
 END
 
@@ -3988,14 +3988,14 @@ IF ~~ THEN BEGIN DeArnise13
 END	
 
 IF ~~ THEN BEGIN DeArnise14
-	SAY ~Yes, Mazzy I have noticed you in battle and you are a worthy adversary to all we meet. Hummm... me thinks you are bringing a tale to my notes. Which reminds me, don’t you think it would do us good to rest the night here?~
+	SAY ~Yes, Mazzy I have noticed you in battle and you are a worthy adversary to all we meet. Hummm... me thinks you are bringing a tale to my notes. Which reminds me, donï¿½t you think it would do us good to rest the night here?~
 	IF ~~ THEN EXTERN ~BMAZZY~ LeiDear3
 END
 
 IF ~~ THEN BEGIN DeArnise15
 	SAY ~My idea exactly. I was just talking with Nalia and she is willing to have the servants draw hot water for all of us.~
-	IF ~~ THEN REPLY ~Leina, we don’t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
-	IF ~~ THEN REPLY ~Leina we... ah well, what’s the harm if they have enough ale to go around.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~Leina, we donï¿½t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
+	IF ~~ THEN REPLY ~Leina we... ah well, whatï¿½s the harm if they have enough ale to go around.~ GOTO DeArnise30
 	IF ~~ THEN REPLY ~Oh, and how grateful is she?~ GOTO DeArnise31
 END
 
@@ -4034,11 +4034,11 @@ IF ~~ THEN BEGIN DeArnise20
 END
 
 IF ~~ THEN BEGIN DeArnise21
-	SAY ~Dar, nothing can be as bad as <CHARNAME>’s singing. Trust me, I am a bard and know, that with the right music you can float like a butterfly.~
+	SAY ~Dar, nothing can be as bad as <CHARNAME>ï¿½s singing. Trust me, I am a bard and know, that with the right music you can float like a butterfly.~
 	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Excuse me, excuse me. Not only am I alive here but also in possession of a good pair of ears.~ GOTO DeArnise26
-	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Now you just wait a minute there you two. I’m not some dead person to be ignored here.~ GOTO DeArnise26
+	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Now you just wait a minute there you two. Iï¿½m not some dead person to be ignored here.~ GOTO DeArnise26
 	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) I can not believe my ears. Are you saying I can not carry a tune? I am not dead yet!~ GOTO DeArnise26
-	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Am I dead, please some one pinch me. I am alive aren’t I?~ GOTO DeArnise26
+	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Am I dead, please some one pinch me. I am alive arenï¿½t I?~ GOTO DeArnise26
 END
 	
 IF ~~ THEN BEGIN DeArnise22
@@ -4064,60 +4064,60 @@ END
 IF ~~ THEN BEGIN DeArnise25a
 	SAY ~(*Smiling and feigns a puzzled look as she looks at you*)...~
 	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Excuse me, excuse me. Not only am I alive here but also in possession of a good pair of ears.~ GOTO DeArnise26
-	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Now you just wait a minute there you two. I’m not some dead person to be ignored here.~ GOTO DeArnise26
+	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Now you just wait a minute there you two. Iï¿½m not some dead person to be ignored here.~ GOTO DeArnise26
 	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) I can not believe my ears. Are you saying I can not carry a tune? I am not dead yet!~ GOTO DeArnise26
-	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Am I dead, please some one pinch me. I am alive aren’t I?~ GOTO DeArnise26
+	IF ~~ THEN REPLY ~(*The group stifle their chuckles and you decide enough is enough*) Am I dead, please some one pinch me. I am alive arenï¿½t I?~ GOTO DeArnise26
 END	
 	
 IF ~~ THEN BEGIN DeArnise26
-	SAY ~<CHARNAME>, what ever is the matter... having a bad dream? Calm yourself, we can all see you... be assured, you’re alive and well.~
+	SAY ~<CHARNAME>, what ever is the matter... having a bad dream? Calm yourself, we can all see you... be assured, youï¿½re alive and well.~
 	IF ~~ THEN GOTO DeArnise27
 END
 
 IF ~~ THEN BEGIN DeArnise27
 	SAY ~Now, I was just talking with Nalia and she says it would be nice to have the servants draw hot water for all of us.~
-	IF ~~ THEN REPLY ~Leina, we don’t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
-	IF ~~ THEN REPLY ~Leina we... ah well, what’s the harm if they have enough ale to go around.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~Leina, we donï¿½t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
+	IF ~~ THEN REPLY ~Leina we... ah well, whatï¿½s the harm if they have enough ale to go around.~ GOTO DeArnise30
 	IF ~~ THEN REPLY ~Oh, and how grateful is she?~ GOTO DeArnise31
 END
 
 IF ~~ THEN BEGIN DeArnise28
 	SAY ~(*Turning to you*) I was just talking with Nalia and she says it would be nice to have the servants draw hot water for all of us.~
-	IF ~~ THEN REPLY ~Leina, we don’t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
-	IF ~~ THEN REPLY ~Leina we... ah well, what’s the harm if they have enough ale to go around.~ GOTO DeArnise30
+	IF ~~ THEN REPLY ~Leina, we donï¿½t have time for this we need to prepare for Irenicus.~ GOTO DeArnise29
+	IF ~~ THEN REPLY ~Leina we... ah well, whatï¿½s the harm if they have enough ale to go around.~ GOTO DeArnise30
 	IF ~~ THEN REPLY ~Oh, and how grateful is she?~ GOTO DeArnise31
 END
 
 IF ~~ THEN BEGIN DeArnise29
-	SAY ~If you don’t bathe Irenicus isn’t going to need magic you know you are coming, or are you perhaps hoping to kill him with the stench... a stink cloud has nothing on you <CHARNAME>.~
-	IF ~~ THEN REPLY ~I’ll ignore that, you would think the world revolved around a fluffy towel but as it doesn’t, we leave immediately in the morning.~ GOTO DeArnise33
-	IF ~~ THEN REPLY ~What? You know what I think... that maybe ’she’ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
-	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36 
+	SAY ~If you donï¿½t bathe Irenicus isnï¿½t going to need magic you know you are coming, or are you perhaps hoping to kill him with the stench... a stink cloud has nothing on you <CHARNAME>.~
+	IF ~~ THEN REPLY ~Iï¿½ll ignore that, you would think the world revolved around a fluffy towel but as it doesnï¿½t, we leave immediately in the morning.~ GOTO DeArnise33
+	IF ~~ THEN REPLY ~What? You know what I think... that maybe ï¿½sheï¿½ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
+	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36
 END
 
 IF ~~ THEN BEGIN DeArnise30
-	SAY ~Then I’ll instruct Nalia not to give you any ale until you’ve bathed.~
-	IF ~~ THEN REPLY ~I’ll ignore that, you would think the world revolved around a fluffy towel but as it doesn’t, we leave immediately in the morning.~ GOTO DeArnise33
-	IF ~~ THEN REPLY ~What? You know what I think... that maybe ’she’ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
-	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36 
+	SAY ~Then Iï¿½ll instruct Nalia not to give you any ale until youï¿½ve bathed.~
+	IF ~~ THEN REPLY ~Iï¿½ll ignore that, you would think the world revolved around a fluffy towel but as it doesnï¿½t, we leave immediately in the morning.~ GOTO DeArnise33
+	IF ~~ THEN REPLY ~What? You know what I think... that maybe ï¿½sheï¿½ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
+	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36
 END
 
 IF ~~ THEN BEGIN DeArnise31
-	SAY ~(*Rolls her eyes*) <CHARNAME>, manners please! If you don’t want us thinking you no better than a troll, you would do well to get your mind out of the privy!!~
-	IF ~~ THEN REPLY ~I’ll ignore that, you would think the world revolved around a fluffy towel but as it doesn’t, we leave immediately in the morning.~ GOTO DeArnise33
-	IF ~~ THEN REPLY ~What? You know what I think... that maybe ’she’ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
-	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36 
+	SAY ~(*Rolls her eyes*) <CHARNAME>, manners please! If you donï¿½t want us thinking you no better than a troll, you would do well to get your mind out of the privy!!~
+	IF ~~ THEN REPLY ~Iï¿½ll ignore that, you would think the world revolved around a fluffy towel but as it doesnï¿½t, we leave immediately in the morning.~ GOTO DeArnise33
+	IF ~~ THEN REPLY ~What? You know what I think... that maybe ï¿½sheï¿½ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
+	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36
 END
 
 IF ~~ THEN BEGIN DeArnise32
-	SAY ~Sissy... I think not, but a show of some manners won’t go amiss.~
-	IF ~~ THEN REPLY ~I’ll ignore that, you would think the world revolved around a fluffy towel but as it doesn’t, we leave immediately in the morning.~ GOTO DeArnise33
-	IF ~~ THEN REPLY ~What? You know what I think... that maybe ’she’ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
-	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36 
+	SAY ~Sissy... I think not, but a show of some manners wonï¿½t go amiss.~
+	IF ~~ THEN REPLY ~Iï¿½ll ignore that, you would think the world revolved around a fluffy towel but as it doesnï¿½t, we leave immediately in the morning.~ GOTO DeArnise33
+	IF ~~ THEN REPLY ~What? You know what I think... that maybe ï¿½sheï¿½ would be more tolerable with an ale or two in her.~ GOTO DeArnise35
+	IF ~~ THEN REPLY ~So you think that if we smell like roses we can get any closer to our quarry?~ GOTO DeArnise36
 END
 
 IF ~~ THEN BEGIN DeArnise33
-	SAY ~Stop talking my lines! We’re not leaving until you have a bathe.~
+	SAY ~Stop talking my lines! Weï¿½re not leaving until you have a bathe.~
 	IF ~~ THEN GOTO DeArnise34
 END
 
@@ -4127,7 +4127,7 @@ IF ~~ THEN BEGIN DeArnise34
 END
 
 IF ~~ THEN BEGIN DeArnise35
-	SAY ~Didn’t Gorion teach you anything about decorum?~
+	SAY ~Didnï¿½t Gorion teach you anything about decorum?~
 	IF ~~ THEN GOTO DeArnise34
 END
 
@@ -4137,38 +4137,38 @@ IF ~~ THEN BEGIN DeArnise36
 END
 
 IF WEIGHT #-8 ~Global("VP_Ric_Sphere","LOCALS",1)~ THEN BEGIN Sphere1
-	SAY ~(*Looking puzzled*) I feel that there’s something... I don’t know, strange about all this.~
+	SAY ~(*Looking puzzled*) I feel that thereï¿½s something... I donï¿½t know, strange about all this.~
 	IF ~~ THEN REPLY ~Why so puzzled Leina?~ GOTO Sphere2
 	IF ~~ THEN REPLY ~Is there something on your mind?~ GOTO Sphere2
-	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I don’t ask I could be missing something]... (*You shrug off the feeling*) Hey, everyone let’s be off.~ GOTO Sphere30
-	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I don’t ask I could be missing something]... (*After a few minutes, you decide to ask her what’s on her mind*) Out with it Leina, what’s bothering you now?~ GOTO Sphere2
-	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I don’t ask I could be missing something]... (*After a few minutes, you decide to ask her what’s on her mind*) Why so puzzled Leina?~ GOTO Sphere2
-	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I don’t ask I could be missing something]... (*After a few minutes, you decide to ask her what’s on her mind*) You look troubled Leina, come, tell me what is amiss?~ GOTO Sphere2
+	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I donï¿½t ask I could be missing something]... (*You shrug off the feeling*) Hey, everyone letï¿½s be off.~ GOTO Sphere30
+	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I donï¿½t ask I could be missing something]... (*After a few minutes, you decide to ask her whatï¿½s on her mind*) Out with it Leina, whatï¿½s bothering you now?~ GOTO Sphere2
+	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I donï¿½t ask I could be missing something]... (*After a few minutes, you decide to ask her whatï¿½s on her mind*) Why so puzzled Leina?~ GOTO Sphere2
+	IF ~~ THEN REPLY ~(*You wonder at her words and thinking to yourself*) [I have this feeling if I donï¿½t ask I could be missing something]... (*After a few minutes, you decide to ask her whatï¿½s on her mind*) You look troubled Leina, come, tell me what is amiss?~ GOTO Sphere2
 END
 
 IF ~~ THEN BEGIN Sphere2
 	SAY ~I was wondering about the oddness of what has just happened inside the sphere?~
 	IF ~~ THEN REPLY ~Do you mean the task we just carried out?~ GOTO Sphere3
-	IF ~~ THEN REPLY ~Me thinks you’re day dreaming again? When has anything we’ve done been normal?~ GOTO Sphere4
+	IF ~~ THEN REPLY ~Me thinks youï¿½re day dreaming again? When has anything weï¿½ve done been normal?~ GOTO Sphere4
 	IF ~~ THEN REPLY ~Are you again in one of your flighty moods?~ GOTO Sphere30
 END
 
 IF ~~ THEN BEGIN Sphere3
-	SAY ~No, it’s the sphere, doesn’t the size of it... well make you curious?~
+	SAY ~No, itï¿½s the sphere, doesnï¿½t the size of it... well make you curious?~
 	IF ~~ THEN REPLY ~There you go again talking again before you say anything.~ GOTO Sphere5
-	IF ~~ THEN REPLY ~So what... haven’t you seen a ball that big before?~ GOTO Sphere6
+	IF ~~ THEN REPLY ~So what... havenï¿½t you seen a ball that big before?~ GOTO Sphere6
 	IF ~~ THEN REPLY ~Leina, I have no idea what you are talking about? Please be a little more specific.~ GOTO Sphere5
 END
 
 IF ~~ THEN BEGIN Sphere4
-	SAY ~At times I wish it was normal instead of pop here and popping there but doesn’t the size of the sphere... well doesn’t it make you curious?~
+	SAY ~At times I wish it was normal instead of pop here and popping there but doesnï¿½t the size of the sphere... well doesnï¿½t it make you curious?~
 	IF ~~ THEN REPLY ~There you go again talking again before you say anything.~ GOTO Sphere5
-	IF ~~ THEN REPLY ~So what... haven’t you seen a ball that big before?~ GOTO Sphere6
+	IF ~~ THEN REPLY ~So what... havenï¿½t you seen a ball that big before?~ GOTO Sphere6
 	IF ~~ THEN REPLY ~Leina, I have no idea what you are talking about? Please be a little more specific.~ GOTO Sphere5
 END
 
 IF ~~ THEN BEGIN Sphere5
-	SAY ~Oh, I’m sorry. I was just observing the size of the sphere as we stand here.~ 
+	SAY ~Oh, Iï¿½m sorry. I was just observing the size of the sphere as we stand here.~
 	IF ~~ THEN REPLY ~Yeah, so?~ GOTO Sphere7
 	IF ~~ THEN REPLY ~Ok?~ GOTO Sphere7
 	IF ~~ THEN REPLY ~Yeah, it is about the size of those two houses it has crushed. So?~ GOTO Sphere7
@@ -4176,19 +4176,19 @@ END
 
 IF ~~ THEN BEGIN Sphere6
 	SAY ~<CHARNAME> sometimes you can be so irritatingly rude!~
-	IF ~~ THEN REPLY ~Well, my sweet little petunia you aren’t making any sense right now. It doesn’t take a genius to see how big the thing is?~ GOTO Sphere7
+	IF ~~ THEN REPLY ~Well, my sweet little petunia you arenï¿½t making any sense right now. It doesnï¿½t take a genius to see how big the thing is?~ GOTO Sphere7
 	IF ~~ THEN REPLY ~Look whose talking I can see the giant ball is as big as two houses so what?~ GOTO Sphere7
 END
 	
 IF ~~ THEN BEGIN Sphere7
-	SAY ~That’s just it. The size we see on the outside is just that... about two houses. Doesn’t it seem strange to you that the distance we walked on the inside was much further then down the hall? For instance take where we fought the dwarves it was like a huge cave and their huts were in it also.~
+	SAY ~Thatï¿½s just it. The size we see on the outside is just that... about two houses. Doesnï¿½t it seem strange to you that the distance we walked on the inside was much further then down the hall? For instance take where we fought the dwarves it was like a huge cave and their huts were in it also.~
 	IF ~InParty("Korgan")
 !Dead("Korgan")
-Gender(Player1,MALE)~ THEN REPLY ~Who really cares? All I’m interested in is gold, ale, power and a warm body to crawl on.~ GOTO Sphere8
+Gender(Player1,MALE)~ THEN REPLY ~Who really cares? All Iï¿½m interested in is gold, ale, power and a warm body to crawl on.~ GOTO Sphere8
 	IF ~OR(2)
 !InParty("Korgan")
 Dead("Korgan")
-Gender(Player1,FEMALE)~ THEN REPLY ~Who really cares? All I’m interested in is gold, ale, power and a warm body to crawl on.~ GOTO Sphere9
+Gender(Player1,FEMALE)~ THEN REPLY ~Who really cares? All Iï¿½m interested in is gold, ale, power and a warm body to crawl on.~ GOTO Sphere9
 	IF ~~ THEN REPLY ~Can we speed this up? I have other things that need attending to.~ GOTO Sphere10
 	IF ~~ THEN REPLY ~Now that you mention it, you are right. We have been teleported so much I do not so much as watch my steps as lookout for who we are about to meet as we pop out.~ GOTO Sphere11
 END
@@ -4199,13 +4199,13 @@ IF ~~ THEN BEGIN Sphere8
 END
 
 IF ~~ THEN BEGIN Sphere8a
-	SAY ~I am not a side of beef for the two of you or anyone to haggle over. Don’t expect me to watch your back for the blade when next we battle for our lives!~
+	SAY ~I am not a side of beef for the two of you or anyone to haggle over. Donï¿½t expect me to watch your back for the blade when next we battle for our lives!~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
 	
 IF ~~ THEN BEGIN Sphere9
-	SAY ~<CHARNAME>, I see that your hearts is truly black... you haven’t a care for those you help, greed alone is what drives you! I did agree to help you and I will but remember, when the quest is done I never want to see your face again.~
+	SAY ~<CHARNAME>, I see that your hearts is truly black... you havenï¿½t a care for those you help, greed alone is what drives you! I did agree to help you and I will but remember, when the quest is done I never want to see your face again.~
 	IF ~~ THEN DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)
 SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
 END
@@ -4218,8 +4218,8 @@ END
 IF ~~ THEN BEGIN Sphere11
 	SAY ~I understand that and appreciate your vigilance but since I do not lead the group I look to the sides and to the back which allows me some time to ponder on our surroundings.~
 	IF ~~ THEN REPLY ~Excuse me there missy. Are you  telling me now, after all this time, that you are sightseeing whilst we venture into the unknown?~ GOTO Sphere13
-	IF ~~ THEN REPLY ~I’ll be damned if you continue another step with us. I’ll not have you endangering the party any more.~ GOTO Sphere13
-	IF ~~ THEN REPLY ~I hope your mind wandering isn’t the reason I took an arrow from behind. If it was through such day dreaming then I will have no choice but to ask you to leave... I can not allow such behaviour to endanger the others.~ GOTO Sphere13
+	IF ~~ THEN REPLY ~Iï¿½ll be damned if you continue another step with us. Iï¿½ll not have you endangering the party any more.~ GOTO Sphere13
+	IF ~~ THEN REPLY ~I hope your mind wandering isnï¿½t the reason I took an arrow from behind. If it was through such day dreaming then I will have no choice but to ask you to leave... I can not allow such behaviour to endanger the others.~ GOTO Sphere13
 END
 
 IF ~~ THEN BEGIN Sphere13
@@ -4241,7 +4241,7 @@ END
 IF ~~ THEN BEGIN Sphere14
 	SAY ~Well, I am becoming a little more used to the idea of us being teleported around. What is tickling my brain is a random thought I am trying to remember about something else being bigger on the inside then the outside.~
 	IF ~~ THEN REPLY ~I have heard of a brain freeze but a brain tickle... that is one for the books. Does the memory of it make your brain laugh?~ GOTO Sphere16
-	IF ~~ THEN REPLY ~If your having a hard time remembering then it surely could not be a bard’s tale, so is it about a book you have read?~ GOTO Sphere17
+	IF ~~ THEN REPLY ~If your having a hard time remembering then it surely could not be a bardï¿½s tale, so is it about a book you have read?~ GOTO Sphere17
 	IF ~~ THEN REPLY ~If your having a hard time remembering then surely it is not a song that is tickling your brain or you would remember it. So is it some place you have visited?~ GOTO Sphere17
 END
 
@@ -4285,7 +4285,7 @@ Dead("Dar")~ THEN REPLY ~A Dungeon?~ GOTO Sphere18
 	IF ~InParty("Dar")
 !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiSpher1
 END
- 
+
 IF ~~ THEN BEGIN Sphere17
 	SAY ~Not a book or a place I visited but it has to do with a song for I keep getting this tune in my head, now what I need is an object that is bigger on the inside then outside.~ 		
 	IF ~OR(2)
@@ -4423,11 +4423,11 @@ Dead("Taffic")~ THEN REPLY ~A clay jar?~ GOTO Sphere19
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher3
 	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher2		  
+!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher2		
 END	
 
 IF ~~ THEN BEGIN Sphere19
-	SAY ~Now don’t be silly I said smaller, not tiny or teeny-weeny. It is not as big as a house nor is it as small as a mouse. It has to be big enough for you to get into. So it is about the dimensions to easily hold a person.~
+	SAY ~Now donï¿½t be silly I said smaller, not tiny or teeny-weeny. It is not as big as a house nor is it as small as a mouse. It has to be big enough for you to get into. So it is about the dimensions to easily hold a person.~
 	IF ~OR(2)
 !InParty("Yoshimo")
 Dead("Yoshimo")
@@ -4477,37 +4477,37 @@ Dead("Taffic")~ THEN REPLY ~A box?~ GOTO Sphere20
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher4
 	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher3		  
+!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher3		
 END
 
 IF ~~ THEN BEGIN Sphere20
-	SAY ~That’s it, that’s it. It’s a box!!!~
+	SAY ~Thatï¿½s it, thatï¿½s it. Itï¿½s a box!!!~
 	IF ~~ THEN REPLY ~Are you sure? That is to simple to say just a box.~ GOTO Sphere21
 	IF ~~ THEN REPLY ~I think you have lost it now. A box???~ GOTO Sphere21
-	IF ~~ THEN REPLY ~Do expect us to really believe you’ve been tickled by a box?~ GOTO Sphere21
+	IF ~~ THEN REPLY ~Do expect us to really believe youï¿½ve been tickled by a box?~ GOTO Sphere21
 END
 
 IF ~~ THEN BEGIN Sphere21
-	SAY ~Oh yes, yes, yes. Now I remember the ballad or at least part of it. A friend of my father’s use to make me laugh when I was little by singing it.~
+	SAY ~Oh yes, yes, yes. Now I remember the ballad or at least part of it. A friend of my fatherï¿½s use to make me laugh when I was little by singing it.~
 	IF ~~ THEN REPLY ~I would like to hear this ballad or what you remember since it held your attention for so long.~ GOTO Sphere22
 	IF ~~ THEN REPLY ~Leina... I do believe this is the first real smile we have seen since you joined our group... and what a pretty a smile it is. Please, I would be delighted to hear this silly little song of yours.~ GOTO Sphere22
 	IF ~~ THEN REPLY ~I tire of these games Leina, maybe some other time... right now I think an ale would do us all some good.~ GOTO Sphere27
 END
 
 IF ~~ THEN BEGIN Sphere22
-	SAY ~Let’s see I remember I would always hoot back at him like an owl going who, who, who.~
+	SAY ~Letï¿½s see I remember I would always hoot back at him like an owl going who, who, who.~
 	IF ~~ THEN REPLY ~(*You give a half smile and...*)~ GOTO Sphere23
 	IF ~~ THEN REPLY ~(*You smirk and shake your head...*)~ GOTO Sphere23
 END
 
 IF ~~ THEN BEGIN Sphere23
-	SAY ~It was about a bard that met a man who had a box that was bigger on the inside then out. The tale speaks of out of no where a box appeared with a strange noise and out steps a strangely clothed wizard whom no one can remember his name.~ 
+	SAY ~It was about a bard that met a man who had a box that was bigger on the inside then out. The tale speaks of out of no where a box appeared with a strange noise and out steps a strangely clothed wizard whom no one can remember his name.~
 	IF ~~ THEN REPLY ~Why is it that no one knows his name? Did he not tell anyone... who and why would he keep it a secret?~ GOTO Sphere24
 	IF ~~ THEN REPLY ~The tales of bards are given more fantasy then to fact. No wonder it is so goofy.~ GOTO Sphere24
 END
 
 IF ~~ THEN BEGIN Sphere24
-	SAY ~Well that is what made the song so silly. It joked of the bard gone mad by a wizard who never said his name that lived in a box with many rooms. Then in the song I was  asked can you tell me who was his name? I would chant back excitedly, who, who, who was his name don’t know who, who, who he is, please tell me who, who, who was his name.~
+	SAY ~Well that is what made the song so silly. It joked of the bard gone mad by a wizard who never said his name that lived in a box with many rooms. Then in the song I was  asked can you tell me who was his name? I would chant back excitedly, who, who, who was his name donï¿½t know who, who, who he is, please tell me who, who, who was his name.~
 	IF ~~ THEN REPLY ~Well that surely must have been silly for a child. I think I would need about a keg in me before I would start chanting like an owl in public.~ GOTO Sphere25
 	IF ~~ THEN REPLY ~You must have sounded daft... hooting like an owl.~ GOTO Sphere25
 END
@@ -4520,12 +4520,12 @@ IF ~~ THEN BEGIN Sphere25
 	IF ~InParty("Valygar")
 !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher4
 	IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ LeiSpher2		  
+!Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ LeiSpher2		
 END
 
 IF ~~ THEN BEGIN Sphere26
 	SAY ~Oh <CHARNAME> can I ask one more question? (*She touches your arm to get your attention*)~
-	IF ~~ THEN REPLY ~I don’t see why not?~ GOTO Sphere27
+	IF ~~ THEN REPLY ~I donï¿½t see why not?~ GOTO Sphere27
 	IF ~~ THEN REPLY ~If it has nothing to do with that song go ahead.~ GOTO Sphere27
 	IF ~~ THEN REPLY ~Not if it involves big and little boxes.~ GOTO Sphere27
 END
@@ -4533,14 +4533,14 @@ END
 IF ~~ THEN BEGIN Sphere27
 	SAY ~Since you  said you needed a tankard and the Copper Coronet is right there and there is so little left to do in the sphere right now.~
 	IF ~~ THEN REPLY ~Your quite right an ale... and a wench... would loosen up my muscles right now.~ GOTO Sphere28
-	IF ~~ THEN REPLY ~An  ale and the delights of the Coronet, I think you’re understanding me at last Leina.~ GOTO Sphere28
-	IF ~~ THEN REPLY ~(*Smiling*) An ale and some sensible conversation certainly wouldn’t go amiss.~ GOTO Sphere28
+	IF ~~ THEN REPLY ~An  ale and the delights of the Coronet, I think youï¿½re understanding me at last Leina.~ GOTO Sphere28
+	IF ~~ THEN REPLY ~(*Smiling*) An ale and some sensible conversation certainly wouldnï¿½t go amiss.~ GOTO Sphere28
 END
 
 IF ~~ THEN BEGIN Sphere28
 	SAY ~Well, I was thinking more of a hot bath and a warm fluffy towel to wrap up in. What say you... (*As Leina jumps down from the porch and races away, you hear...*) Last one pays.~
-	IF ~~ THEN REPLY ~(*You follow her*) We’ll see...~ GOTO Sphere29
-	IF ~~ THEN REPLY ~I’ll never understand that girl!~ GOTO Sphere29
+	IF ~~ THEN REPLY ~(*You follow her*) Weï¿½ll see...~ GOTO Sphere29
+	IF ~~ THEN REPLY ~Iï¿½ll never understand that girl!~ GOTO Sphere29
 	IF ~~ THEN REPLY ~All she had to do was ask...~ GOTO Sphere29
 END
 
@@ -4550,14 +4550,14 @@ IF ~~ THEN BEGIN Sphere29
 END
 
 IF ~~ THEN BEGIN Sphere30
-	SAY ~Oh, <CHARNAME> I’m sorry my thoughts were else where what did you say?~
-	IF ~~ THEN REPLY ~Leina, you were away with the elves. Girl, someday you’ll lose your head... I said 	let’s go.~ GOTO Sphere31
-	IF ~~ THEN REPLY ~Girl if you don’t pay more attention. You’ll be the death of us all.~ GOTO Sphere31
+	SAY ~Oh, <CHARNAME> Iï¿½m sorry my thoughts were else where what did you say?~
+	IF ~~ THEN REPLY ~Leina, you were away with the elves. Girl, someday youï¿½ll lose your head... I said 	letï¿½s go.~ GOTO Sphere31
+	IF ~~ THEN REPLY ~Girl if you donï¿½t pay more attention. Youï¿½ll be the death of us all.~ GOTO Sphere31
 	IF ~~ THEN REPLY ~I said you have a nice toush.~ GOTO Sphere33
 END
 
 IF ~~ THEN BEGIN Sphere31
-	SAY ~Give me some credit, I am quite aware of the dangers of my surroundings. Now, don’t you think it is time for an ale?~
+	SAY ~Give me some credit, I am quite aware of the dangers of my surroundings. Now, donï¿½t you think it is time for an ale?~
 	IF ~~ THEN REPLY ~Now that you mention it, that is a great idea.~ GOTO Sphere32
 	IF ~~ THEN REPLY ~Ale? Is that all that is on your mind?~ GOTO Sphere32
 	IF ~~ THEN REPLY ~Ale and a hot meal sounds great.~ GOTO Sphere32
@@ -4569,30 +4569,30 @@ IF ~~ THEN BEGIN Sphere32
 END
 
 IF ~~ THEN BEGIN Sphere33
-	SAY ~(*She spins around*) Um... do you think so... better than The Coronet’s best ale do you reckon? I’m thinking now would be a good time to put that to the test. What do you say?~ 
+	SAY ~(*She spins around*) Um... do you think so... better than The Coronetï¿½s best ale do you reckon? Iï¿½m thinking now would be a good time to put that to the test. What do you say?~
 	IF ~~ THEN REPLY ~Now that you mention it, that is a great idea.~ GOTO Sphere32
 	IF ~~ THEN REPLY ~Ale? Is that all that is on your mind?~ GOTO Sphere32
 	IF ~~ THEN REPLY ~Ale and a hot meal sounds great.~ GOTO Sphere32
 END
 
 IF WEIGHT #-9 ~Global("VP_LoveTalk","LOCALS",20)~ THEN BEGIN PCM9Leina1
-  SAY ~(*Dropping her backpack to the ground, she sits down opposite you and begins rubbing her shoulders)... Ah, sweet relief... it’s good to sit at last! I swear that pack gets heavier by the hour.~
-  IF ~~ THEN REPLY ~You’ll survive... a little muscle ache never killed anyone. I recommend you get some rest... it’ll be awhile before we can offload and lighten our packs.~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina2
-  IF ~~ THEN REPLY ~Oooh... that looks good! How’s about coming over here and giving mine a bit of a rub when you’re done?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina3
+  SAY ~(*Dropping her backpack to the ground, she sits down opposite you and begins rubbing her shoulders)... Ah, sweet relief... itï¿½s good to sit at last! I swear that pack gets heavier by the hour.~
+  IF ~~ THEN REPLY ~Youï¿½ll survive... a little muscle ache never killed anyone. I recommend you get some rest... itï¿½ll be awhile before we can offload and lighten our packs.~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina2
+  IF ~~ THEN REPLY ~Oooh... that looks good! Howï¿½s about coming over here and giving mine a bit of a rub when youï¿½re done?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina3
   IF ~~ THEN REPLY ~(*You begin rubbing your own shoulders*)... Mmm... I know what you mean, still, eight hours rest should see us right.~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina3
-  IF ~~ THEN REPLY ~(*You begin rubbing your own shoulders*)... I know what you mean. What do you think... maybe someone is slipping stuff in our packs when we’re not looking?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina13
-  IF ~~ THEN REPLY ~If the lady will permit... I’m a dab hand at the easing of tired shoulders, or so I’ve been told?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina14
+  IF ~~ THEN REPLY ~(*You begin rubbing your own shoulders*)... I know what you mean. What do you think... maybe someone is slipping stuff in our packs when weï¿½re not looking?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina13
+  IF ~~ THEN REPLY ~If the lady will permit... Iï¿½m a dab hand at the easing of tired shoulders, or so Iï¿½ve been told?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",21)~ GOTO PCM9Leina14
 END
 
 IF ~~ THEN BEGIN PCM9Leina2
-	SAY ~A while you say... then if it’s all the same to you, I’ll make my bed right here where I dropped the darned thing. I don’t see any point in picking it up again just to lug another couple of feet... here will do just fine for me. Sleep well <CHARNAME>.~
+	SAY ~A while you say... then if itï¿½s all the same to you, Iï¿½ll make my bed right here where I dropped the darned thing. I donï¿½t see any point in picking it up again just to lug another couple of feet... here will do just fine for me. Sleep well <CHARNAME>.~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN PCM9Leina3
 	SAY ~(*Standing up, she walks across and puts her hands on the back of your neck*)... Here let me, a person needs to be a contortionist to reach the parts that ache the most.~
-	IF ~~ THEN REPLY ~(*Shrugging her hands away*) This isn’t necessary Leina, we should be thinking about getting some sleep.~ GOTO PCM9Leina4
-	IF ~~ THEN REPLY ~(*You’re surprised to find your body responding to her touch*) Mmm... that feels so good Leina!~ GOTO PCM9Leina5
+	IF ~~ THEN REPLY ~(*Shrugging her hands away*) This isnï¿½t necessary Leina, we should be thinking about getting some sleep.~ GOTO PCM9Leina4
+	IF ~~ THEN REPLY ~(*Youï¿½re surprised to find your body responding to her touch*) Mmm... that feels so good Leina!~ GOTO PCM9Leina5
 	IF ~~ THEN REPLY ~(*You open your mouth to protest, but the touch of her hand ties your tongue in knots*) Mmm... uh...~ GOTO PCM9Leina5
 	IF ~~ THEN REPLY ~(*You feel your body tense at her touch*) Leina please... what are you doing?~ GOTO PCM9Leina12
 END
@@ -4604,20 +4604,20 @@ END
 
 IF ~~ THEN BEGIN PCM9Leina5
 	SAY ~(*She spends a few minutes expertly applying just the right amount of pressure to your aching muscles and soon you find yourself feeling more relaxed*)... It feels like these shoulders have been carrying the weight of the world around all day... not a mere backpack. Now, how does that feel?~
-	IF ~~ THEN REPLY ~Don’t stop... I can feel them starting to seize up again!~ GOTO PCM9Leina6
+	IF ~~ THEN REPLY ~Donï¿½t stop... I can feel them starting to seize up again!~ GOTO PCM9Leina6
 	IF ~~ THEN REPLY ~Just a little to the left Leina... now down a bit...~ GOTO PCM9Leina6
-	IF ~~ THEN REPLY ~Like I’ve been trampled over by an angry bear! I guess first watch is mine now, seeing as how you’ve pummelled me into wakefulness.~ GOTO PCM9Leina6
-	IF ~~ THEN REPLY ~Like I’ve gone two rounds with an angry bear... only joking! (*Taking her hands in yours*) You have the most amazing hands Leina.~ GOTO PCM9Leina8
+	IF ~~ THEN REPLY ~Like Iï¿½ve been trampled over by an angry bear! I guess first watch is mine now, seeing as how youï¿½ve pummelled me into wakefulness.~ GOTO PCM9Leina6
+	IF ~~ THEN REPLY ~Like Iï¿½ve gone two rounds with an angry bear... only joking! (*Taking her hands in yours*) You have the most amazing hands Leina.~ GOTO PCM9Leina8
 	IF ~~ THEN REPLY ~Me thinks the bard has great magic in her hands as well as her song.~ GOTO PCM9Leina8
 END
 
 IF ~~ THEN BEGIN PCM9Leina6
 	SAY ~(*Laughing softly, she prods you playfully between your shoulder blades*)... The idea is to relax you <CHARNAME>, to bring sleep more readily to your weary body, not to awaken it!~
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) It’s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the lady’s intention, then perhaps the lady shouldn’t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... it’s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
-	IF ~~ THEN REPLY ~Yes, well... I’m sure that if you stop prodding my shoulders, sleep will come eventually.~ GOTO PCM9Leina4
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Damn you Leina! Can’t you see how darned difficult it is for me to think of sleep with you standing this close beside me. If sleep was what the lady had in mind then she should have tried a lullaby...  not her hands!~ GOTO PCM9Leina9
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Itï¿½s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the ladyï¿½s intention, then perhaps the lady shouldnï¿½t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... itï¿½s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
+	IF ~~ THEN REPLY ~Yes, well... Iï¿½m sure that if you stop prodding my shoulders, sleep will come eventually.~ GOTO PCM9Leina4
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Damn you Leina! Canï¿½t you see how darned difficult it is for me to think of sleep with you standing this close beside me. If sleep was what the lady had in mind then she should have tried a lullaby...  not her hands!~ GOTO PCM9Leina9
 END
 
 IF ~~ THEN BEGIN PCM9Leina7
@@ -4626,55 +4626,55 @@ IF ~~ THEN BEGIN PCM9Leina7
 	~Instead, it has filled itself with the joy of music, and in doing so, has shown me a love that surpasses any passion of a materialistic nature... a love that is safe and will never hurt either me, or my heart again. That is all the love I shall ever need.~
 =
 	~(*Then, putting her finger to your lips*)... Please, say no more for now, all I ask is for you to be honest with your own heart... if you are seeking love, and you feel that what I can give you is not enough, then we need say no more...~
-= 
+=
 	~(*Before turning and making her way to her own bed, she kisses you all too briefly on your mouth*)... Sleep well my dear <CHARNAME>.~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN PCM9Leina8
 	SAY ~(*Untwining her fingers from yours, she turns them over and pretends to examine them... then, laughing softly*)... Must be the spell casting that does it... it leaves a little of the magic behind, but not enough magic, to bring rest to the weary body, eh <CHARNAME>?~
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) It’s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the lady’s intention, then perhaps the lady shouldn’t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... it’s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
-	IF ~~ THEN REPLY ~Yes, well... I’m sure that if you stop prodding my shoulders, sleep will come eventually.~ GOTO PCM9Leina4
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Damn you Leina! Can’t you see how darned difficult it is for me to think of sleep with you standing this close beside me. If sleep was what the lady had in mind then she should have tried a lullaby...  not her hands!~ GOTO PCM9Leina9
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Itï¿½s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the ladyï¿½s intention, then perhaps the lady shouldnï¿½t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... itï¿½s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
+	IF ~~ THEN REPLY ~Yes, well... Iï¿½m sure that if you stop prodding my shoulders, sleep will come eventually.~ GOTO PCM9Leina4
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Damn you Leina! Canï¿½t you see how darned difficult it is for me to think of sleep with you standing this close beside me. If sleep was what the lady had in mind then she should have tried a lullaby...  not her hands!~ GOTO PCM9Leina9
 END
 
 IF ~~ THEN BEGIN PCM9Leina9
-	SAY ~(*Untwining her fingers from yours*)... So, what do you suggest, the next time your shoulders complain, I sing to them... and what sort of a melody do you think they would prefer <CHARNAME>?~ 
+	SAY ~(*Untwining her fingers from yours*)... So, what do you suggest, the next time your shoulders complain, I sing to them... and what sort of a melody do you think they would prefer <CHARNAME>?~
 	IF ~~ THEN REPLY ~Quit being coy Leina! If all you have in mind is to tease a man, then I ask that you find another to play with!~ GOTO PCM9Leina10
 	IF ~~ THEN REPLY ~Leina please, you are not so naive as not to follow my meaning!~ GOTO PCM9Leina10
 	IF ~~ THEN REPLY ~My words were not meant to amuse you... as you well you know!~ GOTO PCM9Leina10
 END
 				
 IF ~~ THEN BEGIN PCM9Leina10
-	SAY ~(*Taking your hands once more in hers*) I am sorry, I didn’t mean to sound so flippant...~
+	SAY ~(*Taking your hands once more in hers*) I am sorry, I didnï¿½t mean to sound so flippant...~
 	IF ~~ THEN GOTO PCM9Leina7
 END
 
 IF ~~ THEN BEGIN PCM9Leina11
-	SAY ~It wasn’t my intention to bring further turmoil into your life <CHARNAME>, I thought only to ease your weariness...~
+	SAY ~It wasnï¿½t my intention to bring further turmoil into your life <CHARNAME>, I thought only to ease your weariness...~
 	IF ~~ THEN GOTO PCM9Leina7
 END
 
 IF ~~ THEN BEGIN PCM9Leina12
-	SAY ~Relax <CHARNAME>, I’m just trying to release some of this tension. Trust me... your shoulders will thank me by the time I am done here.~
-	IF ~~ THEN REPLY ~(*Shrugging her hands away*) This isn’t necessary Leina, we should be thinking about getting some sleep.~ GOTO PCM9Leina4
-	IF ~~ THEN REPLY ~(*You’re surprised to find your body responding to her touch*) Mmm... that feels so good Leina!~ GOTO PCM9Leina5
+	SAY ~Relax <CHARNAME>, Iï¿½m just trying to release some of this tension. Trust me... your shoulders will thank me by the time I am done here.~
+	IF ~~ THEN REPLY ~(*Shrugging her hands away*) This isnï¿½t necessary Leina, we should be thinking about getting some sleep.~ GOTO PCM9Leina4
+	IF ~~ THEN REPLY ~(*Youï¿½re surprised to find your body responding to her touch*) Mmm... that feels so good Leina!~ GOTO PCM9Leina5
 	IF ~~ THEN REPLY ~(*You open your mouth to protest, but the touch of her hand ties your tongue in knots*) Mmm... uh...~ GOTO PCM9Leina5
 END
 
 IF ~~ THEN BEGIN PCM9Leina13
-	SAY ~Now there’s a thought! (*Looking around and deliberately raising her voice*) Woe betide you filler of backpacks, whoever you are... for the next store we visit, we may perchance enquire as to the availability of mousetraps.~
+	SAY ~Now thereï¿½s a thought! (*Looking around and deliberately raising her voice*) Woe betide you filler of backpacks, whoever you are... for the next store we visit, we may perchance enquire as to the availability of mousetraps.~
 	IF ~~ THEN GOTO PCM9Leina3
 END	
 
 IF ~~ THEN BEGIN PCM9Leina14
 	SAY ~(*She laughs softly and as she does so, a gleam of mischief comes to her eyes*)... Maybe the lady should enquire, as to how <CHARNAME> discovered this dab hand that he has been so highly complimented on... before the lady gives her permission?~
-	IF ~~ THEN REPLY ~Forget it Leina! If you feel the need to question my integrity, then you’d benefit more by getting some rest to ease your weariness.~ GOTO PCM9Leina15
+	IF ~~ THEN REPLY ~Forget it Leina! If you feel the need to question my integrity, then youï¿½d benefit more by getting some rest to ease your weariness.~ GOTO PCM9Leina15
 	IF ~~ THEN REPLY ~The lady may ask, but a gentleman never tells.~ GOTO PCM9Leina16
 	IF ~~ THEN REPLY ~Trust me... if I say I am good... I am good!~ GOTO PCM9Leina16
-	IF ~~ THEN REPLY ~It’s a Bhaal thing... a gift you might say.~ GOTO PCM9Leina17
+	IF ~~ THEN REPLY ~Itï¿½s a Bhaal thing... a gift you might say.~ GOTO PCM9Leina17
 END
 
 IF ~~ THEN BEGIN PCM9Leina15
@@ -4685,103 +4685,103 @@ END
 IF ~~ THEN BEGIN PCM9Leina16
 	SAY ~(*Standing up, she walks across... settling herself beside you*)... In that case, I am going to have to judge for myself... permission granted...~
 =
-	~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina’s tired muscles. As you feel the tension begin to leave them, you move to her shoulders*)...~
+	~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leinaï¿½s tired muscles. As you feel the tension begin to leave them, you move to her shoulders*)...~
 =
 	~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) It’s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the lady’s intention, then perhaps the lady shouldn’t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... it’s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Itï¿½s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the ladyï¿½s intention, then perhaps the lady shouldnï¿½t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... itï¿½s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
 END
 
 IF ~~ THEN BEGIN PCM9Leina17
 	SAY ~(*Standing up, she walks across... settling herself beside you*)... The lady is not at all sure she should trust a gift given by the god of murder, but on the other hand, she trusts the man who was granted the gift. So the lady grants her permission...~
 =
-	~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina’s tired muscles. As you feel the tension begin to leave them you move to her shoulders*)...~
+	~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leinaï¿½s tired muscles. As you feel the tension begin to leave them you move to her shoulders*)...~
 =
 	~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
-	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leina’s shoulders... only a little more slowly*)... So, how is it, am I good... or am I good?~ GOTO PCM9Leina18
-	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leina’s shoulders... only a little more slowly*)... I take it the lady is feeling much better now?~ GOTO PCM9Leina18
+	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leinaï¿½s shoulders... only a little more slowly*)... So, how is it, am I good... or am I good?~ GOTO PCM9Leina18
+	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leinaï¿½s shoulders... only a little more slowly*)... I take it the lady is feeling much better now?~ GOTO PCM9Leina18
 	IF ~~ THEN REPLY ~(*You suddenly feel flushed and awkward... quickly you drop your hands*)... I... um... er... perhaps that is enough for now.~ GOTO PCM9Leina18
-	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leina’s shoulders... only a little more slowly*)... Wow, I don’t know about you Leina, but I’m feeling pretty good!~ GOTO PCM9Leina18
+	IF ~~ THEN REPLY ~(*You fingers continue to gently knead Leinaï¿½s shoulders... only a little more slowly*)... Wow, I donï¿½t know about you Leina, but Iï¿½m feeling pretty good!~ GOTO PCM9Leina18
 END
 	
 IF ~~ THEN BEGIN PCM9Leina18
 	SAY ~You have wonderful hands <CHARNAME>! I find it hard to believe that the taint of murder runs through them... they feel such good, gentle hands.~
 =
 	~(*She yawns and smiles at you mischievously*) I feel so deliciously relaxed and tired now... yet, I see you are very much awake. Maybe a lullaby <CHARNAME>... to ease your way to sleep as you have eased mine?~
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) It’s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the lady’s intention, then perhaps the lady shouldn’t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
-	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... it’s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) Itï¿½s very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) If sleep is the ladyï¿½s intention, then perhaps the lady shouldnï¿½t be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ GOTO PCM9Leina7
+	IF ~~ THEN REPLY ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... itï¿½s all I can do to stop myself from sweeping you in my arms and losing myself in you!~ GOTO PCM9Leina11
 END
 
 IF WEIGHT #-10 ~Global("VP_LoveTalk","LOCALS",23)~ THEN BEGIN PCM10Leina1
 	SAY ~(*Looking at the object in her hand, she sighs and starts to walk away from the group*)...~
-	IF ~~ THEN REPLY ~(*You glimpse the bard’s back and note her leaving, but you are too exhausted to follow her.*)~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ EXIT
+	IF ~~ THEN REPLY ~(*You glimpse the bardï¿½s back and note her leaving, but you are too exhausted to follow her.*)~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ EXIT
 	IF ~~ THEN REPLY ~(*Suddenly aware that Leina is alone, you push all feelings of exhaustion from your body and you follow her*)...~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ GOTO PCM10Leina2
 	IF ~~ THEN REPLY ~(*You are irritated by her thoughtlessness at putting herself at risk and going off alone, you stomp off after her*)... Now what the blazes is she up too, damn fool girl!)~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ GOTO PCM10Leina2
-	IF ~~ THEN REPLY ~(*You are irritated by her thoughtlessness at putting herself at risk and going off alone*)... If she’s foolish enough to creep off alone, then she can’t expect me to chase after her... I’ve done enough baby sitting for one day! (*You make your way to your own bed*).~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ EXIT
+	IF ~~ THEN REPLY ~(*You are irritated by her thoughtlessness at putting herself at risk and going off alone*)... If sheï¿½s foolish enough to creep off alone, then she canï¿½t expect me to chase after her... Iï¿½ve done enough baby sitting for one day! (*You make your way to your own bed*).~ DO ~SetGlobal("VP_LoveTalk","LOCALS",24)~ EXIT
 END
 
 IF ~~ THEN BEGIN PCM10Leina2
 	SAY ~(*You find Leina standing by the river. As you approach she looks again at the object she is holding, and then raising her hand, she hurls whatever it was she was holding into the middle of the rushing waters... she sighs*) It is done.~
 	IF ~~ THEN REPLY ~You ok. Leina?~ GOTO PCM10Leina3
-	IF ~~ THEN REPLY ~Leina, it isn’t safe to be out here alone. Please, return with me to the group.~ GOTO PCM10Leina3
-	IF ~~ THEN REPLY ~IF I’m not intruding, I thought you might like some company?~ GOTO PCM10Leina3
+	IF ~~ THEN REPLY ~Leina, it isnï¿½t safe to be out here alone. Please, return with me to the group.~ GOTO PCM10Leina3
+	IF ~~ THEN REPLY ~IF Iï¿½m not intruding, I thought you might like some company?~ GOTO PCM10Leina3
 	IF ~~ THEN REPLY ~You crazy or something bard, putting us both in danger by making me chase all the way out here after you!~ GOTO PCM10Leina3
 END
 
 IF ~~ THEN BEGIN PCM10Leina3
-	SAY ~(*At the sound of your voice, she jumps and makes a grab for her sword... you’d swear you could just make out tears drying on her cheeks*)...~
+	SAY ~(*At the sound of your voice, she jumps and makes a grab for her sword... youï¿½d swear you could just make out tears drying on her cheeks*)...~
 =
-	~What! Oh, it’s you <CHARNAME>, I didn’t realise anyone had followed me. I am sorry, I hadn’t meant to disturb your rest.~
-	IF ~~ THEN REPLY ~I didn’t mean to startle you. You look kinda funny, you sure you are ok?~ GOTO PCM10Leina4
+	~What! Oh, itï¿½s you <CHARNAME>, I didnï¿½t realise anyone had followed me. I am sorry, I hadnï¿½t meant to disturb your rest.~
+	IF ~~ THEN REPLY ~I didnï¿½t mean to startle you. You look kinda funny, you sure you are ok?~ GOTO PCM10Leina4
 	IF ~~ THEN REPLY ~I was taking a stroll myself when I heard your voice... it sounded kind of strange. You ok?~ GOTO PCM10Leina4
 	IF ~~ THEN REPLY ~Woa... put that darn sword away! I only came out here to stop you from getting yourself killed. What do you mean by wandering off alone?~ GOTO PCM10Leina4
-	IF ~~ THEN REPLY ~Hey steady up there... yes it’s only me. You going to tell me what you’re doing out here by yourself?~ GOTO PCM10Leina5
+	IF ~~ THEN REPLY ~Hey steady up there... yes itï¿½s only me. You going to tell me what youï¿½re doing out here by yourself?~ GOTO PCM10Leina5
 END
 
 IF ~~ THEN BEGIN PCM10Leina4
 	SAY ~Thank you for your concern, but I am fine, truly I am. There was something that needed doing, something that would symbolise the finality of my life with Bjorn... and now, it is done.~
 	IF ~~ THEN REPLY ~I saw you throw something into the river... something Bjorn gave you?~ GOTO PCM10Leina6
-	IF ~~ THEN REPLY ~I thought you’d closed that chapter when you confronted Bjorn. What has caused the tears to return?~ GOTO PCM10Leina6
-	IF ~~ THEN REPLY ~To see tears return to eyes I had hoped never to see cry again, brings sadness to my own Leina. Please tell me that by throwing whatever it was you just threw into the river, there’ll be no more tears for a man not worthy of them?~ GOTO PCM10Leina7
-	IF ~~ THEN REPLY ~Good because not only am I exhausted,  I’m freezing my butt off  standing here. Now can we please get back to the warmth and safety of our beds.~ GOTO PCM10Leina10
+	IF ~~ THEN REPLY ~I thought youï¿½d closed that chapter when you confronted Bjorn. What has caused the tears to return?~ GOTO PCM10Leina6
+	IF ~~ THEN REPLY ~To see tears return to eyes I had hoped never to see cry again, brings sadness to my own Leina. Please tell me that by throwing whatever it was you just threw into the river, thereï¿½ll be no more tears for a man not worthy of them?~ GOTO PCM10Leina7
+	IF ~~ THEN REPLY ~Good because not only am I exhausted,  Iï¿½m freezing my butt off  standing here. Now can we please get back to the warmth and safety of our beds.~ GOTO PCM10Leina10
 END
 
 IF ~~ THEN BEGIN PCM10Leina5
 	SAY ~Something I should have done a long time ago and now it is done. The final link that held me to Bjorn is now lies where my eyes need never look upon it again. Yes... it is done and I am content.~
 	IF ~~ THEN REPLY ~I saw you throw something into the river... something Bjorn gave you?~ GOTO PCM10Leina6
-	IF ~~ THEN REPLY ~I thought you’d closed that chapter when you confronted Bjorn. What has caused the tears to return?~ GOTO PCM10Leina6
-	IF ~~ THEN REPLY ~To see tears return to eyes I had hoped never to see cry again, brings sadness to my own Leina. Please tell me that by throwing whatever it was you just threw into the river, there’ll be no more tears for a man not worthy of them?~ GOTO PCM10Leina7
-	IF ~~ THEN REPLY ~Good because not only am I exhausted,  I’m freezing my butt off  standing here. Now can we please get back to the warmth and safety of our beds.~ GOTO PCM10Leina10
+	IF ~~ THEN REPLY ~I thought youï¿½d closed that chapter when you confronted Bjorn. What has caused the tears to return?~ GOTO PCM10Leina6
+	IF ~~ THEN REPLY ~To see tears return to eyes I had hoped never to see cry again, brings sadness to my own Leina. Please tell me that by throwing whatever it was you just threw into the river, thereï¿½ll be no more tears for a man not worthy of them?~ GOTO PCM10Leina7
+	IF ~~ THEN REPLY ~Good because not only am I exhausted,  Iï¿½m freezing my butt off  standing here. Now can we please get back to the warmth and safety of our beds.~ GOTO PCM10Leina10
 END
 
 IF ~~ THEN BEGIN PCM10Leina6
 	SAY ~The last symbol of my life as wife to Bjorn. The wedding ring he gave to me, a symbol he said of his everlasting love and devotion, which instead, proved to be a symbol of false love and deceit...~
 =
 	~...well now it lies deep in the mud of the river, a fitting place for it. With it gone there is nothing left to stir the memories of the foolish hopes I once had for the future.~
-= 
+=
 	~Now that I have accepted music is my future, my heart is at last free.~
 	IF ~~ THEN REPLY ~(*You take her hand and looking into her eyes*) Leina, you can never be sure that which you are content to accept today, you will be 	content to accept tomorrow... no one can.~ GOTO PCM10Leina8
 	IF ~~ THEN REPLY ~(*You take her hand and looking into her eyes*) You have buried the past in the river, let now be the start of your future. Come, we will walk one step at a time as we greet it.~ GOTO PCM10Leina9
 	IF ~~ THEN REPLY ~Then I am pleased for you. You have fought hard to find the happiness that evaded your heart for so long. Now come we, are not safe so far from the group.~ GOTO PCM10Leina10
-	IF ~~ THEN REPLY ~I’m glad we have got that straightened out. Now, can we please get back to the warmth and safety of our beds, I’m freezing my butt off standing here.~ GOTO PCM10Leina10
+	IF ~~ THEN REPLY ~Iï¿½m glad we have got that straightened out. Now, can we please get back to the warmth and safety of our beds, Iï¿½m freezing my butt off standing here.~ GOTO PCM10Leina10
 END
 
 IF ~~ THEN BEGIN PCM10Leina7
 	SAY ~(*She touches her hand to your face... a small enough gesture, and yet the slight touch of her hand sets your heart racing*)...~
 =
 	~Dear <CHARNAME>, the last thing I want is to bring sadness upon you, and yet I fear, through no intention on my part, it has already begun.~
-= 
+=
 	~(*She traces the contours of your face with her fingertips and then slowly withdraws her  hand*)... There will be no more tears or thoughts for Bjorn.~
-= 
+=
 	~The wedding ring he gave me, a symbol, proof he said of his everlasting love and devotion, now lies deep in the mud of the river. A fitting resting place for a thing which came to symbolise deceit and false love.~
-= 
-	~With it lies the memories of the foolish hopes I once had for the future... now I have accepted that music is my future my heart is at last free.~ 
+=
+	~With it lies the memories of the foolish hopes I once had for the future... now I have accepted that music is my future my heart is at last free.~
 	IF ~~ THEN REPLY ~(*You take her hand and looking into her eyes*) Leina, you can never be sure that which you are content to accept today, you will be content to accept tomorrow... no one can.~ GOTO PCM10Leina8
 	IF ~~ THEN REPLY ~(*You take her hand and looking into her eyes*) You have buried the past in the river, let now be the start of your future. Come, we will walk one step at a time as we greet it.~ GOTO PCM10Leina9
 	IF ~~ THEN REPLY ~Then I am pleased for you. You have fought hard to find the happiness that evaded your heart for so long. Now come we, are not safe so far from the group.~ GOTO PCM10Leina10
-	IF ~~ THEN REPLY ~I’m glad we have got that straightened out. Now, can we please get back to the warmth and safety of our beds, I’m freezing my butt off standing here.~ GOTO PCM10Leina10
+	IF ~~ THEN REPLY ~Iï¿½m glad we have got that straightened out. Now, can we please get back to the warmth and safety of our beds, Iï¿½m freezing my butt off standing here.~ GOTO PCM10Leina10
 END
 
 IF ~~ THEN BEGIN PCM10Leina8
@@ -4798,7 +4798,7 @@ IF ~~ THEN BEGIN PCM10Leina9
 =
 	~Yes, the past is buried and the future begins. Instead of rushing to bring it to us, let us walk slowly as we greet it, as we let it bring to us what it will.~
 =
-	~Now, before the group start up a search party for us, let us make our way back.~ 
+	~Now, before the group start up a search party for us, let us make our way back.~
 	IF ~~ THEN EXIT
 END
 
@@ -4808,55 +4808,55 @@ IF ~~ THEN BEGIN PCM10Leina10
 END
 
 IF WEIGHT #-11 ~Global("VP_LoveTalk","LOCALS",25)~ THEN BEGIN PCM11L1
-	SAY ~(*Turning her pendant over in her hand she looks up as she senses your approach*) Hello <CHARNAME>, a moment to fix this and then I’ll be ready to move.~
+	SAY ~(*Turning her pendant over in her hand she looks up as she senses your approach*) Hello <CHARNAME>, a moment to fix this and then Iï¿½ll be ready to move.~
 	IF ~~ THEN REPLY ~Here let me... (*You take the pendant from her, brushing your hand against her skin as you place it about her neck*)~ GOTO PCM11L2
 	IF ~~ THEN REPLY ~(*Holding your hand out to her*) May I?~ GOTO PCM11L3
-	IF ~~ THEN REPLY ~Take your time, we’ve a few moments yet.~ GOTO PCM11L4
-	IF ~~ THEN REPLY ~Then get on with it, we don’t have all day to wait while you adorn yourself with baubles.~ GOTO PCM11L5
+	IF ~~ THEN REPLY ~Take your time, weï¿½ve a few moments yet.~ GOTO PCM11L4
+	IF ~~ THEN REPLY ~Then get on with it, we donï¿½t have all day to wait while you adorn yourself with baubles.~ GOTO PCM11L5
 END
 
 IF ~~ THEN BEGIN PCM11L2
-	SAY ~(*She shivers slightly at your touch*) Thank you <CHARNAME>. These things are so awkward to fix by oneself.~ 
-	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isn’t it time you looked to the future and let go of the past?~ GOTO PCM11L7
-	IF ~~ THEN REPLY ~There it is done. It’s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasn’t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
+	SAY ~(*She shivers slightly at your touch*) Thank you <CHARNAME>. These things are so awkward to fix by oneself.~
+	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isnï¿½t it time you looked to the future and let go of the past?~ GOTO PCM11L7
+	IF ~~ THEN REPLY ~There it is done. Itï¿½s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasnï¿½t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
 	IF ~~ THEN REPLY ~Are you cold? Come, let me fasten your cloak about you.~ GOTO PCM11L11
 	IF ~~ THEN REPLY ~There, now can we move out?~ GOTO PCM11L6
-	IF ~~ THEN REPLY ~I haven’t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
+	IF ~~ THEN REPLY ~I havenï¿½t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
 END
 
 IF ~~ THEN BEGIN PCM11L3
-	SAY ~(*Looking at your outstretched hand and then at the pendant, she hesitates a moment, and then hands it to you*) Thank you <CHARNAME>. These things are so awkward to fix by oneself.~ 
-	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isn’t it time you looked to the future and let go of the past?~ GOTO PCM11L7
-	IF ~~ THEN REPLY ~There it is done. It’s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasn’t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
+	SAY ~(*Looking at your outstretched hand and then at the pendant, she hesitates a moment, and then hands it to you*) Thank you <CHARNAME>. These things are so awkward to fix by oneself.~
+	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isnï¿½t it time you looked to the future and let go of the past?~ GOTO PCM11L7
+	IF ~~ THEN REPLY ~There it is done. Itï¿½s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasnï¿½t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
 	IF ~~ THEN REPLY ~Are you cold? Come, let me fasten your cloak about you.~ GOTO PCM11L11
 	IF ~~ THEN REPLY ~There, now can we move out?~ GOTO PCM11L6
-	IF ~~ THEN REPLY ~I haven’t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
+	IF ~~ THEN REPLY ~I havenï¿½t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
 END
 
 IF ~~ THEN BEGIN PCM11L4
-	SAY ~(*Holding out the pendant to you*) Then if you’d be so kind, these things are so awkward to fix by oneself?~ 
-	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isn’t it time you looked to the future and let go of the past?~ GOTO PCM11L7
-	IF ~~ THEN REPLY ~There it is done. It’s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasn’t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
+	SAY ~(*Holding out the pendant to you*) Then if youï¿½d be so kind, these things are so awkward to fix by oneself?~
+	IF ~~ THEN REPLY ~(*As you gently move her hair from her neck, you allow your fingers to linger, to feel the smoothness of her skin*) Mmm, beautiful. Leina, isnï¿½t it time you looked to the future and let go of the past?~ GOTO PCM11L7
+	IF ~~ THEN REPLY ~There it is done. Itï¿½s very beautiful Leina, but not as beautiful as the neck it lays around. I only wish its beauty wasnï¿½t tied to the past and the cause of so much sadness to you.~ GOTO PCM11L7
 	IF ~~ THEN REPLY ~Are you cold? Come, let me fasten your cloak about you.~ GOTO PCM11L11
 	IF ~~ THEN REPLY ~There, now can we move out?~ GOTO PCM11L6
-	IF ~~ THEN REPLY ~I haven’t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
+	IF ~~ THEN REPLY ~I havenï¿½t the time to mess with adornments. Either fix it yourself or put it in your pack, just be quick about it!~ GOTO PCM11L6
 END
 
 IF ~~ THEN BEGIN PCM11L5
-	SAY ~I’m sorry it wasn’t my intention to delay the group. (*Quickly fastening the clasp about her neck*) There, I’m ready.~
-	IF ~~ THEN REPLY ~Good, now let’s hit the road.~ GOTO PCM11L6
-	IF ~~ THEN REPLY ~Good, and in future, try not to keep us waiting... there’s little need to tart yourself up for the road.~ GOTO PCM11L6
+	SAY ~Iï¿½m sorry it wasnï¿½t my intention to delay the group. (*Quickly fastening the clasp about her neck*) There, Iï¿½m ready.~
+	IF ~~ THEN REPLY ~Good, now letï¿½s hit the road.~ GOTO PCM11L6
+	IF ~~ THEN REPLY ~Good, and in future, try not to keep us waiting... thereï¿½s little need to tart yourself up for the road.~ GOTO PCM11L6
 	IF ~~ THEN REPLY ~Good...now if you stop dreaming about the past, we may just make some decent headway in the present!~ GOTO PCM11L6
 END
 	
 IF ~~ THEN BEGIN PCM11L6
-	SAY ~(*Sighing she tucks the pendant inside her armour*) I don’t think this is the life my parents envisioned for me, nor I for myself. Still, it may not be my dream, but it is now my choice.~
+	SAY ~(*Sighing she tucks the pendant inside her armour*) I donï¿½t think this is the life my parents envisioned for me, nor I for myself. Still, it may not be my dream, but it is now my choice.~
 	IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~ EXIT
 END
 	
 IF ~~ THEN BEGIN PCM11L7
 	SAY ~(*Taking your hand, she touches it lightly to the pendant now hanging about her neck*) You think this pendant holds me in the past <CHARNAME>?~
-= 
+=
 ~It is the single most precious thing I own, it is all I have left to remind me of my parents love. Memories of their love for each other and their love for me, their daughter.~
 =
 ~They had such hopes for me and what have I become...nothing more than a vagabond, a wandering minstrel.~
@@ -4878,12 +4878,12 @@ IF ~~ THEN BEGIN PCM11L8
 END
 	
 IF ~~ THEN BEGIN PCM11L9
-	SAY ~(*Smiling she hands you a rag*) If you’d be so kind... I doubt my face is the only one in need of a wash this morning. After yesterday’s hard march, we all fell abed the minute you called a halt.~ 
-	IF ~~ THEN REPLY ~(*Wiping the dirt from her face*) There, no more dirty face angel. In fact... (*Before you can help yourself you gently draw her closer and kiss the tip of her nose*) I... I’m sorry I...~ GOTO PCM11L8
-	IF ~~ THEN REPLY ~There... now just one spot left and I believe this rag is too dirty, so I’ll just have to... (*You gently draw her closer and kiss the tip of her nose*) There much better.~ GOTO PCM11L8
+	SAY ~(*Smiling she hands you a rag*) If youï¿½d be so kind... I doubt my face is the only one in need of a wash this morning. After yesterdayï¿½s hard march, we all fell abed the minute you called a halt.~
+	IF ~~ THEN REPLY ~(*Wiping the dirt from her face*) There, no more dirty face angel. In fact... (*Before you can help yourself you gently draw her closer and kiss the tip of her nose*) I... Iï¿½m sorry I...~ GOTO PCM11L8
+	IF ~~ THEN REPLY ~There... now just one spot left and I believe this rag is too dirty, so Iï¿½ll just have to... (*You gently draw her closer and kiss the tip of her nose*) There much better.~ GOTO PCM11L8
 	IF ~~ THEN REPLY ~There scrubbed clean enough for me to see my face in... well almost.~ GOTO PCM11L10
 	IF ~~ THEN REPLY ~There, no more dirty face angel and no sign of this vagabond you spoke of either. I am not even sure I recognise what it is we do have here.~ GOTO PCM11L10
-	IF ~~ THEN REPLY ~Aha, what do we have here? Why it’s neither angel nor vagabond but our own Leina!~ GOTO PCM11L10
+	IF ~~ THEN REPLY ~Aha, what do we have here? Why itï¿½s neither angel nor vagabond but our own Leina!~ GOTO PCM11L10
 END
 				
 IF ~~ THEN BEGIN PCM11L10
@@ -4908,23 +4908,23 @@ IF ~~ THEN BEGIN PCM11L11
 END
 
 IF ~~ THEN BEGIN heist7
-  SAY ~She’s ok Melora, we both are no thanks to you! Why did you have to be so greedy and open that other chest?~
+  SAY ~Sheï¿½s ok Melora, we both are no thanks to you! Why did you have to be so greedy and open that other chest?~
 	  IF ~~ THEN EXTERN ~BMELORA~ heist11
 END
 
 IF ~~ THEN BEGIN heist8
-  SAY ~I am not sure myself. I did as you said and distracted the two guards, pretty easy really. Men... all it takes is the sight of a comely face and figure and they’re distracted.~
+  SAY ~I am not sure myself. I did as you said and distracted the two guards, pretty easy really. Men... all it takes is the sight of a comely face and figure and theyï¿½re distracted.~
 =
-~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~ 
+~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~
 =
 ~Look, there she is, ask her yourself. (*Leina waves at Imoen, beckoning her over.*)~
 	  IF ~~ THEN EXTERN ~BIMOEN2~ heist5
 END
 
 IF ~~ THEN BEGIN heist9
-  SAY ~That’s ok Melora, I am sure it will all come back to you soon.~
+  SAY ~Thatï¿½s ok Melora, I am sure it will all come back to you soon.~
 =
-~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now that’s a wall I’d love to be a fly on.~
+~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now thatï¿½s a wall Iï¿½d love to be a fly on.~
 	  IF ~~ THEN EXTERN ~BIMOEN2~ heist9
 END
 
@@ -4936,18 +4936,18 @@ END
 IF ~~ THEN BEGIN 20A
  SAY ~You seek revenge <CHARNAME>, do you truly believe that the pain you inflict back will erase the memory of the pain received? Only time will do that and then never completely. You will always carry with you some of the scars, that I know to be true.~
  IF ~~ THEN REPLY ~Your words may be true, but I will gain immense satisfaction in exacting my revenge. That in itself will suffice.~ GOTO 23
- IF ~~ THEN REPLY ~I could probably forego revenge for what I suffered but I will never forgive him for what he did to Imoen. She is the gentlest and most generous of people I know. We are of the same age but she is still a child in so many ways. She did not deserve the abuse she suffered at Irenicus‘s hand and that is what he must and will pay for!~ GOTO 23
+ IF ~~ THEN REPLY ~I could probably forego revenge for what I suffered but I will never forgive him for what he did to Imoen. She is the gentlest and most generous of people I know. We are of the same age but she is still a child in so many ways. She did not deserve the abuse she suffered at Irenicusï¿½s hand and that is what he must and will pay for!~ GOTO 23
 END
 
 IF WEIGHT #-99 ~Global("VP_Ric_TheatrQuest","LOCALS",1)~ THEN BEGIN TheatrQ0
   SAY ~<CHARNAME>, wow, that was sure some trip. Traveling with you is really an adventure. One minute we are here in our time and the next we are who knows where?~ [mute]
  IF ~~ THEN REPLY ~Slow down Leina. What we do is no sightseeing trip.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ GOTO TheatrQ1
- IF ~~ THEN REPLY ~Leina, I don’t know if being popped from one place to another is all that grand.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ GOTO TheatrQ2
+ IF ~~ THEN REPLY ~Leina, I donï¿½t know if being popped from one place to another is all that grand.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ GOTO TheatrQ2
  IF ~~ THEN REPLY ~Hold on a minute, am I hearing you correctly here? You, who gave such a squeal when we were teleported to who knows where... now thinks it was a big adventure?~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ GOTO TheatrQ3
 END
 
 IF ~~ THEN BEGIN TheatrQ1
-  SAY ~Oh <CHARNAME>, once in awhile you just have to lighten up. You’re so tense all the time. Sometimes you should just sit back and feel the adventure.~
+  SAY ~Oh <CHARNAME>, once in awhile you just have to lighten up. Youï¿½re so tense all the time. Sometimes you should just sit back and feel the adventure.~
  IF ~~ THEN REPLY ~Feel the adventure... in case it had escaped your notice, our enemies use very sharp blades, not butter knives!~ GOTO TheatrQ5
  IF ~~ THEN REPLY ~So you think I should just stick me head in the clouds and let some maniac hack at us when we pop out from teleportation?~ GOTO TheatrQ5
  IF ~~ THEN REPLY ~Listen here, I am responsible for this group and I take that seriously. One wrong move and some of us could die permanently.~ GOTO TheatrQ4
@@ -4957,62 +4957,62 @@ IF ~~ THEN BEGIN TheatrQ2
   SAY ~What? It must be because you seem to have done it so often. To me this is all new. Even if I get use to being teleported, where we go is going to be new. Some times you need to slow down and stop thinking everything is hack and slash.~
  IF ~~ THEN REPLY ~So you think I should just stick me head in the clouds and let some maniac hack at us when we pop out from teleportation?~ GOTO TheatrQ5
  IF ~~ THEN REPLY ~Listen here, I am responsible for this group and I take that seriously. One wrong move and some of us could die permanently.~ GOTO TheatrQ4
- IF ~~ THEN REPLY ~I don’t think hack and slash. When we enter a new place I’m not going to look to see if there are doilies or fluffy pillows in the room. I will always draw my weapon because I don’t want my arm laying on the floor when some bushwacking maniac swings first.~ GOTO TheatrQ4
+ IF ~~ THEN REPLY ~I donï¿½t think hack and slash. When we enter a new place Iï¿½m not going to look to see if there are doilies or fluffy pillows in the room. I will always draw my weapon because I donï¿½t want my arm laying on the floor when some bushwacking maniac swings first.~ GOTO TheatrQ4
 END
 
 IF ~~ THEN BEGIN TheatrQ3
-  SAY ~(*A twinkle comes to her eye*) It wasn’t so much the fear, more the tingling sensation transportation gives a body that brought about the squeal.~
- IF ~~ THEN REPLY ~Oh sure, now the rich kid knows what it’s like to spill blood and it gives her a thrill.~ GOTO TheatrQ6 
+  SAY ~(*A twinkle comes to her eye*) It wasnï¿½t so much the fear, more the tingling sensation transportation gives a body that brought about the squeal.~
+ IF ~~ THEN REPLY ~Oh sure, now the rich kid knows what itï¿½s like to spill blood and it gives her a thrill.~ GOTO TheatrQ6
  IF ~~ THEN REPLY ~How in the world can you think *ooh this tickles*, when the next second a dagger could be thrust in your side?~ GOTO TheatrQ9
  IF ~~ THEN REPLY ~(*You laugh*) Well, you need to learn to change your facial expressions... by the look of your face I thought you were about to pee your pants.~ GOTO TheatrQ6
 END
 
 IF ~~ THEN BEGIN TheatrQ4
-  SAY ~Slow down there, we’re being a bit overzealous aren’t we? I’m not only talking about when it is time to battle, even with an ale in your hand you always seem as taut as the strings on my violin. Don’t you ever pause to take in the uniqueness of where we are or where we’ve been?~
- IF ~~ THEN REPLY ~You know your right so let’s knock off this conversations and get ourselves an ale.~ GOTO TheatrQ8
- IF ~~ THEN REPLY ~Do you know something, that is the smartest thing to come out of your mouth... ever.~ GOTO TheatrQ7      
+  SAY ~Slow down there, weï¿½re being a bit overzealous arenï¿½t we? Iï¿½m not only talking about when it is time to battle, even with an ale in your hand you always seem as taut as the strings on my violin. Donï¿½t you ever pause to take in the uniqueness of where we are or where weï¿½ve been?~
+ IF ~~ THEN REPLY ~You know your right so letï¿½s knock off this conversations and get ourselves an ale.~ GOTO TheatrQ8
+ IF ~~ THEN REPLY ~Do you know something, that is the smartest thing to come out of your mouth... ever.~ GOTO TheatrQ7
  IF ~~ THEN REPLY ~Leina, the group has just been through a tough battle can we just rest for now, please?~ GOTO TheatrQ8
 END
 
 IF ~~ THEN BEGIN TheatrQ5
-  SAY ~Oh my, aren’t we tetchy and so tense. Learn to take it easy, after all the battle is over and I’m on your side remember. What I’m trying to say is that when the battle’s won, you need to relax a little and chill out. You really are in need a tankard and a song.~
- IF ~~ THEN REPLY ~You know your right so let’s knock off this conversations and get ourselves an ale.~ GOTO TheatrQ8
- IF ~~ THEN REPLY ~Do you know something, that is the smartest thing to come out of your mouth... ever.~ GOTO TheatrQ7      
+  SAY ~Oh my, arenï¿½t we tetchy and so tense. Learn to take it easy, after all the battle is over and Iï¿½m on your side remember. What Iï¿½m trying to say is that when the battleï¿½s won, you need to relax a little and chill out. You really are in need a tankard and a song.~
+ IF ~~ THEN REPLY ~You know your right so letï¿½s knock off this conversations and get ourselves an ale.~ GOTO TheatrQ8
+ IF ~~ THEN REPLY ~Do you know something, that is the smartest thing to come out of your mouth... ever.~ GOTO TheatrQ7
  IF ~~ THEN REPLY ~Leina, the group has just been through a tough battle can we just rest for now, please?~ GOTO TheatrQ8
 END
 
 IF ~~ THEN BEGIN TheatrQ6
-  SAY ~Well, there’s no call for you to be so crude! (*She walks away*)~
+  SAY ~Well, thereï¿½s no call for you to be so crude! (*She walks away*)~
   IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN TheatrQ7
-  SAY ~You must be hard of hearing is all I can say... that, or I suggest you clean out those ears of yours the next time you bathe. Might help you hear all the smart talk that’s been going around you!~
+  SAY ~You must be hard of hearing is all I can say... that, or I suggest you clean out those ears of yours the next time you bathe. Might help you hear all the smart talk thatï¿½s been going around you!~
 =
-~Now, if you’ll excuse me, I think you should treat the group to a couple of ales. I am going to speak to Samuel.~
+~Now, if youï¿½ll excuse me, I think you should treat the group to a couple of ales. I am going to speak to Samuel.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatrQ8
-  SAY ~(*Her eyes light up and she gives you a quick hug*) Oh, this is wonderful, it gives me the chance to talk with Samuel whilst you buy the first round. Thank you <CHARNAME>.~           
+  SAY ~(*Her eyes light up and she gives you a quick hug*) Oh, this is wonderful, it gives me the chance to talk with Samuel whilst you buy the first round. Thank you <CHARNAME>.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatrQ9
-  SAY ~(*A mischievous glint comes to her eye and she makes as if to tickle you*) I didn’t say it tickled, I said it tingled.~
+  SAY ~(*A mischievous glint comes to her eye and she makes as if to tickle you*) I didnï¿½t say it tickled, I said it tingled.~
 =
 ~So you do feel your surroundings... it tickles you, hummmm. I must remember that. The big bad adventurer gets all ticklish!~
- IF ~~ THEN REPLY ~Hey I’m not made of stone nor am I a troll...I do have feelings!~ GOTO TheatQ10
+ IF ~~ THEN REPLY ~Hey Iï¿½m not made of stone nor am I a troll...I do have feelings!~ GOTO TheatQ10
  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you’ll wish you hadn’t.~ EXTERN ~BIMOEN2~ theatr 
+!Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and youï¿½ll wish you hadnï¿½t.~ EXTERN ~BIMOEN2~ theatr
  IF ~OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you’ll wish you hadn’t.~ GOTO TheatQ11                 
- IF ~~ THEN REPLY ~Er... weren’t we suppose to be having an ale about now.~ GOTO TheatQ12
+Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and youï¿½ll wish you hadnï¿½t.~ GOTO TheatQ11
+ IF ~~ THEN REPLY ~Er... werenï¿½t we suppose to be having an ale about now.~ GOTO TheatQ12
 END
 
 IF ~~ THEN BEGIN TheatQ9a
@@ -5020,32 +5020,32 @@ IF ~~ THEN BEGIN TheatQ9a
 =
 ~First, see if you can get <CHARNAME> to buy the first round of ale for everyone, I must speak to Samuel for a minute.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatQ10
-  SAY ~Oh I don’t know, some of that slimy stuff we walked thru in the other plane didn’t smell to good and it is still on your boots. So you are close to smelling like a troll. Any way, if you’ll excuse me, you can buy everyone an ale whilst I speak with Samuel.~
+  SAY ~Oh I donï¿½t know, some of that slimy stuff we walked thru in the other plane didnï¿½t smell to good and it is still on your boots. So you are close to smelling like a troll. Any way, if youï¿½ll excuse me, you can buy everyone an ale whilst I speak with Samuel.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatQ11
-  SAY ~Oh my, is the big adventurer afraid of little ol’ me?~
+  SAY ~Oh my, is the big adventurer afraid of little olï¿½ me?~
 =
-~Now, whilst I go speak with Samuel, you can buy everyone a tankard.~ 
+~Now, whilst I go speak with Samuel, you can buy everyone a tankard.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatQ12
-  SAY ~I tell you, the time it takes you to finally get around to taking care of the group, they’d die of thirst waiting for you to finish nattering.~
+  SAY ~I tell you, the time it takes you to finally get around to taking care of the group, theyï¿½d die of thirst waiting for you to finish nattering.~
 =
-~See how patiently they are waiting for you...now whilst you spend some of that gold we’ve bagged on a round or two for everyone, I am going to talk to Samuel.~ 
+~See how patiently they are waiting for you...now whilst you spend some of that gold weï¿½ve bagged on a round or two for everyone, I am going to talk to Samuel.~
  IF ~~ THEN REPLY ~Leina... Leina, wait up a moment, I want to ask you some thing!~ GOTO TheatQ13
- IF ~~ THEN REPLY ~Oh that wench, I’ll have her hide one of these days.~ GOTO TheatQ13
+ IF ~~ THEN REPLY ~Oh that wench, Iï¿½ll have her hide one of these days.~ GOTO TheatQ13
  IF ~~ THEN REPLY ~Hey I have an idea.~ GOTO TheatQ13
 END
 
@@ -5055,22 +5055,22 @@ IF ~~ THEN BEGIN TheatQ13
 END
 
 IF ~~ THEN BEGIN TheatQ14
-  SAY ~(*She shudders but laughs at her friend’s words*) Heavens no... no Samuel, never again you know that but <CHARNAME> has just agreed to take on the running of the theatre. Isn’t that exciting news, now I will be around more often to see you and to sing for your patrons.~
+  SAY ~(*She shudders but laughs at her friendï¿½s words*) Heavens no... no Samuel, never again you know that but <CHARNAME> has just agreed to take on the running of the theatre. Isnï¿½t that exciting news, now I will be around more often to see you and to sing for your patrons.~
   IF ~~ THEN EXTERN ~FFBART~ theatr2
-END  
+END
 
 IF ~~ THEN BEGIN TheaQ14a
-  SAY ~(*She shudders but laughs at her friend’s words*) Heavens no... no Samuel, never again you know that but since I am back for a little while, how would you like me to sing for your patrons tonight?~
+  SAY ~(*She shudders but laughs at her friendï¿½s words*) Heavens no... no Samuel, never again you know that but since I am back for a little while, how would you like me to sing for your patrons tonight?~
   IF ~~ THEN EXTERN ~FFBART~ theatr2
 END
 
 IF ~~ THEN BEGIN TheatQ15
-  SAY ~(*As you approach Leina excitedly spins around*) This is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel’s patrons!~
+  SAY ~(*As you approach Leina excitedly spins around*) This is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuelï¿½s patrons!~
   IF ~~ THEN GOTO TheatQ16
 END
 
 IF ~~ THEN BEGIN TheaQ151
-  SAY ~(*As the group approaches Leina excitedly spins around*) Everyone, this is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel’s patrons!~
+  SAY ~(*As the group approaches Leina excitedly spins around*) Everyone, this is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuelï¿½s patrons!~
 	IF ~True()~ THEN GOTO TheaQ161
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2
@@ -5126,7 +5126,7 @@ IF ~~ THEN BEGIN TheatQ17
   SAY ~(*Turning to Samuel*) Samuel, can I have ale for <CHARNAME>?~
  IF ~~ THEN GOTO TheaQ17a
 END
- 
+
 IF ~~ THEN BEGIN TheaQ17a
   SAY ~(*Then back to you*) Well, are you going to let me take the stage or are you going to entertain the patrons, and whilst you do so... drive them away? (*She laughs softly*)~
  IF ~~ THEN REPLY ~Why do you always do that... insinuate I can not sing?~ GOTO TheatQ18
@@ -5144,10 +5144,10 @@ IF ~~ THEN BEGIN TheatQ18
   SAY ~<CHARNAME>, I might be able to endure the noise you make but only because I like you, but Samuel has a business to run and needs his customers.~
  IF ~~ THEN REPLY ~Oh, Leina you do make me laugh. I know my singing leaves much to be desired but admit it, I do make a joyful noise!~ GOTO TheaQ181
  IF ~~ THEN REPLY ~Who would know what I sound like with all the racket in here?~ GOTO TheaQ182
-END           
+END
 
 IF ~~ THEN BEGIN TheaQ181
-  SAY ~You most definitely have me on that one, for I can not deny the joy on your face as you do make your noise as you call it. But I don’t know... I think if word got around you would not be taken very seriously as an adventurer.~
+  SAY ~You most definitely have me on that one, for I can not deny the joy on your face as you do make your noise as you call it. But I donï¿½t know... I think if word got around you would not be taken very seriously as an adventurer.~
  IF ~~ THEN REPLY ~(*Suddenly you remember*) Ah, I have a question for you Leina.~ GOTO TheatQ22
  IF ~~ THEN REPLY ~(*Suddenly you remember*) Leina, please stop your prattling, I have something to ask you!~ GOTO TheatQ22
 END
@@ -5159,12 +5159,12 @@ IF ~~ THEN BEGIN TheaQ182
 END
 
 IF ~~ THEN BEGIN TheatQ19
-  SAY ~So tell me, when did you ever see a play that didn’t have a song or two, or should I ask, have you seen a play at all?~
+  SAY ~So tell me, when did you ever see a play that didnï¿½t have a song or two, or should I ask, have you seen a play at all?~
  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN REPLY ~Just becasue it seems we are always on the road doesn’t mean we haven’t taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ GOTO TheatQ20
+!Dead("Hrothgar")~ THEN REPLY ~Just becasue it seems we are always on the road doesnï¿½t mean we havenï¿½t taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ GOTO TheatQ20
  IF ~OR(2)
 !InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Just becasue it seems we are always on the road doesn’t mean we haven’t taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ GOTO TheaQ201
+Dead("Hrothgar")~ THEN REPLY ~Just becasue it seems we are always on the road doesnï¿½t mean we havenï¿½t taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ GOTO TheaQ201
  IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN REPLY ~When do we have no time to dally with the fantasies of bards... there are more important issues to address.~ GOTO TheatQ20
  IF ~OR(2)
@@ -5199,53 +5199,53 @@ IF ~~ THEN BEGIN TheaQ21a
 END
 
 IF ~~ THEN BEGIN TheatQ22
-  SAY ~(*With a twinkle in her eye she ignores your request. Instead she looks around for Samuel*) Samuel, now where is that man, I asked him to bring more ale to us, you do want more ale, don’t you, <CHARNAME>?~
+  SAY ~(*With a twinkle in her eye she ignores your request. Instead she looks around for Samuel*) Samuel, now where is that man, I asked him to bring more ale to us, you do want more ale, donï¿½t you, <CHARNAME>?~
  IF ~~ THEN REPLY ~(*She continues to avoid your eye. You begin to suspect she is doing so deliberately. You grab her arm*) Leina, excuse me, LEINA!~ GOTO TheatQ23
  IF ~~ THEN REPLY ~(*She continues to avoid your eye. You begin to suspect she is doing so deliberately. Gently catching her arm*) Leina please, this will only take a moment!~ GOTO TheatQ23
- IF ~~ THEN REPLY ~(*She continues to avoid your eye. You begin to suspect she is doing so deliberately. You grab her arm*) Damn you girl, can’t you see I want to talk to you?~ GOTO TheatQ23
+ IF ~~ THEN REPLY ~(*She continues to avoid your eye. You begin to suspect she is doing so deliberately. You grab her arm*) Damn you girl, canï¿½t you see I want to talk to you?~ GOTO TheatQ23
 END
 
 IF ~~ THEN BEGIN TheatQ23
   SAY ~(*You spy Samuel give her a nod and then she turns to you*) Oh, <CHARNAME>, I am so sorry. Forgive me but you know how carried away I get when it comes to my music. Now I am all yours, what is it you wish to say?~
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn’t about time we all took a bath and had dinner?~ GOTO TheatQ24
+ IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isnï¿½t about time we all took a bath and had dinner?~ GOTO TheatQ24
  IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, we could all use a bath if you intend getting up before an audience?~ GOTO TheatQ24
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, we could all do with a bath... that is if you do not wish to chase Samuel’s patrons away?~ GOTO TheatQ24
+ IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, we could all do with a bath... that is if you do not wish to chase Samuelï¿½s patrons away?~ GOTO TheatQ24
  IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say we all need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ GOTO TheatQ24
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn’t about time we took a bath and had dinner?~ GOTO TheaQ24b
+ IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isnï¿½t about time we took a bath and had dinner?~ GOTO TheaQ24b
  IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, I could use a bath if you intend getting up before an audience?~ GOTO TheaQ24b
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, I could do with a bath... that is if you do not wish to chase Samuel’s patrons away?~ GOTO TheaQ24b
+ IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, I could do with a bath... that is if you do not wish to chase Samuelï¿½s patrons away?~ GOTO TheaQ24b
  IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say I need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ GOTO TheaQ24b
 END
 
 IF ~~ THEN BEGIN TheatQ24
   SAY ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you all wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
 =
-~Never mind, I have already had Samuel prepare a bath for each of you and I have been so patient... wouldn’t you agree, waiting for my own warm fluffy towel?~
+~Never mind, I have already had Samuel prepare a bath for each of you and I have been so patient... wouldnï¿½t you agree, waiting for my own warm fluffy towel?~
 =
-~Ah there, Samuel has signalled that your rooms and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don’t forget to thank Samuel, he has reserved his thickest and fluffiest towels for you all.~
+~Ah there, Samuel has signalled that your rooms and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and donï¿½t forget to thank Samuel, he has reserved his thickest and fluffiest towels for you all.~
 =
 ~(*She jumps up and scampers to her room*)~
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... what has just happened here? Didn’t we agree at the stairs that we were going to demand a bath? How is it now she has turned the tables on us? Asking us why *we* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? I’ll not let her dangle an ale in my face again!~ GOTO TheaQ24a
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of us yet again! I swear I’ll get her, maybe not today, maybe not tomorrow but I’ll get her one day!~ GOTO TheaQ24a
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that cheeky wench! Well, I’m damned if I’m going to take a bath now... on principal!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... what has just happened here? Didnï¿½t we agree at the stairs that we were going to demand a bath? How is it now she has turned the tables on us? Asking us why *we* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? Iï¿½ll not let her dangle an ale in my face again!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of us yet again! I swear Iï¿½ll get her, maybe not today, maybe not tomorrow but Iï¿½ll get her one day!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that cheeky wench! Well, Iï¿½m damned if Iï¿½m going to take a bath now... on principal!~ GOTO TheaQ24a
 END
 
 IF ~~ THEN BEGIN TheaQ24a
   SAY ~(*Samuel walks over and interrupts you*)~
   IF ~~ THEN EXTERN ~FFBART~ theatr4
-END  
+END
 
 IF ~~ THEN BEGIN TheaQ24b
   SAY ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
 =
-~Never mind, I have already had Samuel prepare a bath for you and I have been so patient... wouldn’t you agree, waiting for my own warm fluffy towel?~
+~Never mind, I have already had Samuel prepare a bath for you and I have been so patient... wouldnï¿½t you agree, waiting for my own warm fluffy towel?~
 =
-~Ah there, Samuel has signalled that you room and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don’t forget to thank Samuel, he has reserved his thickest and fluffiest towels for you.~
+~Ah there, Samuel has signalled that you room and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and donï¿½t forget to thank Samuel, he has reserved his thickest and fluffiest towels for you.~
 =
 ~(*She jumps up and scampers to her room*)~
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... what has just happened here? Didn’t we agree at the stairs that I was going to demand a bath? How is it now she has turned the tables on me? Asking me why *I* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? I’ll not let her dangle an ale in my face again!~ GOTO TheaQ24a
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of me yet again! I swear I’ll get her, maybe not today, maybe not tomorrow but I’ll get her one day!~ GOTO TheaQ24a
- IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that cheeky wench! Well, I’m damned if I’m going to take a bath now... on principal!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... what has just happened here? Didnï¿½t we agree at the stairs that I was going to demand a bath? How is it now she has turned the tables on me? Asking me why *I* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? Iï¿½ll not let her dangle an ale in my face again!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of me yet again! I swear Iï¿½ll get her, maybe not today, maybe not tomorrow but Iï¿½ll get her one day!~ GOTO TheaQ24a
+ IF ~~ THEN REPLY ~(*Shaking your head in disbelief*) What the... why that cheeky wench! Well, Iï¿½m damned if Iï¿½m going to take a bath now... on principal!~ GOTO TheaQ24a
 END
 
 IF WEIGHT #-98 ~Global("VP_Ric_RadianQuest","LOCALS",2)~ THEN BEGIN RadianQ0
@@ -5261,7 +5261,7 @@ IF ~~ THEN BEGIN RadiaQE
   SAY ~Sorry, <CHARNAME>, just me thinking aloud again.~
   IF ~~ THEN DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
 END
-          
+
 IF ~~ THEN BEGIN RadianQ2
   SAY ~No, <CHARNAME>, no he did not touch me. It is that accursed dragon that is annoying me.~
  IF ~OR(2)
@@ -5380,7 +5380,7 @@ END
 
 IF ~~ THEN BEGIN RadiQ101
   SAY ~<CHARNAME>...~
- IF ~True()~ THEN GOTO RadiaQ10   
+ IF ~True()~ THEN GOTO RadiaQ10
  IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadianQA
  IF ~InParty("Sharteel")
@@ -5395,7 +5395,7 @@ IF ~~ THEN BEGIN RadiaQF
 END
 
 IF ~~ THEN BEGIN RadiaQ10
-  SAY ~I don't know why I stay in this group or why you keep me around, <CHARNAME>? Do you mean you don't care whether you are manipulated into action or not?~ 
+  SAY ~I don't know why I stay in this group or why you keep me around, <CHARNAME>? Do you mean you don't care whether you are manipulated into action or not?~
  IF ~~ THEN REPLY ~Look Leina, I don't give a rats butt how the fight starts. I love the challenge of and seeing my foes laying in their own blood and better still, to be close enough to see the terror in their eyes when they know there is no tomorrow for them!~ GOTO RadiaQ11
  IF ~~ THEN REPLY ~Now you look here, you've been with the group long enough to know that it's never been my way to go and kiss up to some imbecile because they don't know their butt from the end of their sword. Any who get in my way, you included, and I'll hack off an arm first and then ask the questions.~ GOTO RadiaQ11
  IF ~~ THEN REPLY ~Look, I always have a choice and I choose to fight, not back away. So who cares how I get there.~ GOTO RadiaQ11
@@ -5424,12 +5424,12 @@ END
 IF ~~ THEN BEGIN RadiaQ11
   SAY ~(*Clearly disturbed by your words*) How ever did I come to allow myself to become involved with such a person?~
 =
-~I beg you Melira Taralen, my lady *The Songstress*, goddess of all half-elven bard’s, help me for it would seem my life hangs by he who blinks first. I must think more on where my future lies.~
+~I beg you Melira Taralen, my lady *The Songstress*, goddess of all half-elven bardï¿½s, help me for it would seem my life hangs by he who blinks first. I must think more on where my future lies.~
   IF ~~ THEN DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN RadiaQ12
-  SAY ~What? Can't you see that he caused us to fight those paladins knowing, that if we didn't make amends for our mistake we would have been hunted down by their order.~ 
+  SAY ~What? Can't you see that he caused us to fight those paladins knowing, that if we didn't make amends for our mistake we would have been hunted down by their order.~
  IF ~~ THEN REPLY ~I think it all comes down to in what you mean by manipulate.~ GOTO RadiaQ13
  IF ~~ THEN REPLY ~I think we all could be accused of manipulating at one time or another.~ GOTO RadiaQ13
 END
@@ -5441,7 +5441,7 @@ IF ~~ THEN BEGIN RadiaQ13
  IF ~~ THEN REPLY ~You mean defending ourselves is something we shouldn't have done?~ GOTO RadiaQ14
  IF ~~ THEN REPLY ~Of course, how silly of me, we should have let the illusions, the monsters, stroke, paladins, slaughter us?~ GOTO RadiaQ14
  IF ~~ THEN REPLY ~Yes, Firkraag altered appearances and we defended ourselves but all it did was provide added experience for when the next battles comes.~ GOTO RadiaQ15
-END 
+END
 
 IF ~~ THEN BEGIN RadiaQ14
   SAY ~You're right we had to defend ourselves but his altering their appearances was deception. Doesn't that give you cause for concern as you venture into these tasks, quests or whatever you call them?~
@@ -5451,7 +5451,7 @@ IF ~~ THEN BEGIN RadiaQ14
 END
 
 IF ~~ THEN BEGIN RadiaQ15
-  SAY ~So it does bother you that there are times when you are manipulated into action?~ 
+  SAY ~So it does bother you that there are times when you are manipulated into action?~
  IF ~~ THEN REPLY ~Leina, I take these tasks to help others and when I do so I expect my foe to alter, by devious means, every situation that we encounter. That is what makes all this so challenging for me.~ GOTO RadiaQ16
  IF ~~ THEN REPLY ~Leina, I don't think we would be needed if it weren't to protect the weak from those who to control them.~ GOTO RadiaQ16
  IF ~~ THEN REPLY ~Leina, the world is not, and never has been a paradise. I guess you might say I enjoy eliminating such manipulating creatures from this realm. The more they use foul means to harm others the more it fuels my desire for the final battle.~ GOTO RadiaQ16
@@ -5471,7 +5471,7 @@ IF ~~ THEN BEGIN RadiaQ17
  IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ RadianQ
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1     
+!Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
  IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadiaQ13 	
 END
@@ -5482,7 +5482,7 @@ IF ~~ THEN BEGIN RadiaQ18
  IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ RadianQ
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1     
+!Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
  IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadiaQ13 	
 END
@@ -5652,7 +5652,7 @@ IF ~~ THEN BEGIN RadiQ21A
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia  
+!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
 	IF ~InParty("Imoen2")
 !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiRadia
 	IF ~InParty("Dar")
@@ -5669,10 +5669,10 @@ IF ~~ THEN BEGIN RadiQ21B
 END
 
 IF ~~ THEN BEGIN LeiRadE1
-  SAY ~(*Leina turns and her usually warm elven eyes glare icy cold*) That'll be a no you libidinous megalomaniac! A warning, when talking to yourself, make sure that no elf is standing nearby. (*She turns her back on him*)~ 
+  SAY ~(*Leina turns and her usually warm elven eyes glare icy cold*) That'll be a no you libidinous megalomaniac! A warning, when talking to yourself, make sure that no elf is standing nearby. (*She turns her back on him*)~
 	IF ~~ THEN EXTERN ~BEDWIN~ LeiRadi2
 END
-  
+
 IF ~~ THEN BEGIN RadiaQ21
   SAY ~Samuel will be so happy to see us all. I shall sing of our latest adventures and I can just feel that warm fluffy towel right now.~
   IF ~~ THEN DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
@@ -5691,7 +5691,7 @@ IF ~~ THEN BEGIN RadiaQ23
 ~(*She skips lightly away, leaving you with these words*) ...because, as always, last one there gets the ale in.~
   IF ~~ THEN DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
 END
- 
+
 IF ~~ THEN BEGIN N65
  SAY ~Why? Why you considered his life yours to take? Why you murdered a man you knew nothing about?~
  IF ~~ THEN REPLY ~It is easy to kill when the victim is a stranger. I saw your father only as an obstacle to be removed from my path to you.~ GOTO N66
@@ -5712,19 +5712,19 @@ END
 
 IF ~~ THEN BEGIN N66
  SAY ~(*Angrily*) And you believe that to be reason enough to commit cold blooded murder? Do you know or even care how heartless your words show you to be, <CHARNAME>.~
- IF ~~ THEN REPLY ~I choose my words to suit my mood. I will do whatever is necessary to achieve my goals.~ GOTO N67 
+ IF ~~ THEN REPLY ~I choose my words to suit my mood. I will do whatever is necessary to achieve my goals.~ GOTO N67
  IF ~~ THEN REPLY ~I cannot help how you or others perceive me Leina, I am who I am.~ GOTO N67
-END   
+END
 
 IF ~~ THEN BEGIN N74
- SAY ~How can I believe that? You burst into my father’s home and now he is dead, his blood is on your hands.~
+ SAY ~How can I believe that? You burst into my fatherï¿½s home and now he is dead, his blood is on your hands.~
  IF ~~ THEN REPLY ~I thought only to resque you, Leina.~ GOTO 76
  IF ~~ THEN REPLY ~Yes his blood is on my hands, but they are hands that he forced by refusing to heed my words.~ GOTO 82
 END
 
 IF ~~ THEN BEGIN N67
  SAY ~I see no remorse, only coldness reflected in your eyes. I see no room for compassion in your heart and it is for that reason I show none to you and your cause. I cannot forgive this wanton disregard for life that I see in you, it sickens me and as such I refuse to aid you further.~
- IF ~~ THEN REPLY ~Think for a second, if it were not for me you would still be a prisoner of your insane father, or worse married to the likes of Govan Duvaine. A little gratitude would not go amiss here!~ GOTO 69 
+ IF ~~ THEN REPLY ~Think for a second, if it were not for me you would still be a prisoner of your insane father, or worse married to the likes of Govan Duvaine. A little gratitude would not go amiss here!~ GOTO 69
  IF ~~ THEN REPLY ~That is your choice. Your talents, or lack of them will not be missed.~ GOTO 69
  IF ~~ THEN REPLY ~You ungrateful wench! Is this the thanks I get for risking my neck to rescue you?~ GOTO 69
 END
@@ -5746,7 +5746,7 @@ IF WEIGHT #1 ~GlobalLT("VP_BPC","LOCALS",12)
 OR(2)
 Global("VP_Break_Point","LOCALS",2)
 Global("VP_MyFatherIsDead","LOCALS",3)~ THEN BEGIN N64
- SAY ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father’s death.~
+ SAY ~<CHARNAME>, I cannot continue further with you until I know the truth of my my fatherï¿½s death.~
  IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ GOTO 65
  IF ~Global("BodhiJob","GLOBAL",0)
  Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ GOTO N65
@@ -5757,57 +5757,57 @@ Global("VP_MyFatherIsDead","LOCALS",3)~ THEN BEGIN N64
  IF ~Global("BodhiJob","GLOBAL",0)
  Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I have already told you, it was a means to get to you Leina, nothing more.~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ GOTO N72
 END
-                  
+
 /////////////////////////CHAINS//////////////////////
 
 CHAIN IF ~Global("VP_JahiNoDancing","LOCALS",3)~ THEN BLEINA PCM4aJahi
 	~Why the disapproving eye Jaheira? How have I offended you this time?~
 DO ~SetGlobal("VP_JahiNoDancing","LOCALS",4)~
-== BJAHEIR ~You haven’t offended me Leina, but you have embarrassed yourself and <CHARNAME> with your wanton display.~
-== BLEINA ~(*Laughs*) Come off it Jaheira, the only person put out by my *wanton* display is yourself. Could it be that you didn’t like that <CHARNAME> had his eye in my direction and not yours? If so, I could show you a few steps that might bring his eye back.~ 
+== BJAHEIR ~You havenï¿½t offended me Leina, but you have embarrassed yourself and <CHARNAME> with your wanton display.~
+== BLEINA ~(*Laughs*) Come off it Jaheira, the only person put out by my *wanton* display is yourself. Could it be that you didnï¿½t like that <CHARNAME> had his eye in my direction and not yours? If so, I could show you a few steps that might bring his eye back.~
 == BJAHEIR ~Do you seriously think that such a shameless display by one who is no better than she should be, would be enough to capture his heart? Catch his eye maybe because he is after all a man, but never his heart.~
 == BLEINA ~(*Chuckles softly*) And who said it was his heart that I am interested in Jaheira?~
-== BJAHEIR ~You play a dangerous game when you play with the emotions of men my girl. There are those who don’t take kindly to girls who lead them on only to find themselves rejected.~
+== BJAHEIR ~You play a dangerous game when you play with the emotions of men my girl. There are those who donï¿½t take kindly to girls who lead them on only to find themselves rejected.~
 == BLEINA ~Then you have nothing to worry about Jaheira, for I have never led a man on if my intention was to reject him.~
 == BJAHEIR ~Have you no shame girl? <CHARNAME> deserves better than a wanton hussy who has no pride in herself.~
 == BLEINA ~I would watch that mouth of yours Jaheira, I am no hussy. In fact I can count the number of lovers I have taken since my husband deserted me on half a hand.~
-= 
-	~I may not have room for love in my life but I still take pleasure in the smell of a man’s skin and the warmth of a man’s embrace.~
-= 
+=
+	~I may not have room for love in my life but I still take pleasure in the smell of a manï¿½s skin and the warmth of a manï¿½s embrace.~
+=
 	~I never promise love nor do I cause pain, unlike numerous men who swear their love and then leave with the dawn.~
 == BJAHEIR ~Then if you can not love <CHARNAME>, leave him to find one who can.~
 == BLEINA ~You mean one like yourself? Is this what this is about, and you only recently widowed? Where is *your* shame Jaheira?~
-== BJAHEIR ~Khalid is and always will be in my heart, but it doesn’t mean I can not make room for another. It is more than big enough to allow me to love again when the time is right.~
-= 
+== BJAHEIR ~Khalid is and always will be in my heart, but it doesnï¿½t mean I can not make room for another. It is more than big enough to allow me to love again when the time is right.~
+=
 	~That is something you will never understand because your own heart is like ice. Even though you profess it to be warm and alive with music but if truth be known it is a cold thing, devoid of love.~
-= 
+=
 	~So play your games Leina, pretend you are happy, but in the end it is only yourself that you are fooling.~
-== BLEINA ~How little you know me Jaheira, I am content. How many people today can say that and mean it. I seldom hear *you* laugh, which gives me cause to suspect that you have never known how. So maybe the way I conduct my life isn’t so wrong after all, because the way I see it, I am happy and you are not.~
+== BLEINA ~How little you know me Jaheira, I am content. How many people today can say that and mean it. I seldom hear *you* laugh, which gives me cause to suspect that you have never known how. So maybe the way I conduct my life isnï¿½t so wrong after all, because the way I see it, I am happy and you are not.~
 EXIT	
 	
 CHAIN IF ~Global("VP_AerieNoDancing","LOCALS",3)~ THEN BLEINA PCM4aAerie
-	~Aerie, I couldn’t help but notice you enjoying the dance, why didn’t you join me?~
+	~Aerie, I couldnï¿½t help but notice you enjoying the dance, why didnï¿½t you join me?~
 DO ~SetGlobal("VP_AerieNoDancing","LOCALS",4)~
-== BAERIE ~Oh no Leina, I couldn’t. You moved so beautifully, and your feet... so sure of the steps. I am so clumsy, still trying to find my feet when walking let alone dancing.~
+== BAERIE ~Oh no Leina, I couldnï¿½t. You moved so beautifully, and your feet... so sure of the steps. I am so clumsy, still trying to find my feet when walking let alone dancing.~
 == BLEINA ~I could teach you if you wanted, maybe dancing will help with your balance. I am sure that is all your clumsiness is, you were caged for so long after losing your wings you never had the chance to get used to walking on your feet.~
 == BAERIE ~(*She looks wistful at the mention of her wings and then her face lights up*) Could you Leina, and would... men look at me and think me beautiful, the same way they look at you?~
 == BLEINA ~Aerie, if I teach you to dance it will be for yourself, for your own enjoyment. I seldom dance as I did because I know how it incites passion in my audience. They watch me yes but their thoughts are not of how graceful or how light I am on my feet.~
 == BAERIE ~But you looked ... you were glowing Leina, you were beautiful, how could they have not seen? I want people to look at me and see past my deformity and think me beautiful.~
 == BLEINA ~(*Laughs*) That was the love of what I was doing shining through me Aerie. I love my music, I am passionate about it and when I am performing, all that love and passion overflows into me and this is what you saw.~
-== BAERIE ~(*Sighs*) I am not gifted in the same way as you are. Maybe if I can not find this passion within me it will be a waste of both our times and <CHARNAME> will never look at me the way he looked at you.~ 
+== BAERIE ~(*Sighs*) I am not gifted in the same way as you are. Maybe if I can not find this passion within me it will be a waste of both our times and <CHARNAME> will never look at me the way he looked at you.~
 == BLEINA ~(*Laughs softly*) So it is <CHARNAME> that Aerie wishes to dance for is it.~
 == BAERIE ~(*Blushing*) I... um... yes...~
 == BLEINA ~Aerie please, you are beautiful, any man would have to be blind not to see it. Dancing in the way you want to is only going to make <CHARNAME> or any man see you as thing to be desired, not a beautiful, caring girl to love.~
 =
 	~If <CHARNAME> wants you, let him discover his love in his own time. Desire and love do not automatically follow each other.~
-= 
+=
 	~Then, if he is blind and chooses another, you still have your dance to share with one who does love you when you meet him.~
-== BAERIE ~But you didn’t seem to mind being desired when you danced, so why should I?~ 
+== BAERIE ~But you didnï¿½t seem to mind being desired when you danced, so why should I?~
 == BLEINA ~Oh, Aerie, the purpose of my dance was to show <CHARNAME> the passion he failed to see in music, not the passion in me.~
-= 
-	~(*Smiling broadly*) I think I did that a little too well don’t you?~
+=
+	~(*Smiling broadly*) I think I did that a little too well donï¿½t you?~
 == BAERIE ~(*Giggles*) I think you did too. I saw him stuff your sash inside his shirt when he thought no-one was looking.~
-= 
+=
 	~I would still like to learn to dance, for myself, if you will teach me Leina?~
 == BLEINA ~Of course I will, but we will do it quietly and away from the others when we next rest.~
 EXIT
@@ -5816,19 +5816,19 @@ CHAIN IF ~Global("VP_VickyNoDancing","LOCALS",3)~ THEN BLEINA PCM4aVicky
 	~Ok Viconia, spit it out, I can see you are dying to say something.~
 DO ~SetGlobal("VP_VickyNoDancing","LOCALS",4)~
 == BVICONI ~Then I will speak freely and say that I was disgusted to se a female flaunt and demean herself for the pleasure of the male eye. Do you have no pride in your sex, or is this decadence an acceptable part of you surfacers society?~
-== BLEINA ~This *decadence* as you call it, is what we surfacers call entertainment and there is nothing demeaning in dancing.~ 
+== BLEINA ~This *decadence* as you call it, is what we surfacers call entertainment and there is nothing demeaning in dancing.~
 == BVICONI ~Entertainment! You call inciting the male ego and giving them cause to think themselves worthy of such an abandoned display, entertainment? Bah, where is your female pride half elf?~
-== BLEINA ~Inciting anyone’s ego or anything else for that matter has nothing to do with how or why I dance Viconia. I take great pride in my music and in return it brings me a great deal of pleasure.~
-== BVICONI ~Drow have their music, but no female would use it to please a male, after all it is the males place to pleasure the female, that is, providing he is worthy enough to be chosen.~ 
-== BLEINA ~Life on the surface is a lot less cruel. We realise that none can choose their gender and as such none should be penalised for their birth. Life is sacred to all and we give respect to those we deem worthy of respect, regardless of sex.~ 
+== BLEINA ~Inciting anyoneï¿½s ego or anything else for that matter has nothing to do with how or why I dance Viconia. I take great pride in my music and in return it brings me a great deal of pleasure.~
+== BVICONI ~Drow have their music, but no female would use it to please a male, after all it is the males place to pleasure the female, that is, providing he is worthy enough to be chosen.~
+== BLEINA ~Life on the surface is a lot less cruel. We realise that none can choose their gender and as such none should be penalised for their birth. Life is sacred to all and we give respect to those we deem worthy of respect, regardless of sex.~
 == BVICONI ~Yes reproduction does have it flaws. How much simpler it would be if we could choose the ratio of male female births that suited our requirements, say a healthy but small number for breeding and pleasure and enough to make up a strong army. That would rid us of so much waste.~
 == BLEINA ~And in the meantime your people give those not up to your standards to Lolth to become the monstrosities you call driders.~
-= 
+=
 	~I can see why your kind are, and always will be, shunned by all surface dwellers whether elf or other, there is no place here for the cruel and sadistic nature of the Drow.~
 == BVICONI ~By other do you mean your kind half elf, and how do you see yourself? You are neither elf nor human. It is this indiscriminate breeding that brings your kind into being that weakens the blood line of all surface elves. We Drow see this for what it is, a portend that the surface elves are doomed and Drow will reign supreme.~
 == BLEINA ~You show so much contempt I have to wonder why you chose to come to the surface at all Viconia. Your kind will never be accepted, <CHARNAME> should have left you to burn on your pyre.~
-== BVICONI ~Bah! That was <CHARNAME>’s decision, not yours and for a male he showed good sense. As for my place here, that is a matter between <CHARNAME> and myself.~
-= 
+== BVICONI ~Bah! That was <CHARNAME>ï¿½s decision, not yours and for a male he showed good sense. As for my place here, that is a matter between <CHARNAME> and myself.~
+=
 	~Your lack of female pride brings naught but contempt from me and if you have no respect for who you are then you will get no respect from me. You are dismissed.~
 == BLEINA ~(*Laughs*) I take no orders from you Drow, nor do I want your respect, that I can live well enough without. I will however repay the complement before I leave and say that there is nothing in you that will ever earn my respect either.~
 EXIT
@@ -5837,15 +5837,15 @@ CHAIN IF ~Global("VP_KorganNoDancing","LOCALS",3)~ THEN BLEINA PCM4aKorgan
 	~Ok Korgan, spit it out....~
 DO ~SetGlobal("VP_KorganNoDancing","LOCALS",4)~	
 == BKORGAN ~That wer some dance yer did elf. Care to give Korgan here a private show tonight?~
-== BLEINA ~Sorry Korgan, I don’t do private shows.~
-== BKORGAN ~P’raps yer should, one on one eh elf? That way none goes home frustrated or left to take care of hisself, if you get me meaning!~
-== BLEINA ~I get your meaning you disgusting, repulsive, little runt! Now take that filthy mouth of yours out of my sight before I fill it with a fireball!~ 
-== BKORGAN ~(*Grins licentiously *) Feisty eh... nothing wrong with feisty. Tells yer what, hows about we toss and see who gets to fill who’s mouth with what... what yer say elf?~
-== BLEINA ~(*Furiously, she pulls her sword *) I’ll tell you what dwarf, let’s not! Instead, how’s about you getting out of my range quickly before you end up singing opera at my next show!~
-== BKORGAN ~So yer thinks you can put yer wares on the counter and then shut up shop before a man’s finished browsing does yer... (*He makes a move towards her*)~
-== BLEINA ~(*She stands her ground, looks down at him and in a threatening manner, she lowers her sword*) Dwarf...~ 
-== BKORGAN ~(*Stops in his stride*) So, yer got the drop on the dwarf this time elf, but next time yer gets a dwarf all hot under ‘is belt, we’ll see who gets to drop who.~
-EXIT 
+== BLEINA ~Sorry Korgan, I donï¿½t do private shows.~
+== BKORGAN ~Pï¿½raps yer should, one on one eh elf? That way none goes home frustrated or left to take care of hisself, if you get me meaning!~
+== BLEINA ~I get your meaning you disgusting, repulsive, little runt! Now take that filthy mouth of yours out of my sight before I fill it with a fireball!~
+== BKORGAN ~(*Grins licentiously *) Feisty eh... nothing wrong with feisty. Tells yer what, hows about we toss and see who gets to fill whoï¿½s mouth with what... what yer say elf?~
+== BLEINA ~(*Furiously, she pulls her sword *) Iï¿½ll tell you what dwarf, letï¿½s not! Instead, howï¿½s about you getting out of my range quickly before you end up singing opera at my next show!~
+== BKORGAN ~So yer thinks you can put yer wares on the counter and then shut up shop before a manï¿½s finished browsing does yer... (*He makes a move towards her*)~
+== BLEINA ~(*She stands her ground, looks down at him and in a threatening manner, she lowers her sword*) Dwarf...~
+== BKORGAN ~(*Stops in his stride*) So, yer got the drop on the dwarf this time elf, but next time yer gets a dwarf all hot under ï¿½is belt, weï¿½ll see who gets to drop who.~
+EXIT
 
 CHAIN IF ~Global("VP_BJan","LOCALS",2)~ THEN BLEINA BanterJan
 	~Jan, you have so many amusing tales of your family, have you never thought to put them into a book? A lot of people would get a great deal of pleasure and enjoyment from your stories.~
@@ -5853,20 +5853,20 @@ DO ~SetGlobal("VP_BJan","LOCALS",3)~
 == BJAN ~Ah, but Leina my girl, would there be enough paper in Amn to cover all of the Jansen clan? More to the point, could I remember them all because if I was to write about some and not others Jan Jansen would be ostracised and sent to Coventry, wherever Coventry is. Only one other Jansen has been sent there and that was when...~
 == BLEINA ~Now that is exactly what I mean Jan, someone in your family has done just about everything a person can think of and somethings that no-one would want to think of. You would be famous Jan.~
 == BJAN ~Jan Jansen the author and the inventor, now I like the sound of that.~
- 
+
 	~The question is what to call this book of mine that is going to make me and the Jansen family famous... maybe "The Lord Of The Turnip Field" or... "The Importance Of Being Jansen", or maybe even... "Three Gnomes In A Boat".~
-= 
+=
 	~Then again, perhaps I should go for something simpler like... "The Life And Times Of The Jansens"? What do you think Leina?~
 == BLEINA ~I would think there are enough tales for you to write several books Jan. Choose which title you like best, you already have your plot or plots and away you go. I can see you will soon have enough books to fill Candlekeep library twice over.~
-== BJAN ~Um! We’d have to change that for starters. Candlekeep is no name for the Jansen’s library to be housed!~
-= 
+== BJAN ~Um! Weï¿½d have to change that for starters. Candlekeep is no name for the Jansenï¿½s library to be housed!~
+=
 	~Jankeep or Jansenkeep. Umm, now I like that. In fact that would be a first, no Jansen has ever had a place named after them.~
 =
-	~Of course it’s not as grand as the city old Balduran got named after himself but it’ll do for a Jansen.~
+	~Of course itï¿½s not as grand as the city old Balduran got named after himself but itï¿½ll do for a Jansen.~
 == BLEINA ~(*Laughs*) I think you are getting a bit carried away Jan. First you have write your book and then you have to market it.~
 == BJAN ~With the Jansen contacts marketing is easy, we have contacts in the black market, white market or any colour market you like.~
 =
-	~Who to write first is the thing. I could start with great-great-great uncle Henry... but then I would have to write about his wives, all of them and I’m not sure I’d remember all their names.~
+	~Who to write first is the thing. I could start with great-great-great uncle Henry... but then I would have to write about his wives, all of them and Iï¿½m not sure Iï¿½d remember all their names.~
 =
 	~It might be best to start with great-great-great grandad Arty and a tale of "The Knights Of The Dinner Table". This story sort of reminds me...~
 == BLEINA ~Oh dear, perhaps this was not such a good idea after all.~
@@ -5881,11 +5881,11 @@ DO ~SetGlobal("VP_BAnomen","LOCALS",3)~
 =
 	~What if he should be right my lady, what if I am striving for a goal beyond my capability? Surely none know us better than those who raised us?~
 == BLEINA ~No other knows us better than we know ourselves Anomen. Only you can look into your heart and know what lies within.~
-= 
+=
 	~Your dreams are yours and whether they are important enough for you to strive to attain is your choice.~
 == BANOMEN ~But my lady, how can I be sure that the things which I strive for are really what I want and not just the dreams of a boy desperate to be free of a hard father!~
 == BLEINA ~Look into yourself, and be honest with what you see is all I can suggest.~
-= 
+=
 	~Then decide if what you discover is worth all this angst that I see in you.~
 == BANOMEN ~That is what bothers me so. This desire of mine to become a knight is causing me so much turmoil I begin to think that if I do not think myself worthy, how can I expect others to judge me as such?~
 == BLEINA ~It seems that your dilemma comes from your dreams being scorned and derided by your father. It was having to listen to him scoff at your aspirations when you were a boy that has made you doubt your own worthiness.~
@@ -5899,17 +5899,17 @@ EXIT
 CHAIN IF ~Global("VP_BMazzy","LOCALS",2)~ THEN BLEINA BanterMazzy
 	~Mazzy, please may I see it?~
 DO ~SetGlobal("VP_BMazzy","LOCALS",3)~
-== BMAZZY ~Oh... hello Leina, it’s you! You startled me for a moment, I nearly jumped out of my boots.~
-== BLEINA ~I’m sorry I did not mean to make you jump. You often take that stone out and look at it and it is easy to see the shadow that passes before your eyes as you gaze upon it. May I see it please?~
-== BMAZZY ~(*She hesitantly hands Leina the stone she is holding*)~ 
-== BLEINA ~How unusual, it’s almost in the shape of a heart and very smooth to the touch, not rough and cold like most pebbles. Where did you find such an exquisite thing Mazzy?~
+== BMAZZY ~Oh... hello Leina, itï¿½s you! You startled me for a moment, I nearly jumped out of my boots.~
+== BLEINA ~Iï¿½m sorry I did not mean to make you jump. You often take that stone out and look at it and it is easy to see the shadow that passes before your eyes as you gaze upon it. May I see it please?~
+== BMAZZY ~(*She hesitantly hands Leina the stone she is holding*)~
+== BLEINA ~How unusual, itï¿½s almost in the shape of a heart and very smooth to the touch, not rough and cold like most pebbles. Where did you find such an exquisite thing Mazzy?~
 == BMAZZY ~I... I did not find it, Patrick gave it to me.~
-= 
+=
 	~He found it and gave it to me for safe keeping, he said he could not physically give me his heart but this pebble, as you call it, was very much like it symbolically speaking.~
-= 
-	~Silly children’s ideas really.~
+=
+	~Silly childrenï¿½s ideas really.~
 == BLEINA ~Not so Mazzy. Your Patrick obviously thought you worthy to take care of his heart for him to make such a gesture.~
-= 
+=
 	~If only I had given my own heart to a man more worthy than I did, then it would not be like a stone in my breast.~
 == BMAZZY ~It is easy to let our hearts lead when our heads know that we should not follow.~
 =
@@ -5921,48 +5921,48 @@ DO ~SetGlobal("VP_BMazzy","LOCALS",3)~
 =
 	~Patrick will always have a place in my heart but one day there may be room for another to dwell there alongside him, as I am sure there will be for you... given time.~
 == BLEINA ~There will never be room in my heart for a man!~
-= 
+=
 	~Music fills it to overflowing and I will never forsake that which has given me back my life.~
 =
 	~No, I will not ask my heart to make room for that which has caused it so much pain before.~
-= 
-	~Here, take your Patrick’s gift and treasure it for you may not get a gift as precious again.~
+=
+	~Here, take your Patrickï¿½s gift and treasure it for you may not get a gift as precious again.~
 == BMAZZY ~(*She takes the stone and sighs*) This simple stone will always be the single, most precious thing I own, no matter what comes to me in the future and that is because of the reason it was given.~
 =
 	~(*She puts the stone back in her pocket*) Now, no more reminiscing Leina, we must get back to the affairs of today and leave those of the past for a more suitable day.~
 EXIT
 
 CHAIN IF ~Global("VP_Leina_HaerDalis","LOCALS",2)~ THEN BLEINA haerdal
-	~I can hear you well enough Haer’Dalis. You have no need to practise your scales quite this close to my ear.~
+	~I can hear you well enough Haerï¿½Dalis. You have no need to practise your scales quite this close to my ear.~
 DO ~SetGlobal("VP_Leina_HaerDalis","LOCALS",3)~
 == BHAERDA ~Leina my little firefly, do you not think that our two voices compliment each other? We should think of combining our talents.~
-== BLEINA ~You have the glib tongue of the bard, I will give you that Haer’Dalis but you seem more at ease with your swords than any harp.~
-== BHAERDA ~(*Feigning to be hurt*) My firefly, do you mean for your words to wound so deeply, do I not sing as well as any nightjar?~ 
-== BLEINA ~(*Smiling*) Nightjar Haer’Dalis? I do not think I have ever heard a voice compared to a nightjar before. It is not the most melodic of song birds.~
+== BLEINA ~You have the glib tongue of the bard, I will give you that Haerï¿½Dalis but you seem more at ease with your swords than any harp.~
+== BHAERDA ~(*Feigning to be hurt*) My firefly, do you mean for your words to wound so deeply, do I not sing as well as any nightjar?~
+== BLEINA ~(*Smiling*) Nightjar Haerï¿½Dalis? I do not think I have ever heard a voice compared to a nightjar before. It is not the most melodic of song birds.~
 == BHAERDA ~Ah! But perchance you are right my sweet, in which case this bard needs to place himself in your capable hands and together we will make magic.~
 == BLEINA ~Magic? I thought you said it was music you had in mind to make.~
 == BHAERDA ~Do not tease me my firefly, together our music will create magic. We must rehearse tonight whilst the others are at their rest.~
 =
 ~What say you? We will meet when the stars gather to greet the moon, they alone shall be our audience.~
-== BLEINA ~(*Laughs softly) I think not Haer’Dalis. I have seen that glint in your eye too many times in the eyes of others not to recognise the intent behind it. I suspect you have something more than the making of music in mind.~
-== BHAERDA ~(*Putting his hand to his breast) Oh! That you should suspect such a thing of me my firefly, it cuts to my heart.~ 
+== BLEINA ~(*Laughs softly) I think not Haerï¿½Dalis. I have seen that glint in your eye too many times in the eyes of others not to recognise the intent behind it. I suspect you have something more than the making of music in mind.~
+== BHAERDA ~(*Putting his hand to his breast) Oh! That you should suspect such a thing of me my firefly, it cuts to my heart.~
 =
 ~Then tonight I fear the stars will miss a magical performance for I must entertain them alone. Perchance I could cheer them with the promise of another night my sweet?~
-== BLEINA ~(*Still smiling*) It is not wise to promise that which you cannot deliver, and Haer’Dalis, please try not to keep us all awake tonight with your renditions.~
+== BLEINA ~(*Still smiling*) It is not wise to promise that which you cannot deliver, and Haerï¿½Dalis, please try not to keep us all awake tonight with your renditions.~
 EXIT
 
 CHAIN IF ~Global("VP_Leina_Keldorn","LOCALS",2)~ THEN BLEINA keldorn
 	~Sir Keldorn, I heard you have two very young daughters. Tell me, do they not miss their father and do you not feel you are missing the opportunity to watch them grow into young women by staying so much on the road?~
 DO ~SetGlobal("VP_Leina_Keldorn","LOCALS",3)~
 == BKELDOR ~Often Leina, often, but please I much prefer you to call me Keldorn. The sir makes me sound so pompous.~
-== BLEINA ~(*Laughs*) You pompous, never si... Keldorn. Yes you take your duties as a Paladin seriously but you also find time to talk to and to advise all who seek your wisdom regardless of their station in life.~ 
-== BKELDOR ~Ah! If only all those who sought my wisdom actually heeded it Leina, but I suppose my own wisdom has come with age and so it will be for others.~ 
+== BLEINA ~(*Laughs*) You pompous, never si... Keldorn. Yes you take your duties as a Paladin seriously but you also find time to talk to and to advise all who seek your wisdom regardless of their station in life.~
+== BKELDOR ~Ah! If only all those who sought my wisdom actually heeded it Leina, but I suppose my own wisdom has come with age and so it will be for others.~
 =
 ~We learn as we grow and we therefore expect to learn more the longer we live. Whereas it is true for some, sadly not for all, so I will always be needed to help those who have fallen to find their path again and to fight for those oppressed by the less godly.~
 == BLEINA ~And what of Keldorn the man, surely he has done all that his god could expect of him? Do you not wish that he would now give you leave to finish your life away from the battlefield and in the bosom of your family?~
 == BKELDOR ~If it were for me to decide I would gladly retire and spend what years I have left with my Maria, and be there to watch my daughters grow into their own lives, but I pledged my service to Torm long before I married Maria.~
 =
-~As long as he has a need for an old Paladin such as myself I am sworn to do his work and follow whatever path he sets before me.~ 
+~As long as he has a need for an old Paladin such as myself I am sworn to do his work and follow whatever path he sets before me.~
 == BLEINA ~You are not old Keldorn, You may have the years of the mature man but your mind and your spirit has the vitality of a youth half your age. I am sure that Torm also sees this in you and that is why he is reluctant to let go of so faithful a servant.~
 == BKELDOR ~(*Smiling*) You have made an old Paladin happy with your words Leina. For one so young you have a very sensible and knowing head on your shoulders. This I have observed in you many times as you speak to those around you.~
 == BLEINA ~No, Keldorn. I would not say that my head is sensible for what I have learned has been through being very unsensible, a hard and painful way to learn and not a way I would recommend.~
@@ -5972,9 +5972,9 @@ DO ~SetGlobal("VP_Leina_Keldorn","LOCALS",3)~
 =
 ~You are talented, beautiful and your heart is good, be proud of who you are and what your experiences have taught you. Never let others persuade you that you are anything less than what you are.~
 == BLEINA ~I am not about to let my heart be swayed again Keldorn, not ever. I am content with my life as it is, I have my music and I am safe in the knowledge that it can never hurt me.~
-== BKELDOR ~Not ever is a very long time Leina, too long to be sure of anything,  especially for one with a life span such as your own.~ 
+== BKELDOR ~Not ever is a very long time Leina, too long to be sure of anything,  especially for one with a life span such as your own.~
 =
-~Live each day as it unfolds, give thanks for whatever it brings but always look forward to tomorrow and delight in the anticipation of the unknown.~  
+~Live each day as it unfolds, give thanks for whatever it brings but always look forward to tomorrow and delight in the anticipation of the unknown.~
 == BLEINA ~(*Laughs softly*) And is that  the philosophy of Sir Keldorn? Seriously, your words carry your wisdom Keldorn, and I thank you for sharing them with me.~
 EXIT
 
@@ -6047,7 +6047,7 @@ DO ~SetGlobal("VP_BMelora","LOCALS",6)~
 == BLEINA ~I am sorry Melora. It would appear we have both been let down by the men in our lives. You by your father and me by the bastard I loved and called husband.~
 =
 ~Maybe this  gives us some common ground for us to work on towards becoming friends. What do you say Melora, shall we start again?~
-== BMELORA ~Maybe... if you promise I won’t have to learn magic in order to be deemed suitable as friend material for a user of magic.~
+== BMELORA ~Maybe... if you promise I wonï¿½t have to learn magic in order to be deemed suitable as friend material for a user of magic.~
 == BLEINA ~(*Laughs softly*) No, I promise, no learning of magic required, but maybe... just maybe, this bard come magic user can, in time, teach you that it is not a thing to despise and fear so much.~
 == BMELORA ~How many years does a half elf have Leina?~
 EXIT
@@ -6055,7 +6055,7 @@ EXIT
 APPEND ~BIMOEN2~
 
 IF ~~ THEN BEGIN theatr
-  SAY ~Hey Leina, any time you want, I’ll fill you in on all <PRO_HISHER> weak spots. One poke and it’s usually all over but for the cry for mercy.~
+  SAY ~Hey Leina, any time you want, Iï¿½ll fill you in on all <PRO_HISHER> weak spots. One poke and itï¿½s usually all over but for the cry for mercy.~
   IF ~~ THEN EXTERN ~BLEINA~ TheatQ9a
 END
 END	
@@ -6063,7 +6063,7 @@ END
 APPEND ~BHAERDA~
 
 IF ~~ THEN BEGIN LeiTheat
-  SAY ~(*Looking knowingly towards Leina*) Ah my little fire fly, I believe you are somewhat responsible for this idea of <CHARNAME>’s.~
+  SAY ~(*Looking knowingly towards Leina*) Ah my little fire fly, I believe you are somewhat responsible for this idea of <CHARNAME>ï¿½s.~
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6102,7 +6102,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6141,7 +6141,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6180,7 +6180,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -6249,7 +6249,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6288,7 +6288,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6327,7 +6327,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -6396,7 +6396,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6435,7 +6435,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~OR(2)
 !InParty("Imoen2")
 Dead("Imoen2")
@@ -6474,7 +6474,7 @@ OR(2)
 Dead("Melora")
 OR(2)
 !InParty("Taffic")
-Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+Dead("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -6551,19 +6551,19 @@ END
 APPEND ~FFBART~
 
 IF ~~ THEN BEGIN theatr1
-  SAY ~(*The hafling’s face lights up at the sight of Leina heading towards him*) Leina, whatever has delighted you so lass? Come, tell Samuel what brings this glow to your face... have you found yourself a man? You know there’s nothing that would please me more than to hear you have found a man worthy of you at last.~
+  SAY ~(*The haflingï¿½s face lights up at the sight of Leina heading towards him*) Leina, whatever has delighted you so lass? Come, tell Samuel what brings this glow to your face... have you found yourself a man? You know thereï¿½s nothing that would please me more than to hear you have found a man worthy of you at last.~
  IF ~!Global("Playhouse","GLOBAL",0)~ THEN EXTERN ~BLEINA~ TheatQ14
  IF ~Global("Playhouse","GLOBAL",0)~ THEN EXTERN ~BLEINA~ TheaQ14a
-END 
+END
 
 IF ~~ THEN BEGIN theatr2
   SAY ~Leina, of course lass, my patrons remember your sweet voice and ask about you often. Tell me, your songs, they will be about your travels and your adventures with <CHARNAME>, yes?~
-= 
+=
 ~It will be a splendid time, just like old times. We must make ready for your performance, your old room is exactly as you left it.~
- IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I have an idea.~ GOTO theatr3a 
+ IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I have an idea.~ GOTO theatr3a
  IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I think I have her this time.~ GOTO theatr3a
  IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I have an idea.~ GOTO theatr3b
- IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I think we have her this time.~ GOTO theatr3c 
+ IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I think we have her this time.~ GOTO theatr3c
  IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) Are you with me, we will get Leina this time.~ GOTO theatr3d
 END
 
@@ -6714,7 +6714,7 @@ IF ~~ THEN BEGIN theatr3d
 END
 
 IF ~~ THEN BEGIN theatr4
-  SAY ~(*A huge grin covering his face*) That’s my Leina, and if truth be told, I doubt you would have the lass any other way!~
+  SAY ~(*A huge grin covering his face*) Thatï¿½s my Leina, and if truth be told, I doubt you would have the lass any other way!~
   IF ~~ THEN EXIT
 END
 END

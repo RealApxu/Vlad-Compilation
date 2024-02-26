@@ -6,7 +6,7 @@ IF ~NumTimesTalkedTo(0)~ THEN BEGIN D1
 END
 
 IF ~~ THEN BEGIN D1a
-	SAY ~I fear I don’t have anything I can give you in the way of a reward but if you look around I am sure you will find trinkets of value that those beasts have taken from other not so fortunate souls.~
+	SAY ~I fear I donï¿½t have anything I can give you in the way of a reward but if you look around I am sure you will find trinkets of value that those beasts have taken from other not so fortunate souls.~
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
@@ -14,99 +14,99 @@ GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Tell me Durbin, do you also
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
-GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~What have we here? Seeing your predicament you certainly can’t be another of Lord Firkraag’s spies sent to spy on me.~ GOTO D2
+GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~What have we here? Seeing your predicament you certainly canï¿½t be another of Lord Firkraagï¿½s spies sent to spy on me.~ GOTO D2
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
-GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then you’d better hope you have information worth trading for your life!~ GOTO D17
+GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then youï¿½d better hope you have information worth trading for your life!~ GOTO D17
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
-GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is holding the child of Garren Windspear, I’ll deem that payment enough?~ GOTO D3
+GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is holding the child of Garren Windspear, Iï¿½ll deem that payment enough?~ GOTO D3
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
-GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag  is hiding out, I’ll deem that payment enough?~ GOTO D5
+GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag  is hiding out, Iï¿½ll deem that payment enough?~ GOTO D5
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 Global("FirkraagDeal","GLOBAL",0)
 Global("Firmag01Move","GLOBAL",0)
 InParty("Sharteel")
 !Dead("Sharteel")
-GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~I have no need for payment... it’s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin1
-	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~If you’ve come looking for Firkraag, you’re too late my friend... he’s dead.~ GOTO D19
-	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~What have we here? If you’re a servant of the dragon, consider yourself relieved of your duties... he’s dead!~ GOTO D19
+GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~I have no need for payment... itï¿½s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin1
+	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~If youï¿½ve come looking for Firkraag, youï¿½re too late my friend... heï¿½s dead.~ GOTO D19
+	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~What have we here? If youï¿½re a servant of the dragon, consider yourself relieved of your duties... heï¿½s dead!~ GOTO D19
 	IF ~OR(3)
 Global("FirkraagDeal","GLOBAL",1)
 GlobalGT("Firmag01Move","GLOBAL",0)
-Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then maybe I’ll take what little you do have in payment.~ GOTO D23
+Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then maybe Iï¿½ll take what little you do have in payment.~ GOTO D23
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)
 OR(3)
 Global("FirkraagDeal","GLOBAL",1)
 GlobalGT("Firmag01Move","GLOBAL",0)
 Global("VP_AngelosLegacy","GLOBAL",4)
 InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... it’s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin17
+!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... itï¿½s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin17
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 OR(3)
 Global("FirkraagDeal","GLOBAL",1)
 GlobalGT("Firmag01Move","GLOBAL",0)
 Global("VP_AngelosLegacy","GLOBAL",4)
 InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... it’s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin18
+!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... itï¿½s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin18
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 OR(3)
 Global("FirkraagDeal","GLOBAL",1)
 GlobalGT("Firmag01Move","GLOBAL",0)
-Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~So what are you, another of the dragon’s servants? I don’t see him rushing to save your skin from the Wolfweres.~ GOTO D25
+Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~So what are you, another of the dragonï¿½s servants? I donï¿½t see him rushing to save your skin from the Wolfweres.~ GOTO D25
 END
 
 IF ~~ THEN BEGIN D2
-	SAY ~I was looking for yo... ahem... intruders in the other room. Unfortunately for me, I didn’t notice when those beasts were thrown in and the door locked behind them.~
+	SAY ~I was looking for yo... ahem... intruders in the other room. Unfortunately for me, I didnï¿½t notice when those beasts were thrown in and the door locked behind them.~
 =
-	~I have been in the service of Lord Firkraag for many years now, an honour you couldn’t possibly begin to understand. However, I don’t flatter myself as being important in my Lord’s eyes. Certainly not important enough for him to notice I was missing.~
+	~I have been in the service of Lord Firkraag for many years now, an honour you couldnï¿½t possibly begin to understand. However, I donï¿½t flatter myself as being important in my Lordï¿½s eyes. Certainly not important enough for him to notice I was missing.~
 =
-	~If in time he discovered he was a servant or two down, he’d merely replace them thinking they’d perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
-	IF ~~ THEN REPLY ~I’ll consider it if you tell me where Garren Windspear’s child is being held?~ GOTO D3 //reply to D2 & D18
+	~If in time he discovered he was a servant or two down, heï¿½d merely replace them thinking theyï¿½d perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
+	IF ~~ THEN REPLY ~Iï¿½ll consider it if you tell me where Garren Windspearï¿½s child is being held?~ GOTO D3 //reply to D2 & D18
 	IF ~~ THEN REPLY ~Not before you tell me where this Lord Firkraag of yours is hiding out!~ GOTO D5 //reply to D2 & D18
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7 //reply to D2 & D18
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7 //reply to D2 & D18
 END
 
 IF ~~ THEN BEGIN D3
-	SAY ~(*Smiles*) The child... of course. My Lord knew you’d come, so I doubt he’ll mind me telling you now... Go back the way you have just come and cross the wooden bridge, I warn you it is well guarded. There is a room on your right which leads down to another and that is where you will find the child.~
-= 
-	~Even if you overcome the guards I don’t believe my Lord would have entrusted the key to the child’s cell to them. For that you must confront my Lord himself... if you dare. Now if that is all, I’ll take my leave of you.~
+	SAY ~(*Smiles*) The child... of course. My Lord knew youï¿½d come, so I doubt heï¿½ll mind me telling you now... Go back the way you have just come and cross the wooden bridge, I warn you it is well guarded. There is a room on your right which leads down to another and that is where you will find the child.~
+=
+	~Even if you overcome the guards I donï¿½t believe my Lord would have entrusted the key to the childï¿½s cell to them. For that you must confront my Lord himself... if you dare. Now if that is all, Iï¿½ll take my leave of you.~
 	IF ~~ THEN REPLY ~One more question, can you tell me where this Lord Firkraag of yours is hiding out?~ GOTO D4
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I’ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
+!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me Iï¿½ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
 END
 
 IF ~~ THEN BEGIN D4
-	SAY ~Yes, I’m sure my Lord wouldn’t mind my disclosing his whereabouts, not now you are so close. My Lord Firkraag’s personal quarters are on the lower floor of this place. The entrance to my Lord’s quarters is in the room where the child is imprisoned.~
-= 
-	~Turn left as you walk into this room and there you will find steps leading to the lower floor. 	He almost certainly knows you are here and is expecting you. I hope you are as prepared for him. Now if that is all, I’ll take my leave of you.~
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7
+	SAY ~Yes, Iï¿½m sure my Lord wouldnï¿½t mind my disclosing his whereabouts, not now you are so close. My Lord Firkraagï¿½s personal quarters are on the lower floor of this place. The entrance to my Lordï¿½s quarters is in the room where the child is imprisoned.~
+=
+	~Turn left as you walk into this room and there you will find steps leading to the lower floor. 	He almost certainly knows you are here and is expecting you. I hope you are as prepared for him. Now if that is all, Iï¿½ll take my leave of you.~
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I’ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
+!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me Iï¿½ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
 END
 
 IF ~~ THEN BEGIN D5
-	SAY ~(*Smiles*) I doubt you would have gotten this far if he hadn’t meant for you to, so I can safely say he wouldn’t mind my disclosing his whereabouts, now that you are so close.~
+	SAY ~(*Smiles*) I doubt you would have gotten this far if he hadnï¿½t meant for you to, so I can safely say he wouldnï¿½t mind my disclosing his whereabouts, now that you are so close.~
 =
-	~My Lord Firkraag’s personal quarters are on the lower floor of this place. Go back the way you have just come and cross the wooden bridge, I warn you it is well guarded. There is a room on your right which leads down to another.~
+	~My Lord Firkraagï¿½s personal quarters are on the lower floor of this place. Go back the way you have just come and cross the wooden bridge, I warn you it is well guarded. There is a room on your right which leads down to another.~
 =
 	~Turn left as you walk into this room and there you will find steps leading to the lower floor. He almost certainly knows you are here and is expecting you. I hope you are as prepared for him. Now if that is all...~
-	IF ~~ THEN REPLY ~One more question, can you tell me where Garren Windspear’s child is being held?~ GOTO D6
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7
+	IF ~~ THEN REPLY ~One more question, can you tell me where Garren Windspearï¿½s child is being held?~ GOTO D6
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I’ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
+!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me Iï¿½ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
 END
 
 IF ~~ THEN BEGIN D6
-	SAY ~The child... of course. You will find the child in the room that holds the entrance to my Lord’s private quarters. My Lord will have set guards around the child and even if you manage to overcome them, I don’t believe he would have entrusted the key to the child’s cell to them. For that you must confront my Lord himself... if you dare. Now if that is all...~
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7
+	SAY ~The child... of course. You will find the child in the room that holds the entrance to my Lordï¿½s private quarters. My Lord will have set guards around the child and even if you manage to overcome them, I donï¿½t believe he would have entrusted the key to the childï¿½s cell to them. For that you must confront my Lord himself... if you dare. Now if that is all...~
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I’ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
+!Dead("Sharteel")~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me Iï¿½ll not hesitate in taking the life I have just saved.~ EXTERN ~SHARTJ~ durbin11
 END
 
 IF ~~ THEN BEGIN D7
@@ -119,16 +119,16 @@ Dead("Sharteel")~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN D8
-	SAY ~I’ll have you know that I been in the service of Lord Firkraag for many years now, an honour you couldn’t possibly begin to understand.~
+	SAY ~Iï¿½ll have you know that I been in the service of Lord Firkraag for many years now, an honour you couldnï¿½t possibly begin to understand.~
 =
-	~I was looking for yo... intruders in the other room when, unfortunately for me, I didn’t notice that those beasts had been thrown in and the door locked behind them. I don’t flatter myself as being important in my Lord’s eyes. Certainly not important enough for him to notice I was missing.~
+	~I was looking for yo... intruders in the other room when, unfortunately for me, I didnï¿½t notice that those beasts had been thrown in and the door locked behind them. I donï¿½t flatter myself as being important in my Lordï¿½s eyes. Certainly not important enough for him to notice I was missing.~
 =
 	~So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin2
 END
 
 IF ~~ THEN BEGIN D9
-	SAY ~If it’s information you want then I know very little. I wasn’t privy to his Lordships dealings. He is very private, solitary even, preferring to use his servants as his eyes and ears, but I can tell you, of the few visitors who ventured here, even fewer left.~
+	SAY ~If itï¿½s information you want then I know very little. I wasnï¿½t privy to his Lordships dealings. He is very private, solitary even, preferring to use his servants as his eyes and ears, but I can tell you, of the few visitors who ventured here, even fewer left.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin3
 END
 
@@ -138,36 +138,36 @@ IF ~~ THEN BEGIN D10
 END
 
 IF ~~ THEN BEGIN D11
-	SAY ~Threatening gestures won’t get you anywhere. You just have to be patient as it takes a little longer these days for my brain to recall past incidents that were of little consequence to me.~
+	SAY ~Threatening gestures wonï¿½t get you anywhere. You just have to be patient as it takes a little longer these days for my brain to recall past incidents that were of little consequence to me.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin5
 END
 
 IF ~~ THEN BEGIN D12
-	SAY ~(*Looking into Shar-Teel’s eyes, the old man shakes his head*) Sadly, oft’ an evil heart is masked by a beautiful face. I have come across many such faces but none with eyes that shine with the lust for blood in the way that yours do. A cruel heart surely beats within your breast.~
+	SAY ~(*Looking into Shar-Teelï¿½s eyes, the old man shakes his head*) Sadly, oftï¿½ an evil heart is masked by a beautiful face. I have come across many such faces but none with eyes that shine with the lust for blood in the way that yours do. A cruel heart surely beats within your breast.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin6
 END
 
 IF ~~ THEN BEGIN D13
-	SAY ~That won’t be necessary, things are coming back to me. I can’t be certain... I wasn’t here when the young man dropped by, but it is said that there are certain items my Lord keeps hidden well away from his usual hoard...~
+	SAY ~That wonï¿½t be necessary, things are coming back to me. I canï¿½t be certain... I wasnï¿½t here when the young man dropped by, but it is said that there are certain items my Lord keeps hidden well away from his usual hoard...~
 =
-	~Items, that for personal reasons, he didn’t want falling into the hands of those who seek to destroy him... or so I have heard. Could these be what you seek?~
+	~Items, that for personal reasons, he didnï¿½t want falling into the hands of those who seek to destroy him... or so I have heard. Could these be what you seek?~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin7
 END
 
 IF ~~ THEN BEGIN D14
-	SAY ~Alas, you have made this journey for nothing. They are no longer here. Sometime ago a servant had discovered his Lordship’s hidden cache. As it so happen, a short while later he subsequently failed in his service to Lord Firkraag, and fearing for his life he absconded with the lot.~
+	SAY ~Alas, you have made this journey for nothing. They are no longer here. Sometime ago a servant had discovered his Lordshipï¿½s hidden cache. As it so happen, a short while later he subsequently failed in his service to Lord Firkraag, and fearing for his life he absconded with the lot.~
 =
-	~I remember the day well, his Lordship’s anger was such that this whole place shook and I feared it would topple to the ground... as he raged in search of the thief but he was long gone.~
+	~I remember the day well, his Lordshipï¿½s anger was such that this whole place shook and I feared it would topple to the ground... as he raged in search of the thief but he was long gone.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin8
 END
 
 IF ~~ THEN BEGIN D15
-	SAY ~(*Squirming away from her sword*) Please, you’ll not learn anything if you kill me. I beg you, give me your word that you’ll set me free and I’ll tell you what I know?~
+	SAY ~(*Squirming away from her sword*) Please, youï¿½ll not learn anything if you kill me. I beg you, give me your word that youï¿½ll set me free and Iï¿½ll tell you what I know?~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin9
 END
 
 IF ~~ THEN BEGIN D16
-	SAY ~There... there have been reported sightings of him in the area of Umar Hills but he always manages to disappear before anyone can get close enough to apprehend him. With each new sighting and failure of capture that reached his Lordship’s ears, he could be heard raging and cursing enough to bring the walls down around us all. I... I swear, that is the truth.~
+	SAY ~There... there have been reported sightings of him in the area of Umar Hills but he always manages to disappear before anyone can get close enough to apprehend him. With each new sighting and failure of capture that reached his Lordshipï¿½s ears, he could be heard raging and cursing enough to bring the walls down around us all. I... I swear, that is the truth.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin10
 END
 
@@ -179,19 +179,19 @@ IF ~~ THEN BEGIN D17
 END
 
 IF ~~ THEN BEGIN D18
-	SAY ~I’ll have you know that I been in the service of Lord Firkraag for many years now and I was looking for yo... ahem... intruders in the other room.~
+	SAY ~Iï¿½ll have you know that I been in the service of Lord Firkraag for many years now and I was looking for yo... ahem... intruders in the other room.~
 =
-	~Unfortunately for me, I didn’t notice when those beasts were thrown in and the door locked behind them. I don’t flatter myself as being important in my Lord’s eyes. Certainly not important enough for him to notice I was missing.~
+	~Unfortunately for me, I didnï¿½t notice when those beasts were thrown in and the door locked behind them. I donï¿½t flatter myself as being important in my Lordï¿½s eyes. Certainly not important enough for him to notice I was missing.~
 =
 	~So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
-	IF ~~ THEN REPLY ~I’ll consider it if you tell me where Garren Windspear’s child is being held?~ GOTO D3 //reply to D2 & D18
+	IF ~~ THEN REPLY ~Iï¿½ll consider it if you tell me where Garren Windspearï¿½s child is being held?~ GOTO D3 //reply to D2 & D18
 	IF ~~ THEN REPLY ~Not before you tell me where this Lord Firkraag of yours is hiding out!~ GOTO D5 //reply to D2 & D18
-	IF ~~ THEN REPLY ~I don’t think so. I can’t have you warning your master that we are closing in on him now can I?~ GOTO D7 //reply to D2 & D18
+	IF ~~ THEN REPLY ~I donï¿½t think so. I canï¿½t have you warning your master that we are closing in on him now can I?~ GOTO D7 //reply to D2 & D18
 END
 
 IF ~~ THEN BEGIN D19
-	SAY ~(*Shaking his head sadly*) I have long expected this day but it doesn’t make it any less painful. I knew that there would come a day when his arrogance would be his downfall. That he would, one day, challenge one too many young adventurers and one of those adventurers would be his death.~
-= 
+	SAY ~(*Shaking his head sadly*) I have long expected this day but it doesnï¿½t make it any less painful. I knew that there would come a day when his arrogance would be his downfall. That he would, one day, challenge one too many young adventurers and one of those adventurers would be his death.~
+=
 	~Still, it is a sad day when so magnificent and ancient a creature such as he dies. The knowledge he carried, gathered over the centuries... lost forever. Forgive me, I must go mourn my Lord.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin12
 END
@@ -202,17 +202,17 @@ IF ~~ THEN BEGIN D20
 END
 
 IF ~~ THEN BEGIN D21
-	SAY ~(*Sneers*) Bah, why should I? You’ve already taken enough of my Lord’s possessions to satisfy your greed, not to mention the name you’ll have made for yourself when you tell your tale of how you slaughtered one of nature’s mightiest and most ancient of creatures! Isn’t that enough to satisfy your lust for glory?~
+	SAY ~(*Sneers*) Bah, why should I? Youï¿½ve already taken enough of my Lordï¿½s possessions to satisfy your greed, not to mention the name youï¿½ll have made for yourself when you tell your tale of how you slaughtered one of natureï¿½s mightiest and most ancient of creatures! Isnï¿½t that enough to satisfy your lust for glory?~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin14
 END
 
 IF ~~ THEN BEGIN D21a
-	SAY ~(*He pales and starts squirming at the touch of her sword*) Please, you’ll not learn anything if you kill me. I beg you, give me your word that you’ll set me free and I’ll tell you what I know?~
+	SAY ~(*He pales and starts squirming at the touch of her sword*) Please, youï¿½ll not learn anything if you kill me. I beg you, give me your word that youï¿½ll set me free and Iï¿½ll tell you what I know?~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin15
 END
 
 IF ~~ THEN BEGIN D22
-	SAY ~There... there have been reported sightings of him in the area of Umar Hills but he always manages to disappear before anyone can get close enough to apprehend him. With each new sighting and failure of capture that reached his Lordship’s ears, he could be heard raging and cursing enough to bring the walls down around us all. I... I swear, that is the truth.~
+	SAY ~There... there have been reported sightings of him in the area of Umar Hills but he always manages to disappear before anyone can get close enough to apprehend him. With each new sighting and failure of capture that reached his Lordshipï¿½s ears, he could be heard raging and cursing enough to bring the walls down around us all. I... I swear, that is the truth.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin16
 END
 
@@ -223,27 +223,27 @@ IF ~~ THEN BEGIN D23
 Dead("Sharteel")~ THEN DO ~EscapeArea()~ EXIT
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)
 InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... it’s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin17
+!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... itï¿½s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin17
 	IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0)
 InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... it’s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin18
+!Dead("Sharteel")~ THEN REPLY ~I have no need for payment... itï¿½s all in a days work for an adventurer. You are free to go.~ EXTERN ~SHARTJ~ durbin18
 END
 
 IF ~~ THEN BEGIN D24
-	SAY ~(*Haughtily*) You’ve met my Lord, seen his magnificence for yourself, felt the power surrounding him and yet you still live. I am guessing my Lord Firkraag has some future plans for you... you’ll get nothing from me.~
+	SAY ~(*Haughtily*) Youï¿½ve met my Lord, seen his magnificence for yourself, felt the power surrounding him and yet you still live. I am guessing my Lord Firkraag has some future plans for you... youï¿½ll get nothing from me.~
 	IF ~~ THEN EXTERN ~SHARTJ~ durbin19
 END
 
 IF ~~ THEN BEGIN D25
-	SAY ~I am and have been in the service of Lord Firkraag for many years now, an honour you couldn’t possibly begin to understand. However, I don’t flatter myself as being important in my Lord’s eyes. Certainly not important enough for him to notice I was missing.~
+	SAY ~I am and have been in the service of Lord Firkraag for many years now, an honour you couldnï¿½t possibly begin to understand. However, I donï¿½t flatter myself as being important in my Lordï¿½s eyes. Certainly not important enough for him to notice I was missing.~
 =
-	~If in time he discovered he was a servant or two down, he’d merely replace them thinking they’d perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
+	~If in time he discovered he was a servant or two down, heï¿½d merely replace them thinking theyï¿½d perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
 	IF ~OR(2)
 !InParty("Sharteel")
-Dead("Sharteel")~ THEN REPLY ~I’ve no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
+Dead("Sharteel")~ THEN REPLY ~Iï¿½ve no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I’ve no quarrel with you, begone.~ EXTERN ~SHARTJ~ durbin20
+!Dead("Sharteel")~ THEN REPLY ~Iï¿½ve no quarrel with you, begone.~ EXTERN ~SHARTJ~ durbin20
 	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN REPLY ~I don’t think so. I’m coming back for the dragon and dealing with you will leave me ones less servant hindering my goal.~ EXTERN ~SHARTJ~ durbin20
+!Dead("Sharteel")~ THEN REPLY ~I donï¿½t think so. Iï¿½m coming back for the dragon and dealing with you will leave me ones less servant hindering my goal.~ EXTERN ~SHARTJ~ durbin20
 	IF ~~ THEN REPLY ~(*Lie*) Your lord lays dead below, struck down by my hand. What say you now?~ GOTO D19
 END

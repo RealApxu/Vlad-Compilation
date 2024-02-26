@@ -110,7 +110,7 @@ END
 
 ADD_STATE_TRIGGER BODHI 61
   ~!InParty("Leina")~
-  
+
 ADD_STATE_TRIGGER BODHI 63
   ~!InParty("Leina")~
 

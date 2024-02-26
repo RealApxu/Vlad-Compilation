@@ -45,19 +45,19 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~(Pats you on the shoulder and smiles) You are more than welcome to be nice to rogues who steal from you, and I'm sure they'll be so grateful to you that they won't do it again.~
-	IF ~~ THEN REPLY ~You huffed pretty loudly when you almost lost an item. A thief was mad at a thief for stealing. Is the irony lost on you, Erevain?~ GOTO 10 
-	IF ~~ THEN REPLY ~You're right, my apologies.~ GOTO 8 
+	IF ~~ THEN REPLY ~You huffed pretty loudly when you almost lost an item. A thief was mad at a thief for stealing. Is the irony lost on you, Erevain?~ GOTO 10
+	IF ~~ THEN REPLY ~You're right, my apologies.~ GOTO 8
 END
-  
+
 IF ~~ THEN BEGIN 8
   SAY ~Thanks. Watch her more carefully. Imoen's harmless thefts could do us a lot of harm eventually. Not all are so forgiving as I am.~
 	IF ~~ THEN EXIT
-END  
-  
+END
+
 IF ~~ THEN BEGIN 9
   SAY ~I did defend my bag, thank you. And yes, I can be mad at someone who wants to steal from me.~
 	IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 10
   SAY ~I only steal when I need to or the person I'm stealing from can afford to lose it.~
@@ -75,24 +75,24 @@ END
 IF ~~ THEN BEGIN 12
   SAY ~I don't answer to you. Leave me be.~
 	IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 13
   SAY ~Then perhaps I should leave then. It seems that my well-being isn't important here.~
 	IF ~~ THEN REPLY ~Yes, I think you should leave. I'm sick of your rotten attitude.~ GOTO 14
 	IF ~~ THEN REPLY ~I don't want you to leave Erevain; you need to understand the seriousness of calling Imoen such rotten names.~ GOTO 15
-END 
+END
 
 IF ~~ THEN BEGIN 14
   SAY ~Good riddance. Joining this group was a mistake. Have fun getting stolen from everyone.~
 	IF ~~ THEN DO ~LeaveParty()
 EscapeArea()~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN 15
   SAY ~I'll stay for now. But dear Corellon help me! These people equate stealing with name-calling!~
 	IF ~~ THEN EXIT
-END  
+END
 
 IF ~~ THEN BEGIN 16
   SAY ~Dear Corellon help me!~
@@ -150,7 +150,7 @@ IF ~~ THEN BEGIN CHErevain6
 END
 
 IF ~~ THEN BEGIN CHErevain7
-	SAY ~Aye, traveling is certainly a welcome respite from boredom. Still, I would not trade away these last twenty years for anything. I just needed this release; this escape.~ 
+	SAY ~Aye, traveling is certainly a welcome respite from boredom. Still, I would not trade away these last twenty years for anything. I just needed this release; this escape.~
 		IF ~~ THEN REPLY ~Twenty years? Isn't that a long time to be away from home. Don't you ever feel like returning? ~ GOTO CHErevain8
 		IF ~~ THEN REPLY ~Escape? Why do you need an escape?~ GOTO CHErevain8
 		IF ~~ THEN REPLY ~Absolutely. I was dying to get out of Candlekeep as a child. Anywhere else is most welcome!~ GOTO CHErevain8
@@ -167,7 +167,7 @@ IF ~~ THEN BEGIN CHErevain8
 END
 
 IF ~~ THEN BEGIN CHErevain9
-	SAY ~No... No I am not feeling okay.~ 
+	SAY ~No... No I am not feeling okay.~
 		IF ~~ THEN GOTO CHErevain8
 END
 
@@ -269,7 +269,7 @@ IF ~~ THEN BEGIN CH2Erevain11
 END
 
 IF ~~ THEN BEGIN CH2Erevain12
-	SAY ~You are a severe threat to all of Faerun, <CHARNAME>. By the aid of the Seldarine you shall fall one day!~ 
+	SAY ~You are a severe threat to all of Faerun, <CHARNAME>. By the aid of the Seldarine you shall fall one day!~
 		IF ~~ THEN DO ~SetGlobal("VP_MyTalks","LOCALS",6)
 LeaveParty()
 EscapeArea()~ EXIT
@@ -525,14 +525,14 @@ IF ~~ THEN BEGIN CH5Erevain70
 END
 
 IF ~~ THEN BEGIN CH5Erevain80
-	SAY ~Trying isn't good enough <CHARNAME>. When it really mattered, I failed; I wasn't strong enough and my comrades paid with their lives. What others did or did not do is irrelevant; I was as responsible for the as I was for myself. I cannot return to my homeland nor can I bear the shame of that catastrophe.~ 
+	SAY ~Trying isn't good enough <CHARNAME>. When it really mattered, I failed; I wasn't strong enough and my comrades paid with their lives. What others did or did not do is irrelevant; I was as responsible for the as I was for myself. I cannot return to my homeland nor can I bear the shame of that catastrophe.~
 		IF ~~ THEN REPLY ~No one is perfect Erevain. One can only be judged by his or her choices. Your choices were noble.~ GOTO CH5Erevain90
 		IF ~~ THEN REPLY ~I don't see why your family and people would reject you; you tried your best.~ GOTO CH5Erevain90
 		IF ~~ THEN REPLY ~If your comrades couldn't defend themselves, then that's their problem not yours. You are not responsible for the competency of your comrades.~ GOTO CH5Erevain90
 END
 
 IF ~~ THEN BEGIN CH5Erevain90
-SAY ~Evereska is one of the last elven fortresses on the main continent of Faerun. We are judged not only by our actions, but on their effect on the elven civilization itself. My kind's numbers are dwindling. To have any part in their further decrease is unforgivable. I was as responsible for the lives of those Vale Guards and Yalatheniel as I am my own. If I did not leave of my own accord, my people and family would have assuredly rejected me. Now I must content myself to drift from location to location, stranger to stranger, and try to extract some meaning for my continued existence.~ 
+SAY ~Evereska is one of the last elven fortresses on the main continent of Faerun. We are judged not only by our actions, but on their effect on the elven civilization itself. My kind's numbers are dwindling. To have any part in their further decrease is unforgivable. I was as responsible for the lives of those Vale Guards and Yalatheniel as I am my own. If I did not leave of my own accord, my people and family would have assuredly rejected me. Now I must content myself to drift from location to location, stranger to stranger, and try to extract some meaning for my continued existence.~
 IF ~~ THEN REPLY ~Aiding me and others, and making the world a better place is a worthy existence.~ GOTO CH5Erevain100
 IF ~~ THEN REPLY ~Aiding me while exploring unknown lands and gaining knowledge is a worthy existence. ~ GOTO CH5Erevain100
 IF ~~ THEN REPLY ~Aiding me while gaining power and funds to vanquish your enemies is a worthy existence. ~ GOTO CH5Erevain100
@@ -550,7 +550,7 @@ IF ~~ THEN BEGIN CH5Erevain110
 END
 
 IF ~~ THEN BEGIN CH5Erevain120
-	SAY ~I inflicted a great shame on my people that I cannot recover from. There is little purpose to my existence anymore.~ 
+	SAY ~I inflicted a great shame on my people that I cannot recover from. There is little purpose to my existence anymore.~
 		IF ~~ THEN REPLY ~Aiding me and others, and making the world a better place is a worthy existence.~ GOTO CH5Erevain100
 		IF ~~ THEN REPLY ~Aiding me while exploring unknown lands and gaining knowledge is a worthy existence. ~ GOTO CH5Erevain100
 		IF ~~ THEN REPLY ~Aiding me while gaining power and funds to vanquish your enemies is a worthy existence. ~ GOTO CH5Erevain100
@@ -1101,7 +1101,7 @@ DO ~SetGlobal("VP_BImoen","LOCALS",6)~
 == BEREVAIN ~That reminds me of my home of Evereska. Imoen, we had the most beautiful forests in all of Faerun. Every tenday I would travel up and down each tree reciting each one's name: Agala, Einid, Ogainithyn, Illesmyin, Nintomyan, Erevain, and so on.~
 == IMOENJ ~Erevain? Really? Did your parents name you after a big stick with greens? What came first, you or the tree?~
 == BEREVAIN ~The tree. An ancient exquisite Duskwood that has been growing for centuries prior to my birth. Such namings are not uncommon amongst the elves.~
-== IMOENJ ~So does every coffee mug, every weed, and that pebble over their have names too?~ 
+== IMOENJ ~So does every coffee mug, every weed, and that pebble over their have names too?~
 == BEREVAIN ~You make me smile Imoen. No, Not everything in nature have a name.~
 == IMOENJ ~Well I'd bet your name was a lot better than most other ones out there and it helped make you more famous in Evereska.~
 == BEREVAIN ~Maybe later.~
@@ -1116,7 +1116,7 @@ DO ~SetGlobal("VP_BImoen2","LOCALS",6)~
 == BEREVAIN ~That reminds me of my home of Evereska. Imoen, we had the most beautiful forests in all of Faerun. Every tenday I would travel up and down each tree reciting each one's name: Agala, Einid, Ogainithyn, Illesmyin, Nintomyan, Erevain, and so on.~
 == IMOEN2J ~Erevain? Really? Did your parents name you after a big stick with greens? What came first, you or the tree?~
 == BEREVAIN ~The tree. An ancient exquisite Duskwood that has been growing for centuries prior to my birth. Such namings are not uncommon amongst the elves.~
-== IMOEN2J ~So does every coffee mug, every weed, and that pebble over their have names too?~ 
+== IMOEN2J ~So does every coffee mug, every weed, and that pebble over their have names too?~
 == BEREVAIN ~You make me smile Imoen. No, Not everything in nature have a name.~
 == IMOEN2J ~Well I'd bet your name was a lot better than most other ones out there and it helped make you more famous in Evereska.~
 == BEREVAIN ~Maybe later.~
@@ -1126,7 +1126,7 @@ EXIT
 
 CHAIN IF ~Global("VP_BImoen","LOCALS",11)~ THEN BEREVAIN C5
   ~I wanted to apologize to you for my earlier comments.~
-DO ~SetGlobal("VP_BImoen","LOCALS",12)~  
+DO ~SetGlobal("VP_BImoen","LOCALS",12)~
 == IMOENJ ~(Stands up straight) And, exactly what would those comments be?~
 == BEREVAIN ~And? What?~
 == IMOENJ ~You called me another name too!~
@@ -1139,7 +1139,7 @@ EXIT
 
 CHAIN IF ~Global("VP_BImoen2","LOCALS",11)~ THEN BEREVAIN C6
   ~I wanted to apologize to you for my earlier comments.~
-DO ~SetGlobal("VP_BImoen2","LOCALS",12)~  
+DO ~SetGlobal("VP_BImoen2","LOCALS",12)~
 == IMOEN2J ~(Stands up straight) And, exactly what would those comments be?~
 == BEREVAIN ~And? What?~
 == IMOEN2J ~You called me another name too!~
@@ -1152,7 +1152,7 @@ EXIT
 
 CHAIN IF ~Global("VP_BImoen","LOCALS",14)~ THEN BEREVAIN C7
   ~Despite everything, I know that you harbor some good feelings about your home of Candlekeep.~
-DO ~SetGlobal("VP_BImoen","LOCALS",15)~  
+DO ~SetGlobal("VP_BImoen","LOCALS",15)~
 == IMOENJ ~Ya I do. It was a stuffy uptight place full of fun opportunities to pull pranks. But, it was home.~
 == BEREVAIN ~My home was a giant maple tree. Filled with markings of my ancestors generations back until the founding of the Blacksheaf clan. There was laughter and play at every season of each year there. All of my siblings and cousins would play around it together. That tree housed, warmed, and fed us with its delicious syrup.~
 == IMOENJ ~That sounds like a very happy childhood home.~
@@ -1163,7 +1163,7 @@ EXIT
 
 CHAIN IF ~Global("VP_BImoen2","LOCALS",14)~ THEN BEREVAIN C8
   ~Despite everything, I know that you harbor some good feelings about your home of Candlekeep.~
-DO ~SetGlobal("VP_BImoen2","LOCALS",15)~  
+DO ~SetGlobal("VP_BImoen2","LOCALS",15)~
 == IMOEN2J ~Ya I do. It was a stuffy uptight place full of fun opportunities to pull pranks. But, it was home.~
 == BEREVAIN ~My home was a giant maple tree. Filled with markings of my ancestors generations back until the founding of the Blacksheaf clan. There was laughter and play at every season of each year there. All of my siblings and cousins would play around it together. That tree housed, warmed, and fed us with its delicious syrup.~
 == IMOEN2J ~That sounds like a very happy childhood home.~
@@ -1187,7 +1187,7 @@ CHAIN IF ~Global("VP_BMinsc","LOCALS",5)~ THEN BEREVAIN C1q
 DO ~SetGlobal("VP_BMinsc","LOCALS",6)~
 == BMINSC ~Boo is an intelligent miniature giant space hamster which others foolishly refer to as a normal hamster.~
 == BEREVAIN ~Hah, how do you know that Boo is intelligent?~
-== BMINSC ~You are funny elf. Go ahead. Ask Boo any question. He is a very smart.~ 
+== BMINSC ~You are funny elf. Go ahead. Ask Boo any question. He is a very smart.~
 == BEREVAIN ~Boo. Roll around.~
 == BMINSC ~(Whispers to Boo...) See there he did.~
 == BEREVAIN ~What are the days of the TEXITay?~
@@ -1257,10 +1257,10 @@ CHAIN IF ~Global("VP_BValygar","LOCALS",2)~ THEN BEREVAIN C7q
   ~Valygar, your stealth capabilities are impressive.~
 DO ~SetGlobal("VP_BValygar","LOCALS",3)~
 == BVALYGA ~I have also noticed that you seem to disappear fairly well Erevain.~
-== BEREVAIN ~Thank you. As do you Valygar.~ 
+== BEREVAIN ~Thank you. As do you Valygar.~
 == BVALYGA ~Who taught you such skills.~
 == BEREVAIN ~I learned it from the Greycloaks. Elves are the greatest masters of stealth. The cloak of elvenkind is highly sought by all races.~
-== BVALYGA ~Hmph. We'll see. I have heard of that cloak. Do you have one?~ 
+== BVALYGA ~Hmph. We'll see. I have heard of that cloak. Do you have one?~
 == BEREVAIN ~No, and you aren't getting one either.~
 == BVALYGA ~I don't need it. My stealth is well enough developed. Come let us move on.~
 EXIT
@@ -1294,7 +1294,7 @@ DO ~SetGlobal("VP_BMazzy","LOCALS",6)~
 == BMAZZY ~What strange Elvish question is this? Why would my kind dance in battle?~
 == BEREVAIN ~Sometimes it's entertaining to add additional twirls, flips, and thrusts while fighting your enemies.~
 == BMAZZY ~I assure you that halflings fight very hard to defEXIT themselves, their homes, and their families, they are not the least concerned about using such "flair".~
-== BEREVAIN ~Halflings are so agile though! Not even a little somersault?~ 
+== BEREVAIN ~Halflings are so agile though! Not even a little somersault?~
 == BMAZZY ~Only if absolutely necessary.~
 == BEREVAIN ~I'd love to see you perform one, Mazzy!~
 == BMAZZY ~Another time Erevain.~
@@ -1395,7 +1395,7 @@ DO ~SetGlobal("VP_BJan","LOCALS",9)~
 == BEREVAIN ~Excuse me?~
 == BJAN ~It's simply a fact that Gnomes truly have the best schnozzes in the whole crystal sphere. Nesmot's nose unfortunately could not make par. After a bit too much to drink, Nesmot EXITed up in the clutches of a medusa and a maedar. The snake lovers got into an argument and upon seeing Nesmot's puny nose and the maedar's handsome one, the medusa wanted to punish her mate. The medusa quickly turned them both into stone, chopped their noses off and switched them out before returning them to flesh again. The maedar was weepingly furious but ol Nesmot was dancing as happy as could be. His new giant green nose was the talk of the town and all the gnomish ladies now swooned for him.~
 == BEREVAIN ~Wait what about the mucous?~
-== BJAN ~Oh yes, well you see that maedar nose while handsome had a real sneezing problem. Nesmot gathered all the mucous and donated it to others and they too saw their noses grow and grow and grow.~ 
+== BJAN ~Oh yes, well you see that maedar nose while handsome had a real sneezing problem. Nesmot gathered all the mucous and donated it to others and they too saw their noses grow and grow and grow.~
 == BEREVAIN ~Big and green?~
 == BJAN ~At first. Though the green color eventually muted out. The big noses spread like ketchup seeds and that's how gnomes got their beautiful schnozzes.~
 EXIT
@@ -1458,7 +1458,7 @@ DO ~SetGlobal("VP_BKorgan","LOCALS",3)~
 == BKORGAN ~So Erevain, how many elves can ya scewer o'er a fire?~
 == BEREVAIN ~Leave me be with your foul humor.~
 == BKORGAN ~Ah come on. Have'a sense of humor. How many elves can ya scewer o'er a fire?~
-== BEREVAIN ~(Sigh) I don't know.~ 
+== BEREVAIN ~(Sigh) I don't know.~
 == BKORGAN ~Not many 'cause they ain't got much meat on'em! Har! Har! Har!~
 == BEREVAIN ~That's both crude and unfunny.~
 == BKORGAN ~Bah, you ain't got any better.~
@@ -1469,7 +1469,7 @@ CHAIN IF ~Global("VP_BKorgan","LOCALS",5)~ THEN BEREVAIN C7e
   ~Korgan, did you want to ask something?~
 DO ~SetGlobal("VP_BKorgan","LOCALS",6)~
 == BKORGAN ~How do ya like my ears, elf!~
-== BEREVAIN ~Ugh. They don't match your color.~ 
+== BEREVAIN ~Ugh. They don't match your color.~
 == BKORGAN ~That's true I s' pose. Still I picked them myself an prettied them up as best as I could.~
 == BEREVAIN ~You... got those from living drow didn't you?~
 == BKORGAN ~Well, they weren't quite living after my axe tore straight through their gullet!~
@@ -1483,7 +1483,7 @@ DO ~SetGlobal("VP_BKorgan","LOCALS",9)~
 == BKORGAN ~Do you know why I don't like elves.~
 == BEREVAIN ~Because we're refined, elegant, and articulate unlike you Korgan?~
 == BKORGAN ~Na. It's cause you're humorless spinless fools who don't have anything useful to say that isn't wrapped up in some poff'ery of undeserved importance.~
-== BEREVAIN ~Hah. Elves are probably one of the most fun loving races out there. Singing, dancing, music, and drinking are things that every elf loves.~ 
+== BEREVAIN ~Hah. Elves are probably one of the most fun loving races out there. Singing, dancing, music, and drinking are things that every elf loves.~
 == BKORGAN ~Drinking? Bah. Those pathetic Elven wines don't taste right or do anything for real intoxication.~
 == BEREVAIN ~Yes, I suppose dwarves like you only care for drinking and not for anything else remotely interesting. Take a look at these moves. (Twists around in a rapid spinning motion, flips over landing with feet angled toward the sky, clicks heels together while raising one arm to the side and another straight up) Woo! Now that is a dance move!~
 == BKORGAN ~Pardon while I go salt my eyes.~
@@ -1537,7 +1537,7 @@ CHAIN IF ~Global("VP_BSarevok","LOCALS",2)~ THEN BEREVAIN C13
 DO ~SetGlobal("VP_BSarevok","LOCALS",3)~
 == BSAREV25 ~I have few regrets and will not share them with the likes of you.~
 == BEREVAIN ~Come now Sarevok. How can you learn and grow if you don't talk about our mistakes.~
-== BSAREV25 ~It is beyond pointless to discuss what could have been instead of what is.~ 
+== BSAREV25 ~It is beyond pointless to discuss what could have been instead of what is.~
 == BEREVAIN ~Pointless perhaps, but you didn't say that you were without regrets.~
 == BSAREV25 ~Leave me be elf. I have no use for your pretentious prattling nor would I share such things with your intrusive ears.~
 == BEREVAIN ~But Sarevok are you...~
@@ -1566,7 +1566,7 @@ CHAIN IF ~Global("VP_BSharteel","LOCALS",8)~ THEN BEREVAIN C16
 DO ~SetGlobal("VP_BSharteel","LOCALS",9)~
 == BSHART ~I told you before to place your pathetic gaze elsewhere. This is your last warning elfling!~
 == BEREVAIN ~Oh just shut up! I long tire of your baseless threats. I wasn't looking your way and even the most perverted Calimshite would never be tempted to look your way.~
-== BSHART ~That's it! (Shar-Teel kicks Erevain in the groin).~ 
+== BSHART ~That's it! (Shar-Teel kicks Erevain in the groin).~
 == BEREVAIN ~Aaagh!~
 == BSHART ~Next time, you'll be dead.~
 == BEREVAIN ~I can attack more locations than just the front.~
@@ -1575,7 +1575,7 @@ EXIT
 CHAIN IF ~Global("VP_BDar","LOCALS",2)~ THEN BEREVAIN C17
   ~How do you feel about your people Dar?~
 DO ~SetGlobal("VP_BDar","LOCALS",3)~
-== BDAR ~My people?~ 
+== BDAR ~My people?~
 == BEREVAIN ~Yes, orcs. Those savages that pillage and kill civilized beings including the elves, my people.~
 == BDAR ~I am unlike those orcs. I was raised by priests of Ilmater to be kind, just, and merciful.~
 == BEREVAIN ~A spider is still a spider and cannot overcome its nature.~
@@ -1594,7 +1594,7 @@ EXIT
 CHAIN IF ~Global("VP_BDar","LOCALS",8)~ THEN BEREVAIN C19
   ~You've been very loyal to the group Dar.~
 DO ~SetGlobal("VP_BDar","LOCALS",9)~
-== BDAR ~Such is the teaching of Ilmater and my nature.~ 
+== BDAR ~Such is the teaching of Ilmater and my nature.~
 == BEREVAIN ~(Thinks a moment) Yes, perhaps you are different. I thank you Dar.~
 == BDAR ~Your welcome. As always, I shall serve to do good in the world.~
 EXIT
@@ -1605,7 +1605,7 @@ DO ~SetGlobal("VP_BAccalia","LOCALS",3)~
 == BACCALI ~Why do you ask such a question Erevain?~
 == BEREVAIN ~I miss the Lateu'quor. It roughly translates in the common tongue as the Forest Communion of the Crescent Moon. It has the most beautiful sight you'd ever see. Exquisite dancing, drinking, music, and art of all kinds. Rarely, Corellon bestows a special gift at these celebrations: A piece of Art, a Harp, or even a suit of Armor.~
 == BACCALI ~My, that's impressive.~
-== BEREVAIN ~It is. In fact, this sword was one of the gifts on one of those rare nights. The Feywarden of Corellon chose me to receive it.~ 
+== BEREVAIN ~It is. In fact, this sword was one of the gifts on one of those rare nights. The Feywarden of Corellon chose me to receive it.~
 == BACCALI ~Out of all the elves of Evereska, why were you chosen for that honor?~
 == BEREVAIN ~I do not know. To this day I do not know. My brothers and cousins were so jealous. The sword has served me well though.~
 == BACCALI ~I envy you Erevain of Corellon; I hope that Tempus will honor me in such a way one day.~
@@ -1674,7 +1674,7 @@ CHAIN IF ~Global("VP_BLeina","LOCALS",5)~ THEN BEREVAIN C27
 DO ~SetGlobal("VP_BLeina","LOCALS",6)~
 == BLEINA ~I told you not to speak to me of these things again! Why do you torment me so! I have done nothing wrong.~
 == BEREVAIN ~If you have done nothing wrong then why can't you say how you got them! You wouldn't want family heirlooms in unlawful hands would you!~
-== BLEINA ~These items were given to me after my mother's death! I...didn't know about it for many months. They are among the few remnants that are left of my mother's life.~ 
+== BLEINA ~These items were given to me after my mother's death! I...didn't know about it for many months. They are among the few remnants that are left of my mother's life.~
 == BEREVAIN ~Yes, it does seem that the moonblade has not rejected you. Else, you would not be able to even lift it. Your ability to wear that armor does seem to suggest a familial fit. Your mother was an elf?~
 == BLEINA ~Yes Erevain.~
 == BEREVAIN ~It is still highly irregular for such precious items to transfer to a half-breed. But, your words are likely true.~
@@ -1705,7 +1705,7 @@ DO ~SetGlobal("VP_BMelora","LOCALS",6)~
 == BEREVAIN ~I have done no such thing.~
 == BMELORA ~Sure ya haven't. No one believes liars who charm ladies with their magic and then just as the spell fades away tosses those same ladies away.~
 == BEREVAIN ~There is room for a healthy awareness of magic. I am sorry if such things happened to you.~
-== BMELORA ~Sorry doesn't do a lick for me Erevain. What my father did to my mother is long past.~ 
+== BMELORA ~Sorry doesn't do a lick for me Erevain. What my father did to my mother is long past.~
 == BEREVAIN ~If we ever find your father, I will aid you in your revenge.~
 == BMELORA ~Thank you Erevain.~
 EXIT
@@ -1713,7 +1713,7 @@ EXIT
 CHAIN IF ~Global("VP_BTaffic","LOCALS",2)~ THEN BEREVAIN C31
   ~Yes, Taffic?~
 DO ~SetGlobal("VP_BTaffic","LOCALS",3)~
-== BTAFFIC ~Why did you say earlier that I could not become an elf? It is my destiny to become great!~ 
+== BTAFFIC ~Why did you say earlier that I could not become an elf? It is my destiny to become great!~
 == BEREVAIN ~A N-Tel-Quess cannot become a Tel-quessir~
 == BTAFFIC ~What in Toril is that supposed to mean.~
 == BEREVAIN ~(Sigh) A gnome cannot simply become an elf.~
@@ -1758,7 +1758,7 @@ DO ~SetGlobal("VP_BSime","LOCALS",6)~
 == BSIME ~However, even so many of your people seem to have lost touch with nature itself, spEXITing their time dealing with the foibles of civilization.~
 == BEREVAIN ~Foibles? Music, art, poetry, and beautiful craftsmanship of all kinds!~
 == BSIME ~While beautiful, it takes your people away from the beauty of nature. The only ones among you that still appreciate it fully seem to be the Wild Elves.~
-== BEREVAIN ~What? My barely dressed, tattooed, covered in mud cousins? No, when I meet them in my journeys they shall be warmly welcomed but from a distance and not touched.~ 
+== BEREVAIN ~What? My barely dressed, tattooed, covered in mud cousins? No, when I meet them in my journeys they shall be warmly welcomed but from a distance and not touched.~
 == BSIME ~You wish to claim a closeness to nature yet you wish not to be close even to your kin.~
 == BEREVAIN ~Yes, I think a healthy distance from the dirt and stink of nature is quite appropriate.~
 == BEREVAIN ~(Moves around uncomfortably) Perhaps we can discuss this later.~

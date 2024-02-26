@@ -22,7 +22,7 @@ SetGlobal("D5_Girl_Move_Loc","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ294
 SetGlobal("D5_Girl_Move_Loc","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ294
   IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN REPLY ~What do you mean?~ DO ~SetGlobal("D5_Girl_No_Talk","GLOBAL",1)
-SetGlobal("D5_Girl_Move_Loc","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ294  
+SetGlobal("D5_Girl_Move_Loc","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ294
 END
 
 IF WEIGHT #0 ~Global("D5_Girl_Move_Loc","GLOBAL",1)~ THEN BEGIN 1

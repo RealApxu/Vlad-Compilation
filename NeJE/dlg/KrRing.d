@@ -23,8 +23,8 @@ IF ~~ THEN BEGIN R2
 ~(Desperate, you turn to your comrades but they avert their gaze... you will have to make the decision, to choose between love and power on your own.)~
 =
 ~No, you are wrong! You are choosing between good and evil, remember that!~
-		IF ~~ THEN REPLY ~No! I choose Love and it will help me to win!~ GOTO R4 
-		IF ~~ THEN REPLY ~I choose Power and I will be victorious!~ GOTO R3 
+		IF ~~ THEN REPLY ~No! I choose Love and it will help me to win!~ GOTO R4
+		IF ~~ THEN REPLY ~I choose Power and I will be victorious!~ GOTO R3
 END
 
 IF ~~ THEN BEGIN R3

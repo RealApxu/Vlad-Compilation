@@ -9,7 +9,7 @@ IF ~~ THEN BEGIN 1
   SAY ~Shut up, Govan!~
   IF ~~ THEN GOTO 2
 END
-  
+
 IF ~~ THEN BEGIN 2
   SAY ~I would like to hear your story, Leina.~
   IF ~~ THEN DO ~ClearAllActions()
@@ -20,8 +20,8 @@ END
 IF ~Global("VP_LeinaAppears","GLOBAL",3)~ THEN BEGIN 3
   SAY ~I am ashamed of you, Govan. Your treatment of this young woman has been worse than barbaric.~
   IF ~~ THEN DO ~SetGlobal("VP_LeinaAppears","GLOBAL",3)~ GOTO 4
-END    
-  
+END
+
 IF ~~ THEN BEGIN 4
   SAY ~I cannot believe a son of mine capable of such things. What have we raised?~
   IF ~~ THEN REPLY ~Not forgetting his deal with Killian concerning my welfare. He is some lad this boy of yours!~ GOTO 5
@@ -31,32 +31,32 @@ END
 IF ~~ THEN BEGIN 5
   SAY ~You hold your tongue, <CHARNAME>, you are no better than my son, Leina has also told me of your part in all this.~
   IF ~~ THEN GOTO 6
-END   
-  
+END
+
 IF ~~ THEN BEGIN 6
   SAY ~And you, Govan, have dealings with that low-life Killian? After the trouble he brought upon the Duvaine family, what sort of a son are you, Govan?~
   IF ~~ THEN REPLY ~Let me interrupt a moment here, I should have remembered, Killian has sent you and your wife a message, Duke, he says to say *hi*. You see, I am not only here for your son, I am also a messenger for Killian if you get my meaning.~ GOTO 7
   IF ~~ THEN REPLY ~I almost forgot. I have a message for you and your wife, Duke. Killian says to say *hi* to you both and the rest is etched in steel here somewhere, I will deliver it after I have dealt with your son.~ GOTO 7
-  IF ~~ THEN REPLY ~Who has been a naughty boy, Govan. Playing with the bad guys behind daddy‘s back? Oh, incidently, Killian says *hi* to you, Duke, and also to your lady wife here. I will deliver the message in full shortly. I have unfinished business with your son first.~ GOTO 7
+  IF ~~ THEN REPLY ~Who has been a naughty boy, Govan. Playing with the bad guys behind daddyï¿½s back? Oh, incidently, Killian says *hi* to you, Duke, and also to your lady wife here. I will deliver the message in full shortly. I have unfinished business with your son first.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-  SAY ~There is no need for further bloodshed. Leina is unharmed and I am quite prepared to deal with my son‘s shameful behaviour myself.~
+  SAY ~There is no need for further bloodshed. Leina is unharmed and I am quite prepared to deal with my sonï¿½s shameful behaviour myself.~
   IF ~~ THEN GOTO 8
-END   
-  
+END
+
 IF ~~ THEN BEGIN 8
   SAY ~We, <CHARNAME>, have no quarrel with each other. That low-life Killian your deal is with, is naught but a hired assassin. What say we end this now?~
   IF ~~ THEN REPLY ~Your son has played me for a fool, no one has done that and lived to boast of it. I am as sure as hell not going to let him be the first!~ SOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
-I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaine’s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
+I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaineï¿½s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
 
-After entering the secret room at the rear of Vulova’s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatla’s most affluent families... who sought to become even richer by joining Leina’s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leina’s mother, had so deranged her father’s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaine’s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
+After entering the secret room at the rear of Vulovaï¿½s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatlaï¿½s most affluent families... who sought to become even richer by joining Leinaï¿½s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leinaï¿½s mother, had so deranged her fatherï¿½s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaineï¿½s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
   IF ~~ THEN REPLY ~My quarrel is with your son, if you step aside I may spare you and your wife when I have finished with him. I might not of course, but that is a chance you will have to take.~ SOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
-I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaine’s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
+I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaineï¿½s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
 
-After entering the secret room at the rear of Vulova’s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatla’s most affluent families... who sought to become even richer by joining Leina’s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leina’s mother, had so deranged her father’s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaine’s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
+After entering the secret room at the rear of Vulovaï¿½s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatlaï¿½s most affluent families... who sought to become even richer by joining Leinaï¿½s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leinaï¿½s mother, had so deranged her fatherï¿½s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaineï¿½s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
   IF ~~ THEN REPLY ~How much is the life of this worthless scum you call a son to you?~ GOTO 11
   IF ~~ THEN REPLY ~True, I have no quarrel with you or your wife. My deal with Killian was purely for financial gain, mine of course. Now, should another offer be made to me I have been known to be reasonable?~ GOTO 11
 END
@@ -64,8 +64,8 @@ END
 IF ~~ THEN BEGIN 9
   SAY ~He may not be much of a man, but he is my son, and I will not stand by and watch him murdered.~
   IF ~~ THEN GOTO 10
-END   
-  
+END
+
 IF ~~ THEN BEGIN 10
   SAY ~You have behaved no better than he has, <CHARNAME>, therefore, whatever punishment you see fitting to deal out to my son, you  also deserve.~
   IF ~~ THEN DO ~SetGlobal("VP_DuvainesAttack","GLOBAL",1)
@@ -82,29 +82,29 @@ Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~If you won‘t do this for moral outrage, I will compensate your mercenary side. Is 10,000 gold pieces enough to satisfy?~
+  SAY ~If you wonï¿½t do this for moral outrage, I will compensate your mercenary side. Is 10,000 gold pieces enough to satisfy?~
   IF ~~ THEN REPLY ~10,000 gold pieces it is, now take your worthless progeny and get him out of here. Make sure he never crosses paths with me again.~ SOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
 I should have realised...  no one gives 20,000 gold away for so simple a task. Still, Duvaine may be a worthless son of a bitch but he has certainly proven to be a very profitable commodity to me. My purse is now heavier ... and I rescued the bard as well. A most satisfactory outcome for all... except for Duvaine of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
 
-After entering the secret room at the rear of Vulova’s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatla’s most affluent families... who sought to become even richer by joining Leina’s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leina’s mother, had so deranged her father’s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaine’s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 12
-  IF ~~ THEN REPLY ~It is a handsome enough sum, and will pay for you and your wife‘s lives but Govan here, he has another method of payment more to my liking.~ SOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
+After entering the secret room at the rear of Vulovaï¿½s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatlaï¿½s most affluent families... who sought to become even richer by joining Leinaï¿½s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leinaï¿½s mother, had so deranged her fatherï¿½s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaineï¿½s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 12
+  IF ~~ THEN REPLY ~It is a handsome enough sum, and will pay for you and your wifeï¿½s lives but Govan here, he has another method of payment more to my liking.~ SOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
-I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaine’s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
+I should have realised... no one gives 20,000 gold away for so simple a task. Still, Duvaine may have been a pathetic excuse for a man in life, but in death he has proven to be a very profitable commodity to me. My purse is now heavier... and I rescued the bard as well. A most satisfactory outcome for all... except for the Duvaineï¿½s of course, but one can not please everyone.~ DO ~EraseJournalEntry(%Trouble at The Five Flagons Inn.
 
-After entering the secret room at the rear of Vulova’s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatla’s most affluent families... who sought to become even richer by joining Leina’s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leina’s mother, had so deranged her father’s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaine’s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
+After entering the secret room at the rear of Vulovaï¿½s home and fighting my way through a warren full of his henchmen I finally found myself in what looked to be a guild house of sorts. I was  surprised to also find the bard Leina, frightened but unhurt... It appears that her father had kidnapped her in order to force her into a marriage with one Govan Duvaine, a spoilt, rich boy from one of Athkatlaï¿½s most affluent families... who sought to become even richer by joining Leinaï¿½s family fortune with his own inheritance. It would seem that the untimely death of his wife, Leinaï¿½s mother, had so deranged her fatherï¿½s  mind that he sought to keep her near him... she being the only link he had left to his dead wife. He believed the marriage would keep her in the city. A sad and lonely man true but the death of a loved one effects us all in different ways. Duvaine then appeared and offered me 20,000 gold to hand the girl over to him... 20,000 gold! All I had to do was tell the old barkeep that Leina had decided to marry Duvaine and then meet with one of the financial advisors to the Duvaineï¿½s, a man named  Killian, on the roof of The Copper Coronet. He would cash the draft for me... easy gold!%)~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 12
   SAY ~Take your gold, <CHARNAME>. Be assured, I will think of a suitable way of dealing with my son.~
   IF ~~ THEN DO ~GiveGoldForce(10000)~ GOTO 13
 END
-  
+
 IF ~~ THEN BEGIN 13
   SAY ~He has brought dishonour to the name Duvaine, so it will be for him to find a way of  restoring it.~
   IF ~~ THEN GOTO 14
-END  
-  
+END
+
 IF ~~ THEN BEGIN 14
   SAY ~Govan, move!~
   IF ~~ THEN DO ~SetGlobal("VP_AuberonBribesMe","GLOBAL",1)
@@ -126,7 +126,7 @@ END
 IF ~~ THEN BEGIN 17
   SAY ~People will talk if the price is right. Did you seriously expect me not to uncover the truth?~
   IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 23  
+!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 23
   IF ~OR(2)
 !InParty("Leina")
 Dead("Leina")~ THEN REPLY ~Your son Duvaine, abducted a young woman by the name of Leina Vulova-Katuron, with the intentions of  forcing a marriage between them. Not because he was crazy with love for this Leina, but for the wealth her fortune would bring to him.~ GOTO 18
@@ -139,14 +139,14 @@ Dead("Leina")~ THEN REPLY ~He was a bad lot, Duvaine. I cannot honestly believe 
 END
 
 IF ~~ THEN BEGIN 18
-  SAY ~My son‘s conduct may have been wrong, but the matter should have been brought straight to me. I would have reprimanded Govan most severely myself for such abominable behaviour.~
+  SAY ~My sonï¿½s conduct may have been wrong, but the matter should have been brought straight to me. I would have reprimanded Govan most severely myself for such abominable behaviour.~
   IF ~~ THEN GOTO 19
 END
-  
+
 IF ~~ THEN BEGIN 19
   SAY ~He was my responsibility and it was therefore my duty to deal with him not yours.~
   IF ~~ THEN REPLY ~Duty, and what would you have done, Duvaine, slapped his wrist and told him not to be a naughty boy again?~ GOTO 20
-  IF ~~ THEN REPLY ~There was no time, Duvaine, your son came upon me at the same time that I found Leina and when I would not release her to him he turned nasty.~ GOTO 20 
+  IF ~~ THEN REPLY ~There was no time, Duvaine, your son came upon me at the same time that I found Leina and when I would not release her to him he turned nasty.~ GOTO 20
   IF ~~ THEN REPLY ~I had no proof Govan was involved, Duvaine. It was not until he confronted me after I had freed Leina, that he admitted his involvement. I tried to make him see reason but he would not listen, he set upon me without provocation.~ GOTO 20
   IF ~~ THEN REPLY ~He is dead, Duvaine. Your death or mine here will not alter that. Accept that he was not an honourable man and died as such. Let it go, Duvaine.~ GOTO 20
 END
@@ -155,9 +155,9 @@ IF ~~ THEN BEGIN 20
   SAY ~No matter the circumstances, my son is dead. His conduct may have been less than honourable but his crime was not deserving of death. He has paid bitterly for his conduct and I cannot and will not let his murderer go unpunished.~
   IF ~~ THEN GOTO 21
 END
-  
+
 IF ~~ THEN BEGIN 21
-  SAY ~A plea of self defence may sit well with the courts, <CHARNAME>, but that is not the justice I want for my boy. I have had my say, now I will have my justice.~ 
+  SAY ~A plea of self defence may sit well with the courts, <CHARNAME>, but that is not the justice I want for my boy. I have had my say, now I will have my justice.~
   IF ~~ THEN DO ~SetGlobal("VP_DuvainesRevenge","GLOBAL",4)
 CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
 CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)

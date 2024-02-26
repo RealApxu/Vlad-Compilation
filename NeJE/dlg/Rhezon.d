@@ -5,33 +5,33 @@ IF ~NumTimesTalkedTo(0)~ THEN BEGIN Rhezon1
 =
 ~There appears to be something in the air of late, the whole population of Trademeet are wanting love potions and please, I do not turn love rivals into toads either.~
 =
-~If it’s either of those things that you have come about then the exit is through the same door that you have just come through.~
+~If itï¿½s either of those things that you have come about then the exit is through the same door that you have just come through.~
 	IF ~~ THEN EXTERN ~TAFFICJ~ Taffic1
 END
 
 IF ~~ THEN BEGIN Rhezon2
-	SAY ~I said I do not transform suitors into toads and that means I don’t transform anyone into any other creature either. Now what was that name you said, Thalantyr?~
+	SAY ~I said I do not transform suitors into toads and that means I donï¿½t transform anyone into any other creature either. Now what was that name you said, Thalantyr?~
 =
 ~Thalantyr... yes I remember the name vaguely, he was I believe a friend of Aldruis, my old mentor. I only met the man once and that was when I was still apprenticed to Aldruis. Now why would he be sending you to me?~
 	IF ~~ THEN EXTERN ~TAFFICJ~ Taffic2
 END
 
 IF ~~ THEN BEGIN Rhezon3
-	SAY ~You believe in coming straight to the point don’t you gnome, in which case I will do you the same courtesy. Aldrius did indeed impart the secret to me, but the spell requires a component that is rare and very difficult to come by.~
+	SAY ~You believe in coming straight to the point donï¿½t you gnome, in which case I will do you the same courtesy. Aldrius did indeed impart the secret to me, but the spell requires a component that is rare and very difficult to come by.~
 =
-~One that I have never managed to acquire, I don’t have the same resources my mentor had, so I am not really in a position to help you at the moment.~
+~One that I have never managed to acquire, I donï¿½t have the same resources my mentor had, so I am not really in a position to help you at the moment.~
 	IF ~~ THEN EXTERN ~TAFFICJ~ Taffic3
 END
 
 IF ~~ THEN BEGIN Rhezon4
-	SAY ~Oh ho my impatient friend! You haven’t yet heard what the component is yet, at least let me finish before committing yourself.~
+	SAY ~Oh ho my impatient friend! You havenï¿½t yet heard what the component is yet, at least let me finish before committing yourself.~
 	IF ~~ THEN EXTERN ~TAFFICJ~ Taffic4
 END
 
 IF ~~ THEN BEGIN Rhezon5
-	SAY ~(*Hm, such arrogance I have never seen in one so small*). You’ll understand the problem when I say the spell requires the blood of one of the demons of The Abyss itself... a Balor.~
+	SAY ~(*Hm, such arrogance I have never seen in one so small*). Youï¿½ll understand the problem when I say the spell requires the blood of one of the demons of The Abyss itself... a Balor.~
 =
-~Unfortunately Balors are not in the habit of visiting this plane too often and those that do aren’t too keen on giving up their blood... in fact they prefer to take ours.~
+~Unfortunately Balors are not in the habit of visiting this plane too often and those that do arenï¿½t too keen on giving up their blood... in fact they prefer to take ours.~
 	IF ~PartyHasItem("BalBlood")~ THEN EXTERN ~TAFFICJ~ TafficN1
 	IF ~!PartyHasItem("BalBlood")~ THEN EXTERN ~TAFFICJ~ Taffic5
 END
@@ -42,7 +42,7 @@ IF ~~ THEN BEGIN Rhezon6
 END
 
 IF ~~ THEN BEGIN Rhezon61
-	SAY ~You have... Let me look closer for if it is other than Balor’s blood the consequences will be fatal... Ah yes excellent, it is indeed demon ichor, a very potent and rare component that only few will venture to obtain.~
+	SAY ~You have... Let me look closer for if it is other than Balorï¿½s blood the consequences will be fatal... Ah yes excellent, it is indeed demon ichor, a very potent and rare component that only few will venture to obtain.~
 =
 ~As many that have tried, have also failed ... I am fortunate that you, my little forest gnome, should come my way carrying the very thing that I have searched for.~
 	IF ~~ THEN DO ~TakePartyItem("BalBlood")
@@ -50,7 +50,7 @@ SetGlobal("VP_TafficQuest","GLOBAL",5)~ EXTERN ~TAFFICJ~ Taffic30
 END
 
 IF ~~ THEN BEGIN Rhezon40
-	SAY ~(*Laughs*) Ha! What a foolish and vain creature you are gnome. You are what you are, neither I nor any person I know can change a being’s race.~
+	SAY ~(*Laughs*) Ha! What a foolish and vain creature you are gnome. You are what you are, neither I nor any person I know can change a beingï¿½s race.~
 =
 ~See how easily you were duped into getting this component for me, how could you ever be anything else other than the stupid gnome that you are?~
 	IF ~~ THEN EXTERN ~TAFFICJ~ Taffic40
@@ -76,7 +76,7 @@ InParty("Taffic")
 OR(2)
 PartyHasItem("BalBlood")
 Global("VP_TafficQuest","GLOBAL",11)~ THEN BEGIN blood1
-	SAY ~Well, if it isn’t the little gnome with big ambitions! Welcome back my little friend.~
+	SAY ~Well, if it isnï¿½t the little gnome with big ambitions! Welcome back my little friend.~
  		IF ~~ THEN EXTERN ~TAFFICJ~ blood1
 END			
 
@@ -128,7 +128,7 @@ IF ~~ THEN BEGIN taffich3
 END
 
 IF ~~ THEN BEGIN taffich4
-	SAY ~I could not resist having some fun with the little fool. Wherever did he get the idea that it is possible to change that which one is born into?~ 
+	SAY ~I could not resist having some fun with the little fool. Wherever did he get the idea that it is possible to change that which one is born into?~
 =
 ~I could not give him his wish so I thought to give him the next best thing... the body of a creature that would cause the reaction he wished for.~
 =

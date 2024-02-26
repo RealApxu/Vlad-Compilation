@@ -1,7 +1,7 @@
 BEGIN ~BARDO~
 
 IF ~Global("VP_Sell_Slaves","GLOBAL",2)~ THEN BEGIN 0
-  SAY ~Hello, you needin’ Bardo’s help?~
+  SAY ~Hello, you needinï¿½ Bardoï¿½s help?~
  		IF ~~ THEN EXTERN ~MARKY~ 0
 END
 
@@ -18,14 +18,14 @@ IF ~~ THEN BEGIN 1a
 END
 
 IF ~~ THEN BEGIN 2a
-	SAY ~This all Bardo’s fault. Good peoples now has to suffer because him is selfish. Him can’t put things right but him can avenge them. You never sell peoples again.~
+	SAY ~This all Bardoï¿½s fault. Good peoples now has to suffer because him is selfish. Him canï¿½t put things right but him can avenge them. You never sell peoples again.~
  		IF ~~ THEN DO ~ActionOverride("Marky",Enemy())
 Enemy()~ EXIT
 END		
 
 IF ~!Global("VP_Sell_Slaves","GLOBAL",2)
 Global("VP_Dar_Quest","GLOBAL",8)~ THEN BEGIN N0
-  SAY ~Hello, you needin’ Bardo’s help?~
+  SAY ~Hello, you needinï¿½ Bardoï¿½s help?~
  		IF ~~ THEN REPLY ~Well met Bardo. I came here seeking a prophet sent to this place by his followers. Would that by any chance be you?~ GOTO 2
  		IF ~~ THEN REPLY ~So, this is how a prophet spends his time after abandoning his followers, languishing in the warmth of the local inn!~ GOTO 2
  		IF ~~ THEN REPLY ~Not me Bardo, your followers, remember them?~ GOTO 2
@@ -48,7 +48,7 @@ Dead("Dar")~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
-	SAY ~They was ok I says! Spiritually they was fine. What this about anyway?~ 
+	SAY ~They was ok I says! Spiritually they was fine. What this about anyway?~
 		IF ~~ THEN REPLY ~Yes well, spiritually they may have been fine, but as your absence lengthened, they became more and more despondent. When we came upon them they had been enslaved and tortured for their beliefs, a broken people Bardo.~ GOTO 5
  		IF ~~ THEN REPLY ~They thought you dead Bardo! The thought that you had abandoned them never entered their heads. They trusted in your return and you let them down. Because of your selfishness their moral declined and they fell prey to other savage tribes, those that persisted in your teachings were enslaved and tortured. Was this the bright future you saw for them?~ GOTO 5
  		IF ~~ THEN REPLY ~Look prophet, I have freed your people from slavery because Dar here pestered me to do so, I came here to find you because he pestered me to do so, but this is as far as I go. From here on it is your choice, if you choose not return, know that I will not be around to rescue them a second time!~ GOTO 6
@@ -72,7 +72,7 @@ Dead("Dar")~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7
-	SAY ~Bardo sorry. Him not strong like you, him does not believe no more.~ 
+	SAY ~Bardo sorry. Him not strong like you, him does not believe no more.~
 		IF ~~ THEN EXTERN ~DARJ~ quest23
 END
 
@@ -89,12 +89,12 @@ END
 IF ~~ THEN BEGIN 9a
 	SAY ~(*Turning to Bardo*)~
  		IF ~~ THEN REPLY ~Bardo, if you choose to turn away now, what word shall I take to these broken people of yours? Should I tell them that their faith was built on lies, that they should forget what you taught them and return to their savage ways? Is that all that is left for them now?~ GOTO 10
- 		IF ~~ THEN REPLY ~Bardo, listen to Dar’s words, I was ready to kill them all to end their misery, but he urged me to seek you out, to bring you back to your people. At least my way would have saved them from further pain in the future that your reluctance to return will surely bring them.~ GOTO 11
+ 		IF ~~ THEN REPLY ~Bardo, listen to Darï¿½s words, I was ready to kill them all to end their misery, but he urged me to seek you out, to bring you back to your people. At least my way would have saved them from further pain in the future that your reluctance to return will surely bring them.~ GOTO 11
  		IF ~~ THEN REPLY ~Bardo, are you that much of a coward that you prefer to have those wretched people think you dead and yet, because they do not know for certain, they still cling to the hope that you will return? Is that any less cruel than the slavery I rescued them from?~ GOTO 12 	
 END
 
 IF ~~ THEN BEGIN 10
-	SAY ~Bardo’s word no good, him no longer believe it himself, but maybe you take hope to peoples, you find and take knowledge to them?~
+	SAY ~Bardoï¿½s word no good, him no longer believe it himself, but maybe you take hope to peoples, you find and take knowledge to them?~
  		IF ~~ THEN REPLY ~I think not. I have allowed myself to be dragged here to find you, only to discover that it was a waste of my time as you did not want to be found, and now you want me to waste more of my time to clean up your mess! Sort it yourself!~ GOTO 12a
  		IF ~~ THEN REPLY ~*Sigh*, I just knew that was coming! How do I manage to get myself entangled in the problems of others so easily? Is there a sign on my head that says *sucker for all lost causes*? Tell me what it is you want me to do Bardo?~ GOTO 13
  		IF ~~ THEN REPLY ~If what you have to say is worthwhile, I will consider helping you. Say your piece?~ GOTO 13
@@ -157,13 +157,13 @@ END
 IF ~~ THEN BEGIN 15
 	SAY ~Bardo thank you, please you tell his people him sorry and to let book guide them. Them better people than Bardo could ever be. (*Bardo turns sadly and leaves*).~
   IF ~~ THEN DO ~SetGlobal("VP_Dar_Quest","GLOBAL",9)
-RevealAreaOnMap("AR2000") 
+RevealAreaOnMap("AR2000")
 ActionOverride("Marky",EscapeArea())
 EscapeArea()~ EXIT
 END //--> to Trademeet
 
 IF ~Global("VP_Sell_Slaves","GLOBAL",0)
 !Global("VP_Dar_Quest","GLOBAL",8)~ THEN BEGIN A0
-  SAY ~Hello, you needin’ Bardo’s help?~
+  SAY ~Hello, you needinï¿½ Bardoï¿½s help?~
  		IF ~~ THEN REPLY ~No Bardo, not at the moment. Farewell.~ EXIT
 END

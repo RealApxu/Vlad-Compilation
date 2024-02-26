@@ -75,7 +75,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~My friend, why could you not have been content? Being small is no disgrace, by deed alone it is possible to become 10ft. tall in the eyes of others.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")

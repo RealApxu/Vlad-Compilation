@@ -5,4 +5,3 @@ Global("udMoveToBeholder","GLOBAL",2)~
 REPLACE_ACTION_TEXT ~UDPHAE01~
 ~ActionOverride("ARDULACE",MoveToPointNoInterrupt(\[516.1142\]))~
 ~ActionOverride("ARDULACE",JumpToPoint([516.1142]))~
-

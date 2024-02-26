@@ -16,7 +16,7 @@ END
 IF WEIGHT #-1 ~Global("VP_YoshimoSearch","GLOBAL",2)~ THEN BEGIN remind_1
 	SAY ~<CHARNAME>, you promised that you would lead me to Yoshimo! Yet all we are doing is running around in small circles all day!~
 	IF ~~ THEN REPLY ~Oh, and I was wondering what was it that we forgot to do? Kachiko, we are going right away!~ GOTO remind_2
-	IF ~~ THEN REPLY ~Girl, what do you need Yoshimo for anyway? Can’t you skip your vendetta or something?~ GOTO remind_3
+	IF ~~ THEN REPLY ~Girl, what do you need Yoshimo for anyway? Canï¿½t you skip your vendetta or something?~ GOTO remind_3
 END
 
 IF ~~ THEN BEGIN remind_2
@@ -26,7 +26,7 @@ SetGlobalTimer("VP_KachikoLeaves","GLOBAL",TWO_DAYS)~ EXIT
 END
 
 IF ~~ THEN BEGIN remind_3
-	SAY ~No, I cannot. You lied to me. You have no intention to lead me to Yoshimo! I do not need your help! I’ll find Yoshimo eventually! I SWEAR I’ll find him! There has to be somewhere I haven’t looked!~
+	SAY ~No, I cannot. You lied to me. You have no intention to lead me to Yoshimo! I do not need your help! Iï¿½ll find Yoshimo eventually! I SWEAR Iï¿½ll find him! There has to be somewhere I havenï¿½t looked!~
 	IF ~~ THEN DO ~DestroyItem("KASWOR01")
 DestroyItem("KASWOR02")
 DestroyItem("NPRING02")
@@ -36,7 +36,7 @@ EscapeArea()~ EXIT
 END
 
 IF WEIGHT #-2 ~Global("VP_YoshimoSearch","GLOBAL",4)~ THEN BEGIN leave
-	SAY ~You lied to me. You have no intention to lead me to Yoshimo! I do not need your help! I’ll find Yoshimo eventually! I SWEAR I’ll find him! There has to be somewhere I haven’t looked!~
+	SAY ~You lied to me. You have no intention to lead me to Yoshimo! I do not need your help! Iï¿½ll find Yoshimo eventually! I SWEAR Iï¿½ll find him! There has to be somewhere I havenï¿½t looked!~
 	IF ~~ THEN DO ~DestroyItem("KASWOR01")
 DestroyItem("KASWOR02")
 DestroyItem("NPRING02")
@@ -56,7 +56,7 @@ Global("VP_Yosh_WasInParty","GLOBAL",0)~ THEN BEGIN KrFix0
 END
 
 IF ~~ THEN BEGIN KrFix1
-  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you’re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
+  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that youï¿½re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
   IF ~~ THEN REPLY ~Kachiko, are you going back on your promise to help me?~ GOTO KrFix2
   IF ~~ THEN REPLY ~Of course, Kachiko, I understand. Farewell.~ EXTERN ~YOSHIMO~ TS57
 END
@@ -81,10 +81,10 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN N4
-  SAY ~Don’t lie to me. You won’t escape again. I’ll watch you even if I have to break my word to <CHARNAME>.~
+  SAY ~Donï¿½t lie to me. You wonï¿½t escape again. Iï¿½ll watch you even if I have to break my word to <CHARNAME>.~
   IF ~~ THEN REPLY ~Of course, I need all help I can get. Welcome back, Yoshimo.~ EXTERN ~YOSHIMO~ TS58
-  IF ~~ THEN REPLY ~I don’t need your help. Go away, both of you.~ EXTERN ~YOSHIMO~ TS57
-  IF ~~ THEN REPLY ~I don’t know you, I don’t need your problems and I grow tired of this soap opera. Perhaps killing both of you will brighten things up!~ EXTERN ~YOSHIMO~ TS59
+  IF ~~ THEN REPLY ~I donï¿½t need your help. Go away, both of you.~ EXTERN ~YOSHIMO~ TS57
+  IF ~~ THEN REPLY ~I donï¿½t know you, I donï¿½t need your problems and I grow tired of this soap opera. Perhaps killing both of you will brighten things up!~ EXTERN ~YOSHIMO~ TS59
 END
 
 IF ~~ THEN BEGIN New4
@@ -107,7 +107,7 @@ Global("VP_Yosh_WasInParty","GLOBAL",1)~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN N10
-  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you’re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
+  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that youï¿½re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
   IF ~~ THEN REPLY ~Kachiko, are you going back on your promise to help me?~ GOTO N11
   IF ~~ THEN REPLY ~Of course, Kachiko, I understand. Farewell.~ DO ~SetGlobal("Kicked_Out","LOCALS",1)
 ~ EXTERN ~YOSHP~ TS18
@@ -132,10 +132,10 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN N13
-  SAY ~Don’t lie to me. You won’t escape again. I’ll watch you even if I have to break my word to <CHARNAME>.~
+  SAY ~Donï¿½t lie to me. You wonï¿½t escape again. Iï¿½ll watch you even if I have to break my word to <CHARNAME>.~
   IF ~~ THEN REPLY ~Of course, I need all help I can get. Welcome back, Yoshimo.~ EXTERN ~YOSHP~ TS19
-  IF ~~ THEN REPLY ~I don’t need your help. Go away, both of you.~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN ~YOSHP~ TS18
-  IF ~~ THEN REPLY ~I don’t know you, I don’t need your problems and I grow tired of this soap opera. Perhaps killing both of you will brighten things up!~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN ~YOSHP~ TS20
+  IF ~~ THEN REPLY ~I donï¿½t need your help. Go away, both of you.~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN ~YOSHP~ TS18
+  IF ~~ THEN REPLY ~I donï¿½t know you, I donï¿½t need your problems and I grow tired of this soap opera. Perhaps killing both of you will brighten things up!~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN ~YOSHP~ TS20
 END
 
 // Parting ways, initiated by Yoshimo
@@ -170,7 +170,7 @@ END
 
 IF ~~ THEN BEGIN N18
   SAY ~My guess is that the spell might have worked and we are somehow moving towards solving our family feud. But why are we on an island, and not at home?~
-  IF ~~ THEN REPLY ~The spell... Harpel must have done something that works for once. Let’s go on, and we will have better chance to find some answers. Yoshimo, I am mourn your loss.~ EXTERN ~YOSHJ~ TS172
+  IF ~~ THEN REPLY ~The spell... Harpel must have done something that works for once. Letï¿½s go on, and we will have better chance to find some answers. Yoshimo, I am mourn your loss.~ EXTERN ~YOSHJ~ TS172
 END
 
 IF ~Global("Dead_Bodies","GLOBAL",3)~ THEN BEGIN N19
@@ -179,7 +179,7 @@ IF ~Global("Dead_Bodies","GLOBAL",3)~ THEN BEGIN N19
 END
 
 IF ~~ THEN BEGIN N20
-  SAY ~Yoshimo, I appreciate what you have said. Even if you said it because you were afraid that I’d kill you both if you ever tried anything funny.~ [KACHIQ04]
+  SAY ~Yoshimo, I appreciate what you have said. Even if you said it because you were afraid that Iï¿½d kill you both if you ever tried anything funny.~ [KACHIQ04]
   IF ~~ THEN EXTERN ~YOSHJ~ TS176
 END
 
@@ -199,7 +199,7 @@ IF ~~ THEN BEGIN N23
 END
 
 IF ~~ THEN BEGIN N24
-  SAY ~Yoshimo is innocent and I will fight you if I must to protect justice, which you so eagerly discard! You are disgrace to Nakanishi’s honor!~ [KACHIQ06]
+  SAY ~Yoshimo is innocent and I will fight you if I must to protect justice, which you so eagerly discard! You are disgrace to Nakanishiï¿½s honor!~ [KACHIQ06]
   IF ~~ THEN EXTERN ~MASAKI~ 4
 END
 
@@ -249,7 +249,7 @@ END
 
 IF ~~ THEN BEGIN N33
   SAY ~My <PRO_LADYLORD>, Yoshimo pledged his service to you, yet he was serving Irenicus at the same time. His intention was to deceive you. Yoshimo is not a samurai and he does not follow a strict code of honor, but his upbringing was that of a noble. His actions towards you call for ritual suicide.~
-  IF ~~ THEN REPLY ~I respect your customs, but he has a noble heart, and he’s faithful ally. He stood against Irenicus and refused to surrender me. I trust him.~ GOTO N34
+  IF ~~ THEN REPLY ~I respect your customs, but he has a noble heart, and heï¿½s faithful ally. He stood against Irenicus and refused to surrender me. I trust him.~ GOTO N34
   IF ~~ THEN REPLY ~Uh, well... He may do what he wants with his life, but he may not stay.~ EXTERN ~YOSHJ~ TS218
 END
 
@@ -281,7 +281,7 @@ IF ~~ THEN BEGIN N36
 END
 
 IF ~~ THEN BEGIN N37
-  SAY ~Avenging the suffering of my family is a part of my life, <CHARNAME>. My blade is thirsty for his blood. For Nakanishi’s honor! For Hashimoto’s honor! No more talk! I am going!~
+  SAY ~Avenging the suffering of my family is a part of my life, <CHARNAME>. My blade is thirsty for his blood. For Nakanishiï¿½s honor! For Hashimotoï¿½s honor! No more talk! I am going!~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
   IF ~InParty("Anomen")
 Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
@@ -320,7 +320,7 @@ Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
 END
 
 IF ~~ THEN BEGIN N38
-  SAY ~Try to stop me! You would have to tie me up to prevent me from fighting Irenicus. For Nakanishi’s honor! For Hashimoto’s honor!~
+  SAY ~Try to stop me! You would have to tie me up to prevent me from fighting Irenicus. For Nakanishiï¿½s honor! For Hashimotoï¿½s honor!~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
   IF ~InParty("Anomen")
 Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
@@ -359,7 +359,7 @@ Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
 END
 
 IF ~~ THEN BEGIN N39
-  SAY ~I have seen it, yes. I am not afraid to die if I know that Irenicus goes down with me. For Nakanishi’s honor! For Hashimoto’s honor!~
+  SAY ~I have seen it, yes. I am not afraid to die if I know that Irenicus goes down with me. For Nakanishiï¿½s honor! For Hashimotoï¿½s honor!~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
   IF ~InParty("Anomen")
 Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
@@ -442,7 +442,7 @@ See("Valygar")~ THEN EXTERN ~VALYGARJ~ 77
   IF ~InParty("Minsc")
 See("Minsc")~ THEN EXTERN ~MINSCJ~ 155
   IF ~InParty("Aerie")
-See("Aerie")~ THEN EXTERN ~AERIEJ~ 131  
+See("Aerie")~ THEN EXTERN ~AERIEJ~ 131
   IF ~InParty("Imoen2")
 See("Imoen2")~ THEN EXTERN ~IMOEN2J~ 10
 END
@@ -508,7 +508,7 @@ END
 
 IF ~~ THEN BEGIN Kelem5
   SAY ~(Shudders) I wouldn't want to experience that. Will you help me and Yoshimo to go back?~
-  	IF ~~ THEN REPLY ~Sure, Kachiko, let's go.~ GOTO Kelem6 
+  	IF ~~ THEN REPLY ~Sure, Kachiko, let's go.~ GOTO Kelem6
 END
 
 IF ~~ THEN BEGIN Kelem6
@@ -567,7 +567,7 @@ IF ~~ THEN BEGIN NEJ60
 END
 
 IF ~~ THEN BEGIN NEJ61
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_EnchQuest","GLOBAL",1)~ EXTERN ~XANH~ 23
 END
 
@@ -577,22 +577,22 @@ IF ~~ THEN BEGIN NEJ62
 END
 
 IF ~~ THEN BEGIN NEJ63
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_AbjQuest","GLOBAL",1)~ EXTERN ~TUPHIN~ 7
 END
 
 IF ~~ THEN BEGIN NEJ64
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_InvQuest","GLOBAL",1)~ EXTERN ~TUTHEOD~ 27
 END
 
 IF ~~ THEN BEGIN NEJ65
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_InvQuest","GLOBAL",1)~ EXTERN ~TUTHEOD~ 30
 END
 
 IF ~~ THEN BEGIN NEJ66
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_IllQuest","GLOBAL",1)~ EXTERN ~TUVASHON~ 18
 END
 
@@ -603,8 +603,8 @@ END
 
 IF ~~ THEN BEGIN NEJ68
   SAY ~What can I say? I am sorry.~
-  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read can’t you?~ GOTO NEJ69
-  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I don’t understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ69
+  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read canï¿½t you?~ GOTO NEJ69
+  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I donï¿½t understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ69
 END
 
 IF ~~ THEN BEGIN NEJ69
@@ -613,18 +613,18 @@ IF ~~ THEN BEGIN NEJ69
 END
 
 IF ~~ THEN BEGIN NEJ70
-  SAY ~Sure, I’ll do it.~
+  SAY ~Sure, Iï¿½ll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachi_TraQuest","GLOBAL",1)~ EXTERN ~TUMALV~ 20
 END
 
 IF ~~ THEN BEGIN tranfail
   SAY ~What can I say? I am sorry.~
-  IF ~~ THEN REPLY ~You failed, a simple kill the monster and open the chest task! It isn’t as if you haven’t done it before.~ GOTO tranfai2
-  IF ~~ THEN REPLY ~It’s not that important. What is important is that Malvolio got you out safely.~ GOTO tranfai3
+  IF ~~ THEN REPLY ~You failed, a simple kill the monster and open the chest task! It isnï¿½t as if you havenï¿½t done it before.~ GOTO tranfai2
+  IF ~~ THEN REPLY ~Itï¿½s not that important. What is important is that Malvolio got you out safely.~ GOTO tranfai3
 END
 
 IF ~~ THEN BEGIN tranfai2
-  SAY ~Even then, with the aid of the group, we didn’t always get it right first time.~
+  SAY ~Even then, with the aid of the group, we didnï¿½t always get it right first time.~
   IF ~True()~ THEN EXTERN ~TUMALV~ 24
   IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tranfail
@@ -639,18 +639,18 @@ END
 
 IF ~~ THEN BEGIN invfail
   SAY ~What can I say? I am sorry.~
-  IF ~~ THEN REPLY ~That was abysmal! With all the spells you have at your disposal, I can not believe that you couldn’t take care of a few pesky pests!~ GOTO invfail2
-  IF ~~ THEN REPLY ~It happens. I was probably expecting too much letting you go into a situation you hadn’t been given time to prepare for.~GOTO invfail2
+  IF ~~ THEN REPLY ~That was abysmal! With all the spells you have at your disposal, I can not believe that you couldnï¿½t take care of a few pesky pests!~ GOTO invfail2
+  IF ~~ THEN REPLY ~It happens. I was probably expecting too much letting you go into a situation you hadnï¿½t been given time to prepare for.~GOTO invfail2
 END
 
 IF ~~ THEN BEGIN invfail2
   SAY ~I am Kensai as well as mage <CHARNAME>, trained with sword as well as magic. If I had been permitted  to use the skills that I have been trained to use, then believe me, those vermin would be dead by now.~
-  IF ~~ THEN EXTERN ~TUTHEOD~ failtest  
+  IF ~~ THEN EXTERN ~TUTHEOD~ failtest
 END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~I... I do not know what I should say to you Taffic.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
 END
@@ -665,9 +665,9 @@ IF ~~ THEN BEGIN abjurer2
   IF ~~ THEN REPLY ~You call yourself a mage? Thanks to your incompetence, girl, we have lost some valuable prizes.~ GOTO abjurer3
   IF ~~ THEN REPLY ~It happens, we win some we lose some, I am sure you gave it your best shot.~ GOTO abjurer4
 END
-  
+
 IF ~~ THEN BEGIN abjurer3
-  SAY ~I apologised, but if trinkets are worth more to you than a competent warrior mage, don’t hesitate to say and I will be out of your hair.~
+  SAY ~I apologised, but if trinkets are worth more to you than a competent warrior mage, donï¿½t hesitate to say and I will be out of your hair.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 	
@@ -679,11 +679,11 @@ END
 IF ~~ THEN BEGIN vashon
   SAY ~I am sorry <CHARNAME>, what more can I say?~
   IF ~~ THEN REPLY ~If I had a gold piece for each time I heard sorry for an excuse, I would be rich beyond your imaginings. Sorry is never an excuse for failure.~ GOTO vashon3
-  IF ~~ THEN REPLY ~No matter, you couldn’t have second guessed Vashon’s test, no one could... not even if you’d been a diviner.~ GOTO vashon4
+  IF ~~ THEN REPLY ~No matter, you couldnï¿½t have second guessed Vashonï¿½s test, no one could... not even if youï¿½d been a diviner.~ GOTO vashon4
 END
-  
+
 IF ~~ THEN BEGIN vashon3
-  SAY ~It was an apology not an excuse, but I guess you wouldn’t understand the difference.~
+  SAY ~It was an apology not an excuse, but I guess you wouldnï¿½t understand the difference.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail
 END
 	

@@ -32,4 +32,3 @@ Wait(1)
 SetInterrupt(TRUE)
 Wait(1)
 StartCutScene("Cut44v")~
-

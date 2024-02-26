@@ -1,7 +1,7 @@
 BEGIN ~DJERMSY~
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Shhhhh... be quiet or the goblins will hear us.~ 
+  SAY ~Shhhhh... be quiet or the goblins will hear us.~
   IF ~OR(2)
 !InParty("Minsc")
 Dead("Minsc")~ THEN REPLY ~What are you doing in the closet?~  JOURNAL ~Kuldahar Pass.
@@ -20,7 +20,7 @@ We found a little boy hiding in a closet in a mill near Kuldahar.  He told us th
 END
 
 IF ~NumTimesTalkedToGT(0)~ THEN BEGIN 1 // from: 0.0
-  SAY ~I'm hiding from the goblins.  They... they got my dad and sister.~ 
+  SAY ~I'm hiding from the goblins.  They... they got my dad and sister.~
   IF ~~ THEN REPLY ~I'm sorry.  I know it can't be that comforting for me to just say it, but... it will be okay.  Let me take you to the village.  I'll find help for you there.~  DO ~AddExperienceParty(6500)
 EscapeArea()~ GOTO 3
   IF ~~ THEN REPLY ~Tough luck, kid.  Life's hard.  Get used to it.~  GOTO 4
@@ -45,7 +45,7 @@ EscapeArea()~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 2 // from: 0.1
-  SAY ~My name is Jermsy.  I lived here at the mill with... oh.  My dad and my sister.  The goblins got them.~ 
+  SAY ~My name is Jermsy.  I lived here at the mill with... oh.  My dad and my sister.  The goblins got them.~
   IF ~~ THEN REPLY ~I'm sorry.  I know it can't be that comforting for me to just say it, but... it will be okay.  Let me take you to the village.  I'll find help for you there.~  DO ~AddExperienceParty(6500)
 EscapeArea()~ GOTO 3
   IF ~~ THEN REPLY ~Tough luck, kid.  Life's hard.  Get used to it.~  GOTO 4
@@ -70,12 +70,12 @@ EscapeArea()~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3 // from: 5.0 4.1 4.0 2.6 2.0 1.6 1.0
-  SAY ~Don't worry about me.  I'll go to the temple in Kuldahar.  I know the way.  Now that the goblins are dead, it'll be easy to get there!  Bye!~ 
+  SAY ~Don't worry about me.  I'll go to the temple in Kuldahar.  I know the way.  Now that the goblins are dead, it'll be easy to get there!  Bye!~
   IF ~~ THEN REPLY ~Farewell, Jermsy.~  EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 8.0 7.2 7.1 7.0 5.1 2.1 1.1
-  SAY ~But... but... what am I supposed to do now?~ 
+  SAY ~But... but... what am I supposed to do now?~
   IF ~~ THEN REPLY ~I'll take care of you until we find somewhere you can stay.~  DO ~AddExperienceParty(6500)
 EscapeArea()~ GOTO 3
   IF ~~ THEN REPLY ~I suppose you can tag along with me until I find someplace to drop you off.~  DO ~AddExperienceParty(9500)
@@ -87,7 +87,7 @@ EscapeArea()~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 5 // from: 2.3 1.3
-  SAY ~What lesson were the gods trying to teach me?~ 
+  SAY ~What lesson were the gods trying to teach me?~
   IF ~CheckStatGT(Player1,14,WIS)~ THEN REPLY ~I can't know the will of the gods, but I can say that death is not the end of existence.  It is the beginning of a new life.  Come with me.  I will take you to people who can care for you better than I.~  DO ~AddExperienceParty(6500)
 EscapeArea()
 ~ GOTO 3
@@ -96,12 +96,12 @@ EscapeArea()
 END
 
 IF ~~ THEN BEGIN 6 // from: 4.2 2.4 2.2 1.4 1.2
-  SAY ~Aaaaaaaaaagh!~ 
+  SAY ~Aaaaaaaaaagh!~
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 7 // from: 2.5 1.5
-  SAY ~Things like what?~ 
+  SAY ~Things like what?~
   IF ~Class(Player1,CLERIC)
 Alignment(Player1,LAWFUL_NEUTRAL)~ THEN REPLY ~Weal and woe, both shift in the course of one's existence on this world.  The blessing of Tymora and the black kiss of Beshaba are equal partners in each person's life.~  GOTO 4
   IF ~Class(Player1,DRUID)~ THEN REPLY ~All beings struggle against the other creatures of the world.  It is our lot in this world to strive for life in accordance with... or against nature.  But in the end, we will all die and give rise to new life.  It is in the nature of things to live and die, my child.~  GOTO 4
@@ -110,7 +110,7 @@ Alignment(Player1,LAWFUL_NEUTRAL)~ THEN REPLY ~Weal and woe, both shift in the c
 END
 
 IF ~~ THEN BEGIN 8 // from: 2.8 2.7 1.8 1.7
-  SAY ~I dunno.  I keep hearing one of them say that their head hurts.  Sometimes they growl and howl, too.  Like they're in pain.~ 
+  SAY ~I dunno.  I keep hearing one of them say that their head hurts.  Sometimes they growl and howl, too.  Like they're in pain.~
   IF ~~ THEN REPLY ~Hmmm.  Interesting.~  GOTO 4
   IF ~~ THEN REPLY ~Thanks, kid.  Farewell.~  EXIT
 END

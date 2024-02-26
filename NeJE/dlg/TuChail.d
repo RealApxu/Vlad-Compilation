@@ -1,62 +1,62 @@
 BEGIN ~TUCHAIL~
 
 IF ~RandomNum(12, 1)~ THEN BEGIN 0 // from:
-  SAY ~If I’d known the academy was going to be so hot all the time, I’d have opted to go to Ulcaster!~ 
+  SAY ~If Iï¿½d known the academy was going to be so hot all the time, Iï¿½d have opted to go to Ulcaster!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 2)~ THEN BEGIN 1 // from:
-  SAY ~*Sighs*... Sand, sand and yet more sand, everywhere I look I see sand!~ 
+  SAY ~*Sighs*... Sand, sand and yet more sand, everywhere I look I see sand!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 3)~ THEN BEGIN 2 // from:
-  SAY ~I can’t believe my luck... here I am, studying at the greatest Academy in the land.~ 
+  SAY ~I canï¿½t believe my luck... here I am, studying at the greatest Academy in the land.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 4)~ THEN BEGIN 3 // from:
-  SAY ~Yea gods, why did I choose to study enchantment. That Xan is so bloody pessimistic and uninspiring for an enchanter!~ 
+  SAY ~Yea gods, why did I choose to study enchantment. That Xan is so bloody pessimistic and uninspiring for an enchanter!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 5)~ THEN BEGIN 4 // from:
-  SAY ~If you haven’t chosen your specialisation yet take a tip from me, avoid conjuration... Mordecai sets more homework than the rest of the tutors put together!~ 
+  SAY ~If you havenï¿½t chosen your specialisation yet take a tip from me, avoid conjuration... Mordecai sets more homework than the rest of the tutors put together!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 6)~ THEN BEGIN 5 // from:
-  SAY ~You should join Theodoran’s classes... he’s ace at casting those Invocation spells.~ 
+  SAY ~You should join Theodoranï¿½s classes... heï¿½s ace at casting those Invocation spells.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 7)~ THEN BEGIN 6 // from:
-  SAY ~Damn this heat! Word is we’re in for another blasted sand storm tomorrow.~ 
+  SAY ~Damn this heat! Word is weï¿½re in for another blasted sand storm tomorrow.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 8)~ THEN BEGIN 7 // from:
-  SAY ~Has anyone else noticed the absence of so many senior staff? Only a few days ago, you couldn’t even go to the privy without one on your tail.~ 
+  SAY ~Has anyone else noticed the absence of so many senior staff? Only a few days ago, you couldnï¿½t even go to the privy without one on your tail.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 9)~ THEN BEGIN 8 // from:
-  SAY ~Sorry no time to chat, I’ve just discovered I have an exam next and I haven’t memorised my spells!~ 
+  SAY ~Sorry no time to chat, Iï¿½ve just discovered I have an exam next and I havenï¿½t memorised my spells!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 10)~ THEN BEGIN 9 // from:
-  SAY ~You’ll have to excuse me, I’ve just come from one of Ezekiel’s classes and I need to lie down for a bit.~ 
+  SAY ~Youï¿½ll have to excuse me, Iï¿½ve just come from one of Ezekielï¿½s classes and I need to lie down for a bit.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 11)~ THEN BEGIN 10 // from:
-  SAY ~Lavallin sure keeps some strange components on the top shelves in his store.~ 
+  SAY ~Lavallin sure keeps some strange components on the top shelves in his store.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 12)~ THEN BEGIN 11 // from:
-  SAY ~I heard from someone, who heard from some one else that there were some pretty big names in the Academy last night... no sign of them today though.~ 
+  SAY ~I heard from someone, who heard from some one else that there were some pretty big names in the Academy last night... no sign of them today though.~
   IF ~~ THEN EXIT
 END
 
@@ -64,10 +64,10 @@ IF WEIGHT #-1 ~Global("VP_Garron_Search","LOCALS",0)
 OR(2)
 Global("VP_Create_Garron","GLOBAL",2)
 PartyHasItem("TuLette5")~ THEN BEGIN 12
-  SAY ~Good day, I am Chaileun Kal-Vu’Ryi, but my friends call me Chailu. How can I be of help?~
-  IF ~~ THEN REPLY ~Hello Chailu, I am <GABBER> and I am very pleased to meet you. Tell me Chailu, you don’t by any chance know where I might find a student named Garron do you?~ GOTO 13
-  IF ~~ THEN REPLY ~Well met Chailu, I am <GABBER>. You don’t happen to know a student named Garron do you? I promised a cousin of his I would look him up if I ever got to Halruaa, but his cousin didn’t say which specialisation he is studying.~ GOTO 13
-  IF ~~ THEN REPLY ~What sort of a name is Chaileun-Vu’Ryi... on second thoughts, forget it, I really don’t want to know! However, my name is <GABBER> and my friends call me <GABBER>, as do my enemies. Tell me Chaileun Kal-... whatever, do you know where I might find a student named Garron?~ GOTO 20
+  SAY ~Good day, I am Chaileun Kal-Vuï¿½Ryi, but my friends call me Chailu. How can I be of help?~
+  IF ~~ THEN REPLY ~Hello Chailu, I am <GABBER> and I am very pleased to meet you. Tell me Chailu, you donï¿½t by any chance know where I might find a student named Garron do you?~ GOTO 13
+  IF ~~ THEN REPLY ~Well met Chailu, I am <GABBER>. You donï¿½t happen to know a student named Garron do you? I promised a cousin of his I would look him up if I ever got to Halruaa, but his cousin didnï¿½t say which specialisation he is studying.~ GOTO 13
+  IF ~~ THEN REPLY ~What sort of a name is Chaileun-Vuï¿½Ryi... on second thoughts, forget it, I really donï¿½t want to know! However, my name is <GABBER> and my friends call me <GABBER>, as do my enemies. Tell me Chaileun Kal-... whatever, do you know where I might find a student named Garron?~ GOTO 20
 END
 
 IF ~~ THEN BEGIN 13
@@ -76,66 +76,66 @@ IF ~~ THEN BEGIN 13
 END
 
 IF ~~ THEN BEGIN 14
-  SAY ~He used to be a nice, very conscientious student, but, I don’t know, just lately he has taken to lazing around and generally acting above himself... if you get what I mean.~
+  SAY ~He used to be a nice, very conscientious student, but, I donï¿½t know, just lately he has taken to lazing around and generally acting above himself... if you get what I mean.~
   IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 15
-  SAY ~We’re all a bit surprised that the tutors haven’t reprimanded him for his tardiness. You’d be surprised at the rumours that are flying around, its even been said that he is having a thing with one of the female seniors.~
+  SAY ~Weï¿½re all a bit surprised that the tutors havenï¿½t reprimanded him for his tardiness. Youï¿½d be surprised at the rumours that are flying around, its even been said that he is having a thing with one of the female seniors.~
   IF ~~ THEN GOTO 16
 END
 
 IF ~~ THEN BEGIN 16
-  SAY ~Anyway, if you want to go see if he’s the Garron you’re seeking, you’ll find the four elemental schools in the academy grounds, each clearly marked with a symbol of the element it specialises in, you can’t miss them.~
-  IF ~~ THEN REPLY ~That could well be Garron. A thing with female senior you say, her name wouldn’t be Brial would it... been spending a lot of time together have they?~ GOTO 17
+  SAY ~Anyway, if you want to go see if heï¿½s the Garron youï¿½re seeking, youï¿½ll find the four elemental schools in the academy grounds, each clearly marked with a symbol of the element it specialises in, you canï¿½t miss them.~
+  IF ~~ THEN REPLY ~That could well be Garron. A thing with female senior you say, her name wouldnï¿½t be Brial would it... been spending a lot of time together have they?~ GOTO 17
   IF ~~ THEN REPLY ~Thank you Chailu, I will check this Garron out right away. You have been very helpful, thank you again and farewell.~ GOTO 19
 END
 
 IF ~~ THEN BEGIN 17
   SAY ~Please <GABBER> you never heard that from me. Brial is a well respected senior here and if she ever found out what the gossips are saying and my name is mentioned, I would be finished at Halruaa, not to mention barred from entry to all other academies of magic.~
   IF ~~ THEN GOTO 18
-END  
-  
+END
+
 IF ~~ THEN BEGIN 18
-  SAY ~I have said too much already so if you’ll excuse me, I must leave you to find Garron as I have some studies to catch up on. Goodbye and good luck in your own endeavours here at Halruaa.~
+  SAY ~I have said too much already so if youï¿½ll excuse me, I must leave you to find Garron as I have some studies to catch up on. Goodbye and good luck in your own endeavours here at Halruaa.~
   IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)
 EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 19
-  SAY ~I’m glad I was of some help <GABBER>. Goodbye and good luck in your own endeavours here at Halruaa.~
+  SAY ~Iï¿½m glad I was of some help <GABBER>. Goodbye and good luck in your own endeavours here at Halruaa.~
   IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~If you’d taken the time to use your eyes, it would not have been necessary for you ask such an impertinent question!~
+  SAY ~If youï¿½d taken the time to use your eyes, it would not have been necessary for you ask such an impertinent question!~
   IF ~~ THEN GOTO 21
 END
 
 IF ~~ THEN BEGIN 21
-  SAY ~I am of the elves of Lethyr, and my name has been handed down through many generations to the first child born to the eldest of the family Kal-Vu’Ryi... regardless of whether it is a male or female child.~
+  SAY ~I am of the elves of Lethyr, and my name has been handed down through many generations to the first child born to the eldest of the family Kal-Vuï¿½Ryi... regardless of whether it is a male or female child.~
   IF ~~ THEN GOTO 22
 END
 
 IF ~~ THEN BEGIN 22
   SAY ~It is a name that denotes nobility and respect among my people, can you say the same for your name... <GABBER>?~
-  IF ~~ THEN REPLY ~Hey don’t take it so personally... what’s in a name anyway? It just so happens that I like mine, it has character, don’t you think? Now, to return to my question, do you or do you not know where Garron may be found?~ GOTO 23
-  IF ~~ THEN REPLY ~Touchy aren’t we! No matter, your name isn’t very important, I doubt I shall have cause to remember it. There is only one name that I am only interested in today and that is Garron. Now do you or do you not know where I can find him?~ GOTO 23 
-  IF ~~ THEN REPLY ~Let’s not fall out over a name, after all it isn’t as though we get to choose the family we are born into... I really shouldn’t have been so rude. To return to my question, do you, or do you not know where Garron may be found?~ GOTO 23
+  IF ~~ THEN REPLY ~Hey donï¿½t take it so personally... whatï¿½s in a name anyway? It just so happens that I like mine, it has character, donï¿½t you think? Now, to return to my question, do you or do you not know where Garron may be found?~ GOTO 23
+  IF ~~ THEN REPLY ~Touchy arenï¿½t we! No matter, your name isnï¿½t very important, I doubt I shall have cause to remember it. There is only one name that I am only interested in today and that is Garron. Now do you or do you not know where I can find him?~ GOTO 23
+  IF ~~ THEN REPLY ~Letï¿½s not fall out over a name, after all it isnï¿½t as though we get to choose the family we are born into... I really shouldnï¿½t have been so rude. To return to my question, do you, or do you not know where Garron may be found?~ GOTO 23
 END
 
 IF ~~ THEN BEGIN 23
   SAY ~I know *a* Garron, he has quarters somewhere in the elemental school, but for all I know, there could  be others here at the academy with that name.~
   IF ~~ THEN GOTO 24
 END
- 
+
 IF ~~ THEN BEGIN 24
-  SAY ~If you want to go see if he’s the Garron you’re seeking, you’ll find the four elemental schools in the academy grounds, each clearly marked with a symbol of the element it specialises in, you can’t miss them.~
+  SAY ~If you want to go see if heï¿½s the Garron youï¿½re seeking, youï¿½ll find the four elemental schools in the academy grounds, each clearly marked with a symbol of the element it specialises in, you canï¿½t miss them.~
   IF ~~ THEN GOTO 25
 END
-   
+
 IF ~~ THEN BEGIN 25
-  SAY ~Now if you’ll excuse me, I have some studies of my own to catch up on.~
+  SAY ~Now if youï¿½ll excuse me, I have some studies of my own to catch up on.~
   IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)
 EscapeArea()~ EXIT
 END     

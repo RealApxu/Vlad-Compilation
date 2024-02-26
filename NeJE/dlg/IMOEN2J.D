@@ -453,7 +453,7 @@ IF ~~ THEN BEGIN TS45
 END
 
 IF ~~ THEN BEGIN VP_FIX1
- SAY ~We’ve just had some very bad things done to us, but I don’t believe the plan was to send us to the northern lands... Let’s proceed warily.~
+ SAY ~Weï¿½ve just had some very bad things done to us, but I donï¿½t believe the plan was to send us to the northern lands... Letï¿½s proceed warily.~
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ243
  IF ~!InParty("Minsc")~ THEN EXIT
 END
@@ -487,7 +487,7 @@ IF ~~ THEN BEGIN VP_FIX7
  SAY ~Oh... <CHARNAME>.~
  IF ~~ THEN DO ~SetGlobal("TeleportDialog","GLOBAL",3)~ EXIT
 END
- 
+
 IF WEIGHT #-1 ~Global("VP_BHrothgar","LOCALS",2)~ THEN BEGIN VP_FIX8
  SAY ~Hrothgar, can I ask why you have so much junk in your otherwise nice house?~
  IF ~~ THEN DO ~SetGlobal("VP_BHrothgar","LOCALS",3)~ EXTERN ~HROTHJ~ 103
@@ -496,30 +496,30 @@ END
 IF ~~ THEN BEGIN VP_FIX9
  SAY ~Stories you say, but how many times can you hear a story before you get fed up with it and no longer wish to hear it ever again? Get what I mean?~
  IF ~~ THEN EXTERN ~HROTHJ~ 104
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX10
- SAY ~Wow, that is so sad Hrothgar, and I bet you don’t even know why?~
+ SAY ~Wow, that is so sad Hrothgar, and I bet you donï¿½t even know why?~
  IF ~~ THEN EXTERN ~HROTHJ~ 105
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX11
  SAY ~Because your house is full of things from the past. Looks to me like you surround yourself with your ju... shall we call them keepsakes, because your life is no longer as exciting as it was when you were young. You have to keep these things to remind you of exciting past times. Right Hrothgar?~
  IF ~~ THEN EXTERN ~HROTHJ~ 106
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX12
- SAY ~Hey, don’t go getting so uppity. I never said you were old, maybe just a little lonely. Did you never think to marry, bring a little romance and... well... a different sort of excitement to your life?~
+ SAY ~Hey, donï¿½t go getting so uppity. I never said you were old, maybe just a little lonely. Did you never think to marry, bring a little romance and... well... a different sort of excitement to your life?~
  IF ~~ THEN EXTERN ~HROTHJ~ 107
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX13
  SAY ~Well, was there such a lady?~
  IF ~~ THEN EXTERN ~HROTHJ~ 108
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX14
- SAY ~Wow, I didn’t expect to hear your life story Hrothgar. It could definitely do with some more action, what do you say? Maybe this trip will put some into it for you.~
+ SAY ~Wow, I didnï¿½t expect to hear your life story Hrothgar. It could definitely do with some more action, what do you say? Maybe this trip will put some into it for you.~
  IF ~~ THEN EXTERN ~HROTHJ~ 111
 END
 
@@ -529,47 +529,47 @@ IF WEIGHT #-2 ~Global("VP_BAccalia","LOCALS",2)~ THEN BEGIN VP_FIX15
 END
 
 IF ~~ THEN BEGIN VP_FIX16
- SAY ~Right’o’ Accalia, just thought Ace sounded a bit more pally. What you doing anyway?~
+ SAY ~Rightï¿½oï¿½ Accalia, just thought Ace sounded a bit more pally. What you doing anyway?~
  IF ~~ THEN EXTERN ~ACCALIJ~ 13
 END
 
 IF ~~ THEN BEGIN VP_FIX17
  SAY ~Aww... very funny. I can see you are writing but what are you writing?~
  IF ~~ THEN EXTERN ~ACCALIJ~ 14
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX18
  SAY ~Oh, a journal... boring. Let me tell you what you should write, help you make it less boring...~
  IF ~~ THEN EXTERN ~ACCALIJ~ 15
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX19
  SAY ~I was going to say... what was that... all of us... you mean I am in your journal? You have to let me read it now Accalia! Please, please can I read it?~
  IF ~~ THEN EXTERN ~ACCALIJ~ 16
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX20
  SAY ~Then you read it to me, you only have to read the parts about me, to me. I have never been written about before. Tell me, you have not forgotten to write how captivating and beguiling young Imoen is, how she turns heads where ever she walks?~
  IF ~~ THEN EXTERN ~ACCALIJ~ 17
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX21
  SAY ~Yeah, whatever, but you could still make it more colourful, by using lots of bright descriptive words.~
  IF ~~ THEN GOTO VP_FIX22
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX22
- SAY ~You could say for instance, *The sun caught Imoen’s hair, causing it to shine lustrously, as she made ready to loosen an arrow from her bow,* or...~
+ SAY ~You could say for instance, *The sun caught Imoenï¿½s hair, causing it to shine lustrously, as she made ready to loosen an arrow from her bow,* or...~
  IF ~~ THEN GOTO VP_FIX23
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX23
- SAY ~*Imoen’s young svelte body flowed gracefully into the shadows as she prepared to scout ahead* or even...~
+ SAY ~*Imoenï¿½s young svelte body flowed gracefully into the shadows as she prepared to scout ahead* or even...~
  IF ~~ THEN EXTERN ~ACCALIJ~ 18
 END
 
 IF ~~ THEN BEGIN VP_FIX24
- SAY ~(*Muttering under her breath as she walks away*)... Hmph! She needn’t think I won’t find out what she has written, because I will, you can bet on it! ~
+ SAY ~(*Muttering under her breath as she walks away*)... Hmph! She neednï¿½t think I wonï¿½t find out what she has written, because I will, you can bet on it! ~
  IF ~~ THEN EXIT
 END
 
@@ -589,37 +589,37 @@ IF ~~ THEN BEGIN VP_FIX27
 END
 
 IF ~~ THEN BEGIN VP_FIX28
- SAY ~Of course I have, well, maybe not so much of it in all one place. There was this island we were once transported to when some mage asked us to find a cloak for him, but... but that seems such a long time ago now. Anyhow, we were not there very long.~ 
+ SAY ~Of course I have, well, maybe not so much of it in all one place. There was this island we were once transported to when some mage asked us to find a cloak for him, but... but that seems such a long time ago now. Anyhow, we were not there very long.~
  IF ~~ THEN EXTERN ~DARJ~ 24
 END
 
 IF ~~ THEN BEGIN VP_FIX29
- SAY ~But that is not a fun way to walk Dar, no crunchy squashed beetle sounds!~ 
+ SAY ~But that is not a fun way to walk Dar, no crunchy squashed beetle sounds!~
  IF ~~ THEN EXTERN ~DARJ~ 25
 END
 
 IF ~~ THEN BEGIN VP_FIX30
- SAY ~Was I complaining? I had not noticed, never mind. Still, I much prefer to be walking this cold place and be free, wet feet and all, than be in that horrible place we have just left. (*Sighs*) I suppose my feet will dry out eventually.~    
+ SAY ~Was I complaining? I had not noticed, never mind. Still, I much prefer to be walking this cold place and be free, wet feet and all, than be in that horrible place we have just left. (*Sighs*) I suppose my feet will dry out eventually.~
  IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-4 ~Global("VP_BMinsc","LOCALS",2)~ THEN BEGIN VP_FIX31
- SAY ~We have travelled some rough roads together Minsc, but this must be the strangest. I don’t think I will ever see Candlekeep again. Damn Irenicus!~
+ SAY ~We have travelled some rough roads together Minsc, but this must be the strangest. I donï¿½t think I will ever see Candlekeep again. Damn Irenicus!~
  IF ~~ THEN DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN ~MINSCJ~ NEJ270
 END
 
 IF ~~ THEN BEGIN VP_FIX32
- SAY ~I don’t want you to be sad Minsc, you have lots to be happy about. Here, in this place Dynaheir is not dead, but if we do get home you will be sad and have to avenge her being dead again.~
+ SAY ~I donï¿½t want you to be sad Minsc, you have lots to be happy about. Here, in this place Dynaheir is not dead, but if we do get home you will be sad and have to avenge her being dead again.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ271
 END
 
 IF ~~ THEN BEGIN VP_FIX33
- SAY ~No Minsc, you can’t do that! You don’t belong here anymore than I do. It’s all so unfair! That damn portal dragging us here, I don’t care a bit about Hrothgar and his big old evil! I just want to go home, feel the sun on my face instead of trudging through all this cold, horrible snow!~
+ SAY ~No Minsc, you canï¿½t do that! You donï¿½t belong here anymore than I do. Itï¿½s all so unfair! That damn portal dragging us here, I donï¿½t care a bit about Hrothgar and his big old evil! I just want to go home, feel the sun on my face instead of trudging through all this cold, horrible snow!~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ272
 END
 
 IF ~~ THEN BEGIN VP_FIX34
- SAY ~Thank you Minsc. I think a big strong arm is just what I need at the moment, only don’t go telling the others, they still think of me as the baby here as it is.~
+ SAY ~Thank you Minsc. I think a big strong arm is just what I need at the moment, only donï¿½t go telling the others, they still think of me as the baby here as it is.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ273
 END
 
@@ -650,15 +650,15 @@ END
 IF ~~ THEN BEGIN NEJ109
  SAY ~We have come so far and learnt so much, how can we ever be the same? You discover your father to be the god of murder, you have been hunted by and forced to fight and kill Sarevok, your own power crazed brother.~
  IF ~~ THEN GOTO NEJ110
-END  
+END
 
 IF ~~ THEN BEGIN NEJ110
- SAY ~I have no brother nor sister, so I can only imagine how awful that had to have been for you <CHARNAME>, not that Sarevok would have made a very nice brother anyway, but still, to have to kill him.~ 
+ SAY ~I have no brother nor sister, so I can only imagine how awful that had to have been for you <CHARNAME>, not that Sarevok would have made a very nice brother anyway, but still, to have to kill him.~
  IF ~~ THEN GOTO NEJ111
 END
 
 IF ~~ THEN BEGIN NEJ111
- SAY ~Now, thanks to this Irenicus, we land up... well, wherever it is we are now! It is just not fair <CHARNAME>! I want my... our life back the way it was before all this child of Bhaal palaver!~ 
+ SAY ~Now, thanks to this Irenicus, we land up... well, wherever it is we are now! It is just not fair <CHARNAME>! I want my... our life back the way it was before all this child of Bhaal palaver!~
  IF ~~ THEN REPLY ~What is past is past Imoen, for now we have to concentrate on surviving this cold inhospitable land.~ GOTO NEJ116
  IF ~~ THEN REPLY ~It is fruitless to dwell on what has been. We could be here for a very long time, so I suggest you get used to it and make the most of the here and now.~ GOTO NEJ116
  IF ~~ THEN REPLY ~All good memories are worth hanging onto, but that is all they are, memories. Whereas the past will always be with us, we have a future to look to now, even if fate decrees that our futures now lie in this strange land.~ GOTO NEJ117
@@ -674,15 +674,15 @@ IF ~~ THEN BEGIN NEJ112
 END
 	
 IF ~~ THEN BEGIN NEJ113
- SAY ~(*Picking up a handfull of fresh snow*)... I know <CHARNAME>, but it feels so good to be walking free again.~ 
+ SAY ~(*Picking up a handfull of fresh snow*)... I know <CHARNAME>, but it feels so good to be walking free again.~
  IF ~~ THEN GOTO NEJ114
 END
 
 IF ~~ THEN BEGIN NEJ114
  SAY ~The snow sort of reminded me of the excitement we felt at seeing the first snow of winter when we were children at Candlekeep.~
  IF ~~ THEN GOTO NEJ115
-END 
- 
+END
+
 IF ~~ THEN BEGIN NEJ115
  SAY ~For a moment I forgot Irenicus and all those horrible things he did to us. I just thought to relive some of those memories would cheer us both.~
  IF ~~ THEN REPLY ~What is past is past Imoen, for now we have to concentrate on surviving this cold inhospitable land.~ GOTO NEJ116
@@ -699,9 +699,9 @@ END
 
 IF ~~ THEN BEGIN NEJ117
  SAY ~(*Tosses the snowball at you*)... Then I guess it can not hurt to make a new memory and besides, there is no use in letting a good snowball go to waste now is there?~
- IF ~~ THEN REPLY ~(*Dodging Imoen’s snowball*) Imoen! I asked you to put that snowball down. Now, no more childish behaviour or I will leave you here to enjoy the snow on your own! If I behaved as you nothing would ever be achieved!~ GOTO NEJ118
- IF ~~ THEN REPLY ~(*Dodging Imoen’s snowball*) No matter how the years pass, to me you will always be Imoen, the innocent rogue with a big heart, and a friend that I know will always put a smile on my face no matter how bad things get. Come my friend, no more snowballs, we are not safe here.~ GOTO NEJ119
- IF ~~ THEN REPLY ~(*Dodging Imoen’s snowball*) Imoen! I despair of you. No matter, let us move on before all this ruckuss gets us noticed.~ GOTO NEJ119
+ IF ~~ THEN REPLY ~(*Dodging Imoenï¿½s snowball*) Imoen! I asked you to put that snowball down. Now, no more childish behaviour or I will leave you here to enjoy the snow on your own! If I behaved as you nothing would ever be achieved!~ GOTO NEJ118
+ IF ~~ THEN REPLY ~(*Dodging Imoenï¿½s snowball*) No matter how the years pass, to me you will always be Imoen, the innocent rogue with a big heart, and a friend that I know will always put a smile on my face no matter how bad things get. Come my friend, no more snowballs, we are not safe here.~ GOTO NEJ119
+ IF ~~ THEN REPLY ~(*Dodging Imoenï¿½s snowball*) Imoen! I despair of you. No matter, let us move on before all this ruckuss gets us noticed.~ GOTO NEJ119
 END
 
 IF ~~ THEN BEGIN NEJ118
@@ -723,7 +723,7 @@ InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ561
 END
 
 IF ~~ THEN BEGIN VP_FIX36
- SAY ~And maybe you wouldn’t be so grouchy if you put less starch in your knickers Jaheira... (*grinning*) then perhaps Khalid would smile more and stutter less!~
+ SAY ~And maybe you wouldnï¿½t be so grouchy if you put less starch in your knickers Jaheira... (*grinning*) then perhaps Khalid would smile more and stutter less!~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ562
 END
 
@@ -733,25 +733,25 @@ IF ~~ THEN BEGIN VP_FIX37
 END
 
 IF ~~ THEN BEGIN VP_FIX38
- SAY ~Why not say faults Jaheira, after all that is what you mean isn’t it? If it is my nature to be as I am then surely nature is also responsible for what you call my faults? Now, remind me... who it is that believes we should not mess with nature?~
+ SAY ~Why not say faults Jaheira, after all that is what you mean isnï¿½t it? If it is my nature to be as I am then surely nature is also responsible for what you call my faults? Now, remind me... who it is that believes we should not mess with nature?~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ564
 END
 
 IF ~~ THEN BEGIN VP_FIX39
- SAY ~Fine by me. I can’t think of a more fun way to learn, at least when it comes to talking about a thing, I will know what I am talking about, having *experienced* it.~ 
+ SAY ~Fine by me. I canï¿½t think of a more fun way to learn, at least when it comes to talking about a thing, I will know what I am talking about, having *experienced* it.~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ565
 END
 
 IF WEIGHT #-6 ~Global("VP_BAccalia","LOCALS",5)~ THEN BEGIN VP_FIX40
- SAY ~(*Opening and looking at the book in her hands*)... Now let’s see what that priest has written that she wants kept so darn private...~
+ SAY ~(*Opening and looking at the book in her hands*)... Now letï¿½s see what that priest has written that she wants kept so darn private...~
  IF ~~ THEN DO ~SetGlobal("VP_BAccalia","LOCALS",6)~ GOTO VP_FIX41
 END
- 
+
 IF ~~ THEN BEGIN VP_FIX41
  SAY ~(*She turns a couple of pages*)... Hmp... *Today Hrothgar... Hrothgar said... Hrothgar... Hrothgar, Hrothgar, and more Hrothgar!~
  IF ~~ THEN GOTO VP_FIX42
-END 
- 
+END
+
 IF ~~ THEN BEGIN VP_FIX42
  SAY ~(*Giggles*) It Looks like our lady priest has got a crush on Hrothgar and him being so old... yuck!~
  IF ~InParty("Jaheira")~ THEN GOTO VP_FIX43
@@ -759,34 +759,34 @@ IF ~~ THEN BEGIN VP_FIX42
 InParty("Minsc")~ THEN GOTO VP_FIX45
  IF ~!InParty("Jaheira")
 !InParty("Minsc")~ THEN GOTO VP_FIX47
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX43
- SAY ~(*She turns another page*)... Aha... now what’s this... *Jaheira seemed a tad cranky today*.~
+ SAY ~(*She turns another page*)... Aha... now whatï¿½s this... *Jaheira seemed a tad cranky today*.~
  IF ~~ THEN GOTO VP_FIX44
-END  
- 
+END
+
 IF ~~ THEN BEGIN VP_FIX44
- SAY ~(*Giggles louder*)... You think she’d know by know that Jaheira is always cranky, in fact Jaheira is another name for cranky.~
+ SAY ~(*Giggles louder*)... You think sheï¿½d know by know that Jaheira is always cranky, in fact Jaheira is another name for cranky.~
  IF ~InParty("Minsc")~ THEN GOTO VP_FIX45
  IF ~!InParty("Minsc")~ THEN GOTO VP_FIX47
 END
 
 IF ~~ THEN BEGIN VP_FIX45
- SAY ~(*She turns another page*)... *I wish Tempus would endow me with the means to cure the gentle ranger’s head... but perhaps then he would no longer be Minsc and his friends would not thank me for it*.~
+ SAY ~(*She turns another page*)... *I wish Tempus would endow me with the means to cure the gentle rangerï¿½s head... but perhaps then he would no longer be Minsc and his friends would not thank me for it*.~
  IF ~~ THEN GOTO VP_FIX46
-END   
-  
+END
+
 IF ~~ THEN BEGIN VP_FIX46
  SAY ~(*Hotly*) You can keep your hands off our Minsc lady, we love him just as he is!~
  IF ~~ THEN GOTO VP_FIX47
 END
 
 IF ~~ THEN BEGIN VP_FIX47
- SAY ~(*She turns another page*)... Now this is more like it... *Imoen, a charming enough rogue*... she actually likes me well I’ll be darned...~
+ SAY ~(*She turns another page*)... Now this is more like it... *Imoen, a charming enough rogue*... she actually likes me well Iï¿½ll be darned...~
  IF ~~ THEN GOTO VP_FIX48
 END
- 
+
 IF ~~ THEN BEGIN VP_FIX48
  SAY ~(*She reads on*)... *Should really learn to grow up and realise life out here is not a playground*... What!! Why the...~
  IF ~~ THEN EXTERN ~ACCALIJ~ 25
@@ -795,7 +795,7 @@ END
 IF ~~ THEN BEGIN VP_FIX49
  SAY ~(*Quickly stuffing her hands behind her back*) Er... no Accalia.~
  IF ~~ THEN EXTERN ~ACCALIJ~ 26
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX50
  SAY ~You do that Accalia... (*Smirking*) Why not ask Hrothgar, he might know?~
@@ -803,22 +803,22 @@ IF ~~ THEN BEGIN VP_FIX50
 END
 
 IF ~~ THEN BEGIN VP_FIX51
- SAY ~(*Quickly holding out her hands for the clasp, dropping the book as she does*) It’s beautiful Accalia, thank... ooops!!~
+ SAY ~(*Quickly holding out her hands for the clasp, dropping the book as she does*) Itï¿½s beautiful Accalia, thank... ooops!!~
  IF ~~ THEN EXTERN ~ACCALIJ~ 28
 END
 
 IF ~~ THEN BEGIN VP_FIX52
- SAY ~(*Blushing*) What this book... is it yours? I only just found it and haven’t had time to find out who it belongs to yet and I certainly have not had enough time to read it. (*Picks up the book and gives it to Accalia.*)~
+ SAY ~(*Blushing*) What this book... is it yours? I only just found it and havenï¿½t had time to find out who it belongs to yet and I certainly have not had enough time to read it. (*Picks up the book and gives it to Accalia.*)~
  IF ~~ THEN EXTERN ~ACCALIJ~ 29
 END
 
 IF ~~ THEN BEGIN VP_FIX53
- SAY ~Right you are Accalia. Thank you for the clasp and I’m glad you got your journal back.~
+ SAY ~Right you are Accalia. Thank you for the clasp and Iï¿½m glad you got your journal back.~
  IF ~~ THEN EXTERN ~ACCALIJ~ 30
 END
 
 IF ~~ THEN BEGIN VP_FIX54
- SAY ~I would never read your journal Accalia, as you said, it’s private.~
+ SAY ~I would never read your journal Accalia, as you said, itï¿½s private.~
  IF ~~ THEN EXIT
 END
 
@@ -832,12 +832,12 @@ IF ~~ THEN BEGIN VP_FIX55
 END
 
 IF ~~ THEN BEGIN VP_FIX56
- SAY ~Then let’s get it over with. We can debate the virtue of our decision later over a couple of mugs.~
+ SAY ~Then letï¿½s get it over with. We can debate the virtue of our decision later over a couple of mugs.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN VP_FIX57
- SAY ~Elisia-of-the-Sky’s-Mirror... Elisia-of-the-Lake... Sea spirits are such glorious creatures and have such beautiful names.~
+ SAY ~Elisia-of-the-Skyï¿½s-Mirror... Elisia-of-the-Lake... Sea spirits are such glorious creatures and have such beautiful names.~
  IF ~~ THEN GOTO VP_FIX58
 END
 
@@ -859,7 +859,7 @@ IF ~~ THEN BEGIN VP_FIX60
 END
 
 IF ~~ THEN BEGIN VP_FIX61
- SAY ~Well, at least we won’t be bored.~
+ SAY ~Well, at least we wonï¿½t be bored.~
  IF ~~ THEN DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
 END
 
@@ -881,7 +881,7 @@ IF ~~ THEN BEGIN VP_FIX64
 END
 
 IF ~~ THEN BEGIN VP_FIX65
- SAY ~Hey, they’re already waiting for us... why give ‘em more time I say?~
+ SAY ~Hey, theyï¿½re already waiting for us... why give ï¿½em more time I say?~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 274
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ292
@@ -892,12 +892,12 @@ IF ~~ THEN BEGIN VP_FIX65
 END
 
 IF ~~ THEN BEGIN VP_FIX66
- SAY ~We’ll keep an eye on the big fella. He’s family, and we need him around.~
+ SAY ~Weï¿½ll keep an eye on the big fella. Heï¿½s family, and we need him around.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ293
 END
 
 IF ~~ THEN BEGIN VP_FIX67
- SAY ~Yeah. I hate to tell you this big fella, but she’s evil.~
+ SAY ~Yeah. I hate to tell you this big fella, but sheï¿½s evil.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ296
 END
 
@@ -907,7 +907,7 @@ IF WEIGHT #-7 ~Global("VP_YxunomeiDead","GLOBAL",1)~ THEN BEGIN VP_FIX68
 END
 
 IF ~~ THEN BEGIN VP_FIX69
- SAY ~(*Smiling a wan smile*) At least we won’t be bored.~
+ SAY ~(*Smiling a wan smile*) At least we wonï¿½t be bored.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 280
  IF ~InParty("Dar")
 !Dead("Dar")~ THEN EXTERN ~DARJ~ 35
@@ -923,7 +923,7 @@ IF ~~ THEN BEGIN VP_FIX70
 END
 
 IF ~~ THEN BEGIN VP_FIX87
- SAY ~Wow... that was some move Hrothgar! Uh... care to tell us how you did it?~ 
+ SAY ~Wow... that was some move Hrothgar! Uh... care to tell us how you did it?~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 196
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 43
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ314
@@ -932,12 +932,12 @@ IF ~~ THEN BEGIN VP_FIX87
 END
 
 IF ~~ THEN BEGIN VP_FIX88
- SAY ~I thought we were helping you Hrothgar? Is there really some evil here that you are working with, or are you doing this for Irenicus? Is... is he here somewhere even now laughing at our foolishness in trusting you? Hrothgar, tell me... is he here waiting to torture us some more?~ 
+ SAY ~I thought we were helping you Hrothgar? Is there really some evil here that you are working with, or are you doing this for Irenicus? Is... is he here somewhere even now laughing at our foolishness in trusting you? Hrothgar, tell me... is he here waiting to torture us some more?~
  IF ~~ THEN EXTERN ~HROTHJ~ 196
 END
 
 IF ~~ THEN BEGIN VP_FIX89
- SAY ~It’s... it’s not like we are being asked to kill real people is it? I mean they were real people once, brave people, but now they are just restless spirits... right?~
+ SAY ~Itï¿½s... itï¿½s not like we are being asked to kill real people is it? I mean they were real people once, brave people, but now they are just restless spirits... right?~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel")
@@ -953,7 +953,7 @@ RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
 END
 
 IF ~~ THEN BEGIN VP_FIX90
- SAY ~You’re not alone there Dar. Jaheira is always telling me to be wary and to maintain balance within myself, but do you know what Dar... no matter how wary I am I still find I fall over at times... (*giggles*)... and all this snow doesn’t do much for a girl’s balance either.~
+ SAY ~Youï¿½re not alone there Dar. Jaheira is always telling me to be wary and to maintain balance within myself, but do you know what Dar... no matter how wary I am I still find I fall over at times... (*giggles*)... and all this snow doesnï¿½t do much for a girlï¿½s balance either.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel")
@@ -985,7 +985,7 @@ StartCutscene("VPCutH07")~ EXIT
 END
 
 IF ~~ THEN BEGIN VP_FIX93
-	SAY ~I don’t care two hoots about balance Jaheira! It can be tipped upside down and standing on its head for all I care... I just want to go home.~
+	SAY ~I donï¿½t care two hoots about balance Jaheira! It can be tipped upside down and standing on its head for all I care... I just want to go home.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4)
 ClearAllActions()
 StartCutSceneMode()
@@ -1000,7 +1000,7 @@ IF ~~ THEN BEGIN VP_FIX94
 END
 
 IF ~~ THEN BEGIN VP_FIX95
- SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~ 
+ SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 46
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ319
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ617
@@ -1013,12 +1013,12 @@ IF ~~ THEN BEGIN VP_FIX96
 END
 
 IF ~~ THEN BEGIN VP_FIX97 //3.01
- SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you don’t need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
+ SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you donï¿½t need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
  IF ~~ THEN EXTERN ~HROTHJ~ 235 //-->H7.01
 END
 
 IF ~~ THEN BEGIN VP_FIX98 //3.02
- SAY ~You are clever sometimes Minsc. He is right Hrothgar, you can come with us and travel with <CHARNAME>. That’s got to be better than staying here and being killed by some evil thing. Come on, what do you say Hrothgar?~
+ SAY ~You are clever sometimes Minsc. He is right Hrothgar, you can come with us and travel with <CHARNAME>. Thatï¿½s got to be better than staying here and being killed by some evil thing. Come on, what do you say Hrothgar?~
  IF ~~ THEN EXTERN ~HROTHJ~ 235 //-->H7.01
 END
 
@@ -1028,7 +1028,7 @@ IF ~~ THEN BEGIN VP_FIX99
 END
 
 IF ~~ THEN BEGIN VP_FIX100
- SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~ 
+ SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 54
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ323
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ621
@@ -1044,20 +1044,20 @@ IF ~~ THEN BEGIN VP_FIX102
  SAY ~Aaaw... quit worrying Hrothgar! <CHARNAME> has never made a wrong decision yet. Have you <CHARNAME>?~
  IF ~~ THEN REPLY ~I am not convinced that my decisions are always right Imoen, but they do have a knack of coming out right in the end.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO VP_FIX103
- IF ~~ THEN REPLY ~Thanks for the vote of confidence Imoen, let’s hope this one comes out okay.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
+ IF ~~ THEN REPLY ~Thanks for the vote of confidence Imoen, letï¿½s hope this one comes out okay.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO VP_FIX103
- IF ~~ THEN REPLY ~No... and that’s why this is the right one too.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
+ IF ~~ THEN REPLY ~No... and thatï¿½s why this is the right one too.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
 SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO VP_FIX103
 END
 
 IF ~~ THEN BEGIN VP_FIX103
- SAY ~So... what are we waiting for? Let’s get out of here!~
+ SAY ~So... what are we waiting for? Letï¿½s get out of here!~
  IF ~~ THEN EXTERN ~HROTHJ~ 262
 END
 
 IF ~~ THEN BEGIN VP_FIX104
- SAY ~Pretty good magic user though and an ok fellow... if you didn’t listen to him too closely that was.~
- IF ~~ THEN REPLY ~It was pretty hard not to listen to him ... why do you think I stuck him at the back of the group all the time? Anyway, enough talk, we must move on before we share Erevain’s fate and become a meal for the creatures of this place.~ EXTERN ~HROTHJ~ 271
+ SAY ~Pretty good magic user though and an ok fellow... if you didnï¿½t listen to him too closely that was.~
+ IF ~~ THEN REPLY ~It was pretty hard not to listen to him ... why do you think I stuck him at the back of the group all the time? Anyway, enough talk, we must move on before we share Erevainï¿½s fate and become a meal for the creatures of this place.~ EXTERN ~HROTHJ~ 271
  IF ~~ THEN REPLY ~He had his uses, magic users were in short supply back then... or at least any that were willing to join our inexperienced little group, but that was then and this is now. We can do no more here, let us move on before we share this fools fate.~ EXTERN ~HROTHJ~ 271
 END
 
@@ -1065,10 +1065,10 @@ IF ~~ THEN BEGIN VP_FIX105
  SAY ~Great! Just great! Now we get to be dogs in a dogfight. I wonder how much he has bet on the winner.~
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~For now, let’s just make sure that one of these enemies is unhappy with the outcome.~ EXTERN ~HROTHJ~ 284
+Dead("Jaheira")~ THEN REPLY ~For now, letï¿½s just make sure that one of these enemies is unhappy with the outcome.~ EXTERN ~HROTHJ~ 284
  IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN ~HROTHJ~ 284 
+Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN ~HROTHJ~ 284
  IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN ~HROTHJ~ 284
@@ -1082,12 +1082,12 @@ IF ~~ THEN BEGIN VP_FIX106
 END
 
 IF ~~ THEN BEGIN VP_FIX107
- SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you don’t need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
+ SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you donï¿½t need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
  IF ~~ THEN EXTERN ~HROTHJ~ 287
 END
 
 IF ~Global("VP_Imoen_In_IWD","GLOBAL",2)~ THEN BEGIN NEJ192 // 1
- SAY ~What’s up <CHARNAME>, you look as though you’ve seen a ghost?~
+ SAY ~Whatï¿½s up <CHARNAME>, you look as though youï¿½ve seen a ghost?~
   IF ~~ THEN REPLY ~This is not possible! What is going on here?~ DO ~SetGlobal("VP_Imoen_In_IWD","GLOBAL",3)~ GOTO NEJ204 //--> 2
  IF ~~ THEN REPLY ~I... I know that man Imoen... at least I know of him.~ DO ~SetGlobal("VP_Imoen_In_IWD","GLOBAL",3)~ GOTO NEJ193 ////--> 3
  IF ~~ THEN REPLY ~What trick has that wizard played on us this time? I swear I will have his hide for this!~ DO ~SetGlobal("VP_Imoen_In_IWD","GLOBAL",3)~ GOTO NEJ200//--> 10
@@ -1101,81 +1101,81 @@ IF ~~ THEN BEGIN NEJ193 // 3
 END
 
 IF ~~ THEN BEGIN NEJ194
- SAY ~Did you hit your head in the portal? I always thought legends were stories of dead heroes... not live ones and Hrothgar didn’t look like a ghost to me. Admitted he looked a bit worn around the edges but he was still breathing, you’re the one looking all pale and sounding scary.~
+ SAY ~Did you hit your head in the portal? I always thought legends were stories of dead heroes... not live ones and Hrothgar didnï¿½t look like a ghost to me. Admitted he looked a bit worn around the edges but he was still breathing, youï¿½re the one looking all pale and sounding scary.~
  IF ~~ THEN REPLY ~Legend tells of Hrothgar dying at the hand of a demon as he tried to defend his town, the town of Easthaven. You heard the man himself say, this is Easthaven!~ GOTO NEJ195
  IF ~~ THEN REPLY ~My head is fine thank you Imoen. Hrothgar was said to have lost his life defending the town of Easthaven from a demon and yet, here we are in Easthaven and we have spoken to Hrothgar, is it any wonder I seem a little confused.~ GOTO NEJ195
  IF ~~ THEN REPLY ~I no more understand it than you. We are in Easthaven and Hrothgar is very much alive. Somehow we have been sent back in time and I do not mind betting that it is all Irenicus doing!~ GOTO NEJ195
 END
 
 IF ~~ THEN BEGIN NEJ195
- SAY ~Irenicus! He’s done this on purpose... I just know it! He’s had his fun torturing us and now he’s sent us back in time to keep us from getting our own back on him, or to make sure we don’t tell anyone of all those horrible things he did to us back in that dungeon of his.~
+ SAY ~Irenicus! Heï¿½s done this on purpose... I just know it! Heï¿½s had his fun torturing us and now heï¿½s sent us back in time to keep us from getting our own back on him, or to make sure we donï¿½t tell anyone of all those horrible things he did to us back in that dungeon of his.~
  IF ~~ THEN REPLY ~We are in the past yes, but I am sure if Irenicus merely wanted to rid himself of us, we would be dead. Men like him have no conscience, nor do they fear retribution. No, we are here for a reason, you can be sure of that.~ GOTO NEJ196
  IF ~~ THEN REPLY ~If Irenicus meant for us to be here, then I can only imagine that he hopes we will change the past by some deed or action that will secure the future he wants for himself.~ GOTO NEJ196
  IF ~~ THEN REPLY ~We know how devious and brutal Irenicus is, he would not have had us come here if not for some devious, monstrous plan he has in that twisted head of his!~ GOTO NEJ196
 END
 
 IF ~~ THEN BEGIN NEJ196
- SAY ~(*Her face pales*) Even if we discover why he sent us here, we aren’t going to help him... are we <CHARNAME>? We’ll find a way to get home, and when we do, we are going to pay him back... right?~
+ SAY ~(*Her face pales*) Even if we discover why he sent us here, we arenï¿½t going to help him... are we <CHARNAME>? Weï¿½ll find a way to get home, and when we do, we are going to pay him back... right?~
  IF ~~ THEN REPLY ~You bet we are Imoen... and when we do find him, I will show him who is the puppet and who is the puppet master!~ GOTO NEJ197
- IF ~~ THEN REPLY ~Even if I have to wait the next hundred years out... I will find him Imoen and when I do, it’ll be him caged and tortured in that hell hole of his.~ GOTO NEJ198
- IF ~~ THEN REPLY ~Believe me Imoen, Irenicus’s days are numbered even as we stand here. I am not about to let a little thing like where or when we are keep me from cutting out that black heart of his and handing it to him... still beating!~ GOTO NEJ199
+ IF ~~ THEN REPLY ~Even if I have to wait the next hundred years out... I will find him Imoen and when I do, itï¿½ll be him caged and tortured in that hell hole of his.~ GOTO NEJ198
+ IF ~~ THEN REPLY ~Believe me Imoen, Irenicusï¿½s days are numbered even as we stand here. I am not about to let a little thing like where or when we are keep me from cutting out that black heart of his and handing it to him... still beating!~ GOTO NEJ199
 END
 						
 IF ~~ THEN BEGIN NEJ197
- SAY ~(*Her face brightens a little at your words*) Then what are we waiting for, let’s go find us another portal and kick some ass.~
+ SAY ~(*Her face brightens a little at your words*) Then what are we waiting for, letï¿½s go find us another portal and kick some ass.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN NEJ198
- SAY ~(*A faint smile crosses her lips at your words*) Let’s hope we don’t have to wait that long. When we catch up with Irenicus, I want to be able to walk up to him and look him straight in the eye as he gets what’s coming to him. Somehow, I don’t think the sight of me in a bath chair, struggling to look him in the eye is going to have the impact I am hoping for.~
+ SAY ~(*A faint smile crosses her lips at your words*) Letï¿½s hope we donï¿½t have to wait that long. When we catch up with Irenicus, I want to be able to walk up to him and look him straight in the eye as he gets whatï¿½s coming to him. Somehow, I donï¿½t think the sight of me in a bath chair, struggling to look him in the eye is going to have the impact I am hoping for.~
  IF ~~ THEN EXIT
-END 
+END
 
 IF ~~ THEN BEGIN NEJ199
- SAY ~(*Her face pales even more at your words*) It... it’s nothing more than he deserves after the things he did to us, but in a way, that would make us no better than him. I’ll be happy just to get the chance to put an arrow of detonation straight through that torturing heart of his.~
+ SAY ~(*Her face pales even more at your words*) It... itï¿½s nothing more than he deserves after the things he did to us, but in a way, that would make us no better than him. Iï¿½ll be happy just to get the chance to put an arrow of detonation straight through that torturing heart of his.~
  IF ~~ THEN EXIT
-END 
- 
+END
+
 IF ~~ THEN BEGIN NEJ200 // 10
- SAY ~What’s wrong <CHARNAME>... I don’t think I’ve ever seen you this angry before and it’s scaring me?~
+ SAY ~Whatï¿½s wrong <CHARNAME>... I donï¿½t think Iï¿½ve ever seen you this angry before and itï¿½s scaring me?~
  IF ~~ THEN REPLY ~That madman has sent us to the past Imoen! To be be more specific, he has sent us at least 100 years into the past!~ GOTO NEJ201
  IF ~~ THEN REPLY ~He is playing with my head again! To let me think I am free and then to show me that it is only an illusion! Curses on him, he will regret crossing me when I catch up to him!~ GOTO NEJ202
  IF ~~ THEN REPLY ~He cannot do this! He refuses to face me and sends us here instead!~ GOTO NEJ203
 END
 
 IF ~~ THEN BEGIN NEJ201
- SAY ~The past! I don’t understand... how can we be in the past? <CHARNAME> please, we’ve only been here a short while, how can you possibly know we are in the past?~
+ SAY ~The past! I donï¿½t understand... how can we be in the past? <CHARNAME> please, weï¿½ve only been here a short while, how can you possibly know we are in the past?~
  IF ~~ THEN REPLY ~That man, Hrothgar, I know him or at least I know what legend speaks of him. He died over 100 years ago defending his town from some demon. That town was Easthaven, the very same town that we now find ourselves in.~ GOTO NEJ195
  IF ~~ THEN REPLY ~This has to be another of his accursed experiments, damn this insanity! Legend says that Hrothgar of Easthaven died over 100 years ago Imoen, he died defending this very town!~ GOTO NEJ195
 END
 
 IF ~~ THEN BEGIN NEJ202
- SAY ~No, that can’t be true <CHARNAME>! He messed with both our heads whilst we were in that horrible dungeon of his, but here we are free of him. Where ever here is, I just know that there is no way he can still be messing with us.~
+ SAY ~No, that canï¿½t be true <CHARNAME>! He messed with both our heads whilst we were in that horrible dungeon of his, but here we are free of him. Where ever here is, I just know that there is no way he can still be messing with us.~
  IF ~~ THEN REPLY ~How are we free of him Imoen? If this is to be believed, then that damned portal of his has catapulted us back into the past, which probably means only he can return us to our own time.~ GOTO NEJ195
  IF ~~ THEN REPLY ~You think so Imoen? Do you believe Irenicus capable of travelling to the past, because if you believe all this to be real and not in my head, then that is where we are now, in the past.~ GOTO NEJ195
  IF ~~ THEN REPLY ~Free of him you say Imoen, if you say he is not playing with my head, then we have all been sent back into the past. I doubt he would do that so we could be free of him!~ GOTO NEJ195
 END
 
 IF ~~ THEN BEGIN NEJ203
- SAY ~Irenicus... you are talking about Irenicus aren’t you <CHARNAME>? You think he sent us here don’t you? If he did and you know where we are, then we can find our way home again... right?~
+ SAY ~Irenicus... you are talking about Irenicus arenï¿½t you <CHARNAME>? You think he sent us here donï¿½t you? If he did and you know where we are, then we can find our way home again... right?~
  IF ~~ THEN REPLY ~If I am right then home and Irenicus are both a long way away Imoen, or should I say a long way into the future... for we are now in the past. Damn Irenicus and his portal.~ GOTO NEJ195
- IF ~~ THEN REPLY ~I don’t know Imoen, somehow that insane mage has transported us back into the past and unless we find another portal then we may never see our own time again.~ GOTO NEJ195
- IF ~~ THEN REPLY ~Oh... I know where we are Imoen, I even know when we are and yes, I believe this is all Irenicus’s doing! That damn portal of his has catapulted us into the past, putting him well out of my reach!~ GOTO NEJ195
+ IF ~~ THEN REPLY ~I donï¿½t know Imoen, somehow that insane mage has transported us back into the past and unless we find another portal then we may never see our own time again.~ GOTO NEJ195
+ IF ~~ THEN REPLY ~Oh... I know where we are Imoen, I even know when we are and yes, I believe this is all Irenicusï¿½s doing! That damn portal of his has catapulted us into the past, putting him well out of my reach!~ GOTO NEJ195
 END
 
 IF ~~ THEN BEGIN NEJ204 // 2
-	SAY ~Please, you’re beginning to scare me <CHARNAME>. What’s not possible... is it something to do with that man, Hrothgar?~
+	SAY ~Please, youï¿½re beginning to scare me <CHARNAME>. Whatï¿½s not possible... is it something to do with that man, Hrothgar?~
  	IF ~~ THEN REPLY ~I... I know that man Imoen... at least I know of him.~ GOTO NEJ193
  	IF ~~ THEN REPLY ~Hrothgar! A name I know but this makes no sense!~ GOTO NEJ193
 END
 
 IF ~~ THEN BEGIN NEJ205
-	SAY ~(*Groans*)... Aargh... another portal! What is it with this mage, doesn’t he believe in good old fashioned wooden doors?~
+	SAY ~(*Groans*)... Aargh... another portal! What is it with this mage, doesnï¿½t he believe in good old fashioned wooden doors?~
  IF ~~ THEN EXTERN ~HROTHJ~ 371
 END
 
 IF ~~ THEN BEGIN NEJ206
-  SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasn’t angry when he did those things, but he will be now and I don’t think I could stand it if he caught us again.~
+  SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasnï¿½t angry when he did those things, but he will be now and I donï¿½t think I could stand it if he caught us again.~
   IF ~~ THEN GOTO NEJ207
 END
 	
@@ -1185,19 +1185,19 @@ IF ~~ THEN BEGIN NEJ207
 END
 
 IF ~~ THEN BEGIN NEJ208
-  SAY ~What ever you say <CHARNAME>, but let’s do it quickly because I really want out of here!~
+  SAY ~What ever you say <CHARNAME>, but letï¿½s do it quickly because I really want out of here!~
  IF ~~ THEN DO ~SetGlobal("VP_Hrothgar_Interjects","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ209
-  SAY ~(*She shivers and pales slightly*)... We don’t really know what’s on the other side... do we? It could be another demon, it could be a whole horde of demons! Or worse... it could be Irenicus!~
+  SAY ~(*She shivers and pales slightly*)... We donï¿½t really know whatï¿½s on the other side... do we? It could be another demon, it could be a whole horde of demons! Or worse... it could be Irenicus!~
   IF ~~ THEN GOTO NEJ210
-END  
-  
+END
+
 IF ~~ THEN BEGIN NEJ210
-  SAY ~Please <CHARNAME>, I don’t know if I can face going through another portal, not if Irenicus is waiting for us on the other side. There has to be another way, there has to...~
+  SAY ~Please <CHARNAME>, I donï¿½t know if I can face going through another portal, not if Irenicus is waiting for us on the other side. There has to be another way, there has to...~
   IF ~~ THEN GOTO NEJ211
-END   
+END
 
 IF ~~ THEN BEGIN NEJ211
   SAY ~Hrothgar... you... you teleported us once, please do it again... please, get us out of here!~
@@ -1205,23 +1205,23 @@ IF ~~ THEN BEGIN NEJ211
 END
 
 IF ~~ THEN BEGIN NEJ212
-  SAY ~(*She turns deathly pale and begins shaking*)... Nooo... please <CHARNAME>, if there’s the slightest chance that Irenicus is on the other side of this portal, just waiting to torture us some more, I don’t want to go that way! Please, don’t make me, please...~
+  SAY ~(*She turns deathly pale and begins shaking*)... Nooo... please <CHARNAME>, if thereï¿½s the slightest chance that Irenicus is on the other side of this portal, just waiting to torture us some more, I donï¿½t want to go that way! Please, donï¿½t make me, please...~
   IF ~~ THEN GOTO NEJ211
 END
 
 IF ~~ THEN BEGIN nejstart
-  SAY ~(*Noticeably a shade paler*)... I... I’ve seen enough blood thank you! Irenicus has the same fascination with it as you Shar-Teel... only he likes to share his depravity!~
+  SAY ~(*Noticeably a shade paler*)... I... Iï¿½ve seen enough blood thank you! Irenicus has the same fascination with it as you Shar-Teel... only he likes to share his depravity!~
   IF ~~ THEN EXTERN ~SHARTJ~ nejopen2
 END
 
 IF ~~ THEN BEGIN sharaval
-  SAY ~You are so cruel Shar-Teel! I don’t know why <CHARNAME> didn’t leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
+  SAY ~You are so cruel Shar-Teel! I donï¿½t know why <CHARNAME> didnï¿½t leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ 401
-	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval 
+	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 END
 
 IF ~~ THEN BEGIN NEJ206fix
-  SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasn’t angry when he did those things, but he will be now and I don’t think I could stand it if he caught us again.~
+  SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasnï¿½t angry when he did those things, but he will be now and I donï¿½t think I could stand it if he caught us again.~
   IF ~~ THEN GOTO NEJ207fix
 END
 	
@@ -1231,14 +1231,14 @@ IF ~~ THEN BEGIN NEJ207fix
 END
 
 IF ~~ THEN BEGIN NEJ209fix
-  SAY ~(*She shivers and pales slightly*)... We don’t really know what’s on the other side... do we? It could be another demon, it could be a whole horde of demons! Or worse... it could be Irenicus!~
+  SAY ~(*She shivers and pales slightly*)... We donï¿½t really know whatï¿½s on the other side... do we? It could be another demon, it could be a whole horde of demons! Or worse... it could be Irenicus!~
   IF ~~ THEN GOTO NEJ210fix
-END  
-  
+END
+
 IF ~~ THEN BEGIN NEJ210fix
-  SAY ~Please <CHARNAME>, I don’t know if I can face going through another portal, not if Irenicus is waiting for us on the other side. There has to be another way, there has to...~
+  SAY ~Please <CHARNAME>, I donï¿½t know if I can face going through another portal, not if Irenicus is waiting for us on the other side. There has to be another way, there has to...~
   IF ~~ THEN GOTO NEJ211fix
-END   
+END
 
 IF ~~ THEN BEGIN NEJ211fix
   SAY ~Hrothgar... you... you teleported us once, please do it again... please, get us out of here!~
@@ -1246,35 +1246,35 @@ IF ~~ THEN BEGIN NEJ211fix
 END
 
 IF ~~ THEN BEGIN NEJ212fix
-  SAY ~(*She turns deathly pale and begins shaking*)... Nooo... please <CHARNAME>, if there’s the slightest chance that Irenicus is on the other side of this portal, just waiting to torture us some more, I don’t want to go that way! Please, don’t make me, please...~
+  SAY ~(*She turns deathly pale and begins shaking*)... Nooo... please <CHARNAME>, if thereï¿½s the slightest chance that Irenicus is on the other side of this portal, just waiting to torture us some more, I donï¿½t want to go that way! Please, donï¿½t make me, please...~
   IF ~~ THEN GOTO NEJ211fix
 END
 
-IF ~~ THEN BEGIN kuldback 
- SAY ~(*Groans*) Kuldahar! I suppose this is your doing Hrothgar. I bet you messed with the portal when we weren’t looking, didn’t you?~
+IF ~~ THEN BEGIN kuldback
+ SAY ~(*Groans*) Kuldahar! I suppose this is your doing Hrothgar. I bet you messed with the portal when we werenï¿½t looking, didnï¿½t you?~
     IF ~~ THEN EXTERN ~HROTHJ~ kulback1
 END
 
 IF ~~ THEN BEGIN kulback1
- SAY ~(*Angrily*) Safe! You call having your soul ripped from you safe? A hole for... who knows what evil to take advantage of!~ 
+ SAY ~(*Angrily*) Safe! You call having your soul ripped from you safe? A hole for... who knows what evil to take advantage of!~
 =
 ~You had no right bringing us here, but of course why should you care? You with your own soul tucked warmly away inside you!~
     IF ~~ THEN EXTERN ~HROTHJ~ kulback2
 END
 
 IF ~~ THEN BEGIN kulback2
- SAY ~(*Mimicking Hrothgar’s voice as only Imoen can*) All will be well in time! What time? This time? My own time? Hundreds of years in the future time? Exactly what time are we talking about here?~
+ SAY ~(*Mimicking Hrothgarï¿½s voice as only Imoen can*) All will be well in time! What time? This time? My own time? Hundreds of years in the future time? Exactly what time are we talking about here?~
     IF ~~ THEN EXTERN ~HROTHJ~ kulback3
 END
 
 IF ~~ THEN BEGIN kulback3
- SAY ~Maybe. But you’ve still gone too far this time Hrothgar, dragging us all here without so much as a warning!~
+ SAY ~Maybe. But youï¿½ve still gone too far this time Hrothgar, dragging us all here without so much as a warning!~
 =
 ~(*Then turning to you*) Please <CHARNAME>, tell him to send us back, now!~
     IF ~~ THEN EXTERN ~HROTHJ~ kulback4
 END
 
-IF ~~ THEN BEGIN kulback4 
+IF ~~ THEN BEGIN kulback4
  SAY ~Yea, not to mention leaving me to have my soul tortured from my body by a sadistic, sick bastard while you go on a joyride through time, you tell him Dar!~
 IF ~True()~ THEN EXTERN ~HROTHJ~ kulback6
  IF ~InParty("Sharteel")
@@ -1326,9 +1326,9 @@ OR(2)
 END
 
 IF ~~ THEN BEGIN hrotleft
- SAY ~Phew, for a moment there I thought you were going to go along with him! I’m glad to see you managed to hang on to your senses whilst Irenicus was pulling the rest of you apart.~ 
+ SAY ~Phew, for a moment there I thought you were going to go along with him! Iï¿½m glad to see you managed to hang on to your senses whilst Irenicus was pulling the rest of you apart.~
 =
-~So, big <BROTHERSISTER>, what are we waiting around here for? Time to go show that soul stealing sorcerer and that demon sister of his that they can’t go around whipping people’s souls out willy nilly!~
+~So, big <BROTHERSISTER>, what are we waiting around here for? Time to go show that soul stealing sorcerer and that demon sister of his that they canï¿½t go around whipping peopleï¿½s souls out willy nilly!~
   	IF ~True()~ THEN DO ~ActionOverride("Hrothgar",LeaveParty())
 ActionOverride("Hrothgar",EscapeArea())~ EXIT
   	IF ~InParty("Taffic")
@@ -1338,11 +1338,11 @@ InParty("Melora")
 END
 
 IF ~~ THEN BEGIN kulback5
- SAY ~(*Groans*) Not more battling through ice and snow, I’ve only just dried my boots out from our last trek through here, not to mention just getting some feeling back into my feet again!~
+ SAY ~(*Groans*) Not more battling through ice and snow, Iï¿½ve only just dried my boots out from our last trek through here, not to mention just getting some feeling back into my feet again!~
 =
 ~And if I fall dead into a snowdrift due to my lacking a soul, I hope someone here is prepared to carry this poor soulless girl home for a decent burying and a humungous wake.~
 =
-~I don’t want to be left in the past, frozen to death under a ton of ice and snow for all eternity.~
+~I donï¿½t want to be left in the past, frozen to death under a ton of ice and snow for all eternity.~
 	IF ~True()~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCtSH2")~ EXIT
@@ -1353,7 +1353,7 @@ StartCutScene("VPCtSH2")~ EXIT
 END
 
 IF ~~ THEN BEGIN kulback6
- SAY ~Gee Dar, you don’t know how much better that makes a girl feel.~
+ SAY ~Gee Dar, you donï¿½t know how much better that makes a girl feel.~
  	IF ~True()~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCtSH2")~ EXIT
@@ -1362,14 +1362,14 @@ StartCutScene("VPCtSH2")~ EXIT
 END
 
 IF ~~ THEN BEGIN kulback7
- SAY ~(*Giggling*) Oh Minsc you are funny. That was Boo’s own reflection that he saw. Of course it went away when you jumped in, I bet Boo knew this all the time and thought to play a joke on you, didn’t you Boo?~
+ SAY ~(*Giggling*) Oh Minsc you are funny. That was Booï¿½s own reflection that he saw. Of course it went away when you jumped in, I bet Boo knew this all the time and thought to play a joke on you, didnï¿½t you Boo?~
 =
-~(*Squeak*)~ [BOONEJ1] 
+~(*Squeak*)~ [BOONEJ1]
   	IF ~~ THEN EXTERN ~MINSCJ~ kulback2
 END
 
 IF ~~ THEN BEGIN returnsh
- SAY ~(*Her face flushed*) Hey <CHARNAME>, you’re definitely gonna have to get one of those things. Look, not even a damp patch on my boots!~
+ SAY ~(*Her face flushed*) Hey <CHARNAME>, youï¿½re definitely gonna have to get one of those things. Look, not even a damp patch on my boots!~
  	IF ~True()~ THEN EXTERN ~HROTHJ~ returns1
  	IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ returnsh
@@ -1383,5 +1383,5 @@ END
 IF ~~ THEN BEGIN IWDEREV2
   SAY ~Oh, don't take everything so literal Erevain. There's so many fun things to experience! You'll love it somewhere warmer.~
 	IF ~~ THEN EXTERN ~EREVAINJ~ 5
-END 
+END
 END

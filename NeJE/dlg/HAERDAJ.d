@@ -35,7 +35,7 @@ IF ~~ THEN BEGIN Kelem2
 ~Ah... how shall I compose poems if... and where shall I sing my ballads? (Covers his face with his hands for a second)~
 	IF ~~ THEN REPLY ~Haer'Dalis, I have come to take you from here, I can return you to life but only if you forgive me for killing you.~ GOTO Kelem4
 	IF ~~ THEN REPLY ~I'm sorry, Haer'Dalis. Of course, I'll tell you all but later, when we have returned and everything is behind us. Do you forgive me?~ GOTO Kelem4
-	IF ~~ THEN REPLY ~(Smirk) A ballad composed by a dead man? That has to be a new trend in art!~ GOTO Kelem3 
+	IF ~~ THEN REPLY ~(Smirk) A ballad composed by a dead man? That has to be a new trend in art!~ GOTO Kelem3
 END
 
 IF ~~ THEN BEGIN Kelem3

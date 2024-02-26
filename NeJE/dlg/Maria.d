@@ -56,17 +56,17 @@ IF ~~ THEN BEGIN MariTk11
 END
 
 IF ~~ THEN BEGIN MariTk12
-  SAY ~Look here! You have had enough time to turn her head. Ah, this is all so... so romantic, the suffering and wronged hero, a somewhat new role for you Keldorn!~ 
+  SAY ~Look here! You have had enough time to turn her head. Ah, this is all so... so romantic, the suffering and wronged hero, a somewhat new role for you Keldorn!~
   	IF ~~ THEN EXTERN ~KELDORJ~ MariTk15
 END
 
 IF ~~ THEN BEGIN MariTk13
-  SAY ~What?! I must shut my mouth? You, an old man with grey hair, you leave everything – me, our girls, your well-beloved Order, – and you throw yourself after a wench to... hm, what was it that you said? To rescue her playmate! Leaving me to learn from outsiders where you were and who you were with!~ 
+  SAY ~What?! I must shut my mouth? You, an old man with grey hair, you leave everything ï¿½ me, our girls, your well-beloved Order, ï¿½ and you throw yourself after a wench to... hm, what was it that you said? To rescue her playmate! Leaving me to learn from outsiders where you were and who you were with!~
   	IF ~~ THEN EXTERN ~KELDORJ~ MariTk16
 END
 
 IF ~~ THEN BEGIN MariTk14
-  SAY ~Don't you “Maria” me! I have become old, I've cried my eyes out, while wasting my life waiting for you for years... Now when such a horrible thing has happened, I thought you are going to come and comfort me! Instead you have come... with this... semigod! How can you, Keldorn... and you dare to accuse me of infidelity!~
+  SAY ~Don't you ï¿½Mariaï¿½ me! I have become old, I've cried my eyes out, while wasting my life waiting for you for years... Now when such a horrible thing has happened, I thought you are going to come and comfort me! Instead you have come... with this... semigod! How can you, Keldorn... and you dare to accuse me of infidelity!~
   	IF ~~ THEN EXTERN ~KELDORJ~ MariTk17
 END
 

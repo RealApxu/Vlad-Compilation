@@ -28,7 +28,7 @@ IF ~~ THEN BEGIN 2
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutM06")~ EXIT
-END 
+END
 
 IF ~PartyHasItem("lightgem")
 OR(2)
@@ -36,7 +36,7 @@ OR(2)
 	Global("VP_EvilAct","GLOBAL",2)~ THEN BEGIN 3
 	SAY ~As I thought, worthy contestants indeed. See you have even secured the biggest prize, my gem. Come, give it to me before you leave for you have certainly won your freedom today.~
 =
-~The gem will be of no further use to you. The balor has kept it out of my hands long enough, I cannot wait to hold it once more. Look how it glows, is it not beautiful?~ 
+~The gem will be of no further use to you. The balor has kept it out of my hands long enough, I cannot wait to hold it once more. Look how it glows, is it not beautiful?~
 =
 ~It is almost a shame to have to hide it away but my pets do not like it. I think it hurts their eyes, come let me have it.~
 	  IF ~InParty("Jaheira")
@@ -78,9 +78,9 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-	SAY ~Please, I abhor violence... when it is directed at me that is. Violence is however an interesting subject to study in other creatures.~ 
+	SAY ~Please, I abhor violence... when it is directed at me that is. Violence is however an interesting subject to study in other creatures.~
 =
-~You cannot begin to imagine the power these pets of mine wield or what they could become given time and training. Do you not find them magnificent beings, the ultimate fighting machine?~ 
+~You cannot begin to imagine the power these pets of mine wield or what they could become given time and training. Do you not find them magnificent beings, the ultimate fighting machine?~
 =
 ~All I have to do is find a way to coax them out during the day to hunt. That is to be my next step in their development.~
  IF ~~ THEN REPLY ~Listen to yourself! These pets of yours are no more than wild beasts, completely and utterly mindless. If there is no way to make you see this and it is up to me to end this insanity, then so be it.~ GOTO 5	

@@ -1,17 +1,17 @@
 APPEND ~IMOEN2J~
 
 IF ~~ THEN BEGIN VP_FIX71
- SAY ~I didn’t make any such promise! I just want to go home and forget this whole nightmare... please <CHARNAME>... let’s go home?~
+ SAY ~I didnï¿½t make any such promise! I just want to go home and forget this whole nightmare... please <CHARNAME>... letï¿½s go home?~
  IF ~~ THEN EXTERN ~HROTHJ~ 155
 END
 
 IF ~~ THEN BEGIN VP_FIX72
- SAY ~(*Shrugging his hand off her shoulder*) I don’t know you Hrothgar, nor do I like this place. It’s cold and I don’t care much for the snow any more, there’s too much of it... it makes the sun hurt my eyes!~
+ SAY ~(*Shrugging his hand off her shoulder*) I donï¿½t know you Hrothgar, nor do I like this place. Itï¿½s cold and I donï¿½t care much for the snow any more, thereï¿½s too much of it... it makes the sun hurt my eyes!~
  IF ~~ THEN GOTO VP_FIX73
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX73
- SAY ~Also, I don’t care where this portal leads as long as it is away from here. Please <CHARNAME>... can’t we leave now before this portal disappears?~  
+ SAY ~Also, I donï¿½t care where this portal leads as long as it is away from here. Please <CHARNAME>... canï¿½t we leave now before this portal disappears?~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ EXTERN ~HROTHJ~ 162
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
@@ -25,19 +25,19 @@ IF ~~ THEN BEGIN VP_FIX74
 END
 
 IF ~~ THEN BEGIN VP_FIX75
- SAY ~It’s not fair, ‘cause now it means that I am going to have to stay here and make sure we all stay on the straight and narrow. I only wish the straight and narrow wasn’t so deep in snow.~
+ SAY ~Itï¿½s not fair, ï¿½cause now it means that I am going to have to stay here and make sure we all stay on the straight and narrow. I only wish the straight and narrow wasnï¿½t so deep in snow.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 39
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ312
 END
 
 IF ~~ THEN BEGIN VP_FIX76
- SAY ~*Keep safe dear heart!* Phooey! I knew Gorion and as much as he loved <CHARNAME> he would understand your need to find Khalid, he would not hold you to such a promise in these circumstances and I am sure <CHARNAME> understands too. What really bothers you Jaheira... is it that <CHARNAME> and me can look after ourselves now and you don’t want to admit that your mothering duty is done... that perhaps we have no need of your constant clucking any more?~  
+ SAY ~*Keep safe dear heart!* Phooey! I knew Gorion and as much as he loved <CHARNAME> he would understand your need to find Khalid, he would not hold you to such a promise in these circumstances and I am sure <CHARNAME> understands too. What really bothers you Jaheira... is it that <CHARNAME> and me can look after ourselves now and you donï¿½t want to admit that your mothering duty is done... that perhaps we have no need of your constant clucking any more?~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ605
 END
 
 IF ~~ THEN BEGIN VP_FIX77
- SAY ~We only have your word for that don’t we?~
+ SAY ~We only have your word for that donï¿½t we?~
  IF ~~ THEN GOTO VP_FIX78
 END
 
@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN VP_FIX79
 END
 
 IF ~~ THEN BEGIN VP_FIX80
- SAY ~You wish Jaheira. We’ll see who is a willful child when next I catch up with Khalid, if we ever get out of this time warp that is.~
+ SAY ~You wish Jaheira. Weï¿½ll see who is a willful child when next I catch up with Khalid, if we ever get out of this time warp that is.~
  IF ~~ THEN GOTO VP_FIX81
 END
 
@@ -62,22 +62,22 @@ IF ~~ THEN BEGIN VP_FIX81
 END
 
 IF ~~ THEN BEGIN VP_FIX82
- SAY ~(*Sighs*) I only wish the straight and narrow wasn’t so deep in snow.~
+ SAY ~(*Sighs*) I only wish the straight and narrow wasnï¿½t so deep in snow.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 39
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ312
 END
 
 IF ~~ THEN BEGIN VP_FIX83
- SAY ~(*Linking her arm in the ranger’s*) Thank you Minsc, with you around it’s almost like	having a big brother to look after me.~
+ SAY ~(*Linking her arm in the rangerï¿½s*) Thank you Minsc, with you around itï¿½s almost like	having a big brother to look after me.~
  IF ~~ THEN GOTO VP_FIX84
-END 
+END
 
 IF ~~ THEN BEGIN VP_FIX84
  SAY ~Not that many big brothers have time for their little sisters, or so I am told by those who are lucky enough to have big brothers.~
  IF ~~ THEN GOTO VP_FIX85
-END  
- 
+END
+
 IF ~~ THEN BEGIN VP_FIX85
  SAY ~So you Minsc, are probably better than any big brother any girl could have. Now, as your adopted little sister, do you think I could carry Boo?~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
@@ -85,7 +85,7 @@ IF ~~ THEN BEGIN VP_FIX85
 END
 
 IF ~~ THEN BEGIN VP_FIX86
- SAY ~(*Giggling*) I don’t think I can take strides big enough to put my feet in your boot prints Dar. Look... (*She stretches her legs in vain to match his stride and falls over causing her to giggle all the more*)... See?~
+ SAY ~(*Giggling*) I donï¿½t think I can take strides big enough to put my feet in your boot prints Dar. Look... (*She stretches her legs in vain to match his stride and falls over causing her to giggle all the more*)... See?~
  IF ~~ THEN EXTERN ~DARJ~ 41
 END
 
@@ -94,23 +94,23 @@ IF ~~ THEN BEGIN Back0602
  IF ~True()~ THEN EXTERN ~PLAYER1~ NEJ63
  IF ~InParty("Dar")~ THEN EXTERN ~PLAYER1~ NEJ64
  IF ~InParty("Erevain")~ THEN EXTERN ~EREVAINJ~ 3
-END 
+END
 END
 
 APPEND ~IMOENJ~
 
 IF ~~ THEN BEGIN NEJ155
- SAY ~I didn’t make any such promise! I just want to go home and forget this whole nightmare... please <CHARNAME>... let’s go home?~
+ SAY ~I didnï¿½t make any such promise! I just want to go home and forget this whole nightmare... please <CHARNAME>... letï¿½s go home?~
  IF ~~ THEN EXTERN ~HROTHJ~ 155
 END
 
 IF ~~ THEN BEGIN NEJ156
- SAY ~(*Shrugging his hand off her shoulder*) I don’t know you Hrothgar, nor do I like this place. It’s cold and I don’t care much for the snow any more, there’s too much of it... it makes the sun hurt my eyes!~
+ SAY ~(*Shrugging his hand off her shoulder*) I donï¿½t know you Hrothgar, nor do I like this place. Itï¿½s cold and I donï¿½t care much for the snow any more, thereï¿½s too much of it... it makes the sun hurt my eyes!~
  IF ~~ THEN GOTO NEJ157
-END 
+END
 
 IF ~~ THEN BEGIN NEJ157
- SAY ~Also, I don’t care where this portal leads as long as it is away from here. Please <CHARNAME>... can’t we leave now before this portal disappears?~  
+ SAY ~Also, I donï¿½t care where this portal leads as long as it is away from here. Please <CHARNAME>... canï¿½t we leave now before this portal disappears?~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ EXTERN ~HROTHJ~ 162
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
@@ -124,19 +124,19 @@ IF ~~ THEN BEGIN NEJ158
 END
 
 IF ~~ THEN BEGIN NEJ159
- SAY ~It’s not fair, ‘cause now it means that I am going to have to stay here and make sure we all stay on the straight and narrow. I only wish the straight and narrow wasn’t so deep in snow.~
+ SAY ~Itï¿½s not fair, ï¿½cause now it means that I am going to have to stay here and make sure we all stay on the straight and narrow. I only wish the straight and narrow wasnï¿½t so deep in snow.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 39
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ312
 END
 
 IF ~~ THEN BEGIN NEJ160
- SAY ~*Keep safe dear heart!* Phooey! I knew Gorion and as much as he loved <CHARNAME> he would understand your need to find Khalid, he would not hold you to such a promise in these circumstances and I am sure <CHARNAME> understands too. What really bothers you Jaheira... is it that <CHARNAME> and me can look after ourselves now and you don’t want to admit that your mothering duty is done... that perhaps we have no need of your constant clucking any more?~  
+ SAY ~*Keep safe dear heart!* Phooey! I knew Gorion and as much as he loved <CHARNAME> he would understand your need to find Khalid, he would not hold you to such a promise in these circumstances and I am sure <CHARNAME> understands too. What really bothers you Jaheira... is it that <CHARNAME> and me can look after ourselves now and you donï¿½t want to admit that your mothering duty is done... that perhaps we have no need of your constant clucking any more?~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ605
 END
 
 IF ~~ THEN BEGIN NEJ161
- SAY ~We only have your word for that don’t we?~
+ SAY ~We only have your word for that donï¿½t we?~
  IF ~~ THEN GOTO NEJ162
 END
 
@@ -151,7 +151,7 @@ IF ~~ THEN BEGIN NEJ163
 END
 
 IF ~~ THEN BEGIN NEJ164
- SAY ~You wish Jaheira. We’ll see who is a willful child when next I catch up with Khalid, if we ever get out of this time warp that is.~
+ SAY ~You wish Jaheira. Weï¿½ll see who is a willful child when next I catch up with Khalid, if we ever get out of this time warp that is.~
  IF ~~ THEN GOTO NEJ165
 END
 
@@ -161,22 +161,22 @@ IF ~~ THEN BEGIN NEJ165
 END
 
 IF ~~ THEN BEGIN NEJ166
- SAY ~(*Sighs*) I only wish the straight and narrow wasn’t so deep in snow.~
+ SAY ~(*Sighs*) I only wish the straight and narrow wasnï¿½t so deep in snow.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 39
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ312
 END
 
 IF ~~ THEN BEGIN NEJ167
- SAY ~(*Linking her arm in the ranger’s*) Thank you Minsc, with you around it’s almost like	having a big brother to look after me.~
+ SAY ~(*Linking her arm in the rangerï¿½s*) Thank you Minsc, with you around itï¿½s almost like	having a big brother to look after me.~
  IF ~~ THEN GOTO NEJ168
-END 
+END
 
 IF ~~ THEN BEGIN NEJ168
  SAY ~Not that many big brothers have time for their little sisters, or so I am told by those who are lucky enough to have big brothers.~
  IF ~~ THEN GOTO NEJ169
-END  
- 
+END
+
 IF ~~ THEN BEGIN NEJ169
  SAY ~So you Minsc, are probably better than any big brother any girl could have. Now, as your adopted little sister, do you think I could carry Boo?~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
@@ -184,7 +184,7 @@ IF ~~ THEN BEGIN NEJ169
 END
 
 IF ~~ THEN BEGIN NEJ170
- SAY ~(*Giggling*) I don’t think I can take strides big enough to put my feet in your boot prints Dar. Look... (*She stretches her legs in vain to match his stride and falls over causing her to giggle all the more*)... See?~
+ SAY ~(*Giggling*) I donï¿½t think I can take strides big enough to put my feet in your boot prints Dar. Look... (*She stretches her legs in vain to match his stride and falls over causing her to giggle all the more*)... See?~
  IF ~~ THEN EXTERN ~DARJ~ 41
 END
 
@@ -193,7 +193,7 @@ IF ~~ THEN BEGIN Back0602
  IF ~True()~ THEN EXTERN ~PLAYER1~ NEJ63
  IF ~InParty("Dar")~ THEN EXTERN ~PLAYER1~ NEJ64
  IF ~InParty("Erevain")~ THEN EXTERN ~EREVAINJ~ 3
-END 
+END
 END
 
 APPEND ~JAHEIRAJ~
@@ -204,22 +204,22 @@ IF ~~ THEN BEGIN NEJ596
 END
 
 IF ~~ THEN BEGIN NEJ597
- SAY ~I have been too long from Khalid’s side and I must insist that we make haste to free him from the clutches of that sadistic wizard!~
+ SAY ~I have been too long from Khalidï¿½s side and I must insist that we make haste to free him from the clutches of that sadistic wizard!~
  IF ~~ THEN GOTO NEJ598
 END
 
 IF ~~ THEN BEGIN NEJ598
- SAY ~<CHARNAME>, for Khalid’s sake and to preserve the balance, let us be gone from here!~
+ SAY ~<CHARNAME>, for Khalidï¿½s sake and to preserve the balance, let us be gone from here!~
  IF ~~ THEN EXTERN ~HROTHJ~ 156
 END
 
 IF ~~ THEN BEGIN NEJ599
- SAY ~What do you mean... mine or Khalid’s future? Surely my future is his future? I do not like your choice of words Hrothgar, they cause a coldness to come over me. I ask that you speak plainly of what it is that you know?~
+ SAY ~What do you mean... mine or Khalidï¿½s future? Surely my future is his future? I do not like your choice of words Hrothgar, they cause a coldness to come over me. I ask that you speak plainly of what it is that you know?~
  IF ~~ THEN EXTERN ~HROTHJ~ 157
 END
 
 IF ~~ THEN BEGIN NEJ600
- SAY ~Your answer does nothing to alleviate my fears for my husband. In fact they give me reason to be even more anxious to take this portal now! Please <CHARNAME>?~  
+ SAY ~Your answer does nothing to alleviate my fears for my husband. In fact they give me reason to be even more anxious to take this portal now! Please <CHARNAME>?~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ EXTERN ~HROTHJ~ 162
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
@@ -229,13 +229,13 @@ END
 IF ~~ THEN BEGIN NEJ601
  SAY ~I believe this to be foolish, we are only repeating that which has gone before, <CHARNAME>.~
  IF ~~ THEN GOTO NEJ602
-END 
- 
+END
+
 IF ~~ THEN BEGIN NEJ602
  SAY ~However a promise is a promise and whereas it worries me greatly that I must leave Khalid to fend for himself a little longer, he knows and would understand that our promise to Gorion to guide you, to keep you safe wherever your road takes you, must be upheld for as long as one of us remains in your company. He would not have me renege on that promise for his sake.~
  IF ~~ THEN GOTO NEJ603
-END 
- 
+END
+
 IF ~~ THEN BEGIN NEJ603
  SAY ~(*Quietly to herself*) Keep safe dear heart, for we shall find each other again soon.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
@@ -256,8 +256,8 @@ END
 IF ~~ THEN BEGIN NEJ605
  SAY ~You child, know nothing of duty nor of the promise Khalid and I made to Gorion.~
  IF ~~ THEN GOTO NEJ606
-END 
- 
+END
+
 IF ~~ THEN BEGIN NEJ606
  SAY ~We both swore that until <CHARNAME> decided we were no longer needed as companions... that as long as one of us remained alive we would watch over <PRO_HIMHER> as Gorion, if he were alive to do so himself, would surely be doing.~
  IF ~~ THEN GOTO NEJ607
@@ -281,7 +281,7 @@ IF ~~ THEN BEGIN NEJ609
 END
 
 IF ~~ THEN BEGIN NEJ610
- SAY ~Yes Minsc... I am sure that somewhere in there, you have got it right. When we find Irenicus I feel we will all be making him wish he hadn’t been born.~
+ SAY ~Yes Minsc... I am sure that somewhere in there, you have got it right. When we find Irenicus I feel we will all be making him wish he hadnï¿½t been born.~
  IF ~~ THEN EXTERN ~HROTHJ~ 185
 END
 
@@ -299,14 +299,14 @@ END
 APPEND ~MINSCJ~
 
 IF ~~ THEN BEGIN NEJ299
- SAY ~Minsc’s sword burns to meet this great evil of yours Hrothgar. Minsc can not leave evil to roam free when he learns of where it is hiding, but nor can he leave Dynaheir’s death un-avenged.~
+ SAY ~Minscï¿½s sword burns to meet this great evil of yours Hrothgar. Minsc can not leave evil to roam free when he learns of where it is hiding, but nor can he leave Dynaheirï¿½s death un-avenged.~
  IF ~~ THEN GOTO NEJ300
 END
 
 IF ~~ THEN BEGIN NEJ300
  SAY ~Even now he feels his sword burning to meet the evil wizard who so foully murdered a sweet innocent soul.~
  IF ~~ THEN GOTO NEJ301
-END 
+END
 
 IF ~~ THEN BEGIN NEJ301
  SAY ~Minsc must ask Boo what he is to do when there are two evils to exact righteous justice to and only the one sword.~
@@ -314,7 +314,7 @@ IF ~~ THEN BEGIN NEJ301
 END
 
 IF ~~ THEN BEGIN NEJ302
- SAY ~I am sure Boo will listen to what Hrothgar has to say and if he doesn’t like his words he will tell Minsc. Right Boo?~
+ SAY ~I am sure Boo will listen to what Hrothgar has to say and if he doesnï¿½t like his words he will tell Minsc. Right Boo?~
  IF ~~ THEN GOTO NEJ303
 END
 
@@ -329,14 +329,14 @@ IF ~~ THEN BEGIN NEJ304
 END
 
 IF ~~ THEN BEGIN NEJ305
- SAY ~Minsc and Boo will go with you to the cut off hand but only if <CHARNAME> says that we do.~  
+ SAY ~Minsc and Boo will go with you to the cut off hand but only if <CHARNAME> says that we do.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Who_Is_Hrothgar","GLOBAL",2)~ EXTERN ~HROTHJ~ 162
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 36
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 36
 END
 
 IF ~~ THEN BEGIN NEJ306
- SAY ~Evil, if you are hiding in the cut off hand beware and hear the voice of Minsc... there is nowhere you can hide that a ranger and his hamster will not find you. Prepare to meet Minsc’s sword and feel the backhand of justice!~
+ SAY ~Evil, if you are hiding in the cut off hand beware and hear the voice of Minsc... there is nowhere you can hide that a ranger and his hamster will not find you. Prepare to meet Minscï¿½s sword and feel the backhand of justice!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 185
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ158
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX74
@@ -358,23 +358,23 @@ IF ~~ THEN BEGIN NEJ308
 END
 
 IF ~~ THEN BEGIN NEJ309
- SAY ~When this wizard feels the back hand of Minsc’s righteous justice he will wish he had not been born into such evil ways and Boo says, the wizard will wish he hadn’t been born at all.~
+ SAY ~When this wizard feels the back hand of Minscï¿½s righteous justice he will wish he had not been born into such evil ways and Boo says, the wizard will wish he hadnï¿½t been born at all.~
  IF ~~ THEN GOTO NEJ310
 END
 
 IF ~~ THEN BEGIN NEJ310
- SAY ~That doesn’t make sense, if the wizard hadn’t been born then Boo could not make him wish he hadn’t been born in the first place right?~
+ SAY ~That doesnï¿½t make sense, if the wizard hadnï¿½t been born then Boo could not make him wish he hadnï¿½t been born in the first place right?~
 	IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ610
 END
 
 IF ~~ THEN BEGIN NEJ312
- SAY ~Minsc will always listen to Imoen, he doesn’t know where this straight and narrow is that she speaks of but if it is hidden deep under the snow perhaps Minsc can help Imoen to find it. Then, if we can see it we can all stay on it and she will not have to worry so much.~
+ SAY ~Minsc will always listen to Imoen, he doesnï¿½t know where this straight and narrow is that she speaks of but if it is hidden deep under the snow perhaps Minsc can help Imoen to find it. Then, if we can see it we can all stay on it and she will not have to worry so much.~
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ167
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX83
 END
 
 IF ~~ THEN BEGIN NEJ342
- SAY ~(*Thrusting Boo’s rear in Shar-Teel’s face*) Boo and I know who the stupid one is, you don’t know to distinguish a rat from a hamster! Everyone knows rats have long skinny tales... see, there is no tail behind Boo!~
+ SAY ~(*Thrusting Booï¿½s rear in Shar-Teelï¿½s face*) Boo and I know who the stupid one is, you donï¿½t know to distinguish a rat from a hamster! Everyone knows rats have long skinny tales... see, there is no tail behind Boo!~
  IF ~~ THEN EXTERN ~SHARTJ~ onminsc3
 END
 

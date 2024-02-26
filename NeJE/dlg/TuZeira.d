@@ -13,9 +13,9 @@ IF ~~ THEN BEGIN 1
   IF ~~ THEN REPLY ~Hello, Zeira. I am <CHARNAME>. You say *about to become* the future. Can you explain what you mean by that statement?~ GOTO 2
   IF ~~ THEN REPLY ~Well met, Zeira. I am <CHARNAME>. Tell me, does this *about to become* have anything to do with the secrecy surrounding Halruaa at the moment?~ GOTO 3
 END
- 
+
 IF ~~ THEN BEGIN 2
-  SAY ~We at Halruaa teach mages to specialise because we believe that in this way the power of the mage is greatly increased. The extra time required to specialise is time well spent as surely it is better to be adept in one school than master of none. The rising trend of the generalist mage threatens to undermine all that we strive to teach here. We cannot allow this to happen.~ 
+  SAY ~We at Halruaa teach mages to specialise because we believe that in this way the power of the mage is greatly increased. The extra time required to specialise is time well spent as surely it is better to be adept in one school than master of none. The rising trend of the generalist mage threatens to undermine all that we strive to teach here. We cannot allow this to happen.~
   IF ~~ THEN REPLY ~Are you saying that Halruaa is about to take a stand for specialisation?~ GOTO 4
   IF ~~ THEN REPLY ~I am guessing, by what you have said, that Halruaa's mages are planning to stem the rise of generalisation?~ GOTO 4
   IF ~~ THEN REPLY ~Surely there is a place for the specialist and the generalist mage? There must be more to it than that?~ GOTO 4

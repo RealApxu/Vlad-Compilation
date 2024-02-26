@@ -57,13 +57,13 @@ END
 IF ~~ THEN BEGIN 9
   SAY ~When he returned with her refusal, I thought to leave it for a few days then try my luck again. I was not the only person to think this marriage convenient you know.~
   IF ~~ THEN GOTO 10
-END  
-  
+END
+
 IF ~~ THEN BEGIN 10
   SAY ~It was Leina's father who suggested it to me, he had some notion that if she married me it would put a stop to her wanderings.~
   IF ~~ THEN GOTO 11
-END   
-  
+END
+
 IF ~~ THEN BEGIN 11
   SAY ~He also knows she refused me because I sent the messenger to tell him, but I also sent word that I would not be giving up.~
   IF ~~ THEN GOTO 14
@@ -72,7 +72,7 @@ END
 IF ~~ THEN BEGIN 12
   SAY ~Now hold on a minute! I am not that short of female company to let one refusal get to me! When the messenger I had sent to Leina with my proposal returned with her refusal, my intentions were to wait a few days and try my luck again.~
   IF ~~ THEN GOTO 13
-END  
+END
 
 IF ~~ THEN BEGIN 13
   SAY ~The marriage was her father's idea you know, not mine! He had some notion that by marrying Leina off to me it would stop her wanderings. He also knew of her refusal because I sent the messenger with word that Leina had refused, but I also said to tell him that I would not be giving up.~
@@ -90,7 +90,7 @@ IF ~~ THEN BEGIN 15
   SAY ~Old man Vulova! I thought everyone knew where to find him. You new to the city? No matter, he has an estate over in the government district. His business takes him away a lot, but he still keeps the house maintained for when he is in Athkatla.~
   IF ~~ THEN GOTO 16
 END
-  
+
 IF ~~ THEN BEGIN 16
   SAY ~Since the death of his wife, Leina's mother, he spends less and less time there. I think he keeps it more as a shrine to her than a home.~
   IF ~~ THEN REPLY ~Then I will pay this Vulova a visit. In the meantime you had not better get any ideas of not being here should I return, because I will find you and believe me, you will wish you had stayed here when I do!~ UNSOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
@@ -104,6 +104,6 @@ END
 IF ~~ THEN BEGIN 17
   SAY ~So good luck in meeting Vulova and finding the girl.~
   IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",8)~ EXIT
-END 
+END
 
    

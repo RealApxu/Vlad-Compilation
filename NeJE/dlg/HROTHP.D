@@ -77,7 +77,7 @@ Global("VP_OnIsland","GLOBAL",0)~ THEN REPLY ~It would be best if you were to ma
   IF ~OR(3)
 Global("VP_In_IWD_Part1","GLOBAL",1)
 Global("VP_OnIsland","GLOBAL",1)
-Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. I‘ll pick up you later.~ GOTO 9
+Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. Iï¿½ll pick up you later.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 8
@@ -110,7 +110,7 @@ IF ~~ THEN BEGIN 12
   SAY ~I am not judging you <CHARNAME>, that will come later and from a far higher authority than I. I was mistaken when I thought I knew you when first I met you. Oh, I knew you were ruthless <CHARNAME>, but I had no idea how cruel your nature really was. It is because of the wickedness that I see in you now that my honour decrees I leave this group immediately. So I say fare thee well and you would do well to remember my words <CHARNAME>.~ [HROT_L09]
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
-  
+
 IF ~~ THEN BEGIN 13
   SAY ~It is true, I knew you joined my expedition to Kuldahar for your own gains but I had no idea how ruthless you were <CHARNAME>. The fact that I overlooked your cruel nature in the beginning does not mean I have to continue to watch your wickedness anymore. My honour will not allow me to follow this evil path of yours any longer. So it is fare thee well <CHARNAME> and remember, we will all be judged by our deeds in time.~ [HROT_L10]
   IF ~~ THEN DO ~EscapeArea()~ EXIT

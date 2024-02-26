@@ -2,22 +2,22 @@ APPEND ~JAHEI25J~
 
 IF ~~ THEN BEGIN KRst0
   SAY ~So you actually dared to do it, Keldorn?~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh0 
-END  
-  
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh0
+END
+
 IF ~~ THEN BEGIN KRst1
   SAY ~Keldorn!~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh1 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh1
 END
 
 IF ~~ THEN BEGIN KRst2
   SAY ~Am I judging you? No. You have answered the call of Nature, and as a servant of nature, I see nothing shameful in it.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh2 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh2
 END
 
 IF ~~ THEN BEGIN KRst3
   SAY ~That I approve of your action, but only asking: please, be more careful with my girl.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh3 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Jh3
 END
 
 IF ~~ THEN BEGIN KRst4

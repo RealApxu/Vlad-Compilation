@@ -89,7 +89,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Ha! See what your arrogance and false pride has brought you to gnome. Maybe you will learn some humility from this experience.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")

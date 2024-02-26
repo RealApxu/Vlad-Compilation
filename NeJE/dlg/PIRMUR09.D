@@ -5,7 +5,7 @@ END
 APPEND ~PIRMUR09~
 
 IF ~~ THEN BEGIN N1
-  SAY ~Of course, <CHARNAME>. It will be my pleasure to deliver you safely to the City of Coin. The cost is 20,000 gp for the round trip, and my ship will be yours. ~ 
+  SAY ~Of course, <CHARNAME>. It will be my pleasure to deliver you safely to the City of Coin. The cost is 20,000 gp for the round trip, and my ship will be yours. ~
 	IF ~PartyGoldGT(19999)~ THEN REPLY ~Sure, here your gold is then.~ GOTO N2
   	IF ~PartyGoldLT(20000)~ THEN REPLY #20988 /* ~Very well, I'll be back with the money.~ */ GOTO N3
   	IF ~~ THEN REPLY ~Sorry, Captain, I cannot make it at the moment.~ GOTO N3

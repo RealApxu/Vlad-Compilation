@@ -81,13 +81,13 @@ END
 APPEND ~BVICONI~
 
 IF ~~ THEN BEGIN NEJ0
-  SAY ~Whilst you persist in leading these males into believing they are a females equal I will have none of your surface games. (*She turns her back and spits out her next words*) Jal shinduago jalilen ph’ jal yibin!~
+  SAY ~Whilst you persist in leading these males into believing they are a females equal I will have none of your surface games. (*She turns her back and spits out her next words*) Jal shinduago jalilen phï¿½ jal yibin!~
 	IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina31a
 	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina31a
 END
 
 IF ~~ THEN BEGIN LeiSpher1
-	SAY ~How pathetic. You surface dwellers are prepared to fight like dogs in heat over such a pitiful female... if that’s what you want to call her.~
+	SAY ~How pathetic. You surface dwellers are prepared to fight like dogs in heat over such a pitiful female... if thatï¿½s what you want to call her.~
 	IF ~~ THEN EXTERN ~BLEINA~ Sphere8a
 END
 
@@ -112,7 +112,7 @@ IF ~~ THEN BEGIN LeiSpher3
 	IF ~InParty("Nalia")
 !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
 	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1	  
+!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1	
 END	
 
 IF ~~ THEN BEGIN TS575
@@ -306,15 +306,15 @@ IF ~~ THEN BEGIN LeiTheat
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -330,15 +330,15 @@ IF ~~ THEN BEGIN LeiThea3
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -350,19 +350,19 @@ IF ~~ THEN BEGIN LeiThea3
 END
 
 IF ~~ THEN BEGIN LeiThea4
-  SAY ~Children, you are all nought but children! It’s no wonder you surfacers struggle to survive... udos zhal ilstar ultrin!~
+  SAY ~Children, you are all nought but children! Itï¿½s no wonder you surfacers struggle to survive... udos zhal ilstar ultrin!~
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -374,7 +374,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~Go play your foolish prank! If the half elf hasn’t sussed you yet then the half breed deserves to be made a fool of.~
+  SAY ~Go play your foolish prank! If the half elf hasnï¿½t sussed you yet then the half breed deserves to be made a fool of.~
 =
 ~(*She spits out her next words*) Kitrye kyuvren ph' nau mzild darthirii taga ph' rothe!~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
@@ -400,6 +400,6 @@ END
 
 IF ~~ THEN BEGIN LeiRadia
   SAY ~Surfacers! Your fetish for fluffy towels is unhealthy girl, some one needs to give you a good rub down with a horse blanket. That'll cure all this jumping into hot water every spare minute!~
-	IF ~~ THEN EXTERN ~BLEINA~ RadiQ21B  
+	IF ~~ THEN EXTERN ~BLEINA~ RadiQ21B
 END	
 END

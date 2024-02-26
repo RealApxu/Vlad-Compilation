@@ -37,7 +37,7 @@ IF ~~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~<CHARNAME>, what are you doing? I’m not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
+  SAY ~<CHARNAME>, what are you doing? Iï¿½m not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
   IF ~~ THEN DO ~ActionOverride("Kachiko",Enemy())
 LeaveParty()
 Enemy()~ EXIT
@@ -49,7 +49,7 @@ IF ~~ THEN BEGIN TS154
 END
 
 IF ~~ THEN BEGIN TS155
-  SAY ~Kachiko, I won’t draw my sword against you. Sorry, <CHARNAME>, but I have to leave. I’ll see you later.~
+  SAY ~Kachiko, I wonï¿½t draw my sword against you. Sorry, <CHARNAME>, but I have to leave. Iï¿½ll see you later.~
   IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
 SetGlobal("VP_YoshimoEscapes","GLOBAL",1)
 ActionOverride("Kachiko",Enemy())
@@ -60,29 +60,29 @@ EscapeAreaMove("AR0406",1368,1922,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS156
-  SAY ~I didn’t kill him, and you know that! Your family accused me just because I am Hashimoto. Yes, I saw your brother die. No, I did not kill him. I had no choice but to escape; otherwise your family would kill me...~
-  IF ~~ THEN REPLY ~Yoshimo, what’s this all about?~ GOTO TS157
+  SAY ~I didnï¿½t kill him, and you know that! Your family accused me just because I am Hashimoto. Yes, I saw your brother die. No, I did not kill him. I had no choice but to escape; otherwise your family would kill me...~
+  IF ~~ THEN REPLY ~Yoshimo, whatï¿½s this all about?~ GOTO TS157
 END
 
 IF ~~ THEN BEGIN TS157
-  SAY ~<CHARNAME>, it’s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss...~
-  IF ~~ THEN REPLY ~Yoshimo, why didn’t you tell me that before?~ GOTO TS158
+  SAY ~<CHARNAME>, itï¿½s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss...~
+  IF ~~ THEN REPLY ~Yoshimo, why didnï¿½t you tell me that before?~ GOTO TS158
 END
 
 IF ~~ THEN BEGIN TS158
-  SAY ~I thought you wouldn’t believe me. Look at Kachiko chasing me from Kara-Tur to Amn. Why should she trust me, indeed? I am Hashimoto and that makes me guilty. Even if I kill myself I would not resurrect my friend and her brother, and I would not put an end to this ridiculous feud...~
+  SAY ~I thought you wouldnï¿½t believe me. Look at Kachiko chasing me from Kara-Tur to Amn. Why should she trust me, indeed? I am Hashimoto and that makes me guilty. Even if I kill myself I would not resurrect my friend and her brother, and I would not put an end to this ridiculous feud...~
   IF ~~ THEN EXTERN ~KACHIKO~ 6
 END
 
 IF ~~ THEN BEGIN TS159
-  SAY ~Kachiko, it’s too late... I cannot go back to Kara-Tur.~
+  SAY ~Kachiko, itï¿½s too late... I cannot go back to Kara-Tur.~
   IF ~~ THEN EXTERN ~KACHIKO~ 7
 END
 
 IF ~~ THEN BEGIN TS160
   SAY ~*Grin* You know I can take care of myself... But I cannot come back, since I promised to help <CHARNAME> first.~
-  IF ~~ THEN REPLY ~Yoshimo, you may go with Kachiko. I don’t want to hold you. Your troubles are no less serious than those of mine.~ GOTO TS161
-  IF ~~ THEN REPLY ~Yes, you’re right. You cannot leave the group right now.~ EXTERN ~KACHIKO~ 8
+  IF ~~ THEN REPLY ~Yoshimo, you may go with Kachiko. I donï¿½t want to hold you. Your troubles are no less serious than those of mine.~ GOTO TS161
+  IF ~~ THEN REPLY ~Yes, youï¿½re right. You cannot leave the group right now.~ EXTERN ~KACHIKO~ 8
   IF ~~ THEN REPLY ~Get out of my sight, both of you.~ EXTERN ~KACHIKO~ 9
 END
 
@@ -97,7 +97,7 @@ IF ~~ THEN BEGIN TS162
 END
 
 IF ~~ THEN BEGIN TS163
-  SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it’s the best choice I have ever made in my life. If you change your mind in a few days, you will find us in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur.~
+  SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, itï¿½s the best choice I have ever made in my life. If you change your mind in a few days, you will find us in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur.~
   IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
 SetGlobal("VP_YoshFollowsKach","GLOBAL",1)
 ActionOverride("Kachiko",EscapeAreaMove("AR0313",784,333,8))
@@ -108,7 +108,7 @@ EscapeAreaMove("AR0313",723,319,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS164
-  SAY ~<CHARNAME>, I am really sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it’s the best choice I have ever made in my life.~
+  SAY ~<CHARNAME>, I am really sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, itï¿½s the best choice I have ever made in my life.~
   IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
 ActionOverride("Kachiko",EscapeArea())
 ChangeAIScript("",DEFAULT)
@@ -161,15 +161,15 @@ IF ~~ THEN BEGIN TS174
 END
 
 IF ~~ THEN BEGIN TS175
-  SAY ~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see it’s indeed a time for me to talk to my father. ~
+  SAY ~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see itï¿½s indeed a time for me to talk to my father. ~
   IF ~~ THEN EXTERN ~OTAKO~ 3
 END
 
 IF ~~ THEN BEGIN TS176
   SAY ~Cherry blossom, I am neither afraid of you, nor do I wish to fight you. If that offends you, sorry, but I can do little to help it. <CHARNAME>, would you come with me to my family stronghold? I can feel that madness has overcome my family and they do need help...~
-  IF ~~ THEN REPLY ~I’d rather go on a nature hike and observe the flora and fauna of this island. However, I can see that you are eager for a reunion, so we’ll follow you.~ EXIT
-  IF ~~ THEN REPLY ~Onward! We must investigate what’s happening!~ EXIT
-  IF ~~ THEN REPLY ~Sure, but let’s explore the area first. May be we can find someone from Kachiko’s family also? ~ EXIT
+  IF ~~ THEN REPLY ~Iï¿½d rather go on a nature hike and observe the flora and fauna of this island. However, I can see that you are eager for a reunion, so weï¿½ll follow you.~ EXIT
+  IF ~~ THEN REPLY ~Onward! We must investigate whatï¿½s happening!~ EXIT
+  IF ~~ THEN REPLY ~Sure, but letï¿½s explore the area first. May be we can find someone from Kachikoï¿½s family also? ~ EXIT
 END
 
 IF WEIGHT #7 ~Global("Kachiko_Kidnapped","GLOBAL",1)~ THEN BEGIN TS177
@@ -184,12 +184,12 @@ IF ~~ THEN BEGIN TS178
 END
 
 IF ~~ THEN BEGIN TS179
-  SAY ~That’s terrible, father. Is there a way to escape from this island?~
+  SAY ~Thatï¿½s terrible, father. Is there a way to escape from this island?~
   IF ~~ THEN EXTERN ~AINO~ 5
 END
 
 IF ~~ THEN BEGIN TS180
-  SAY ~I do not know... It’s confused. Hmm... What do you think, <CHARNAME>?~
+  SAY ~I do not know... Itï¿½s confused. Hmm... What do you think, <CHARNAME>?~
   IF ~~ THEN REPLY ~I think I am having yet another nightmare. Nevertheless, if we have to kill all of the Nakanishi to get the wardstone, then we shall.~ EXTERN ~KACHIJ~ N29
   IF ~~ THEN REPLY ~Do you know of any other way, Aino? I have no desire to kill scores of innocent people.~ EXTERN ~AINO~ 6
   IF ~~ THEN REPLY ~I say we kill this scheming bastard, take the wardstone and get outta here.~ GOTO TS181
@@ -251,9 +251,9 @@ IF ~~ THEN BEGIN TS191
 END
 
 IF ~~ THEN BEGIN TS192
-  SAY ~My friends... Uhm... Najoki-san, I do not command my friends... I need to ask <CHARNAME> if they’d help me... <CHARNAME>?~
+  SAY ~My friends... Uhm... Najoki-san, I do not command my friends... I need to ask <CHARNAME> if theyï¿½d help me... <CHARNAME>?~
   IF ~~ THEN REPLY ~Yoshimo, your father said that the only way for everyone to be freed of the curse is to kill one of the families during a single day. Every person...~ EXTERN ~NAJOKI~ 4
-  IF ~~ THEN REPLY ~I am with you, Yoshimo! We have to save Kachiko! Let’s go!~ DO ~GiveItemCreate("SCRL63",Player1,0,0,0)
+  IF ~~ THEN REPLY ~I am with you, Yoshimo! We have to save Kachiko! Letï¿½s go!~ DO ~GiveItemCreate("SCRL63",Player1,0,0,0)
 ~ EXIT
   IF ~~ THEN REPLY ~I am not sure... Najoki, would you give me any practical help, like giving us directions back to civilization if I go save your daughter?~ EXTERN ~NAJOKI~ 7
 END
@@ -264,7 +264,7 @@ IF ~~ THEN BEGIN TS193
 END
 
 IF ~~ THEN BEGIN TS194
-  SAY ~My friend and I come to do my father’s bidding. Nakanishi shall be no more before the dawn breaks... You are laughing... well, we shall see who will be the last one to laugh!~
+  SAY ~My friend and I come to do my fatherï¿½s bidding. Nakanishi shall be no more before the dawn breaks... You are laughing... well, we shall see who will be the last one to laugh!~
   IF ~~ THEN EXTERN ~MASAKI~ 11
 END
 
@@ -279,7 +279,7 @@ IF ~~ THEN BEGIN TS196
 END
 
 IF ~~ THEN BEGIN TS197
-  SAY ~<CHARNAME>, I should warn you that in such a combat only two weapons are allowed: a noble katana and your hand, and no armor is to cover the fighter’s body. And no one is permitted to leave the fighting arena until the fight is over... I am ready and willing to answer the challenge, but it’s your decision who shall fight.~
+  SAY ~<CHARNAME>, I should warn you that in such a combat only two weapons are allowed: a noble katana and your hand, and no armor is to cover the fighterï¿½s body. And no one is permitted to leave the fighting arena until the fight is over... I am ready and willing to answer the challenge, but itï¿½s your decision who shall fight.~
   IF ~InParty(Player2)
 See(Player2)
 !StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode()
@@ -315,7 +315,7 @@ Dead("Najoki")~ THEN EXTERN ~KACHIP~ 14
 END
 
 IF ~~ THEN BEGIN TS199
-  SAY ~It’s me, Kachiko, Yoshimo...~
+  SAY ~Itï¿½s me, Kachiko, Yoshimo...~
   IF ~~ THEN EXTERN ~KACHIP~ 11
 END
 
@@ -338,12 +338,12 @@ IF ~~ THEN BEGIN TS202
 END
 
 IF ~~ THEN BEGIN TS203
-  SAY ~I am afraid it’s too late. Kachiko is dead and she was my only reason to be unstained by treachery...~
+  SAY ~I am afraid itï¿½s too late. Kachiko is dead and she was my only reason to be unstained by treachery...~
   IF ~~ THEN REPLY ~What are you talking about Yoshimo?~ GOTO TS204
 END
 
 IF ~~ THEN BEGIN TS204
-  SAY ~Nothing, <CHARNAME>. You were right, we should not have come here. Now, let’s go rescue your friend.~
+  SAY ~Nothing, <CHARNAME>. You were right, we should not have come here. Now, letï¿½s go rescue your friend.~
   IF ~~ THEN DO ~SetGlobal("TT_Evil_Path","GLOBAL",3)
 ChangeAlignment(Myself,CHAOTIC_EVIL)
 StartCutScene("TTcutFi2")~ EXIT
@@ -360,7 +360,7 @@ IF ~~ THEN BEGIN TS206
 END
 
 IF ~~ THEN BEGIN TS207
-  SAY ~As well as Hashimoto’s it seems. My father told me that a mage named Joneleth made an offer of help to him also.~
+  SAY ~As well as Hashimotoï¿½s it seems. My father told me that a mage named Joneleth made an offer of help to him also.~
   IF ~~ THEN EXTERN ~KACHIP~ 17
 END
 
@@ -448,7 +448,7 @@ IF ~~ THEN BEGIN TS219
 END
 
 IF ~~ THEN BEGIN TS220
-  SAY ~You won’t get anything from me! I won’t give up!~
+  SAY ~You wonï¿½t get anything from me! I wonï¿½t give up!~
   IF ~~ THEN EXTERN ~YOSHIMOA~ 2
 END
 
@@ -535,7 +535,7 @@ END
 IF WEIGHT #0 ~Global("VP_Kachiko_Dies","GLOBAL",3)
 See(Player1)
 !StateCheck(Player1,STATE_SLEEPING)~ THEN BEGIN TS223
-  SAY ~<CHARNAME>, it’s my fault. I couldn’t save Kachiko... And she was my only reason to live in this damned world... No, I have no rights to continue this miserable existance... I am very sorry, <CHARNAME>... (*Suddenly, the blick of Yoshimo’s katana, and... *) ~
+  SAY ~<CHARNAME>, itï¿½s my fault. I couldnï¿½t save Kachiko... And she was my only reason to live in this damned world... No, I have no rights to continue this miserable existance... I am very sorry, <CHARNAME>... (*Suddenly, the blick of Yoshimoï¿½s katana, and... *) ~
   IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Dies","GLOBAL",4)
 StartCutSceneMode()
 StartCutScene("TSCutK03")~ EXIT
@@ -560,7 +560,7 @@ END
 //END
 
 //IF ~~ THEN BEGIN TS227
-//  SAY ~I cannot tell you much. One very important person entrusted me a delicate mission. He was an old beneficiary of mine and today is the day I have to travel to a specified location in order to complete the task. That’s all I can divulge. I am sorry, <CHARNAME>.~
+//  SAY ~I cannot tell you much. One very important person entrusted me a delicate mission. He was an old beneficiary of mine and today is the day I have to travel to a specified location in order to complete the task. Thatï¿½s all I can divulge. I am sorry, <CHARNAME>.~
 //  IF ~~ THEN REPLY ~No way. ~ GOTO TS228
 //  IF ~~ THEN REPLY ~I see... And will Kachiko go with you?~ GOTO TS229
 //  IF ~~ THEN REPLY ~Do what you must, Yoshimo. You have proven your loyalty to me and I cannot force you to break your word. ~ GOTO TS230
@@ -673,18 +673,18 @@ IF ~~ THEN BEGIN Kelem3
 END
 
 IF ~~ THEN BEGIN SB01
-  SAY ~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, what’s going on now?~
+  SAY ~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, whatï¿½s going on now?~
   IF ~~ THEN REPLY ~Kachiko told me that you had killed her brother. Is that true?~ GOTO SB02
   IF ~~ THEN REPLY ~Shut up, Yoshimo, you are about to die for your crimes!~ GOTO SB03
 END
 
 IF ~~ THEN BEGIN SB02
-  SAY ~<CHARNAME>, it’s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
+  SAY ~<CHARNAME>, itï¿½s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
   IF ~~ THEN EXTERN ~KACHIP~ N23
 END
 
 IF ~~ THEN BEGIN SB03
-  SAY ~Kachiko, I won’t draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. I’ll see you later... Maybe.~
+  SAY ~Kachiko, I wonï¿½t draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. Iï¿½ll see you later... Maybe.~
   IF ~~ THEN EXTERN ~KACHIP~ N25
 END
 
@@ -694,7 +694,7 @@ IF ~~ THEN BEGIN SB04
 END
 
 IF ~~ THEN BEGIN SB05
-  SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it’s the best choice I have ever made in my life.~
+  SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, itï¿½s the best choice I have ever made in my life.~
   IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
 ActionOverride("Kachiko",EscapeArea())
 SetGlobal("Kicked_Out","LOCALS",1)
@@ -705,18 +705,18 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN SB06
-  SAY ~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, what’s going on now?~
+  SAY ~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, whatï¿½s going on now?~
   IF ~~ THEN REPLY ~Kachiko told me that you had killed her brother. Is that true?~ GOTO SB07
   IF ~~ THEN REPLY ~Shut up, Yoshimo, you are about to die for your crimes!~ GOTO SB08
 END
 
 IF ~~ THEN BEGIN SB07
-  SAY ~<CHARNAME>, it’s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
+  SAY ~<CHARNAME>, itï¿½s a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
   IF ~~ THEN EXTERN ~KACHIKO~ N32
 END
 
 IF ~~ THEN BEGIN SB08
-  SAY ~Kachiko, I won’t draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. I’ll see you later... Maybe.~
+  SAY ~Kachiko, I wonï¿½t draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. Iï¿½ll see you later... Maybe.~
   IF ~~ THEN EXTERN ~KACHIKO~ N34
 END
 
@@ -726,7 +726,7 @@ IF ~~ THEN BEGIN SB09
 END
 
 IF ~~ THEN BEGIN SB10
-  SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it’s the best choice I have ever made in my life.~
+  SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, itï¿½s the best choice I have ever made in my life.~
   IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
 ActionOverride("Kachiko",EscapeArea())
 SetGlobal("Kicked_Out","LOCALS",1)
@@ -809,7 +809,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~So gnome, tell me, how do you intend getting out of this snare?~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")
@@ -818,7 +818,7 @@ InParty("Yoshimo")
 END
 
 IF ~~ THEN BEGIN transmut
-  SAY ~<CHARNAME>, please, you can’t let Kachiko do this alone. At least not without knowing more about this guardian. Please?~
+  SAY ~<CHARNAME>, please, you canï¿½t let Kachiko do this alone. At least not without knowing more about this guardian. Please?~
   IF ~~ THEN REPLY ~Kachiko?~ GOTO transmu1
 END
 

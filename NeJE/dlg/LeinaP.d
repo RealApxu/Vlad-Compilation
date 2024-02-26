@@ -82,7 +82,7 @@ Global("VP_OnIsland","GLOBAL",0)
 !AreaCheck("AR0604")
 !AreaCheck("AR0605")
 !AreaCheck("AR0606")
-!InWatchersKeep()~ THEN REPLY ~You can‘t go there. I will ask that you remain here for I may have need of you soon.~ GOTO 4
+!InWatchersKeep()~ THEN REPLY ~You canï¿½t go there. I will ask that you remain here for I may have need of you soon.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 2
@@ -144,7 +144,7 @@ IF ~~ THEN BEGIN 11
   SAY ~I stand by my first decision, <GABBER>. Your ways sickened me when we travelled together and I do not wish to subject myself to those ways again. I will no longer tolerate your presence. Goodbye, <GABBER>.~
   IF ~~ THEN EXIT
 END
- 
+
 IF ~~ THEN BEGIN 12
   SAY ~Perhaps there is a way for us to work together, <GABBER>. If you truly have need of me then I will work with you once more but for only as long as I see a change in you. I will join you and we shall leave now.~
   IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0)
@@ -162,8 +162,8 @@ ActionOverride("Govan2",EscapeArea())
 ActionOverride("GovDude",EscapeArea())
 ActionOverride("GovBud",EscapeArea())
 MoveGlobal("AR0086","Leina",[300.300])~ EXIT
-END //If PC goes to speak with Samuel Thunderburp then => Scenario: The Five Flagons 1  
-  
+END //If PC goes to speak with Samuel Thunderburp then => Scenario: The Five Flagons 1
+
 IF WEIGHT #-2 ~Global("VP_Leina_Is_Betrayed","GLOBAL",1)
 Global("VP_Govan_Bribes_Me","GLOBAL",0)
 !Global("VP_Leina_Samuel","GLOBAL",7)
@@ -171,7 +171,7 @@ Gender(Player1,FEMALE)~ THEN BEGIN 14
   SAY ~You... you would betray one of your own sex  <CHARNAME>. You have as good as sold me to this man, is that not as abhorrent to you as it is to me?~ [leina_15]
   IF ~~ THEN GOTO 15
 END
-  
+
 IF ~~ THEN BEGIN 15
   SAY ~No, why should it be, you are devoid of compassion, that I can see. You are the same as he, <CHARNAME>.~ [leina_16]
   IF ~~ THEN DO ~SetGlobal("VP_Govan_Bribes_Me","GLOBAL",1)
@@ -185,12 +185,12 @@ IF WEIGHT #-3 ~Global("VP_LeinaThanks","GLOBAL",1)
 !Global("VP_Leina_Samuel","GLOBAL",7)~ THEN BEGIN 16
   SAY ~It appears that I have you to thank for my freedom after all, <CHARNAME>.~ [leina_17]
   IF ~~ THEN DO ~SetGlobal("VP_LeinaThanks","GLOBAL",2)~ GOTO 17
-END  
-  
+END
+
 IF ~~ THEN BEGIN 17
   SAY ~Although it is obviously pride and revenge that brought you back here and not concern for my welfare.~ [leina_18]
   IF ~~ THEN GOTO 18
-END  
+END
 
 IF ~~ THEN BEGIN 18
   SAY ~My freedom however, I still owe to you, so I will pay you the courtesy and say thank you.~ [leina_19]
@@ -228,8 +228,8 @@ END
 IF ~~ THEN BEGIN 22
   SAY ~I wish you luck, <CHARNAME>, but you would be wise to make haste and leave the city.~ [leina_22]
   IF ~~ THEN GOTO 23
-END   
-  
+END
+
 IF ~~ THEN BEGIN 23
   SAY ~The Duvaines are very influential people, and it will not take them long to discover who is responsible for the death of the Duke and his family. Farewell.~ [leina_23]
   IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",1)
@@ -259,7 +259,7 @@ IF ~~ THEN BEGIN 27
 END
 
 IF ~~ THEN BEGIN 28
-  SAY ~(*A look of disbelief comes to the bard’s face*) Samuel... no! I will not travel with the likes of this person, please don’t ask me to.~
+  SAY ~(*A look of disbelief comes to the bardï¿½s face*) Samuel... no! I will not travel with the likes of this person, please donï¿½t ask me to.~
   IF ~~ THEN GOTO 29
 END
 
@@ -269,19 +269,19 @@ IF ~~ THEN BEGIN 29
 END
 
 IF ~~ THEN BEGIN 30
-  SAY ~(*Defiantly*) I’ll not go with them, and you should not have taken it upon yourself to presume that I would!~
+  SAY ~(*Defiantly*) Iï¿½ll not go with them, and you should not have taken it upon yourself to presume that I would!~
   IF ~~ THEN EXTERN ~FFBART~ NEJ127
 END
 
 IF WEIGHT #-5 ~Global("VP_Leina_Samuel","GLOBAL",7)~ THEN BEGIN 31
   SAY ~Hello <CHARNAME>, the Five Flagons welcomes you once again. It has been good to visit Samuel, and to feel once again the warmth, the friendliness this old inn holds.~
   IF ~~ THEN GOTO 32
-END  
-  
+END
+
 IF ~~ THEN BEGIN 32
   SAY ~I see now that I was foolish to allow the bad memories to overshadow the many good ones... memories that Samuel has talked about incessantly since I arrived here.~
   IF ~~ THEN GOTO 33
-END  
+END
 
 IF ~~ THEN BEGIN 33
   SAY ~Now, if you are here to ask for my aid once again, I am ready to resume our journey.~
@@ -292,33 +292,33 @@ IF ~~ THEN BEGIN 33
 END
 
  IF ~~ THEN BEGIN 34
-  SAY ~I need but a moment to say my farewells to Samuel... (*She kisses the old barkeep fondly*)... Farewell Samuel, take care and I promise to return as soon as I have seen this task of <CHARNAME>’s through.~
+  SAY ~I need but a moment to say my farewells to Samuel... (*She kisses the old barkeep fondly*)... Farewell Samuel, take care and I promise to return as soon as I have seen this task of <CHARNAME>ï¿½s through.~
   IF ~~ THEN EXTERN ~FFBART~ NEJ173
-END  
+END
 
  IF ~~ THEN BEGIN 35
-  SAY ~Do not worry for me my friend. I half hope that Bjorn does find me, it’s time to end this unhappy chapter in my life, erase him from it once and for all. New chapters are being written, even as we stand here...~
+  SAY ~Do not worry for me my friend. I half hope that Bjorn does find me, itï¿½s time to end this unhappy chapter in my life, erase him from it once and for all. New chapters are being written, even as we stand here...~
   IF ~~ THEN GOTO 36
-END  
-  
+END
+
  IF ~~ THEN BEGIN 36
   SAY ~Now, I must leave you again my friend, farewell... Come <CHARNAME>, let us make a start on those new chapters.~
   IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0)
 SetGlobal("VP_Leina_Samuel","GLOBAL",8)
 SetGlobal("VP_Errant_Husband","GLOBAL",1)
 JoinParty()~ EXIT
-END  
+END
 
  IF ~~ THEN BEGIN 37
-  SAY ~I’ll not say I am not disappointed, I have missed the adventure and the intrigue that surrounds you <CHARNAME>. I had hoped to learn more of this particular god child.~
+  SAY ~Iï¿½ll not say I am not disappointed, I have missed the adventure and the intrigue that surrounds you <CHARNAME>. I had hoped to learn more of this particular god child.~
   IF ~~ THEN GOTO 38
 END
 
  IF ~~ THEN BEGIN 38
   SAY ~Still, I am more than happy to spend more time at The Five Flagons, and with Samuel. Please, I will be here if you find you should have need of me at some future time. Farewell and good luck to you...~
   IF ~~ THEN GOTO 39
-END  
-  
+END
+
  IF ~~ THEN BEGIN 39
   SAY ~(*As she turns away she picks up her lute*) Come Samuel, let us make some more joyful memories...~
   IF ~~ THEN DO ~SetGlobal("VP_Leina_Samuel","GLOBAL",8)~ EXIT
@@ -327,7 +327,7 @@ END
 IF WEIGHT #-6 ~Global("VP_LeinaVampire","GLOBAL",5)
 Global("VP_OnIsland","GLOBAL",0)~ THEN BEGIN 40
   SAY ~Is it you, my love? That is a happy dream. I was yearning to dream of you for so long! You are just like I remember you, and you smile... I want to kiss you so much! Please, do not go away until I do. It is strange to beg a dream not to go away. Amazing how we have so little control over our dreams.~
-  IF ~~ THEN REPLY ~It is no dream, Leina. It is for real. I took you away from Bodhi’s clutches and I brought you back to life. And you think that after all these troubles I will simply leave you? No way, milady, no way! You are stuck with me now.~ DO ~EraseJournalEntry(32084)
+  IF ~~ THEN REPLY ~It is no dream, Leina. It is for real. I took you away from Bodhiï¿½s clutches and I brought you back to life. And you think that after all these troubles I will simply leave you? No way, milady, no way! You are stuck with me now.~ DO ~EraseJournalEntry(32084)
 EraseJournalEntry(32085)
 EraseJournalEntry(16351)
 EraseJournalEntry(7002)
@@ -359,7 +359,7 @@ EraseJournalEntry(6589)
 EraseJournalEntry(79170)
 EraseJournalEntry(79181)
 SetGlobal("VP_LeinaVampire","GLOBAL",6)~ GOTO 42
-  IF ~~ THEN REPLY ~Leina, that’s me, <CHARNAME>! Can you hear me? You are going to be alright! Breathe deeply and here is some Elven water for you to drink! You are alive!~ DO ~EraseJournalEntry(32084)
+  IF ~~ THEN REPLY ~Leina, thatï¿½s me, <CHARNAME>! Can you hear me? You are going to be alright! Breathe deeply and here is some Elven water for you to drink! You are alive!~ DO ~EraseJournalEntry(32084)
 EraseJournalEntry(32085)
 EraseJournalEntry(16351)
 EraseJournalEntry(7002)

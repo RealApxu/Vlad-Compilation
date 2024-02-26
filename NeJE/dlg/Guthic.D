@@ -35,7 +35,7 @@ Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN BIGuthic1D150
-	SAY ~An interesting proposal.~ 
+	SAY ~An interesting proposal.~
 		IF ~~ THEN GOTO BIGuthic1D155
 END
 

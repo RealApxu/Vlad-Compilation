@@ -24,33 +24,33 @@ END
 IF ~~ THEN BEGIN 4
   SAY ~The Severed Hand is the prison of Larrel, one of the last of the elven archmages... he is the only one left who can use the Heartstone Gem... if he still lives...~ [ARUN_86]
   IF ~!InParty("Hrothgar")
-~ THEN REPLY ~But the Severed Hand... I‘ve never heard of it - where can I find it?~ DO ~SetGlobal("Severed_Hand_Reveal","GLOBAL",1)
+~ THEN REPLY ~But the Severed Hand... Iï¿½ve never heard of it - where can I find it?~ DO ~SetGlobal("Severed_Hand_Reveal","GLOBAL",1)
 ~ JOURNAL ~Severed Hand.
 
-We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid‘s own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.~ GOTO 5
+We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruidï¿½s own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.~ GOTO 5
   IF ~InParty("Hrothgar")
-~ THEN REPLY ~But the Severed Hand... I‘ve never heard of it - where can I find it?~ DO ~SetGlobal("Severed_Hand_Reveal","GLOBAL",1)
+~ THEN REPLY ~But the Severed Hand... Iï¿½ve never heard of it - where can I find it?~ DO ~SetGlobal("Severed_Hand_Reveal","GLOBAL",1)
 ~ JOURNAL ~Severed Hand.
 
-We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid‘s own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.~ GOTO 7
+We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruidï¿½s own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~It is to the south - nature will guide you... (*a little quieter, a little weaker*)... enough of my power remains that I may do that.  Now... I must go... (*One final burst of strength, enough to keep his voice steady, but not commanding*)... Take this key. You will need it soon. Serve the balance.  Protect Kuldahar from this evil.~
-  IF ~~ THEN REPLY ~I serve *no one,* old man, and Kuldahar can burn - but not as long as I‘m trapped here.~ GOTO 8
+  IF ~~ THEN REPLY ~I serve *no one,* old man, and Kuldahar can burn - but not as long as Iï¿½m trapped here.~ GOTO 8
   IF ~~ THEN REPLY ~Farewell, Arundel.  We will see you avenged.~ GOTO 8
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~(*One final burst of strength, enough to keep his voice steady*)... Hrothgar, my friend, I know you are looking for the key...  Tilorn was here...~
-  IF ~~ THEN REPLY ~I serve *no one,* old man, and Kuldahar can burn - but not as long as I‘m trapped here.~ EXTERN ~HROTHJ~ 4
+  IF ~~ THEN REPLY ~I serve *no one,* old man, and Kuldahar can burn - but not as long as Iï¿½m trapped here.~ EXTERN ~HROTHJ~ 4
   IF ~~ THEN REPLY ~Farewell, Arundel.  We will see you avenged.~ GOTO 8
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~It is to the south - nature will guide you... (*a little quieter, a little weaker*)... enough of my power remains that I may do that.  Now... I must go... Take it. Serve the balance. Protect Kuldahar from this evil...~ [ARUN_87]
  IF ~~ THEN GOTO 6
-END  
+END
 
 IF ~~ THEN BEGIN 8
   SAY ~Do what you must...~

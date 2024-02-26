@@ -79,7 +79,7 @@ IF ~~ THEN BEGIN 8
   SAY ~(*You look up into Valygar's eyes. You see the remorse and anguish in them.*)~
   IF ~~ THEN REPLY ~(*You tighten your grip on his hand.*)
 
-There is nothing to forgive Valygar. I do not blame you. That last outburst of his frightened me too. I agree his obsessiveness could have become a danger to us all. I only wish that he could have been made to see reason before it came to this. I was so scared that he was going to hurt you, I couldn’t bear to lose you, not now. Please Valygar, stay with me. Please?~ GOTO 9
+There is nothing to forgive Valygar. I do not blame you. That last outburst of his frightened me too. I agree his obsessiveness could have become a danger to us all. I only wish that he could have been made to see reason before it came to this. I was so scared that he was going to hurt you, I couldnï¿½t bear to lose you, not now. Please Valygar, stay with me. Please?~ GOTO 9
   IF ~~ THEN REPLY ~(*Your hand closes tightly around his.*)
 
 I had no idea that he felt as he did. I swear to you Valygar, I gave him no encouragement. I sought only to reassure him of his ability to make a fine Knight. If he misinterpreted my words, then maybe I am to blame. Through my actions I almost lost you and that scares me more than anything. Your loss would be unbearable for me. Please Valygar, stay with me. Please?~ GOTO 9
@@ -101,7 +101,7 @@ It's not enough to have to watch our backs continuously, but we now fight amongs
   IF ~~ THEN REPLY ~(*You snatch your hand angrily away from Valygar's.*)
 
 Valygar, I am not an object to be fought over! You disappoint me, I truly thought you're mature and wise enough not to be provoked by the words of an immature youth. It matters not who struck first, you could have stayed your weapon when you had the upper hand. If you cannot be trusted to keep your head in any given situation then I fear another life will be lost. I see no option other than to insist that you leave!~ GOTO 10
-  IF ~~ THEN REPLY ~(*You snatch your hand angrily away from Valygar's.*) 
+  IF ~~ THEN REPLY ~(*You snatch your hand angrily away from Valygar's.*)
 
 What in the Nine Hells were you thinking of ranger! Who gave you leave to step in and cause this mess? I was more than capable of handling the situation and in a far less bloody manner! If I truly thought that Anomen had become a danger, I would have insisted that he leave. Now, thanks to you, a fine cleric lies dead! I don't even think that resurrection is possible so I cannot undo what you have done. If you cannot be trusted to keep your head in any given situation, then all our lives are at risk and I will not put this group in jeopardy. It is best that you leave ranger, now!~ GOTO 10
 END

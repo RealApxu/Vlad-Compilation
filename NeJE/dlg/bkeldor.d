@@ -9,7 +9,7 @@ Global("AnomenIsNotKnight","GLOBAL",0)~
 APPEND ~BKELDOR~
 
 IF ~~ THEN BEGIN NEJ0
-  SAY ~That hasn’t done these old bones of mine much good... which way to my bed?~
+  SAY ~That hasnï¿½t done these old bones of mine much good... which way to my bed?~
   IF ~Gender(Player1,FEMALE)
 !InParty("Melora")~ THEN EXTERN ~BLEINA~ PCF2Leina38a
 	IF ~Gender(Player1,MALE)
@@ -32,7 +32,7 @@ IF ~~ THEN BEGIN NEJ1
 END
 
 IF ~~ THEN BEGIN NEJ2
-  SAY ~(*A little flustered*) I didn’t mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
+  SAY ~(*A little flustered*) I didnï¿½t mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
   IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina33a
 	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina33a
 END
@@ -54,7 +54,7 @@ IF ~~ THEN BEGIN LT4_st1
 END
 
 IF ~~ THEN BEGIN LT4_st3
-	SAY ~Yes, I do, so I am speaking from experience. What of your friend? Is she anything like you?~ 
+	SAY ~Yes, I do, so I am speaking from experience. What of your friend? Is she anything like you?~
 		IF ~~ THEN REPLY ~Oh, no... She is a small quick thief, very pretty and smart too, funny and mischievous.~ GOTO LT4_st5
 		IF ~~ THEN REPLY ~She is nothing like me. She has a sharp tongue, asking to be silenced. Back in Candlekeep days, she'd report what each monk had in his pockets. But I miss the brat.~ GOTO LT4_st5
 		IF ~~ THEN REPLY ~Heh, Imoen... She's so small and dexterous that she'd squeeze through any hole. Funny too, dyed her hair pink and all... Where would I be, if not for her...~ GOTO LT4_st5
@@ -78,7 +78,7 @@ IF ~~ THEN BEGIN LT4_st4
 END
 
 IF ~~ THEN BEGIN LT4_st2
-	SAY ~Yes, I understand you so well... Do tell me of your friend. Is she anything like you?~ 
+	SAY ~Yes, I understand you so well... Do tell me of your friend. Is she anything like you?~
 		IF ~~ THEN REPLY ~Oh, no... She is a small quick thief, very pretty and smart too, funny and mischievous.~ GOTO LT4_st5
 		IF ~~ THEN REPLY ~She is nothing like me. She has a sharp tongue, asking to be silenced. Back in Candlekeep days, she'd report what each monk had in his pockets. But I miss the brat.~ GOTO LT4_st5
 		IF ~~ THEN REPLY ~Heh, Imoen... She's so small and dexterous that she'd squeeze through any hole. Funny too, dyed her hair pink and all... Where would I be, if not for her...~ GOTO LT4_st5
@@ -137,7 +137,7 @@ IF ~~ THEN BEGIN LT6_st0C
 END
 
 IF ~~ THEN BEGIN LT6_st1
-	SAY ~My lady, aren't you getting tired of staying at inns?~ 
+	SAY ~My lady, aren't you getting tired of staying at inns?~
 		IF ~~ THEN REPLY ~(With a guilty smile) I am...~ GOTO LT6_st7
 		IF ~~ THEN REPLY ~Sir, this is not about my preferences, though...~ GOTO LT6_st7
 		IF ~~ THEN REPLY ~I'm not comfortable with your offer anyway.~ GOTO LT6_st7
@@ -154,7 +154,7 @@ Keldorn has become anxious to visit his estate and family in the Government Dist
 END
 
 IF ~~ THEN BEGIN LT6_st2
-	SAY ~Be at ease. My daughters would probably be interested, and my wife, well... she is used to this.~ 
+	SAY ~Be at ease. My daughters would probably be interested, and my wife, well... she is used to this.~
 		IF ~~ THEN REPLY ~I am not sure... If I were in her shoes, I wouldn't like it. You don't visit them too often, do you?~ GOTO LT6_st4
 		IF ~~ THEN REPLY ~(With a laugh) Do you always bring home your company?~ GOTO LT6_st5
 END
@@ -198,7 +198,7 @@ END
 
 //LT10
 IF WEIGHT #-3 ~Global("VP_LoveTalk","LOCALS",11)~ THEN BEGIN LT10_st0
-	SAY ~I'd like to tell you, <CHARNAME>, that I respect you decision to give me some time off.~ [notforme] 
+	SAY ~I'd like to tell you, <CHARNAME>, that I respect you decision to give me some time off.~ [notforme]
 		IF ~~ THEN REPLY ~Hmm, so you tired yourself so much in my service? You can take a breather any time you wish.~ DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ GOTO LT10_st1
 		IF ~~ THEN REPLY ~You allowed me the freedom of choice, if I recall correctly.~ DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ GOTO LT10_st2
 		IF ~~ THEN REPLY ~You don't regret this decision?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ GOTO LT10_st3
@@ -254,7 +254,7 @@ IF ~~ THEN BEGIN LT12_st1
 		IF ~~ THEN REPLY ~(Frightened) Yea gods! This isn't something we need just now. Come here, lean on me. Don't worry, I can manage.~ GOTO LT12_st6
 		IF ~Class(Player1,CLERIC)~ THEN REPLY ~Sir Keldorn, if you'd let me...~ GOTO LT12_st7
 		IF ~~ THEN REPLY ~All right, let's call it quits for today. Are you unwell? Should we stop by a temple, or could our healer help you?~ GOTO LT12_st4
-		IF ~~ THEN REPLY ~(Decisively) We are going to a temple right that minute, to solve this issue.~ GOTO LT12_st4 
+		IF ~~ THEN REPLY ~(Decisively) We are going to a temple right that minute, to solve this issue.~ GOTO LT12_st4
 END
 
 IF ~~ THEN BEGIN LT12_st2
@@ -273,7 +273,7 @@ END
 IF ~~ THEN BEGIN LT12_st4
 	SAY ~<CHARNAME>, I wouldn't want the whole world to know of my troubles. This is not an illness, it's something else. I know enough to realize that my health has nothing to do with it.~
 		IF ~~ THEN REPLY ~(Frightened) Yea gods! This isn't something we need just now. Come here, lean on me. Don't worry, I can manage.~ GOTO LT12_st6
-		IF ~Class(Player1,CLERIC)~ THEN REPLY ~Sir Keldorn, if you'd let me...~ GOTO LT12_st7 
+		IF ~Class(Player1,CLERIC)~ THEN REPLY ~Sir Keldorn, if you'd let me...~ GOTO LT12_st7
 		IF ~~ THEN REPLY ~And how did you figure that out? Maybe it's for the best if someone more qualified would take a look at you?~ GOTO LT12_st5
 		IF ~~ THEN REPLY ~If you are so sure... What would you have us do now? Go to an inn and stay there till the next morning?~ GOTO LT12_st5
 		IF ~~ THEN REPLY ~If this is not a health issue, I don't see why we should go back to an inn.~ GOTO LT12_st5
@@ -303,7 +303,7 @@ IF ~~ THEN BEGIN LT12_st8
 END
 
 IF ~~ THEN BEGIN LT12_st9
-	SAY ~I beg you, leave out this “Sir”. We are comrades at arms, and you can call me by my name. Everyone does just that.~ 
+	SAY ~I beg you, leave out this ï¿½Sirï¿½. We are comrades at arms, and you can call me by my name. Everyone does just that.~
 		IF ~~ THEN REPLY ~I don't think it's proper, I don't know what to say. I... I cannot.~ GOTO LT12_st10
 END
 
@@ -313,7 +313,7 @@ IF ~~ THEN BEGIN LT12_st10
 END
 
 IF ~~ THEN BEGIN LT12_st11
-	SAY ~It's not a hurt I can name, <CHARNAME>. I am just sick.~ 
+	SAY ~It's not a hurt I can name, <CHARNAME>. I am just sick.~
 		IF ~~ THEN REPLY ~Keldorn, you are scaring me!~ GOTO LT12_st12
 		IF ~~ THEN REPLY ~Keldorn! (Sniff)~ GOTO LT12_st12
 		IF ~~ THEN REPLY ~(Sobbing quietly)~ GOTO LT12_st12
@@ -327,7 +327,7 @@ END
 IF ~~ THEN BEGIN LT12_st13
 	SAY ~We were engaged a long time ago. Did I love her before our wedding? No, we only met once or twice. Only after we were wed, did I see her beauty. She was well brought up, and gentle with me. So as I grew accustomed to her we fell in love.~
 =
-~I can't even say when it all went wrong. Maybe that happened after the duel... Some hooligan – and a master swordsman, by the way -  he was openly asking for a scandal. I just had to challenge him. He gave me a grave wound, but I prevailed and claimed the victory. Then I was feverish for a long time, and my mother took care of me. I never saw Maria by my sickbed. Perhaps it was then, when something gave way in my heart.~
+~I can't even say when it all went wrong. Maybe that happened after the duel... Some hooligan ï¿½ and a master swordsman, by the way -  he was openly asking for a scandal. I just had to challenge him. He gave me a grave wound, but I prevailed and claimed the victory. Then I was feverish for a long time, and my mother took care of me. I never saw Maria by my sickbed. Perhaps it was then, when something gave way in my heart.~
 		IF ~~ THEN REPLY ~(Sobbing quietly)... Keldorn...~ GOTO LT12_st14
 END
 
@@ -411,7 +411,7 @@ END
 
 IF ~~ THEN BEGIN LT16_st2
 	SAY ~(With a grin) That I do... It's just that my speculations lead me to nothing good.~
-		IF ~~ THEN REPLY ~Do you regret that you have gotten yourself involved with me and my friend?~ GOTO LT16_st4 
+		IF ~~ THEN REPLY ~Do you regret that you have gotten yourself involved with me and my friend?~ GOTO LT16_st4
 		IF ~~ THEN REPLY ~What are you trying to tell me, Keldorn?~ GOTO LT16_st10
 END
 
@@ -430,7 +430,7 @@ END
 
 IF ~~ THEN BEGIN LT16_st5
 	SAY ~Oh, no matter... I do not know myself what it is I expect to hear.~
-		IF ~~ THEN REPLY ~You are suffering, Keldorn, it's no wonder... you keep everything to yourself.~ GOTO LT16_st6 
+		IF ~~ THEN REPLY ~You are suffering, Keldorn, it's no wonder... you keep everything to yourself.~ GOTO LT16_st6
 END
 
 IF ~~ THEN BEGIN LT16_st6
@@ -440,19 +440,19 @@ IF ~~ THEN BEGIN LT16_st6
 END
 
 IF ~~ THEN BEGIN LT16_st7
-	SAY ~(Looking straight into your eyes) You want me to trust you? To allow you to see me as I am? The way, say, my mother knows me? There is nothing of interest there, believe me... I am but an old, miserable paladin who has lost his family... all that was ever precious to him. Why do you need all that, <CHARNAME>? (Bitterly) I am but a loser!~ 
+	SAY ~(Looking straight into your eyes) You want me to trust you? To allow you to see me as I am? The way, say, my mother knows me? There is nothing of interest there, believe me... I am but an old, miserable paladin who has lost his family... all that was ever precious to him. Why do you need all that, <CHARNAME>? (Bitterly) I am but a loser!~
 		IF ~~ THEN REPLY ~I told you, Keldorn! I have never met a better person than you, and I... (Stammering)... respect you so much... I will do anything for you!~ GOTO LT16_st8
 		IF ~~ THEN REPLY ~You are my closest... friend. I will do anything for you.~ GOTO LT16_st8
 END
 
 IF ~~ THEN BEGIN LT16_st8
-	SAY ~No-no, "everything" is not a necessity. I will not allow you!~ 
+	SAY ~No-no, "everything" is not a necessity. I will not allow you!~
 		IF ~~ THEN REPLY ~All right, I will ask your permission every time then!~ GOTO LT16_st9
 		IF ~~ THEN REPLY ~(With a smile) I need to get your permission to sacrifice myself?~ GOTO LT16_st9
 END
 
 IF ~~ THEN BEGIN LT16_st9
-	SAY ~If I feel up to agreement...~ 
+	SAY ~If I feel up to agreement...~
 		IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",18)
 SetGlobalTimer("VP_Kr_NewWarTimer","GLOBAL",THREE_DAYS)~ JOURNAL ~Keldorn rubs through his solitude painfully. Apparently having a family, presence of people to love, to take care of, meant the world to him despite his restless nature. He is really very sentimental... Nevertheless he is afraid to trust me. Why? Can it be true that my... ancestry is to blame?~ EXIT
 END
@@ -475,7 +475,7 @@ IF ~~ THEN BEGIN LT16_st12
 END
 
 IF ~~ THEN BEGIN LT16_st13
-	SAY ~Worming into my confidence? That is not an easy thing to do despite the fact that I feel so... so down.~ 
+	SAY ~Worming into my confidence? That is not an easy thing to do despite the fact that I feel so... so down.~
 		IF ~~ THEN REPLY ~But why are keeping everything to yourself, Keldorn? Maybe, you try to talk and set things off your chest?~ GOTO LT16_st6
 		IF ~~ THEN REPLY ~I know you are hurt, but what I can  say if you do not share with me?~ GOTO LT16_st6
 END
@@ -537,7 +537,7 @@ IF ~~ THEN BEGIN LT22_st6
 END
 
 IF ~~ THEN BEGIN LT22_st7
-	SAY ~(As if an echo) Care... my lady... you care for me?~ 
+	SAY ~(As if an echo) Care... my lady... you care for me?~
 		IF ~~ THEN REPLY ~(Softly) I love you.~ GOTO LT22_st13
 		IF ~~ THEN REPLY ~That surprises you? It never crossed your mind that I might... fall in love with you? (Tenderly) My beloved paladin.~ GOTO LT22_st13
 END
@@ -637,7 +637,7 @@ IF ~~ THEN BEGIN LT22_stD
 END
 
 IF ~~ THEN BEGIN LT22_stE
-	SAY ~(He looks into your eyes again and you forget everything, Imoen, Irenicus, your taint... everything, they are forgotten. There are only his eyes, blocking out everything else.)~ 
+	SAY ~(He looks into your eyes again and you forget everything, Imoen, Irenicus, your taint... everything, they are forgotten. There are only his eyes, blocking out everything else.)~
 		IF ~~ THEN DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",2)
 SetGlobal("VP_LoveTalk","LOCALS",23)
 ClearAllActions()
@@ -723,7 +723,7 @@ END
 //LT27 (LT26A) - morning part
 IF WEIGHT #-10 ~Global("VP_MorningTalk","LOCALS",1)
 Global("VP_LoveTalk","LOCALS",27)~ THEN BEGIN LT26_stA
-	SAY ~You see, everything is all right. You worried for nothing. (Bends and kisses your forehead) I've been looking at you and thinking, you are so unlike my wife. I tried to find at least one common feature and could not. You and Maria – you are both beautiful, but your beauty is of a different nature.~
+	SAY ~You see, everything is all right. You worried for nothing. (Bends and kisses your forehead) I've been looking at you and thinking, you are so unlike my wife. I tried to find at least one common feature and could not. You and Maria ï¿½ you are both beautiful, but your beauty is of a different nature.~
 		IF ~~ THEN GOTO LT26_stA_1
 END
 
@@ -798,7 +798,7 @@ SetGlobalTimer("VP_KrRomance_Timer","GLOBAL",ONE_DAY)~ EXIT
 END
 
 IF ~~ THEN BEGIN LT28_st7
-	SAY ~What else is meant when a man is accused of showing a lack of interest towards a female? Though I doubt you even consider me a man. No matter, we should forget it as no doubt I asked for it. Come, we have spent too much time here already.~ 
+	SAY ~What else is meant when a man is accused of showing a lack of interest towards a female? Though I doubt you even consider me a man. No matter, we should forget it as no doubt I asked for it. Come, we have spent too much time here already.~
 		IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",29)
 SetGlobalTimer("VP_KrRomance_Timer","GLOBAL",ONE_DAY)~ EXIT
 END
@@ -815,7 +815,7 @@ IF WEIGHT #-12 ~Global("VP_LoveTalk","LOCALS",30)~ THEN BEGIN LT30_st0
 =
 ~You probably want to hear some explanation from me, but I have nothing to say. I know I am acting like a petulant child, but I do not understand why. It seems to me that Kelemvor and you played a mean joke on me even if unintentionally. I am... changing, do you understand? I am not the Keldorn Firecam, senior officer of the Order that you found in Athkatla's sewers.~
 =
-~(He sneers, then suddenly bends to you almost touching your face with his lips) Your blood, <CHARNAME>, your hot young blood! I... I must appear mad to you but it is this divine blood of yours, it forces me to act unwisely. I want to be with you, I want to... to hold you, I want (he turns away and covers his face with his hands)... and I can't help it, <CHARNAME>, I just can't.~ 
+~(He sneers, then suddenly bends to you almost touching your face with his lips) Your blood, <CHARNAME>, your hot young blood! I... I must appear mad to you but it is this divine blood of yours, it forces me to act unwisely. I want to be with you, I want to... to hold you, I want (he turns away and covers his face with his hands)... and I can't help it, <CHARNAME>, I just can't.~
 		IF ~~ THEN REPLY ~(You put your arms around him not sure what to say)~ GOTO LT30_st1
 		IF ~~ THEN REPLY ~(Feeling a little afraid, you take a step back) K-Kel-dorn...~ GOTO LT30_st2
 		IF ~~ THEN REPLY ~(Sighing heavily you look into his eyes) Keldorn, if it is my consent that you seek to solve your dilemma... then I willingly come to you my love.~ GOTO LT30_st3
@@ -838,7 +838,7 @@ IF ~~ THEN BEGIN LT30_st3
 	SAY ~(His eyes brighten as he looks at you in admiration. On his face you clearly see the signs of some inner conflict that he is battling within himself. Suddenly his features relax and you feel that what ever the turmoil was, he has won through this time.)~
 =
 ~Thank you for understanding my dear, you have no idea how important that is for me but how could I ever respect myself if I were to take advantage of the moment of you! I... I will overcome this failing myself.~
-= 
+=
 ~I would be right in saying that you are a virgin are you not?~
 =
 ~(Seeing your face turn scarlet, he takes your hand and presses it to his face) No... no my sweet girl, there is no need for you to be embarrassed. Virginity is but a state of being and yet, by offering yourself to me in this way, it would be the greatest gift you could bestow upon me.~
@@ -849,7 +849,7 @@ IF ~~ THEN BEGIN LT30_st3
 =
 ~(As his lips touch yours, his kiss becomes demanding and yet still gentle. You feel your heart leap in your breast and you suddenly become giddy, light headed... as if you have just been lifted up high. The kiss ends and as Keldorn reluctantly pulls away he smiles.)~
 =
-~So you have never recieved a man's kiss before. I can see that we will have to make up for lost time.~ 
+~So you have never recieved a man's kiss before. I can see that we will have to make up for lost time.~
 		IF ~~ THEN GOTO LT30_st13
 END
 
@@ -867,7 +867,7 @@ IF ~~ THEN BEGIN LT30_st5
 END
 
 IF ~~ THEN BEGIN LT30_st6
-	SAY ~(Sadly) You do not want to help me?~ 
+	SAY ~(Sadly) You do not want to help me?~
 		IF ~~ THEN REPLY ~I do and if it is my consent that you seek. Then I willingly come to you my love.~ GOTO LT30_st3
 		IF ~~ THEN REPLY ~Tell me what it is you wish of me my love, tell me for I'll do anything?~ GOTO LT30_st12
 END
@@ -939,7 +939,7 @@ IF ~~ THEN BEGIN DrowTlk1
 END
 
 IF ~~ THEN BEGIN DrowTlk2
-	SAY ~(Apologetically) I am sorry. I wanted to cheer you up but I'm afraid I've done that rather awkwardly. I'm sorry my dear, we'll talk later.~ 
+	SAY ~(Apologetically) I am sorry. I wanted to cheer you up but I'm afraid I've done that rather awkwardly. I'm sorry my dear, we'll talk later.~
 		IF ~~ THEN DO ~SetGlobal("Kr_DrowBanter","LOCALS",3)~ EXIT
 END
 
@@ -1019,10 +1019,10 @@ END
 IF ~~ THEN BEGIN LT34_st6
 	SAY ~(He becomes surly) Clowning... you say I am a clown? I wouldn't joke about such things. Is it so hard for you to believe that I am serious. Certainly my proposal may seem strange and sudden, but I am ready to repeat it. However, I'll not demand an answer from you right away, though I must say your mistrust goes to my heart.~
 =
-~(He sighs heavily) I asked that we should swim did I not? Then let us brave the water, it will refresh both your body and your thoughts.~ 
+~(He sighs heavily) I asked that we should swim did I not? Then let us brave the water, it will refresh both your body and your thoughts.~
 =
 ~(The cool, clear water of the lake calms you down, helping you to gather your thoughts. He was joking of course. Count Firecam would not seriously marry a humble girl of unknown parentage. It was another of his jokes because he does not take seriously either you or your love. Unwilling tears to well up in your eyes... determined not to let Keldorn see them, you dive and swim under water.)~
-= 
+=
 ~(You reach the opposite shore. Keldorn suggests that you rest and you stretch with pleasure on the white sand, warming yourself under the hot rays. You do not notice that your wet underwear is clinging to your body.)~
 =
 ~(Keldorn softly kisses you on your lips) You have warmed yourself... and you are once again calm, yes? Good, then I will repeat what I said a few moments ago. It's true, I want you to be my wife but I did not expect you to be so astonished at my proposal. You confessed your love to me, why were you so surprised by my response?~
@@ -1037,7 +1037,7 @@ IF ~~ THEN BEGIN LT34_st7
 	SAY ~(Quietly) This is no joke, <CHARNAME>. Did I frighten you? I can see I acted too impulsively, let us put off this conversation aside for some other time and take our swim... come, the water looks inviting.~
 =
 ~(The cool, clear water of the lake calms you down, helping you to gather your thoughts. He was joking of course. Count Firecam would not seriously marry a humble girl of unknown parentage. It was another of his jokes because he does not take seriously either you or your love. Unwilling tears to well up in your eyes... determined not to let Keldorn see them, you dive and swim under water.)~
-= 
+=
 ~(You reach the opposite shore. Keldorn suggests that you rest and you stretch with pleasure on the white sand, warming yourself under the hot rays. You do not notice that your wet underwear is clinging to your body.)~
 =
 ~(Keldorn softly kisses you on your lips) You have warmed yourself... and you are once again calm, yes? Good, then I will repeat what I said a few moments ago. It's true, I want you to be my wife but I did not expect you to be so astonished at my proposal. You confessed your love to me, why were you so surprised by my response?~
@@ -1052,7 +1052,7 @@ IF ~~ THEN BEGIN LT34_st8
 	SAY ~(Bursts out laughing, takes you by your hand and pulls you into the water.) You were not expecting that were you? See, it is still within my power to surprise you.~
 =
 ~(The cool, clear water of the lake calms you down, helping you to gather your thoughts. He was joking of course. Count Firecam would not seriously marry a humble girl of unknown parentage. It was another of his jokes because he does not take seriously either you or your love. Unwilling tears to well up in your eyes... determined not to let Keldorn see them, you dive and swim under water.)~
-= 
+=
 ~(You reach the opposite shore. Keldorn suggests that you rest and you stretch with pleasure on the white sand, warming yourself under the hot rays. You do not notice that your wet underwear is clinging to your body.)~
 =
 ~(Keldorn softly kisses you on your lips) You have warmed yourself... and you are once again calm, yes? Good, then I will repeat what I said a few moments ago. It's true, I want you to be my wife but I did not expect you to be so astonished at my proposal. You confessed your love to me, why were you so surprised by my response?~
@@ -1069,12 +1069,12 @@ IF ~~ THEN BEGIN LT34_st9
 END
 
 IF ~~ THEN BEGIN LT34_st10
-	SAY ~(Winks at you.) What jokes can there be at such a moment? I really do. Though you are not a simple girl either, you are a semi-god and as such, people will be envious that I am the one who won your heart.~ 
+	SAY ~(Winks at you.) What jokes can there be at such a moment? I really do. Though you are not a simple girl either, you are a semi-god and as such, people will be envious that I am the one who won your heart.~
 		IF ~~ THEN REPLY ~(You remove a long chain with a ring hanging on it from your neck and put it on Keldorn's finger) This is Gorion's ring. Imoen kept it for a very long time until Irenicus took it from her. Later, she managed to steal it from him and gave it to me. Gorion told me that the ring is imbued with magical power but he knew not what that power is. Whatever it is, it could not save my father.~ GOTO LT34_st12
 END
 
 IF ~~ THEN BEGIN LT34_st11
-	SAY ~You don't trust me? Tell me. what does it take for you to believe in me? Do you wish that I should kneel before you or that I should perform a heroic deed in your honour?~ 
+	SAY ~You don't trust me? Tell me. what does it take for you to believe in me? Do you wish that I should kneel before you or that I should perform a heroic deed in your honour?~
 		IF ~~ THEN REPLY ~(You remove a long chain with a ring hanging on it from your neck and put it on Keldorn's finger) This is Gorion's ring. Imoen kept it for a very long time until Irenicus took it from her. Later, she managed to steal it from him and gave it to me. Gorion told me that the ring is imbued with magical power but he knew not what that power is. Whatever it is, it could not save my father.~ GOTO LT34_st12
 		IF ~~ THEN REPLY ~Nothing, Keldorn... yes, I told you that I love you and it is true but I cannot marry you. I have no wish to endanger you. I am cursed, I bring misfortune to people I care about. I do not want to bring you to your death. This is my final word. I'm sorry my love. I beg of you, do not try to persuade me.~ GOTO LT34_st13
 END
@@ -1086,10 +1086,10 @@ IF ~~ THEN BEGIN LT34_st12
 		IF ~~ THEN DO ~GiveItemCreate("kring222",Myself,0,0,0)
 SetGlobal("Kr_LakeBanter","LOCALS",3)
 SetGlobal("VP_KrRomanceActive","GLOBAL",2)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN LT34_st13
-	SAY ~(Tears well up in his eyes) You... then why did you bring me from Kelemvor's kingdom? Why? (Seizes you by your shoulders and shakes you) Tell me... why?! I love you, <CHARNAME>. Please let me be with you, I beg you.~ 
+	SAY ~(Tears well up in his eyes) You... then why did you bring me from Kelemvor's kingdom? Why? (Seizes you by your shoulders and shakes you) Tell me... why?! I love you, <CHARNAME>. Please let me be with you, I beg you.~
 		IF ~~ THEN REPLY ~(You remove a long chain with a ring hanging on it from your neck and put it on Keldorn's finger) This is Gorion's ring. Imoen kept it for a very long time until Irenicus took it from her. Later, she managed to steal it from him and gave it to me. Gorion told me that the ring is imbued with magical power but he knew not what that power is. Whatever it is, it could not save my father.~ GOTO LT34_st12
 		IF ~~ THEN REPLY ~(Closing your eyes you shake your head) No, Keldorn. Forgive me.~ GOTO LT34_st14
 END
@@ -1140,7 +1140,7 @@ Global("VP_LoveTalk","LOCALS",31)~ THEN BEGIN LT36_st0
 END
 
 IF ~~ THEN BEGIN LT36_st1
-	SAY ~(Sighing) There, there, my dearest girl... (Enfolding you in his arms) Will you show me Frida's work?~ 
+	SAY ~(Sighing) There, there, my dearest girl... (Enfolding you in his arms) Will you show me Frida's work?~
 		IF ~~ THEN REPLY ~Keldorn! That is hardly decent.~ GOTO LT36_st4
 		IF ~~ THEN REPLY ~(Kissing him) Can't you wait just a day longer?~ GOTO LT36_st4
 		IF ~~ THEN REPLY ~(Embarrassed but firmly) No-no, swimming was quite enough for me!~ GOTO LT36_st4
@@ -1155,30 +1155,30 @@ IF ~~ THEN BEGIN LT36_st2
 END
 
 IF ~~ THEN BEGIN LT36_st3
-	SAY ~(Quietly) Yes. You know it to be true so why wait until tomorrow, let us try our own bed tonight?~ 
+	SAY ~(Quietly) Yes. You know it to be true so why wait until tomorrow, let us try our own bed tonight?~
 		IF ~~ THEN REPLY ~(Firmly) No, my love. I feel uneasy. Because of your mother... your servants.~ GOTO LT36_st5
 END
 
 IF ~~ THEN BEGIN LT36_st4
-	SAY ~But our wedding is tomorrow! Does one day really matter so much my love. You know in my heart that I have considered you as my wife for a long time now?~  
+	SAY ~But our wedding is tomorrow! Does one day really matter so much my love. You know in my heart that I have considered you as my wife for a long time now?~
 		IF ~~ THEN REPLY ~I do understand, my darling, but... let's wait until tomorrow.~ GOTO LT36_st5
 		IF ~~ THEN REPLY ~(Burying your head on his chest) All right, take me, my love. Why do we need to wait until tomorrow?~ GOTO LT36_st30
 END
 
 IF ~~ THEN BEGIN LT36_st5
-	SAY ~(A little abashed) Yes of course I understand but this room has not been made ready for you! Come my dearest, let me sleep here whilst you sleep in my room.~ 
+	SAY ~(A little abashed) Yes of course I understand but this room has not been made ready for you! Come my dearest, let me sleep here whilst you sleep in my room.~
 		IF ~~ THEN REPLY ~Why is there something wrong with this room?~ GOTO LT36_st9
 		IF ~~ THEN REPLY ~(Burying your head on his chest) All right, take me, my love. Why do we need to wait until tomorrow?~ GOTO LT36_st30
 END
 
 IF ~~ THEN BEGIN LT36_st6
-	SAY ~To me? Why, don't you know that you already command me my love? Now how about you order me to carry you to our bed?~ 
+	SAY ~To me? Why, don't you know that you already command me my love? Now how about you order me to carry you to our bed?~
 		IF ~~ THEN REPLY ~(Moving away from him) No! I can't. What will your mother think of me?~ GOTO LT36_st5
 		IF ~~ THEN REPLY ~(Burying your head on his chest) All right, take me, my love. Why do we need to wait until tomorrow?~ GOTO LT36_st30
 END
 
 IF ~~ THEN BEGIN LT36_st7
-	SAY ~(Smiling) I am not afraid. I trust you, girl of no family. Come, I'll show you to our room and our bed. It's time to try it.~ 
+	SAY ~(Smiling) I am not afraid. I trust you, girl of no family. Come, I'll show you to our room and our bed. It's time to try it.~
 		IF ~~ THEN REPLY ~I will have a look at the room, but trying the bed... sorry, my love, I can't. Please believe me, I just can't!~ GOTO LT36_st5
 		IF ~~ THEN REPLY ~(Burying your head on his chest) All right, take me, my love. Why do we need to wait until tomorrow?~ GOTO LT36_st30
 END
@@ -1225,7 +1225,7 @@ IF ~~ THEN BEGIN LT38_st10
 END
 
 IF ~~ THEN BEGIN LT38_st11
-	SAY ~(Drawing you into his arms) There-there... calm down. You are safe here. (Reprovingly) You see, you should have slept here. Tell your Keldorn what it is that has frightened you so, another nightmare?~ 
+	SAY ~(Drawing you into his arms) There-there... calm down. You are safe here. (Reprovingly) You see, you should have slept here. Tell your Keldorn what it is that has frightened you so, another nightmare?~
 		IF ~~ THEN REPLY ~I do not know... I feel strange. I tell you, there's something in that room!~ GOTO LT38_st12
 END
 
@@ -1238,7 +1238,7 @@ END
 IF ~~ THEN BEGIN LT38_st13
 	SAY ~(Taking a candle) Let us go then... one moment, where is your amulet? Why have you taken it off?~
 		IF ~~ THEN REPLY ~I took it off when I was bathing and then... just forgot to put it back on.~ GOTO LT38_st14
-		IF ~~ THEN REPLY ~I... I thought that I would not need it here. You must take Carsomyr!~ GOTO LT38_st14 
+		IF ~~ THEN REPLY ~I... I thought that I would not need it here. You must take Carsomyr!~ GOTO LT38_st14
 END
 
 IF ~~ THEN BEGIN LT38_st14
@@ -1274,7 +1274,7 @@ IF ~~ THEN BEGIN LT38_st14
 =
 ~(You open your eyes and find yourself lying in Keldorn's bed. He is kneeling beside you, with his head resting on the edge. Your hand touches your fiance's and his head jerks up suddenly...)~
 =
-~You have recovered! I was so afraid that you would never again regain consciousness. My darling, I almost ruined you, forgive me please, I beg you!~ 
+~You have recovered! I was so afraid that you would never again regain consciousness. My darling, I almost ruined you, forgive me please, I beg you!~
 		IF ~~ THEN REPLY ~You? Why, what has this to do with you? This is all my fault, I did not listen to you!~ GOTO LT38_st16
 		IF ~~ THEN REPLY ~(Quietly) This is a sign, Keldorn. We can't be together.~ GOTO LT38_st17
 		IF ~~ THEN REPLY ~He's won, he's stronger.~ GOTO LT38_st18
@@ -1282,24 +1282,24 @@ END
 
 //State 15 is omitted
 
-IF ~~ THEN BEGIN LT38_st16 
+IF ~~ THEN BEGIN LT38_st16
 	SAY ~No! This has come about through my folly, my mistrust. My brave girl, does she get scared?~
 =
 ~(Quietly) My virtuous bride, can she not come to me at night without a reason? I thought I could protect you by marrying you and... (his voice drops to almost a whisper.) by taking your virginity.~
 =
-~I misinterpret your dream – remember? – and almost lost you forever. The first thing we must do is kill that damned mage and return that which he tore from you!~
+~I misinterpret your dream ï¿½ remember? ï¿½ and almost lost you forever. The first thing we must do is kill that damned mage and return that which he tore from you!~
 =
 ~Forgive me, I'm so sorry. I should not have rushed you into a wedding, I can see that you are not yet ready.~
 		IF ~~ THEN REPLY ~Rushed... rushed?! Maybe it is you who has changed your mind now that you realize your bride is a monster?!~ GOTO LT38_st19
 		IF ~~ THEN REPLY ~I... I did not keep my word, I promised not to turn into the slayer, so I free you from your promise my love. I stupidly thought that I could control my essence but I was mistaken. I can promise you nothing, nothing at all.~ GOTO LT38_st19
 END
 
-IF ~~ THEN BEGIN LT38_st17 
-	SAY ~What sign, what are you talking about?~ 
+IF ~~ THEN BEGIN LT38_st17
+	SAY ~What sign, what are you talking about?~
 		IF ~~ THEN REPLY ~Don't you understand? Your ex-wife... I saw her. She condemned me! She is right, sweetheart... we can't build our happiness on another's misfortune. Your girls, your daughters will always stand between us! Were they alive, they would never accept me.~ GOTO LT38_st22
 END
 
-IF ~~ THEN BEGIN LT38_st18 
+IF ~~ THEN BEGIN LT38_st18
 	SAY ~Never... don't even think that! He can't win, he's evil. We have light on our side, my love, and light is stronger than any evil.~
 =
 ~Remember, since I have decided to join my life with the life of a daughter of Bhaal, I will do everything possible and impossible to save you, even from yourself. I love you and I will always love you no matter what.~
@@ -1315,7 +1315,7 @@ RestParty()
 EndCutSceneMode()~ EXIT
 END
 
-IF ~~ THEN BEGIN LT38_st19 
+IF ~~ THEN BEGIN LT38_st19
 	SAY ~But I love you! Whatever happens know this: I do love you. And I am not going to give you up, not to any slayer nor to Kelemvor. Let him seek another ally.~
 =
 ~Look... (Keldorn carefully turns your head) See the symbol over there? My father put it there a long time ago, when I was just a boy. Demons are afraid of it and they will never enter the room.~
@@ -1325,7 +1325,7 @@ IF ~~ THEN BEGIN LT38_st19
 		IF ~~ THEN REPLY ~Irenicus? How come he knows I am still alive?~ GOTO LT38_st21
 END
 
-IF ~~ THEN BEGIN LT38_st20 
+IF ~~ THEN BEGIN LT38_st20
 	SAY ~(Softly) Did you forget that you are marrying a redeemer? I have some experience in this kind of thing you know but hush now, you need to sleep my love. Here, let me tuck you in. Sleep my darling.~
 		IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",36)
 SetGlobal("Kr_Slayer_Talk","GLOBAL",1)
@@ -1337,7 +1337,7 @@ RestParty()
 EndCutSceneMode()~ EXIT
 END
 
-IF ~~ THEN BEGIN LT38_st21 
+IF ~~ THEN BEGIN LT38_st21
 	SAY ~You killed Bodhi, his sister, that wouldn't have escaped his notice but hush now, you need to sleep my love. We have a big day ahead of us tomorrow. Sleep my darling.~
 		IF ~~ THEN DO ~SetGlobal("VP_LoveTalk","LOCALS",36)
 SetGlobal("Kr_Slayer_Talk","GLOBAL",1)
@@ -1349,10 +1349,10 @@ RestParty()
 EndCutSceneMode()~ EXIT
 END
 
-IF ~~ THEN BEGIN LT38_st22 
+IF ~~ THEN BEGIN LT38_st22
 	SAY ~(With a sigh) As a step-mother... no, but... is this the reason? I saw how you grieved over Gorion, but how could I fail to understand that?~
 =
-~You wept over Ajantis – did I have a right to be jealous? Gorion, Ajantis, Khalid... they will be with you forever and I do not want you to forget them. The same with me my dear <CHARNAME>.~
+~You wept over Ajantis ï¿½ did I have a right to be jealous? Gorion, Ajantis, Khalid... they will be with you forever and I do not want you to forget them. The same with me my dear <CHARNAME>.~
 =
 ~I also do not want to forget either Maria or my girls. They will always remain with me, in my memory but it does not mean they will take your place. Even if I forget them, I could not possibly love you more.~
 =
@@ -1368,7 +1368,7 @@ EndCutSceneMode()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS149
-  SAY ~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Order’s charge...~
+  SAY ~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Orderï¿½s charge...~
   IF ~~ THEN EXTERN ~BKACHI~ 40
 END
 
@@ -1378,7 +1378,7 @@ IF ~~ THEN BEGIN TS150
 END
 
 IF ~~ THEN BEGIN TS151
-  SAY ~Kachiko, my allegiance is with Torm. I would not desert my deity for a moment’s weakness.~
+  SAY ~Kachiko, my allegiance is with Torm. I would not desert my deity for a momentï¿½s weakness.~
   IF ~~ THEN EXTERN ~BKACHI~ 42
 END
 
@@ -1388,7 +1388,7 @@ IF ~~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~(*laughs and shakes his head*) Got it all covered, don’t they? And I guess there is an Immortal in charge of the potential husband’s wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily. ~
+  SAY ~(*laughs and shakes his head*) Got it all covered, donï¿½t they? And I guess there is an Immortal in charge of the potential husbandï¿½s wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily. ~
   IF ~~ THEN EXTERN ~BKACHI~ 44
 END
 
@@ -1423,7 +1423,7 @@ IF ~~ THEN BEGIN TS159
 END
 
 IF ~~ THEN BEGIN TS160
-  SAY ~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your mother’s people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
+  SAY ~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your motherï¿½s people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
   IF ~~ THEN EXTERN ~BVALYGA~ TS531
 END
 
@@ -1433,7 +1433,7 @@ IF ~~ THEN BEGIN TS161
 END
 
 IF ~~ THEN BEGIN TS162
-  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father’s doing, no doubt. The bird reached the shore safely and transformed into Abyssina.   They were married the very next day.~
+  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your fatherï¿½s doing, no doubt. The bird reached the shore safely and transformed into Abyssina.   They were married the very next day.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS533
 END
 
@@ -1453,7 +1453,7 @@ IF ~~ THEN BEGIN TS165
 END
 
 IF ~~ THEN BEGIN TS166
-  SAY ~I am on the road because that’s my duty.~
+  SAY ~I am on the road because thatï¿½s my duty.~
   IF ~~ THEN EXTERN ~BSIME~ 160
 END
 
@@ -1468,12 +1468,12 @@ IF ~~ THEN BEGIN TS168
 END
 
 IF ~~ THEN BEGIN TS169
-  SAY ~I thought you might know a thing or two about lovers’ talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
+  SAY ~I thought you might know a thing or two about loversï¿½ talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
   IF ~~ THEN EXTERN ~BSIME~ 164
 END
 
 IF ~~ THEN BEGIN TS170
-  SAY ~By Torm, that’s a jolly good idea, milady!~
+  SAY ~By Torm, thatï¿½s a jolly good idea, milady!~
   IF ~~ THEN EXTERN ~BSIME~ 165
 END
 
@@ -1487,7 +1487,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1496,7 +1496,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1505,7 +1505,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -1536,7 +1536,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1545,7 +1545,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1554,7 +1554,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -1585,7 +1585,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let’s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath letï¿½s get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1594,7 +1594,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn’t said anything yet so let’s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasnï¿½t said anything yet so letï¿½s do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1603,7 +1603,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin’ battle so let’s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkinï¿½ battle so letï¿½s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -1625,7 +1625,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~That’s not quite what I was expecting, but I can see how it may surprise Leina.~
+  SAY ~Thatï¿½s not quite what I was expecting, but I can see how it may surprise Leina.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1

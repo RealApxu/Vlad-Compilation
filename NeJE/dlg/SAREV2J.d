@@ -2,17 +2,17 @@ APPEND ~SAREV25J~
 
 IF ~~ THEN BEGIN KRst0
   SAY ~(Offers his hand) Allow me to congratulate you, paladin. I see everything in my sister's happy eyes. I see her shining face, and that is why you will not hear judging words coming out of my mouth.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr0 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr0
 END
 
 IF ~~ THEN BEGIN KRst1
   SAY ~Did I ever say I was against love, or more importantly, against your love, Keldorn? My only wish was for my sister to be happy.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr1 
-END  
-  
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr1
+END
+
 IF ~~ THEN BEGIN KRst2
   SAY ~I am now.~
-  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr2 
+  	IF ~~ THEN EXTERN ~KELDO25J~ LT12_Sr2
 END
 
 IF ~~ THEN BEGIN KRst3
@@ -49,5 +49,5 @@ IF ~~ THEN BEGIN KRst6
 !Dead("Imoen2")~ THEN EXTERN ~IMOEN25J~ KRst4
 		IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~JAHEI25J~ KRst7
-END    
+END
 END

@@ -80,7 +80,7 @@ END
 
 IF ~~ THEN BEGIN KR4
 	SAY ~I did know. I could not see it, but I knew, I felt you, your sorrow, your pain.~
-		IF ~~ THEN REPLY ~(Wiping away your tears) And what else? Do you remember anything else?~ GOTO KR5 
+		IF ~~ THEN REPLY ~(Wiping away your tears) And what else? Do you remember anything else?~ GOTO KR5
 END
 
 IF ~~ THEN BEGIN KR5
@@ -89,9 +89,9 @@ IF ~~ THEN BEGIN KR5
 ~I saw you standing beside a handsome man, but there was something... evil, almost demonic in his beauty. I tried to understand why I felt that way. I asked myself: maybe I am jealous having to endure seeing you in the embrace of another?~
 =
 ~He went on tempting you, but you did not answer his call. I rejoiced but then you turned to me and I saw your empty, dead eyes... then I understood that you were long dead.~
-= 
+=
 ~You can't imagine my terror, <CHARNAME>. I started calling to you but I couldn't hear my own voice and then Gorion's ring seemed to glow, it was red hot, it was burning into my flesh. Look see, I have a trace on my finger.~
-= 
+=
 ~I awoke from the dream, <CHARNAME> and I saw you standing before me, very much alive, warm and desirable.~
 =
 ~My love this is destiny, if I had not proposed to you, then you would not have given me the ring. So perhaps we should stop denying what is true... our enemies will plot and scheme more and more... it can go on for years.~
@@ -106,7 +106,7 @@ END
 
 IF ~~ THEN BEGIN KR7
 	SAY ~(Closing his eyes) Ah my love, it is a delight to hear those words again! Especially now after.~
-		IF ~~ THEN REPLY ~After what? You remember what was “there”?~ GOTO KR5
+		IF ~~ THEN REPLY ~After what? You remember what was ï¿½thereï¿½?~ GOTO KR5
 		IF ~~ THEN REPLY ~Tell me, my love.~ GOTO KR5
 END
 

@@ -14,7 +14,7 @@ PartyHasItem("chocquas")
 PartyHasItem("kidsoil")
 PartyHasItem("darkdrop")
 PartyHasItem("lightdrp")
-PartyHasItem("daggerfr")~ THEN GOTO 1A 
+PartyHasItem("daggerfr")~ THEN GOTO 1A
 		IF ~!PartyHasItem("chocquas")
 !PartyHasItem("kidsoil")
 !PartyHasItem("darkdrop")

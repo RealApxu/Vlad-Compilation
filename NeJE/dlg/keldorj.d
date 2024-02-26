@@ -53,12 +53,12 @@ END
 ADD_TRANS_TRIGGER KELDORJ 2 ~!InParty("Dar")~ DO 0
 EXTEND_BOTTOM KELDORJ 2
   IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ darkeld1
-END  
+END
 
 ADD_TRANS_TRIGGER KELDORJ 3 ~!InParty("Dar")~ DO 0
 EXTEND_BOTTOM KELDORJ 2
   IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ darkeld1
-END  
+END
 
 ADD_TRANS_TRIGGER KELDORJ 2 ~!InParty("Dar")~ DO 0
 EXTEND_BOTTOM KELDORJ 3
@@ -68,7 +68,7 @@ END
 ADD_TRANS_TRIGGER KELDORJ 3 ~!InParty("Dar")~ DO 0
 EXTEND_BOTTOM KELDORJ 3
   IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ darkeld1
-END    
+END
 
 APPEND ~KELDORJ~
 
@@ -88,7 +88,7 @@ IF WEIGHT #-1 ~Global("VP_LoveTalk","LOCALS",1)~ THEN BEGIN LT2_st0
   SAY ~(Takes off his helmet) My lady, allow me to pose a question. Forgive my directness, but... is my understanding correct that you are a daughter of Bhaal?~
   	IF ~~ THEN REPLY ~Does it matter for our partnership?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st1
   	IF ~~ THEN REPLY ~Hmm, can't you feel his essence in me?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st2
-  	IF ~~ THEN REPLY ~I... did not choose my parents, sir Keldorn, and Gorion did not tell me anything. I thought him to be my real father. Believe me, it was only after reading the letter I discovered after his death that revealed my true parentage and now I would be glad to be rid of this ‘gift'!~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st3
+  	IF ~~ THEN REPLY ~I... did not choose my parents, sir Keldorn, and Gorion did not tell me anything. I thought him to be my real father. Believe me, it was only after reading the letter I discovered after his death that revealed my true parentage and now I would be glad to be rid of this ï¿½gift'!~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st3
 END
 
 IF ~~ THEN BEGIN LT2_st1
@@ -106,10 +106,10 @@ Global("WorkingForBodhi","GLOBAL",1)~ THEN REPLY ~We must find Imoen, of course.
 END
 
 IF ~~ THEN BEGIN LT2_st41
-  SAY ~How much gold are we speaking of here?~ 
+  SAY ~How much gold are we speaking of here?~
   	IF ~~ THEN REPLY ~Twenty thousand.~ GOTO LT2_st6
 END
-  
+
 IF ~~ THEN BEGIN LT2_st6
   SAY ~That is quite a sum my lady! Be assured, you have my aid for as long as it is needed.~
 		IF ~~ THEN DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",1)
@@ -125,9 +125,9 @@ END
 IF ~~ THEN BEGIN LT2_new1
   SAY ~That is quite a sum my lady! Who are these people who are engaged in extortion?~
 	IF ~Global("WorkingForAran","GLOBAL",1)~ THEN REPLY ~Shadow Thieves.~ GOTO LT2_new2
-	IF ~Global("WorkingForBodhi","GLOBAL",1)~ THEN REPLY ~Vampires.~ GOTO LT2_new3  
+	IF ~Global("WorkingForBodhi","GLOBAL",1)~ THEN REPLY ~Vampires.~ GOTO LT2_new3
 END
-  
+
 IF ~~ THEN BEGIN LT2_new2
   SAY ~Thieves... (Sighs) Be carefull, my lady, in dealig with that organisation. I can not associate myself with thieves but I'll stay with you and try to keep you safe from them.~
 	IF ~~ THEN DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",1)
@@ -137,7 +137,7 @@ END
 IF ~~ THEN BEGIN LT2_new3
   SAY ~What? Vampires? How can you consort yourself with such pure evil! I am a paladin, my lady, and there is no way I associate myself with evil creatures! Never!~
   IF ~~ THEN DO ~EscapeArea()~ EXIT
-END  
+END
 
 IF ~~ THEN BEGIN LT2_st2
   SAY ~My lady... I am but a humble paladin, I can sense evil that is true, but I do not sense evil within you. Now, if I may ask, where is our next destination to be?~
@@ -188,8 +188,8 @@ END
 //LT8
 IF WEIGHT #-2 ~Global("VP_LoveTalk","LOCALS",7)~ THEN BEGIN LT8_st0
   SAY ~<CHARNAME>, I... Let us sit here awhile, I must think the things through...~
-  	IF ~~ THEN REPLY ~Sir Keldorn, if you'd like to return home – and I think that Sir William has convinced you to, I would release you from my service. I can't let your family be destroyed because of me.~ GOTO LT8_st1
-  	IF ~~ THEN REPLY ~If you'd like to stay home – please, do so. I will find a replacement for you; not a companion as valuable as you are, but a replacement nonetheless.~ GOTO LT8_st2
+  	IF ~~ THEN REPLY ~Sir Keldorn, if you'd like to return home ï¿½ and I think that Sir William has convinced you to, I would release you from my service. I can't let your family be destroyed because of me.~ GOTO LT8_st1
+  	IF ~~ THEN REPLY ~If you'd like to stay home ï¿½ please, do so. I will find a replacement for you; not a companion as valuable as you are, but a replacement nonetheless.~ GOTO LT8_st2
   	IF ~~ THEN REPLY ~(Decisively) Sir Keldorn, I should not say this, but... (Take a deep breath in...) I don't believe Sir William.~ GOTO LT8_st3
   	IF ~~ THEN REPLY ~Oh sir, you must be broken-hearted!~ GOTO LT8_st4
 END
@@ -259,7 +259,7 @@ ChangeAIScript("",DEFAULT)
 SetLeavePartyDialogueFile()
 LeaveParty()
 EscapeArea()~ JOURNAL ~It was a foolish decision to insist on the lawful resolution of the conflict between sir Keldorn and his wife. Now he's left me... For good.~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN LT10a_st2
   SAY ~(Squinting) An order? And since when do you issue my orders, m'lady? Do you think that you outrank me, a Senior Officer of the Order, because you are a daughter of the Lord of Murder? This will not be! Farewell, my lady. It is a pity, that we failed to part in good faith.~
@@ -278,8 +278,8 @@ END
 IF ~~ THEN BEGIN AV#KR90a
   SAY ~Yes, I am he. Who is it whom wishes to speak with me?~
 		IF ~~ THEN EXTERN ~AV#MESS~ AV#MESS2
-END  
-  
+END
+
 IF ~~ THEN BEGIN AV#KR90b
   SAY ~(Runs his eyes over the letter) Oh, Torm! No! No! This can not be!~
   	IF ~~ THEN REPLY ~What... what has happened?~ GOTO AV#KR903
@@ -305,14 +305,14 @@ SetGlobal("KeldornFamilyGone","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("KRCut01")~ EXIT
-END 
+END
 
 // The GLOBAL variable "KeldornFamilyGone" is set to 1 in order to remove Keldorn's family from AR1003
 // Then in AR1003.BCS, there is a block, which changes "KeldornFamilyGone" to 2 and destroy all CREs there
 // After that new CRE "Maria" will be created and variable "VP_Kr_Funneral" changes to 2 in the same area script
 
 IF ~~ THEN BEGIN AV#KR907
-  SAY ~I... know nothing.~ 
+  SAY ~I... know nothing.~
   	IF ~~ THEN REPLY ~Keldorn, please! Allow me to be beside you!~ GOTO AV#KR906
 END
 
@@ -336,27 +336,27 @@ END
 IF ~~ THEN BEGIN MariTk2
   SAY ~Some? And where were you? I demand an answer!~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk2
-END  
-  
+END
+
 IF ~~ THEN BEGIN MariTk3
   SAY ~We had enough people for both escorting and guarding the mansion.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk3
-END 
+END
 
 IF ~~ THEN BEGIN MariTk4
   SAY ~(Tartly) And you what? You took every single one of them?~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk4
-END 
+END
 
 IF ~~ THEN BEGIN MariTk5
   SAY ~Go on.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk5
-END 
+END
 
 IF ~~ THEN BEGIN MariTk6
   SAY ~(Covers his face with his hands and keeps silence for a very long time... then he pronounces hollowly) What you are saying here is that you left for an assignation with your lover, taking all our guards with you and leaving our daughters helpless... is that not so?~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk6
-END 
+END
 
 IF ~~ THEN BEGIN MariTk7
   SAY ~(Furiously) And where else would you possibly go at such an hour? Decent ladies do not pay calls on a night! I... I contravened the law and not to say my duty when I did not bring you to justice, when I should have!~
@@ -366,27 +366,27 @@ END
 IF ~~ THEN BEGIN MariTk7_B
   SAY ~Now our precious daughters have paid the price for your folly. You will surely be imprisoned for what you have allowed to come about! I have condoned you and you, if I remember rightly, pledged your love for me... Why? You have never felt even the slightest compassion for me.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk7
-END 
+END
 
 IF ~~ THEN BEGIN MariTk8
   SAY ~Tell me Maria, why did you agree to marry me? No one was forcing you into this marriage.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk8
-END 
+END
 
 IF ~~ THEN BEGIN MariTk9
   SAY ~Go on...~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk9
-END 
+END
 
 IF ~~ THEN BEGIN MariTk10
   SAY ~Go on...~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk10
-END 
+END
 
 IF ~~ THEN BEGIN MariTk11
   SAY ~Finally... After so many years I am going to learn the truth.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk11
-END 
+END
 
 IF ~~ THEN BEGIN MariTk12
   SAY ~He was indeed... I often wonder myself how I managed to slay him with such a wound. <CHARNAME>, remember I was telling you? You have seen the scar on my left side?~
@@ -401,13 +401,13 @@ END
 IF ~~ THEN BEGIN MariTk14
   SAY ~Yes, you are right, dear.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk12
-END 
+END
 
 IF ~~ THEN BEGIN MariTk15
   SAY ~(Angrily) Shut your black mouth, Maria!~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk13
 END
- 
+
 IF ~~ THEN BEGIN MariTk16
   SAY ~Maria!~ [KELDOR91]
   	IF ~~ THEN EXTERN ~MARIA~ MariTk14
@@ -417,7 +417,7 @@ IF ~~ THEN BEGIN MariTk17
   SAY ~(Furious) You are outwearing my patience, Maria!~
 		IF ~~ THEN REPLY ~Keldorn, let us move along, I beg you! Let's go and pray for your girls' souls, come now.~ GOTO MariTk18
 END
-	 
+	
 IF ~~ THEN BEGIN MariTk18
   SAY ~You are right, we must go to the temple. Your thoughtfulness has reminded me what is important here... (Hangs upon your shoulder) Come along.~
   	IF ~~ THEN EXTERN ~MARIA~ MariTk15
@@ -438,12 +438,12 @@ IF ~~ THEN BEGIN MariTk21
   	IF ~~ THEN DO ~ActionOverride("Maria",EscapeArea())
 StartCutSceneMode()
 StartCutScene("KRCut02")~ EXIT
-END   
+END
 
 IF ~~ THEN BEGIN Funeral0
   SAY ~I thank you, prelate. I... am to blame. I violated the law. I did not bring my wife to justice and I am ready to accept my sentence.~
   	IF ~~ THEN EXTERN ~KRPRELAT~ 1
-END   
+END
 
 IF ~~ THEN BEGIN Funeral1
   SAY ~Prelate...~
@@ -505,7 +505,7 @@ END
 IF ~~ THEN BEGIN Bylanna2
   SAY ~(With a wince) Lady Bylanna, the terms "punitive action" and "Order of Radiant Heart" are incongruous... No, our interests have not conflicted of late. I thank you for the information, my lady.~
   	IF ~~ THEN EXIT
-END 
+END
 
 //LT18
 IF WEIGHT #-102 ~Global("VP_Kr_Funneral","GLOBAL",11)
@@ -540,12 +540,12 @@ END
 IF ~~ THEN BEGIN QT_st4
   SAY ~Thank you, <CHARNAME>.~
   	IF ~~ THEN DO ~SetGlobal("VP_Kr_Quest","LOCALS",2)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN QT_st5
   SAY ~Please, do not take me wrong, it's not that I took an oath or something. I need to know! I can not understand for the life of me why this sudden interest in me from the followers of Cyric now. That priest... he addressed you, not me... let us go, we must at least take a look around.~
   	IF ~~ THEN DO ~SetGlobal("VP_Kr_Quest","LOCALS",2)~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN QT_st6
   SAY ~(Sharply) I am going right now. Will you accompany me... or not <CHARNAME>?~
@@ -554,7 +554,7 @@ IF ~~ THEN BEGIN QT_st6
 END
 
 IF ~~ THEN BEGIN QT_st7
-  SAY ~I... do not know what to say. You seemed to treat me with compassion and understanding. I must have deceived myself.~ 
+  SAY ~I... do not know what to say. You seemed to treat me with compassion and understanding. I must have deceived myself.~
   	IF ~~ THEN DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",3)
 LeaveParty()
 EscapeArea()~ EXIT
@@ -626,7 +626,7 @@ END
 
 //Carsomyr
 IF WEIGHT #-106 ~Global("VP_Kr_CarsomyrTalk","LOCALS",1)~ THEN BEGIN Carsomyr_st0
-  SAY ~<CHARNAME>, look! Holy Avenger! A sword that was granted by Tyr! See how the power within causes it to shimmer!~ 
+  SAY ~<CHARNAME>, look! Holy Avenger! A sword that was granted by Tyr! See how the power within causes it to shimmer!~
   	IF ~~ THEN REPLY ~Keldorn, take it!~ GOTO Carsomyr_st1
   	IF ~~ THEN REPLY ~It is mine!~ GOTO Carsomyr_st3
 END
@@ -672,7 +672,7 @@ END
 IF ~~ THEN BEGIN War_st0
   SAY ~What has happened, sir?~
 		IF ~~ THEN EXTERN ~KRWARMES~ KRWARM2
-END  
+END
 
 IF ~~ THEN BEGIN War_st1
   SAY ~<CHARNAME>, I'm liable for military service and I may not disobey the order. Please, we must follow the Knight.~
@@ -700,7 +700,7 @@ IF ~~ THEN BEGIN War_st2
 END
 
 IF ~~ THEN BEGIN War_st3
-  SAY ~What's your interest in this war? If you are hoping to get rich on its trophies, THEN you'd be wise to remember that we will be joining with another army... you do understand what it is I am saying don't you?~ 
+  SAY ~What's your interest in this war? If you are hoping to get rich on its trophies, THEN you'd be wise to remember that we will be joining with another army... you do understand what it is I am saying don't you?~
   	IF ~~ THEN EXTERN ~EDWINJ~ Kr_WarT5
 END
 
@@ -752,7 +752,7 @@ END
 IF ~~ THEN BEGIN kelemring_st0
   SAY ~(Bitterly) I imagine this priest has died. There is a letter and a ring here, <CHARNAME>.~
 =
-~"Dear Count, You know that the Temple was a place of safe keeping for an artifact – the ring of Cyric. The great Kelemvor made it clear that this ring should not fall into the hands of followers of the Prince of Lies, and I have seen many of them among the enemy.~
+~"Dear Count, You know that the Temple was a place of safe keeping for an artifact ï¿½ the ring of Cyric. The great Kelemvor made it clear that this ring should not fall into the hands of followers of the Prince of Lies, and I have seen many of them among the enemy.~
 =
 ~Unfortunately the ring's abilities are yet unknown to me, it is said that mere mortals are not permitted to learn of them. Hide this ring count Firecam I beg you. Keep it from those who covet it for their evil lord! The supreme priest of Kelemvor, Doomguide Marrius."~
   	IF ~~ THEN REPLY ~(Taking the ring) I believe I understand the power of the ring. It causes the transposition of divine and human essences.~ GOTO kelemring_st1
@@ -793,7 +793,7 @@ IF WEIGHT #-7 ~Global("VP_LoveTalk","LOCALS",20)~ THEN BEGIN morning
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("KRCut18")~ EXIT
-END 
+END
 
 IF ~~ THEN BEGIN Imoen0
   SAY ~Miss Imoen, I am truely glad that we have finally found you. At last you are safe and free from the clutches of that evil sorcerer!~
@@ -823,7 +823,7 @@ IF ~~ THEN BEGIN LT24_st2
 END
 
 IF ~~ THEN BEGIN LT24_st3
-	SAY ~(Quietly. His voice sounding a little hurt) Does my request mean absolutely nothing to you? Tell me <CHARNAME>, how often is it that I ask anything of you?~  
+	SAY ~(Quietly. His voice sounding a little hurt) Does my request mean absolutely nothing to you? Tell me <CHARNAME>, how often is it that I ask anything of you?~
 		IF ~~ THEN REPLY ~Oh, you are so touchy! All right, all right, I'll do as you say but will you talk to me?~ GOTO LT24_st2
 		IF ~~ THEN REPLY ~No, not often but often when I do something you have not asked of me... it turns bad. You did not ask me to resurrect you, and now I find myself thinking that it was all for naught!~ GOTO LT24_st4
 END
@@ -941,13 +941,13 @@ IF ~~ THEN BEGIN LT38_st24
 END
 
 IF ~~ THEN BEGIN LT38_st25
-	SAY ~(Sighs) At last... please give me back the ring. Now tell me, why did you take it from me?~ 
+	SAY ~(Sighs) At last... please give me back the ring. Now tell me, why did you take it from me?~
 		IF ~~ THEN REPLY ~(Quietly) What if I had left... for good?~ GOTO LT38_st27
 		IF ~~ THEN REPLY ~I still do not understand, how can you love me? Is it not frightening to you?~ GOTO LT38_st26
 END
 
 IF ~~ THEN BEGIN LT38_st27
-	SAY ~"What if..."? What do you want to hear, that I would commit suicide rather than live without you? No my love, that I would never do. I would wait for you to change your mind, if necessary, wait until time itself ran out.~ 
+	SAY ~"What if..."? What do you want to hear, that I would commit suicide rather than live without you? No my love, that I would never do. I would wait for you to change your mind, if necessary, wait until time itself ran out.~
 		IF ~~ THEN REPLY ~(A sob escapes from your throat) Don't say that... I am not worthy of you.~ GOTO LT38_st28
 END
 
@@ -1015,7 +1015,7 @@ IF ~~ THEN BEGIN siege
   IF ~~ THEN REPLY ~Of course, Keldorn, let's go to the gate.~ GOTO siege1
   IF ~~ THEN REPLY ~It seems we don't have much choice here.~ GOTO siege2
   IF ~~ THEN REPLY ~Keldorn, we cannot go fighting unprepared. Let's take up arms, prepare potions and spells.~ GOTO siege3
-END  
+END
 
 IF ~~ THEN BEGIN siege1
   SAY ~Thank you <CHARNAME>.~
@@ -1070,7 +1070,7 @@ IF ~~ THEN BEGIN NEJ253
   SAY ~These are strange words I hear from Tilorn. I have never seen such a thing done or even knew such a thing was possible.~
   IF ~~ THEN GOTO NEJ254
 END
-  
+
 IF ~~ THEN BEGIN NEJ254
   SAY ~I know not what manner of men you and Tilorn are Hrothgar, nor do I wish to know at this present time, but I believe Torm would not have me aid you if your intent was evil, so I will follow you to this Halruaa and aid your cause in any way that I can.~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
@@ -1108,7 +1108,7 @@ IF ~~ THEN BEGIN NEJ255
 END
 
 IF ~~ THEN BEGIN darkeld1
-	SAY ~Please Dar, call me Keldorn. We are all friends here, and the formalities of titles have no place among friends.~ 
+	SAY ~Please Dar, call me Keldorn. We are all friends here, and the formalities of titles have no place among friends.~
   IF ~~ THEN EXTERN ~DARJ~ darkeld2
 END	
 
@@ -1120,16 +1120,16 @@ IF ~~ THEN BEGIN darkeld2
 END	
 
 IF ~~ THEN BEGIN darkeld3
-	SAY ~(*He reaches up and puts his hand on the half orc’s shoulder*) My friend, I understand why you should feel that love will always elude you.~
+	SAY ~(*He reaches up and puts his hand on the half orcï¿½s shoulder*) My friend, I understand why you should feel that love will always elude you.~
 =
-~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of another’s love.~
+~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of anotherï¿½s love.~
   IF ~~ THEN EXTERN ~DARJ~ darkeld4
 END	
 
 IF ~~ THEN BEGIN darkeld4
 	SAY ~(*His voice takes on a tone of sadness*) I can not answer you truthfully for the female heart is a mystery to all men, but I do  know that women are very different to men in the way they perceive a worthy lover.~
 =
-~It is true, many will look at a man’s face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
+~It is true, many will look at a manï¿½s face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
 =
 ~Then there is the woman who is first your friend... she has taken the time, watched, spoken with you and found you worthy to be called friend.~
 =
@@ -1139,15 +1139,15 @@ END
 
 IF ~~ THEN BEGIN darkeld5
 	SAY ~Once again, I do not know Dar, but I do know that such women are to be found and you my friend, are so much more than the half-orc that you perceive yourself as.~
-= 
+=
 ~Not only myself but also your friends here have witnessed, many times, the honour that dwells within your heart.~
 =
-~Should you be lucky enough to procure the love of such a woman, then you will be blessed because you’ll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
+~Should you be lucky enough to procure the love of such a woman, then you will be blessed because youï¿½ll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
   IF ~~ THEN EXTERN ~DARJ~ darkeld6
 END	
 
 IF ~~ THEN BEGIN darkeld6
-	SAY ~My friend, whatever the future does or does not bring, you will always have the friends that you have made this day. Remember this.~ 	 
+	SAY ~My friend, whatever the future does or does not bring, you will always have the friends that you have made this day. Remember this.~ 	
   IF ~~ THEN DO ~RealSetGlobalTimer("VP_Dar_Keldor_Time","GLOBAL",1800)~ UNSOLVED_JOURNAL #48002 /* ~Keldorn wishes to visit his wife and family.
 
 Apparently, Keldorn maintains a mansion of his own in the Government District here in Athkatla, and has asked that we visit the place so that he may introduce me to his family.~ */ EXIT
@@ -1155,7 +1155,7 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~May your god take pity and forgive you gnome, for you are indeed a pitiful beast to behold.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3 
+ IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
  IF ~InParty("Kachiko")
@@ -1177,5 +1177,5 @@ InParty("Kachiko")
 OR(2)
 Global("EnteredAR1304","GLOBAL",1)
 !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
-END     
+END
 END

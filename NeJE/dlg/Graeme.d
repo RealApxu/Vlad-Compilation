@@ -26,7 +26,7 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~I repeat the beast howls at night...~
-  IF ~~ THEN REPLY ~Sorry, but I believe you have mistaken me for someone else. I have no interest in what you or your howling beast are up to, if you do not mind I will be on my way.~ GOTO 2 
+  IF ~~ THEN REPLY ~Sorry, but I believe you have mistaken me for someone else. I have no interest in what you or your howling beast are up to, if you do not mind I will be on my way.~ GOTO 2
   IF ~~ THEN REPLY ~And I repeat... what beast would that be my friend?~ GOTO 5
   IF ~OR(2)
 CheckStatGT(Player1,14,WIS)
@@ -57,14 +57,14 @@ ActionOverride("TuSmug",Enemy())
 Shout(89)
 Enemy()~ EXIT
 END
-  
+
 IF ~~ THEN BEGIN 5
   SAY ~Wrong answer my friend. The reply I was looking for should have been... *but only when the moon is full*, not that you'll need to know it where I am about to send you.~
   IF ~~ THEN GOTO 6
 END
-  
+
 IF ~~ THEN BEGIN 6
-  SAY ~First though, answer me this, which of those wizards in the academy found out about us eh? Who was it that sent you down here to root us out?~ 
+  SAY ~First though, answer me this, which of those wizards in the academy found out about us eh? Who was it that sent you down here to root us out?~
   IF ~~ THEN REPLY ~I am not in league with any wizards. I am here for my own reasons, none of which concern you. Now, if you step aside I will be about them.~ GOTO 3
   IF ~~ THEN REPLY ~No one, wizard or otherwise has sent me down here to root you out! I have no interest in whatever petty dealings you have with them, my own concerns are giving me enough of a headache without adding to it by running errands for wizards. Now, out of my way!~ GOTO 3
   IF ~~ THEN REPLY ~Believe it or not that would have been my next guess! Ah well, I gave it the best shot I could... I thought it was quite good myself!~ GOTO 8

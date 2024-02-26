@@ -115,10 +115,10 @@ IF ~~ THEN BEGIN TS183
 
 I bring you with reverent hands
 The books of my countless dreams,
-White woman that passion has worn 
-As the tide wears the dove-gray sands, 
-And with heart much older than the horn 
-That is brimmed from the pale fire of time: 
+White woman that passion has worn
+As the tide wears the dove-gray sands,
+And with heart much older than the horn
+That is brimmed from the pale fire of time:
 White woman with numberless dreams,
  I bring you my passionate rhyme.
 

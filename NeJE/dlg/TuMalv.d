@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN 2
   SAY ~I am sure you know why it is necessary to test students at intervals as it was written in your entrance papers, but I will just run it by you again.~
   IF ~~ THEN GOTO 3
 END
- 
+
 IF ~~ THEN BEGIN 3
   SAY ~It is not for us, the tutors benefit we have devised these tests but as a matter of safety for you the student. Magic can be a terrible force if wielded indiscriminately so it is for me to be sure that you can use what you have learnt safely.~
   IF ~~ THEN REPLY ~Then I am eager to prove myself, set your test Malvolio.~ GOTO 4
@@ -60,11 +60,11 @@ Dead("Yoshimo")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ70
 InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~YOSHJ~ transmut
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut 
+!Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaa’s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
+!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaaï¿½s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know you don’t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that you’ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut 
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know you donï¿½t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that youï¿½ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut
   IF ~~ THEN REPLY ~This is a waste of my time Malvolio I have better things to do than play silly games.~ GOTO 1
   IF ~~ THEN REPLY ~Maybe another time will be more convenient for me Malvolio.~ GOTO 13
 END
@@ -82,7 +82,7 @@ IF ~~ THEN BEGIN 7
   SAY ~And how may I ask did you expect to pass anything without any sort of preparation <CHARNAME>?~
   IF ~~ THEN REPLY ~No excuses the test just slipped my mind.~ GOTO 8
   IF ~~ THEN REPLY ~I memorized what I thought was an appropriate selection of spells but I had no idea what your test would involve.~ GOTO 8
-  IF ~~ THEN REPLY ~I don’t have crystal ball, how could I have known what spells I would be needing today.~ GOTO 8
+  IF ~~ THEN REPLY ~I donï¿½t have crystal ball, how could I have known what spells I would be needing today.~ GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -139,9 +139,9 @@ END //Transmuter: Test is postponed
 
 IF ~~ THEN BEGIN 12
   SAY ~(*Eyes you suspiciously*) Agree to be assessed? Now that is not what I would expect to hear from a dedicated student. If not for me to test you, then why are you here <CHARNAME>?~
-  IF ~~ THEN REPLY ~I am here to be assessed, I just don’t want to agree to it until I know I am prepared.~ GOTO 4
+  IF ~~ THEN REPLY ~I am here to be assessed, I just donï¿½t want to agree to it until I know I am prepared.~ GOTO 4
   IF ~~ THEN REPLY ~No... no other reason than your assessment. Let us make a start.~ GOTO 4
-  IF ~~ THEN REPLY ~No. I assure you I am here to gain Halruaa’s honor, nothing more. Test away.~ GOTO 4
+  IF ~~ THEN REPLY ~No. I assure you I am here to gain Halruaaï¿½s honor, nothing more. Test away.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 13
@@ -182,9 +182,9 @@ InParty("Yoshimo")
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaa’s roll of honors when you pass this exam? ~ EXTERN ~JANJ~ transmut
+!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaaï¿½s roll of honors when you pass this exam? ~ EXTERN ~JANJ~ transmut
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know you don’t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that you’ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut  
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know you donï¿½t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that youï¿½ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut
   IF ~~ THEN REPLY ~This is a waste of my time Malvolio I have better things to do than play silly games.~ GOTO 1
 END
 
@@ -209,9 +209,9 @@ InParty("Yoshimo")
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaa’s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
+!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaaï¿½s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know you don’t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that you’ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut 
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know you donï¿½t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that youï¿½ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut
 END
 
 IF ~~ THEN BEGIN 17
@@ -221,8 +221,8 @@ SetGlobal("VP_Transmuter_Test","GLOBAL",1)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT30")~ EXIT
-END //=> Transmuter: Test.  
-  
+END //=> Transmuter: Test.
+
 IF ~~ THEN BEGIN 18
   SAY ~Then no more talking. Nalia, the test begins.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",1)
@@ -455,10 +455,10 @@ StartCutScene("VPCutJ12")~ EXIT
 END //=> Transmuter: Test.
 
 IF ~~ THEN BEGIN npcstest
-  SAY ~Then why am I talking to you and not the one who is? No matter, I’ll explain the nature of the task that I have set and then I trust the aspiring young mage will decide whether they wish to proceed.~
+  SAY ~Then why am I talking to you and not the one who is? No matter, Iï¿½ll explain the nature of the task that I have set and then I trust the aspiring young mage will decide whether they wish to proceed.~
 =
 ~The task is designed to show me how well you have learnt your lessons in alteration magic and how well you can deal with a given situation using only those spells.~
-= 
+=
 ~I have set a room aside, in this room is a locked chest and a guardian. The test involves you dealing with the guardian and removing whatever is inside the chest. Now who is going to be performing this task, come speak up?~
   IF ~~ THEN REPLY ~I am ready to pass your exams.~ GOTO 6
   IF ~Class(Player1,MAGE_ALL)
@@ -483,11 +483,11 @@ Dead("Yoshimo")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ70
 InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~YOSHJ~ transmut
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut 
+!Dead("Taffic")~ THEN REPLY ~Taffic, a big job for a little guy. Are you up to it?~ EXTERN ~TAFFICJ~ transmut
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaa’s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
+!Dead("Jan")~ THEN REPLY ~Jan, just imagine how smart the name Jan Jansen is going to look on Halruaaï¿½s roll of honors when you pass this exam?~ EXTERN ~JANJ~ transmut
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know you don’t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that you’ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know you donï¿½t think too much to these  mages or their academy, and after all why should you, your intelligence and ingenuity surpasses all here. Just think for a moment though of the immense satisfaction that youï¿½ll get from knowing that a red wizard infiltrated and passed their silly exams and them being too witless to see it.~ EXTERN ~EDWINJ~ transmut
   IF ~~ THEN REPLY ~This is a waste of my time Malvolio I have better things to do than play silly games.~ GOTO 1
   IF ~~ THEN REPLY ~Maybe another time will be more convenient for me Malvolio.~ GOTO 13
 END

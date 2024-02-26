@@ -6,11 +6,11 @@ IF ~~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~ 
+  SAY ~
 
 One evening made of pink and mystical blue,
 We will exchange a single flash from afar,
-Like a long sob, charged with adieux; 
+Like a long sob, charged with adieux;
 
 This evening is tonight, my dear Sime... Accept the death from me and we shall live forever, powerful and passionate.~
   IF ~~ THEN EXTERN ~SIMEJ~ 29
