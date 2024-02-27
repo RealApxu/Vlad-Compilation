@@ -22,7 +22,7 @@ END
 IF ~~ THEN BEGIN 2
   SAY ~I am here at the request of the Grand Druid. When word reached him that this grove was not being replenished nor was she re-seeding new growth, he sent me to investigate the matter.~
 =
-~You see for yourself how the young saplings bend as if withe weight of age, and what life does spring forth from the mother�s womb is no longer green and lush.~
+~You see for yourself how the young saplings bend as if withe weight of age, and what life does spring forth from the mother's womb is no longer green and lush.~
 =
 ~The Grand Druid bids me to find and re-balance that which has gone askew here.~
 		IF ~~ THEN EXTERN ~JAHEIRAJ~ DG3
@@ -122,7 +122,7 @@ IF ~~ THEN BEGIN 13
   SAY ~I am not in the least bit intimidated by you. All here will side with me should you use force, and even if you do manage to wrest the book from me, you would not know where to begin your search for the other parts.~
   IF ~~ THEN REPLY ~Bardo was convinced one part was in Candlekeep but he did not find it in the library. From what you said became of the three parts after the rendering, I think that narrows my search quite a bit. Would you not agree Erhard?~ GOTO 14
   IF ~~ THEN REPLY ~I have a fair idea where to start looking Erhard. Think of your precious grove, if you die what hope does it have of recovering? Give me the book, you know it makes sense.~ GOTO 14
-  IF ~~ THEN REPLY ~I have no real wish to fight you Erhard. Come, tell me what it is you know of this grove�s problem?~ GOTO 15
+  IF ~~ THEN REPLY ~I have no real wish to fight you Erhard. Come, tell me what it is you know of this grove's problem?~ GOTO 15
   IF ~~ THEN REPLY ~Bah, I have no time for these games. I have no need for this book myself so I will not waste anymore of my time looking. Your grove is doomed Erhard but I wish you luck in your endeavour to save it.~ GOTO 13a
 END
 
@@ -169,7 +169,7 @@ END
 IF ~~ THEN BEGIN 17
   SAY ~I am here at the request of the Grand Druid. When word reached him that this grove was not being replenished nor was she re-seeding new growth, he sent me to investigate the matter.~
 =
-~You see for yourself how the young saplings bend as if withe weight of age, and what life does spring forth from the mother�s womb is no longer green and lush.~
+~You see for yourself how the young saplings bend as if withe weight of age, and what life does spring forth from the mother's womb is no longer green and lush.~
 =
 ~The Grand Druid bids me to find and re-balance that which has gone askew here.~
   IF ~~ THEN REPLY ~I have often heard druids speak of the cycles of life Erhard, could it not simply be that the time of this grove has come to an end?~ GOTO 3
@@ -196,7 +196,7 @@ IF ~Global("VP_Rt_Mine_Visited","GLOBAL",2)~ THEN BEGIN 20
   IF ~Global("SPRITE_IS_DEADIlriana","GLOBAL",0)
 Global("VP_Dar_Quest","GLOBAL",11)~ THEN REPLY ~I did Erhard. I discovered an abandoned mine under the grove, the entrance of which is close to the pond. In the lower levels of this mine I came across a mage and a group of Svifneblin she had enslaved. They were digging, but for what I did not discover. It is my belief that the renewed digging had released pockets of poisonous vapours seeping into the underground feeds of the pond, poisoning the earth on its way to the pond itself.~ GOTO 22
   IF ~Global("SPRITE_IS_DEADIlriana","GLOBAL",0)
-Global("VP_Dar_Quest","GLOBAL",10)~ THEN REPLY ~No I did not, I grow tired of the search. I have returned to demand that you give me the book so�s I can be gone from here.~ GOTO 25
+Global("VP_Dar_Quest","GLOBAL",10)~ THEN REPLY ~No I did not, I grow tired of the search. I have returned to demand that you give me the book so's I can be gone from here.~ GOTO 25
   IF ~Global("SPRITE_IS_DEADIlriana","GLOBAL",0)
 Global("VP_Dar_Quest","GLOBAL",10)~ THEN REPLY ~I did not, but I have discovered an entrance to an old mine close by the pool. I suggest that you continue your search there and hand the book over to me as payment for the time I have wasted!~ GOTO 25
   IF ~Global("SPRITE_IS_DEADIlriana","GLOBAL",0)
@@ -213,7 +213,7 @@ END
 IF ~~ THEN BEGIN 22
   SAY ~Thank you <CHARNAME>. Given time I am sure this grove will recover. As per our bargain, here is the piece that you seek.~
 =
-~The whereabouts of the second may well be Candlekeep. I know that it was taken by one of the druids whose grove was entrusted with its safe keeping, but I do not know the druid�s name.~
+~The whereabouts of the second may well be Candlekeep. I know that it was taken by one of the druids whose grove was entrusted with its safe keeping, but I do not know the druid's name.~
 =
 ~He also believed he would find another part in the library of Candlekeep, so he left his grove in search of it. I have no idea whether he actually reached Candlekeep.~
   IF ~~ THEN REPLY ~And what of the third part, do you know who that was entrusted to Erhard?~ GOTO 23

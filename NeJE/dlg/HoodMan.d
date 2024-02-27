@@ -2,10 +2,10 @@ BEGIN ~HoodMan~
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~A moment <CHARNAME>...~
-  IF ~~ THEN REPLY ~I don�t believe I know you... do I? Care to explain how it is you know my name?~ GOTO 1
+  IF ~~ THEN REPLY ~I don't believe I know you... do I? Care to explain how it is you know my name?~ GOTO 1
   IF ~~ THEN REPLY ~What the... who are you skulking in the shadows and more to the point... how is it you know my name?~ GOTO 1
-  IF ~~ THEN REPLY ~I don�t know you, so you�d best tell me how it is you know my name and what business you think you have with me?~ GOTO 1
-  IF ~~ THEN REPLY ~Isn�t there anyone in this damned city who doesn�t know who I am? What is it you want with me and make it fast... I have unfinished business with another!~ GOTO 6
+  IF ~~ THEN REPLY ~I don't know you, so you'd best tell me how it is you know my name and what business you think you have with me?~ GOTO 1
+  IF ~~ THEN REPLY ~Isn't there anyone in this damned city who doesn't know who I am? What is it you want with me and make it fast... I have unfinished business with another!~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 1
@@ -41,7 +41,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Your reputation spreads far and wide <CHARNAME>, there are very few who don�t know the story of the hero of the Sword Coast. There are however, not so many who know of your parentage... my mistress is one who knows much about you already. You are known to us, if not us to you.~
+  SAY ~Your reputation spreads far and wide <CHARNAME>, there are very few who don't know the story of the hero of the Sword Coast. There are however, not so many who know of your parentage... my mistress is one who knows much about you already. You are known to us, if not us to you.~
   IF ~~ THEN GOTO 2
 END
 

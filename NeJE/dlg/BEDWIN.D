@@ -11,7 +11,7 @@ IF ~~ THEN BEGIN NEJ107
 END
 
 IF ~~ THEN BEGIN NEJ108
-  SAY ~Ah, but it is necessary for my piece of mind, so you will not dissuade me from remaining close beside you my elven flower... (*and for the gratitude she will feel she owes me if I do manage to save the arrogant elf�s life.*)~
+  SAY ~Ah, but it is necessary for my piece of mind, so you will not dissuade me from remaining close beside you my elven flower... (*and for the gratitude she will feel she owes me if I do manage to save the arrogant elf's life.*)~
   IF ~~ THEN EXTERN ~BLEINA~ 219
 END
 
@@ -31,7 +31,7 @@ Dead("Viconia")~ THEN EXTERN ~BLEINA~ Sphere13a
 END
 
 IF ~~ THEN BEGIN LeiSpher2
-	SAY ~[Oh how did I every join this group there isn�t half a brain here even if you combine them all.]~
+	SAY ~[Oh how did I every join this group there isn't half a brain here even if you combine them all.]~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere18
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
@@ -68,16 +68,16 @@ IF ~~ THEN BEGIN melora2
 END
 
 IF ~~ THEN BEGIN melora3
-	SAY ~How certain are you that it wasn�t your mother who ensorceled your father?~
+	SAY ~How certain are you that it wasn't your mother who ensorceled your father?~
 =
-~I can�t see any self respecting man, mage or otherwise taking a half woman to his bed when there are so many full bodied, willing females to be had.~
+~I can't see any self respecting man, mage or otherwise taking a half woman to his bed when there are so many full bodied, willing females to be had.~
 =
-~Your father was more likely to be the one under a spell. (*That is supposing he wasn�t deformed and this is the result of such a union.*)~
+~Your father was more likely to be the one under a spell. (*That is supposing he wasn't deformed and this is the result of such a union.*)~
 	  IF ~~ THEN EXTERN ~BMELORA~ edwin4
 END
 
 IF ~~ THEN BEGIN melora4
-	SAY ~You�re a feisty one, for all your size! Get that from your mother, do you? That would I suppose explain the attraction your father felt for her.~
+	SAY ~You're a feisty one, for all your size! Get that from your mother, do you? That would I suppose explain the attraction your father felt for her.~
 =
 ~(*After all, nothing beats having a spirited woman beneath one to heighten the moment.*)~
 	  IF ~~ THEN EXTERN ~BMELORA~ edwin5
@@ -223,7 +223,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -240,7 +240,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -257,7 +257,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -312,7 +312,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -329,7 +329,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -346,7 +346,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -384,7 +384,7 @@ IF ~~ THEN BEGIN LeiThea3
 END
 
 IF ~~ THEN BEGIN LeiThea4
-  SAY ~(*His voice barely audible*) Ha, if anyone is getting the girl it certainly won�t be any of this rabble!~
+  SAY ~(*His voice barely audible*) Ha, if anyone is getting the girl it certainly won't be any of this rabble!~
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -401,7 +401,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -418,7 +418,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Aerie")
 !IsValidForPartyDialogue("Anomen")
 !IsValidForPartyDialogue("Cernd")
@@ -435,7 +435,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -473,7 +473,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~I don�t believe it. How did I become party to such infantile behaviour?~
+  SAY ~I don't believe it. How did I become party to such infantile behaviour?~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1
@@ -512,7 +512,7 @@ IF ~~ THEN BEGIN LeiThea1
 END
 
 IF ~~ THEN BEGIN LeiThea2
-  SAY ~Bah, you empty-headed girl. Edwin needs no such praise, you insolent woman. Sing of me and I�ll scorch the tongue out of your mouth.~
+  SAY ~Bah, you empty-headed girl. Edwin needs no such praise, you insolent woman. Sing of me and I'll scorch the tongue out of your mouth.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ161
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2

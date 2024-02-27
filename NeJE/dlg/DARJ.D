@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
- SAY ~I cannot believe that you choose to ignore this girl�s plight, <CHARNAME>. Especially after your recent experience at the hands of Irenicus. But I chose to follow your road and I will therefore respect your decision this time.~ [DAR_12]
+ SAY ~I cannot believe that you choose to ignore this girl's plight, <CHARNAME>. Especially after your recent experience at the hands of Irenicus. But I chose to follow your road and I will therefore respect your decision this time.~ [DAR_12]
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ258
  IF ~!InParty("Minsc")~ THEN EXTERN ~HROTHJ~ 49
 END
@@ -205,7 +205,7 @@ IF ~~ THEN BEGIN 28
 END
 
 IF ~~ THEN BEGIN 29
- SAY ~I see. There�s an old curse about living in *interesting* times.~
+ SAY ~I see. There's an old curse about living in *interesting* times.~
  IF ~!InParty("Accalia")~ THEN DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
  IF ~InParty("Accalia")~ THEN REPLY ~I heard that!~ EXTERN ~ACCALIJ~ 33
 END
@@ -234,12 +234,12 @@ IF ~InParty("Sharteel")
 END
 
 IF ~~ THEN BEGIN 32
- SAY ~Right my friend, I am with you, let�s kick some evil butt.~
+ SAY ~Right my friend, I am with you, let's kick some evil butt.~
  IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 33
- SAY ~(*Dar turns to you and speaks softly*) Have you had anybody take a look at the big fella�s head wound recently? I worry for his safety.~
+ SAY ~(*Dar turns to you and speaks softly*) Have you had anybody take a look at the big fella's head wound recently? I worry for his safety.~
  IF ~OR(2)
 !InParty("Imoen")
 Dead("Imoen")
@@ -248,20 +248,20 @@ OR(2)
 Dead("Imoen2")
 OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn�t have him any other way.~ EXTERN ~HROTHJ~ 276
+Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn't have him any other way.~ EXTERN ~HROTHJ~ 276
  IF ~InParty("Imoen")
 !Dead("Imoen")
 OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn�t have him any other way.~ EXTERN ~IMOENJ~ NEJ150
+Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn't have him any other way.~ EXTERN ~IMOENJ~ NEJ150
  IF ~InParty("Imoen2")
 !Dead("Imoen2")
 OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn�t have him any other way.~ EXTERN ~IMOEN2J~ VP_FIX66
+Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn't have him any other way.~ EXTERN ~IMOEN2J~ VP_FIX66
  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn�t have him any other way.~ EXTERN ~JAHEIRAJ~ NEJ594
- IF ~~ THEN REPLY ~Believe me, he�s as healed as he�s gonna get!~ EXTERN ~HROTHJ~ 140
+!Dead("Jaheira")~ THEN REPLY ~He worries me too, but Minsc is Minsc, I wouldn't have him any other way.~ EXTERN ~JAHEIRAJ~ NEJ594
+ IF ~~ THEN REPLY ~Believe me, he's as healed as he's gonna get!~ EXTERN ~HROTHJ~ 140
  IF ~~ THEN REPLY ~Minsc can take care of himself, but he could really use a friend now that Dynaheir is gone.~ GOTO 34
 END
 
@@ -271,7 +271,7 @@ IF ~~ THEN BEGIN 34
 END
 
 IF ~~ THEN BEGIN 35
- SAY ~Then I say let�s clean up and make ready for battle. Although, a few cold mugs and a soft bed would go a long ways to helping me get ready.~
+ SAY ~Then I say let's clean up and make ready for battle. Although, a few cold mugs and a soft bed would go a long ways to helping me get ready.~
  IF ~True()~ THEN EXIT
  IF ~InParty("Imoen")
 !Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ154
@@ -335,7 +335,7 @@ IF ~~ THEN BEGIN 43
 END
 
 IF ~~ THEN BEGIN 44
- SAY ~They are just that Imoen and if we can put the spirits of these brave heroes to rest, then we will have done a good thing. When the toil of life is over, then the soul should be free of life�s labours and be granted the eternal rest and peace that death brings. These tortured souls deserve no less.~
+ SAY ~They are just that Imoen and if we can put the spirits of these brave heroes to rest, then we will have done a good thing. When the toil of life is over, then the soul should be free of life's labours and be granted the eternal rest and peace that death brings. These tortured souls deserve no less.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel")
@@ -377,7 +377,7 @@ IF ~~ THEN BEGIN 47
 END
 
 IF ~~ THEN BEGIN 48
-	SAY ~No it isn�t right my friend but we must remember that Accalia does not know of your deeds, because like me she has not lived in your time to hear or tell of them. When we have time you must tell me all these heroic tales, right Minsc?~
+	SAY ~No it isn't right my friend but we must remember that Accalia does not know of your deeds, because like me she has not lived in your time to hear or tell of them. When we have time you must tell me all these heroic tales, right Minsc?~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ320
 END
 
@@ -441,7 +441,7 @@ IF ~~ THEN BEGIN 57
 END
 
 IF ~~ THEN BEGIN 58
-	SAY ~No it isn�t right my friend but we must remember that Accalia does not know of your deeds, because like me she has not lived in your time to hear or tell of them. When we have time you must tell me all these heroic tales, right Minsc?~
+	SAY ~No it isn't right my friend but we must remember that Accalia does not know of your deeds, because like me she has not lived in your time to hear or tell of them. When we have time you must tell me all these heroic tales, right Minsc?~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ324
 END
 
@@ -451,7 +451,7 @@ IF ~~ THEN BEGIN 59
 END
 
 IF ~~ THEN BEGIN 60
- SAY ~The loss of a loved one is a terrible pain to have to bear Jaheira. I am a priest of Ilmater and yet I know no way of healing your heart, time is the only healer for such pain, your Khalid�s time is over but yours must continue for a while longer.~
+ SAY ~The loss of a loved one is a terrible pain to have to bear Jaheira. I am a priest of Ilmater and yet I know no way of healing your heart, time is the only healer for such pain, your Khalid's time is over but yours must continue for a while longer.~
  IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ625
 END
 
@@ -461,7 +461,7 @@ IF ~~ THEN BEGIN 61
 END
 
 IF ~~ THEN BEGIN 62
- SAY ~Rest up my friend. Sounds like they�re going to need the infantry for what�s coming up next.~
+ SAY ~Rest up my friend. Sounds like they're going to need the infantry for what's coming up next.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ326
 END
 
@@ -472,7 +472,7 @@ IF ~~ THEN BEGIN 63
 Dead("Jaheira")~ THEN REPLY ~It never did tell us what it planned on doing with the Heartstone Gem.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~HROTHJ~ 149
  IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN REPLY ~It never did tell us what it planned on doing with the Heartstone Gem.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~JAHEIRAJ~ NEJ630
- IF ~~ THEN REPLY ~If it was one measure of this little problem, then the �Ancient Enemy� must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ GOTO 64
+ IF ~~ THEN REPLY ~If it was one measure of this little problem, then the 'Ancient Enemy' must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ GOTO 64
  IF ~OR(2)
 !InParty("Imoen")
 Dead("Imoen")
@@ -497,12 +497,12 @@ InParty("Jaheira")
 END
 
 IF ~~ THEN BEGIN 64
- SAY ~I fear that you are right my friend. I�m also certain that we have played our role in this perfectly. Whatever struggle these two had been engaged in through the ages, has now been shifted permanently in the favor of the �Ancient Enemy�.~
+ SAY ~I fear that you are right my friend. I'm also certain that we have played our role in this perfectly. Whatever struggle these two had been engaged in through the ages, has now been shifted permanently in the favor of the 'Ancient Enemy'.~
  IF ~~ THEN EXTERN ~HROTHJ~ 150
 END
 
 IF ~~ THEN BEGIN 65
- SAY ~All in good time Minsc, we�ll be going soon enough. They�re just talking about what form this new evil will take.~
+ SAY ~All in good time Minsc, we'll be going soon enough. They're just talking about what form this new evil will take.~
  IF ~~ THEN EXTERN ~MINSCJ~ NEJ328
 END
 
@@ -598,20 +598,20 @@ IF ~~ THEN BEGIN 78
 END
 
 IF ~~ THEN BEGIN 79
-  SAY ~You speak and say �were�. Tell me of the now?~
+  SAY ~You speak and say 'were'. Tell me of the now?~
   IF ~~ THEN EXTERN ~DARORC1~ 2
 END
 
 IF ~Global("VP_Dar_Quest","GLOBAL",2)~ THEN BEGIN 80
   SAY ~This is dire news indeed <CHARNAME>. I know that your own search is one of great urgency but can we not spare a little time to look into this matter, seeing as we are in the area he spoke of?~
 	IF ~!Dead("Hrothgar")~ THEN REPLY ~What say you  Hrothgar, surely a small detour will not hinder our progress greatly?~ EXTERN ~HROTHJ~ 366
-	IF ~~ THEN REPLY ~I�m sorry Dar, but I fear we cannot be side tracked from our goal. If you want to look into the matter yourself, I will not stop you. Maybe you�ll find that which you seek there and perhaps we will be fortunate enough to travel together again at some time.~ GOTO 81
-	IF ~~ THEN REPLY ~This is not my concern Dar and I�m not about to waste time chasing every rumour that comes my way. We must continue on our original path.~ GOTO 84
+	IF ~~ THEN REPLY ~I'm sorry Dar, but I fear we cannot be side tracked from our goal. If you want to look into the matter yourself, I will not stop you. Maybe you'll find that which you seek there and perhaps we will be fortunate enough to travel together again at some time.~ GOTO 81
+	IF ~~ THEN REPLY ~This is not my concern Dar and I'm not about to waste time chasing every rumour that comes my way. We must continue on our original path.~ GOTO 84
 	IF ~~ THEN REPLY ~No Dar! You agreed to follow me on my quest. Are you after all no different to the rest of your kind, Half Orc? Quick to forget what is said when it suits you!~ GOTO 85
 END
 
 IF ~~ THEN BEGIN 81
-  SAY ~How could I live with myself <CHARNAME> if rumour turned out to be truth and I hadn�t made the attempt to aid  those enslaved? It saddens me to take  my leave of you but I must find the truth for my own peace of mind. Are you sure you cannot travel with me?~
+  SAY ~How could I live with myself <CHARNAME> if rumour turned out to be truth and I hadn't made the attempt to aid  those enslaved? It saddens me to take  my leave of you but I must find the truth for my own peace of mind. Are you sure you cannot travel with me?~
 	IF ~~ THEN REPLY ~If it means that much to you my friend, I will delay my own quest until we  have resolved the truth of this rumour.~ GOTO 82
 	IF ~~ THEN REPLY ~I am sorry Dar but I do not have the time. I will however wish you luck in your quest.~ GOTO 83
 END
@@ -634,7 +634,7 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 84
-  SAY ~It saddens me to hear you speak that way <CHARNAME>, but I have to do what I feel is right. I couldn�t live with myself if rumour turned out to be truth and I hadn�t tried to aid those enslaved. I will bid you farewell and take my leave of you.~
+  SAY ~It saddens me to hear you speak that way <CHARNAME>, but I have to do what I feel is right. I couldn't live with myself if rumour turned out to be truth and I hadn't tried to aid those enslaved. I will bid you farewell and take my leave of you.~
   IF ~~ THEN DO ~SetGlobal("VP_Dar_Quest","GLOBAL",3)
 DestroyItem("DARCHAIN")  // Plate Mail +5
 DestroyItem("AMULILM")  // Ilmater Holy Symbol
@@ -651,7 +651,7 @@ IF ~~ THEN BEGIN 85
 END
 
 IF ~~ THEN BEGIN 86
-  SAY ~If this wizard uses these portals himself, rather than risk a confrontation, would it not be safer to explore further and see if there is another means of exiting this place? I can�t help but worry that this portal may take us further from the freedom we seek.~
+  SAY ~If this wizard uses these portals himself, rather than risk a confrontation, would it not be safer to explore further and see if there is another means of exiting this place? I can't help but worry that this portal may take us further from the freedom we seek.~
   IF ~~ THEN EXTERN ~HROTHJ~ 377
 END
 
@@ -661,7 +661,7 @@ IF ~~ THEN BEGIN 87
 END
 
 IF ~~ THEN BEGIN 88
- SAY ~Beware of that one�s mistress <CHARNAME>, I sense a wrongness emanating from him. We would do well to avoid whoever he is aligned with.~
+ SAY ~Beware of that one's mistress <CHARNAME>, I sense a wrongness emanating from him. We would do well to avoid whoever he is aligned with.~
  IF ~OR(2)
 !InParty("Melora")
 Dead("Melora")~ THEN EXTERN ~HROTHJ~ 381
@@ -747,7 +747,7 @@ END
 IF ~~ THEN BEGIN otho1
   SAY ~Do not worry my friend. I am sure <CHARNAME> here will think of someway to help you, right <CHARNAME>?~
 	IF ~~ THEN REPLY ~Let me guess Dar, you wish to go to Candlekeep and search for this prophet, yes?~ GOTO quest3
-	IF ~~ THEN REPLY ~There is no saying this prophet even reached Candlekeep, so if you are about to suggest we go there Dar, don�t!~ GOTO quest8
+	IF ~~ THEN REPLY ~There is no saying this prophet even reached Candlekeep, so if you are about to suggest we go there Dar, don't!~ GOTO quest8
 	IF ~~ THEN REPLY ~Before you say anymore Dar, we do not have time to go look for this prophet of theirs, but should we pass Candlekkeep, I promise you, we will make a stop.~ GOTO quest6
 	IF ~~ THEN REPLY ~Of course Dar, we will go to Candlekeep and search out this prophet of theirs. I know this is what you will do with or without me, so let us go there together my friend.~ GOTO quest4
 END
@@ -774,7 +774,7 @@ IF ~~ THEN BEGIN quest5
 =
 ~If we can find this prophet and get him to return, at least these people will have the chance to live in their beliefs and maybe more will follow.~
 =
-~There Otho, I said <CHARNAME> would aid you. If this prophet of yours is in Candlekeep, we will find him for you. You have Dar�s word on that.~
+~There Otho, I said <CHARNAME> would aid you. If this prophet of yours is in Candlekeep, we will find him for you. You have Dar's word on that.~
 	IF ~~ THEN EXTERN ~OTHO~ 8
 END
 
@@ -817,7 +817,7 @@ IF ~~ THEN BEGIN quest9
 END
 
 IF ~~ THEN BEGIN quest10
-  SAY ~Any who are suffering or are oppressed are Ilmater�s concern <CHARNAME>, and because of  that, it also makes them my concern.~
+  SAY ~Any who are suffering or are oppressed are Ilmater's concern <CHARNAME>, and because of  that, it also makes them my concern.~
 =
 ~I will not dishonour my god nor myself by ignoring the plight of these people. I ask you, will you not help me to help them?~
 	IF ~~ THEN REPLY ~You have heard my decision Dar, if you cannot abide by it then you should leave!~ GOTO quest7
@@ -1006,7 +1006,7 @@ IF ~~ THEN BEGIN quest28
 END
 
 IF ~~ THEN BEGIN quest29
-  SAY ~Then our paths must divide here <CHARNAME>. Ilmater�s teachings are too strong in me to forsake these desperate people, I wish you luck and hope you find your Imoen soon. Farewell friend <CHARNAME>.~
+  SAY ~Then our paths must divide here <CHARNAME>. Ilmater's teachings are too strong in me to forsake these desperate people, I wish you luck and hope you find your Imoen soon. Farewell friend <CHARNAME>.~
   IF ~~ THEN DO ~SetGlobal("VP_Dar_Quest","GLOBAL",88)
 DestroyItem("DARCHAIN")  // Plate Mail +5
 DestroyItem("AMULILM")  // Ilmater Holy Symbol
@@ -1113,7 +1113,7 @@ Global("VP_DrBook_Found","GLOBAL",1)~ THEN BEGIN darbook1
  		IF ~~ THEN REPLY ~Contain your jubilance a little longer my friend, it is a long road back to the settlement, but you are right ... we should start immediately.~ GOTO darbook2
  		IF ~~ THEN REPLY ~My priority now is to find Imoen. I will not leave her in the clutches Irenicus any longer ... my conscience will not allow it, but we will return to the settlement once she is found. You have my word Dar.~ GOTO darbook3
  		IF ~~ THEN REPLY ~I have delayed my search for Imoen long enough Dar. Her trail will lead me to the wizard Irenicus and when I have dealt with him, then and only then will we return to the settlement.~ GOTO darbook3
- 		IF ~~ THEN REPLY ~This book is too valuable to give to a bunch of misfits and half breeds and besides ... I don�t have the time to travel back to the settlement. I say we just sell the thing and be done with it.~ GOTO darbook9
+ 		IF ~~ THEN REPLY ~This book is too valuable to give to a bunch of misfits and half breeds and besides ... I don't have the time to travel back to the settlement. I say we just sell the thing and be done with it.~ GOTO darbook9
 END
 								
 IF ~~ THEN BEGIN darbook2
@@ -1129,14 +1129,14 @@ IF ~~ THEN BEGIN darbook3
   SAY ~I understand your concern and of course you have delayed your search long enough. Please, if you will not accompany me, at least let me take the book to Otho and his people.~
  		IF ~~ THEN REPLY ~As you wish Dar, you have been a stalwart companion and I will be sorry to lose you but you must do what you feel is right. Let me wish you safe journey and hope that someday our paths will cross again. Farewell my friend.~ GOTO darbook4
  		IF ~~ THEN REPLY ~I had hoped that you would continue with me in my search, but if you feel your duty to Ilmater takes you in another direction please, take the book and let me wish you safe journey. Good luck and farewell my friend.~ GOTO darbook4
- 		IF ~~ THEN REPLY ~Please Dar, won�t you reconsider and trust me a little longer? I have come to rely on your aid and more important to know you as a friend. You have my promise that once we have found Imoen, we will return to Otho and his people.~ GOTO darbook5
+ 		IF ~~ THEN REPLY ~Please Dar, won't you reconsider and trust me a little longer? I have come to rely on your aid and more important to know you as a friend. You have my promise that once we have found Imoen, we will return to Otho and his people.~ GOTO darbook5
  		IF ~~ THEN REPLY ~I thought I could rely on you to aid me, but I see I was wrong. If you feel you owe those misfits more than you owe me then go, but the book stays with me.~ GOTO darbook8
  		IF ~~ THEN REPLY ~I said we will return to the settlement when I have found Imoen and dealt with Irenicus! Until that time the book stays with me.~ GOTO darbook8
  		IF ~~ THEN REPLY ~Stalwart companions such as yourself are hard to find Dar and I do not wish to lose so valuable a friend. If you are determined to return to Otho, then we shall do it together. Hrothgar has said that Imoen will be found and I trust in his words enough to delay my search a while longer.~ GOTO darbook2
 END
 
 IF ~~ THEN BEGIN darbook4
-  SAY ~Thank you <CHARNAME> and if it is Ilmater�s will we shall meet again, but if his will is that I should guide Otho and his people, then that is where you will find me if you ever have need of me again.~
+  SAY ~Thank you <CHARNAME> and if it is Ilmater's will we shall meet again, but if his will is that I should guide Otho and his people, then that is where you will find me if you ever have need of me again.~
 =
 ~Dar will not forget that it was <CHARNAME> who befriended, and brought him to his new and better life.~
 =
@@ -1209,7 +1209,7 @@ IF ~~ THEN BEGIN quest42
 END
 
 IF ~~ THEN BEGIN quest43
-  SAY ~Do not lose heart so easily Otho. We haven�t brought Bardo back to you but we do have the wisdom he was seeking.~
+  SAY ~Do not lose heart so easily Otho. We haven't brought Bardo back to you but we do have the wisdom he was seeking.~
 =
 ~With the help of this book, you will teach your people and then in turn they will teach others. You have a great and important task ahead of you Otho.~
 =
@@ -1268,7 +1268,7 @@ ReputationInc(1)~ EXIT
 END
 
 IF ~~ THEN BEGIN darbook47
-  SAY ~Thank you <CHARNAME> and if it is Ilmater�s will we shall meet again, but if his will is that I should guide Otho and his people, then that is where you will find me if you ever have need of me again.~
+  SAY ~Thank you <CHARNAME> and if it is Ilmater's will we shall meet again, but if his will is that I should guide Otho and his people, then that is where you will find me if you ever have need of me again.~
 =
 ~Dar will not forget that it was <CHARNAME> who befriended, and brought him to his new and better life.~
 =
@@ -1320,7 +1320,7 @@ END
 IF ~~ THEN BEGIN darkeld4
 	SAY ~I have no illusions about my appearance, I know I am repulsive to the female eye.~
 =
-~It�s probably true also that no female orc would give me a second glance because of the human traits that are etched so clearly in my features.~
+~It's probably true also that no female orc would give me a second glance because of the human traits that are etched so clearly in my features.~
 =
 ~So tell me Keldorn, what hope is there of a woman taking the time to look into my heart if she can not bear to look me in the eye?~
   IF ~~ THEN EXTERN ~KELDORJ~ darkeld4

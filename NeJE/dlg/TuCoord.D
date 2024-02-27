@@ -52,7 +52,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",2)~ THEN BEGIN 9
 END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",3)~ THEN BEGIN 10
-  SAY ~The college of *Abjuration* specialises in learning spells that counter magic effects. There are three general types of abjuration spells... they are, *protective*, *dispelling* and *dismissal* . Protection spells come in three types... protection from creatures, from weapons and protection from magic itself.  Dispelling will remove many magical effects present and dismissal will remove certain creatures at the casters discretion. Very useful tactics when in combat I�m sure you will agree.~
+  SAY ~The college of *Abjuration* specialises in learning spells that counter magic effects. There are three general types of abjuration spells... they are, *protective*, *dispelling* and *dismissal* . Protection spells come in three types... protection from creatures, from weapons and protection from magic itself.  Dispelling will remove many magical effects present and dismissal will remove certain creatures at the casters discretion. Very useful tactics when in combat I'm sure you will agree.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",4)~ EXIT
 END
 
@@ -112,7 +112,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",10)~ THEN BEGIN 21
 END
 
 IF ~~ THEN BEGIN 22
-  SAY ~First there are the *enchantment* spells which invest non-living objects with magical powers. Then there are the *charm* spells which influence and control a creature�s behaviour by altering its  mental or emotional state... obviously, these spells have no effect on creatures that are mindless or undead. Also elves have a high innate resistance to this type of magic.~
+  SAY ~First there are the *enchantment* spells which invest non-living objects with magical powers. Then there are the *charm* spells which influence and control a creature's behaviour by altering its  mental or emotional state... obviously, these spells have no effect on creatures that are mindless or undead. Also elves have a high innate resistance to this type of magic.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",11)~ EXIT
 END
 
@@ -127,7 +127,7 @@ IF ~~ THEN BEGIN 24
 END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",12)~ THEN BEGIN 25
-  SAY ~This is the symbol of the *Temporal* college which concerns spells that control the flow of time. There isn�t a lot I can say about the spells of this college, but I will say, be careful when using these spells, lest you suddenly find the years have slipped away quicker than you would like.~
+  SAY ~This is the symbol of the *Temporal* college which concerns spells that control the flow of time. There isn't a lot I can say about the spells of this college, but I will say, be careful when using these spells, lest you suddenly find the years have slipped away quicker than you would like.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",13)~ EXIT
 END
 

@@ -21,13 +21,13 @@ IF ~~ THEN BEGIN 2
   SAY ~Me a tutor. Now why should I take on such a thankless task as teaching? The mere idea fills me with a sense of dread. With so many absent, this is only one of such tasks that have fallen upon me. It is not my place to refuse, no matter how tiresome I find them.~
   IF ~~ THEN REPLY ~Then what may I ask is it that you do here?~ JOURNAL ~Meeting Xan.
 
-I couldn�t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn�t bring him any joy.~ GOTO 3
+I couldn't believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn't bring him any joy.~ GOTO 3
   IF ~~ THEN REPLY ~So, if not tutor than you must be a pupil. Is that correct?~ JOURNAL ~Meeting Xan.
 
-I couldn�t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn�t bring him any joy.~ GOTO 3
+I couldn't believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn't bring him any joy.~ GOTO 3
   IF ~~ THEN REPLY ~(*As will most things, Xan!*) Ah, then you must be a student, Xan?~ JOURNAL ~Meeting Xan.
 
-I couldn�t believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn�t bring him any joy.~ GOTO 3
+I couldn't believe my eyes! Who should I run into but none other than Xan... Xan the enchanter whom I freed from Nashkiel mines. I know elves live long lives but it still came as a shock to see him standing in front of me. It would seem that the Xan of the past is much the same as the Xan of the future... and I was always of the opinion that some event in his past had caused his depressive outlook on life. Now I see Xan has always been... Xan. It appears that even his time here as a young enchanter doesn't bring him any joy.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
@@ -108,15 +108,15 @@ NumTimesTalkedToGT(0)~ THEN BEGIN 12
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well met, Xan, so this is one of those hapless task thrust upon you is it?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well then, tell me, what it is an ability test?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Can you tell me why such a test is necessary?~ GOTO 13
-  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa�s students?~ GOTO 13
+  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa's students?~ GOTO 13
   IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~I know my capabilities and I do not need a  test to prove myself to you or anyone else.~ GOTO 13
-  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that�s our Xan!*) Ahem... I�ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 13
+  IF ~Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that's our Xan!*) Ahem... I'll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 13
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well met, Xan, so this is one of those hapless task thrust upon you is it?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Well then, tell me, what it is an ability test?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~Can you tell me why such a test is necessary?~ GOTO 43
-  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa�s students?~ GOTO 43
+  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~This test, Xan, is it compulsory for all Halruaa's students?~ GOTO 43
   IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~I know my capabilities and I do not need a  test to prove myself to you or anyone else.~ GOTO 43
-  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that�s our Xan!*) Ahem... I�ll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 43
+  IF ~!Global("VP_Halruaa_Tests","GLOBAL",0)~ THEN REPLY ~(*Ever the pessimist, that's our Xan!*) Ahem... I'll try not to take up too much of your time Xan, but you said something about conducting the ability tests?~ GOTO 43
 END
 
 IF ~~ THEN BEGIN 13
@@ -190,13 +190,13 @@ Kit(Player1,MAGESCHOOL_INVOKER)~ THEN REPLY ~I do not have the required spells i
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic is a great believer in fate and destiny, he therefore feels competent to take your test.~ EXTERN ~TAFFICJ~ xantest1
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, can�t you just see the pride you�ll bring to ma Jansen�s eyes when you tell her you�ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
+!Dead("Jan")~ THEN REPLY ~Jan, can't you just see the pride you'll bring to ma Jansen's eyes when you tell her you've attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin don�t glare at Xan, please, he doesn�t know you and you are not supposed to know him. I just know that I am going to regret asking this, especially as your intellect is way above his, but could you, would you please put whatever you are feeling aside and take this infantile test of his? Please, a few minutes of your time is all that I am asking.~ EXTERN ~EDWINJ~ NEJ192
+!Dead("Edwin")~ THEN REPLY ~Edwin don't glare at Xan, please, he doesn't know you and you are not supposed to know him. I just know that I am going to regret asking this, especially as your intellect is way above his, but could you, would you please put whatever you are feeling aside and take this infantile test of his? Please, a few minutes of your time is all that I am asking.~ EXTERN ~EDWINJ~ NEJ192
 END
 
 IF ~~ THEN BEGIN 23
-  SAY ~You are prepared, well I never! You do amaze me, so many come here unprepared and expecting to be given time to learn their spells. It�s very depressing at times to discover how little students do learn whilst here and yet they still expect to pass their exams. I tell you, ours is a hapless task. Now where was I... oh yes... you may proceed when ready.~
+  SAY ~You are prepared, well I never! You do amaze me, so many come here unprepared and expecting to be given time to learn their spells. It's very depressing at times to discover how little students do learn whilst here and yet they still expect to pass their exams. I tell you, ours is a hapless task. Now where was I... oh yes... you may proceed when ready.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",1)
 RealSetGlobalTimer("VP_Xan_Tests","GLOBAL",360)~ EXIT
 END //=> Test 1: To charm Sharia
@@ -286,7 +286,7 @@ IF WEIGHT #2 ~Global("VP_My_Test","LOCALS",2)~ THEN BEGIN 33
 IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic is a great believer in fate and destiny, he therefore feels competent to take your test.~ EXTERN ~TAFFICJ~ xantest1
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, can�t you just see the pride you�ll bring to ma Jansen�s eyes when you tell her you�ve attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
+!Dead("Jan")~ THEN REPLY ~Jan, can't you just see the pride you'll bring to ma Jansen's eyes when you tell her you've attended a  renown magic academy and passed their exam?~ EXTERN ~JANJ~ NEJ193
 END
 
 IF ~~ THEN BEGIN 34
@@ -385,7 +385,7 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY ~Come, Xan, who will know i
 END
 
 IF ~~ THEN BEGIN 37
-  SAY ~I am instructed to allow students only one attempt at these tasks. I am sorry but I don�t make the rules, I only follow them. You should now return to your studies as it will be while before a tutor will be available to assess you again, as for myself, I have other thankless tasks I must see to. Good day.~
+  SAY ~I am instructed to allow students only one attempt at these tasks. I am sorry but I don't make the rules, I only follow them. You should now return to your studies as it will be while before a tutor will be available to assess you again, as for myself, I have other thankless tasks I must see to. Good day.~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT12")~ EXIT
@@ -556,12 +556,12 @@ Global("VP_Taffic_EnchQuest","GLOBAL",0)~ THEN REPLY #7932 DO ~SetGlobal("VP_My_
 END
 
 IF ~~ THEN BEGIN 43
-  SAY ~You�ll have to excuse me but it always amazes me when someone feels they�ve actually learnt enough in this hapless place to pass an examination.~
+  SAY ~You'll have to excuse me but it always amazes me when someone feels they've actually learnt enough in this hapless place to pass an examination.~
   IF ~~ THEN GOTO 44
 END
 
 IF ~~ THEN BEGIN 44
-  SAY ~Now I�ll explain your tasks which let me quickly say were not set by myself. Around 	here I just do as I am told.~
+  SAY ~Now I'll explain your tasks which let me quickly say were not set by myself. Around 	here I just do as I am told.~
   IF ~~ THEN GOTO 20
 END
 
@@ -571,12 +571,12 @@ IF ~~ THEN BEGIN 45
 END
 
 IF ~~ THEN BEGIN 46
-  SAY ~(*Sighs*) Oh well, I can�t say that I am surprised, I blame the tutors lack of discipline. There was a time that when a student presented himself for an assessment, he was committed to taking it.~
+  SAY ~(*Sighs*) Oh well, I can't say that I am surprised, I blame the tutors lack of discipline. There was a time that when a student presented himself for an assessment, he was committed to taking it.~
   IF ~~ THEN GOTO 47
 END
 
 IF ~~ THEN BEGIN 47
-  SAY ~Nowadays the student gets to decide after the test is announced, it�s no wonder the standards of passes are dropping and of course the oppressive atmosphere that continually hangs over this place doesn�t help or inspire the students.~
+  SAY ~Nowadays the student gets to decide after the test is announced, it's no wonder the standards of passes are dropping and of course the oppressive atmosphere that continually hangs over this place doesn't help or inspire the students.~
   IF ~~ THEN GOTO 48
 END
 

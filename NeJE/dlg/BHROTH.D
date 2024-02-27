@@ -82,7 +82,7 @@ IF ~~ THEN BEGIN 13
   IF ~~ THEN REPLY ~Why do you always do that Hrothgar!? Answer my question with one of your own?~ GOTO 15
   IF ~~ THEN REPLY ~Are you really interested in hearing what rumour says or is this just another way to avoid my questions?~ GOTO 15
   IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15									
-  IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse�s mouth so as to speak!~ GOTO 16
+  IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse's mouth so as to speak!~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 14
@@ -90,7 +90,7 @@ IF ~~ THEN BEGIN 14
   IF ~~ THEN REPLY ~Why do you always do that Hrothgar!? Answer my question with one of your own?~ GOTO 15
   IF ~~ THEN REPLY ~Are you really interested in hearing what rumour says or is this just another way to avoid my questions?~ GOTO 15
   IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15									
-  IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse�s mouth so as to speak!~ GOTO 16
+  IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse's mouth so as to speak!~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 15
@@ -204,7 +204,7 @@ IF ~~ THEN BEGIN 30
 END
 
 IF ~~ THEN BEGIN 31
-  SAY ~No <CHARNAME>, that is not the way of the druids! They believe in the circle of life and that all things must eventually make way for that which is yet to be born or reborn. It would not have been Arundel�s way and that is what we had to respect. Even so, for a second as he died, there was something, something I felt I should understand, something Arundel expected me to understand. No matter if it is within me, I am sure it will come, I just need some time to think. Quiet time <CHARNAME>, and I cannot see us getting a lot of that for a long while yet. Let us dwell on it no more for the time being.~ [HROT_322]
+  SAY ~No <CHARNAME>, that is not the way of the druids! They believe in the circle of life and that all things must eventually make way for that which is yet to be born or reborn. It would not have been Arundel's way and that is what we had to respect. Even so, for a second as he died, there was something, something I felt I should understand, something Arundel expected me to understand. No matter if it is within me, I am sure it will come, I just need some time to think. Quiet time <CHARNAME>, and I cannot see us getting a lot of that for a long while yet. Let us dwell on it no more for the time being.~ [HROT_322]
   IF ~~ THEN EXIT
 END
 
@@ -274,7 +274,7 @@ IF ~~ THEN BEGIN 44
 END
 
 IF ~~ THEN BEGIN 45
-  SAY ~You do not have to justify your faith to me Accalia. I have seen the look that leaps to your eyes when you hear of the need to take up the fight in Tempus�s name, and I have also seen the disappointment come into them when you learn that it is not Tempus�s will that you should join the rest of the faithful in battle.~
+  SAY ~You do not have to justify your faith to me Accalia. I have seen the look that leaps to your eyes when you hear of the need to take up the fight in Tempus's name, and I have also seen the disappointment come into them when you learn that it is not Tempus's will that you should join the rest of the faithful in battle.~
   IF ~~ THEN EXTERN ~BACCALI~ 18
 END
 
@@ -322,7 +322,7 @@ IF ~Global("VP_BPC","LOCALS",2)~ THEN BEGIN 53
 END
 
 IF ~~ THEN BEGIN 54
-  SAY ~I haven�t mentioned it because it involves you telling me a little of the future. All I ask of you is to tell me whether all this running around is a necessary part of this mission or could we reach our goal quicker by going down another path?~
+  SAY ~I haven't mentioned it because it involves you telling me a little of the future. All I ask of you is to tell me whether all this running around is a necessary part of this mission or could we reach our goal quicker by going down another path?~
   IF ~InParty("Jaheira")
 !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ465
   IF ~OR(2)
@@ -330,7 +330,7 @@ IF ~~ THEN BEGIN 54
 Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
   IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn�t anything I can tell you.~ GOTO 58
+Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
   IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
@@ -339,16 +339,16 @@ END
 IF ~~ THEN BEGIN 55
   SAY ~Jaheira is right of course and that is why it has taken me so long to ask the question, but I am becoming anxious that time may be running out for Kuldahar.~
   IF ~~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
-  IF ~~ THEN REPLY ~I know you are worried for Kuldahar, but there isn�t anything I can tell you.~ GOTO 58
+  IF ~~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
   IF ~~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
 END
 
 IF ~~ THEN BEGIN 56
-  SAY ~You don�t know, how can you not know? You come all this way from the future, say that you know of me, but not what it is you know!~
-  IF ~~ THEN REPLY ~Yes I know you and of your bid to help Kuldahar, but what was and what wasn�t necessary during your attempt, I have no idea.~ GOTO 57
-  IF ~~ THEN REPLY ~The story is vague in my mind Hrothgar, I never listened that closely to Gorion�s tales.~ GOTO 57
-  IF ~~ THEN REPLY ~I found Gorion�s stories of the old glory days boring, so I usually only caught the beginnings and the ends of his tales.~ GOTO 57
-  IF ~~ THEN REPLY ~I do know the outcome of your mission Hrothgar, but I am not about to risk my own future by telling you. So don�t ask me again or I will leave you to sort this mess alone.~ GOTO 57
+  SAY ~You don't know, how can you not know? You come all this way from the future, say that you know of me, but not what it is you know!~
+  IF ~~ THEN REPLY ~Yes I know you and of your bid to help Kuldahar, but what was and what wasn't necessary during your attempt, I have no idea.~ GOTO 57
+  IF ~~ THEN REPLY ~The story is vague in my mind Hrothgar, I never listened that closely to Gorion's tales.~ GOTO 57
+  IF ~~ THEN REPLY ~I found Gorion's stories of the old glory days boring, so I usually only caught the beginnings and the ends of his tales.~ GOTO 57
+  IF ~~ THEN REPLY ~I do know the outcome of your mission Hrothgar, but I am not about to risk my own future by telling you. So don't ask me again or I will leave you to sort this mess alone.~ GOTO 57
 END
 
 IF ~~ THEN BEGIN 57
@@ -357,11 +357,11 @@ IF ~~ THEN BEGIN 57
 END
 
 IF ~~ THEN BEGIN 58
-  SAY ~It�s not for myself that I am afraid. I have no wish to know whether my own life will be forfeit in this mission, but I am afraid for Kuldahar and maybe Easthaven itself should this evil decide to stretch its hand out in its direction. Please <CHARNAME>, you have to tell me, will Kuldahar fall?~
+  SAY ~It's not for myself that I am afraid. I have no wish to know whether my own life will be forfeit in this mission, but I am afraid for Kuldahar and maybe Easthaven itself should this evil decide to stretch its hand out in its direction. Please <CHARNAME>, you have to tell me, will Kuldahar fall?~
   IF ~~ THEN REPLY ~I am sorry Hrothgar, but it is not for me to say.~ GOTO 59
   IF ~~ THEN REPLY ~I do not have to tell you anything, and as I have already said that I am not going to, you can stop badgering me!~ GOTO 59
   IF ~~ THEN REPLY ~If I tell you anything Hrothgar, then there is the risk that the future I know and hope to get back to one day will not be there for me to return to.~ GOTO 59
-  IF ~~ THEN REPLY ~I do know the outcome of your mission Hrothgar, but I am not about to risk my own future by telling you. So don�t ask me again or I will leave you to sort this mess alone.~ GOTO 59
+  IF ~~ THEN REPLY ~I do know the outcome of your mission Hrothgar, but I am not about to risk my own future by telling you. So don't ask me again or I will leave you to sort this mess alone.~ GOTO 59
 END
 
 IF ~~ THEN BEGIN 59
@@ -383,7 +383,7 @@ IF ~~ THEN BEGIN 61
 Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
   IF ~OR(2)
 !InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn�t anything I can tell you.~ GOTO 58
+Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
   IF ~OR(2)
 !InParty("Jaheira")
 Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
@@ -450,7 +450,7 @@ IF ~~ THEN BEGIN 73
 END
 
 IF ~~ THEN BEGIN 74
-  SAY ~Your willingness to trust me comes from your faith in your god. Whereas these people have been abused and used barbarically. Then to find themselves thrown back in time, and in the company of a man who they know has more answers than he is prepared to give. I think their grounds for suspicion is well founded don�t you?~
+  SAY ~Your willingness to trust me comes from your faith in your god. Whereas these people have been abused and used barbarically. Then to find themselves thrown back in time, and in the company of a man who they know has more answers than he is prepared to give. I think their grounds for suspicion is well founded don't you?~
   IF ~~ THEN EXTERN ~BACCALI~ 23
 END
 
@@ -466,17 +466,17 @@ SetGlobal("VP_Astrolabe_Talks","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 77
-  SAY ~(*Smiles*) You ask that question in such a way that you wouldn�t be surprised to hear that I do Accalia.~
+  SAY ~(*Smiles*) You ask that question in such a way that you wouldn't be surprised to hear that I do Accalia.~
   IF ~~ THEN EXTERN ~BACCALI~ 47
 END
 
 IF ~~ THEN BEGIN 78
-  SAY ~Astrolabes are I believe devices more commonly used to study the skies, or to be more accurate, the moon and the stars. Just the sort of thing you would expect to find in a wizard�s tower. However, I have no idea as to whether they can transport a body through time, and I am guessing that was to be your next question.~
+  SAY ~Astrolabes are I believe devices more commonly used to study the skies, or to be more accurate, the moon and the stars. Just the sort of thing you would expect to find in a wizard's tower. However, I have no idea as to whether they can transport a body through time, and I am guessing that was to be your next question.~
   IF ~~ THEN EXTERN ~BACCALI~ 48
 END
 
 IF ~~ THEN BEGIN 79
-  SAY ~Yes, you are almost certainly right Accalia. I know if I were in <CHARNAME>�s place, then that is what I would be thinking.~
+  SAY ~Yes, you are almost certainly right Accalia. I know if I were in <CHARNAME>'s place, then that is what I would be thinking.~
   IF ~~ THEN EXTERN ~BACCALI~ 49
 END
 
@@ -486,12 +486,12 @@ IF ~~ THEN BEGIN 80
 END
 
 IF ~~ THEN BEGIN 81
-  SAY ~Then I will remind <CHARNAME> of the responsibility that comes with giving one�s word and of the responsibility that comes when that word is broken, but ultimately the decision will be between <CHARNAME> and <PRO_HISHER> conscience.~
+  SAY ~Then I will remind <CHARNAME> of the responsibility that comes with giving one's word and of the responsibility that comes when that word is broken, but ultimately the decision will be between <CHARNAME> and <PRO_HISHER> conscience.~
   IF ~~ THEN EXTERN ~BACCALI~ 51
 END
 
 IF ~~ THEN BEGIN 82
-  SAY ~Right. There is too much at stake to force a confrontation with <CHARNAME>, more than you can imagine Accalia. Just trust me when I say <CHARNAME>�s destiny is such that it is imperative that <PRO_HESHE> makes it back to the future. Please I can explain no more so please don�t ask me.~
+  SAY ~Right. There is too much at stake to force a confrontation with <CHARNAME>, more than you can imagine Accalia. Just trust me when I say <CHARNAME>'s destiny is such that it is imperative that <PRO_HESHE> makes it back to the future. Please I can explain no more so please don't ask me.~
   IF ~~ THEN EXTERN ~BACCALI~ 52
 END
 
@@ -522,13 +522,13 @@ InParty("Taffic")~ THEN EXTERN ~BMELORA~ 56
 END
 
 IF ~~ THEN BEGIN 85
-  SAY ~Well, I must say it has been a while since I�ve kicked up my heels, but if the lady insists... just give me lots of space Leina.~
+  SAY ~Well, I must say it has been a while since I've kicked up my heels, but if the lady insists... just give me lots of space Leina.~
   IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina24a
 	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina24a
 END
 
 IF ~~ THEN BEGIN 86
-  SAY ~I couldn�t agree with you more Leina.~
+  SAY ~I couldn't agree with you more Leina.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest2
 	IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ140
@@ -580,7 +580,7 @@ IF ~~ THEN BEGIN LeiDear2
 END
 
 IF ~~ THEN BEGIN LeiDear3
-	SAY ~(*Looking at Leina as if she is a little girl up to some prank, he lowers his voice*) Leina just because I lived 100 yrs ago doesn�t mean we lived in caves!~
+	SAY ~(*Looking at Leina as if she is a little girl up to some prank, he lowers his voice*) Leina just because I lived 100 yrs ago doesn't mean we lived in caves!~
 	IF ~~ THEN GOTO LeiDear3a
 END
 
@@ -632,16 +632,16 @@ IF ~~ THEN BEGIN LeiSpher2
 END
 
 IF ~~ THEN BEGIN LeiTheat
-  SAY ~I�m thinking we are going to hear this idea whether we want to or not, so go on, <CHARNAME>, tell us what you have in mind.~
+  SAY ~I'm thinking we are going to hear this idea whether we want to or not, so go on, <CHARNAME>, tell us what you have in mind.~
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -654,13 +654,13 @@ IF ~~ THEN BEGIN LeiThea3
   SAY ~(*Laughs heartily*) How little you know Leina my friend!~
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -673,13 +673,13 @@ IF ~~ THEN BEGIN LeiThea4
   SAY ~(*Laughing to himself*) I am not sure who will be getting who, but it will be fun to observe.~
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -689,7 +689,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~(*He looks towards Leina. She quickly winks at him and turns again to Samuel*) Well, I never... If I didn�t know better, I�d say that young lady is playing with us!~
+  SAY ~(*He looks towards Leina. She quickly winks at him and turns again to Samuel*) Well, I never... If I didn't know better, I'd say that young lady is playing with us!~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1

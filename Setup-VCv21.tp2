@@ -129,10 +129,10 @@ STRING_SET ~Aerie, should you be willing, we would appreciate a cleric/mage with
 
 //Substitute the following strings in VULOVA.DLG
 //35101
-STRING_SET ~My... options... ? Please! Please don�t kill me! I have a wife and two... ~ ~My... options... ?~
+STRING_SET ~My... options... ? Please! Please don't kill me! I have a wife and two... ~ ~My... options... ?~
 
 //Substitute the following strings in Bodhi's dialogue
-STRING_SET 22111 ~Well done. I trust you gave no mercy to Vulova? Did you enjoy the task? Yes, I�m sure you did. Now, on to more important things.~
+STRING_SET 22111 ~Well done. I trust you gave no mercy to Vulova? Did you enjoy the task? Yes, I'm sure you did. Now, on to more important things.~
 STRING_SET 22119 ~You have returned. My informants have kept me updated. You failed to kill Vulova. You displayed mercy, a crippling attribute for a killer. Well, no matter.~
 STRING_SET 22050 ~Choose; they cannot both be done. One is... unseemly, so if you claim to be 'good' you should choose the second, a sickly hero's task. However, if you are seeking an audience with Senior Armagaran Vulova, you should choose the first one. Which do you prefer?~
 STRING_SET 62124 ~Third Path. Aran Linvail, the Shadowmaster of the Shadow Thieves in Athkatla, is dead.  Now I must find another way to get to Imoen.~
@@ -7269,7 +7269,7 @@ END
 /////DO NOTHING/////////
 END
 
-//Update for Aec�Letec
+//Update for Aec'Letec
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~
  THEN BEGIN
     COPY_EXISTING ~TANAR.CRE~ ~override~
@@ -7293,8 +7293,8 @@ COPY ~NeJE/bdash/BGTComp/itm/VPSword.itm~           ~override~
 
 STATISTICS:
 
-Each hit lowers opponents� Magic Resistance by 5%
-Each hit applies a penalty of -1 to opponents� AC
+Each hit lowers opponents' Magic Resistance by 5%
+Each hit applies a penalty of -1 to opponents' AC
 
 THAC0: +2 bonus
 Damage: 1D8 + 2
@@ -7456,7 +7456,7 @@ REPLACE ~txtwar2~ ~Not burdened by slow moving troops, your party reaches Esmelt
 COPY ~NeJE/KeldornR/screens/SCRTXT65.2da~ ~override~
 REPLACE ~txtorm~ ~You call to the gods, one by one, but get no answer. Handsome Torm was shaking his head sympathetically, Tyr's dispassionate face glanced at you with empty eye sockets, you caught a quick glimpse of Mystra's back, Lathander shrugged his shoulders guiltily... not one of them came to your aid. You take Cyric's ring... IT WILL DESTROY YOU! - Keldorn's words echo in your ears! Not without good reason did he beg you not to don the ring, but now, now he is lying motionless, barely breathing. As you watch his features contorting, you realize that soon, only one God will be able to aid you. Kelemvor... cold and indifferent Kelemvor. You decide that there's no chance to persuade Kelemvor. You feel Cyric's ring burning into your hand and preparing for the worst you put it on.
 
-It's getting dark in front of your eyes, you can't breathe, your heart stops beating. Suddenly you feel yourself being torn, no more of a feeling that your very being is splitting in two. You watch, as a spectator as your human essence, your soul leaves the body, and as you watch once again Keldorn's words echo through your mind but it is too late. The ring is on the finger of the body which is no longer under your control. With a cruel and murderous scream, you kill all your group members. Suddenly, a voice echoing behind you �GET THEE HENCE TO THE PLACE OF NO RETURN�!~ [letgo]
+It's getting dark in front of your eyes, you can't breathe, your heart stops beating. Suddenly you feel yourself being torn, no more of a feeling that your very being is splitting in two. You watch, as a spectator as your human essence, your soul leaves the body, and as you watch once again Keldorn's words echo through your mind but it is too late. The ring is on the finger of the body which is no longer under your control. With a cruel and murderous scream, you kill all your group members. Suddenly, a voice echoing behind you 'GET THEE HENCE TO THE PLACE OF NO RETURN'!~ [letgo]
 
 COPY ~NeJE/KeldornR/screens/SCRTXT66.2da~ ~override~
 REPLACE ~txtwar3~ ~The defense of the castle continues. Seeing that Keldorn is still in charge of the defence and that their plan has failed, the enemy retreats. On day 51 the army of Amn finally reach fort Keshla and after three days fighting retook it. After three more days, cavalry reached Tobold, where wounded of fallen Esmeltaran started to arrive. The Mayor of the city sent a messenger to general Craumerdaun, and a week later, after having learnt of the fall of Esmeltaran, Craumerdaun turned the army back. Esmeltaran was also retaken. History dissembles how the general blamed himself for not listening to count Firecam, and that cost the lives of 500 volunteers of Esmeltaran.~ [theme3]
@@ -7467,11 +7467,11 @@ REPLACE ~txtwar4~ ~I had a vision: defence is breached, goblins and giants conqu
 COPY ~NeJE/KeldornR/screens/KELDORD1.2da~ ~override~
 REPLACE ~keldr01~ ~Keldorn and <CHARNAME> have returned to Esmeltaran and had their wedding shortly after. Many friends, former companions and even Elminster, were there in the old castle. Volo was composing ballads, telling about the courageous daughter of Bhaal and brisk Cespenar was serving drinks.  Yes-yes, when Keldorn had learned that the little imp was facing the perspective of spending an eternity in Abyss, he offered Cespenar a position of butler in his castle. The imp agreed gladly.
 
-<CHARNAME> hardly managed to survive through the childbirth: gods are not the ones to be born easily. When she finally recovered and their daughter Crystal had grown up a little, the Faercam family took to the road again. Keldorn remembered Kelemvor's order � to teach the young goddess about goodness and justice, this cannot be taught correctly hiding behind castle walls. They traveled through all the Faerun, length and width, they visited Kara-Tur, paid a visit to Ajantis's parents in Waterdeep. But they did come back to the castle occasionally, and on one of their visits the second child, a boy, was born. When Keldorn asked his wife how she wants to name their son, <CHARNAME> has blurted out against her will: "Gorion".
+<CHARNAME> hardly managed to survive through the childbirth: gods are not the ones to be born easily. When she finally recovered and their daughter Crystal had grown up a little, the Faercam family took to the road again. Keldorn remembered Kelemvor's order ' to teach the young goddess about goodness and justice, this cannot be taught correctly hiding behind castle walls. They traveled through all the Faerun, length and width, they visited Kara-Tur, paid a visit to Ajantis's parents in Waterdeep. But they did come back to the castle occasionally, and on one of their visits the second child, a boy, was born. When Keldorn asked his wife how she wants to name their son, <CHARNAME> has blurted out against her will: "Gorion".
 
 The years passed. And Keldorn started to feel their weight more and more. Even <CHARNAME> has noticed that she feels more comfortable sitting or lying down instead of riding her favorite horse. Her strong health had started to fail her. Self-sacrifices for Keldorn and Imoen, complicated pregnancy and birth-giving, which nearly put her in the grave, made her old much faster then they should've. Crystal became even more beautiful and strong as her father was. There is no need to say how proud Keldorn was, is there? He loved to walk through town, leaning on his thick cane with one hand and on his beautiful daughter's hand with the other.
 
-Once Crystal had entered the weaponry with Keldorn, and then reached for the Carsomyr, as she always did, without any luck though. But, this time it was different. Crystal grabbed her father's two-handed sword easily and Carsomyr illuminated her with the strangest light, which no one had seen before. In that moment Keldorn sadly understood � it is time. "You are right, paladin", - he heard a quiet answer. <CHARNAME>, who felt an affinity of parting, has come into the weaponry hasty with tears in her eyes and leaned on Keldorn's hand. Kelemvor had appeared, he offered his hand to Crystal then and they disappeared together.
+Once Crystal had entered the weaponry with Keldorn, and then reached for the Carsomyr, as she always did, without any luck though. But, this time it was different. Crystal grabbed her father's two-handed sword easily and Carsomyr illuminated her with the strangest light, which no one had seen before. In that moment Keldorn sadly understood ' it is time. "You are right, paladin", - he heard a quiet answer. <CHARNAME>, who felt an affinity of parting, has come into the weaponry hasty with tears in her eyes and leaned on Keldorn's hand. Kelemvor had appeared, he offered his hand to Crystal then and they disappeared together.
 
 But Keldorn and <CHARNAME> weren't alone for long. Kelemvor has appeared again soon and said, that in return for the good education of Crystal he grants them the right to see a new goddess. As he offered his hands, Keldorn and <CHARNAME> understood that he's taking them with him. They had not lived for long, but happily, and died on the same day.~
 
@@ -7483,15 +7483,15 @@ Caring for his son had become for Keldorn a new purpose in his life. He taught l
 Fifteen years Keldorn has spent with his son, after that Romuald grew up and his mother took him away. Without his son, Keldorn lost his taste for life. And soon he died silently.~
 
 COPY ~NeJE/KeldornR/screens/KELDORD3.2da~ ~override~
-REPLACE ~keldr03~ ~After the return, <CHARNAME> and Keldorn have had their wedding. Soon the children were born: a boy and a girl. They were named after the dead parents � Alyana and Thomas. Twins have grown up very energetic and restless, being interested in everything, including traveling and adventure. <CHARNAME> and Keldorn took their children and headed for the road. They visited Candlekeep and Gorion�s grave; they found many of their friends; they went far up north in search of Branwen; even visited Koran in Tethir�s forest. After their journey, they came back home and the children�s laughter could be heard in the old castle of Esmeltaran again.
+REPLACE ~keldr03~ ~After the return, <CHARNAME> and Keldorn have had their wedding. Soon the children were born: a boy and a girl. They were named after the dead parents ' Alyana and Thomas. Twins have grown up very energetic and restless, being interested in everything, including traveling and adventure. <CHARNAME> and Keldorn took their children and headed for the road. They visited Candlekeep and Gorion's grave; they found many of their friends; they went far up north in search of Branwen; even visited Koran in Tethir's forest. After their journey, they came back home and the children's laughter could be heard in the old castle of Esmeltaran again.
 
-Though Keldorn had officially resigned from his duty in the Order, he and his wife were often asked to help. And though their health sometimes refused them � because of their past life and old wounds from countless battles � Count and Countess Firecam always made the impression of a lively and strong couple, who loved life and each other. Alyana and Thomas got a little brother and later, a little sister.
+Though Keldorn had officially resigned from his duty in the Order, he and his wife were often asked to help. And though their health sometimes refused them ' because of their past life and old wounds from countless battles ' Count and Countess Firecam always made the impression of a lively and strong couple, who loved life and each other. Alyana and Thomas got a little brother and later, a little sister.
 
-Spending his evenings in a sitting room with his wife, Keldorn thought how happy he is to have children because the Firecam family will not disappear from the face of the Earth after his death and he has the best wife, a man could have ever wanted. He was soon saddened, for he realized that the hour of parting was not far away� In one of these moments <CHARNAME> turned to Keldorn and whispered: �Don�t be afraid, I will never leave you. Mighty Kelemvor has promised that he will allow us to be together. We will never part.�
+Spending his evenings in a sitting room with his wife, Keldorn thought how happy he is to have children because the Firecam family will not disappear from the face of the Earth after his death and he has the best wife, a man could have ever wanted. He was soon saddened, for he realized that the hour of parting was not far away' In one of these moments <CHARNAME> turned to Keldorn and whispered: 'Don't be afraid, I will never leave you. Mighty Kelemvor has promised that he will allow us to be together. We will never part.'
 
-Fate has shown its mercy on Keldorn, so he managed to see his daughter Alyana get married and bless the wedding of his elder son, Thomas. The younger daughter, Lorette, has studied wizardry successfully and she was going to continue her study in Waterdeep. Marquez has followed in his father�s footsteps: he wants to be a paladin. Ryan Trawl, who has become a prelate of the Order of Radiant Heart by then, took Keldorn�s son as his squire without hesitation.
+Fate has shown its mercy on Keldorn, so he managed to see his daughter Alyana get married and bless the wedding of his elder son, Thomas. The younger daughter, Lorette, has studied wizardry successfully and she was going to continue her study in Waterdeep. Marquez has followed in his father's footsteps: he wants to be a paladin. Ryan Trawl, who has become a prelate of the Order of Radiant Heart by then, took Keldorn's son as his squire without hesitation.
 
-One winter Keldorn felt himself much worse. <CHARNAME> leaned to her husband, whispering that he should not worry because Kelemvor isn�t there yet. Keldorn saw the God of Death, who has appeared behind her back, and his heart suddenly grew smaller from suffering: Keldorn didn�t want to part with his wife. But <CHARNAME> approved that her decision to go with him remains still. They hugged each other for the last time and Kelemvor has taken them in to his eternal kingdom. They had lived long and happily, and died on the same day.~
+One winter Keldorn felt himself much worse. <CHARNAME> leaned to her husband, whispering that he should not worry because Kelemvor isn't there yet. Keldorn saw the God of Death, who has appeared behind her back, and his heart suddenly grew smaller from suffering: Keldorn didn't want to part with his wife. But <CHARNAME> approved that her decision to go with him remains still. They hugged each other for the last time and Kelemvor has taken them in to his eternal kingdom. They had lived long and happily, and died on the same day.~
 
 COPY ~NeJE/KeldornR/screens/KELDORD4.2da~ ~override~
 REPLACE ~keldr04~ ~After he said goodbye to the woman he loved, Keldorn returned to the Order of the Radiant Heart. Though evil tongues had spoken that he was unworthy to be a paladin because he had accepted Bhaal's blood, nevertheless Keldorn had replaced Wessalen at his post as the prelate for the Order. He lived in the barracks of the Order and he never stepped foot near the old house again. <CHARNAME> was visiting him and squires were questioning themselves, why do they sometimes hear a quiet woman's voice, laughing and crying, coming from the prelate's room. But nobody ever dared to speak of it, so Keldorn's reputation was never questioned. <CHARNAME> really was visiting him and telling him what was happening up there. Keldorn seemed revived after these visits, so much so, that this was fueling many rumors and gossips. There still were battles across Faerun and Keldorn took part in them. But he always managed to come out just slightly wounded or merely scratched. <CHARNAME> was always protecting him, though prolong his life she couldn't.
@@ -7548,29 +7548,29 @@ Disadvantages:
 -  May not turn undead.~
 
 COPY ~NeJE/KeldornR/cre/KELDOR8.CRE~ ~override/KELDOR8.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE  0x246 ~%REDEEMER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn�t change
+    WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/KeldornR/cre/KELDOR9.CRE~ ~override/KELDOR9.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE  0x246 ~%REDEEMER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn�t change
+    WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/KeldornR/cre/KELDOR10.CRE~ ~override/KELDOR10.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE  0x246 ~%REDEEMER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn�t change
+    WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/KeldornR/cre/KELDOR12.CRE~ ~override/KELDOR12.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE  0x246 ~%REDEEMER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn�t change
+    WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/KeldornR/cre/KELDOR14.CRE~ ~override/KELDOR14.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE  0x246 ~%REDEEMER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn�t change
+    WRITE_BYTE  0x247 0x40 // doesn't change
 
 ///////////////////////////
 //Scripts
@@ -8529,7 +8529,7 @@ COPY ~NeJEAreasSounds.bat~ ~Install_NeJEAreasSounds.bat~
 COPY ~NeJE/TS/screens/SCRTXT09.2da~ ~override~
 REPLACE ~scrtxt09~ ~NEW CHAPTER
 
-  After Saemon Havarian had finished his incantations you stood for a few minutes in expectation. The ship, ready to sail was still in Athkatla�s docks... You were about to sigh and pronounce your thanks that at least it was not frog-turning, and request refund from the sly sailor. Suddenly the crew became agitated, everyone pointing to the east. You turned and saw a gray cloud speeding across the sky straight for the "Gallante". A few of the crewmen leaped overboard. Someone behind your back whispered: "that�s how the fate looks?" and spat heartily on the deck. Then the world became one great gray fog and all you could sense is the movement of tremendous speed... But you could not distinguish the direction or count the time... Slowly you had lost your consciousness... and regained it in what seemed a short instant. The ship is riding shallow waters in a sheltered bay by a stony beach. Captain Havarian approaches you hesitantly...~ [theme3]
+  After Saemon Havarian had finished his incantations you stood for a few minutes in expectation. The ship, ready to sail was still in Athkatla's docks... You were about to sigh and pronounce your thanks that at least it was not frog-turning, and request refund from the sly sailor. Suddenly the crew became agitated, everyone pointing to the east. You turned and saw a gray cloud speeding across the sky straight for the "Gallante". A few of the crewmen leaped overboard. Someone behind your back whispered: "that's how the fate looks?" and spat heartily on the deck. Then the world became one great gray fog and all you could sense is the movement of tremendous speed... But you could not distinguish the direction or count the time... Slowly you had lost your consciousness... and regained it in what seemed a short instant. The ship is riding shallow waters in a sheltered bay by a stony beach. Captain Havarian approaches you hesitantly...~ [theme3]
 
 COPY ~NeJE/TS/screens/SCRTXT10.2da~ ~override~
 REPLACE ~scrtxt10~ ~CHAPTER FOUR
@@ -8555,21 +8555,21 @@ COPY ~NeJE/TS/toda/SIMEFND.2da~ ~override~
 REPLACE ~simefin~ ~Sime had witnessed death all around <CHARNAME> and after her adventuring with the notorious Bhaalspawn was over, she returned to Athkatla bent on never leaving the side of her father again. Her involvement with the Shadow Thieves, however, resulted in strange events, like distributing valuables of a robbed lord to the misfortunate or using Shadow Thief resources and manpower for noble causes. Because of that, Aran Linvail was eventually forced to retire. He went with Sime to a small village in Northern Amn where Sime was offered the position of ranger-protector, despite her background. Aran was so bored that he started to take interest in local politics and within a few years the community had become known as a tax haven. The bureaucrats in Athkatla had believed for years that it was just a nameless hamlet, while in fact it was a prominent trade post.  Aran stayed as mayor of the community until his death. It is not known what happened to his half-elven daughter afterwards.~
 
 COPY ~NeJE/TS/toda/SIMEND2.2da~ ~override~
-REPLACE ~sime2fin~ ~After half-a-dozen visits by Shadow Thieves� messengers it became evident to <CHARNAME> and Sime that it was time to visit Athkatla again. It was not much of a surprise to <CHARNAME> that their sojourn with Aran Linvail did not last for long. Sime took one look at her father�s plans for their wedding and that very night she convinced <CHARNAME> to elope. To lay the issue to rest they got married in the Druid�s Grove shortly after. However the marriage did not stop Sime from leading the nomadic lifestyle and together they traveled the land for many years. It is said that the couple has seen the birth of a son and a daughter, named Gorion and Imoen. Eventually the tales about <CHARNAME> and Sime became so unbelievable that one can only assume that they were no more. It is not known how and when they met their end.~
+REPLACE ~sime2fin~ ~After half-a-dozen visits by Shadow Thieves' messengers it became evident to <CHARNAME> and Sime that it was time to visit Athkatla again. It was not much of a surprise to <CHARNAME> that their sojourn with Aran Linvail did not last for long. Sime took one look at her father's plans for their wedding and that very night she convinced <CHARNAME> to elope. To lay the issue to rest they got married in the Druid's Grove shortly after. However the marriage did not stop Sime from leading the nomadic lifestyle and together they traveled the land for many years. It is said that the couple has seen the birth of a son and a daughter, named Gorion and Imoen. Eventually the tales about <CHARNAME> and Sime became so unbelievable that one can only assume that they were no more. It is not known how and when they met their end.~
 
 COPY ~NeJE/TS/toda/VALYGFND.2da~ ~override~
-REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family�s estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar�s was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
+REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family's estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar's was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
 
 COPY ~NeJE/TS/toda/VALYGND.2da~ ~override~
-REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family�s estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar�s was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
+REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family's estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar's was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
 
 COPY ~NeJE/TS/toda/VALYGND2.2da~ ~override~
-REPLACE ~val2fin~ ~Really, <CHARNAME>, it should be you writing this... For you know best what happened to your loyal friend Valygar after you rejected your place in pantheon as a Lady of Murder. Valygar traveled with <CHARNAME>, and one day their road led to a village in Zakhara. Much to Valygar�s surprise, he found that he had large family there, not a single member of which was Tainted with Corthala curse. Abyssina�s son and <CHARNAME> received a warm welcome and before they knew it the whole village turned into a carnival celebrating their marriage. Not to disappoint the gathering, Valygar and <CHARNAME> exchanged their vows in front of the village and any gods that might have been listening. They lived happily ever after and died in the same place.~
+REPLACE ~val2fin~ ~Really, <CHARNAME>, it should be you writing this... For you know best what happened to your loyal friend Valygar after you rejected your place in pantheon as a Lady of Murder. Valygar traveled with <CHARNAME>, and one day their road led to a village in Zakhara. Much to Valygar's surprise, he found that he had large family there, not a single member of which was Tainted with Corthala curse. Abyssina's son and <CHARNAME> received a warm welcome and before they knew it the whole village turned into a carnival celebrating their marriage. Not to disappoint the gathering, Valygar and <CHARNAME> exchanged their vows in front of the village and any gods that might have been listening. They lived happily ever after and died in the same place.~
 
 COPY ~NeJE/TS/toda/YOSHIMOD.2da~ ~override~
 REPLACE ~yoshifin~ ~Kachiko and Yoshimo traveled throughout Faerun for years after leaving company of <CHARNAME>. The couple were loved everywhere they went for their indomitable spirit and readiness to help anyone in need. They lived out of their backpacks and a few bags of holding for many years. Rumor has it that Yoshimo and Kachiko were agents in the service of the Harpers. Others say that they served nobody.
 
-The Hashimoto family first doubled then tripled and all of their children grew up during the endless family journey. The eldest child was called <CHARNAME> in memory of their old friend. Yoshimo and Kachiko never returned to Kozakura, the demise of their families weighed heavily on them. Eventually, they retired to Athkatla. Yoshimo now owns the "Adventurer�s Mart" and the Hashimoto�s small home in the Bridge district is full of grandchildren and all sorts of wanderers.~
+The Hashimoto family first doubled then tripled and all of their children grew up during the endless family journey. The eldest child was called <CHARNAME> in memory of their old friend. Yoshimo and Kachiko never returned to Kozakura, the demise of their families weighed heavily on them. Eventually, they retired to Athkatla. Yoshimo now owns the "Adventurer's Mart" and the Hashimoto's small home in the Bridge district is full of grandchildren and all sorts of wanderers.~
 
 //Adding NPCs to 2DA
 
@@ -8740,7 +8740,7 @@ BUT_ONLY
 
 COPY ~NeJE/TS/itm/AranRing.ITM~         ~override/AranRing.ITM~
   SAY NAME2 ~Ring of Niri Alud~
-  SAY DESC ~This blue ring engraved with an ebony figurine of a black rook was the favourite ring of Niri Alud, a conjurer from Tethyr who loved playing chess. He frequently traveled with chess sets on his numerous voyages. He wanted the ability to summon allies at a moment�s notice without giving away his intention. For that reason, he created a wide variety of chess sets of different colors and other numerous items like this ring that would summon constructed, golem-like automatons to aid him in battle. Almost all of Niri Alud�s chess sets and items were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of his possession sinks into the desert sands, then traveling through trade and theft over hundreds of miles. Treasure hunters search for the pieces still.
+  SAY DESC ~This blue ring engraved with an ebony figurine of a black rook was the favourite ring of Niri Alud, a conjurer from Tethyr who loved playing chess. He frequently traveled with chess sets on his numerous voyages. He wanted the ability to summon allies at a moment's notice without giving away his intention. For that reason, he created a wide variety of chess sets of different colors and other numerous items like this ring that would summon constructed, golem-like automatons to aid him in battle. Almost all of Niri Alud's chess sets and items were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of his possession sinks into the desert sands, then traveling through trade and theft over hundreds of miles. Treasure hunters search for the pieces still.
 
 STATISTICS:
 
@@ -8760,7 +8760,7 @@ ACTION_IF NOT FILE_EXISTS ~data/BG1ARE.BIF~
         COPY ~NeJE/TS/itm/BAG06TS.ITM~        ~override~
         COPY ~NeJE/TS/itm/AXECHAR.ITM~        ~override/AXECHAR.ITM~
               SAY NAME2 ~Charged Battle Axe +3~
-              SAY DESC ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It�s obvious a lot of time and effort went into its creation and although not apparent at first, a slight blue glow can be seen emanating from the runes.
+              SAY DESC ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation and although not apparent at first, a slight blue glow can be seen emanating from the runes.
 
 STATISTICS:
 
@@ -8786,8 +8786,8 @@ COPY ~NeJE/TS/itm/BASILG2.ITM~        ~override/BASILG2.ITM~
 COPY ~NeJE/TS/itm/BASILG3.ITM~        ~override/BASILG3.ITM~
 
 COPY ~NeJE/TS/itm/Beladona.itm~       ~override/Beladona.itm~
-   SAY NAME1 ~Suna�s Bloom~
-   SAY NAME2 ~Suna�s Bloom~
+   SAY NAME1 ~Suna's Bloom~
+   SAY NAME2 ~Suna's Bloom~
    SAY UNIDENTIFIED_DESC ~A pretty purple flower.~
    SAY DESC ~A pretty purple flower.~
 
@@ -8797,7 +8797,7 @@ COPY ~NeJE/TS/itm/BELTSTR.ITM~        ~override/BELTSTR.ITM~
 
 STATISTICS:
 
-Raises the user�s Strength to 19
+Raises the user's Strength to 19
 Only Usable By:
   Fighters (Single, Dual-, and Multi-Class)
   Rangers (Singe, Dual-, and Multi-Class)
@@ -8830,7 +8830,7 @@ COPY ~NeJE/TS/itm/Bishop.itm~         ~override/Bishop.itm~
     SAY NAME1 ~Chess Piece~
     SAY NAME2 ~White Bishop~
     SAY UNIDENTIFIED_DESC ~Chess is one of the "four universal games" (draughts, dice, and talis cards being the others).  Many believe chess to be the most challenging and intriguing of the four games.  Chess pieces and boards are often made from a wide variety of materials.  Marble, wood, and ivory are the most common materials used for the construction of chess pieces.~
-    SAY DESC ~This chess piece is a white bishop, crafted from soapstone.  It is one of the many lost pieces from the fabled Chess Sets of Niri Alud.  Niri Alud was a conjurer from Tethyr who loved playing chess.  He frequently traveled with chess sets on his numerous voyages.  He wanted the ability to summon allies at a moment�s notice without giving away his intention.  For that reason, he created a wide variety of chess sets of different colors that would summon constructed, golem-like automatons to aid him in battle.  Almost all of Niri Alud�s chess sets were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of the chess sets sink into the desert sands.  The chess sets that were taken were soon separated, pieces traveling through trade and theft over hundreds of miles.  Treasure hunters search for the pieces still.
+    SAY DESC ~This chess piece is a white bishop, crafted from soapstone.  It is one of the many lost pieces from the fabled Chess Sets of Niri Alud.  Niri Alud was a conjurer from Tethyr who loved playing chess.  He frequently traveled with chess sets on his numerous voyages.  He wanted the ability to summon allies at a moment's notice without giving away his intention.  For that reason, he created a wide variety of chess sets of different colors that would summon constructed, golem-like automatons to aid him in battle.  Almost all of Niri Alud's chess sets were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of the chess sets sink into the desert sands.  The chess sets that were taken were soon separated, pieces traveling through trade and theft over hundreds of miles.  Treasure hunters search for the pieces still.
 
 STATISTICS:
 
@@ -8871,7 +8871,7 @@ Only usable by:
 
 COPY ~NeJE/TS/itm/BLCKBOW.ITM~        ~override/BLCKBOW.ITM~
     SAY NAME2 ~The Black Bow~
-    SAY DESC ~A rough bow with a dusty appearance, the Black Bow was created as an instrument of vengeance by a Cormyrean settler in the Western Heartlands of Faerun.  A former soldier named Jonan of Suzail, after years of campaigning in the name of the crown, finally returned home to marry his childhood sweetheart.  Through all of his years in the military, he remained true to his love and saved his earnings.  He and his new wife moved west in the hopes that they would find frontier land to settle.  In the lands north of Baldur�s Gate and east of the Trollbark Forest, Jonan built his home and farm.  Within five years, there were raiders in the area, and farms were being destroyed all around Jonan�s.  Eventually, the raiders targeted Jonan�s home, killing his wife and child and leaving him for dead.  His farm was burned to the ground.  Weeks later, Jonan crafted this bow and rubbed the ashes of his farm and family into the grain of the wood.  He later went on a murderous rampage, slaying each of the bandits where he found them, and later killing anyone they associated with.  Sages debate how the bow became enchanted, but most believe that, after Jonan�s death, it was blessed by a god.  Some say it was blessed by Tyr, some say by Hoar, and others say by Bhaal.  Theories tend to revolve around whether the speaker believes Jonan�s actions were just, vengeful, or murderous.
+    SAY DESC ~A rough bow with a dusty appearance, the Black Bow was created as an instrument of vengeance by a Cormyrean settler in the Western Heartlands of Faerun.  A former soldier named Jonan of Suzail, after years of campaigning in the name of the crown, finally returned home to marry his childhood sweetheart.  Through all of his years in the military, he remained true to his love and saved his earnings.  He and his new wife moved west in the hopes that they would find frontier land to settle.  In the lands north of Baldur's Gate and east of the Trollbark Forest, Jonan built his home and farm.  Within five years, there were raiders in the area, and farms were being destroyed all around Jonan's.  Eventually, the raiders targeted Jonan's home, killing his wife and child and leaving him for dead.  His farm was burned to the ground.  Weeks later, Jonan crafted this bow and rubbed the ashes of his farm and family into the grain of the wood.  He later went on a murderous rampage, slaying each of the bandits where he found them, and later killing anyone they associated with.  Sages debate how the bow became enchanted, but most believe that, after Jonan's death, it was blessed by a god.  Some say it was blessed by Tyr, some say by Hoar, and others say by Bhaal.  Theories tend to revolve around whether the speaker believes Jonan's actions were just, vengeful, or murderous.
 
 STATISTICS:
 
@@ -8897,16 +8897,16 @@ COPY ~NeJE/TS/itm/BOOTFOR.ITM~        ~override/BOOTFOR.ITM~
 STATISTICS:
 
 Allows the wearer to cast 2 extra first and second level spells and 1 extra third level spell.
-Increases twice the wearer�s movement rate.
+Increases twice the wearer's movement rate.
 Only usable by:
  Cleric (single, dual, & multi-class)
  Druid (single, dual, & multi-class)~
 
 COPY ~NeJE/TS/itm/BoRing.ITM~         ~override/BoRing.ITM~
-    SAY NAME2 ~Edventar�s Gift~
+    SAY NAME2 ~Edventar's Gift~
 
 COPY ~NeJE/TS/itm/EDVEN.ITM~         ~override/EDVEN.ITM~
-    SAY NAME2 ~Edventar�s Gift~
+    SAY NAME2 ~Edventar's Gift~
 
 COPY ~NeJE/TS/itm/BOWHAMM.ITM~        ~override/BOWHAMM.ITM~
     SAY NAME2 ~Composite Long Bow +4: Defender~
@@ -8938,7 +8938,7 @@ COPY ~NeJE/TS/itm/ELEMKATA.ITM~       ~override/ELEMKATA.ITM~
     SAY NAME2 ~Katana +3: "Air Element"~
     SAY DESC ~Katana +3 "Air Element"
 
-One of the four elemental katanas, this katana bestows the power of Air upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one�s luck for the worse. Only those of pure heart may use the elemental katanas.
+One of the four elemental katanas, this katana bestows the power of Air upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one's luck for the worse. Only those of pure heart may use the elemental katanas.
 
 STATISTICS:
 
@@ -8971,7 +8971,7 @@ COPY ~NeJE/TS/itm/ELEMKATE.ITM~       ~override/ELEMKATE.ITM~
     SAY NAME2 ~Katana +3: "Earth Element"~
     SAY DESC ~Katana +3 "Earth Element"
 
-One of the four elemental katanas, this katana bestows the power of Earth upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one�s luck for the worse. Only those of pure heart may use the elemental katanas.
+One of the four elemental katanas, this katana bestows the power of Earth upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one's luck for the worse. Only those of pure heart may use the elemental katanas.
 
 STATISTICS:
 
@@ -9005,7 +9005,7 @@ COPY ~NeJE/TS/itm/ELEMKATF.ITM~       ~override/ELEMKATF.ITM~
     SAY NAME2 ~Katana +3: "Fire Element"~
     SAY DESC ~Katana +3 "Fire Element"
 
-One of the four elemental katanas, probably the most formidable, but at the same time, the most difficult to handle, this katana bestows the power of Fire upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one�s luck for the worse. Only those of pure heart may use the elemental katanas. In addition, this particular katana requires its owner respects the natural ballance.
+One of the four elemental katanas, probably the most formidable, but at the same time, the most difficult to handle, this katana bestows the power of Fire upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one's luck for the worse. Only those of pure heart may use the elemental katanas. In addition, this particular katana requires its owner respects the natural ballance.
 
 STATISTICS:
 
@@ -9042,7 +9042,7 @@ COPY ~NeJE/TS/itm/ELEMKATW.ITM~       ~override/ELEMKATW.ITM~
     SAY NAME2 ~Katana +3: "Water Element"~
     SAY DESC ~Katana +3 "Water Element"
 
-One of the four elemental katanas, this katana bestows the power of Water upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one�s luck for the worse. Only those of pure heart may use the elemental katanas.
+One of the four elemental katanas, this katana bestows the power of Water upon the wielder, who must respect the customs of Kara-Tur. Not doing so could drastically change one's luck for the worse. Only those of pure heart may use the elemental katanas.
 
 STATISTICS:
 
@@ -9092,7 +9092,7 @@ COPY ~NeJE/TS/itm/FanSwor2.itm~       ~override/FanSwor2.itm~
 
 COPY ~NeJE/TS/itm/GodBless.ITM~       ~override/GodBless.ITM~
     SAY NAME2 ~Ring of Holiness II~
-    SAY DESC ~Ring of Holiness II:  �God Blessing�
+    SAY DESC ~Ring of Holiness II:  'God Blessing'
 
 Rings of this type were given to the most faithful priests of Sune who demonstrated actions of astounding integrity and kindness.
 
@@ -9105,7 +9105,7 @@ Druid~
 
 COPY ~NeJE/TS/itm/HELMSUN.ITM~        ~override/HELMSUN.ITM~
     SAY NAME2 ~Selune's Laurel of Favor~
-    SAY DESC ~This wreath of laurel leaves and roses was another gift from the church of Selune to Sime�s mother. The representatives of the silver-haired goddess were well received, and the high priestess of Hanali Celanil wore the laurel whenever humans were visiting her Temple.
+    SAY DESC ~This wreath of laurel leaves and roses was another gift from the church of Selune to Sime's mother. The representatives of the silver-haired goddess were well received, and the high priestess of Hanali Celanil wore the laurel whenever humans were visiting her Temple.
 
 STATISTICS:
 
@@ -9116,8 +9116,8 @@ Usable Only By:
   Sime~
 
 COPY ~NeJE/TS/itm/KaSwor01.itm~       ~override/KaSwor01.itm~
-    SAY NAME2 ~Kachiko�s Wakizashi +3~
-    SAY DESC ~Kachiko�s Wakizashi +3
+    SAY NAME2 ~Kachiko's Wakizashi +3~
+    SAY DESC ~Kachiko's Wakizashi +3
 
 This special sword was granted to Kachiko by her father upon her ascension to adulthood.
 
@@ -9208,7 +9208,7 @@ COPY ~NeJE/TS/itm/Knight.itm~         ~override/Knight.itm~
     SAY NAME1 ~Chess Piece~
     SAY NAME2 ~Black Knight~
     SAY UNIDENTIFIED_DESC ~Chess is one of the "four universal games" (draughts, dice, and talis cards being the others).  Many believe chess to be the most challenging and intriguing of the four games.  Chess pieces and boards are often made from a wide variety of materials.  Marble, wood, and ivory are the most common materials used for the construction of chess pieces.~
-    SAY DESC ~This chess piece is a black knight, crafted from ebony.  It is one of the many lost pieces from the fabled Chess Sets of Niri Alud.  Niri Alud was a conjurer from Tethyr who loved playing chess.  He frequently traveled with chess sets on his numerous voyages.  He wanted the ability to summon allies at a moment�s notice without giving away his intention.  For that reason, he created a wide variety of chess sets of different colors that would summon constructed, golem-like automatons to aid him in battle.  Almost all of Niri Alud�s chess sets were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of the chess sets sink into the desert sands.  The chess sets that were taken were soon separated, pieces traveling through trade and theft over hundreds of miles.  Treasure hunters search for the pieces still.
+    SAY DESC ~This chess piece is a black knight, crafted from ebony.  It is one of the many lost pieces from the fabled Chess Sets of Niri Alud.  Niri Alud was a conjurer from Tethyr who loved playing chess.  He frequently traveled with chess sets on his numerous voyages.  He wanted the ability to summon allies at a moment's notice without giving away his intention.  For that reason, he created a wide variety of chess sets of different colors that would summon constructed, golem-like automatons to aid him in battle.  Almost all of Niri Alud's chess sets were lost when he was attacked by desert raiders in Calimshan.  The raiders, ignorant of the ways of magic, let most of the chess sets sink into the desert sands.  The chess sets that were taken were soon separated, pieces traveling through trade and theft over hundreds of miles.  Treasure hunters search for the pieces still.
 
 STATISTICS:
 
@@ -9217,10 +9217,10 @@ Summons a warrior-like ally to attack enemies. The Black Knight will automatical
 COPY ~NeJE/TS/itm/MASAKIIM.ITM~       ~override/MASAKIIM.ITM~
 
 COPY ~NeJE/TS/itm/MISCBSIM.ITM~       ~override/MISCBSIM.ITM~
-    SAY NAME1 ~Sime�s Body~
-    SAY NAME2 ~Sime�s Body~
-    SAY UNIDENTIFIED_DESC ~Sime was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don�t know what it would be.~
-    SAY DESC ~Sime was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don�t know what it would be.~
+    SAY NAME1 ~Sime's Body~
+    SAY NAME2 ~Sime's Body~
+    SAY UNIDENTIFIED_DESC ~Sime was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don't know what it would be.~
+    SAY DESC ~Sime was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don't know what it would be.~
 
 COPY ~NeJE/TS/itm/npchan.ITM~                     ~override/npchan.ITM~
     SAY DESC ~This armor, long in the Corthala bloodline, protects the user against many forms of attacks. The armor is finished with elven metal straps enchanted so it grants the same protections and armor class to Valygar as the full plate armor. It also adds a bonus to resisting fire and cold damage. The armor also makes Valygar immune to dragon's breath and to energy and level drain. As it is specially fitted for Valygar, few other than he may wear it.
@@ -9367,7 +9367,7 @@ Not Usable By:
  Monks~
 
 COPY ~NeJE/TS/itm/RINGED.ITM~         ~override/RINGED.ITM~
-    SAY NAME2 ~Edion�s Ring of Wizardry~
+    SAY NAME2 ~Edion's Ring of Wizardry~
     SAY DESC ~Edion, a dying necromancer from Sembia, was the recent owner of this powerful ring.  He crafted the ring himself for his private use. In his later years, he became so accustomed to wearing it that he almost never removed it. He wore it on the same finger that he would wear a wedding ring on, to symbolize his marriage to the Art.
 
 STATISTICS:
@@ -9403,7 +9403,7 @@ Only Usable By:
 
 COPY ~NeJE/TS/itm/ROGUE.ITM~          ~override/ROGUE.ITM~
     SAY NAME1 ~Hat~
-    SAY NAME2 ~Rogue�s Cowl~
+    SAY NAME2 ~Rogue's Cowl~
     SAY UNIDENTIFIED_DESC ~Magical hats may actually be almost any type of headgear.  They shrink or expand to fit any size head.  Contemporary fashion and profession often dictate the shape and style of magical hats.~
     SAY DESC ~This dark brown cowl is meant to be worn on the head and over the shoulders as a broad hood.  It was crafted by the gnomish thief and illusionist Brein Chestnut.  Brein used the cowl on his own adventures for several years before his childhood sweetheart convinced him to settle down.  He gave the cowl to his nephew, Chirchet, who in turn sold the item for a large stretch of farmland.
 
@@ -9486,13 +9486,13 @@ Usable By:
 
 COPY ~NeJE/TS/itm/SiMace1.ITM~        ~override/SiMace1.ITM~
     SAY NAME2 ~Selune's Promise~
-    SAY DESC ~A weapon once owned by a grief-stricken high priestess of the Moonmaiden, Selune�s Promise has a short and sad history. Fassa the Melancholy (as she is now known) was the head of a band of Selunite adventurers dedicated to destroying undead creatures wherever they found them. The band was initially quite successful, rarely suffering any casualties. Tymora�s luck could not stay with them forever, though.
+    SAY DESC ~A weapon once owned by a grief-stricken high priestess of the Moonmaiden, Selune's Promise has a short and sad history. Fassa the Melancholy (as she is now known) was the head of a band of Selunite adventurers dedicated to destroying undead creatures wherever they found them. The band was initially quite successful, rarely suffering any casualties. Tymora's luck could not stay with them forever, though.
 
-In 1156, Fassa and her band entered the Sepulcher of the Dim. The band knew the Sepulcher was rumored to contain a "leak" to the Negative Material Plane, but they had no idea just how many undead creations were inside. Mixed in with the seemingly harmless poltergeists and phantoms were powerful spectres and wraiths. Over a short and chillingly quiet period of several minutes, almost all of Fassa�s allies had their vital energy drained away. Fassa and her remaining companions fled and tried to form a plan of attack. When they returned on the following night, all of Fassa�s former companions had been turned into slave spectres under the control of the master. She and her few remaining comrades destroyed the master spectre and eventually destroyed the souls of her tormented brethren.  In the end, Fassa was the only one left alive.
+In 1156, Fassa and her band entered the Sepulcher of the Dim. The band knew the Sepulcher was rumored to contain a "leak" to the Negative Material Plane, but they had no idea just how many undead creations were inside. Mixed in with the seemingly harmless poltergeists and phantoms were powerful spectres and wraiths. Over a short and chillingly quiet period of several minutes, almost all of Fassa's allies had their vital energy drained away. Fassa and her remaining companions fled and tried to form a plan of attack. When they returned on the following night, all of Fassa's former companions had been turned into slave spectres under the control of the master. She and her few remaining comrades destroyed the master spectre and eventually destroyed the souls of her tormented brethren.  In the end, Fassa was the only one left alive.
 
 Fassa returned to her temple in misery and prayed to Selune that she never forget the agony of that night. Selune granted her request by causing a ghostly white and blue mace to appear on her bed when the next full moon rose. Carved into the shaft of the club were two words: Never Forget.
 
-Fassa became almost fanatical in her undead hunting in later years. At the age of thirty-three, tired and bitter, Fassa fell into decline. On the night of a full moon, she renounced her faith to Selune in front of her superiors and fellow clergy. Hours later, she threw herself into the Moonsea from a high cliff. The mace was found in her room and reluctantly kept in the church. Many years later, the new high priest of the temple decided to bestow this unique weapon to a new promising priestess. This mace was the favourite weapon of Sime�s mother.
+Fassa became almost fanatical in her undead hunting in later years. At the age of thirty-three, tired and bitter, Fassa fell into decline. On the night of a full moon, she renounced her faith to Selune in front of her superiors and fellow clergy. Hours later, she threw herself into the Moonsea from a high cliff. The mace was found in her room and reluctantly kept in the church. Many years later, the new high priest of the temple decided to bestow this unique weapon to a new promising priestess. This mace was the favourite weapon of Sime's mother.
 
 STATISTICS:
 
@@ -9577,7 +9577,7 @@ COPY ~NeJE/TS/itm/TimeWard.itm~       ~override/TimeWard.itm~
 
 COPY ~NeJE/TS/itm/TRRIN02.ITM~        ~override/TRRIN02.ITM~
     SAY NAME2 ~Ring of Wizardry II~
-    SAY DESC ~Ring of Wizardry II:  �Reaching Ring�
+    SAY DESC ~Ring of Wizardry II:  'Reaching Ring'
 
 This is the enchanted version of the famous Ring of Wizardry.
 
@@ -9611,7 +9611,7 @@ COPY ~NeJE/TS/itm/USPOT5B.ITM~        ~override/USPOT5B.ITM~
     SAY DESC ~The liquid in the potion has a strange murky quality to it that you haven't noticed in other potions. It would appear to affect some of your stats but you are not sure which of them and how.~
 
 COPY ~NeJE/TS/itm/ValNeck1.ITM~       ~override/ValNeck1.ITM~
-    SAY NAME2 ~Abyssina�s Necklace~
+    SAY NAME2 ~Abyssina's Necklace~
   SAY DESC ~This necklace consists of white, pink and very rare blue pearls. Mysterious shimmer enhances its exquisite beauty and you can guess that it is imbibed with a strong enchantment. The necklace once belonged to Abyssina Corthala, a mage of no small repute.
 
 STATISTICS
@@ -9624,7 +9624,7 @@ Equipped Abilities:
   (Immunity to Panic, Fear, Confusion, Charm and Psionics)~
 
 COPY ~NeJE/TS/itm/ValNeck2.ITM~       ~override/ValNeck2.ITM~
-    SAY NAME2 ~Abyssina�s Necklace~
+    SAY NAME2 ~Abyssina's Necklace~
   SAY DESC ~This necklace consists of white, pink and very rare blue pearls. Mysterious shimmer enhances its exquisite beauty and you can guess that it is imbibed with a strong enchantment. The necklace once belonged to Abyssina Corthala, a mage of no small repute.
 
 STATISTICS
@@ -9696,14 +9696,14 @@ COPY ~NeJE/TS/itm/WuHaltai.ITM~       ~override/WuHaltai.ITM~
     SAY NAME2 ~Katana +4~
     SAY DESC ~Katana +4 "Wu Haltai"
 
-The wielder of the noble katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle. Not doing so could drastically change one�s luck for the worse. This particular katana has its counterpart, the "Wu Jen" katana. It is said that when these two are wielded by the same person in battle, the wielder becomes invulnerable.
+The wielder of the noble katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle. Not doing so could drastically change one's luck for the worse. This particular katana has its counterpart, the "Wu Jen" katana. It is said that when these two are wielded by the same person in battle, the wielder becomes invulnerable.
 
 STATISTICS:
 
 Special Abilities:
  Grants +3 bonus to armour class while equipped
  Regenerates 1 hp/round
- Each hit lowers opponents� Magic Resistance by 10%
+ Each hit lowers opponents' Magic Resistance by 10%
 
 THAC0: +4 bonus
 Damage: 1d10+4
@@ -9760,7 +9760,7 @@ Usable Only By:
 //Yoshimo's New Armour
 
 COPY ~NeJE/TS/itm/MOURNER.ITM~          ~override/MOURNER.ITM~
-  SAY NAME2 ~Mourner�s Armor~
+  SAY NAME2 ~Mourner's Armor~
   SAY DESC ~This unique suit of armor is of foreign design, created for a Kara-Turian samurai from the Baika Clan. The armor, crafted from thin, stiff leather, is dyed black, but features the insignia of the plum blossom, the mon of the Baika Clan. It was only worn into battle once, when Baika Himuro fought a hopeless battle against the enemy samurai that flooded into his ancestral estate. It is believed that the enemy clan captured the armor and later traded it for siege equipment.
 
 STATISTICS:
@@ -9994,7 +9994,7 @@ COPY~NeJE/TS/cre/Kachi08.cre~      ~override/Kachi08.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/Kachi09.cre~      ~override/Kachi09.cre~
   SAY NAME1 ~Kachiko~
@@ -10036,7 +10036,7 @@ COPY~NeJE/TS/cre/Kachi09.cre~      ~override/Kachi09.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/Kachi10.cre~      ~override/Kachi10.cre~
   SAY NAME1 ~Kachiko~
@@ -10078,7 +10078,7 @@ COPY~NeJE/TS/cre/Kachi10.cre~      ~override/Kachi10.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/Kachi11.cre~      ~override/Kachi11.cre~
   SAY NAME1 ~Kachiko~
@@ -10120,7 +10120,7 @@ COPY~NeJE/TS/cre/Kachi11.cre~      ~override/Kachi11.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/Kachi12.cre~      ~override/Kachi12.cre~
   SAY NAME1 ~Kachiko~
@@ -10162,7 +10162,7 @@ COPY~NeJE/TS/cre/Kachi12.cre~      ~override/Kachi12.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/Kachi13.cre~      ~override/Kachi13.cre~
   SAY NAME1 ~Kachiko~
@@ -10204,7 +10204,7 @@ COPY~NeJE/TS/cre/Kachi13.cre~      ~override/Kachi13.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/KachikoD.cre~     ~override/KachikoD.cre~
   SAY NAME1 ~Kachiko~
@@ -10246,7 +10246,7 @@ COPY~NeJE/TS/cre/KachikoD.cre~     ~override/KachikoD.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/KachikoS.cre~     ~override/KachikoS.cre~
   SAY NAME1 ~Kachiko~
@@ -10288,7 +10288,7 @@ COPY~NeJE/TS/cre/KachikoS.cre~     ~override/KachikoS.cre~
   SAY TARGET_IMMUNE ~~ [KACHIIM]
   SAY INVENTORY_FULL ~~ [KACHICA]
   SAY SPELL_DISRUPTED ~~ [KACHIFA]
-  SAY BIO ~Kachiko�s dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
+  SAY BIO ~Kachiko's dark almond-shaped eyes sparkle mysteriously when you ask her about her past. "I am Kachiko of House Nakanishi," she says in a soft voice, and proceeds to tell you about her far-away native land. She speaks of temples which roofs are shaped as mountains slopes, gardens set amongst stones, of brave warriors who obey a code as strict as it is honorable, of pearls brought from the sea depth, and of Emperors and millions of spirits populating her land until you interrupt her with: "But what about you, Kachiko?" She smiles and answers: "I am Kachiko of House Nakanishi. I am what you see in front of you, my friend. Look into my face and you can read my past, my present and my future."~
 
 COPY~NeJE/TS/cre/KING.cre~         ~override/KING.cre~
   SAY NAME1 ~King~
@@ -10434,7 +10434,7 @@ COPY~NeJE/TS/cre/Sime06.cre~       ~override/Sime06.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime07.cre~       ~override/Sime07.cre~
   SAY NAME1 ~Sime~
@@ -10475,7 +10475,7 @@ COPY~NeJE/TS/cre/Sime07.cre~       ~override/Sime07.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime08.cre~       ~override/Sime08.cre~
   SAY NAME1 ~Sime~
@@ -10516,7 +10516,7 @@ COPY~NeJE/TS/cre/Sime08.cre~       ~override/Sime08.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime09.cre~       ~override/Sime09.cre~
   SAY NAME1 ~Sime~
@@ -10557,7 +10557,7 @@ COPY~NeJE/TS/cre/Sime09.cre~       ~override/Sime09.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime10.cre~       ~override/Sime10.cre~
   SAY NAME1 ~Sime~
@@ -10598,7 +10598,7 @@ COPY~NeJE/TS/cre/Sime10.cre~       ~override/Sime10.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime109.cre~       ~override/Sime109.cre~
   SAY NAME1 ~Sime~
@@ -10639,7 +10639,7 @@ COPY~NeJE/TS/cre/Sime109.cre~       ~override/Sime109.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime110.cre~       ~override/Sime110.cre~
   SAY NAME1 ~Sime~
@@ -10680,7 +10680,7 @@ COPY~NeJE/TS/cre/Sime110.cre~       ~override/Sime110.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sime121.cre~       ~override/Sime121.cre~
   SAY NAME1 ~Sime~
@@ -10721,7 +10721,7 @@ COPY~NeJE/TS/cre/Sime121.cre~       ~override/Sime121.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/SimeDr.cre~       ~override/SimeDr.cre~
   SAY NAME1 ~Sime~
@@ -10762,7 +10762,7 @@ COPY~NeJE/TS/cre/SimeDr.cre~       ~override/SimeDr.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/SimeSl.cre~       ~override/SimeSl.cre~
   SAY NAME1 ~Sime~
@@ -10803,7 +10803,7 @@ COPY~NeJE/TS/cre/SimeSl.cre~       ~override/SimeSl.cre~
   SAY INVENTORY_FULL ~~                    [CSIME36]
   SAY SPELL_DISRUPTED ~~                 [CSIME37]
   SAY EXISTANCE1 ~~                             [CSIME03]
-  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla�s Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran�s dealings and Sime flees the city vowing never to come back.~
+  SAY BIO ~This vivacious blonde talks and acts as if the world is one big fare and she does not intend to miss anything. Sime laughs easily, can dance a night away and she sings a song about a great battle of old with equal enthusiasm as a one about love. Through this bravado you can hear a gentler voice, the true voice of Sime Linvail. After a while you learn that she is a daughter of Athkatla's Shadow Master. Sime Linvail visits Athkatla once in a while to meet with her father. These meetings however always end up in an argument over Aran's dealings and Sime flees the city vowing never to come back.~
 
 COPY~NeJE/TS/cre/Sol.cre~          ~override/Sol.cre~
   SAY NAME1 ~Sol~
@@ -11300,7 +11300,7 @@ COPY_EXISTING ~Leina.bcs~ ~override/Leina.bcs~
 REPLACE_TEXTUALLY ~666~ ~%MxLeina%~*/
 
 //////////////////////////////
-//Makin� the Areas
+//Makin' the Areas
 //////////////////////////////
 
 COPY ~NeJE/TS/tiz~ ~override~
@@ -11325,8 +11325,8 @@ TT0307  value
 TT0308  value~
 
 COPY ~NeJE/TS/itm/YOSHKAT.ITM~          ~override/YOSHKAT.ITM~
-  SAY NAME2 ~Yoshimo�s Katana +4~
-  SAY DESC ~Yoshimo�s Katana +4
+  SAY NAME2 ~Yoshimo's Katana +4~
+  SAY DESC ~Yoshimo's Katana +4
 
 This blade, being heavily enchanted by Kara-Turian arcane masters, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this unique katana. It not only grants physical and magical protection to Yoshimo, but also allows him time for an additional attack.
 
@@ -12163,7 +12163,7 @@ END
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~
  THEN BEGIN
-///////ST�s dialogues have to be updated!////////////
+///////ST's dialogues have to be updated!////////////
 /////////////////////////////////////////////////////
 //END
 // ELSE BEGIN
@@ -12172,9 +12172,9 @@ ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~
 COPY_EXISTING ~SHARTE.cre~  ~override/SHARTE.cre~
               ~SHARTE4.cre~ ~override/SHARTE4.cre~
               ~SHARTE6.cre~ ~override/SHARTE6.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x32 66 //hair color
   WRITE_BYTE 0x23b 10 //Wisdom
   WRITE_BYTE 0x23c 18 //Dexterity
@@ -12235,22 +12235,22 @@ END
 END
 
 COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
-        WRITE_SHORT 0x244 0 // doesn�t change
+        WRITE_SHORT 0x244 0 // doesn't change
       WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-      WRITE_BYTE  0x247 0x40 // doesn�t change
+      WRITE_BYTE  0x247 0x40 // doesn't change
           SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
-        SAY HAPPY ~It seems that this party isn�t as pathetic as I first suspected.~ [SHART04]
+        SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
           SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
-          SAY UNHAPPY_SERIOUS ~I can�t take much more of this male imbecility.~ [SHART06]
-          SAY 0xb8 ~Forget our deal, I�m leaving.~ [SHART07]
-          SAY LEADER ~I�ll lead this party better than any man could.~ [SHART08]
+          SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+          SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+          SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
           SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
           SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
           SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
           SAY TIRED ~Some rest is in order.~ [SHART09]
           SAY DAMAGE ~~ [SHART38]
           SAY DYING ~~ [SHART39]
-          SAY HURT ~I don�t have time to bleed.~ [SHART11]
+          SAY HURT ~I don't have time to bleed.~ [SHART11]
           SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
           SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
           SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
@@ -12258,7 +12258,7 @@ COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
           SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
           SAY SELECT_ACTION1 ~Okay.~ [SHART20]
           SAY SELECT_ACTION2 ~Really?~ [SHART21]
-          SAY SELECT_ACTION3 ~I�ll do it.~ [SHART22]
+          SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
           SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
           SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
           SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
@@ -12269,22 +12269,22 @@ COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
           SAY BIO ~When asked about her past, Shar-Teel has very little to say.  From the little she speaks of it can be gleaned that she is an orphan. She also seems to harbor an intense dislike for Flaming Fist mercenaries, as well as an obvious disrespect for men in general. She seems to have something to prove, and likely her childhood was not of storybook quality.~
 
 COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
-        WRITE_SHORT 0x244 0 // doesn�t change
+        WRITE_SHORT 0x244 0 // doesn't change
       WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-      WRITE_BYTE  0x247 0x40 // doesn�t change
+      WRITE_BYTE  0x247 0x40 // doesn't change
           SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
-        SAY HAPPY ~It seems that this party isn�t as pathetic as I first suspected.~ [SHART04]
+        SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
           SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
-          SAY UNHAPPY_SERIOUS ~I can�t take much more of this male imbecility.~ [SHART06]
-          SAY 0xb8 ~Forget our deal, I�m leaving.~ [SHART07]
-          SAY LEADER ~I�ll lead this party better than any man could.~ [SHART08]
+          SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+          SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+          SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
           SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
           SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
           SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
           SAY TIRED ~Some rest is in order.~ [SHART09]
           SAY DAMAGE ~~ [SHART38]
           SAY DYING ~~ [SHART39]
-          SAY HURT ~I don�t have time to bleed.~ [SHART11]
+          SAY HURT ~I don't have time to bleed.~ [SHART11]
           SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
           SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
           SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
@@ -12292,7 +12292,7 @@ COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
           SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
           SAY SELECT_ACTION1 ~Okay.~ [SHART20]
           SAY SELECT_ACTION2 ~Really?~ [SHART21]
-          SAY SELECT_ACTION3 ~I�ll do it.~ [SHART22]
+          SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
           SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
           SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
           SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
@@ -12303,22 +12303,22 @@ COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
           SAY BIO ~When asked about her past, Shar-Teel has very little to say.  From the little she speaks of it can be gleaned that she is an orphan. She also seems to harbor an intense dislike for Flaming Fist mercenaries, as well as an obvious disrespect for men in general. She seems to have something to prove, and likely her childhood was not of storybook quality.~
 
 COPY ~NeJE/sharteel/cre/SHARTE9.cre~ ~override/SHARTE9.cre~
-        WRITE_SHORT 0x244 0 // doesn�t change
+        WRITE_SHORT 0x244 0 // doesn't change
       WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-      WRITE_BYTE  0x247 0x40 // doesn�t change
+      WRITE_BYTE  0x247 0x40 // doesn't change
         SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
-        SAY HAPPY ~It seems that this party isn�t as pathetic as I first suspected.~ [SHART04]
+        SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
           SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
-          SAY UNHAPPY_SERIOUS ~I can�t take much more of this male imbecility.~ [SHART06]
-          SAY 0xb8 ~Forget our deal, I�m leaving.~ [SHART07]
-          SAY LEADER ~I�ll lead this party better than any man could.~ [SHART08]
+          SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+          SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+          SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
           SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
           SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
           SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
           SAY TIRED ~Some rest is in order.~ [SHART09]
           SAY DAMAGE ~~ [SHART38]
           SAY DYING ~~ [SHART39]
-          SAY HURT ~I don�t have time to bleed.~ [SHART11]
+          SAY HURT ~I don't have time to bleed.~ [SHART11]
           SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
           SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
           SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
@@ -12326,7 +12326,7 @@ COPY ~NeJE/sharteel/cre/SHARTE9.cre~ ~override/SHARTE9.cre~
           SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
           SAY SELECT_ACTION1 ~Okay.~ [SHART20]
           SAY SELECT_ACTION2 ~Really?~ [SHART21]
-          SAY SELECT_ACTION3 ~I�ll do it.~ [SHART22]
+          SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
           SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
           SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
           SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
@@ -12349,7 +12349,7 @@ COPY ~NeJE/sharteel/wav~    ~override~
 //Lock cell that Shar-teel will be imported into
 
 COPY ~NeJE/sharteel/itm/VPShrKey.ITM~           ~override/VPShrKey.ITM~
-          SAY UNIDENTIFIED_DESC ~A typical cell key that one might find in any jail. This one may fit Shar-Teel�s cell.~
+          SAY UNIDENTIFIED_DESC ~A typical cell key that one might find in any jail. This one may fit Shar-Teel's cell.~
 
         COPY_EXISTING ~AR0602.ARE~ ~override~
           READ_LONG 0xa8 door_off
@@ -12434,7 +12434,7 @@ COPY ~NeJE/sharteel/cre/DURBIN.CRE~        ~override/DURBIN.CRE~
 //Modified Irenicus dungeon
 COPY ~NeJE/sharteel/dungeon~        ~override~
 
-//Modified Firkraag�s dungeon
+//Modified Firkraag's dungeon
 COPY_EXISTING ~AR1201.ARE~ ~override~
 /* WRITE_ASCII 0x11d8 ~MISTCD01~
      WRITE_BYTE  (0x11d8+8) 0
@@ -12536,7 +12536,7 @@ END
 
 BEGIN ~Leina - New Bard NPC Character and Quest (by Vlad)~
 
-//Leina�s Bard Kit
+//Leina's Bard Kit
 
 APPEND ~SPELL.IDS~
 ~3191 LEINA_SONG_OF_REVENGE
@@ -12551,7 +12551,7 @@ COPY ~NeJE/Leina/spl/SPIN191.SPL~        ~override/SPIN191.SPL~
   SAY NAME2 ~*The Oath of Kudain*~
   SAY 0x50 ~*The Oath of Kudain* - A Song Of Revenge
 
-This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator�s family, from the very old to the youngest babe in arms.
+This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator's family, from the very old to the youngest babe in arms.
 
 When sung, this song will cause fear in the hearts of all enemies.
 
@@ -12562,7 +12562,7 @@ Area of Effect: 30 foot cube
 Saving Throw: None~
     SAY 0x54 ~*The Oath of Kudain* - A Song Of Revenge
 
-This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator�s family, from the very old to the youngest babe in arms.
+This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator's family, from the very old to the youngest babe in arms.
 
 When sung, this song will cause fear in the hearts of all enemies.
 
@@ -12624,11 +12624,11 @@ Saving Throw: None~
 
 COPY ~NeJE/Leina/spl/SPIN411B.BAM~        ~override/SPIN411B.BAM~
 COPY ~NeJE/Leina/spl/SPIN411.SPL~        ~override/SPIN411.SPL~
-  SAY NAME1 ~*Alystra�s Lament*~
-  SAY NAME2 ~*Alystra�s Lament*~
-  SAY 0x50 ~*Alystra�s Lament* - A Song Of Love Lost
+  SAY NAME1 ~*Alystra's Lament*~
+  SAY NAME2 ~*Alystra's Lament*~
+  SAY 0x50 ~*Alystra's Lament* - A Song Of Love Lost
 
-This song tells the story of Alystra de�Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra�s hopes and dreams for her future now shattered and never to be fulfilled.
+This song tells the story of Alystra de'Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra's hopes and dreams for her future now shattered and never to be fulfilled.
 
 When this mournful melody is sung, it will instil hopelessness in the hearts off all enemies.
 
@@ -12637,9 +12637,9 @@ Duration: 5 turns
 Casting Time: 4
 Area of Effect: Up to 60-foot cube
 Saving Throw: None~
-  SAY 0x54 ~*Alystra�s Lament* - A Song Of Love Lost
+  SAY 0x54 ~*Alystra's Lament* - A Song Of Love Lost
 
-This song tells the story of Alystra de�Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra�s hopes and dreams for her future now shattered and never to be fulfilled.
+This song tells the story of Alystra de'Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra's hopes and dreams for her future now shattered and never to be fulfilled.
 
 When this mournful melody is sung, it will instil hopelessness in the hearts off all enemies.
 
@@ -12654,20 +12654,20 @@ COPY ~NeJE/Leina/spl/SPCL752.SPL~        ~override/SPCL752.SPL~
   SAY NAME2 ~*Ballad Of The Forsaken*~
   SAY 0x50 ~Ballad Of The Forsaken
 
-The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna�s struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
+The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
   SAY 0x54 ~Ballad Of The Forsaken
 
-The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna�s struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
+The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
 
 COPY ~NeJE/Leina/spl/SPCL752A.SPL~        ~override/SPCL752A.SPL~
   SAY NAME1 ~*Ballad Of The Forsaken*~
   SAY NAME2 ~*Ballad Of The Forsaken*~
   SAY 0x50 ~*Ballad Of The Forsaken*
 
-The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna�s struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
+The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
   SAY 0x54 ~*Ballad Of The Forsaken*
 
-The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna�s struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
+The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.~
 
 ADD_KIT ~BARD_OF_MELODY~
 
@@ -12703,29 +12703,29 @@ SAY ~This kit was created especially for Leina. She was blessed with both the gi
 
 Advantages:
 
--  The bard�s song is different from the typical bard and varies with level:
+-  The bard's song is different from the typical bard and varies with level:
 
 7th level: *Ballad Of The Forsaken*. Part I. The first part of the ballad tells the story of a young girl, Lianna, deserted and left destitute in a strange city by the man who promised to love and worship her forever. When sung this ballad will instil immunity to fear/panic and a +1 to AC to all those allied to the bard.
 
-15th level: *Ballad Of The Forsaken*. Part II. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna�s struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.
+15th level: *Ballad Of The Forsaken*. Part II. The second part of the ballad is also known as "A Song of Courage Regained". It tells of Lianna's struggle from a life of complete and utter despair to a life she can now live. When sung this ballad will not only instil immunity to fear and panic, but also to hold and charm, and adds +3 to AC to all those allied to the bard.
 
 -  A few additional songs become available from the innate slots as Leina advances levels:
 
 *The Oath of Kudain* - A Song Of Revenge
 
-This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator�s family, from the very old to the youngest babe in arms. When sung, this song will cause fear in the hearts of all enemies.
+This song tells the story of two brothers named Kudain who swore an oath to avenge their sister who was cruelly raped and murdered. It tells of their obsession as they hunt and eliminate every member of the perpetrator's family, from the very old to the youngest babe in arms. When sung, this song will cause fear in the hearts of all enemies.
 
 *The Making Of Bryn Candour* - A Song Of Wisdom Gained
 
 This amusing tale tells of an arrogant young man, forced to change places with, and live as one whom he had slated and derided mercilessly. It tells of the shame and remorse the young man gradually learns and takes with him when restored to his proper self. When sung this song will give all allied to the bard a +4 to saving throws against all magic based attacks and 25% magic resistance.
 
-*Alystra�s Lament* - A Song Of Love Lost
+*Alystra's Lament* - A Song Of Love Lost
 
-This song tells the story of Alystra de�Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra�s hopes and dreams for her future now shattered and never to be fulfilled. When this mournful melody is sung, it will instil hopelessness in the hearts off all enemies.
+This song tells the story of Alystra de'Cai, of how she was deserted on her wedding day when her lover eloped with her beloved sister. It tells of Aystra's hopes and dreams for her future now shattered and never to be fulfilled. When this mournful melody is sung, it will instil hopelessness in the hearts off all enemies.
 
 *A Song Of Tomorrow* - A Song Of Devotion
 
-This spirited song tells of a young boy�s hopes and dreams for the future when he becomes a man and he has shaken off the shackles of the slavery into which he was born. When sung this spirited song will heal all those allied to the bard.
+This spirited song tells of a young boy's hopes and dreams for the future when he becomes a man and he has shaken off the shackles of the slavery into which he was born. When sung this spirited song will heal all those allied to the bard.
 
 Disadvantages:
 -  None
@@ -12760,7 +12760,7 @@ COPY ~NeJE/Leina/itm/PELLON.ITM~          ~override/PELLON.ITM~
   SAY NAME1 ~Lute~
   SAY NAME2 ~The Dire Old Lute of Pellon Kay~
   SAY UNIDENTIFIED_DESC ~These round-backed instruments are extremely popular in the Western Heartlands of Faerun, crafted in Calimshan and heard as far north as Sundabar. Lutes are stringed instruments with pear-shaped bodies and fretted fingerboards, frequently played in small courts and common taverns.~
-  SAY DESC ~Pellon Kay would never appear in history books for his musical talents. If it wasn�t for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic wit and appetite for confrontation. Sages believe that Milil frowned upon Pellon�s antics, but that Talos found Pellon�s attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon�s unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn�t let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.
+  SAY DESC ~Pellon Kay would never appear in history books for his musical talents. If it wasn't for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic wit and appetite for confrontation. Sages believe that Milil frowned upon Pellon's antics, but that Talos found Pellon's attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon's unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn't let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.
 
 STATISTICS:
 
@@ -12777,13 +12777,13 @@ COPY ~NeJE/Leina/itm/VIOLIN.ITM~          ~override/VIOLIN.ITM~
   SAY NAME1 ~Violin~
   SAY NAME2 ~Viol of the Hollow Men~
   SAY UNIDENTIFIED_DESC ~Violins are bowed stringed instruments having four strings, a shallow body, shoulders at right angles to the neck, a fingerboard without frets, and a curved bridge.  They are typically played by pulling a bow across the strings, but can also be plucked.  Elves are particularly fond of violins and their craftsmen produce some of the finest specimens in the world.~
-  SAY DESC ~This instrument is also known as "Tallow�s Violin," but that moniker is rarely spoken among musicians, as mentioning the name of Nikolai Tallow is considered bad luck.  Nikolai was born in The Vast, near High Haspur, the son of a chandler.  Because of the intermittent traffic through the region, Nikolai was introduced to many different cultures.  One of the travelers he met was an elven musician named Relev Thinriver.  Relev introduced Nikolai to the violin and taught him for several years as he wandered through the area.  Relev knew that Nikolai was an incredibly gifted child, with quick fingers, a keen mind, and a passion for all things in the world.  Relev also recognized that Nikolai was exceedingly proud and arrogant.  In spite of Nikolai�s shortcomings, Relev taught him everything he knew.
+  SAY DESC ~This instrument is also known as "Tallow's Violin," but that moniker is rarely spoken among musicians, as mentioning the name of Nikolai Tallow is considered bad luck.  Nikolai was born in The Vast, near High Haspur, the son of a chandler.  Because of the intermittent traffic through the region, Nikolai was introduced to many different cultures.  One of the travelers he met was an elven musician named Relev Thinriver.  Relev introduced Nikolai to the violin and taught him for several years as he wandered through the area.  Relev knew that Nikolai was an incredibly gifted child, with quick fingers, a keen mind, and a passion for all things in the world.  Relev also recognized that Nikolai was exceedingly proud and arrogant.  In spite of Nikolai's shortcomings, Relev taught him everything he knew.
 
 After Relev was killed by a band of orcs, Nikolai began to practice on his own throughout the Vast.  Despite his travels, he always returned to the isolate peaks of his mountain birthplace.  He became famed throughout the Vast, the southern Moonsea and Sembia for his incredible talent and passionate performances.  Eventually, news of the proud young virtuoso spread to the ears of a nearby thug from Calaunt named Tremble Ghon.  When Tremble and his gang traveled through the Elvenblood Pass, they stopped at the Elf in Armor Inn and demanded a performance from Nikolai, who happened to be present and eating dinner with his father at the time.
 
-Nikolai refused to perform for Tremble and his men.  He called them stinking oafs and attempted to leave with dignity.  Tremble assaulted Nikolai�s pride by claiming that Nikolai was afraid of performing because he�d be heckled out of the inn for his incompetence.  Nikolai shot back that his skill with the violin was so great that he could raise the dead from their graves.  Satisfied with a proposed challenge, Tremble immediately grabbed Nikolai�s father and stabbed him in the heart.  When a number of other villagers attempted to intervene, they were also killed by the bandits.
+Nikolai refused to perform for Tremble and his men.  He called them stinking oafs and attempted to leave with dignity.  Tremble assaulted Nikolai's pride by claiming that Nikolai was afraid of performing because he'd be heckled out of the inn for his incompetence.  Nikolai shot back that his skill with the violin was so great that he could raise the dead from their graves.  Satisfied with a proposed challenge, Tremble immediately grabbed Nikolai's father and stabbed him in the heart.  When a number of other villagers attempted to intervene, they were also killed by the bandits.
 
-Tremble defiantly stood over Nikolai�s dead father and said, "Where�s your big mouth now, fiddle player?"  Without a word, Nikolai pulled his violin and bow out from underneath his arms and began to play a melody that none of the residents of High Haspur had ever heard before, and no one in Faerun would ever hear again.  Nikolai played with unbridled passion and fervor.  Onlookers later remarked that he appeared to be a madman, thrashing about in ways that people didn�t think were possible.  At the climax of his frenzied piece, Tremble and his gang watched in horror as the souls of the men and women they had just killed rose from their corpses and dove, shrieking, at their murderers.  The bandits died horrible deaths, chilled by the shadows of their victims.  Nikolai himself continued playing, dancing through the streets and back pastures of his alpine home until every man, woman, child, and beast ever buried in the region rose from its resting place and milled about until Nikolai and his music disappeared into a far off valley, shrouded in a mysterious fog that vanished as quickly as it had appeared.
+Tremble defiantly stood over Nikolai's dead father and said, "Where's your big mouth now, fiddle player?"  Without a word, Nikolai pulled his violin and bow out from underneath his arms and began to play a melody that none of the residents of High Haspur had ever heard before, and no one in Faerun would ever hear again.  Nikolai played with unbridled passion and fervor.  Onlookers later remarked that he appeared to be a madman, thrashing about in ways that people didn't think were possible.  At the climax of his frenzied piece, Tremble and his gang watched in horror as the souls of the men and women they had just killed rose from their corpses and dove, shrieking, at their murderers.  The bandits died horrible deaths, chilled by the shadows of their victims.  Nikolai himself continued playing, dancing through the streets and back pastures of his alpine home until every man, woman, child, and beast ever buried in the region rose from its resting place and milled about until Nikolai and his music disappeared into a far off valley, shrouded in a mysterious fog that vanished as quickly as it had appeared.
 
 Legends say that on misty nights, the ghost of Nikolai Tallow returns to his homeland, playing a phantom violin with a host of dancing dead trailing behind him in the moonlight.
 
@@ -12830,7 +12830,7 @@ I am not a man of words and could never speak the truth of what is in my heart. 
 Once I was lonely and had no aim in life,
 I had no future, and no need of a wife,
 I had no dreams and no longings to fulfil,
-But God only knows I don�t feel that way still.
+But God only knows I don't feel that way still.
 
 All that it took was a touch from a butterfly,
 The most tender of creatures, for which I would die,
@@ -12853,8 +12853,8 @@ It is love that forever is beating in my heart,
 It is that will assure that we never shall part.
 
 I go down on my knees and so humbly I plea,
-If she�ll grant me my wish, if she�ll make my dreams be
-All that I long for, if she�ll give me her hand,
+If she'll grant me my wish, if she'll make my dreams be
+All that I long for, if she'll give me her hand,
 Will she make me the happiest man in the land?
 
 So Leina, dearest heart, what will be your answer? Will you make me the happiest man in the land and honour me by becoming my wife?
@@ -12871,7 +12871,7 @@ COPY ~NeJE/Leina/cre/Govan.cre~          ~override/Govan.cre~
   SAY NAME1 ~Govan Duvaine~
 
 COPY ~NeJE/Leina/itm/KeyVulov.itm~ ~override/KeyVulov.itm~
-  SAY NAME2 ~Govan�s Key~
+  SAY NAME2 ~Govan's Key~
   SAY UNIDENTIFIED_DESC ~This is the key that was pickpocketed from Govan Duvaine.~
 
 COPY_EXISTING ~AR1000.bcs~ ~override/AR1000.bcs~
@@ -12888,9 +12888,9 @@ COPY ~NeJE/Leina/cre/VulThief.cre~        ~override/VulThief.cre~
 
 COPY ~NeJE/Leina/cre/DCai.cre~        ~override/DCai.cre~
   SAY NAME1 ~Vulova Guildmaster~
-  SAY NAME2 ~Serge D�Cai~
+  SAY NAME2 ~Serge D'Cai~
 
-//Leina�s Moonblade
+//Leina's Moonblade
 
 COPY ~NeJE/Leina/spl/boh01.spl~        ~override/boh01.spl~
   SAY NAME1 ~Chant of Battle~
@@ -12932,7 +12932,7 @@ Not Usable By:
  Mage~
   SAY DESC ~Singing Moonblade
 
-A story told that the Singing Moonblade came into existance on the night of AR1703. That very night, Lord Orion, an Elven Bladedancer, presided over the deathbed of his only love, Lady Illia the Songweaver. Illia professed her love and a vow to never leave his side, and true to her word, she never has. It is said you can still hear her voice resonating from the steel of Orion�s blade.
+A story told that the Singing Moonblade came into existance on the night of AR1703. That very night, Lord Orion, an Elven Bladedancer, presided over the deathbed of his only love, Lady Illia the Songweaver. Illia professed her love and a vow to never leave his side, and true to her word, she never has. It is said you can still hear her voice resonating from the steel of Orion's blade.
 
 STATISTICS:
 
@@ -13021,9 +13021,9 @@ Usable By:
 COPY ~NeJE/Leina/cre/LEINA11.CRE~        ~override/LEINA11.CRE~
   SAY NAME1 ~Leina~
   SAY NAME2 ~Leina~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
   SAY LEADER ~~ [leinac04]
   SAY BORED ~~ [leinac32]
   SAY BATTLE_CRY1 ~~ [leinac01]
@@ -13059,14 +13059,14 @@ COPY ~NeJE/Leina/cre/LEINA11.CRE~        ~override/LEINA11.CRE~
   SAY INVENTORY_FULL ~~ [leinac27]
   SAY PICKED_POCKET ~~ [leinac28]
   SAY SPELL_DISRUPTED ~~ [leinac10]
-  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother�s kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father�s home town of Alkhatla. Leina�s mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina�s father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina�s tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina�s childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent�s warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
+  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother's kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father's home town of Alkhatla. Leina's mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina's father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina's tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina's childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent's warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
 
 COPY ~NeJE/Leina/cre/LEINA12.CRE~        ~override/LEINA12.CRE~
   SAY NAME1 ~Leina~
   SAY NAME2 ~Leina~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
   SAY LEADER ~~ [leinac04]
   SAY BORED ~~ [leinac32]
   SAY BATTLE_CRY1 ~~ [leinac01]
@@ -13102,14 +13102,14 @@ COPY ~NeJE/Leina/cre/LEINA12.CRE~        ~override/LEINA12.CRE~
   SAY INVENTORY_FULL ~~ [leinac27]
   SAY PICKED_POCKET ~~ [leinac28]
   SAY SPELL_DISRUPTED ~~ [leinac10]
-  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother�s kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father�s home town of Alkhatla. Leina�s mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina�s father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina�s tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina�s childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent�s warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
+  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother's kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father's home town of Alkhatla. Leina's mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina's father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina's tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina's childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent's warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
 
 COPY ~NeJE/Leina/cre/LEINA13.CRE~        ~override/LEINA13.CRE~
   SAY NAME1 ~Leina~
   SAY NAME2 ~Leina~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
   SAY LEADER ~~ [leinac04]
   SAY BORED ~~ [leinac32]
   SAY BATTLE_CRY1 ~~ [leinac01]
@@ -13145,14 +13145,14 @@ COPY ~NeJE/Leina/cre/LEINA13.CRE~        ~override/LEINA13.CRE~
   SAY INVENTORY_FULL ~~ [leinac27]
   SAY PICKED_POCKET ~~ [leinac28]
   SAY SPELL_DISRUPTED ~~ [leinac10]
-  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother�s kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father�s home town of Alkhatla. Leina�s mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina�s father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina�s tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina�s childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent�s warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
+  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother's kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father's home town of Alkhatla. Leina's mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina's father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina's tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina's childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent's warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
 
 COPY ~NeJE/Leina/cre/LEINA14.CRE~        ~override/LEINA14.CRE~
   SAY NAME1 ~Leina~
   SAY NAME2 ~Leina~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
   SAY LEADER ~~ [leinac04]
   SAY BORED ~~ [leinac32]
   SAY BATTLE_CRY1 ~~ [leinac01]
@@ -13188,9 +13188,9 @@ COPY ~NeJE/Leina/cre/LEINA14.CRE~        ~override/LEINA14.CRE~
   SAY INVENTORY_FULL ~~ [leinac27]
   SAY PICKED_POCKET ~~ [leinac28]
   SAY SPELL_DISRUPTED ~~ [leinac10]
-  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother�s kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father�s home town of Alkhatla. Leina�s mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina�s father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina�s tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina�s childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent�s warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
+  SAY BIO ~Born to an elven mother and human father, Leina possess the grace and beauty of her mother's kin. Leina is blessed with both the gift of music and an inquisitive mind. She grew up in her father's home town of Alkhatla. Leina's mother never felt at ease within her new environment but bore the suspicion that always surrounds couples of mixed race for the sake of Leina's father whom she loved passionately. She was extremely protective of Leina, her only child and rarely allowed the her out of the house. All Leina's tutoring was carried out in the safety of the family home and despite being without the company of other children, Leina's childhood was relatively happy. Most of her days were spent dreaming of adventure and of the man that would one day love her as her father loved her mother. When Leina did find love, she followed it with all her heart. Marrying young, Leina was oblivious to her parent's warnings and followed that love when it took her far from her home, never dreaming that she would be deceived. She was left heart broken and destitute when both her dowry and her husband ran out. Her almond eyes, so full of love and anticipation lost their brightness and Leina swore never to love again. Her music became her only passion, "Music is not treacherous and deceitful" Leina would tell herself many times. Any love affair that followed was transitory and shallow, Leina would close her ears if any man ever spoke words of love to her again.~
 
-//Adding Leina�s DLGs to 2DA
+//Adding Leina's DLGs to 2DA
 
 APPEND ~pdialog.2da~ // TOB append
 ~LEINA        LEINAP             LEINAJ            LEINAD         LEINAP            LEINAJ               LEINAD               leina~
@@ -13220,7 +13220,7 @@ COPY ~NeJE/Leina/cre/Killian.cre~        ~override/Killian.cre~
   SAY NAME1 ~Killian~
 
 COPY ~NeJE/Leina/itm/GovRing.itm~             ~override/GovRing.itm~
-  SAY NAME2 ~Govan�s Ring~
+  SAY NAME2 ~Govan's Ring~
   SAY DESC ~This is the ring that was given to you by Govan Duvaine. He tells you that a man named Killian who handles the financial side of the Duvaine business will exchange the ring for the gold, but not until you have spoken with Samuel Thunderburp.~
 
 COPY_EXISTING ~AR1007.bcs~ ~override/AR1007.bcs~
@@ -13251,11 +13251,11 @@ COPY_EXISTING ~Baldur.bcs~ ~override/Baldur.bcs~
 
 COPY ~NeJE/Leina/itm/ILeAmulF.bam~         ~override/ILeAmulF.bam~
 COPY ~NeJE/Leina/itm/LeiAmulM.itm~        ~override/LeiAmulM.itm~
-  SAY NAME2 ~Leina�s Pendant~
-  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item�s aesthetic value.~
-  SAY DESC ~The pendant Leina carries, rather than wears, at the moment once belonged to her father. The single blood red stone is as clear as crystal and when you look at it closely you would swear you could see an image reflected in it if only you could focus your eye on it. This pendant is in fact one of a pair, the red stones symbols the blood bond of the wearers. One was given to each of her parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendant will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn�s modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
+  SAY NAME2 ~Leina's Pendant~
+  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item's aesthetic value.~
+  SAY DESC ~The pendant Leina carries, rather than wears, at the moment once belonged to her father. The single blood red stone is as clear as crystal and when you look at it closely you would swear you could see an image reflected in it if only you could focus your eye on it. This pendant is in fact one of a pair, the red stones symbols the blood bond of the wearers. One was given to each of her parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendant will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn's modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
 
-Leina�s father had his pendant attuned to Leina and gave it to her on her marriage so�s her mother would know if misfortune ever befell their daughter when she left Athkatla. Leina, however never wore hers once her husband deserted her. Due to her pride, she did not want her parents to know of her plight. She therefore never knew of her mother�s death until she returned to Athkatla.
+Leina's father had his pendant attuned to Leina and gave it to her on her marriage so's her mother would know if misfortune ever befell their daughter when she left Athkatla. Leina, however never wore hers once her husband deserted her. Due to her pride, she did not want her parents to know of her plight. She therefore never knew of her mother's death until she returned to Athkatla.
 
 STATISTICS:
 
@@ -13269,14 +13269,14 @@ Equipped Abilities:
  Negative Plane Protection
 
 Special Abilities:
- Leina may contact her mother�s spirit should she be injured in any way:
+ Leina may contact her mother's spirit should she be injured in any way:
   Mass Cure (thrice per day)
   Cure (thrice per day)~
 
 COPY ~NeJE/Leina/itm/LeiAmulF.itm~        ~override/LeiAmulF.itm~
-  SAY NAME2 ~Vulova�s Pendant~
-  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item�s aesthetic value.~
-  SAY DESC ~The pendant is one of a pair, the red stones symbols the blood bond of the wearers. One was given to each of Leina�s parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendant will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn�s modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
+  SAY NAME2 ~Vulova's Pendant~
+  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item's aesthetic value.~
+  SAY DESC ~The pendant is one of a pair, the red stones symbols the blood bond of the wearers. One was given to each of Leina's parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendant will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn's modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
 
 STATISTICS:
 
@@ -13292,9 +13292,9 @@ Special Abilities:
 
 COPY ~NeJE/Leina/itm/ILeiAmul.bam~       ~override/ILeiAmul.bam~
 COPY ~NeJE/Leina/itm/LeiAmul.itm~        ~override/LeiAmul.itm~
-  SAY NAME2 ~Leina�s Pendant~
-  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item�s aesthetic value.~
-  SAY DESC ~The pair of joined pendants, one was given to each of Leina�s parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendants will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn�s modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
+  SAY NAME2 ~Leina's Pendant~
+  SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item's aesthetic value.~
+  SAY DESC ~The pair of joined pendants, one was given to each of Leina's parents by her elven grandmother, the sorceress Leolwyn on their marriage. Leolwyn based the pendants on the work of the elven mage Azurel in as much as the pendants, when worn by a paired couple, each will instantly know when the other is mentally or physically impaired. The pendants will also give the wearer a clear and precise picture of where the afflicted person is, enabling the other to move directly to them regardless of distance. Leolwyn's modifications include innate abilities that would occur if the pendants were brought together on the death of one of the paired couple, affording protection and aid for the surviving partner.
 
 STATISTICS:
 
@@ -13310,7 +13310,7 @@ Equipped Abilities:
 
 Special Abilities:
  True Sight (thrice per day)
- Leina may contact her mother�s spirit should she be injured in any way:
+ Leina may contact her mother's spirit should she be injured in any way:
   Mass Cure (thrice per day)
   Cure (thrice per day)~
 
@@ -13345,8 +13345,8 @@ COPY ~NeJE/Leina/cre/Bjorn.cre~        ~override/Bjorn.cre~
 COPY ~NeJE/Leina/itm/MISCBLEI.ITM~       ~override/MISCBLEI.ITM~
     SAY NAME1 ~Leina's Body~
     SAY NAME2 ~Leina's Body~
-    SAY UNIDENTIFIED_DESC ~Leina was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don�t know what it would be.~
-    SAY DESC ~Leina was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don�t know what it would be.~
+    SAY UNIDENTIFIED_DESC ~Leina was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don't know what it would be.~
+    SAY DESC ~Leina was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you don't know what it would be.~
 
 COPY~NeJE/Leina/cre/VampLei.cre~     ~override/VampLei.cre~
   SAY NAME1 ~Leina~
@@ -13400,7 +13400,7 @@ COPY ~NeJE/jah/spin/SPIN518.SPL~        ~override/SPIN518.SPL~
 COPY ~NeJE/jah/spin/SPIN519.SPL~        ~override/SPIN519.SPL~
   SAY NAME1 ~Sylvanus Physical Agility~
   SAY NAME2 ~Sylvanus Physical Agility~
-  SAY DESC ~This spell quickens the caster�s reflexes, enabling faster and more effective combat.~
+  SAY DESC ~This spell quickens the caster's reflexes, enabling faster and more effective combat.~
 
 COPY ~NeJE/jah/spin/SPIN520.SPL~        ~override/SPIN520.SPL~
   SAY NAME1 ~Shapechange~
@@ -13460,7 +13460,7 @@ Advantages:
     Level 6, +2 to casting speed factor for 7 rounds
     Level 12, +3 to casting speed factor for 9 rounds
     Level 18, +4 to casting speed factor for 12 rounds.
-  2. Sylvanus Physical Agility. This spell quickens Jaheira�s reflexes, enabling faster and more effective combat. Jaheira gains this spell at levels:
+  2. Sylvanus Physical Agility. This spell quickens Jaheira's reflexes, enabling faster and more effective combat. Jaheira gains this spell at levels:
     Level 3, +1 to attack speed factor and dexterity for 2 rounds
     Level 9, +2 to attack speed factor and +1 to dexterity for 7 rounds
     Level 15, +3 to attack speed factor and +1 to dexterity for 9 rounds
@@ -13471,34 +13471,34 @@ Disadvantages:
 -  No regular shapeshifting abilities.~
 
 COPY ~NeJE/jah/cre/VP_JAH10.CRE~ ~override/JAHEIR7.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH12.CRE~ ~override/JAHEIR8.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH13.CRE~ ~override/JAHEIR11.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEIR12.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEI12B.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEI14.CRE~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~
     THEN BEGIN
@@ -13511,9 +13511,9 @@ COPY ~NeJE/jah/cre/JAHEIR.cre~  ~override/JAHEIR.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -13531,9 +13531,9 @@ COPY ~NeJE/jah/cre/JAHEIR2.cre~ ~override/JAHEIR2.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -13551,9 +13551,9 @@ COPY ~NeJE/jah/cre/JAHEIR4.cre~ ~override/JAHEIR4.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -13571,9 +13571,9 @@ COPY ~NeJE/jah/cre/JAHEIR6.cre~ ~override/JAHEIR6.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -14020,7 +14020,7 @@ Special Abilities
 Combat Abilities:
  10% chance of Level Drain from the target on each hit
   (target may save vs. spells to avoid the drain)
- Each hit lowers opponents� Magic Resistance by 10%
+ Each hit lowers opponents' Magic Resistance by 10%
 
 THAC0 +6 bonus
 Damage:  1D10 +6
@@ -14084,7 +14084,7 @@ COPY ~NeJE\bdash\twistrun\fsdragon.CRE~ ~override~ //to remove Hindo's Doom
 COPY ~NeJE\bdash\itm\STAF12BD.ITM~ ~override~
   SAY NAME2 ~Staff of Dracandros~
   SAY DESC ~Staff of Dracandros
-A mage�s staff is far more than just a gilded walking stick, most being enchanted to an impressive degree. This one is no exception, and whoever the previous owner was, they were powerful indeed.
+A mage's staff is far more than just a gilded walking stick, most being enchanted to an impressive degree. This one is no exception, and whoever the previous owner was, they were powerful indeed.
 
 STATISTICS
 
@@ -14226,9 +14226,9 @@ COPY_EXISTING ~shadeld.cre~ ~override/shadeld.cre~
 BEGIN ~Restored Dak'kon's Blade (by Vlad)~
 
 COPY ~NeJE\bdash\dakkon\WA2DAK.ITM~         ~override~
-    SAY NAME2 ~Dak�kon�s Zerth Blade~
-  SAY DESC ~Dak�kon�s Zerth Blade +2
-This sword was the weapon of choice of the famous githzerai Dak�kon.  Dak�kon was killed by a powerful entity while working for a creature known as the �Nameless One�.
+    SAY NAME2 ~Dak'kon's Zerth Blade~
+  SAY DESC ~Dak'kon's Zerth Blade +2
+This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
 
 STATISTICS:
 
@@ -14260,9 +14260,9 @@ COPY_EXISTING ~WA2DAK.ITM~  ~override~
 BUT_ONLY
 
 COPY ~NeJE\bdash\dakkon\WA2DAK2.ITM~        ~override~
-    SAY NAME2 ~Dak�kon�s Streaming Blade~
-  SAY DESC ~Dak�kon�s Streaming Blade +2
-This sword was the weapon of choice of the famous githzerai Dak�kon.  Dak�kon was killed by a powerful entity while working for a creature known as the �Nameless One�.
+    SAY NAME2 ~Dak'kon's Streaming Blade~
+  SAY DESC ~Dak'kon's Streaming Blade +2
+This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
 
 STATISTICS:
 
@@ -14288,9 +14288,9 @@ Not Usable By:
  Cleric~
 
 COPY ~NeJE\bdash\dakkon\WA2DAK3.ITM~        ~override~
-    SAY NAME2 ~Dak�kon�s Streaming Blade~
-  SAY DESC ~Dak�kon�s Streaming Blade +3
-This sword was the weapon of choice of the famous githzerai Dak�kon.  Dak�kon was killed by a powerful entity while working for a creature known as the �Nameless One�.
+    SAY NAME2 ~Dak'kon's Streaming Blade~
+  SAY DESC ~Dak'kon's Streaming Blade +3
+This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
 
 STATISTICS:
 
@@ -14319,9 +14319,9 @@ Not Usable By:
  Cleric~
 
 COPY ~NeJE\bdash\dakkon\WA2DAK4.ITM~        ~override~
-    SAY NAME2 ~Dak�kon�s Streaming Blade~
-  SAY DESC ~Dak�kon�s Streaming Blade +4
-This sword was the weapon of choice of the famous githzerai Dak�kon.  Dak�kon was killed by a powerful entity while working for a creature known as the �Nameless One�.
+    SAY NAME2 ~Dak'kon's Streaming Blade~
+  SAY DESC ~Dak'kon's Streaming Blade +4
+This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
 
 STATISTICS:
 
@@ -14351,9 +14351,9 @@ Not Usable By:
  Cleric~
 
 COPY ~NeJE\bdash\dakkon\WA2DAK5.ITM~        ~override~
-    SAY NAME2 ~Dak�kon�s Streaming Blade~
-  SAY DESC ~Dak�kon�s Streaming Blade +5
-This sword was the weapon of choice of the famous githzerai Dak�kon.  Dak�kon was killed by a powerful entity while working for a creature known as the �Nameless One�.  After the Nameless One�s battle with the powerful entity, he restored Dak�kon to life and freed him of the oath he had to the Nameless One. This is the blade that was formed after Dak�kon was free from his oath.
+    SAY NAME2 ~Dak'kon's Streaming Blade~
+  SAY DESC ~Dak'kon's Streaming Blade +5
+This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.  After the Nameless One's battle with the powerful entity, he restored Dak'kon to life and freed him of the oath he had to the Nameless One. This is the blade that was formed after Dak'kon was free from his oath.
 
 STATISTICS:
 
@@ -14800,7 +14800,7 @@ Traditionally, their portfolios are divided between caring for forest animals an
 
 Baervan is gentle, good-natured, and mischievous. His penchant for good-natured pranks rivals Garl Glittergold. Except for Chiktikka's company, he tends to keep to himself. Though Baervan sometimes plays jokes on others, it is hard not to like him. The Masked Leaf's tricks are often designed to serve some purpose, unlike the mischief typical of Forgotten Folk. If Baervan wants to send someone a message, he does so in the form of a joke. Baervan dispatches avatars to help repair severe damage to nature, though sometimes just to create mischief.
 
-The Masked Leaf may manifest as an amber radiance to settle over a worshiper or any type of plant. This manifestation can confer upon a favored worshiper the benefits of a spell such as 'barkskin', locate plants and animals, pass without trace, plant door, speak with plants, or tree or coalesce into a handful of goodberries. Baervan�s manifestation can animate a tree as a treant for up to seven rounds, create a spike growth effect, or act as combined entangle and plant growth spells.
+The Masked Leaf may manifest as an amber radiance to settle over a worshiper or any type of plant. This manifestation can confer upon a favored worshiper the benefits of a spell such as 'barkskin', locate plants and animals, pass without trace, plant door, speak with plants, or tree or coalesce into a handful of goodberries. Baervan's manifestation can animate a tree as a treant for up to seven rounds, create a spike growth effect, or act as combined entangle and plant growth spells.
 
 Baervan is served by forest animals of all types (particularly raccoons and giant raccoons), amber dragons, dryads, earth elementals, faerie dragons, feystags, hamadryads, hybsils, leprechauns, nature elementals, singing trees, sprites, swanmays, treants, wild stags, and wood giants. He demonstrates his favor by permitting his faithful to discover acorns, pieces of amber, emeralds, oak leaves or the sudden growth of plants on a welltrodden trail where such would seem out of place. The Masked Leaf indicates his displeasure by causing a tree branch to gently strike the target of his disaffection or by causing small animals to behave oddly (like pelting a gnome with acorns).
 
@@ -14832,34 +14832,34 @@ Disadvantages:
 COPY ~NeJE\bdash\Aerie\copy\AERBOD01.CRE~ ~override\AERBOD01.CRE~
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE6.cre~ ~override\AERIE6.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE7.cre~ ~override\AERIE7.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE9.cre~ ~override\AERIE9.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE10.CRE~ ~override\AERIE10.CRE~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE11.cre~ ~override\AERIE11.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE12.cre~ ~override\AERIE12.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY_EXISTING ~AR0607.bcs~ ~override~
        DECOMPILE_AND_PATCH BEGIN
@@ -15048,7 +15048,7 @@ SAY ~RED WIZARD OF THAY: The Red Wizards are the masters of Thay, the conquerors
 
 The Red Wizards at their height were the enemies of many forces in Toril and received support from demons, devils, and drow. Amongst those who opposed them were the Witches of Rashemen, the Seven Sisters and their allies, the goodly Harpers, and even the Zhentarim, who disliked the Wizards encroaching on their territory.
 
-After another failed attempt at securing Rashemen in 1357 DR, the Red Wizards planned to infiltrate the nations of Faerun legitimately � in Thayan enclaves which would publicly sell magic items and quietly also traffic drugs, wicked spells, and slaves. Using these they hoped to eventually have strongholds and resulting political infiltration that would make them indispensable and powerful, and eventually get them something along the lines of world domination.
+After another failed attempt at securing Rashemen in 1357 DR, the Red Wizards planned to infiltrate the nations of Faerun legitimately ' in Thayan enclaves which would publicly sell magic items and quietly also traffic drugs, wicked spells, and slaves. Using these they hoped to eventually have strongholds and resulting political infiltration that would make them indispensable and powerful, and eventually get them something along the lines of world domination.
 
 Despite the general distrust and dislike that most felt towards the Red Wizards, the mages were still able to extend their power to almost every corner of the Realms, running their enclaves as planned in towns where slaving was otherwise banned. From here they ran a lucrative business in the trade of magical items, spells and artifacts, making them virtually indispensable to many of their clients, and as such the wizards expanded their sphere of influence ever further.
 
@@ -15070,34 +15070,34 @@ Disadvantages:
 -  None~
 
 COPY ~NeJE\bdash\edwin\EDWIN7.cre~ ~override\EDWIN7.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN9.cre~ ~override\EDWIN9.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN11.cre~ ~override\EDWIN11.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\spl_copy~                    ~override~
 
@@ -15238,34 +15238,34 @@ Disadvantages:
 -  None~
 
 COPY ~NeJE\bdash\viccy\VICONI6.cre~ ~override\VICONI6.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI8.cre~ ~override\VICONI8.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI9.cre~ ~override\VICONI9.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI11.CRE~ ~override\VICONI11.CRE~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI13.cre~ ~override\VICONI13.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI16.cre~ ~override\VICONI16.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\spl_copy~                    ~override~
 
@@ -15519,36 +15519,36 @@ COPY ~NeJE\bdash\Immy\copy\IMOENDRM.cre~ ~override\IMOENDRM.cre~
 COPY ~NeJE\bdash\Immy\copy\PPIMOEN.cre~ ~override\PPIMOEN.cre~
 
 COPY ~NeJE\bdash\Immy\cre\IMOEN10.cre~ ~override\IMOEN10.cre~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Immy\cre\IMOEN6.cre~ ~override\IMOEN6.cre~
-    WRITE_SHORT 0x244 0 // doesn�t change
+    WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
  THEN BEGIN
         COPY_EXISTING ~IMOEN1.cre~ ~override\IMOEN1.cre~
-            WRITE_SHORT 0x244 0 // doesn�t change
+            WRITE_SHORT 0x244 0 // doesn't change
           WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-          WRITE_BYTE  0x247 0x40 // doesn�t change
+          WRITE_BYTE  0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN2.cre~ ~override\IMOEN2.cre~
-            WRITE_SHORT 0x244 0 // doesn�t change
+            WRITE_SHORT 0x244 0 // doesn't change
           WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-             WRITE_BYTE  0x247 0x40 // doesn�t change
+             WRITE_BYTE  0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN4.cre~ ~override\IMOEN4.cre~
-            WRITE_SHORT 0x244 0 // doesn�t change
+            WRITE_SHORT 0x244 0 // doesn't change
              WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-             WRITE_BYTE  0x247 0x40 // doesn�t change
+             WRITE_BYTE  0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN61.cre~ ~override\IMOEN61.cre~
-            WRITE_SHORT 0x244 0 // doesn�t change
+            WRITE_SHORT 0x244 0 // doesn't change
           WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-          WRITE_BYTE  0x247 0x40 // doesn�t change
+          WRITE_BYTE  0x247 0x40 // doesn't change
 END
 
 ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
@@ -15628,7 +15628,7 @@ BEGIN ~Enhanced Encounter with Gromnir in ToB (by Vlad)~
 COPY ~NeJE\bdash\gromnir\copy~            ~override~
 COPY ~NeJE\bdash\gromnir\itm\AXECHAR2.ITM~            ~override\AXECHAR2.ITM~
     SAY NAME2 ~Charged Battle Axe +5~
-    SAY DESC ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It�s obvious a lot of time and effort went into its creation and although not apparent at first, a slight blue glow can be seen emanating from the runes.
+    SAY DESC ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation and although not apparent at first, a slight blue glow can be seen emanating from the runes.
 
 STATISTICS:
 
@@ -15846,7 +15846,7 @@ COPY ~NeJE/bdash/BGTcomp/itm/NEJWOLF.ITM~           ~override~
 
 COPY ~NeJE/bdash/BGTcomp/itm/BOOKNEJ.ITM~         ~override~
     SAY NAME2 ~Manual of Weapon Expertise~
-    SAY DESC ~A typical manual of weapon expertise provides the reader with a strictly regimented routine of daily training with a weapon of choice designed to significantly improve combat skills of the trainee. As if this isn�t enough, the manual is also magically enhanced, thereby allowing an individual to raise his/her THAC0 and damage inflicted by three points each. Unfortunately, the manual will disappear after a single use.
+    SAY DESC ~A typical manual of weapon expertise provides the reader with a strictly regimented routine of daily training with a weapon of choice designed to significantly improve combat skills of the trainee. As if this isn't enough, the manual is also magically enhanced, thereby allowing an individual to raise his/her THAC0 and damage inflicted by three points each. Unfortunately, the manual will disappear after a single use.
 
 STATISTICS:
 
@@ -15858,7 +15858,7 @@ Usage:  Place into quick item slot.~
 COPY ~NeJE/bdash/BGTcomp/bank/VPNJCLCK.ITM~            ~override~
     SAY NAME1 ~Cloak of the Greater Werewolf~
     SAY NAME2 ~Cloak of the Greater Werewolf~
-    SAY DESC ~Cloak of the Greater Werewolf:  *Relair�s Mistake*
+    SAY DESC ~Cloak of the Greater Werewolf:  *Relair's Mistake*
 A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes. Relair was not so lucky.
 
 STATISTICS:
@@ -15958,19 +15958,19 @@ Usable By:
  Viconia~
 
 COPY ~NeJE/bdash/BGTComp/vic/viconi.cre~  ~override/viconi.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/bdash/BGTComp/vic/viconi4.cre~ ~override/viconi4.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/bdash/BGTComp/vic/viconi61.cre~ ~override/viconi61.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY ~NeJE/bdash/BGTComp/vic/MISC3P.ITM~ ~override~
      SAY DESC ~Glasses of Identification
@@ -15985,9 +15985,9 @@ COPY ~NeJE/bdash/BGTComp/jah_bg2/JAHEIR.cre~  ~override/JAHEIR.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -16005,9 +16005,9 @@ COPY ~NeJE/bdash/BGTComp/jah_bg2/JAHEIR2.cre~ ~override/JAHEIR2.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -16025,9 +16025,9 @@ COPY ~NeJE/bdash/BGTComp/jah_bg2/JAHEIR4.cre~ ~override/JAHEIR4.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -16045,9 +16045,9 @@ COPY ~NeJE/bdash/BGTComp/jah_bg2/JAHEIR6.cre~ ~override/JAHEIR6.cre~
   SAY 0x1b0 #30776
   SAY 0x1b4 #30777
   SAY 0x1c0 #30780
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE 0x247 0x40 // doesn�t change
+  WRITE_BYTE 0x247 0x40 // doesn't change
   WRITE_BYTE 0x2c 99 //metal color
   WRITE_BYTE 0x2d 66 //minor color
   WRITE_BYTE 0x2e 52 //major color
@@ -16099,24 +16099,24 @@ Usable By:
  Edwin~
 
 COPY     ~NeJE/bdash/BGTComp/edwin/edwin.cre~  ~override/edwin.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY     ~NeJE/bdash/BGTComp/edwin/edwin2.cre~ ~override/edwin2.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY     ~NeJE/bdash/BGTComp/edwin/edwin4.cre~ ~override/edwin4.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 COPY     ~NeJE/bdash/BGTComp/edwin/edwin6.cre~ ~override/edwin6.cre~
-  WRITE_SHORT 0x244 0 // doesn�t change
+  WRITE_SHORT 0x244 0 // doesn't change
   WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn�t change
+  WRITE_BYTE  0x247 0x40 // doesn't change
 
 END
  ELSE BEGIN
@@ -16319,13 +16319,13 @@ Not Usable By:
 //3. Selune's Promise +5
 COPY ~NeJE/bdash/cromwell/SIMACE3.ITM~          ~override/SIMACE3.ITM~
   SAY NAME2 ~Selune's Promise +5~
-  SAY DESC ~A weapon once owned by a grief-stricken high priestess of the Moonmaiden, Selune�s Promise has a short and sad history. Fassa the Melancholy (as she is now known) was the head of a band of Selunite adventurers dedicated to destroying undead creatures wherever they found them. The band was initially quite successful, rarely suffering any casualties. Tymora�s luck could not stay with them forever, though.
+  SAY DESC ~A weapon once owned by a grief-stricken high priestess of the Moonmaiden, Selune's Promise has a short and sad history. Fassa the Melancholy (as she is now known) was the head of a band of Selunite adventurers dedicated to destroying undead creatures wherever they found them. The band was initially quite successful, rarely suffering any casualties. Tymora's luck could not stay with them forever, though.
 
-In 1156, Fassa and her band entered the Sepulcher of the Dim. The band knew the Sepulcher was rumored to contain a "leak" to the Negative Material Plane, but they had no idea just how many undead creations were inside. Mixed in with the seemingly harmless poltergeists and phantoms were powerful spectres and wraiths. Over a short and chillingly quiet period of several minutes, almost all of Fassa�s allies had their vital energy drained away. Fassa and her remaining companions fled and tried to form a plan of attack. When they returned on the following night, all of Fassa�s former companions had been turned into slave spectres under the control of the master. She and her few remaining comrades destroyed the master spectre and eventually destroyed the souls of her tormented brethren.  In the end, Fassa was the only one left alive.
+In 1156, Fassa and her band entered the Sepulcher of the Dim. The band knew the Sepulcher was rumored to contain a "leak" to the Negative Material Plane, but they had no idea just how many undead creations were inside. Mixed in with the seemingly harmless poltergeists and phantoms were powerful spectres and wraiths. Over a short and chillingly quiet period of several minutes, almost all of Fassa's allies had their vital energy drained away. Fassa and her remaining companions fled and tried to form a plan of attack. When they returned on the following night, all of Fassa's former companions had been turned into slave spectres under the control of the master. She and her few remaining comrades destroyed the master spectre and eventually destroyed the souls of her tormented brethren.  In the end, Fassa was the only one left alive.
 
 Fassa returned to her temple in misery and prayed to Selune that she never forget the agony of that night. Selune granted her request by causing a ghostly white and blue mace to appear on her bed when the next full moon rose. Carved into the shaft of the club were two words: Never Forget.
 
-Fassa became almost fanatical in her undead hunting in later years. At the age of thirty-three, tired and bitter, Fassa fell into decline. On the night of a full moon, she renounced her faith to Selune in front of her superiors and fellow clergy. Hours later, she threw herself into the Moonsea from a high cliff. The mace was found in her room and reluctantly kept in the church. Many years later, the new high priest of the temple decided to bestow this unique weapon to a new promising priestess. This mace was the favourite weapon of Sime�s mother.
+Fassa became almost fanatical in her undead hunting in later years. At the age of thirty-three, tired and bitter, Fassa fell into decline. On the night of a full moon, she renounced her faith to Selune in front of her superiors and fellow clergy. Hours later, she threw herself into the Moonsea from a high cliff. The mace was found in her room and reluctantly kept in the church. Many years later, the new high priest of the temple decided to bestow this unique weapon to a new promising priestess. This mace was the favourite weapon of Sime's mother.
 
 It turns to be that Cromwell inherited the secret knowledge from his ancestors of rithelium weapons and how to forge them. This mace that he reforged with rithelium and with your assistance is extremely light and gives off a shimmering blue hue. It is usable by wizards as if proficient in their use, grants magical resistance to the wearer and can strike through magical defences of the enemies.
 
@@ -16398,7 +16398,7 @@ Only Usable By:
 //5. Enhanced Staff of Besieging
 COPY ~NeJE/bdash/cromwell/STAFFBE2.ITM~ ~override/STAFFBE2.ITM~
   SAY NAME2 ~Staff of Besieging~
-  SAY DESC ~A favorite among transmuters, this particular staff was created by a wizard named Gulph the Tiny. A diminutive human mage, Gulph didn�t want to be stuck in a situation where he would have to rely on his physical abilities. This staff helped him have the upper hand in magical duels. Gulph met his end when he foolishly went looking for Ibenian Mushrooms in a grove full of quicklings. The staff remained among the quicklings for several years until a passing party of adventurers slaughtered the evil fae creatures and took the staff as their own.
+  SAY DESC ~A favorite among transmuters, this particular staff was created by a wizard named Gulph the Tiny. A diminutive human mage, Gulph didn't want to be stuck in a situation where he would have to rely on his physical abilities. This staff helped him have the upper hand in magical duels. Gulph met his end when he foolishly went looking for Ibenian Mushrooms in a grove full of quicklings. The staff remained among the quicklings for several years until a passing party of adventurers slaughtered the evil fae creatures and took the staff as their own.
 
 This staff was combined with the Staff of Super Power and enhanced further by Cromwell.
 
@@ -16433,7 +16433,7 @@ Only Usable By:
 //6. Enhanced Messenger of Sseth
 COPY ~NeJE/bdash/cromwell/BOWMESS2.ITM~          ~override/BOWMESS2.ITM~
   SAY NAME2 ~Enhanced Messenger of Sseth~
-  SAY DESC ~This wicked bow was crafted thousands of years ago for a powerful yuan-ti archer named Apali. The number of men, women, and children Apali killed with the aid of the bow is almost unbelievable, as the soldier waged war against humans for hundreds of years before he was finally laid low in Chessenta by a priest of Assuran, god of vengeance. Apali had killed the priest�s great-great grandfather in Chult over a hundred years earlier. The item is easily recognized because of the red and black banding on the grip and the carved snake heads at the ends of the bow. The red and black bandings represent Apali�s family, from a caste of priests. The snake heads represent Sseth, the god of the yuan-ti.
+  SAY DESC ~This wicked bow was crafted thousands of years ago for a powerful yuan-ti archer named Apali. The number of men, women, and children Apali killed with the aid of the bow is almost unbelievable, as the soldier waged war against humans for hundreds of years before he was finally laid low in Chessenta by a priest of Assuran, god of vengeance. Apali had killed the priest's great-great grandfather in Chult over a hundred years earlier. The item is easily recognized because of the red and black banding on the grip and the carved snake heads at the ends of the bow. The red and black bandings represent Apali's family, from a caste of priests. The snake heads represent Sseth, the god of the yuan-ti.
 
 Cromwell combined the three most powerfull bows into one to forge this unique composite long bow for you.
 
@@ -16486,9 +16486,9 @@ Not Usable By:
  Kensai
  Cavalier~
 
-//9. Enhanced Sebastian�s Dagger
+//9. Enhanced Sebastian's Dagger
 COPY ~NeJE/bdash/cromwell/DAGSEB2.ITM~          ~override/DAGSEB2.ITM~
-  SAY NAME2 ~Sebastian�s Dagger (Enhanced)~
+  SAY NAME2 ~Sebastian's Dagger (Enhanced)~
   SAY DESC ~This dagger weighs heavily in your hand, and is warm to the touch. The gem mounted in the hilt seems to have an inner light of some sort, though how it can have such illuminations and still be so deathly black at its core, you do not know. This particular dagger is magical, having special bonuses to its speed, accuracy, and damage it causes. Also, since it is magical, is it capable of striking opponents that are immune to normal weapons, such as vampires, elementals and mummies.
 
 STATISTICS:
@@ -17141,7 +17141,7 @@ COPY ~NeJE\bdash\itm\FLAMSW1H.ITM~ ~override~
 
 There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself- but whomever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It doesn't seem to hurt a warrior's performance, aside from the nagging doubt that the blade was not made for him... or any other humanoid.
 
-Combined with the Hell Bane sword, this weapon is also the bane of certain lower planes creatures and vampires. Against Baatezu and Tanar�ri the sword inflicts additional damage and the user gains a +4 to both hit and damage. As for vampires, the sword has a chance to slain them on touch. While held, the sword also grants complete protection against poison, disease and fire being magical or not.
+Combined with the Hell Bane sword, this weapon is also the bane of certain lower planes creatures and vampires. Against Baatezu and Tanar'ri the sword inflicts additional damage and the user gains a +4 to both hit and damage. As for vampires, the sword has a chance to slain them on touch. While held, the sword also grants complete protection against poison, disease and fire being magical or not.
 
 STATISTICS:
 
@@ -17152,8 +17152,8 @@ Equipped Bonuses:
 Combat Abilities:
  If any vampiric creature is hit it must save vs. spells or be utterly destroyed.
 
-Damage:  2D4 +4, +4 vs. Baatezu and Tanar�ri
-THAC0: +4, +4 vs. Baatezu and Tanar�ri
+Damage:  2D4 +4, +4 vs. Baatezu and Tanar'ri
+THAC0: +4, +4 vs. Baatezu and Tanar'ri
 Damage Type:  Slashing
 Magical Damage Type:  Acid (+2D4) and Fire (+2D4)
 Weight: 4
@@ -47725,7 +47725,7 @@ STRING_SET 1 @1000001
 //Tagebuch bzw. Helm im Quest in der Unterwasserstadt mit den Teufelchen(Imp)
 8918 @1008918
 ////////////////////////////////////////////////
-//Dialog und dialogF mit verschiedenen Eintr�gen
+//Dialog und dialogF mit verschiedenen Eintr'gen
 ////////////////////////////////////////////////
 
 2802 @1002802

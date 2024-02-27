@@ -14,7 +14,7 @@ END
 APPEND ~JAHEIRAJ~
 
 IF ~~ THEN BEGIN TS532
-  SAY ~Unnatural creatures, unnatural place. What a dread to be here. Yet there seem to be some awkward balance in Nakanishi and Hashimoto�s war. <CHARNAME> your command to come here was one of the many leadership errors.~
+  SAY ~Unnatural creatures, unnatural place. What a dread to be here. Yet there seem to be some awkward balance in Nakanishi and Hashimoto's war. <CHARNAME> your command to come here was one of the many leadership errors.~
   IF ~Global("NPCRemark","GLOBAL",1)~ THEN DO ~SetGlobal("NPCRemark","GLOBAL",2)~ EXIT
 END
 
@@ -97,7 +97,7 @@ IF ~~ THEN BEGIN Kelem7
 END
 
 IF WEIGHT #0 ~Global("VP_NPC_Notes_IWD","GLOBAL",1)~ THEN BEGIN NEJ531
- SAY ~<CHARNAME>, I don�t know why we find ourselves so far to the North, but I feel something very unnatural in our current situation. Please, be very careful. This area is strange and I question whether we belong here.~ [mute]
+ SAY ~<CHARNAME>, I don't know why we find ourselves so far to the North, but I feel something very unnatural in our current situation. Please, be very careful. This area is strange and I question whether we belong here.~ [mute]
  IF ~InParty("Imoen")
 InParty("Minsc")~ THEN DO ~SetGlobal("VP_NPC_Notes_IWD","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ71
  IF ~InParty("Imoen")
@@ -152,7 +152,7 @@ END
 IF ~~ THEN BEGIN NEJ539
  SAY ~Are you not curious or even worried as to why he expected to arrive out of his own time?~
  IF ~~ THEN REPLY ~I do have questions Jaheira, but if Hrothgar is not yet disposed to answer them I cannot force him to speak. We must wait until he decides when we should know more.~ GOTO NEJ540
- IF ~~ THEN REPLY ~I do not understand this strangeness anymore than you Jaheira. My thoughts, from first waking in Irenicus� dungeon and all that has since occurred are muddled. I am continually trying to find reason for what is happening now but can make no sense of any of it. Fate truly does not wish me to know too much too soon is the only rational explanation that I can come up with.~ GOTO NEJ540
+ IF ~~ THEN REPLY ~I do not understand this strangeness anymore than you Jaheira. My thoughts, from first waking in Irenicus' dungeon and all that has since occurred are muddled. I am continually trying to find reason for what is happening now but can make no sense of any of it. Fate truly does not wish me to know too much too soon is the only rational explanation that I can come up with.~ GOTO NEJ540
  IF ~~ THEN REPLY ~Giving my heritage Jaheira, should I really be surprised when strange and seemingly inexplicable events occur around me? Do we not usually get answers in the end? The answers to both my questions are *yes* Jaheira, we may not get the answers we like but we do get them.~ GOTO NEJ540
  IF ~~ THEN REPLY ~Then what do you suggest I do Jaheira, assault Hrothgar and demand some answers? I have certainly toyed with the idea more than once, but no, I see by the expression on your face that like me, you know that would not be a wise action. For now I will watch and wait.~ GOTO NEJ540
 END
@@ -230,7 +230,7 @@ IF ~~ THEN BEGIN NEJ550
 END
 
 IF ~~ THEN BEGIN NEJ551
- SAY ~We only have Tilorn�s belief that balance has tipped. He failed in his attempt and it looks as though we are about to fail too. Does that not answer your question as to whether we should be interfering here or not?~
+ SAY ~We only have Tilorn's belief that balance has tipped. He failed in his attempt and it looks as though we are about to fail too. Does that not answer your question as to whether we should be interfering here or not?~
  IF ~~ THEN EXTERN ~HROTHJ~ 90
 END
 
@@ -318,7 +318,7 @@ IF ~~ THEN BEGIN NEJ565
 END
 
 IF WEIGHT #-1 ~Global("VP_Jaheira_In_IWD","GLOBAL",2)~ THEN BEGIN NEJ566
- SAY ~You look troubled by this man�s words <CHARNAME>. I saw nothing in his manner to cause such a look.~  [mute]
+ SAY ~You look troubled by this man's words <CHARNAME>. I saw nothing in his manner to cause such a look.~  [mute]
  IF ~~ THEN REPLY ~This is not possible! What is going on here?~ DO ~SetGlobal("VP_Jaheira_In_IWD","GLOBAL",3)~ GOTO NEJ567
  IF ~~ THEN REPLY ~I... I know that man Jaheira... at least I know of him.~ DO ~SetGlobal("VP_Jaheira_In_IWD","GLOBAL",3)~ GOTO NEJ568
  IF ~~ THEN REPLY ~What trick has that wizard played on us this time? I swear I will have his hide for this!~ DO ~SetGlobal("VP_Jaheira_In_IWD","GLOBAL",3)~ GOTO NEJ575
@@ -437,7 +437,7 @@ We told Ghereg, the ogre in Kuldahar Pass, a recipe that would make his headache
 END
 
 IF ~~ THEN BEGIN NEJ582
- SAY ~Yes, and I�m sure we will speak of it again. Whether <CHARNAME> is hard of hearing or hard headed remains to be seen.~
+ SAY ~Yes, and I'm sure we will speak of it again. Whether <CHARNAME> is hard of hearing or hard headed remains to be seen.~
  IF ~~ THEN EXTERN ~DARUNDEL~ 104
 END
 
@@ -458,7 +458,7 @@ END
 
 IF ~~ THEN BEGIN NEJ586
  SAY ~My faith in Tempus is such that he would not have put this path before me if it were not the right one to follow.~
- IF ~~ THEN REPLY ~I don�t see any other means of completing our mission.~ EXTERN ~HROTHJ~ 117
+ IF ~~ THEN REPLY ~I don't see any other means of completing our mission.~ EXTERN ~HROTHJ~ 117
  IF ~~ THEN REPLY ~Why am I not surprised that the price for the success of this mission is the death of another?~ EXTERN ~HROTHJ~ 117
  IF ~~ THEN REPLY ~If this priestess is all that stands between the survival of Kuldahar, then her life is already forfeit.~ EXTERN ~HROTHJ~ 117
 END
@@ -499,7 +499,7 @@ END
 
 IF ~~ THEN BEGIN NEJ592
  SAY ~Silvanus may the soul of our brother Erevain find its way to you.~
- IF ~~ THEN REPLY ~However did he come to be here? He didn�t leave with us and I am certain the avalanche has prevented anyone leaving Easthaven since our departure.~ EXTERN ~HROTHJ~ 133
+ IF ~~ THEN REPLY ~However did he come to be here? He didn't leave with us and I am certain the avalanche has prevented anyone leaving Easthaven since our departure.~ EXTERN ~HROTHJ~ 133
  IF ~~ THEN REPLY ~A waste of a life... we could have maybe used his skills if we had known he was intent on leaving Easthaven.~ EXTERN ~HROTHJ~ 134
  IF ~~ THEN REPLY ~What did the poor fool hope to accomplish out here alone?~ EXTERN ~HROTHJ~ 135
 END
@@ -526,7 +526,7 @@ IF ~~ THEN BEGIN NEJ595
 END
 
 IF ~~ THEN BEGIN NEJ611
- SAY ~This Hrothgar, goes beyond *trust me, I can tell you no more*. If its trust you want then I suggest you think carefully on how you answer <CHARNAME>�s question! I have seen enough lies and treachery in the future... I will not suffer the same from you! Know this whilst you consider your answer.~
+ SAY ~This Hrothgar, goes beyond *trust me, I can tell you no more*. If its trust you want then I suggest you think carefully on how you answer <CHARNAME>'s question! I have seen enough lies and treachery in the future... I will not suffer the same from you! Know this whilst you consider your answer.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 196
  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 43
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ314
@@ -534,7 +534,7 @@ IF ~~ THEN BEGIN NEJ611
 END
 
 IF ~~ THEN BEGIN NEJ612
- SAY ~Look around you Accalia, do you know exactly where it is that Hrothgar has delivered us to... do you know which direction we need to take in order to return to Kuldahar? Of course you don�t, Hrothgar brought us here and only he can return us, he has no need to do us any harm, not whilst he holds the key to our return.~
+ SAY ~Look around you Accalia, do you know exactly where it is that Hrothgar has delivered us to... do you know which direction we need to take in order to return to Kuldahar? Of course you don't, Hrothgar brought us here and only he can return us, he has no need to do us any harm, not whilst he holds the key to our return.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 196
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ172
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX88
@@ -543,7 +543,7 @@ IF ~~ THEN BEGIN NEJ612
 END
 
 IF ~~ THEN BEGIN NEJ613
- SAY ~Death is as much a necessary part of nature�s cycle as is birth. What we see here is an abomination in the sight of the Mother�s eyes, for the cycle has been interrupted and balance in this place has been lost. It is for us to release the souls of those poor wretches and bring harmony, not only to their spirits but to the balance in this place once again.~
+ SAY ~Death is as much a necessary part of nature's cycle as is birth. What we see here is an abomination in the sight of the Mother's eyes, for the cycle has been interrupted and balance in this place has been lost. It is for us to release the souls of those poor wretches and bring harmony, not only to their spirits but to the balance in this place once again.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel")
@@ -590,7 +590,7 @@ IF ~~ THEN BEGIN NEJ617
 END
 
 IF ~~ THEN BEGIN NEJ618
- SAY ~I can�t say that I am not relieved to be going home, I have a husband that I need to see, to know that he is safe, but if <CHARNAME> gave the word then I would remain here and fight for your cause. As it is, it is time for us to leave the past alone.~
+ SAY ~I can't say that I am not relieved to be going home, I have a husband that I need to see, to know that he is safe, but if <CHARNAME> gave the word then I would remain here and fight for your cause. As it is, it is time for us to leave the past alone.~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 46
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ319
 END
@@ -619,7 +619,7 @@ IF ~~ THEN BEGIN NEJ621
 END
 
 IF ~~ THEN BEGIN NEJ622
- SAY ~I can�t say that I am not relieved to be going home, I have a husband that I need to see, to know that he is safe, but if <CHARNAME> gave the word then I would remain here and fight for your cause. As it is, it is time for us to leave the past alone.~
+ SAY ~I can't say that I am not relieved to be going home, I have a husband that I need to see, to know that he is safe, but if <CHARNAME> gave the word then I would remain here and fight for your cause. As it is, it is time for us to leave the past alone.~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 54
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ323
 END
@@ -677,7 +677,7 @@ IF ~~ THEN BEGIN NEJ628
 END
 
 IF ~~ THEN BEGIN NEJ629
- SAY ~Let us thank Mother earth and pray to Silvanus that our opponent doesn�t change his ways.~
+ SAY ~Let us thank Mother earth and pray to Silvanus that our opponent doesn't change his ways.~
  IF ~True()~ THEN EXIT
  IF ~InParty("Minsc")
 !Dead("Minsc")
@@ -693,12 +693,12 @@ InParty("Dar")
 END
 
 IF ~~ THEN BEGIN NEJ630
- SAY ~Now that we�ve taken the Gem from the creature, what are we to do with it?~
+ SAY ~Now that we've taken the Gem from the creature, what are we to do with it?~
  IF ~~ THEN EXTERN ~HROTHJ~ 149
 END
 
 IF ~~ THEN BEGIN NEJ631
- SAY ~Calm yourself child, whatever the wager, let�s not disappoint them.~
+ SAY ~Calm yourself child, whatever the wager, let's not disappoint them.~
  IF ~~ THEN EXTERN ~HROTHJ~ 282
 END
 
@@ -717,7 +717,7 @@ IF ~~ THEN BEGIN NEJ633
 END
 
 IF ~~ THEN BEGIN NEJ634
-  SAY ~I shudder when I think what this Necromancer intends for that poor souls body. Visions of my own Khalid�s body broken and violated by Irenicus swim before my eyes. Such perversion should not be allowed <CHARNAME>!~
+  SAY ~I shudder when I think what this Necromancer intends for that poor souls body. Visions of my own Khalid's body broken and violated by Irenicus swim before my eyes. Such perversion should not be allowed <CHARNAME>!~
 	IF ~True()~ THEN EXIT
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
@@ -746,9 +746,9 @@ IF ~~ THEN BEGIN NEJ634
 END
 
 IF ~~ THEN BEGIN NEJ635
-  SAY ~I swear I do not understand you <CHARNAME>, taking on such a request and you knowing  full well what the necromancer had in mind to do with that poor souls�s body.~
+  SAY ~I swear I do not understand you <CHARNAME>, taking on such a request and you knowing  full well what the necromancer had in mind to do with that poor souls's body.~
 =
-~You saw the way Irenicus had defiled my Khalid�s body and how it cut my heart to see him laid out so. If you were not repulsed by such desecration then I fear I do not know you at all.~
+~You saw the way Irenicus had defiled my Khalid's body and how it cut my heart to see him laid out so. If you were not repulsed by such desecration then I fear I do not know you at all.~
 	IF ~True()~ THEN DO ~ActionOverride("TuEzek",EscapeArea())~ EXIT
   IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 290
@@ -763,13 +763,13 @@ IF ~~ THEN BEGIN NEJ636
 Dead("Minsc")~ THEN REPLY ~Then it is decided, we take it with us.~ EXTERN ~HROTHJ~ 336
  IF ~OR(2)
 !InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~We�ll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ EXTERN ~HROTHJ~ 336
+Dead("Minsc")~ THEN REPLY ~We'll not know anything until Tilorn gets us safely out of here, lets hope he does it before RayVon discovers his mages are dead and his artifact is missing.~ EXTERN ~HROTHJ~ 336
  IF ~OR(2)
 !InParty("Minsc")
 Dead("Minsc")~ THEN REPLY ~Why does everything seem to rely on keys around here?~ EXTERN ~HROTHJ~ 337
  IF ~OR(2)
 !InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~If it�s made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ EXTERN ~HROTHJ~ 337
+Dead("Minsc")~ THEN REPLY ~If it's made by mages then it may not necessarily need a key, it could just as easily need some incantation of sorts to start the thing up.~ EXTERN ~HROTHJ~ 337
  IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ337
 END
@@ -791,7 +791,7 @@ END
 IF ~~ THEN BEGIN vulova
  SAY ~(*Rolls her eyes*) Those two would try the patience of Ilmater himself, <CHARNAME>.~
 =
-~Apart from that bit of trouble we had with Minsc and Edwin over Dynaheir in Nashkiel, I don�t recall having a more argumentative pair in party...ever!~
+~Apart from that bit of trouble we had with Minsc and Edwin over Dynaheir in Nashkiel, I don't recall having a more argumentative pair in party...ever!~
  		IF ~True()~ THEN EXIT
  		IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ vulova
@@ -803,7 +803,7 @@ IF ~~ THEN BEGIN meloraqt
 END
 
 IF ~~ THEN BEGIN shendru
- SAY ~You are an abomination druid! Nay, I will not address you as such, for you are no protector of the mother�s children.~
+ SAY ~You are an abomination druid! Nay, I will not address you as such, for you are no protector of the mother's children.~
 =
 ~As it was your failure to maintain balance in yourself that has caused the corruption here, so shall it be your blood that helps to cleanse it.~
 	IF ~~ THEN EXTERN ~SHENDRU~ 7

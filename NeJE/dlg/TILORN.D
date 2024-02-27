@@ -94,8 +94,8 @@ IF ~~ THEN BEGIN 16
  SAY ~True, it is no simple thing to do, <CHARNAME>, but I can deliver you safely to Halruaa and bring you safely back to the present time when the task is completed. How it is that I can do this is not for me to say. Are you prepared to help me?~ [tilorn20]
  IF ~~ THEN REPLY ~You appear to have the same sense of right about you as Hrothgar does, Tilorn, I see no reason for mistrust in either of you. I will quell my curiosity for the time being and aid you.~ GOTO 17
  IF ~~ THEN REPLY ~I will aid you, Tilorn, and hope that you will trust me enough to give me some answers soon.~ GOTO 17
- IF ~~ THEN REPLY ~Cast your magic, Tilorn, or whatever it is that you have to do to transport us to this Halruaa. We shall see what we shall see, when and �if� we arrive at the right time or even the right place.~ GOTO 17
- IF ~~ THEN REPLY ~This is madness, Tilorn! You stretch the meaning of the word �trust� too far! I will not embark on so foolish a mission because it is what you believe should be done. I will return and seek out Irenicus before the chance is lost. If it is your decision to follow Tilorn, Hrothgar, then I will say goodbye to you both.~ GOTO 20
+ IF ~~ THEN REPLY ~Cast your magic, Tilorn, or whatever it is that you have to do to transport us to this Halruaa. We shall see what we shall see, when and 'if' we arrive at the right time or even the right place.~ GOTO 17
+ IF ~~ THEN REPLY ~This is madness, Tilorn! You stretch the meaning of the word 'trust' too far! I will not embark on so foolish a mission because it is what you believe should be done. I will return and seek out Irenicus before the chance is lost. If it is your decision to follow Tilorn, Hrothgar, then I will say goodbye to you both.~ GOTO 20
  IF ~~ THEN REPLY ~I told Hrothgar that I would travel with him as far as Ulcaster, Tilorn. Well I am here and I find myself still without answers as to why. You, Tilorn, and Hrothgar are very much the same, in what way I am still unsure, but I see no answers forthcoming from either of you. I have delayed my search for Imoen too long, this is as far as that trust you both asked for goes. If you feel that you must follow Tilorn, Hrothagr, then I bid you both farewell.~ GOTO 20
 END
 
@@ -704,13 +704,13 @@ StartCutScene("VPCutH05")~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
- SAY ~I cannot... (*sighs*) It�s too late, my friend.~ [tilorn01]
+ SAY ~I cannot... (*sighs*) It's too late, my friend.~ [tilorn01]
  IF ~~ THEN DO ~PlaySound("EFF_M17B")
 ScreenShake([50.50],30)~ EXTERN ~EURICH~ 1
 END
 
 IF ~~ THEN BEGIN 25
- SAY ~Why are you all so persistent? Even if I resurrect <PRO_HIMHER>, <PRO_HESHE> won�t remember a thing.~ [tilorn02]
+ SAY ~Why are you all so persistent? Even if I resurrect <PRO_HIMHER>, <PRO_HESHE> won't remember a thing.~ [tilorn02]
  IF ~~ THEN EXTERN ~LARIA~ 3
 END
 
@@ -728,7 +728,7 @@ StartCutScene("VP_Mov05")~ EXIT
 END
 
 IF ~!Global("VP_Leaving_Halruaa","GLOBAL",0)~ THEN BEGIN 28
- SAY ~(*Angrily*) Mages and their damn pride! Magic is indeed a terrible force if wielded indiscriminately. I look at the destruction around us and pray today�s mages have learnt from past mistakes, this should never have happened!~
+ SAY ~(*Angrily*) Mages and their damn pride! Magic is indeed a terrible force if wielded indiscriminately. I look at the destruction around us and pray today's mages have learnt from past mistakes, this should never have happened!~
  IF ~~ THEN EXTERN ~HROTHJ~ 339
 END
 
@@ -753,7 +753,7 @@ IF ~~ THEN BEGIN 32
 END
 
 IF ~~ THEN BEGIN 33
- SAY ~Even a minor tremor, I thought, might be enough to alter the future in some significant way... I was wrong... now the mission becomes yours and Hrothgar�s.~
+ SAY ~Even a minor tremor, I thought, might be enough to alter the future in some significant way... I was wrong... now the mission becomes yours and Hrothgar's.~
  IF ~~ THEN GOTO 34
 END
 
@@ -777,7 +777,7 @@ AddXPObject(Player4,38500)
 AddXPObject(Player5,38500)
 AddXPObject(Player6,38500)
 EscapeArea()~ JOURNAL ~"Pasenture"... a strange term for Tilorn to use? Yet he spoke of it as though it were just another state in which time exists, a state that I of this time, have no comprehension of but one he is obviously accustomed to making references to.
-Does this mean that the future has been changed before by his brethren�s excursions into the past? If it is so then I can�t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
+Does this mean that the future has been changed before by his brethren's excursions into the past? If it is so then I can't help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
 It has always seemed to me that my life was not my own, that my path was set no matter which way I chose... set by the gods or by fate whatever you choose to call it. Or so I thought but now, now I am not so sure.
 If the past can be tampered with so easily by these... these travellers in time then how am I to know what is real and what is not?
 Does all that I believe in have any place in this reality... does it even matter what I believe anymore? Am I but a pawn to be used and manipulated by those wishing to harness the divine power that I carry within?
@@ -806,7 +806,7 @@ AddXPObject(Player4,57300)
 AddXPObject(Player5,57300)
 AddXPObject(Player6,57300)
 EscapeArea()~ JOURNAL ~"Pasenture"... a strange term for Tilorn to use? Yet he spoke of it as though it were just another state in which time exists, a state that I of this time, have no comprehension of but one he is obviously accustomed to making references to.
-Does this mean that the future has been changed before by his brethren�s excursions into the past? If it is so then I can�t help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
+Does this mean that the future has been changed before by his brethren's excursions into the past? If it is so then I can't help but wonder what else they have altered in the past to suit their needs in the future, and more importantly, have they deliberately manipulated my path to steer me unto them? What effect has their meddling had on my own destiny?
 It has always seemed to me that my life was not my own, that my path was set no matter which way I chose... set by the gods or by fate whatever you choose to call it. Or so I thought but now, now I am not so sure.
 If the past can be tampered with so easily by these... these travellers in time then how am I to know what is real and what is not?
 Does all that I believe in have any place in this reality... does it even matter what I believe anymore? Am I but a pawn to be used and manipulated by those wishing to harness the divine power that I carry within?

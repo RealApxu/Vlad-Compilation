@@ -3,12 +3,12 @@ BEGIN ~Leina~
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~Who... who are you people? You are not employees of my father, that much is obvious.~ [leina_01]
   IF ~~ THEN REPLY ~No, we are not employees of your father, Leina. There is no time to explain, you are free but we must make haste and leave here quickly.~ GOTO 1
-  IF ~~ THEN REPLY ~Do not be afraid, Leina, you are free but I am not sure for how long. There may be more of your father�s guards about so we should move quickly.~ GOTO 1
+  IF ~~ THEN REPLY ~Do not be afraid, Leina, you are free but I am not sure for how long. There may be more of your father's guards about so we should move quickly.~ GOTO 1
   IF ~~ THEN REPLY ~You girl, Leina is it? You have your freedom but I suggest you take it whilst you can.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~I will gladly leave this place, but not before I know more of my rescuer and how you came to be here? My father would not have relinquished the key to my prison easily, unless... unless as D�Cai says, he is dead.~ [leina_02]
+  SAY ~I will gladly leave this place, but not before I know more of my rescuer and how you came to be here? My father would not have relinquished the key to my prison easily, unless... unless as D'Cai says, he is dead.~ [leina_02]
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~Forgive my manners Leina, I am <CHARNAME>. Samuel Thunderburp, the bartender of The Five Flagons was concerned for your safety and bid us to find you. Further answers will have to wait until we are safely out of here.~ GOTO 2
   IF ~Global("VP_Met_FFBarkeep","GLOBAL",1)~ THEN REPLY ~I am called <CHARNAME>. We were promised a reward by the old barkeep of The Five Flagons if we found you safe. Well, we have found you and you seem to be unharmed so we guess we have earned our reward.~ GOTO 2
   IF ~~ THEN REPLY ~My name is <CHARNAME>. Forgive my haste, Leina, but this is not the time for questions, I urge you to hurry.~ GOTO 3
@@ -36,7 +36,7 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~My only reason for doing so was the hope of a reconciliation with my father but my mother�s death has changed him so, I am not even sure that I want a reconciliation with the man he has become.~ [leina_05]
+  SAY ~My only reason for doing so was the hope of a reconciliation with my father but my mother's death has changed him so, I am not even sure that I want a reconciliation with the man he has become.~ [leina_05]
   IF ~~ THEN GOTO 6
 END
 

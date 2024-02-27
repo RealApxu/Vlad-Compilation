@@ -110,14 +110,14 @@ END
 IF WEIGHT #1 ~Global("VP_Slayer_Again","GLOBAL",2)~ THEN BEGIN S10
 	SAY ~I do not understand you, daughter of Bhaal. You can become a goddess, but instead you are still sticking to so-called "feelings". What will they possibly give to you?~
 =
-~Hordes of snotty children, constant fights with the servants, peasants � all this you, mortals, are calling happiness? Your husband grows decrepit and needs constant care, his relatives, whom you should please.~
+~Hordes of snotty children, constant fights with the servants, peasants ' all this you, mortals, are calling happiness? Your husband grows decrepit and needs constant care, his relatives, whom you should please.~
 =
 ~You are a daughter of Bhaal! Are you worthy of such a fate? Was it necessary to be born as a daughter of a god only to become a simple mortal?~
 =
 ~If so, why did you resist for so long? Why didn't you allow some mercenary to kill you? You have come so far, you have achieved so much! Now you are ready to give it all up for the sake of very doubtful hap-pi-ness?~
   	IF ~~ THEN REPLY ~How dare you speak so, demon! What do you understand of a mortal's feelings? Nothing, nothing at all! Don't you ever dare to judge us! You could not possibly understand how love could make me refuse the divine throne. Leave me be, fiend.~ GOTO S11
   	IF ~~ THEN REPLY ~Why are you trying to bring back all my doubts, demon? I have just persuaded myself to give up the throne. I love Keldorn, why can't you understand this! However, on the other hand, I must sit on my father's throne; nobody except me can do this.~ GOTO S12
-  	IF ~~ THEN REPLY ~Be gone, demon! You will not deceive me with your words about power. I've heard enough of them. I do not want it � you hear me? � I have no interest in my father's throne! I dream about the day, when I will finally be free from you, your treacherous manipulations and this curse.~ GOTO S13
+  	IF ~~ THEN REPLY ~Be gone, demon! You will not deceive me with your words about power. I've heard enough of them. I do not want it ' you hear me? ' I have no interest in my father's throne! I dream about the day, when I will finally be free from you, your treacherous manipulations and this curse.~ GOTO S13
 END
 
 IF ~~ THEN BEGIN S11
@@ -172,7 +172,7 @@ StartCutScene("KRCut29")~ EXIT
 END
 
 IF ~~ THEN BEGIN S16
-	SAY ~Loves?! You?! The demon spawn?! Are you out of your mind?! You think a paladin of Torm could seriously fall in love with some daughter of Bhaal? He's watching you, he has a task � bring you to the li-i-ght. Pff!~
+	SAY ~Loves?! You?! The demon spawn?! Are you out of your mind?! You think a paladin of Torm could seriously fall in love with some daughter of Bhaal? He's watching you, he has a task ' bring you to the li-i-ght. Pff!~
   	IF ~~ THEN REPLY ~(In tears) No, this is not happening. But... you're right, maybe. Oh, Kelemvor, what should I do now?!~ GOTO S18
   	IF ~~ THEN REPLY ~(Covering your ears with your hands) No-no-no! I do not want to hear that! Be silent!~ GOTO S19
 END
@@ -194,7 +194,7 @@ StartCutScene("KRCut29")~ EXIT
 END
 
 IF ~~ THEN BEGIN S19
-	SAY ~Will my silence change anything? It is not me, a demon, who�s trying to persuade you, but yourself, your second entity.~
+	SAY ~Will my silence change anything? It is not me, a demon, who's trying to persuade you, but yourself, your second entity.~
 	IF ~~ THEN DO ~SetGlobal("VP_Slayer_Farewell","GLOBAL",3)
 ClearAllActions()
 StartCutSceneMode()

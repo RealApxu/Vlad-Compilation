@@ -11,13 +11,13 @@ END
 APPEND ~BKORGAN~
 
 IF ~~ THEN BEGIN NEJ0
-  SAY ~Dwarves aint much fer dancing, but they�ve nowt against good ale and the sight of dancing females. Must say I appreciate yer making the effort elf.~
+  SAY ~Dwarves aint much fer dancing, but they've nowt against good ale and the sight of dancing females. Must say I appreciate yer making the effort elf.~
 	IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina30a
 	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina30a
 END
 
 IF ~~ THEN BEGIN NEJ1
-	SAY ~We aint bringing back nowt they aint seen before... or do they think elves creep in and empty their privies for �em?~
+	SAY ~We aint bringing back nowt they aint seen before... or do they think elves creep in and empty their privies for 'em?~
 	IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest21
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~BHROTH~ 88
@@ -33,24 +33,24 @@ IF ~~ THEN BEGIN LeiDear1
 END
 
 IF ~~ THEN BEGIN LeiDear2
-	SAY ~What? Smell never got in the way before we both been rolling in Umberhulk poo or has ye forgot what�s on yer boots and what was in the basement we just come from. I wanna mind an ale and a song either.~
+	SAY ~What? Smell never got in the way before we both been rolling in Umberhulk poo or has ye forgot what's on yer boots and what was in the basement we just come from. I wanna mind an ale and a song either.~
 	IF ~~ THEN EXTERN ~BLEINA~ DeArnise10	
 END
 
 IF ~~ THEN BEGIN LeiDear3
 	SAY ~Oi, just the way I like me lassies feisty. Makes the tussle worth it. We could even put on some water and have boiled rat.~
-	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan, shut your  filthy mouth!~ GOTO LeiDear4
-	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ GOTO LeiDear4
-	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan I best think you had better knock off the remarks. I don�t like the idea of being the target of a fireball while I sleep.~ GOTO LeiDear4
-	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... You best stand down now Korgan.~ GOTO LeiDear4
-	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan, shut your  filthy mouth!~ GOTO LeiDear5a
-	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ GOTO LeiDear5a
-	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... Korgan I best think you had better knock off the remarks. I don�t like the idea of being the target of a fireball while I sleep.~ GOTO LeiDear5a
-	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf�s innuendoes*)... You best stand down now Korgan.~ GOTO LeiDear5a
+	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan, shut your  filthy mouth!~ GOTO LeiDear4
+	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ GOTO LeiDear4
+	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I best think you had better knock off the remarks. I don't like the idea of being the target of a fireball while I sleep.~ GOTO LeiDear4
+	IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... You best stand down now Korgan.~ GOTO LeiDear4
+	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan, shut your  filthy mouth!~ GOTO LeiDear5a
+	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ GOTO LeiDear5a
+	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I best think you had better knock off the remarks. I don't like the idea of being the target of a fireball while I sleep.~ GOTO LeiDear5a
+	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... You best stand down now Korgan.~ GOTO LeiDear5a
 END
 
 IF ~~ THEN BEGIN LeiDear4
-	SAY ~Oi, I see I have me a bit of competition here. Want the lassie all to yourself does yer? Let�s toss the bow and see who wins... or is it ye wants to toss me out of the group?~
+	SAY ~Oi, I see I have me a bit of competition here. Want the lassie all to yourself does yer? Let's toss the bow and see who wins... or is it ye wants to toss me out of the group?~
 	IF ~~ THEN GOTO LeiDear5
 END
 
@@ -60,18 +60,18 @@ IF ~~ THEN BEGIN LeiDear5
 END
 
 IF ~~ THEN BEGIN LeiDear5a
-	SAY ~(*Grinning licentiously*) Oi, I see I have me a bit of competition here... not that Korgan would be one to come between two lassies... unlessing that is we all be taking a tumble together. P�raps we can find that room and toss the bow to see who gets to go first... or is it ye wants to toss me out of the group?~
+	SAY ~(*Grinning licentiously*) Oi, I see I have me a bit of competition here... not that Korgan would be one to come between two lassies... unlessing that is we all be taking a tumble together. P'raps we can find that room and toss the bow to see who gets to go first... or is it ye wants to toss me out of the group?~
 	IF ~~ THEN GOTO LeiDear5
 END
 
 IF ~~ THEN BEGIN LeiSpher1
-	SAY ~Yer talkin� me language thar. Gold, ale, the power me axe brings I needs but a warm body to tumble with is always a pleasure too, shall we wrestle for the Bard here?~
+	SAY ~Yer talkin' me language thar. Gold, ale, the power me axe brings I needs but a warm body to tumble with is always a pleasure too, shall we wrestle for the Bard here?~
 	IF ~OR(2)
 !InParty("Viconia")
 Dead("Viconia")~ THEN REPLY ~Ye thinks ye can best me do ye dwarf? We should head for the pits at the Copper Coronet then?~ GOTO LeiSpher2
 	IF ~OR(2)
 !InParty("Viconia")
-Dead("Viconia")~ THEN REPLY ~I don�t know she ain�t too meaty. Is it worth it?~ GOTO LeiSpher2
+Dead("Viconia")~ THEN REPLY ~I don't know she ain't too meaty. Is it worth it?~ GOTO LeiSpher2
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher1
 END
@@ -87,7 +87,7 @@ IF ~~ THEN BEGIN LeiSpher3
 END
 
 IF ~~ THEN BEGIN LeiSpher4
-	SAY ~Who the blazes cares! Let�s have some ale.~
+	SAY ~Who the blazes cares! Let's have some ale.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere18
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
@@ -176,7 +176,7 @@ IF ~~ THEN BEGIN TS143
 END
 
 IF ~~ THEN BEGIN LeiTheat
-  SAY ~Idea... Who the blazes cares �bout ideas when there�s ale to be �ad!~
+  SAY ~Idea... Who the blazes cares 'bout ideas when there's ale to be 'ad!~
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -184,7 +184,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -192,7 +192,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -200,7 +200,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -228,7 +228,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -236,7 +236,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -244,7 +244,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -264,7 +264,7 @@ IF ~~ THEN BEGIN LeiThea3
 END
 
 IF ~~ THEN BEGIN LeiThea4
-  SAY ~Oh, she likes to have fun do she... what�ll it be, a roll in the hay?~
+  SAY ~Oh, she likes to have fun do she... what'll it be, a roll in the hay?~
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -272,7 +272,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -280,7 +280,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
 !IsValidForPartyDialogue("Valygar")
@@ -288,7 +288,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -308,7 +308,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~A BATH... Yer gonna tell �er yer want a bath! Where be the fun in that? Yer all barmy, that�s what yer be, bloody barmy!~
+  SAY ~A BATH... Yer gonna tell 'er yer want a bath! Where be the fun in that? Yer all barmy, that's what yer be, bloody barmy!~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1
@@ -329,7 +329,7 @@ IF ~~ THEN BEGIN LeiThea1
 END
 
 IF ~~ THEN BEGIN LeiThea2
-  SAY ~Aye, ther can never be too many songs �bout Korgon, but don�t yer be forgitting the bit me axe played in all the blood letting bard!~
+  SAY ~Aye, ther can never be too many songs 'bout Korgon, but don't yer be forgitting the bit me axe played in all the blood letting bard!~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ161
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2

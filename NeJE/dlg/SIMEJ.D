@@ -1,7 +1,7 @@
 BEGIN ~SIMEJ~
 
 IF ~~ THEN BEGIN 4
-  SAY ~If you need a hand, I�d gladly come with you, if not - I�ll stay around the ship and keep an eye on the shifty captain for you...~
+  SAY ~If you need a hand, I'd gladly come with you, if not - I'll stay around the ship and keep an eye on the shifty captain for you...~
   IF ~~ THEN REPLY ~Great, stay with the ship then, I do not fully trust Saemon. It might easily be his own plot to get the cash and avoid a dangerous sailing to Spellhold. Stay right where you are and call if Havarian will be up to no good.~ GOTO 5
   IF ~~ THEN REPLY ~Sure, always glad to have an extra hand. ~ GOTO 6
 END
@@ -15,7 +15,7 @@ LeaveParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Let�s go.~
+  SAY ~Let's go.~
   IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)~ EXIT
 END
 
@@ -36,28 +36,28 @@ END
 IF WEIGHT #-99 ~Global("VP_MyFlirt","LOCALS",2)~ THEN BEGIN 7
   SAY ~<CHARNAME>, you once had asked me about my connection with Shadow Thieves...~ [SIMEPC06]
   IF ~~ THEN REPLY ~Yes, I am quite curious...~ GOTO 8
-  IF ~~ THEN REPLY ~Sime, it�s really, really, really bad time to bring this stuff up. Let�s talk about that later.~ GOTO 39
+  IF ~~ THEN REPLY ~Sime, it's really, really, really bad time to bring this stuff up. Let's talk about that later.~ GOTO 39
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~Aran Linvail is my... father, <CHARNAME>. ~ [SIMEPC07]
   IF ~~ THEN REPLY ~What?~ GOTO 9
-  IF ~~ THEN REPLY ~Your father? That�s quite a twist!~ GOTO 9
+  IF ~~ THEN REPLY ~Your father? That's quite a twist!~ GOTO 9
   IF ~~ THEN REPLY ~I suspected it all along, my dear. You look alike. But go on, please.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
-  SAY ~Yes... I do not remember my mother. Aran does not speak of her often. Theirs was a difficult relationship. Aran was young and during a reckless party he boasted that he could rob a mysterious elven temple of Selune. A lieutenant of the Shadow Thieves Guild promised him admission to the Guild, if he would bring Seluna�s necklace, a powerful and priceless relic... Aran took challenge seriously and robbing the temple became his obsession. After months of careful planning he managed to get into the temple...~ [SIMEPC08]
+  SAY ~Yes... I do not remember my mother. Aran does not speak of her often. Theirs was a difficult relationship. Aran was young and during a reckless party he boasted that he could rob a mysterious elven temple of Selune. A lieutenant of the Shadow Thieves Guild promised him admission to the Guild, if he would bring Seluna's necklace, a powerful and priceless relic... Aran took challenge seriously and robbing the temple became his obsession. After months of careful planning he managed to get into the temple...~ [SIMEPC08]
   IF ~~ THEN REPLY ~A brilliant carrier move...~ GOTO 10
   IF ~~ THEN REPLY ~Wow, that Aran was quite a man!~ GOTO 10
   IF ~~ THEN REPLY ~Sime, I do not want to listen to this story, it sickens me to know that someone can rob a temple of Selune.~ GOTO 85
 END
 
 IF ~~ THEN BEGIN 10
-  SAY ~Well, yes... Apparently the information he gathered was faulty and instead of making it into the temple�s main hall he broke into one of the cleric�s private chambers. He plunged down from the window right at my mother�s feet. Aran looked so scared and silly that she laughed and took pity on the would be thief. And he... he was enchanted by her beauty and instead of running away he stayed with her that night.~
+  SAY ~Well, yes... Apparently the information he gathered was faulty and instead of making it into the temple's main hall he broke into one of the cleric's private chambers. He plunged down from the window right at my mother's feet. Aran looked so scared and silly that she laughed and took pity on the would be thief. And he... he was enchanted by her beauty and instead of running away he stayed with her that night.~
   IF ~~ THEN REPLY ~Ahem, Sime, why are you telling me that? And anyway, how Aran then got into the Guild and became Shadow Master.~ GOTO 11
   IF ~~ THEN REPLY ~Sime, please, spare me that romantic nonsense.~ GOTO 84
-  IF ~~ THEN REPLY ~If that�s true, how did Aran become Shadow Master?~ GOTO 11
+  IF ~~ THEN REPLY ~If that's true, how did Aran become Shadow Master?~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 11
@@ -68,12 +68,12 @@ RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12
-  SAY ~It�s very sad. They could not see each other often, because he had to stay in the city, trying to move up in the Guild and my mother would have none of it... So they travel in secret to meet each other all the time. On one such a trip, shortly after I was born, bandits killed my mother...~
+  SAY ~It's very sad. They could not see each other often, because he had to stay in the city, trying to move up in the Guild and my mother would have none of it... So they travel in secret to meet each other all the time. On one such a trip, shortly after I was born, bandits killed my mother...~
   IF ~~ THEN REPLY ~I am sorry to hear that, Sime.~ GOTO 13
 END
 
 IF ~~ THEN BEGIN 13
-  SAY ~Yes, I wish I at least one small memory of her... But I do not... Aran was a wonderful father however. He meant everything to me when I was a kid. But I could not accept his ways. I am a half-elf, so his days would come to an end soon... I am trying to spend as much time with him as I can... And that�s why I was by his side, when you come to the Guild... My parent�s problems...should be boring to you. Sorry for telling you all this.~
+  SAY ~Yes, I wish I at least one small memory of her... But I do not... Aran was a wonderful father however. He meant everything to me when I was a kid. But I could not accept his ways. I am a half-elf, so his days would come to an end soon... I am trying to spend as much time with him as I can... And that's why I was by his side, when you come to the Guild... My parent's problems...should be boring to you. Sorry for telling you all this.~
   IF ~~ THEN REPLY ~Sime, I know how difficult it is to keep everything in. Please, talk to me whenever you feel like it.~ GOTO 37
   IF ~~ THEN REPLY ~No, actually it was very entertaining!~ GOTO 38
   IF ~~ THEN REPLY ~Sime, I am afraid, yes, it was terribly boring and I struggled to keep awake. I hope you got it out of your system now.~ GOTO 39
@@ -99,14 +99,14 @@ SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 84
-  SAY ~Got it! No romantic nonsense in <CHARNAME>�s company!~
+  SAY ~Got it! No romantic nonsense in <CHARNAME>'s company!~
   IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 85
-  SAY ~I am glad to hear that! I also thought that it was one of the most outrageous of my father�s notions. On the other hand that lead to my birth, so I guess I cannot complain too much.~
+  SAY ~I am glad to hear that! I also thought that it was one of the most outrageous of my father's notions. On the other hand that lead to my birth, so I guess I cannot complain too much.~
   IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
@@ -117,15 +117,15 @@ END
 /////////////////////////////////
 
 IF WEIGHT #-98 ~Global("VP_MyFlirt","LOCALS",4)~ THEN BEGIN 86
-  SAY ~The night is so beautiful...  But it�s on nights like this when I miss my mother the most...~
+  SAY ~The night is so beautiful...  But it's on nights like this when I miss my mother the most...~
   IF ~~ THEN REPLY ~You never told me what happened to your mother. Where is she?~ GOTO 87
   IF ~~ THEN REPLY ~Sime, would you mind keeping your grievances to yourself? I am trying to get some rest here.~ GOTO 88
 END
 
 IF ~~ THEN BEGIN 87
-  SAY ~It�s very sad. My parents could not see each other often, because he had to stay in the city, trying to move up in the Guild and my mother would have none of it... So they met in secret. Shortly after I was born, bandits killed my mother when she was travelling to one of their hideouts...~
+  SAY ~It's very sad. My parents could not see each other often, because he had to stay in the city, trying to move up in the Guild and my mother would have none of it... So they met in secret. Shortly after I was born, bandits killed my mother when she was travelling to one of their hideouts...~
   IF ~~ THEN REPLY ~I am sorry to hear that, Sime.~ GOTO 89
-  IF ~~ THEN REPLY ~Look I�m crying already. May be you can tell me the rest another time?~ GOTO 88
+  IF ~~ THEN REPLY ~Look I'm crying already. May be you can tell me the rest another time?~ GOTO 88
 END
 
 IF ~~ THEN BEGIN 88
@@ -137,7 +137,7 @@ RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 89
-  SAY ~I wish I had at least one small memory of her. But I do not. Aran was a wonderful father however. He meant everything to me when I was a child. But like my mother, I could not accept his ways. However, his days will come to an end soon. I am trying to spend as much time with him as I can. And that�s why I was by his side, when you come to the Guild. My parent�s problems... should be boring to you.~
+  SAY ~I wish I had at least one small memory of her. But I do not. Aran was a wonderful father however. He meant everything to me when I was a child. But like my mother, I could not accept his ways. However, his days will come to an end soon. I am trying to spend as much time with him as I can. And that's why I was by his side, when you come to the Guild. My parent's problems... should be boring to you.~
   IF ~~ THEN REPLY ~Sime, I know how difficult it is to keep everything in. Please, talk to me whenever you feel like it.~ GOTO 90
   IF ~~ THEN REPLY ~No, actually it was very entertaining!~ GOTO 91
   IF ~~ THEN REPLY ~Sime, I am afraid, yes, it was terribly boring and I struggled to keep awake. I hope you got it out of your system now.~ GOTO 92
@@ -200,12 +200,12 @@ END
 
 IF WEIGHT #-96 ~Global("VP_SimeSolas","LOCALS",2)
 Global("VP_SimeDefeatedSols","GLOBAL",1)~ THEN BEGIN 30
-  SAY ~It seems that I am an unfortunate companion, <CHARNAME>. This is not the first time I am attacked by those who wish to harm my father. With the Guild war growing ever more cruel maybe you would prefer not to be affiliated with Linvail�s daughter?~
-  IF ~~ THEN REPLY ~It was not the first time? Sime, you should have told me that before! I have enough enemies as is! I think you are right. Let�s part.~ GOTO 31
+  SAY ~It seems that I am an unfortunate companion, <CHARNAME>. This is not the first time I am attacked by those who wish to harm my father. With the Guild war growing ever more cruel maybe you would prefer not to be affiliated with Linvail's daughter?~
+  IF ~~ THEN REPLY ~It was not the first time? Sime, you should have told me that before! I have enough enemies as is! I think you are right. Let's part.~ GOTO 31
   IF ~~ THEN REPLY ~Nonsense, Sime! The more the merrier! Let them all come and they will get their punishment from me.~ GOTO 32
   IF ~Gender(Player1,MALE)~ THEN REPLY ~I rather fancy protecting you... If you do not mind that is...~ GOTO 33
-  IF ~~ THEN REPLY ~It�s up to you really. Stay if you wish or go if you think that you are better off on your own.~ GOTO 34
-  IF ~~ THEN REPLY ~Stay with us, Sime. You are a valuable companion and I am not afraid of an extra skirmish. Besides, I am already Bodhi�s sworn enemy.~ GOTO 35
+  IF ~~ THEN REPLY ~It's up to you really. Stay if you wish or go if you think that you are better off on your own.~ GOTO 34
+  IF ~~ THEN REPLY ~Stay with us, Sime. You are a valuable companion and I am not afraid of an extra skirmish. Besides, I am already Bodhi's sworn enemy.~ GOTO 35
 END
 
 IF ~~ THEN BEGIN 31
@@ -232,7 +232,7 @@ IF ~~ THEN BEGIN 33
 END
 
 IF ~~ THEN BEGIN 34
-  SAY ~I�d go then. I would not want to be responsible for your death or for the death of our companions. Should you need me, I will probably stay with father for a time.~
+  SAY ~I'd go then. I would not want to be responsible for your death or for the death of our companions. Should you need me, I will probably stay with father for a time.~
   IF ~~ THEN DO ~SetGlobal("VP_SimeDefeatedSols","GLOBAL",2)
 SetGlobal("Kicked_Out","LOCALS",1)
 ChangeAIScript("",DEFAULT)
@@ -253,9 +253,9 @@ Global("simespeak","LOCALS",0)~ THEN BEGIN 16
   SAY ~I do not trust this pirate, <CHARNAME>. His manner is that of a fool, but his behavior on the damned island and then during the voyage betrays a cunning mind beneath. ~
   IF ~~ THEN REPLY ~He has delivered us as promised. There are more important things to worry about. ~ DO ~SetGlobal("simespeak","LOCALS",1)
 SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
-  IF ~~ THEN REPLY ~Kill him if you wish. I don�t care either way.~ DO ~SetGlobal("simespeak","LOCALS",1)
+  IF ~~ THEN REPLY ~Kill him if you wish. I don't care either way.~ DO ~SetGlobal("simespeak","LOCALS",1)
 SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 18
-  IF ~~ THEN REPLY ~He seems amiable enough to me. Come, you�ll feel better once off the ship.~ DO ~SetGlobal("simespeak","LOCALS",1)
+  IF ~~ THEN REPLY ~He seems amiable enough to me. Come, you'll feel better once off the ship.~ DO ~SetGlobal("simespeak","LOCALS",1)
 SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
 END
 
@@ -284,7 +284,7 @@ IfValidForPartyDialogue("Anomen")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ 
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~Certainly this was Bodhi�s doing. These creatures would not have followed Saemon of their own will. His weakness would disgust them.~
+  SAY ~Certainly this was Bodhi's doing. These creatures would not have followed Saemon of their own will. His weakness would disgust them.~
   IF ~~ THEN REPLY ~Unfortunately he fled the battle. I shall be sure to repay him if I see him again.~ GOTO 21
   IF ~~ THEN REPLY ~We should find him, track him to his lair! He has earned his death from this!~ GOTO 21
   IF ~~ THEN REPLY ~Forget him. I have no fear of him or any scheme he might come up with.~ GOTO 21
@@ -304,17 +304,17 @@ IF ~~ THEN BEGIN 23
   SAY ~Work with haste, <CHARNAME>. Our enemies know we are here.~
   IF ~~ THEN UNSOLVED_JOURNAL ~Getting Inside the Asylum
 
-With the vampires defeated and Saemon fled, Sime said that Bodhi was probably behind the pirate�s treachery.  I must work quickly to gain access to the asylum.  Sime said to go to the local tavern and speak to a man named Sanik.  She, meanwhile, would scout around and meet me at the pass leading to the asylum itself.~ EXIT
+With the vampires defeated and Saemon fled, Sime said that Bodhi was probably behind the pirate's treachery.  I must work quickly to gain access to the asylum.  Sime said to go to the local tavern and speak to a man named Sanik.  She, meanwhile, would scout around and meet me at the pass leading to the asylum itself.~ EXIT
 END
 
 /////////////////////////////////
 
 //IF ~~ THEN BEGIN 24
-//  SAY ~Yes, there is a pain in life, pain, and loss, and sorrow. But there is also joy and pleasure of growing and learning. You can�t have one without the other, and I wouldn�t want to sacrifice either. <CHARNAME>, let us finish this needless discussion.~
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I�m taking Imoen, and we are going. ~ EXTERN ~PPIRENI1~ 84
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let�s destroy this monster once and forever. ~ EXTERN ~PPIRENI1~ 84
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I�m taking Imoen, and we are going. ~ EXTERN ~PPIRENI2~ 105
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let�s destroy this monster once and forever. ~ EXTERN ~PPIRENI2~ 105
+//  SAY ~Yes, there is a pain in life, pain, and loss, and sorrow. But there is also joy and pleasure of growing and learning. You can't have one without the other, and I wouldn't want to sacrifice either. <CHARNAME>, let us finish this needless discussion.~
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I'm taking Imoen, and we are going. ~ EXTERN ~PPIRENI1~ 84
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let's destroy this monster once and forever. ~ EXTERN ~PPIRENI1~ 84
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I'm taking Imoen, and we are going. ~ EXTERN ~PPIRENI2~ 105
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let's destroy this monster once and forever. ~ EXTERN ~PPIRENI2~ 105
 //END
 
 IF ~~ THEN BEGIN TOL21
@@ -450,21 +450,21 @@ END
 
 IF WEIGHT #-93 ~Global("VP_Aran_Ring","GLOBAL",2)~ THEN BEGIN 45
   SAY ~<CHARNAME>, I wonder what you told him, that settled him down.~
-  IF ~~ THEN REPLY ~I told him, that I am going to marry you. Aran gave me your mother�s ring. Will you accept it from me?~ GOTO 46
-  IF ~~ THEN REPLY ~Just what he wanted to hear, Sime. He is just worried I will mistreat you. Aran gave me your mother�s ring. Will you accept it from me?~ GOTO 48
-  IF ~~ THEN REPLY ~Some nonsense. Aran gave me your mother�s ring. Will you accept it from me?~ GOTO 48
+  IF ~~ THEN REPLY ~I told him, that I am going to marry you. Aran gave me your mother's ring. Will you accept it from me?~ GOTO 46
+  IF ~~ THEN REPLY ~Just what he wanted to hear, Sime. He is just worried I will mistreat you. Aran gave me your mother's ring. Will you accept it from me?~ GOTO 48
+  IF ~~ THEN REPLY ~Some nonsense. Aran gave me your mother's ring. Will you accept it from me?~ GOTO 48
 END
 
 IF ~~ THEN BEGIN 46
   SAY ~You what? Are you mad? What are we going to do if Aran takes it seriously and books the biggest temple in Athkatla for the wedding before we know it?~
   IF ~~ THEN REPLY ~(*Smile disarmingly*)... We will... elope?~ GOTO 47
   IF ~~ THEN REPLY ~Go there and get married, what else?~ GOTO 47
-  IF ~~ THEN REPLY ~He won�t. And if he does, we�ll find a way around it, unless you do want to marry me.~ GOTO 47
+  IF ~~ THEN REPLY ~He won't. And if he does, we'll find a way around it, unless you do want to marry me.~ GOTO 47
   IF ~~ THEN REPLY ~Oh, Sime you and your father are both too... emotional.~ GOTO 47
 END
 
 IF ~~ THEN BEGIN 47
-  SAY ~You and your odd sense of humor! All right, I guess we will worry about it when the time comes. And you took the ring! My father was trying to press this thing on me for ages. I do not like it, but I guess now I�ll have to take it so I will not land you in trouble.~
+  SAY ~You and your odd sense of humor! All right, I guess we will worry about it when the time comes. And you took the ring! My father was trying to press this thing on me for ages. I do not like it, but I guess now I'll have to take it so I will not land you in trouble.~
   IF ~~ THEN DO ~TakePartyItem("AranRing")
 SetGlobal("VP_Aran_Ring","GLOBAL",3)
 SetGlobal("VP_Sime_PCThief","GLOBAL",1)
@@ -472,7 +472,7 @@ RealSetGlobalTimer("VP_SimeThiefBanter","GLOBAL",1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 48
-  SAY ~By Mielikki! My father was trying to press this thing on me for ages. I do not like it, but I guess now I�ll have to take it so I will not land you in trouble.~
+  SAY ~By Mielikki! My father was trying to press this thing on me for ages. I do not like it, but I guess now I'll have to take it so I will not land you in trouble.~
   IF ~~ THEN DO ~TakePartyItem("AranRing")
 SetGlobal("VP_Aran_Ring","GLOBAL",3)
 SetGlobal("VP_Sime_PCThief","GLOBAL",1)
@@ -491,7 +491,7 @@ IF ~~ THEN BEGIN 50
   IF ~~ THEN REPLY ~Ah? Why in Nine Hells do you think that?~ GOTO 51
   IF ~~ THEN REPLY ~I think I deserve a better explanation than that. What, you feel like you are committing an act of incest? You have some other complex psychological reason to dislike sleeping with me?~ GOTO 51
   IF ~~ THEN REPLY ~Women. Cannot live with them, cannot live without them. Sime, it beats me why you want to walk out on me.~ GOTO 51
-  IF ~GlobalGT("PlayerThiefGuild","GLOBAL",0)~ THEN REPLY ~Sime, do not do that! If you wish, I�ll refuse to be the Guild Master, I�d do anything to keep you.~ GOTO 52
+  IF ~GlobalGT("PlayerThiefGuild","GLOBAL",0)~ THEN REPLY ~Sime, do not do that! If you wish, I'll refuse to be the Guild Master, I'd do anything to keep you.~ GOTO 52
   IF ~~ THEN REPLY ~Have it your way. We are history.~ GOTO 53
 END
 
@@ -521,7 +521,7 @@ IF ~~ THEN BEGIN 54
   IF ~~ THEN REPLY ~Ah? Why in Nine Hells do you think that?~ GOTO 51
   IF ~~ THEN REPLY ~I think I deserve a better explanation than that. What, you feel like you are committing an act of incest? You have some other complex psychological reason to dislike sleeping with me?~ GOTO 51
   IF ~~ THEN REPLY ~Women. Cannot live with them, cannot live without them. Sime, it beats me why you want to walk out on me.~ GOTO 51
-  IF ~~ THEN REPLY ~Sime, do not do that! If you wish, I�ll refuse to be the Guild Master, I�d do anything to keep you.~ GOTO 52
+  IF ~~ THEN REPLY ~Sime, do not do that! If you wish, I'll refuse to be the Guild Master, I'd do anything to keep you.~ GOTO 52
   IF ~~ THEN REPLY ~Have it your way. We are history.~ GOTO 53
 END
 
@@ -530,7 +530,7 @@ IF ~~ THEN BEGIN 55
   IF ~~ THEN REPLY ~Ah? Why in Nine Hells do you think that?~ GOTO 51
   IF ~~ THEN REPLY ~I think I deserve a better explanation than that. What, you feel like you are committing an act of incest? You have some other complex psychological reason to dislike sleeping with me?~ GOTO 51
   IF ~~ THEN REPLY ~Women. Cannot live with them, cannot live without them. Sime, it beats me why you want to walk out on me.~ GOTO 51
-  IF ~~ THEN REPLY ~Sime, do not do that! If you wish, I�ll refuse to be the Guild Master, I�d do anything to keep you.~ GOTO 52
+  IF ~~ THEN REPLY ~Sime, do not do that! If you wish, I'll refuse to be the Guild Master, I'd do anything to keep you.~ GOTO 52
   IF ~~ THEN REPLY ~Have it your way. We are history.~ GOTO 53
 END
 
@@ -539,7 +539,7 @@ END
 ////////////////////////////////////////////////
 
 IF WEIGHT #-91 ~Global("VP_SimeTalksAgain","GLOBAL",1)~ THEN BEGIN 94
-  SAY ~<CHARNAME>, it seems to me that you are accustomed to the long marches and slow downs between fierce battles. What did you do to speed up the passage of time? I remember we used to sing when the danger was near or far when I was in Darriel�s company.~
+  SAY ~<CHARNAME>, it seems to me that you are accustomed to the long marches and slow downs between fierce battles. What did you do to speed up the passage of time? I remember we used to sing when the danger was near or far when I was in Darriel's company.~
   IF ~~ THEN REPLY ~Sing? Well, there was a good song I used to sing back in the good old days spent with the Candlekeep guard. Do you want to it hear it?~ GOTO 95
   IF ~~ THEN REPLY ~(*You look away momentarily*)... Sime, we used to sing this song before, while our company marched. It helped pass the time and keep the mind on more pleasant matters. Will you permit me to sing it to you?~ GOTO 95
   IF ~~ THEN REPLY ~I was always a loner, my friend, and did not adventure in a big company. But when the going got rough, there was one song I liked to sing. Would you care to hear it?~ GOTO 95
@@ -553,10 +553,10 @@ IF ~~ THEN BEGIN 95
 To dungeons deep and caverns old
 We must away ere break of day
 To seek the pale enchanted gold.~ GOTO 96
-  IF ~~ THEN REPLY ~Old Danilo Twill had a hundred bags �o gold,
+  IF ~~ THEN REPLY ~Old Danilo Twill had a hundred bags 'o gold,
 And a dozen times more silver than he could ever hold,
-But he lost it all at knucklebones, till he didn�t have a crumb,
-Still, there�ll always be more where that came from.~ GOTO 96
+But he lost it all at knucklebones, till he didn't have a crumb,
+Still, there'll always be more where that came from.~ GOTO 96
   IF ~~ THEN REPLY ~The road goes ever on and on,
 Out from the door where it begun,
 Now far ahead the Road had gone
@@ -567,7 +567,7 @@ IF ~~ THEN BEGIN 96
   SAY ~It is quite lovely, but it seems to me that this song has triggered some sadness in you, and that was not my intention this eve, nor would it ever be.~
   IF ~~ THEN REPLY ~I used to sing it with my friends and now my mind is assailed by memories of the fallen. Forgive me this moment of weakness, Sime.~ GOTO 97
   IF ~~ THEN REPLY ~A sweet melancholy griped at my heart, as I remembered the peaceful times, and the past. But, it is over now. Did you find the song to your liking my Lady?~ GOTO 98
-  IF ~~ THEN REPLY ~(*Taking Sime�s hand*)... I apologize for giving you rise to concern, it is just that...well song is a very emotional thing. Even for a stoic fighter. It is one of the few ways in which your soul can truly be free of the duties you carry, even if only of a moment or two, it is a welcomed release.~ GOTO 97
+  IF ~~ THEN REPLY ~(*Taking Sime's hand*)... I apologize for giving you rise to concern, it is just that...well song is a very emotional thing. Even for a stoic fighter. It is one of the few ways in which your soul can truly be free of the duties you carry, even if only of a moment or two, it is a welcomed release.~ GOTO 97
   IF ~~ THEN REPLY ~No, no, I was not sad at all, I was just concentrating on keeping the tune right!~ GOTO 99
 END
 
@@ -612,7 +612,7 @@ SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 102
-  SAY ~Now we have no shortage of adventure it seems and little precious time for love. I�d like to remind you of what�s the passion is like... (*Sime kisses you deeply*)~
+  SAY ~Now we have no shortage of adventure it seems and little precious time for love. I'd like to remind you of what's the passion is like... (*Sime kisses you deeply*)~
   IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
@@ -637,7 +637,7 @@ Race(Player1,HALF_ELF)~ THEN REPLY ~Sime, where are we?~ GOTO 57
 END
 
 IF ~~ THEN BEGIN 57
-  SAY ~We are in the Land of Dreams, the Kaimeldor. You are one of our kin, have you never heard of it?   It is an ancient Elven enchantment that allows one to live ones� dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
+  SAY ~We are in the Land of Dreams, the Kaimeldor. You are one of our kin, have you never heard of it?   It is an ancient Elven enchantment that allows one to live ones' dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
   IF ~~ THEN REPLY ~I have been raised by a human, Sime. I have never heard of this enchantment. So, am I dreaming? In this case it should not surprise you that you are here.~ GOTO 58
   IF ~~ THEN REPLY ~I am not as versed in Elven lore as I would like to be, Sime. This enchantment, I have never heard of it, but I like it. Why does it surprise you that you are by my side in Kaimeldor?~ GOTO 58
   IF ~~ THEN REPLY ~I must have been really drunk, when I dreamt this place up. Flowers and silly butterflies everywhere! Give me battles and gore, not some gardens! I do dream of you sometimes, I must confess. If Kaimeldor is what you are saying it to be, then I am not surprised that you are here. How the rest got included is the mystery to me.~ GOTO 62
@@ -651,7 +651,7 @@ IF ~~ THEN BEGIN 58
 END
 
 IF ~~ THEN BEGIN 59
-  SAY ~I do not think it is impossible... May that�s why we are here today. You called me the love of your life, <CHARNAME>. I guess... I guess you are the one for me as well. Amin mela lle, <CHARNAME>. Amin mela lle. ~
+  SAY ~I do not think it is impossible... May that's why we are here today. You called me the love of your life, <CHARNAME>. I guess... I guess you are the one for me as well. Amin mela lle, <CHARNAME>. Amin mela lle. ~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
 StartCutSceneMode()
 StartCutScene("VPCutS02")~ EXIT
@@ -679,7 +679,7 @@ IF ~~ THEN BEGIN 62
 END
 
 IF ~~ THEN BEGIN 63
-  SAY ~We are in the Land of Dreams, the Kaimeldor. It is an ancient Elven enchantment that allows one to live ones� dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
+  SAY ~We are in the Land of Dreams, the Kaimeldor. It is an ancient Elven enchantment that allows one to live ones' dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
   IF ~~ THEN REPLY ~I have never heard of this enchantment. So, am I dreaming? In this case it should not surprise you that you are here.~ GOTO 64
   IF ~~ THEN REPLY ~I am not as versed in Elven lore as I would like to be, Sime. This enchantment, I have never heard of it, but I like it. Why does it surprise you that you are by my side in this... Kaimeldor?~ GOTO 64
   IF ~~ THEN REPLY ~I must have been really drunk, when I dreamt this place up. Flowers and silly butterflies everywhere! Give me battles and gore, not some gardens! I do dream of you sometimes, I must confess. If Kaimeldor is what you are saying it to be, then I am not surprised that you are here. How the rest got included is the mystery to me.~ GOTO 67
@@ -693,7 +693,7 @@ IF ~~ THEN BEGIN 64
 END
 
 IF ~~ THEN BEGIN 65
-  SAY ~I do not think it is impossible... May be that�s why we are here today. I guess... I guess I love you. Amin mela lle, <CHARNAME>. Amin mela lle.~
+  SAY ~I do not think it is impossible... May be that's why we are here today. I guess... I guess I love you. Amin mela lle, <CHARNAME>. Amin mela lle.~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
 StartCutSceneMode()
 StartCutScene("VPCutS02")~ EXIT
@@ -715,7 +715,7 @@ END
 
 IF ~~ THEN BEGIN slayerat
   SAY ~Are you well? I am growing very worried about you, you know. I should not like to lose you in this evil place.~
-  IF ~~ THEN REPLY ~Sime, I would get back if I were you. I think it�s happening again!~ DO ~SetGlobal("EndangerLovedOne","GLOBAL",5)~ GOTO slayer1
+  IF ~~ THEN REPLY ~Sime, I would get back if I were you. I think it's happening again!~ DO ~SetGlobal("EndangerLovedOne","GLOBAL",5)~ GOTO slayer1
   IF ~~ THEN REPLY ~Get back, Sime, if you value your life.~ DO ~SetGlobal("EndangerLovedOne","GLOBAL",5)~ GOTO slayer1
   IF ~~ THEN REPLY ~Leave me be! You endanger yourself just standing there!~ DO ~SetGlobal("EndangerLovedOne","GLOBAL",5)~ GOTO slayer1
 END
@@ -727,13 +727,13 @@ END
 
 IF ~~ THEN BEGIN slayerba
   SAY ~You would have killed me, if I had let you. You would have left me to rot in this place.~
-  IF ~~ THEN REPLY ~I fear this will not be the last time this happens. I can�t control it.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer2
-  IF ~~ THEN REPLY ~I tried to warn you, but I couldn�t speak. I am sorry. I should distance myself from you.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer3
-  IF ~~ THEN REPLY ~It wasn�t my fault. Whine if you want, but I�m the one really in trouble here.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer4
+  IF ~~ THEN REPLY ~I fear this will not be the last time this happens. I can't control it.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer2
+  IF ~~ THEN REPLY ~I tried to warn you, but I couldn't speak. I am sorry. I should distance myself from you.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer3
+  IF ~~ THEN REPLY ~It wasn't my fault. Whine if you want, but I'm the one really in trouble here.~ DO ~SetGlobal("VP_DoNotRepeat","GLOBAL",1)~ GOTO slayer4
 END
 
 IF ~~ THEN BEGIN slayer2
-  SAY ~I�m not sure you should try to control it. We must distance you from it, not embrace it. We will make due, despite the danger.~
+  SAY ~I'm not sure you should try to control it. We must distance you from it, not embrace it. We will make due, despite the danger.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
   IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
@@ -816,7 +816,7 @@ IF ~~ THEN BEGIN slayer4
 END
 
 IF ~~ THEN BEGIN slayer5
-  SAY ~<CHARNAME>, please, let�s just keep moving. We�ll get through, I�m sure of it. Really.~
+  SAY ~<CHARNAME>, please, let's just keep moving. We'll get through, I'm sure of it. Really.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
   IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
@@ -859,7 +859,7 @@ IF ~~ THEN BEGIN 68
   IF ~~ THEN REPLY ~The shadow has passed and I pray that it will never happen again. ~ DO ~SetGlobal("VP_SlayerBanter","LOCALS",3)~ GOTO 69
   IF ~~ THEN REPLY ~Cut it out! Look at yourself: you are pale and tremble like a leaf in the wind. I am not an  innocent victim, you idiot! Power is coming to me. I do not know how to control it yet, but soon enough I will.~ DO ~SetGlobal("VP_SlayerBanter","LOCALS",3)~ GOTO 72
   IF ~~ THEN REPLY ~Sime, gods are of no help, do not call for them. Help me chase down Irenicus and rip MY soul out of his body and I shall be whole again.~ DO ~SetGlobal("VP_SlayerBanter","LOCALS",3)~ GOTO 73
-  IF ~~ THEN REPLY ~Protect me? Protect me against whom or what? From myself? I am a Bhaalspawn and I assumed the form of my father�s avatar. It is only natural, do not you think? (*You laugh bitterly.*)~ DO ~SetGlobal("VP_SlayerBanter","LOCALS",3)~ GOTO 74
+  IF ~~ THEN REPLY ~Protect me? Protect me against whom or what? From myself? I am a Bhaalspawn and I assumed the form of my father's avatar. It is only natural, do not you think? (*You laugh bitterly.*)~ DO ~SetGlobal("VP_SlayerBanter","LOCALS",3)~ GOTO 74
 END
 
 IF ~~ THEN BEGIN 69
@@ -987,7 +987,7 @@ IF ~~ THEN BEGIN 72
 END
 
 IF ~~ THEN BEGIN 73
-  SAY ~That�s what I am here for, <CHARNAME>. By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
+  SAY ~That's what I am here for, <CHARNAME>. By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
   IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
@@ -1026,7 +1026,7 @@ IF ~~ THEN BEGIN 73
 END
 
 IF ~~ THEN BEGIN 74
-  SAY ~Come here and let me hold you for a moment. I know it�s just an illusion but I feel like I am protecting you from all the evils of the world.~
+  SAY ~Come here and let me hold you for a moment. I know it's just an illusion but I feel like I am protecting you from all the evils of the world.~
   IF ~~ THEN REPLY ~I am glad YOU are feeling better.~ DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)~ GOTO 75
   IF ~~ THEN REPLY ~Now that you have mentioned that, I do have the feeling of being protected... It is so strange. You are only one woman...~ GOTO 76
   IF ~~ THEN REPLY ~(*Whisper*) Are you mad? What would the others think?~ GOTO 77
@@ -1115,11 +1115,11 @@ IF ~~ THEN BEGIN 77
   IF ~~ THEN REPLY ~No, let them talk!~ GOTO 78
   IF ~~ THEN REPLY ~Yes! (*You free yourself from her arms*)~ GOTO 79
   IF ~InParty("Imoen2")
-See("Imoen2")~ THEN REPLY ~Imoen, what�s the matter?~ EXTERN ~IMOEN2J~ TS40
+See("Imoen2")~ THEN REPLY ~Imoen, what's the matter?~ EXTERN ~IMOEN2J~ TS40
 END
 
 IF ~~ THEN BEGIN 78
-  SAY ~Now, that�s better. By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
+  SAY ~Now, that's better. By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
   IF ~~ THEN EXIT
 END
 
@@ -1357,7 +1357,7 @@ Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
 END
 
 IF ~~ THEN BEGIN TOL2
-  SAY ~No. Let�s not waste words. I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
+  SAY ~No. Let's not waste words. I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
   IF ~InParty("Anomen")
 !Dead("Anomen")
@@ -1536,7 +1536,7 @@ IF ~~ THEN BEGIN flirt_14
 END
 
 IF ~~ THEN BEGIN flirt_15
-	SAY ~(*She kisses your cheek firmly before releasing you. You can�t help but feel more empty now that she is out of your arms.*)~
+	SAY ~(*She kisses your cheek firmly before releasing you. You can't help but feel more empty now that she is out of your arms.*)~
 	IF ~~ THEN EXIT
 END
 
@@ -1596,36 +1596,36 @@ OR(2)
 	Global("SimeRomanceActive","GLOBAL",1)
 	Global("SimeRomanceActive","GLOBAL",2)~ THEN BEGIN flirts_B
   SAY ~(*You find your gaze wandering over to Sime. Her sweet disposition belies the crowd of grim Shadow Thieves you found her hanging around with, and you are eager to learn more about her.*)~
-/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",0)~ THEN REPLY ~(*Admire Sime�s exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",1)~ GOTO flirt_1a
-/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",1)~ THEN REPLY ~(*Admire Sime�s exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",2)~ GOTO flirt_1b
-/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",2)~ THEN REPLY ~(*Admire Sime�s exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",0)~ GOTO flirt_1c
-/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",0)~ THEN REPLY ~(*You reach for Sime�s hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",1)~ GOTO flirt_2a
-/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",1)~ THEN REPLY ~(*You reach for Sime�s hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",2)~ GOTO flirt_2b
-/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",2)~ THEN REPLY ~(*You reach for Sime�s hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",0)~ GOTO flirt_2c
-/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",0)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime�s mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",1)~ GOTO flirt_3a
-/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",1)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime�s mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",2)~ GOTO flirt_3b
-/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",2)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime�s mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",0)~ GOTO flirt_3c
-/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",0)~ THEN REPLY ~(*Shower Sime�s face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",1)~ GOTO flirt_4a
-/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",1)~ THEN REPLY ~(*Shower Sime�s face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",2)~ GOTO flirt_4b
-/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",2)~ THEN REPLY ~(*Shower Sime�s face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",0)~ GOTO flirt_4c
-/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",0)~ THEN REPLY ~I�m glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",1)~ GOTO flirt_5a
-/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",1)~ THEN REPLY ~I�m glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",2)~ GOTO flirt_5b
-/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",2)~ THEN REPLY ~I�m glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",0)~ GOTO flirt_5c
+/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",0)~ THEN REPLY ~(*Admire Sime's exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",1)~ GOTO flirt_1a
+/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",1)~ THEN REPLY ~(*Admire Sime's exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",2)~ GOTO flirt_1b
+/*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",2)~ THEN REPLY ~(*Admire Sime's exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",0)~ GOTO flirt_1c
+/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",0)~ THEN REPLY ~(*You reach for Sime's hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",1)~ GOTO flirt_2a
+/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",1)~ THEN REPLY ~(*You reach for Sime's hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",2)~ GOTO flirt_2b
+/*2*/ IF ~Global("VP_Flirt_Option_2","LOCALS",2)~ THEN REPLY ~(*You reach for Sime's hand after removing your cumbersome gloves. Your hand is afire with the desire of her touch, and her soft skin is the only thing to quench your thirst for her.*)~ DO ~SetGlobal("VP_Flirt_Option_2","LOCALS",0)~ GOTO flirt_2c
+/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",0)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime's mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",1)~ GOTO flirt_3a
+/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",1)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime's mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",2)~ GOTO flirt_3b
+/*3*/ IF ~Global("VP_Flirt_Option_3","LOCALS",2)~ THEN REPLY ~(*You lean into Sime to fulfill your desire to feel her mouth against yours. Sime's mouth is sweet and her lips rosy red, and you are nearly driven wild in anticipation.*)~ DO ~SetGlobal("VP_Flirt_Option_3","LOCALS",0)~ GOTO flirt_3c
+/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",0)~ THEN REPLY ~(*Shower Sime's face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",1)~ GOTO flirt_4a
+/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",1)~ THEN REPLY ~(*Shower Sime's face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",2)~ GOTO flirt_4b
+/*4*/ IF ~Global("VP_Flirt_Option_4","LOCALS",2)~ THEN REPLY ~(*Shower Sime's face and neck with soft, wet kisses.*)~ DO ~SetGlobal("VP_Flirt_Option_4","LOCALS",0)~ GOTO flirt_4c
+/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",0)~ THEN REPLY ~I'm glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",1)~ GOTO flirt_5a
+/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",1)~ THEN REPLY ~I'm glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",2)~ GOTO flirt_5b
+/*5*/ IF ~Global("VP_Flirt_Option_5","LOCALS",2)~ THEN REPLY ~I'm glad that Aran allowed you to join me, Sime. I truly enjoy your presence here beside me.~ DO ~SetGlobal("VP_Flirt_Option_5","LOCALS",0)~ GOTO flirt_5c
 /*6*/ IF ~Global("VP_Flirt_Option_6","LOCALS",0)~ THEN REPLY ~(*Tug Sime toward you for a close, intimate embrace. The contact of her body against yours ignites an inner warmth deep within your heart, making you wonder how you could have ever possibly gone through a day without holding her.*)~ DO ~SetGlobal("VP_Flirt_Option_6","LOCALS",1)~ GOTO flirt_6a
 /*6*/ IF ~Global("VP_Flirt_Option_6","LOCALS",1)~ THEN REPLY ~(*Tug Sime toward you for a close, intimate embrace. The contact of her body against yours ignites an inner warmth deep within your heart, making you wonder how you could have ever possibly gone through a day without holding her.*)~ DO ~SetGlobal("VP_Flirt_Option_6","LOCALS",2)~ GOTO flirt_6b
 /*6*/ IF ~Global("VP_Flirt_Option_6","LOCALS",2)~ THEN REPLY ~(*Tug Sime toward you for a close, intimate embrace. The contact of her body against yours ignites an inner warmth deep within your heart, making you wonder how you could have ever possibly gone through a day without holding her.*)~ DO ~SetGlobal("VP_Flirt_Option_6","LOCALS",0)~ GOTO flirt_6c
-/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",0)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime�s torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",1)~ GOTO flirt_7a
-/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",1)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime�s torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",2)~ GOTO flirt_7b
-/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",2)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime�s torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",0)~ GOTO flirt_7c
-/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",0)~ THEN REPLY ~(*Engulf your hands into Sime�s golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",1)~ GOTO flirt_8a
-/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",1)~ THEN REPLY ~(*Engulf your hands into Sime�s golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",2)~ GOTO flirt_8b
-/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",2)~ THEN REPLY ~(*Engulf your hands into Sime�s golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",0)~ GOTO flirt_8c
-/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",0)~ THEN REPLY ~(*Cup Sime�s face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",1)~ GOTO flirt_9a
-/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",1)~ THEN REPLY ~(*Cup Sime�s face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",2)~ GOTO flirt_9b
-/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",2)~ THEN REPLY ~(*Cup Sime�s face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",0)~ GOTO flirt_9c
+/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",0)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime's torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",1)~ GOTO flirt_7a
+/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",1)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime's torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",2)~ GOTO flirt_7b
+/*7*/ IF ~Global("VP_Flirt_Option_7","LOCALS",2)~ THEN REPLY ~(*Throw aside all care and modesty and caress Sime's torso and the curves of her body. Her feminine, yet strong build verily begs to be touched and you cannot hold back any longer.*)~ DO ~SetGlobal("VP_Flirt_Option_7","LOCALS",0)~ GOTO flirt_7c
+/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",0)~ THEN REPLY ~(*Engulf your hands into Sime's golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",1)~ GOTO flirt_8a
+/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",1)~ THEN REPLY ~(*Engulf your hands into Sime's golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",2)~ GOTO flirt_8b
+/*8*/ IF ~Global("VP_Flirt_Option_8","LOCALS",2)~ THEN REPLY ~(*Engulf your hands into Sime's golden tresses, twining her hair between your fingers.*)~ DO ~SetGlobal("VP_Flirt_Option_8","LOCALS",0)~ GOTO flirt_8c
+/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",0)~ THEN REPLY ~(*Cup Sime's face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",1)~ GOTO flirt_9a
+/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",1)~ THEN REPLY ~(*Cup Sime's face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",2)~ GOTO flirt_9b
+/*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",2)~ THEN REPLY ~(*Cup Sime's face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",0)~ GOTO flirt_9c
 /*10*/ IF ~AreaType(FOREST)~ THEN REPLY ~(*You present to Sime a branch of berries you found along a path earlier that morn. After carefully testing their flavor and safety, you tingle with excitement as Sime takes the berries from you.*)~ GOTO flirt_10
 /*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",0)
-AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime�s honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
+AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 
 Lady of my life, gentle maiden of my dreams and fairy tails,
 Let this poor <PRO_MANWOMAN> be blessed by your touch,
@@ -1638,7 +1638,7 @@ Now, and forevermore.
 
 ~ DO ~SetGlobal("VP_Flirt_Option_11","LOCALS",1)~ GOTO flirt_11a
 /*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",1)
-AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime�s honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
+AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 
 Sime, your beauty in this light
 And any light for that matter,
@@ -1657,7 +1657,7 @@ In a shining, diamond cavern.
 ~ DO ~SetGlobal("VP_Flirt_Option_11","LOCALS",2)~ GOTO flirt_11b
 /*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",2)
 AreaType(OUTDOOR)
-CheckStatLT(Player1,13,INT)~ THEN REPLY ~(*The sun glistening off of Sime�s honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
+CheckStatLT(Player1,13,INT)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 
 Uh... demons are red,
 Xvarts  are blue,
@@ -1678,7 +1678,7 @@ AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to resto
 END
 
 IF ~~ THEN BEGIN flirt_1a
-	SAY ~(*Your eyes linger over the half-elf�s features and body. You note the way her hair flows behind her like a sun-kissed cloth, how her eyes glitter whenever a laugh escapes her lips, and how the trials and tribulations you endure with her never seem to wipe a smile off of her fair face.*)~
+	SAY ~(*Your eyes linger over the half-elf's features and body. You note the way her hair flows behind her like a sun-kissed cloth, how her eyes glitter whenever a laugh escapes her lips, and how the trials and tribulations you endure with her never seem to wipe a smile off of her fair face.*)~
 =
 	~(*Her eyes meet yours suddenly, causing your stomach to flutter. She tilts her head to the side and starts making silly faces at you, giggling when you feel your neck and ears heat in an embarrassed blush.*)~
 =
@@ -1716,24 +1716,24 @@ END
 IF ~~ THEN BEGIN flirt_2b
 	SAY ~(*You wrap her free hand in your own, reveling in her touch.*)~
 =
-	~(*Sime looks to you in puzzlement, and politely releases herself from your grip*) I�m sorry, <CHARNAME>, it was sweet, but this isn�t a good time.~
+	~(*Sime looks to you in puzzlement, and politely releases herself from your grip*) I'm sorry, <CHARNAME>, it was sweet, but this isn't a good time.~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_2c
-	SAY ~(*After interlocking your fingers with hers, Sime�s hand trembles slightly at the sudden contact, but she does not pull away. The two of you walk on for a while as such, until she decisively turns and breaks your hold, in order to inspect her weapons and armor.*)~
+	SAY ~(*After interlocking your fingers with hers, Sime's hand trembles slightly at the sudden contact, but she does not pull away. The two of you walk on for a while as such, until she decisively turns and breaks your hold, in order to inspect her weapons and armor.*)~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_3a
-	SAY ~(*Sime at first doesn�t react to the sudden brush of your lips on hers, as if she isn�t quite certain of what just happened. She quickly regains her composure and yanks her head back, looking at you with a dark expression on her face.*)~
+	SAY ~(*Sime at first doesn't react to the sudden brush of your lips on hers, as if she isn't quite certain of what just happened. She quickly regains her composure and yanks her head back, looking at you with a dark expression on her face.*)~
 =
-	~Look, <CHARNAME>, you have been very kind to me so far, but I do not think I�m prepared to advance our...relationship...that far yet.~
+	~Look, <CHARNAME>, you have been very kind to me so far, but I do not think I'm prepared to advance our...relationship...that far yet.~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_3b
-	SAY ~(*Sime�s lips lock with yours for a brief moment. You are nearly overcome by the sweetness of the moment, but Sime soon breaks away before any further advancement.*)~
+	SAY ~(*Sime's lips lock with yours for a brief moment. You are nearly overcome by the sweetness of the moment, but Sime soon breaks away before any further advancement.*)~
 =
 	~Ah, <CHARNAME>, what exactly have you been drinking as of late?~
 	IF ~~ THEN EXIT
@@ -1752,9 +1752,9 @@ IF ~~ THEN BEGIN flirt_4a
 END
 
 IF ~~ THEN BEGIN flirt_4b
-	SAY ~(*You kiss both of Sime�s cheeks, and then her nose. You do not get much farther than that, for she pulls back, trying to suppress a giggle.*)~
+	SAY ~(*You kiss both of Sime's cheeks, and then her nose. You do not get much farther than that, for she pulls back, trying to suppress a giggle.*)~
 =
-	~I�m sorry <CHARNAME>, but I�m ticklish there!~
+	~I'm sorry <CHARNAME>, but I'm ticklish there!~
 	IF ~~ THEN EXIT
 END
 
@@ -1764,7 +1764,7 @@ IF ~~ THEN BEGIN flirt_4c
 END
 
 IF ~~ THEN BEGIN flirt_5a
-	SAY ~Thank you, <CHARNAME>. I enjoy being with you as well, but remember, I�m also here for my own reasons, not just for bringing pleasure to you.~
+	SAY ~Thank you, <CHARNAME>. I enjoy being with you as well, but remember, I'm also here for my own reasons, not just for bringing pleasure to you.~
 	IF ~~ THEN EXIT
 END
 
@@ -1824,7 +1824,7 @@ END
 IF ~~ THEN BEGIN flirt_8b
 	SAY ~(*Sime smiles mischievously, then she flips her head about, sending her hair flying into your face. Sime laughs sweetly as the loose strands momentarily blind your eyes, and as you sputter to remove the pieces of hair that flew into your mouth.*)~
 =
-	~I�m sorry, <CHARNAME>, it was just too tempting! And you know I love to tease you. (*Sime kisses you once, then twice on the lips in an effort to apologize.*)~
+	~I'm sorry, <CHARNAME>, it was just too tempting! And you know I love to tease you. (*Sime kisses you once, then twice on the lips in an effort to apologize.*)~
 	IF ~~ THEN EXIT
 END
 
@@ -1834,14 +1834,14 @@ IF ~~ THEN BEGIN flirt_8c
 END
 
 IF ~~ THEN BEGIN flirt_9a
-	SAY ~(*Sime�s breath quickens in your mouth and she presses against you with a fierce and fiery passion. Your tongues fight each other in a playful match for dominance of the other�s mouth.*)~
+	SAY ~(*Sime's breath quickens in your mouth and she presses against you with a fierce and fiery passion. Your tongues fight each other in a playful match for dominance of the other's mouth.*)~
 =
-	~(*Your parting is slow and breathless, and Sime�s eyes speak an unfathomable amount of trust and dedication for you.*)~
+	~(*Your parting is slow and breathless, and Sime's eyes speak an unfathomable amount of trust and dedication for you.*)~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_9b
-	SAY ~(*Sime�s reaction is initially slow, but the passion between you two builds wonderfully quickly.*)~
+	SAY ~(*Sime's reaction is initially slow, but the passion between you two builds wonderfully quickly.*)~
 =
 	~You make me so happy, <CHARNAME>... (*Sime manages to say between chaste kisses. You make certain that your responding kiss tells her of all the adoration you hold for her as well.*)~
 	IF ~~ THEN EXIT
@@ -1852,7 +1852,7 @@ IF ~~ THEN BEGIN flirt_9c
 =
 	~(*Her tongue rolls over yours in a wild and beautiful dance inside your mouth*)...~
 =
-	~(*When you finally break the embrace, she grins widely while catching her breath*)... I was just about to say that it had been a while since you last kissed me, <CHARNAME>. Are you certain that one of your gifts as a Bhaalspawn isn�t telepathy?~
+	~(*When you finally break the embrace, she grins widely while catching her breath*)... I was just about to say that it had been a while since you last kissed me, <CHARNAME>. Are you certain that one of your gifts as a Bhaalspawn isn't telepathy?~
 	IF ~~ THEN EXIT
 END
 
@@ -1868,7 +1868,7 @@ IF ~~ THEN BEGIN flirt_10
 END
 
 IF ~~ THEN BEGIN flirt_11a
-	SAY ~(*You think you see a tear well in one of Sime�s eyes, but she blinks it away.*)~
+	SAY ~(*You think you see a tear well in one of Sime's eyes, but she blinks it away.*)~
 =
 	~That was... wonderful <CHARNAME>, but know you that I am not one to condone slavery. (*She giggles*)~
 	IF ~~ THEN EXIT
@@ -1877,12 +1877,12 @@ END
 IF ~~ THEN BEGIN flirt_11b
 	SAY ~(*Thank... thank you, <CHARNAME>. That was much better than the one lined poems some of the Shadow Thieves would grant me... I did not know you felt so much about me.*)~
 =
-	~(*She looks as if she wants to say something to tease you, but thinks better of it. This is a rare moment when Sime actually doesn�t have a clever retort to give... you must have touched her deeply indeed.*)~
+	~(*She looks as if she wants to say something to tease you, but thinks better of it. This is a rare moment when Sime actually doesn't have a clever retort to give... you must have touched her deeply indeed.*)~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_11c
-	SAY ~Umm... thank you, <CHARNAME>. Please tell me that you didn�t spend all day thinking of that one.~
+	SAY ~Umm... thank you, <CHARNAME>. Please tell me that you didn't spend all day thinking of that one.~
 	IF ~~ THEN EXIT
 END
 
@@ -1894,7 +1894,7 @@ END
 IF ~~ THEN BEGIN flirt_12b
 	SAY ~Hmm? Oh... of course, I am fine. I thought I smelled undead... I always become distant when the air tastes of the stench of a mummy or vampire. I have never taken a liking to them...~
 =
-	~(*Sime�s distracted look returns to her countenance, but you decide to respect her privacy and not press it any further.*)~
+	~(*Sime's distracted look returns to her countenance, but you decide to respect her privacy and not press it any further.*)~
 	IF ~~ THEN EXIT
 END
 
@@ -1903,18 +1903,18 @@ IF ~~ THEN BEGIN flirt_13a
 =
 	~(*No one else joins in with your singing, but the mood does seem to lighten because of it. Sime, however, continues to stare into the flames.*)~
 =
-	~(*Undaunted, you raise the tone of your voice and change the fair lady�s name in the song to �Sime�. You certainly arouse her attention then, and she shakes her head almost resolutely. Seeing you falter in your singing brings a tired, but genuine smile to her face, a reward in itself  for your efforts.*)~
+	~(*Undaunted, you raise the tone of your voice and change the fair lady's name in the song to 'Sime'. You certainly arouse her attention then, and she shakes her head almost resolutely. Seeing you falter in your singing brings a tired, but genuine smile to her face, a reward in itself  for your efforts.*)~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_13b
 	SAY ~(*You playfully toss a pebble in her direction.*)~
 =
-	~(*Sime�s head shoots up after the pebble bounces harmlessly off of her. You try to suppress a laugh, but to no avail. At first she glares at you in hurt and betrayal, but then it seems she decides she is being too serious and mediocre for her own good.*)~
+	~(*Sime's head shoots up after the pebble bounces harmlessly off of her. You try to suppress a laugh, but to no avail. At first she glares at you in hurt and betrayal, but then it seems she decides she is being too serious and mediocre for her own good.*)~
 =
 	~(*Sime quickly retaliates by launching a barrage of small stones and pebbles back at you, making you squirm and wriggle in surprise. It then becomes a full-fledged throwing contest, and you are soon resorting to food, wrappers, and even the occasional pillow.*)~
 =
-	~(*By the end of your play, you and Sime are laying side by side giggling and laughing at each other�s expense. Sime sits up on her elbows, leaning over you. She then leans down and kisses you softly, sliding her tongue against yours*)...~
+	~(*By the end of your play, you and Sime are laying side by side giggling and laughing at each other's expense. Sime sits up on her elbows, leaning over you. She then leans down and kisses you softly, sliding her tongue against yours*)...~
 =
 	~I feel better now, <CHARNAME>, thank you.~
 	IF ~~ THEN EXIT
@@ -1955,7 +1955,7 @@ IF ~~ THEN BEGIN TSTOB4
 END
 
 IF ~~ THEN BEGIN TSTOB5
-  SAY ~No! That�s cannot be true... Darriel could not have thrown your life away because of me...~
+  SAY ~No! That's cannot be true... Darriel could not have thrown your life away because of me...~
   IF ~~ THEN REPLY ~Darriel, whatever you did, you did it to yourself! Stop trying to place the blame on Sime! She did nothing wrong!~ EXTERN ~HGWRA01~ 25
   IF ~~ THEN REPLY ~Gorion, what is it? Sime did nothing to be tortured so... You are unfair.~ EXTERN ~HGWRA01~ 25
   IF ~~ THEN REPLY ~This is madness and lies. Enough.~ EXTERN ~HGWRA01~ 25
@@ -1969,7 +1969,7 @@ IF ~~ THEN BEGIN TSTOB6
 END
 
 IF ~~ THEN BEGIN TSTOB7
-  SAY ~I will not hold you, <CHARNAME>. I love you, but your destiny... It is beyond any words I have at my disposal. You were destined for greatness, you were born into it. What is one woman�s desire to hold you close every night compare to that?~
+  SAY ~I will not hold you, <CHARNAME>. I love you, but your destiny... It is beyond any words I have at my disposal. You were destined for greatness, you were born into it. What is one woman's desire to hold you close every night compare to that?~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
   IF ~InParty("Valygar")
 Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
@@ -2006,7 +2006,7 @@ Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
 END
 
 IF ~~ THEN BEGIN TSTOB8
-  SAY ~I must be feeling really special now for sharing the bedroll of the <PRO_LADYLORD> of Murder. Oh, Nine Hells! What�s done is done. Hopefully my father does not aspire to take Mask�s place. For he is the only person I love left on this plane of existence.~
+  SAY ~I must be feeling really special now for sharing the bedroll of the <PRO_LADYLORD> of Murder. Oh, Nine Hells! What's done is done. Hopefully my father does not aspire to take Mask's place. For he is the only person I love left on this plane of existence.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 33
   IF ~InParty("Valygar")
 Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 11
@@ -2028,15 +2028,15 @@ END
 IF ~~ THEN BEGIN TSTOB9
   SAY ~What? You choose to remain mortal? <CHARNAME>, <CHARNAME>, I do not know, I feel like berating you for ultimate stupidity, yet my heart sings. And I think I am crying. I must look silly.~
   IF ~~ THEN REPLY ~You have never looked more beautiful, Sime. I love you, I will not leave you. Not for a crown, not for a godhood, not even for another woman.~ GOTO TSTOB12
-  IF ~~ THEN REPLY ~Well, at first I wanted to say something like: "It is not that we will be apart, my beloved Sime, it is only that we won�t be together." But then I thought that it is sappy. Since I did not think that: "Oh, Nine Hells!" is not exactly the words you would expect from a person ascending to the godhood, and I could not come up with anything else I decided to stay and... Oh, Nine Hells! I love you, and that�s all that matters.~ GOTO TSTOB13
-  IF ~~ THEN REPLY ~You thought I�d trade our love for that terrifying piece of used furniture? Not on my life!~ GOTO TSTOB14
+  IF ~~ THEN REPLY ~Well, at first I wanted to say something like: "It is not that we will be apart, my beloved Sime, it is only that we won't be together." But then I thought that it is sappy. Since I did not think that: "Oh, Nine Hells!" is not exactly the words you would expect from a person ascending to the godhood, and I could not come up with anything else I decided to stay and... Oh, Nine Hells! I love you, and that's all that matters.~ GOTO TSTOB13
+  IF ~~ THEN REPLY ~You thought I'd trade our love for that terrifying piece of used furniture? Not on my life!~ GOTO TSTOB14
   IF ~~ THEN REPLY ~Sime, if I wanted a fountain, I would seriously consider you for the job. Whip your tears and let us rejoice!~ GOTO TSTOB15
   IF ~Gender(Player1,MALE)~ THEN REPLY ~Compare to me, you look a pinnacle of intelligence, Sime. I am not a god, not even a demi-god now. I am a man and I am in love. That is all I know.~ GOTO TSTOB16
   IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Compare to me, you look a pinnacle of intelligence, Sime. I am not a godness, not even a demi-godness now. I am a woman and I am in love. That is all I know.~ GOTO TSTOB16
 END
 
 IF ~~ THEN BEGIN TSTOB10
-  SAY ~You are going to ascend, won�t you? You have proven a person of goodness and wisdom. Such a person can succeed in changing the dark domain of the Lord of Murder.~
+  SAY ~You are going to ascend, won't you? You have proven a person of goodness and wisdom. Such a person can succeed in changing the dark domain of the Lord of Murder.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
   IF ~InParty("Valygar")
 Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
@@ -2079,7 +2079,7 @@ Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
 END
 
 IF ~~ THEN BEGIN TSTOB11
-  SAY ~I know that you have power and blood of a god, but the Lord of Murder�s domain is a dark one. I... I hope you will not make it darker still.~
+  SAY ~I know that you have power and blood of a god, but the Lord of Murder's domain is a dark one. I... I hope you will not make it darker still.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
   IF ~InParty("Valygar")
 Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
@@ -2132,12 +2132,12 @@ IF ~~ THEN BEGIN TSTOB13
 END
 
 IF ~~ THEN BEGIN TSTOB14
-  SAY ~I... I always wanted to fall in love for a person who�d call the Throne of Bhaal "a piece of used furniture". Now this dream came true.~
+  SAY ~I... I always wanted to fall in love for a person who'd call the Throne of Bhaal "a piece of used furniture". Now this dream came true.~
   IF ~~ THEN EXTERN ~FINSOL01~ 33
 END
 
 IF ~~ THEN BEGIN TSTOB15
-  SAY ~I am trying, <CHARNAME>, but the stupid tears won�t stop. But I am rejoicing, and I cry of happiness. I love you so!~
+  SAY ~I am trying, <CHARNAME>, but the stupid tears won't stop. But I am rejoicing, and I cry of happiness. I love you so!~
   IF ~~ THEN EXTERN ~FINSOL01~ 33
 END
 

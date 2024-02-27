@@ -12,7 +12,7 @@ IF ~~ THEN BEGIN 1
   SAY ~Yes the task. Let me start from the beginning and tell you of my search to fulfil a life long dream <CHARNAME>. You see, I have always dreamt that I could be more than what I am. A sort of bigger me, a person to be looked up to and not always down on. If you know what I mean.~ [taffic02]
   IF ~~ THEN REPLY ~Are you saying that you wish to be a taller gnome Taffic, or is it that you wish people to look up to you and respect you more? I can offer no advice if it is to become taller that you seek but if it is respect that you look for Taffic, then that is something that can only be earned.~ GOTO 2
   IF ~~ THEN REPLY ~Taffic, what is it that you are saying? Is it that you wish to be a taller gnome or a bigger person?~ GOTO 2
-  IF ~~ THEN REPLY ~This is starting to sound crazy gnome and you�ve only uttered a few lines. Whoever heard of a tall gnome? How can anyone be other than what they are?~ GOTO 2
+  IF ~~ THEN REPLY ~This is starting to sound crazy gnome and you've only uttered a few lines. Whoever heard of a tall gnome? How can anyone be other than what they are?~ GOTO 2
   IF ~~ THEN REPLY ~I am not at all sure that I want a crazy gnome on some foolish quest to make himself taller tagging along with me but carry on!~ GOTO 2
 END
 

@@ -29,7 +29,7 @@ Global("VP_OnIsland","GLOBAL",0)
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~Make up your mind <CHARNAME>. One minute it is �Taffic go� and the next it is �Taffic stay.� I will take it that this time you mean for us to continue on. So stop wasting your breath and mine and let us move on.~ [taffic11]
+  SAY ~Make up your mind <CHARNAME>. One minute it is 'Taffic go' and the next it is 'Taffic stay.' I will take it that this time you mean for us to continue on. So stop wasting your breath and mine and let us move on.~ [taffic11]
   IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0)
 JoinParty()~ EXIT
 END
@@ -67,7 +67,7 @@ END
 IF ~OR(2)
 Global("VP_TafficQuest","GLOBAL",14)
 Global("VP_TafficQuest","GLOBAL",15)~ THEN BEGIN umberhk1
-  SAY ~I knew I could rely on you to seek me out again. A group that doesn�t know to put its breeches on before its boots will always be in need of one who does. Unfortunately, I have had a spot of bother, still the sooner you sort this for me, the sooner we can leave.~
+  SAY ~I knew I could rely on you to seek me out again. A group that doesn't know to put its breeches on before its boots will always be in need of one who does. Unfortunately, I have had a spot of bother, still the sooner you sort this for me, the sooner we can leave.~
   	IF ~~ THEN REPLY ~Taffic? What in blazes has happened to you gnome?~ GOTO umberhk2
   	IF ~~ THEN REPLY ~(*Trying to stifle a laugh*) Back off you monster and tell me what you have done with my good friend Taffic?~ GOTO umberhk3
   	IF ~~ THEN REPLY ~(*Trying to stifle a laugh*) You sound like Taffic, *sniff*, you smell like Taffic but you as sure as hell do not look like Taffic! What demon trickery is this?~ GOTO umberhk3
@@ -159,7 +159,7 @@ IF ~~ THEN BEGIN umberhk6
 END
   	
 IF ~~ THEN BEGIN umberhk7
-  SAY ~You can�t expect me to exist in this... this misshapen, hulk of a body <CHARNAME>! Do not condemn me to such an ugly future.~
+  SAY ~You can't expect me to exist in this... this misshapen, hulk of a body <CHARNAME>! Do not condemn me to such an ugly future.~
   	IF ~Gender(Player1,MALE)~ THEN REPLY ~It is not me who has forced this on you Taffic, we are all slaves to the outcome of our actions and you must learn to live with yours. I can do nothing for you. Farewell Taffic.~ GOTO umberhk9
   	IF ~Gender(Player1,MALE)~ THEN REPLY ~You condemned yourself to this existence gnome. Do not look to me for help, sort your own mess, if you can! Farewell and luck in your new found destiny!~ GOTO umberhk9
   	IF ~Gender(Player1,FEMALE)~ THEN REPLY ~It is not me who has forced this on you Taffic, we are all slaves to the outcome of our actions and you must learn to live with yours. I can do nothing for you. Farewell Taffic.~ GOTO umberhk0
@@ -176,14 +176,14 @@ JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN umberhk9
-  SAY ~You refuse to help me! You ungrateful pool of slime. You really are your father�s son! I will not forget this <CHARNAME> and you had best hope that our paths never cross again! (*Taffic turns and storms off.*)~
+  SAY ~You refuse to help me! You ungrateful pool of slime. You really are your father's son! I will not forget this <CHARNAME> and you had best hope that our paths never cross again! (*Taffic turns and storms off.*)~
   IF ~~ THEN DO ~SetGlobal("VP_TafficQuest","GLOBAL",16)
 ActionOverride("Rhezon",EscapeArea())
 EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN umberhk0
-  SAY ~You refuse to help me! You ungrateful pool of slime. You really are your father�s daughter! I will not forget this <CHARNAME> and you had best hope that our paths never cross again! (*Taffic turns and storms off.*)~
+  SAY ~You refuse to help me! You ungrateful pool of slime. You really are your father's daughter! I will not forget this <CHARNAME> and you had best hope that our paths never cross again! (*Taffic turns and storms off.*)~
   IF ~~ THEN DO ~SetGlobal("VP_TafficQuest","GLOBAL",16)
 ActionOverride("Rhezon",EscapeArea())
 EscapeArea()~ EXIT

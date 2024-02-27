@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN 8
 =
 ~Ardel says Brynn broke it. Brynn says Caryl broke it. Caryl and Demetri say they do not know who broke it.~
 =
-~Given that only the guilty apprentice is lying, who broke the wizard�s wand?~
+~Given that only the guilty apprentice is lying, who broke the wizard's wand?~
 		IF ~~ THEN REPLY ~Ardel.~ GOTO 7
 		IF ~~ THEN REPLY ~Brynn.~ GOTO 9
 		IF ~~ THEN REPLY ~Caryl.~ GOTO 7

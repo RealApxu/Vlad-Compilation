@@ -1,7 +1,7 @@
 BEGIN ~MARKY~
 
 IF ~~ THEN BEGIN 0
-	SAY ~There! They done it! They selled your peoples Bardo, kill �em!~
+	SAY ~There! They done it! They selled your peoples Bardo, kill 'em!~
 		IF ~~ THEN EXTERN ~BARDO~ 1
 END
 
@@ -13,6 +13,6 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-	SAY ~See, Marky tells you it�s them, go on Bardo, you kill �em, kill �em dead!~
+	SAY ~See, Marky tells you it's them, go on Bardo, you kill 'em, kill 'em dead!~
 		IF ~~ THEN EXTERN ~BARDO~ 12
 END

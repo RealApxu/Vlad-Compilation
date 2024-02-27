@@ -88,7 +88,7 @@ IF WEIGHT #-1 ~Global("VP_LoveTalk","LOCALS",1)~ THEN BEGIN LT2_st0
   SAY ~(Takes off his helmet) My lady, allow me to pose a question. Forgive my directness, but... is my understanding correct that you are a daughter of Bhaal?~
   	IF ~~ THEN REPLY ~Does it matter for our partnership?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st1
   	IF ~~ THEN REPLY ~Hmm, can't you feel his essence in me?~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st2
-  	IF ~~ THEN REPLY ~I... did not choose my parents, sir Keldorn, and Gorion did not tell me anything. I thought him to be my real father. Believe me, it was only after reading the letter I discovered after his death that revealed my true parentage and now I would be glad to be rid of this �gift'!~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st3
+  	IF ~~ THEN REPLY ~I... did not choose my parents, sir Keldorn, and Gorion did not tell me anything. I thought him to be my real father. Believe me, it was only after reading the letter I discovered after his death that revealed my true parentage and now I would be glad to be rid of this 'gift'!~ DO ~SetGlobal("VP_LoveTalk","LOCALS",2)~ GOTO LT2_st3
 END
 
 IF ~~ THEN BEGIN LT2_st1
@@ -188,8 +188,8 @@ END
 //LT8
 IF WEIGHT #-2 ~Global("VP_LoveTalk","LOCALS",7)~ THEN BEGIN LT8_st0
   SAY ~<CHARNAME>, I... Let us sit here awhile, I must think the things through...~
-  	IF ~~ THEN REPLY ~Sir Keldorn, if you'd like to return home � and I think that Sir William has convinced you to, I would release you from my service. I can't let your family be destroyed because of me.~ GOTO LT8_st1
-  	IF ~~ THEN REPLY ~If you'd like to stay home � please, do so. I will find a replacement for you; not a companion as valuable as you are, but a replacement nonetheless.~ GOTO LT8_st2
+  	IF ~~ THEN REPLY ~Sir Keldorn, if you'd like to return home ' and I think that Sir William has convinced you to, I would release you from my service. I can't let your family be destroyed because of me.~ GOTO LT8_st1
+  	IF ~~ THEN REPLY ~If you'd like to stay home ' please, do so. I will find a replacement for you; not a companion as valuable as you are, but a replacement nonetheless.~ GOTO LT8_st2
   	IF ~~ THEN REPLY ~(Decisively) Sir Keldorn, I should not say this, but... (Take a deep breath in...) I don't believe Sir William.~ GOTO LT8_st3
   	IF ~~ THEN REPLY ~Oh sir, you must be broken-hearted!~ GOTO LT8_st4
 END
@@ -752,7 +752,7 @@ END
 IF ~~ THEN BEGIN kelemring_st0
   SAY ~(Bitterly) I imagine this priest has died. There is a letter and a ring here, <CHARNAME>.~
 =
-~"Dear Count, You know that the Temple was a place of safe keeping for an artifact � the ring of Cyric. The great Kelemvor made it clear that this ring should not fall into the hands of followers of the Prince of Lies, and I have seen many of them among the enemy.~
+~"Dear Count, You know that the Temple was a place of safe keeping for an artifact ' the ring of Cyric. The great Kelemvor made it clear that this ring should not fall into the hands of followers of the Prince of Lies, and I have seen many of them among the enemy.~
 =
 ~Unfortunately the ring's abilities are yet unknown to me, it is said that mere mortals are not permitted to learn of them. Hide this ring count Firecam I beg you. Keep it from those who covet it for their evil lord! The supreme priest of Kelemvor, Doomguide Marrius."~
   	IF ~~ THEN REPLY ~(Taking the ring) I believe I understand the power of the ring. It causes the transposition of divine and human essences.~ GOTO kelemring_st1
@@ -1120,16 +1120,16 @@ IF ~~ THEN BEGIN darkeld2
 END	
 
 IF ~~ THEN BEGIN darkeld3
-	SAY ~(*He reaches up and puts his hand on the half orc�s shoulder*) My friend, I understand why you should feel that love will always elude you.~
+	SAY ~(*He reaches up and puts his hand on the half orc's shoulder*) My friend, I understand why you should feel that love will always elude you.~
 =
-~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of another�s love.~
+~But love is not dependent solely on appearance or the race we are born into. Love reaches into the heart and it is that which is found there which deems us worthy of another's love.~
   IF ~~ THEN EXTERN ~DARJ~ darkeld4
 END	
 
 IF ~~ THEN BEGIN darkeld4
 	SAY ~(*His voice takes on a tone of sadness*) I can not answer you truthfully for the female heart is a mystery to all men, but I do  know that women are very different to men in the way they perceive a worthy lover.~
 =
-~It is true, many will look at a man�s face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
+~It is true, many will look at a man's face or his purse first, often not taking the time to look deeper into the heart where the true face of a man lies... and later they bemoan that they have married a cruel, heartless man.~
 =
 ~Then there is the woman who is first your friend... she has taken the time, watched, spoken with you and found you worthy to be called friend.~
 =
@@ -1142,7 +1142,7 @@ IF ~~ THEN BEGIN darkeld5
 =
 ~Not only myself but also your friends here have witnessed, many times, the honour that dwells within your heart.~
 =
-~Should you be lucky enough to procure the love of such a woman, then you will be blessed because you�ll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
+~Should you be lucky enough to procure the love of such a woman, then you will be blessed because you'll know that your love embraces you for all that you are, and she will stand beside you, defending against any who would attempt to deride her love.~
   IF ~~ THEN EXTERN ~DARJ~ darkeld6
 END	
 

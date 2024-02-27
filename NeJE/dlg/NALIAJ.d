@@ -124,7 +124,7 @@ InParty("Kachiko")
 END
 
 IF ~~ THEN BEGIN NEJ323
-  SAY ~I�m glad to be of help.~
+  SAY ~I'm glad to be of help.~
   IF ~~ THEN DO ~SetGlobal("VP_Nalia_EnchQuest","GLOBAL",1)~ EXTERN ~XANH~ 23
 END
 
@@ -134,22 +134,22 @@ IF ~~ THEN BEGIN NEJ324
 END
 
 IF ~~ THEN BEGIN NEJ325
-  SAY ~I�m glad to be of help.~
+  SAY ~I'm glad to be of help.~
   IF ~~ THEN DO ~SetGlobal("VP_Nalia_AbjQuest","GLOBAL",1)~ EXTERN ~TUPHIN~ 7
 END
 
 IF ~~ THEN BEGIN NEJ326
-  SAY ~I�m glad to be of help.~
+  SAY ~I'm glad to be of help.~
   IF ~~ THEN DO ~SetGlobal("VP_Nalia_InvQuest","GLOBAL",1)~ EXTERN ~TUTHEOD~ 26
 END
 
 IF ~~ THEN BEGIN NEJ327
-  SAY ~I�m glad to be of help.~
+  SAY ~I'm glad to be of help.~
   IF ~~ THEN DO ~SetGlobal("VP_Nalia_InvQuest","GLOBAL",1)~ EXTERN ~TUTHEOD~ 29
 END
 
 IF ~~ THEN BEGIN NEJ328
-  SAY ~I�m glad to be of help.~
+  SAY ~I'm glad to be of help.~
   IF ~~ THEN DO ~SetGlobal("VP_Nalia_IllQuest","GLOBAL",1)~ EXTERN ~TUVASHON~ 17
 END
 
@@ -160,12 +160,12 @@ END
 
 IF ~~ THEN BEGIN NEJ330
   SAY ~Sorry, but I truly thought I was capable of more.~
-  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read can�t you?~ GOTO NEJ331
-  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I don�t understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ331
+  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read can't you?~ GOTO NEJ331
+  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I don't understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ331
 END
 
 IF ~~ THEN BEGIN NEJ331
-  SAY ~Magic can be very unpredictable whether it�s read from parchment or a memorised spell. It takes but the slightest wrong move by a finger, a miss pronunciation of a word and the spell will lost or worse altered and the results are as I have said unpredictable.~
+  SAY ~Magic can be very unpredictable whether it's read from parchment or a memorised spell. It takes but the slightest wrong move by a finger, a miss pronunciation of a word and the spell will lost or worse altered and the results are as I have said unpredictable.~
   IF ~~ THEN DO ~ActionOverride("TuMord",EscapeArea())~ EXIT
 END
 
@@ -202,35 +202,35 @@ IF ~~ THEN BEGIN abjurer2
 END
 
 IF ~~ THEN BEGIN abjurer3
-  SAY ~That�s unfair! Let me remind you that you can�t lose what you never had.~
+  SAY ~That's unfair! Let me remind you that you can't lose what you never had.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 	
 IF ~~ THEN BEGIN abjurer4
-  SAY ~You�re very gracious, <CHARNAME>.~
+  SAY ~You're very gracious, <CHARNAME>.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 
 IF ~~ THEN BEGIN tranfail
   SAY ~I got it wrong, sorry, <CHARNAME>.~
-  IF ~~ THEN REPLY ~You failed, a simple kill the monster and open the chest task! It isn�t as if you haven�t done it before.~ GOTO tranfai2
-  IF ~~ THEN REPLY ~It�s not that important. What is important is that Malvolio got you out safely.~ GOTO tranfai3
+  IF ~~ THEN REPLY ~You failed, a simple kill the monster and open the chest task! It isn't as if you haven't done it before.~ GOTO tranfai2
+  IF ~~ THEN REPLY ~It's not that important. What is important is that Malvolio got you out safely.~ GOTO tranfai3
 END
 
 IF ~~ THEN BEGIN tranfai2
-  SAY ~The last time, if I recall correctly, <CHARNAME>, I had some muscle to back me up and that situation wasn�t dependent solely on magic.~
+  SAY ~The last time, if I recall correctly, <CHARNAME>, I had some muscle to back me up and that situation wasn't dependent solely on magic.~
   IF ~~ THEN EXTERN ~TUMALV~ 24
 END
 
 IF ~~ THEN BEGIN tranfai3
-  SAY ~Thank you for that, <CHARNAME>, but I am still disappointed that I didn�t do better.~
+  SAY ~Thank you for that, <CHARNAME>, but I am still disappointed that I didn't do better.~
   IF ~~ THEN EXTERN ~TUMALV~ 24
 END
 
 IF ~~ THEN BEGIN invfail
   SAY ~I got it wrong, sorry <CHARNAME>.~
-  IF ~~ THEN REPLY ~That was abysmal! With all the spells you have at your disposal, I can not believe that you couldn�t take care of a few pesky pests!~ GOTO invfail2
-  IF ~~ THEN REPLY ~It happens. I was probably expecting too much letting you go into a situation you hadn�t been given time to prepare for.~GOTO invfail3
+  IF ~~ THEN REPLY ~That was abysmal! With all the spells you have at your disposal, I can not believe that you couldn't take care of a few pesky pests!~ GOTO invfail2
+  IF ~~ THEN REPLY ~It happens. I was probably expecting too much letting you go into a situation you hadn't been given time to prepare for.~GOTO invfail3
 END
 
 IF ~~ THEN BEGIN invfail2
@@ -267,7 +267,7 @@ END
 IF ~~ THEN BEGIN vashon
   SAY ~I am sorry, I know that I should have been able to have done more.~
   IF ~~ THEN REPLY ~If I had a gold piece for each time I heard sorry for an excuse, I would be rich beyond your imaginings. Sorry is never an excuse for failure.~ GOTO vashon3
-  IF ~~ THEN REPLY ~No matter, you couldn�t have second guessed Vashon�s test, no one could... not even if you�d been a diviner.~ GOTO vashon4
+  IF ~~ THEN REPLY ~No matter, you couldn't have second guessed Vashon's test, no one could... not even if you'd been a diviner.~ GOTO vashon4
 END
 
 IF ~~ THEN BEGIN vashon3

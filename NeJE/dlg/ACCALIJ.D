@@ -39,12 +39,12 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
- SAY ~Imoen, this is a journal, not some bard�s romantic tale! I write of our day to day struggles, of our battles with enemies we encounter on our road, and how we grow together in camaraderie.~
+ SAY ~Imoen, this is a journal, not some bard's romantic tale! I write of our day to day struggles, of our battles with enemies we encounter on our road, and how we grow together in camaraderie.~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ91
 END
 
 IF ~~ THEN BEGIN 11
- SAY ~Imoen... stop... please. You can be assured that I have some very colourful words of my own when it comes to my writing about you. Now, please leave me in peace to finish today�s account.~
+ SAY ~Imoen... stop... please. You can be assured that I have some very colourful words of my own when it comes to my writing about you. Now, please leave me in peace to finish today's account.~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ94
 END
 
@@ -74,12 +74,12 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
- SAY ~Imoen, this is a journal, not some bard�s romantic tale! I write of our day to day struggles, of our battles with enemies we encounter on our road, and how we grow together in camaraderie.~
+ SAY ~Imoen, this is a journal, not some bard's romantic tale! I write of our day to day struggles, of our battles with enemies we encounter on our road, and how we grow together in camaraderie.~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX21
 END
 
 IF ~~ THEN BEGIN 18
- SAY ~Imoen... stop... please. You can be assured that I have some very colourful words of my own when it comes to my writing about you. Now, please leave me in peace to finish today�s account.~
+ SAY ~Imoen... stop... please. You can be assured that I have some very colourful words of my own when it comes to my writing about you. Now, please leave me in peace to finish today's account.~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX24
 END
 
@@ -89,12 +89,12 @@ IF ~~ THEN BEGIN 19
 END
 
 IF ~~ THEN BEGIN 20
- SAY ~Strange, I don�t remember dropping it or leaving it anywhere. I�ll have to ask the others if they�ve seen it.~
+ SAY ~Strange, I don't remember dropping it or leaving it anywhere. I'll have to ask the others if they've seen it.~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ134
 END
 
 IF ~~ THEN BEGIN 21
- SAY ~Mmm, I may just do that. Before I do that, I thought you might like this clasp Imoen. See how beautifully it compliments your hair... don�t you think?~
+ SAY ~Mmm, I may just do that. Before I do that, I thought you might like this clasp Imoen. See how beautifully it compliments your hair... don't you think?~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ135
 END
 
@@ -104,12 +104,12 @@ IF ~~ THEN BEGIN 22
 END
 
 IF ~~ THEN BEGIN 23
- SAY ~Yes, I do believe it is mine. Thank you for finding it for me. I will have to try and not be so careless in the future and tighten my back pack better. Wouldn�t you agree Imoen?~
+ SAY ~Yes, I do believe it is mine. Thank you for finding it for me. I will have to try and not be so careless in the future and tighten my back pack better. Wouldn't you agree Imoen?~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ137
 END
 
 IF ~~ THEN BEGIN 24
- SAY ~So am I. Before I go a little bit of advice for you Imoen, *eaves droppers never hear any good of themselves* and I should imagine it�s true of those who read other peoples journals, except *she never reads any good of herself.*~
+ SAY ~So am I. Before I go a little bit of advice for you Imoen, *eaves droppers never hear any good of themselves* and I should imagine it's true of those who read other peoples journals, except *she never reads any good of herself.*~
  IF ~~ THEN EXTERN ~IMOENJ~ NEJ138
 END
 
@@ -119,12 +119,12 @@ IF ~~ THEN BEGIN 25
 END
 
 IF ~~ THEN BEGIN 26
- SAY ~Strange, I don�t remember dropping it or leaving it anywhere. I�ll have to ask the others if they�ve seen it.~
+ SAY ~Strange, I don't remember dropping it or leaving it anywhere. I'll have to ask the others if they've seen it.~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX50
 END
 
 IF ~~ THEN BEGIN 27
- SAY ~Mmm, I may just do that. Before I do that, I thought you might like this clasp Imoen. See how beautifully it compliments your hair... don�t you think?~
+ SAY ~Mmm, I may just do that. Before I do that, I thought you might like this clasp Imoen. See how beautifully it compliments your hair... don't you think?~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX51
 END
 
@@ -134,12 +134,12 @@ IF ~~ THEN BEGIN 28
 END
 
 IF ~~ THEN BEGIN 29
- SAY ~Yes, I do believe it is mine. Thank you for finding it for me. I will have to try and not be so careless in the future and tighten my back pack better. Wouldn�t you agree Imoen?~
+ SAY ~Yes, I do believe it is mine. Thank you for finding it for me. I will have to try and not be so careless in the future and tighten my back pack better. Wouldn't you agree Imoen?~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX53
 END
 
 IF ~~ THEN BEGIN 30
- SAY ~So am I. Before I go a little bit of advice for you Imoen, *eaves droppers never hear any good of themselves* and I should imagine it�s true of those who read other peoples journals, except *she never reads any good of herself.*~
+ SAY ~So am I. Before I go a little bit of advice for you Imoen, *eaves droppers never hear any good of themselves* and I should imagine it's true of those who read other peoples journals, except *she never reads any good of herself.*~
  IF ~~ THEN EXTERN ~IMOEN2J~ VP_FIX54
 END
 
@@ -152,7 +152,7 @@ END
 
 IF ~~ THEN BEGIN 32
  SAY ~My faith in Tempus is such that he would not have put this path before me if it were not the right one to follow.~
- IF ~~ THEN REPLY ~I don�t see any other means of completing our mission.~ EXTERN ~HROTHJ~ 117
+ IF ~~ THEN REPLY ~I don't see any other means of completing our mission.~ EXTERN ~HROTHJ~ 117
  IF ~~ THEN REPLY ~Why am I not surprised that the price for the success of this mission is the death of another?~ EXTERN ~HROTHJ~ 117
  IF ~~ THEN REPLY ~If this priestess is all that stands between the survival of Kuldahar, then her life is already forfeit.~ EXTERN ~HROTHJ~ 117
  IF ~InParty("Jaheira")
@@ -220,7 +220,7 @@ IF ~~ THEN BEGIN 39
 END
 
 IF ~~ THEN BEGIN 40
- SAY ~As a battle priest of Tempus I can understand Kaylessa�s anguish over the fate that has befallen her soldiers. To be denied the honour of death in battle and be forced to live that final torment for ever is cruel and a fate no honourable being deserves. In Tempus�s name let us climb the tower and bring honour to those unfortunate souls.~
+ SAY ~As a battle priest of Tempus I can understand Kaylessa's anguish over the fate that has befallen her soldiers. To be denied the honour of death in battle and be forced to live that final torment for ever is cruel and a fate no honourable being deserves. In Tempus's name let us climb the tower and bring honour to those unfortunate souls.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel")
@@ -259,7 +259,7 @@ IF ~~ THEN BEGIN 45
 END
 
 IF ~~ THEN BEGIN 46
- SAY ~I will hear no more! Because of your refusal to help, the blood of the innocent will surely stain your hands as though you had slaughtered them yourself. Whereas if it is Tempus�s will that I fall fighting for the innocent, my conscience and my god will grant me peace, will yours <CHARNAME>?~
+ SAY ~I will hear no more! Because of your refusal to help, the blood of the innocent will surely stain your hands as though you had slaughtered them yourself. Whereas if it is Tempus's will that I fall fighting for the innocent, my conscience and my god will grant me peace, will yours <CHARNAME>?~
  IF ~~ THEN EXTERN ~HROTHJ~ 226 //-->H8
 END
 
@@ -311,7 +311,7 @@ IF ~~ THEN BEGIN 53
 END
 
 IF ~~ THEN BEGIN 54
- SAY ~I will hear no more! Because of your refusal to help, the blood of the innocent will surely stain your hands as though you had slaughtered them yourself. Whereas if it is Tempus�s will that I fall fighting for the innocent, my conscience and my god will grant me peace, will yours <CHARNAME>?~
+ SAY ~I will hear no more! Because of your refusal to help, the blood of the innocent will surely stain your hands as though you had slaughtered them yourself. Whereas if it is Tempus's will that I fall fighting for the innocent, my conscience and my god will grant me peace, will yours <CHARNAME>?~
  IF ~~ THEN EXTERN ~HROTHJ~ 251
 END
 
@@ -381,11 +381,11 @@ Dead("Jaheira")~ THEN REPLY ~It never did tell us what it planned on doing with 
 Dead("Imoen")
 OR(2)
 !InParty("Imoen2")
-Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the �Ancient Enemy� must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~HROTHJ~ 150
+Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the 'Ancient Enemy' must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~HROTHJ~ 150
  IF ~InParty("Imoen")
-!Dead("Imoen")~ THEN REPLY ~If it was one measure of this little problem, then the �Ancient Enemy� must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ153
+!Dead("Imoen")~ THEN REPLY ~If it was one measure of this little problem, then the 'Ancient Enemy' must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ153
  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the �Ancient Enemy� must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOEN2J~ VP_FIX69
+!Dead("Imoen2")~ THEN REPLY ~If it was one measure of this little problem, then the 'Ancient Enemy' must be just as old and just as powerful.~ DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~IMOEN2J~ VP_FIX69
  IF ~OR(2)
 !InParty("Imoen")
 Dead("Imoen")
@@ -415,11 +415,11 @@ IF ~~ THEN BEGIN 63
 END
 
 IF ~~ THEN BEGIN 64
- SAY ~Indeed, it seems this demon and its *Ancient Enemy* have always been engaged in this battle. From what I was able to follow the creature�s answers, I don�t like the prospects of either one of them emerging as the winner.~
+ SAY ~Indeed, it seems this demon and its *Ancient Enemy* have always been engaged in this battle. From what I was able to follow the creature's answers, I don't like the prospects of either one of them emerging as the winner.~
  IF ~~ THEN EXTERN ~HROTHJ~ 150
 END
 
 IF ~~ THEN BEGIN 65
- SAY ~Tempus is the only ally we�ll find in this place!~
+ SAY ~Tempus is the only ally we'll find in this place!~
  IF ~~ THEN EXTERN ~HROTHJ~ 283
 END

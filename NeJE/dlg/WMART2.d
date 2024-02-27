@@ -45,12 +45,12 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-  SAY ~It is not my place to teach you <CHARNAME>. Your road is set and you will learn what you need as you travel along it. I have lived many years with death just a step behind me, I do not fear it but neither do I welcome it. Neither of us will gain from my dying today, certainly your destiny will not be changed by it but what of Taffic�s here?~
+  SAY ~It is not my place to teach you <CHARNAME>. Your road is set and you will learn what you need as you travel along it. I have lived many years with death just a step behind me, I do not fear it but neither do I welcome it. Neither of us will gain from my dying today, certainly your destiny will not be changed by it but what of Taffic's here?~
   IF ~~ THEN EXTERN ~TAFFICJ~ 13
 END
 
 IF ~~ THEN BEGIN 10
-  SAY ~I can not help you <CHARNAME>, I feel for your friend but her path is designed to entwine with yours and as such they will cross again. It is not for me to divulge that which is to come, for if I was to do so I would never know whether it was my words or you choices that shaped your destiny. That is all I will say, now are we or are we not going to help each other here for Taffic�s peace of mind?~
+  SAY ~I can not help you <CHARNAME>, I feel for your friend but her path is designed to entwine with yours and as such they will cross again. It is not for me to divulge that which is to come, for if I was to do so I would never know whether it was my words or you choices that shaped your destiny. That is all I will say, now are we or are we not going to help each other here for Taffic's peace of mind?~
   IF ~~ THEN EXTERN ~TAFFICJ~ 13
 END
 
@@ -86,11 +86,11 @@ IF ~~ THEN BEGIN 16
   IF ~~ THEN REPLY ~Then why not approach the Shadow Thieves and make them an offer for this valueless ore? Surely they will be glad to be rid of it after all this time?~ GOTO 17
   IF ~~ THEN REPLY ~I take you want me to steal this rithtellium or you would have approached the Shadow Thieves yourself?~ GOTO 17
   IF ~~ THEN REPLY ~Seems like a simple piece of trade between you and the Shadow Thieves is all that is called for here. Why do you need me?~ GOTO 17
-  IF ~~ THEN REPLY ~If you don�t have the knowledge to forge the ore what possible use can you have for it?~ GOTO 21
+  IF ~~ THEN REPLY ~If you don't have the knowledge to forge the ore what possible use can you have for it?~ GOTO 21
 END
 
 IF ~~ THEN BEGIN 17
-  SAY ~I did approach them but they got very suspicious as to why I should want a lump of ore that no one else has shown any interest in. When I explained that it could only be forged by means of secrets long forgotten they didn�t believe me and asked for an exorbitant amount of gold for it.~
+  SAY ~I did approach them but they got very suspicious as to why I should want a lump of ore that no one else has shown any interest in. When I explained that it could only be forged by means of secrets long forgotten they didn't believe me and asked for an exorbitant amount of gold for it.~
   IF ~~ THEN GOTO 18
 END
   	
@@ -98,7 +98,7 @@ IF ~~ THEN BEGIN 18
   SAY ~I can only surmise that they know my reputation for looking into the past and thought I had already discovered the secrets. When in fact my only interest in the rithtellium is as a collector of all things past... one day I hope to learn of its forging but I do not believe the piece they have is big enough to make a weapon of any kind.~
   IF ~~ THEN REPLY ~I fail to see why you need me for simple burglary.~ GOTO 19
   IF ~~ THEN REPLY ~Surely, with your magic, you are more than capable of entering their guild house and taking it yourself?~ GOTO 19
-  IF ~~ THEN REPLY ~There must be more to this otherwise you would not be asking for my aid here. So where is the catch... what aren�t you telling me Deidre?~ GOTO 19
+  IF ~~ THEN REPLY ~There must be more to this otherwise you would not be asking for my aid here. So where is the catch... what aren't you telling me Deidre?~ GOTO 19
 END
 
 IF ~~ THEN BEGIN 19
@@ -114,10 +114,10 @@ IF ~~ THEN BEGIN 20
 PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
   IF ~PartyHasItem("rithtel")
 PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
-  IF ~~ THEN REPLY ~That seems easy enough, I�ll be back with your ore shortly.~ GOTO 24
-  IF ~~ THEN REPLY ~A small price to pay if it stops the gnome�s whining... I still say it will take a miracle not magic to turn him into something he is not.~ GOTO 24
+  IF ~~ THEN REPLY ~That seems easy enough, I'll be back with your ore shortly.~ GOTO 24
+  IF ~~ THEN REPLY ~A small price to pay if it stops the gnome's whining... I still say it will take a miracle not magic to turn him into something he is not.~ GOTO 24
   IF ~~ THEN REPLY ~From what I hear the Shadow Thieves are a very powerful organisation and the last thing I need is to have them assaulting me every time I turn a corner... (*Turning to Taffic*) I am sorry Taffic, but I am not going to do this.~ EXTERN ~TAFFICJ~ 19
-  IF ~~ THEN REPLY ~I am not about to incur the wrath of the Shadow Thieves for a piece of useless ore. I think you will give Taffic here the information he seeks in exchange for your life... now that is more than a fair price wouldn�t you agree?~ GOTO 25
+  IF ~~ THEN REPLY ~I am not about to incur the wrath of the Shadow Thieves for a piece of useless ore. I think you will give Taffic here the information he seeks in exchange for your life... now that is more than a fair price wouldn't you agree?~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 21
@@ -128,14 +128,14 @@ IF ~~ THEN BEGIN 21
 END
 
 IF ~~ THEN BEGIN 22
-  SAY ~(*Excitedly*) Yes... yes I do believe this is what I have been searching for! It�s exquisite, see... it has a shimmer even before it is touched by magic. I had almost given up hope of ever holding such a rare, and if legend speaks truth, so priceless a thing. Might I ask how you came by it <CHARNAME>?~
+  SAY ~(*Excitedly*) Yes... yes I do believe this is what I have been searching for! It's exquisite, see... it has a shimmer even before it is touched by magic. I had almost given up hope of ever holding such a rare, and if legend speaks truth, so priceless a thing. Might I ask how you came by it <CHARNAME>?~
   IF ~~ THEN REPLY ~How I came by it is not important but before you ask, I will say that this is the only piece there was... now please, how can you help Taffic?~ GOTO 23
-  IF ~~ THEN REPLY ~It�s suffice to say that this was all there was to be found... now, you have something for Taffic in exchange?~ GOTO 23
-  IF ~~ THEN REPLY ~Well, there isn�t anymore of it if that�s what you were hoping to hear. You have your rithtellium ... what news do you have for Taffic?~ GOTO 23
+  IF ~~ THEN REPLY ~It's suffice to say that this was all there was to be found... now, you have something for Taffic in exchange?~ GOTO 23
+  IF ~~ THEN REPLY ~Well, there isn't anymore of it if that's what you were hoping to hear. You have your rithtellium ... what news do you have for Taffic?~ GOTO 23
 END
 
 IF ~~ THEN BEGIN 23
-  SAY ~Of course... forgive my exuberance, I never really expected to see, let alone hold such a rare commodity in my hand. Thank you <CHARNAME>. As for Taffic�s dream, I wasn�t able to learn anything that I could do for him myself but here, take this letter which was given to me by a very dear friend of mine, it will tell you all that you need to know. It might also help you gain an audience with the man mentioned. Now, if you will excuse me I have much to do.~
+  SAY ~Of course... forgive my exuberance, I never really expected to see, let alone hold such a rare commodity in my hand. Thank you <CHARNAME>. As for Taffic's dream, I wasn't able to learn anything that I could do for him myself but here, take this letter which was given to me by a very dear friend of mine, it will tell you all that you need to know. It might also help you gain an audience with the man mentioned. Now, if you will excuse me I have much to do.~
   IF ~~ THEN REPLY ~I have met this Thalantyr, pompous fellow... calls himself mighty mage of Beregost or at least he did when first I met him. A meeting which involved me aiding him transform a chicken named Melicamp back into its human form, but that is another story, still, maybe Thalantyr will remember the incident and me.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
 GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
   IF ~~ THEN REPLY ~So Taffic, it seems we have yet another journey to make before we can put this nonsense out of your head for good.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
@@ -147,7 +147,7 @@ GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
 END
 
 IF ~~ THEN BEGIN 24
-  SAY ~Return here when you have the rithtellium and I will then share with you all that I have learnt about your friend�s plight.~
+  SAY ~Return here when you have the rithtellium and I will then share with you all that I have learnt about your friend's plight.~
   IF ~~ THEN DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",1)
 SetGlobal("VP_Taffic_Grumbles","GLOBAL",1)
 RealSetGlobalTimer("VP_TfGrumblesDelay","GLOBAL",1800)~ EXIT
@@ -167,11 +167,11 @@ PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtel
   IF ~PartyHasItem("rithtel")
 PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 27
   IF ~~ THEN REPLY ~No I have not been able to find it. Is it possible that the Shadow Thieves have found themselves a buyer after all?~ GOTO 29
-  IF ~~ THEN REPLY ~No I have not Deidre and I am not prepared to spend the time necessary to look further. I suggest instead that you give Taffic the information that he seeks in exchange for your life... now that is more than a fair price wouldn�t you agree?~ GOTO 25
+  IF ~~ THEN REPLY ~No I have not Deidre and I am not prepared to spend the time necessary to look further. I suggest instead that you give Taffic the information that he seeks in exchange for your life... now that is more than a fair price wouldn't you agree?~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 27
-  SAY ~(*Excitedly*) Yes... yes I do believe this is what I have been searching for! It�s exquisite, see... it has a shimmer even before it is touched by magic. I knew that if anyone could wrest it from the hands of the Shadow Thieves it would be you <CHARNAME>. You have done well and I thank you... but my thanks is not what you are here for is it?~
+  SAY ~(*Excitedly*) Yes... yes I do believe this is what I have been searching for! It's exquisite, see... it has a shimmer even before it is touched by magic. I knew that if anyone could wrest it from the hands of the Shadow Thieves it would be you <CHARNAME>. You have done well and I thank you... but my thanks is not what you are here for is it?~
   IF ~~ THEN GOTO 28
 END
 
@@ -189,12 +189,12 @@ END
 
 IF ~~ THEN BEGIN 29
   SAY ~It is always possible that my having told them of the rithtellium they have found another prepared to pay their price for it. Curses, I should have moved sooner! Is there any chance that you can look into who has purchased it <CHARNAME> or if maybe they have moved it to another location... in exchange for my information?~
-  IF ~~ THEN REPLY ~No I am sorry, I am done with this gnome�s nonsense. You will have to find another to continue your search for you. Farewell Deidre.~ EXTERN ~TAFFICJ~ 20
+  IF ~~ THEN REPLY ~No I am sorry, I am done with this gnome's nonsense. You will have to find another to continue your search for you. Farewell Deidre.~ EXTERN ~TAFFICJ~ 20
   IF ~~ THEN REPLY ~I no longer have the time to spend on this nonsense. However, if I do come across any strange ore on my travels that I think may be rithtellium, then I know where to find you Deidre. Until then, this is farewell.~ EXTERN ~TAFFICJ~ 20
 END
 
 IF ~~ THEN BEGIN 30
-  SAY ~You are foolish and arrogant gnome! As for <CHARNAME> here, return here when you have the rithtellium and I will then share with you all that I have learnt about your friend�s plight.~
+  SAY ~You are foolish and arrogant gnome! As for <CHARNAME> here, return here when you have the rithtellium and I will then share with you all that I have learnt about your friend's plight.~
   IF ~~ THEN DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",1)~ EXIT
 END
 

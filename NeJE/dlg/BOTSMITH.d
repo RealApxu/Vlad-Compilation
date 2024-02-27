@@ -101,7 +101,7 @@ IF ~~ THEN BEGIN N9
 END
 
 IF ~~ THEN BEGIN N10
-  SAY ~Has recipe for making your Umber Hulk Plate much better. Is combined with Kresselack�s Plate Mail and Bathed-In-Blood. That and 30,000 gp and I will do it for you. Want you that?~
+  SAY ~Has recipe for making your Umber Hulk Plate much better. Is combined with Kresselack's Plate Mail and Bathed-In-Blood. That and 30,000 gp and I will do it for you. Want you that?~
   IF ~PartyGoldLT(30000)~ THEN REPLY #66594 /* ~I don't have that much money.~ */ GOTO 10
   IF ~PartyGoldGT(29999)~ THEN REPLY #66595 /* ~Sure... put them together.~ */ DO ~SetGlobal("ItemMaker","GLOBAL",97)
 TakePartyGold(30000)

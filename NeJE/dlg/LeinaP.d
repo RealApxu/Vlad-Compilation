@@ -82,7 +82,7 @@ Global("VP_OnIsland","GLOBAL",0)
 !AreaCheck("AR0604")
 !AreaCheck("AR0605")
 !AreaCheck("AR0606")
-!InWatchersKeep()~ THEN REPLY ~You can�t go there. I will ask that you remain here for I may have need of you soon.~ GOTO 4
+!InWatchersKeep()~ THEN REPLY ~You can't go there. I will ask that you remain here for I may have need of you soon.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 2
@@ -259,7 +259,7 @@ IF ~~ THEN BEGIN 27
 END
 
 IF ~~ THEN BEGIN 28
-  SAY ~(*A look of disbelief comes to the bard�s face*) Samuel... no! I will not travel with the likes of this person, please don�t ask me to.~
+  SAY ~(*A look of disbelief comes to the bard's face*) Samuel... no! I will not travel with the likes of this person, please don't ask me to.~
   IF ~~ THEN GOTO 29
 END
 
@@ -269,7 +269,7 @@ IF ~~ THEN BEGIN 29
 END
 
 IF ~~ THEN BEGIN 30
-  SAY ~(*Defiantly*) I�ll not go with them, and you should not have taken it upon yourself to presume that I would!~
+  SAY ~(*Defiantly*) I'll not go with them, and you should not have taken it upon yourself to presume that I would!~
   IF ~~ THEN EXTERN ~FFBART~ NEJ127
 END
 
@@ -292,12 +292,12 @@ IF ~~ THEN BEGIN 33
 END
 
  IF ~~ THEN BEGIN 34
-  SAY ~I need but a moment to say my farewells to Samuel... (*She kisses the old barkeep fondly*)... Farewell Samuel, take care and I promise to return as soon as I have seen this task of <CHARNAME>�s through.~
+  SAY ~I need but a moment to say my farewells to Samuel... (*She kisses the old barkeep fondly*)... Farewell Samuel, take care and I promise to return as soon as I have seen this task of <CHARNAME>'s through.~
   IF ~~ THEN EXTERN ~FFBART~ NEJ173
 END
 
  IF ~~ THEN BEGIN 35
-  SAY ~Do not worry for me my friend. I half hope that Bjorn does find me, it�s time to end this unhappy chapter in my life, erase him from it once and for all. New chapters are being written, even as we stand here...~
+  SAY ~Do not worry for me my friend. I half hope that Bjorn does find me, it's time to end this unhappy chapter in my life, erase him from it once and for all. New chapters are being written, even as we stand here...~
   IF ~~ THEN GOTO 36
 END
 
@@ -310,7 +310,7 @@ JoinParty()~ EXIT
 END
 
  IF ~~ THEN BEGIN 37
-  SAY ~I�ll not say I am not disappointed, I have missed the adventure and the intrigue that surrounds you <CHARNAME>. I had hoped to learn more of this particular god child.~
+  SAY ~I'll not say I am not disappointed, I have missed the adventure and the intrigue that surrounds you <CHARNAME>. I had hoped to learn more of this particular god child.~
   IF ~~ THEN GOTO 38
 END
 
@@ -327,7 +327,7 @@ END
 IF WEIGHT #-6 ~Global("VP_LeinaVampire","GLOBAL",5)
 Global("VP_OnIsland","GLOBAL",0)~ THEN BEGIN 40
   SAY ~Is it you, my love? That is a happy dream. I was yearning to dream of you for so long! You are just like I remember you, and you smile... I want to kiss you so much! Please, do not go away until I do. It is strange to beg a dream not to go away. Amazing how we have so little control over our dreams.~
-  IF ~~ THEN REPLY ~It is no dream, Leina. It is for real. I took you away from Bodhi�s clutches and I brought you back to life. And you think that after all these troubles I will simply leave you? No way, milady, no way! You are stuck with me now.~ DO ~EraseJournalEntry(32084)
+  IF ~~ THEN REPLY ~It is no dream, Leina. It is for real. I took you away from Bodhi's clutches and I brought you back to life. And you think that after all these troubles I will simply leave you? No way, milady, no way! You are stuck with me now.~ DO ~EraseJournalEntry(32084)
 EraseJournalEntry(32085)
 EraseJournalEntry(16351)
 EraseJournalEntry(7002)
@@ -359,7 +359,7 @@ EraseJournalEntry(6589)
 EraseJournalEntry(79170)
 EraseJournalEntry(79181)
 SetGlobal("VP_LeinaVampire","GLOBAL",6)~ GOTO 42
-  IF ~~ THEN REPLY ~Leina, that�s me, <CHARNAME>! Can you hear me? You are going to be alright! Breathe deeply and here is some Elven water for you to drink! You are alive!~ DO ~EraseJournalEntry(32084)
+  IF ~~ THEN REPLY ~Leina, that's me, <CHARNAME>! Can you hear me? You are going to be alright! Breathe deeply and here is some Elven water for you to drink! You are alive!~ DO ~EraseJournalEntry(32084)
 EraseJournalEntry(32085)
 EraseJournalEntry(16351)
 EraseJournalEntry(7002)

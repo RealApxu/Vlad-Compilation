@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~How little you know of father�s Hrothgar! Mine would have happily drowned me at birth if he could have gotten away with it.~
+  SAY ~How little you know of father's Hrothgar! Mine would have happily drowned me at birth if he could have gotten away with it.~
   IF ~~ THEN REPLY ~It would appear you are right Hrothgar. This Leina will have to take her chances with whatever fate has planned for her. Come my friends let us leave here.~ EXTERN ~HROTHJ~ 52
   IF ~~ THEN REPLY ~All this running around, I would put any amount of gold on it that Duvaine sent us halfway across the city to get us off his back. Come we are finished here but I am not done with him.~ EXTERN ~HROTHJ~ 52
 END
@@ -129,16 +129,16 @@ IF ~~ THEN BEGIN 14
 END
 
 IF ~~ THEN BEGIN 15
-  SAY ~Sorry <CHARNAME>. I get all jittery when confronted by mages. I don�t trust them nor their words.~
+  SAY ~Sorry <CHARNAME>. I get all jittery when confronted by mages. I don't trust them nor their words.~
   IF ~~ THEN EXTERN ~VALYGARJ~ NEJ164
 END
 
 IF ~~ THEN BEGIN 16
-  SAY ~Why a dead mage when there�s plenty of live ones to be had here? I�ll bring you as many of those as you want.~ [Melora52]
+  SAY ~Why a dead mage when there's plenty of live ones to be had here? I'll bring you as many of those as you want.~ [Melora52]
   IF ~~ THEN REPLY ~(*Glaring at her and giving a swift kick to her shin*)... Melora please, try to remember why we are here!~ GOTO 17
   IF ~~ THEN REPLY ~(*Glaring at her and giving a swift kick to her shin*)... Ha... ha... ha... always the joker, is our Melora.~ GOTO 17
   IF ~~ THEN REPLY ~(*Glaring at her and giving a swift kick to her shin*)... Not another word or I will give him your body, is that understood Melora!?~ GOTO 17
-  IF ~~ THEN REPLY ~(*Glaring at her and giving a swift kick to her shin*)... I swear if you don�t hold your tongue I will personally cut it out Melora!~ GOTO 17
+  IF ~~ THEN REPLY ~(*Glaring at her and giving a swift kick to her shin*)... I swear if you don't hold your tongue I will personally cut it out Melora!~ GOTO 17
 END
 
 IF ~~ THEN BEGIN 17
@@ -149,7 +149,7 @@ IF ~~ THEN BEGIN 17
 END
 					
 IF ~~ THEN BEGIN 18
-  SAY ~(*Hmph! Only trying to even the odds a bit in Ulcaster�s favour.*)~
+  SAY ~(*Hmph! Only trying to even the odds a bit in Ulcaster's favour.*)~
 	IF ~True()~ THEN EXIT
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
@@ -184,7 +184,7 @@ IF ~~ THEN BEGIN 18
 END
 
 IF ~~ THEN BEGIN 19
-  SAY ~Oh, I don�t know Hrothgar, bringing the academy down on the mages here sounds like a very good idea to me.~ [Melora54]
+  SAY ~Oh, I don't know Hrothgar, bringing the academy down on the mages here sounds like a very good idea to me.~ [Melora54]
  	IF ~True()~ THEN EXTERN ~HROTHJ~ 322
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ 27
@@ -195,7 +195,7 @@ IF ~~ THEN BEGIN 19
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~Oh, I don�t know Minsc, it would certainly put an end to Ulcaster�s problem and we could all go home a damn sight sooner.~ [Melora53]
+  SAY ~Oh, I don't know Minsc, it would certainly put an end to Ulcaster's problem and we could all go home a damn sight sooner.~ [Melora53]
  	IF ~True()~ THEN EXTERN ~HROTHJ~ 324
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ 27
@@ -206,7 +206,7 @@ IF ~~ THEN BEGIN 20
 END
 
 IF ~~ THEN BEGIN 21
-  SAY ~Of course not Dar, you really need to learn when a girl is jesting... (*A glint comes to her eye*) Although bringing the academy down on the mages� head is a wonderful thought, don�t you agree?~ [Melora56]
+  SAY ~Of course not Dar, you really need to learn when a girl is jesting... (*A glint comes to her eye*) Although bringing the academy down on the mages' head is a wonderful thought, don't you agree?~ [Melora56]
   IF ~~ THEN EXTERN ~DARJ~ 76
 END
 
@@ -216,7 +216,7 @@ IF ~~ THEN BEGIN 22
 END
 
 IF ~~ THEN BEGIN 23
-  SAY ~Now this is more how I envisioned we would be stopping Halruaa�s mages. Maybe we can turn this weapon on Halruaa itself and wipe them all out in one fell swoop.~ [Melora60]
+  SAY ~Now this is more how I envisioned we would be stopping Halruaa's mages. Maybe we can turn this weapon on Halruaa itself and wipe them all out in one fell swoop.~ [Melora60]
   IF ~~ THEN EXTERN ~HROTHJ~ 328
 END
 
@@ -233,7 +233,7 @@ IF ~~ THEN BEGIN 25
 END
 
 IF ~~ THEN BEGIN 26
-  SAY ~(*Quietly to herself*)... I can�t understand why they�re making so much fuss over a dead mage...  it�s just one more obstacle that�s been removed from our path.~
+  SAY ~(*Quietly to herself*)... I can't understand why they're making so much fuss over a dead mage...  it's just one more obstacle that's been removed from our path.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",4)~ EXIT
 END
 
@@ -243,7 +243,7 @@ IF ~~ THEN BEGIN 27
 END
 
 IF ~~ THEN BEGIN 28
-  SAY ~So, Gaelan works for none other than Aran Linvail himself... I�d heard rumour that the Shadowmaster had set up a training base somewhere in Athkatla.~ [melora2g]
+  SAY ~So, Gaelan works for none other than Aran Linvail himself... I'd heard rumour that the Shadowmaster had set up a training base somewhere in Athkatla.~ [melora2g]
   IF ~~ THEN GOTO 29
 END
 
@@ -260,12 +260,12 @@ SetGlobal("TalkedToRenal","GLOBAL",1)~ EXTERN ~RENAL~ 54
 SetGlobal("TalkedToRenal","GLOBAL",1)~ EXTERN ~RENAL~ 3
   IF ~~ THEN REPLY ~What is it that you want from me?~ DO ~EraseJournalEntry(293)
 SetGlobal("TalkedToRenal","GLOBAL",1)~ EXTERN ~RENAL~ 5
-  IF ~~ THEN REPLY ~I�ll not stand here and be insulted.~ DO ~EraseJournalEntry(293)
+  IF ~~ THEN REPLY ~I'll not stand here and be insulted.~ DO ~EraseJournalEntry(293)
 SetGlobal("TalkedToRenal","GLOBAL",1)~ EXTERN ~RENAL~ 8
 END
 
 IF ~~ THEN BEGIN 31
- SAY ~There�s definitely something not right here... Even though he was heavily cloaked, I could feel the dank, coldness he carried about him... almost like the air that rushes from a newly opened tomb... (*she shudders*)... I don�t trust who ever that was!~
+ SAY ~There's definitely something not right here... Even though he was heavily cloaked, I could feel the dank, coldness he carried about him... almost like the air that rushes from a newly opened tomb... (*she shudders*)... I don't trust who ever that was!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 381
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ vulova
@@ -290,7 +290,7 @@ END
 IF ~~ THEN BEGIN 34
  SAY ~(*To herself*) Bah! How much more time are we going to waste chasing rainbows for this arrogant gnome!~
 =
-~If it�s longer legs that he wants, why don�t we just purchase a rack, let him spend a few days tied to it... that�ll make him forget his yen to be a taller person!~
+~If it's longer legs that he wants, why don't we just purchase a rack, let him spend a few days tied to it... that'll make him forget his yen to be a taller person!~
  IF ~~ THEN EXTERN ~TAFFICJ~ 16
 END
 
@@ -300,7 +300,7 @@ IF ~~ THEN BEGIN 35
 END
 
 IF ~~ THEN BEGIN 36
- SAY ~Good riddance I say and not before time! Still, I would like to meet up with him again sometime... just so�s I can see how far his insanity has taken him, and of course to be able to say *I told you so* to his face.~
+ SAY ~Good riddance I say and not before time! Still, I would like to meet up with him again sometime... just so's I can see how far his insanity has taken him, and of course to be able to say *I told you so* to his face.~
    IF ~~ THEN DO ~SetGlobal("VP_GoTo_Thalantyr","GLOBAL",1)
 ActionOverride("Taffic",SetGlobal("VP_Start_My_Quest","LOCALS",4))
 ActionOverride("Taffic",LeaveParty())
@@ -328,85 +328,85 @@ IF ~~ THEN BEGIN 40
 END
 
 IF ~~ THEN BEGIN 41
- SAY ~(*Scoffs*) Destiny you call it, insanity more like! When are you going to �grow up�, realise we are who we are, which in your case is an egotistical short ass gnome...~
+ SAY ~(*Scoffs*) Destiny you call it, insanity more like! When are you going to 'grow up', realise we are who we are, which in your case is an egotistical short ass gnome...~
 =
-~By the way... did you like my use of the words �grow up�?~
+~By the way... did you like my use of the words 'grow up'?~
  IF ~~ THEN EXTERN ~TAFFICJ~ 31
 END
 
 IF ~~ THEN BEGIN 42
- SAY ~(*Laughs loudly*) I�ll say this for you gnome, you may not have many brain cells, but you certainly have a vivid imagination.~
+ SAY ~(*Laughs loudly*) I'll say this for you gnome, you may not have many brain cells, but you certainly have a vivid imagination.~
  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN driadsint_mel1
-	SAY ~Why�s that wizard? Do you like your women brain dead or is it you�re having trouble getting real women... women with brains to take you seriously?~
+	SAY ~Why's that wizard? Do you like your women brain dead or is it you're having trouble getting real women... women with brains to take you seriously?~
 	IF ~~ THEN EXTERN ~EDWINJ~ driadsint_edw6
 END
 
 IF ~~ THEN BEGIN driadsint_mel2
-	SAY ~I understand perfectly well what you mean and it has nothing to do with gracefulness! As Shar-Teel says, men never think with their minds. They�re all fools when it comes to a pretty face!~
+	SAY ~I understand perfectly well what you mean and it has nothing to do with gracefulness! As Shar-Teel says, men never think with their minds. They're all fools when it comes to a pretty face!~
 	IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Minsc")
 !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ driadsint_min1
 END
 
 IF ~~ THEN BEGIN driadsint_mel3
-	SAY ~I did? (*Then catching sight of Hrothgar�s stern expression*)... Oh, er... of course I did... you�re a ranger in a million Minsc, the group wouldn�t be the same without you!~
+	SAY ~I did? (*Then catching sight of Hrothgar's stern expression*)... Oh, er... of course I did... you're a ranger in a million Minsc, the group wouldn't be the same without you!~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy226
 END
 
 IF ~~ THEN BEGIN driadsint_mel4
-	SAY ~(*Drawing herself up to her full height and stretching to meet the fighter�s gaze*)... If that is what I meant then that is what I would have said! No one puts words into my mouth!~
+	SAY ~(*Drawing herself up to her full height and stretching to meet the fighter's gaze*)... If that is what I meant then that is what I would have said! No one puts words into my mouth!~
 =
-~I may stretch the truth a little at times but I do not lie and as strange as it is, the group wouldn�t be the same without Minsc!~
+~I may stretch the truth a little at times but I do not lie and as strange as it is, the group wouldn't be the same without Minsc!~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy227
 END
 
 IF ~~ THEN BEGIN driadsint_mel5
-	SAY ~Yes... well maybe I�ll just sit back and let you and that pole tackle the next trap we find. (*Looking around*)...~
+	SAY ~Yes... well maybe I'll just sit back and let you and that pole tackle the next trap we find. (*Looking around*)...~
 =
 ~Hear that everyone, keep a look out for a ten foot pole for Shar-Teel, she has a mind to take my place in the group.~
 	IF ~~ THEN REPLY ~Stop this foolishness Melora, no one is taking your place.~ GOTO driadsint_mel6
-	IF ~~ THEN REPLY ~If you don�t stop this foolishness Melora, I�ll let Shar-Teel take your head and deliver it to the first bounty hunter we meet.~ GOTO driadsint_mel6
-	IF ~~ THEN REPLY ~Yes... and I�ll gladly give it to her if you don�t stop being so childish!~ GOTO driadsint_mel6
-	IF ~~ THEN REPLY ~Yea gods, will you please stop this bickering and let�s just get on with the task ahead!~ GOTO driadsint_mel6
+	IF ~~ THEN REPLY ~If you don't stop this foolishness Melora, I'll let Shar-Teel take your head and deliver it to the first bounty hunter we meet.~ GOTO driadsint_mel6
+	IF ~~ THEN REPLY ~Yes... and I'll gladly give it to her if you don't stop being so childish!~ GOTO driadsint_mel6
+	IF ~~ THEN REPLY ~Yea gods, will you please stop this bickering and let's just get on with the task ahead!~ GOTO driadsint_mel6
 END
 
 IF ~~ THEN BEGIN driadsint_mel6
-	SAY ~(*Sulkily she skulks off*) Wasn�t me who started it, it never is and yet I always seem to be the one to get it in the neck! If I find that pole I know just where I am going to shove it!~
+	SAY ~(*Sulkily she skulks off*) Wasn't me who started it, it never is and yet I always seem to be the one to get it in the neck! If I find that pole I know just where I am going to shove it!~
 	IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ driadsint_taf
 END
 
 IF ~~ THEN BEGIN driadsint_mel7
-	SAY ~(*Not bothering to even look at the gnome*) Go play with yourself gnome and keep those fat ears out of things that don�t concern you!~
+	SAY ~(*Not bothering to even look at the gnome*) Go play with yourself gnome and keep those fat ears out of things that don't concern you!~
 	IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 END
 
 IF ~~ THEN BEGIN driadsint_mel8
-	SAY ~Oh, I am sorry Minsc, of course I wasn�t meaning you. You�re a ranger in a million and the group wouldn�t be the same without you.~
+	SAY ~Oh, I am sorry Minsc, of course I wasn't meaning you. You're a ranger in a million and the group wouldn't be the same without you.~
 	IF ~~ THEN EXTERN ~MINSCJ~ driadsint_min3
 END
 
 IF ~~ THEN BEGIN firattak
-	SAY ~(*Backing away*) Good idea... never did meet a dragon I could trust. How�s that saying go... "Fools rush in where haflings fear to tread..." or something like that.~
+	SAY ~(*Backing away*) Good idea... never did meet a dragon I could trust. How's that saying go... "Fools rush in where haflings fear to tread..." or something like that.~
 	IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ firattak
@@ -423,12 +423,12 @@ IF ~~ THEN BEGIN firattak
 END
 
 IF ~Global("VP_TafficLeft","GLOBAL",1)~ THEN BEGIN tafileft
-	SAY ~Good riddance I say and not before time! Still, I would like to meet up with him again sometime ... just so�s I can see how far his insanity has taken him, and of course to be able to say *I told you so* to his face.~
+	SAY ~Good riddance I say and not before time! Still, I would like to meet up with him again sometime ... just so's I can see how far his insanity has taken him, and of course to be able to say *I told you so* to his face.~
 		IF ~~ THEN DO ~SetGlobal("VP_TafficLeft","GLOBAL",2)~ EXIT
 END
 
 IF ~Global("VP_TafficLeft","GLOBAL",5)~ THEN BEGIN tafilef2
-	SAY ~I can�t say that I�m not glad to see the back of him, but I�ll say one thing for the crazy gnome, he has some nerve... but then perhaps having no fear is all part and parcel of insanity.~
+	SAY ~I can't say that I'm not glad to see the back of him, but I'll say one thing for the crazy gnome, he has some nerve... but then perhaps having no fear is all part and parcel of insanity.~
 		IF ~~ THEN DO ~SetGlobal("VP_TafficLeft","GLOBAL",6)~ EXIT
 END
 
@@ -464,17 +464,17 @@ IF ~~ THEN BEGIN conjurer
 END
 
 IF ~~ THEN BEGIN conjure2
- SAY ~Which in your case gnome, is hot air. Could be your problem as there�s not a lot of magical energy in hot air now is there?~
+ SAY ~Which in your case gnome, is hot air. Could be your problem as there's not a lot of magical energy in hot air now is there?~
   IF ~~ THEN EXTERN ~TAFFICJ~ conjure4
 END
 
 IF ~~ THEN BEGIN conjure3
- SAY ~As I said, hot air or wind, it�s the same thing. (*She walks away chuckling*)~
+ SAY ~As I said, hot air or wind, it's the same thing. (*She walks away chuckling*)~
   IF ~~ THEN EXTERN ~TAFFICJ~ conjure5
 END
 
 IF ~~ THEN BEGIN rayvon
- SAY ~Yeah... well maybe we don�t want to speak with you wizard!~
+ SAY ~Yeah... well maybe we don't want to speak with you wizard!~
   IF ~True()~ THEN EXTERN ~RAYVON~ 2
   IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ rayvon2
@@ -502,7 +502,7 @@ IF ~~ THEN BEGIN rayvon2
 END
 
 IF ~~ THEN BEGIN vulova
- SAY ~It is because of my suspicious instincts that I am still alive. You gnome, would do well to pay heed and follow my lead, after all, you haven�t achieved a lot following your own!~
+ SAY ~It is because of my suspicious instincts that I am still alive. You gnome, would do well to pay heed and follow my lead, after all, you haven't achieved a lot following your own!~
   IF ~~ THEN EXTERN ~TAFFICJ~ vulova1
 END
 
@@ -512,14 +512,14 @@ IF ~~ THEN BEGIN vulova1
 END
 
 IF ~~ THEN BEGIN vulova2
- SAY ~Now look what you�ve done gnome. You�ve gone and upset <PRO_HIMHER>. Don�t worry <CHARNAME>, I know how pedantic he can be.~
+ SAY ~Now look what you've done gnome. You've gone and upset <PRO_HIMHER>. Don't worry <CHARNAME>, I know how pedantic he can be.~
 =
 ~Ill try and ignore his boorish remarks in the future. (*She tosses her head and heads back in line.*)~
   IF ~~ THEN EXTERN ~TAFFICJ~ vulova3
 END
 
 IF ~~ THEN BEGIN invoker1
- SAY ~(*To herself*) What a shame we don�t have one of them here now instead of this excuse for a wizard that we are lumbered with.~
+ SAY ~(*To herself*) What a shame we don't have one of them here now instead of this excuse for a wizard that we are lumbered with.~
   IF ~~ THEN EXTERN ~TUTHEOD~ taftest1
 END
 
@@ -536,7 +536,7 @@ IF ~~ THEN BEGIN leveler1
 END
 
 IF ~~ THEN BEGIN leveler2
- SAY ~(*Scoffs*) Don�t hold your temper on my account gnome, the day will never dawn when I look upon you with awe, look down on you with disdain maybe... but never up to you with awe.~
+ SAY ~(*Scoffs*) Don't hold your temper on my account gnome, the day will never dawn when I look upon you with awe, look down on you with disdain maybe... but never up to you with awe.~
   IF ~~ THEN EXTERN ~HROTHJ~ leveler
 END
 
@@ -629,7 +629,7 @@ IF ~Global("VP_Melora_Quest","GLOBAL",10)~ THEN BEGIN MQ8
 =
 ~You will not be bothered on my behalf again.~
 	IF ~~ THEN REPLY ~It is ok Melora, you have proven your worth many times over. My word still stands, you are safe whilst you travel with my group.~ GOTO MQ9
-	IF ~~ THEN REPLY ~I hope so Melora, I hope so, because saving your skin could become tedious and an added problem that I can well do without at this moment in time, but whilst you travel in my company, you have my promise of the group�s protection Melora.~ GOTO MQ9
+	IF ~~ THEN REPLY ~I hope so Melora, I hope so, because saving your skin could become tedious and an added problem that I can well do without at this moment in time, but whilst you travel in my company, you have my promise of the group's protection Melora.~ GOTO MQ9
 END
 
 IF ~~ THEN BEGIN MQ9
@@ -662,36 +662,36 @@ END
 //END
 
 IF ~~ THEN BEGIN immy1
- SAY ~That�s a turn up for the books isn�t it... you two being so close all this time and not knowing you were related!~
+ SAY ~That's a turn up for the books isn't it... you two being so close all this time and not knowing you were related!~
 =
 ~By the way, name is Melora.~
  	IF ~~ THEN EXTERN ~IMOEN2~ melora1
 END
 
 IF ~~ THEN BEGIN immy2
- SAY ~Perhaps he sold his own soul in order to find one for that sister of his, knowing he�d soon possess another for himself, one of even greater power than the one traded?~
+ SAY ~Perhaps he sold his own soul in order to find one for that sister of his, knowing he'd soon possess another for himself, one of even greater power than the one traded?~
  	IF ~~ THEN EXTERN ~IMOEN2~ melora2
 END
 
 IF ~~ THEN BEGIN immy3
- SAY ~(*Screwing her nose up*) It�ll be well and truly tainted with evil by now! Honestly Imoen, would you really want it back after what he�s been doing with it?~
+ SAY ~(*Screwing her nose up*) It'll be well and truly tainted with evil by now! Honestly Imoen, would you really want it back after what he's been doing with it?~
  	IF ~~ THEN EXTERN ~IMOEN2~ melora3
 END
 
 IF ~~ THEN BEGIN immy4
- SAY ~Hey come on, you don�t want to believe all what priests say. You were a child back then and priests like nothing better than to scare the pants off of children to stop them misbehaving. You�ll be okay, you�ll see.~
+ SAY ~Hey come on, you don't want to believe all what priests say. You were a child back then and priests like nothing better than to scare the pants off of children to stop them misbehaving. You'll be okay, you'll see.~
  	IF ~~ THEN EXTERN ~IMOEN2~ melora4
 END
 
 IF ~~ THEN BEGIN immy5
- SAY ~Yes and together we will finish it. Bhaal may be out of our reach but that filthy magic using sorcerer and this demon of a sister of his isn�t!~
+ SAY ~Yes and together we will finish it. Bhaal may be out of our reach but that filthy magic using sorcerer and this demon of a sister of his isn't!~
 =
-~We�ll get to them and when we do, there�ll be no souls for them to steal where I�m going to send them!~
+~We'll get to them and when we do, there'll be no souls for them to steal where I'm going to send them!~
  	IF ~~ THEN EXTERN ~IMOEN2~ melora5
 END
 
 IF ~~ THEN BEGIN immy6
- SAY ~Now that sounds more like the spunky girl I�ve been hearing so much about. Just you hold those thoughts a little longer and you�ll be okay for sure.~
+ SAY ~Now that sounds more like the spunky girl I've been hearing so much about. Just you hold those thoughts a little longer and you'll be okay for sure.~
    	IF ~True()~ THEN EXTERN ~IMOEN2~ melora6
    	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~IMOEN2~ hrothg1

@@ -77,7 +77,7 @@ Global("VP_OnIsland","GLOBAL",0)~ THEN REPLY ~It would be best if you were to ma
   IF ~OR(3)
 Global("VP_In_IWD_Part1","GLOBAL",1)
 Global("VP_OnIsland","GLOBAL",1)
-Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. I�ll pick up you later.~ GOTO 9
+Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. I'll pick up you later.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 8

@@ -11,37 +11,37 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~Not too busy to accommodate another potential abjurer. A couple of simple tasks for you to do and a pass certificate will be yours. So, you ready for me to explain how this goes? <CHARNAME>?~
-  IF ~~ THEN REPLY ~I�m all ears.~ GOTO 5
-  IF ~~ THEN REPLY ~That�s what I am here for, start explaining.~ GOTO 5
+  IF ~~ THEN REPLY ~I'm all ears.~ GOTO 5
+  IF ~~ THEN REPLY ~That's what I am here for, start explaining.~ GOTO 5
   IF ~~ THEN REPLY ~Yes and I am eager to begin.~ GOTO 5
   IF ~~ THEN REPLY ~Well, I can not do anything until you do, now can I? So you best start talking.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~Good, that�s what I like to see. It is refreshing to see such dedication in a student. I will explain what is required if you are ready <CHARNAME>?~
-  IF ~~ THEN REPLY ~I�m all ears.~ GOTO 5
-  IF ~~ THEN REPLY ~That�s what I am here for, start explaining.~ GOTO 5
+  SAY ~Good, that's what I like to see. It is refreshing to see such dedication in a student. I will explain what is required if you are ready <CHARNAME>?~
+  IF ~~ THEN REPLY ~I'm all ears.~ GOTO 5
+  IF ~~ THEN REPLY ~That's what I am here for, start explaining.~ GOTO 5
   IF ~~ THEN REPLY ~Yes and I am eager to begin.~ GOTO 5
   IF ~~ THEN REPLY ~Well, I can not do anything until you do, now can I? So you best start talking.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~(*Smiles*) It is but what a quaint way of asking <CHARNAME>. You sound very confident in yourself, not a failing on your part I hasten to add. In fact it�s good to see. Now are you ready to hear what simple tasks I have set for today?~
-  IF ~~ THEN REPLY ~I�m all ears.~ GOTO 5
-  IF ~~ THEN REPLY ~That�s what I am here for, start explaining.~ GOTO 5
+  SAY ~(*Smiles*) It is but what a quaint way of asking <CHARNAME>. You sound very confident in yourself, not a failing on your part I hasten to add. In fact it's good to see. Now are you ready to hear what simple tasks I have set for today?~
+  IF ~~ THEN REPLY ~I'm all ears.~ GOTO 5
+  IF ~~ THEN REPLY ~That's what I am here for, start explaining.~ GOTO 5
   IF ~~ THEN REPLY ~Yes and I am eager to begin.~ GOTO 5
   IF ~~ THEN REPLY ~Well, I can not do anything until you do, now can I? So you best start talking.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 4
-  SAY ~You would do well to leave your impudence at home if you wish to gain the respect and the help of the tutors here <CHARNAME>. Now, let�s forget this bad start and set about your reason for being here. Are you ready to listen to what I have to say?~
+  SAY ~You would do well to leave your impudence at home if you wish to gain the respect and the help of the tutors here <CHARNAME>. Now, let's forget this bad start and set about your reason for being here. Are you ready to listen to what I have to say?~
   IF ~~ THEN REPLY ~Whatever, just tell me what needs doing.~ GOTO 5
   IF ~~ THEN REPLY ~I am not here for a lecture on etiquette Phineas. My attitude has nothing to do with my standing as a mage, but yes I am listening to you.~ GOTO 5
   IF ~~ THEN REPLY ~Well, I can not do anything until you do, now can I? So you best start talking.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~You are an abjurer so it is obvious that these tests of mine are going to test your ability as an abjurer and also to show me that you pose no danger to those around you when you use your magic. The tasks are compiled to give me an idea of what you can do in two areas of an abjurer�s expertise.~
+  SAY ~You are an abjurer so it is obvious that these tests of mine are going to test your ability as an abjurer and also to show me that you pose no danger to those around you when you use your magic. The tasks are compiled to give me an idea of what you can do in two areas of an abjurer's expertise.~
   IF ~~ THEN GOTO 6
 END
 
@@ -67,10 +67,10 @@ Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spell
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa�s Academy of Magic.~ EXTERN ~JANJ~ abjurer
+!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn�t normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
-  IF ~~ THEN REPLY ~That�s hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
+!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+  IF ~~ THEN REPLY ~That's hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
   IF ~~ THEN REPLY ~Perhaps this is not a good time for me after all. Maybe some other time Phineas.~ GOTO 12
 END
 
@@ -92,7 +92,7 @@ IF ~~ THEN BEGIN 9
 END //Abjurer: Test 1 is postponed
 		
 IF ~~ THEN BEGIN 10
-  SAY ~(*Rolls his eyes*) What are we teaching our students today I ask myself, or is it they are just not listening? The tasks I have just set you, student, are doable by any number of abjuration spells and yet you say you don�t have any of them.~
+  SAY ~(*Rolls his eyes*) What are we teaching our students today I ask myself, or is it they are just not listening? The tasks I have just set you, student, are doable by any number of abjuration spells and yet you say you don't have any of them.~
   IF ~~ THEN REPLY ~Do you disregard my abilities solely because I do not have the spells required for this test of yours?~ GOTO 18
   IF ~~ THEN REPLY ~I might not have what you call *any number* of abjuration  spells, but I am an Abjurer, and as such should be given the chance to prove myself!~ GOTO 18
   IF ~~ THEN REPLY ~I am more than capable as an Abjurer to pass your tests, Phineas, if only you will give me the opportunity.~ GOTO 18
@@ -100,7 +100,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~(*Rolls his eyes*) What are we teaching our students today I ask myself, or is it they are just not listening? The tasks I have just set you, student, are doable by any number of abjuration spells and yet you say you don�t have any of them. I suggest you come back when you are ready to prove yourself deserving of the name Abjurer! Farewell.~
+  SAY ~(*Rolls his eyes*) What are we teaching our students today I ask myself, or is it they are just not listening? The tasks I have just set you, student, are doable by any number of abjuration spells and yet you say you don't have any of them. I suggest you come back when you are ready to prove yourself deserving of the name Abjurer! Farewell.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",3)~ EXIT
 END //Abjurer: Test 1 is postponed
 
@@ -127,9 +127,9 @@ IF ~~ THEN BEGIN 14
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa�s Academy of Magic.~ EXTERN ~JANJ~ abjurer
+!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn�t normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
   IF ~Class(Player1,MAGE_ALL)
 !Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I have the spells, Phineas, but I have not had the opportunity to memorise them.~ GOTO 8
   IF ~OR(2)
@@ -293,7 +293,7 @@ Global("VP_Aerie_AbjQuest","GLOBAL",0)
 Global("VP_Taffic_AbjQuest","GLOBAL",0)
 Global("VP_Jan_AbjQuest","GLOBAL",0)
 Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 26
-  SAY ~I guess you are ready <CHARNAME>, so let�s proceed with the first test.~
+  SAY ~I guess you are ready <CHARNAME>, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -404,7 +404,7 @@ END
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 36
-  SAY ~I guess you are ready Nalia, so let�s proceed with the first test.~
+  SAY ~I guess you are ready Nalia, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -415,7 +415,7 @@ END //Abjurer: Test 1 starts
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 37
-  SAY ~I guess you are ready Kachiko, so let�s proceed with the first test.~
+  SAY ~I guess you are ready Kachiko, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -426,7 +426,7 @@ END //Abjurer: Test 1 starts
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 38
-  SAY ~I guess you are ready Aerie, so let�s proceed with the first test.~
+  SAY ~I guess you are ready Aerie, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -490,15 +490,15 @@ Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spell
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa�s Academy of Magic.~ EXTERN ~JANJ~ abjurer
+!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn�t normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
-  IF ~~ THEN REPLY ~That�s hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
+!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+  IF ~~ THEN REPLY ~That's hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
   IF ~~ THEN REPLY ~Perhaps this is not a good time for me after all. Maybe some other time Phineas.~ GOTO 12
 END
 
 IF ~~ THEN BEGIN npcfail
-  SAY ~I know you are disappointed, but don�t lose heart, there will be another time. I have other business away from the academy, but come and see me in a few days after my return.~
+  SAY ~I know you are disappointed, but don't lose heart, there will be another time. I have other business away from the academy, but come and see me in a few days after my return.~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT21")~ EXIT
@@ -603,7 +603,7 @@ END
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic3
-  SAY ~I guess you are ready Taffic, so let�s proceed with the first test.~
+  SAY ~I guess you are ready Taffic, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -676,7 +676,7 @@ END
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan3
-  SAY ~I guess you are ready, Jan, so let�s proceed with the first test.~
+  SAY ~I guess you are ready, Jan, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()
@@ -749,7 +749,7 @@ END
 IF ~Global("VP_My_Test","LOCALS",1)
 !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
 Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin3
-  SAY ~I guess you are ready, Edwin, so let�s proceed with the first test.~
+  SAY ~I guess you are ready, Edwin, so let's proceed with the first test.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
 ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
 ClearAllActions()

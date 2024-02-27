@@ -106,7 +106,7 @@ END
 
 IF ~~ THEN BEGIN KR7
 	SAY ~(Closing his eyes) Ah my love, it is a delight to hear those words again! Especially now after.~
-		IF ~~ THEN REPLY ~After what? You remember what was �there�?~ GOTO KR5
+		IF ~~ THEN REPLY ~After what? You remember what was 'there'?~ GOTO KR5
 		IF ~~ THEN REPLY ~Tell me, my love.~ GOTO KR5
 END
 

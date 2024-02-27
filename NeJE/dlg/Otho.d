@@ -24,7 +24,7 @@ END
 IF ~RandomNum(4,3)
 Global("VP_Slave_Released","GLOBAL",0)
 GlobalLT("VP_Dar_Quest","GLOBAL",5)~ THEN BEGIN 3
-  SAY ~Don�t fail us. Our freedom is in your hands.~
+  SAY ~Don't fail us. Our freedom is in your hands.~
   IF ~~ THEN EXIT
 END
 
@@ -45,7 +45,7 @@ Global("VP_Dar_Quest","GLOBAL",6)~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~We was doin� ok. We send our prophet to Candlekeep to find wisdom, to teach us more of the way. That was long time ago, we thinks he's dead, not sure what to do now?~
+  SAY ~We was doin' ok. We send our prophet to Candlekeep to find wisdom, to teach us more of the way. That was long time ago, we thinks he's dead, not sure what to do now?~
   IF ~OR(2)
 !InParty("Dar")
 Dead("Dar")~ THEN REPLY ~Well, Dar was supposed to know that, and he would surely answer your question as it is actually his quest. In his absense, I wish you good luck and farewell.~ GOTO 7

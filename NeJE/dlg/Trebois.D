@@ -47,7 +47,7 @@ END
 IF ~~ THEN BEGIN 5
 	SAY ~I am so glad you see things my way <CHARNAME>.~
 =
-~I really did not want to have to return here and sort through your body parts to find Melora�s head, that would have been... rather messy. Much better this way, for all of us.~
+~I really did not want to have to return here and sort through your body parts to find Melora's head, that would have been... rather messy. Much better this way, for all of us.~
 	IF ~~ THEN EXTERN ~MELORAJ~ MQ2
 END
 

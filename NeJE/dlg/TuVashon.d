@@ -18,17 +18,17 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~I most certainly am <CHARNAME>. It is one of a tutor�s more pleasurable tasks, to see a prodigy of their�s put all that has been taught to use... safely. I emphasise safely because this is what these tests are designed for after all.~
+  SAY ~I most certainly am <CHARNAME>. It is one of a tutor's more pleasurable tasks, to see a prodigy of their's put all that has been taught to use... safely. I emphasise safely because this is what these tests are designed for after all.~
   IF ~~ THEN REPLY ~I understand and I believe myself capable of using magic both safely and wisely.~ GOTO 6
   IF ~~ THEN REPLY ~Then it is not for me to deny you your pleasure, let us begin.~ GOTO 6
-  IF ~~ THEN REPLY ~I know why the tests are designed, but I am still not sure whether you tutor�s fear for the student�s safety or their own. However let us about what we are here for... the test.~ GOTO 6
+  IF ~~ THEN REPLY ~I know why the tests are designed, but I am still not sure whether you tutor's fear for the student's safety or their own. However let us about what we are here for... the test.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 3
   SAY ~You most certainly did. Do you think yourself ready for my... ahem... little test <CHARNAME>?~
   IF ~~ THEN REPLY ~More than ready.~ GOTO 6
-  IF ~~ THEN REPLY ~Only one way to find out isn�t there?~ GOTO 6
-  IF ~~ THEN REPLY ~You set them up and I�ll knock them down, so�s to speak.~ GOTO 6
+  IF ~~ THEN REPLY ~Only one way to find out isn't there?~ GOTO 6
+  IF ~~ THEN REPLY ~You set them up and I'll knock them down, so's to speak.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 4
@@ -40,8 +40,8 @@ END
 	
 IF ~~ THEN BEGIN 5
   SAY ~Well <CHARNAME>, perhaps a lesson in manners would be a good place to start. However, it is your magical ability that I am here to test, not your demeanor.~
-  IF ~~ THEN REPLY ~I didn�t think magic depended on manners, so can we stop the chatter and get on with this test.~ GOTO 6
-  IF ~~ THEN REPLY ~Whatever let�s just get this show on the road.~ GOTO 6
+  IF ~~ THEN REPLY ~I didn't think magic depended on manners, so can we stop the chatter and get on with this test.~ GOTO 6
+  IF ~~ THEN REPLY ~Whatever let's just get this show on the road.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
@@ -55,7 +55,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-  SAY ~The task will be for you to retrieve, without being discovered, a spell scroll that I have left in the tutor Hazarlich�s living quarters. The spell written is a new one of my own devising, a spell which will be yours if you succeed in this task.~
+  SAY ~The task will be for you to retrieve, without being discovered, a spell scroll that I have left in the tutor Hazarlich's living quarters. The spell written is a new one of my own devising, a spell which will be yours if you succeed in this task.~
   IF ~~ THEN GOTO 9
 END
 
@@ -63,7 +63,7 @@ IF ~~ THEN BEGIN 9
   SAY ~I take it you have the necessary spells readied <CHARNAME>?~
   IF ~~ THEN REPLY ~I have Vashon.~ GOTO 10
   IF ~~ THEN REPLY ~I have spells suitable yes but I have had no opportunity to memorise them.~ GOTO 11
-  IF ~~ THEN REPLY ~No, I don�t have anything in my spell book to cover that at all.~ GOTO 20
+  IF ~~ THEN REPLY ~No, I don't have anything in my spell book to cover that at all.~ GOTO 20
   IF ~~ THEN REPLY ~Bah, this is no better than pitting my wits against a first year student! There is no challenge in what you are asking, so I will be leaving now. Farewell.~ GOTO 22
   IF ~~ THEN REPLY ~Sounds like this is one of those fun aspects  you spoke of Vashon, only I, unfortunately do not have the time to partake. Perhaps another time.~ GOTO 24
   IF ~InParty("Nalia")
@@ -75,9 +75,9 @@ IF ~~ THEN BEGIN 9
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, I believe this is where you should come into your own, you being an illusionist.~ EXTERN ~TAFFICJ~ vashtest
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen�s exploits.~ EXTERN ~JANJ~ vashtest
+!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen's exploits.~ EXTERN ~JANJ~ vashtest
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn�t really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn't really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
 END
 
 IF ~~ THEN BEGIN 10
@@ -128,7 +128,7 @@ IF ~~ THEN BEGIN 15
 END
 
 IF ~~ THEN BEGIN 16
-  SAY ~You have chosen your scrolls let�s hope you have chosen wisely. All that remains is for you to find and return my scroll.~
+  SAY ~You have chosen your scrolls let's hope you have chosen wisely. All that remains is for you to find and return my scroll.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",1)
 SetGlobal("VP_Illusion_Quest","GLOBAL",1)
 ClearAllActions()
@@ -203,14 +203,14 @@ IF ~~ THEN BEGIN 24
   IF ~~ THEN REPLY ~Farewell Vashon.~ DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT25")~ EXIT //Quest is lost to PC.
-  IF ~~ THEN REPLY ~I don�t suppose it will delay me to much to fetch your scroll for you. I will do it Vashon.~ GOTO 25
+  IF ~~ THEN REPLY ~I don't suppose it will delay me to much to fetch your scroll for you. I will do it Vashon.~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 25
   SAY ~Then let us delay no more. I have explained what it is you must do, have you the spells you need?~
   IF ~~ THEN REPLY ~I have Vashon.~ GOTO 10
   IF ~~ THEN REPLY ~I have spells suitable yes but I have had no opportunity to memorise them.~ GOTO 11
-  IF ~~ THEN REPLY ~No, I don�t have anything in my spell book to cover that at all.~ GOTO 20
+  IF ~~ THEN REPLY ~No, I don't have anything in my spell book to cover that at all.~ GOTO 20
   IF ~~ THEN REPLY ~Bah, this is no better than pitting my wits against a first year student! There is no challenge in what you are asking, so I will be leaving now. Farewell.~ GOTO 22
   IF ~~ THEN REPLY ~Sounds like this is one of those fun aspects  you spoke of Vashon, only I, unfortunately do not have the time to partake. Perhaps another time.~ GOTO 24
   IF ~InParty("Nalia")
@@ -222,9 +222,9 @@ IF ~~ THEN BEGIN 25
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, I believe this is where you should come into your own, you being an illusionist.~ EXTERN ~TAFFICJ~ vashtest
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen�s exploits.~ EXTERN ~JANJ~ vashtest
+!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen's exploits.~ EXTERN ~JANJ~ vashtest
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn�t really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn't really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
 END
 
 //Vashon 16: PC. returns after memorising spells.	
@@ -233,13 +233,13 @@ END
 //<CHARNAME>: Reply to Vashon 16.
 //37.	I am Vashon. Then Vashon19
 
-//38.	There wouldn�t be much sense in my being here if I wasn�t now would there?
+//38.	There wouldn't be much sense in my being here if I wasn't now would there?
 //	 Then Vashon17
 
 //39.	Of course. Your scroll is as good as mine.  Then Vashon19.
 
 //Vashon 19: Reply to CH.35-37.
-//	Then let�s see what you can do <CHARNAME>. Then Scenario2.
+//	Then let's see what you can do <CHARNAME>. Then Scenario2.
 
 IF ~Global("VP_My_Test","LOCALS",1)
 Global("VP_Illusion_Quest","GLOBAL",1)
@@ -393,14 +393,14 @@ Global("VP_Illusion_Quest","GLOBAL",10)~ THEN BEGIN 34
 END
 
 IF ~~ THEN BEGIN npcstest
-  SAY ~I am never too busy to aid a student�s progress. First I will tell you what my test entails, you can then introduce me to your young companion and we will set about the assessment.~
+  SAY ~I am never too busy to aid a student's progress. First I will tell you what my test entails, you can then introduce me to your young companion and we will set about the assessment.~
 =
 ~Nearly all of the spells of the school of illusion are designed to mislead and confuse those around the illusionist, I have therefore set one task that will determine your ability in the casting and learning of such spells.~
 =
-~The task will be for you to retrieve, without being discovered, a spell scroll that I have left in the tutor Hazarlich�s living quarters. The spell written is a new one of my own devising, a spell which will be yours if you succeed in the task. Now if your companion is ready we can begin?~
+~The task will be for you to retrieve, without being discovered, a spell scroll that I have left in the tutor Hazarlich's living quarters. The spell written is a new one of my own devising, a spell which will be yours if you succeed in the task. Now if your companion is ready we can begin?~
   IF ~~ THEN REPLY ~I am ready to pass your exams, Vashon.~ GOTO 10
   IF ~~ THEN REPLY ~I am ready to pass your exams and I have spells suitable, but I have had no opportunity to memorise them.~ GOTO 11
-  IF ~~ THEN REPLY ~Unfortunately, I don�t have anything in my spell book to cover that at all.~ GOTO 20
+  IF ~~ THEN REPLY ~Unfortunately, I don't have anything in my spell book to cover that at all.~ GOTO 20
   IF ~~ THEN REPLY ~Bah, this is no better than pitting my wits against a first year student! There is no challenge in what you are asking, so I will be leaving now. Farewell.~ GOTO 22
   IF ~~ THEN REPLY ~Sounds like this is one of those fun aspects  you spoke of Vashon, only I, unfortunately do not have the time to partake. Perhaps another time.~ GOTO 24
   IF ~InParty("Nalia")
@@ -412,9 +412,9 @@ IF ~~ THEN BEGIN npcstest
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, I believe this is where you should come into your own, you being an illusionist.~ EXTERN ~TAFFICJ~ vashtest
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen�s exploits.~ EXTERN ~JANJ~ vashtest
+!Dead("Jan")~ THEN REPLY ~Jan, as an illusionist and with your thieves skills, this should be walk over for you, a chance for your name to be added to the already famous Jansen's exploits.~ EXTERN ~JANJ~ vashtest
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn�t really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this isn't really a task for a conjurer but I believe you are a versatile enough mage to handle anything that comes your way. With your virtuosity in magical arts those prizes are as good as ours. What do you say Edwin, could you possibly see your way past the shenanigans of all this and humour the mage by passing his test, please?~ EXTERN ~EDWINJ~ vashtest
 END
 
 IF ~~ THEN BEGIN taffic

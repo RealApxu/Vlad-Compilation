@@ -245,7 +245,7 @@ END
 IF ~~ THEN BEGIN K3
 	SAY	~I am surprised, <CHARNAME>. In sending you here I was certain your plan was doomed to fail. You've surpassed my expectations.~
 =
-~There is however one �impediment� to your leaving. You see that portal over there... Well, you are a semi-god and you can walk through it easily as many times as you wish without any harm to yourself... Keldorn is but a mere mortal, only one way is open to him... the way here. He may leave this place only by giving some of his life energy to the guard.~
+~There is however one 'impediment' to your leaving. You see that portal over there... Well, you are a semi-god and you can walk through it easily as many times as you wish without any harm to yourself... Keldorn is but a mere mortal, only one way is open to him... the way here. He may leave this place only by giving some of his life energy to the guard.~
 =
 ~<CHARNAME>, I have no power over that guard, and neither I nor Jergal can do anything. You see I'm not so... almighty.~
 		IF ~~ THEN REPLY ~There is nothing else that can be done? Can I sacrifice some of my own divine blood?~ GOTO K4

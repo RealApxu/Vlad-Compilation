@@ -9,7 +9,7 @@ Global("AnomenIsNotKnight","GLOBAL",0)~
 APPEND ~BKELDOR~
 
 IF ~~ THEN BEGIN NEJ0
-  SAY ~That hasn�t done these old bones of mine much good... which way to my bed?~
+  SAY ~That hasn't done these old bones of mine much good... which way to my bed?~
   IF ~Gender(Player1,FEMALE)
 !InParty("Melora")~ THEN EXTERN ~BLEINA~ PCF2Leina38a
 	IF ~Gender(Player1,MALE)
@@ -32,7 +32,7 @@ IF ~~ THEN BEGIN NEJ1
 END
 
 IF ~~ THEN BEGIN NEJ2
-  SAY ~(*A little flustered*) I didn�t mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
+  SAY ~(*A little flustered*) I didn't mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
   IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina33a
 	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina33a
 END
@@ -303,7 +303,7 @@ IF ~~ THEN BEGIN LT12_st8
 END
 
 IF ~~ THEN BEGIN LT12_st9
-	SAY ~I beg you, leave out this �Sir�. We are comrades at arms, and you can call me by my name. Everyone does just that.~
+	SAY ~I beg you, leave out this 'Sir'. We are comrades at arms, and you can call me by my name. Everyone does just that.~
 		IF ~~ THEN REPLY ~I don't think it's proper, I don't know what to say. I... I cannot.~ GOTO LT12_st10
 END
 
@@ -327,7 +327,7 @@ END
 IF ~~ THEN BEGIN LT12_st13
 	SAY ~We were engaged a long time ago. Did I love her before our wedding? No, we only met once or twice. Only after we were wed, did I see her beauty. She was well brought up, and gentle with me. So as I grew accustomed to her we fell in love.~
 =
-~I can't even say when it all went wrong. Maybe that happened after the duel... Some hooligan � and a master swordsman, by the way -  he was openly asking for a scandal. I just had to challenge him. He gave me a grave wound, but I prevailed and claimed the victory. Then I was feverish for a long time, and my mother took care of me. I never saw Maria by my sickbed. Perhaps it was then, when something gave way in my heart.~
+~I can't even say when it all went wrong. Maybe that happened after the duel... Some hooligan ' and a master swordsman, by the way -  he was openly asking for a scandal. I just had to challenge him. He gave me a grave wound, but I prevailed and claimed the victory. Then I was feverish for a long time, and my mother took care of me. I never saw Maria by my sickbed. Perhaps it was then, when something gave way in my heart.~
 		IF ~~ THEN REPLY ~(Sobbing quietly)... Keldorn...~ GOTO LT12_st14
 END
 
@@ -723,7 +723,7 @@ END
 //LT27 (LT26A) - morning part
 IF WEIGHT #-10 ~Global("VP_MorningTalk","LOCALS",1)
 Global("VP_LoveTalk","LOCALS",27)~ THEN BEGIN LT26_stA
-	SAY ~You see, everything is all right. You worried for nothing. (Bends and kisses your forehead) I've been looking at you and thinking, you are so unlike my wife. I tried to find at least one common feature and could not. You and Maria � you are both beautiful, but your beauty is of a different nature.~
+	SAY ~You see, everything is all right. You worried for nothing. (Bends and kisses your forehead) I've been looking at you and thinking, you are so unlike my wife. I tried to find at least one common feature and could not. You and Maria ' you are both beautiful, but your beauty is of a different nature.~
 		IF ~~ THEN GOTO LT26_stA_1
 END
 
@@ -1287,7 +1287,7 @@ IF ~~ THEN BEGIN LT38_st16
 =
 ~(Quietly) My virtuous bride, can she not come to me at night without a reason? I thought I could protect you by marrying you and... (his voice drops to almost a whisper.) by taking your virginity.~
 =
-~I misinterpret your dream � remember? � and almost lost you forever. The first thing we must do is kill that damned mage and return that which he tore from you!~
+~I misinterpret your dream ' remember? ' and almost lost you forever. The first thing we must do is kill that damned mage and return that which he tore from you!~
 =
 ~Forgive me, I'm so sorry. I should not have rushed you into a wedding, I can see that you are not yet ready.~
 		IF ~~ THEN REPLY ~Rushed... rushed?! Maybe it is you who has changed your mind now that you realize your bride is a monster?!~ GOTO LT38_st19
@@ -1352,7 +1352,7 @@ END
 IF ~~ THEN BEGIN LT38_st22
 	SAY ~(With a sigh) As a step-mother... no, but... is this the reason? I saw how you grieved over Gorion, but how could I fail to understand that?~
 =
-~You wept over Ajantis � did I have a right to be jealous? Gorion, Ajantis, Khalid... they will be with you forever and I do not want you to forget them. The same with me my dear <CHARNAME>.~
+~You wept over Ajantis ' did I have a right to be jealous? Gorion, Ajantis, Khalid... they will be with you forever and I do not want you to forget them. The same with me my dear <CHARNAME>.~
 =
 ~I also do not want to forget either Maria or my girls. They will always remain with me, in my memory but it does not mean they will take your place. Even if I forget them, I could not possibly love you more.~
 =
@@ -1368,7 +1368,7 @@ EndCutSceneMode()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS149
-  SAY ~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Order�s charge...~
+  SAY ~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Order's charge...~
   IF ~~ THEN EXTERN ~BKACHI~ 40
 END
 
@@ -1378,7 +1378,7 @@ IF ~~ THEN BEGIN TS150
 END
 
 IF ~~ THEN BEGIN TS151
-  SAY ~Kachiko, my allegiance is with Torm. I would not desert my deity for a moment�s weakness.~
+  SAY ~Kachiko, my allegiance is with Torm. I would not desert my deity for a moment's weakness.~
   IF ~~ THEN EXTERN ~BKACHI~ 42
 END
 
@@ -1388,7 +1388,7 @@ IF ~~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~(*laughs and shakes his head*) Got it all covered, don�t they? And I guess there is an Immortal in charge of the potential husband�s wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily. ~
+  SAY ~(*laughs and shakes his head*) Got it all covered, don't they? And I guess there is an Immortal in charge of the potential husband's wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily. ~
   IF ~~ THEN EXTERN ~BKACHI~ 44
 END
 
@@ -1423,7 +1423,7 @@ IF ~~ THEN BEGIN TS159
 END
 
 IF ~~ THEN BEGIN TS160
-  SAY ~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your mother�s people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
+  SAY ~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your mother's people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
   IF ~~ THEN EXTERN ~BVALYGA~ TS531
 END
 
@@ -1433,7 +1433,7 @@ IF ~~ THEN BEGIN TS161
 END
 
 IF ~~ THEN BEGIN TS162
-  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father�s doing, no doubt. The bird reached the shore safely and transformed into Abyssina.   They were married the very next day.~
+  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father's doing, no doubt. The bird reached the shore safely and transformed into Abyssina.   They were married the very next day.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS533
 END
 
@@ -1453,7 +1453,7 @@ IF ~~ THEN BEGIN TS165
 END
 
 IF ~~ THEN BEGIN TS166
-  SAY ~I am on the road because that�s my duty.~
+  SAY ~I am on the road because that's my duty.~
   IF ~~ THEN EXTERN ~BSIME~ 160
 END
 
@@ -1468,12 +1468,12 @@ IF ~~ THEN BEGIN TS168
 END
 
 IF ~~ THEN BEGIN TS169
-  SAY ~I thought you might know a thing or two about lovers� talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
+  SAY ~I thought you might know a thing or two about lovers' talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
   IF ~~ THEN EXTERN ~BSIME~ 164
 END
 
 IF ~~ THEN BEGIN TS170
-  SAY ~By Torm, that�s a jolly good idea, milady!~
+  SAY ~By Torm, that's a jolly good idea, milady!~
   IF ~~ THEN EXTERN ~BSIME~ 165
 END
 
@@ -1487,7 +1487,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1496,7 +1496,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1505,7 +1505,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -1536,7 +1536,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1545,7 +1545,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1554,7 +1554,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -1585,7 +1585,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1594,7 +1594,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Korgan")
 !IsValidForPartyDialogue("Mazzy")
 !IsValidForPartyDialogue("Nalia")
@@ -1603,7 +1603,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -1625,7 +1625,7 @@ IF ~~ THEN BEGIN LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
-  SAY ~That�s not quite what I was expecting, but I can see how it may surprise Leina.~
+  SAY ~That's not quite what I was expecting, but I can see how it may surprise Leina.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1

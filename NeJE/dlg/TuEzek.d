@@ -18,7 +18,7 @@ IF ~~ THEN BEGIN 1
   IF ~~ THEN REPLY ~Now this has the feel of a real challenge, you have my word.~ GOTO 12
   IF ~~ THEN REPLY ~Mystery and intrigue, you can count me in... and yes I promise, not a single word will pass my lips.~ GOTO 12
   IF ~~ THEN REPLY ~I take it this venture of yours is, shall we say... questionable?~ GOTO 27
-  IF ~~ THEN REPLY ~I�ll give you my word once I know what it is you want from me and not before!~ GOTO 28
+  IF ~~ THEN REPLY ~I'll give you my word once I know what it is you want from me and not before!~ GOTO 28
 END
 
 IF ~~ THEN BEGIN 2
@@ -26,15 +26,15 @@ IF ~~ THEN BEGIN 2
   IF ~~ THEN REPLY ~Now this has the feel of a real challenge, you have my word.~ GOTO 12
   IF ~~ THEN REPLY ~Mystery and intrigue, you can count me in... and yes I promise, not a single word will pass my lips.~ GOTO 12
   IF ~~ THEN REPLY ~I take it this venture of yours is, shall we say... questionable?~ GOTO 27
-  IF ~~ THEN REPLY ~I�ll give you my word once I know what it is you want from me and not before!~ GOTO 28
+  IF ~~ THEN REPLY ~I'll give you my word once I know what it is you want from me and not before!~ GOTO 28
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~That�s what I like to see in a student, confidence. I am sure you will do well <CHARNAME>. However there is one small condition attached to this task, should you agree to it. I must have the word of whoever is in charge here, that whatever transpires here will never reach the ears of others?~
+  SAY ~That's what I like to see in a student, confidence. I am sure you will do well <CHARNAME>. However there is one small condition attached to this task, should you agree to it. I must have the word of whoever is in charge here, that whatever transpires here will never reach the ears of others?~
   IF ~~ THEN REPLY ~Now this has the feel of a real challenge, you have my word.~ GOTO 12
   IF ~~ THEN REPLY ~Mystery and intrigue, you can count me in... and yes I promise, not a single word will pass my lips.~ GOTO 12
   IF ~~ THEN REPLY ~I take it this venture of yours is, shall we say... questionable?~ GOTO 27
-  IF ~~ THEN REPLY ~I�ll give you my word once I know what it is you want from me and not before!~ GOTO 28
+  IF ~~ THEN REPLY ~I'll give you my word once I know what it is you want from me and not before!~ GOTO 28
 END
 
 IF ~~ THEN BEGIN 4
@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Murder will not be necessary. There is a trap door in the room adjacent to, and on the right of this one. It leads to the sewers, and from there you can, without fear of detection, safely, enter the mausoleum, where Halruaa inter it�s senior mages if they so wish it on their death...~
+  SAY ~Murder will not be necessary. There is a trap door in the room adjacent to, and on the right of this one. It leads to the sewers, and from there you can, without fear of detection, safely, enter the mausoleum, where Halruaa inter it's senior mages if they so wish it on their death...~
   IF ~~ THEN GOTO 26
 END
 
@@ -128,7 +128,7 @@ END
 IF ~Global("VP_Necro_Test","GLOBAL",6)
 !PartyHasItem("TuNeBody")~ THEN BEGIN 13
   SAY ~How disappointing. You made quite a noise there. It could have been embarrassing for us all had you been found in the mausoleum. Now I shall have to wait for another interment and you have to wait until I have the time to set a new task. Unfortunately that will not be for a while as I have work elsewhere. Farewell.~
-  IF ~~ THEN REPLY ~Hey what�s the big idea? We almost had your body for you when the guards entered! Now let us come back and bring the body for you!~ GOTO 14
+  IF ~~ THEN REPLY ~Hey what's the big idea? We almost had your body for you when the guards entered! Now let us come back and bring the body for you!~ GOTO 14
   IF ~~ THEN REPLY ~Is that it Ezekiel? We have fought bravely so it should take no time at all to get your body if we go back now.~ GOTO 14
 END
 
@@ -189,7 +189,7 @@ END
 
 IF ~NumTimesTalkedTo(0)
 !IsGabber(Protagonist)~ THEN BEGIN 19
-  SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy! Clearly you are no student... still, if the students here are so caught up in their own self importance to recognise a conspiracy when it presents itself... that�s hardly my concern. Now to the tests... who here leads this little group? I speak only with your leader.~
+  SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy! Clearly you are no student... still, if the students here are so caught up in their own self importance to recognise a conspiracy when it presents itself... that's hardly my concern. Now to the tests... who here leads this little group? I speak only with your leader.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",1)~ EXIT
 END
 
@@ -199,7 +199,7 @@ IsGabber(Protagonist)
 !Class(LastTalkedToBy,MAGE_ALL)
 !Class(LastTalkedToBy,BARD)
 !Class(LastTalkedToBy,SORCERER)~ THEN BEGIN 20
-  SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy. Clearly you are no mage... (*makes a long pause and  gazes at you*)... but don�t look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
+  SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy. Clearly you are no mage... (*makes a long pause and  gazes at you*)... but don't look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",2)~ GOTO 21
 END
 
@@ -208,21 +208,21 @@ IF ~~ THEN BEGIN 21
   IF ~~ THEN REPLY ~Greetings Ezekiel, I am <CHARNAME>. Tell me, what test do you speak of?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 24
   IF ~~ THEN REPLY ~I am <CHARNAME>, and I am not worried. I know my capabilities. Why do I need to prove myself to the likes of you?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 24
   IF ~~ THEN REPLY ~I am not worried, nor do your threats frighten me mage!~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 25
-	IF ~~ THEN REPLY ~I�ll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
+	IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
 Enemy()~ EXIT
 END
 
 IF ~Global("VP_Know_Ezekiel","LOCALS",1)
 Global("VP_Necro_Test","GLOBAL",0)
 !IsGabber(Protagonist)~ THEN BEGIN 22
-  SAY ~I told you I�ll speak only with your leader.~
+  SAY ~I told you I'll speak only with your leader.~
   IF ~~ THEN EXIT
 END
 
 IF ~Global("VP_Know_Ezekiel","LOCALS",1)
 Global("VP_Necro_Test","GLOBAL",0)
 IsGabber(Protagonist)~ THEN BEGIN 23
-  SAY ~(*Grin*) Well, well, well... So you are the infamous leader of this little group of spies... (*makes a long pause and gazes at you*)...  but don�t look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
+  SAY ~(*Grin*) Well, well, well... So you are the infamous leader of this little group of spies... (*makes a long pause and gazes at you*)...  but don't look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",2)~ GOTO 21
 END
 
@@ -232,9 +232,9 @@ IF ~~ THEN BEGIN 24
 END
 
 IF ~~ THEN BEGIN 25
-  SAY ~Believe me, my words aren�t meant as a threat. I see they don�t frighten you... you who don�t belong to this world... to this time even. You see, I have more knowledge than you credit me with.~
+  SAY ~Believe me, my words aren't meant as a threat. I see they don't frighten you... you who don't belong to this world... to this time even. You see, I have more knowledge than you credit me with.~
   IF ~~ THEN REPLY ~Okay Ezekiel, I am <CHARNAME>, and I am carefully listening to you.~ GOTO 24
-	IF ~~ THEN REPLY ~I�ll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
+	IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
 Enemy()~ EXIT
 END
 

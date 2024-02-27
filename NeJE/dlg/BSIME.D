@@ -6,17 +6,17 @@ BEGIN ~BSIME~
 //END
 
 //IF ~~ THEN BEGIN TS01
-//  SAY ~I assume, Coran, that you think your elven charms are considerable.  Let me enlighten you: they aren�t.~
+//  SAY ~I assume, Coran, that you think your elven charms are considerable.  Let me enlighten you: they aren't.~
 //  IF ~~ THEN EXTERN ~BCORAN~ TS3
 //END
 
 //IF ~~ THEN BEGIN TS02
-//  SAY ~You think I�d surrender myself to the likes of you, that�s a laugh.~
+//  SAY ~You think I'd surrender myself to the likes of you, that's a laugh.~
 //  IF ~~ THEN EXIT
 //END
 
 //IF ~~ THEN BEGIN TS03
-//  SAY ~I might find you attractive, Coran, if you weren�t so irritating.~
+//  SAY ~I might find you attractive, Coran, if you weren't so irritating.~
 //  IF ~~ THEN EXIT
 //END
 
@@ -28,12 +28,12 @@ IF WEIGHT #-77 ~Global("VP_BSime1","LOCALS",2)~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~If you say so. But if you�d try to smile you�d look prettier.~
+  SAY ~If you say so. But if you'd try to smile you'd look prettier.~
   IF ~~ THEN EXTERN ~BAERIE~ TS461
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Let�s see... turn around, Aerie. Well, not completely. If one does not see your face you are quite nice looking. Too fragile and bony may be, but some like it.~
+  SAY ~Let's see... turn around, Aerie. Well, not completely. If one does not see your face you are quite nice looking. Too fragile and bony may be, but some like it.~
   IF ~~ THEN EXTERN ~BAERIE~ TS462
 END
 
@@ -106,13 +106,13 @@ END
 IF ~~ THEN BEGIN 566
   SAY ~You caught her? Good. Please, hold her tight while I purge her body from poison.~
   IF ~~ THEN REPLY ~Poison? Aerie poisoned herself? I do not understand. Is not it regarded as a mortal sin among elves? Why, Aerie, why?~ GOTO 567
-  IF ~~ THEN REPLY ~As if we do not have enough troubles already. She is unaccustomed to the trials of adventurer�s life. I should not have allowed her to follow... us.~ GOTO 570
+  IF ~~ THEN REPLY ~As if we do not have enough troubles already. She is unaccustomed to the trials of adventurer's life. I should not have allowed her to follow... us.~ GOTO 570
   IF ~~ THEN REPLY ~Do you think that she did it because of...~ GOTO 567
 END
 
 IF ~~ THEN BEGIN 567
   SAY ~It is because of you and me, <CHARNAME>, do not you see? She is in love with you.~
-  IF ~~ THEN REPLY ~I hope she will be alright. I will talk to her and I will try to explain... I do not know how yet, but I will try. I do not wish our future to be clouded by this child�s tears.~ GOTO 568
+  IF ~~ THEN REPLY ~I hope she will be alright. I will talk to her and I will try to explain... I do not know how yet, but I will try. I do not wish our future to be clouded by this child's tears.~ GOTO 568
   IF ~~ THEN REPLY ~Because of me? My poor gentle Aerie! Sime, I am sorry, but I think my eyes are finally opened. I love Aerie.~ GOTO 569
 END
 
@@ -128,8 +128,8 @@ SetGlobal("VP_Sime_vs_Aerie","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 570
-  SAY ~To follow YOU, that�s what you wanted to say. It is because of you and me, <CHARNAME>, let�s face it. She is in love with you.~
-  IF ~~ THEN REPLY ~I hope she will be alright. I will talk to her and I will try to explain... I do not know how yet, but I will try. I do not wish our future to be clouded by this child�s tears.~ GOTO 568
+  SAY ~To follow YOU, that's what you wanted to say. It is because of you and me, <CHARNAME>, let's face it. She is in love with you.~
+  IF ~~ THEN REPLY ~I hope she will be alright. I will talk to her and I will try to explain... I do not know how yet, but I will try. I do not wish our future to be clouded by this child's tears.~ GOTO 568
   IF ~~ THEN REPLY ~Because of me? My poor gentle Aerie! Sime, I am sorry, but I think my eyes are finally opened. I love Aerie.~ GOTO 569
 END
 
@@ -149,7 +149,7 @@ IF ~~ THEN BEGIN 573
 END
 
 IF ~~ THEN BEGIN 574
-  SAY ~I do. Listen to me and do not shut your heart. It�s like a port: one ship enters while another leaves. In few years you will not be able to remember his name, too much in love with another man to care.~
+  SAY ~I do. Listen to me and do not shut your heart. It's like a port: one ship enters while another leaves. In few years you will not be able to remember his name, too much in love with another man to care.~
   IF ~~ THEN EXTERN ~BAERIE~ TS476
 END
 
@@ -217,13 +217,13 @@ END
 
 IF ~~ THEN BEGIN 271
   SAY ~(*with disgust*): I loathe the day <CHARNAME> got this bastard to join in with us. I HATE him!~
-  IF ~~ THEN REPLY ~Sime, we need this fighter. I�ll talk to him tomorrow and ask him to stop bugging you.~ GOTO 272
+  IF ~~ THEN REPLY ~Sime, we need this fighter. I'll talk to him tomorrow and ask him to stop bugging you.~ GOTO 272
   IF ~~ THEN REPLY ~Sime, I think he... likes you. None can resist your charm.~ GOTO 273
   IF ~~ THEN REPLY ~He is out this very moment!~ GOTO 274
 END
 
 IF ~~ THEN BEGIN 272
-  SAY ~You are an idiot! He does more harm than good. Suit yourself. But know that next time I�ll kill the bastard.~ [SIMEKO04]
+  SAY ~You are an idiot! He does more harm than good. Suit yourself. But know that next time I'll kill the bastard.~ [SIMEKO04]
   IF ~~ THEN EXIT
 END
 
@@ -318,12 +318,12 @@ IF ~~ THEN BEGIN 41
 END
 
 IF ~~ THEN BEGIN 42
-  SAY ~Who told you that I am a noble born Lady, Anomen? I am a thief�s daughter.~
+  SAY ~Who told you that I am a noble born Lady, Anomen? I am a thief's daughter.~
   IF ~~ THEN EXTERN ~BANOMEN~ TS630
 END
 
 IF ~~ THEN BEGIN 43
-  SAY ~She was an Elf, Anomen that�s all I know. Her origin is a mystery to me.~
+  SAY ~She was an Elf, Anomen that's all I know. Her origin is a mystery to me.~
   IF ~~ THEN EXTERN ~BANOMEN~ TS631
 END
 
@@ -343,7 +343,7 @@ IF ~~ THEN BEGIN 46
 END
 
 IF ~~ THEN BEGIN 47
-  SAY ~You like us... That�s very kind and generous of you, my heroic knight. Yet why does it bring you pain to like your comrades at arms?~ [SIMEAN04]
+  SAY ~You like us... That's very kind and generous of you, my heroic knight. Yet why does it bring you pain to like your comrades at arms?~ [SIMEAN04]
   IF ~~ THEN EXTERN ~BANOMEN~ TS634
 END
 
@@ -353,7 +353,7 @@ IF ~~ THEN BEGIN 48
 END
 
 IF ~~ THEN BEGIN 49
-  SAY ~I am afraid I cannot agree with you. I would choke if I were a subject to proper discipline and the Order�s structure. I�d rather ask my heart what to do, than my superior.~
+  SAY ~I am afraid I cannot agree with you. I would choke if I were a subject to proper discipline and the Order's structure. I'd rather ask my heart what to do, than my superior.~
   IF ~~ THEN EXIT
 END
 
@@ -375,7 +375,7 @@ IF ~~ THEN BEGIN 52
 END
 
 IF ~~ THEN BEGIN 53
-  SAY ~I am afraid you�ve lost me, Jan. Why would Amalia marry a turnip merchant?~
+  SAY ~I am afraid you've lost me, Jan. Why would Amalia marry a turnip merchant?~
   IF ~~ THEN EXTERN ~BJAN~ TS136
 END
 
@@ -415,7 +415,7 @@ IF ~~ THEN BEGIN 60
 END
 
 IF ~~ THEN BEGIN 61
-  SAY ~Paper and bread? Dare I ask...  No, forget it! Let�s catch up with the rest, Jan.~
+  SAY ~Paper and bread? Dare I ask...  No, forget it! Let's catch up with the rest, Jan.~
   IF ~~ THEN EXIT
 END
 
@@ -425,7 +425,7 @@ IF WEIGHT #-65 ~Global("VP_BSime11","LOCALS",2)~ THEN BEGIN 62
 END
 
 IF ~~ THEN BEGIN 63
-  SAY ~Mayhap, but no, not this time. I know all sorts of men�s glances. Yours is not that of an admirer.~
+  SAY ~Mayhap, but no, not this time. I know all sorts of men's glances. Yours is not that of an admirer.~
   IF ~~ THEN EXTERN ~BYOSHIM~ TS139
 END
 
@@ -440,7 +440,7 @@ IF ~~ THEN BEGIN 65
 END
 
 IF ~~ THEN BEGIN 66
-  SAY ~You cannot call me Aran�s ally! I am no Shadow Thief! I argue with Aran every single minute I spend with him! I disagree with everything he is doing!~ [SIMEYO02]
+  SAY ~You cannot call me Aran's ally! I am no Shadow Thief! I argue with Aran every single minute I spend with him! I disagree with everything he is doing!~ [SIMEYO02]
   IF ~~ THEN EXTERN ~BYOSHIM~ TS142
 END
 
@@ -460,12 +460,12 @@ IF ~~ THEN BEGIN 69
 END
 
 IF ~~ THEN BEGIN 70
-  SAY ~Aye, I did. They were dreamers and died quickly. A thief�s path is a displeasing one for an honorable person.~
+  SAY ~Aye, I did. They were dreamers and died quickly. A thief's path is a displeasing one for an honorable person.~
   IF ~~ THEN EXTERN ~BYOSHIM~ TS145
 END
 
 IF ~~ THEN BEGIN 71
-  SAY ~That�s all tales!~
+  SAY ~That's all tales!~
   IF ~~ THEN EXTERN ~BYOSHIM~ TS146
 END
 
@@ -492,12 +492,12 @@ IF ~~ THEN BEGIN 75
 END
 
 IF WEIGHT #-62 ~Global("VP_BSime14","LOCALS",2)~ THEN BEGIN 76
-  SAY ~May be it�s for the best that the Castle is gone, Nalia? The Castle was a rather somber place. I would be chilly and lost in those endless dark chambers. I do not like closed spaces.~ [SIMENA03]
+  SAY ~May be it's for the best that the Castle is gone, Nalia? The Castle was a rather somber place. I would be chilly and lost in those endless dark chambers. I do not like closed spaces.~ [SIMENA03]
   IF ~~ THEN DO ~SetGlobal("VP_BSime14","LOCALS",3)~ EXTERN ~BNALIA~ TS63
 END
 
 IF ~~ THEN BEGIN 77
-  SAY ~Come, Nalia! Our walls and arches are the tree trunks and our carpet is the glen full of flowers. Do you not breathe easier here? And aren�t you surrounded by friends?~
+  SAY ~Come, Nalia! Our walls and arches are the tree trunks and our carpet is the glen full of flowers. Do you not breathe easier here? And aren't you surrounded by friends?~
   IF ~~ THEN EXTERN ~BNALIA~ TS64
 END
 
@@ -534,7 +534,7 @@ IF WEIGHT #-60 ~Global("VP_BSime16","LOCALS",2)~ THEN BEGIN 83
 END
 
 IF ~~ THEN BEGIN 84
-  SAY ~I grief with you. I know from my own experiences that one�s own wound does not hurt as much as those of friends�.~
+  SAY ~I grief with you. I know from my own experiences that one's own wound does not hurt as much as those of friends'.~
   IF ~~ THEN EXTERN ~BMAZZY~ TS149
 END
 
@@ -564,12 +564,12 @@ IF ~~ THEN BEGIN 89
 END
 
 IF ~~ THEN BEGIN 90
-  SAY ~(*laughs*) Unless it is a Mordenkainen�s Sword.~
+  SAY ~(*laughs*) Unless it is a Mordenkainen's Sword.~
   IF ~~ THEN EXTERN ~BMAZZY~ TS155
 END
 
 IF ~~ THEN BEGIN 91
-  SAY ~A dangerous toy nonetheless. Have you ever heard about the wizard who lost control over one of those blades? They say he made three full circles around the city�s wall, the sword on his heels, before the blade got dispelled.~ [SIMEMA05]
+  SAY ~A dangerous toy nonetheless. Have you ever heard about the wizard who lost control over one of those blades? They say he made three full circles around the city's wall, the sword on his heels, before the blade got dispelled.~ [SIMEMA05]
   IF ~~ THEN EXTERN ~BMAZZY~ TS156
 END
 
@@ -611,12 +611,12 @@ IF ~~ THEN BEGIN 98
 END
 
 IF ~~ THEN BEGIN 99
-  SAY ~I know your people�s "ways"! I have seen babes and women slain without pity by their sharp blades. I have seen the results of a Drow raid! How can a being that presumably has heart to commit deeds of such cruelty?~
+  SAY ~I know your people's "ways"! I have seen babes and women slain without pity by their sharp blades. I have seen the results of a Drow raid! How can a being that presumably has heart to commit deeds of such cruelty?~
   IF ~~ THEN EXTERN ~BVICONI~ TS606
 END
 
 IF ~~ THEN BEGIN 100
-  SAY ~That would be adopting the way of the Drow, Viconia. Drow who will not hesitate to cut an Elf�s throat no question�s asked.~ [SIMEVI04]
+  SAY ~That would be adopting the way of the Drow, Viconia. Drow who will not hesitate to cut an Elf's throat no question's asked.~ [SIMEVI04]
   IF ~~ THEN EXIT
 END
 
@@ -626,7 +626,7 @@ IF WEIGHT #-56 ~Global("VP_Sime_vs_Viconia","GLOBAL",1)~ THEN BEGIN 576
 END
 
 IF ~~ THEN BEGIN 577
-  SAY ~That wicked bitch tried to stab me, that�s all.~
+  SAY ~That wicked bitch tried to stab me, that's all.~
   IF ~~ THEN EXTERN ~BVICONI~ TS608
 END
 
@@ -668,7 +668,7 @@ IF ~~ THEN BEGIN 105
 END
 
 IF ~~ THEN BEGIN 106
-  SAY ~My father has been befriending only one certain type of women ever since my mother�s death. The sort which do not stay with one man for long and who would not carry a child.~
+  SAY ~My father has been befriending only one certain type of women ever since my mother's death. The sort which do not stay with one man for long and who would not carry a child.~
   IF ~~ THEN EXTERN ~BKACHI~ 91
 END
 
@@ -709,12 +709,12 @@ IF ~~ THEN BEGIN 112
 END
 
 IF WEIGHT #-52 ~Global("VP_BSime23","LOCALS",2)~ THEN BEGIN 113
-  SAY ~What is it, Imoen? (*whispering*) Ah, what are you doing? Pick-pocketing other�s people clothes! You cannot...~ [SIMEIM02]
+  SAY ~What is it, Imoen? (*whispering*) Ah, what are you doing? Pick-pocketing other's people clothes! You cannot...~ [SIMEIM02]
   IF ~~ THEN DO ~SetGlobal("VP_BSime23","LOCALS",3)~ EXTERN ~BIMOEN2~ 9
 END
 
 IF ~~ THEN BEGIN 114
-  SAY ~No, not really! Well, may be a little bit. Oh, damn you, Imoen now you�ve piqued my curiosity. Let me see!~ [SIMEIM03]
+  SAY ~No, not really! Well, may be a little bit. Oh, damn you, Imoen now you've piqued my curiosity. Let me see!~ [SIMEIM03]
   IF ~True()~ THEN EXIT
   IF ~InParty("Viconia")~ THEN EXTERN ~BIMOEN2~ 25
   IF ~InParty("Edwin")~ THEN EXTERN ~BIMOEN2~ 24
@@ -755,7 +755,7 @@ IF ~~ THEN BEGIN 115
 END
 
 IF ~~ THEN BEGIN 116
-  SAY ~I wonder if he ever read it?   He�s obviously never read it.~
+  SAY ~I wonder if he ever read it?   He's obviously never read it.~
   IF ~True()~ THEN EXIT
   IF ~InParty("Viconia")~ THEN EXTERN ~BIMOEN2~ 25
   IF ~InParty("Edwin")~ THEN EXTERN ~BIMOEN2~ 24
@@ -854,7 +854,7 @@ IF ~~ THEN BEGIN 122
 END
 
 IF ~~ THEN BEGIN 123
-  SAY ~I am guessing Yoshimo�s mane is missing it!~
+  SAY ~I am guessing Yoshimo's mane is missing it!~
   IF ~True()~ THEN EXIT
   IF ~InParty("Viconia")~ THEN EXTERN ~BIMOEN2~ 25
   IF ~InParty("Edwin")~ THEN EXTERN ~BIMOEN2~ 24
@@ -969,7 +969,7 @@ IF ~~ THEN BEGIN 581
 END
 
 IF ~~ THEN BEGIN 582
-  SAY ~(*laughs*) Oldest, yeah, that�s true. But friend?~
+  SAY ~(*laughs*) Oldest, yeah, that's true. But friend?~
   IF ~~ THEN REPLY ~Eh, Sime. Lay off. Jaheira is a real friend and a loyal companion, I would not have her insulted.~ EXTERN ~BJAHEIR~ TS481
   IF ~~ THEN REPLY ~Jaheira, pay Sime no heed. She will never understand the true love, such as you and I share.~ EXTERN ~BJAHEIR~ TS482
   IF ~~ THEN REPLY ~Jaheira, I love Sime. If you are as loyal to me as you always claim to be, you shall accept this. Otherwise, the roads are free for all to use.~ EXTERN ~BJAHEIR~ TS483
@@ -1034,7 +1034,7 @@ IF ~~ THEN BEGIN 144
 END
 
 IF ~~ THEN BEGIN 145
-  SAY ~Oh, forgive me, Edwin. Indeed, you are the sort who listens to his own voice exclusively. Let me guess, you have come up with a concept of the world�s balance on your own.~
+  SAY ~Oh, forgive me, Edwin. Indeed, you are the sort who listens to his own voice exclusively. Let me guess, you have come up with a concept of the world's balance on your own.~
   IF ~~ THEN EXTERN ~BEDWIN~ TS116
 END
 
@@ -1049,7 +1049,7 @@ IF ~~ THEN BEGIN 147
 END
 
 IF ~~ THEN BEGIN 148
-  SAY ~I can take many things from you for amusement�s sake, Edwin. But that�s it. I am sick of you.~ [SIMEED04]
+  SAY ~I can take many things from you for amusement's sake, Edwin. But that's it. I am sick of you.~ [SIMEED04]
   IF ~~ THEN EXIT
 END
 
@@ -1111,7 +1111,7 @@ IF WEIGHT #-44 ~Global("VP_BSime30","LOCALS",2)~ THEN BEGIN 159
 END
 
 IF ~~ THEN BEGIN 160
-  SAY ~Your first duty is to your family, Keldorn. Nothing is worth taking a father from his children�s life and a husband from his wife�s thoughts.~
+  SAY ~Your first duty is to your family, Keldorn. Nothing is worth taking a father from his children's life and a husband from his wife's thoughts.~
   IF ~~ THEN EXTERN ~BKELDOR~ TS167
 END
 
@@ -1126,12 +1126,12 @@ IF ~~ THEN BEGIN 162
 END
 
 IF WEIGHT #-43 ~Global("VP_BSime31","LOCALS",2)~ THEN BEGIN 163
-  SAY ~You want to find a word that rhymes with Maria? Truly, Sir Keldorn, that�s a question to ask a bard, not a ranger such as I.~ [SIMEKE02]
+  SAY ~You want to find a word that rhymes with Maria? Truly, Sir Keldorn, that's a question to ask a bard, not a ranger such as I.~ [SIMEKE02]
   IF ~~ THEN DO ~SetGlobal("VP_BSime31","LOCALS",3)~ EXTERN ~BKELDOR~ TS169
 END
 
 IF ~~ THEN BEGIN 164
-  SAY ~Why won�t you write her what you just told me and add that the only rhymes you can find to Maria is Keldorn?~
+  SAY ~Why won't you write her what you just told me and add that the only rhymes you can find to Maria is Keldorn?~
   IF ~~ THEN EXTERN ~BKELDOR~ TS170
 END
 
@@ -1183,7 +1183,7 @@ IF ~~ THEN BEGIN 173
 END
 
 IF ~~ THEN BEGIN 174
-  SAY ~Why? Why do you need to be among <CHARNAME>�s associates?~
+  SAY ~Why? Why do you need to be among <CHARNAME>'s associates?~
   IF ~~ THEN EXTERN ~BCERND~ TS107
 END
 
@@ -1205,7 +1205,7 @@ IF WEIGHT #-40 ~Global("VP_BSime34","LOCALS",2)~ THEN BEGIN 177
 END
 
 IF ~~ THEN BEGIN 178
-  SAY ~There is more to the bards� art than the ability to dance and to sing. I  do no worse than any intelligent woman can. But I have no true gift.~
+  SAY ~There is more to the bards' art than the ability to dance and to sing. I  do no worse than any intelligent woman can. But I have no true gift.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS170
 END
 
@@ -1220,7 +1220,7 @@ IF ~~ THEN BEGIN 180
 END
 
 IF ~~ THEN BEGIN 181
-  SAY ~* Laughs * There was none in the first place, Haer�Dalis. Looking back I think that I was received more warmly than I deserved. But it was a sorry existence. I never knew when next I would eat, but I could not return home.~
+  SAY ~* Laughs * There was none in the first place, Haer'Dalis. Looking back I think that I was received more warmly than I deserved. But it was a sorry existence. I never knew when next I would eat, but I could not return home.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS173
 END
 
@@ -1235,27 +1235,27 @@ IF ~~ THEN BEGIN 183
 END
 
 IF WEIGHT #-39 ~Global("VP_BSime35","LOCALS",2)~ THEN BEGIN 184
-  SAY ~I must have bored you to death with my story. You keep staring at me and you do not speak. I give you my word, I will not start a "History of Sime�s Life" next time.~ [SIMEHA03]
+  SAY ~I must have bored you to death with my story. You keep staring at me and you do not speak. I give you my word, I will not start a "History of Sime's Life" next time.~ [SIMEHA03]
   IF ~~ THEN DO ~SetGlobal("VP_BSime35","LOCALS",3)~ EXTERN ~BHAERDA~ TS175
 END
 
 IF ~~ THEN BEGIN 185
-  SAY ~(*smiles*) But you are faery�s child yourself, you should not be so astounded by elven beauty.~
+  SAY ~(*smiles*) But you are faery's child yourself, you should not be so astounded by elven beauty.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS176
 END
 
 IF ~~ THEN BEGIN 186
-  SAY ~Well said, Haer�Dalis.~
+  SAY ~Well said, Haer'Dalis.~
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-38 ~Global("VP_BSime36","LOCALS",2)~ THEN BEGIN 187
-  SAY ~That is very impressive! I have never seen anyone juggle with burning torches before. But be careful, Haer�Dalis, you will burn your fingers.~ [SIMEHA04]
+  SAY ~That is very impressive! I have never seen anyone juggle with burning torches before. But be careful, Haer'Dalis, you will burn your fingers.~ [SIMEHA04]
   IF ~~ THEN DO ~SetGlobal("VP_BSime36","LOCALS",3)~ EXTERN ~BHAERDA~ TS177
 END
 
 IF ~~ THEN BEGIN 188
-  SAY ~I shall remind you of those words next time I am healing your body from the burns of a fireball, Haer�Dalis.~ [SIMEHA05]
+  SAY ~I shall remind you of those words next time I am healing your body from the burns of a fireball, Haer'Dalis.~ [SIMEHA05]
   IF ~~ THEN EXTERN ~BHAERDA~ TS178
 END
 
@@ -1265,7 +1265,7 @@ IF ~~ THEN BEGIN 189
 END
 
 IF WEIGHT #-37 ~Global("VP_BSime37","LOCALS",2)~ THEN BEGIN 190
-  SAY ~It�s only me, Haer�Dalis, do not be startled. You were deep in your thoughts, I am sorry for bothering you.~ [SIMEHA06]
+  SAY ~It's only me, Haer'Dalis, do not be startled. You were deep in your thoughts, I am sorry for bothering you.~ [SIMEHA06]
   IF ~~ THEN DO ~SetGlobal("VP_BSime37","LOCALS",3)~ EXTERN ~BHAERDA~ TS179
 END
 
@@ -1280,12 +1280,12 @@ IF ~~ THEN BEGIN 192
 END
 
 IF ~~ THEN BEGIN 193
-  SAY ~If you wish, Haer�Dalis.~
+  SAY ~If you wish, Haer'Dalis.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS182
 END
 
 IF ~~ THEN BEGIN 194
-  SAY ~Bravo, Haer�Dalis. You almost made me believe that you are a whore.~ [SIMEHA07]
+  SAY ~Bravo, Haer'Dalis. You almost made me believe that you are a whore.~ [SIMEHA07]
   IF ~~ THEN EXIT
 END
 
@@ -1305,12 +1305,12 @@ IF ~~ THEN BEGIN 197
 END
 
 IF WEIGHT #-35 ~Global("VP_BSime39","LOCALS",2)~ THEN BEGIN 198
-  SAY ~Yes, Haer�Dalis, you have treated me to a marvelous performance. The song was sweet and your voice even sweeter.~ [SIMEHA09]
+  SAY ~Yes, Haer'Dalis, you have treated me to a marvelous performance. The song was sweet and your voice even sweeter.~ [SIMEHA09]
   IF ~~ THEN DO ~SetGlobal("VP_BSime39","LOCALS",3)~ EXTERN ~BHAERDA~ TS185
 END
 
 IF ~~ THEN BEGIN 199
-  SAY ~I might have. I heard myself singing that�s for sure. But my voice lacks the typical chiming silver bell tone.~
+  SAY ~I might have. I heard myself singing that's for sure. But my voice lacks the typical chiming silver bell tone.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS186
 END
 
@@ -1325,17 +1325,17 @@ IF ~~ THEN BEGIN 201
 END
 
 IF WEIGHT #-34 ~Global("VP_BSime40","LOCALS",2)~ THEN BEGIN 202
-  SAY ~I did not mean to offend you Haer�Dalis. But I prefer to be direct in the matters of heart.~ [SIMEHA11]
+  SAY ~I did not mean to offend you Haer'Dalis. But I prefer to be direct in the matters of heart.~ [SIMEHA11]
   IF ~~ THEN DO ~SetGlobal("VP_BSime40","LOCALS",3)~ EXTERN ~BHAERDA~ TS188
 END
 
 IF ~~ THEN BEGIN 203
-  SAY ~But I am not playing games, Haer�Dalis. I do not fancy you.~
+  SAY ~But I am not playing games, Haer'Dalis. I do not fancy you.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS189
 END
 
 IF ~~ THEN BEGIN 204
-  SAY ~You can breathe, Haer�Dalis, but you should not hope. At the first moment I meet a man I decide if he is to be my lover or not. I do not change my mind.~
+  SAY ~You can breathe, Haer'Dalis, but you should not hope. At the first moment I meet a man I decide if he is to be my lover or not. I do not change my mind.~
   IF ~~ THEN EXTERN ~BHAERDA~ TS190
 END
 
@@ -1345,7 +1345,7 @@ IF ~~ THEN BEGIN 205
 END
 
 IF ~~ THEN BEGIN 206
-  SAY ~Rest assured, your baby-blue hair has nothing to do with my decision. It is about me, not about you, Haer�Dalis.~
+  SAY ~Rest assured, your baby-blue hair has nothing to do with my decision. It is about me, not about you, Haer'Dalis.~
   IF ~~ THEN EXIT
 END
 
@@ -1382,7 +1382,7 @@ IF ~~ THEN BEGIN 212
 END
 
 IF ~~ THEN BEGIN 213
-  SAY ~Yes, Minsc it was very nice. Boo�s, however, was a very non-traditional compliment, fresh and with zest. It would make me wonder about the secret meaning behind it.~
+  SAY ~Yes, Minsc it was very nice. Boo's, however, was a very non-traditional compliment, fresh and with zest. It would make me wonder about the secret meaning behind it.~
   IF ~~ THEN EXTERN ~BMINSC~ TS117
 END
 
@@ -1393,7 +1393,7 @@ END
 
 IF WEIGHT #-31 ~Global("VP_BSime43","LOCALS",2)
 Global("VP_Dyna_Appears","GLOBAL",0)~ THEN BEGIN 215
-  SAY ~Oh, Minsc, I do not know if that�s a good idea. It looks like Boo does not want to leave your shoulder.~ [SIMEMI03]
+  SAY ~Oh, Minsc, I do not know if that's a good idea. It looks like Boo does not want to leave your shoulder.~ [SIMEMI03]
   IF ~~ THEN DO ~SetGlobal("VP_BSime43","LOCALS",3)~ EXTERN ~BMINSC~ TS118
 END
 
@@ -1409,8 +1409,8 @@ IF WEIGHT #-21 ~Global("VP_BSime43","LOCALS",3)
 Global("VP_Dyna_Appears","GLOBAL",1)~ THEN BEGIN 268
   SAY ~Who is this black woman? What is going on here?~
   IF ~~ THEN REPLY ~Dynaheir? DYNAHEIR! Please, wake up!~ GOTO 269
-  IF ~~ THEN REPLY ~It is Dynaheir, a witch Minsc was guarding before she was killed. This seems to be some sort of vile joke from Jon Irenicus� depraved mind. It appears that Boo is now an enchanted animal that keeps Minsc in his true form. Here, I got Boo, please put him on her, we shall see if she turns back into Minsc.~ GOTO 270
-  IF ~~ THEN REPLY ~I have no idea who this woman is. Let�s wait until she wakes up.~ GOTO 269
+  IF ~~ THEN REPLY ~It is Dynaheir, a witch Minsc was guarding before she was killed. This seems to be some sort of vile joke from Jon Irenicus' depraved mind. It appears that Boo is now an enchanted animal that keeps Minsc in his true form. Here, I got Boo, please put him on her, we shall see if she turns back into Minsc.~ GOTO 270
+  IF ~~ THEN REPLY ~I have no idea who this woman is. Let's wait until she wakes up.~ GOTO 269
 END
 
 IF ~~ THEN BEGIN 269
@@ -1704,14 +1704,14 @@ END
 
 IF WEIGHT #-99 ~Global("LoveTalk","LOCALS",2)
 Gender(Player1,MALE)~ THEN BEGIN 275
-  SAY ~I know who you are, m�<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal�s child or it was a mishap?~ [SIME1_1]
+  SAY ~I know who you are, m'<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal's child or it was a mishap?~ [SIME1_1]
   IF ~~ THEN REPLY ~I do not know, Sime. After I defeated Sarevok, my heritage became common knowledge. The rumours in this land spread faster than wildfire. I wonder sometimes what do they pay messengers for?~ GOTO 276
-  IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion�s ward mantle for longer, but it was stripped away from me. By the way, Sime, if you�d stop calling me "m�<PRO_LADYLORD>" that might greatly improve the intimacy of our friendship.~ GOTO 281
+  IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion's ward mantle for longer, but it was stripped away from me. By the way, Sime, if you'd stop calling me "m'<PRO_LADYLORD>" that might greatly improve the intimacy of our friendship.~ GOTO 281
   IF ~~ THEN REPLY ~Of course that was my intention! Would you be a demigod, would you hide it?~ GOTO 285
 END
 
 IF ~~ THEN BEGIN 276
-  SAY ~(*Laughs*) For staying in the inns and getting drunk, while the good folk do their jobs, m�<PRO_LADYLORD>. Indeed, the gossip travels faster than a bird flies and I fail to understand how. May be it is magic?~
+  SAY ~(*Laughs*) For staying in the inns and getting drunk, while the good folk do their jobs, m'<PRO_LADYLORD>. Indeed, the gossip travels faster than a bird flies and I fail to understand how. May be it is magic?~
   IF ~Gender(Player1,MALE)~ THEN REPLY ~Scrying devices you mean? I am afraid that even as we speak some wizened man has nothing better to do than to pry on me.~ GOTO 277
   IF ~Gender(Player1,MALE)~ THEN REPLY ~Magic or not it is annoying as Nine Hells!~ GOTO 277
   IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Scrying devices you mean? I am afraid that even as we speak some wizened man has nothing better to do than to pry on me.~ GOTO 588
@@ -1720,11 +1720,11 @@ IF ~~ THEN BEGIN 276
 END
 
 IF ~~ THEN BEGIN 277
-  SAY ~You think so? (*laughs*) Then let�s give them something to look at my <PRO_LADYLORD>!
+  SAY ~You think so? (*laughs*) Then let's give them something to look at my <PRO_LADYLORD>!
 
 (*Before you can answer, Sime gives you a deep, long kiss*).~ [SIME1_2]
-  IF ~~ THEN REPLY ~There could be more than one wizard watching, caring soul. Care to repeat the performance to keep them all interested? By the way, Sime, do stop calling me "m�<PRO_LADYLORD>" already! <CHARNAME> will do.~ GOTO 278
-  IF ~~ THEN REPLY ~Awww... Good, but not enough. We shall give it another try one day. That�s if you would drop that "m�<PRO_LADYLORD>" when talking to me. <CHARNAME> will do.~ GOTO 278
+  IF ~~ THEN REPLY ~There could be more than one wizard watching, caring soul. Care to repeat the performance to keep them all interested? By the way, Sime, do stop calling me "m'<PRO_LADYLORD>" already! <CHARNAME> will do.~ GOTO 278
+  IF ~~ THEN REPLY ~Awww... Good, but not enough. We shall give it another try one day. That's if you would drop that "m'<PRO_LADYLORD>" when talking to me. <CHARNAME> will do.~ GOTO 278
   IF ~~ THEN REPLY ~<CHARNAME>, just <CHARNAME>. But for the gods sake, woman, control yourself!~ GOTO 279
   IF ~~ THEN REPLY ~Sime, I assume that was a joke. But I will not let you off so easily next time. One more escapade like that - and you are out of this group!~ GOTO 280
 END
@@ -1752,7 +1752,7 @@ END
 
 IF ~~ THEN BEGIN 281
   SAY ~Then I shall call you by your name. <CHARNAME>... I like the sound of it. So, <CHARNAME> you would prefer to be incognito?~
-  IF ~~ THEN REPLY ~Yes, Sime. Way too often people expect a heroic feat or a mad <PRO_MANWOMAN>man�s act or who knows what else of me, just because I am a Bhaalspawn.~ GOTO 282
+  IF ~~ THEN REPLY ~Yes, Sime. Way too often people expect a heroic feat or a mad <PRO_MANWOMAN>man's act or who knows what else of me, just because I am a Bhaalspawn.~ GOTO 282
   IF ~~ THEN REPLY ~I guess. But really, it is none of your business.~ GOTO 283
   IF ~~ THEN REPLY ~It is not that bad actually. Half of the people run away from me, another half want me to do something, and all that based on the same fact: "because you are a Bhaalspawn". I guess it is funny in a way.~ GOTO 284
 END
@@ -1779,10 +1779,10 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 285
-  SAY ~I do not know. I am a half-elf, half-human and I�ve never hid any part of my heritage, like some half-bloods do. May be if I was a demigod, I would not keep it a secret either.~
+  SAY ~I do not know. I am a half-elf, half-human and I've never hid any part of my heritage, like some half-bloods do. May be if I was a demigod, I would not keep it a secret either.~
   IF ~~ THEN REPLY ~My point exactly. I cannot change who I am and I am not ashamed of my heritage. After all it was my mother, who had peculiar taste in men, not I. And Sime, do call me <CHARNAME>. "My <PRO_LADYLORD>" unnerves me.~ GOTO 286
-  IF ~~ THEN REPLY ~Sime, let�s not make a big deal out of it.~ GOTO 287
-  IF ~~ THEN REPLY ~I would not wish anyone to face the choices I face. I cope, Sime, but it is not easy to carry the burden of my accursed heritage. The crowd�s fascination does not help things. Half of the people run away from me, another half want me to do something, and all that based on the same fact: "because you are a Bhaalspawn". Pray Sime, pray hard every night NOT to wake up next morn a demigod and a famous persona in the Realms as it happened to me.~ GOTO 288
+  IF ~~ THEN REPLY ~Sime, let's not make a big deal out of it.~ GOTO 287
+  IF ~~ THEN REPLY ~I would not wish anyone to face the choices I face. I cope, Sime, but it is not easy to carry the burden of my accursed heritage. The crowd's fascination does not help things. Half of the people run away from me, another half want me to do something, and all that based on the same fact: "because you are a Bhaalspawn". Pray Sime, pray hard every night NOT to wake up next morn a demigod and a famous persona in the Realms as it happened to me.~ GOTO 288
 END
 
 IF ~~ THEN BEGIN 286
@@ -1800,7 +1800,7 @@ SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 288
-  SAY ~(*Laughs*) Your warning is belated, m�<PRO_LADYLORD>. I am now Sime Linvail, the one who travels in the company of Bhaalspawn! ~
+  SAY ~(*Laughs*) Your warning is belated, m'<PRO_LADYLORD>. I am now Sime Linvail, the one who travels in the company of Bhaalspawn! ~
   IF ~~ THEN REPLY ~Sime, I really do not have time for a small talk.~ GOTO 289
   IF ~~ THEN REPLY ~But I warned you! And Sime, do call me <CHARNAME>. "My <PRO_LADYLORD>" unnerves me.~ GOTO 290
   IF ~~ THEN REPLY ~What have I done! I doomed you! And since we have such an intimate connection as a common curse, would you consider calling me <CHARNAME>?~ GOTO 291
@@ -1829,18 +1829,18 @@ END
 
 IF WEIGHT #-98 ~Global("LoveTalk","LOCALS",2)
 Gender(Player1,FEMALE)~ THEN BEGIN 587
-  SAY ~I know who you are, m�<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal�s child or it was a mishap?~
+  SAY ~I know who you are, m'<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal's child or it was a mishap?~
   IF ~~ THEN REPLY ~I do not know, Sime. After I defeated Sarevok, my heritage became common knowledge. The rumours in this land spread faster than wildfire. I wonder sometimes what do they pay messengers for?~ GOTO 276
-  IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion�s ward mantle for longer, but it was stripped away from me. By the way, Sime, if you�d stop calling me "milord" that might greatly improve the intimacy of our friendship.~ GOTO 281
+  IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion's ward mantle for longer, but it was stripped away from me. By the way, Sime, if you'd stop calling me "milord" that might greatly improve the intimacy of our friendship.~ GOTO 281
   IF ~~ THEN REPLY ~Of course that was my intention! Would you be a demigod, would you hide it?~ GOTO 285
 END
 
 IF ~~ THEN BEGIN 588
-  SAY ~You think so? (*laughs*) Then let�s give them something to look at my <PRO_LADYLORD>!
+  SAY ~You think so? (*laughs*) Then let's give them something to look at my <PRO_LADYLORD>!
 
 (*Before you can answer, Sime gives you a deep, long kiss*).~
-  IF ~~ THEN REPLY ~There could be more than one wizard watching, caring soul. Care to repeat the performance to keep them all interested? By the way, Sime, do stop calling me "m�<PRO_LADYLORD>" already! <CHARNAME> will do.~ GOTO 278
-  IF ~~ THEN REPLY ~Awww... Good, but not enough. We shall give it another try one day. That�s if you would drop that "m�<PRO_LADYLORD>" when talking to me. <CHARNAME> will do.~ GOTO 278
+  IF ~~ THEN REPLY ~There could be more than one wizard watching, caring soul. Care to repeat the performance to keep them all interested? By the way, Sime, do stop calling me "m'<PRO_LADYLORD>" already! <CHARNAME> will do.~ GOTO 278
+  IF ~~ THEN REPLY ~Awww... Good, but not enough. We shall give it another try one day. That's if you would drop that "m'<PRO_LADYLORD>" when talking to me. <CHARNAME> will do.~ GOTO 278
   IF ~~ THEN REPLY ~<CHARNAME>, just <CHARNAME>. But for the gods sake, woman, control yourself!~ GOTO 279
   IF ~~ THEN REPLY ~Sime, I assume that was a joke. But I will not let you off so easily next time. One more escapade like that - and you are out of this group!~ GOTO 280
 END
@@ -1862,7 +1862,7 @@ IF ~~ THEN BEGIN 293
   IF ~~ THEN REPLY ~No, Sime, no sleeping draught will get rid of my dreams. Ever since Gorion died and I was forced to fight for my dear life I have had those visions. I am used to nightmares by now, do not worry.~ GOTO 294
   IF ~~ THEN REPLY ~Thank you for the thought, but no, I do not need a potion. I will cope.~ GOTO 294
   IF ~~ THEN REPLY ~I know you mean well, but I do not require any help. The nightmares are painful, but they bring me power once in a while.~ GOTO 295
-  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden�s lips for a potion?~ GOTO 296
+  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden's lips for a potion?~ GOTO 296
 END
 
 IF ~~ THEN BEGIN 294
@@ -1894,7 +1894,7 @@ IF ~~ THEN BEGIN 297
   IF ~~ THEN REPLY ~No, Sime, a sleeping draught will not save me from my dreams.~ GOTO 294
   IF ~~ THEN REPLY ~Thank you for the thought, but no, I do not need a potion. I will cope.~ GOTO 294
   IF ~~ THEN REPLY ~I know you mean well, but I do not require any help. The nightmares are painful, but they bring me power once in a while.~ GOTO 295
-  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden�s lips for a potion?~ GOTO 296
+  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden's lips for a potion?~ GOTO 296
 END
 
 IF ~~ THEN BEGIN 298
@@ -1911,7 +1911,7 @@ IF ~~ THEN BEGIN 299
   IF ~~ THEN REPLY ~Thank you for the thought, but no, I do not need a potion. I will cope.~ GOTO 294
   IF ~~ THEN REPLY ~I know you mean well, but I do not require any help. The nightmares are painful, but they bring me power once in a while.~ GOTO 295
   IF ~~ THEN REPLY ~I said: I do not want to discuss my private life with you.~ GOTO 300
-  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden�s lips for a potion?~ GOTO 296
+  IF ~~ THEN REPLY ~Sleeping draught? How about a taste of sweet maiden's lips for a potion?~ GOTO 296
 END
 
 IF ~~ THEN BEGIN 300
@@ -1932,7 +1932,7 @@ END
 IF ~~ THEN BEGIN 302
   SAY ~I will oblige your curiosity. I ran away from the safe home where Aran placed me to when I was young. I wanted no less than to become a famous bard. The grand plan was to collect the folk songs of the Barbarians of the Icewind Dale. I reasoned that I could sustain myself by singing and dancing as I will be making my way up North.~
   IF ~~ THEN REPLY ~Sounds like a daring enterprise. And I agree, an unwise one. Was your expedition somehow related to Aran?~ GOTO 303
-  IF ~~ THEN REPLY ~But that�s a brilliant idea! I have never heard Barbarian sagas in the South. Why did not you go through with your plan?~ GOTO 308
+  IF ~~ THEN REPLY ~But that's a brilliant idea! I have never heard Barbarian sagas in the South. Why did not you go through with your plan?~ GOTO 308
   IF ~~ THEN REPLY ~I am convinced, Sime. That was a rather silly escapade.~ GOTO 309
 END
 
@@ -1958,7 +1958,7 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 306
-  SAY ~Do not you try to be smart with me! You know well enough that my father�s talents are of different sort than needed for the Arcane Arts devotee. You need not remind me of his true calling.~
+  SAY ~Do not you try to be smart with me! You know well enough that my father's talents are of different sort than needed for the Arcane Arts devotee. You need not remind me of his true calling.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
@@ -1984,22 +1984,22 @@ IF ~~ THEN BEGIN 309
 END
 
 IF ~~ THEN BEGIN 310
-  SAY ~I think that talking to a wooden statue is a better than talking to you! At least it is silent. You ARE Bhaal�s blood, cold and unfeeling, I know now.~
+  SAY ~I think that talking to a wooden statue is a better than talking to you! At least it is silent. You ARE Bhaal's blood, cold and unfeeling, I know now.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF WEIGHT #-95 ~Global("LoveTalk","LOCALS",8)~ THEN BEGIN 311
-  SAY ~Since we talked last time, I started thinking of Darriel often. You even remind me of him. May be not in looks but in the way you�re talking so surely, fight with such valour and you both know mercy and have talent to understand others.~ [SIME4_1]
+  SAY ~Since we talked last time, I started thinking of Darriel often. You even remind me of him. May be not in looks but in the way you're talking so surely, fight with such valour and you both know mercy and have talent to understand others.~ [SIME4_1]
   IF ~~ THEN REPLY ~Your words are pleasant enough, Sime, but I feel ill at ease when you compare me to your dead lover.~ GOTO 312
   IF ~~ THEN REPLY ~I gather that Darriel commanded your respect and admiration. (*aside*) Makes me wonder what else he won.~ GOTO 312
   IF ~~ THEN REPLY ~Woman quit your whining. I am not your Darriel reborn from the dead.~ GOTO 319
-  IF ~~ THEN REPLY ~There is none like me, Sime. I am Bhaal�s heir and you ought to sense my greatness far surpassing anything a mere mortal can master. Do not dare to compare me with some snooty Elf, wench!~ GOTO 320
+  IF ~~ THEN REPLY ~There is none like me, Sime. I am Bhaal's heir and you ought to sense my greatness far surpassing anything a mere mortal can master. Do not dare to compare me with some snooty Elf, wench!~ GOTO 320
 END
 
 IF ~~ THEN BEGIN 312
-  SAY ~Strange, I am almost sure that I can hear jealousy in your voice. Everything Darriel was to me. He was a biter foe when he carried me away and I thought he was my father�s hireling. He was a chance comrade and an imprisoned, when I wanted nothing but to escape. He became a friend and a mentor when I discovered the true calling of my heart. But he was never my lover.~ [SIME4_2]
+  SAY ~Strange, I am almost sure that I can hear jealousy in your voice. Everything Darriel was to me. He was a biter foe when he carried me away and I thought he was my father's hireling. He was a chance comrade and an imprisoned, when I wanted nothing but to escape. He became a friend and a mentor when I discovered the true calling of my heart. But he was never my lover.~ [SIME4_2]
   IF ~~ THEN REPLY ~Do not reply if you do not want to, but I cannot help but ask why? Another woman? Too much ranging to do, no time for gentle talk? His romantic interests lay elsewhere?~ GOTO 313
   IF ~~ THEN REPLY ~Oh.~ GOTO 317
   IF ~~ THEN REPLY ~I am sorry if I have unintentionally stirred painful memories.~ GOTO 318
@@ -2010,25 +2010,25 @@ IF ~~ THEN BEGIN 313
   SAY ~I think that such curiosity befits a cat or a bored woman, rather than a <PRO_MANWOMAN> grown. But to answer your question, I guess I am a coward of a sort and I was scared of the love and trust I had in him, so I pushed him away. However, was not it for the best? I miss my friend badly, how much worse would it hurt was he my lover?~
   IF ~~ THEN REPLY ~No worse I think. You will call to your lost friends in your dreams, and you will be tricked for a moment and extend your hands and wake up only to the empty room, the locked doors and the bitter taste of loss.~ GOTO 314
   IF ~~ THEN REPLY ~I did not think that you were one to be afraid to love. Even if it hurts sometimes.~ GOTO 315
-  IF ~~ THEN REPLY ~I grow bored, Sime. Let�s get going.~ GOTO 316
+  IF ~~ THEN REPLY ~I grow bored, Sime. Let's get going.~ GOTO 316
 END
 
 IF ~~ THEN BEGIN 314
-  SAY ~Of course, you are right. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That�s why not Darriel.~
+  SAY ~Of course, you are right. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 315
-  SAY ~I am not afraid to fall in love <CHARNAME> and I loved many. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That�s why not Darriel.~
+  SAY ~I am not afraid to fall in love <CHARNAME> and I loved many. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 316
-  SAY ~As you wish. I can see that you have little interest in me, so I�ll spare you from now on.~
+  SAY ~As you wish. I can see that you have little interest in me, so I'll spare you from now on.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
@@ -2038,18 +2038,18 @@ IF ~~ THEN BEGIN 317
   SAY ~I guess I am a coward of a sort and I was scared have the love and trust I had in him, so I pushed him away. However was not it for the best? I miss my friend badly, how much worse would it hurt was he my lover?~
   IF ~~ THEN REPLY ~No worse I think. You will call to your lost friends in your dreams, and you will be tricked for a moment and extend your hands and wake up only to the empty room, the locked doors and the bitter taste of loss.~ GOTO 314
   IF ~~ THEN REPLY ~I did not think that you were one to be afraid to love. Even if it hurts sometimes.~ GOTO 315
-  IF ~~ THEN REPLY ~I grow bored, Sime. Let�s get going.~ GOTO 316
+  IF ~~ THEN REPLY ~I grow bored, Sime. Let's get going.~ GOTO 316
 END
 
 IF ~~ THEN BEGIN 318
-  SAY ~No, I am actually grateful to you. It feels easier somehow after I said it. No man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That�s why not Darriel.~
+  SAY ~No, I am actually grateful to you. It feels easier somehow after I said it. No man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 319
-  SAY ~No, you are not. Strange, I am almost sure that I can hear jealousy in your voice. Everything Darriel was to me. He was a biter foe when he carried me away and I thought he was my father�s hireling. He was a chance comrade and an imprisoned, when I wanted nothing but to escape. He became a friend and mentor while I discovered the true calling of my heart. But he was never my lover.~
+  SAY ~No, you are not. Strange, I am almost sure that I can hear jealousy in your voice. Everything Darriel was to me. He was a biter foe when he carried me away and I thought he was my father's hireling. He was a chance comrade and an imprisoned, when I wanted nothing but to escape. He became a friend and mentor while I discovered the true calling of my heart. But he was never my lover.~
   IF ~~ THEN REPLY ~Do not reply if you do not want to, but I cannot help but ask why? Another woman? Too much ranging to do, no time for gentle talk? His romantic interests lay elsewhere?~ GOTO 313
   IF ~~ THEN REPLY ~Oh.~ GOTO 317
   IF ~~ THEN REPLY ~I am sorry if I have unintentionally stirred painful memories.~ GOTO 318
@@ -2057,7 +2057,7 @@ IF ~~ THEN BEGIN 319
 END
 
 IF ~~ THEN BEGIN 320
-  SAY ~May be the god�s part of your soul is well fitting what Bhaal had hoped for, but I find that the mortal part of your soul is wanting.~
+  SAY ~May be the god's part of your soul is well fitting what Bhaal had hoped for, but I find that the mortal part of your soul is wanting.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
 SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
@@ -2068,7 +2068,7 @@ IF WEIGHT #-94 ~Global("LoveTalk","LOCALS",10)~ THEN BEGIN 321
   IF ~Gender(Player1,MALE)~ THEN REPLY ~Sime, I met your father once, I cannot judge his actions. But why should he protest? Do I strike you as a man whom you cannot trust to travel in a company of maidens?~ GOTO 322
   IF ~Class(Player1,PALADIN_ALL)~ THEN REPLY ~Sime, there is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 323
   IF ~~ THEN REPLY ~He did not protest your earlier departures, did he?~ GOTO 331
-  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi�s offer.~ GOTO 327
+  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
   IF ~Class(Player1,RANGER_ALL)~ THEN REPLY ~Sime, there is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 328
   IF ~!Class(Player1,RANGER_ALL)
@@ -2078,7 +2078,7 @@ END
 IF ~~ THEN BEGIN 322
   SAY ~No, <CHARNAME>, you are a decent sort and no maiden would feel endangered in your company. You are even pleasant to look upon and sound like a reasonable man. Still, my father always argued against my ranging.~
   IF ~Class(Player1,PALADIN)~ THEN REPLY ~You think that I am a good-looking fellow, flatterer? I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 323
-  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi�s offer.~ GOTO 327
+  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
   IF ~Class(Player1,RANGER)~ THEN REPLY ~You think that I am a good-looking fellow, flatterer? I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 328
   IF ~!Class(Player1,RANGER)
@@ -2087,9 +2087,9 @@ END
 
 IF ~~ THEN BEGIN 323
   SAY ~My chivalrous warrior, bold and pure, I am sure that he took it into account. Nowhere I am safer than with you and your valorous friends. Still, my father always argued against my ranging.~
-  IF ~~ THEN REPLY ~You worry yourself needlessly, my Lady. Now, let�s continue on.~ GOTO 324
-  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran�s actions, calm yourself. We shall avoid any trap he might be setting.~ GOTO 325
-  IF ~~ THEN REPLY ~You are a member of my brave party, Sime, and in my heart I place you among my most cherished friends.  Together we shall strike for righteousness! Stay close to me and worry not about Aran�s plots.~ GOTO 326
+  IF ~~ THEN REPLY ~You worry yourself needlessly, my Lady. Now, let's continue on.~ GOTO 324
+  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran's actions, calm yourself. We shall avoid any trap he might be setting.~ GOTO 325
+  IF ~~ THEN REPLY ~You are a member of my brave party, Sime, and in my heart I place you among my most cherished friends.  Together we shall strike for righteousness! Stay close to me and worry not about Aran's plots.~ GOTO 326
 END
 
 IF ~~ THEN BEGIN 324
@@ -2124,16 +2124,16 @@ END
 
 IF ~~ THEN BEGIN 328
   SAY ~My noble <PRO_BROTHERSISTER>, I am sure that he took it into account. I am among valiant friends when I travel with you. Still, my father always argued against my ranging.~
-  IF ~~ THEN REPLY ~You worry yourself needlessly, Sime. Now, let�s continue on.~ GOTO 324
-  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran�s actions, calm yourself. We shall avoid any trap he might be setting. Besides, I do not think Aran will use his own daughter as a tool in his games.~ GOTO 325
-  IF ~~ THEN REPLY ~Sime, whatever it is, you and I will be able to deal with it in time. I trust you and I know you to be my kindred spirit and a valorous warrior. May be Aran had finally seen that you can take care of yourself and others and that�s why he did not argue? Stay close to me, my friend and worry not about Aran�s plots.~ GOTO 326
+  IF ~~ THEN REPLY ~You worry yourself needlessly, Sime. Now, let's continue on.~ GOTO 324
+  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran's actions, calm yourself. We shall avoid any trap he might be setting. Besides, I do not think Aran will use his own daughter as a tool in his games.~ GOTO 325
+  IF ~~ THEN REPLY ~Sime, whatever it is, you and I will be able to deal with it in time. I trust you and I know you to be my kindred spirit and a valorous warrior. May be Aran had finally seen that you can take care of yourself and others and that's why he did not argue? Stay close to me, my friend and worry not about Aran's plots.~ GOTO 326
 END
 
 IF ~~ THEN BEGIN 329
   SAY ~<CHARNAME>, I am sure that he took it into account. I am among valiant friends when I travel with you. Still, my father always argued against my ranging.~
-  IF ~~ THEN REPLY ~You worry yourself needlessly, Sime. Now, let�s continue on.~ GOTO 324
-  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran�s actions, calm yourself. We shall avoid any trap he might be setting. Besides, I do not think Aran will use his own daughter as a tool in his games.~ GOTO 325
-  IF ~~ THEN REPLY ~You are one of my friends, Sime. I know you for a valorous warrior. May be Aran had finally seen that you can take care of yourself and others and that�s why he did not argue? In any case, stay close to me, Sime, and worry not about Aran�s plots.~ GOTO 326
+  IF ~~ THEN REPLY ~You worry yourself needlessly, Sime. Now, let's continue on.~ GOTO 324
+  IF ~~ THEN REPLY ~Even if there is some dark design behind Aran's actions, calm yourself. We shall avoid any trap he might be setting. Besides, I do not think Aran will use his own daughter as a tool in his games.~ GOTO 325
+  IF ~~ THEN REPLY ~You are one of my friends, Sime. I know you for a valorous warrior. May be Aran had finally seen that you can take care of yourself and others and that's why he did not argue? In any case, stay close to me, Sime, and worry not about Aran's plots.~ GOTO 326
 END
 
 IF ~~ THEN BEGIN 330
@@ -2154,7 +2154,7 @@ IF ~~ THEN BEGIN 331
   IF ~Class(Player1,RANGER)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side? ~ GOTO 328
   IF ~!Class(Player1,RANGER)
 !Class(Player1,PALADIN)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
-  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi�s offer.~ GOTO 327
+  IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
 END
 
@@ -2171,7 +2171,7 @@ END
 IF ~~ THEN BEGIN 333
   SAY ~Northern wind hairdo - the style I prefer to any else.~
   IF ~~ THEN REPLY ~I like your style, Sime. I always wanted to meet a woman who looks lovely without an effort.~ GOTO 334
-  IF ~~ THEN REPLY ~Now if you would only cut your hair, make some of those little curls whatever they call them, and put some make up on, then I�d say you improved your appearance. Letting the wind to make a mess of your hair will not do anything for your looks.~ GOTO 339
+  IF ~~ THEN REPLY ~Now if you would only cut your hair, make some of those little curls whatever they call them, and put some make up on, then I'd say you improved your appearance. Letting the wind to make a mess of your hair will not do anything for your looks.~ GOTO 339
   IF ~~ THEN REPLY ~Why do I get a disturbing feeling that the next thing you will ask me will be if you look fat in your armor?~ GOTO 340
 END
 
@@ -2227,8 +2227,8 @@ END
 
 IF ~~ THEN BEGIN 341
   SAY ~(*Laughs*) I noticed that you were watching me and I fished for a compliment from you, silly.~
-  IF ~~ THEN REPLY ~Oh, a compliment? The Lady�s desire will be granted then. I like your style, Sime. I always wanted to meet a woman who looks lovely without an effort.~ GOTO 334
-  IF ~~ THEN REPLY ~Now if you would only cut your hair, make some of those little curls whatever they call them, and put some make up on, then I�d say you improved your appearance. Letting the wind to make a mess of your hair will not do anything for your looks.~ GOTO 339
+  IF ~~ THEN REPLY ~Oh, a compliment? The Lady's desire will be granted then. I like your style, Sime. I always wanted to meet a woman who looks lovely without an effort.~ GOTO 334
+  IF ~~ THEN REPLY ~Now if you would only cut your hair, make some of those little curls whatever they call them, and put some make up on, then I'd say you improved your appearance. Letting the wind to make a mess of your hair will not do anything for your looks.~ GOTO 339
   IF ~~ THEN REPLY ~Why do I get a disturbing feeling that the next thing you will ask me will be if you look fat in your armor?~ GOTO 340
   IF ~OR(3)
 Class(Player1,FIGHTER)
@@ -2238,20 +2238,20 @@ END
 
 IF WEIGHT #-92 ~Global("LoveTalk","LOCALS",14)~ THEN BEGIN 342
   SAY ~It is a pleasing thing to get some rest at last. The day was long and the battles were many, but it is done, the fire is warm, and no danger is near. Come, sit by me and I shall sooth your hurts and heal your wounds.~
-  IF ~~ THEN REPLY ~I feel quite well, Sime. The day�s work is done, but did not we decide to exercise in courtly speech? Shall I start my lesson now?~ GOTO 343
+  IF ~~ THEN REPLY ~I feel quite well, Sime. The day's work is done, but did not we decide to exercise in courtly speech? Shall I start my lesson now?~ GOTO 343
   IF ~~ THEN REPLY ~My wounds are all healed, Sime... do you know what I appreciate about a fire the most... It is the way it softens features and makes our hearts gentler. About our lesson in gallant talk my Lady - is there a better time for it?~ GOTO 343
-  IF ~~ THEN REPLY ~Sime, all I need is a good night�s sleep. Just leave me where I am.~ GOTO 354
+  IF ~~ THEN REPLY ~Sime, all I need is a good night's sleep. Just leave me where I am.~ GOTO 354
 END
 
 IF ~~ THEN BEGIN 343
   SAY ~There will never be better time. So lead the way, <CHARNAME>.~
-  IF ~~ THEN REPLY ~To prove to my Lady that I am skilled in gentle matters I shall sing a song of love and let�s see if the Lady can continue. Will you play this little game with me, Sime?~ GOTO 345
+  IF ~~ THEN REPLY ~To prove to my Lady that I am skilled in gentle matters I shall sing a song of love and let's see if the Lady can continue. Will you play this little game with me, Sime?~ GOTO 345
   IF ~Gender(Player1,FEMALE)~ THEN REPLY ~On the second thought it is too taxing. I mean to talk and whatever. Can I just kiss you and buy you a dozen of crimson rodelias if we happen to pass by a flower shop?~ GOTO 344
   IF ~Gender(Player1,MALE)~ THEN REPLY ~On the second thought it is too taxing. I mean to talk and whatever. Can I just kiss your hand and buy you a dozen of crimson rodelias if we happen to pass by a flower shop?~ GOTO 344
   IF ~OR(3)
 Class(Player1,FIGHTER)
 Class(Player1,PALADIN)
-Class(Player1,RANGER)~ THEN REPLY ~I am an old soldier and I rarely speak the words of love, but I shall sing a song about it and let�s see if you can continue. Will you play this little game with me, Sime?~ GOTO 345
+Class(Player1,RANGER)~ THEN REPLY ~I am an old soldier and I rarely speak the words of love, but I shall sing a song about it and let's see if you can continue. Will you play this little game with me, Sime?~ GOTO 345
 END
 
 IF ~~ THEN BEGIN 344
@@ -2279,7 +2279,7 @@ END
 IF ~~ THEN BEGIN 346
   SAY ~Nothing in the world is single,
 All things by a law divine
-In one another�s being mingle-
+In one another's being mingle-
 Why not I with thine?
 
 What a lovely song. What will you try next?~
@@ -2293,7 +2293,7 @@ Her lips are rubies sweet as sin.~ GOTO 348
 END
 
 IF ~~ THEN BEGIN 347
-  SAY ~I�ll always be true,
+  SAY ~I'll always be true,
 So please, love me do!
 
 What a lovely song. What will you try next?~
@@ -2310,7 +2310,7 @@ IF ~~ THEN BEGIN 348
 
 To you alone I shall tell
 That Lady wears silver bell,
-You won�t see it when she passes
+You won't see it when she passes
 But you will hear when she laughs.~ GOTO 349
   IF ~~ THEN REPLY ~I guess you lost then, Sime. Do I get a prize?~ GOTO 350
   IF ~~ THEN REPLY ~Never mind, I think I am too tired to continue the game.~ GOTO 351
@@ -2346,7 +2346,7 @@ RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 352
-  SAY ~I�ll always be true,
+  SAY ~I'll always be true,
 So please, love me do!
 
 What a lovely song. What will you try next?~
@@ -2364,7 +2364,7 @@ END
 IF ~~ THEN BEGIN 353
   SAY ~Nothing in the world is single,
 All things by a law divine
-In one another�s being mingle-
+In one another's being mingle-
 Why not I with thine?
 
 What a lovely song. What will you try next?~
@@ -2407,7 +2407,7 @@ END
 
 IF ~~ THEN BEGIN 358
   SAY ~I have no such place. I envy the feeling you have for Candlekeep. Do you think I might visit one day with you there?~
-  IF ~~ THEN REPLY ~You would not like Candlekeep, Sime. It�s full of old scholars and the life centers around the library...~ GOTO 359
+  IF ~~ THEN REPLY ~You would not like Candlekeep, Sime. It's full of old scholars and the life centers around the library...~ GOTO 359
   IF ~~ THEN REPLY ~Why not? But it is difficult to gain an entry. You have to pay 10,000 gold pieces or carry a book of particular value. It is really a strange rule, but it is effective in keeping almost everyone out and in expanding the library.~ GOTO 360
 END
 
@@ -2420,7 +2420,7 @@ RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 360
-  SAY ~If you�d live there maybe you can help me to get over the city wall or something. I do not own much.~
+  SAY ~If you'd live there maybe you can help me to get over the city wall or something. I do not own much.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -2428,11 +2428,11 @@ RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 361
-  SAY ~I am not sure. I avoid interfering with the business of gods, yet I would not like the taint to change you into a merciless killing machine. I�ve become a ranger against my father�s will. It must be a much harder battle for you.~
+  SAY ~I am not sure. I avoid interfering with the business of gods, yet I would not like the taint to change you into a merciless killing machine. I've become a ranger against my father's will. It must be a much harder battle for you.~
   IF ~!Alignment(Player1,CHAOTIC_EVIL)
 !Alignment(Player1,LAWFUL_EVIL)
 !Alignment(Player1,NEUTRAL_EVIL)~ THEN REPLY ~I fear it myself Sime and I watch my heart carefully. I will not let Bhaal take over. ~ GOTO 362
-  IF ~~ THEN REPLY ~What�s your problem, ranger? I am Bhaal�s spawn and I am not as shy of the callings of my blood.~ GOTO 363
+  IF ~~ THEN REPLY ~What's your problem, ranger? I am Bhaal's spawn and I am not as shy of the callings of my blood.~ GOTO 363
   IF ~~ THEN REPLY ~You are being too grim. I do not notice any evil influences in me. Surely men point their fingers and call me names, and maniacs like Irenicus hunt me, and I have nightmares sometimes... Oops, I guess there is something evil around me, but I shall be all right.~ GOTO 364
 END
 
@@ -2481,14 +2481,14 @@ IF ~~ THEN BEGIN 367
   SAY ~I know that, <CHARNAME>. But I fear for you sometimes.~
   IF ~~ THEN REPLY ~Do you fear for me or do you fear of me?~ GOTO 368
   IF ~~ THEN REPLY ~Do not fear for me, Sime. I am not tormented, I am not cursed! I am who I am, a child of Bhaal, and I am ready to face my destiny. I do not need your prayers or your pity!~ GOTO 371
-  IF ~~ THEN REPLY ~You know, that�s getting too weird. Let me say you a "good night" and let�s forget the whole thing.~ GOTO 370
+  IF ~~ THEN REPLY ~You know, that's getting too weird. Let me say you a "good night" and let's forget the whole thing.~ GOTO 370
 END
 
 IF ~~ THEN BEGIN 368
   SAY ~I never feared you.~
   IF ~~ THEN REPLY ~Some will say you should.~ GOTO 369
   IF ~~ THEN REPLY ~I am glad to hear that, Sime. It is pleasant for a change. With all those rumors floating around Athkatla, I guess that I am mentioned more often in a curse than in a prayer.~ GOTO 369
-  IF ~~ THEN REPLY ~You know, that�s getting too weird. Let me say you a "good night" and let�s forget the whole thing.~ GOTO 370
+  IF ~~ THEN REPLY ~You know, that's getting too weird. Let me say you a "good night" and let's forget the whole thing.~ GOTO 370
 END
 
 IF ~~ THEN BEGIN 369
@@ -2519,21 +2519,21 @@ IF ~~ THEN BEGIN 372
   SAY ~I do care for you, <CHARNAME>. And I fear for you sometimes.~
   IF ~~ THEN REPLY ~Do you fear for me or do you fear of me?~ GOTO 368
   IF ~~ THEN REPLY ~Do not fear for me, Sime. I am not tormented, I am not cursed! I am who I am, a child of Bhaal, and I am ready to face my destiny. I do not need your prayers or your pity!~ GOTO 371
-  IF ~~ THEN REPLY ~You know, that�s getting too weird. Let me say you a "good night" and let�s forget the whole thing.~ GOTO 370
+  IF ~~ THEN REPLY ~You know, that's getting too weird. Let me say you a "good night" and let's forget the whole thing.~ GOTO 370
 END
 
 IF ~~ THEN BEGIN 373
   SAY ~<CHARNAME>, do not thank me. I did nothing out of the ordinary. I am a priest and it is my duty to pray for those I care for and I fear for.~
   IF ~~ THEN REPLY ~Do you fear for me or do you fear of me?~ GOTO 368
   IF ~~ THEN REPLY ~Do not fear for me, Sime. I am not tormented, I am not cursed! I am who I am, a child of Bhaal, and I am ready to face my destiny. I do not need your prayers or your pity!~ GOTO 371
-  IF ~~ THEN REPLY ~You know, that�s getting too weird. Let me say you a "good night" and let�s forget the whole thing.~ GOTO 370
+  IF ~~ THEN REPLY ~You know, that's getting too weird. Let me say you a "good night" and let's forget the whole thing.~ GOTO 370
 END
 
 IF ~~ THEN BEGIN 374
   SAY ~(*Sime comes near you and brushes hair aside from your forehead gently*)~
   IF ~~ THEN REPLY ~(*Catch her hand and squeeze her fingers*) Sime? Were you prayers... for me?~ GOTO 366
   IF ~~ THEN REPLY ~(*Stay silent*)~ GOTO 375
-  IF ~~ THEN REPLY ~Sime, that�s enough! You are acting like a mother hen! I do not need your prayers or your pity!~ GOTO 371
+  IF ~~ THEN REPLY ~Sime, that's enough! You are acting like a mother hen! I do not need your prayers or your pity!~ GOTO 371
 END
 
 IF ~~ THEN BEGIN 375
@@ -2550,7 +2550,7 @@ IF WEIGHT #-90 ~Global("LoveTalk","LOCALS",18)~ THEN BEGIN 376
 END
 
 IF ~~ THEN BEGIN 377
-  SAY ~Yet now I know that some of them are vicious assassins, others are petty thieves, and the rest are so wicked and lie so often that I do not have a clue how they acquire the coins filling their pockets. I happened to run across some of my father�s associates when ranging. It was not pleasant.~
+  SAY ~Yet now I know that some of them are vicious assassins, others are petty thieves, and the rest are so wicked and lie so often that I do not have a clue how they acquire the coins filling their pockets. I happened to run across some of my father's associates when ranging. It was not pleasant.~
   IF ~Class(Player1,THIEF)~ THEN REPLY ~And now you are travelling with one. That is what you are trying to say? You knew it when you joined in with me. What has changed?~ GOTO 378
   IF ~~ THEN REPLY ~Oh, Sime, my poor noble-hearted Sime! I know how you feel. It is not easy to say sometimes, what is a good or is an evil thing to do.~ GOTO 386
   IF ~~ THEN REPLY ~Sime, you do what you must do, no matter if it pleases you or not. You are a ranger, a keeper of law and order, and defender of the weak.~ GOTO 390
@@ -2558,16 +2558,16 @@ IF ~~ THEN BEGIN 377
 END
 
 IF ~~ THEN BEGIN 378
-  SAY ~What has changed? I have been thinking a lot about you lately. You are... you are different from greedy and merciless assassins, and you do not take the last possessions from the poor. You are furtive, cavalier yet cautious, and your avaricious personality determined your past. But somehow, you are yet unspoiled by the rogue�s ways.~
+  SAY ~What has changed? I have been thinking a lot about you lately. You are... you are different from greedy and merciless assassins, and you do not take the last possessions from the poor. You are furtive, cavalier yet cautious, and your avaricious personality determined your past. But somehow, you are yet unspoiled by the rogue's ways.~
   IF ~~ THEN REPLY ~I am a rogue, Sime, and probably will always be a rogue.~ GOTO 379
   IF ~~ THEN REPLY ~You are trying to... embellish me?~ GOTO 383
   IF ~~ THEN REPLY ~May be I am a vagabond, but a charming one. You like me no matter what do not you?~ GOTO 384
-  IF ~~ THEN REPLY ~Enough of this rubbish, Sime. Let�s go.~ GOTO 385
+  IF ~~ THEN REPLY ~Enough of this rubbish, Sime. Let's go.~ GOTO 385
 END
 
 IF ~~ THEN BEGIN 379
   SAY ~I know. If there is no hope for you to engage into a more honorable activity, promise me at least that you will not forsake this odd code of honor you now have.~
-  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I�d rather not bind myself with empty words.~ GOTO 380
+  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I'd rather not bind myself with empty words.~ GOTO 380
   IF ~~ THEN REPLY ~I will not change, Sime. I promise. With all this talk about my colleagues, who are so prone to make things theirs... Tell me, Sime, did anyone attempt to steal your heart?~ GOTO 381
 END
 
@@ -2592,13 +2592,13 @@ END
 
 IF ~~ THEN BEGIN 383
   SAY ~I do not. I know that there is no hope for you to engage into a more honorable activity. Promise me at least that you will not forsake this odd code of honor you now have.~
-  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I�d rather not bind myself with empty words.~ GOTO 380
+  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I'd rather not bind myself with empty words.~ GOTO 380
   IF ~~ THEN REPLY ~I will not change, Sime. I promise. With all this talk about my colleagues, who are so prone to make things theirs? Tell me, Sime, did anyone attempt to steal your heart?~ GOTO 381
 END
 
 IF ~~ THEN BEGIN 384
   SAY ~I like you the way you are now, yes. I know that there is no hope for you to engage into a more honorable activity. Promise me at least that you will not forsake this odd code of honor you now have.~
-  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I�d rather not bind myself with empty words.~ GOTO 380
+  IF ~~ THEN REPLY ~This world is not made for keeping promises, Sime. It changes at every turn of the hourglass. I'd rather not bind myself with empty words.~ GOTO 380
   IF ~~ THEN REPLY ~I will not change, Sime. I promise. With all this talk about my colleagues, who are so prone to make things theirs? Tell me, Sime, did anyone attempt to steal your heart?~ GOTO 381
 END
 
@@ -2666,22 +2666,22 @@ IF WEIGHT #-90 ~Global("LoveTalk","LOCALS",20)~ THEN BEGIN 395
   SAY ~I cannot believe it! Come, <CHARNAME>, look at this! I have never seen it grow in these parts and never does it bloom at this time of the year. It is a small miracle, this flower.~ [SIME12_1]
   IF ~OR(2)
 Class(Player1,DRUID_ALL)
-Class(Player1,RANGER_ALL)~ THEN REPLY ~Why, I think it is Suna�s Bloom. Is not it? I have not seen one before.~ GOTO 396
+Class(Player1,RANGER_ALL)~ THEN REPLY ~Why, I think it is Suna's Bloom. Is not it? I have not seen one before.~ GOTO 396
   IF ~OR(2)
 Class(Player1,MAGE_ALL)
-Class(Player1,SORCERER)~ THEN REPLY ~Hmm, what do we have here? I believe that it�s commonly called "Suna�s Blessing" or Solanum Carolinense Eunwoe in Elvish. Dwarves call it a Lay Flower and Forest Gnomes in Tethyr know it under the name of Auglim Leaf. The Halfing name would be... would be...~ GOTO 408
+Class(Player1,SORCERER)~ THEN REPLY ~Hmm, what do we have here? I believe that it's commonly called "Suna's Blessing" or Solanum Carolinense Eunwoe in Elvish. Dwarves call it a Lay Flower and Forest Gnomes in Tethyr know it under the name of Auglim Leaf. The Halfing name would be... would be...~ GOTO 408
   IF ~~ THEN REPLY ~A nice enough purple flower it is, Sime. But a miracle?~ GOTO 409
   IF ~~ THEN REPLY ~Ahem, what is all this noise about? A couple leaves and few purple buds on a stem? Women!~ GOTO 409
   IF ~~ THEN REPLY ~Sime, has anyone told you before that you have an impossible voice? I, for my part, do not wish to hear it more often than absolutely necessary.~ GOTO 410
 END
 
 IF ~~ THEN BEGIN 396
-  SAY ~It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna�s Bloom?~
+  SAY ~It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna's Bloom?~
   IF ~OR(3)
 Class(Player1,DRUID)
 Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna�s Bloom will make one more attractive to the opposite sex?~ GOTO 397
-  IF ~~ THEN REPLY ~So, why it is called Suna�s Bloom? Sounds rather intriguing.~ GOTO 406
+Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
 END
@@ -2690,7 +2690,7 @@ IF ~~ THEN BEGIN 397
   SAY ~So the scrolls say. We can see if it is true or not. Here, let me pick it and attach it to your cloak. Then I can tell you the effect.~
   IF ~~ THEN REPLY ~If it is as rare a flower as you say, it is better to leave it growing, Sime. I reckon I am attractive enough without it.~ GOTO 398
   IF ~~ THEN REPLY ~Among our gloomy days full of spilt blood and endless battles, this flower reminds me of the lighter, gentler side of life. I will wear the Bloom, not to appear more attractive, but to honor Love.~ GOTO 399
-  IF ~~ THEN REPLY ~Let�s see if the scrolls lie.~ GOTO 399
+  IF ~~ THEN REPLY ~Let's see if the scrolls lie.~ GOTO 399
   IF ~~ THEN REPLY ~That sounds like an interesting idea. But the finder is the keeper. Sime shall wear the bloom and I shall see how much more attractive she can become.~ GOTO 403
   IF ~~ THEN REPLY ~My Lady, among our gloomy days full of spilt blood and endless battles, this flower reminds me of the lighter, gentler side of life. And so do you, Sime Linvail. Please, humor me and wear the bloom.~ GOTO 403
 END
@@ -2716,7 +2716,7 @@ IF ~~ THEN BEGIN 400
 END
 
 IF ~~ THEN BEGIN 401
-  SAY ~I�ll let you guess that one on your own.~
+  SAY ~I'll let you guess that one on your own.~
   IF ~~ THEN DO ~GiveItemCreate("BELADONA",Player1,1,0,0)
 ActionOverride(Player1,UseItem("BELADONA",Myself))
 SetGlobal("LoveTalk","LOCALS",21)
@@ -2735,7 +2735,7 @@ END
 
 IF ~~ THEN BEGIN 403
   SAY ~If you wish. Watch me very closely, <CHARNAME>. I put the flower on... So?~
-  IF ~~ THEN REPLY ~Words rarely fail me. But so they do every time I look at you. You are beautiful, Sime, with or without the Suna�s Bloom.~ GOTO 404
+  IF ~~ THEN REPLY ~Words rarely fail me. But so they do every time I look at you. You are beautiful, Sime, with or without the Suna's Bloom.~ GOTO 404
   IF ~~ THEN REPLY ~You look incredible: there is a glow about your face and your orbs shine; the troubles are wiped from your forehead and even your voice sounds sweeter to me.~ GOTO 404
   IF ~~ THEN REPLY ~(*Shrug*) Yeah, some changes are evident. I guess the scrolls speak truly. We shall go now.~ GOTO 405
 END
@@ -2759,10 +2759,10 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 406
-  SAY ~The scrolls say that a freshly picked flower of Suna�s Bloom will make one attractive to the opposite sex. We can see if it is true or not. Here, let me pick it and attach to your cloak. Then I can tell you the effect.~
+  SAY ~The scrolls say that a freshly picked flower of Suna's Bloom will make one attractive to the opposite sex. We can see if it is true or not. Here, let me pick it and attach to your cloak. Then I can tell you the effect.~
   IF ~~ THEN REPLY ~If it is as rare a flower as you say, it is better to leave it growing, Sime. I reckon I am attractive enough without it.~ GOTO 398
   IF ~~ THEN REPLY ~Among our gloomy days full of spilt blood and endless battles, this flower reminds me of the lighter, gentler side of life. I will wear the Bloom, not to appear more attractive, but to honor Love.~ GOTO 399
-  IF ~~ THEN REPLY ~Let�s see if the scrolls lie.~ GOTO 399
+  IF ~~ THEN REPLY ~Let's see if the scrolls lie.~ GOTO 399
   IF ~~ THEN REPLY ~That sounds like an interesting idea. But the finder is the keeper. Sime shall wear the bloom and I shall see how much more attractive she can become.~ GOTO 403
   IF ~~ THEN REPLY ~My Lady, among our gloomy days full of spilt blood and endless battles, this flower reminds me of the lighter, gentler side of life. And so do you, Sime Linvail. Please, humor me and wear the bloom.~ GOTO 403
 END
@@ -2775,23 +2775,23 @@ SetGlobal("LoveTalk","LOCALS",21)~ EXIT
 END
 
 IF ~~ THEN BEGIN 408
-  SAY ~Do not try to remember: there is no name in Halfling speech for this one. It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna�s Bloom?~
+  SAY ~Do not try to remember: there is no name in Halfling speech for this one. It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna's Bloom?~
   IF ~OR(3)
 Class(Player1,DRUID)
 Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna�s Bloom will make one more attractive to the opposite sex?~ GOTO 397
-  IF ~~ THEN REPLY ~So, why it is called Suna�s Bloom? Sounds rather intriguing.~ GOTO 406
+Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
 END
 
 IF ~~ THEN BEGIN 409
-  SAY ~It is a very rare plant. And it is called Suna�s Bloom for a reason.~
+  SAY ~It is a very rare plant. And it is called Suna's Bloom for a reason.~
   IF ~OR(3)
 Class(Player1,DRUID)
 Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna�s Bloom will make one more attractive to the opposite sex?~ GOTO 397
-  IF ~~ THEN REPLY ~So, why it is called Suna�s Bloom? Sounds rather intriguing.~ GOTO 406
+Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
 END
@@ -2805,7 +2805,7 @@ END
 
 IF WEIGHT #-89 ~Global("LoveTalk","LOCALS",22)~ THEN BEGIN 411
   SAY ~I am lonely and sad tonight. Faerun feels enormous and cold. See how that little star twinkles and strives to shine, and barely can in this chilly air? So does my heart. It aches because of you. Will you keep me company and warm me up, <CHARNAME>?~
-  IF ~~ THEN REPLY ~You are cold? Here, I�ll wrap my cloak around you, it is lined with fur and it is very warm. Sit down closer to the fire and I will get it going in no time. ~ GOTO 412
+  IF ~~ THEN REPLY ~You are cold? Here, I'll wrap my cloak around you, it is lined with fur and it is very warm. Sit down closer to the fire and I will get it going in no time. ~ GOTO 412
   IF ~~ THEN REPLY ~I can offer you the comfort of my arms and warmth of my bedroll if you wish, Sime.~ GOTO 413
   IF ~~ THEN REPLY ~Are you trying to say that you... love me? ~ GOTO 414
   IF ~~ THEN REPLY ~I am afraid I cannot Sime. I am sorry, but I am involved with someone else.~ GOTO 423
@@ -2831,10 +2831,10 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 414
-  SAY ~But of course I love you tonight! I fell asleep a moment ago and was dreaming of kissing you when I woke up. I like when my dreams come true in that regard. Is that not enough talk for you, <CHARNAME>? Won�t you hold me and kiss me already?~
-  IF ~~ THEN REPLY ~Of course I will. A stone would melt from that devilish look in your eyes, let alone a lover�s heart. Come here, beautiful. ~ GOTO 415
+  SAY ~But of course I love you tonight! I fell asleep a moment ago and was dreaming of kissing you when I woke up. I like when my dreams come true in that regard. Is that not enough talk for you, <CHARNAME>? Won't you hold me and kiss me already?~
+  IF ~~ THEN REPLY ~Of course I will. A stone would melt from that devilish look in your eyes, let alone a lover's heart. Come here, beautiful. ~ GOTO 415
   IF ~~ THEN REPLY ~Tonight? What about on the morrow?~ GOTO 416
-  IF ~~ THEN REPLY ~ Actually I was going to discuss the origin of magic in Faerun, the nature of Weave and the descent of Dragons with you... Oh, what in Nine Hells I am talking about? Come here this very moment, enchantress, and let�s make the heavens shake.~ GOTO 421
+  IF ~~ THEN REPLY ~ Actually I was going to discuss the origin of magic in Faerun, the nature of Weave and the descent of Dragons with you... Oh, what in Nine Hells I am talking about? Come here this very moment, enchantress, and let's make the heavens shake.~ GOTO 421
   IF ~~ THEN REPLY ~You know, it is very sweet of you to offer but I am just too tired. May be another time...~ GOTO 422
 END
 
@@ -2859,7 +2859,7 @@ END
 
 IF ~~ THEN BEGIN 417
   SAY ~I cannot promise you a life-long commitment, a house full of books, flowers, and little ones with me as your wife, <CHARNAME>. But I can give you a night of passion, which you will remember till the evening dawn of your life. Take it or leave it.~
-  IF ~~ THEN REPLY ~Of course I will take it. A stone would melt from that devilish look in your eyes, let alone a lover�s heart. Come here, beautiful.~ GOTO 418
+  IF ~~ THEN REPLY ~Of course I will take it. A stone would melt from that devilish look in your eyes, let alone a lover's heart. Come here, beautiful.~ GOTO 418
   IF ~~ THEN REPLY ~No, Sime, what you are offering is not enough.~ GOTO 419
 END
 
@@ -2883,7 +2883,7 @@ END
 
 IF ~~ THEN BEGIN 420
   SAY ~I cannot promise you a life-long commitment, a house full of books and flowers, <CHARNAME>. But I can give you a night of passion, which you will remember till the evening dawn of your life. Take it or leave it.~
-  IF ~~ THEN REPLY ~Of course I will take it. A stone would melt from that devilish look in your eyes, let alone a lover�s heart. Come here, beautiful.~ GOTO 418
+  IF ~~ THEN REPLY ~Of course I will take it. A stone would melt from that devilish look in your eyes, let alone a lover's heart. Come here, beautiful.~ GOTO 418
   IF ~~ THEN REPLY ~No, Sime, what you are offering is not enough.~ GOTO 419
 END
 
@@ -2914,14 +2914,14 @@ RestParty()~ EXIT
 END
 
 IF WEIGHT #-88 ~Global("LoveTalk","LOCALS",24)~ THEN BEGIN 424
-  SAY ~Wake up, m�<PRO_LADYLORD>, the dawn is spreading over the sky! And the woman of the yester eve is up already and her eyes spell trouble for you. Wake up, m�<PRO_LADYLORD>, the world is holding its breath in anticipation of your decisions. Shall we live or shall we not? Shall we love or shan�t we? ~
+  SAY ~Wake up, m'<PRO_LADYLORD>, the dawn is spreading over the sky! And the woman of the yester eve is up already and her eyes spell trouble for you. Wake up, m'<PRO_LADYLORD>, the world is holding its breath in anticipation of your decisions. Shall we live or shall we not? Shall we love or shan't we? ~
   IF ~~ THEN REPLY ~No-yet still steadfast, still unchangeable,
-Pillow�d upon my fair love�s ripening breast,
+Pillow'd upon my fair love's ripening breast,
 To feel for ever its soft fall and swell,
 Awake for ever in a sweet unrest,
 Still, still to hear her tender-taken breath,
 And so live ever-or else swoon to death.~ GOTO 425
-  IF ~~ THEN REPLY ~You know, Sime, the last time a maiden awoke me yelling, it was Imoen and I was caged in Irenicus� Dungeon, after being broken and tortured for months. Spare me bad memories and by all Gods of the Realms, do lower your voice!~ GOTO 429
+  IF ~~ THEN REPLY ~You know, Sime, the last time a maiden awoke me yelling, it was Imoen and I was caged in Irenicus' Dungeon, after being broken and tortured for months. Spare me bad memories and by all Gods of the Realms, do lower your voice!~ GOTO 429
   IF ~~ THEN REPLY ~I would be up already were not you sitting upon my chest.~ GOTO 430
 END
 
@@ -3048,7 +3048,7 @@ IF ~~ THEN BEGIN 440
 END
 
 IF ~~ THEN BEGIN 441
-  SAY ~You are right. Let�s continue on our journey. Passion shall rule our nights, but not our day life.~
+  SAY ~You are right. Let's continue on our journey. Passion shall rule our nights, but not our day life.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
@@ -3056,18 +3056,18 @@ END
 
 IF WEIGHT #-86 ~Global("LoveTalk","LOCALS",28)~ THEN BEGIN 442
   SAY ~You know what I was doing last night? I was counting stars and giving them different names. I even considered calling one after you. Guess which one?~
-  IF ~~ THEN REPLY ~Mystra�s star? Though, it�s my preference to think about you while watching it: it is so bright, beautiful, and mysterious.~ GOTO 443
+  IF ~~ THEN REPLY ~Mystra's star? Though, it's my preference to think about you while watching it: it is so bright, beautiful, and mysterious.~ GOTO 443
   IF ~OR(2)
 Class(Player1,MAGE_ALL)
-Class(Player1,SORCERER)~ THEN REPLY ~I think Mystra�s star is the obvious choice.~ GOTO 448
+Class(Player1,SORCERER)~ THEN REPLY ~I think Mystra's star is the obvious choice.~ GOTO 448
   IF ~~ THEN REPLY ~Ieryn - the star of the North? I know it is sacred to Selunites and you have a deep spiritual connection with your mother. May be you were speaking of me to her while watching the night sky and Ieryn came to your mind?~ GOTO 449
-  IF ~~ THEN REPLY ~Shaundral? An erratic star who shines brightest before disaster? Like me, whose coming was foretold in Alaundo�s prophesies?~ GOTO 450
-  IF ~~ THEN REPLY ~King�s Coin? The star of the rulers for Men and the Kingslayer to Elves? Do you think I am destined for greatness or great failure?~ GOTO 451
+  IF ~~ THEN REPLY ~Shaundral? An erratic star who shines brightest before disaster? Like me, whose coming was foretold in Alaundo's prophesies?~ GOTO 450
+  IF ~~ THEN REPLY ~King's Coin? The star of the rulers for Men and the Kingslayer to Elves? Do you think I am destined for greatness or great failure?~ GOTO 451
   IF ~~ THEN REPLY ~I do not know, Sime. Why do not you tell me?~ GOTO 452
 END
 
 IF ~~ THEN BEGIN 443
-  SAY ~Mystra�s star? I love its blue soft light. May be if I had to select one star to name after you I would have chosen it. But you know, when I was looking at the sky yesterday, I suddenly realized that every star reminds me of you.~
+  SAY ~Mystra's star? I love its blue soft light. May be if I had to select one star to name after you I would have chosen it. But you know, when I was looking at the sky yesterday, I suddenly realized that every star reminds me of you.~
   IF ~~ THEN GOTO 444
 END
 
@@ -3075,7 +3075,7 @@ IF ~~ THEN BEGIN 444
   SAY ~Then I thought that everything which is fair and dear to my heart is somehow connected to you. You are in my frosted breath in the early morning, and in the tune I whistle when I wake. You are my sun and stars... I am afraid you are becoming my world.~
   IF ~~ THEN REPLY ~What about your own credo, Sime? The "do not fear" part? You have nothing to be afraid of by my side, me included. Neither you should be afraid of your love for me. I know one day I will harvest those simple words from your lips, undressed and unadorned. I yearn for that day.~ GOTO 445
   IF ~~ THEN REPLY ~Too many fancy words, Sime. Do give me a more material declaration of your feelings for me. The night grows long and we do need some sleep afterwards.~ GOTO 446
-  IF ~~ THEN REPLY ~Now you have me wondering what star I shall name for you. I guess I will stay up all night poring over that task. I wonder why the poor and rich alike in these parts stock their bookshelves with endless copies of the "History of the North"? It must have been on sale or something. I�d rather fancy to see a "Star Lore" book somewhere...~ GOTO 447
+  IF ~~ THEN REPLY ~Now you have me wondering what star I shall name for you. I guess I will stay up all night poring over that task. I wonder why the poor and rich alike in these parts stock their bookshelves with endless copies of the "History of the North"? It must have been on sale or something. I'd rather fancy to see a "Star Lore" book somewhere...~ GOTO 447
 END
 
 IF ~~ THEN BEGIN 445
@@ -3118,7 +3118,7 @@ IF ~~ THEN BEGIN 450
 END
 
 IF ~~ THEN BEGIN 451
-  SAY ~You are dramatic as ever. Whatever your destiny, I hope you won�t know a great fall. I am too afraid of the darker fame of Kingslayer among the Elves to give it to you. However, when I was looking at the sky yesterday, I suddenly realized that every star reminds me of you.~
+  SAY ~You are dramatic as ever. Whatever your destiny, I hope you won't know a great fall. I am too afraid of the darker fame of Kingslayer among the Elves to give it to you. However, when I was looking at the sky yesterday, I suddenly realized that every star reminds me of you.~
   IF ~~ THEN GOTO 444
 END
 
@@ -3135,14 +3135,14 @@ IF WEIGHT #-85 ~Global("LoveTalk","LOCALS",30)~ THEN BEGIN 453
 END
 
 IF ~~ THEN BEGIN 454
-  SAY ~(*Laughs*)... So you foresee the end of your quests, <CHARNAME>? I do not believe you! Your job is never done, my hero. There will always be a city to save from foes or a maiden to rescue from the clutches of a dragon. And so long as you choose the honorable way, and we do not grow bored of each other�s company, I shall walk by your side.~
+  SAY ~(*Laughs*)... So you foresee the end of your quests, <CHARNAME>? I do not believe you! Your job is never done, my hero. There will always be a city to save from foes or a maiden to rescue from the clutches of a dragon. And so long as you choose the honorable way, and we do not grow bored of each other's company, I shall walk by your side.~
   IF ~~ THEN REPLY ~You are anything but boring, Sime. So fear not me leaving you.~ GOTO 455
   IF ~~ THEN REPLY ~Oh, yeah. I love that sort of stuff. Dragons and foes, beware! <CHARNAME> and Sime are coming to get you!~ GOTO 460
-  IF ~~ THEN REPLY ~Do not you find that righteous path you are so eager to stay upon a little bit slow and boring? What if we deviate a bit for a while? Kill a couple of fluffy kittens and sweet old ladies? For variety�s sake?~ GOTO 461
+  IF ~~ THEN REPLY ~Do not you find that righteous path you are so eager to stay upon a little bit slow and boring? What if we deviate a bit for a while? Kill a couple of fluffy kittens and sweet old ladies? For variety's sake?~ GOTO 461
 END
 
 IF ~~ THEN BEGIN 455
-  SAY ~Do not you know a mortal�s
+  SAY ~Do not you know a mortal's
 Short-living love?
 A fateful excitement of blood,
 But as the days pass blood cools.
@@ -3158,7 +3158,7 @@ So long as the world contains us both,
 Me the loving and you the loth,
 While the one eludes, must the other pursue.~ GOTO 456
   IF ~~ THEN REPLY ~If I say me, you will only laugh, right?~ GOTO 458
-  IF ~~ THEN REPLY ~Mere mortal - may be. But I am a demi-god, for all it�s worth. Mayhap I love differently, Sime.~ GOTO 459
+  IF ~~ THEN REPLY ~Mere mortal - may be. But I am a demi-god, for all it's worth. Mayhap I love differently, Sime.~ GOTO 459
 END
 
 IF ~~ THEN BEGIN 456
@@ -3215,16 +3215,16 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 462
-  SAY ~I am not afraid of anything that comes my way. I can handle it or I will die. But what I would not want is to know my future in advance. I�d be so bored!~
+  SAY ~I am not afraid of anything that comes my way. I can handle it or I will die. But what I would not want is to know my future in advance. I'd be so bored!~
   IF ~~ THEN REPLY ~Boredom? That is what you are afraid of? Then you have found a great antidote: my life, and the lives of those who travel with me, is anything but boring. Stick with me and we are going to have loads of fun. There will always be a city to save from foes or a maiden to rescue from the clutches of a dragon.~ GOTO 463
   IF ~~ THEN REPLY ~Why? Do not you want to be forewarned?~ GOTO 466
 END
 
 IF ~~ THEN BEGIN 463
-  SAY ~I do believe you in that! Your job is never done, my hero. And so long as you choose the honorable way, and we do not grow bored of each other�s company, I shall walk by your side.~
+  SAY ~I do believe you in that! Your job is never done, my hero. And so long as you choose the honorable way, and we do not grow bored of each other's company, I shall walk by your side.~
   IF ~~ THEN REPLY ~You are anything but boring, yourself, Sime. So, fear not me leaving you as well.~ GOTO 455
   IF ~~ THEN REPLY ~Dragons and foes, beware! <CHARNAME> and Sime are coming to get you!~ GOTO 464
-  IF ~~ THEN REPLY ~Do not you find that righteous path you are so eager to stay upon a little bit slow and boring? What if we deviate a bit for a while? Kill a couple of fluffy kittens and sweet old ladies? For variety�s sake?~ GOTO 465
+  IF ~~ THEN REPLY ~Do not you find that righteous path you are so eager to stay upon a little bit slow and boring? What if we deviate a bit for a while? Kill a couple of fluffy kittens and sweet old ladies? For variety's sake?~ GOTO 465
 END
 
 IF ~~ THEN BEGIN 464
@@ -3249,7 +3249,7 @@ IF ~~ THEN BEGIN 466
 END
 
 IF ~~ THEN BEGIN 467
-  SAY ~And how much more secure would you feel knowing that you are Lord of the Murder son and that it is your half-brother who is after you? Tell me is that your goal in life, to make Alaundo�s prophecy to come true?~
+  SAY ~And how much more secure would you feel knowing that you are Lord of the Murder son and that it is your half-brother who is after you? Tell me is that your goal in life, to make Alaundo's prophecy to come true?~
   IF ~~ THEN REPLY ~No, of course not. I live by the advice of my own heart. But the prophecy... the prophecy explains many things to me about the way I feel and I act. I would be worse off, if I did not know what I am.~ GOTO 468
   IF ~~ THEN REPLY ~Yes. My destiny is clear and I shall take what I was promised.~ GOTO 469
   IF ~~ THEN REPLY ~Sime, please, let us just drop this talk? Or I will damage my jaw yawning.~ GOTO 470
@@ -3277,7 +3277,7 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 471
-  SAY ~I remember, <CHARNAME>. And I pity you for that. Tell me, is that your life�s goal, to make Alaundo�s prophecy to come true?~
+  SAY ~I remember, <CHARNAME>. And I pity you for that. Tell me, is that your life's goal, to make Alaundo's prophecy to come true?~
   IF ~~ THEN REPLY ~No, of course not. I live by the advice of my own heart. But the prophecy... the prophecy explains many things to me about the way I feel and I act. I would be worse off, if I did not know what I am.~ GOTO 468
   IF ~~ THEN REPLY ~Yes. My destiny is clear and I shall take what I was promised.~ GOTO 469
   IF ~~ THEN REPLY ~Sime, please, let us just drop this talk? Or I will damage my jaw yawning.~ GOTO 470
@@ -3312,7 +3312,7 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 476
-  SAY ~I know that, <CHARNAME>. And I pity you for it. Tell me, is that your life�s goal, to make Alaundo�s prophecy to come true?~
+  SAY ~I know that, <CHARNAME>. And I pity you for it. Tell me, is that your life's goal, to make Alaundo's prophecy to come true?~
   IF ~~ THEN REPLY ~No, of course not. I live by the advice of my own heart. But the prophecy. . .the prophecy explains many things to me about the way I feel and act. I would be worse off, if I did not know what I am.~ GOTO 468
   IF ~~ THEN REPLY ~Yes. My destiny is clear and I shall take what I was promised.~ GOTO 469
   IF ~~ THEN REPLY ~Sime, please, let us just drop this talk? Or I will damage my jaw yawning.~ GOTO 470
@@ -3323,7 +3323,7 @@ IF WEIGHT #-84  ~Global("LoveTalk","LOCALS",32)~ THEN BEGIN 477
   IF ~~ THEN REPLY ~Sime, you are the only one for me. I can see the beauty and grace of other women, but I am somehow not attracted to them in the way I am to you. And I never was. I guess I was just waiting for you to come and claim my heart.~ GOTO 478
   IF ~~ THEN REPLY ~Are you in the mood for absolving sins? Yes, I had a girl or two before. ~ GOTO 479
   IF ~~ THEN REPLY ~There was a Northerner, tall and proud, who traveled with me for a time. A true warrior Branwen was, and beautiful beyond belief.~ GOTO 481
-  IF ~~ THEN REPLY ~I often had my eyes upon Skie Silvershield, a daughter of a Grand Duke of Baldur�s Gate.~ GOTO 486
+  IF ~~ THEN REPLY ~I often had my eyes upon Skie Silvershield, a daughter of a Grand Duke of Baldur's Gate.~ GOTO 486
   IF ~~ THEN REPLY ~Dynaheir, her name was Dynaheir, but I rather not talk about it.~ GOTO 491
   IF ~!InParty("Sharteel")~ THEN REPLY ~There was a fighter I fancied for a time, Shar Teel by name.~ GOTO 493
 END
@@ -3340,13 +3340,13 @@ IF ~~ THEN BEGIN 479
   IF ~~ THEN REPLY ~No "and". I wish to keep some sins and some secrets, Sime.~ GOTO 480
   IF ~~ THEN REPLY ~And then I met you. Sime, you are the only one for me now. I can see the beauty and grace of other women, but I am somehow not attracted to them in the way I am to you. No one else matters.~ GOTO 478
   IF ~~ THEN REPLY ~There was a Northerner, tall and proud, who traveled with me for a time. A true warrior Branwen was, and beautiful beyond belief.~ GOTO 481
-  IF ~~ THEN REPLY ~I often had my eyes upon Skie Silvershield, a daughter of a Grand Duke in Baldur�s Gate.~ GOTO 486
+  IF ~~ THEN REPLY ~I often had my eyes upon Skie Silvershield, a daughter of a Grand Duke in Baldur's Gate.~ GOTO 486
   IF ~~ THEN REPLY ~Dynaheir, her name was Dynaheir, but I would rather not talk about it.~ GOTO 491
   IF ~~ THEN REPLY ~There was a fighter I fancied for a time, Shar Teel by name.~ GOTO 493
 END
 
 IF ~~ THEN BEGIN 480
-  SAY ~Oh well, I�ll let the bards figure it out for their songs.~
+  SAY ~Oh well, I'll let the bards figure it out for their songs.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
@@ -3423,7 +3423,7 @@ IF ~~ THEN BEGIN 491
 END
 
 IF ~~ THEN BEGIN 492
-  SAY ~I know how it feels to lose a lover to death, <CHARNAME>.  That�s when our spinning and ringing world of battles and adventures comes to a crashing stop.~
+  SAY ~I know how it feels to lose a lover to death, <CHARNAME>.  That's when our spinning and ringing world of battles and adventures comes to a crashing stop.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
@@ -3457,15 +3457,15 @@ END
 IF WEIGHT #-83 ~Global("LoveTalk","LOCALS",34)~ THEN BEGIN 497
   SAY ~(*Reads to you from an old tome*)
 
-"And His Grace the King came then upon Sir Knight and his Lady Wife. They were asleep on his cloak shielded by the branches of an ancient oak tree. Sir Knight�s great sword lay between them and so the King saw that his honor was not despoiled.  His Grace kneeled and slipped his own ring onto his Lady�s finger and then he rode off..."~
+"And His Grace the King came then upon Sir Knight and his Lady Wife. They were asleep on his cloak shielded by the branches of an ancient oak tree. Sir Knight's great sword lay between them and so the King saw that his honor was not despoiled.  His Grace kneeled and slipped his own ring onto his Lady's finger and then he rode off..."~
   IF ~~ THEN GOTO 498
 END
 
 IF ~~ THEN BEGIN 498
   SAY ~I am not sure I am truly convinced in the efficiency of that sword. Be there a blade between us or not, you will not be safe from my embrace. But I have heard of a ranger who used a direwolf for that purpose. That might be more efficient.~
-  IF ~~ THEN REPLY ~Sounds like a thing Valygar would do. Or may be Kivan if some lady would imagine that she could replace his dear Deheriana. It would be a hamster, not direwolf in Minsc�s case, I guess.~ GOTO 499
+  IF ~~ THEN REPLY ~Sounds like a thing Valygar would do. Or may be Kivan if some lady would imagine that she could replace his dear Deheriana. It would be a hamster, not direwolf in Minsc's case, I guess.~ GOTO 499
   IF ~~ THEN REPLY ~That sounds dangerous - a sword in the bedroll. Someone could get hurt.~ GOTO 506
-  IF ~~ THEN REPLY ~Ahem, Sime, do you think we can delay the story�s ending till tomorrow night? I am afraid my endurance is lacking compare to that of Sir Knight.~ GOTO 510
+  IF ~~ THEN REPLY ~Ahem, Sime, do you think we can delay the story's ending till tomorrow night? I am afraid my endurance is lacking compare to that of Sir Knight.~ GOTO 510
   IF ~~ THEN REPLY ~That is a tale to warm up a noble heart.~ GOTO 511
 END
 
@@ -3474,11 +3474,11 @@ IF ~~ THEN BEGIN 499
   IF ~~ THEN REPLY ~In no way. Rangers can be very playful and outgoing. I even know one. Blonde tresses, green eyes, charming smile, and an absolutely irresistible way to kiss.~ GOTO 500
   IF ~Class(Player1,RANGER_ALL)~ THEN REPLY ~Oh, no. I know that better than anyone else! Rangers are passionate lovers. Do not you agree?~ GOTO 501
   IF ~~ THEN REPLY ~May be. But I can be convinced to reconsider.~ GOTO 502
-  IF ~~ THEN REPLY ~I have no opinion on the matter. You were talking about rangers and I remembered all I have met. No, wait I forgot Drizzt Do�Urden! Ahem, bad example, I am afraid.~ GOTO 503
+  IF ~~ THEN REPLY ~I have no opinion on the matter. You were talking about rangers and I remembered all I have met. No, wait I forgot Drizzt Do'Urden! Ahem, bad example, I am afraid.~ GOTO 503
 END
 
 IF ~~ THEN BEGIN 500
-  SAY ~Now, that you started this talk about kissing, think we can delay the story�s ending till tomorrow night? And do some serious research on the ways the rangers love?~
+  SAY ~Now, that you started this talk about kissing, think we can delay the story's ending till tomorrow night? And do some serious research on the ways the rangers love?~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3487,7 +3487,7 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 501
-  SAY ~Absolutely true, <CHARNAME>. Do you think we can delay the story�s  ending till tomorrow night? And do some serious research on the ways the rangers love?~
+  SAY ~Absolutely true, <CHARNAME>. Do you think we can delay the story's  ending till tomorrow night? And do some serious research on the ways the rangers love?~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3496,7 +3496,7 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 502
-  SAY ~I am afraid it can take some significant amount of time. Do you think we can delay the story�s ending till tomorrow night? And do some serious research on the ways the rangers love?~
+  SAY ~I am afraid it can take some significant amount of time. Do you think we can delay the story's ending till tomorrow night? And do some serious research on the ways the rangers love?~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3505,7 +3505,7 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 503
-  SAY ~Bad example indeed. Have you ever heard about the courtesan in Waterdeep who approached him, thinking he was sufficiently drunk? Not only did he politely refuse her nineteen times, but on the twentieth he set his ale aside, pulled out his diary, and started reading her an excerpt on the Drow�s way of love... They say that poor girl refuses to enter that inn ever since.~
+  SAY ~Bad example indeed. Have you ever heard about the courtesan in Waterdeep who approached him, thinking he was sufficiently drunk? Not only did he politely refuse her nineteen times, but on the twentieth he set his ale aside, pulled out his diary, and started reading her an excerpt on the Drow's way of love... They say that poor girl refuses to enter that inn ever since.~
   IF ~~ THEN REPLY ~Sime, that... that cannot be true!~ GOTO 504
   IF ~~ THEN REPLY ~Shall we keep talking about Drow or can we delay it till tomorrow night? I am afraid my endurance is lacking compared to that of Sir Knight or Drizzt.~ GOTO 505
 END
@@ -3545,7 +3545,7 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 508
-  SAY ~He�s off hunting. But at any rate, the werewolf did not work for Jon, why should it work for us?~
+  SAY ~He's off hunting. But at any rate, the werewolf did not work for Jon, why should it work for us?~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3581,10 +3581,10 @@ StartCutScene("Cut34a")~ EXIT
 END
 
 IF WEIGHT #-82 ~Global("LoveTalk","LOCALS",36)~ THEN BEGIN 512
-  SAY ~I am not a mage, <CHARNAME>, and I am not even a mage�s apprentice, but there is a spell Darriel once taught me. I can see that you are weary and sad. The spell might put you into lighter mood. Do you want me to cast it?~
+  SAY ~I am not a mage, <CHARNAME>, and I am not even a mage's apprentice, but there is a spell Darriel once taught me. I can see that you are weary and sad. The spell might put you into lighter mood. Do you want me to cast it?~
   IF ~~ THEN REPLY ~No, Sime, I do not want any spell cast on me. I will sleep now, and I will be fine once I have rested.~ GOTO 513
   IF ~~ THEN REPLY ~What is the nature of that spell? ~ GOTO 514
-  IF ~~ THEN REPLY ~I doubt that a single spell can take away my worries (unless it kills Irenicus), but do cast it Sime. I�d welcome some entertainment.~ GOTO 515
+  IF ~~ THEN REPLY ~I doubt that a single spell can take away my worries (unless it kills Irenicus), but do cast it Sime. I'd welcome some entertainment.~ GOTO 515
 END
 
 IF ~~ THEN BEGIN 513
@@ -3604,7 +3604,7 @@ END
 IF ~~ THEN BEGIN 515
   SAY ~Give me your hand, <CHARNAME>...
 
-Kaimeldor panta annonta ten�lle...~
+Kaimeldor panta annonta ten'lle...~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",1)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3620,7 +3620,7 @@ IF WEIGHT #-81 ~Global("LoveTalk","LOCALS",38)~ THEN BEGIN 516
   IF ~!Race(Player1,ELF)
 !Race(Player1,HALF_ELF)~ THEN REPLY ~Dark it is my fair Lady, but many riches are hidden within. I took a look around the mines that those gnomes worked. I say that the rock there might yield clear diamonds and glowing garnet gems. And that was naught but a small corner of the Underdark. Nays, Sime, do not judge the place unlikable too hastily.~ GOTO 518
   IF ~~ THEN REPLY ~I agree with you in that I feel more comfortable on the Surface. But there is a certain beauty in the Underdark. And not all creatures that populate it are foul.~ GOTO 522
-  IF ~~ THEN REPLY ~I have to say that I felt fine in the Underdark. Drow are no worse than the snotty Elves in Suldanesselar. Solaufein fellow was quite decent. Deep gnomes are cute... Of course there were few unpleasant meetings, but that�s no different than on the Surface. Besides it is always warm there and it does not rain. In fact I am thinking of journeying there again when I will have time.~ GOTO 523
+  IF ~~ THEN REPLY ~I have to say that I felt fine in the Underdark. Drow are no worse than the snotty Elves in Suldanesselar. Solaufein fellow was quite decent. Deep gnomes are cute... Of course there were few unpleasant meetings, but that's no different than on the Surface. Besides it is always warm there and it does not rain. In fact I am thinking of journeying there again when I will have time.~ GOTO 523
 END
 
 IF ~~ THEN BEGIN 517
@@ -3638,14 +3638,14 @@ IF ~~ THEN BEGIN 518
 END
 
 IF ~~ THEN BEGIN 519
-  SAY ~I can propose an even more economic solution: give me your love, that�s all I need.~
+  SAY ~I can propose an even more economic solution: give me your love, that's all I need.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 520
-  SAY ~Here you got me! Well, I guess I was not born to be a miner, but I shall be grateful that others were. Though if there were not any weapons ever made... there wouldn�t be fighting. Nay, I am silly. One can fight with wooden weapons, his bare hands or spells if he really wants to.~
+  SAY ~Here you got me! Well, I guess I was not born to be a miner, but I shall be grateful that others were. Though if there were not any weapons ever made... there wouldn't be fighting. Nay, I am silly. One can fight with wooden weapons, his bare hands or spells if he really wants to.~
   IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
 RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
@@ -3694,7 +3694,7 @@ IF ~~ THEN BEGIN 526
 END
 
 IF ~~ THEN BEGIN 527
-  SAY ~Irenicus� crimes are immense, <CHARNAME>. I just hope that it will not be blind hatred and revenge that will guide your striking arm when we will finally meet him.~
+  SAY ~Irenicus' crimes are immense, <CHARNAME>. I just hope that it will not be blind hatred and revenge that will guide your striking arm when we will finally meet him.~
   IF ~~ THEN REPLY ~Revenge is a noble passion. And hatred - I am past hatred I think. I see a man who has to be destroyed lest he renders the Realm into ashes.~ GOTO 528
   IF ~~ THEN REPLY ~Sime, it is strange, but I do not feel hatred, nor I am going into this battle for vengeance. I feel that I am doomed to fight him. I think that he forged our link himself, by stealing my soul - only one of us is to live now. Forgive me if I am egotistical, but I want him to die, not me.~ GOTO 529
   IF ~~ THEN REPLY ~The passions you are speaking about are dark ones, but they make my blood boil in battle. Therefore I allow them to fill what is left of my soul. But I know how to control them now, just like I can control the Slayer in myself.~ GOTO 530
@@ -3779,7 +3779,7 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 539
-  SAY ~Care to take one along? Because it is most likely that we will meet with Irenicus before he will have a desire to visit Ilmater�s Temple.~
+  SAY ~Care to take one along? Because it is most likely that we will meet with Irenicus before he will have a desire to visit Ilmater's Temple.~
   IF ~~ THEN REPLY ~He will have the desire as soon as he sees me, I wager.~ GOTO 540
   IF ~~ THEN REPLY ~You are a good enough priest, Sime. Besides, I am sure Irenicus would clutch to his sins, rather than have them absolved.~ GOTO 541
   IF ~~ THEN REPLY ~A whole dozen if that will please my Lady! ~ GOTO 542
@@ -3892,7 +3892,7 @@ IF ~~ THEN BEGIN 554
 END
 
 IF ~~ THEN BEGIN 555
-  SAY ~But, we rangers are also supposed to promote good deeds like maiden saving... And I really want to be a damsel in distress for once... Come, give me your hand!  Kaimeldor panta annonta ten�lle, <CHARNAME>.~
+  SAY ~But, we rangers are also supposed to promote good deeds like maiden saving... And I really want to be a damsel in distress for once... Come, give me your hand!  Kaimeldor panta annonta ten'lle, <CHARNAME>.~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
 SetGlobal("LoveTalk","LOCALS",45)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3902,7 +3902,7 @@ StartCutScene("VPCutS03")~ EXIT
 END
 
 IF ~~ THEN BEGIN 556
-  SAY ~Oh, yes! Come, give me your hand! Kaimeldor panta annonta ten�lle, <CHARNAME>.~
+  SAY ~Oh, yes! Come, give me your hand! Kaimeldor panta annonta ten'lle, <CHARNAME>.~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
 SetGlobal("LoveTalk","LOCALS",45)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -3924,7 +3924,7 @@ SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 559
-  SAY ~Oh, yes! Come, give me your hand!  Kaimeldor panta annonta ten�lle, <CHARNAME>.~
+  SAY ~Oh, yes! Come, give me your hand!  Kaimeldor panta annonta ten'lle, <CHARNAME>.~
   IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
 SetGlobal("LoveTalk","LOCALS",45)
 SetGlobal("VP_LoveTalkDelay","LOCALS",0)
@@ -4005,12 +4005,12 @@ IF ~~ THEN BEGIN TSTOB10
 END
 
 IF ~~ THEN BEGIN TSTOB11
-  SAY ~Nay, I will not. I can see my dear friend�s faces every waking minute and still wish for more of their company.~
+  SAY ~Nay, I will not. I can see my dear friend's faces every waking minute and still wish for more of their company.~
   IF ~~ THEN EXTERN ~BKELDO25~ TS174
 END
 
 IF ~~ THEN BEGIN TSTOB12
-  SAY ~Indeed. But a married man is a dead man in Sime�s books, Keldorn.~
+  SAY ~Indeed. But a married man is a dead man in Sime's books, Keldorn.~
   IF ~~ THEN EXTERN ~BKELDO25~ TS175
 END
 

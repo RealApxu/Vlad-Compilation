@@ -10,7 +10,7 @@ END
 IF ~~ THEN BEGIN 1
   SAY ~It was about three nights past and such a beautiful still evening that I thought to walk in the freshness of the evening.~
 =
-~Nature is so beautiful at night <CHARNAME>, the scents of the earth are so much more enhanced when one�s eyes are diminished by the darkness of the night. Do you not agree?~
+~Nature is so beautiful at night <CHARNAME>, the scents of the earth are so much more enhanced when one's eyes are diminished by the darkness of the night. Do you not agree?~
   IF ~~ THEN REPLY ~Uh... yes of course Athia, please continue.~ GOTO 3
   IF ~~ THEN REPLY ~I never travel at night unless pressed to do so, and when I am I have better things to do then spend time sniffing the night air, but please Athia, continue.~ GOTO 3
   IF ~~ THEN REPLY ~Not really Athia, I like to see where I am going when I travel. You were saying?~ GOTO 3
@@ -41,7 +41,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~It is none of your business, but yes I do. I love how the night heightens one�s sense of smell when we are forced to use our noses and not our eyes.~
+  SAY ~It is none of your business, but yes I do. I love how the night heightens one's sense of smell when we are forced to use our noses and not our eyes.~
 =
 ~I feel so much closer to nature when I can sense the different scents she exudes. All can use their eyes and all can see the same, but with smell it is more subtle, more of an individual experience.~
 =

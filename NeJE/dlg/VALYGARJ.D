@@ -24,16 +24,16 @@ Global("Kiotsi_Dead","GLOBAL",1)
 !Global("LavokDead","GLOBAL",1)
 !Global("ValygarSeesOrb","GLOBAL",1)
 Global("VP_OnIsland","GLOBAL",1)~ THEN BEGIN TS123
-  SAY ~Something about this place reminds me of my family... Undead mages, twisted honor. I expect my mother to appear every minute dragging my zombied father along... Did I tell you I had to kill them both to stop my mother�s madness? Still gives me creeps. Let�s be done quickly and be out of here.~
+  SAY ~Something about this place reminds me of my family... Undead mages, twisted honor. I expect my mother to appear every minute dragging my zombied father along... Did I tell you I had to kill them both to stop my mother's madness? Still gives me creeps. Let's be done quickly and be out of here.~
   IF ~~ THEN DO ~SetGlobal("Kiotsi_Dead","GLOBAL",2)~ EXIT
 END
 
 //IF ~~ THEN BEGIN TS124
-//  SAY ~Yes, there is a pain in life, pain, and loss, and sorrow. But there is also joy and pleasure of growing and learning. You can�t have one without the other, and I wouldn�t want to sacrifice either. <CHARNAME>, let us finish this needless discussion.~
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I�m taking Imoen, and we are going. ~ EXTERN ~PPIRENI1~ 84
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let�s destroy this monster once and forever. ~ EXTERN ~PPIRENI1~ 84
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I�m taking Imoen, and we are going. ~ EXTERN ~PPIRENI2~ 105
-//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let�s destroy this monster once and forever. ~ EXTERN ~PPIRENI2~ 105
+//  SAY ~Yes, there is a pain in life, pain, and loss, and sorrow. But there is also joy and pleasure of growing and learning. You can't have one without the other, and I wouldn't want to sacrifice either. <CHARNAME>, let us finish this needless discussion.~
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I'm taking Imoen, and we are going. ~ EXTERN ~PPIRENI1~ 84
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",0)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let's destroy this monster once and forever. ~ EXTERN ~PPIRENI1~ 84
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I am really tired of this madness too. Let us just finish it. I'm taking Imoen, and we are going. ~ EXTERN ~PPIRENI2~ 105
+//  IF ~Global("YoshimoAndHisBetrayal","GLOBAL",1)~ THEN REPLY ~Yes, I think you are right. Whether or not this is all the fulfillment of a prophecy, or just random chance does change the gravity of our situation, I doubt we would do anything differently, if we even knew one way or another... Let's destroy this monster once and forever. ~ EXTERN ~PPIRENI2~ 105
 //END
 
 IF ~~ THEN BEGIN TS126
@@ -55,7 +55,7 @@ Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS128
   IF ~~ THEN REPLY ~"Valygar, how are you faring?"~ GOTO TS130
   IF ~~ THEN REPLY ~"Do you not feel lonely sometimes, Valygar?"~ GOTO TS131
   IF ~~ THEN REPLY ~You come up to Valygar quietly and walk beside him in silence.~ GOTO TS132
-  IF ~~ THEN REPLY ~You study Valygar�s face while he is preoccupied with his task.~ GOTO TS133
+  IF ~~ THEN REPLY ~You study Valygar's face while he is preoccupied with his task.~ GOTO TS133
   IF ~~ THEN REPLY ~You blow Valygar a kiss.~ GOTO TS134
   IF ~~ THEN REPLY ~You throw a pinecone you were saving for the last three days for that particular purpose into him.~ GOTO TS135
   IF ~~ THEN REPLY ~You murmur under your breath: "Gods be good, he is quite a stallion that one".~ GOTO TS136
@@ -63,7 +63,7 @@ Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS128
 END
 
 IF ~~ THEN BEGIN TS127
-  SAY ~No, do not waste your words. Perhaps not all magic is evil, <CHARNAME>. But Irenicus is worse than anything Lavok ever was, I am sure of it. I would ask you to stay here in safety and wait until I return with the head of the mad mage... But I know, that I�d have to tie you up to keep you out of this battle. So I will not suggest it. I accept the same courtesy of you. We will fight for your soul, <CHARNAME> side by side. I am ready to die for your cause if need be. Besides, sending yet another wizard to Abyss is a pleasure, not labor for Valygar Corthala. Let us go.~
+  SAY ~No, do not waste your words. Perhaps not all magic is evil, <CHARNAME>. But Irenicus is worse than anything Lavok ever was, I am sure of it. I would ask you to stay here in safety and wait until I return with the head of the mad mage... But I know, that I'd have to tie you up to keep you out of this battle. So I will not suggest it. I accept the same courtesy of you. We will fight for your soul, <CHARNAME> side by side. I am ready to die for your cause if need be. Besides, sending yet another wizard to Abyss is a pleasure, not labor for Valygar Corthala. Let us go.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
   IF ~InParty("Anomen")
 !Dead("Anomen")
@@ -138,7 +138,7 @@ IF ~~ THEN BEGIN TS134
 END
 
 IF ~~ THEN BEGIN TS135
-  SAY ~"I�m going to get you!" Now, of course it is not the most mature thing to do, and it can damage your reputation as a party leader, but you find yourself running away giggling like mad, with Valygar at your heels...~
+  SAY ~"I'm going to get you!" Now, of course it is not the most mature thing to do, and it can damage your reputation as a party leader, but you find yourself running away giggling like mad, with Valygar at your heels...~
   IF ~~ THEN EXIT
 END
 
@@ -166,7 +166,7 @@ Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS138
   IF ~~ THEN REPLY ~"Ahem... it was nothing important, really... "~ GOTO TS140
   IF ~~ THEN REPLY ~"Do you have some water left in your water skin? I have run out..."~ GOTO TS141
   IF ~~ THEN REPLY ~You point in whatever direction: "Cowled wizard!"~ GOTO TS142
-  IF ~~ THEN REPLY ~You take a hold of Valygar�s hands: "Valygar, you are a fine companion"~ GOTO TS143
+  IF ~~ THEN REPLY ~You take a hold of Valygar's hands: "Valygar, you are a fine companion"~ GOTO TS143
   IF ~~ THEN REPLY ~"Hmm... here you are! I lost you for a moment..."~ GOTO TS144
   IF ~~ THEN REPLY ~"Do you like my name?"~ GOTO TS145
   IF ~~ THEN REPLY ~"Valygar, about this Corthala curse thing which makes you to ignore women... I think you are overreacting it."~ GOTO TS146
@@ -199,7 +199,7 @@ IF ~~ THEN BEGIN TS143
 END
 
 IF ~~ THEN BEGIN TS144
-  SAY ~"No wonder you cannot see well, with all this hair falling into your eyes..." He brushes the loose strands of hair away from your face. "Now, that�s better."~
+  SAY ~"No wonder you cannot see well, with all this hair falling into your eyes..." He brushes the loose strands of hair away from your face. "Now, that's better."~
   IF ~~ THEN EXIT
 END
 
@@ -209,7 +209,7 @@ IF ~~ THEN BEGIN TS145
 END
 
 IF ~~ THEN BEGIN TS146
-  SAY ~Valygar looks at you sadly: "I don�t overreact, <CHARNAME>. I am a danger for any woman mad enough to care about me. And I do not ignore women, though I wish I could sometimes. The more I love someone, the more I wish to protect her... to stay away. You do understand, don�t you?"~
+  SAY ~Valygar looks at you sadly: "I don't overreact, <CHARNAME>. I am a danger for any woman mad enough to care about me. And I do not ignore women, though I wish I could sometimes. The more I love someone, the more I wish to protect her... to stay away. You do understand, don't you?"~
   IF ~~ THEN EXIT
 END
 
@@ -232,14 +232,14 @@ Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS148
   IF ~~ THEN REPLY ~"Do you think that flowers can lie, Valygar?"~ GOTO TS150
   IF ~~ THEN REPLY ~"I am very flattered by your attention lately, Valygar. You have a gentle heart, I was surprised to discover."~ GOTO TS151
   IF ~~ THEN REPLY ~"I was wondering what do you think about me, Valygar? Someone was giving me ideas..."~ GOTO TS152
-  IF ~~ THEN REPLY ~You stuff what was left of the daisy into Valygar�s palm.~ GOTO TS153
-  IF ~~ THEN REPLY ~You come up to Valygar, and muss his hair: "Here, you looked way too stiff. Don�t you ever let your guard down? Or stop to smell flowers?"~ GOTO TS154
+  IF ~~ THEN REPLY ~You stuff what was left of the daisy into Valygar's palm.~ GOTO TS153
+  IF ~~ THEN REPLY ~You come up to Valygar, and muss his hair: "Here, you looked way too stiff. Don't you ever let your guard down? Or stop to smell flowers?"~ GOTO TS154
   IF ~~ THEN REPLY ~You show Valygar the daisy with a single petal left on it from a distance and mouth: "He loves me" voicelessly.~ GOTO TS155
   IF ~~ THEN REPLY ~You throw the daisy away.~ GOTO TS156
 END
 
 IF ~~ THEN BEGIN TS149
-  SAY ~Valygar grumbles: "Expert opinion indeed...", but the shine of his eyes as he looks at you serves to confirm the daisy�s verdict.~
+  SAY ~Valygar grumbles: "Expert opinion indeed...", but the shine of his eyes as he looks at you serves to confirm the daisy's verdict.~
   IF ~~ THEN EXIT
 END
 
@@ -249,12 +249,12 @@ IF ~~ THEN BEGIN TS150
 END
 
 IF ~~ THEN BEGIN TS151
-  SAY ~Valygar takes your hand and sighs:  "I thought you can use a bit of gentleness m�lady. The destiny is too rough on you." ~
+  SAY ~Valygar takes your hand and sighs:  "I thought you can use a bit of gentleness m'lady. The destiny is too rough on you." ~
   IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN TS152
-  SAY ~The ranger replies without a moment�s hesitation: "I think that you are wonderful, smart and beautiful..." It sounds almost like a prayer on his lips.~
+  SAY ~The ranger replies without a moment's hesitation: "I think that you are wonderful, smart and beautiful..." It sounds almost like a prayer on his lips.~
   IF ~~ THEN EXIT
 END
 
@@ -264,7 +264,7 @@ IF ~~ THEN BEGIN TS153
 END
 
 IF ~~ THEN BEGIN TS154
-  SAY ~Valygar shakes his head in astonishment: "That�s what I get for taking the helmet off for a moment? Makes me wonder about what will happen should I remove gauntlets or boots or... I am sorry, <CHARNAME>, this is not fit for the ears of a lady."~
+  SAY ~Valygar shakes his head in astonishment: "That's what I get for taking the helmet off for a moment? Makes me wonder about what will happen should I remove gauntlets or boots or... I am sorry, <CHARNAME>, this is not fit for the ears of a lady."~
   IF ~~ THEN EXIT
 END
 
@@ -351,7 +351,7 @@ IF ~~ THEN BEGIN Kelem2
 END
 
 IF ~~ THEN BEGIN NEJ157
-  SAY ~See the contempt with which this young woman treats this man�s heart, she throws scorn on his words and gift? I cannot believe a man would have written such as this if this Leina had not encouraged him in some way. Women are so fickle!~
+  SAY ~See the contempt with which this young woman treats this man's heart, she throws scorn on his words and gift? I cannot believe a man would have written such as this if this Leina had not encouraged him in some way. Women are so fickle!~
   IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXIT
   IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 47
 END
@@ -420,8 +420,8 @@ IF ~~ THEN BEGIN NEJ162
 END
 
 IF ~~ THEN BEGIN NEJ163
-  SAY ~I�m with Melora. You can never be sure what is going to come out of the mouth of a wizard! Best not to let them so much as open it!~
-  IF ~~ THEN REPLY ~Both of you shut up before someone dies, and I�m not promising that it will be the mages!~ EXTERN ~MELORAJ~ 15
+  SAY ~I'm with Melora. You can never be sure what is going to come out of the mouth of a wizard! Best not to let them so much as open it!~
+  IF ~~ THEN REPLY ~Both of you shut up before someone dies, and I'm not promising that it will be the mages!~ EXTERN ~MELORAJ~ 15
   IF ~~ THEN REPLY ~You both knew what would be expected from you when you agreed to come here. Now if neither of you can cope with it leave before we enter the Academy.~ EXTERN ~MELORAJ~ 15
   IF ~~ THEN REPLY ~I am not going to risk the lives of the rest of the group. If you two cannot see past your phobias for a while do us all a favor and leave now.~ EXTERN ~MELORAJ~ 15
   IF ~~ THEN REPLY ~Melora, Valygar if you wish to remain with the group then at least try and act like mages.~ EXTERN ~MELORAJ~ 15
@@ -447,7 +447,7 @@ IF ~~ THEN BEGIN NEJ166
 END
 
 IF ~~ THEN BEGIN NEJ167
- SAY ~As long as her tongue speak I say we don�t give her a chance to use it!~
+ SAY ~As long as her tongue speak I say we don't give her a chance to use it!~
  IF ~True()~ THEN EXTERN ~KHARESSE~ 1
  IF ~InParty("Leina")
 !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 125

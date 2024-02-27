@@ -10,7 +10,7 @@ Global("VP_Enhance_Ring","GLOBAL",1)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~<GABBER>? I don�t think I know the name or the face yet you obviously know of me. What reason do you have to seek me out?~
+  SAY ~<GABBER>? I don't think I know the name or the face yet you obviously know of me. What reason do you have to seek me out?~
   IF ~~ THEN REPLY ~I have a proposition for an elementalist such as yourself. Are you interested in hearing me out?~ GOTO 2
   IF ~~ THEN REPLY ~I have an artifact in need of a little elemental enhancement and I was told you were the one to ask.~ GOTO 2
   IF ~~ THEN REPLY ~I need an elementalist who is prepared to work, discreetly, on an artifact I have and your name cropped up.~ GOTO 2
@@ -24,11 +24,11 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~Before you say anymore, let me remind you that there are heavy penalties imposed on those caught breaking Halruaa�s laws. Now, what is you need from me?~
+  SAY ~Before you say anymore, let me remind you that there are heavy penalties imposed on those caught breaking Halruaa's laws. Now, what is you need from me?~
   IF ~~ THEN REPLY ~I require you only to add a small enhancement to this ring for me?~ GOTO 5
   IF ~~ THEN REPLY ~I have in my possession a magical ring that was never fully constructed. I seek only to enhance it, to make it the artifact it was intended to be.~ GOTO 5
   IF ~~ THEN REPLY ~I need your aid as an elementalist to complete a ring, the construction of which was begun by elemental specialists.~ GOTO 5
-  IF ~~ THEN REPLY ~It would appear to me that some of Halruaa�s laws are made solely to restrict a student becoming more powerful than the master. All I want from you is your help in adding a little of your own specialist magic to this ring I have here.~ GOTO 5
+  IF ~~ THEN REPLY ~It would appear to me that some of Halruaa's laws are made solely to restrict a student becoming more powerful than the master. All I want from you is your help in adding a little of your own specialist magic to this ring I have here.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 4
@@ -36,7 +36,7 @@ IF ~~ THEN BEGIN 4
   IF ~~ THEN REPLY ~I require you only to add a small enhancement to this ring for me?~ GOTO 5
   IF ~~ THEN REPLY ~I have in my possession a magical ring that was never fully constructed. I seek only to enhance it, to make it the artifact it was intended to be.~ GOTO 5
   IF ~~ THEN REPLY ~I need your aid as an elementalist to complete a ring, the construction of which was begun by elemental specialists.~ GOTO 5
-  IF ~~ THEN REPLY ~It would appear to me that some of Halruaa�s laws are made solely to restrict a student becoming more powerful than the master. All I want from you is your help in adding a little of your own specialist magic to this ring I have here.~ GOTO 5
+  IF ~~ THEN REPLY ~It would appear to me that some of Halruaa's laws are made solely to restrict a student becoming more powerful than the master. All I want from you is your help in adding a little of your own specialist magic to this ring I have here.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -48,7 +48,7 @@ END
 
 IF ~~ THEN BEGIN 6
   SAY ~So, you are asking me to risk my career here at Halruaa and maybe my neck also, to work on an infamous Ring of Might, knowing that to do so is forbidden? Now the question becomes, what are you prepared to pay in order for me to take this risk?~
-  IF ~PartyGoldGT(7999)~ THEN REPLY ~I believe 8000 gold should more than cover any inconvenience and risk, don�t you?~ GOTO 7
+  IF ~PartyGoldGT(7999)~ THEN REPLY ~I believe 8000 gold should more than cover any inconvenience and risk, don't you?~ GOTO 7
   IF ~~ THEN REPLY ~I will give you 4000 gold, seems fair as it was the same as I paid for the aid of another elementalist.~ GOTO 8
   IF ~~ THEN REPLY ~How does 2000 gold sound to you?~ GOTO 10
 END

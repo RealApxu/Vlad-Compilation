@@ -82,9 +82,9 @@ IF ~~ THEN BEGIN NEJ192
 END
 
 IF ~~ THEN BEGIN NEJ193
- SAY ~I have no need for the scrolls you speak of. This is a matter of one�s own self pride and one�s dignity that you are asking me to forget. NO, I WILL NOT be judged by a morose, woodland fairy.~
- IF ~~ THEN REPLY ~Edwin please, no one is asking you to sacrifice your pride or you dignity here. Think for a moment, Xan�s and our time has occurred, it is now in our past. You have no need to face him again and I will assure you that what ever occurs here will not be spoken of outside the group. Please reconsider Edwin?~ GOTO NEJ194
- IF ~~ THEN REPLY ~I�ll not beg you Edwin, I too have my pride and dignity but I will ask you once more to please reconsider. Is there nothing I can say that will change your mind, nothing at all?~ GOTO NEJ194
+ SAY ~I have no need for the scrolls you speak of. This is a matter of one's own self pride and one's dignity that you are asking me to forget. NO, I WILL NOT be judged by a morose, woodland fairy.~
+ IF ~~ THEN REPLY ~Edwin please, no one is asking you to sacrifice your pride or you dignity here. Think for a moment, Xan's and our time has occurred, it is now in our past. You have no need to face him again and I will assure you that what ever occurs here will not be spoken of outside the group. Please reconsider Edwin?~ GOTO NEJ194
+ IF ~~ THEN REPLY ~I'll not beg you Edwin, I too have my pride and dignity but I will ask you once more to please reconsider. Is there nothing I can say that will change your mind, nothing at all?~ GOTO NEJ194
 END
 
 IF ~~ THEN BEGIN NEJ194
@@ -105,9 +105,9 @@ IF ~~ THEN BEGIN NEJ196
 END
 
 IF ~~ THEN BEGIN NEJ197
-  SAY ~So that is the way of it, my own astuteness amazes even me at times. Give the students scrolls that have been doctored, they then fail and have to pay again to study further. I could almost come to like this mage, still he shouldn�t have tried to deceive one with more intelligence than himself...  (*Begins  to unleash a spell*)...~
-  IF ~~ THEN REPLY ~Edwin, hold a moment. Killing this mage may make you feel better, and I suppose he deserves killing for thinking he could deceive you, but please, having demonstrated your superiority by uncovering his ruse, please consider the safety of us all if we set Halruaa�s mages  against us.~ GOTO NEJ198
-  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~Edwin please, killing Mordecai is only going to aggravate Halruaa�s mages and that is not a situation we want to have to deal with at this present moment.~ GOTO NEJ198
+  SAY ~So that is the way of it, my own astuteness amazes even me at times. Give the students scrolls that have been doctored, they then fail and have to pay again to study further. I could almost come to like this mage, still he shouldn't have tried to deceive one with more intelligence than himself...  (*Begins  to unleash a spell*)...~
+  IF ~~ THEN REPLY ~Edwin, hold a moment. Killing this mage may make you feel better, and I suppose he deserves killing for thinking he could deceive you, but please, having demonstrated your superiority by uncovering his ruse, please consider the safety of us all if we set Halruaa's mages  against us.~ GOTO NEJ198
+  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~Edwin please, killing Mordecai is only going to aggravate Halruaa's mages and that is not a situation we want to have to deal with at this present moment.~ GOTO NEJ198
 END
 
 IF ~~ THEN BEGIN NEJ198
@@ -135,7 +135,7 @@ IF ~~ THEN BEGIN NEJ199
 END
 
 IF ~~ THEN BEGIN firattak
-	SAY ~A sensible and commendable decision... [It doesn�t bear thinking about where we might be if were not for my influence rubbing off onto the idiot child.]~
+	SAY ~A sensible and commendable decision... [It doesn't bear thinking about where we might be if were not for my influence rubbing off onto the idiot child.]~
 	IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ firattak
@@ -144,9 +144,9 @@ IF ~~ THEN BEGIN firattak
 END
 
 IF ~~ THEN BEGIN tranfail
-  SAY ~I don�t recall asking for anyone�s interference ...  DID I?!~
+  SAY ~I don't recall asking for anyone's interference ...  DID I?!~
   IF ~~ THEN REPLY ~Edwin please, Malvolio sees you as one of his students and not as the accomplished mage that you are. My guess is he erred on the side of caution for fear he would lose his position if a student died during one of his tests. In no way does this outcome reflect on your genius nor is it a failing on your part.~ GOTO tranfai2
-  IF ~~ THEN REPLY ~Edwin, Malvolio wouldn�t know greatness if it came up and hit him in the face. He acted hastily in ending the test and therefore not really giving you a fair chance. You should not look on this as a failing in yourself or your brilliance. ~ GOTO tranfai2
+  IF ~~ THEN REPLY ~Edwin, Malvolio wouldn't know greatness if it came up and hit him in the face. He acted hastily in ending the test and therefore not really giving you a fair chance. You should not look on this as a failing in yourself or your brilliance. ~ GOTO tranfai2
 END
 
 IF ~~ THEN BEGIN tranfai2
@@ -164,7 +164,7 @@ END
 IF ~~ THEN BEGIN invoker1
   SAY ~And do what, reduce my standing as eminent red wizard to nothing more than common exterminator of vermin?!~
 =
-~You have the effrontery to suggest such a thing to me, be thankful that I don�t deal in vermin control otherwise you wouldn�t be standing here now!~
+~You have the effrontery to suggest such a thing to me, be thankful that I don't deal in vermin control otherwise you wouldn't be standing here now!~
   IF ~~ THEN REPLY ~I understand your anger at me Edwin, but had there been another even remotely as competent as you, I would not have asked this mundane task of you. Please, there are valuable prizes to be won if you would just allow yourself to see past the nature of what is being asked.~ GOTO invoker2
   IF ~~ THEN REPLY ~I understand your distaste for such a menial task, but without your help there really is no way we can win these valuable prizes.~ GOTO invoker2
 END
@@ -184,8 +184,8 @@ IF ~~ THEN BEGIN invfail
 ~Any idiot could have seen that I was only just getting into my stride, that I was toying with them, showing them what it meant to cross the path of a real wizard.~
 =
 ~I was just about to finish the job when you had the audacity to intercede!~
-  IF ~~ THEN REPLY ~Edwin, please if the mages learn that you are an extremely competent red wizard the game will be up and all our lives will be forfeit. Let�s just leave him to take care of the problem himself.~ GOTO invfail2
-  IF ~~ THEN REPLY ~You were probably doing too well Edwin and he couldn�t let it be known that a student was more adept than himself. After all, he doesn�t realise the true extent of the power that you wield. Let�s forget about his trinkets before he starts asking awkward questions.~ GOTO invfail2
+  IF ~~ THEN REPLY ~Edwin, please if the mages learn that you are an extremely competent red wizard the game will be up and all our lives will be forfeit. Let's just leave him to take care of the problem himself.~ GOTO invfail2
+  IF ~~ THEN REPLY ~You were probably doing too well Edwin and he couldn't let it be known that a student was more adept than himself. After all, he doesn't realise the true extent of the power that you wield. Let's forget about his trinkets before he starts asking awkward questions.~ GOTO invfail2
 END
 
 IF ~~ THEN BEGIN invfail2
@@ -301,7 +301,7 @@ IF ~~ THEN BEGIN Kelem3
 END
 
 IF ~~ THEN BEGIN transmut
- SAY ~Just the sort of thing I would expect to hear from one without two brain cells to rub together! One gains satisfaction when one�s genius is recognised, not when it goes unnoticed! However, I am guessing this is your way of spurring me into passing this mage�s puerile test for you.~
+ SAY ~Just the sort of thing I would expect to hear from one without two brain cells to rub together! One gains satisfaction when one's genius is recognised, not when it goes unnoticed! However, I am guessing this is your way of spurring me into passing this mage's puerile test for you.~
 =
 ~I know how difficult words of more than one syllable can be for you but I do understand monosyllabic speech so the next time, you want something of me, do me the courtesy of plain speaking.~
 =
@@ -317,19 +317,19 @@ END
 IF ~~ THEN BEGIN abjurer
 	SAY ~If I pass... if I pass... You said IF I PASS! What do you mean by IF?~
   	IF ~~ THEN REPLY ~Edwin forgive me, I meant to have said *when* you pass. A slip of the tongue on my part, no more. Please, no insult to yourself was intended, of course you will pass and I have no doubt with honours.~ GOTO abjurer1
-  	IF ~~ THEN REPLY ~Edwin please, not so loud, no-one here is doubting your ability. The mistake was mine, a slip of the tongue, which I am sure you will be gracious enough to forgive. Now let�s show this mage what a real wizard can do, what do you say Edwin?~ GOTO abjurer1
+  	IF ~~ THEN REPLY ~Edwin please, not so loud, no-one here is doubting your ability. The mistake was mine, a slip of the tongue, which I am sure you will be gracious enough to forgive. Now let's show this mage what a real wizard can do, what do you say Edwin?~ GOTO abjurer1
 END
 
 IF ~~ THEN BEGIN abjurer1
-	SAY ~Many a man has died for less than a slip of the tongue, remember that in future. I will however give this person a few minutes of my time, if only to show him the splendour of a real wizard in action. (*That is, providing my brilliance doesn�t overcome him*).~
+	SAY ~Many a man has died for less than a slip of the tongue, remember that in future. I will however give this person a few minutes of my time, if only to show him the splendour of a real wizard in action. (*That is, providing my brilliance doesn't overcome him*).~
   IF ~~ THEN DO ~SetGlobal("VP_Edwin_AbjQuest","GLOBAL",1)~ EXTERN ~TUPHIN~ edwcast
 END
 
 IF ~~ THEN BEGIN abjurer2
-	SAY ~(*About to unleash a spell of his own*) Let�s see how good your protection spells are wizard...~
-	 IF ~~ THEN REPLY ~EDWIN, NO! Sorry, I didn�t mean to raise my voice, but please think... he�s not worth the risk of incurring the wrath of Halruaa�s mages.~ GOTO abjurer3
-	 IF ~~ THEN REPLY ~Edwin, the tests were obviously fixed and I agree this mage deserves whatever it is you are about to throw at him, but please think for a moment... we really don�t need to draw attention to ourselves in this way.~ GOTO abjurer3
-	 IF ~~ THEN REPLY ~Edwin wait... we all know that you are the better mage here and we don�t need their trinkets to prove it.~ GOTO abjurer4
+	SAY ~(*About to unleash a spell of his own*) Let's see how good your protection spells are wizard...~
+	 IF ~~ THEN REPLY ~EDWIN, NO! Sorry, I didn't mean to raise my voice, but please think... he's not worth the risk of incurring the wrath of Halruaa's mages.~ GOTO abjurer3
+	 IF ~~ THEN REPLY ~Edwin, the tests were obviously fixed and I agree this mage deserves whatever it is you are about to throw at him, but please think for a moment... we really don't need to draw attention to ourselves in this way.~ GOTO abjurer3
+	 IF ~~ THEN REPLY ~Edwin wait... we all know that you are the better mage here and we don't need their trinkets to prove it.~ GOTO abjurer4
 END
 
 IF ~~ THEN BEGIN abjurer3
@@ -338,7 +338,7 @@ IF ~~ THEN BEGIN abjurer3
 END
 
 IF ~~ THEN BEGIN abjurer4
- SAY ~Bah, you think I don�t see the fear for your own insignificant life behind your words! It doesn�t take tremendous amounts of intelligence to recognise superiority when you see it and this retarded imbecile should pay for his shortsightedness.~
+ SAY ~Bah, you think I don't see the fear for your own insignificant life behind your words! It doesn't take tremendous amounts of intelligence to recognise superiority when you see it and this retarded imbecile should pay for his shortsightedness.~
 =
 ~However, if I suffer this moronic ignoramus to live solely to save yourself, remember you owe me, <CHARNAME>, you owe me and I WILL collect someday in the future. (*He drops his hands, the incantation is left unfinished*).~
  	IF ~~ THEN EXTERN ~TUPHIN~ npcfail
@@ -354,7 +354,7 @@ IF ~~ THEN BEGIN vashon
 =
 ~I always had my doubts about the standards of instruction here and this little charade proves my theory on just how low they are.~
 =
-~(*It�s no wonder the specialists of the future have only a fraction of the competence and intelligence of yours truly if this is where their predecessors learnt their art*).~
+~(*It's no wonder the specialists of the future have only a fraction of the competence and intelligence of yours truly if this is where their predecessors learnt their art*).~
   IF ~~ THEN REPLY ~You are right as always Edwin and I should never have asked you to consider such a demeaning exam. My own selfishness in wanting the prizes blinded me to the insult that I was bestowing on you by even daring to think to ask such a thing of you. I hope you can forgive this indiscretion of mine.~ GOTO vashon3
   IF ~~ THEN REPLY ~Forgive me Edwin, it was selfish and thoughtless of me to ask such a demeaning task of you.~ GOTO vashon3
 END
@@ -362,7 +362,7 @@ END
 IF ~~ THEN BEGIN vashon3
   SAY ~Not everyone can be perfect and it is inevitable that you will make mistakes as you blunder through your life <CHARNAME>, you can not help yourself.~
 =
-~Whereas, just because  I never need to seek forgiveness for myself, it doesn�t mean that I can not be forgiving. Apology accepted... this time.~
+~Whereas, just because  I never need to seek forgiveness for myself, it doesn't mean that I can not be forgiving. Apology accepted... this time.~
 =
 ~(*I do love to see the sub moronic species grovel, it gives one a feeling of... superiority*).~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail

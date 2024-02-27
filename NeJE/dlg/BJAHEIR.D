@@ -215,7 +215,7 @@ END
 
 IF ~Global("VP_BPC","LOCALS",2)~ THEN BEGIN NEJ480
   SAY ~What are we doing here <CHARNAME>? We already know how these events are to end and we should not be here.~
-  IF ~~ THEN REPLY ~I can�t explain it Jaheira, but I have this inexplicable feeling that for now this is where I should be.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO NEJ481
+  IF ~~ THEN REPLY ~I can't explain it Jaheira, but I have this inexplicable feeling that for now this is where I should be.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO NEJ481
   IF ~~ THEN REPLY ~My life has been one of many twists, you yourself have been witness to this Jaheira, but it has never taken me anywhere without reason.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO NEJ481
   IF ~~ THEN REPLY ~Hrothgar is a brave man Jaheira, but he can not do this alone, he needs my... our aid.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO NEJ482
   IF ~~ THEN REPLY ~We are here now and I stand by my decision to to help Hrothgar regardless of how things turn out.~ DO ~SetGlobal("VP_BPC","LOCALS",3)~ GOTO NEJ483
@@ -225,16 +225,16 @@ IF ~~ THEN BEGIN NEJ481
   SAY ~That may be so, but this mission is a waste of our time. We can not interfere with these events and as such we should have continued our own journey. We should have taken the portal at Kuldahar and left the past to the past. I fear I should not have been so hasty in agreeing to abandon Khalid, now with the portal lost I know not when or even if I will see him again.~
   IF ~~ THEN REPLY ~Has it not occurred to you that maybe... just maybe... I am here to alter that which happened? It is possible for a mistake to have been made in the past and I am here to right that mistake.~ GOTO NEJ484
   IF ~~ THEN REPLY ~So far I have had little choice in my direction and I believe it is the case here. I may not always like where fate leads me but if we were meant to have taken the portal, then she would have ensured that we had.~ GOTO NEJ485
-  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus�s making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
+  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus's making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
   IF ~~ THEN REPLY ~Stop worrying about the past and the future. What will be will be and no amount of worrying on your part will change that.~ GOTO NEJ486
   IF ~~ THEN REPLY ~A decision was made Jaheira and I know I have made the right choice. Call it instinct, call it gut feeling, whatever, this is where we are meant to be.~ GOTO NEJ487
 END
 
 IF ~~ THEN BEGIN NEJ482
-  SAY ~You have no grasp of what I am saying do you? Hrothgar�s fate was sealed in the past and your aid must not alter the outcome of these events. Our future would have been much safer if we had taken the portal at Kuldahar, it was a mistake to come here.~
+  SAY ~You have no grasp of what I am saying do you? Hrothgar's fate was sealed in the past and your aid must not alter the outcome of these events. Our future would have been much safer if we had taken the portal at Kuldahar, it was a mistake to come here.~
   IF ~~ THEN REPLY ~Has it not occurred to you that maybe... just maybe... I am here to alter that which happened? It is possible for a mistake to have been made in the past and I am here to right that mistake.~ GOTO NEJ484
   IF ~~ THEN REPLY ~So far I have had little choice in my direction and I believe it is the case here. I may not always like where fate leads me but if we were meant to have taken the portal, then she would have ensured that we had.~ GOTO NEJ485
-  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus�s making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
+  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus's making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
   IF ~~ THEN REPLY ~Stop worrying about the past and the future. What will be will be and no amount of worrying on your part will change that.~ GOTO NEJ486
   IF ~~ THEN REPLY ~A decision was made Jaheira and I know I have made the right choice. Call it instinct, call it gut feeling, whatever, this is where we are meant to be.~ GOTO NEJ487
 END
@@ -243,13 +243,13 @@ IF ~~ THEN BEGIN NEJ483
   SAY ~It is noble of you to want to aid Hrothgar, but what has been must be allowed to be. Have I not said so before? You can not... must not alter what fate has decreed. If by coming here you think to do this, then we should have taken the portal at Kuldahar, for the future will surely be in jeopardy if you succeed in this foolishness.~
   IF ~~ THEN REPLY ~Has it not occurred to you that maybe... just maybe... I am here to alter that which happened? It is possible for a mistake to have been made in the past and I am here to right that mistake.~ GOTO NEJ484
   IF ~~ THEN REPLY ~So far I have had little choice in my direction and I believe it is the case here. I may not always like where fate leads me but if we were meant to have taken the portal, then she would have ensured that we had.~ GOTO NEJ485
-  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus�s making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
+  IF ~~ THEN REPLY ~We had no idea what lay beyond that portal Jaheira. It could just as easily have been another of Irenicus's making, hoping to snare us in another hell dimension somewhere. No, it is my belief that fate prevented us from taking that portal for a reason.~ GOTO NEJ485
   IF ~~ THEN REPLY ~Stop worrying about the past and the future. What will be will be and no amount of worrying on your part will change that.~ GOTO NEJ486
   IF ~~ THEN REPLY ~A decision was made Jaheira and I know I have made the right choice. Call it instinct, call it gut feeling, whatever, this is where we are meant to be.~ GOTO NEJ487
 END
 
 IF ~~ THEN BEGIN NEJ484
-  SAY ~Surely you don�t believe that any more than I do <CHARNAME>? If you have convinced yourself that this is true and you intend acting on your belief, then I fear that the future we knew may not be the future that we will eventually return to. You should take the time to think long and hard on what we may come to lose by any rash and emotional actions you choose to take here.~
+  SAY ~Surely you don't believe that any more than I do <CHARNAME>? If you have convinced yourself that this is true and you intend acting on your belief, then I fear that the future we knew may not be the future that we will eventually return to. You should take the time to think long and hard on what we may come to lose by any rash and emotional actions you choose to take here.~
   IF ~~ THEN REPLY ~I cannot help what you feel or believe. I have put my trust in Hrothgar and his is the path we now follow. That is... until we find a way home.~ GOTO NEJ489
   IF ~~ THEN REPLY ~Hrothgar has assured me that my actions here will not affect my future, so I see no reason not to continue aiding him in his mission.~ GOTO NEJ489
   IF ~~ THEN REPLY ~Whatever, circumstances being what they are, we have very little choice now, as Hrothgar is our only means of leaving here safely.~ GOTO NEJ489
@@ -282,7 +282,7 @@ IF ~~ THEN BEGIN NEJ488
 END
 
 IF ~~ THEN BEGIN NEJ489
-  SAY ~I don�t have the same faith in the man as you <CHARNAME>. The manner in which he brought us to this place is such that we have no way of knowing the road back... a manner which incidently he quite deftly got out of explaining.~
+  SAY ~I don't have the same faith in the man as you <CHARNAME>. The manner in which he brought us to this place is such that we have no way of knowing the road back... a manner which incidently he quite deftly got out of explaining.~
   IF ~~ THEN GOTO NEJ490
 END
 
@@ -297,7 +297,7 @@ IF ~~ THEN BEGIN NEJ491
 END
 
 IF ~~ THEN BEGIN NEJ492
-  SAY ~That was all! We tread a perilous road, not knowing what lies ahead and you let your harp alert our presence to all a sundry. Why can�t you put the thing in your backpack child, lessen the chances of it happening again?~
+  SAY ~That was all! We tread a perilous road, not knowing what lies ahead and you let your harp alert our presence to all a sundry. Why can't you put the thing in your backpack child, lessen the chances of it happening again?~
   IF ~~ THEN EXTERN ~BLEINA~ 186
 END
 
@@ -312,7 +312,7 @@ IF ~~ THEN BEGIN NEJ494
 END
 
 IF ~~ THEN BEGIN NEJ495
-  SAY ~I am sorry child, that remark about Imoen was unfair, I admit. It�s true my turns blood cold when I think what that poor child is being subjected to by that sadistic bastard. As for why she speaks as she does... it is because she is a child and enjoys rebelling against her elders. After all, is that not the real reason you ended up in an unsavoury marriage, to spite your parents?~
+  SAY ~I am sorry child, that remark about Imoen was unfair, I admit. It's true my turns blood cold when I think what that poor child is being subjected to by that sadistic bastard. As for why she speaks as she does... it is because she is a child and enjoys rebelling against her elders. After all, is that not the real reason you ended up in an unsavoury marriage, to spite your parents?~
   IF ~~ THEN EXTERN ~BLEINA~ 189
 END
 
@@ -322,7 +322,7 @@ IF ~~ THEN BEGIN NEJ496
 END
 
 IF ~~ THEN BEGIN NEJ497
-  SAY ~Khalid wasn�t much of a talker but when we danced... words were not important He said all he had to say with his eyes and the way he held me. I will never dance again.~
+  SAY ~Khalid wasn't much of a talker but when we danced... words were not important He said all he had to say with his eyes and the way he held me. I will never dance again.~
   IF ~~ THEN EXTERN ~BLEINA~ PCF2Leina36a
 END
 
@@ -389,7 +389,7 @@ IF ~~ THEN BEGIN LeiSpher3
 END
 
 IF ~~ THEN BEGIN LeiSpher4
-	SAY ~Yes what you have said reminds me of a book Khalid, found in the library at Candlekeep. He was laughing very hard over this bard�s tale about some man who had a box that was bigger on the inside then the outside.~
+	SAY ~Yes what you have said reminds me of a book Khalid, found in the library at Candlekeep. He was laughing very hard over this bard's tale about some man who had a box that was bigger on the inside then the outside.~
 	IF ~~ THEN EXTERN ~BLEINA~ Sphere26
 END
 
@@ -405,7 +405,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -416,7 +416,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -427,7 +427,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -464,7 +464,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -475,7 +475,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -486,7 +486,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -523,7 +523,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -534,7 +534,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Jan")
 !IsValidForPartyDialogue("Keldorn")
 !IsValidForPartyDialogue("Korgan")
@@ -545,7 +545,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -598,7 +598,7 @@ IF ~~ THEN BEGIN LeiThea1
 END
 
 IF ~~ THEN BEGIN LeiThea2
-  SAY ~Girl, get that silly notion out of your mind. I have no wish to be part of a bard�s romantic tale.~
+  SAY ~Girl, get that silly notion out of your mind. I have no wish to be part of a bard's romantic tale.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ161
 	IF ~InParty("Viconia")
 !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2

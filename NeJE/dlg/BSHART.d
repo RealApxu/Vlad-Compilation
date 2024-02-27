@@ -1,9 +1,9 @@
 BEGIN ~BSHART~
 
 IF WEIGHT #0 ~Global("VP_STB_itscoldhere","LOCALS",2)~ THEN BEGIN 0
- SAY ~By the nine hells <CHARNAME>, it�s cold enough here to freeze a brass monkey�s...~
- IF ~~ THEN REPLY ~(*Interrupting her*) No need to elaborate Shar-Teel, I think we are all in agreement... it�s cold here.~ GOTO 1
- IF ~~ THEN REPLY ~You said it girl... am I glad I�m not a brass monkey!~ GOTO 5
+ SAY ~By the nine hells <CHARNAME>, it's cold enough here to freeze a brass monkey's...~
+ IF ~~ THEN REPLY ~(*Interrupting her*) No need to elaborate Shar-Teel, I think we are all in agreement... it's cold here.~ GOTO 1
+ IF ~~ THEN REPLY ~You said it girl... am I glad I'm not a brass monkey!~ GOTO 5
  IF ~~ THEN REPLY ~Mmm... I believe monkey parts are a delicacy in some parts of the world... any you find could be worth a coin or two. Keep your eyes open people for frozen off cuts of monkey.~ GOTO 8
 END
 
@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
- SAY ~Yea well, you don�t get to be the best damn fighter this side of Faerun by mixing with the gentry!~
+ SAY ~Yea well, you don't get to be the best damn fighter this side of Faerun by mixing with the gentry!~
  IF ~~ THEN GOTO 11
 END
 
@@ -32,28 +32,28 @@ END
 IF ~~ THEN BEGIN 5
  SAY ~Could be you had a narrow escape there. Imagine... how different things could have been if Bhaal had come upon a female brass monkey swinging through the trees. What with the way he was sowing his seed all over the land... sounds to me that as long as it moved and was female... *BANG*... in went the fertiliser!~
  IF ~~ THEN REPLY ~You know for a woman, you have a very crude tongue!~ GOTO 3
- IF ~~ THEN REPLY ~(*Looking a little bemused*) I must say, I�ve never heard it put quite that way before.~ GOTO 6
+ IF ~~ THEN REPLY ~(*Looking a little bemused*) I must say, I've never heard it put quite that way before.~ GOTO 6
  IF ~~ THEN REPLY ~Fertiliser! You make it sound as though he were planting roses!~ GOTO 6
  IF ~~ THEN REPLY ~Ha, I like your kind of talk and your kind of fighting. You may not be as good as me but a girl after my own heart just the same!~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 6
- SAY ~(*Sneers*) True, there are more commonly used words I could have used but no matter how you dress it up, ol� Bhaal, in his haste to produce as many bastards as he could before time ran out for him, was a rampant beast!~
+ SAY ~(*Sneers*) True, there are more commonly used words I could have used but no matter how you dress it up, ol' Bhaal, in his haste to produce as many bastards as he could before time ran out for him, was a rampant beast!~
  IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 7
- SAY ~(*Sneers*) I say what is on my mind... that�s all. You may have bested once in battle but anytime you wanna try again I guarantee you�ll ne�er have a tooth left in that fat mouth of yours.~
+ SAY ~(*Sneers*) I say what is on my mind... that's all. You may have bested once in battle but anytime you wanna try again I guarantee you'll ne'er have a tooth left in that fat mouth of yours.~
  IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 8
- SAY ~(*Gruffly*) So, my words amuse you do they? Would you be just as amused to hear the price necromancers would be willing to pay for <PRO_RACE>�s body parts?~
+ SAY ~(*Gruffly*) So, my words amuse you do they? Would you be just as amused to hear the price necromancers would be willing to pay for <PRO_RACE>'s body parts?~
  IF ~~ THEN GOTO 14
 END
 
 IF ~~ THEN BEGIN 9
- SAY ~Poor bastard... thought I wanted to be like him! Still, I have him to thank, if it wasn�t for his... well... if it wasn�t for him I�d not be the best damn fighter this side of Faerun.~
+ SAY ~Poor bastard... thought I wanted to be like him! Still, I have him to thank, if it wasn't for his... well... if it wasn't for him I'd not be the best damn fighter this side of Faerun.~
  IF ~~ THEN GOTO 10
 END
 
@@ -68,7 +68,7 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
- SAY ~He didn�t give a damn about those females... they were but incubators for the eggs he fertilised!~
+ SAY ~He didn't give a damn about those females... they were but incubators for the eggs he fertilised!~
  IF ~~ THEN GOTO 13
 END
 
@@ -78,16 +78,16 @@ IF ~~ THEN BEGIN 13
 END
 
 IF ~~ THEN BEGIN 14
- SAY ~Mock me again and I�ll not only be making myself some serious coin but also several of those unscrupulous creatures that I know very happy!~
+ SAY ~Mock me again and I'll not only be making myself some serious coin but also several of those unscrupulous creatures that I know very happy!~
 	IF ~~ THEN DO ~SetGlobal("VP_STB_itscoldhere","LOCALS",3)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("VP_STB_thishadbetter","LOCALS",2)~ THEN BEGIN 15
- SAY ~This had better end our business with the old druid, I�m sick of being his gopher. Tell me again <CHARNAME>, why are we risking our necks to save a bunch of people who�ll be dead as soon as we get out of this time warp?~
- IF ~~ THEN REPLY ~Because it�s the right thing to do.~ GOTO 16
- IF ~~ THEN REPLY ~Because this could well be our future if we don�t find a way out of here.~ GOTO 18
- IF ~~ THEN REPLY ~What�s the matter Shar-Teel... aren�t you enjoying the bloodshed?~ GOTO 24
- IF ~~ THEN REPLY ~Maybe, but we�re richer than we�ve ever been and the coin plus everything else we have looted will be going back with us!~ GOTO 25
+ SAY ~This had better end our business with the old druid, I'm sick of being his gopher. Tell me again <CHARNAME>, why are we risking our necks to save a bunch of people who'll be dead as soon as we get out of this time warp?~
+ IF ~~ THEN REPLY ~Because it's the right thing to do.~ GOTO 16
+ IF ~~ THEN REPLY ~Because this could well be our future if we don't find a way out of here.~ GOTO 18
+ IF ~~ THEN REPLY ~What's the matter Shar-Teel... aren't you enjoying the bloodshed?~ GOTO 24
+ IF ~~ THEN REPLY ~Maybe, but we're richer than we've ever been and the coin plus everything else we have looted will be going back with us!~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 16
@@ -96,22 +96,22 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
- SAY ~Me... I�ve always considered it�s better to do what�s right to keep me breathing and to the abyss with the dying in fighting someone else�s battle.~
+ SAY ~Me... I've always considered it's better to do what's right to keep me breathing and to the abyss with the dying in fighting someone else's battle.~
   IF ~~ THEN DO ~SetGlobal("VP_STB_thishadbetter","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 18
- SAY ~Live in this uncivilised back wood... you�ve got to be joking! I still ha... you�d better find a way to return us, I am not about to die before I�ve even been born. A wish, which I�m sure, is very close to your own heart!~
+ SAY ~Live in this uncivilised back wood... you've got to be joking! I still ha... you'd better find a way to return us, I am not about to die before I've even been born. A wish, which I'm sure, is very close to your own heart!~
  IF ~~ THEN REPLY ~Please, finish what you were saying and tell us all what it is you still have waiting for you in our own time? What secret is our hot blooded warrior keeping from us... eh?~ GOTO 19
- IF ~~ THEN REPLY ~I wish I were. I have no idea where we go once we�ve delivered the gem to Arundel. I had hoped in our search for it, we�d have found some way of getting home.~ GOTO 21
- IF ~~ THEN REPLY ~You forget, I too have very good reason not to hang around here for too long but once we get this gem to Arundel, we�ll just have to accept our lot and make the best of things until a way can be found.~ GOTO 21
- IF ~~ THEN REPLY ~The old druid knows more than he is telling. Well, we�ve done his bidding and now, one way or another, he will tell us what it is he�s not saying.~ GOTO 23
+ IF ~~ THEN REPLY ~I wish I were. I have no idea where we go once we've delivered the gem to Arundel. I had hoped in our search for it, we'd have found some way of getting home.~ GOTO 21
+ IF ~~ THEN REPLY ~You forget, I too have very good reason not to hang around here for too long but once we get this gem to Arundel, we'll just have to accept our lot and make the best of things until a way can be found.~ GOTO 21
+ IF ~~ THEN REPLY ~The old druid knows more than he is telling. Well, we've done his bidding and now, one way or another, he will tell us what it is he's not saying.~ GOTO 23
 END
 
 IF ~~ THEN BEGIN 19
- SAY ~(*Gruffly*) None of your damned business... that goes for all of you! I have a life I am anxious to continue so just you concentrate on finding us a way back to it... or you may find yourself dying that death before your birth and trust me, it won�t be of old age!~
- IF ~~ THEN REPLY ~I don�t take kindly to threats! I also have reasons to want out of here and if you want to be leaving with me, then I suggest you temper your manners a little... in fact, make that a lot!~ GOTO 20
- IF ~~ THEN REPLY ~Ha... is that a threat? If so then you should know I don�t scare easily.~ GOTO 20
+ SAY ~(*Gruffly*) None of your damned business... that goes for all of you! I have a life I am anxious to continue so just you concentrate on finding us a way back to it... or you may find yourself dying that death before your birth and trust me, it won't be of old age!~
+ IF ~~ THEN REPLY ~I don't take kindly to threats! I also have reasons to want out of here and if you want to be leaving with me, then I suggest you temper your manners a little... in fact, make that a lot!~ GOTO 20
+ IF ~~ THEN REPLY ~Ha... is that a threat? If so then you should know I don't scare easily.~ GOTO 20
  IF ~~ THEN REPLY ~You dare to threaten me... a little guttersnipe like you dares to threaten the heir of a god? You must have a death wish or something girly!~ GOTO 20
 END
 
@@ -121,22 +121,22 @@ IF ~~ THEN BEGIN 20
 END
 
 IF ~~ THEN BEGIN 21
- SAY ~(*Caressing her sword*) Yea well, he�s a sly one is that old druid. He�s keeping something from us, I know he is. If this darned gem is as important as he says, I reckon I can make him tell us what ever it is in exchange for it... or not, depending how quickly he co-operates!~
+ SAY ~(*Caressing her sword*) Yea well, he's a sly one is that old druid. He's keeping something from us, I know he is. If this darned gem is as important as he says, I reckon I can make him tell us what ever it is in exchange for it... or not, depending how quickly he co-operates!~
  IF ~~ THEN GOTO 22
 END
 
 IF ~~ THEN BEGIN 22
- SAY ~Yea, I�m certainly going to enjoy tortur... uh... getting it out of the son of a bitch!~
+ SAY ~Yea, I'm certainly going to enjoy tortur... uh... getting it out of the son of a bitch!~
   IF ~~ THEN DO ~SetGlobal("VP_STB_thishadbetter","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
- SAY ~(*Caressing her sword*) Yea well, he�s a sly one is that old druid and I�m certainly going to enjoy tortur... uh... getting whatever it is out of the son of a bitch!~
+ SAY ~(*Caressing her sword*) Yea well, he's a sly one is that old druid and I'm certainly going to enjoy tortur... uh... getting whatever it is out of the son of a bitch!~
   IF ~~ THEN DO ~SetGlobal("VP_STB_thishadbetter","LOCALS",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
- SAY ~(*Looking at you coldly*) There�s been enough blood spilt to turn all the seas of Faerun scarlet... but what�s the use of it all when there�s no one to remember who it was did the spilling?~
+ SAY ~(*Looking at you coldly*) There's been enough blood spilt to turn all the seas of Faerun scarlet... but what's the use of it all when there's no one to remember who it was did the spilling?~
   IF ~~ THEN GOTO 25
 END
 
@@ -146,14 +146,14 @@ IF ~~ THEN BEGIN 25
 END
 
 IF ~~ THEN BEGIN 26
- SAY ~None, and if you don�t want to be remembered as the *lost half god*, you�d do well to get us out of here before you die here in the past... along with your name.~
- IF ~~ THEN REPLY ~I don�t take kindly to threats! I also have reasons to want out of here and if you want to be leaving with me, then I suggest you temper your manners a little... in fact, make that a lot!~ GOTO 20
- IF ~~ THEN REPLY ~Ha... is that a threat? If so then you should know I don�t scare easily.~ GOTO 20
+ SAY ~None, and if you don't want to be remembered as the *lost half god*, you'd do well to get us out of here before you die here in the past... along with your name.~
+ IF ~~ THEN REPLY ~I don't take kindly to threats! I also have reasons to want out of here and if you want to be leaving with me, then I suggest you temper your manners a little... in fact, make that a lot!~ GOTO 20
+ IF ~~ THEN REPLY ~Ha... is that a threat? If so then you should know I don't scare easily.~ GOTO 20
  IF ~~ THEN REPLY ~You dare to threaten me... a little guttersnipe like you dares to threaten the heir of a god? You must have a death wish or something girly!~ GOTO 20
 END
 
 IF ~~ THEN BEGIN 27
- SAY ~(*Snarls*) You�re not even sure yourself we�ll be going back and riches or not, you�ve got to be joking if you think I�m going to live in this uncivilised back wood. No amount of coin will compensate for what I still ha... let�s just say you�d better find a way to return us, as I am not about to die before I�ve even been born. A wish, which I�m sure, is very close to your own heart!~
+ SAY ~(*Snarls*) You're not even sure yourself we'll be going back and riches or not, you've got to be joking if you think I'm going to live in this uncivilised back wood. No amount of coin will compensate for what I still ha... let's just say you'd better find a way to return us, as I am not about to die before I've even been born. A wish, which I'm sure, is very close to your own heart!~
   IF ~~ THEN DO ~SetGlobal("VP_STB_thishadbetter","LOCALS",3)~ EXIT
 END
 
@@ -343,46 +343,46 @@ END
 ////////////////////////////////
 
 CHAIN IF ~Global("VP_STB_Minsc","LOCALS",2)~ THEN BSHART STB_Minsc
-	~*Shar-Teel, being the first to rise, stands apart from the group and is readying herself for the day�s battles by practising her thrust and parry skills against an invisible foe. After a while she notices Minsc the ranger watching her...*~
+	~*Shar-Teel, being the first to rise, stands apart from the group and is readying herself for the day's battles by practising her thrust and parry skills against an invisible foe. After a while she notices Minsc the ranger watching her...*~
 =
 	~(*Pointing her sword at him and speaking gruffly*) You want something ranger?~
 DO ~SetGlobal("VP_STB_Minsc","LOCALS",3)~
 == BMINSC ~Ooh please, do not point your sword at Minsc. Shar-Teel looks wonderful the way she dances with her blade and I only wish to stand and admire the dance.~
-== BSHART ~(*Still pointing her sword*) This isn�t a side show you know, so if you�ve finished admiring... go away!~
+== BSHART ~(*Still pointing her sword*) This isn't a side show you know, so if you've finished admiring... go away!~
 == BMINSC ~Side show... what is this side show? Is that where you go to learn to do this... this sword fighting?~
-== BSHART ~(*Sneers*) Imbecile ranger! It�s plain to see why in battle you miss more than you hit. Flaying about and out of control like a lunatic, I�m surprised you haven�t stuck yourself with your own sword!~
+== BSHART ~(*Sneers*) Imbecile ranger! It's plain to see why in battle you miss more than you hit. Flaying about and out of control like a lunatic, I'm surprised you haven't stuck yourself with your own sword!~
 == BMINSC ~Minsc is no lunatic! He is a berserker, a warrior of great skill and cunning. When evil hears my berserker battle cry, it brings great terror to its heart because evil then knows Minsc is on its tail and a mighty righteous butt kicking is coming its way... right Boo?~
 =
 	~(*Squeak*)~ [BOONEJ1]
-== BSHART ~Not to say any in your path will also get to feel this righteous ass kicking! There�s nothing skilful in charging in blindly swinging your sword in hopes of hitting something. That is why my skill makes me the superior fighter to you... to any man.~
-== BMINSC ~(*He puts out his large hand and pushes the point of her sword away from him*)... Pooh... do you hear that Boo? Such pride Minsc has never seen before and lots of prideful evil have felt the force of Minsc�s boot heels or fallen to the edge of his sword.~
+== BSHART ~Not to say any in your path will also get to feel this righteous ass kicking! There's nothing skilful in charging in blindly swinging your sword in hopes of hitting something. That is why my skill makes me the superior fighter to you... to any man.~
+== BMINSC ~(*He puts out his large hand and pushes the point of her sword away from him*)... Pooh... do you hear that Boo? Such pride Minsc has never seen before and lots of prideful evil have felt the force of Minsc's boot heels or fallen to the edge of his sword.~
 =
 	~Come Boo, this pride will also come to a fall soon... we will watch and see.~
-== BSHART ~I�ve heard some daft things come out of the mouths of men in my time but that half wit ranger takes the cake.~
+== BSHART ~I've heard some daft things come out of the mouths of men in my time but that half wit ranger takes the cake.~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Jaheira","LOCALS",2)~ THEN BSHART STB_Jaheira
 	~J-J-Jaheira  m-m-my dear...~
 DO ~SetGlobal("VP_STB_Jaheira","LOCALS",3)~
-== BJAHEIR ~You heartless harpy! I�ve no time for your flippancy, get away from me!~
-== BSHART ~B-b-but you d-d-don�t know what I-I-I�m going to say...~
+== BJAHEIR ~You heartless harpy! I've no time for your flippancy, get away from me!~
+== BSHART ~B-b-but you d-d-don't know what I-I-I'm going to say...~
 
 == BJAHEIR ~Nor do I wish to either! To the abyss with you!~
 =
 ~Damn and blast <CHARNAME>, why ever did <PRO_HESHE> let that heinous hellcat into this group! I warned that she would be trouble, her and that blood thirsty mind of hers.~
-== BSHART ~Go to hell yourself Druid! I pledged my sword to <CHARNAME>�s cause <PRO_HESHE> bested me fair and square. So here I am and either you accept it or... or... go make a nest in that tree of Kuldahar�s and become one with your beloved nature.~
+== BSHART ~Go to hell yourself Druid! I pledged my sword to <CHARNAME>'s cause <PRO_HESHE> bested me fair and square. So here I am and either you accept it or... or... go make a nest in that tree of Kuldahar's and become one with your beloved nature.~
 =
-	~Tell you what half-elf, if we find that man of yours we�ll get Irenicus to open a portal and we�ll send the bumbling twerp through to you... how�s that sound?~
-== BJAHEIR ~You�ll not be rid of me that easy. I also gave my oath to aid and protect <CHARNAME>, so thanks all the same but I feel I�ll be reunited with Khalid soon enough.~
+	~Tell you what half-elf, if we find that man of yours we'll get Irenicus to open a portal and we'll send the bumbling twerp through to you... how's that sound?~
+== BJAHEIR ~You'll not be rid of me that easy. I also gave my oath to aid and protect <CHARNAME>, so thanks all the same but I feel I'll be reunited with Khalid soon enough.~
 == BSHART ~(*Scoffs*) You think so? You must have heard the torture Irenicus put <CHARNAME> through. I know I did, I thought the roof was going to cave in with all the ruckus <PRO_HESHE> was making.~
 =
 	~May be you heard the imbecile ranger say what happened to the witch Dynaheir... do you really think that wimp of a husband of yours fared any better?~
-== BJAHEIR ~If Khalid was dead I would know it... I would! There is a bond that comes when two have been paired for as long as Khalid and I have, a bond that you couldn�t possibly begin to understand. Maybe if you stopped deriding men and opened your heart a little you�d understand how it is with male and female... how one is made to compliment the other.~
+== BJAHEIR ~If Khalid was dead I would know it... I would! There is a bond that comes when two have been paired for as long as Khalid and I have, a bond that you couldn't possibly begin to understand. Maybe if you stopped deriding men and opened your heart a little you'd understand how it is with male and female... how one is made to compliment the other.~
 == BSHART ~Male compliment female, yea gods what rainbow did you slide down druid!?~
 =
-	~Everyone knows the female is by far the stronger sex. It�s just a case of getting the males to admit it but of course, their egos are far too big for that. Ask yourself, if it were left to men to birth the babies, how soon before  all life became extinct?~
+	~Everyone knows the female is by far the stronger sex. It's just a case of getting the males to admit it but of course, their egos are far too big for that. Ask yourself, if it were left to men to birth the babies, how soon before  all life became extinct?~
 == BJAHEIR ~This is becoming tiresome Shar-Teel. I can only think something must have gone dreadfully awry in your past to turn such a pretty girl into such a harridan... perhaps I should pity you instead of berating you?~
-== BSHART ~(*Sneers*) You know nothing about me! If any one is worthy of pity half elf it�s you! I�ve watched you and it�s obvious that your lack of prowess as a fighter is why you compensate with a few paltry spells to back you up. Must say it suits you, half elf... half fighter...~
+== BSHART ~(*Sneers*) You know nothing about me! If any one is worthy of pity half elf it's you! I've watched you and it's obvious that your lack of prowess as a fighter is why you compensate with a few paltry spells to back you up. Must say it suits you, half elf... half fighter...~
 =
 	~Keep your pity druid, take it, along with your imbecile husband to the abyss with you. (*She strides away*)~
 EXIT
@@ -390,12 +390,12 @@ EXIT
 CHAIN IF ~Global("VP_STB_Hrothgar","LOCALS",2)~ THEN BSHART STB_Hrothgar
 	~Ho you, paladin...~
 DO ~SetGlobal("VP_STB_Hrothgar","LOCALS",3)~
-== BHROTH ~(*Sighing*) Please Shar-Teel, I have no objections to you using my name. Perhaps you�ll show a little less distain if you use it and forget the paladin in me.~
-== BSHART ~(*Gruffly*) Huh, if you lost some of those holier than thou airs and graces that you put on, we might all forget the paladin in you. All this goody goody, "I�m superior to you and you can�t possibly live up to my example" is sickening! Admit it, you�re a prude 'paladin'?~
+== BHROTH ~(*Sighing*) Please Shar-Teel, I have no objections to you using my name. Perhaps you'll show a little less distain if you use it and forget the paladin in me.~
+== BSHART ~(*Gruffly*) Huh, if you lost some of those holier than thou airs and graces that you put on, we might all forget the paladin in you. All this goody goody, "I'm superior to you and you can't possibly live up to my example" is sickening! Admit it, you're a prude 'paladin'?~
 == BHROTH ~There is nothing prudish in the way I conduct my life. It is my choice and although it saddens me to see the way some choose to live, I have never set myself up as an example, nor do I expect everyone to agree with my code. Only the gods have the right to expect man to follow by their example.~
-== BSHART ~Ha... so as long as we live by the example set by a god, regardless of which god we choose to follow, then we can not be condemned for our actions... it is a god�s way!~
+== BSHART ~Ha... so as long as we live by the example set by a god, regardless of which god we choose to follow, then we can not be condemned for our actions... it is a god's way!~
 == BHROTH ~(*Smiling*) So, by inferring that to follow the example of one of the less than righteous members of our pantheon one can not be condemned for evil deeds, you think you have me do you young lady?~
-== BSHART ~You got it in one! In your own words... man chooses his god, his god sets his demands,  man follows. Oh, and be careful how you address me paladin or I�ll show you just how unladylike I can be!~
+== BSHART ~You got it in one! In your own words... man chooses his god, his god sets his demands,  man follows. Oh, and be careful how you address me paladin or I'll show you just how unladylike I can be!~
 == BHROTH ~(*Bows slightly*) Forgive my impertinence... Shar-Teel.~
 =
 	~It is because of the differing alignments of the gods that good, evil and impartiality will always be a part of our world...~
@@ -403,9 +403,9 @@ DO ~SetGlobal("VP_STB_Hrothgar","LOCALS",3)~
 	~We can not change it, it is the way. Just as it will always be the way for the priests of one god to strive to convert all those aligned to another to their own faith. Each will condemn the other saying theirs is the right way but in the end, each and every man has free will to make his own choices in this life.~
 =
 	~Now supposing, just supposing I were to...~
-== BSHART ~(*She slants her eyes and her face darkens*) Stop right there! There�s no supposing anything... I�m not standing here and listening to you go into the spiel of one of those damned converting priests yourself! I�m exercising some of that free will and ending this conversation now!~
+== BSHART ~(*She slants her eyes and her face darkens*) Stop right there! There's no supposing anything... I'm not standing here and listening to you go into the spiel of one of those damned converting priests yourself! I'm exercising some of that free will and ending this conversation now!~
 == BHROTH ~That is your prerogative. Now, what was it you hailed me for?~
-== BSHART ~Forget it! You�ll only turn it into another sermon... you just can�t help yourself!~
+== BSHART ~Forget it! You'll only turn it into another sermon... you just can't help yourself!~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Dar","LOCALS",2)~ THEN BSHART STB_Dar
@@ -414,93 +414,93 @@ DO ~SetGlobal("VP_STB_Dar","LOCALS",3)~
 == BDAR ~Shar-Teel... if I may presume to use your name? I hope that now we have fought side by side you do not still perceive me as quite as burdensome to the group as you first thought?~
 == BSHART ~It is my name, if needs must you may use it!~
 =
-	~You fight well enough half orc... for your kind but that�s no excuse to approach me and speak to me as if you were my equal... that you will never be!~
+	~You fight well enough half orc... for your kind but that's no excuse to approach me and speak to me as if you were my equal... that you will never be!~
 == BDAR ~You misunderstand, I never expected to be considered equal in the world of men. I only hope, one day, to gain acceptance and recognition for the skills I bring to it... that is the most I dare hope to dream of.~
-== BSHART ~(*Scoffs*) <CHARNAME> brought you into this group, you should be telling <PRO_HIMHER> of you hopes... they are of no interest to me. I can�t imagine why you think they are!~
+== BSHART ~(*Scoffs*) <CHARNAME> brought you into this group, you should be telling <PRO_HIMHER> of you hopes... they are of no interest to me. I can't imagine why you think they are!~
 =
-	~You�re an abomination, not only as a half-orc but also as a male! Your kind are savages, your own birth is proof enough. That poor wretch of a woman you call mother, should have castrated your father as soon as he dropped his breeches. Me, I wouldn�t have hesitated... him and any others who thought to try their luck.~
+	~You're an abomination, not only as a half-orc but also as a male! Your kind are savages, your own birth is proof enough. That poor wretch of a woman you call mother, should have castrated your father as soon as he dropped his breeches. Me, I wouldn't have hesitated... him and any others who thought to try their luck.~
 =
-	~Seems to me, a man can�t go raping decent women if he�s nothing in his breeches!~
+	~Seems to me, a man can't go raping decent women if he's nothing in his breeches!~
 == BDAR ~(*Sadly*) Yours is the attitude I have come to expect and have learnt to accept in this life. I should have realised that I have no right to presume to speak with you, nor to impose my thoughts and expectations on you. I am sorry... forgive me.~
-== BSHART ~Yeah... well in future half orc, keep that ugly great head of yours away from me and we�ll get on just fine!~
+== BSHART ~Yeah... well in future half orc, keep that ugly great head of yours away from me and we'll get on just fine!~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Accalia","LOCALS",2)~ THEN BSHART STB_Accalia
-	~A question Accalia... what in the nine hells makes a woman of obvious intelligence become servile to a god? A goddess I could just about understand, what with her probably being more powerful and all that, but a god... sheesh there�s nothing more pathetic than to see a woman on her knees to a male, even if that male is a god!~
+	~A question Accalia... what in the nine hells makes a woman of obvious intelligence become servile to a god? A goddess I could just about understand, what with her probably being more powerful and all that, but a god... sheesh there's nothing more pathetic than to see a woman on her knees to a male, even if that male is a god!~
 DO ~SetGlobal("VP_STB_Accalia","LOCALS",3)~
-== BACCALI ~It is a calling Shar-Teel, not just something a person wakes up one day and decides to do. It is an honour to be called by one�s god or goddess to do their will.~
-== BSHART ~Yea right, this male materialises out of thin air and says he�s your god. Then, with a click of his fingers you fall at his feet ready to do anything he asks! Could just as easily been a demon you know, devious blighters are demons, always looking to make fools of us mortals. That is, those without the sense to see through them.~
-== BACCALI ~That�s where faith comes into it, but to be honest with you Shar-Teel, because of your prideful attitude I doubt I could explain it in such a way you�d accept. This conversation is a waste of both our time. (*She turns away*)...~
-== BSHART ~Hey we aren�t done yet! What�s wrong with a little friendly banter between girls... surely if it�s as strong as you make out, your faith can withstand a little inquiry?~
-== BACCALI ~My faith in Tempus is unshakable, it�s your inability to make an unbiased judgement when the subject under discussion involves a male... be he a god or mortal. Tell me Shar-Teel, if I were the chosen of a goddess, would we be having this conversation?~
+== BACCALI ~It is a calling Shar-Teel, not just something a person wakes up one day and decides to do. It is an honour to be called by one's god or goddess to do their will.~
+== BSHART ~Yea right, this male materialises out of thin air and says he's your god. Then, with a click of his fingers you fall at his feet ready to do anything he asks! Could just as easily been a demon you know, devious blighters are demons, always looking to make fools of us mortals. That is, those without the sense to see through them.~
+== BACCALI ~That's where faith comes into it, but to be honest with you Shar-Teel, because of your prideful attitude I doubt I could explain it in such a way you'd accept. This conversation is a waste of both our time. (*She turns away*)...~
+== BSHART ~Hey we aren't done yet! What's wrong with a little friendly banter between girls... surely if it's as strong as you make out, your faith can withstand a little inquiry?~
+== BACCALI ~My faith in Tempus is unshakable, it's your inability to make an unbiased judgement when the subject under discussion involves a male... be he a god or mortal. Tell me Shar-Teel, if I were the chosen of a goddess, would we be having this conversation?~
 == BSHART ~Chosen, is that how you see yourself? More like enslaved. You said yourself that you would prefer to be on the battlefield than serving in the temple and yet, where did we find you... in the temple serving under and answerable to yet another male!~
 =
-	~You believe you are strong, but in reality it�s men who pull your strings... you are just another weak woman, priestess of Tempus and you�re right, this conversation has been a waste of time.~
+	~You believe you are strong, but in reality it's men who pull your strings... you are just another weak woman, priestess of Tempus and you're right, this conversation has been a waste of time.~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Imoen","LOCALS",2)
 InParty("Imoen")
 Global("VP_STB_TalkToImmy","LOCALS",1)~ THEN BSHART STB_Imoen
-~(*She grabs Imoen�s hand*) Ha, caught you! Sneaking around again are you thief?~
+~(*She grabs Imoen's hand*) Ha, caught you! Sneaking around again are you thief?~
 DO ~SetGlobal("VP_STB_Imoen","LOCALS",3)~
 == IMOENJ ~Let go of me, Shar-Teel!~
-== BSHART ~Not until you tell me why you�re sneaking about here when everyone else is sleeping?~
-== IMOENJ ~(*She snarls*) It�s none of your business, so just let go of me!~		
-== BSHART ~Look here you snotty nosed tyke, when I see some one rifling through my stuff then it becomes my business! I�ll not ask again, so unless you want those thieving hands of yours to hit the ground, what are you doing?~
-== IMOENJ ~(*Looking suprised*) Your stuff! What in the nine hells do you think I would want with your stuff... I wouldn�t touch "your stuff" with a ten foot pole. Here look for yourself...~
-== BSHART ~Bah... all these bags look the same. Hey, just a minute, isn�t that the paladin�s bag you�ve got there?~
+== BSHART ~Not until you tell me why you're sneaking about here when everyone else is sleeping?~
+== IMOENJ ~(*She snarls*) It's none of your business, so just let go of me!~		
+== BSHART ~Look here you snotty nosed tyke, when I see some one rifling through my stuff then it becomes my business! I'll not ask again, so unless you want those thieving hands of yours to hit the ground, what are you doing?~
+== IMOENJ ~(*Looking suprised*) Your stuff! What in the nine hells do you think I would want with your stuff... I wouldn't touch "your stuff" with a ten foot pole. Here look for yourself...~
+== BSHART ~Bah... all these bags look the same. Hey, just a minute, isn't that the paladin's bag you've got there?~
 == IMOENJ ~(*Snatching it back from her gaze*) Yea, why, you wanna make something of it?~
-== BSHART ~(*Scoffs*) Why you little snotling! You think you�ve got what it takes?~
-== IMOENJ ~(*Drawing her sword*) You don�t scare me... maybe it�s time you got to see your own blood bleeding out!~
-== BSHART ~(*Seeing the resolution on Imoen�s face she bursts out laughing*)... Oh grow up you pathetic little girl... you seriously think I�d take on a kid with only a �dirk� to play with!~
+== BSHART ~(*Scoffs*) Why you little snotling! You think you've got what it takes?~
+== IMOENJ ~(*Drawing her sword*) You don't scare me... maybe it's time you got to see your own blood bleeding out!~
+== BSHART ~(*Seeing the resolution on Imoen's face she bursts out laughing*)... Oh grow up you pathetic little girl... you seriously think I'd take on a kid with only a 'dirk' to play with!~
 =
-	~You�re out of your league kiddo... go back to your rifling, and don�t worry, I�ll not tell the paladin about your little midnight foray... I despise his kind more than you!~
+	~You're out of your league kiddo... go back to your rifling, and don't worry, I'll not tell the paladin about your little midnight foray... I despise his kind more than you!~
 =
 	~(*She grabs her own bag and shaking her head she turns back to her bed, mumbling as she goes*)... Insolent little guttersnipe... she actually thinks she could best me... pathetic!~
 == IMOENJ ~What was it Gorion said... something about "the bigger they are the harder they fall"?~
 =
-	~Well, judging by the size of that one�s head, she�s in for one hell of a fall one day. (*She starts to giggle*)~
+	~Well, judging by the size of that one's head, she's in for one hell of a fall one day. (*She starts to giggle*)~
 =
-	~I only hope I�m around to see it... (*Then thoughtfully*)... Mmm I wonder what she�s hiding in her bag that�s got her knickers all in a twist... later maybe...~
+	~I only hope I'm around to see it... (*Then thoughtfully*)... Mmm I wonder what she's hiding in her bag that's got her knickers all in a twist... later maybe...~
 =
-	~(*She turns her attention back to the bag in her hand*)... Mmm, now what do we have in here... surely he must have some keepsake bestowed upon him by a lady love. I can�t believe he�s got as old as he has and not fallen under the spell of some beautiful woman. He has the word tragedy written all over his face.~
+	~(*She turns her attention back to the bag in her hand*)... Mmm, now what do we have in here... surely he must have some keepsake bestowed upon him by a lady love. I can't believe he's got as old as he has and not fallen under the spell of some beautiful woman. He has the word tragedy written all over his face.~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Imoen","LOCALS",2)
 InParty("Imoen2")
 Global("VP_STB_TalkToImmy2","LOCALS",1)~ THEN BSHART STB_Imoen
-	~(*She grabs Imoen�s hand*) Ha, caught you! Sneaking around again are you thief?~
+	~(*She grabs Imoen's hand*) Ha, caught you! Sneaking around again are you thief?~
 DO ~SetGlobal("VP_STB_Imoen","LOCALS",3)~
 == IMOEN2J ~Let go of me, Shar-Teel!~
-== BSHART ~Not until you tell me why you�re sneaking about here when everyone else is sleeping?~
-== IMOEN2J ~(*She snarls*) It�s none of your business, so just let go of me!~		
-== BSHART ~Look here you snotty nosed tyke, when I see some one rifling through my stuff then it becomes my business! I�ll not ask again, so unless you want those thieving hands of yours to hit the ground, what are you doing?~
-== IMOEN2J ~(*Looking suprised*) Your stuff! What in the nine hells do you think I would want with your stuff... I wouldn�t touch "your stuff" with a ten foot pole. Here look for yourself...~
-== BSHART ~Bah... all these bags look the same. Hey, just a minute, isn�t that the paladin�s bag you�ve got there?~
+== BSHART ~Not until you tell me why you're sneaking about here when everyone else is sleeping?~
+== IMOEN2J ~(*She snarls*) It's none of your business, so just let go of me!~		
+== BSHART ~Look here you snotty nosed tyke, when I see some one rifling through my stuff then it becomes my business! I'll not ask again, so unless you want those thieving hands of yours to hit the ground, what are you doing?~
+== IMOEN2J ~(*Looking suprised*) Your stuff! What in the nine hells do you think I would want with your stuff... I wouldn't touch "your stuff" with a ten foot pole. Here look for yourself...~
+== BSHART ~Bah... all these bags look the same. Hey, just a minute, isn't that the paladin's bag you've got there?~
 == IMOEN2J ~(*Snatching it back from her gaze*) Yea, why, you wanna make something of it?~
-== BSHART ~(*Scoffs*) Why you little snotling! You think you�ve got what it takes?~
-== IMOEN2J ~(*Drawing her sword*) You don�t scare me... maybe it�s time you got to see your own blood bleeding out!~
-== BSHART ~(*Seeing the resolution on Imoen�s face she bursts out laughing*)... Oh grow up you pathetic little girl... you seriously think I�d take on a kid with only a �dirk� to play with!~
+== BSHART ~(*Scoffs*) Why you little snotling! You think you've got what it takes?~
+== IMOEN2J ~(*Drawing her sword*) You don't scare me... maybe it's time you got to see your own blood bleeding out!~
+== BSHART ~(*Seeing the resolution on Imoen's face she bursts out laughing*)... Oh grow up you pathetic little girl... you seriously think I'd take on a kid with only a 'dirk' to play with!~
 =
-	~You�re out of your league kiddo... go back to your rifling, and don�t worry, I�ll not tell the paladin about your little midnight foray... I despise his kind more than you!~
+	~You're out of your league kiddo... go back to your rifling, and don't worry, I'll not tell the paladin about your little midnight foray... I despise his kind more than you!~
 =
 	~(*She grabs her own bag and shaking her head she turns back to her bed, mumbling as she goes*)... Insolent little guttersnipe... she actually thinks she could best me... pathetic!~
 == IMOEN2J ~What was it Gorion said... something about "the bigger they are the harder they fall"?~
 =
-	~Well, judging by the size of that one�s head, she�s in for one hell of a fall one day. (*She starts to giggle*)~
+	~Well, judging by the size of that one's head, she's in for one hell of a fall one day. (*She starts to giggle*)~
 =
-	~I only hope I�m around to see it... (*Then thoughtfully*)... Mmm I wonder what she�s hiding in her bag that�s got her knickers all in a twist... later maybe...~
+	~I only hope I'm around to see it... (*Then thoughtfully*)... Mmm I wonder what she's hiding in her bag that's got her knickers all in a twist... later maybe...~
 =
-	~(*She turns her attention back to the bag in her hand*)... Mmm, now what do we have in here... surely he must have some keepsake bestowed upon him by a lady love. I can�t believe he�s got as old as he has and not fallen under the spell of some beautiful woman. He has the word tragedy written all over his face.~
+	~(*She turns her attention back to the bag in her hand*)... Mmm, now what do we have in here... surely he must have some keepsake bestowed upon him by a lady love. I can't believe he's got as old as he has and not fallen under the spell of some beautiful woman. He has the word tragedy written all over his face.~
 EXIT
 
 CHAIN IF ~Global("VP_STB_Melora","LOCALS",2)~ THEN BSHART STB_Melora
-	~You�re not half bad with that blade of yours thief. A big improvement on that other milksop of a wimp I�ve had to put up with. The gods only know why in the nine hells <CHARNAME> suffered her simpering face for this long.~
+	~You're not half bad with that blade of yours thief. A big improvement on that other milksop of a wimp I've had to put up with. The gods only know why in the nine hells <CHARNAME> suffered her simpering face for this long.~
 DO ~SetGlobal("VP_STB_Melora","LOCALS",3)~
-== BMELORA ~Imoen isn�t it? Strange that... everyone else keeps saying how brave she is. I haven�t heard one bad word against her... until now.~
+== BMELORA ~Imoen isn't it? Strange that... everyone else keeps saying how brave she is. I haven't heard one bad word against her... until now.~
 =
 	~Stranger still that the sorcerer thought her important enough to ensure she was taken along with himself... even more important then even <CHARNAME>... any ideas why?~
-== BSHART ~Hey, when the gods answer your prayers, you don�t turn around and ask why! Good riddance to the snooty bitch is what I say.~
+== BSHART ~Hey, when the gods answer your prayers, you don't turn around and ask why! Good riddance to the snooty bitch is what I say.~
 == BMELORA ~Oh now come on... surely even you can show some compassion for the unfortunate girl? The sorcerer has already tortured her relentlessly, she must be scared out of her wits to find herself at his mercy once again.~
 == BSHART ~(*Scoffs*) Compassion, for a little sneak thief whose idea of fighting is a quick stab in the back and then to run away and hide. Often as not leaving us to finish the poor bastard off... she seldom managed a clean kill! I have only contempt for her kind!~
 == BMELORA ~That is so typical of those with brawn and no brain! Just as the world has many races, so are its people born with different abilities.~
@@ -508,20 +508,20 @@ DO ~SetGlobal("VP_STB_Melora","LOCALS",3)~
 	~The tall and strong find it easy to wield weapons... my kind are born with nimbleness of both mind and body... and if were not for the dexterity of the one you deride, you may well be still rotting in a cell!~
 =
 	~We are all gifted differently, but that is no reason to deride those not like yourself!~
-== BSHART ~(*Sneers*) My... quite the little people lover aren�t we! Tell me Melora, what of the one who uses his gifts to wield magic, what of the wizard Melora... is he also included in your warm and fuzzy we must love all people philosophy?~
-== BMELORA ~(*Looking coldly at Shar-Teel*) Don�t even go there Shar-Teel, that is personal and none of your damn business!~
+== BSHART ~(*Sneers*) My... quite the little people lover aren't we! Tell me Melora, what of the one who uses his gifts to wield magic, what of the wizard Melora... is he also included in your warm and fuzzy we must love all people philosophy?~
+== BMELORA ~(*Looking coldly at Shar-Teel*) Don't even go there Shar-Teel, that is personal and none of your damn business!~
 =
-	~I know about the foul arts of magic and of those who wield them, so I can empathise with Imoen�s friends... understand how they fear for her and the fate which has befallen her.~
+	~I know about the foul arts of magic and of those who wield them, so I can empathise with Imoen's friends... understand how they fear for her and the fate which has befallen her.~
 =
 	~Yet you... you who fought beside her gloat at her misfortune as though the gods themselves had done this in answer to your plea. You are as cold as the steel in that blade you carry!~
-== BSHART ~I tell it like it is and if you don�t like it then don�t listen... simple as that. Better still, reserve your judgment until after you meet the little snotling... that is providing we rescue her before Irenicus finishes what he started and leaves us nothing to rescue!~
-== BMELORA ~You�d better watch your mouth... There�s those here who, hearing you talk like that, would be only to happy to shut it for you. Have a care Shar-Teel!~
+== BSHART ~I tell it like it is and if you don't like it then don't listen... simple as that. Better still, reserve your judgment until after you meet the little snotling... that is providing we rescue her before Irenicus finishes what he started and leaves us nothing to rescue!~
+== BMELORA ~You'd better watch your mouth... There's those here who, hearing you talk like that, would be only to happy to shut it for you. Have a care Shar-Teel!~
 == BSHART ~Do I look worried? Believe me, many have tried and many have fallen because they objected to my... shall we say, plain speaking! As for you... you stunted half breed, what are you going to do... run and tell them what the big bad Shar-Teel said about their darling Imoen?~
 =
 	~I never back away from the chance to get in some more killing. So please, do me a favour and go tell them.~
-== BMELORA ~(*Pulling herself up to her full height and glaring at the fighter*) I�m not intimidated by you, I�ve knocked down bigger and better than you... you foul mouthed harpy!~
+== BMELORA ~(*Pulling herself up to her full height and glaring at the fighter*) I'm not intimidated by you, I've knocked down bigger and better than you... you foul mouthed harpy!~
 =
-	~You�re the pits you really are and I am sickened to find myself in cahoots with such evil. I�ve no need to tell tales, you�ll drop yourself in it sooner or later... your kind always do.~
+	~You're the pits you really are and I am sickened to find myself in cahoots with such evil. I've no need to tell tales, you'll drop yourself in it sooner or later... your kind always do.~
 =
 	~(*She begins to walk away, but then she turns and looks squarely at Shar-Teel*)... Be wary of the shadows, you never can be sure of what lurks just out of sight!~
 EXIT

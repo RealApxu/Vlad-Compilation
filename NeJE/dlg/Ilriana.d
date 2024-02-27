@@ -12,14 +12,14 @@ END
 IF ~~ THEN BEGIN 2
   SAY ~I am Ilriana, please, now that the pleasantries are over, go away!~
   IF ~~ THEN REPLY ~A bit more civility please Ilriana. Tell me, what can possibly be down here to cause such frantic digging?~ GOTO 4
-  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You�re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
+  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You're an accomplished mage, why not just blast your way through the rock?~ GOTO 5
   IF ~~ THEN REPLY ~I most certainly will not go away, not until you tell me why you have enslaved these gnomes?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 3
   SAY ~Apology accepted. I am Ilriana and what I am looking for is non of your business so please, go away!~
   IF ~~ THEN REPLY ~A bit more civility please Ilriana. Tell me, what can possibly be down here to cause such frantic digging?~ GOTO 4
-  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You�re an accomplished mage, why not just blast your way through the rock?~ GOTO 5
+  IF ~~ THEN REPLY ~Come now Ilriana, tell me what is so valuable that you have gnomes searching for you? You're an accomplished mage, why not just blast your way through the rock?~ GOTO 5
   IF ~~ THEN REPLY ~I most certainly will not go away, not until you tell me why you have enslaved these gnomes?~ GOTO 5
 END
 

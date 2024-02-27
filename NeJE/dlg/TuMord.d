@@ -108,11 +108,11 @@ Kit(Player1,MAGESCHOOL_DIVINER)~ THEN REPLY ~Perhaps another time Mordecai, I ha
   IF ~InParty("Kachiko")
 !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ67
   IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, All I can say is I hope your cousin Willy isn�t sitting too comfortably on his chair, because he is about to take a tumble when he hears you have passed this exam. After all, how can you possibly fail when Mordecai is giving you the spells.~ EXTERN ~JANJ~ NEJ197
+!Dead("Jan")~ THEN REPLY ~Jan, All I can say is I hope your cousin Willy isn't sitting too comfortably on his chair, because he is about to take a tumble when he hears you have passed this exam. After all, how can you possibly fail when Mordecai is giving you the spells.~ EXTERN ~JANJ~ NEJ197
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, what luck! Little does Mordecai realise that he stands in the presence of one of the most illustrious... correction... *the* most illustrious of conjurers to walk Faerun. There�s not a mage here at Halruaa who can hold a candle to your brilliance Edwin. I know its not much of a test for one such as yourself, but it will give you the opportunity to show him what being a conjurer really means and we will gain some valuable prizes at the same time.~ EXTERN ~EDWINJ~ NEJ196
+!Dead("Edwin")~ THEN REPLY ~Edwin, what luck! Little does Mordecai realise that he stands in the presence of one of the most illustrious... correction... *the* most illustrious of conjurers to walk Faerun. There's not a mage here at Halruaa who can hold a candle to your brilliance Edwin. I know its not much of a test for one such as yourself, but it will give you the opportunity to show him what being a conjurer really means and we will gain some valuable prizes at the same time.~ EXTERN ~EDWINJ~ NEJ196
   IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic, even you shouldn�t be able to mess this one up seeing as how the spells are being handed to you.~ EXTERN ~TAFFICJ~ conjurer
+!Dead("Taffic")~ THEN REPLY ~Taffic, even you shouldn't be able to mess this one up seeing as how the spells are being handed to you.~ EXTERN ~TAFFICJ~ conjurer
 END
 
 IF ~~ THEN BEGIN 14
@@ -147,7 +147,7 @@ IF ~~ THEN BEGIN 18
 END
 
 IF ~~ THEN BEGIN 19
-  SAY ~Beneath you! You are a student and yet you say it is beneath you to take a tutor�s test? If you wish to do well at Halruaa <GABBER> I suggest you learn some respect for those who are here to aid you in bettering yourself. Now, I have students who do wish to learn to see, so I bid you farewell.~
+  SAY ~Beneath you! You are a student and yet you say it is beneath you to take a tutor's test? If you wish to do well at Halruaa <GABBER> I suggest you learn some respect for those who are here to aid you in bettering yourself. Now, I have students who do wish to learn to see, so I bid you farewell.~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutT28")~ EXIT
@@ -234,7 +234,7 @@ IF ~Global("VP_My_Test","LOCALS",4)
 END
 
 IF ~~ THEN BEGIN 31
-  SAY ~I must say that went very well. Ghiala�s speeches are always long and I swear it is because she likes the sound of her own voice. I am sure her students would enjoy the short respite if you cast your spell in her class. Now onto your second casting, are you ready?~
+  SAY ~I must say that went very well. Ghiala's speeches are always long and I swear it is because she likes the sound of her own voice. I am sure her students would enjoy the short respite if you cast your spell in her class. Now onto your second casting, are you ready?~
   IF ~OR(2)
 !InParty("Minsc")
 Dead("Minsc")~ THEN REPLY ~Sure, just say when Mordecai.~ GOTO 32

@@ -1,27 +1,27 @@
 BEGIN ~SHARTJ~
 
 IF ~~ THEN BEGIN nejopen1
- SAY ~(*Drawing her sword*)... Then it�ll be my pleasure to leave the dogs on the floor lapping up their own blood!~ [mute]
+ SAY ~(*Drawing her sword*)... Then it'll be my pleasure to leave the dogs on the floor lapping up their own blood!~ [mute]
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ nejstart
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ nejstart
 END
 
 IF ~~ THEN BEGIN nejopen2
- SAY ~Still have a weak stomach then thief? You should have stayed in Candlekeep if you can�t take the heat.~
+ SAY ~Still have a weak stomach then thief? You should have stayed in Candlekeep if you can't take the heat.~
  IF ~InParty("Imoen2")~ THEN REPLY ~This place does feel different, but we should not get our hopes up nor let our guard down because of the way we feel. One thing is for sure, we will not discover anything standing around here so I suggest we move quickly and prepare ourselves for whoever or whatever lies in wait at the bottom of these stairs.~  EXTERN ~IMOEN2J~ VP_FIX7
  IF ~InParty("Imoen")~ THEN REPLY ~This place does feel different, but we should not get our hopes up nor let our guard down because of the way we feel. One thing is for sure, we will not discover anything standing around here so I suggest we move quickly and prepare ourselves for whoever or whatever lies in wait at the bottom of these stairs.~  EXTERN ~IMOENJ~ NEJ77
 END
 
 IF WEIGHT #-3 ~Global("VP_SharT_VsPomab","LOCALS",1)~ THEN BEGIN vspomab1
- SAY ~What do you mean by letting that pile of orc�s dung speak to you like that? You should have let me slit the worm�s throat the moment he opened his pompous mouth!~ [mute]
- IF ~~ THEN REPLY ~Shar-Teel please? He was pompous I agree but we don�t want to alienate ourselves so soon after our arrival by killing, possibly, prominent citizen of this town.~ GOTO vspomab2
- IF ~~ THEN REPLY ~Let�s just this once, find out where we are before we go about killing the locals.~ GOTO vspomab2
+ SAY ~What do you mean by letting that pile of orc's dung speak to you like that? You should have let me slit the worm's throat the moment he opened his pompous mouth!~ [mute]
+ IF ~~ THEN REPLY ~Shar-Teel please? He was pompous I agree but we don't want to alienate ourselves so soon after our arrival by killing, possibly, prominent citizen of this town.~ GOTO vspomab2
+ IF ~~ THEN REPLY ~Let's just this once, find out where we are before we go about killing the locals.~ GOTO vspomab2
  IF ~~ THEN REPLY ~Mm... maybe I should have at that!~ GOTO vspomab3
- IF ~~ THEN REPLY ~If he crosses us, I promise you you�ll get first bags on his head!~ GOTO vspomab3
+ IF ~~ THEN REPLY ~If he crosses us, I promise you you'll get first bags on his head!~ GOTO vspomab3
 END
 
 IF ~~ THEN BEGIN vspomab2
- SAY ~What�s one less male? Besides, if all the males here are as arrogant as that one, we�d be doing this town a favour!~
+ SAY ~What's one less male? Besides, if all the males here are as arrogant as that one, we'd be doing this town a favour!~
  IF ~~ THEN DO ~SetGlobal("VP_SharT_VsPomab","LOCALS",2)~ EXIT
 END
 
@@ -31,7 +31,7 @@ IF ~~ THEN BEGIN vspomab3
 END
 
 IF WEIGHT #-4 ~Global("VP_SharT_VsHroth","LOCALS",1)~ THEN BEGIN vshroth
- SAY ~(*Sarcastically and to herself*) Yes sir, no sir... shove your axe where the sun doesn�t shine for you sir! Yea gods why couldn�t Bhaal have impregnated my mother? This one doesn�t have the balls to be worthy of the name *Murder*!~ [mute]
+ SAY ~(*Sarcastically and to herself*) Yes sir, no sir... shove your axe where the sun doesn't shine for you sir! Yea gods why couldn't Bhaal have impregnated my mother? This one doesn't have the balls to be worthy of the name *Murder*!~ [mute]
  IF ~~ THEN DO ~SetGlobal("VP_SharT_VsHroth","LOCALS",2)~ EXIT
 END
 
@@ -46,9 +46,9 @@ IF ~~ THEN BEGIN vsdar2
 END
 
 IF ~~ THEN BEGIN vsdar3
- SAY ~(*Bursts out laughing*)... My what... my lady! You�d do well half orc to remember that there is no namby-pamby ladyness to Shar-Teel!~
+ SAY ~(*Bursts out laughing*)... My what... my lady! You'd do well half orc to remember that there is no namby-pamby ladyness to Shar-Teel!~
 =
-~While we�re at it, I�ll have none of your pious spoutings about your god and eternal damnation or you�ll be wishing <CHARNAME> had let the wolves disembowel you...~
+~While we're at it, I'll have none of your pious spoutings about your god and eternal damnation or you'll be wishing <CHARNAME> had let the wolves disembowel you...~
 =
 ~(*She turns to leave... but then spins round and snarls*)... and keep your sermons to yourself if you want to keep that ugly head of yours on your shoulders!~
  IF ~~ THEN EXTERN ~DARJ~ shartdar2
@@ -67,7 +67,7 @@ CheckStatGT(Player1,15,STR)
 END
 
 IF ~~ THEN BEGIN avalan1
-	SAY ~(*Then looking disparagingly at you*)... Some with the help of others, those who didn�t were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
+	SAY ~(*Then looking disparagingly at you*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ 401
 	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 	IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
@@ -75,7 +75,7 @@ IF ~~ THEN BEGIN avalan1
 END
 
 IF ~~ THEN BEGIN avalan2
-	SAY ~(*Then looking disparagingly at the male members of your group*)... Some with the help of others, those who didn�t were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
+	SAY ~(*Then looking disparagingly at the male members of your group*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ 401
 	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 	IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
@@ -83,7 +83,7 @@ IF ~~ THEN BEGIN avalan2
 END
 
 IF ~~ THEN BEGIN avalan3
-	SAY ~...those who didn�t were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
+	SAY ~...those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
 	IF ~True()~ THEN EXTERN ~HROTHJ~ 401
 	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 	IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
@@ -91,12 +91,12 @@ IF ~~ THEN BEGIN avalan3
 END
 
 IF WEIGHT #-6 ~Global("VP_SharT_ArunDead","LOCALS",1)~ THEN BEGIN arundead1
-	SAY ~Why the mother... we�ve been duped good and proper!~ [mute]
+	SAY ~Why the mother... we've been duped good and proper!~ [mute]
 	IF ~~ THEN GOTO arundead2
 END
 
 IF ~~ THEN BEGIN arundead2
- SAY ~Can�t say I�m surprised, wasn�t I the one who said the old druid looked fit enough to take care of his own town? We should have left him to take his own demon out, but oh no, Mr. goody, bloody goody paladin here...~
+ SAY ~Can't say I'm surprised, wasn't I the one who said the old druid looked fit enough to take care of his own town? We should have left him to take his own demon out, but oh no, Mr. goody, bloody goody paladin here...~
  IF ~~ THEN DO ~SetGlobal("VP_SharT_ArunDead","LOCALS",2)~ EXTERN ~HROTHJ~ stardead
 END
 
@@ -113,12 +113,12 @@ InParty("Imoen2")~ THEN GOTO onimoen1
 END
 
 IF ~~ THEN BEGIN onimoen1
-	SAY ~(*Echoing Imoen�s words sarcastically*) "It�s so cold... there�s too much snow and it makes the sun hurt my eyes..."~
+	SAY ~(*Echoing Imoen's words sarcastically*) "It's so cold... there's too much snow and it makes the sun hurt my eyes..."~
 	IF ~~ THEN GOTO onimoen2
 END
 
 IF ~~ THEN BEGIN onimoen2
-	SAY ~The thief has a spine made of jelly. Let the wimp go home, she obviously hasn�t backbone enough for this mission!~
+	SAY ~The thief has a spine made of jelly. Let the wimp go home, she obviously hasn't backbone enough for this mission!~
 	IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 	IF ~InParty("Minsc")~ THEN GOTO onminsc1
 	IF ~InParty("Accalia")~ THEN GOTO onaccali
@@ -127,7 +127,7 @@ IF ~~ THEN BEGIN onimoen2
 END
 
 IF ~~ THEN BEGIN onjahi
-	SAY ~(*Looking at Jaheira*) You poor dear, being too long from "your Khalid�s" side have you? I can�t imagine why any woman would suffer such a bumbling, stuttering fool in her bed. Leave the fool where he is, he deserves no less!~
+	SAY ~(*Looking at Jaheira*) You poor dear, being too long from "your Khalid's" side have you? I can't imagine why any woman would suffer such a bumbling, stuttering fool in her bed. Leave the fool where he is, he deserves no less!~
 	IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 	IF ~InParty("Minsc")~ THEN GOTO onminsc1
 	IF ~InParty("Accalia")~ THEN GOTO onaccali
@@ -135,7 +135,7 @@ IF ~~ THEN BEGIN onjahi
 END
 
 IF ~~ THEN BEGIN ondar
-	SAY ~(*Glancing next at Dar*) You may be an ugly great brute but at least you know your place is to follow and serve... it�s a shame that quality can�t be bred into the males of all races.~
+	SAY ~(*Glancing next at Dar*) You may be an ugly great brute but at least you know your place is to follow and serve... it's a shame that quality can't be bred into the males of all races.~
 	IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 	IF ~InParty("Minsc")~ THEN GOTO onminsc1
 	IF ~InParty("Accalia")~ THEN GOTO onaccali
@@ -147,7 +147,7 @@ IF ~~ THEN BEGIN onaccali
 END
 
 IF ~~ THEN BEGIN onaccali2
-	SAY ~(*Scoffs*)... Who do you think you�re fooling priestess, it�s as plain as the nose on your face that you wish your duty is to *lay with* the paladin! It has nothing to do with Tempus� will or the will of any other god either... weak pathetic woman you are!~
+	SAY ~(*Scoffs*)... Who do you think you're fooling priestess, it's as plain as the nose on your face that you wish your duty is to *lay with* the paladin! It has nothing to do with Tempus' will or the will of any other god either... weak pathetic woman you are!~
 	IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 	IF ~InParty("Minsc")~ THEN GOTO onminsc1
 END
@@ -163,12 +163,12 @@ IF ~~ THEN BEGIN onminsc2
 END
 
 IF ~~ THEN BEGIN onminsc3
-	SAY ~Hamster my ass, it�s a rat with its tail cut off you idiot.~
+	SAY ~Hamster my ass, it's a rat with its tail cut off you idiot.~
 	IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 END
 
 IF ~~ THEN BEGIN sevhand1
-	SAY ~(*Looking around bewildered*) What... curses, where did that come from... how the hell did he do that? That was no magician�s wand he was waving around!~
+	SAY ~(*Looking around bewildered*) What... curses, where did that come from... how the hell did he do that? That was no magician's wand he was waving around!~
 	IF ~~ THEN GOTO sevhand2
 END	
 	
@@ -178,12 +178,12 @@ IF ~~ THEN BEGIN sevhand2
 END		
 
 IF ~~ THEN BEGIN sevhand3
-	SAY ~(*Then shaking her head as if to clear it*) Snap out of it girl, he�s only a man and will bleed and die as easily as the next!~
+	SAY ~(*Then shaking her head as if to clear it*) Snap out of it girl, he's only a man and will bleed and die as easily as the next!~
 	IF ~~ THEN EXTERN ~HROTHJ~ 195
 END		
 	
 IF ~~ THEN BEGIN kaylsold
-	SAY ~Bah killing that which is already dead, where�s the sport in that? Still, if it moves I can kill it and when I�m through with it you can be sure it�ll bloody well stay dead... permanently!~
+	SAY ~Bah killing that which is already dead, where's the sport in that? Still, if it moves I can kill it and when I'm through with it you can be sure it'll bloody well stay dead... permanently!~
  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
 RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT	
 END
@@ -194,7 +194,7 @@ IF ~~ THEN BEGIN comebck1
 END
 
 IF ~~ THEN BEGIN comebck2
-	SAY ~Ho... maybe the gods are looking down on me after all! They sure as hell aren�t looking out for that sorcerer by returning me here... his days, make that hours, are numbered. The son of a bitch can run but he can�t hide!~
+	SAY ~Ho... maybe the gods are looking down on me after all! They sure as hell aren't looking out for that sorcerer by returning me here... his days, make that hours, are numbered. The son of a bitch can run but he can't hide!~
 	IF ~~ THEN EXTERN ~HROTHJ~ 369
 END
 
@@ -217,11 +217,11 @@ IF ~~ THEN BEGIN imytakenfix
 END
 
 IF ~~ THEN BEGIN gotoulcr
-	SAY ~You are off your head if you think you�re going discover anything at Ulcaster.~
+	SAY ~You are off your head if you think you're going discover anything at Ulcaster.~
 =
-	~Been there, done that, left everything that bleeds dead and I�m damn sure no stone was left unturned... even the old ghost has deserted his ruins now.~
+	~Been there, done that, left everything that bleeds dead and I'm damn sure no stone was left unturned... even the old ghost has deserted his ruins now.~
 =
-	~You�ll not find anything and there�s certainly no glory in going over old ground... but I doubt you�ll listen to sense, men never do, so I guess we�re going anyway!~
+	~You'll not find anything and there's certainly no glory in going over old ground... but I doubt you'll listen to sense, men never do, so I guess we're going anyway!~
 	IF ~~ THEN EXTERN ~HROTHJ~ 404
 END
 
@@ -239,31 +239,31 @@ END
 IF ~~ THEN BEGIN arrivhal
 	SAY ~Phew... for a minute there I thought <CHARNAME> was going to ask him to join us!~
 =
-	~Hrothgar and friend of Hrothgar together in one group!? One holier than thou egotistic male is maybe just about tolerable but two... no two would be stretching a girl�s need to keep her word too far!~
+	~Hrothgar and friend of Hrothgar together in one group!? One holier than thou egotistic male is maybe just about tolerable but two... no two would be stretching a girl's need to keep her word too far!~
  IF ~True()~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXIT
  IF ~InParty("Melora")~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXTERN ~MELORAJ~ 10
 END
 
 IF ~~ THEN BEGIN ezequest1
-	SAY ~Yea gods, we�ve carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
+	SAY ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
 =
-	~At least we�re going after a fresh one this time! Those of you too morally challenged can stay with the necromancer...~
+	~At least we're going after a fresh one this time! Those of you too morally challenged can stay with the necromancer...~
 =
-	~(*Looking around at the paraphernalia in Ezekial�s room*)... Mmm... then again, if it�s your delicate stomachs worrying you, you may prefer to wait outside for our return... wimps!~
+	~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomachs worrying you, you may prefer to wait outside for our return... wimps!~
 	IF ~~ THEN EXTERN ~TuEzek~ 7
 END
 
 IF ~~ THEN BEGIN ezequest2
-	SAY ~Yea gods, we�ve carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
+	SAY ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
 =
-	~At least we�re going after a fresh one this time!~
+	~At least we're going after a fresh one this time!~
 =
-	~(*Looking around at the paraphernalia in Ezekial�s room*)... Mmm... then again, if it�s your delicate stomach worrying you, you may prefer to wait outside.~
+	~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomach worrying you, you may prefer to wait outside.~
 	IF ~~ THEN EXTERN ~TuEzek~ 9
 END
 
 IF ~~ THEN BEGIN imscared
-	SAY ~Quit your blubbering you wimp! Can�t some one do something to shut the crybaby up before she attracts the sorcerer�s attention and he comes flying through this portal here?~
+	SAY ~Quit your blubbering you wimp! Can't some one do something to shut the crybaby up before she attracts the sorcerer's attention and he comes flying through this portal here?~
 	IF ~~ THEN EXTERN ~HROTHJ~ 372
 END
 
@@ -273,21 +273,21 @@ IF ~~ THEN BEGIN frellaru
 END
 
 IF ~~ THEN BEGIN frellaru2
-	SAY ~I need no convincing paladin, you and your kind are the worst sort of pathetic! You can�t help sticking those over sized noses of yours into things that don�t concern you.~
+	SAY ~I need no convincing paladin, you and your kind are the worst sort of pathetic! You can't help sticking those over sized noses of yours into things that don't concern you.~
 =
-~The old druid looked more than fit enough to sort this town... *his* town�s problems, but no, Hrothgar the righteous has to stick his oar in and volunteer our necks instead whilst the druid does what... sits comfortably by his hearth contemplating his navel?! Men really are...~
+~The old druid looked more than fit enough to sort this town... *his* town's problems, but no, Hrothgar the righteous has to stick his oar in and volunteer our necks instead whilst the druid does what... sits comfortably by his hearth contemplating his navel?! Men really are...~
 	IF ~~ THEN EXTERN ~HROTHJ~ shararu2
 END
 
 IF ~~ THEN BEGIN frellaru3
-	SAY ~Do not question my intentions. You don�t have the power to dismiss me Paladin. An oath is an oath and I pledged my sword to aid <CHARNAME>, my word is my bond but make NO mistake... I follow only because of <PRO_HISHER> prowess in battle. When that falters, so does my loyalty.~
+	SAY ~Do not question my intentions. You don't have the power to dismiss me Paladin. An oath is an oath and I pledged my sword to aid <CHARNAME>, my word is my bond but make NO mistake... I follow only because of <PRO_HISHER> prowess in battle. When that falters, so does my loyalty.~
 =
-~As for you paladin... I have no such loyalty to you, but you can be sure that as long as you don�t cross me you have nothing to fear... cross me and it�ll be your front you need to watch... back stabbing is the way of weak cowards!~
+~As for you paladin... I have no such loyalty to you, but you can be sure that as long as you don't cross me you have nothing to fear... cross me and it'll be your front you need to watch... back stabbing is the way of weak cowards!~
 	IF ~~ THEN EXTERN ~HROTHJ~ shararu3
 END
 
 IF ~~ THEN BEGIN dragoneye
- SAY ~(*Pointing her sword*) I suppose it does somewhat resemble a dragon�s head and I can see why some may find it impressive, but in reality... it�s just another damp dungeon for us to crawl through.~
+ SAY ~(*Pointing her sword*) I suppose it does somewhat resemble a dragon's head and I can see why some may find it impressive, but in reality... it's just another damp dungeon for us to crawl through.~
  IF ~True()~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXIT
  IF ~InParty("Imoen")
 !Dead("Imoen")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ147
@@ -300,7 +300,7 @@ IF ~~ THEN BEGIN dragoneye
 END
 
 IF ~~ THEN BEGIN lizardking
- SAY ~(*Wiping her sword on her sleeve*) That�s that... one less slimy reptile hunting for his mistress. If that�s the best she can muster then I reckon she and her minions are going to be pretty hungry, not to say angry when we find them... best we stay alert from here lest they see us as their next meal!~
+ SAY ~(*Wiping her sword on her sleeve*) That's that... one less slimy reptile hunting for his mistress. If that's the best she can muster then I reckon she and her minions are going to be pretty hungry, not to say angry when we find them... best we stay alert from here lest they see us as their next meal!~
  IF ~True()~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~HROTHJ~ 273
  IF ~InParty("Accalia")
 !Dead("Accalia")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~ACCALIJ~ 59
@@ -339,26 +339,26 @@ InParty("Dar")
 END
 
 IF ~~ THEN BEGIN nearpor1
-	SAY ~At last we leave this miserable cold. What vexes me most is no one will believe we fought the ancestors of the creatures of our time and lived, it lessens the thrill of the kills we have made. It�ll be good to be back where honest bloodshed is appreciated!~
+	SAY ~At last we leave this miserable cold. What vexes me most is no one will believe we fought the ancestors of the creatures of our time and lived, it lessens the thrill of the kills we have made. It'll be good to be back where honest bloodshed is appreciated!~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutNJ2")~ EXIT
 END
 
 IF ~~ THEN BEGIN nearpor2
-	SAY ~At last we leave this miserable cold. What vexes me most is no one will believe we fought the ancestors of the creatures of our time and lived, it lessens the thrill of the kills we have made. It�ll be good to be back where honest bloodshed is appreciated!~
+	SAY ~At last we leave this miserable cold. What vexes me most is no one will believe we fought the ancestors of the creatures of our time and lived, it lessens the thrill of the kills we have made. It'll be good to be back where honest bloodshed is appreciated!~
   IF ~~ THEN DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("VPCutNJ4")~ EXIT
 END
 
 IF ~~ THEN BEGIN onkhbody1
-	SAY ~Wow... looks like he really pissed someone off! They sure as hell didn�t want him resurrected did they... can�t say I blame them!~
+	SAY ~Wow... looks like he really pissed someone off! They sure as hell didn't want him resurrected did they... can't say I blame them!~
 	IF ~~ THEN EXTERN ~JAHEIRAJ~ insuljah1
 END
 
 IF ~~ THEN BEGIN onkhbody2
-	SAY ~You�re wrong there druid... we can all see quite plainly how big his heart is...~
+	SAY ~You're wrong there druid... we can all see quite plainly how big his heart is...~
 	IF ~~ THEN EXTERN ~JAHEIRAJ~ insuljah2
 END
 
@@ -373,32 +373,32 @@ IF ~~ THEN BEGIN legacy12
 END
 
 IF ~~ THEN BEGIN legacy13
-	SAY ~(*She looks him squarely in the eyes... her face devoid of all emotion and snarls coldly*)... Not Dossan, that�s for sure!~
+	SAY ~(*She looks him squarely in the eyes... her face devoid of all emotion and snarls coldly*)... Not Dossan, that's for sure!~
 	IF ~~ THEN EXTERN ~FIRKRA01~ shartee3
 END
 
 IF ~~ THEN BEGIN legacy14
-	SAY ~Save your words... your pathetic attempt at male flattery is wasted on me! One only remembers what they fear and I remember not even the gutter snake of a man you mention! So if you�re hoping to collect some debt owed you, I warn you, if you try to collect, the only payment you�ll get from me will be in steel!~
+	SAY ~Save your words... your pathetic attempt at male flattery is wasted on me! One only remembers what they fear and I remember not even the gutter snake of a man you mention! So if you're hoping to collect some debt owed you, I warn you, if you try to collect, the only payment you'll get from me will be in steel!~
 	IF ~~ THEN EXTERN ~FIRKRA01~ shartee4
 END
 
 IF ~~ THEN BEGIN legacy15
-	SAY ~Your delusions of grandeur are pathetic you mindless zombie! You flatter yourself if you think I am here looking to settle old scores. For that you�ll find Angelo Dossan in the abyss, go take your grievances to him there.~
+	SAY ~Your delusions of grandeur are pathetic you mindless zombie! You flatter yourself if you think I am here looking to settle old scores. For that you'll find Angelo Dossan in the abyss, go take your grievances to him there.~
 	IF ~~ THEN GOTO legacy16
 END
 
 IF ~~ THEN BEGIN legacy16
-	SAY ~You bother me again and I�ll send you on your way... Bah... let�s get out of this place, the one I seek isn�t to found among the likes of the scum here. (*She turns to leave*)...~
+	SAY ~You bother me again and I'll send you on your way... Bah... let's get out of this place, the one I seek isn't to found among the likes of the scum here. (*She turns to leave*)...~
 	IF ~~ THEN EXTERN ~FIRKRA01~ shartee7
 END
 
 IF ~~ THEN BEGIN legacy17
-	SAY ~Oh I�d know him alright! If he were here, we�d all know it. He�d be pretty hard to miss... and of course there�s the stench, even a blind man could pick up on the stink he gives off.~
+	SAY ~Oh I'd know him alright! If he were here, we'd all know it. He'd be pretty hard to miss... and of course there's the stench, even a blind man could pick up on the stink he gives off.~
 	IF ~~ THEN EXTERN ~FIRKRA01~ shartee8
 END
 
 IF ~~ THEN BEGIN legacy18
-	SAY ~Yea gods, is there no limit to a male�s ego? Men really are pathetic! You must have a tapeworm in your brain addling it if you expect me to believe that it was you who taught him... you who are too weak to protect your own!~
+	SAY ~Yea gods, is there no limit to a male's ego? Men really are pathetic! You must have a tapeworm in your brain addling it if you expect me to believe that it was you who taught him... you who are too weak to protect your own!~
 	IF ~~ THEN GOTO legacy19
 END	
 	
@@ -408,12 +408,12 @@ IF ~~ THEN BEGIN legacy19
 END
 
 IF ~~ THEN BEGIN legacy20
-	SAY ~Why the egotistical braggart... curses on me for believing a male�s pathetic fantasies! His ego was bigger than yours! (*Then letting her fingers stroke the hilt of her sword... flames begin to flicker at her fingertips*)...~
+	SAY ~Why the egotistical braggart... curses on me for believing a male's pathetic fantasies! His ego was bigger than yours! (*Then letting her fingers stroke the hilt of her sword... flames begin to flicker at her fingertips*)...~
 	IF ~~ THEN GOTO legacy21
 END
 
 IF ~~ THEN BEGIN legacy21
-	SAY ~If what you say is truth then I have a proposition for you. You return that which he paid you with and I�ll not show these good people the true colour of a coward�s heart. A fair trade wouldn�t you say?~
+	SAY ~If what you say is truth then I have a proposition for you. You return that which he paid you with and I'll not show these good people the true colour of a coward's heart. A fair trade wouldn't you say?~
 	IF ~~ THEN EXTERN ~FIRKRA01~ shartee12
 END
 
@@ -423,47 +423,47 @@ IF WEIGHT #-7 ~Global("VP_AngelosLegacy","GLOBAL",2)~ THEN BEGIN legacy22
 END
 
 IF ~~ THEN BEGIN legacy23
-	SAY ~What are we waiting for? Let�s get the hell to sorting out his bloody problem and then I swear, when next we meet, his lands will run red with his own blood... I�ll have both his heart and my legacy!~
-	IF ~~ THEN REPLY ~Ten thousand gold and a legacy, the day just keeps on getting better! Let�s give the arrogant lord what he wants... collect the gold and you can then have your fun taking this legacy of yours from him.~ GOTO legacy24
-	IF ~~ THEN REPLY ~Skeletons in the closet eh... keeping secrets are we? If I�m to risk my neck then you best be quick and tell me what this legacy is worth?~ GOTO legacy25
-	IF ~~ THEN REPLY ~Of course and you can tell me about this legacy of Angelo�s along the way.~ GOTO legacy25
+	SAY ~What are we waiting for? Let's get the hell to sorting out his bloody problem and then I swear, when next we meet, his lands will run red with his own blood... I'll have both his heart and my legacy!~
+	IF ~~ THEN REPLY ~Ten thousand gold and a legacy, the day just keeps on getting better! Let's give the arrogant lord what he wants... collect the gold and you can then have your fun taking this legacy of yours from him.~ GOTO legacy24
+	IF ~~ THEN REPLY ~Skeletons in the closet eh... keeping secrets are we? If I'm to risk my neck then you best be quick and tell me what this legacy is worth?~ GOTO legacy25
+	IF ~~ THEN REPLY ~Of course and you can tell me about this legacy of Angelo's along the way.~ GOTO legacy25
 	IF ~~ THEN REPLY ~Not so fast my girl... not before you tell me what that was all about?~ GOTO legacy25
 	IF ~~ THEN REPLY ~No, Shar-Seel! We lend our arms and leave when I say we do and not before!~ GOTO legacy30
 END
 
 IF ~~ THEN BEGIN legacy24
-	SAY ~(*She smiles to herself as you walk away*)... This is going to be easier than I thought... and it�s going to be a real pleasure teaching that snooty, pathetic sap Firkraag that he made a big mistake in judging the daughter by the father!~
+	SAY ~(*She smiles to herself as you walk away*)... This is going to be easier than I thought... and it's going to be a real pleasure teaching that snooty, pathetic sap Firkraag that he made a big mistake in judging the daughter by the father!~
 	IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy25
-	SAY ~(*Snarls*) That is none of your bloody business! The gold offered is more than enough reward for you. The other is personal and will remain so. If not, then you can forget our deal and I�ll be leaving!~
+	SAY ~(*Snarls*) That is none of your bloody business! The gold offered is more than enough reward for you. The other is personal and will remain so. If not, then you can forget our deal and I'll be leaving!~
 	IF ~~ THEN REPLY ~Hummm... point taken! The gold will suffice but I am still curious about this legacy but we will talk about that later.~ GOTO legacy26
-	IF ~~ THEN REPLY ~It is my business if you want me to aid you in collecting it! So... what did Angelo give our Lord Firkraag that�s got you so fired up?~ GOTO legacy27
-	IF ~~ THEN REPLY ~Look here, you want me to risk the group�s lives for this legacy, so you�d better be telling me what it is or we aren�t going anywhere near Windspear Hills!~ GOTO legacy27
-	IF ~~ THEN REPLY ~Come Shar-Teel, it is not my intention to take it from you... especially if it�s all you have left of your father. I am curious only to know how much Angelo�s knowledge was worth to him. No matter, if it�s so important to you we will of course leave immediately.~ GOTO legacy29
+	IF ~~ THEN REPLY ~It is my business if you want me to aid you in collecting it! So... what did Angelo give our Lord Firkraag that's got you so fired up?~ GOTO legacy27
+	IF ~~ THEN REPLY ~Look here, you want me to risk the group's lives for this legacy, so you'd better be telling me what it is or we aren't going anywhere near Windspear Hills!~ GOTO legacy27
+	IF ~~ THEN REPLY ~Come Shar-Teel, it is not my intention to take it from you... especially if it's all you have left of your father. I am curious only to know how much Angelo's knowledge was worth to him. No matter, if it's so important to you we will of course leave immediately.~ GOTO legacy29
 END
 
 IF ~~ THEN BEGIN legacy26
-	SAY ~Good! You stick to that and we�ll both come out of this richer for our troubles.~
+	SAY ~Good! You stick to that and we'll both come out of this richer for our troubles.~
 	IF ~~ THEN GOTO legacy24
 END
 
 IF ~~ THEN BEGIN legacy27
-	SAY ~(*Begrudgingly she glares at you and answers*)... It�s personal! All you need know is after the bastard had sown his seed he turned tail and skulked away before the sun hit the sky! He took his pleasure and now he is dead!~
+	SAY ~(*Begrudgingly she glares at you and answers*)... It's personal! All you need know is after the bastard had sown his seed he turned tail and skulked away before the sun hit the sky! He took his pleasure and now he is dead!~
 	IF ~~ THEN GOTO legacy28
 END
 
 IF ~~ THEN BEGIN legacy28
-	SAY ~I didn�t ask for the life that I was brought into... the least he can do is compensate me with a few luxuries. It�s mine and I intend to have it! So can we stop yammering and get after the pompous cretin?~
+	SAY ~I didn't ask for the life that I was brought into... the least he can do is compensate me with a few luxuries. It's mine and I intend to have it! So can we stop yammering and get after the pompous cretin?~
 	IF ~~ THEN REPLY ~Okay, okay... point taken! By rights it is your legacy, your help with Firkraag will be payment enough, the gold is all that I am after.~ GOTO legacy26
-	IF ~~ THEN REPLY ~It is not my intention to take it from you... especially if it�s all you have left of your father. I was curious that is all. We will of course leave immediately.~ GOTO legacy29
+	IF ~~ THEN REPLY ~It is not my intention to take it from you... especially if it's all you have left of your father. I was curious that is all. We will of course leave immediately.~ GOTO legacy29
 	IF ~~ THEN REPLY ~No, Shar-Teel! We lend our arms and leave when I say we do and not before!~ GOTO legacy30
-	IF ~~ THEN REPLY ~You�re quick enough to demand a share in the spoils Shar-Teel and so it will be with this legacy of yours. Now if that doesn�t suit you, you can go ask Lord Firkraag for it yourself!~ GOTO legacy31
+	IF ~~ THEN REPLY ~You're quick enough to demand a share in the spoils Shar-Teel and so it will be with this legacy of yours. Now if that doesn't suit you, you can go ask Lord Firkraag for it yourself!~ GOTO legacy31
 END
 
 IF ~~ THEN BEGIN legacy29
-	SAY ~Hey, don�t you go getting the wrong idea here! There�s no sentiments attached to this quest, it�s about me getting back what, by birth, is rightfully mine... and it�s going to be a real pleasure teaching that stuck up, pathetic fool Firkraag that he made a big mistake in judging the daughter by the father!~
+	SAY ~Hey, don't you go getting the wrong idea here! There's no sentiments attached to this quest, it's about me getting back what, by birth, is rightfully mine... and it's going to be a real pleasure teaching that stuck up, pathetic fool Firkraag that he made a big mistake in judging the daughter by the father!~
 	IF ~!IsValidForPartyDialog("Minsc")
 !IsValidForPartyDialog("Yoshimo")
 !IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
@@ -482,7 +482,7 @@ I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are
 END
 
 IF ~~ THEN BEGIN legacy30
-	SAY ~Well don�t leave it too long... a couple of days and I am gone from this miserable group of cowardly misfits!~
+	SAY ~Well don't leave it too long... a couple of days and I am gone from this miserable group of cowardly misfits!~
 	IF ~!IsValidForPartyDialog("Minsc")
 !IsValidForPartyDialog("Yoshimo")
 !IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
@@ -501,7 +501,7 @@ I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are
 END
 
 IF ~~ THEN BEGIN legacy31
-	SAY ~I�ll do just that and collect the gold as well for my trouble! Now that I�m finally released from this infernal duty, I swear by every god in a million pantheons, I�ll NEVER lose another duel and put myself in the service of a group of cowardly misfits again!~
+	SAY ~I'll do just that and collect the gold as well for my trouble! Now that I'm finally released from this infernal duty, I swear by every god in a million pantheons, I'll NEVER lose another duel and put myself in the service of a group of cowardly misfits again!~
 	IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)
 GivePartyAllEquipment()
 DropInventory()
@@ -516,22 +516,22 @@ LeaveParty()
 EscapeAreaMove("AR0086",9,9,9)*/
 
 IF ~~ THEN BEGIN legacy201
-	SAY ~(*Casting a glance at the bodies in the room*) If that�s the best Lord Firkraag has then we should be back in time for supper. So get the pot boiling. Nothing sharpens the appetite or quickens the pulse quite like the screams of the enemy and the sight of their blood at the height of the battle... music to my ears it is.~
+	SAY ~(*Casting a glance at the bodies in the room*) If that's the best Lord Firkraag has then we should be back in time for supper. So get the pot boiling. Nothing sharpens the appetite or quickens the pulse quite like the screams of the enemy and the sight of their blood at the height of the battle... music to my ears it is.~
 	IF ~~ THEN EXTERN ~GARREN~ shartee15
 END
 
 IF ~~ THEN BEGIN legacy202
-	SAY ~(*Scoffs at the man�s concern*) His tricks don�t frighten me. He�s a cowardly, spineless lump of jelly who hides behind magic to discredit us and then sends others to do his dirty work! I have the measure of the craven cur and when he feels cold steel slide into his belly he�ll finally have the measure of me!~
+	SAY ~(*Scoffs at the man's concern*) His tricks don't frighten me. He's a cowardly, spineless lump of jelly who hides behind magic to discredit us and then sends others to do his dirty work! I have the measure of the craven cur and when he feels cold steel slide into his belly he'll finally have the measure of me!~
 	IF ~~ THEN EXTERN ~GARREN~ shartee17
 END
 
 IF ~~ THEN BEGIN legacy203
-	SAY ~The sodding arrogance of men! If he thinks I�m going to let a scum bag of a lord sit back and think he has the better of me then he�s in for a rude awakening!~
+	SAY ~The sodding arrogance of men! If he thinks I'm going to let a scum bag of a lord sit back and think he has the better of me then he's in for a rude awakening!~
 	IF ~~ THEN GOTO legacy204
 END
 
 IF ~~ THEN BEGIN legacy204
-	SAY ~Surprising how the feel of cold steel and the sight of a man�s own blood spurting out of his body will cause him to rethink his ideas but by then of course, he�s as good as dead and doesn�t have a lot of time for this renewed reflection.~
+	SAY ~Surprising how the feel of cold steel and the sight of a man's own blood spurting out of his body will cause him to rethink his ideas but by then of course, he's as good as dead and doesn't have a lot of time for this renewed reflection.~
 	IF ~~ THEN GOTO legacy205
 END
 
@@ -546,12 +546,12 @@ IF ~~ THEN BEGIN legacy211
 END
 
 IF ~~ THEN BEGIN legacy212
-	SAY ~Look here sister, I�m not over the moon at having to be here... all this sickly sisterly love is making me want to throw up over the lot of you but if it wasn�t for us, your little playmates wouldn�t be here, so how about you answer a couple of questions and then you can get on with your mindless games?~
+	SAY ~Look here sister, I'm not over the moon at having to be here... all this sickly sisterly love is making me want to throw up over the lot of you but if it wasn't for us, your little playmates wouldn't be here, so how about you answer a couple of questions and then you can get on with your mindless games?~
 	IF ~~ THEN EXTERN ~VAELASA~ shartee23
 END
 
 IF ~~ THEN BEGIN legacy213
-	SAY ~(*Looking around she shrugs*) Huh... shadow? All this fooling around with those fauns must be making you all blind... Still, I�m betting you�ve been around these parts for some time... tell me, do you recall a man, a human coming here some years ago in search of Lord Firkraag?~
+	SAY ~(*Looking around she shrugs*) Huh... shadow? All this fooling around with those fauns must be making you all blind... Still, I'm betting you've been around these parts for some time... tell me, do you recall a man, a human coming here some years ago in search of Lord Firkraag?~
 	IF ~~ THEN EXTERN ~VAELASA~ shartee24
 END
 
@@ -561,7 +561,7 @@ IF ~~ THEN BEGIN legacy214
 END
 
 IF ~~ THEN BEGIN legacy215
-	SAY ~If it is true! It�s sounding more and more like this Firkraag lied just to get me here. Bah, both men are as despicable and as arrogant as each other. I should have expected no less... men are pathetic!~
+	SAY ~If it is true! It's sounding more and more like this Firkraag lied just to get me here. Bah, both men are as despicable and as arrogant as each other. I should have expected no less... men are pathetic!~
 	IF ~~ THEN EXTERN ~VAELASA~ shartee25
 END
 
@@ -571,24 +571,24 @@ IF ~~ THEN BEGIN legacy216
 END
 	
 IF ~~ THEN BEGIN legacy217
-	SAY ~(*Her eyes suddenly flash with anger*) To the abyss with both Firkraag and Dossan! To the abyss with all men, weak pathetic creatures that they are! Why don�t they just face up to it... they are the weaker sex and fuling their ego�s with lies and fantasy won�t change what is?! I�ll have the truth out of him and flay the hide from his back for his arrogance!~
+	SAY ~(*Her eyes suddenly flash with anger*) To the abyss with both Firkraag and Dossan! To the abyss with all men, weak pathetic creatures that they are! Why don't they just face up to it... they are the weaker sex and fuling their ego's with lies and fantasy won't change what is?! I'll have the truth out of him and flay the hide from his back for his arrogance!~
 	IF ~~ THEN EXTERN ~VAELASA~ shartee27
 END
 
 IF ~~ THEN BEGIN legacy218
-	SAY ~(*Looking at Vaelessa... not even bothering to disguise the disgust in her voice*)... I am about done here anyway! I find your games as you call them, obscene. Whilst you allow your nymphs to frolic and indulge a man�s every whim, how can we as women ever expect to teach the males of this world to acknowledge and respect our superiority?~
+	SAY ~(*Looking at Vaelessa... not even bothering to disguise the disgust in her voice*)... I am about done here anyway! I find your games as you call them, obscene. Whilst you allow your nymphs to frolic and indulge a man's every whim, how can we as women ever expect to teach the males of this world to acknowledge and respect our superiority?~
 	IF ~~ THEN GOTO legacy219
 END	
 	
 IF ~~ THEN BEGIN legacy219
-	SAY ~Bah... go back to your brainless fauns, I�m sure they are wondering why the chase has been interrupted.~
+	SAY ~Bah... go back to your brainless fauns, I'm sure they are wondering why the chase has been interrupted.~
 	IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Edwin")
 !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
 	IF ~InParty("Jan")
@@ -605,7 +605,7 @@ IF ~~ THEN BEGIN legacy220
 END
 
 IF ~~ THEN BEGIN legacy221
-	SAY ~Well face up to it you pathetic moron, you�re only going to see such a world in your fantasies!~
+	SAY ~Well face up to it you pathetic moron, you're only going to see such a world in your fantasies!~
 	IF ~~ THEN EXTERN ~EDWINJ~ driadsint_edw2
 END
 
@@ -615,89 +615,89 @@ IF ~~ THEN BEGIN legacy222
 END
 
 IF ~~ THEN BEGIN legacy223
-	SAY ~(*She stills her hands as she glares furiously at the departing wizard�s back*)... You�ll turn your back on me once too often male scum! One of these days you�ll do it and you�ll find an inferno on your tail!~
+	SAY ~(*She stills her hands as she glares furiously at the departing wizard's back*)... You'll turn your back on me once too often male scum! One of these days you'll do it and you'll find an inferno on your tail!~
 	IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy224
-	SAY ~(*Turns to Leina and snarls*) Yea gods bard, stop encouraging the goon! You�ll have him thinking you want him in your bed the way you�re carrying on. He may not have much of a brain but like all men, he thinks with what he keeps in his breeches!~
+	SAY ~(*Turns to Leina and snarls*) Yea gods bard, stop encouraging the goon! You'll have him thinking you want him in your bed the way you're carrying on. He may not have much of a brain but like all men, he thinks with what he keeps in his breeches!~
 	IF ~~ THEN EXTERN ~LEINAJ~ driadsint_lei2
 END
 
 IF ~~ THEN BEGIN legacy225
-	SAY ~Bah... you�d have thought that one would have learnt her lesson. She gets her fingers burnt by a pig headed male and still she sticks up for one of them... it�s not only abhorrent but obscene to see a female behave so pathetically over male scum!~
+	SAY ~Bah... you'd have thought that one would have learnt her lesson. She gets her fingers burnt by a pig headed male and still she sticks up for one of them... it's not only abhorrent but obscene to see a female behave so pathetically over male scum!~
 	IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy226
-	SAY ~(*Turns to Melora and snarls*) Yea gods hafling, what are you woman or mouse? Don�t let this male scum here put words into your mouth! Say what you mean... the ranger is a male and like all men, he thinks with what he keeps in his breeches!~
+	SAY ~(*Turns to Melora and snarls*) Yea gods hafling, what are you woman or mouse? Don't let this male scum here put words into your mouth! Say what you mean... the ranger is a male and like all men, he thinks with what he keeps in his breeches!~
 	IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel4
 END
 
 IF ~~ THEN BEGIN legacy227
-	SAY ~(*She deliberately bends to bring her gaze level with the hafling�s*)... Is this better... I�m down to your level now so you needn�t stretch those stunted legs of yours so hard?~
-	IF ~~ THEN REPLY ~Give over you two! As much as I would enjoy the sight another time, I�ve not come all this way to watch a cat fight!~ GOTO legacy228
-	IF ~~ THEN REPLY ~I�ve nothing against you two settling your differences but until we�ve done what we came here to do, I need you both alive.~ GOTO legacy228
-	IF ~~ THEN REPLY ~Enough, both of you. I need you alive to finish what we started here because I�m damned if I�m going to make the long trek back to the city in order to replace one or the both of you!~ GOTO legacy228
-	IF ~~ THEN REPLY ~Please, girls... we�ve enough on our plates without fighting amongst ourselves.~ GOTO legacy228
+	SAY ~(*She deliberately bends to bring her gaze level with the hafling's*)... Is this better... I'm down to your level now so you needn't stretch those stunted legs of yours so hard?~
+	IF ~~ THEN REPLY ~Give over you two! As much as I would enjoy the sight another time, I've not come all this way to watch a cat fight!~ GOTO legacy228
+	IF ~~ THEN REPLY ~I've nothing against you two settling your differences but until we've done what we came here to do, I need you both alive.~ GOTO legacy228
+	IF ~~ THEN REPLY ~Enough, both of you. I need you alive to finish what we started here because I'm damned if I'm going to make the long trek back to the city in order to replace one or the both of you!~ GOTO legacy228
+	IF ~~ THEN REPLY ~Please, girls... we've enough on our plates without fighting amongst ourselves.~ GOTO legacy228
 END
 
 IF ~~ THEN BEGIN legacy228
-	SAY ~You got lucky this time hafling but don�t get to thinking you�re indispensable. A ten foot pole can easily replace you when it comes to finding and setting off traps. As for locks, most will, eventually, succumb to a good bashing.~
+	SAY ~You got lucky this time hafling but don't get to thinking you're indispensable. A ten foot pole can easily replace you when it comes to finding and setting off traps. As for locks, most will, eventually, succumb to a good bashing.~
 	IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel5
 END
 
 IF WEIGHT #-8 ~Global("VP_STB_orcsambush","LOCALS",1)~ THEN BEGIN legacy300
-	SAY ~(*Angrily she snarls*) An ambush... why the son of a bitch! The slime ball fights using the coward�s tactics! So be it! If that�s the way he wants it then it�ll be a coward�s death for the male scum!~
+	SAY ~(*Angrily she snarls*) An ambush... why the son of a bitch! The slime ball fights using the coward's tactics! So be it! If that's the way he wants it then it'll be a coward's death for the male scum!~
 	IF ~~ THEN DO ~SetGlobal("VP_STB_orcsambush","LOCALS",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy310
-	SAY ~(*She looks contemptuously at the orcs and brandishing her sword, sparks flickering as her knuckles*)... Move out of the way... I�ve something here that�ll soon have them squealing like a couple of stuck pigs!~
+	SAY ~(*She looks contemptuously at the orcs and brandishing her sword, sparks flickering as her knuckles*)... Move out of the way... I've something here that'll soon have them squealing like a couple of stuck pigs!~
 	IF ~~ THEN EXTERN ~FIRORC02~ orcsflee2
 END
 
 IF ~~ THEN BEGIN legacy311
-	SAY ~Bah... orc scum! You�re even bigger cowards than Firkraag. I slit your throats and leave your bloody corpses as a warning not to get in my way.~
-	IF ~~ THEN REPLY ~I think we�ve scared them enough. Go on, get out of here before I change my mind.~ EXTERN ~FIRORC02~ orcsflee3
-	IF ~~ THEN REPLY ~I�m with you Shar... pick which one you want and I�ll take the other one!~ GOTO legacy314
+	SAY ~Bah... orc scum! You're even bigger cowards than Firkraag. I slit your throats and leave your bloody corpses as a warning not to get in my way.~
+	IF ~~ THEN REPLY ~I think we've scared them enough. Go on, get out of here before I change my mind.~ EXTERN ~FIRORC02~ orcsflee3
+	IF ~~ THEN REPLY ~I'm with you Shar... pick which one you want and I'll take the other one!~ GOTO legacy314
 END
 
 IF ~~ THEN BEGIN legacy312
-	SAY ~(*She sneers and with sarcasm in her voice*) Yea well, that�ll sure have Firkraag quaking in his boots! Moron... sparing a couple of orcs like that, you�ve made us look like a lot of pansies!~
+	SAY ~(*She sneers and with sarcasm in her voice*) Yea well, that'll sure have Firkraag quaking in his boots! Moron... sparing a couple of orcs like that, you've made us look like a lot of pansies!~
 	IF ~~ THEN GOTO legacy313
 END	
 	
 IF ~~ THEN BEGIN legacy313
-	SAY ~You should have done as I said, at least it would have shown these creatures down here that we mean business! Bah, I wonder why I�m still with this group. You make me sick to my stomach, you and your prissy attitude!~
+	SAY ~You should have done as I said, at least it would have shown these creatures down here that we mean business! Bah, I wonder why I'm still with this group. You make me sick to my stomach, you and your prissy attitude!~
 	IF ~~ THEN DO ~ActionOverride("firorc02",EscapeArea())
 ActionOverride("firorc03",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy314
-	SAY ~(*Her eyes light up as she gleefully swings her sword*) I�m not fussy... one orc is much the same as another. Just point me at him and watch him bleed.~
+	SAY ~(*Her eyes light up as she gleefully swings her sword*) I'm not fussy... one orc is much the same as another. Just point me at him and watch him bleed.~
 	IF ~~ THEN EXTERN ~FIRORC02~ 2
 END
 
 IF WEIGHT #-9 ~Global("VP_STB_orcsflees","LOCALS",1)~ THEN BEGIN legacy315
-	SAY ~This is too easy, we are being toyed with! If it is Firkraag�s intention to put us off our guard by sending menial creatures to meet us, then it is he who has underestimated us... and that will be his undoing!~
+	SAY ~This is too easy, we are being toyed with! If it is Firkraag's intention to put us off our guard by sending menial creatures to meet us, then it is he who has underestimated us... and that will be his undoing!~
 	IF ~~ THEN DO ~SetGlobal("VP_STB_orcsflees","LOCALS",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN legacy320
-	SAY ~(*Scoffs*) Share the booty... who the hell does she think she is kidding?! Her lying tongue was saying one thing but she couldn�t hide the greed in her eyes.~
+	SAY ~(*Scoffs*) Share the booty... who the hell does she think she is kidding?! Her lying tongue was saying one thing but she couldn't hide the greed in her eyes.~
 	IF ~~ THEN GOTO legacy321
 END
 
@@ -707,7 +707,7 @@ IF ~~ THEN BEGIN legacy321
 END
 
 IF ~~ THEN BEGIN legacy322
-	SAY ~Ha... the treacherous bitch thought to leave us dead and buried in the tomb! Well she�s paid for her arrogance and now she�s the one left to rot down here.~
+	SAY ~Ha... the treacherous bitch thought to leave us dead and buried in the tomb! Well she's paid for her arrogance and now she's the one left to rot down here.~
 	IF ~~ THEN DO ~SetGlobal("SamiaPreempted","GLOBAL",1)
 EraseJournalEntry(7167)
 CreateCreatureObject("Akae",Myself,0,0,0)
@@ -724,27 +724,27 @@ ActionOverride("Samia",Enemy())~ EXIT
 END
 
 IF WEIGHT #-10 ~Global("VP_STB_samiadead","LOCALS",1)~ THEN BEGIN legacy323
-	SAY ~(*Spitting out her words*) Well, I can�t say that surprised me... treacherous bitch! The arrogance of her, thinking she would get us to do her dirty work and all the time she was plotting murder when it was done...~
+	SAY ~(*Spitting out her words*) Well, I can't say that surprised me... treacherous bitch! The arrogance of her, thinking she would get us to do her dirty work and all the time she was plotting murder when it was done...~
 	IF ~~ THEN GOTO legacy324
 END	
 	
 IF ~~ THEN BEGIN legacy324
-	SAY ~I like her style... but she�s paid for her arrogance and now she�s the one left to rot down here!~
+	SAY ~I like her style... but she's paid for her arrogance and now she's the one left to rot down here!~
 	IF ~~ THEN DO ~SetGlobal("VP_STB_samiadead","LOCALS",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN durbin1
-	SAY ~(*Stepping in front of the old man*) Not so fast! I haven�t finished with this old man yet. So old man, tell me, how do you come to be locked in with these beasts... run foul of the cowardly Firkraag did you?~
+	SAY ~(*Stepping in front of the old man*) Not so fast! I haven't finished with this old man yet. So old man, tell me, how do you come to be locked in with these beasts... run foul of the cowardly Firkraag did you?~
 	IF ~~ THEN EXTERN ~DURBIN~ D8
 END
 
 IF ~~ THEN BEGIN durbin2
-	SAY ~Many years you say... just how 'many' years might that be? Enough to know a great deal about the comings and goings of all his Lordships visitors I�d wager... eh old man?~
+	SAY ~Many years you say... just how 'many' years might that be? Enough to know a great deal about the comings and goings of all his Lordships visitors I'd wager... eh old man?~
 	IF ~~ THEN EXTERN ~DURBIN~ D9
 END
 
 IF ~~ THEN BEGIN durbin3
-	SAY ~Yea, I�ve already been told that but this visitor left. It�s not him I�m interested in, Firkraag should have sent him straight to the abyss for all I care, but what I am interested in are the items this... this man gave to Firkraag in exchange for knowledge. Dossan was his name... Angelo Dossan. Ringing any bells in that senile brain of yours?~
+	SAY ~Yea, I've already been told that but this visitor left. It's not him I'm interested in, Firkraag should have sent him straight to the abyss for all I care, but what I am interested in are the items this... this man gave to Firkraag in exchange for knowledge. Dossan was his name... Angelo Dossan. Ringing any bells in that senile brain of yours?~
 	IF ~~ THEN EXTERN ~DURBIN~ D10
 END
 
@@ -754,24 +754,24 @@ IF ~~ THEN BEGIN durbin4
 END
 
 IF ~~ THEN BEGIN durbin5
-	SAY ~They�re not so little to me so you best start remembering and quick! Besides, if you don�t I�ll take my pleasure in gutting you where you stand... starting here... (*Her eyes glaze over as she jabs the point of  her sword toward his throat and draws it slowly down to his groin... a flicker of flame dancing along her knuckles*)... to here!~
+	SAY ~They're not so little to me so you best start remembering and quick! Besides, if you don't I'll take my pleasure in gutting you where you stand... starting here... (*Her eyes glaze over as she jabs the point of  her sword toward his throat and draws it slowly down to his groin... a flicker of flame dancing along her knuckles*)... to here!~
 =
-	~Believe me I know just how to do it so�s a man gets to watch his own entrails as they fall steaming to the ground.~
+	~Believe me I know just how to do it so's a man gets to watch his own entrails as they fall steaming to the ground.~
 	IF ~~ THEN EXTERN ~DURBIN~ D12
 END
 
 IF ~~ THEN BEGIN durbin6
-	SAY ~(*Moving her sword slowly back to his throat the flame vanishes*)... I�ll take that as a compliment. Now, what are you remembering, or do you need a demonstration of just how much I love bloodshed?~
+	SAY ~(*Moving her sword slowly back to his throat the flame vanishes*)... I'll take that as a compliment. Now, what are you remembering, or do you need a demonstration of just how much I love bloodshed?~
 	IF ~~ THEN EXTERN ~DURBIN~ D13
 END
 
 IF ~~ THEN BEGIN durbin7
-	SAY ~(*Her eyes light up*) Very likely. If Dossan had such items then Firkraag�s vanity alone would cause him to want to own them and a bargain could well have been struck. Tell me, where are they hidden?~
+	SAY ~(*Her eyes light up*) Very likely. If Dossan had such items then Firkraag's vanity alone would cause him to want to own them and a bargain could well have been struck. Tell me, where are they hidden?~
 	IF ~~ THEN EXTERN ~DURBIN~ D14
 END
 
 IF ~~ THEN BEGIN durbin8
-	SAY ~(*She rages... a red hot serpent like flame streaks down her sword*) The bastard... the cowardly bastard! I�ll not only cut his lying tongue from his mouth but I�ll rip his still beating heart from his chest and force him to eat them both for his treachery. Tell me, before you share his fate, what of the thief?~
+	SAY ~(*She rages... a red hot serpent like flame streaks down her sword*) The bastard... the cowardly bastard! I'll not only cut his lying tongue from his mouth but I'll rip his still beating heart from his chest and force him to eat them both for his treachery. Tell me, before you share his fate, what of the thief?~
 	IF ~~ THEN EXTERN ~DURBIN~ D15
 END
 
@@ -781,32 +781,32 @@ IF ~~ THEN BEGIN durbin9
 END
 
 IF ~~ THEN BEGIN durbin10
-	SAY ~(*Still gripping her sword*) Umar Hills?! Curses... I gave my word so go, get out of my sight! Consider yourself fortunate that I find little sport in taking the life of one who already walks in death�s shadow. Besides, Firkraag already knows of our presence so you�re in no position to betray us to him.~
+	SAY ~(*Still gripping her sword*) Umar Hills?! Curses... I gave my word so go, get out of my sight! Consider yourself fortunate that I find little sport in taking the life of one who already walks in death's shadow. Besides, Firkraag already knows of our presence so you're in no position to betray us to him.~
 =
-	~I�ll save my rage for the coward himself! As for that scumbag of a thief, he can run but he can�t hide. He�s sure as hell going to regret choosing to run so far, forcing me to back track after him!~
+	~I'll save my rage for the coward himself! As for that scumbag of a thief, he can run but he can't hide. He's sure as hell going to regret choosing to run so far, forcing me to back track after him!~
 	IF ~~ THEN DO ~SetGlobal("VP_Create_Esmond","GLOBAL",1)
 ActionOverride("durbin",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN durbin11
-	SAY ~(*Stepping in front of the old man*) Not so fast! I haven�t finished with this old man yet. So you�ve served Firkraag for many years... just how 'many' years might that be? Enough to know a great deal about the comings and goings of all his Lordships visitor�s I�d wager... eh old man?~
+	SAY ~(*Stepping in front of the old man*) Not so fast! I haven't finished with this old man yet. So you've served Firkraag for many years... just how 'many' years might that be? Enough to know a great deal about the comings and goings of all his Lordships visitor's I'd wager... eh old man?~
 	IF ~~ THEN EXTERN ~DURBIN~ D8
 END
 
 IF ~~ THEN BEGIN durbin12
-	SAY ~Not so fast old man, we�re not done talking yet! The cowardly beast you served told me of a servant who had made off with some of his treasures. Was he speaking the truth or are they still stashed away in this warren somewhere?~
+	SAY ~Not so fast old man, we're not done talking yet! The cowardly beast you served told me of a servant who had made off with some of his treasures. Was he speaking the truth or are they still stashed away in this warren somewhere?~
 	IF ~~ THEN EXTERN ~DURBIN~ D20
 END
 
 IF ~~ THEN BEGIN durbin13
-	SAY ~(*Drawing her sword she snarls*) He got what he deserved! Lord, dragon, whatever... the son of a bitch won�t be manipulating anyone again! Now, if you don�t want to join your Lord in the abyss you�ll tell me about this thief!~
+	SAY ~(*Drawing her sword she snarls*) He got what he deserved! Lord, dragon, whatever... the son of a bitch won't be manipulating anyone again! Now, if you don't want to join your Lord in the abyss you'll tell me about this thief!~
 	IF ~~ THEN EXTERN ~DURBIN~ D21
 END
 
 IF ~~ THEN BEGIN durbin14
-	SAY ~This has nothing to do with glory old man and besides, if you don�t start talking I�ll take my pleasure in gutting you where you stand... starting here...~
+	SAY ~This has nothing to do with glory old man and besides, if you don't start talking I'll take my pleasure in gutting you where you stand... starting here...~
 =
-	~(*Her eyes glaze over as she jabs her sword at his throat and running it slowly down to his groin... as a barely noticeable small thin flame snakes it�s way down her sword to the point*)... to here! Believe me I know just how to do it so�s a man gets to watch his own entrails as they fall steaming to the ground, just the way your Lord did!~
+	~(*Her eyes glaze over as she jabs her sword at his throat and running it slowly down to his groin... as a barely noticeable small thin flame snakes it's way down her sword to the point*)... to here! Believe me I know just how to do it so's a man gets to watch his own entrails as they fall steaming to the ground, just the way your Lord did!~
 	IF ~~ THEN EXTERN ~DURBIN~ D21a
 END
 
@@ -816,37 +816,37 @@ IF ~~ THEN BEGIN durbin15
 END
 
 IF ~~ THEN BEGIN durbin16
-	SAY ~(*Her sword still at his throat*) Umar Hills?! Curses... I gave my word so go, get out of my sight! Consider yourself fortunate that I find little sport in taking the life of one who already walks in death�s shadow.~
+	SAY ~(*Her sword still at his throat*) Umar Hills?! Curses... I gave my word so go, get out of my sight! Consider yourself fortunate that I find little sport in taking the life of one who already walks in death's shadow.~
 =
-	~As for that scumbag of a thief, he can run but he can�t hide. He�s sure as hell going to regret choosing to run so far, forcing me to back track after him!~
+	~As for that scumbag of a thief, he can run but he can't hide. He's sure as hell going to regret choosing to run so far, forcing me to back track after him!~
 	IF ~~ THEN DO ~SetGlobal("VP_Create_Esmond","GLOBAL",1)
 ActionOverride("durbin",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN durbin17
-	SAY ~Let�s not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer. The dragon who called himself Lord Firkraag is dead, what do you know of him?~
+	SAY ~Let's not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer. The dragon who called himself Lord Firkraag is dead, what do you know of him?~
 	IF ~~ THEN EXTERN ~DURBIN~ D19
 END
 
 IF ~~ THEN BEGIN durbin18
-	SAY ~Let�s not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer old man. What do you know of the dragon calling himself Lord Firkraag?~
+	SAY ~Let's not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer old man. What do you know of the dragon calling himself Lord Firkraag?~
 	IF ~~ THEN EXTERN ~DURBIN~ D24
 END
 
 IF ~~ THEN BEGIN durbin19
-	SAY ~(*Draws her sword*) Oh I think I will! You�re going to tell me all about a thief your Lord claimed ran off with some very special treasures of his, because if you don�t I�ll take my pleasure in gutting you where you stand... starting here.~
+	SAY ~(*Draws her sword*) Oh I think I will! You're going to tell me all about a thief your Lord claimed ran off with some very special treasures of his, because if you don't I'll take my pleasure in gutting you where you stand... starting here.~
 =
-	~(*Her eyes glaze over as she jabs her sword at his throat and running it slowly down to his groin... as a barely noticeable small thin flame snakes it�s way down her sword to the point*)... to here! Believe me I know just how to do it so�s a man gets to watch his own entrails as they fall steaming to the ground.~
+	~(*Her eyes glaze over as she jabs her sword at his throat and running it slowly down to his groin... as a barely noticeable small thin flame snakes it's way down her sword to the point*)... to here! Believe me I know just how to do it so's a man gets to watch his own entrails as they fall steaming to the ground.~
 	IF ~~ THEN EXTERN ~DURBIN~ D21a
 END
 
 IF ~~ THEN BEGIN durbin20
-	SAY ~Let�s not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer old man. Exactly how much were you privy to the dragon�s dealings?~
+	SAY ~Let's not be hasty here, the old man may have something to tell us yet. Listen and listen good for your life may well depend on your answer old man. Exactly how much were you privy to the dragon's dealings?~
 	IF ~~ THEN EXTERN ~DURBIN~ D24
 END
 
 IF ~~ THEN BEGIN legacy401
-	SAY ~(*Sneering*) Don�t flatter yourself! You forget, it was a red dragon I had in mind to find when first I set out on my quest. So whereas discovering you to be that dragon was unexpected, I find you no more intimidating than I would a gnat!~
+	SAY ~(*Sneering*) Don't flatter yourself! You forget, it was a red dragon I had in mind to find when first I set out on my quest. So whereas discovering you to be that dragon was unexpected, I find you no more intimidating than I would a gnat!~
 	IF ~~ THEN EXTERN ~FIRKRA02~ firecr02
 END
 
@@ -856,22 +856,22 @@ IF ~~ THEN BEGIN legacy402
 END
 
 IF ~~ THEN BEGIN legacy403
-	SAY ~You�ll not dismiss me that easily, and don�t think I�ll be put off by a few puffs of smoke either! Give me what I have tramped this stinking dungeon for, and maybe I�ll leave your ugly great head atop that scaley carcass of yours!~
+	SAY ~You'll not dismiss me that easily, and don't think I'll be put off by a few puffs of smoke either! Give me what I have tramped this stinking dungeon for, and maybe I'll leave your ugly great head atop that scaley carcass of yours!~
 	IF ~~ THEN EXTERN ~FIRKRA02~ firecr04
 END
 
 IF ~~ THEN BEGIN legacy404
-	SAY ~(*Sparks appear at her finger tips as she reaches for her sword*) So your cowardly servant spoke the truth! Listen you overheated heap of lizard dung I�m not about to leave empty handed! If I can�t take what I came for, then  I�ll take your treacherous heart, preferably still beating, for wasting my time!~
+	SAY ~(*Sparks appear at her finger tips as she reaches for her sword*) So your cowardly servant spoke the truth! Listen you overheated heap of lizard dung I'm not about to leave empty handed! If I can't take what I came for, then  I'll take your treacherous heart, preferably still beating, for wasting my time!~
 	IF ~~ THEN EXTERN ~FIRKRA02~ firecr05
 END
 
 IF ~~ THEN BEGIN legacy405
-	SAY ~(*Sparks appear at her finger tips as she reaches for her sword*) What! You lie you overheated heap of lizard dung! I�ll not leave empty handed, either you hand them over or I�ll take your treacherous heart, preferably still beating, for wasting my time!~
+	SAY ~(*Sparks appear at her finger tips as she reaches for her sword*) What! You lie you overheated heap of lizard dung! I'll not leave empty handed, either you hand them over or I'll take your treacherous heart, preferably still beating, for wasting my time!~
 	IF ~~ THEN EXTERN ~FIRKRA02~ firecr05
 END
 
 IF ~~ THEN BEGIN legacy405a
-	SAY ~Now your talking! The feel of cold steel in the belly will quell any embers lurking inside this steaming heap of lizard dung�s innards!~
+	SAY ~Now your talking! The feel of cold steel in the belly will quell any embers lurking inside this steaming heap of lizard dung's innards!~
 	IF ~~ THEN DO ~SetGlobal("VP_Create_Esmond","GLOBAL",1)~ EXTERN ~FIRKRA02~ 25
 END
 
@@ -899,12 +899,12 @@ IF ~~ THEN BEGIN legacy406
 END
 
 IF ~~ THEN BEGIN legacy406a
-	SAY ~This isn�t over lizard, not by a long way! I know something of the items I seek, you were foolish to allow them to be taken from you. Mark my words, my sword WILL drink of your blood... just not today!~
+	SAY ~This isn't over lizard, not by a long way! I know something of the items I seek, you were foolish to allow them to be taken from you. Mark my words, my sword WILL drink of your blood... just not today!~
 	IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN legacy407
-	SAY ~(*Angrily*) You mean to bargain with this creature, even though he played you for the fool? Bah... it�s plain to see why you are so often easily duped! Hear him out if you must and while you�re at it ask him why he so anxious for the return of these items?~
+	SAY ~(*Angrily*) You mean to bargain with this creature, even though he played you for the fool? Bah... it's plain to see why you are so often easily duped! Hear him out if you must and while you're at it ask him why he so anxious for the return of these items?~
 	IF ~~ THEN EXTERN ~FIRKRA02~ firecr06
 END
 
@@ -927,38 +927,38 @@ END
 IF ~~ THEN BEGIN esmond0
  SAY ~(*Scoffs*) Bah, this thief must have a brain the size of a pea if he thought himself safe here! How did the pathetic little man expect to remain hidden here? Still, he is a man and they never think with their mind!~
 =
-~(*Turning to Esmond*) Don�t try and *orc dung* me you male dog! I know you for who you are you cowardly mongrel, the stench of the wyrm clings to you still! All the years spent crawling behind in his filth has left you smelling as foul as your master!~
+~(*Turning to Esmond*) Don't try and *orc dung* me you male dog! I know you for who you are you cowardly mongrel, the stench of the wyrm clings to you still! All the years spent crawling behind in his filth has left you smelling as foul as your master!~
     IF ~~ THEN EXTERN ~ESMOND~ 2
 END
 
 IF ~~ THEN BEGIN esmond3
- SAY ~(*Her eyes flash*) I�m no one�s servant. Another insinuation that I am and your innards will find themselves hugging steel! I am here to claim that which is mine by right, that which you stole from the wyrm.~
+ SAY ~(*Her eyes flash*) I'm no one's servant. Another insinuation that I am and your innards will find themselves hugging steel! I am here to claim that which is mine by right, that which you stole from the wyrm.~
     IF ~~ THEN EXTERN ~ESMOND~ 3
 END
 
 IF ~~ THEN BEGIN esmond4
- SAY ~(*Sparks leap at her finger tips as she makes to grab for the hilt of her sword*) Jumped up, who are you calling jumped up you heap of orc�s dung! I�ll show you jumped up...~
+ SAY ~(*Sparks leap at her finger tips as she makes to grab for the hilt of her sword*) Jumped up, who are you calling jumped up you heap of orc's dung! I'll show you jumped up...~
     IF ~~ THEN EXTERN ~ESMOND~ 4
 END
 
 IF WEIGHT #-13  ~Global("VP_After_Esm_Esape","LOCALS",2)
 Global("VP_Esmond_Thief","GLOBAL",1)~ THEN BEGIN esmond5
- SAY ~Ye gods, what were you thinking of, <CHARNAME>?! You should have just let me cut the bastard�s throat. It�s not like anyone was going to miss the pathetic dog, and not to mention our purse is now unnecessarily lighter.~
-	IF ~~ THEN REPLY ~Shut up Shar-Teel! You got what you wanted and it�s not like we couldn�t afford the gold!~ GOTO esmond6
+ SAY ~Ye gods, what were you thinking of, <CHARNAME>?! You should have just let me cut the bastard's throat. It's not like anyone was going to miss the pathetic dog, and not to mention our purse is now unnecessarily lighter.~
+	IF ~~ THEN REPLY ~Shut up Shar-Teel! You got what you wanted and it's not like we couldn't afford the gold!~ GOTO esmond6
 	IF ~~ THEN REPLY ~It is for me to decide what we do with our gold so stop whining and try to be grateful for once in your life.~ GOTO esmond6
-	IF ~~ THEN REPLY ~I don�t share your love for bloodshed Shar-Teel. If gold was what it took for a peaceful outcome then I consider it gold well spent.~ GOTO esmond8
+	IF ~~ THEN REPLY ~I don't share your love for bloodshed Shar-Teel. If gold was what it took for a peaceful outcome then I consider it gold well spent.~ GOTO esmond8
 END
 
 IF ~~ THEN BEGIN esmond6
- SAY ~Yea well, don�t expect me to hang around when you�re hiring out as mercenaries again, or clearing the sewers of vermin because you�ve given our hard earned gold to every lost cause we meet.~
+ SAY ~Yea well, don't expect me to hang around when you're hiring out as mercenaries again, or clearing the sewers of vermin because you've given our hard earned gold to every lost cause we meet.~
 =
 ~Mark my words, I have no intentions of living in poverty ever again.~
-	IF ~~ THEN REPLY ~Neither do I so you�ve nothing to fear from my extravagances. Now can we quit yammering and get out of here!~ GOTO esmond7
-	IF ~~ THEN REPLY ~You�ll do whatever you have to do regardless, Shar-Teel, so let�s drop it for now and get  out of here!~ GOTO esmond7
+	IF ~~ THEN REPLY ~Neither do I so you've nothing to fear from my extravagances. Now can we quit yammering and get out of here!~ GOTO esmond7
+	IF ~~ THEN REPLY ~You'll do whatever you have to do regardless, Shar-Teel, so let's drop it for now and get  out of here!~ GOTO esmond7
 END
 
 IF ~~ THEN BEGIN esmond7
- SAY ~Just telling you so�s that you know should I go, all that�s mine goes with me, and I�ll skewer anyone who so much as raises a hand to stop me!~	
+ SAY ~Just telling you so's that you know should I go, all that's mine goes with me, and I'll skewer anyone who so much as raises a hand to stop me!~	
 	IF ~True()~ THEN GOTO esmond9
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ esmond1
@@ -969,7 +969,7 @@ END
 IF ~~ THEN BEGIN esmond7a
  SAY ~(*Wiping her blood stained boot in the dirt, she sneers*) What do I care for your words! I care only for actions, not self righteous recriminations after the deed is done.~
 =
-~Mine are, after all, not the only hands stained in blood, or hadn�t you cared to take a look at yourselves? I thought not!~
+~Mine are, after all, not the only hands stained in blood, or hadn't you cared to take a look at yourselves? I thought not!~
 =
 ~Bah, spare me the hypocrisy , you all make me want to throw up!~
 	IF ~~ THEN DO ~SetGlobal("VP_After_Esm_Esape","LOCALS",3)~ GOTO esmond9
@@ -978,19 +978,19 @@ END
 IF ~~ THEN BEGIN esmond8
  SAY ~(*Scoffs*) Listen to yourself, your dead father would turn in his grave if he could hear you talk!~
 =
-~No, he�d probably jump right out of it and strike you down himself for shaming him! You�ve not got the balls to be worthy of the name *murder*!~
+~No, he'd probably jump right out of it and strike you down himself for shaming him! You've not got the balls to be worthy of the name *murder*!~
 	IF ~~ THEN REPLY ~Just beware of that acid tongue of yours my girl. The worm may yet turn and prove you wrong!~ GOTO esmond9
 	IF ~~ THEN REPLY ~Whatever Shar-Teel, I am the child of murder and no amount of petty jealousy on your part will make it otherwise!~ GOTO esmond9
 	IF ~~ THEN REPLY ~Nowhere is it written that the child should follow the father. I am my own person and proud to be so.~ GOTO esmond9
 END
 
 IF ~~ THEN BEGIN esmond9
- SAY ~Bah, sometimes your attitude makes me sick to my stomach. Only time will tell whether you make something of yourself or die pitifully in the attempt. Just don�t count on me hanging around to keep backing you up.~		
+ SAY ~Bah, sometimes your attitude makes me sick to my stomach. Only time will tell whether you make something of yourself or die pitifully in the attempt. Just don't count on me hanging around to keep backing you up.~		
 	IF ~~ THEN DO ~SetGlobal("VP_After_Esm_Esape","LOCALS",3)~ EXIT
 END
 
 //IF ~~ THEN BEGIN esmond9
-// SAY ~Sometimes your attitude makes me sick to my stomach. Only time will tell whether you make something of yourself or die pitifully in the attempt. Just don�t count on me anymore hanging around to keep backing you up.~	
+// SAY ~Sometimes your attitude makes me sick to my stomach. Only time will tell whether you make something of yourself or die pitifully in the attempt. Just don't count on me anymore hanging around to keep backing you up.~	
 //	IF ~~ THEN DO ~SetGlobal("VP_After_Esm_Esape","LOCALS",3)
 //GivePartyAllEquipment()
 //DropInventory()
@@ -1002,35 +1002,35 @@ IF WEIGHT #-14  ~Global("VP_After_Esm_Esape","LOCALS",2)
 Global("VP_Esmond_Thief","GLOBAL",0)~ THEN BEGIN esmond10
  SAY ~(*Her eyes flash with anger*) What in the nine hells! How look where your bloody incompetence has gotten me!~
  =
- ~I�ll... I�ll flay you alive! No flaying�s too good for you. I�ll toast you in the biggest fireball I can muster, that way I get you and this pathetic group of yours in one go!~
+ ~I'll... I'll flay you alive! No flaying's too good for you. I'll toast you in the biggest fireball I can muster, that way I get you and this pathetic group of yours in one go!~
  =
  ~(*Her hands move, sparks already beginning to dance at her finger tips*)~
-	IF ~~ THEN REPLY ~Shar-Teel, stop now or I swear, you�ll not live long enough to raise that fireball!!~ GOTO esmond11
-	IF ~~ THEN REPLY ~Shar-Teel think, it�ll take us but a second to surround you and you�ll be caught in your own fireball.~ GOTO esmond11
+	IF ~~ THEN REPLY ~Shar-Teel, stop now or I swear, you'll not live long enough to raise that fireball!!~ GOTO esmond11
+	IF ~~ THEN REPLY ~Shar-Teel think, it'll take us but a second to surround you and you'll be caught in your own fireball.~ GOTO esmond11
 	IF ~~ THEN REPLY ~Shar-Teel, NO! (*Then taking one look at the fire growing in her hands you attack Shar-Teel*)~ GOTO esmond15
 END
 
 IF ~~ THEN BEGIN esmond11
- SAY ~(*Snarling, she looks at you and her fingers stop weaving*) I�ll not allow your bungling or my temper to be my downfall. I will find the male scum again, without your hindrance!~
+ SAY ~(*Snarling, she looks at you and her fingers stop weaving*) I'll not allow your bungling or my temper to be my downfall. I will find the male scum again, without your hindrance!~
 =
 ~You can forget our deal. I curse the day I ever thought you worthy of my service. Now get out of my way.~
-	IF ~~ THEN REPLY ~This is no one�s fault. I didn�t know he was capable of teleporting and I�m sure you didn�t either. Just pull your head in and put it down to experience! ~ GOTO esmond12	
-	IF ~~ THEN REPLY ~Whereas I don�t appreciate all your bad mouthing, you have proven yourself invaluable to the group so won�t you reconsider and stay?~ GOTO esmond12
-	IF ~~ THEN REPLY ~You are my most valuable companion... and trustfull friend. There�s so much we passed together, and you have always bravely fought at my side. Please don't leave me now.~ GOTO esmond14
-	IF ~~ THEN REPLY ~I�ve just about had it with all your bad mouthing! So just go and good riddance!~ GOTO esmond13
+	IF ~~ THEN REPLY ~This is no one's fault. I didn't know he was capable of teleporting and I'm sure you didn't either. Just pull your head in and put it down to experience! ~ GOTO esmond12	
+	IF ~~ THEN REPLY ~Whereas I don't appreciate all your bad mouthing, you have proven yourself invaluable to the group so won't you reconsider and stay?~ GOTO esmond12
+	IF ~~ THEN REPLY ~You are my most valuable companion... and trustfull friend. There's so much we passed together, and you have always bravely fought at my side. Please don't leave me now.~ GOTO esmond14
+	IF ~~ THEN REPLY ~I've just about had it with all your bad mouthing! So just go and good riddance!~ GOTO esmond13
 END
 
 /*IF ~~ THEN BEGIN esmond11
- SAY ~(*Snarling, she looks at you and her fingers stop weaving*) I�ll not allow your bungling or my temper to be my downfall. I will find the male scum again, without your hindrance!~
+ SAY ~(*Snarling, she looks at you and her fingers stop weaving*) I'll not allow your bungling or my temper to be my downfall. I will find the male scum again, without your hindrance!~
 =
 ~You can forget our deal. I curse the day I ever thought you worthy of my service. Now get out of my way.~
-	IF ~~ THEN REPLY ~This is no one�s fault. I didn�t know he was capable of teleporting and I�m sure you didn�t either. Just pull your head in and put it down to experience! ~ GOTO esmond12	
-	IF ~~ THEN REPLY ~Whereas I don�t appreciate all your bad mouthing, you have proven yourself invaluable to the group so won�t you reconsider and stay?~ GOTO esmond12
-	IF ~~ THEN REPLY ~I�ve just about had it with all your bad mouthing! So just go and good riddance!~ GOTO esmond13
+	IF ~~ THEN REPLY ~This is no one's fault. I didn't know he was capable of teleporting and I'm sure you didn't either. Just pull your head in and put it down to experience! ~ GOTO esmond12	
+	IF ~~ THEN REPLY ~Whereas I don't appreciate all your bad mouthing, you have proven yourself invaluable to the group so won't you reconsider and stay?~ GOTO esmond12
+	IF ~~ THEN REPLY ~I've just about had it with all your bad mouthing! So just go and good riddance!~ GOTO esmond13
 END*/
 
 IF ~~ THEN BEGIN esmond12
- SAY ~Never!! Know that should our paths ever cross again, for whatever reason, then you best keep walking or by the nine hells I�ll finish what I started here, and that�s a promise!~
+ SAY ~Never!! Know that should our paths ever cross again, for whatever reason, then you best keep walking or by the nine hells I'll finish what I started here, and that's a promise!~
 	IF ~~ THEN DO ~SetGlobal("VP_After_Esm_Esape","LOCALS",3)
 GivePartyAllEquipment()
 DropInventory()
@@ -1039,7 +1039,7 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN esmond13
- SAY ~I hope never to see you or this worthless band of cretins again, but should our paths ever cross again, for whatever reason, then you best keep walking or by the nine hells I�ll finish what I started here, and that�s a promise!~
+ SAY ~I hope never to see you or this worthless band of cretins again, but should our paths ever cross again, for whatever reason, then you best keep walking or by the nine hells I'll finish what I started here, and that's a promise!~
 	IF ~~ THEN DO ~SetGlobal("VP_After_Esm_Esape","LOCALS",3)
 GivePartyAllEquipment()
 DropInventory()
@@ -1075,21 +1075,21 @@ END
 APPEND ~TAFFICJ~
 
 IF ~~ THEN BEGIN esmond1
-	SAY ~Bah, I hardly broke a sweat there! How�s a hero supposed to build a reputation when he�s forced to waste time on petty skirmishes?!~
+	SAY ~Bah, I hardly broke a sweat there! How's a hero supposed to build a reputation when he's forced to waste time on petty skirmishes?!~
 	IF ~True()~ THEN EXTERN ~SHARTJ~ esmond7a
 		IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ esmond1
 END
 
 IF ~~ THEN BEGIN esmond2
-	SAY ~Look to yourself hafling. I don�t see you up front unless it entails sneaking around in the shadows!~
+	SAY ~Look to yourself hafling. I don't see you up front unless it entails sneaking around in the shadows!~
 	IF ~~ THEN EXTERN ~MELORAJ~ esmond2
 END
 
 IF ~~ THEN BEGIN esmond3
-	SAY ~What do you think you�re in this group for you half wit? You suss out the threat and the rest of the group take point in order to let me muster my magic and take the enemy out before any serious damage befalls you all.~
+	SAY ~What do you think you're in this group for you half wit? You suss out the threat and the rest of the group take point in order to let me muster my magic and take the enemy out before any serious damage befalls you all.~
 =
-~(*Turning away*) Tsk... What other reason does she think she�s here for? Her charismatic attraction?!~
+~(*Turning away*) Tsk... What other reason does she think she's here for? Her charismatic attraction?!~
 	IF ~~ THEN EXTERN ~SHARTJ~ esmond7a
 END
 END
@@ -1097,12 +1097,12 @@ END
 APPEND ~MELORAJ~
 
 IF ~~ THEN BEGIN esmond1
-	SAY ~Never I�d say if the hero in question is yourself gnome. Heroes don�t stay at the back tossing trifling spells around, they take point with swords in their hands.~
+	SAY ~Never I'd say if the hero in question is yourself gnome. Heroes don't stay at the back tossing trifling spells around, they take point with swords in their hands.~
 	IF ~~ THEN EXTERN ~TAFFICJ~ esmond2
 END
 
 IF ~~ THEN BEGIN esmond2
-	SAY ~And how many times has my sneaking around as you call it, saved your hide from an ambush or from a particularly nasty trap, more times than you can count I�ll wager!~
+	SAY ~And how many times has my sneaking around as you call it, saved your hide from an ambush or from a particularly nasty trap, more times than you can count I'll wager!~
 	IF ~~ THEN EXTERN ~TAFFICJ~ esmond3
 END
 END
@@ -1125,27 +1125,27 @@ IF ~~ THEN BEGIN shartee2
 END
 
 IF ~~ THEN BEGIN shartee3
-	SAY ~(*A bemused look comes to his face*)... What ever name you go by, I recognise the father�s eyes looking out from the daughter�s face... eyes as dark and pitiless as those of Angelo Dossan�s are not easily forgotten.~
+	SAY ~(*A bemused look comes to his face*)... What ever name you go by, I recognise the father's eyes looking out from the daughter's face... eyes as dark and pitiless as those of Angelo Dossan's are not easily forgotten.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy14
 END
 
 IF ~~ THEN BEGIN shartee4
-	SAY ~(*He laughs*)... Ah the fierceness and spirit of youth... how well I remember it! You truly are your father�s daughter Shar-Teel... yes you are known to me.~
+	SAY ~(*He laughs*)... Ah the fierceness and spirit of youth... how well I remember it! You truly are your father's daughter Shar-Teel... yes you are known to me.~
 	IF ~~ THEN GOTO shartee5
 END
 
 IF ~~ THEN BEGIN shartee5
-	SAY ~Does that surprise you? Or are you perhaps wondering why I bothered asking your name when I already knew it? It was out of politeness, nothing more than politeness... after all, we hadn�t been properly introduced had we?~
+	SAY ~Does that surprise you? Or are you perhaps wondering why I bothered asking your name when I already knew it? It was out of politeness, nothing more than politeness... after all, we hadn't been properly introduced had we?~
 	IF ~~ THEN GOTO shartee6
 END
 
 IF ~~ THEN BEGIN shartee6
-	SAY ~You see, there�s not a lot that gets past the eyes and ears of my servants. I knew our paths were destined to cross some day and my kin are renowned for their patience.~
+	SAY ~You see, there's not a lot that gets past the eyes and ears of my servants. I knew our paths were destined to cross some day and my kin are renowned for their patience.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy15
 END
 
 IF ~~ THEN BEGIN shartee7
-	SAY ~Not so fast young lady. Look around you, are you so certain that the one you seek isn�t here? Would you even know him if you saw him?~
+	SAY ~Not so fast young lady. Look around you, are you so certain that the one you seek isn't here? Would you even know him if you saw him?~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy17
 END
 
@@ -1160,7 +1160,7 @@ IF ~~ THEN BEGIN shartee9
 END
 
 IF ~~ THEN BEGIN shartee10
-	SAY ~When first he approached me I was amused by the man�s audacity, but it wasn�t long before I saw a kindred spirit in him. A man whose quick and devious mind came second only to my own.~
+	SAY ~When first he approached me I was amused by the man's audacity, but it wasn't long before I saw a kindred spirit in him. A man whose quick and devious mind came second only to my own.~
 	IF ~~ THEN GOTO shartee11
 END
 
@@ -1170,12 +1170,12 @@ IF ~~ THEN BEGIN shartee11
 END
 
 IF ~~ THEN BEGIN shartee12
-	SAY ~(*Smirks*) Looks can be deceptive my girl... believe me when I say you�ll not find me an easy target for that sword of yours!~
+	SAY ~(*Smirks*) Looks can be deceptive my girl... believe me when I say you'll not find me an easy target for that sword of yours!~
 	IF ~~ THEN GOTO shartee13
 END
 
 IF ~~ THEN BEGIN shartee13
-	SAY ~Besides, kill me and you�ll never see your father�s legacy.~
+	SAY ~Besides, kill me and you'll never see your father's legacy.~
 	IF ~~ THEN GOTO shartee14
 END
 
@@ -1207,12 +1207,12 @@ END
 APPEND ~GARREN~
 
 IF ~~ THEN BEGIN shartee15
-	SAY ~(*A look of concern crosses the man�s face*) Please, don�t underestimate him young woman, you�ve seen the trickery he is capable of and you can be sure he won�t have sent his best lackeys to execute so menial a task as kidnapping.~
+	SAY ~(*A look of concern crosses the man's face*) Please, don't underestimate him young woman, you've seen the trickery he is capable of and you can be sure he won't have sent his best lackeys to execute so menial a task as kidnapping.~
 	IF ~~ THEN GOTO shartee16
 END
 
 IF ~~ THEN BEGIN shartee16
-	SAY ~No, as well as arrogant, he�s extremely ruthless in his dealings with men. These people were expendable, just like any who choose to serve him.~
+	SAY ~No, as well as arrogant, he's extremely ruthless in his dealings with men. These people were expendable, just like any who choose to serve him.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy202
 END
 
@@ -1232,24 +1232,24 @@ IF ~~ THEN BEGIN shartee19
 !IsValidForPartyDialog("Aerie")
 !IsValidForPartyDialog("Jan")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3)
 SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)
-~ UNSOLVED_JOURNAL ~Rescue Garren�s child from Firkraag.
+~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
 
-Garren�s child has been kidnapped, no doubt by Firkraag�s men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn�t know why Firkraag would continue to hound him... nor where his child�s kidnappers would have taken their prisoner.~ EXIT
+Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXIT
  IF ~IsValidForPartyDialog("Minsc")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3)
-SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren�s child from Firkraag.
+SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
 
-Garren�s child has been kidnapped, no doubt by Firkraag�s men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn�t know why Firkraag would continue to hound him... nor where his child�s kidnappers would have taken their prisoner.~ EXTERN ~MINSCJ~ 99
+Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~MINSCJ~ 99
  IF ~!IsValidForPartyDialog("Minsc")
 IsValidForPartyDialog("Aerie")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3)
-SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren�s child from Firkraag.
+SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
 
-Garren�s child has been kidnapped, no doubt by Firkraag�s men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn�t know why Firkraag would continue to hound him... nor where his child�s kidnappers would have taken their prisoner.~ EXTERN ~AERIEJ~ 57
+Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~AERIEJ~ 57
  IF ~!IsValidForPartyDialog("Minsc")
 !IsValidForPartyDialog("Aerie")
 IsValidForPartyDialog("Jan")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3)
-SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren�s child from Firkraag.
+SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
 
-Garren�s child has been kidnapped, no doubt by Firkraag�s men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn�t know why Firkraag would continue to hound him... nor where his child�s kidnappers would have taken their prisoner.~ EXTERN ~JANJ~ 98
+Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~JANJ~ 98
 END
 END
 
@@ -1291,7 +1291,7 @@ IF ~~ THEN BEGIN shartee25
 END
 
 IF ~~ THEN BEGIN shartee26
-	SAY ~Knowing his nature and his greed, that may well have amused him... a man laying gifts at his feet, yes that would indeed have amused our Lord Firkgraag but I am sorry, I don�t recall such a person ever coming here.~
+	SAY ~Knowing his nature and his greed, that may well have amused him... a man laying gifts at his feet, yes that would indeed have amused our Lord Firkgraag but I am sorry, I don't recall such a person ever coming here.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy216
 END
 
@@ -1309,9 +1309,9 @@ IF ~~ THEN BEGIN driadsint_vic
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Edwin")
 !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
 	IF ~InParty("Jan")
@@ -1324,14 +1324,14 @@ END
 APPEND ~KORGANJ~
 
 IF ~~ THEN BEGIN driadsint_kor
-	SAY ~Speak fer yerself girly. I don�t see nowt wrong in chasing a comely lass, �specially if she lets �erself get caught! Just ya yell if ya wants a real man to catch yer, ol Korgan is always willing to oblige the ladies.~
+	SAY ~Speak fer yerself girly. I don't see nowt wrong in chasing a comely lass, 'specially if she lets 'erself get caught! Just ya yell if ya wants a real man to catch yer, ol Korgan is always willing to oblige the ladies.~
 	IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Edwin")
 !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
 	IF ~InParty("Jan")
@@ -1342,19 +1342,19 @@ END
 APPEND ~JANJ~
 
 IF ~~ THEN BEGIN driadsint_jan
-	SAY ~Ol� Jan here has had his share of chasing a pretty nymph or two and I�m telling you, to catch and be rewarded by a kiss from one of these fair creatures blows the socks clean off your feet.~
+	SAY ~Ol' Jan here has had his share of chasing a pretty nymph or two and I'm telling you, to catch and be rewarded by a kiss from one of these fair creatures blows the socks clean off your feet.~
 	IF ~~ THEN GOTO driadsint_jan1
 END
 
 IF ~~ THEN BEGIN driadsint_jan1
-	SAY ~A distant cousin of Uncle Willie found this to be true when he was walking past such goings on and some poor sods boots came flying and hit him in the head, followed closely by the fellow�s socks. It weren�t the boots that knocked this cousin unconscious, it were the stench of those socks, the fellow had been wearing them a twelve month at least!~
+	SAY ~A distant cousin of Uncle Willie found this to be true when he was walking past such goings on and some poor sods boots came flying and hit him in the head, followed closely by the fellow's socks. It weren't the boots that knocked this cousin unconscious, it were the stench of those socks, the fellow had been wearing them a twelve month at least!~
 	IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 	IF ~InParty("Edwin")
 !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
 END
@@ -1363,19 +1363,19 @@ END
 APPEND ~EDWINJ~
 
 IF ~~ THEN BEGIN driadsint_edw1
-	SAY ~Delightful creatures, absolutely delightful. It�s a shame the gods didn�t stick to this design when creating females of the other races.~
+	SAY ~Delightful creatures, absolutely delightful. It's a shame the gods didn't stick to this design when creating females of the other races.~
 	IF ~True()~ THEN EXTERN ~SHARTJ~ legacy220
 	IF ~InParty("Melora")
 !Dead("Melora")~ THEN EXTERN ~MELORAJ~ driadsint_mel1
 END
 
 IF ~~ THEN BEGIN driadsint_edw2
-	SAY ~And what world, may I ask, would you be living in... not the real one that�s for sure? Your delusions appear to have conjured up an imaginary world and now your poor, weak female brain actually believes you are living in this illusion! [Poor girl, she really believes that because she wears armour and can use a sword adequately, she is as good as a man.]~
+	SAY ~And what world, may I ask, would you be living in... not the real one that's for sure? Your delusions appear to have conjured up an imaginary world and now your poor, weak female brain actually believes you are living in this illusion! [Poor girl, she really believes that because she wears armour and can use a sword adequately, she is as good as a man.]~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy222
 END
 
 IF ~~ THEN BEGIN driadsint_edw3
-	SAY ~Oh do stop that with your fingers... I could, if I so desired it, hurl a fireball at you before you�ve managed to summon as much as a spark!~
+	SAY ~Oh do stop that with your fingers... I could, if I so desired it, hurl a fireball at you before you've managed to summon as much as a spark!~
 	IF ~~ THEN GOTO driadsint_edw4
 END	
 
@@ -1390,7 +1390,7 @@ IF ~~ THEN BEGIN driadsint_edw5
 END
 
 IF ~~ THEN BEGIN driadsint_edw6
-	SAY ~I�ll have you know that I have entertained and been entertained by many intelligent as well as beautiful women. There is just something graceful... sensual about a nymph that is not found in women of any other race. [Not that an ungainly half breed such as she would understand �sensual� or �graceful�.]~	
+	SAY ~I'll have you know that I have entertained and been entertained by many intelligent as well as beautiful women. There is just something graceful... sensual about a nymph that is not found in women of any other race. [Not that an ungainly half breed such as she would understand 'sensual' or 'graceful'.]~	
 	IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel2
 END
 END
@@ -1412,7 +1412,7 @@ IF ~~ THEN BEGIN N239
 END
 
 IF ~~ THEN BEGIN driadsint_min1
-	SAY ~That can not be so Melora. Minsc always thinks with his mind, sometimes he thinks so hard all the thinking gives him big headaches. Ask Boo, he knows how much Minsc�s head hurts sometimes. Right Boo?~ [BOONEJ1]
+	SAY ~That can not be so Melora. Minsc always thinks with his mind, sometimes he thinks so hard all the thinking gives him big headaches. Ask Boo, he knows how much Minsc's head hurts sometimes. Right Boo?~ [BOONEJ1]
 	IF ~True()~ THEN EXTERN ~MELORAJ~ driadsint_mel8
 	IF ~InParty("Hrothgar")
 !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ driadsint_hrt1
@@ -1421,26 +1421,26 @@ IF ~~ THEN BEGIN driadsint_min1
 END
 
 IF ~~ THEN BEGIN driadsint_min2
-	SAY ~(*A huge smile spreads across the ranger�s face*)... Oooo thank you Leina, you say such nice things and make Minsc feel all fuzzy.~
+	SAY ~(*A huge smile spreads across the ranger's face*)... Oooo thank you Leina, you say such nice things and make Minsc feel all fuzzy.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy224
 END
 
 IF ~~ THEN BEGIN driadsint_min3
-	SAY ~(*A huge smile spreads across the ranger�s face*)... Ooo, thank you Melora. Boo says to tell Melora that the group would not be the same without her pretty face and happy smiles... and Minsc, as always, agrees with Boo.~
+	SAY ~(*A huge smile spreads across the ranger's face*)... Ooo, thank you Melora. Boo says to tell Melora that the group would not be the same without her pretty face and happy smiles... and Minsc, as always, agrees with Boo.~
 	IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1)
 GiveItemCreate("kamul111",Player1,0,0,0)
 EraseJournalEntry(34092)
 EraseJournalEntry(34093)
-ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus� captive dryads.
+ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
 
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus� dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
+I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
 END
 END
 
 APPEND ~FIRORC02~
 
 IF WEIGHT #-1 ~NumTimesTalkedTo(0)~ THEN BEGIN orcsflee1
- SAY ~Pleeze, mercy on us! Me sorry. Don�t kill. Me just following orders. Didn�t want to eat children or kick old people. Just job!~
+ SAY ~Pleeze, mercy on us! Me sorry. Don't kill. Me just following orders. Didn't want to eat children or kick old people. Just job!~
  IF ~OR(2)
 !InParty("Sharteel")
 Dead("Sharteel")~ THEN REPLY ~Foul orc! You will suffer the same fate as all your kind!~ GOTO 2
@@ -1456,12 +1456,12 @@ InParty("Sharteel")
 END
 
 IF ~~ THEN BEGIN orcsflee2
- SAY ~(*His face blanches with fear*) Loo... loo... look please, we like it here, aint that so Flaylan? We don�t interfere with the lord�s business and if ya have a brain then ya�d run and forget what ya come here for aint that right Flaylan?~
+ SAY ~(*His face blanches with fear*) Loo... loo... look please, we like it here, aint that so Flaylan? We don't interfere with the lord's business and if ya have a brain then ya'd run and forget what ya come here for aint that right Flaylan?~
  IF ~~ THEN EXTERN ~FIRORC03~ orcs2flee1
 END
 
 IF ~~ THEN BEGIN orcsflee3
- SAY ~Com�on, Flaylan, we run! I not want to be around when lord Firkraag frazzles this lot. You wait and see, you all gonna get it good and proper.~
+ SAY ~Com'on, Flaylan, we run! I not want to be around when lord Firkraag frazzles this lot. You wait and see, you all gonna get it good and proper.~
  IF ~~ THEN EXTERN ~FIRORC03~ orcs2flee2
 END
 END
@@ -1469,7 +1469,7 @@ END
 APPEND ~FIRORC03~
 
 IF ~~ THEN BEGIN orcs2flee1
-	SAY ~Lord Jierdan says the daughter would follow the father, and he�s always right. Fool girl, ya don�t know what ya be up against... none of youse do! Enuff to say s�no shame to turn back now, run whilst ya still can.~
+	SAY ~Lord Jierdan says the daughter would follow the father, and he's always right. Fool girl, ya don't know what ya be up against... none of youse do! Enuff to say s'no shame to turn back now, run whilst ya still can.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy311
 END
 
@@ -1481,17 +1481,17 @@ END
 
 EXTEND_BOTTOM ~SAMIA~ 14
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN UNSOLVED_JOURNAL ~Rescue Garren�s child from Firkraag.
+!Dead("Sharteel")~ THEN UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
 
-Inside Firkraag�s dungeon I have encountered a woman by the name of Samia... a relic hunter, of sorts, who is searching for texts relating to a dead Tethyrian king. I have agreed to take her key and find the texts she needs from the king�s burial chamber... which is supposedly protected by a mysterious, invisible creature, the last of seven guardians, according to the legends. Once I have the texts I am to return to Samia.~ EXTERN ~SHARTJ~ legacy320
+Inside Firkraag's dungeon I have encountered a woman by the name of Samia... a relic hunter, of sorts, who is searching for texts relating to a dead Tethyrian king. I have agreed to take her key and find the texts she needs from the king's burial chamber... which is supposedly protected by a mysterious, invisible creature, the last of seven guardians, according to the legends. Once I have the texts I am to return to Samia.~ EXTERN ~SHARTJ~ legacy320
 
 END
 
 EXTEND_BOTTOM ~SAMIA~ 18
  IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN SOLVED_JOURNAL ~Samia�s plan foiled.
+!Dead("Sharteel")~ THEN SOLVED_JOURNAL ~Samia's plan foiled.
 
-Samia, the relic hunter in Firkraag�s dungeon, was not what she seemed. Her plan was to get a dupe to get the treasure within the tomb for her... and then kill whomever retrieved it with the help of her companions. Fortunately, she has paid for her arrogance.~ EXTERN ~SHARTJ~ legacy322
+Samia, the relic hunter in Firkraag's dungeon, was not what she seemed. Her plan was to get a dupe to get the treasure within the tomb for her... and then kill whomever retrieved it with the help of her companions. Fortunately, she has paid for her arrogance.~ EXTERN ~SHARTJ~ legacy322
 END
 
 REPLACE_ACTION_TEXT FIRWLF01
@@ -1554,14 +1554,14 @@ ActionOverride("firmag01",ForceSpell(Myself,DRYAD_TELEPORT))~ UNSOLVED_JOURNAL #
 END
 
 IF ~~ THEN BEGIN firecr02
-	SAY ~Brave words but I suspect they are more for the benefit of your friends� ears than mine. Now be a good little girl and go wrest the Windspear brat from Conster before he toasts it! I am done with you.~
+	SAY ~Brave words but I suspect they are more for the benefit of your friends' ears than mine. Now be a good little girl and go wrest the Windspear brat from Conster before he toasts it! I am done with you.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy402
 END
 
 IF ~~ THEN BEGIN firecr03
-	SAY ~(*Small puffs of smoke leave the dragon�s nostrils*) Don�t you mess with me girl... I�ll not look as kindly on the daughter as I did the father!~
+	SAY ~(*Small puffs of smoke leave the dragon's nostrils*) Don't you mess with me girl... I'll not look as kindly on the daughter as I did the father!~
 =
-	~Dossan intrigued me and that is the only reason I tolerated his presence... you however, do not! Believe me when I say you do not want to test my patience nor do you want to feel the full fury of a dragon�s wrath!~
+	~Dossan intrigued me and that is the only reason I tolerated his presence... you however, do not! Believe me when I say you do not want to test my patience nor do you want to feel the full fury of a dragon's wrath!~
 =
 	~Now go away and leave me to ponder on more important matters.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy403
@@ -1580,15 +1580,15 @@ IF ~~ THEN BEGIN firecr04
 END
 
 IF ~~ THEN BEGIN firecr05
-	SAY ~(*Small flames dance menacingly from his tongue as he speaks*) Ho, not so fast my fiery maiden... if it�s a heated confrontation you want I am more than willing to oblige.~
+	SAY ~(*Small flames dance menacingly from his tongue as he speaks*) Ho, not so fast my fiery maiden... if it's a heated confrontation you want I am more than willing to oblige.~
 =
 	~You are a credit to Dossan. In fact you would make any dragon proud to have sired you. A temper such as yours could be nurtured to reach untold heights.~
 =
-	~The fool Dossan didn�t know what he had spawned, you do him proud, daughter of Dossan, but before you do anything foolish which will surely lead to your death, I have a proposition to put to you and this little group. What say you <CHARNAME>, are you up for bargaining?~
-	IF ~~ THEN REPLY ~Ye gods woman... we�re not set up to take down a dragon! Hold that temper of yours and let�s get out of here whilst we can.~ EXTERN ~SHARTJ~ legacy406
-	IF ~~ THEN REPLY ~He�ll keep Shar-Teel. I�m not about to strike a bargain with this creature, nor do I wish a confrontation until I am ready. We�re leaving... and I mean now!~ EXTERN ~SHARTJ~ legacy406
+	~The fool Dossan didn't know what he had spawned, you do him proud, daughter of Dossan, but before you do anything foolish which will surely lead to your death, I have a proposition to put to you and this little group. What say you <CHARNAME>, are you up for bargaining?~
+	IF ~~ THEN REPLY ~Ye gods woman... we're not set up to take down a dragon! Hold that temper of yours and let's get out of here whilst we can.~ EXTERN ~SHARTJ~ legacy406
+	IF ~~ THEN REPLY ~He'll keep Shar-Teel. I'm not about to strike a bargain with this creature, nor do I wish a confrontation until I am ready. We're leaving... and I mean now!~ EXTERN ~SHARTJ~ legacy406
 	IF ~~ THEN REPLY ~Put your sword away Shar-Teel. I want to hear his offer.~ EXTERN ~SHARTJ~ legacy407
-	IF ~~ THEN REPLY ~That temper of yours will be the death of us yet! Ah what the heck, nothing ventured nothing gained. Let�s make this quick... before he has chance to stoke that fiery breath of his.~ EXTERN ~SHARTJ~ legacy405a
+	IF ~~ THEN REPLY ~That temper of yours will be the death of us yet! Ah what the heck, nothing ventured nothing gained. Let's make this quick... before he has chance to stoke that fiery breath of his.~ EXTERN ~SHARTJ~ legacy405a
 END
 
 IF ~~ THEN BEGIN firecr06
@@ -1596,59 +1596,59 @@ IF ~~ THEN BEGIN firecr06
 =
 	~(*Turning his attention back to you*) My proposition is one that should not prove too difficult to a capable person such as yourself. If you find and bring to me the thief... No, come to think of it, I have no need of the thief, his body will suffice.~
 =
-	~Bring me the traitor�s body and all that he stole from me, and I shall reward you with riches beyond anything you can imagine. What say you child of Bhaal?~
+	~Bring me the traitor's body and all that he stole from me, and I shall reward you with riches beyond anything you can imagine. What say you child of Bhaal?~
 	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I can imagine plenty... still I never say no to more. Where might I find this thief?~ GOTO firecr07
-	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I don�t care much for treachery myself. Tell me where the coward is hiding and Ill dispatch him for you.~ GOTO firecr07
-	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I�m passing, I�ll have a word with him on your behalf.~ GOTO firecr07
+	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I don't care much for treachery myself. Tell me where the coward is hiding and Ill dispatch him for you.~ GOTO firecr07
+	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I'm passing, I'll have a word with him on your behalf.~ GOTO firecr07
 	IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ GOTO firecr09
 	IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I can imagine plenty, still I never say no to more... The Umar Hills I believe is where Durbin says he is holed up.~ GOTO firecr10
-	IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I don�t care much for treachery myself. Durbin has already told me where to find this thief... the coward will find no quarter among the trees.~ GOTO firecr10
-	IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I am no common assassin, but if I happen to pass through this forest that Durbin mentioned, then I�ll maybe have a word with him on your behalf.~ GOTO firecr10
+	IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I don't care much for treachery myself. Durbin has already told me where to find this thief... the coward will find no quarter among the trees.~ GOTO firecr10
+	IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I am no common assassin, but if I happen to pass through this forest that Durbin mentioned, then I'll maybe have a word with him on your behalf.~ GOTO firecr10
 	IF ~~ THEN REPLY ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ GOTO firecr09
 END
 
 IF ~~ THEN BEGIN firecr07
-	SAY ~Hm... now there is my dilemma... you see if I knew where the traitor was holed up I wouldn�t be needing your services now would I?~
+	SAY ~Hm... now there is my dilemma... you see if I knew where the traitor was holed up I wouldn't be needing your services now would I?~
 =
 	~The last sighting of the coward was somewhere in the forest, far north of this place but he has evaded all my endeavours to track him to his hole. My guess is he is long gone by now, and my property lost with him.~
 =
-	~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one�s time when seeking to overcome life�s little hiccups... impetuosity often as not ends with one�s demise.~
+	~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one's time when seeking to overcome life's little hiccups... impetuosity often as not ends with one's demise.~
 =
 	~So I will not rush you in this matter... but if your lust for riches spurs you into action and you return quickly, I am sure I can find a magical item or two around here to show my appreciation. Do we have a bargain... and I suggested you decide quickly as I know Conster is anxious to relinquish his role as babysitter.~
-	IF ~~ THEN REPLY ~Yea gods... you too! Am I the only one around here who doesn�t know my *path* as you call it? We must talk some more about that when I�ve dealt with your thief.~ GOTO firecr08
-	IF ~~ THEN REPLY ~The forest far north of here, not a lot to go on seeing as it�s nearly all forest in that direction. Still, you can start counting out that reward, I�ll soon flush the traitor out.~ GOTO firecr08
-	IF ~~ THEN REPLY ~He�s as good as dead... just you keep that soon to be hoard of mine warm!~ GOTO firecr08
-	IF ~~ THEN REPLY ~I don�t think so... I�ll just relieve you of that hoard that you�re sitting on as payment for wasting my time.~ EXTERN ~SHARTJ~ legacy405a
+	IF ~~ THEN REPLY ~Yea gods... you too! Am I the only one around here who doesn't know my *path* as you call it? We must talk some more about that when I've dealt with your thief.~ GOTO firecr08
+	IF ~~ THEN REPLY ~The forest far north of here, not a lot to go on seeing as it's nearly all forest in that direction. Still, you can start counting out that reward, I'll soon flush the traitor out.~ GOTO firecr08
+	IF ~~ THEN REPLY ~He's as good as dead... just you keep that soon to be hoard of mine warm!~ GOTO firecr08
+	IF ~~ THEN REPLY ~I don't think so... I'll just relieve you of that hoard that you're sitting on as payment for wasting my time.~ EXTERN ~SHARTJ~ legacy405a
 END
 
 IF ~~ THEN BEGIN firecr08
-	SAY ~Yes... well... let�s not be getting ahead of ourselves. If you do manage to find my possessions, then and only then dare you venture back into my presence. If you are foolhardy enough to attempt to gain entry without them, I will see this as an assault on myself and will act accordingly.~
+	SAY ~Yes... well... let's not be getting ahead of ourselves. If you do manage to find my possessions, then and only then dare you venture back into my presence. If you are foolhardy enough to attempt to gain entry without them, I will see this as an assault on myself and will act accordingly.~
 =
 	~(*Yawning*) Now go... we are done talking. Remember my warning and return only when you have completed your part of our bargain.~
 	IF ~~ THEN EXTERN ~SHARTJ~ legacy408
 END
 
 IF ~~ THEN BEGIN firecr09
-	SAY ~Yes, and along the way I have lost both talon and tooth to win such prizes. I�ll not relinquish so easily that which has cost me. No matter whether I paid with talon or knowledge, the price was paid and by rights the *trinkets* are mine.~
+	SAY ~Yes, and along the way I have lost both talon and tooth to win such prizes. I'll not relinquish so easily that which has cost me. No matter whether I paid with talon or knowledge, the price was paid and by rights the *trinkets* are mine.~
 =
-	~What ever they may or may not be is neither here nor there... they are mine and I simply wish them returned to me. In return I have offered you wealth beyond your imagining and be assured, I�ll not repeat such an offer again... so what is your answer?~
+	~What ever they may or may not be is neither here nor there... they are mine and I simply wish them returned to me. In return I have offered you wealth beyond your imagining and be assured, I'll not repeat such an offer again... so what is your answer?~
 	IF ~~ THEN REPLY ~I can imagine plenty... still I never say no to more. Where might I find this thief?~ GOTO firecr07
-	IF ~~ THEN REPLY ~I don�t care much for treachery myself. Tell me where the coward is hiding and I�ll dispatch him for you.~ GOTO firecr07
-	IF ~~ THEN REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I�m passing, I�ll have a word with him on your behalf.~ GOTO firecr07
+	IF ~~ THEN REPLY ~I don't care much for treachery myself. Tell me where the coward is hiding and I'll dispatch him for you.~ GOTO firecr07
+	IF ~~ THEN REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I'm passing, I'll have a word with him on your behalf.~ GOTO firecr07
 END
 
 IF ~~ THEN BEGIN firecr10
-	SAY ~Durbin... yes... the name is vaguely familiar to me, but then I have had so many servants over the centuries I can�t be expected to remember one name out of so many.~
+	SAY ~Durbin... yes... the name is vaguely familiar to me, but then I have had so many servants over the centuries I can't be expected to remember one name out of so many.~
 =
 	~I have sent my servants to explore each and every sighting of him, and for all my pains they return empty handed. My guess is he is long gone by now, and my property lost with him.~
 =
-	~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one�s time when seeking to overcome life�s little hiccups... impetuosity often as not ends in death.~
+	~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one's time when seeking to overcome life's little hiccups... impetuosity often as not ends in death.~
 =
 	~So I will not rush you in this matter... but if your lust for riches spurs you into action and you return quickly, I am sure I can find a magical item or two around here to show my appreciation. Do we have a bargain.... and I suggested you decide quickly as I know Conster is anxious to relinquish his role as babysitter.~
-	IF ~~ THEN REPLY ~Yea gods... you too! Am I the only one around here who doesn�t know my *path* as you call it? We must talk some more about that when I�ve dealt with your thief.~ GOTO firecr08
-	IF ~~ THEN REPLY ~It�s a pretty big forest to hide in, it�s just possible your servants didn�t look long enough. No matter, you can start counting out that reward, I�ll soon flush the traitor out.~ GOTO firecr08
-	IF ~~ THEN REPLY ~He�s as good as dead... just you keep that soon to be hoard of mine warm!~ GOTO firecr08
-	IF ~~ THEN REPLY ~I don�t think so... I�ll just relieve you of that hoard that you�re sitting on as payment for wasting my time.~ EXTERN ~SHARTJ~ legacy405a
+	IF ~~ THEN REPLY ~Yea gods... you too! Am I the only one around here who doesn't know my *path* as you call it? We must talk some more about that when I've dealt with your thief.~ GOTO firecr08
+	IF ~~ THEN REPLY ~It's a pretty big forest to hide in, it's just possible your servants didn't look long enough. No matter, you can start counting out that reward, I'll soon flush the traitor out.~ GOTO firecr08
+	IF ~~ THEN REPLY ~He's as good as dead... just you keep that soon to be hoard of mine warm!~ GOTO firecr08
+	IF ~~ THEN REPLY ~I don't think so... I'll just relieve you of that hoard that you're sitting on as payment for wasting my time.~ EXTERN ~SHARTJ~ legacy405a
 END
 END
 
@@ -1695,7 +1695,7 @@ END
 APPEND ~JAHEIRAJ~
 
 IF ~~ THEN BEGIN insuljah1
-	SAY ~Hold your tongue you black hearted vixen! Khalid was a gentle man and it�s true he loathed to fight but that didn�t make him any  less a man.~
+	SAY ~Hold your tongue you black hearted vixen! Khalid was a gentle man and it's true he loathed to fight but that didn't make him any  less a man.~
 =
 ~He would have sacrificed his life for any one of his friends... you have no idea of the gentle and loving heart that beat in his breast. I find your words both cruel and contemptuous Shar-Teel.~
  IF ~~ THEN EXTERN ~SHARTJ~ onkhbody2

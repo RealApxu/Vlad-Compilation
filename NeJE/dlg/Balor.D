@@ -41,7 +41,7 @@ IF ~~ THEN BEGIN 4
 ~I would study his mind further but he is preventing me, he is hiding something. He is different, you are different, and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~Forgive my impatience but that is a mystery that will have to remain hidden, I have no time for in depth explanations. The gem, please?~ GOTO 5
   IF ~~ THEN REPLY ~Sorry, but I am not about to let you poke about in my mind. Now if you do not mind, the gem?~ GOTO 5
-  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so�s I can leave peaceably?~ GOTO 5
+  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so's I can leave peaceably?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -56,7 +56,7 @@ END
 IF ~~ THEN BEGIN 6
 	SAY ~(*You sense ripples of what you presume to be demon laughter pass over your mind*) Oh no, dear me no.~
 =
-~Shendru�s agenda is much simpler. He wants the gem for himself because it is the only way of keeping his beasts at bay.~
+~Shendru's agenda is much simpler. He wants the gem for himself because it is the only way of keeping his beasts at bay.~
 =
 ~He knows that I guard it and he knows the price for my leaving this plane, he cannot afford to pay it and still continue what he calls his game.~
 =
@@ -145,7 +145,7 @@ IF ~~ THEN BEGIN 11
 ~There is more here, you and this one (*indicating Hrothgar*), you are both... different, hiding something and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~I... I have no idea what you mean. I came looking for a light gem, I was told it would help me leave this place.~ GOTO 5	
   IF ~~ THEN REPLY ~Maybe we can aid each other. We are both looking for our freedom, the gem will secure mine, tell me, what will secure yours?~ GOTO 5	
-  IF ~~ THEN REPLY ~I did not mean to disturb you. I see now that this search for the light gem was another ploy on the druid�s part to amuse himself further at my expense. I will leave you in peace.~ GOTO 5
+  IF ~~ THEN REPLY ~I did not mean to disturb you. I see now that this search for the light gem was another ploy on the druid's part to amuse himself further at my expense. I will leave you in peace.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 12
@@ -158,7 +158,7 @@ IF ~~ THEN BEGIN 12
 ~I would study his mind further but he is preventing me, he is hiding something. He is different, you are different, and I do not like things that are hidden.~
   IF ~~ THEN REPLY ~Forgive my impatience but that is a mystery that will have to remain hidden, I have no time for in depth explanations. The gem, please?~ GOTO 5
   IF ~~ THEN REPLY ~Sorry, but I am not about to let you poke about in my mind. Now if you do not mind, the gem?~ GOTO 5	
-  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so�s I can leave peaceably?~ GOTO 5
+  IF ~~ THEN REPLY ~(*Turning to Hrothgar*) Remind me to ask you about that, Hrothgar. (*Turning back to the demon*) I came here hoping to take the gem peaceably, now what does it take for you to give it to me so's I can leave peaceably?~ GOTO 5
 END
 
 IF ~Global("VP_EvilAct","GLOBAL",2)~ THEN BEGIN 13

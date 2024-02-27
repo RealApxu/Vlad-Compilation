@@ -1,7 +1,7 @@
 APPEND ~BANOMEN~
 
 IF ~~ THEN BEGIN NEJ0
-  SAY ~Hmph! When the lady said dance I didn�t think she meant it would be the kind of dancing found in a brothel!~
+  SAY ~Hmph! When the lady said dance I didn't think she meant it would be the kind of dancing found in a brothel!~
   IF ~Gender(Player1,FEMALE)
 !InParty("Melora")~ THEN EXTERN ~BLEINA~ PCF2Leina38a
 	IF ~Gender(Player1,MALE)
@@ -31,7 +31,7 @@ IF ~~ THEN BEGIN TS587
 END
 
 IF ~~ THEN BEGIN TS588
-  SAY ~That�s a good start... was it what you were writing for the past fortnight?  Keep up good work, Yoshimo and you might actually finish it.~
+  SAY ~That's a good start... was it what you were writing for the past fortnight?  Keep up good work, Yoshimo and you might actually finish it.~
   IF ~~ THEN EXTERN ~BYOSHIM~ TS101
 END
 
@@ -45,9 +45,9 @@ IF ~~ THEN BEGIN TS590
 
 She walks in beauty, like the night
 Of cloudless climes and starry skies;
-And all that�s best of dark and bright
+And all that's best of dark and bright
 Meet in her aspect and her eyes:
-Thus mellow�d to that tender light
+Thus mellow'd to that tender light
 Which heaven to gaudy day denies...
 ~
   IF ~~ THEN EXTERN ~BKACHI~ 17
@@ -55,7 +55,7 @@ END
 
 IF ~~ THEN BEGIN TS591
   SAY ~The judge is not objective! My star, come, tell what you think?~
-  IF ~~ THEN REPLY ~What, the poem you wrote about Kachiko? Well, I�d say I agree with her, it�s not the greatest...~ GOTO TS592
+  IF ~~ THEN REPLY ~What, the poem you wrote about Kachiko? Well, I'd say I agree with her, it's not the greatest...~ GOTO TS592
 END
 
 IF ~~ THEN BEGIN TS592
@@ -69,12 +69,12 @@ IF ~~ THEN BEGIN TS593
 END
 
 IF ~~ THEN BEGIN TS594
-  SAY ~Valygar, if she needed anybody�s help she�d ask for it.~
+  SAY ~Valygar, if she needed anybody's help she'd ask for it.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS174
 END
 
 IF ~~ THEN BEGIN TS595
-  SAY ~Verily, Valygar, I know little of love beside what the tales say. I would speak to an older comrade in the Order, but I thought you might be willing to listen. Besides, the girl I like, well, she is very special... It�s <CHARNAME> and with her heritage, I am not sure the Order would look benevolently on our relationship...~
+  SAY ~Verily, Valygar, I know little of love beside what the tales say. I would speak to an older comrade in the Order, but I thought you might be willing to listen. Besides, the girl I like, well, she is very special... It's <CHARNAME> and with her heritage, I am not sure the Order would look benevolently on our relationship...~
   IF ~~ THEN EXTERN ~BVALYGA~ TS379
 END
 
@@ -113,7 +113,7 @@ END
 IF ~~ THEN BEGIN TS602
   SAY ~I... I was... I am sorry my Lady.~
   IF ~~ THEN REPLY ~You should apologize to Valygar, not to me...~ GOTO TS603
-  IF ~~ THEN REPLY ~Apology accepted. Now, let�s all calm down and do our job.~ EXTERN ~BVALYGA~ TS388
+  IF ~~ THEN REPLY ~Apology accepted. Now, let's all calm down and do our job.~ EXTERN ~BVALYGA~ TS388
 END
 
 IF ~~ THEN BEGIN TS603
@@ -122,7 +122,7 @@ IF ~~ THEN BEGIN TS603
 END
 
 IF ~~ THEN BEGIN TS604
-  SAY ~Oh, I see... Well, then I�ll relieve you from the necessity of being in my company. Fare thee well.~
+  SAY ~Oh, I see... Well, then I'll relieve you from the necessity of being in my company. Fare thee well.~
   IF ~~ THEN DO ~LeaveParty()
 EscapeArea()~ EXIT
 END
@@ -148,7 +148,7 @@ IF ~~ THEN BEGIN TS608
 END
 
 IF ~~ THEN BEGIN TS609
-  SAY ~Laughing! Sure, you can laugh! It�s my heart that is bleeding!~
+  SAY ~Laughing! Sure, you can laugh! It's my heart that is bleeding!~
   IF ~~ THEN EXTERN ~BVALYGA~ TS464
 END
 
@@ -168,12 +168,12 @@ IF ~~ THEN BEGIN TS612
 END
 
 IF ~~ THEN BEGIN TS613
-  SAY ~Spend time indeed... Travel to Zakhara - that�s going to give you two a lot of time to kill.~
+  SAY ~Spend time indeed... Travel to Zakhara - that's going to give you two a lot of time to kill.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS469
 END
 
 IF ~~ THEN BEGIN TS614
-  SAY ~I should have done that long ago, instead of trusting her, instead of trusting you. It is my own fault that the one I love and you, whom I called my friend, have broken my life. I was too carefree. Now they all look at me with pity and say nice words. But my heart is the vulture�s food. Nothing hurts more than treachery.~
+  SAY ~I should have done that long ago, instead of trusting her, instead of trusting you. It is my own fault that the one I love and you, whom I called my friend, have broken my life. I was too carefree. Now they all look at me with pity and say nice words. But my heart is the vulture's food. Nothing hurts more than treachery.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS470
 END
 
@@ -183,7 +183,7 @@ IF ~~ THEN BEGIN TS615
 END
 
 IF ~~ THEN BEGIN TS616
-  SAY ~Oh, now it�s my own fault, is not it?~
+  SAY ~Oh, now it's my own fault, is not it?~
   IF ~~ THEN EXTERN ~BVALYGA~ TS472
 END
 
@@ -209,8 +209,8 @@ END
 
 IF ~~ THEN BEGIN TS621
   SAY ~What! I love her more than my own life, and I will hurt her? You are going queer, ranger! I just need to talk to her. <CHARNAME>, I beg you to tell me what is going on... Do you like Valygar better than I?~
-  IF ~~ THEN REPLY ~That�s enough. Valygar, you have some sort of idea-fix that everyone tries to hurt me and you are the one to save me. Let me remind you, that I am quite capable of taking care of myself. Besides I do not desire to be protected from the love of my life, Anomen... (*give Anomen a sweet smile*)~ EXTERN ~BVALYGA~ TS553
-  IF ~~ THEN REPLY ~I think I know the way to solve this conflict: I care for neither of you. But I consider both of you my friends. So do make up and let�s forget about this silly conversation.~ EXTERN ~BVALYGA~ TS554
+  IF ~~ THEN REPLY ~That's enough. Valygar, you have some sort of idea-fix that everyone tries to hurt me and you are the one to save me. Let me remind you, that I am quite capable of taking care of myself. Besides I do not desire to be protected from the love of my life, Anomen... (*give Anomen a sweet smile*)~ EXTERN ~BVALYGA~ TS553
+  IF ~~ THEN REPLY ~I think I know the way to solve this conflict: I care for neither of you. But I consider both of you my friends. So do make up and let's forget about this silly conversation.~ EXTERN ~BVALYGA~ TS554
   IF ~~ THEN REPLY ~Ahem... Anomen. I do not know how you came up with the notion that I like you... I am sorry if I have given you a false hope. I prefer you not to intervene into my relationship with Valygar. ~ EXTERN ~BVALYGA~ TS556
   IF ~~ THEN REPLY ~(*grin... and stay silent waiting for the next scene*)~ EXTERN ~BVALYGA~ TS558
   IF ~~ THEN REPLY ~(*cry helplessly*) Fools, I... I love both of you. Please, do not make me choose...~ EXTERN ~BVALYGA~ TS560
@@ -366,7 +366,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -381,7 +381,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -396,7 +396,7 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -445,7 +445,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -460,7 +460,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -475,7 +475,7 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -524,7 +524,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -539,7 +539,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Cernd")
 !IsValidForPartyDialogue("HaerDalis")
 !IsValidForPartyDialogue("Imoen2")
@@ -554,7 +554,7 @@ IF ~~ THEN BEGIN LeiThea4
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")
@@ -652,7 +652,7 @@ DO ~SetGlobal("VP_AnomenJealous","GLOBAL",3)~
 == BANOMEN ~(Losing patience) I fail to understand what your interest is that you choose to pass so much time in her company!~
 == BKELDOR ~(Laughing good-naturedly) Anomen... you like our lady. She's a lovely girl, I admit, but that is all and certainly not a reason for you to take your jealousy out on me.~
 == BANOMEN ~(Swallowing bitterly) Then please accept my apologizes... it seems I have presumed too much.~
-== BKELDOR ~Really, my friend, until now I could not even imagine that you... hm... have set your cap at her � is that how you young men of today would put it?~
+== BKELDOR ~Really, my friend, until now I could not even imagine that you... hm... have set your cap at her ' is that how you young men of today would put it?~
 == BANOMEN ~I have spoken to her on several occasions... yes.~
 == BKELDOR ~About what my young friend? You were telling her some bits about yourself, some bits about your family. These are but friendly and casual conversations, such as it is between friends. You are concerned about your Test and all your thoughts are with the Order now. This is the right thing, Anomen, this is what is important for you at the moment.~
 == BANOMEN ~But what about... l-love?~

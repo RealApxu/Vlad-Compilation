@@ -132,11 +132,11 @@ IF ~~ THEN BEGIN TS56
   SAY ~Sime is before you, the woman you had not come to know very well, though she was a loyal companion.~
   IF ~~ THEN REPLY ~Sime, I know little of you, but Irenicus is no enemy of yours. You do not have to fight my battle...~ EXTERN ~SIMEJ~ TOL21
   IF ~~ THEN REPLY ~You know how powerful Irenicus is, Sime. The fight is going to be deadly. If you wish, you may take your leave now~ EXTERN ~SIMEJ~ TOL22
-  IF ~~ THEN REPLY ~Sime, that�s not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~SIMEJ~ TOL23
+  IF ~~ THEN REPLY ~Sime, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~SIMEJ~ TOL23
 END
 
 //IF ~~ THEN BEGIN TS57
-//  SAY ~Coran... You feel that you don�t need to ask him... But...~
+//  SAY ~Coran... You feel that you don't need to ask him... But...~
 //  IF ~~ THEN REPLY ~Coran, my old friend...~ EXTERN ~CORANJ~ TS5
 //END
 
@@ -159,10 +159,10 @@ END
 //END
 
 IF ~~ THEN BEGIN TS60
-  SAY ~Sime... You look at the maiden�s eyes and you see what you have hoped and scared to see: the determination to follow you to the end of the world and beyond it. It is obvious that you might keep Sime out of this battle, if you, say, tied her up and gagged her. Still, you want to give her a chance to reconsider.~
+  SAY ~Sime... You look at the maiden's eyes and you see what you have hoped and scared to see: the determination to follow you to the end of the world and beyond it. It is obvious that you might keep Sime out of this battle, if you, say, tied her up and gagged her. Still, you want to give her a chance to reconsider.~
   IF ~~ THEN REPLY ~Sime, Irenicus is no enemy of yours. You do not have to fight my battles.~ EXTERN ~SIMEJ~ TOL1
   IF ~~ THEN REPLY ~You know how powerful Irenicus is, Sime. The fight is going to be deadly. I am afraid that you might get hurt or die... I would rather... Do you think you might wait here?~ EXTERN ~SIMEJ~ TOL2
-  IF ~~ THEN REPLY ~Sime, that�s not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~SIMEJ~ TOL3
+  IF ~~ THEN REPLY ~Sime, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~SIMEJ~ TOL3
 END
 
 IF ~~ THEN BEGIN KR_TL0
@@ -224,7 +224,7 @@ We met a goblin marshal in Kuldahar Pass who was going mad with pain.  He told u
 END
 
 IF ~~ THEN BEGIN NEJ66
-  SAY ~(*But for some reason you still feel a pressing need to see for yourself that the world outside your room hasn�t changed.*)~
+  SAY ~(*But for some reason you still feel a pressing need to see for yourself that the world outside your room hasn't changed.*)~
   IF ~~ THEN EXIT
 END
 
@@ -274,7 +274,7 @@ END
 IF ~~ THEN BEGIN NEJ74
   SAY ~(*You look into the face or Tilorn as Hrothgar makes the introduction and a memory stirs in your mind but you are unable to grasp it before it slips away.*)~
   IF ~~ THEN REPLY ~So, you are Tilorn, the one whom Arundel spoke of briefly. Hrothgar did not say that you and he were friends, but then he is being annoyingly evasive on many things. I do not believe that we have met so how is it that you know my name? Although, strangely for a second there, I thought that your face was known to me.~ EXTERN ~TILORN~ 3
-  IF ~~ THEN REPLY ~Tilorn is it. The same Tilorn that visited Arundel in Kuldahar and now, also a friend of Hrothgar�s. Tell me Tilorn, �friend of Hrothgar�, how did you come to be in Kuldahar ahead of us and now here before us also? You seem to know my name before Hrothgar made mention of it and yet, I do not know you that I am sure. Although, for a moment your face was familiar to me but now it is gone. Why should that be?~  EXTERN ~TILORN~ 3	
+  IF ~~ THEN REPLY ~Tilorn is it. The same Tilorn that visited Arundel in Kuldahar and now, also a friend of Hrothgar's. Tell me Tilorn, 'friend of Hrothgar', how did you come to be in Kuldahar ahead of us and now here before us also? You seem to know my name before Hrothgar made mention of it and yet, I do not know you that I am sure. Although, for a moment your face was familiar to me but now it is gone. Why should that be?~  EXTERN ~TILORN~ 3	
   IF ~~ THEN REPLY ~Ah, Tilorn! The mystery visitor to the old druid. Hrothgar omitted to say that you and he were friends, but then Hrothgar has omitted to tell me many things! Are you going to say how it is that you know my name Tilorn? You look somewhat familiar to me but for the moment I cannot place you, but I will, you can be assured of that!~ EXTERN ~TILORN~ 3
   IF ~~ THEN REPLY ~So, you are a friend of Hrothgar, Tilorn. Strange that he did not admit to it when first I asked him of you. What reason has he to hide this from me do you think? Even stranger, Tilorn, why do I feel that I should know you?~ EXTERN ~TILORN~ 3
 END
@@ -287,7 +287,7 @@ END
 IF WEIGHT #-5 ~Global("VP_Touch_Statue","GLOBAL",0)
 Global("VP_InfoSwitch","GLOBAL",0)
 Global("VP_InHalruaa","GLOBAL",1)~ THEN BEGIN NEJ76
-  SAY ~(*The hundreds of chips of translucent green glass which make up this stained-glass window don�t appear to be held together by anything, but rather remain free-floating and mysteriously suspended within the iron frame�s boundaries. The shards ripple and move in slow waves, causing bizarre patterns to fluctuate across the window�s surface as various portions of it refract the galleria�s light in different directions. A small placard beside the window reads �Arcadian Stained-Glass Window.�*)~ [mute]
+  SAY ~(*The hundreds of chips of translucent green glass which make up this stained-glass window don't appear to be held together by anything, but rather remain free-floating and mysteriously suspended within the iron frame's boundaries. The shards ripple and move in slow waves, causing bizarre patterns to fluctuate across the window's surface as various portions of it refract the galleria's light in different directions. A small placard beside the window reads 'Arcadian Stained-Glass Window.'*)~ [mute]
   IF ~~ THEN GOTO NEJ85
 END
 
@@ -306,7 +306,7 @@ Global("VP_InfoSwitch","GLOBAL",0)~ THEN BEGIN NEJ78
 END
 
 IF ~~ THEN BEGIN NEJ79
-  SAY ~(*Before you can do a thing, a blasing torrent of words flies from the sorcerer�s lips. As he speaks, you feel a agonising sensation, like a sudden wave of raging heat, pour over you and settle into your skin like a blistering wound.*)~
+  SAY ~(*Before you can do a thing, a blasing torrent of words flies from the sorcerer's lips. As he speaks, you feel a agonising sensation, like a sudden wave of raging heat, pour over you and settle into your skin like a blistering wound.*)~
   IF ~~ THEN GOTO NEJ80
 END
 
@@ -321,7 +321,7 @@ StartCutScene("VPCutT01")~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ81
-  SAY ~Die horribly, a victim of Gangroighydon�s Awful Curse.~
+  SAY ~Die horribly, a victim of Gangroighydon's Awful Curse.~
   IF ~~ THEN DO ~CloseDoor("STATUE")
 Kill(Player1)
 Kill(Player2)
@@ -333,7 +333,7 @@ END
 
 IF WEIGHT #-6 ~Global("VP_Touch_Statue","GLOBAL",4)
 Global("VP_InfoSwitch","GLOBAL",0)~ THEN BEGIN NEJ82
-  SAY ~(*You don�t know how long you have been unconscious, but after you recover from that terrible shock you notice that the �statue� is simply gone, presumably having walked off without leaving so much as a note of apology.*)~ [mute]
+  SAY ~(*You don't know how long you have been unconscious, but after you recover from that terrible shock you notice that the 'statue' is simply gone, presumably having walked off without leaving so much as a note of apology.*)~ [mute]
   IF ~~ THEN DO ~SetGlobal("VP_Touch_Statue","GLOBAL",5)
 ~ EXIT
 END
@@ -365,13 +365,13 @@ Global("VP_InfoSwitch","GLOBAL",1)~ THEN BEGIN NEJ86
 END
 
 IF ~~ THEN BEGIN NEJ87
-  SAY ~(*The plaque reads: �This statue is believed to be the final fate of the Etherserian sorcerer Gangroighydon. Attacked by a conclave of rival sorcerers at the height of his dream madness, he was imprisoned with a spell that turned his flesh into stone. Gangroighydon is said to have been frozen with a final, awful curse still upon his lips, a curse so terrible that it was *never* meant to be spoken by the lips of a living man.�*)~
+  SAY ~(*The plaque reads: 'This statue is believed to be the final fate of the Etherserian sorcerer Gangroighydon. Attacked by a conclave of rival sorcerers at the height of his dream madness, he was imprisoned with a spell that turned his flesh into stone. Gangroighydon is said to have been frozen with a final, awful curse still upon his lips, a curse so terrible that it was *never* meant to be spoken by the lips of a living man.'*)~
   IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-8 ~GlobalGT("VP_Touch_Statue","GLOBAL",3)
 Global("VP_InfoSwitch","GLOBAL",1)~ THEN BEGIN NEJ88
-  SAY ~(*The �statue� - in truth the once-petrified sorcerer Gangroighydon - has gone leaving behind only the plaque beneath its pedestal.*)~ [mute]
+  SAY ~(*The 'statue' - in truth the once-petrified sorcerer Gangroighydon - has gone leaving behind only the plaque beneath its pedestal.*)~ [mute]
   IF ~~ THEN EXIT
 END
 
@@ -423,7 +423,7 @@ END
 //Accalia is not in Party --> VP_Mov01 --> Back to the Future!
 IF ~~ THEN BEGIN NEJ95
 	SAY ~(*Once again Hrothgar removes the black box from his pocket and pointing it at the Astrolabe...*)~
-//	IF ~~ THEN REPLY ~Wait, Hrothgar, don�t do this! On the second thought, I�ve decided to go to Dorn�s Deep right now. Larrel, could you take us to Dorn�s Deep?~ EXTERN ~DLARREL~ 53
+//	IF ~~ THEN REPLY ~Wait, Hrothgar, don't do this! On the second thought, I've decided to go to Dorn's Deep right now. Larrel, could you take us to Dorn's Deep?~ EXTERN ~DLARREL~ 53
 	IF ~~ THEN REPLY ~(*You close your eyes, and ...*)~ DO ~SetGlobal("VP_In_IWD_Part1","GLOBAL",0)
 SetGlobal("TrBack0602","GLOBAL",2)~ EXTERN ~HROTHJ~ 245	
 END
@@ -431,7 +431,7 @@ END
 //Accalia is in Party, and she leaves --> VPCutNJ5
 IF ~~ THEN BEGIN NEJ96
 	SAY ~(*Once again Hrothgar removes the black box from his pocket and pointing it at the Astrolabe...*)~
-//	IF ~~ THEN REPLY ~Wait, Hrothgar, don�t do this! On the second thought, I�ve decided to go to Dorn�s Deep right now. Larrel, could you take us to Dorn�s Deep?~ EXTERN ~DLARREL~ 53
+//	IF ~~ THEN REPLY ~Wait, Hrothgar, don't do this! On the second thought, I've decided to go to Dorn's Deep right now. Larrel, could you take us to Dorn's Deep?~ EXTERN ~DLARREL~ 53
 	IF ~~ THEN REPLY ~(*You close your eyes, and ...*)~ DO ~SetGlobal("VP_In_IWD_Part1","GLOBAL",0)
 SetGlobal("TrBack0602","GLOBAL",2)~ EXTERN ~HROTHJ~ 268	
 END
@@ -466,14 +466,14 @@ IF ~~ THEN BEGIN ToTLF
   SAY ~Leina is before you, the bard you had not come to know very well, though she was a loyal companion.~
   IF ~~ THEN REPLY ~Leina, I know little of you, but Irenicus is no enemy of yours. You do not have to fight my battle...~ EXTERN ~LEINAJ~ TOL21
   IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly. If you wish, you may take your leave now~ EXTERN ~LEINAJ~ TOL22
-  IF ~~ THEN REPLY ~Leina, that�s not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL23
+  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL23
 END
 
 IF ~~ THEN BEGIN ToTLM
-  SAY ~Leina... You look at the maiden�s eyes and you see what you have hoped and scared to see: the determination to follow you to the end of the world and beyond it. It is obvious that you might keep Leina out of this battle, if you, say, tied her up and gagged her. Still, you want to give her a chance to reconsider.~
+  SAY ~Leina... You look at the maiden's eyes and you see what you have hoped and scared to see: the determination to follow you to the end of the world and beyond it. It is obvious that you might keep Leina out of this battle, if you, say, tied her up and gagged her. Still, you want to give her a chance to reconsider.~
   IF ~~ THEN REPLY ~Leina, Irenicus is no enemy of yours. You do not have to fight my battles.~ EXTERN ~LEINAJ~ TOL1
   IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly. I am afraid that you might get hurt or die... I would rather... Do you think you might wait here?~ EXTERN ~LEINAJ~ TOL2
-  IF ~~ THEN REPLY ~Leina, that�s not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL3
+  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL3
 END
 END
 
@@ -1583,9 +1583,9 @@ IF ~~ THEN BEGIN slayerba
 END
 
 IF ~~ THEN BEGIN slayer2
-  SAY ~(*Sternly*) Slayer... Bhaal�s Avatar!~
-  	IF ~~ THEN REPLY ~Oh... but why? I... I won�t endure such an abomination! Save me, save me!~ GOTO slayer3
-  	IF ~~ THEN REPLY ~(*Twitching*) What an abomination... and yet what strength, you can�t begin to imagine the half of it!~ GOTO slayer3
+  SAY ~(*Sternly*) Slayer... Bhaal's Avatar!~
+  	IF ~~ THEN REPLY ~Oh... but why? I... I won't endure such an abomination! Save me, save me!~ GOTO slayer3
+  	IF ~~ THEN REPLY ~(*Twitching*) What an abomination... and yet what strength, you can't begin to imagine the half of it!~ GOTO slayer3
 END
 
 IF ~~ THEN BEGIN slayer3
@@ -2220,23 +2220,23 @@ EXTEND_BOTTOM PLAYER1 25 // Finding Irenicus in Hell
   IF ~InParty("Kachiko")
 See("Kachiko")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
-Irenicus� death did not have the same effect as Bodhi�s did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~KACHIJ~ N55
+Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~KACHIJ~ N55
 //  IF ~InParty("Dynaheir")
 //See("Dynaheir")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 //
-//Irenicus� death did not have the same effect as Bodhi�s did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~DYNAJ~ TS03
+//Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~DYNAJ~ TS03
 //  IF ~InParty("Coran")
 //See("Coran")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 //
-//Irenicus� death did not have the same effect as Bodhi�s did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~CORANJ~ TS6
+//Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~CORANJ~ TS6
 IF ~InParty("Sime")
 See("Sime")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
-Irenicus� death did not have the same effect as Bodhi�s did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~SIMEJ~ 116
+Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~SIMEJ~ 116
 	IF ~InParty("Leina")
 See("Leina")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
-Irenicus� death did not have the same effect as Bodhi�s did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~LEINAJ~ inhell
+Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~LEINAJ~ inhell
 END
 
 EXTEND_BOTTOM PLAYER1 33 // Tree of Life Talk

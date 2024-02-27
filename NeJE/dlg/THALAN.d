@@ -291,7 +291,7 @@ ActionOverride("Melicamp",SetNumTimesTalkedTo(2))~ GOTO 7
 PartyHasItem("tafflet1")~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
 		IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Look here, I have come all the way from Athkatla in order to speak with you and I am not leaving until you have heard what it is I have to say!~ GOTO thalan5
   	IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~I have travelled far in order to speak with you and my temper is becoming frayed... you will listen to me!~ GOTO thalan6
-  	IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Please, I have had a long and arduous journey to get here, won�t you at least humour me and listen to my plea?~ GOTO thalan6
+  	IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Please, I have had a long and arduous journey to get here, won't you at least humour me and listen to my plea?~ GOTO thalan6
 END
 
 IF ~~ THEN BEGIN thalan2
@@ -324,18 +324,18 @@ IF ~~ THEN BEGIN thalan7
 END
 
 IF ~~ THEN BEGIN thalan8
-  SAY ~Leanaro you say ... now that is a name I haven�t thought of in a long while. Tell me how is the canny elf?~
+  SAY ~Leanaro you say ... now that is a name I haven't thought of in a long while. Tell me how is the canny elf?~
  	 IF ~~ THEN REPLY ~I have to admit I do not know Leanaro, but I have his letter to Deidre. Here, you are welcome to read it for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
  	 IF ~~ THEN REPLY ~Here, I think it best if you read the letter yourself as it explains our purpose for being here.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
  	 IF ~~ THEN REPLY ~He speaks fondly of you too Thalantyr, here read his letter for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
 END
 
 IF ~~ THEN BEGIN thalan9
-  SAY ~(*To your surprise a smile comes to the mage�s lips and he even chuckles softly as he reads the letter*). Well I never... so Leanaro married Carialie after all.~
+  SAY ~(*To your surprise a smile comes to the mage's lips and he even chuckles softly as he reads the letter*). Well I never... so Leanaro married Carialie after all.~
 =
-~I wonder how he managed to talk that old goat of a father of hers into agreeing to giving him his daughter�s hand?~
+~I wonder how he managed to talk that old goat of a father of hers into agreeing to giving him his daughter's hand?~
 =
-~If things had been different... no matter, what�s past is past, let�s see why he has sent you young adventurers to my abode.~
+~If things had been different... no matter, what's past is past, let's see why he has sent you young adventurers to my abode.~
 =
 ~So it is the miracle of Gravelk that we seek. (*Looking at Taffic*) Then you must be the gnome he speaks of eh?~
 =
@@ -360,7 +360,7 @@ IF ~~ THEN BEGIN thalan11
 ~What do you say <CHARNAME>, is there some truth in those whispered rumours?~
 		IF ~~ THEN REPLY ~It is true, Bhaal is my father but having the god of murder for a father is not something I make a point of advertising.~ GOTO thalan12
   	IF ~~ THEN REPLY ~It is true, but once known the fact often brings out the worst in people so I prefer not to make my identity common knowledge if I can help it.~ GOTO thalan12
-		IF ~~ THEN REPLY ~Maybe it is true and maybe it is not, but that is no one�s business but my own.~ GOTO thalan12
+		IF ~~ THEN REPLY ~Maybe it is true and maybe it is not, but that is no one's business but my own.~ GOTO thalan12
 END
 
 IF ~~ THEN BEGIN thalan12
@@ -379,7 +379,7 @@ IF ~~ THEN BEGIN thalan13
 =
 ~It would seem that he is doing some research into undead creatures and he is continually animating them, then discarding them when he has finished whatever it is he is doing, leaving them to roam at will.~
 =
-~If you would take care of this problem for me then I will tell you what I know of changing person�s race.~
+~If you would take care of this problem for me then I will tell you what I know of changing person's race.~
 		IF ~~ THEN REPLY ~I will put an end to this abomination immediately.~ GOTO thalan14
   	IF ~~ THEN REPLY ~I will seek out this necromancer and if he refuses to cease this practise he will join his creations in the ranks of the dead.~ GOTO thalan14
   	IF ~~ THEN REPLY ~A simple enough task I will return when it is done.~ GOTO thalan14
@@ -408,7 +408,7 @@ END
 IF ~~ THEN BEGIN Thal16
   SAY ~So <CHARNAME>, tell me, how did you suddenly take on the semblance of a forest gnome? Was it some trick played on you by the necromancer?~
   	IF ~~ THEN REPLY ~You must forgive Taffic, sometimes his delusions of grandeur, make him forget who he is.~ GOTO Thal17
-  	IF ~~ THEN REPLY ~He�s just excited, he truly believes that you can help him become what he isn�t.~ GOTO Thal17
+  	IF ~~ THEN REPLY ~He's just excited, he truly believes that you can help him become what he isn't.~ GOTO Thal17
   	IF ~~ THEN REPLY ~Jesting aside, I have done what you asked and now it is for you to give me, or rather, to give Taffic the information he wants before he bursts a blood vessel through excitement.~ GOTO Thal17
 END
 
@@ -420,9 +420,9 @@ IF ~~ THEN BEGIN Thal17
 END
 
 IF ~~ THEN BEGIN Thal18
-  SAY ~Not so fast Taffic. I said I was witness to it... I didn�t take part in the sorcery myself. That was all Aldruis� doing and unfortunately he didn�t impart the secret to me.~
+  SAY ~Not so fast Taffic. I said I was witness to it... I didn't take part in the sorcery myself. That was all Aldruis' doing and unfortunately he didn't impart the secret to me.~
 =
-~I couldn�t even be certain that it was not an illusion put on by Aldruis for my benefit, it was the sort of thing he would do and at the time, nor anytime since, have I ever thought to question what I saw.~
+~I couldn't even be certain that it was not an illusion put on by Aldruis for my benefit, it was the sort of thing he would do and at the time, nor anytime since, have I ever thought to question what I saw.~
 =
 ~There was however, another witness present, his apprentice Rhezon and you can be sure Aldruis will have passed all his knowledge of arcane magic on to Rhezon. He looked upon the boy as if he were the son he never had...~
 		IF ~~ THEN EXTERN ~TAFFICJ~ Taffic13

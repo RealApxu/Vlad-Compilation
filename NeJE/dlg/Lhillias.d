@@ -56,7 +56,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-  SAY ~This project was doomed before they started! Or maybe not, oh... (*reading on*)... they were so close... so very close! If only Bartlemy had left well alone, I believe they could have completed the ring. The tragedy as I see it here was due to one man�s conceit and overinflated ego.~
+  SAY ~This project was doomed before they started! Or maybe not, oh... (*reading on*)... they were so close... so very close! If only Bartlemy had left well alone, I believe they could have completed the ring. The tragedy as I see it here was due to one man's conceit and overinflated ego.~
   IF ~~ THEN GOTO 8
 END
 
@@ -77,11 +77,11 @@ IF ~~ THEN BEGIN 10
   SAY ~Oh no <GABBER>! There is no way I or any mage in the Academy would attempt such a feat. The story of Bartlemy and his friends is known throughout Halruaa, reading his notes brought the story to mind. It is forbidden for anyone to attempt another construction of the ring. The Tragedy of Bartlemy and his friends is told to all students as a lesson to dissuade them from trying to reach too far too soon. The penalties for disobedience is very severe <GABBER>. Here take these notes back and keep them safe, if they fall into inexperienced or unscrupulous hands they are a recipe for disaster.~
   IF ~~ THEN REPLY ~Will you at least consider my offer? I will pay for your time?~ GOTO 11
   IF ~~ THEN REPLY ~Come Lhillias, everyone has a price! What is yours?~ GOTO 11
-  IF ~~ THEN REPLY ~Perhaps if I give you time to read Bartlemy�s notes again you will reconsider. I am prepared to pay whatever you ask?~ GOTO 11
+  IF ~~ THEN REPLY ~Perhaps if I give you time to read Bartlemy's notes again you will reconsider. I am prepared to pay whatever you ask?~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~No, I am sorry <GABBER>, the risk is too great. No amount of inducement on your part will persuade me to change my mind. If you had Bartlemy�s ring, I might have considered finishing what he had started, but to undertake the process from the beginning is not something I would do even with his notes. Please take care whom you pass that book onto and do not let it become known that you have it whilst you are on the Academy�s grounds. I will take my leave and forget that I have seen it. Farewell <GABBER>.~
+  SAY ~No, I am sorry <GABBER>, the risk is too great. No amount of inducement on your part will persuade me to change my mind. If you had Bartlemy's ring, I might have considered finishing what he had started, but to undertake the process from the beginning is not something I would do even with his notes. Please take care whom you pass that book onto and do not let it become known that you have it whilst you are on the Academy's grounds. I will take my leave and forget that I have seen it. Farewell <GABBER>.~
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
@@ -102,11 +102,11 @@ IF ~~ THEN BEGIN 13
 END
 
 IF ~~ THEN BEGIN 14
-  SAY ~That depends on what it is you will have me do. The penalty for breaking Halruaa�s rules are severe, so I will not undertake anything that goes against them. I will, however, hear you out and then decide.~
-  IF ~~ THEN REPLY ~Bartlemy was looking to restore an artifact, a ring. He and four other mages were almost finished constructing the ring when tragedy struck killing three of them. The ring is now in my possession as is Bartlemy�s notes, but all I can understand are the symbols depicting the four elements. Here, see if you can understand more.~ GOTO 15
-  IF ~~ THEN REPLY ~I have Bartlemy�s ring but have no idea how to restore it. I know it has something to do with the elements because I recognise the symbols in his notes. Here, take the book and see if you can read more.~ GOTO 15
+  SAY ~That depends on what it is you will have me do. The penalty for breaking Halruaa's rules are severe, so I will not undertake anything that goes against them. I will, however, hear you out and then decide.~
+  IF ~~ THEN REPLY ~Bartlemy was looking to restore an artifact, a ring. He and four other mages were almost finished constructing the ring when tragedy struck killing three of them. The ring is now in my possession as is Bartlemy's notes, but all I can understand are the symbols depicting the four elements. Here, see if you can understand more.~ GOTO 15
+  IF ~~ THEN REPLY ~I have Bartlemy's ring but have no idea how to restore it. I know it has something to do with the elements because I recognise the symbols in his notes. Here, take the book and see if you can read more.~ GOTO 15
   IF ~~ THEN REPLY ~I am looking for someone to restore a ring that Bartlemy was carrying. I have the ring and his notes mentioning you by name, which led me to believe you would be able to help me. Here, see what you can make of his writings.~ GOTO 15
-  IF ~~ THEN REPLY ~I want you to restore Bartlemy�s ring for me. Here, I will show you the notes that he kept. I believe they explain the process.~ GOTO 15
+  IF ~~ THEN REPLY ~I want you to restore Bartlemy's ring for me. Here, I will show you the notes that he kept. I believe they explain the process.~ GOTO 15
 END
 
 IF ~~ THEN BEGIN 15
@@ -120,7 +120,7 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
-  SAY ~This project was doomed before they started! Or maybe not, oh... (*reading on*)... they were so close... so very close! If only Bartlemy had left well alone, I believe they could have completed the ring. The tragedy as I see it here was due to one man�s conceit and overinflated ego.~
+  SAY ~This project was doomed before they started! Or maybe not, oh... (*reading on*)... they were so close... so very close! If only Bartlemy had left well alone, I believe they could have completed the ring. The tragedy as I see it here was due to one man's conceit and overinflated ego.~
   IF ~~ THEN GOTO 18
 END
 
@@ -169,7 +169,7 @@ IF ~~ THEN BEGIN 23
 END
 							
 IF ~~ THEN BEGIN 24
-  SAY ~As you wish <GABBER>. Be warned, from what I have read in Bartlemy�s notes, only an elementalist mage should be entrusted to do the work. Also It is forbidden to do so on Academy grounds, you may not find another as willing as I to undertake the task.~
+  SAY ~As you wish <GABBER>. Be warned, from what I have read in Bartlemy's notes, only an elementalist mage should be entrusted to do the work. Also It is forbidden to do so on Academy grounds, you may not find another as willing as I to undertake the task.~
   IF ~PartyGoldGT(19999)~ THEN REPLY ~I still say it is an outrageous sum! I expect you to deliver what I am paying for!~ GOTO 22
   IF ~~ THEN REPLY ~I am not prepared to pay that. Farewell Lhillias.~ GOTO 25
 END
@@ -218,11 +218,11 @@ IF ~~ THEN BEGIN 31
 END
 
 IF ~~ THEN BEGIN 32
-  SAY ~At great risk to myself I have done what I can and I am sure you will agree, I have made a vast improvement to your ring. Just be sure that no one ever knows that I had any part in this. Now, before I take my leave of you, I must know what you intend doing with Bartlemy�s notes? They are useless without him but they could still encourage other foolhardy mages if they fall into the wrong hands.~
-  IF ~~ THEN REPLY ~I assure you no-one will know from me of your involvement. You may as well keep Bartlemy�s notes, I have no use for them.~ GOTO 33
-  IF ~~ THEN REPLY ~Thank you for all that you have done Lhillias, be assured that I will tell no-one. As for Bartlemy�s notes, I will leave them  with you, they are meaningless to me.~ GOTO 33
-  IF ~~ THEN REPLY ~I will take Bartlemy�s notes. Be assured they will not  fall into inexperienced or unscrupulous hands, nor will your part in this ever be known. This I promise.~ GOTO 35
-  IF ~~ THEN REPLY ~I will take Bartlemy�s notes, after all, I paid more than enough for your work Lhillias. Maybe I can  recoup some of my loss, I am sure some mage somewhere will be prepared to pay for them.~ GOTO 35
+  SAY ~At great risk to myself I have done what I can and I am sure you will agree, I have made a vast improvement to your ring. Just be sure that no one ever knows that I had any part in this. Now, before I take my leave of you, I must know what you intend doing with Bartlemy's notes? They are useless without him but they could still encourage other foolhardy mages if they fall into the wrong hands.~
+  IF ~~ THEN REPLY ~I assure you no-one will know from me of your involvement. You may as well keep Bartlemy's notes, I have no use for them.~ GOTO 33
+  IF ~~ THEN REPLY ~Thank you for all that you have done Lhillias, be assured that I will tell no-one. As for Bartlemy's notes, I will leave them  with you, they are meaningless to me.~ GOTO 33
+  IF ~~ THEN REPLY ~I will take Bartlemy's notes. Be assured they will not  fall into inexperienced or unscrupulous hands, nor will your part in this ever be known. This I promise.~ GOTO 35
+  IF ~~ THEN REPLY ~I will take Bartlemy's notes, after all, I paid more than enough for your work Lhillias. Maybe I can  recoup some of my loss, I am sure some mage somewhere will be prepared to pay for them.~ GOTO 35
 END
 
 IF ~~ THEN BEGIN 33
@@ -248,7 +248,7 @@ EscapeArea()~ EXIT
 END //Lhillias is granting the enhanced ring (+water element)
 
 IF ~~ THEN BEGIN 36
-  SAY ~And alert the academy to you and the ring�s presence? I think not <GABBER>.~
+  SAY ~And alert the academy to you and the ring's presence? I think not <GABBER>.~
   IF ~~ THEN GOTO 37
 END
 
@@ -264,7 +264,7 @@ IF ~~ THEN BEGIN 38
 END
 
 IF ~RandomNum(12, 1)~ THEN BEGIN 39 // from:
-  SAY ~If I�d known the academy was going to be so hot all the time, I�d have opted to go to Ulcaster!~
+  SAY ~If I'd known the academy was going to be so hot all the time, I'd have opted to go to Ulcaster!~
   IF ~~ THEN EXIT
 END
 
@@ -274,7 +274,7 @@ IF ~RandomNum(12, 2)~ THEN BEGIN 40 // from:
 END
 
 IF ~RandomNum(12, 3)~ THEN BEGIN 41 // from:
-  SAY ~I can�t believe my luck... here I am, studying at the greatest Academy in the land.~
+  SAY ~I can't believe my luck... here I am, studying at the greatest Academy in the land.~
   IF ~~ THEN EXIT
 END
 
@@ -284,32 +284,32 @@ IF ~RandomNum(12, 4)~ THEN BEGIN 42 // from:
 END
 
 IF ~RandomNum(12, 5)~ THEN BEGIN 43 // from:
-  SAY ~If you haven�t chosen your specialisation yet take a tip from me, avoid conjuration... Mordecai sets more homework than the rest of the tutors put together!~
+  SAY ~If you haven't chosen your specialisation yet take a tip from me, avoid conjuration... Mordecai sets more homework than the rest of the tutors put together!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 6)~ THEN BEGIN 44 // from:
-  SAY ~You should join Theodoran�s classes... he�s ace at casting those Invocation spells.~
+  SAY ~You should join Theodoran's classes... he's ace at casting those Invocation spells.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 7)~ THEN BEGIN 45 // from:
-  SAY ~Damn this heat! Word is we�re in for another blasted sand storm tomorrow.~
+  SAY ~Damn this heat! Word is we're in for another blasted sand storm tomorrow.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 8)~ THEN BEGIN 46 // from:
-  SAY ~Has anyone else noticed the absence of so many senior staff? Only a few days ago, you couldn�t even go to the privy without one on your tail.~
+  SAY ~Has anyone else noticed the absence of so many senior staff? Only a few days ago, you couldn't even go to the privy without one on your tail.~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 9)~ THEN BEGIN 47 // from:
-  SAY ~Sorry no time to chat, I�ve just discovered I have an exam next and I haven�t memorised my spells!~
+  SAY ~Sorry no time to chat, I've just discovered I have an exam next and I haven't memorised my spells!~
   IF ~~ THEN EXIT
 END
 
 IF ~RandomNum(12, 10)~ THEN BEGIN 48 // from:
-  SAY ~You�ll have to excuse me, I�ve just come from one of Ezekiel�s classes and I need to lie down for a bit.~
+  SAY ~You'll have to excuse me, I've just come from one of Ezekiel's classes and I need to lie down for a bit.~
   IF ~~ THEN EXIT
 END
 

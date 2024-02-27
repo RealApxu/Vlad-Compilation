@@ -14,7 +14,7 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~I�ll take this sword and talk to Lavallin. You shall be warned only once. The rules must and will be upheld by all!~
+  SAY ~I'll take this sword and talk to Lavallin. You shall be warned only once. The rules must and will be upheld by all!~
   IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60)
 TakePartyItem("TuSwordP")
 DestroyItem("TuSwordP")

@@ -85,7 +85,7 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Jan")
 !Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn�t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage�s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn't really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage's request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END
@@ -159,7 +159,7 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Jan")
 !Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn�t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage�s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn't really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage's request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END
@@ -235,7 +235,7 @@ Global("VP_My_Test","LOCALS",4)~ THEN BEGIN 19
 !Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker2
   IF ~InParty("Edwin")
 !Dead("Edwin")
-Global("VP_My_Test","LOCALS",2)~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn�t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage�s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+Global("VP_My_Test","LOCALS",2)~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn't really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage's request for me ... please?~ EXTERN ~EDWINJ~ invoker1
 
 END
 
@@ -306,7 +306,7 @@ IF ~!Global("VP_Invoker_Test","GLOBAL",1)
 OR(2)
 Global("VP_My_Test","LOCALS",1)
 Global("VP_My_Test","LOCALS",5)~ THEN BEGIN 23
-  SAY ~Now that didn�t go very well at all did it? I know the test was a little out of the ordinary but it certainly shouldn�t have been beyond your capabilities.~
+  SAY ~Now that didn't go very well at all did it? I know the test was a little out of the ordinary but it certainly shouldn't have been beyond your capabilities.~
 =
 ~However, at Halruaa it is not our policy to put our students lives in jeopardy for these tests and that is why I had to abort the test and pull you out quickly.~
 =
@@ -600,7 +600,7 @@ Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells
   IF ~InParty("Jan")
 !Dead("Jan")~ THEN REPLY ~Jan, this calls for your skill and expertise, are you ready?~ EXTERN ~JANJ~ invoker
   IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn�t really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage�s request for me ... please?~ EXTERN ~EDWINJ~ invoker1
+!Dead("Edwin")~ THEN REPLY ~Edwin, I know this is beneath you and I shouldn't really be asking but as there is no other in the group as well versed in magic as you, could you possibly consider dealing with this mage's request for me ... please?~ EXTERN ~EDWINJ~ invoker1
   IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN REPLY ~Taffic, do you think you can handle this?~ EXTERN ~TAFFICJ~ invoker
 END

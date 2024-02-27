@@ -10,14 +10,14 @@ Global("VP_Enhance_Ring","GLOBAL",4)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~I am Aulay. I don�t know you so what could you possibly want with me?~
+  SAY ~I am Aulay. I don't know you so what could you possibly want with me?~
   IF ~~ THEN REPLY ~I am <GABBER>, nice to meet you too Aulay! You willing to listen to a proposition that could be of benefit to yourself?~ GOTO 2
   IF ~~ THEN REPLY ~Well met Aulay. I am <GABBER> and whereas we do not know one another, I am here to enlist your aid. If you are interested that is?~ GOTO 2
   IF ~~ THEN REPLY ~I am <GABBER> and I was told that you are the man to ask for aid when discretion is needed. Did my ears hear right Aulay?~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~I might be but I won�t know until you tell me what it is you need, now will I?~
+  SAY ~I might be but I won't know until you tell me what it is you need, now will I?~
   IF ~~ THEN REPLY ~I want you to further enhance this ring of mine with a little of your specialist magic. Nothing more.~ GOTO 4
   IF ~~ THEN REPLY ~I need your skills as a specialist earth mage to help me finish the construction of this ring of mine. What do you say?~ GOTO 4
   IF ~~ THEN REPLY ~I have a magical ring that is sadly lacking in power and I thought to use some of your specialist magic to give it a boost. What do you say?~ GOTO 4
@@ -37,17 +37,17 @@ IF ~~ THEN BEGIN 4
   IF ~~ THEN REPLY ~Ah... but this is no ordinary ring Aulay. This ring was intended to be a Ring of Might when it began its existence.~ GOTO 5
   IF ~~ THEN REPLY ~This is a specialist ring. Originally its construction was begun by four elementelists, I  speak of a Ring of Might Aulay.~ GOTO 5
   IF ~~ THEN REPLY ~You will, I am sure, understand the need for discretion when I say the ring I wish you to enhance for me, is none other than a Ring of Might.~ GOTO 5
-  IF ~~ THEN REPLY ~This is no child�s toy Aulay. This is a Ring of Might, or at least a modification of an unfinished ring. The question is, do you have the backbone to help me add to its power?~ GOTO 5
+  IF ~~ THEN REPLY ~This is no child's toy Aulay. This is a Ring of Might, or at least a modification of an unfinished ring. The question is, do you have the backbone to help me add to its power?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~(*His eyes light up*) Ah... yes... I understand! However, what I don�t understand and is of great interest to me is how such an item got into the academy undetected, and how you manage to circumvent the prying minds of the senior mages and carry it so freely about your person!~
+  SAY ~(*His eyes light up*) Ah... yes... I understand! However, what I don't understand and is of great interest to me is how such an item got into the academy undetected, and how you manage to circumvent the prying minds of the senior mages and carry it so freely about your person!~
   IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~To know that could prove very useful to one such as myself. Nevertheless, if I am to work on this forbidden artifact <GABBER>, tell me, how much is my discretion worth to you?~
-  IF ~PartyGoldGT(7999)~ THEN REPLY ~I would say 8000 gold should more than pay for your discretion, wouldn�t you?~ GOTO 7
+  IF ~PartyGoldGT(7999)~ THEN REPLY ~I would say 8000 gold should more than pay for your discretion, wouldn't you?~ GOTO 7
   IF ~~ THEN REPLY ~I will give you 4000 gold, and the promise of my own discretion in not revealing your name to anyone?~ GOTO 8
   IF ~~ THEN REPLY ~How does 2000 gold sound to you?~ GOTO 12
 END
@@ -79,7 +79,7 @@ EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
-  SAY ~(*Laughs*) You�ll be lucky, but I wish you luck in your search just the same! Don�t expect me to hang around waiting for you to change your mind, this was a once only offer on my part. Farewell.~
+  SAY ~(*Laughs*) You'll be lucky, but I wish you luck in your search just the same! Don't expect me to hang around waiting for you to change your mind, this was a once only offer on my part. Farewell.~
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 

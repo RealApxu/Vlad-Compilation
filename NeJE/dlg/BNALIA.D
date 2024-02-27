@@ -1,22 +1,22 @@
 APPEND ~BNALIA~
 
 IF ~~ THEN BEGIN NEJ51
-  SAY ~It�s this blasted shoe of mine! Look at it, a hole right through the sole and a stone has gotten inside.~
+  SAY ~It's this blasted shoe of mine! Look at it, a hole right through the sole and a stone has gotten inside.~
   IF ~~ THEN EXTERN ~BLEINA~ 211
 END
 
 IF ~~ THEN BEGIN NEJ52
-  SAY ~Ouch, that hurt. I was not expecting to be on the road, those damn trolls never gave me the chance to change my shoes or anything else for that matter. Damn them and whoever told them the De�Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
+  SAY ~Ouch, that hurt. I was not expecting to be on the road, those damn trolls never gave me the chance to change my shoes or anything else for that matter. Damn them and whoever told them the De'Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
   IF ~~ THEN EXTERN ~BLEINA~ 212
 END
 
 IF ~~ THEN BEGIN NEJ53
-  SAY ~Ouch, that hurt. I guess I wasn�t thinking clear enough after my father�s death to consider that I wasn�t suitable attired for hard travelling. Damn those trolls and whoever told them the De�Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
+  SAY ~Ouch, that hurt. I guess I wasn't thinking clear enough after my father's death to consider that I wasn't suitable attired for hard travelling. Damn those trolls and whoever told them the De'Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
   IF ~~ THEN EXTERN ~BLEINA~ 212
 END
 
 IF ~~ THEN BEGIN NEJ54
-  SAY ~(*Putting her shoe back on*)... Thanks Leina, I guess it�s true what they say about bards knowing a little of everything, even a bruised foot. Auntie would have a fit if she saw the state these shoes are in, *not fit to be seen on the feet of even the peasants* she would say.~
+  SAY ~(*Putting her shoe back on*)... Thanks Leina, I guess it's true what they say about bards knowing a little of everything, even a bruised foot. Auntie would have a fit if she saw the state these shoes are in, *not fit to be seen on the feet of even the peasants* she would say.~
   IF ~~ THEN GOTO NEJ55
 END
 
@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN NEJ55
 END
 
 IF ~~ THEN BEGIN NEJ56
-  SAY ~I have to admit I feel good too, being on the road, doing good things and helping others. It�s what I�ve always dreamed of doing. Only Auntie would never let me on account of her blaming my mother�s death on her having been contaminated by the peasants.~
+  SAY ~I have to admit I feel good too, being on the road, doing good things and helping others. It's what I've always dreamed of doing. Only Auntie would never let me on account of her blaming my mother's death on her having been contaminated by the peasants.~
   IF ~~ THEN EXTERN ~BLEINA~ 214
 END
 
@@ -53,7 +53,7 @@ IF ~~ THEN BEGIN NEJ58
 END
 
 IF ~~ THEN BEGIN NEJ59
-  SAY ~(*She giggles*) Auntie, and escapades! No, she�s always been just auntie.~
+  SAY ~(*She giggles*) Auntie, and escapades! No, she's always been just auntie.~
   IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina2a
   IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina2b
 	IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
@@ -66,7 +66,7 @@ IF ~~ THEN BEGIN NEJ60
 END
 
 IF ~~ THEN BEGIN LeiSpher1
-	SAY ~Oh, I�d love to help... how about a Keep?~
+	SAY ~Oh, I'd love to help... how about a Keep?~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere18
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
@@ -81,7 +81,7 @@ IF ~~ THEN BEGIN LeiSpher1
 END
 
 IF ~~ THEN BEGIN LeiSpher2
-	SAY ~A locket... it�s quite small when closed?~
+	SAY ~A locket... it's quite small when closed?~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere19
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher2
@@ -96,7 +96,7 @@ IF ~~ THEN BEGIN LeiSpher2
 END
 
 IF ~~ THEN BEGIN LeiSpher3
-	SAY ~(*A look of revulsion on her face*) There... there used to be a cage of sorts, big enough to hold a person in the... the basement of the keep but I can�t see anyone volunteering to get inside it.~
+	SAY ~(*A look of revulsion on her face*) There... there used to be a cage of sorts, big enough to hold a person in the... the basement of the keep but I can't see anyone volunteering to get inside it.~
 	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere20
 	IF ~InParty("Yoshimo")
 !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher3
@@ -202,19 +202,19 @@ IF ~~ THEN BEGIN LeiTheat
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
 	IF ~InParty("Melora")
@@ -236,19 +236,19 @@ IF ~~ THEN BEGIN LeiThea3
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
 	IF ~InParty("Melora")
@@ -264,25 +264,25 @@ IF ~~ THEN BEGIN LeiThea3
 END
 
 IF ~~ THEN BEGIN LeiThea4
-  SAY ~I think I would prefer to hear what you have in mind <CHARNAME>. My mother was always telling me to beware those who gain their amusement from another�s discomfort!~
+  SAY ~I think I would prefer to hear what you have in mind <CHARNAME>. My mother was always telling me to beware those who gain their amusement from another's discomfort!~
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
  IF ~!IsValidForPartyDialogue("Valygar")
 !IsValidForPartyDialogue("Viconia")
 !IsValidForPartyDialogue("Hrothgar")
 !IsValidForPartyDialogue("Dar")
 !IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
 	IF ~InParty("Taffic")
 !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
 	IF ~InParty("Melora")

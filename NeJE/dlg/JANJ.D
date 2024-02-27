@@ -96,7 +96,7 @@ InParty("Kachiko")
 END
 
 IF ~~ THEN BEGIN NEJ193
-  SAY ~A certificate of honour from Halruaa, now there�s something else she can bring out along with all the gnomeling photographs she insists on showing guests. I�ll do it.~
+  SAY ~A certificate of honour from Halruaa, now there's something else she can bring out along with all the gnomeling photographs she insists on showing guests. I'll do it.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_EnchQuest","GLOBAL",1)~ EXTERN ~XANH~ 23
 END
 
@@ -106,33 +106,33 @@ IF ~~ THEN BEGIN NEJ194
 END
 
 IF ~~ THEN BEGIN NEJ195
-  SAY ~Don�t tell me Jan, I know this one, the prince brought the shoe to her house the next day and they were married and lived happily ever after.~
+  SAY ~Don't tell me Jan, I know this one, the prince brought the shoe to her house the next day and they were married and lived happily ever after.~
   IF ~~ THEN REPLY ~~ GOTO NEJ196
 END
 
 IF ~~ THEN BEGIN NEJ196
-  SAY ~That must be another Cindy. My cousin twice removed, got right crotchety with me when I couldn�t find the blasted thing, and to make matters worse, the idiot prince had to go and bring it back the next morning letting the cat right out of the bag. Threw the shoe right at me she did as if it were all my fault.~
+  SAY ~That must be another Cindy. My cousin twice removed, got right crotchety with me when I couldn't find the blasted thing, and to make matters worse, the idiot prince had to go and bring it back the next morning letting the cat right out of the bag. Threw the shoe right at me she did as if it were all my fault.~
   IF ~~ THEN EXTERN ~XANH~ 37
 END
 
 IF ~~ THEN BEGIN NEJ197
-  SAY ~Now that would be worth taking a hundred exams to see. What with him spouting all those *thees* and *thous*, he always thought it made him grander than any of us Jansen�s.~
+  SAY ~Now that would be worth taking a hundred exams to see. What with him spouting all those *thees* and *thous*, he always thought it made him grander than any of us Jansen's.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_ConQuest","GLOBAL",1)~ EXTERN ~TUMORD~ 15
 END
 
 IF ~~ THEN BEGIN NEJ198
   SAY ~I could have sworn I saw a griffin out of the corner of my eye... must have been what distracted me.~
-  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read can�t you?~ GOTO NEJ199
-  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I don�t understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ199
+  IF ~~ THEN REPLY ~Do we need an intelligence check or something here? All you had to do was to read a couple of scrolls... you can read can't you?~ GOTO NEJ199
+  IF ~!Class(Player1,MAGE_ALL)~ THEN REPLY ~I don't understand a lot about magic but surely it has to be easier to read scrolls then trying to remember spells that have been memorised?~ GOTO NEJ199
 END
 
 IF ~~ THEN BEGIN NEJ199
-  SAY ~Griffins are notorious for appearing when they sense magic is in the air, they don�t seem to care whether its read from a scroll or pulled from the mind as long as they can interrupt the casting. It�s been this way since way back when... well since griffins.~
+  SAY ~Griffins are notorious for appearing when they sense magic is in the air, they don't seem to care whether its read from a scroll or pulled from the mind as long as they can interrupt the casting. It's been this way since way back when... well since griffins.~
   IF ~~ THEN DO ~ActionOverride("TuMord",EscapeArea())~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ200
-  SAY ~Body snatching is it? This might be a good time for me to tell you of a couple of my cousins twice removed when they set out to... but then again maybe not. They came to a very sticky end and I don�t mean it was strawberry jam that they were covered in when they were found!~
+  SAY ~Body snatching is it? This might be a good time for me to tell you of a couple of my cousins twice removed when they set out to... but then again maybe not. They came to a very sticky end and I don't mean it was strawberry jam that they were covered in when they were found!~
 	IF ~True()~ THEN EXIT
 	IF ~InParty("Korgan")
 !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
@@ -149,12 +149,12 @@ END
 
 IF ~~ THEN BEGIN tranfail
   SAY ~Beware, your kneecaps are... uh, where did he go?~
-  IF ~~ THEN REPLY ~You can stop yelling gnome, you�ll not be blasting anyone�s kneecaps today. The test is done and you failed to make the grade.~ GOTO tranfai2
+  IF ~~ THEN REPLY ~You can stop yelling gnome, you'll not be blasting anyone's kneecaps today. The test is done and you failed to make the grade.~ GOTO tranfai2
   IF ~~ THEN REPLY ~Looks as though that one gets to keep his kneecaps this time Jan.~ GOTO tranfai2
 END
 
 IF ~~ THEN BEGIN tranfai2
-  SAY ~Now that is a shame, just when I had them both lined up and ready to blast. After all, everyone knows that a successful kneecapping makes for a happy Jansen and if a Jansen�s  happy then the sun will always shine on all around him ... unless of course it rains that is.~
+  SAY ~Now that is a shame, just when I had them both lined up and ready to blast. After all, everyone knows that a successful kneecapping makes for a happy Jansen and if a Jansen's  happy then the sun will always shine on all around him ... unless of course it rains that is.~
   IF ~~ THEN EXTERN ~TUMALV~ 24
 END
 
@@ -170,12 +170,12 @@ END
 
 IF ~~ THEN BEGIN invfail
   SAY ~That mage has got himself a problem bigger than my old grandpa when the town of Hamelin, which incidently my old grandpa was the mayor of, became overrun by rats.~
-  IF ~~ THEN REPLY ~I don�t have the time for another of your ridiculous stories Jan. A couple of spells to get rid of some vermin, I didn�t think I was asking too much of even one of your stature.~ GOTO invfail2
-  IF ~~ THEN REPLY ~I don�t even want to know how that one ends.~GOTO invfail3
+  IF ~~ THEN REPLY ~I don't have the time for another of your ridiculous stories Jan. A couple of spells to get rid of some vermin, I didn't think I was asking too much of even one of your stature.~ GOTO invfail2
+  IF ~~ THEN REPLY ~I don't even want to know how that one ends.~GOTO invfail3
 END
 
 IF ~~ THEN BEGIN invfail2
-  SAY ~I�ll thank you to remember that gnomes are known for their super intelligence. If it had been  a case of a couple of spells to get rid of the beasties then Jan Jansen would have been  the gnome to do it, but it would have taken the whole Jansen family to deal with that mage�s beasties and we are a lot of gnomes~
+  SAY ~I'll thank you to remember that gnomes are known for their super intelligence. If it had been  a case of a couple of spells to get rid of the beasties then Jan Jansen would have been  the gnome to do it, but it would have taken the whole Jansen family to deal with that mage's beasties and we are a lot of gnomes~
   IF ~~ THEN EXIT
 END
 
@@ -240,12 +240,12 @@ IF ~~ THEN BEGIN Kelem1
 END
 
 IF ~~ THEN BEGIN transmut
- SAY ~Now there�s a thought! I�ll be able to read of Jan Jansen�s success in the past whilst living in the present, or at least it will be the present if Hrothgar here ever gets us home again.~
+ SAY ~Now there's a thought! I'll be able to read of Jan Jansen's success in the past whilst living in the present, or at least it will be the present if Hrothgar here ever gets us home again.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_TraQuest","GLOBAL",1)~ EXTERN ~TUMALV~ janjan
 END
 
 IF ~~ THEN BEGIN abjurer
-	SAY ~That reminds me of the last time cousin Willy fell off his chair and knocked himself out. Of course that was during an earthquake and when he woke up he wrote something called The Tempest. We Jansen�s had to agree, one of his best pieces of work to date.~
+	SAY ~That reminds me of the last time cousin Willy fell off his chair and knocked himself out. Of course that was during an earthquake and when he woke up he wrote something called The Tempest. We Jansen's had to agree, one of his best pieces of work to date.~
   	IF ~~ THEN REPLY ~Very interesting Jan, but are ready to pass this exam?~ GOTO abjurer1
 END
 
@@ -257,11 +257,11 @@ END
 IF ~~ THEN BEGIN abjurer2
 	SAY ~There must have been a griffin about.~
 	 IF ~~ THEN REPLY ~Well, Jan, when this gets back to your cousin Willy, he is certainly going to fall of his chair... laughing.~ GOTO abjurer3
-	 IF ~~ THEN REPLY ~They do appear at the most inconvenient moments don�t they, Jan?~ GOTO abjurer4
+	 IF ~~ THEN REPLY ~They do appear at the most inconvenient moments don't they, Jan?~ GOTO abjurer4
 END
 
 IF ~~ THEN BEGIN abjurer3
- SAY ~Then best we don�t tell him or he might never write again or worse, he might expect Jan here to write for him... come to think of it, that may not be such a bad thing.~
+ SAY ~Then best we don't tell him or he might never write again or worse, he might expect Jan here to write for him... come to think of it, that may not be such a bad thing.~
  	IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 
@@ -271,20 +271,20 @@ IF ~~ THEN BEGIN abjurer4
 END
 
 IF ~~ THEN BEGIN vashtest
-  SAY ~I�ll have you know that the name Jan Jansen is already a legend, just waiting to pass into history as the greatest gnomish inventor ever. But thinking about it... if I pass this test it will already be written in history as the greatest gnomish illusionist to come out of Halruaa academy.~
+  SAY ~I'll have you know that the name Jan Jansen is already a legend, just waiting to pass into history as the greatest gnomish inventor ever. But thinking about it... if I pass this test it will already be written in history as the greatest gnomish illusionist to come out of Halruaa academy.~
 =
 ~What a story that will be to tell Ma Jansen and the wee ones.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_IllQuest","GLOBAL",1)~ EXTERN ~TUVASHON~ janjan
 END
 
 IF ~~ THEN BEGIN vashon
-  SAY ~Oh, where did I go wrong? Now what�s Jan going to tell Ma and the wee ones?~
+  SAY ~Oh, where did I go wrong? Now what's Jan going to tell Ma and the wee ones?~
   IF ~~ THEN REPLY ~I can without doubt guarantee that it will another of your tall tales gnome, full of your usual exaggerations.~ GOTO vashon3
   IF ~~ THEN REPLY ~I am sure you will think of something Jan, you always do.~ GOTO vashon3
 END
 
 IF ~~ THEN BEGIN vashon3
-  SAY ~Ah, but there is always a smidgen of truth in a Jansen�s yarn. Only true stories as they happen to a Jansen are worthy of a telling, or so Jan was taught at the knee of his own dear Ma.~
+  SAY ~Ah, but there is always a smidgen of truth in a Jansen's yarn. Only true stories as they happen to a Jansen are worthy of a telling, or so Jan was taught at the knee of his own dear Ma.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail
 END
 END

@@ -79,7 +79,7 @@ IF ~~ THEN BEGIN 8
   SAY ~(*You look up into Valygar's eyes. You see the remorse and anguish in them.*)~
   IF ~~ THEN REPLY ~(*You tighten your grip on his hand.*)
 
-There is nothing to forgive Valygar. I do not blame you. That last outburst of his frightened me too. I agree his obsessiveness could have become a danger to us all. I only wish that he could have been made to see reason before it came to this. I was so scared that he was going to hurt you, I couldn�t bear to lose you, not now. Please Valygar, stay with me. Please?~ GOTO 9
+There is nothing to forgive Valygar. I do not blame you. That last outburst of his frightened me too. I agree his obsessiveness could have become a danger to us all. I only wish that he could have been made to see reason before it came to this. I was so scared that he was going to hurt you, I couldn't bear to lose you, not now. Please Valygar, stay with me. Please?~ GOTO 9
   IF ~~ THEN REPLY ~(*Your hand closes tightly around his.*)
 
 I had no idea that he felt as he did. I swear to you Valygar, I gave him no encouragement. I sought only to reassure him of his ability to make a fine Knight. If he misinterpreted my words, then maybe I am to blame. Through my actions I almost lost you and that scares me more than anything. Your loss would be unbearable for me. Please Valygar, stay with me. Please?~ GOTO 9
