@@ -1,0 +1,425 @@
+
+//_____________________________________//
+//                                     //
+//           New Shar-Teel             //
+//_____________________________________//
+//                                     //
+
+BEGIN ~"Firewalker" Shar-Teel (custom kit and continuous character)~
+
+APPEND ~SPELL.IDS~
+~3367 SharTeel_Fireball
+3368 SharTeel_FireShieldRed
+3369 SharTeel_Sunfire
+3370 SharTeel_Delayed_Blast
+3371 SharTeel_Incendiary_Cloud~
+
+COPY ~NeJE/sharteel/pics~ ~override~
+
+COPY ~NeJE/sharteel/spin/SPIN367.SPL~ ~override/SPIN367.SPL~
+COPY ~NeJE/sharteel/spin/SPIN368.SPL~ ~override/SPIN368.SPL~
+COPY ~NeJE/sharteel/spin/SPIN369.SPL~ ~override/SPIN369.SPL~
+COPY ~NeJE/sharteel/spin/SPIN370.SPL~ ~override/SPIN370.SPL~
+COPY ~NeJE/sharteel/spin/SPIN371.SPL~ ~override/SPIN371.SPL~
+COPY ~NeJE/sharteel/spin/SPCL145.SPL~ ~override/SPCL145.SPL~
+COPY ~NeJE/sharteel/spin/SPCL146.SPL~ ~override/SPCL146.SPL~
+COPY ~NeJE/sharteel/spin/SPCL147.SPL~ ~override/SPCL147.SPL~
+
+ADD_KIT ~FIREWALKER~
+
+~FIREWALKER             1           1           0           0           0           0           0           0~ //clasweap
+
+~FIREWALKER 5 5 0 0 0 0 0 0 5 5 5 0 5 5 5 5 0 0 0 5 0 0 0 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~ //weapprof
+
+~FIREWALKER              12      9       9       9       0       0~ //abclasrq
+
+~FIREWALKER              0       0       0       0       0       0~ //abclsmod
+
+~FIREWALKER              17      0       0       0       0       0~ //abdcdsrq
+
+~FIREWALKER              15      0       0       0       0       0~ //abdcscrq
+
+~FIREWALKER              1       1       1       1       1       1       1       1       1~ //alignmnt
+
+~FIREWALKER              0       1       1       1       1       0~ //dualclas
+
+~NeJE/sharteel/rules/CLABFRWK.2DA~
+
+~~
+
+~0x00000000 2~
+
+~Fi0~
+
+~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+
+SAY ~firewalker~
+
+SAY ~Firewalker~
+
+SAY ~FIREWALKER: This fighter kit was especially created for Shar-Teel to reflect her unique personality. Being a naturally born fighter of immense power she has developed her extraordinary innate abilities to ignite matter inherited from her father Angelo Dossan. Spending much time on attempts to control created fire she learnt a lot on magic nature of the fire element and gained additional fire resistance bonuses to prevent possible burning into own flames. Such extensive studies of magick significantly raised her intelligence.
+
+Advantages:
+-  She gains +1 to hit, and +1 to damage for every four levels of experience starting from the 7th level of experience.
+-  She gains +1 to intelligence and 10% fire resistance bonus at levels 9, 13, 18, 23 and 27.
+-  She has access to several innate abilities, which become available from her innate slots as she advances levels:
+  1. Fireball (at levels 7, 10, 13, 17, 22, and 27)
+  2. Fire Shield (Red) (at levels 7, 10, 13, 17, 22, and 27)
+  3. Sunfire (at levels 10, 12, 15, 19, 22 and 29)
+  4. Delayed Blast Fireball (at levels 11, 15, 19, 24, 28 and 32)
+  5. Incendiary Cloud (at levels 14, 19, 23, 28 and 33)
+
+Disadvantages:
+-  She may specialise only in blade weapons (swords, halberds and daggers) except axes.~
+
+//////////////////////////////////////////////////////////////////////////////
+// We need to differentiate between BGT and stand-alone version - SUSPENDED!
+//////////////////////////////////////////////////////////////////////////////
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    COPY ~NeJE\bdash\BGTComp\sharteel\ar9400.bcs~ ~override~
+END
+
+///////ST's dialogues have to be updated!////////////
+/////////////////////////////////////////////////////
+//New Shar-Teel character
+//Shar-teel creatures update - BGT
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~SHARTE.cre~  ~override/SHARTE.cre~
+                  ~SHARTE4.cre~ ~override/SHARTE4.cre~
+                  ~SHARTE6.cre~ ~override/SHARTE6.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+        WRITE_BYTE 0x32 66 //hair color
+        WRITE_BYTE 0x23b 10 //Wisdom
+        WRITE_BYTE 0x23c 18 //Dexterity
+        WRITE_BYTE 0x23d 12 //Constitution
+        WRITE_BYTE 0x23e 14 //Charisma
+        WRITE_BYTE 0x27b 35 //Alignment
+        //proficiency update
+        READ_LONG 0x2c4 fx_off
+        READ_LONG 0x2c8 fx_num
+        FOR (i=0;i<"%fx_num%";i+=1) BEGIN
+            READ_LONG ("%fx_off%" + "%i%"*0x108 + 0x18) fx_type
+            PATCH_IF ("%fx_type%" = 90) BEGIN
+                WRITE_LONG ("%fx_off%" + "%i%"*0x108 + 0x18) 93
+            END
+            PATCH_IF ("%fx_type%" = 91) BEGIN
+                WRITE_LONG ("%fx_off%" + "%i%"*0x108 + 0x18) 111
+            END
+        END
+        //remove all items and from slots (except weapon slot selected) for later patching
+        READ_LONG 0x2c0 "item_num"
+        READ_LONG 0x2b8 "slot_off"
+        READ_LONG 0x2bc "item_off"
+        FOR( cnt=0; cnt<38; cnt=cnt+1 ) BEGIN
+            WRITE_SHORT ("%slot_off%"+2*cnt) 0xffff
+        END
+        DELETE_BYTES "%item_off%" ("%slot_off%" - "%item_off%")
+        WRITE_LONG 0x2b8 "%item_off%"
+        WRITE_LONG 0x2c0 0 // number of items
+END
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    //unique Shar-teel creature patches
+    COPY_EXISTING ~SHARTE.cre~  ~override/SHARTE.cre~
+    WRITE_SHORT 0x24 21 //current HP
+    WRITE_SHORT 0x26 21 //max HP
+    ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    COPY_EXISTING ~SHARTE4.cre~ ~override/SHARTE4.cre~
+    WRITE_SHORT 0x24 42 //current HP
+    WRITE_SHORT 0x26 42 //max HP
+    ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+    ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+    ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    COPY_EXISTING ~SHARTE6.cre~ ~override/SHARTE6.cre~
+    WRITE_SHORT 0x24 63 //current HP
+    WRITE_SHORT 0x26 63 //max HP
+    ADD_CRE_ITEM ~HELM04~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+    ADD_CRE_ITEM ~PLAT02~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+    ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
+    END
+
+COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE  0x247 0x40 // doesn't change
+    SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
+    SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
+    SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
+    SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+    SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+    SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
+    SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
+    SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
+    SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
+    SAY TIRED ~Some rest is in order.~ [SHART09]
+    SAY DAMAGE ~~ [SHART38]
+    SAY DYING ~~ [SHART39]
+    SAY HURT ~I don't have time to bleed.~ [SHART11]
+    SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
+    SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
+    SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
+    SAY SELECT_COMMON4 ~Useless male dung heap.~ [SHART35]
+    SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
+    SAY SELECT_ACTION1 ~Okay.~ [SHART20]
+    SAY SELECT_ACTION2 ~Really?~ [SHART21]
+    SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
+    SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
+    SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
+    SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
+    SAY SELECT_ACTION7 ~Men never think with their minds.~ [SHART26]
+    SAY REACT_TO_DIE_GENERAL ~More carrion for the vultures.~ [SHART40]
+    SAY CRITICAL_HIT ~The swine had it coming.~ [SHART41]
+    SAY CRITICAL_MISS ~I spit on your manhood.~ [SHART36]
+    SAY BIO ~When asked about her past, Shar-Teel has very little to say.  From the little she speaks of it can be gleaned that she is an orphan. She also seems to harbor an intense dislike for Flaming Fist mercenaries, as well as an obvious disrespect for men in general. She seems to have something to prove, and likely her childhood was not of storybook quality.~
+
+COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE  0x247 0x40 // doesn't change
+    SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
+    SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
+    SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
+    SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+    SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+    SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
+    SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
+    SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
+    SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
+    SAY TIRED ~Some rest is in order.~ [SHART09]
+    SAY DAMAGE ~~ [SHART38]
+    SAY DYING ~~ [SHART39]
+    SAY HURT ~I don't have time to bleed.~ [SHART11]
+    SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
+    SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
+    SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
+    SAY SELECT_COMMON4 ~Useless male dung heap.~ [SHART35]
+    SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
+    SAY SELECT_ACTION1 ~Okay.~ [SHART20]
+    SAY SELECT_ACTION2 ~Really?~ [SHART21]
+    SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
+    SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
+    SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
+    SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
+    SAY SELECT_ACTION7 ~Men never think with their minds.~ [SHART26]
+    SAY REACT_TO_DIE_GENERAL ~More carrion for the vultures.~ [SHART40]
+    SAY CRITICAL_HIT ~The swine had it coming.~ [SHART41]
+    SAY CRITICAL_MISS ~I spit on your manhood.~ [SHART36]
+    SAY BIO ~When asked about her past, Shar-Teel has very little to say.  From the little she speaks of it can be gleaned that she is an orphan. She also seems to harbor an intense dislike for Flaming Fist mercenaries, as well as an obvious disrespect for men in general. She seems to have something to prove, and likely her childhood was not of storybook quality.~
+
+COPY ~NeJE/sharteel/cre/SHARTE9.cre~ ~override/SHARTE9.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE  0x247 0x40 // doesn't change
+    SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
+    SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
+    SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
+    SAY UNHAPPY_SERIOUS ~I can't take much more of this male imbecility.~ [SHART06]
+    SAY 0xb8 ~Forget our deal, I'm leaving.~ [SHART07]
+    SAY LEADER ~I'll lead this party better than any man could.~ [SHART08]
+    SAY BORED ~This is such a waste of time, or should I say men are such a waste of time.~ [SHART10]
+    SAY BATTLE_CRY1 ~Eat steel, scum.~ [SHART03]
+    SAY BATTLE_CRY2 ~How would you like my sword tickling your innards.~ [SHART34]
+    SAY TIRED ~Some rest is in order.~ [SHART09]
+    SAY DAMAGE ~~ [SHART38]
+    SAY DYING ~~ [SHART39]
+    SAY HURT ~I don't have time to bleed.~ [SHART11]
+    SAY SELECT_COMMON1 ~Men are pathetic.~ [SHART17]
+    SAY SELECT_COMMON2 ~If it bleeds, I can kill it.~ [SHART18]
+    SAY SELECT_COMMON3 ~I love bloodshed.~ [SHART19]
+    SAY SELECT_COMMON4 ~Useless male dung heap.~ [SHART35]
+    SAY SELECT_COMMON5 ~Flattery will get you nowhere.~ [SHART32]
+    SAY SELECT_ACTION1 ~Okay.~ [SHART20]
+    SAY SELECT_ACTION2 ~Really?~ [SHART21]
+    SAY SELECT_ACTION3 ~I'll do it.~ [SHART22]
+    SAY SELECT_ACTION4 ~Life is made fun by crushing your enemies.~ [SHART23]
+    SAY SELECT_ACTION5 ~Sometimes the smell of a man makes me sick to my stomach.~ [SHART24]
+    SAY SELECT_ACTION6 ~Steel is the only thing that a woman can depend upon.~ [SHART25]
+    SAY SELECT_ACTION7 ~Men never think with their minds.~ [SHART26]
+    SAY REACT_TO_DIE_GENERAL ~More carrion for the vultures.~ [SHART40]
+    SAY CRITICAL_HIT ~The swine had it coming.~ [SHART41]
+    SAY CRITICAL_MISS ~I spit on your manhood.~ [SHART36]
+    SAY BIO ~When asked about her past, Shar-Teel has very little to say.  From the little she speaks of it can be gleaned that she is an orphan. She also seems to harbor an intense dislike for Flaming Fist mercenaries, as well as an obvious disrespect for men in general. She seems to have something to prove, and likely her childhood was not of storybook quality.~
+
+COPY ~NeJE/sharteel/wav~ ~override~
+
+APPEND ~pdialog.2da~ // TOB append
+~SHARTEEL     SHARTP             SHARTJ            SHARTD         SHARTP           SHARTJ              SHARTD              sharteel~
+UNLESS ~SHARTEEL~ // we are already there, skip it
+
+APPEND ~interdia.2da~
+~SHARTEEL    BSHART      BSHART~
+UNLESS ~SHARTEEL~ // we are already there, skip it
+
+//Lock cell that Shar-teel will be imported into
+
+COPY ~NeJE/sharteel/itm/VPShrKey.ITM~ ~override/VPShrKey.ITM~
+    SAY UNIDENTIFIED_DESC ~A typical cell key that one might find in any jail. This one may fit Shar-Teel's cell.~
+
+COPY_EXISTING ~AR0602.ARE~ ~override~
+    READ_LONG 0xa8 door_off
+    READ_LONG 0xa4 door_num
+    FOR (i = 0; i < "%door_num%"; i += 1) BEGIN
+        READ_ASCII ("%door_off%" + "%i%" * 0xc8) door_name
+        PATCH_IF (("%door_name%" STRING_COMPARE_CASE "Cell04") = 0) BEGIN
+            WRITE_ASCII ("%door_off%" + "%i%"*0xc8 + 0x78) "VPSHRKEY"
+            WRITE_LONG ("%door_off%" + "%i%"*0xc8 + 0x8c) 100
+        END
+    END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR0602.BCS~ THEN BEGIN
+    COPY_EXISTING ~AR0602.BCS~ ~override~
+        EXTEND_TOP ~AR0602.BCS~ ~NeJE/sharteel/scripts/exAR0602.BCS~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/exAR0602.BCS~ ~override/AR0602.BCS~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SHARTEEL.BCS~ THEN BEGIN
+    COPY_EXISTING ~SHARTEEL.BCS~ ~override/SHARTEEL.BCS~
+        EXTEND_TOP ~SHARTEEL.BCS~ ~NeJE/sharteel/scripts/extSHART.BAF~
+END ELSE BEGIN
+    COMPILE ~NeJE/sharteel/scripts/extSHART.BAF~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~TT1016.BCS~ THEN BEGIN
+    COPY_EXISTING ~TT1016.BCS~ ~override/TT1016.BCS~
+        EXTEND_TOP ~TT1016.BCS~ ~NeJE/sharteel/scripts/eTT1016.BCS~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/eTT1016.BCS~ ~override/TT1016.BCS~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR0700.BCS~ THEN BEGIN
+    COPY_EXISTING ~AR0700.BCS~ ~override/AR0700.BCS~
+    EXTEND_TOP ~AR0700.BCS~ ~NeJE/sharteel/scripts/eAR0700.BCS~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/eAR0700.BCS~ ~override/AR0700.BCS~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR1203.BCS~ THEN BEGIN
+    COPY_EXISTING ~AR1203.BCS~ ~override/AR1203.BCS~
+        EXTEND_TOP ~AR1203.BCS~ ~NeJE/sharteel/scripts/eAR1203.BAF~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/AR1203.BCS~ ~override/AR1203.BCS~
+END
+
+COPY_EXISTING ~AR1203.ARE~ ~override~
+    WRITE_ASCII 0x94 ~AR1203~                 //setting area script
+    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+BUT_ONLY
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR1202.BCS~ THEN BEGIN
+    COPY_EXISTING ~AR1202.BCS~ ~override/AR1202.BCS~
+    EXTEND_TOP ~AR1202.BCS~ ~NeJE/sharteel/scripts/eAR1202.BAF~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/AR1202.BCS~ ~override/AR1202.BCS~
+END
+
+COPY ~NeJE/sharteel/scripts/SHARTD.BCS~ ~override~
+
+//Improved ID Cambion
+COPY ~NeJE/sharteel/cre/IDEMON02.CRE~ ~override/IDEMON02.CRE~
+
+COPY ~NeJE/sharteel/cre/DURBIN.CRE~ ~override/DURBIN.CRE~
+  SAY NAME1 ~Durbin~
+  SAY NAME2 ~Durbin~
+
+//Modified Irenicus dungeon
+COPY ~NeJE/sharteel/dungeon~ ~override~
+
+//Modified Firkraag's dungeon
+/*
+COPY_EXISTING ~AR1201.ARE~ ~override~
+    WRITE_ASCII 0x11d8 ~MISTCD01~
+    WRITE_BYTE  (0x11d8+8) 0
+    WRITE_ASCII 0x11e0 ~MISTVA01~
+    WRITE_BYTE  (0x11e0+8) 0
+    WRITE_ASCII 0x12a0 ~MISTCD01~
+    WRITE_BYTE  (0x12a0+8) 0
+    WRITE_ASCII 0x12a8 ~MISTVA01~
+    WRITE_BYTE  (0x12a8+8) 0
+    WRITE_ASCII 0x12b0 ~MISTVA01~
+    WRITE_BYTE  (0x12b0+8) 0
+    WRITE_ASCII 0x1370 ~MISTCD01~
+    WRITE_BYTE  (0x1370+8) 0
+    WRITE_ASCII 0x1378 ~MISTVA01~
+    WRITE_BYTE  (0x1378+8) 0
+    WRITE_ASCII 0x1380 ~MISTVA01~
+    WRITE_BYTE  (0x1380+8) 0
+    WRITE_ASCII 0x1cfc ~None~
+    WRITE_BYTE  (0x1cfc+4) 0
+    WRITE_ASCII 0x1d04 ~None~
+    WRITE_BYTE  (0x1d04+4) 0
+BUT_ONLY
+*/
+
+COPY ~NeJE/sharteel/cre/FIRORC01.CRE~ ~override/FIRORC01.CRE~
+COPY ~NeJE/sharteel/cre/FIRRAK01.CRE~ ~override/FIRRAK01.CRE~
+COPY ~NeJE/sharteel/cre/FIRKRA04.CRE~ ~override/FIRKRA04.CRE~
+COPY ~NeJE/sharteel/scripts/FIRKRA04.BCS~ ~override/FIRKRA04.BCS~
+COPY ~NeJE/sharteel/cre/firgole1.CRE~ ~override/firgole1.CRE~
+    SAY NAME1 ~Fire Golem~
+    SAY NAME2 ~Fire Golem~
+COPY ~NeJE/sharteel/cre/firgole2.CRE~ ~override/firgole2.CRE~
+    SAY NAME1 ~Fire Golem~
+    SAY NAME2 ~Fire Golem~
+COPY ~NeJE/sharteel/cre/firgole3.CRE~ ~override/firgole3.CRE~
+    SAY NAME1 ~Fire Golem~
+    SAY NAME2 ~Fire Golem~
+COPY ~NeJE/sharteel/cre/FIRGOLES.CRE~ ~override/FIRGOLES.CRE~
+    SAY NAME1 ~Fire Golem~
+    SAY NAME2 ~Fire Golem~
+COPY ~NeJE/sharteel/cre/firgolem.ITM~ ~override/firgolem.ITM~
+COPY ~NeJE/sharteel/cre/FIRTRL01.CRE~ ~override/FIRTRL01.CRE~
+COPY ~NeJE/sharteel/cre/TAZOK.CRE~ ~override/TAZOK.CRE~
+COPY ~NeJE/sharteel/cre/FIRARC01.CRE~ ~override/FIRARC01.CRE~
+
+COPY ~NeJE/sharteel/cre/Esmond.CRE~ ~override/Esmond.CRE~
+    SAY NAME1 ~Esmond~
+    SAY NAME2 ~Esmond~
+
+COPY ~NeJE/sharteel/cre/EsAnima1.CRE~ ~override/EsAnima1.CRE~
+    SAY NAME1 #3116
+    SAY NAME2 #3116
+
+COPY ~NeJE/sharteel/cre/EsAnima2.CRE~ ~override/EsAnima2.CRE~
+    SAY NAME1 #3118
+    SAY NAME2 #3119
+
+COPY ~NeJE/sharteel/cre/EsAnima3.CRE~ ~override/EsAnima3.CRE~
+    SAY NAME1 #6409
+    SAY NAME2 #6409
+
+COPY ~NeJE/sharteel/cre/EsAnima4.CRE~ ~override/EsAnima4.CRE~
+    SAY NAME1 #3118
+    SAY NAME2 #3119
+
+COPY ~NeJE/sharteel/cre/EsAnima5.CRE~ ~override/EsAnima5.CRE~
+    SAY NAME1 #6409
+    SAY NAME2 #6409
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR1106.BCS~ THEN BEGIN
+    COPY_EXISTING ~AR1106.BCS~ ~override/AR1106.BCS~
+        EXTEND_TOP ~AR1106.BCS~ ~NeJE/sharteel/scripts/xAR1106.BAF~
+END ELSE BEGIN
+    COPY ~NeJE/sharteel/scripts/AR1106.BCS~ ~override~
+END
+
+/*
+COPY_EXISTING ~AR7000.ARE~ ~override~
+    WRITE_ASCII 0x94 ~AR7000~                 //setting area script
+    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+BUT_ONLY
+*/
+
+//Dialogues
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    COMPILE ~NeJE/sharteel/dlg/aSHARTE.d~
+    COMPILE ~NeJE/sharteel/dlg/aSHARTP.d~
+END ELSE BEGIN
+    COMPILE ~NeJE/sharteel/dlg/SHARTE.d~
+    COMPILE ~NeJE/sharteel/dlg/SHARTP.d~
+END
