@@ -461,7 +461,7 @@ COPY_EXISTING ~AR0321.ARE~ ~override~
     READ_SHORT  0x48 "flags"
     WRITE_SHORT 0x48 ("%flags%" BAND 0xfffe)  //Resetting Outdoor flag
     WRITE_ASCII 0x94 ~AR0321~                 //setting area script
-    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
 COPY_EXISTING ~AR0322.ARE~ ~override~
@@ -473,12 +473,12 @@ COPY_EXISTING ~AR0323.ARE~ ~override~
     READ_SHORT  0x48 "flags"
     WRITE_SHORT 0x48 ("%flags%" BAND 0xfffe)  //Resetting Outdoor flag
     WRITE_ASCII 0x94 ~AR0323~                 //setting area script
-    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
 COPY_EXISTING ~AR0324.ARE~ ~override~
     WRITE_ASCII 0x94 ~AR0324~                 //setting area script
-    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
 COPY_EXISTING ~ar0321.bcs~ ~override~
@@ -566,7 +566,7 @@ COPY_EXISTING ~ar0415.bcs~ ~override~
 
 COPY_EXISTING ~PLGIRL01.CRE~ ~override~
     WRITE_ASCII 0x248 "None"             //removing override script
-    WRITE_BYTE  (0x248+4) 0              //terminating 0
+    WRITE_BYTE (0x248+4) 0              //terminating 0
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1116,7 +1116,7 @@ BUT_ONLY
 
 COPY_EXISTING ~DELCIA.CRE~ ~override~
     WRITE_ASCII 0x260 ~None~             //drop General Script
-    WRITE_BYTE  (0x260+4) 0              //terminating 0
+    WRITE_BYTE (0x260+4) 0              //terminating 0
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1125,9 +1125,9 @@ BUT_ONLY
 
 COPY_EXISTING ~DRUIDAD.CRE~ ~override~
     WRITE_ASCII 0x248 ~DRUIDAD~          //set new scripts
-    WRITE_BYTE  (0x248+7) 0              //terminating 0
+    WRITE_BYTE (0x248+7) 0              //terminating 0
     WRITE_ASCII 0x250 ~INITDLG~
-    WRITE_BYTE  (0x250+7) 0              //terminating 0
+    WRITE_BYTE (0x250+7) 0              //terminating 0
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1211,9 +1211,9 @@ BUT_ONLY
 COPY_EXISTING ~FAMFAI25.CRE~ ~override~
     WRITE_SHORT 0x24 48     //HP
     WRITE_SHORT 0x26 48
-    WRITE_BYTE  0x59 100    //Res Fire
-    WRITE_BYTE  0x5b 125    //Res Elect
-    WRITE_BYTE  0x5e 100    //Res Magic Fire
+    WRITE_BYTE 0x59 100    //Res Fire
+    WRITE_BYTE 0x5b 125    //Res Elect
+    WRITE_BYTE 0x5e 100    //Res Magic Fire
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1221,7 +1221,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 
 COPY_EXISTING ~FAMPSD.CRE~ ~override~
-    WRITE_BYTE  0x5d 50     //Res Magic
+    WRITE_BYTE 0x5d 50     //Res Magic
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1231,7 +1231,7 @@ BUT_ONLY
 COPY_EXISTING ~FAMQUAS.CRE~ ~override~
     READ_LONG   0x02a0  "known_sp_offset"
     READ_LONG   0x02a8  "sp_offset"
-    WRITE_BYTE  0x273 1     //MAGE class
+    WRITE_BYTE 0x273 1     //MAGE class
     WRITE_SHORT ("%known_sp_offset%"+8) 1  //Blur is a 1st level spell
     WRITE_SHORT ("%sp_offset%"+8*16+2) 2   //memorizable spells count
     WRITE_SHORT ("%sp_offset%"+8*16+4) 2
@@ -2841,17 +2841,17 @@ COPY_EXISTING ~RING39.ITM~ ~override~
         SET offset = ("%eff_offset%"+0x30*"%glob_eff_cnt%")
         INSERT_BYTES offset    0x30*2
         WRITE_SHORT offset           169   //Remove portrait icon
-        WRITE_BYTE   offset+2         1     //TargetSelf
+        WRITE_BYTE  offset+2         1     //TargetSelf
         WRITE_LONG   offset+8         6     //Poisoned
-        WRITE_BYTE   offset+12        2     //Instant\While equipped
-        WRITE_BYTE   offset+13        0     //Not Dispell\Bypass Resistance
-        WRITE_BYTE   offset+18        100   //Probability 1
+        WRITE_BYTE  offset+12        2     //Instant\While equipped
+        WRITE_BYTE  offset+13        0     //Not Dispell\Bypass Resistance
+        WRITE_BYTE  offset+18        100   //Probability 1
         WRITE_SHORT offset+0x30      169   //Remove portrait icon
-        WRITE_BYTE   offset+0x30+2    1     //TargetSelf
+        WRITE_BYTE  offset+0x30+2    1     //TargetSelf
         WRITE_LONG   offset+0x30+8    7     //Nauseated
-        WRITE_BYTE   offset+0x30+12   2     //Instant\While equipped
-        WRITE_BYTE   offset+0x30+13   0     //Not Dispell\Bypass Resistance
-        WRITE_BYTE   offset+0x30+18   100   //Probability 1
+        WRITE_BYTE  offset+0x30+12   2     //Instant\While equipped
+        WRITE_BYTE  offset+0x30+13   0     //Not Dispell\Bypass Resistance
+        WRITE_BYTE  offset+0x30+18   100   //Probability 1
         WRITE_SHORT 0x70  "%glob_eff_cnt%"+2
         READ_LONG   0x64 "ability_offset"
         READ_SHORT  0x68 "ability_cnt"
@@ -2963,20 +2963,20 @@ COPY_EXISTING ~STAF11.ITM~ ~override~
    SET offset = ("%eff_offset%"+0x30*"%glob_eff_cnt%")
    INSERT_BYTES offset    0x30*2
    WRITE_SHORT offset           100   //Prot. from creature type
-   WRITE_BYTE   offset+2         1     //TargetSelf
+   WRITE_BYTE  offset+2         1     //TargetSelf
    WRITE_LONG   offset+4         9     //
    WRITE_LONG   offset+8         7     //
-   WRITE_BYTE   offset+12        2     //Instant\While equipped
-   WRITE_BYTE   offset+13        0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+18        100   //Probability 1
+   WRITE_BYTE  offset+12        2     //Instant\While equipped
+   WRITE_BYTE  offset+13        0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+18        100   //Probability 1
 
    WRITE_SHORT offset+0x30      219   //
-   WRITE_BYTE   offset+0x30+2    1     //TargetSelf
+   WRITE_BYTE  offset+0x30+2    1     //TargetSelf
    WRITE_LONG   offset+0x30+4    3     //
    WRITE_LONG   offset+0x30+8    8     //
-   WRITE_BYTE   offset+0x30+12   2     //Instant\While equipped
-   WRITE_BYTE   offset+0x30+13   0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+0x30+18   100   //Probability 1
+   WRITE_BYTE  offset+0x30+12   2     //Instant\While equipped
+   WRITE_BYTE  offset+0x30+13   0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+0x30+18   100   //Probability 1
 
    WRITE_SHORT 0x70  "%glob_eff_cnt%"+2
 
@@ -3022,32 +3022,32 @@ COPY_EXISTING ~STAF14.ITM~ ~override~
    SET offset = ("%eff_offset%"+0x30*"%glob_eff_cnt%")
    INSERT_BYTES offset    0x30*4
    WRITE_SHORT offset           33    //Save vs death bonus
-   WRITE_BYTE   offset+2         1     //TargetSelf
+   WRITE_BYTE  offset+2         1     //TargetSelf
    WRITE_LONG   offset+4         1     //Value
-   WRITE_BYTE   offset+12        2     //Instant\While equipped
-   WRITE_BYTE   offset+13        0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+18        100   //Probability 1
+   WRITE_BYTE  offset+12        2     //Instant\While equipped
+   WRITE_BYTE  offset+13        0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+18        100   //Probability 1
 
    WRITE_SHORT offset+0x30      34    //Save vs wands bonus
-   WRITE_BYTE   offset+0x30+2    1     //TargetSelf
+   WRITE_BYTE  offset+0x30+2    1     //TargetSelf
    WRITE_LONG   offset+0x30+4    1     //Value
-   WRITE_BYTE   offset+0x30+12   2     //Instant\While equipped
-   WRITE_BYTE   offset+0x30+13   0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+0x30+18   100   //Probability 1
+   WRITE_BYTE  offset+0x30+12   2     //Instant\While equipped
+   WRITE_BYTE  offset+0x30+13   0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+0x30+18   100   //Probability 1
 
    WRITE_SHORT offset+0x30*2      35    //Save vs polymorph bonus
-   WRITE_BYTE   offset+0x30*2+2    1     //TargetSelf
+   WRITE_BYTE  offset+0x30*2+2    1     //TargetSelf
    WRITE_LONG   offset+0x30*2+4    1     //Value
-   WRITE_BYTE   offset+0x30*2+12   2     //Instant\While equipped
-   WRITE_BYTE   offset+0x30*2+13   0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+0x30*2+18   100   //Probability 1
+   WRITE_BYTE  offset+0x30*2+12   2     //Instant\While equipped
+   WRITE_BYTE  offset+0x30*2+13   0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+0x30*2+18   100   //Probability 1
 
    WRITE_SHORT offset+0x30*3      36    //Save vs breath bonus
-   WRITE_BYTE   offset+0x30*3+2    1     //TargetSelf
+   WRITE_BYTE  offset+0x30*3+2    1     //TargetSelf
    WRITE_LONG   offset+0x30*3+4    1     //Value
-   WRITE_BYTE   offset+0x30*3+12   2     //Instant\While equipped
-   WRITE_BYTE   offset+0x30*3+13   0     //Not Dispell\Bypass Resistance
-   WRITE_BYTE   offset+0x30*3+18   100   //Probability 1
+   WRITE_BYTE  offset+0x30*3+12   2     //Instant\While equipped
+   WRITE_BYTE  offset+0x30*3+13   0     //Not Dispell\Bypass Resistance
+   WRITE_BYTE  offset+0x30*3+18   100   //Probability 1
 
    WRITE_SHORT 0x70  "%glob_eff_cnt%"+4
 
@@ -5603,15 +5603,15 @@ PRINT ~Fixing invalid Dead("...") triggers ...~
 
 COPY_EXISTING_REGEXP GLOB ~.+\.bcs$~ ~override~
  DECOMPILE_AND_PATCH BEGIN
- REPLACE_TEXTUALLY ~!Dead("astSeenBy())")~        ~HPGT(LastSeenBy(),0)~
+ REPLACE_TEXTUALLY ~!Dead("astSeenBy())")~ ~HPGT(LastSeenBy(),0)~
  REPLACE_TEXTUALLY ~!Dead("astSeenBy(Myself))")~ ~HPGT(LastSeenBy(Myself),0)~
- REPLACE_TEXTUALLY ~!Dead("astHeardBy())")~       ~HPGT(LastHeardBy(),0)~
+ REPLACE_TEXTUALLY ~!Dead("astHeardBy())")~ ~HPGT(LastHeardBy(),0)~
  REPLACE_TEXTUALLY ~!Dead("astHeardBy(Myself))")~ ~HPGT(LastHeardBy(Myself),0)~
- REPLACE_TEXTUALLY ~!Dead("yself)")~              ~HPGT(Myself,0)~
- REPLACE_TEXTUALLY ~!Dead("astAttackerOf(")~      ~HPGT(LastAttackerOf(),0)~
+ REPLACE_TEXTUALLY ~!Dead("yself)")~ ~HPGT(Myself,0)~
+ REPLACE_TEXTUALLY ~!Dead("astAttackerOf(")~ ~HPGT(LastAttackerOf(),0)~
  REPLACE_TEXTUALLY ~!Dead("astAttackerOf(LastSeenBy(Myself)))")~ ~HPGT(LastAttackerOf(LastSeenBy(Myself)),0)~
- REPLACE_TEXTUALLY ~!Dead("astTrigger)")~         ~HPGT(LastTrigger,0)~
- REPLACE_TEXTUALLY ~Dead("astTrigger)")~          ~HPLT(LastTrigger,1)~
+ REPLACE_TEXTUALLY ~!Dead("astTrigger)")~ ~HPGT(LastTrigger,0)~
+ REPLACE_TEXTUALLY ~Dead("astTrigger)")~ ~HPLT(LastTrigger,1)~
  END
  BUT_ONLY
 
@@ -5642,7 +5642,7 @@ COPY_EXISTING ~JAHEIR12.CRE~ ~override~
 //////////////////////////////////////////////////////////////////////////
 //06-08-2005 - working on TDD
 //////////////////////////////////////////////////////////////////////////\
-COPY_EXISTING ~AR1303.are~           ~override~
+COPY_EXISTING ~AR1303.are~ ~override~
  READ_LONG  0x70  "cont_offset"
  READ_SHORT 0x74  "cont_num"
  READ_SHORT 0x76  "items_num"
@@ -5667,7 +5667,7 @@ COPY_EXISTING ~AR1303.are~           ~override~
  END
 BUT_ONLY  //********************************************************  ~AR1303.are~
 
-COPY_EXISTING ~AR2812.are~           ~override~
+COPY_EXISTING ~AR2812.are~ ~override~
  READ_SHORT 0x5a  "infotrig_num"
  READ_LONG  0x5c  "infotrig_offset"
  FOR( cnt=0; cnt<"%infotrig_num%"; cnt=cnt+1 ) BEGIN  //info\triggers loop
@@ -5709,13 +5709,13 @@ BUT_ONLY
 
 
 
-COPY_EXISTING ~SPWI608.spl~          ~override~  //Pierce Magic
-              ~SPWI322.spl~          ~override~  //Detect Illusion
-              ~SPWI513.spl~          ~override~  //Breach
-              ~SPWI514.spl~          ~override~  //Lower Resistance
-              ~SPWI903.spl~          ~override~  //Spellstrike
-              ~SPWISH26.spl~         ~override~
-              ~SPWISH38.spl~         ~override~
+COPY_EXISTING ~SPWI608.spl~ ~override~  //Pierce Magic
+              ~SPWI322.spl~ ~override~  //Detect Illusion
+              ~SPWI513.spl~ ~override~  //Breach
+              ~SPWI514.spl~ ~override~  //Lower Resistance
+              ~SPWI903.spl~ ~override~  //Spellstrike
+              ~SPWISH26.spl~ ~override~
+              ~SPWISH38.spl~ ~override~
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -5732,7 +5732,7 @@ COPY_EXISTING ~SPWI608.spl~          ~override~  //Pierce Magic
 BUT_ONLY
 
 
-COPY_EXISTING ~SPWI423.spl~          ~override~    //Spider Spawn
+COPY_EXISTING ~SPWI423.spl~ ~override~    //Spider Spawn
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -5749,13 +5749,13 @@ COPY_EXISTING ~SPWI423.spl~          ~override~    //Spider Spawn
 BUT_ONLY
 
 
-COPY_EXISTING ~SPPR317.spl~          ~override~    //Cure Disease
-              ~SPIN201.spl~          ~override~    //Neutralize Poison
-              ~SPPR404.spl~          ~override~    //Neutralize Poison
-              ~DEVAHEAL.spl~         ~override~    //Heal
-              ~SENSPIHE.spl~         ~override~    //Heal
-              ~SPIN679.spl~          ~override~    //Heal
-              ~SPPR607.spl~          ~override~    //Heal
+COPY_EXISTING ~SPPR317.spl~ ~override~    //Cure Disease
+              ~SPIN201.spl~ ~override~    //Neutralize Poison
+              ~SPPR404.spl~ ~override~    //Neutralize Poison
+              ~DEVAHEAL.spl~ ~override~    //Heal
+              ~SENSPIHE.spl~ ~override~    //Heal
+              ~SPIN679.spl~ ~override~    //Heal
+              ~SPPR607.spl~ ~override~    //Heal
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -5772,7 +5772,7 @@ COPY_EXISTING ~SPPR317.spl~          ~override~    //Cure Disease
 BUT_ONLY
 
 
-COPY_EXISTING ~SPWI103.spl~          ~override~    //Burning Hands
+COPY_EXISTING ~SPWI103.spl~ ~override~    //Burning Hands
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -5792,8 +5792,8 @@ COPY_EXISTING ~SPWI103.spl~          ~override~    //Burning Hands
 BUT_ONLY
 
 
-COPY_EXISTING ~SPWI408.spl~          ~override~    //Stoneskin
-              ~SPWI512.spl~          ~override~    //Prot. from Electricity
+COPY_EXISTING ~SPWI408.spl~ ~override~    //Stoneskin
+              ~SPWI512.spl~ ~override~    //Prot. from Electricity
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -5820,7 +5820,7 @@ COPY_EXISTING ~UNDHIT2.EFF~ ~override~
  BUT_ONLY
 
 
-COPY_EXISTING ~RING97.ITM~          ~override~
+COPY_EXISTING ~RING97.ITM~ ~override~
  READ_LONG  0x6a "eff_offset"
  READ_SHORT 0x70 "eff_cnt"
  FOR( cnt2=0; cnt2<"%eff_cnt%"; cnt2=cnt2+1 ) BEGIN
@@ -6040,7 +6040,7 @@ COPY_EXISTING ~SPWI505.SPL~ ~override~  //Shadow Door
 BUT_ONLY
 
 
-COPY_EXISTING ~SPWI211.spl~          ~override~  //Melf's Acid Arrow
+COPY_EXISTING ~SPWI211.spl~ ~override~  //Melf's Acid Arrow
  READ_LONG  0x64  "ability_offset"
  READ_SHORT 0x68  "abil_cnt"
  READ_LONG  0x6a "eff_offset"
@@ -6104,19 +6104,19 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 COPY ~NeJE\bdash\extrem\BLUN25.ITM~ ~override~  //effects added
 COPY_EXISTING ~MACEDISR.EFF~ ~override\MACEDIS1.EFF~
-    WRITE_BYTE  0x60   0x01
+    WRITE_BYTE 0x60   0x01
 
 //-------------------------------------------------------------------------
 //Azuredge Axe Fixes by Extremist
 //-------------------------------------------------------------------------
 COPY_EXISTING ~AX1H10.ITM~ ~override~  //effects added
 COPY_EXISTING ~MACEDISR.EFF~ ~override\MACEDIS4.EFF~
-    WRITE_BYTE  0x60   0x04
+    WRITE_BYTE 0x60   0x04
 
 //Other weapon fixes by Extremist
 
 COPY_EXISTING ~BLUN03.ITM~ ~override\BLUN03.ITM~
-    WRITE_BYTE  0x4C   0x0C
+    WRITE_BYTE 0x4C   0x0C
 
 //-------------------------------------------------------------------------
 //Mace Of Disruption Fix
@@ -6146,16 +6146,16 @@ COPY_EXISTING ~BLUN12.ITM~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~BLUN12.ITM~ ~override\BLUN12.ITM~
-    WRITE_BYTE  0x1EE  0x04
+    WRITE_BYTE 0x1EE  0x04
     WRITE_LONG  0x1F2  0xFFFFFFFC
 
 COPY_EXISTING ~BLUN13.ITM~ ~override\BLUN13.ITM~
-    WRITE_BYTE  0x8C   0x02
+    WRITE_BYTE 0x8C   0x02
 COPY_EXISTING ~BLUN20.ITM~ ~override\BLUN20.ITM~
     DELETE_BYTES 0x19A 96
-    WRITE_BYTE   144   0x06
-    WRITE_BYTE   0x21E 0x01
-    WRITE_BYTE   0x222 0x03
+    WRITE_BYTE  144   0x06
+    WRITE_BYTE  0x21E 0x01
+    WRITE_BYTE  0x222 0x03
 
 //-------------------------------------------------------------------------
 //Short Bow +1 Graphics Fix
@@ -6178,16 +6178,16 @@ COPY_EXISTING ~BOW06.ITM~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~BOW06.ITM~ ~override\BOW06.ITM~
-    WRITE_BYTE  0x4C   0x02
+    WRITE_BYTE 0x4C   0x02
 
 COPY_EXISTING ~BOW11.ITM~ ~override\BOW11.ITM~
-    WRITE_BYTE  0x4C   0x07
-    WRITE_BYTE  0x84   0x04
+    WRITE_BYTE 0x4C   0x07
+    WRITE_BYTE 0x84   0x04
 COPY_EXISTING ~DAGG13.ITM~ ~override\DAGG13.ITM~
-    WRITE_BYTE  0x162  0x00
-    WRITE_BYTE  0x192  0x00
-    WRITE_BYTE  0x1C2  0x00
-    WRITE_BYTE  0x1F2  0x00
+    WRITE_BYTE 0x162  0x00
+    WRITE_BYTE 0x192  0x00
+    WRITE_BYTE 0x1C2  0x00
+    WRITE_BYTE 0x1F2  0x00
 
 COPY_EXISTING ~DWSW1H01.ITM~ ~override~
  WRITE_BYTE 0x2b 0x02     //setting unusable beastmaster
@@ -6219,21 +6219,21 @@ BUT_ONLY
 
 COPY_EXISTING ~HAMM06.ITM~ ~override\HAMM06.ITM~
     WRITE_LONG  0x1E   0xFEFDB740
-    WRITE_BYTE  0x7C   0x35
-    WRITE_BYTE  0xC4   0x03
+    WRITE_BYTE 0x7C   0x35
+    WRITE_BYTE 0xC4   0x03
 
 COPY_EXISTING ~SLNG06.ITM~ ~override\SLNG06.ITM~
-    WRITE_BYTE  0x7C   0x36
+    WRITE_BYTE 0x7C   0x36
 COPY_EXISTING ~SPER06.ITM~ ~override\SPER06.ITM~
-    WRITE_BYTE  0x4C   0x03
+    WRITE_BYTE 0x4C   0x03
 COPY_EXISTING ~STAF05.ITM~ ~override\STAF05.ITM~
     WRITE_LONG  0x84   0x00000001
 
 
 COPY_EXISTING ~STAF16.ITM~ ~override\STAF16.ITM~
     WRITE_SHORT 0x34   0x09C4
-    WRITE_BYTE  0x1B7  0x02
-    WRITE_BYTE  0x1CE  0x01
+    WRITE_BYTE 0x1B7  0x02
+    WRITE_BYTE 0x1CE  0x01
 
 //-------------------------------------------------------------------------
 //Scimitar Usability Fixes
@@ -6248,8 +6248,8 @@ COPY_EXISTING ~SW1H20.ITM~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~SW1H40.ITM~ ~override\SW1H40.ITM~
-    WRITE_BYTE  0x88   0x04
-    WRITE_BYTE  0x8A   0x02
+    WRITE_BYTE 0x88   0x04
+    WRITE_BYTE 0x8A   0x02
 
 //***************************************************************************
 COPY_EXISTING ~SW2H12.ITM~ ~override~
@@ -6269,75 +6269,75 @@ COPY_EXISTING ~FLAMENOR.EFF~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~SW2H12.ITM~ ~override\SW2H12.ITM~
-    WRITE_BYTE  0x1A2  0x02
+    WRITE_BYTE 0x1A2  0x02
 COPY_EXISTING ~FLAMENOR.EFF~ ~override\FLAMENOR.EFF~
-    WRITE_BYTE  0x1C   0x33
+    WRITE_BYTE 0x1C   0x33
 //***************************************************************************
 
 COPY_EXISTING ~RODS04.ITM~ ~override\RODS04.ITM~
     WRITE_LONG  0x1E   0x60721840
     WRITE_LONG  0xAC   0x00000001
-    WRITE_BYTE  0xB2   0x02
-    WRITE_BYTE  0xB6   0x02
+    WRITE_BYTE 0xB2   0x02
+    WRITE_BYTE 0xB6   0x02
 COPY_EXISTING ~HAMM04.ITM~ ~override\HAMM04.ITM~
-    WRITE_BYTE  0x13E  0x00
-    WRITE_BYTE  0x142  0x02
-    WRITE_BYTE  0x16E  0x00
-    WRITE_BYTE  0x172  0x02
+    WRITE_BYTE 0x13E  0x00
+    WRITE_BYTE 0x142  0x02
+    WRITE_BYTE 0x16E  0x00
+    WRITE_BYTE 0x172  0x02
 
 COPY_EXISTING ~SCRL03.ITM~ ~override\SCRL03.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 COPY_EXISTING ~SCRL04.ITM~ ~override\SCRL04.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 COPY_EXISTING ~SCRL05.ITM~ ~override\SCRL05.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 COPY_EXISTING ~SCRL06.ITM~ ~override\SCRL06.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 COPY_EXISTING ~SCRL08.ITM~ ~override\SCRL08.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
-    WRITE_BYTE  0x1D7  0x00
-    WRITE_BYTE  0x207  0x00
-    WRITE_BYTE  0x237  0x00
-    WRITE_BYTE  0x267  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
+    WRITE_BYTE 0x1D7  0x00
+    WRITE_BYTE 0x207  0x00
+    WRITE_BYTE 0x237  0x00
+    WRITE_BYTE 0x267  0x00
 COPY_EXISTING ~SCRL09.ITM~ ~override\SCRL09.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 COPY_EXISTING ~SCRL15.ITM~ ~override\SCRL15.ITM~
-    WRITE_BYTE  0xB7   0x00
-    WRITE_BYTE  0xE7   0x00
-    WRITE_BYTE  0x117  0x00
-    WRITE_BYTE  0x147  0x00
-    WRITE_BYTE  0x177  0x00
-    WRITE_BYTE  0x1A7  0x00
+    WRITE_BYTE 0xB7   0x00
+    WRITE_BYTE 0xE7   0x00
+    WRITE_BYTE 0x117  0x00
+    WRITE_BYTE 0x147  0x00
+    WRITE_BYTE 0x177  0x00
+    WRITE_BYTE 0x1A7  0x00
 
 COPY_EXISTING ~SCRLA7.ITM~ ~override\SCRLA7.ITM~
     WRITE_SHORT 0x3F   0x3632
@@ -6345,10 +6345,10 @@ COPY_EXISTING ~SCRLA7.ITM~ ~override\SCRLA7.ITM~
     WRITE_SHORT 0xB3   0x3632
 
 COPY_EXISTING ~AMUL22.ITM~ ~override\AMUL22.ITM~
-    WRITE_BYTE  0x147  0x02
-    WRITE_BYTE  0x177  0x02
-    WRITE_BYTE  0x1A7  0x02
-    WRITE_BYTE  0x1D7  0x02
+    WRITE_BYTE 0x147  0x02
+    WRITE_BYTE 0x177  0x02
+    WRITE_BYTE 0x1A7  0x02
+    WRITE_BYTE 0x1D7  0x02
 
 //-------------------------------------------------------------------------
 //Ring Of Free Action Fix
@@ -6369,31 +6369,31 @@ BUT_ONLY*/
 
 COPY_EXISTING ~BRAC18.ITM~ ~override\BRAC18.ITM~
     WRITE_LONG  0x1E   0x00000000
-    WRITE_BYTE  0x72   0x03
+    WRITE_BYTE 0x72   0x03
 //COPY_EXISTING ~PLAT06.ITM~ ~override\PLAT06.ITM~ //Druids can wear ankheg plate
-//    WRITE_BYTE  0x21   0x60
+//    WRITE_BYTE 0x21   0x60
 COPY_EXISTING ~PLAT11.ITM~ ~override\PLAT11.ITM~
     DELETE_BYTES 0x1F2 48
-    WRITE_BYTE   112   0x08
+    WRITE_BYTE  112   0x08
 
 COPY_EXISTING ~SHLD07.ITM~ ~override\SHLD07.ITM~
-    WRITE_BYTE  0x76   0x01
+    WRITE_BYTE 0x76   0x01
 COPY_EXISTING ~SHLD28.ITM~ ~override\SHLD28.ITM~
-    WRITE_BYTE  118    0xFD
+    WRITE_BYTE 118    0xFD
 COPY_EXISTING ~RODS02.ITM~ ~override\RODS02.ITM~
-    WRITE_BYTE  0x1F   0x03
-    WRITE_BYTE  0x21   0x60
+    WRITE_BYTE 0x1F   0x03
+    WRITE_BYTE 0x21   0x60
 COPY_EXISTING ~RODSPEAR.ITM~ ~override\RODSPEAR.ITM~
-    WRITE_BYTE  0x16A  0x06
+    WRITE_BYTE 0x16A  0x06
 COPY_EXISTING ~POTN09.ITM~ ~override\POTN09.ITM~
-    WRITE_BYTE  0xDC   0x01
+    WRITE_BYTE 0xDC   0x01
 COPY_EXISTING ~POTN13.ITM~ ~override\POTN13.ITM~
-    WRITE_BYTE  0xC6   0x05
-    WRITE_BYTE  0xCA   0x03
-    WRITE_BYTE  0x126  0x05
-    WRITE_BYTE  0x12A  0x03
+    WRITE_BYTE 0xC6   0x05
+    WRITE_BYTE 0xCA   0x03
+    WRITE_BYTE 0x126  0x05
+    WRITE_BYTE 0x12A  0x03
 COPY_EXISTING ~POTN34.ITM~ ~override\POTN34.ITM~
-    WRITE_BYTE  0xE2   0x3F
+    WRITE_BYTE 0xE2   0x3F
 
 //-------------------------------------------------------------------------
 //Rings Of Air & Fire Control Saving Throws Fixes
@@ -6426,27 +6426,27 @@ BUT_ONLY
 COPY ~NeJE\bdash\extrem\CHRMSPEC.EFF~ ~override~
 
 COPY_EXISTING ~RING27.ITM~ ~override\RING27.ITM~
-    WRITE_BYTE  0x80   0x02
-    WRITE_BYTE  0x99   0x08
-    WRITE_BYTE  0x17A  0xB1
-    WRITE_BYTE  0x17E  0xBB
-    WRITE_BYTE  0x182  0x05
+    WRITE_BYTE 0x80   0x02
+    WRITE_BYTE 0x99   0x08
+    WRITE_BYTE 0x17A  0xB1
+    WRITE_BYTE 0x17E  0xBB
+    WRITE_BYTE 0x182  0x05
     WRITE_ASCII 0x18E  ~CHRMSPEC~
-    WRITE_BYTE  0x19E  0x01
-    WRITE_BYTE  0x1A2  0x02
+    WRITE_BYTE 0x19E  0x01
+    WRITE_BYTE 0x1A2  0x02
 COPY_EXISTING ~RING28.ITM~ ~override\RING28.ITM~
-    WRITE_BYTE  0x80   0x02
-    WRITE_BYTE  0x99   0x08
-    WRITE_BYTE  0xE2   0xB1
-    WRITE_BYTE  0xE6   0xBA
-    WRITE_BYTE  0xEA   0x05
-    WRITE_BYTE  0xEF   0x02
+    WRITE_BYTE 0x80   0x02
+    WRITE_BYTE 0x99   0x08
+    WRITE_BYTE 0xE2   0xB1
+    WRITE_BYTE 0xE6   0xBA
+    WRITE_BYTE 0xEA   0x05
+    WRITE_BYTE 0xEF   0x02
     WRITE_ASCII 0xF6   ~CHRMSPEC~
-    WRITE_BYTE  0x106  0x01
-    WRITE_BYTE  0x10A  0x02
+    WRITE_BYTE 0x106  0x01
+    WRITE_BYTE 0x10A  0x02
 
 COPY_EXISTING ~MISC9O.ITM~ ~override\MISC9O.ITM~
-    WRITE_BYTE  33    0x20
+    WRITE_BYTE 33    0x20
 
 //-------------------------------------------------------------------------
 //Hostile authorities fix by Extremist
@@ -6471,7 +6471,7 @@ COPY_EXISTING ~AR1303.BCS~ ~override\AR1303.BCS~
 //-------------------------------------------------------------------------
 
 COPY_EXISTING ~AR0327.ARE~ ~override\AR0327.ARE~
-    WRITE_BYTE  0x15D6  0x5A
+    WRITE_BYTE 0x15D6  0x5A
 
 //-------------------------------------------------------------------------
 //Major fixes in Slums by Extremist
@@ -6485,27 +6485,27 @@ EXTEND_BOTTOM ~AR0400.BCS~ ~NeJE\bdash\extrem\sfixes\eAR0400.BCS~
 //Creature fixes by Extremist
 
 COPY_EXISTING ~BODTAN.CRE~ ~override\BODTAN.CRE~
-    WRITE_BYTE  0x271   0x04
+    WRITE_BYTE 0x271   0x04
 COPY_EXISTING ~DDGUARD2.CRE~ ~override\DDGUARD3.CRE~
-    WRITE_BYTE  0x287   0x33
-    WRITE_BYTE  0x2D3   0x33
-    WRITE_BYTE  0x5D0   0x36
+    WRITE_BYTE 0x287   0x33
+    WRITE_BYTE 0x2D3   0x33
+    WRITE_BYTE 0x5D0   0x36
 COPY_EXISTING ~DGTROL01.CRE~ ~override\DGTROL01.CRE~
-    WRITE_BYTE  0x273   0xA7
+    WRITE_BYTE 0x273   0xA7
 COPY_EXISTING ~SAHOTY01.CRE~ ~override\SAHOTY01.CRE~
-    WRITE_BYTE  0x271   0x05
+    WRITE_BYTE 0x271   0x05
 
 COPY ~NeJE\bdash\extrem\sfixes\GRAE.BCS~ ~override~
 
 //Greater Wolfwere regeneration fix by Cirneth
 
 COPY_EXISTING ~RINGWOLF.ITM~ ~override\RINGWOLF.ITM~
-    WRITE_BYTE  0x7E    0x02
+    WRITE_BYTE 0x7E    0x02
 
 //Jon Irenicus as Slayer in Hell regeneration fix by Extremist
 
 COPY_EXISTING ~HSLAYWPN.ITM~ ~override\HSLAYWPN.ITM~
-    WRITE_BYTE  0x4D6   0x02
+    WRITE_BYTE 0x4D6   0x02
 
 //Miscellaneous fixes by Extremist
 
@@ -6515,11 +6515,11 @@ COPY_EXISTING ~KPSOLD01.CRE~ ~override\KPSOLD01.CRE~
     WRITE_ASCII 0x254 ~MCUT~
 
 COPY_EXISTING ~FIGSPID.ITM~ ~override\FIGSPID.ITM~
-    WRITE_BYTE  232 0x0E
+    WRITE_BYTE 232 0x0E
 COPY_EXISTING ~SPIN683.SPL~ ~override\SPIN683.SPL~
-    WRITE_BYTE  312 0x15
+    WRITE_BYTE 312 0x15
 COPY_EXISTING ~SPIN699.SPL~ ~override\SPIN699.SPL~
-    WRITE_BYTE  300 0x02
+    WRITE_BYTE 300 0x02
 
 //-------------------------------------------------------------------------
 //Mordenkainen's Sword Amulets & Mind-Control Magic Susceptbility Fixes
@@ -6568,24 +6568,24 @@ BUT_ONLY
 COPY_EXISTING ~SPCL321D.SPL~ ~override\SPCL321D.SPL~
     WRITE_SHORT 0xCA   0x0116
     WRITE_LONG  0xCE   0xFFFFFFFE
-    WRITE_BYTE  0xD2   0x00
+    WRITE_BYTE 0xD2   0x00
     WRITE_LONG  0xDE   0x70784500
     WRITE_LONG  0xE2   0x74617269
 COPY_EXISTING ~SPCL521.SPL~ ~override\SPCL521.SPL~
     WRITE_SHORT 0xFA   0x0116
-    WRITE_BYTE  0xFE   0x02
-    WRITE_BYTE  0x102  0x00
+    WRITE_BYTE 0xFE   0x02
+    WRITE_BYTE 0x102  0x00
     WRITE_LONG  0x10E  0x70784500
     WRITE_LONG  0x112  0x74617269
 COPY_EXISTING ~HITPLUS1.EFF~ ~override\HITPLUS1.EFF~
     WRITE_SHORT 0x10   0x0116
-    WRITE_BYTE  0x1C   0x01
-    WRITE_BYTE  0x20   0x00
-    WRITE_BYTE  0x60   0x00
+    WRITE_BYTE 0x1C   0x01
+    WRITE_BYTE 0x20   0x00
+    WRITE_BYTE 0x60   0x00
 
 COPY_EXISTING ~SW1HSEEK.ITM~ ~override\SW1HSEEK.ITM~
-    WRITE_BYTE  0x88   0x04
-    WRITE_BYTE  0x8A   0x02
+    WRITE_BYTE 0x88   0x04
+    WRITE_BYTE 0x8A   0x02
 
 COPY_EXISTING ~SPCL741.SPL~ ~override\SPCL741.SPL~
     WRITE_SHORT 0x31A  0x0116
@@ -6602,35 +6602,35 @@ COPY_EXISTING ~SPCL741.SPL~ ~override\SPCL741.SPL~
 
 COPY_EXISTING ~SPCL222.SPL~ ~override\SPCL222.SPL~
     WRITE_SHORT 0xA7   0x2803
-    WRITE_BYTE  0xD7   0x03
-    WRITE_BYTE  0x107  0x03
-    WRITE_BYTE  0x137  0x03
-    WRITE_BYTE  0x167  0x03
-    WRITE_BYTE  0x197  0x03
-    WRITE_BYTE  0x1C7  0x03
-    WRITE_BYTE  0x1F7  0x03
+    WRITE_BYTE 0xD7   0x03
+    WRITE_BYTE 0x107  0x03
+    WRITE_BYTE 0x137  0x03
+    WRITE_BYTE 0x167  0x03
+    WRITE_BYTE 0x197  0x03
+    WRITE_BYTE 0x1C7  0x03
+    WRITE_BYTE 0x1F7  0x03
 
 COPY_EXISTING ~SPWI114.SPL~ ~override\SPWI114.SPL~
     WRITE_LONG  0x196  0x012C0300
 
 COPY_EXISTING ~UDDROW23.STO~ ~override\UDDROW23.STO~
-    WRITE_BYTE  0x2D0  0x00
+    WRITE_BYTE 0x2D0  0x00
 
 COPY_EXISTING ~HELM06.ITM~ ~override\HELM06.ITM~
     DELETE_BYTES 0x1C2 48
-    WRITE_BYTE   112   0x08
-    WRITE_BYTE   144   0x00
+    WRITE_BYTE  112   0x08
+    WRITE_BYTE  144   0x00
 
 COPY_EXISTING ~MOOND2.EFF~ ~override\SPECHOIC.EFF~
     WRITE_SHORT 0X1C   0x0000
-    WRITE_BYTE  0X20   0x0D
-    WRITE_BYTE  0X24   0x01
-    WRITE_BYTE  0X60   0x00
+    WRITE_BYTE 0X20   0x0D
+    WRITE_BYTE 0X24   0x01
+    WRITE_BYTE 0X60   0x00
 COPY_EXISTING ~MOOND4.EFF~ ~override\SPECHOLD.EFF~
     WRITE_SHORT 0X1C   0x0000
-    WRITE_BYTE  0X24   0x01
-    WRITE_BYTE  0X28   0x09
-    WRITE_BYTE  0X60   0x00
+    WRITE_BYTE 0X24   0x01
+    WRITE_BYTE 0X28   0x09
+    WRITE_BYTE 0X60   0x00
 
 //-------------------------------------------------------------------------
 //Potion Of Freedom Fix
@@ -6664,7 +6664,7 @@ COPY_EXISTING ~POTN45.ITM~ ~override~
  END
 BUT_ONLY
 
-COPY_EXISTING ~TOMEGOL4.cre~     ~override~
+COPY_EXISTING ~TOMEGOL4.cre~ ~override~
  READ_LONG  0x2b8  "item_slots_offset"
  READ_LONG  0x2bc  "items_offset"
  READ_LONG  0x2c0  "items_num"
@@ -6763,7 +6763,7 @@ BUT_ONLY
 
 ACTION_IF FILE_EXISTS ~script compiler/AICOMPILE.exe~
     THEN BEGIN
-        COPY_EXISTING   ~KIT.IDS~         ~script compiler~
+        COPY_EXISTING   ~KIT.IDS~ ~script compiler~
 END
 
 
@@ -6957,7 +6957,7 @@ COPY_EXISTING ~PPBODHI4.BCS~ ~override~
     END
 BUT_ONLY
 
-COPY_EXISTING ~PPBODHI4.CRE~       ~override~
+COPY_EXISTING ~PPBODHI4.CRE~ ~override~
  READ_LONG  0x2bc  "items_offset"
  READ_LONG  0x2c0  "items_num"
  FOR (cnt=0; cnt<"%items_num%"; cnt=cnt+1) BEGIN       //items loop
@@ -7035,8 +7035,8 @@ COPY_EXISTING ~SPWI954.SPL~ ~override~
 BUT_ONLY
 
 
-COPY_EXISTING ~HAKSU.CRE~        ~override~
-              ~NISHRUSU.CRE~     ~override~
+COPY_EXISTING ~HAKSU.CRE~ ~override~
+              ~NISHRUSU.CRE~ ~override~
  WRITE_BYTE 0x271   255    //monster
  WRITE_BYTE 0x272   136    //mist
  WRITE_BYTE 0x273   174    //mist
@@ -7498,117 +7498,117 @@ COMPILE ~NeJE/bdash/new_fix/fixglobal.d~
 COPY_EXISTING_REGEXP GLOB ~.+\.dlg$~ ~override~
     DECOMPILE_AND_PATCH BEGIN
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Anomen")~        ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Anomen")~        ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Anomen")~        ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Anomen")~        ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Anomen")~        ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Anomen")~        ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Aerie")~        ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Aerie")~        ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Aerie")~        ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Aerie")~        ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Aerie")~        ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Aerie")~        ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Cernd")~        ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Cernd")~        ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Cernd")~        ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Cernd")~        ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Cernd")~        ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Cernd")~        ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Haerdalis")~        ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Haerdalis")~        ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Haerdalis")~        ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Haerdalis")~        ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Haerdalis")~        ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Haerdalis")~        ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Viconia")~        ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Viconia")~        ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Viconia")~        ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Viconia")~        ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Viconia")~        ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Viconia")~        ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jaheira")~        ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jaheira")~        ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jaheira")~        ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jaheira")~        ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jaheira")~        ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jaheira")~        ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Valygar")~        ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Valygar")~        ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Valygar")~        ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Valygar")~        ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Valygar")~        ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Valygar")~        ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Keldorn")~        ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Keldorn")~        ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Keldorn")~        ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Keldorn")~        ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Keldorn")~        ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Keldorn")~        ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Korgan")~        ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Korgan")~        ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Korgan")~        ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Korgan")~        ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Korgan")~        ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Korgan")~        ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jan")~        ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jan")~        ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jan")~        ~InParty("Jan") !Dead("Jan") See("Jan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jan")~        ~InParty("Jan") !Dead("Jan") See("Jan")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jan")~        ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jan")~        ~InParty("Jan") !Dead("Jan") See("Jan")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Nalia")~        ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Nalia")~        ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Nalia")~        ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Nalia")~        ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Nalia")~        ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Nalia")~        ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Mazzy")~        ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Mazzy")~        ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Mazzy")~        ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Mazzy")~        ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Mazzy")~        ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Mazzy")~        ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Edwin")~        ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Edwin")~        ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Edwin")~        ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Edwin")~        ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Edwin")~        ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Edwin")~        ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Imoen2")~        ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Imoen2")~        ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Imoen2")~        ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Imoen2")~        ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Imoen2")~        ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Imoen2")~        ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Minsc")~        ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Minsc")~        ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Minsc")~        ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Minsc")~        ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Minsc")~        ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Minsc")~        ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
 
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Yoshimo")~        ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Yoshimo")~        ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Yoshimo")~        ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Yoshimo")~        ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Yoshimo")~        ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Yoshimo")~        ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
+        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
+        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
+        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
+        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
     END
 BUT_ONLY
 */

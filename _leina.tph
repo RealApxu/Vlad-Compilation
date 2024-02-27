@@ -226,7 +226,7 @@ Disadvantages:
 *Leina has gained a grandmaster class in long swords.~
 
 COPY ~NeJE/Leina/wav~ ~override~
-COPY ~NeJE/Leina/pics~  ~override~
+COPY ~NeJE/Leina/pics~ ~override~
 
 COPY ~NeJE/Leina/cre/Ikey.cre~ ~override/Ikey.cre~
     SAY NAME1 ~Ikey~
@@ -515,8 +515,8 @@ COPY ~NeJE/Leina/cre/LEINA11.CRE~ ~override/LEINA11.CRE~
     SAY NAME1 ~Leina~
     SAY NAME2 ~Leina~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY LEADER ~~ [leinac04]
     SAY BORED ~~ [leinac32]
     SAY BATTLE_CRY1 ~~ [leinac01]
@@ -558,8 +558,8 @@ COPY ~NeJE/Leina/cre/LEINA12.CRE~ ~override/LEINA12.CRE~
     SAY NAME1 ~Leina~
     SAY NAME2 ~Leina~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY LEADER ~~ [leinac04]
     SAY BORED ~~ [leinac32]
     SAY BATTLE_CRY1 ~~ [leinac01]
@@ -601,8 +601,8 @@ COPY ~NeJE/Leina/cre/LEINA13.CRE~ ~override/LEINA13.CRE~
     SAY NAME1 ~Leina~
     SAY NAME2 ~Leina~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY LEADER ~~ [leinac04]
     SAY BORED ~~ [leinac32]
     SAY BATTLE_CRY1 ~~ [leinac01]
@@ -644,8 +644,8 @@ COPY ~NeJE/Leina/cre/LEINA14.CRE~ ~override/LEINA14.CRE~
     SAY NAME1 ~Leina~
     SAY NAME2 ~Leina~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%BARD_OF_MELODY%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY LEADER ~~ [leinac04]
     SAY BORED ~~ [leinac32]
     SAY BATTLE_CRY1 ~~ [leinac01]

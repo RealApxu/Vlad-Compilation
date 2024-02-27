@@ -85,7 +85,7 @@ END
 //New Shar-Teel character
 //Shar-teel creatures update - BGT
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
-    COPY_EXISTING ~SHARTE.cre~  ~override/SHARTE.cre~
+    COPY_EXISTING ~SHARTE.cre~ ~override/SHARTE.cre~
                   ~SHARTE4.cre~ ~override/SHARTE4.cre~
                   ~SHARTE6.cre~ ~override/SHARTE6.cre~
         WRITE_SHORT 0x244 0 // doesn't change
@@ -123,7 +123,7 @@ END
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
     //unique Shar-teel creature patches
-    COPY_EXISTING ~SHARTE.cre~  ~override/SHARTE.cre~
+    COPY_EXISTING ~SHARTE.cre~ ~override/SHARTE.cre~
     WRITE_SHORT 0x24 21 //current HP
     WRITE_SHORT 0x26 21 //max HP
     ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
@@ -145,8 +145,8 @@ ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
 
 COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
     SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
     SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
@@ -179,8 +179,8 @@ COPY ~NeJE/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
 
 COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
     SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
     SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
@@ -213,8 +213,8 @@ COPY ~NeJE/sharteel/cre/SHARTE8.cre~ ~override/SHARTE8.cre~
 
 COPY ~NeJE/sharteel/cre/SHARTE9.cre~ ~override/SHARTE9.cre~
     WRITE_SHORT 0x244 0 // doesn't change
-    WRITE_BYTE  0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
-    WRITE_BYTE  0x247 0x40 // doesn't change
+    WRITE_BYTE 0x246 ~%FIREWALKER%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
     SAY 0xa8 ~Discretion is the better part of valor.~ [SHART02]
     SAY HAPPY ~It seems that this party isn't as pathetic as I first suspected.~ [SHART04]
     SAY UNHAPPY_ANNOYED ~This is the kind of stupidity we get with male leadership.~ [SHART05]
@@ -308,7 +308,7 @@ END
 
 COPY_EXISTING ~AR1203.ARE~ ~override~
     WRITE_ASCII 0x94 ~AR1203~                 //setting area script
-    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR1202.BCS~ THEN BEGIN
@@ -334,25 +334,25 @@ COPY ~NeJE/sharteel/dungeon~ ~override~
 /*
 COPY_EXISTING ~AR1201.ARE~ ~override~
     WRITE_ASCII 0x11d8 ~MISTCD01~
-    WRITE_BYTE  (0x11d8+8) 0
+    WRITE_BYTE (0x11d8+8) 0
     WRITE_ASCII 0x11e0 ~MISTVA01~
-    WRITE_BYTE  (0x11e0+8) 0
+    WRITE_BYTE (0x11e0+8) 0
     WRITE_ASCII 0x12a0 ~MISTCD01~
-    WRITE_BYTE  (0x12a0+8) 0
+    WRITE_BYTE (0x12a0+8) 0
     WRITE_ASCII 0x12a8 ~MISTVA01~
-    WRITE_BYTE  (0x12a8+8) 0
+    WRITE_BYTE (0x12a8+8) 0
     WRITE_ASCII 0x12b0 ~MISTVA01~
-    WRITE_BYTE  (0x12b0+8) 0
+    WRITE_BYTE (0x12b0+8) 0
     WRITE_ASCII 0x1370 ~MISTCD01~
-    WRITE_BYTE  (0x1370+8) 0
+    WRITE_BYTE (0x1370+8) 0
     WRITE_ASCII 0x1378 ~MISTVA01~
-    WRITE_BYTE  (0x1378+8) 0
+    WRITE_BYTE (0x1378+8) 0
     WRITE_ASCII 0x1380 ~MISTVA01~
-    WRITE_BYTE  (0x1380+8) 0
+    WRITE_BYTE (0x1380+8) 0
     WRITE_ASCII 0x1cfc ~None~
-    WRITE_BYTE  (0x1cfc+4) 0
+    WRITE_BYTE (0x1cfc+4) 0
     WRITE_ASCII 0x1d04 ~None~
-    WRITE_BYTE  (0x1d04+4) 0
+    WRITE_BYTE (0x1d04+4) 0
 BUT_ONLY
 */
 
@@ -411,7 +411,7 @@ END
 /*
 COPY_EXISTING ~AR7000.ARE~ ~override~
     WRITE_ASCII 0x94 ~AR7000~                 //setting area script
-    WRITE_BYTE  (0x94+6) 0                    //terminating 0
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 */
 

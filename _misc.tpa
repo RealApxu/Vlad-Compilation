@@ -1,3 +1,5 @@
+BEGIN ~New Interface~
+
 COPY ~NeJE\gui_anim~ ~override~
 COPY ~NeJE\bdash\intro\Theme\themea.acm~ ~music\Theme\themea.acm~
 
@@ -8,12 +10,11 @@ COPY ~NeJE\bdash\intro\Theme\themea.acm~ ~music\Theme\themea.acm~
 //73247
 STRING_SET ~shadows of amn~ ~play game~
 
-//2251
-STRING_SET ~Aerie, should you be willing, we would appreciate a cleric/mage with your heart and stature.~ ~Aerie, should you be willing, we would appreciate a good cleric with your heart and stature.~
-
 //-------------------------------------------------------------------------
 //Improved Ring Of Gaxx
 //-------------------------------------------------------------------------
+
+BEGIN ~Improved Ring Of Gaxx~
 
 //String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
 COPY ~NeJE\bdash\itm\Ring39.ITM~ ~override~
@@ -38,6 +39,9 @@ Not Usable By:
  Wizard Slayer~
 
 //Improved Horns of Valhalla
+
+BEGIN ~Improved Horns of Valhalla~
+
 COPY ~NeJE\bdash\itm\MISC3I.ITM~ ~override~
   SAY DESC ~Silver Horn of Valhalla
 
@@ -66,7 +70,7 @@ Not Usable By:
 // Bonus Merchants
 /////////////////////////
 
-COPY_EXISTING ~AR0406.bcs~  ~override~
+COPY_EXISTING ~AR0406.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
          REPLACE_TEXTUALLY ~Global("WorkingForBodhi","GLOBAL",1)~ ~Global("WorkingForBodhi","GLOBAL",63)~ //this condition will never happen
          REPLACE_TEXTUALLY ~!Exists("wmart1")~ ~!Exists("walmart1")~
@@ -77,9 +81,9 @@ COPY_EXISTING ~AR0406.bcs~  ~override~
 
 ACTION_IF FILE_EXISTS ~AR0702.bcs~
  THEN BEGIN
-     COPY_EXISTING ~AR0702.bcs~  ~override~
+     COPY_EXISTING ~AR0702.bcs~ ~override~
               WRITE_ASCII 0x94 ~AR0702~                 //setting area script
-                 WRITE_BYTE  (0x94+6) 0                    //terminating 0
+                 WRITE_BYTE (0x94+6) 0                    //terminating 0
             BUT_ONLY
          EXTEND_TOP ~AR0702.bcs~ ~NeJE\bdash\bonusmer\eAR0702.baf~ //create Deidre
 END
@@ -87,7 +91,7 @@ END
         COPY ~NeJE\bdash\bonusmer\AR0702.bcs~ ~override~
         COPY_EXISTING ~AR0702.ARE~ ~override~
          WRITE_ASCII 0x94 ~AR0702~                 //setting area script
-             WRITE_BYTE  (0x94+6) 0                    //terminating 0
+             WRITE_BYTE (0x94+6) 0                    //terminating 0
         BUT_ONLY
 END
 
@@ -96,7 +100,7 @@ END
 //Third Path
 ///////////////////////////
 
-PRINT ~Third Path (by Vlad)~
+BEGIN ~Third Path (by Vlad)~
 
 COPY ~NeJE\bdash\ThirdP\toda\SCENE04T.2da~ ~override~
 REPLACE ~scene04t~ ~CHAPTER THREE
@@ -111,8 +115,8 @@ REPLACE ~scrtxt33~ ~CHAPTER FOUR
   The journey is uneventful, and if there were other ships on the same course they must have kept a discreet distance. You make good time, and soon there is a sizable island on the horizon. It might have been considered a pleasant place, but a grim shadow extends the length of it. The asylum, Spellhold, looms from a cliff side.~ [theme5]
 
 COMPILE ~NeJE\bdash\ThirdP\cutscene~
-COPY ~NeJE\bdash\ThirdP\copy_cre~                    ~override~
-COPY ~NeJE\bdash\ThirdP\copy_bcs~                    ~override~
+COPY ~NeJE\bdash\ThirdP\copy_cre~ ~override~
+COPY ~NeJE\bdash\ThirdP\copy_bcs~ ~override~
 
 COPY_EXISTING ~AR0311.bcs~ ~override~
 EXTEND_TOP ~AR0311.bcs~ ~NeJE\bdash\ThirdP\baf\eAR0311.baf~
@@ -229,7 +233,7 @@ EXTEND_TOP ~Yoshimo.bcs~ ~NeJE\bdash\ThirdP\baf\eYoshimo.BAF~
 COPY_EXISTING ~AR0313.bcs~ ~override~
 EXTEND_TOP ~AR0313.bcs~ ~NeJE\bdash\ThirdP\baf\eAR0313.BAF~
 
-COPY ~NeJE\bdash\ThirdP\itm\aranlett.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\aranlett.itm~ ~override~
     SAY NAME1 ~Aran's Letter~
     SAY NAME2 ~Aran's Letter~
     SAY UNIDENTIFIED_DESC ~Aran,
@@ -240,7 +244,7 @@ COPY ~NeJE\bdash\ThirdP\itm\aranlett.itm~  ~override~
 
                           Saemon.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett1.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett1.itm~ ~override~
     SAY NAME1 ~Fragment of a letter~
     SAY NAME2 ~Fragment of a letter~
     SAY UNIDENTIFIED_DESC ~This is a fragment of a burnt letter:
@@ -250,13 +254,13 @@ COPY ~NeJE\bdash\ThirdP\itm\spylett1.itm~  ~override~
 
     "...sow panic and chaos around Amn, and especially in Athkatla. Keep them busy and not interested in..."~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett2.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett2.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Refugees from Tethyr flooded Athkatla, and rumors of the wealth of the city reached the most distant lands of the kingdom. Watch out for them, as among them may be hiding spies. Destroy the spies at the slightest suspicion.~
     SAY DESC ~Refugees from Tethyr flooded Athkatla, and rumors of the wealth of the city reached the most distant lands of the kingdom. Watch out for them, as among them may be hiding spies. Destroy the spies at the slightest suspicion.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett3.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett3.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Instead of leading a trade war with Athkatla, it is better to rely on the help of Queen Zarand. She is very angry at the Council of Six. They treated her concubine in Athkatla like a slut, with no proper respect, nor the promised assistance.
@@ -266,7 +270,7 @@ COPY ~NeJE\bdash\ThirdP\itm\spylett3.itm~  ~override~
 
                           Lady Aura.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett4.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett4.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~There is a group of mercenaries hiding somewhere in Athkatla, whose task is to destroy my family. Find them and dispose of them.
@@ -276,7 +280,7 @@ COPY ~NeJE\bdash\ThirdP\itm\spylett4.itm~  ~override~
 
                           Lady Aura.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett5.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett5.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~My dearest lady Aura,
@@ -294,13 +298,13 @@ COPY ~NeJE\bdash\ThirdP\itm\spylett5.itm~  ~override~
 
                           Captain Dennis.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett6.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett6.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~War is inevitable, my lady. You were absolutely right - the rich of Athkatla accepted the declared trade war as a personal insult. It is strange that our Council is so short-sighted underestimating the military strength of Amn. We must be prepared for the worst case scenario.~
     SAY DESC ~War is inevitable, my lady. You were absolutely right - the rich of Athkatla accepted the declared trade war as a personal insult. It is strange that our Council is so short-sighted underestimating the military strength of Amn. We must be prepared for the worst case scenario.~
 
-COPY ~NeJE\bdash\ThirdP\itm\spylett7.itm~  ~override~
+COPY ~NeJE\bdash\ThirdP\itm\spylett7.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Please look for me on the second floor of the Delosar's Inn in the Bridge District.
@@ -375,160 +379,156 @@ COPY ~NeJE\bdash\ThirdP\cre\MACKM.cre~ ~override~
 //
 /////////////////////////////////////
 
-PRINT ~Improved Character Minsc & Boo (by Vlad)~
+BEGIN ~Improved Character Minsc & Boo (by Vlad)~
 
-ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
-THEN BEGIN
+ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~ THEN BEGIN
     COPY ~NeJE\bdash\Boo\bgt_cre\Minsc.cre~ ~override~
-  SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
-  SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
-  SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
-  SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
-  SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
-  SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
-  SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
-  SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
-  SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
-  SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
-  SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
-  SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
-  SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
-  SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
-  SAY 0x10C ~Who wants some?~ [BGMNSC17]
-  SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
-  SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
-  SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
-  SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
-  SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
-  SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
-  SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
-  SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
-  SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
-  SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
-  SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
-  SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
-  SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
-  SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
-  SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
-  SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
-  SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
-  SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
-  SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
-  SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
+        SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
+        SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
+        SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
+        SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
+        SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
+        SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
+        SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
+        SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
+        SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
+        SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
+        SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
+        SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
+        SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
+        SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
+        SAY 0x10C ~Who wants some?~ [BGMNSC17]
+        SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
+        SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
+        SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
+        SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
+        SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
+        SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
+        SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
+        SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
+        SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
+        SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
+        SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
+        SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
+        SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
+        SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
+        SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
+        SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
+        SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
+        SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
+        SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
+        SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
 
-COPY ~NeJE\bdash\Boo\bgt_cre\Minsc2.cre~ ~override~
-  SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
-  SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
-  SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
-  SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
-  SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
-  SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
-  SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
-  SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
-  SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
-  SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
-  SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
-  SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
-  SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
-  SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
-  SAY 0x10C ~Who wants some?~ [BGMNSC17]
-  SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
-  SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
-  SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
-  SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
-  SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
-  SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
-  SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
-  SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
-  SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
-  SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
-  SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
-  SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
-  SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
-  SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
-  SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
-  SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
-  SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
-  SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
-  SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
-  SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
+    COPY ~NeJE\bdash\Boo\bgt_cre\Minsc2.cre~ ~override~
+        SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
+        SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
+        SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
+        SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
+        SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
+        SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
+        SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
+        SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
+        SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
+        SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
+        SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
+        SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
+        SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
+        SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
+        SAY 0x10C ~Who wants some?~ [BGMNSC17]
+        SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
+        SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
+        SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
+        SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
+        SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
+        SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
+        SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
+        SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
+        SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
+        SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
+        SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
+        SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
+        SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
+        SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
+        SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
+        SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
+        SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
+        SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
+        SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
+        SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
 
-COPY ~NeJE\bdash\Boo\bgt_cre\Minsc4.cre~ ~override~
-  SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
-  SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
-  SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
-  SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
-  SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
-  SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
-  SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
-  SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
-  SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
-  SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
-  SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
-  SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
-  SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
-  SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
-  SAY 0x10C ~Who wants some?~ [BGMNSC17]
-  SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
-  SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
-  SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
-  SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
-  SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
-  SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
-  SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
-  SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
-  SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
-  SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
-  SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
-  SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
-  SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
-  SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
-  SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
-  SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
-  SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
-  SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
-  SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
-  SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
+    COPY ~NeJE\bdash\Boo\bgt_cre\Minsc4.cre~ ~override~
+        SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
+        SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
+        SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
+        SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
+        SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
+        SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
+        SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
+        SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
+        SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
+        SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
+        SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
+        SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
+        SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
+        SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
+        SAY 0x10C ~Who wants some?~ [BGMNSC17]
+        SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
+        SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
+        SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
+        SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
+        SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
+        SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
+        SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
+        SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
+        SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
+        SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
+        SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
+        SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
+        SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
+        SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
+        SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
+        SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
+        SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
+        SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
+        SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
+        SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
 
-COPY ~NeJE\bdash\Boo\bgt_cre\Minsc6.cre~ ~override~
-  SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
-  SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
-  SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
-  SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
-  SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
-  SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
-  SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
-  SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
-  SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
-  SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
-  SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
-  SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
-  SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
-  SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
-  SAY 0x10C ~Who wants some?~ [BGMNSC17]
-  SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
-  SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
-  SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
-  SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
-  SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
-  SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
-  SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
-  SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
-  SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
-  SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
-  SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
-  SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
-  SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
-  SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
-  SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
-  SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
-  SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
-  SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
-  SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
-  SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
-END
-ELSE BEGIN
-    //DO NOTHING//
+    COPY ~NeJE\bdash\Boo\bgt_cre\Minsc6.cre~ ~override~
+        SAY 0xA4 ~Stand and deliver, that my hamster might have a better look at ye!~ [BGMNSC01]
+        SAY 0xA8 ~No, despair not!  I will inspire you by charging blindly on!~ [BGMNSC02]
+        SAY 0xAC ~Camaraderie, adventure, and steel on steel.  The stuff of legend!  Right Boo?~ [BGMNSC04]
+        SAY 0xB0 ~Yes Boo, I agree.  This group could do with a swift kick in the morals.~ [BGMNSC05]
+        SAY 0xB4 ~If I continue with this I'll never look Boo in the eyes again.  Choose carefully, I'll not let this come to pass!~ [BGMNSC06]
+        SAY 0xB8 ~Ye have stepped beyond the line of evil!  Taste hamster justice!~ [BGMNSC07]
+        SAY 0xBC ~Magic is impressive, but now Minsc leads!  Swords for everyone!~ [BGMNSC08]
+        SAY 0xC0 ~I must rest, I've a bad case of armor chafe.~ [BGMNSC09]
+        SAY 0xC4 ~My hamster's getting antsy! If we be adventurers, let us adventure!~ [BGMNSC10]
+        SAY 0xC8 ~Go for the eyes Boo, GO FOR THE EYES!!  RrraaaAAGHGHH!!!~ [BGMNSC03]
+        SAY 0xF4 ~I need aid soon, lest my... hamster... become an orphan.~ [BGMNSC11]
+        SAY 0xF8 ~Boo likes the forest.~ [BGMNSC12]
+        SAY 0x100 ~Evil 'round every corner.  Careful not to step in any.~ [BGMNSC14]
+        SAY 0x108 ~Ahh, nighttime.  Good for sneaking up on evil.~ [BGMNSC16]
+        SAY 0x10C ~Who wants some?~ [BGMNSC17]
+        SAY 0x114 ~Less talk, more fight!~ [BGMNSC19]
+        SAY 0x12C ~Full plate and packing steel!~ [BGMNSC22]
+        SAY 0x130 ~Fool me once, shame on you; fool me twice, watch it!  I'm huge!~ [BGMNSC23]
+        SAY 0x134 ~When the going gets tough, someone hold my rodent.~ [BGMNSC24]
+        SAY 0x138 ~There be safety in numbers and I am two or three at least.~ [BGMNSC25]
+        SAY 0x13C ~Make way evil!  I'm armed to the teeth and packing a hamster!~ [BGMNSC26]
+        SAY 0x140 ~It is as you would have it.  'Tis my sworn vow to ensure your every need is catered to.~ [BGMNSC27]
+        SAY 0x144 ~Where Dynaheir goes, so goes my blade.~ [BGMNSC28]
+        SAY 0x148 ~Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!~ [BGMNSC29]
+        SAY 0x14C ~Stand ye not too close!  Dynaheir is under my protection!~ [BGMNSC30]
+        SAY 0x150 ~Play on, bard!  'Tis sweet music to my furry friend.~ [BGMNSC31]
+        SAY 0x154 ~You travel with Minsc, you toe the line!  I'll not suffer slackers while I'm busy hero-ing!~ [BGMNSC35]
+        SAY 0x158 ~Boo does not like your manner.  Away with ye.~ [BGMNSC36]
+        SAY 0x160 ~Choose your friends wisely.  Not all are as trustworthy as Minsc and Boo.~ [BGMNSC37]
+        SAY 0x178 ~No finer a place to die than the battlefield!~ [BGMNSC40]
+        SAY 0x17C ~Dynaheir!  Nooooo!  You will be avenged!~ [BGMNSC41]
+        SAY 0x18C ~I am of few words and fewer hesitations!  Warnings past and now you die!~ [BGMNSC34]
+        SAY 0x190 ~I take no offense from your comments.  You just don't understand the bond I have with Boo.~ [BGMNSC32]
+        SAY 0x194 ~Your words are as sharp as my blade, though not half as shiny.  Oooo, shiny.~ [BGMNSC33]
+        SAY 0x1CC ~When asked about his past, MINSC proudly announces that he is a berserker warrior from the nation of Rashemen in the utter east. He is currently undertaking his dejemma, a ritual journey to manhood, and is seeking adventure and glory in battle. It is also his honor to be the bodyguard of a young Wychalarn of Rashemen named Dynaheir, and if anyone tries to harm her he will beat sense into their heads until they reconsider. He is unsure as to why she has led them to the Sword Coast, but his loyalty is unquestioning. If he serves her well and distinguishes himself in battle he hopes to be accepted into the Ice Dragon berserker lodge upon return to their homeland. So far Minsc considers his most notable experience in the world abroad to be the acquisition of his animal companion 'Boo,' a creature that he claims is a miniature giant space hamster. Apparently such things do exist in the Realms, but Minsc has surely taken too many blows to the head. He seems a good-natured fellow, but is all too willing to indulge his berserker nature.~
 END
 
 ///////////////////////////////
@@ -540,60 +540,58 @@ APPEND ~SPELL.IDS~
 3204 BOO_DETECT_EVIL~
 
 COPY_EXISTING ~Baldur.bcs~ ~override~
-  EXTEND_TOP ~Baldur.bcs~ ~NeJE\bdash\Boo\baf\sBaldur.baf~
+    EXTEND_TOP ~Baldur.bcs~ ~NeJE\bdash\Boo\baf\sBaldur.baf~
 
-COPY ~NeJE\bdash\Boo\itm_copy~           ~override~
-COPY ~NeJE\bdash\Boo\cre_copy~           ~override~
+COPY ~NeJE\bdash\Boo\itm_copy~ ~override~
+COPY ~NeJE\bdash\Boo\cre_copy~ ~override~
 
-COPY ~NeJE\bdash\Boo\cre\BOO.CRE~           ~override~
-  SAY NAME1 ~Boo~
-  SAY NAME2 ~Boo~
-  SAY 0xdc ~~ [CBooAtt1]
-  SAY 0xe0 ~~ [CBooAtt2]
-  SAY 0xe4 ~~ [CBooAtt3]
-  SAY HURT ~~ [CBooHurt]
-  SAY SELECT_COMMON1 ~~ [CBooSel1]
-  SAY SELECT_COMMON2 ~~ [CBooSel2]
-  SAY SELECT_COMMON3 ~~ [CBooSel3]
-  SAY SELECT_ACTION1 ~~ [CBooAct1]
-  SAY SELECT_ACTION2 ~~ [CBooAct2]
-  SAY SELECT_ACTION3 ~~ [CBooAct3]
-  SAY CRITICAL_HIT ~~ [CBooCrHi]
-  SAY CRITICAL_MISS ~~ [CBooCrMi]
-  SAY SPELL_DISRUPTED ~~ [CBooSpFa]
+COPY ~NeJE\bdash\Boo\cre\BOO.CRE~ ~override~
+    SAY NAME1 ~Boo~
+    SAY NAME2 ~Boo~
+    SAY 0xdc ~~ [CBooAtt1]
+    SAY 0xe0 ~~ [CBooAtt2]
+    SAY 0xe4 ~~ [CBooAtt3]
+    SAY HURT ~~ [CBooHurt]
+    SAY SELECT_COMMON1 ~~ [CBooSel1]
+    SAY SELECT_COMMON2 ~~ [CBooSel2]
+    SAY SELECT_COMMON3 ~~ [CBooSel3]
+    SAY SELECT_ACTION1 ~~ [CBooAct1]
+    SAY SELECT_ACTION2 ~~ [CBooAct2]
+    SAY SELECT_ACTION3 ~~ [CBooAct3]
+    SAY CRITICAL_HIT ~~ [CBooCrHi]
+    SAY CRITICAL_MISS ~~ [CBooCrMi]
+    SAY SPELL_DISRUPTED ~~ [CBooSpFa]
 
-COPY ~NeJE\bdash\Boo\itm\BOO.ITM~           ~override~
-  SAY NAME1 ~Boo~
-  SAY NAME2 ~Boo~
+COPY ~NeJE\bdash\Boo\itm\BOO.ITM~ ~override~
+    SAY NAME1 ~Boo~
+    SAY NAME2 ~Boo~
 
 COPY ~NeJE\bdash\Boo\spl\SPIN299.spl~ ~override~
-  SAY NAME1 ~Healing Lick~
-  SAY NAME2 ~Healing Lick~
+    SAY NAME1 ~Healing Lick~
+    SAY NAME2 ~Healing Lick~
 
 COPY ~NeJE\bdash\Boo\spl\SPIN204.spl~ ~override~
-  SAY NAME1 ~Detect Evil~
-  SAY NAME2 ~Detect Evil~
+    SAY NAME1 ~Detect Evil~
+    SAY NAME2 ~Detect Evil~
 
 COPY ~NeJE\bdash\Boo\spl\BooREST.spl~ ~override~
 
 COMPILE ~NeJE\bdash\Boo\baf\BOO.BAF~
 
-ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
-THEN BEGIN
-    COPY_EXISTING ~BGMINSC.bcs~  ~override~
+ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~BGMINSC.bcs~ ~override~
         EXTEND_TOP ~BGMINSC.BCS~ ~NeJE\bdash\Boo\baf\aMinsc.baf~
-    COPY_EXISTING ~MINSC.bcs~  ~override~
+    COPY_EXISTING ~MINSC.bcs~ ~override~
+        EXTEND_TOP ~MINSC.BCS~ ~NeJE\bdash\Boo\baf\aMinsc.baf~
+END ELSE BEGIN
+    COPY_EXISTING ~MINSC.bcs~ ~override~
         EXTEND_TOP ~MINSC.BCS~ ~NeJE\bdash\Boo\baf\aMinsc.baf~
 END
-ELSE BEGIN
-    COPY_EXISTING ~MINSC.bcs~  ~override~
-        EXTEND_TOP ~MINSC.BCS~ ~NeJE\bdash\Boo\baf\aMinsc.baf~
-END
-
 
 /////////////////////////////////////////////////////////
 // Improved Monk Class
 /////////////////////////////////////////////////////////
+
 BEGIN ~Improved Monk Class (by Vlad)~
 
 STRING_SET 45867 ~MONK: Monks are warriors who pursue perfection through contemplation as well as action. They are versatile fighters, especially skilled in combat without weapons or armor. Though monks cannot cast spells, they have a unique magic of their own. They channel a subtle energy, called ki, which allows them to perform amazing feats. The monk's best known feat is their ability to stun an opponent with an unarmed blow.
@@ -641,27 +639,28 @@ Disadvantages:
 -  The monk cannot wear armor~
 
 COPY_EXISTING ~ABCLASRQ.2da~ ~override~
-  SET_2DA_ENTRY 48 1 7 ~12~
-  SET_2DA_ENTRY 48 2 7 ~15~
-  SET_2DA_ENTRY 48 3 7 ~13~
-  SET_2DA_ENTRY 48 4 7 ~6~
-  SET_2DA_ENTRY 48 5 7 ~9~
+    SET_2DA_ENTRY 48 1 7 ~12~
+    SET_2DA_ENTRY 48 2 7 ~15~
+    SET_2DA_ENTRY 48 3 7 ~13~
+    SET_2DA_ENTRY 48 4 7 ~6~
+    SET_2DA_ENTRY 48 5 7 ~9~
 BUT_ONLY
 
-//COPY_EXISTING ~WEAPPROF.2da~ ~override~
-//    SET_2DA_ENTRY 12 51  1 ~5~
-//    SET_2DA_ENTRY 13 51  1 ~5~
-//    SET_2DA_ENTRY 16 51  1 ~5~
-//    SET_2DA_ENTRY 17 51  1 ~5~
-//    SET_2DA_ENTRY 18 51  1 ~5~
-//    SET_2DA_ENTRY 25 51  1 ~5~
-//    SET_2DA_ENTRY 33 51  1 ~2~
-//    SET_2DA_ENTRY 34 51  1 ~3~
-//BUT_ONLY
+/*
+COPY_EXISTING ~WEAPPROF.2da~ ~override~
+    SET_2DA_ENTRY 12 51  1 ~5~
+    SET_2DA_ENTRY 13 51  1 ~5~
+    SET_2DA_ENTRY 16 51  1 ~5~
+    SET_2DA_ENTRY 17 51  1 ~5~
+    SET_2DA_ENTRY 18 51  1 ~5~
+    SET_2DA_ENTRY 25 51  1 ~5~
+    SET_2DA_ENTRY 33 51  1 ~2~
+    SET_2DA_ENTRY 34 51  1 ~3~
+BUT_ONLY
+*/
 
 COPY ~NeJE/monk/CLABMO01.2DA~ ~override~
 COPY ~NeJE/monk/spl~ ~override~
-
 
 ///////////////////////////////
 //Adding Modified Jaheira
@@ -757,38 +756,38 @@ Disadvantages:
 
 COPY ~NeJE/jah/cre/VP_JAH10.CRE~ ~override/JAHEIR7.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH12.CRE~ ~override/JAHEIR8.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH13.CRE~ ~override/JAHEIR11.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEIR12.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEI12B.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE/jah/cre/VP_JAH14.CRE~ ~override/JAHEI14.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~
     THEN BEGIN
 //Jaheira creatures update - BGT
-COPY ~NeJE/jah/cre/JAHEIR.cre~  ~override/JAHEIR.cre~
+COPY ~NeJE/jah/cre/JAHEIR.cre~ ~override/JAHEIR.cre~
   SAY 0x1a0 #30770
   SAY 0x1a4 #30771
   SAY 0x1a8 #30772
@@ -872,7 +871,7 @@ END
   //DO NOTHING//
 END
 
-COPY ~NeJE/jah/itm/SPER07.ITM~  ~override~
+COPY ~NeJE/jah/itm/SPER07.ITM~ ~override~
     SAY NAME2 ~Spear of the Unicorn +4~
     SAY DESC ~Spear of the Unicorn +4
 This graceful spear is carved to resemble the elongated horn of the unicorn. Wielders of this spear are protected from evil, just as a unicorn might be. Whether the horn is or isn't an actual unicorn horn is the subject of much debate.
@@ -1046,10 +1045,10 @@ Not Usable By:
 BUT_ONLY
 
 COPY_EXISTING ~SW1H35.ITM~ ~override\SW1H35.ITM~
-    WRITE_BYTE  0x237  0x02
-    WRITE_BYTE  0x267  0x02
-    WRITE_BYTE  0x297  0x02
-    WRITE_BYTE  0x2C7  0x02*/
+    WRITE_BYTE 0x237  0x02
+    WRITE_BYTE 0x267  0x02
+    WRITE_BYTE 0x297  0x02
+    WRITE_BYTE 0x2C7  0x02*/
 
 COPY ~NeJE\bdash\itm\SW1H32.ITM~ ~override~
   SAY DESC ~Long sword +5:  Dragonslayer (Peridan)
@@ -1510,7 +1509,7 @@ COPY_EXISTING ~shadeld.cre~ ~override/shadeld.cre~
 
 BEGIN ~Restored Dak'kon's Blade (by Vlad)~
 
-COPY ~NeJE\bdash\dakkon\WA2DAK.ITM~         ~override~
+COPY ~NeJE\bdash\dakkon\WA2DAK.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Zerth Blade~
   SAY DESC ~Dak'kon's Zerth Blade +2
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
@@ -1535,7 +1534,7 @@ Not Usable By:
  Druid
  Cleric~
 
-COPY_EXISTING ~WA2DAK.ITM~  ~override~
+COPY_EXISTING ~WA2DAK.ITM~ ~override~
  READ_LONG  0x6a  "eff_offset"
  READ_SHORT 0x70  "glob_eff_cnt"
  SET ccc=0
@@ -1685,7 +1684,7 @@ COMPILE ~NeJE\bdash\nymph\NYMPH.BAF~
 BEGIN ~Dual Wielding Fix for Rogues (by aVENGER)~
 
 /* Old version removed, new version added. Thanks to aVENGER!
-COPY_EXISTING ~WEAPPROF.2DA~                 ~override~
+COPY_EXISTING ~WEAPPROF.2DA~ ~override~
 SET_2DA_ENTRY 34 7 1 ~3~
 SET_2DA_ENTRY 34 8 1 ~3~
 SET_2DA_ENTRY 34 16 1 ~3~
@@ -1746,29 +1745,6 @@ END
 
 LAF rogue_twf END
 
-////////////////////////////////////////////////////////
-//   Cromwell in Brynnlaw and Item Upgrade
-////////////////////////////////////////////////////////
-
-BEGIN ~Cromwell in Brynnlaw and Item Upgrade (by Vlad)~
-
-COPY_EXISTING ~AR1603.ARE~ ~override~
- WRITE_ASCII 0x94 ~AR1603~                 //setting area script
- WRITE_BYTE  (0x94+6) 0                    //terminating 0
-BUT_ONLY
-
-COMPILE ~NeJE\bdash\cromwell\AR1603.BAF~
-COMPILE ~NeJE\bdash\cromwell\rWSMITH.d~
-
-//EXTEND_BOTTOM ~AR0334.BAF~ ~NeJE\bdash\cromwell\eAR0334.BAF~
-
-COPY_EXISTING ~PPSTOR01.STO~      ~override~
-    ADD_STORE_ITEM + ~BELT08~ #0 #0 #0 ~IDENTIFIED~ #1
-    ADD_STORE_ITEM + ~BOOT01~ #0 #0 #0 ~IDENTIFIED~ #1
-//    ADD_STORE_ITEM + ~SW1H74~ #0 #0 #0 ~IDENTIFIED~ #1
-//    ADD_STORE_ITEM + ~SW1H73~ #0 #0 #0 ~IDENTIFIED~ #1
-//    ADD_STORE_ITEM + ~BLUN33~ #0 #0 #0 ~IDENTIFIED~ #1
-
 //////////////////////////////////////
 //
 //                    Anomen
@@ -1777,14 +1753,14 @@ COPY_EXISTING ~PPSTOR01.STO~      ~override~
 
 BEGIN ~Improved Character Anomen - Stats and Items (by Vlad)~
 
-COPY ~NeJE\bdash\Anomen\cre_copy~                    ~override~
+COPY ~NeJE\bdash\Anomen\cre_copy~ ~override~
 
-/*COPY_EXISTING ~ANOMEN6.CRE~       ~override~
-              ~ANOMEN7.CRE~       ~override~
-              ~ANOMEN8.CRE~       ~override~
-              ~ANOMEN9.CRE~       ~override~
-              ~ANOMEN10.CRE~      ~override~
-              ~ANOMEN12.CRE~      ~override~
+/*COPY_EXISTING ~ANOMEN6.CRE~ ~override~
+              ~ANOMEN7.CRE~ ~override~
+              ~ANOMEN8.CRE~ ~override~
+              ~ANOMEN9.CRE~ ~override~
+              ~ANOMEN10.CRE~ ~override~
+              ~ANOMEN12.CRE~ ~override~
  READ_LONG  0x2bc  "items_offset"
  READ_LONG  0x2c0  "items_num"
  FOR( cnt=0; cnt<"%items_num%"; cnt=cnt+1 ) BEGIN       //items loop
@@ -1795,7 +1771,7 @@ COPY ~NeJE\bdash\Anomen\cre_copy~                    ~override~
  END
 BUT_ONLY*/
 
-COPY ~NeJE\bdash\Anomen\itm\HelmAnom.itm~  ~override~
+COPY ~NeJE\bdash\Anomen\itm\HelmAnom.itm~ ~override~
     SAY NAME1 #6346
     SAY NAME2 ~Helm of Radiance~
     SAY UNIDENTIFIED_DESC #19725
@@ -1831,7 +1807,7 @@ Weight: 2
 Usable By:
  Anomen~
 
-COPY ~NeJE\bdash\Anomen\itm\ShldAnom.itm~  ~override~
+COPY ~NeJE\bdash\Anomen\itm\ShldAnom.itm~ ~override~
     SAY NAME1 #8482
     SAY NAME2 #8482
     SAY UNIDENTIFIED_DESC #6819
@@ -1880,17 +1856,17 @@ Thieving Skills Bonus: +50%
 Usable By:
  Nalia~
 
-COPY ~NeJE\bdash\Nalia\cre_copy~                    ~override~
+COPY ~NeJE\bdash\Nalia\cre_copy~ ~override~
 
 //Improved Keep
-COPY ~NeJE\bdash\Nalia\dearnise~                    ~override~
+COPY ~NeJE\bdash\Nalia\dearnise~ ~override~
 COPY_EXISTING ~AR1301.bcs~ ~override~
   EXTEND_TOP ~AR1301.bcs~ ~NeJE\bdash\Nalia\baf\eAR1301.baf~
 COPY_EXISTING ~AR1302.bcs~ ~override~
   EXTEND_TOP ~AR1302.bcs~ ~NeJE\bdash\Nalia\baf\eAR1302.baf~
 
 //Fixing the bug when the copy of original Nalia is brought back
-COPY ~NeJE\bdash\Nalia\copy_bcs~                    ~override~
+COPY ~NeJE\bdash\Nalia\copy_bcs~ ~override~
 
 /*COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
   READ_LONG 0x30 "npc_off"
@@ -1914,7 +1890,7 @@ BUT_ONLY*/
 
 BEGIN ~Improved Character Jan Jansen (by Vlad)~
 
-COPY ~NeJE\bdash\Jan\copy~                    ~override~
+COPY ~NeJE\bdash\Jan\copy~ ~override~
 COPY ~NeJE\bdash\Jan\itm\XBOW12.ITM~ ~override~
   SAY UNIDENTIFIED_DESC ~This is Jan Jansen's crossbow, and such is its complexity that only he can use it.  Likewise, only he can make the special ammunition it is capable of firing.  Substantial tinkering on this launcher has made it especially accurate.
 
@@ -2017,6 +1993,9 @@ Usable By:
 
 BEGIN ~Improved Character Aerie - Wildwanderer of Baervan (by Vlad)~
 
+//2251
+STRING_SET ~Aerie, should you be willing, we would appreciate a cleric/mage with your heart and stature.~ ~Aerie, should you be willing, we would appreciate a good cleric with your heart and stature.~
+
 APPEND ~SPELL.IDS~
 ~3177 Aerie_Entangle
 3167 Aerie_Barkskin
@@ -2041,7 +2020,7 @@ APPEND ~SPELL.IDS~
 3187 Aerie_Elemental_Summoning
 3188 Aerie_Greater_Elemental_Summoning~
 
-COPY ~NeJE\bdash\Aerie\spl_copy~                    ~override~
+COPY ~NeJE\bdash\Aerie\spl_copy~ ~override~
 
 ADD_KIT ~WILWANDERER_OF_BAERVAN~
 
@@ -2118,33 +2097,33 @@ COPY ~NeJE\bdash\Aerie\copy\AERBOD01.CRE~ ~override\AERBOD01.CRE~
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE6.cre~ ~override\AERIE6.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE7.cre~ ~override\AERIE7.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE9.cre~ ~override\AERIE9.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE10.CRE~ ~override\AERIE10.CRE~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE11.cre~ ~override\AERIE11.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Aerie\copy\AERIE12.cre~ ~override\AERIE12.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY_EXISTING ~AR0607.bcs~ ~override~
        DECOMPILE_AND_PATCH BEGIN
@@ -2356,35 +2335,35 @@ Disadvantages:
 
 COPY ~NeJE\bdash\edwin\EDWIN7.cre~ ~override\EDWIN7.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN9.cre~ ~override\EDWIN9.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN11.cre~ ~override\EDWIN11.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~NeJE\bdash\edwin\spl_copy~                    ~override~
+COPY ~NeJE\bdash\edwin\spl_copy~ ~override~
 
 COPY_EXISTING ~EDWIN.bcs~ ~override~
        DECOMPILE_AND_PATCH BEGIN
@@ -2400,7 +2379,7 @@ SetBeenInPartyFlags()
 SetGlobal("TurnedFemale","LOCALS",0)~
         END
 
-COPY ~NeJE/bdash/edwin/MISC89.ITM~            ~override~
+COPY ~NeJE/bdash/edwin/MISC89.ITM~ ~override~
     SAY DESC ~This is Edwin's birthright, inlaid with his family stone.
 
 STATISTICS:
@@ -2524,37 +2503,37 @@ Disadvantages:
 
 COPY ~NeJE\bdash\viccy\VICONI6.cre~ ~override\VICONI6.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI8.cre~ ~override\VICONI8.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI9.cre~ ~override\VICONI9.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI11.CRE~ ~override\VICONI11.CRE~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI13.cre~ ~override\VICONI13.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\viccy\VICONI16.cre~ ~override\VICONI16.cre~
   WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~NeJE\bdash\viccy\spl_copy~                    ~override~
+COPY ~NeJE\bdash\viccy\spl_copy~ ~override~
 
-COPY ~NeJE/bdash/viccy/VicAmul.ITM~            ~override~
+COPY ~NeJE/bdash/viccy/VicAmul.ITM~ ~override~
     SAY NAME2 ~Dark Shadow of Shar~
     SAY DESC ~Dark Shadow of Shar
 This amulet is cold beneath your touch and bears a weight far greater than its size might suggest. The black round-shaped stone is inserted into it, and the symbols of an ancient tongue are inscribed on one side, the strange words shimmering and glowing with an inner white light.
@@ -2785,18 +2764,18 @@ END
   //DO NOTHING//
 END
 
-COPY ~NeJE\bdash\Immy\copy\CUT01.bcs~    ~override\CUT01.bcs~
+COPY ~NeJE\bdash\Immy\copy\CUT01.bcs~ ~override\CUT01.bcs~
 
 ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
  THEN BEGIN
-        COPY ~NeJE\bdash\Immy\copy\TELE0700.bcs~    ~override\TELE0700.bcs~
+        COPY ~NeJE\bdash\Immy\copy\TELE0700.bcs~ ~override\TELE0700.bcs~
 END
  ELSE BEGIN
   //DO NOTHING//
 END
 
-COPY ~NeJE\bdash\Immy\copy\CUTD1.bcs~    ~override\CUTD1.bcs~
-COPY ~NeJE\bdash\Immy\copy\CUT01G.bcs~    ~override\CUT01G.bcs~
+COPY ~NeJE\bdash\Immy\copy\CUTD1.bcs~ ~override\CUTD1.bcs~
+COPY ~NeJE\bdash\Immy\copy\CUT01G.bcs~ ~override\CUT01G.bcs~
 
 //Creature files
 COPY ~NeJE\bdash\Immy\copy\CSIMOEN.cre~ ~override\CSIMOEN.cre~
@@ -2805,35 +2784,35 @@ COPY ~NeJE\bdash\Immy\copy\PPIMOEN.cre~ ~override\PPIMOEN.cre~
 
 COPY ~NeJE\bdash\Immy\cre\IMOEN10.cre~ ~override\IMOEN10.cre~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 COPY ~NeJE\bdash\Immy\cre\IMOEN6.cre~ ~override\IMOEN6.cre~
     WRITE_SHORT 0x244 0 // doesn't change
-  WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-  WRITE_BYTE  0x247 0x40 // doesn't change
+  WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
 
 ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
  THEN BEGIN
         COPY_EXISTING ~IMOEN1.cre~ ~override\IMOEN1.cre~
             WRITE_SHORT 0x244 0 // doesn't change
-          WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-          WRITE_BYTE  0x247 0x40 // doesn't change
+          WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+          WRITE_BYTE 0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN2.cre~ ~override\IMOEN2.cre~
             WRITE_SHORT 0x244 0 // doesn't change
-          WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-             WRITE_BYTE  0x247 0x40 // doesn't change
+          WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+             WRITE_BYTE 0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN4.cre~ ~override\IMOEN4.cre~
             WRITE_SHORT 0x244 0 // doesn't change
-             WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-             WRITE_BYTE  0x247 0x40 // doesn't change
+             WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+             WRITE_BYTE 0x247 0x40 // doesn't change
 
         COPY_EXISTING ~IMOEN61.cre~ ~override\IMOEN61.cre~
             WRITE_SHORT 0x244 0 // doesn't change
-          WRITE_BYTE  0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
-          WRITE_BYTE  0x247 0x40 // doesn't change
+          WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+          WRITE_BYTE 0x247 0x40 // doesn't change
 END
 
 ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~
@@ -2857,7 +2836,7 @@ END
   //DO NOTHING//
 END
 
-COPY ~NeJE\bdash\Immy\pics~            ~override~
+COPY ~NeJE\bdash\Immy\pics~ ~override~
 
 //////////////////////////////////////
 //
@@ -2867,7 +2846,7 @@ COPY ~NeJE\bdash\Immy\pics~            ~override~
 
 BEGIN ~Enhanced Encounter with Illasera in ToB (by Vlad)~
 
-COPY ~NeJE\bdash\illasera\copy~            ~override~
+COPY ~NeJE\bdash\illasera\copy~ ~override~
 
 COPY ~NeJE\bdash\illasera\itm\RiSw1H02.itm~ ~override/RiSw1H02.itm~
   SAY NAME2 ~Rithtellium Short Sword +5~
@@ -2910,8 +2889,8 @@ Not Usable By:
 
 BEGIN ~Enhanced Encounter with Gromnir in ToB (by Vlad)~
 
-COPY ~NeJE\bdash\gromnir\copy~            ~override~
-COPY ~NeJE\bdash\gromnir\itm\AXECHAR2.ITM~            ~override\AXECHAR2.ITM~
+COPY ~NeJE\bdash\gromnir\copy~ ~override~
+COPY ~NeJE\bdash\gromnir\itm\AXECHAR2.ITM~ ~override\AXECHAR2.ITM~
     SAY NAME2 ~Charged Battle Axe +5~
     SAY DESC ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation and although not apparent at first, a slight blue glow can be seen emanating from the runes.
 
@@ -2959,7 +2938,7 @@ TriggerActivation("TRAN5001",TRUE)~
 
 BEGIN ~Enhanced Encounter with Yaga Shura in ToB (by Vlad)~
 
-COPY ~NeJE\bdash\yagashur\copy~            ~override~
+COPY ~NeJE\bdash\yagashur\copy~ ~override~
 
 //////////////////////////////////////
 //
@@ -2969,7 +2948,7 @@ COPY ~NeJE\bdash\yagashur\copy~            ~override~
 
 BEGIN ~Enhanced Encounter with Abazigal in ToB (by Vlad)~
 
-COPY ~NeJE\bdash\abazig\copy~            ~override~
+COPY ~NeJE\bdash\abazig\copy~ ~override~
 
 COPY ~NeJE\bdash\abazig\cre\BazDra04.cre~ ~override\BazDra04.cre~
     SAY NAME1 ~Purple~
@@ -2990,6 +2969,29 @@ CreateCreature("BazDra04",[694.945],12)~
 //
 /////////////////////////////////////////////////////////
 BEGIN ~Items Upgrade (by Vlad)~
+
+////////////////////////////////////////////////////////
+//   Cromwell in Brynnlaw and Item Upgrade
+////////////////////////////////////////////////////////
+
+//BEGIN ~Cromwell in Brynnlaw and Item Upgrade (by Vlad)~
+
+COPY_EXISTING ~AR1603.ARE~ ~override~
+ WRITE_ASCII 0x94 ~AR1603~                 //setting area script
+ WRITE_BYTE (0x94+6) 0                    //terminating 0
+BUT_ONLY
+
+COMPILE ~NeJE\bdash\cromwell\AR1603.BAF~
+COMPILE ~NeJE\bdash\cromwell\rWSMITH.d~
+
+//EXTEND_BOTTOM ~AR0334.BAF~ ~NeJE\bdash\cromwell\eAR0334.BAF~
+
+COPY_EXISTING ~PPSTOR01.STO~ ~override~
+    ADD_STORE_ITEM + ~BELT08~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM + ~BOOT01~ #0 #0 #0 ~IDENTIFIED~ #1
+//  ADD_STORE_ITEM + ~SW1H74~ #0 #0 #0 ~IDENTIFIED~ #1
+//  ADD_STORE_ITEM + ~SW1H73~ #0 #0 #0 ~IDENTIFIED~ #1
+//  ADD_STORE_ITEM + ~BLUN33~ #0 #0 #0 ~IDENTIFIED~ #1
 
 EXTEND_TOP ~AR0334.bcs~ ~NeJE/bdash/cromwell/eAR0334.baf~
 
@@ -3024,7 +3026,7 @@ Not Usable By:
  Kensai~
 
 //2. Enhanced Carsomyr
-COPY ~NeJE/bdash/cromwell/LILARCO2.ITM~          ~override/LILARCO2.ITM~
+COPY ~NeJE/bdash/cromwell/LILARCO2.ITM~ ~override/LILARCO2.ITM~
   SAY NAME2 ~Enhanced Carsomyr~
   SAY DESC ~The Holy Avenger: Carsomyr
 Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerun, though its origin and history is thought purposefully forgotten, such that the sword itself never overshadow the importance of the struggles that must be fought today.  It is infused with the very essence of virtue, and requires as much from any paladin that would hope to wield it.  The evils of the Realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease.  Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.
@@ -3059,7 +3061,7 @@ Not Usable By:
  Beast Master~
 
 //3. Selune's Promise +5
-COPY ~NeJE/bdash/cromwell/SIMACE3.ITM~          ~override/SIMACE3.ITM~
+COPY ~NeJE/bdash/cromwell/SIMACE3.ITM~ ~override/SIMACE3.ITM~
   SAY NAME2 ~Selune's Promise +5~
   SAY DESC ~A weapon once owned by a grief-stricken high priestess of the Moonmaiden, Selune's Promise has a short and sad history. Fassa the Melancholy (as she is now known) was the head of a band of Selunite adventurers dedicated to destroying undead creatures wherever they found them. The band was initially quite successful, rarely suffering any casualties. Tymora's luck could not stay with them forever, though.
 
@@ -3173,7 +3175,7 @@ Only Usable By:
  Mage (Single-, Dual-, and Multi-Class)~
 
 //6. Enhanced Messenger of Sseth
-COPY ~NeJE/bdash/cromwell/BOWMESS2.ITM~          ~override/BOWMESS2.ITM~
+COPY ~NeJE/bdash/cromwell/BOWMESS2.ITM~ ~override/BOWMESS2.ITM~
   SAY NAME2 ~Enhanced Messenger of Sseth~
   SAY DESC ~This wicked bow was crafted thousands of years ago for a powerful yuan-ti archer named Apali. The number of men, women, and children Apali killed with the aid of the bow is almost unbelievable, as the soldier waged war against humans for hundreds of years before he was finally laid low in Chessenta by a priest of Assuran, god of vengeance. Apali had killed the priest's great-great grandfather in Chult over a hundred years earlier. The item is easily recognized because of the red and black banding on the grip and the carved snake heads at the ends of the bow. The red and black bandings represent Apali's family, from a caste of priests. The snake heads represent Sseth, the god of the yuan-ti.
 
@@ -3203,7 +3205,7 @@ Not Usable By:
  Thief~
 
 //7. Enhanced Firetooth
-COPY ~NeJE/bdash/cromwell/XBOW15EN.ITM~          ~override/XBOW15EN.ITM~
+COPY ~NeJE/bdash/cromwell/XBOW15EN.ITM~ ~override/XBOW15EN.ITM~
   SAY NAME2 ~Enhanced Firetooth~
   SAY DESC ~One of the most powerful crossbows in the realms, Firetooth has no need for ammunition as it automatically launches magical arrows of fire. Enhanced by Cromwell, its missiles are now more accurate and more powerful. Firetooth can fire these enchanted missiles, so there is no need for ammunition.
 
@@ -3229,7 +3231,7 @@ Not Usable By:
  Cavalier~
 
 //9. Enhanced Sebastian's Dagger
-COPY ~NeJE/bdash/cromwell/DAGSEB2.ITM~          ~override/DAGSEB2.ITM~
+COPY ~NeJE/bdash/cromwell/DAGSEB2.ITM~ ~override/DAGSEB2.ITM~
   SAY NAME2 ~Sebastian's Dagger (Enhanced)~
   SAY DESC ~This dagger weighs heavily in your hand, and is warm to the touch. The gem mounted in the hilt seems to have an inner light of some sort, though how it can have such illuminations and still be so deathly black at its core, you do not know. This particular dagger is magical, having special bonuses to its speed, accuracy, and damage it causes. Also, since it is magical, is it capable of striking opponents that are immune to normal weapons, such as vampires, elementals and mummies.
 
