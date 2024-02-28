@@ -1,0 +1,34 @@
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    COMPILE ~NeJE/KTE/baf~
+    COMPILE ~NeJE/KTE/dlg~
+
+    COPY_EXISTING ~ARD016.bcs~ ~override/ARD016.bcs~
+        EXTEND_TOP ~ARD016.bcs~ ~NeJE/KTE/sExt/sARD016.baf~
+
+    COPY_EXISTING ~ARU005.ARE~ ~override~
+        WRITE_ASCII 0x94 ~ARU005~                 //setting area script
+        WRITE_BYTE (0x94+6) 0                    //terminating 0
+    BUT_ONLY
+
+    COPY ~NeJE/KTE/cre/DALTON6.cre~ ~override~
+        SAY NAME1 ~Dalton~
+        SAY NAME2 ~Dalton~
+    COPY ~NeJE/KTE/cre/DALTON7.cre~ ~override~
+        SAY NAME1 ~Dalton~
+        SAY NAME2 ~Dalton~
+    COPY ~NeJE/KTE/cre/DALTON8.cre~ ~override~
+        SAY NAME1 ~Dalton~
+        SAY NAME2 ~Dalton~
+    COPY ~NeJE/KTE/cre/GINNY.cre~ ~override~
+        SAY NAME1 ~Ginny~
+        SAY NAME2 ~Ginny~
+    COPY ~NeJE/KTE/cre/GINNY6.cre~ ~override~
+        SAY NAME1 ~Ginny~
+        SAY NAME2 ~Ginny~
+    COPY ~NeJE/KTE/cre/GINNY7.cre~ ~override~
+        SAY NAME1 ~Ginny~
+        SAY NAME2 ~Ginny~
+    COPY ~NeJE/KTE/cre/GINNY8.cre~ ~override~
+        SAY NAME1 ~Ginny~
+        SAY NAME2 ~Ginny~
+END

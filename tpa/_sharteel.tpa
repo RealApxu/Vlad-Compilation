@@ -5,8 +5,6 @@
 //_____________________________________//
 //                                     //
 
-BEGIN ~"Firewalker" Shar-Teel (custom kit and continuous character)~
-
 APPEND ~SPELL.IDS~
 ~3367 SharTeel_Fireball
 3368 SharTeel_FireShieldRed

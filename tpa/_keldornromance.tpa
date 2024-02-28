@@ -4,7 +4,6 @@
 //        Keldorn Romance v1.02          //
 //______________________________________//
 //                                      //
-BEGIN ~Keldorn Romance v1.02~
 
 COPY ~NeJE/KeldornR/img~ ~override~
 COPY ~NeJE/KeldornR/are~ ~override~

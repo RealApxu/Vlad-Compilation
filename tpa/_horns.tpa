@@ -1,0 +1,26 @@
+//Improved Horns of Valhalla
+BEGIN ~Improved Horns of Valhalla~
+
+COPY ~NeJE\bdash\itm\MISC3I.ITM~ ~override~
+  SAY DESC ~Silver Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a twelveth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~NeJE\bdash\itm\MISC3J.ITM~ ~override~
+  SAY DESC ~Bronze Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a fifteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~NeJE\bdash\itm\MISC3K.ITM~ ~override~
+  SAY DESC ~Iron Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth an eighteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~

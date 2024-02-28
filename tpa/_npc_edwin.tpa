@@ -1,0 +1,150 @@
+//////////////////////////////////////
+//
+//                 Edwin
+//
+/////////////////////////////////////
+
+APPEND ~SPELL.IDS~
+~3315 Edwin_Power_Word_Silence
+3321 Edwin_Power_Word_Stun
+3328 Edwin_Power_Word_Blind
+3320 Edwin_Prismatic_Spray
+3316 Edwin_Conjure_Fire_Elemental
+3335 Edwin_Conjure_Earth_Elemental
+3322 Edwin_Summon_Efreeti
+3326 Edwin_Symbol_Fear
+3329 Edwin_Symbol_Stun
+3331 Edwin_Gate
+3333 Edwin_Dragon_Breath
+3334 Edwin_Summon_Dark_Planetar
+3145 Edwin_Change_Portrait
+3146 Edwina_Change_Portrait~
+
+ADD_KIT ~RED_WIZARD~
+
+~RED_WIZARD           1           0           1           1           0           0           0           0~
+
+~RED_WIZARD 0    2    0    0    2    0    0    2    0    0    0    0    0    0    0    2    0    0    0    0    0    0    2    0    0    0    2    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0~
+
+~RED_WIZARD      0       0       0       9       0       0~
+
+~RED_WIZARD      0       0       0       0       0       0~
+
+~RED_WIZARD      0       0       0       17      0       0~
+
+~RED_WIZARD      0       0       0       15      0       0~
+
+~RED_WIZARD      0       1       1       0       1       1       0       1       1~
+
+~RED_WIZARD      1       1       0       1       0       0~
+
+~NeJE\bdash\edwin\CLABEDW.2DA~
+
+~~
+
+~0x00000000     1~
+
+~Ma0~
+
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLING05 DAGG05,40 STAF20~
+
+SAY ~red wizard~
+
+SAY ~Red Wizard~
+
+SAY ~RED WIZARD OF THAY: The Red Wizards are the masters of Thay, the conquerors of that land's native Rashemi, and the would-be magical overlords of Faerun. They focus on a school of magic more intently than any specialist, achieving incredible mastery of magic within a very narrow focus. Seen as cruel and evil tyrants by people across Toril, a few choose to leave their region, assume secret identities, and practice magic without having to worry about political alliances and possible slave uprisings.
+
+The Red Wizards at their height were the enemies of many forces in Toril and received support from demons, devils, and drow. Amongst those who opposed them were the Witches of Rashemen, the Seven Sisters and their allies, the goodly Harpers, and even the Zhentarim, who disliked the Wizards encroaching on their territory.
+
+After another failed attempt at securing Rashemen in 1357 DR, the Red Wizards planned to infiltrate the nations of Faerun legitimately ' in Thayan enclaves which would publicly sell magic items and quietly also traffic drugs, wicked spells, and slaves. Using these they hoped to eventually have strongholds and resulting political infiltration that would make them indispensable and powerful, and eventually get them something along the lines of world domination.
+
+Despite the general distrust and dislike that most felt towards the Red Wizards, the mages were still able to extend their power to almost every corner of the Realms, running their enclaves as planned in towns where slaving was otherwise banned. From here they ran a lucrative business in the trade of magical items, spells and artifacts, making them virtually indispensable to many of their clients, and as such the wizards expanded their sphere of influence ever further.
+
+The final blow to the Red Wizards as they once stood came when the last remaining zulkirs, decades later, interrupted Szass Tam's plot to become a being of godlike power, preventing his ritual from reaching completion. Their efforts cost them their lives but likely saved Faerun from one of the greatest threats it might have ever faced and prevented Szass Tam from ever attempting the ritual again - at least so long as it was conducted on Thayan soil. For the Red Wizards however, the death of the zulkirs ended what the Red Wizards once had been and gave way for the new order.
+
+The Red Wizards in the end transformed their old enclaves into their homes. What had once been a facade of a purpose, the accumulation of profit through selling magical items, became fact as the Red Wizards' goals transformed entirely. By 1479 DR few individuals associated the name "Red Wizard" with Thay but instead with a loose confederacy of merchant arcanists and those who believed otherwise were, in fact, mistaken.
+
+Many traditions of the old Red Wizards were lost in the transformation and modern Red Wizards don't maintain the same Mulani traditions of shaved heads and tattoos that the old organization did. Most of the Red Wizards are actual wizards, but not all are, and the title of Red Wizard is generally inherited from parent to child, with exceptions in the case of adoption or marriage whereas in the past the Red Wizards were recruited from talented wizards. Red Wizard enclaves are essentially self-run, some by a single individual, others by a small council of wizards. Most of these enclaves are found within the lands bordering the Sea of Fallen Stars and those nations where Red Wizards are found almost certainly have an enclave within their capital city.
+
+Advantages:
+-  As many other Red Wizards, Edwin can specialise in any weapon that a mage can use.
+-  In addition to spells Edwin learns, he can cast a limited number of conjuration/summoning spells, which become available from his innate slots as he advances levels:
+ At 12th, 15th and 19th level, Edwin can cast Power Words of Silence, Stun and Blind
+ At 14th, 20th and 26th level, Edwin can conjure Fire and Earth Elementals, and cast Prismatic Spray
+ At 16th, 22nd and 28th level, Edwin can summon Efteeti, and draw the Symbols of Fear and Stun
+ At 18th, 24th and 30th level, Edwin can summon Dark Planetar, and cast Gate and Dragon Breath
+
+Disadvantages:
+-  None~
+
+COPY ~NeJE\bdash\edwin\EDWIN7.cre~ ~override\EDWIN7.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\EDWIN9.cre~ ~override\EDWIN9.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\EDWIN11.cre~ ~override\EDWIN11.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\edwin\spl_copy~ ~override~
+
+COPY_EXISTING ~EDWIN.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY
+~SetGlobal("TurnedFemale","LOCALS",1)~
+~ApplySpell(Myself,Edwin_Change_Portrait)
+SetBeenInPartyFlags()
+SetGlobal("TurnedFemale","LOCALS",1)~
+        REPLACE_TEXTUALLY
+~SetGlobal("TurnedFemale","LOCALS",0)~
+~ApplySpell(Myself,Edwina_Change_Portrait)
+SetBeenInPartyFlags()
+SetGlobal("TurnedFemale","LOCALS",0)~
+    END
+
+COPY ~NeJE/bdash/edwin/MISC89.ITM~ ~override~
+    SAY DESC ~This is Edwin's birthright, inlaid with his family stone.
+
+STATISTICS:
+
+Equipped Abilities:
+ Max Hit Points: +25
+ Magic Resistance: +15%
+ Resistance to Magic Damage: +50% (magic attacks will do half of full damage)
+ Fire Resistance Bonus: +50%
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects)
+
+Special Abilities:
+ Grants three extra spells of each level
+ Improves Casting Speed by x3 factor
+ Vocalize
+
+Armor Class Bonus: +2
+THAC0 Bonus: +2
+Saving Throws Bonus: +2
+
+Weight:  3
+Usable By:
+ Edwin~

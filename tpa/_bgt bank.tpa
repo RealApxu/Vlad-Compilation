@@ -1,0 +1,187 @@
+//__________________________________________//
+//                                          //
+//          Items & Stores in BGT           //
+//__________________________________________//
+//                                          //
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    COPY ~NeJE\bdash\BGTComp\itm\SW2H06.ITM~ ~override~
+
+    //Merchant League Store (Bank)
+    COPY_EXISTING ~AR7228.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY
+~CreateCreature("ALDETH",[217.491],0)~
+~SetGlobal("VP_MyBank","GLOBAL",1)
+CreateCreature("ALDETH",[217.491],0)~
+    END
+
+    //Reputation for Bank
+    COPY_EXISTING ~AR7225.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY
+~Global("SarevokBoutToDie","GLOBAL",2)~
+~Global("SarevokBoutToDie","GLOBAL",2)
+ReputationGT(Player1,8)~
+            REPLACE_TEXTUALLY
+~SetGlobal("SarevokBoutToDie","GLOBAL",3)~
+~SetGlobal("SarevokBoutToDie","GLOBAL",3)
+ReputationInc(2)~
+        END
+        EXTEND_BOTTOM ~AR7225.bcs~ ~NeJE\bdash\BGTcomp\bank\aAR7225.baf~
+
+    COMPILE ~NeJE/bdash/BGTcomp/bank/aAldeth.d~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPVOUC10.ITM~ ~override/VPVOUC10.ITM~
+        SAY NAME1 ~Merchant League Banknote~
+        SAY NAME2 ~Merchant League Banknote~
+        SAY UNIDENTIFIED_DESC ~Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+        SAY DESC ~A 10,000 gp Banknote
+
+Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPVOUC25.ITM~ ~override/VPVOUC25.ITM~
+        SAY NAME1 ~Merchant League Banknote~
+        SAY NAME2 ~Merchant League Banknote~
+        SAY UNIDENTIFIED_DESC ~Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+        SAY DESC ~A 25,000 gp Banknote
+
+Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPVOUC50.ITM~ ~override/VPVOUC50.ITM~
+        SAY NAME1 ~Merchant League Banknote~
+        SAY NAME2 ~Merchant League Banknote~
+        SAY UNIDENTIFIED_DESC ~Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+        SAY DESC ~A 50,000 gp Banknote
+
+Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPVOU100.ITM~ ~override/VPVOU100.ITM~
+        SAY NAME1 ~Merchant League Banknote~
+        SAY NAME2 ~Merchant League Banknote~
+        SAY UNIDENTIFIED_DESC ~Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+        SAY DESC ~A 100,000 gp Banknote
+
+Banknote is a promissory note or certificate issued by a bank that bears monetary value and can be exchanged for a certain amount of cash.~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPAmBelt.sto~ ~override/VPAmBelt.sto~
+        SAY STORE_NAME ~Quiver~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPAmBelt.itm~ ~override/VPAmBelt.itm~
+        SAY NAME1 ~Quiver~
+        SAY NAME2 ~Quiver~
+        SAY UNIDENTIFIED_DESC ~This quiver is ideally suited for holding arrows, bullets, darts and bolts.
+
+STATISTICS:
+
+Capacity: 1200 missile units in total
+Weight: 2~
+    SAY DESC ~This quiver is ideally suited for holding arrows, bullets, darts and bolts.
+
+STATISTICS:
+
+Capacity: 1200 missile units in total
+Weight: 2~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPGenBag.sto~ ~override/VPGenBag.sto~
+        SAY STORE_NAME ~Cloth Sack~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPGenBag.itm~ ~override/VPGenBag.itm~
+    SAY NAME1 ~Cloth Sack~
+    SAY NAME2 ~Cloth Sack~
+        SAY UNIDENTIFIED_DESC ~A common cloth sack of about 1 feet by 3 feet in size and of limited capacity.
+
+STATISTICS:
+
+Capacity: 60 items (stackable or not)
+Weight: 5~
+        SAY DESC ~A common cloth sack of about 1 feet by 3 feet in size and of limited capacity.
+
+STATISTICS:
+
+Capacity: 60 items (stackable or not)
+Weight: 5~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPPtnBag.sto~ ~override/VPPtnBag.sto~
+        SAY STORE_NAME ~Potion Case~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPPtnBag.itm~ ~override/VPPtnBag.itm~
+        SAY NAME1 ~Potion Case~
+        SAY NAME2 ~Potion Case~
+        SAY UNIDENTIFIED_DESC ~Typically carried by traveling healers, this small leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel. Regardless of how many potions are contained in this case, it always weighs the same amount.
+
+STATISTICS:
+
+Capacity: 100 bottles
+Weight: 2~
+        SAY DESC ~Typically carried by traveling healers, this small leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel. Regardless of how many potions are contained in this case, it always weighs the same amount.
+
+STATISTICS:
+
+Capacity: 100 bottles
+Weight: 2~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPScrBag.sto~ ~override/VPScrBag.sto~
+        SAY STORE_NAME ~Scroll Tubus~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPScrBag.itm~ ~override/VPScrBag.itm~
+        SAY NAME1 ~Scroll Tubus~
+        SAY NAME2 ~Scroll Tubus~
+        SAY UNIDENTIFIED_DESC ~This sturdy tubular container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.
+
+STATISTICS:
+
+Capacity: 100 scrolls
+Weight: 2~
+        SAY DESC ~This sturdy tubular container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.
+
+STATISTICS:
+
+Capacity: 45 scrolls
+Weight: 2~
+
+    COPY ~NeJE/bdash/BGTcomp/itm/NEJWOLF.ITM~ ~override~
+
+    COPY ~NeJE/bdash/BGTcomp/itm/BOOKNEJ.ITM~ ~override~
+        SAY NAME2 ~Manual of Weapon Expertise~
+        SAY DESC ~A typical manual of weapon expertise provides the reader with a strictly regimented routine of daily training with a weapon of choice designed to significantly improve combat skills of the trainee. As if this isn't enough, the manual is also magically enhanced, thereby allowing an individual to raise his/her THAC0 and damage inflicted by three points each. Unfortunately, the manual will disappear after a single use.
+
+STATISTICS:
+
+THAC0:  +3 bonus
+Damage:  +3 bonus
+Special:  The book is consumed upon use.
+Usage:  Place into quick item slot.~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/VPNJCLCK.ITM~ ~override~
+        SAY NAME1 ~Cloak of the Greater Werewolf~
+        SAY NAME2 ~Cloak of the Greater Werewolf~
+        SAY DESC ~Cloak of the Greater Werewolf:  *Relair's Mistake*
+A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes. Relair was not so lucky.
+
+STATISTICS:
+
+Special:  Polymorph into greater werewolf at will
+Weight:  3
+Not Usable By:
+Wizard Slayer~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/aldeth.sto~ ~override/aldeth.sto~
+        SAY STORE_NAME ~Merchant League~
+        ADD_STORE_ITEM + ~VPNJCLCK~ #0 #0 #0 ~IDENTIFIED~ #1
+        ADD_STORE_ITEM + ~BOOKNEJ~ #0 #0 #0 ~IDENTIFIED~ #1
+
+    COPY ~NeJE/bdash/BGTcomp/bank/MercBank.sto~ ~override/MercBank.sto~
+        SAY STORE_NAME ~Merchant Bank~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/MercBank.cre~ ~override/MercBank.cre~
+        SAY NAME1 ~League Merchant~
+        SAY NAME2 ~League Merchant~
+
+    COMPILE ~NeJE/bdash/BGTcomp/bank/MercBank.d~
+
+    COPY_EXISTING ~AR0700.bcs~ ~override/AR0700.bcs~
+        EXTEND_TOP ~AR0700.bcs~ ~NeJE/bdash/BGTcomp/bank/bnAR0700.baf~
+
+    COPY ~NeJE/bdash/BGTcomp/bank/ulgoth.sto~ ~override/ulgoth.sto~
+END

@@ -1,0 +1,54 @@
+//_________________________________________________//
+//                                                 //
+//      Edwin - Improved Character for BGT         //
+//_________________________________________________//
+//                                                 //
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN //Edwin update - BGT
+
+    COPY ~NeJE/bdash/BGTcomp/edwin/MISC89.ITM~ ~override~
+        SAY DESC ~This is Edwin's birthright, inlaid with his family stone.
+
+STATISTICS:
+
+Equipped Abilities:
+ Magic Resistance: +15%
+ Resistance to Magic Damage: +50% (magic attacks will do half of full damage)
+ Fire Resistance Bonus: +50%
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects)
+
+Special Abilities:
+ Grants three extra spells of each level
+ Improves Casting Speed by x3 factor
+ Vocalize
+
+Armor Class Bonus: +2
+THAC0 Bonus: +2
+Saving Throws Bonus: +2
+
+Weight:  3
+Usable By:
+ Edwin~
+
+    COPY ~NeJE/bdash/BGTComp/edwin/edwin.cre~ ~override/edwin.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY ~NeJE/bdash/BGTComp/edwin/edwin2.cre~ ~override/edwin2.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY ~NeJE/bdash/BGTComp/edwin/edwin4.cre~ ~override/edwin4.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY ~NeJE/bdash/BGTComp/edwin/edwin6.cre~ ~override/edwin6.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+END

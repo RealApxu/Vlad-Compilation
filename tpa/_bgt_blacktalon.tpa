@@ -1,0 +1,18 @@
+//__________________________________________//
+//                                          //
+//       Tougher Black Talone Elites        //
+//__________________________________________//
+//                                          //
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+    //////ONLY FOR BGT//////
+    COPY ~NeJE/bdash/BGTComp/BGTIronElites/BANDIT2.CRE~ ~override/BANDIT2.CRE~
+        SAY NAME1 #13825
+        SAY NAME2 #13825
+
+    COPY ~NeJE/bdash/BGTComp/BGTIronElites/IRONELIT.CRE~ ~override/IRONELIT.CRE~
+        SAY NAME1 #10607
+        SAY NAME2 #10607
+
+    COPY ~NeJE/bdash/BGTComp/BGTIronElites/BANDIT2.BCS~ ~override/BANDIT2.BCS~
+END

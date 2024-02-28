@@ -5,8 +5,6 @@
 //______________________________________//
 //                                      //
 
-BEGIN ~Tortured Souls v7.06~
-
 COPY ~tisunpack.exe~ ~override\tisunpack.exe~
 COPY ~oggdec.exe~ ~override\oggdec.exe~
 COPY ~NeJEAreasSounds.bat~ ~Install_NeJEAreasSounds.bat~

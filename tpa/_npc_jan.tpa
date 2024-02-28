@@ -1,0 +1,100 @@
+//////////////////////////////////////
+//
+//                    Jan Jansen
+//
+/////////////////////////////////////
+
+COPY ~NeJE\bdash\Jan\copy~ ~override~
+COPY ~NeJE\bdash\Jan\itm\XBOW12.ITM~ ~override~
+    SAY UNIDENTIFIED_DESC ~This is Jan Jansen's crossbow, and such is its complexity that only he can use it.  Likewise, only he can make the special ammunition it is capable of firing.  Substantial tinkering on this launcher has made it especially accurate.
+
+STATISTICS:
+
+THAC0: +3 bonus
+Weight: 10
+Speed Factor: 3
+Proficiency Type: Crossbow
+Type:  2-handed
+Usable By:
+ Jan Jansen~
+
+COPY ~NeJE\bdash\Jan\itm\BOLT07.ITM~ ~override~
+    SAY DESC ~Flasher Master Bruiser Mate
+This is the ammunition for Jan's crossbow (the Flasher Master Bruiser). These skulls are filled with a special powder that does a little bit of damage and has a chance to stun an opponent.
+
+STATISTICS
+
+Always considered to be of +3 enchantment when determining what they can hit
+Special Ability: Stun opponent for 4 rounds unless Saves Vs. Spell with a -4 penalty
+THAC0: +3 bonus
+Damage: 2D3 + 3~
+
+COPY ~NeJE\bdash\Jan\itm\NPARM.ITM~ ~override~
+    SAY DESC ~Jansen-Brand Metal-Repellant AdventureWear - (patent pending)
+
+This strange armour is made of a foreign material, very supple but strong to the touch. Designed by and for Jan Jansen, only he may wear it. The armour does not give any bonuses to the base armor class, but it does grant a +40% resistance to all physical damage. It is also partially fire-proof. On top of all its bonuses, the armour doubles the movement rate. Jan may also cast spells while wearing this armor. In addition, the armor is stylish.
+
+STATISTICS
+
+Equipped Abilities:
+ Constitution Bonus: +2
+ Fire Resistance Bonus: +40%
+ Resistance to any physical damage: +40%
+ Immunity to Backstab
+ Doubles the Movement Rate
+
+Special Abilities:
+ Imroved Invisibility (thrice per day)
+ Improved Haste (thrice per day)
+
+Usable By:
+ Jan Jansen
+
+Note: Dryclean only~
+
+COPY ~NeJE\bdash\Jan\itm\NPMISC1.ITM~ ~override~
+    SAY UNIDENTIFIED_DESC ~Jansen-Brand Micro-Macro Spectroscopes - (Official Spectroscopes of the Purple Brotherhood)
+
+Another one of Jan Jansen's inventions, these glasses allow Jan to detect invisibility and enable X-ray vision thrice per day. Various lenses on the contraption increase Jan's thieving skills by 25%. They also protect Jan from blindness. In addition to all bonuses, the glasses double the amount of spells Jan can memorise. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.
+
+STATISTICS
+
+Equipped Abilities:
+ Armor Class Bonus: +2
+ Magic Resistance: +20%
+ Thieving Skills Bonus: +25%
+ Vocalize
+ Protection from Blindness
+
+Special Abilities:
+ Decrease Spell Casting Speed by 3
+ Doubles the amount of spells Jan can memorise
+ Detect Invisibility (thrice per day)
+ X-Ray Vision (thrice per day)
+
+Special:  Protects Against Critical Hits
+
+Usable By:
+ Jan Jansen~
+
+COPY ~NeJE\bdash\Jan\itm\NPMISC2.ITM~ ~override~
+    SAY UNIDENTIFIED_DESC ~Jansen-Brand Techno-Thieving Gadgetizer Gloves - (TM)
+
+This set of thieving tools gives Jan an additional bonus to both his lock picking and pick pocketing. In addition, the gloves provide additional bonuses to strength, armour class and saving throws, and protect Jan from being poisoned. The gloves also provides regeneration abilities to Jan. He is the only one who can use the Gloves, as no one else quite has the knack of it. Oddly, he seems to be able to actually cast spells while wearing the things. Must be because they got style.
+
+STATISTICS
+
+Armor Class Bonus: +2
+Strength Bonus: +2
+Saving Throws Bonus: +2
+Lockpicking: +20%
+Pick Pockets: +20%
+
+Immunity to Poison
+Regeneration (1 hit point per round)
+
+Combat Abilities:
+ Missiles THAC0 Bonus: +4
+
+Usable By:
+ Jan Jansen~

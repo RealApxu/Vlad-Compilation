@@ -61,8 +61,6 @@ PRINT ~Patching dialogs...~
 
 COMPILE ~NeJE\dlg~
 
-INCLUDE ~_baldurdash.tpa~
-
 APPEND ~TOOLTIP.2DA~ ~SiMace2           99998921        99998922       99998923kkkkkk~
 APPEND ~TOOLTIP.2DA~ ~FANMACE           66666661        77777772       -1kkkkkk~
 APPEND ~TOOLTIP.2DA~ ~FANSTAFF          66666662        77777772       -1kkkkkk~
@@ -165,6 +163,160 @@ COPY_EXISTING ~TOOLTIP.2DA~ ~override~
     REPLACE ~77777702~ ~Mordecai's Insect Swarm~
     REPLACE ~99999932~ ~Project Image~
     REPLACE ~77777763~ ~Mass Invisibility~
+
+BEGIN ~Baldurdash Fix Pack for SoA-ToB, v1.76 WeiDU~
+INCLUDE ~tpa/_baldurdash.tpa~
+
+BEGIN ~New Interface~
+INCLUDE ~tpa/_interface.tpa~
+
+BEGIN ~Improved Ring Of Gaxx~
+
+//String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
+COPY ~NeJE\bdash\itm\Ring39.ITM~ ~override~
+    SAY DESC ~Ring of Gaxx
+This ring is relatively unadorned, but the vile magic within radiates intense evil.  Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power.  It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains.  The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
+
+STATISTICS
+
+Equipped Abilities:
+   Immunity to Disease and Poison
+   Regenerate 1 hit point every round
+
+Special Abilities:
+   Invisibility (thrice per day)
+   Imroved Haste (thrice per day)
+
+Armor Class:  +3 Bonus
+Saving Throws:  +3 Bonus
+Magic Resistance:  +15% Bonus
+
+Not Usable By:
+ Wizard Slayer~
+
+BEGIN ~Improved Character Minsc & Boo (by Vlad)~
+INCLUDE ~tpa/_npc_minsc.tpa~
+
+BEGIN ~Improved Monk Class (by Vlad)~
+INCLUDE ~tpa/_monk.tpa~
+
+BEGIN ~Priest of Sylvanus (Druid) Kit and Improved Character Jaheira (by Vlad)~
+INCLUDE ~tpa/_npc_jah.tpa~
+
+BEGIN ~New Jaheira Portrait (by Vlad)~
+COPY ~NeJE/jah/pics~ ~override~
+
+BEGIN ~Restored Anti-Dragon Items and Powerful Swords (by Vlad)~
+INCLUDE ~tpa/_antidragon.tpa~
+
+BEGIN ~Restored Twisted Rune Quest (by Vlad)~
+INCLUDE ~tpa/_twisted.tpa~
+
+BEGIN ~Improved Copper Coronet (by Vlad)~
+INCLUDE ~tpa/_coronet.tpa~
+
+BEGIN ~Improved Shadows and Shadow Dragon (by Vlad)~
+INCLUDE ~tpa/_shadow.tpa~
+
+BEGIN ~Restored Dak'kon's Blade (by Vlad)~
+INCLUDE ~tpa/_dakkon.tpa~
+
+BEGIN ~Improved Nymph (Woodland Being) Script (by Goeran Rimen)~
+COMPILE ~NeJE\bdash\nymph\NYMPH.BAF~
+
+BEGIN ~Dual Wielding Fix for Rogues (by aVENGER)~
+INCLUDE ~tpa/_rr_dualwield.tpa~
+
+BEGIN ~Improved Character Anomen - Stats and Items (by Vlad)~
+INCLUDE ~tpa/_npc_anomen.tpa~
+
+BEGIN ~Improved Character Nalia - Stats and Items (by Vlad)~
+INCLUDE ~tpa/_npc_nalia.tpa~
+
+BEGIN ~Improved Character Jan Jansen (by Vlad)~
+INCLUDE ~tpa/_npc_jan.tpa~
+
+BEGIN ~Improved Character Aerie - Wildwanderer of Baervan (by Vlad)~
+INCLUDE ~tpa/_npc_aerie.tpa~
+
+BEGIN ~Improved Character Edwin - Red Wizard (by Vlad)~
+INCLUDE ~tpa/_npc_edwin.tpa~
+
+BEGIN ~Continuous and Custom Kit Imoen (by Vlad)~
+INCLUDE ~tpa/_npc_imoen.tpa~
+
+BEGIN ~Improved Character Viconia - Darkcloak of Shar (by Vlad)~
+INCLUDE ~tpa/_npc_viconia.tpa~
+
+BEGIN ~Enhanced Encounter with Yaga Shura in ToB (by Vlad)~
+COPY ~NeJE\bdash\yagashur\copy~ ~override~
+
+BEGIN ~Enhanced Encounter with Abazigal in ToB (by Vlad)~
+
+COPY ~NeJE\bdash\abazig\copy~ ~override~
+
+COPY ~NeJE\bdash\abazig\cre\BazDra04.cre~ ~override\BazDra04.cre~
+    SAY NAME1 ~Purple~
+    SAY NAME2 ~Purple~
+
+COPY_EXISTING ~AR6000.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY
+~TriggerActivation("Tran6001",FALSE)~
+~TriggerActivation("Tran6001",FALSE)
+CreateCreature("BazDra04",[694.945],12)~
+    END
+
+BEGIN ~BGT-Transition~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt.tpa~
+
+BEGIN ~Merchant League Bank (BGT required!) (by Vlad)~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_bank.tpa~
+
+BEGIN ~Tougher Black Talone Elites (BGT required!) (by Vlad)~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_blacktalon.tpa~
+
+BEGIN ~Improved Character Edwin (BGT required!) (by Vlad)~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_edwin.tpa~
+
+BEGIN ~Stats and Portraits of Viconia and Jaheira. BG1 Viconia and Jaheira can get their BG2 portraits and stats (by Vlad).~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_jahvic.tpa~
+
+BEGIN ~Keys to Eternity (KTE) and fixing Therela's dialogue~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_kte.tpa~
+
+BEGIN ~Improved Character Xan (BGT required!) (by Vlad)~
+REQUIRE_FILE ~data/BG1ARE.BIF~ ~Please install BGT before installation of this component.~
+INCLUDE ~tpa/_bgt_xan.tpa~
+
+BEGIN ~Keldorn Romance v1.02~
+INCLUDE ~tpa/_keldornromance.tpa~
+
+BEGIN ~Tortured Souls v7.06~
+INCLUDE ~tpa/_torturedsouls.tpa~
+
+BEGIN ~Leina - New Bard NPC Character and Quest (by Vlad)~
+INCLUDE ~tpa/_leina.tpa~
+
+BEGIN ~"Firewalker" Shar-Teel (custom kit and continuous character)~
+INCLUDE ~tpa/_sharteel.tpa~
+
+BEGIN ~Items Upgrade (by Vlad)~
+INCLUDE ~tpa/_itemsupgrade.tpa~
+
+BEGIN ~Baldurdash English Text Update Pack for ToB, v1.4 WeiDU (by Kevin Dorner)~
+SUBCOMPONENT ~Textupdatepack~
+INCLUDE ~tpa/_textpack.tpa~
+
+BEGIN ~Deutsche Korrektur von Textfehlern v2.1~
+SUBCOMPONENT ~Textupdatepack~
+INCLUDE ~tpa/_textpack_deutch.tpa~
 
 AT_INTERACTIVE_EXIT ~Install_NeJEAreasSounds.bat~
 //AT_INTERACTIVE_UNINSTALL ~TSUninstaller.bat~

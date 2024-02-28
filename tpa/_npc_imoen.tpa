@@ -1,0 +1,216 @@
+//////////////////////////////////////
+//
+//                        Imoen
+//
+/////////////////////////////////////
+
+APPEND ~SPELL.IDS~
+~3161 IMMY_MAGIC_MISSILES
+3162 IMMY_FRIENDS
+3263 IMMY_LUCK
+3264 IMMY_GLITTERDUST
+3164 IMMY_REFLECTED_IMAGE
+3365 IMMY_INVISIBILITY_RADIUS
+3366 IMMY_DIRE_CHARM
+3467 IMMY_CONFUSION
+3468 IMMY_EMOTION
+3469 IMMY_GTREATER_MALISON
+3512 IMMY_DOMINATION
+3513 IMMY_HOLD_MONSTER
+3514 IMMY_CHAOS
+3620 IMMY_MISLEAD
+3515 IMMY_SPHERE_OF_CHAOS
+3516 IMMY_MASS_INVISIBILITY
+3444 IMMY_IMPROVED_INVISIBILITY~
+
+COPY ~NeJE\bdash\Immy\copy_spl~ ~override~
+
+ADD_KIT ~CHARMING_ROGUE~
+
+~CHARMING_ROGUE          1           1           1           1           1           0           0           0~
+
+~CHARMING_ROGUE 0 1 0 0 1 0 0 2 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 2 0 2 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+
+~CHARMING_ROGUE          0       9       0       9       0      13~
+
+~CHARMING_ROGUE          0       0       0       0       0       0~
+
+~CHARMING_ROGUE          0      12       0      12       0      15~
+
+~CHARMING_ROGUE          0       9       0       9       0      13~
+
+~CHARMING_ROGUE          0       1       1       1       1       1       1       1       1~
+
+~CHARMING_ROGUE          1       1       1       0       0       0~
+
+~NeJE\bdash\Immy\toda\CLABCHRG.2DA~
+
+~~
+
+~0x00004000 4~
+
+~Th0~
+
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLING05 DAGG05,40 STAF20~
+
+SAY ~charming rogue~
+SAY ~Charming Rogue~
+SAY ~CHARMING ROGUE: This thief kit was especially created for Imoen to reflect her unique personality.
+
+Advantages:
+-  +1 bonus to AC for every 5 levels of experience
+-  +1 to hit, and +1 to damage with any missile weapon for every 5 levels
+-  +1 to movement rate for every 7 levels
+-  She can specialize in any ranged weapon that a thief can use
+-  She can cast a limited number of enhanting spells, which become available from her innate slots as she advances levels
+-  Immune to Charm spell
+-  She can create illusions
+
+Disadvantages:
+-  None~
+
+//Getting rid of original Spellhold Imoen
+COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+    READ_LONG 0x30 npc_off
+    READ_SHORT 0x34 npc_num
+    FOR( i=0;i<%npc_num%;i+=1 ) BEGIN
+        READ_ASCII (%npc_off% + %i%*0x160 + 0xc) npc_name
+        PATCH_IF (("%npc_name%" STRING_COMPARE_CASE "IMOEN211")=0) BEGIN
+            WRITE_ASCII (%npc_off% + %i%*0x160 + 0x18) ~None~ //sets IMOEN211 current area to None
+        END
+    END
+BUT_ONLY
+
+COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+    READ_LONG 0x30 npc_off
+    READ_SHORT 0x34 npc_num
+    FOR( i=0;i<%npc_num%;i+=1 ) BEGIN
+        READ_ASCII (%npc_off% + %i%*0x160 + 0xc) npc_name
+        PATCH_IF (("%npc_name%" STRING_COMPARE_CASE "IMOEN213")=0) BEGIN
+            WRITE_ASCII (%npc_off% + %i%*0x160 + 0x18) ~None~ //sets IMOEN213 current area to None
+        END
+    END
+BUT_ONLY
+
+//Immy Scripts
+ACTION_IF FILE_EXISTS_IN_GAME ~IMOEN.bcs~ THEN BEGIN
+    COPY_EXISTING ~IMOEN.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY
+~PartyRested()~
+~PartyRested()
+OR(3)
+AreaCheck("AR0601")
+AreaCheck("AR0602")
+AreaCheck("AR0603")~
+        END
+    EXTEND_TOP ~IMOEN.bcs~ ~NeJE\bdash\Immy\sExt\sIMOEN.baf~
+END ELSE BEGIN
+    COMPILE ~NeJE\bdash\Immy\sExt\nIMOEN.baf~
+    EXTEND_TOP ~IMOEN.bcs~ ~NeJE\bdash\Immy\sExt\sIMOEN.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~IMOEN2.bcs~ THEN BEGIN
+    COPY_EXISTING ~IMOEN2.bcs~ ~override/IMOEN2.bcs~
+        EXTEND_TOP ~IMOEN2.bcs~ ~NeJE\bdash\Immy\sExt\nImoen2.baf~
+        EXTEND_TOP ~IMOEN2.bcs~ ~NeJE\bdash\Immy\sExt\sIMOEN2.baf~
+END ELSE BEGIN
+    COMPILE ~NeJE\bdash\Immy\sExt\sIMOEN2.baf~
+        EXTEND_TOP ~IMOEN2.bcs~ ~NeJE\bdash\Immy\sExt\nImoen2.baf~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~CLONROOM.bcs~ ~override\CLONROOM.bcs~
+        EXTEND_TOP ~CLONROOM.bcs~ ~NeJE\bdash\Immy\sExt\sCLONRM.baf~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~ELLEROOM.bcs~ ~override\ELLEROOM.bcs~
+        EXTEND_TOP ~ELLEROOM.bcs~ ~NeJE\bdash\Immy\sExt\sELLERM.baf~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~LIBRARY.bcs~ ~override\LIBRARY.bcs~
+        EXTEND_TOP ~LIBRARY.bcs~ ~NeJE\bdash\Immy\sExt\sLIBRARY.baf~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~NEWGAME.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY
+~PlaySound("EFF_P18")~
+~PlaySound("EFF_P18")
+ActionOverride("Imoen10",DestroySelf())
+CreateCreature("Imoen10",[3198.2837],0)~
+            REPLACE_TEXTUALLY ~"Imoen"~ ~"Imoen2"~
+        END
+
+    COPY_EXISTING ~AR0602.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY ~"Imoen"~ ~"Imoen2"~
+        END
+END
+
+COPY ~NeJE\bdash\Immy\copy\CUT01.bcs~ ~override\CUT01.bcs~
+
+ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY ~NeJE\bdash\Immy\copy\TELE0700.bcs~ ~override\TELE0700.bcs~
+END
+
+COPY ~NeJE\bdash\Immy\copy\CUTD1.bcs~ ~override\CUTD1.bcs~
+COPY ~NeJE\bdash\Immy\copy\CUT01G.bcs~ ~override\CUT01G.bcs~
+
+//Creature files
+COPY ~NeJE\bdash\Immy\copy\CSIMOEN.cre~ ~override\CSIMOEN.cre~
+COPY ~NeJE\bdash\Immy\copy\IMOENDRM.cre~ ~override\IMOENDRM.cre~
+COPY ~NeJE\bdash\Immy\copy\PPIMOEN.cre~ ~override\PPIMOEN.cre~
+
+COPY ~NeJE\bdash\Immy\cre\IMOEN10.cre~ ~override\IMOEN10.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~NeJE\bdash\Immy\cre\IMOEN6.cre~ ~override\IMOEN6.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~IMOEN1.cre~ ~override\IMOEN1.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY_EXISTING ~IMOEN2.cre~ ~override\IMOEN2.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY_EXISTING ~IMOEN4.cre~ ~override\IMOEN4.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+
+    COPY_EXISTING ~IMOEN61.cre~ ~override\IMOEN61.cre~
+        WRITE_SHORT 0x244 0 // doesn't change
+        WRITE_BYTE 0x246 ~%CHARMING_ROGUE%~ // the internal name of your kit, surrounded by %
+        WRITE_BYTE 0x247 0x40 // doesn't change
+END
+
+ACTION_IF FILE_EXISTS ~data\BG1ARE.BIF~ THEN BEGIN
+    COPY_EXISTING ~AR0602.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY // Imoen's Belt
+~ActionOverride("Imoen2",CreateItem("Imoenhp1",1,0,0))~
+~~ //remove that frelling belt
+        REPLACE_TEXTUALLY
+~ActionOverride("Imoen2",FillSlot(SLOT_BELT))~
+~~ //remove that frelling belt
+        REPLACE_TEXTUALLY
+~SetGlobal("SPRITE_IS_DEADIMOEN2","GLOBAL",0)~
+~SetGlobal("SPRITE_IS_DEADIMOEN2","GLOBAL",0)
+SetGlobal("SPRITE_IS_DEADIMOEN","GLOBAL",0)~
+    END
+END
+
+COPY ~NeJE\bdash\Immy\pics~ ~override~
