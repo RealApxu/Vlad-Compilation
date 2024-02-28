@@ -2,8 +2,8 @@
 //Improved Anti-Dragon Items
 
 COPY ~NeJE\bdash\itm\SHLD21.ITM~ ~override~
-  SAY NAME2 ~Dragon Scale Shield +5~
-  SAY DESC ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a steel frame.  Green and white dragon scales adorn the red background in a pattern that, when looked in the right way, reveals the face of an ancient dragon.
+    SAY NAME2 ~Dragon Scale Shield +5~
+    SAY DESC ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a steel frame.  Green and white dragon scales adorn the red background in a pattern that, when looked in the right way, reveals the face of an ancient dragon.
 
 STATISTICS:
 
@@ -22,7 +22,7 @@ Not Usable By:
  Kensai~
 
 COPY ~NeJE\bdash\itm\SW1H31.ITM~ ~override~
-  SAY DESC ~Sunblade: Daystar
+    SAY DESC ~Sunblade: Daystar
 Whether created specifically for use in the service of Torm or appropriated at some point in the long history of the church, Paladins of the Loyal Fury have made good use of Daystar in their battles against evil undead.  Through magic or blessing it is empowered with the Sunray, a force of pure life energy so potent that it slays both living and unliving.
 
 STATISTICS:
@@ -49,8 +49,8 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\SW1H35.ITM~ ~override~
-  SAY NAME2 ~Adjatha the Drinker +4~
-  SAY DESC ~This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
+    SAY NAME2 ~Adjatha the Drinker +4~
+    SAY DESC ~This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
 
 STATISTICS:
 
@@ -81,7 +81,7 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\SW1H51.ITM~ ~override~
-  SAY DESC ~Katana +4
+    SAY DESC ~Katana +4
 To enchant a katana is no simple process.  Unlike conventional weapons, the katana is already a near-perfect fighting sword.  To improve it usually requires a sacrifice, perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana.  The wielder of an enchanted katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle.  Not doing so could drastically change one's luck for the worse.
 
 STATISTICS:
@@ -140,7 +140,7 @@ COPY_EXISTING ~SW1H35.ITM~ ~override\SW1H35.ITM~
     WRITE_BYTE 0x2C7  0x02*/
 
 COPY ~NeJE\bdash\itm\SW1H32.ITM~ ~override~
-  SAY DESC ~Long sword +5:  Dragonslayer (Peridan)
+    SAY DESC ~Long sword +5:  Dragonslayer (Peridan)
 Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerun's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also bolsters with regeneration, dispels magics whenever the sword strikes an enemy, and dares to do double damage against the greatest creatures of the Realms.
 
 STATISTICS:
@@ -168,7 +168,7 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\LEAT19.ITM~ ~override~
-  SAY DESC ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful with some essential extra protections.
+    SAY DESC ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful with some essential extra protections.
 
 STATISTICS:
 
@@ -195,7 +195,7 @@ Not Usable By:
  Shapeshifter~
 
 COPY ~NeJE\bdash\itm\HELM21.ITM~ ~override~
-  SAY DESC ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity.  It is hard to determine whether the benefits originate within the scales or the spells of the mage.
+    SAY DESC ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity.  It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 
 Equipped Abilities:
  Cold, Fire and Electrical Resistance: +50%
@@ -212,7 +212,7 @@ Not Usable By:
  Kensai~
 
 COPY ~NeJE\bdash\itm\PLAT18.ITM~ ~override~
-  SAY DESC ~This suit of armor is formed from interlocking red dragon scales. It is light of weight, strong, and resistant to fire and magic. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+    SAY DESC ~This suit of armor is formed from interlocking red dragon scales. It is light of weight, strong, and resistant to fire and magic. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 
 STATISTICS:
 
@@ -238,7 +238,7 @@ Not Usable By:
  Shapeshifter~
 
 COPY ~NeJE\bdash\itm\CHAN18.ITM~ ~override~
-  SAY DESC ~This was the armor of Seffer Ekr, and a sign of the goddess Mielikii's favor.  She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest.  A heart attack claimed him when his time was done, not an enemy's blade.
+    SAY DESC ~This was the armor of Seffer Ekr, and a sign of the goddess Mielikii's favor.  She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest.  A heart attack claimed him when his time was done, not an enemy's blade.
 
 STATISTICS
 
@@ -258,7 +258,7 @@ Not Usable By:
  Monk~
 
 COPY ~NeJE\bdash\itm\SW2H15.ITM~ ~override~
-  SAY DESC ~Silver Sword
+    SAY DESC ~Silver Sword
 This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
 
 Besides bein a ritual sword, Vorpal also serves the purpose of getting rid the world of the hateful illithids. Those who wield the Vorpal have a complete mind shield including immunity to charm, domination, confusion and psionics. In addition, the sword provides the wearer the freedom to move under any movement-alterating spells.
@@ -294,7 +294,7 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\SW1H54.ITM~ ~override~
-  SAY DESC ~Long Sword: The Equalizer
+    SAY DESC ~Long Sword: The Equalizer
 Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality", it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
 
 STATISTICS:
@@ -330,7 +330,7 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\SW2HSAR.ITM~ ~override~
-  SAY DESC ~Silver Sword (enhanted by Cespenar)
+    SAY DESC ~Silver Sword (enhanted by Cespenar)
 This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
 
 Besides bein a ritual sword, Vorpal also serves the purpose of getting rid the world of the hateful illithids. Those who wield the Vorpal have a complete mind shield including immunity to charm, domination, confusion and psionics. In addition, the sword provides the wearer the freedom to move under any movement-alterating spells.
@@ -369,8 +369,8 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\BlackNi2.ITM~ ~override~
-  SAY NAME2 ~Blade Of The Night~
-  SAY DESC ~Blade Of The Night (enhanted by Cespenar)
+    SAY NAME2 ~Blade Of The Night~
+    SAY DESC ~Blade Of The Night (enhanted by Cespenar)
 This was the weapon used by the most famous assassin in Kara Tur, but none knew her name apart from the emperor. She was the greatest thief the world had ever seen. She received this powerful weapon after completing a series of succesful missions for the emperor, who decided she was worthy of the blade. It was made by the emperors best weapon smiths, and then tempered in the bloods of red, black, silver and blue dragons. The legend says this weapon would make anyone almost as good as thief as the original owner, but because of the strong enchantments, the katana requires much from its wielder, and it is only usable by a thief.
 
 STATISTICS:
@@ -410,9 +410,9 @@ Not Usable By:
  Beast Master~
 
 COPY ~NeJE\bdash\itm\UMHULK2.ITM~ ~override~
-  SAY NAME1 ~Umber Hulk Plate~
-  SAY NAME2 ~Umber Hulk Plate~
-  SAY DESC ~Umber Hulk Plate (enhanted by Cespenar)
+    SAY NAME1 ~Umber Hulk Plate~
+    SAY NAME2 ~Umber Hulk Plate~
+    SAY DESC ~Umber Hulk Plate (enhanted by Cespenar)
 The hard plates that protect umber hulks are reasonably easy to craft into humanoid armor. This dark suit of armor was fashioned into plate mail by duergar smiths. The dark dwarves, skilled in handling umber hulk exoskeletons, cured and reinforced the armor.
 
 Equipped Abilities:
