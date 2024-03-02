@@ -1,14 +1,6 @@
 ADD_STATE_TRIGGER VALYGARP 19
 ~!Global("AnomenValygarFight","GLOBAL",3)~
 
-REPLACE_STATE_TRIGGER VALYGARP 16 ~!Global("LavokDead","GLOBAL",0)
-OR(2)
-Global("ValygarHome","GLOBAL",1)
-Global("KickedOut","LOCALS",1)
-OR(2)
-Dead("lavok01")
-Dead("lavok02")~
-
 APPEND ~VALYGARP~
 
 IF WEIGHT #0 ~Global("ValygarVampire","GLOBAL",5)~ THEN BEGIN TS22

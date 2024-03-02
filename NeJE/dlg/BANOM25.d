@@ -1,13 +1,3 @@
-ALTER_TRANS BANOME25 // file name
-BEGIN 83 END // state number (can be more than one)
-BEGIN 0 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("AnomenRomanceActive","GLOBAL",3)
-GivePartyAllEquipment()
-LeaveParty()
-EscapeArea()~
-END
-
 APPEND ~BANOME25~
 
 IF ~~ THEN BEGIN TS134
@@ -22,8 +12,8 @@ END
 
 IF ~~ THEN BEGIN TS136
   SAY ~What! I love her more than my own life, and I will hurt her? You are going queer, ranger! I just need to talk to her. <CHARNAME>, I beg you to tell me what is going on... Do you like Valygar better than I?~
-  IF ~~ THEN REPLY ~That’s enough. Valygar, you have some sort of idea-fix that everyone tries to hurt me and you are the one to save me. Let me remind you, that I am quite capable of taking care of myself. Besides I do not desire to be protected from the love of my life, Anomen... (*give Anomen a sweet smile*)~ EXTERN ~BVALYG25~ TS181
-  IF ~~ THEN REPLY ~I think I know the way to solve this conflict: I care for neither of you. But I consider both of you my friends. So do make up and let’s forget about this silly conversation.~ EXTERN ~BVALYG25~ TS182
+  IF ~~ THEN REPLY ~Thatï¿½s enough. Valygar, you have some sort of idea-fix that everyone tries to hurt me and you are the one to save me. Let me remind you, that I am quite capable of taking care of myself. Besides I do not desire to be protected from the love of my life, Anomen... (*give Anomen a sweet smile*)~ EXTERN ~BVALYG25~ TS181
+  IF ~~ THEN REPLY ~I think I know the way to solve this conflict: I care for neither of you. But I consider both of you my friends. So do make up and letï¿½s forget about this silly conversation.~ EXTERN ~BVALYG25~ TS182
   IF ~~ THEN REPLY ~Ahem... Anomen. I do not know how you came up with the notion that I like you... I am sorry if I have given you a false hope. I prefer you not to intervene into my relationship with Valygar. ~ EXTERN ~BVALYG25~ TS184
   IF ~~ THEN REPLY ~(*Grin... and stay silent waiting for the next scene*)~ EXTERN ~BVALYG25~ TS186
   IF ~~ THEN REPLY ~(*Cry helplessly*) Fools, I... I love both of you. Please, do not make me choose...~ EXTERN ~BVALYG25~ TS188

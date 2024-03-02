@@ -1,0 +1,9 @@
+REPLACE BKORGAN
+	IF ~See(Player1)
+	!StateCheck(Player1,STATE_SLEEPING)
+	Global("BKorgan24","LOCALS",0)~ THEN BEGIN 109
+	  SAY #18201
+	  IF ~~ THEN REPLY #61034 DO ~SetGlobal("BKorgan24","LOCALS",1)~ GOTO 65
+	  IF ~~ THEN REPLY #61035 DO ~SetGlobal("BKorgan24","LOCALS",1)~ GOTO 78
+	END
+END

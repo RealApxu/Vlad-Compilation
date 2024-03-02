@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////
-//                                                                         				//
-//    Additional interjections in Mortuary for Keldorn Romance	//
-//																										//
+//                                                                        //
+//    Additional interjections in Mortuary for Keldorn Romance	          //
+//																		  //
 ////////////////////////////////////////////////////////////////////////////
 
 APPEND ~MELORAJ~
