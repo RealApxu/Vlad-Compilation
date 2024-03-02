@@ -29,6 +29,8 @@ COPY_EXISTING ~PPSTOR01.STO~ ~override~
 
 EXTEND_TOP ~AR0334.bcs~ ~NeJE/bdash/cromwell/eAR0334.baf~
 
+EXTEND_BOTTOM ~BOTSMITH.bcs~ ~NeJE\bdash\BAF_b\eBOTSMIT.BAF~
+
 //1. Enhanced King Strohm Mask
 COPY ~NeJE/bdash/cromwell/KingMask.ITM~ ~override/KingMask.ITM~
     SAY NAME2 ~Enhanced Mask of King Strohm III~
@@ -1103,3 +1105,106 @@ Not usable by:
       UNLESS ~0xE200~
 END
 */
+
+//Cespenar Upgrades
+COPY ~NeJE\bdash\itm\SW2HSAR.ITM~ ~override~
+    SAY DESC ~Silver Sword (enhanted by Cespenar)
+This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+
+Besides bein a ritual sword, Vorpal also serves the purpose of getting rid the world of the hateful illithids. Those who wield the Vorpal have a complete mind shield including immunity to charm, domination, confusion and psionics. In addition, the sword provides the wearer the freedom to move under any movement-alterating spells.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armour Class Bonus: +3
+ Saving Throws Bonus: +3
+ Magic Resistance: +30%
+ Cold and Fire Resistance: +30%
+ True Free Action
+  (Immunity to any movement-alterating effects)
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects and psionics)
+
+Combat Abilities:
+ -3% Magic Resistance to an opponent with each hit (no save)
+ -2 point to THAC0 cumulative penalty to an opponent with each hit (no save)
+ Instant Death (each hit may instantly slay an opponent with a 25% chance unless a saving throw vs death is made at -2 penalty)
+
+THAC0: +6 bonus
+Damage:  1D12 + 6
+Damage type:  slashing
+Weight: 10
+Speed Factor: 3
+Proficiency Type: Two Handed sword
+Type:  2-handed
+Requires: 14 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Monk
+ Beast Master~
+
+COPY ~NeJE\bdash\itm\BlackNi2.ITM~ ~override~
+    SAY NAME2 ~Blade Of The Night~
+    SAY DESC ~Blade Of The Night (enhanted by Cespenar)
+This was the weapon used by the most famous assassin in Kara Tur, but none knew her name apart from the emperor. She was the greatest thief the world had ever seen. She received this powerful weapon after completing a series of succesful missions for the emperor, who decided she was worthy of the blade. It was made by the emperors best weapon smiths, and then tempered in the bloods of red, black, silver and blue dragons. The legend says this weapon would make anyone almost as good as thief as the original owner, but because of the strong enchantments, the katana requires much from its wielder, and it is only usable by a thief.
+
+STATISTICS:
+
+Equipped Bonuses:
+ Armour Class Bonus: +3
+ Dexterity Bonus: +3
+ Constitution Bonus: +3
+
+Equipped Immunities:
+ Death Ward
+  (Immunity to all forms of death magic)
+ Negative Plane Protection
+ Immunity to Backstab
+ Immunity to Poison
+
+Special Abilities
+ Cast Greater Restoration and Heal thrice per day
+
+Combat Abilities:
+ 10% chance of Level Drain from the target on each hit
+  (target may save vs. spells to avoid the drain)
+ Each hit lowers opponents' Magic Resistance by 10%
+
+THAC0 +6 bonus
+Damage:  1D10 +6
+Damage type:  slashing
+Weight:  6
+Speed Factor: 4
+Proficiency Type: Katana
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+COPY ~NeJE\bdash\itm\UMHULK2.ITM~ ~override~
+    SAY NAME1 ~Umber Hulk Plate~
+    SAY NAME2 ~Umber Hulk Plate~
+    SAY DESC ~Umber Hulk Plate (enhanted by Cespenar)
+The hard plates that protect umber hulks are reasonably easy to craft into humanoid armor. This dark suit of armor was fashioned into plate mail by duergar smiths. The dark dwarves, skilled in handling umber hulk exoskeletons, cured and reinforced the armor.
+
+Equipped Abilities:
+ Magic Resistance: +20%
+ Immunity to Backstab
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects)
+ Death Ward (Immunity to Death Magic)
+
+Armor Class: -5
+Special:  +3 vs. Slashing, Piercing and Missile Weapons
+Weight: 20
+Not Usable By:
+ Bard
+ Mage
+ Monk
+ Thief~

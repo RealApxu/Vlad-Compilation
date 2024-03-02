@@ -168,30 +168,6 @@ COPY_EXISTING ~ARD000.ARE~ ~override~
     END
 BUT_ONLY
 
-//Buffed Two-handed Sword +3
-COPY ~NeJE/bdash/BGTComp/itm/bgsw2h07.itm~ ~override~
-    SAY NAME2 ~The World's Edge +3~
-    SAY DESC ~This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
-
-STATISTICS:
-
-Equipped Abilities:
-Armour Class bonus: +2
-Constitution bonus: +2
-
-Damage:  1D12 + 3
-THAC0:  +3 bonus
-Damage Type:  slashing
-Weight:  9
-Speed Factor:  7
-Proficiency Type: Two Handed Sword
-Type:  2-handed
-Not usable by:
-Druid
-Cleric
-Mage
-Thief~
-
 //Removes Flame Tongue, replacing with Long Sword
 COPY_EXISTING ~ARD014.ARE~ ~override~
     READ_LONG 0x78 item_off

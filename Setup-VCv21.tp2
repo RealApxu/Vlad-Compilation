@@ -179,30 +179,10 @@ BEGIN ~New Interface~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
 INCLUDE ~tpa/_interface.tpa~
 
+/*
 BEGIN ~Improved Ring Of Gaxx~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
-
-//String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
-COPY ~NeJE\bdash\itm\Ring39.ITM~ ~override~
-    SAY DESC ~Ring of Gaxx
-This ring is relatively unadorned, but the vile magic within radiates intense evil.  Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power.  It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains.  The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
-
-STATISTICS
-
-Equipped Abilities:
-   Immunity to Disease and Poison
-   Regenerate 1 hit point every round
-
-Special Abilities:
-   Invisibility (thrice per day)
-   Imroved Haste (thrice per day)
-
-Armor Class:  +3 Bonus
-Saving Throws:  +3 Bonus
-Magic Resistance:  +15% Bonus
-
-Not Usable By:
- Wizard Slayer~
+*/
 
 BEGIN ~Improved Character Minsc & Boo (by Vlad)~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~

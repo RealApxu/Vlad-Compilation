@@ -329,107 +329,77 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~NeJE\bdash\itm\SW2HSAR.ITM~ ~override~
-    SAY DESC ~Silver Sword (enhanted by Cespenar)
-This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
-
-Besides bein a ritual sword, Vorpal also serves the purpose of getting rid the world of the hateful illithids. Those who wield the Vorpal have a complete mind shield including immunity to charm, domination, confusion and psionics. In addition, the sword provides the wearer the freedom to move under any movement-alterating spells.
+//Buffed Two-handed Sword +3
+ACTION_IF GAME_IS ~bgt~ BEGIN
+    COPY ~NeJE/bdash/BGTComp/itm/bgsw2h07.itm~ ~override~
+        SAY NAME2 ~The World's Edge +3~
+        SAY DESC ~This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
 
 STATISTICS:
 
 Equipped Abilities:
- Armour Class Bonus: +3
- Saving Throws Bonus: +3
- Magic Resistance: +30%
- Cold and Fire Resistance: +30%
- True Free Action
-  (Immunity to any movement-alterating effects)
- Complete Mind Shield
-  (Immunity to any mind-alterating effects and psionics)
+Armour Class bonus: +2
+Constitution bonus: +2
 
-Combat Abilities:
- -3% Magic Resistance to an opponent with each hit (no save)
- -2 point to THAC0 cumulative penalty to an opponent with each hit (no save)
- Instant Death (each hit may instantly slay an opponent with a 25% chance unless a saving throw vs death is made at -2 penalty)
-
-THAC0: +6 bonus
-Damage:  1D12 + 6
-Damage type:  slashing
-Weight: 10
-Speed Factor: 3
-Proficiency Type: Two Handed sword
+Damage:  1D12 + 3
+THAC0:  +3 bonus
+Damage Type:  slashing
+Weight:  9
+Speed Factor:  7
+Proficiency Type: Two Handed Sword
 Type:  2-handed
-Requires: 14 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Thief
- Monk
- Beast Master~
+Not usable by:
+Druid
+Cleric
+Mage
+Thief~
+END
 
-COPY ~NeJE\bdash\itm\BlackNi2.ITM~ ~override~
-    SAY NAME2 ~Blade Of The Night~
-    SAY DESC ~Blade Of The Night (enhanted by Cespenar)
-This was the weapon used by the most famous assassin in Kara Tur, but none knew her name apart from the emperor. She was the greatest thief the world had ever seen. She received this powerful weapon after completing a series of succesful missions for the emperor, who decided she was worthy of the blade. It was made by the emperors best weapon smiths, and then tempered in the bloods of red, black, silver and blue dragons. The legend says this weapon would make anyone almost as good as thief as the original owner, but because of the strong enchantments, the katana requires much from its wielder, and it is only usable by a thief.
+//Improved Ring of Gaxx
+//String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
+COPY ~NeJE\bdash\itm\Ring39.ITM~ ~override~
+    SAY DESC ~Ring of Gaxx
+This ring is relatively unadorned, but the vile magic within radiates intense evil.  Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power.  It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains.  The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
 
-STATISTICS:
-
-Equipped Bonuses:
- Armour Class Bonus: +3
- Dexterity Bonus: +3
- Constitution Bonus: +3
-
-Equipped Immunities:
- Death Ward
-  (Immunity to all forms of death magic)
- Negative Plane Protection
- Immunity to Backstab
- Immunity to Poison
-
-Special Abilities
- Cast Greater Restoration and Heal thrice per day
-
-Combat Abilities:
- 10% chance of Level Drain from the target on each hit
-  (target may save vs. spells to avoid the drain)
- Each hit lowers opponents' Magic Resistance by 10%
-
-THAC0 +6 bonus
-Damage:  1D10 +6
-Damage type:  slashing
-Weight:  6
-Speed Factor: 4
-Proficiency Type: Katana
-Type:  1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
-
-COPY ~NeJE\bdash\itm\UMHULK2.ITM~ ~override~
-    SAY NAME1 ~Umber Hulk Plate~
-    SAY NAME2 ~Umber Hulk Plate~
-    SAY DESC ~Umber Hulk Plate (enhanted by Cespenar)
-The hard plates that protect umber hulks are reasonably easy to craft into humanoid armor. This dark suit of armor was fashioned into plate mail by duergar smiths. The dark dwarves, skilled in handling umber hulk exoskeletons, cured and reinforced the armor.
+STATISTICS
 
 Equipped Abilities:
- Magic Resistance: +20%
- Immunity to Backstab
- Complete Mind Shield
-  (Immunity to any mind-alterating effects)
- Death Ward (Immunity to Death Magic)
+   Immunity to Disease and Poison
+   Regenerate 1 hit point every round
 
-Armor Class: -5
-Special:  +3 vs. Slashing, Piercing and Missile Weapons
-Weight: 20
+Special Abilities:
+   Invisibility (thrice per day)
+   Imroved Haste (thrice per day)
+
+Armor Class:  +3 Bonus
+Saving Throws:  +3 Bonus
+Magic Resistance:  +15% Bonus
+
 Not Usable By:
- Bard
- Mage
- Monk
- Thief~
+ Wizard Slayer~
 
-COPY_EXISTING ~BOTSMITH.bcs~ ~override~
-    EXTEND_BOTTOM ~BOTSMITH.bcs~ ~NeJE\bdash\BAF_b\eBOTSMIT.BAF~
+//Improved Horns of Valhalla
+
+COPY ~NeJE\bdash\itm\MISC3I.ITM~ ~override~
+  SAY DESC ~Silver Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a twelveth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~NeJE\bdash\itm\MISC3J.ITM~ ~override~
+  SAY DESC ~Bronze Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a fifteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~NeJE\bdash\itm\MISC3K.ITM~ ~override~
+  SAY DESC ~Iron Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth an eighteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
