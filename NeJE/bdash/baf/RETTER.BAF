@@ -13,5 +13,3 @@ THEN
 	RESPONSE #100
 		Attack(NearestEnemyOf(Myself))
 END
-
-

@@ -25,5 +25,3 @@ THEN
 		SelectWeaponAbility(SLOT_AMMO,0)
 		Attack(NearestEnemyOf(Myself))
 END
-
-

@@ -10,5 +10,3 @@ THEN
 		Wait(2)
 		StartDialogueNoSet(Player1)
 END
-
-
