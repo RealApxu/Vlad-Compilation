@@ -4,10 +4,8 @@
 //_________________________________________________//
 //                                                 //
 
-ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN //Edwin update - BGT
-
-    COPY ~NeJE/bdash/BGTcomp/edwin/MISC89.ITM~ ~override~
-        SAY DESC ~This is Edwin's birthright, inlaid with his family stone.
+COPY ~NeJE/bdash/BGTcomp/edwin/MISC89.ITM~ ~override~
+    SAY DESC ~This is Edwin's birthright, inlaid with his family stone.
 
 STATISTICS:
 
@@ -31,24 +29,22 @@ Weight:  3
 Usable By:
  Edwin~
 
-    COPY ~NeJE/bdash/BGTComp/edwin/edwin.cre~ ~override/edwin.cre~
-        WRITE_SHORT 0x244 0 // doesn't change
-        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-        WRITE_BYTE 0x247 0x40 // doesn't change
+COPY ~NeJE/bdash/BGTComp/edwin/edwin.cre~ ~override/edwin.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
 
-    COPY ~NeJE/bdash/BGTComp/edwin/edwin2.cre~ ~override/edwin2.cre~
-        WRITE_SHORT 0x244 0 // doesn't change
-        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-        WRITE_BYTE 0x247 0x40 // doesn't change
+COPY ~NeJE/bdash/BGTComp/edwin/edwin2.cre~ ~override/edwin2.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
 
-    COPY ~NeJE/bdash/BGTComp/edwin/edwin4.cre~ ~override/edwin4.cre~
-        WRITE_SHORT 0x244 0 // doesn't change
-        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-        WRITE_BYTE 0x247 0x40 // doesn't change
+COPY ~NeJE/bdash/BGTComp/edwin/edwin4.cre~ ~override/edwin4.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
 
-    COPY ~NeJE/bdash/BGTComp/edwin/edwin6.cre~ ~override/edwin6.cre~
-        WRITE_SHORT 0x244 0 // doesn't change
-        WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
-        WRITE_BYTE 0x247 0x40 // doesn't change
-
-END
+COPY ~NeJE/bdash/BGTComp/edwin/edwin6.cre~ ~override/edwin6.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%RED_WIZARD%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
