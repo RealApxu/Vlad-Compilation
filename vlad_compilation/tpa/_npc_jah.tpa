@@ -1,0 +1,237 @@
+///////////////////////////////
+//Adding Modified Jaheira
+///////////////////////////////
+
+APPEND ~SPELL.IDS~
+~3518 Jaheira_Mental_Agility
+3519 Jaheira_Physical_Agility
+3520 Jaheira_Shape_Change~
+
+COPY ~%MOD_FOLDER%/components/jah/bam~ ~override~
+COPY ~%MOD_FOLDER%/components/jah/xbows~ ~override~
+
+COPY ~%MOD_FOLDER%/components/jah/spin/SPIN518.SPL~ ~override/SPIN518.SPL~
+  SAY NAME1 ~Sylvanus Mental Agility~
+  SAY NAME2 ~Sylvanus Mental Agility~
+  SAY DESC ~This spell quickens the thought processes of the caster actually allowing him to cast spells more quickly than normally. The casting speed facor is increased as the caster advances levels.~
+
+COPY ~%MOD_FOLDER%/components/jah/spin/SPIN519.SPL~ ~override/SPIN519.SPL~
+  SAY NAME1 ~Sylvanus Physical Agility~
+  SAY NAME2 ~Sylvanus Physical Agility~
+  SAY DESC ~This spell quickens the caster's reflexes, enabling faster and more effective combat.~
+
+COPY ~%MOD_FOLDER%/components/jah/spin/SPIN520.SPL~ ~override/SPIN520.SPL~
+  SAY NAME1 ~Shapechange~
+  SAY NAME2 ~Shapechange~
+  SAY DESC ~Shapechange (Alteration)
+Level: 7
+Range: 0
+Duration: 5 turns
+Casting Time: 9
+Area of Effect: Caster
+Saving Throw: None
+
+With this spell, a caster is able to assume the form of a powerful creature (mind flayer, iron golem, greater wolfwere, earth elemental, fire elemental, or giant troll).  The spellcaster becomes the creature he wishes, and has almost all of its abilities. Thus, he can change into a mind flayer to stun his opponents and then become an earth elemental to crush his foes.  These creatures have whatever hit points the caster had at the time of the shape change. Each alteration in form requires only a second, and no system shock is incurred.
+
+Note that the although the assumed form has the combat characteristics of the real creature, it may not have all of its immunities.~
+
+ADD_KIT ~PRIEST_OF_SYLVANUS~
+
+~PRIEST_OF_SYLVANUS          0           0           1           1           1           0           0           0~
+
+~PRIEST_OF_SYLVANUS 0 0 0 2 2 2 0 2 0 0 0 0 0 0 2 2 0 2 2 0 0 0 2 2 0 0 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+
+~PRIEST_OF_SYLVANUS      0       9       0       9       15     15~
+
+~PRIEST_OF_SYLVANUS      0       0       0       0       0       0~
+
+~PRIEST_OF_SYLVANUS      0      12       0      12      17      15~
+
+~PRIEST_OF_SYLVANUS      0       9       0      9       15      15~
+
+~PRIEST_OF_SYLVANUS      0       0       0       0       1       0       0       0       0~
+
+~PRIEST_OF_SYLVANUS      1       0       0       0       0       0~
+
+~%MOD_FOLDER%/components/jah/rules/CLABSYPR.2DA~
+
+~~
+
+~0x00000000 11~
+
+~Dr0~
+
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLING05 DAGG05,40 STAF20~
+
+SAY ~priest of sylvanus~
+
+SAY ~Priest of Sylvanus~
+
+SAY ~PRIEST OF SYLVANUS: This druid kit was especially created for Jaheira to reflect her unique personality.
+
+Advantages:
+-  She may specialize in any missile weapons she can use including light crossbows.
+-  She gains +1 to hit, and +1 to damage with any missile weapon for every six levels of experience.
+-  She has access to three innate abilities, which become available from her innate slots as she advances levels:
+  1. Sylvanus Mental Agility. This spell creates the energetic channel between Jaheira and her god that quickens the thought processes allowing her to cast spells more quickly than normally. Jaheira gains this spell at levels:
+    Level 1, +1 to casting speed factor for 2 rounds
+    Level 6, +2 to casting speed factor for 7 rounds
+    Level 12, +3 to casting speed factor for 9 rounds
+    Level 18, +4 to casting speed factor for 12 rounds.
+  2. Sylvanus Physical Agility. This spell quickens Jaheira's reflexes, enabling faster and more effective combat. Jaheira gains this spell at levels:
+    Level 3, +1 to attack speed factor and dexterity for 2 rounds
+    Level 9, +2 to attack speed factor and +1 to dexterity for 7 rounds
+    Level 15, +3 to attack speed factor and +1 to dexterity for 9 rounds
+    Level 21, +4 to attack speed factor and +2 to dexterity for 11 rounds.
+  3. Sylvanus Shape Change. Jaheira gains this spell at levels 12th, 24th and 36th. With this spell, she is able to assume the form of a powerful creature (mind flayer, iron golem, greater wolfwere, earth elemental, fire elemental, or giant troll), and becomes the creature she wishes, gaining almost all of its abilities. Thus, she can change into a mind flayer to stun her opponents and then become an earth elemental to crush her foes. These creatures have whatever hit points Jaheira had at the time of the shape change. Each alteration in form requires only a second, and no system shock is incurred. Note that the although the assumed form has the combat characteristics of the real creature, it may not have all of its immunities.
+
+Disadvantages:
+-  No regular shapeshifting abilities.~
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH10.CRE~ ~override/JAHEIR7.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH12.CRE~ ~override/JAHEIR8.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH13.CRE~ ~override/JAHEIR11.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH14.CRE~ ~override/JAHEIR12.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH14.CRE~ ~override/JAHEI12B.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/jah/cre/VP_JAH14.CRE~ ~override/JAHEI14.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+
+ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+//Jaheira creatures update - BGT
+COPY ~%MOD_FOLDER%/components/jah/cre/JAHEIR.cre~ ~override/JAHEIR.cre~
+  SAY 0x1a0 #30770
+  SAY 0x1a4 #30771
+  SAY 0x1a8 #30772
+  SAY 0x1ac #30775
+  SAY 0x1b0 #30776
+  SAY 0x1b4 #30777
+  SAY 0x1c0 #30780
+  WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+  WRITE_BYTE 0x2c 99 //metal color
+  WRITE_BYTE 0x2d 66 //minor color
+  WRITE_BYTE 0x2e 52 //major color
+  WRITE_BYTE 0x2f 12 //skin color
+  WRITE_BYTE 0x30 94 //leather color
+  WRITE_BYTE 0x31 98 //armor color
+  WRITE_BYTE 0x32 0 //hair color
+  WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/jah/cre/JAHEIR2.cre~ ~override/JAHEIR2.cre~
+  SAY 0x1a0 #30770
+  SAY 0x1a4 #30771
+  SAY 0x1a8 #30772
+  SAY 0x1ac #30775
+  SAY 0x1b0 #30776
+  SAY 0x1b4 #30777
+  SAY 0x1c0 #30780
+  WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+  WRITE_BYTE 0x2c 99 //metal color
+  WRITE_BYTE 0x2d 66 //minor color
+  WRITE_BYTE 0x2e 52 //major color
+  WRITE_BYTE 0x2f 12 //skin color
+  WRITE_BYTE 0x30 94 //leather color
+  WRITE_BYTE 0x31 98 //armor color
+  WRITE_BYTE 0x32 0 //hair color
+  WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/jah/cre/JAHEIR4.cre~ ~override/JAHEIR4.cre~
+  SAY 0x1a0 #30770
+  SAY 0x1a4 #30771
+  SAY 0x1a8 #30772
+  SAY 0x1ac #30775
+  SAY 0x1b0 #30776
+  SAY 0x1b4 #30777
+  SAY 0x1c0 #30780
+  WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+  WRITE_BYTE 0x2c 99 //metal color
+  WRITE_BYTE 0x2d 66 //minor color
+  WRITE_BYTE 0x2e 52 //major color
+  WRITE_BYTE 0x2f 12 //skin color
+  WRITE_BYTE 0x30 94 //leather color
+  WRITE_BYTE 0x31 98 //armor color
+  WRITE_BYTE 0x32 0 //hair color
+  WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/jah/cre/JAHEIR6.cre~ ~override/JAHEIR6.cre~
+  SAY 0x1a0 #30770
+  SAY 0x1a4 #30771
+  SAY 0x1a8 #30772
+  SAY 0x1ac #30775
+  SAY 0x1b0 #30776
+  SAY 0x1b4 #30777
+  SAY 0x1c0 #30780
+  WRITE_SHORT 0x244 0 // doesn't change
+  WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+  WRITE_BYTE 0x247 0x40 // doesn't change
+  WRITE_BYTE 0x2c 99 //metal color
+  WRITE_BYTE 0x2d 66 //minor color
+  WRITE_BYTE 0x2e 52 //major color
+  WRITE_BYTE 0x2f 12 //skin color
+  WRITE_BYTE 0x30 94 //leather color
+  WRITE_BYTE 0x31 98 //armor color
+  WRITE_BYTE 0x32 0 //hair color
+  WRITE_BYTE 0x23b 17 //Wisdom
+END
+
+COPY ~%MOD_FOLDER%/components/jah/itm/SPER07.ITM~ ~override~
+    SAY NAME2 ~Spear of the Unicorn +4~
+    SAY DESC ~Spear of the Unicorn +4
+This graceful spear is carved to resemble the elongated horn of the unicorn. Wielders of this spear are protected from evil, just as a unicorn might be. Whether the horn is or isn't an actual unicorn horn is the subject of much debate.
+
+Equipped Abilities:
+ +10% Magic Resistance
+  +3 to all saves vs. death
+
+Special Abilities:
+ Protection from Evil
+
+STATISTICS
+
+THAC0: +4 bonus
+Damage:  1D8 + 4
+Damage type:  piercing
+Weight: 3
+Speed Factor: 4
+Proficiency Type: Spear
+Type:  2-handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Mage
+ Thief
+ Monk
+ Beast Master~
+
+// Jaheira crossbow proficiency fix
+/*
+COPY_EXISTING ~WEAPPROF.2da~ ~override/WEAPPROF.2da~
+    REPLACE_TEXTUALLY ~CROSSBOW                 103                      31127                    34162                    0                        5                        0                        1                        1                        2                        0                        2                        2                        0                        2                        2                        1                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        1                        5                        0                        0                        2                        2                        5                        2                        2                        1                        1                        1                        1                        1                        1                        0                        0                        0                        0                        0                        0                        0                        2                        0                        0                        0                        0                        1                        2                        5                        0~ ~CROSSBOW                    103     31127           34162       0       5       0       1       1       2       0       2       2               0               2               2                   1           0           0               5               0                   0               0       0           0       0           0           0       0           0           1           5               0       0           2           2               5       2       2           1       1               1               1       1       1       0               0               0               0       0       0          0     2          0 0 0 2 5 1~
+*/

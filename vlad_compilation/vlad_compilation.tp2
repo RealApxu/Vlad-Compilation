@@ -1,0 +1,362 @@
+BACKUP ~weidu_external/backup/vlad_compilation~
+AUTHOR ~Vladislav Papper (vladp6@gmail.com)~
+
+/////////////////////////////////////////
+//            Vlad's Compilation
+/////////////////////////////////////////
+
+ALWAYS
+
+    OUTER_SPRINT workspace "weidu_external/workspace/%MOD_FOLDER%"
+    MKDIR "%workspace%"
+    
+END
+
+AUTO_TRA ~%MOD_FOLDER%/components/bdash/language\%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~%MOD_FOLDER%/components/bdash/Language\english\setup.tra~
+
+LANGUAGE ~Deutsch~
+         ~deutsch~
+         ~%MOD_FOLDER%/components/bdash/Language\deutsch\korrektur.tra~
+
+BEGIN ~MY COMPILATION~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+
+/*
+ACTION_IF (FILE_EXISTS ~data/CTB-RULE.BIF~) 
+       OR (FILE_EXISTS ~data/SOS-RULE.BIF~)
+       OR (FILE_EXISTS ~data/TDD-RULE.BIF~) THEN BEGIN
+    FAIL ~You have incompatible mods installed!~
+END
+
+ACTION_IF FILE_EXISTS ~Setup-GUI.tp2~ THEN BEGIN
+    UNINSTALL ~Setup-GUI.tp2~ ~0~
+    UNINSTALL ~Setup-GUI.tp2~ ~1~
+    UNINSTALL ~Setup-GUI.tp2~ ~2~
+    UNINSTALL ~Setup-GUI.tp2~ ~3~
+    UNINSTALL ~Setup-GUI.tp2~ ~4~
+    UNINSTALL ~Setup-GUI.tp2~ ~5~
+    UNINSTALL ~Setup-GUI.tp2~ ~6~
+    UNINSTALL ~Setup-GUI.tp2~ ~7~
+    UNINSTALL ~Setup-GUI.tp2~ ~8~
+    UNINSTALL ~Setup-GUI.tp2~ ~9~
+    UNINSTALL ~Setup-GUI.tp2~ ~10~
+    UNINSTALL ~Setup-GUI.tp2~ ~11~
+    UNINSTALL ~Setup-GUI.tp2~ ~12~
+    UNINSTALL ~Setup-GUI.tp2~ ~13~
+    UNINSTALL ~Setup-GUI.tp2~ ~14~
+    UNINSTALL ~Setup-GUI.tp2~ ~15~
+    UNINSTALL ~Setup-GUI.tp2~ ~16~
+    UNINSTALL ~Setup-GUI.tp2~ ~17~
+    UNINSTALL ~Setup-GUI.tp2~ ~18~
+    UNINSTALL ~Setup-GUI.tp2~ ~19~
+END
+*/
+
+/*
+MKDIR ~NeJE\dlgialog.bak~
+
+COPY + ~dialog.tlk~ ~NeJE\dlgialog.bak\dialog.tlk~
+
+ACTION_IF FILE_EXISTS ~dialogF.tlk~ THEN BEGIN
+    COPY + ~dialogF.tlk~ ~NeJE\dlgialog.bak\dialogF.tlk~
+END
+*/
+
+//***********************************************************************************************
+//  Dialogs
+//***********************************************************************************************
+
+PRINT ~Patching dialogs...~
+
+COPY_EXISTING ~interdia.2da~ ~override~
+    SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
+BUT_ONLY
+
+COMPILE ~%MOD_FOLDER%/components/dlg/bdash~
+        ~%MOD_FOLDER%/components/dlg/kr~
+        ~%MOD_FOLDER%/components/dlg/leina~
+        ~%MOD_FOLDER%/components/dlg/misc~
+        ~%MOD_FOLDER%/components/dlg/nej~
+        ~%MOD_FOLDER%/components/dlg/ts~
+
+APPEND ~TOOLTIP.2DA~ ~SiMace2           99998921        99998922       99998923kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~FANMACE           66666661        77777772       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~FANSTAFF          66666662        77777772       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~FANSTAR           66666663        77777772       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~FANSWOR1          66666664        77777772       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~FANSWOR2          66666665        77777772       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~ROGUE             77777774        77777775       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~SCARAB            77777776        77777777       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~WUJEN             77777783        99998921       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~BLACKNI2          77777783        99998921       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~HelmAnom          99999981        99999982       99999983kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~KelChan           99999984        99999985       99998921kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~NPRING01          99999921        99999922       99999923kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~CLCKAERI          99999911        99999912       99999913kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~ROBEARM2          99999922        77777753       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~KINGMASK          66667753        66667754       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~RINGED            88888887        88888888       88888889kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~LeiAmulM          99998923        99998921       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~LeiAmul           99998921        99998922       99998923kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DarChain          66666611        77777712       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~StaffPow          77777738        77777739       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DERING5           99999991        99999992       99999993kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DERING4           99999994        99999992       99999993kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DERING3           99999994        99999995       99999993kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DERING2           99999996        99999997       99999998kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~DERING            99999999        99999995       99999997kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~staffsw           77777703        77777702       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~STAFFBES          77777708        77777709       -1kkkkkk~
+APPEND ~TOOLTIP.2DA~ ~invcloak          99999932        77777763       -1kkkkkk~
+
+COPY_EXISTING ~TOOLTIP.2DA~ ~override~
+    //******** number of items in appended rows ***
+    SET present_cols = 29
+    //*********************************************
+    SET rows=2
+    SET rows_prev=0
+    SET col_cnt=0
+    WHILE "%rows%">1 BEGIN
+        col_cnt = col_cnt + 1
+        rows_prev = rows
+        COUNT_2DA_ROWS col_cnt rows
+    END
+    col_cnt = col_cnt - 1
+    SET ccc = col_cnt - 1
+
+    SPRINT str_add ""
+    FOR(cnt="%present_cols%"; cnt<"%col_cnt%"; cnt+=1) BEGIN
+        SPRINT str_add "%str_add%"^"         -1"
+    END
+
+    REPLACE_TEXTUALLY ~kkkkkk~ "%str_add%"
+
+    REPLACE ~99998921~ ~Heal~
+    REPLACE ~99998922~ ~True Sight~
+    REPLACE ~99998923~ ~Mass Cure~
+    REPLACE ~66666661~ ~Mace~
+    REPLACE ~77777772~ ~Dispel Magic~
+    REPLACE ~66666662~ ~Quaterstaff~
+    REPLACE ~66666663~ ~Morning Star~
+    REPLACE ~66666664~ ~Long Sword~
+    REPLACE ~66666665~ ~Two-Handed Sword~
+    REPLACE ~77777774~ ~Blindness~
+    REPLACE ~77777775~ ~Color Spray~
+    REPLACE ~77777776~ ~Friends~
+    REPLACE ~77777777~ ~Charm~
+    REPLACE ~77777783~ ~Greater Restoration~
+    REPLACE ~99999981~ ~Fireball~
+    REPLACE ~99999982~ ~Prismatic Spray~
+    REPLACE ~99999983~ ~Sunray~
+    REPLACE ~99999984~ ~False Dawn~
+    REPLACE ~99999985~ ~Ethereal Purge~
+    REPLACE ~99999921~ ~Imroved Invisibility~
+    REPLACE ~99999922~ ~Improved Haste~
+    REPLACE ~99999923~ ~Blur~
+    REPLACE ~99999911~ ~Summon Aerial Servant~
+    REPLACE ~99999912~ ~Summon Nymph~
+    REPLACE ~99999913~ ~Nature's Beauty~
+    REPLACE ~77777753~ ~Protective Mode~
+    REPLACE ~66667753~ ~Aura of Terror~
+    REPLACE ~66667754~ ~X-Ray Vision~
+    REPLACE ~88888887~ ~Adamantine Skin~
+    REPLACE ~88888888~ ~Blue Fire Shield~
+    REPLACE ~88888889~ ~Summon Fire Golem~
+    REPLACE ~66666611~ ~Call Lightning~
+    REPLACE ~77777712~ ~Lightning Bolt~
+    REPLACE ~77777738~ ~Lightning Bolt of Paralyzation~
+    REPLACE ~77777739~ ~Globe of Invulnerability~
+    REPLACE ~99999991~ ~Summon Air Elemental~
+    REPLACE ~99999992~ ~Summon Lesser Earth Elemental~
+    REPLACE ~99999993~ ~Summon Greater Fire Elemental~
+    REPLACE ~99999994~ ~Fire Shield (Red)~
+    REPLACE ~99999995~ ~Charm Air Elemental~
+    REPLACE ~99999996~ ~Fire Shield (Blue)~
+    REPLACE ~99999997~ ~Charm Earth Elemental~
+    REPLACE ~99999998~ ~Summon Water Elemental~
+    REPLACE ~99999999~ ~Charm Fire Elemental~
+    REPLACE ~77777708~ ~Remove Magic~
+    REPLACE ~77777709~ ~Lower Magic Resistance~
+    REPLACE ~77777703~ ~Neutralize Poison~
+    REPLACE ~77777702~ ~Mordecai's Insect Swarm~
+    REPLACE ~99999932~ ~Project Image~
+    REPLACE ~77777763~ ~Mass Invisibility~
+
+BEGIN ~Baldurdash Fix Pack for SoA-ToB, v1.76 WeiDU~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_baldurdash_fix.tpa~
+INCLUDE ~%MOD_FOLDER%/tpa/_baldurdash_add.tpa~
+
+BEGIN ~New Interface~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_interface.tpa~
+
+/*
+BEGIN ~Improved Ring Of Gaxx~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+*/
+
+BEGIN ~Improved Character Minsc & Boo (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_minsc.tpa~
+
+BEGIN ~Improved Monk Class (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_monk.tpa~
+
+BEGIN ~Priest of Sylvanus (Druid) Kit and Improved Character Jaheira (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_jah.tpa~
+
+BEGIN ~New Jaheira Portrait (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+COPY ~%MOD_FOLDER%/components/jah/pics~ ~override~
+
+/*
+BEGIN ~Restored Anti-Dragon Items and Powerful Swords (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_antidragon.tpa~
+*/
+
+BEGIN ~Restored Twisted Rune Quest (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_twisted.tpa~
+
+BEGIN ~Improved Copper Coronet (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_coronet.tpa~
+
+BEGIN ~Improved Shadows and Shadow Dragon (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_shadow.tpa~
+
+BEGIN ~Restored Dak'kon's Blade (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_dakkon.tpa~
+
+BEGIN ~Improved Nymph (Woodland Being) Script (by Goeran Rimen)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+COMPILE ~%MOD_FOLDER%/components/bdash/nymph\NYMPH.BAF~
+
+/* Deprecated - Use Rogue Rebalancing
+BEGIN ~Dual Wielding Fix for Rogues (by aVENGER)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_rr_dualwield.tpa~
+*/
+
+BEGIN ~Improved Items~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_improved_items.tpa~
+
+BEGIN ~Improved Character Anomen - Stats and Items (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_anomen.tpa~
+
+BEGIN ~Improved Character Nalia - Stats and Items (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_nalia.tpa~
+
+BEGIN ~Improved Character Jan Jansen (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_jan.tpa~
+
+BEGIN ~Improved Character Aerie - Wildwanderer of Baervan (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_aerie.tpa~
+
+BEGIN ~Improved Character Edwin - Red Wizard (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_edwin.tpa~
+
+BEGIN ~Continuous and Custom Kit Imoen (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_imoen.tpa~
+
+BEGIN ~Improved Character Viconia - Darkcloak of Shar (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_npc_viconia.tpa~
+
+BEGIN ~Enhanced Encounter with Yaga Shura in ToB (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+COPY ~%MOD_FOLDER%/components/bdash/yagashur\copy~ ~override~
+
+BEGIN ~Enhanced Encounter with Abazigal in ToB (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+
+COPY ~%MOD_FOLDER%/components/bdash/abazig\copy~ ~override~
+
+COPY ~%MOD_FOLDER%/components/bdash/abazig\cre\BazDra04.cre~ ~override\BazDra04.cre~
+    SAY NAME1 ~Purple~
+    SAY NAME2 ~Purple~
+
+COPY_EXISTING ~AR6000.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY
+~TriggerActivation("Tran6001",FALSE)~
+~TriggerActivation("Tran6001",FALSE)
+CreateCreature("BazDra04",[694.945],12)~
+    END
+
+BEGIN ~BGT-Transition~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt.tpa~
+
+BEGIN ~Merchant League Bank (BGT required!) (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_bank.tpa~
+
+BEGIN ~Tougher Black Talone Elites (BGT required!) (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_blacktalon.tpa~
+
+/* Merged in other Edwin component
+BEGIN ~Improved Character Edwin (BGT required!) (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_edwin.tpa~
+*/
+
+BEGIN ~Stats and Portraits of Viconia and Jaheira. BG1 Viconia and Jaheira can get their BG2 portraits and stats (by Vlad).~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_jahvic.tpa~
+
+BEGIN ~Keys to Eternity (KTE) and fixing Therela's dialogue~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_kte.tpa~
+
+BEGIN ~Improved Character Xan (BGT required!) (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
+INCLUDE ~%MOD_FOLDER%/tpa/_bgt_xan.tpa~
+
+BEGIN ~Keldorn Romance v1.02~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_keldornromance.tpa~
+
+BEGIN ~Tortured Souls v7.06~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_torturedsouls.tpa~
+
+BEGIN ~Leina - New Bard NPC Character and Quest (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_leina.tpa~
+
+BEGIN ~"Firewalker" Shar-Teel (custom kit and continuous character)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_sharteel.tpa~
+
+BEGIN ~Items Upgrade (by Vlad)~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_itemupgrade.tpa~
+
+BEGIN ~Baldurdash English Text Update Pack for ToB, v1.4 WeiDU (by Kevin Dorner)~
+SUBCOMPONENT ~Textupdatepack~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_textpack.tpa~
+
+BEGIN ~Deutsche Korrektur von Textfehlern v2.1~
+SUBCOMPONENT ~Textupdatepack~
+REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
+INCLUDE ~%MOD_FOLDER%/tpa/_textpack_deutch.tpa~

@@ -1,0 +1,42 @@
+//////////////////////////////////////
+//
+//            Improved Illasera
+//
+/////////////////////////////////////
+
+BEGIN ~Enhanced Encounter with Illasera in ToB (by Vlad)~
+
+COPY ~%MOD_FOLDER%/components/bdash/illasera\copy~ ~override~
+
+COPY ~%MOD_FOLDER%/components/bdash/illasera\itm\RiSw1H02.itm~ ~override/RiSw1H02.itm~
+    SAY NAME2 ~Rithtellium Short Sword +5~
+    SAY DESC ~This short sword is extremely light and give off a shimmering blue hue. Closer examination reveals that it is made from *rithtellium*, a mystical alloy, the forging of which is a closely guarded secret, known only to those who forge it. It requires both  mage and smith to forge weapons from rithtellium, the end result being weapons with a shimmering blue hue which are usable by wizards as if proficient in their use.
+
+Combat Abilities:
+ Spell Strike (whenever strikes an opponent)
+ Very Fast (4 attacks per round)
+
+Equipped Abilities:
+ Armour class +2
+ Saving throws +2
+ Magic Resistance: +10%
+ Protection from Poison
+
+Special abilities:
+ Memorize 2 additional 7th level Mage spell
+ Memorize 2 additional 8th level Mage spell
+ Memorize 2 additional 9th level Mage spell
+
+STATISTICS:
+
+Damage:  1D6 +5, +3 poison
+THAC0:  +5 bonus
+Damage type:  Slashing
+Weight: 2
+Speed Factor: 12
+Type:  1-handed
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~

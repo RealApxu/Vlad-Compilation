@@ -1,0 +1,11 @@
+///////////////////////////////////
+// Improved Copper Coronet
+//////////////////////////////////
+
+COPY ~%MOD_FOLDER%/components/bdash/coppercr\copy~ ~override~
+
+COPY_EXISTING ~GITHSPWN.bcs~ ~override\GITHSPWN.bcs~
+    EXTEND_TOP ~GITHSPWN.bcs~ ~%MOD_FOLDER%/components/bdash/coppercr\spawn\eGITHSPW.baf~
+
+COPY_EXISTING ~VAMPSTTP.bcs~ ~override\VAMPSTTP.bcs~
+    EXTEND_TOP ~VAMPSTTP.bcs~ ~%MOD_FOLDER%/components/bdash/coppercr\spawn\eVAMPSTT.baf~

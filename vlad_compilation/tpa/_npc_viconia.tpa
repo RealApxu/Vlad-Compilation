@@ -1,0 +1,181 @@
+//////////////////////////////////////
+//
+//                 Viconia
+//
+/////////////////////////////////////
+
+APPEND ~SPELL.IDS~
+~3399 Viccy_Neutralize_Poison
+3398 Viccy_Remove_Paralysis
+3397 Viccy_Cure_Disease
+3496 Viccy_Death_Ward
+3495 Viccy_Cause_Serious_Wounds
+3494 Viccy_Lesser_Restoration
+3394 Viccy_Iron_Skins
+3395 Viccy_Cause_Critical_Wounds
+3396 Viccy_Slay_Living
+3490 Viccy_Heal
+3491 Viccy_Harm
+3492 Viccy_Physical_Mirror
+3493 Viccy_Finger_of_Death
+3497 Viccy_Greater_Restoration
+3498 Viccy_Creeping_Doom
+3499 Viccy_Storm_of_Vengeance
+3500 Viccy_Summon_Fallen_Deva~
+
+ADD_KIT ~DARKCLOAK_OF_SHAR~
+
+~DARKCLOAK_OF_SHAR          0           0           1           1           0           1           0           0~
+
+~DARKCLOAK_OF_SHAR 0 0 0 0 2 2 0 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 0 0 0 0 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+
+~DARKCLOAK_OF_SHAR      0       0       0       0       13     0~
+
+~DARKCLOAK_OF_SHAR      0       0       0       0       0       0~
+
+~DARKCLOAK_OF_SHAR      0       0       0      0        17     0~
+
+~DARKCLOAK_OF_SHAR      0       0       0      0        15     0~
+
+~DARKCLOAK_OF_SHAR      1       0       0       1       0       0       1       0       0~
+
+~DARKCLOAK_OF_SHAR      1       0       1       1       0       1~
+
+~%MOD_FOLDER%/components/bdash/viccy\CLABSHAR.2DA~
+
+~~
+
+~0x00000000     3~
+
+~Cl0~
+
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLING05 DAGG05,40 STAF20~
+
+SAY ~darkcloak of shar~
+
+SAY ~Darkcloak of Shar~
+
+SAY ~DARKCLOAK OF SHAR: This cleric kit was especially created for Viconia to reflect her unique personality.
+
+Shar, also known as Mistress of the Night, Nightsinger, Lady of Loss, or The Darkness, is the evil counterpart to her twin sister Selune, and presides over caverns, dark, dungeons, forgetfulness, loss, night, secrets, and the Underdark. Shar is an ancient goddess, formed together with her sister at the beginning of time, out of the empty nothingness that existed before gods or mortals. Among her array of twisted powers is the ability to see everything that lies or happens in the dark.
+
+Since her earliest battles with Selune (which continue to this day), Shar has gained dominion over pain hidden but not forgotten, carefully nurtured bitterness, and quiet revenge for old slights. Deeply twisted, the Lady of Loss favors secrets, underhanded dealings, and subterfuge. She uses her mortal worshipers as pawns in a perverse game against everything that has been, is, and will be. Patron of the Shadow Weave, a corrupting magical force based upon nothingness and mad secrets, the Mistress of the Night bolsters her impressive power with temptation and guile.
+
+The clergy of the Church of Shar use corruption and subversion to spread Shar's faith, but they must do this in secret in many places due to the religion being forbidden. The atmosphere of the organization is one of unwavering faith to its leader, Shar herself. Disobeying an order usually results in death. Although devotees are perfectly willing to give their life for Shar, she often does not intend for this to happen because it will deplete the number of her dedicated followers.
+
+From time to time, Shar requests of her priests that a certain individual, usually a sorcerer or wizard who she deems to have misused the Shadow Weave, is killed. On the other hand, Shar can forbid such acts against specific individuals. It is not uncommon for the church to make use of the Shadow Weave itself, although Shar holds onto the deepest and most powerful secrets of the magical force.
+
+The clergy of the church will travel in small groups or individually throughout Faerun, often disguised as merchants or pilgrims to avoid detection. Their missions usually involve either espionage or murder.
+
+The church is split into individual cells that can operate independently from one another, often having a temple or shrine as their focal point. Cells are linked by the leadership of a priest, and one priest will typically control the cells in a geographic area. Priests communicate with one another, but rarely reveal truthful information to their inferiors.
+
+The intent of the Church of Shar is to spread the faith of Shar. This is achieved by undermining and corrupting individuals, governments and even other religions. This enables the subject to be more likely to accept the views and dogma of Shar. Because the most valuable commodity to the clergy of Shar is a secret, information is closely guarded and is only revealed when it is essential to be known. The clergy of Shar will expect that a secret is traded for another similarly prized secret.
+
+By revealing secrets, Sharran clergy will attempt to incite bitterness and jealously within individual, such as telling a woman that her husband is having an affair. These emotions are strongly embraced by Shar and highly increase the likeliness of a successful conversion.
+
+There are several orders in the Church of Shar: the Dark Justicars who have to kill a priest of Selune to gain admittance to the order, the Servants of the Dark Moon who tap into the Shadow Weave through their powers of sorcery, and the "Nightbringers", the elite Sharran forces.
+
+Unusual among other orders in the Church, the "Darkcloaks" were actually a compassionate group of oracles and caregivers who tended to those troubled souls who were emotionally damaged, often bringing the bliss of forgetfulness to soothe their pain. Their work did much to present the church in a positive light to the populace, though too often the reaction was still negative. This order included some of the few non-evil clerics in the Church, and Viconia is one of them.
+
+Advantages:
+-  They can specialise in any weapon that a cleric can use
+-  Darkcloaks have a negative plane protection and a natural mind shield, both embedded in one of their personal items, i.e. they cannot be level or energy drained and they cannot be charmed, confused or affected by any mind-altering effects including pisonics
+-  They can cast a limited number of spells, which become available from their innate slots as they advance levels:
+ At 2nd, 4th and 6th level, darkcloaks can cast Cure Disease, Neutralize Poison and Remove Paralysis
+ At 3rd, 5th and 8th level, darkcloaks can cast Iron Skins, Lesser Restoration and Death Ward
+ At 7th, 9th and 11th level, darkcloaks can cast Cause Serious Wounds, Cause Critical Wounds and Slay Living
+ At 10th, 12th and 14th level, darkcloaks can cast Heal and Harm
+ At 13th, 16th and 18th level, darkcloaks can cast Physical Mirror and Greater Restoration
+ At 17th, 19th and 21st level, darkcloaks can cast Finger of Death and Creeping_Doom
+ At 20th, 23rd and 26th level, darkcloaks can cast Storm of Vengeance and Summon Fallen Deva
+
+Disadvantages:
+-  None~
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI6.cre~ ~override\VICONI6.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI8.cre~ ~override\VICONI8.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI9.cre~ ~override\VICONI9.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI11.CRE~ ~override\VICONI11.CRE~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI13.cre~ ~override\VICONI13.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI16.cre~ ~override\VICONI16.cre~
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\spl_copy~ ~override~
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VicAmul.ITM~ ~override~
+    SAY NAME2 ~Dark Shadow of Shar~
+    SAY DESC ~Dark Shadow of Shar
+This amulet is cold beneath your touch and bears a weight far greater than its size might suggest. The black round-shaped stone is inserted into it, and the symbols of an ancient tongue are inscribed on one side, the strange words shimmering and glowing with an inner white light.
+
+STATISTICS:
+
+Equipped Abilities:
+ Magic Resistance: +10%
+ Resistance to Magic Damage: +50% (magic attacks will do half of full damage)
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects)
+ Negative Plane Protection
+ Vocalize
+
+Special Abilities:
+ Grants two extra spells of each level from 4th to 7th
+ Polymorph into Shadow at will (for 2 turns)
+
+Armor Class Bonus: +2
+THAC0 Bonus: +2
+Saving Throws Bonus: +2
+Improves Casting Speed by 2
+
+Weight:  3
+Usable By:
+ Viconia~
+
+COPY ~%MOD_FOLDER%/components/bdash/viccy\CloakSh.ITM~ ~override~
+    SAY NAME2 ~Dark Cloak of Shar~
+    SAY DESC ~Dark Cloak of Shar
+Only those most worthy and devoted servants of the Lady of Loss are granted these powerful cloaks which provide essential protections and increase the amount of priest high-level spells they can memorise.
+
+STATISTICS:
+
+Equipped Abilities:
+ Regeneration (1 HP/round)
+ Immunity to Disease and Poison
+ True Free Action
+  (Immunity to any slowing, holding and paralyzation magics)
+
+Special Abilities:
+ Grants two additional 6th and 7th level spells
+
+Armor Class Bonus: +2
+THAC0 Bonus: +2
+Strength Bonus: +2
+Constitution Bonus: +2
+
+Usable By:
+ Viconia~
+
+//Removal of the reputation change
+COPY_EXISTING ~Baldur.bcs~ ~override/Baldur.bcs~
+    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/viccy/sExt/oviBaldur.bcs~ ~%MOD_FOLDER%/components/bdash/viccy/sExt/nviBaldur.bcs~

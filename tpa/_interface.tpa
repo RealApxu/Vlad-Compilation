@@ -1,9 +1,0 @@
-COPY ~NeJE\gui_anim~ ~override~
-COPY ~NeJE\bdash\intro\Theme\themea.acm~ ~music\Theme\themea.acm~
-
-///////////////////////////////////////
-// 2. String replacements
-///////////////////////////////////////
-
-//73247
-STRING_SET ~shadows of amn~ ~play game~
