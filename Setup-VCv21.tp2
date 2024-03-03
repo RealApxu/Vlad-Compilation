@@ -1,9 +1,16 @@
-BACKUP ~NeJE\backup~
+BACKUP ~weidu_external/backup/vlad_compilation~
 AUTHOR ~Vladislav Papper (vladp6@gmail.com)~
 
 /////////////////////////////////////////
 //            Vlad's Compilation
 /////////////////////////////////////////
+
+ALWAYS
+
+    OUTER_SPRINT workspace "weidu_external/workspace/%MOD_FOLDER%"
+    MKDIR "%workspace%"
+    
+END
 
 AUTO_TRA ~NeJE\bdash\language\%s~
 
@@ -182,7 +189,8 @@ AT_INTERACTIVE_NOW ~Install_NeJEAreasSounds.bat~
 
 BEGIN ~Baldurdash Fix Pack for SoA-ToB, v1.76 WeiDU~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
-INCLUDE ~tpa/_baldurdash.tpa~
+INCLUDE ~tpa/_baldurdash_fix.tpa~
+INCLUDE ~tpa/_baldurdash_add.tpa~
 
 BEGIN ~New Interface~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~

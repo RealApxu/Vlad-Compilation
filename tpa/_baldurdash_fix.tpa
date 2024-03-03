@@ -10,20 +10,8 @@ PRINT ~Core Baldurdash Fixes (by Kevin Dorner)~
 //COPY ~NeJE\bdash\copy_2da~ ~override~
 ////////////////////////////////////////
 
-//clabdr04.2da - remove stat changing ability
-COPY_EXISTING ~CLABDR04.2DA~ override
-    REPLACE_TEXTUALLY ~[ %TAB%]AP_SPCL642[ %TAB%]~ ~ ****       ~
-BUT_ONLY
-
 //COPY ~NeJE/bdash/copy_2da/lufmc.2da~ override //not used
 //COPY ~NeJE/bdash/copy_2da/lufmt.2da~ override //not used
-
-//mxsplbrd.2da - New spelltable for bards - can cast up to 9th level spells
-COPY ~NeJE/bdash/copy_2da/mxsplbrd.2da~ override
-
-//Modified weapon proficiency bonuses
-COPY ~NeJE/bdash/copy_2da/wspatck.2da~ override
-COPY ~NeJE/bdash/copy_2da/wspecial.2da~ override
 
 ////////////////////////////////////////
 //COPY ~NeJE/bdash/copy_bcs~ ~override~
@@ -52,13 +40,14 @@ COPY_EXISTING ~igolfle2.bcs~ ~override~
     END
     BUT_ONLY
 
+//Add deathvar for Irenicus Dungeon colem
+COPY_EXISTING ~IGOLFLE1.CRE~ override
+    WRITE_ASCII DEATHVAR igolfle1
+BUT_ONLY
+
 // fix "Player1-6" to Player1-6
 COPY ~NeJE/bdash/copy_bcs/movie03a.bcs~ override
      ~NeJE/bdash/copy_bcs/movie03b.bcs~ override
-
-// vpcutat.bcs and vpcutbr.bcs allowing you to travel between brynnlaw and athkathla (need to be moved)
-COMPILE ~NeJE/bdash/copy_bcs/vpcutat.baf~
-        ~NeJE/bdash/copy_bcs/vpcutbr.baf~
 
 ////////////////////////////////////////
 //COPY ~NeJE\bdash\copy_cre~ ~override~
@@ -67,70 +56,6 @@ COMPILE ~NeJE/bdash/copy_bcs/vpcutat.baf~
 //Remove incorrect spells from Elminster and change his equipment
 COPY ~NeJE/bdash/copy_cre/amelm01.cre~ override
      ~NeJE/bdash/copy_cre/jatermin.cre~ override
-
-//Improved Berserks from Horns of Valhalla (need to be moved)
-COPY ~NeJE/bdash/copy_cre/berser02.cre~ override
-     ~NeJE/bdash/copy_cre/berser03.cre~ override
-     ~NeJE/bdash/copy_cre/bersersu.cre~ override
-
-//Change Flame Tongue with Flame Blade
-COPY_EXISTING ~CEDRUID2.CRE~ override
-    REMOVE_CRE_ITEM sw1h24
-    ADD_CRE_ITEM sw1h53 #0 #0 #0 none inv2
-
-//Change Earth Elemental Animation to IWD version
-COPY_EXISTING ~ELEAR01.CRE~ override
-              ~ELEARG01.CRE~ override
-              ~ELEARPR.CRE~ override
-              ~ELEARPR2.CRE~ override
-              ~ELEARPR3.CRE~ override
-              ~ELEARSU.CRE~ override
-              ~ELEARSU2.CRE~ override
-              ~ELEARSU3.CRE~ override
-              ~ELEARSU4.CRE~ override
-              ~ELEEEL01.CRE~ override
-    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_EARTH_ELEMENTAL~)
-BUT_ONLY
-
-//Rename Olhydra and change animation to IWD
-COPY_EXISTING ~ELEMHYDR.CRE~ override
-    SAY 0x8 ~Greater Water Elemental~
-    SAY 0xc ~Greater Water Elemental~
-    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_ORC_RANGE2~)
-BUT_ONLY
-
-//Change Greater Water Elemental animation to IWD
-COPY_EXISTING ~ELWATG01.CRE~ override
-    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_ORC_RANGE2~)
-BUT_ONLY
-
-//Improved stats for minotaurs
-COPY ~NeJE/bdash/copy_cre/garock.cre~ override
-COPY ~NeJE/bdash/copy_cre/rock.cre~ override
-
-//Improved stats for dragon Saladrex
-COPY ~NeJE/bdash/copy_cre/gorsal.cre~ override
-
-//Add deathvar for Irenicus Dungeon colem
-COPY_EXISTING ~IGOLFLE1.CRE~ override
-    WRITE_ASCII DEATHVAR igolfle1
-BUT_ONLY
-
-//Change Greater Mummy name to Mummy and buff stats
-COPY ~NeJE/bdash/copy_cre/mumgre01.cre~ override
-
-//New creature - Wight with IWD animations
-COPY ~NeJE/bdash/copy_cre/mumgre02.cre~ override
-
-//Change Mummies to Wights
-COPY ~NeJE/bdash/copy_cre/mummy.cre~ override
-COPY ~NeJE/bdash/copy_cre/mummy01.cre~ override
-
-//New creature - Wight with IWD animations
-COPY ~NeJE/bdash/copy_cre/mummy03.cre~ override
-
-//Change summonable Mummy to Wight
-COPY ~NeJE/bdash/copy_cre/riftcr03.cre~ override
 
 //Change portrait and protection item of Bodhi
 COPY ~NeJE/bdash/copy_cre/ppbodhi4.cre~ override
@@ -147,13 +72,6 @@ COPY ~NeJE/bdash/copy_cre/tomegol4.cre~ override
 //Remove voicelines from Merella?
 COPY ~NeJE/bdash/copy_cre/uhrang01.cre~ override
 
-//Change class and stats for Viconia (need to be moved)
-COPY ~NeJE/bdash/copy_cre/viconi6.cre~ override
-     ~NeJE/bdash/copy_cre/viconi6.cre~ override
-     ~NeJE/bdash/copy_cre/viconi9.cre~ override
-     ~NeJE/bdash/copy_cre/viconi11.cre~ override
-     ~NeJE/bdash/copy_cre/viconi13.cre~ override
-
 ////////////////////////////////////////
 //COPY ~NeJE\bdash\copy_eff~ ~override~
 ////////////////////////////////////////
@@ -164,13 +82,6 @@ COPY ~NeJE/bdash/copy_eff/deck01.eff~ override
      ~NeJE/bdash/copy_eff/deck03.eff~ override
      ~NeJE/bdash/copy_eff/deck03b.eff~ override
      ~NeJE/bdash/copy_eff/deck04.eff~ override
-
-//Tortured Souls ring effect
-COPY ~NeJE/bdash/copy_eff/sumelepf.eff~ override
-
-//Increase damage of Dragonslayer
-COPY ~NeJE/bdash/copy_eff/sw1h32a.eff~ override
-     ~NeJE/bdash/copy_eff/sw1h32c.eff~ override
 
 ////////////////////////////////////////
 //COPY ~NeJE\bdash\copy_ids~ ~override~
@@ -186,25 +97,12 @@ COPY ~NeJE/bdash/copy_ids/stats.ids~ override
 //Fixed poison immunities effects
 COPY ~NeJE/bdash/copy_itm/amul22.itm~ override
 
-//Add level drain immunity to Azuredge
-COPY ~NeJE/bdash/copy_itm/ax1h10.itm~ override
-
-//New gem bag for ToB Amkethran Smuggler
-COPY ~NeJE/bdash/copy_itm/bag02j.itm~ override
-COPY ~NeJE/bdash/copy_sto/bag02j.sto~ override
-
 //Add magic resistance icon to robes of archmagi
 COPY ~NeJE/bdash/copy_itm/clck15.itm~ override
 COPY ~NeJE/bdash/copy_itm/clck17.itm~ override
 
 //Effects for Cloak of Mirroring
 COPY ~NeJE/bdash/copy_itm/clck26.itm~ override
-
-//Icons for Cromwell Item Upgrate
-COPY ~NeJE/bdash/copy_itm/iplatcrd.bam~ override
-COPY ~NeJE/bdash/copy_itm/irobeang.bam~ override
-COPY ~NeJE/bdash/copy_itm/iscalese.bam~ override
-COPY ~NeJE/bdash/copy_itm/istaffbe.bam~ override
 
 //Change timing mode for magic globe item
 COPY ~NeJE/bdash/copy_itm/mglobe.itm~ override
@@ -217,9 +115,6 @@ COPY ~NeJE/bdash/copy_itm/misc83bd.itm~ override
 
 //Add icons for Blackrazor
 COPY ~NeJE/bdash/copy_itm/miscbc.itm~ override
-
-//Changed usability flags for Yoshimo katana for TS
-COPY ~NeJE/bdash/copy_itm/npsw02.itm~ override
 
 //Potion of clarity and potion of freedom are unusable by wizard slayers
 COPY ~NeJE/bdash/copy_itm/potn21.itm~ override
@@ -234,9 +129,6 @@ COPY ~NeJE/bdash/copy_itm/ring99.itm~ override
 
 //Remove usability restrictions from raise dead scroll for TS
 COPY ~NeJE/bdash/copy_itm/scrl63.itm~ override
-
-//Buff Spear of the Unicorn
-COPY ~NeJE/bdash/copy_itm/sper07.itm~ override
 
 //Remove undocumented saves bonuses from staff of curing
 COPY ~NeJE/bdash/copy_itm/staf10.itm~ override
@@ -285,46 +177,12 @@ COPY ~NeJE/bdash/copy_spl/spwish17.spl~ override
 //COPY ~NeJE\bdash\copy_sto~ ~override~
 ////////////////////////////////////////
 
-//More storage for gem bags and scroll cases
-COPY ~NeJE/bdash/copy_sto/bag02h.sto~ override
-COPY ~NeJE/bdash/copy_sto/bag02i.sto~ override
-COPY ~NeJE/bdash/copy_sto/bag03h.sto~ override
-COPY ~NeJE/bdash/copy_sto/bag03i.sto~ override
-
 //Harbinger +3 in drow store fix
 COPY ~NeJE/bdash/copy_sto/uddrow23.sto~ override
 
 ////////////////////////////////////////
 //COPY ~NeJE\bdash\copy_wav~ ~override~
 ////////////////////////////////////////
-
-//Keldorn Romance location sounds
-COPY ~NeJE/bdash/copy_wav/am_mrt01.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt02.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt03.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt04.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt05.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt06.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt07.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt08.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt09.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt10.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_mrt11.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_wsp07.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_wsp08.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_wsp09.wav~ override
-COPY ~NeJE/bdash/copy_wav/am_wsp10.wav~ override
-COPY ~NeJE/bdash/copy_wav/ar_0201.wav~ override
-
-//Boo Sounds for Tortured Souls and Neverending Journey
-COPY ~NeJE/bdash/copy_wav/boohl.wav~ override
-COPY ~NeJE/bdash/copy_wav/boonej1.wav~ override
-
-//Ioun Stone Animations
-//COPY ~NeJE\bdash\ionstone~ ~override~
-
-//Change animation ids for orc archers to free up the slot for IWN water elemental
-COPY ~NeJE\bdash\new_wat~ ~override~
 
 //Fixing AreaType - thanks to Ardanis
 //alter missing areatype check to match banter trigger
@@ -339,51 +197,12 @@ COPY_EXISTING ~aerie.bcs~ ~override~
     END
 BUT_ONLY
 
+/*
 //Fixing Imoen's banters
 COPY_EXISTING ~interdia.2da~ ~override~
     SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
 BUT_ONLY
-
-//NPC adding to areas
-EXTEND_TOP ~AR0604.bcs~ ~NeJE\bdash\npc\eAR0604.baf~
-EXTEND_TOP ~AR0701.bcs~ ~NeJE\bdash\npc\eAR0701.baf~
-EXTEND_TOP ~AR1000.bcs~ ~NeJE\bdash\npc\eAR1000.baf~
-EXTEND_TOP ~AR0304.bcs~ ~NeJE\bdash\npc\eAR0304.baf~
-EXTEND_TOP ~AR0406.bcs~ ~NeJE\bdash\npc\eAR0406.baf~
-
-ACTION_IF FILE_EXISTS ~AR1101.bcs~ THEN BEGIN
-    EXTEND_BOTTOM ~AR1101.bcs~ ~NeJE\bdash\npc\AR1101.baf~
-END ELSE BEGIN
-    COMPILE ~NeJE\bdash\npc\AR1101.baf~
-END
-
-/////////////////////////
-// Bonus Merchants
-/////////////////////////
-
-COPY_EXISTING ~AR0406.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-         REPLACE_TEXTUALLY ~Global("WorkingForBodhi","GLOBAL",1)~ ~Global("WorkingForBodhi","GLOBAL",63)~ //this condition will never happen
-         REPLACE_TEXTUALLY ~!Exists("wmart1")~ ~!Exists("walmart1")~
-         REPLACE_TEXTUALLY ~ActionOverride("flydian",EscapeArea())~ ~ActionOverride("messen",EscapeArea())~
-    END
-BUT_ONLY
-
-EXTEND_TOP ~AR0406.bcs~ ~NeJE\bdash\bonusmer\eAR0406.baf~ //create Joluv
-
-ACTION_IF FILE_EXISTS ~AR0702.bcs~ THEN BEGIN
-    COPY_EXISTING ~AR0702.bcs~ ~override~
-        WRITE_ASCII 0x94 ~AR0702~                 //setting area script
-        WRITE_BYTE (0x94+6) 0                    //terminating 0
-    BUT_ONLY
-    EXTEND_TOP ~AR0702.bcs~ ~NeJE\bdash\bonusmer\eAR0702.baf~ //create Deidre
-END ELSE BEGIN
-    COPY ~NeJE\bdash\bonusmer\AR0702.bcs~ ~override~
-    COPY_EXISTING ~AR0702.ARE~ ~override~
-        WRITE_ASCII 0x94 ~AR0702~                 //setting area script
-        WRITE_BYTE (0x94+6) 0                    //terminating 0
-    BUT_ONLY
-END
+*/
 
 //***********************************************************************************************
 //   RULESETS
@@ -591,20 +410,6 @@ COPY_EXISTING ~SndResRf.2da~ ~override~
             SET_2DA_ENTRY cnt 0 2 ~AR3001~ //just make a duplicated STONE0-style entry
         END
     END
-BUT_ONLY
-
-//-------------------------------------------------------------------------
-//No failure and no limitation in spell memorisation
-//-------------------------------------------------------------------------
-
-COPY_EXISTING ~intmod.2da~ ~override~
-    COUNT_2DA_ROWS ~5~ "rows"
-    FOR (index = 3; index < rows ; index = index + 1) BEGIN
-        SET_2DA_ENTRY_LATER ~intmod~ index 1 ~150~
-        SET_2DA_ENTRY_LATER ~intmod~ index 2 ~9~
-        SET_2DA_ENTRY_LATER ~intmod~ index 3 ~99~
-    END
-    SET_2DA_ENTRIES_NOW ~intmod~ 1
 BUT_ONLY
 
 //-------------------------------------------------------------------------
@@ -1446,6 +1251,8 @@ BUT_ONLY
 //Druid Messenger 'No Valid Replies Or Links' Fix
 //-------------------------------------------------------------------------
 
+COMPILE ~NeJE/bdash/baf/druidad.baf~
+
 COPY_EXISTING ~DRUIDAD.CRE~ ~override~
     WRITE_ASCII 0x248 ~DRUIDAD~          //set new scripts
     WRITE_BYTE (0x248+7) 0              //terminating 0
@@ -1998,66 +1805,6 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
     END
 BUT_ONLY
 */
-
-//-------------------------------------------------------------------------
-//Stackable items
-//-------------------------------------------------------------------------
-
-//Potions
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-    READ_SHORT  0x1C "type" ELSE 0
-    PATCH_IF ("%type%" = 9) BEGIN
-        WRITE_SHORT 0x38 999
-    END
-BUT_ONLY
-
-//Scrolls
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-    READ_SHORT  0x1C "type" ELSE 0
-    PATCH_IF ("%type%" = 11) BEGIN
-        WRITE_SHORT 0x38 999
-    END
-BUT_ONLY
-
-//Ammo (arrows, bullets, daggers, bolts, darts and axes)
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-    READ_SHORT  0x1C "type" ELSE 0
-    READ_SHORT  0x38 "max"  ELSE 0
-    PATCH_IF (
-        ("%max%" > 1) AND
-        (
-            ("%type%" =  5) OR
-            ("%type%" = 14) OR
-            ("%type%" = 16) OR
-            ("%type%" = 31) OR
-            ("%type%" = 24) OR
-            ("%type%" = 25)
-        )
-    ) BEGIN
-        WRITE_SHORT 0x38 999
-    END
-BUT_ONLY
-
-//Amulets, rings, coins and gems
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN
-        READ_SHORT 0x1c "type"     ELSE 0
-        READ_SHORT 0x68 "max_abil" ELSE 0
-        READ_SHORT 0x70 "max_fx"   ELSE 0
-        PATCH_IF (
-            ("%max_abil%" = 0) AND
-            ("%max_fx%" = 0) AND
-            (
-                ("%type%" =  1) OR
-                ("%type%" = 10) OR
-                ("%type%" = 33) OR
-                ("%type%" = 34)
-            )
-        ) BEGIN
-        WRITE_SHORT 0x38 999
-        END
-    END
-BUT_ONLY
 
 //-------------------------------------------------------------------------
 //Errard Alignment Fix
@@ -3142,7 +2889,6 @@ COPY_EXISTING ~REGISAMU.ITM~ ~override~
     WRITE_BYTE 0x2f 0x02        //WS
 BUT_ONLY
 
-
 //-------------------------------------------------------------------------
 //Ring Of Gaxx Portrait Icons Fix
 //-------------------------------------------------------------------------
@@ -3326,6 +3072,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Staff Of The Woodlands Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~STAF14.ITM~ ~override~
  READ_LONG 0x6a  "eff_offset"
  READ_SHORT 0x70  "glob_eff_cnt"
@@ -3473,6 +3220,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Carsomyr Base Damage Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~SW2H10.ITM~ ~override~
  READ_LONG 0x64 "ability_offset"
  READ_SHORT 0x68 "ability_cnt"
@@ -3488,6 +3236,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Lilarcor Confusion Immunity Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~SW2H14.ITM~ ~override~
  READ_LONG 0x6a "eff_offset"
  READ_SHORT 0x70 "eff_cnt"
@@ -3502,6 +3251,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Healing Exploit Items Fixes
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~WA2AMU.ITM~ ~override~
  READ_LONG 0x6a "eff_offset"
  READ_SHORT 0x70 "eff_cnt"
@@ -3527,6 +3277,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Vhailor's Helm Simulacrum Magic Resistance Failure Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~WA2HELM.ITM~ ~override~
  READ_LONG 0x64 "ability_offset"
  READ_SHORT 0x68 "ability_cnt"
@@ -3549,6 +3300,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Sling Of Everard Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~WASLING.ITM~ ~override~
  WRITE_BYTE 0x2f 0x0c
  READ_LONG 0x64 "ability_offset"
@@ -3565,6 +3317,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Wands Fixes
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~WAND02.ITM~ ~override~
               ~WAND04.ITM~ ~override~
               ~WAND05.ITM~ ~override~
@@ -3601,6 +3354,7 @@ BUT_ONLY
 //***********************************************************************************************
 //   Stores
 //***********************************************************************************************
+
 PRINT ~Patching stores...~
 
 COPY_EXISTING ~SAHPR1.STO~ ~override~
@@ -3620,11 +3374,13 @@ BUT_ONLY
 //***********************************************************************************************
 //   Spells
 //***********************************************************************************************
+
 PRINT ~Patching spells...~
 
 //-------------------------------------------------------------------------
 //Detect Evil Magic Resistance Failure Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~SPCL212.SPL~ ~override~   //Detect Evil Priest spell
               ~SPPR104.SPL~ ~override~   //Detect Evil Innate spell
               ~SPWI202.SPL~ ~override~   //Detect Evil Wizard spell - BP DETECTABLE SPELL
@@ -3650,6 +3406,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Cavalier Resist Fear Ability Magic Resistance Failure Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~SPCL222.SPL~ ~override~   //Remove Fear spell
     READ_LONG 0x64 "ability_offset"
     READ_SHORT 0x68 "abil_cnt"
@@ -3681,6 +3438,7 @@ BUT_ONLY
 //-------------------------------------------------------------------------
 //Inquisitor Hold Person Animation Fix
 //-------------------------------------------------------------------------
+
 COPY_EXISTING ~Spcl233b.spl~ ~override~
     READ_LONG 0x64 "ability_offset"
     READ_SHORT 0x68 "abil_cnt"
@@ -5079,6 +4837,7 @@ BUT_ONLY
 //////////////////////////////////////////////////////////////
 //Custom fixes, not included in the original Baldurdash
 //////////////////////////////////////////////////////////////
+
 PRINT ~Non-original Baldurdash patches...~
 
 PRINT ~Patching items...~
@@ -5209,12 +4968,6 @@ COMPILE ~NeJE/bdash/baf/bhcrypt.baf~
 //Extra effect for Gorion Wraith cutscene
 COMPILE ~NeJE/bdash/baf/cut218b.baf~
 
-//Ensure Druid Quest messenger dissapears
-COMPILE ~NeJE/bdash/baf/druidad.baf~
-
-//Used in Keldorn Romance to make Keldorn move out of sewers if you rejected his help
-COMPILE ~NeJE/bdash/baf/keldfix.baf~
-
 //Recompile corrupted scripts
 COMPILE ~NeJE/bdash/baf/rdog.baf~
 COMPILE ~NeJE/bdash/baf/rdwarf.baf~
@@ -5230,9 +4983,6 @@ COMPILE ~NeJE/bdash/baf/rsirine.baf~
 
 //Global("itFight","R0406P",3) => Global("PitFight","R0406P",3)
 COMPILE ~NeJE/bdash/baf/rufpal.baf~
-
-//Cespenar healing party script
-COMPILE ~NeJE/bdash/baf/vphealcp.baf~
 
 COPY_EXISTING ~APPRENTI.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
@@ -5388,6 +5138,7 @@ BUT_ONLY
 //////////////////////////////////////////////////////
 //Custom fixes for BG1 - invalid resources references
 //////////////////////////////////////////////////////
+
 PRINT ~Custom fixes - fixing invalid resources references...~
 
 COPY_EXISTING ~AMCARRAS.CRE~ ~override~
@@ -7107,185 +6858,6 @@ ACTION_IF FILE_EXISTS ~script compiler/AICOMPILE.exe~ THEN BEGIN
     COPY_EXISTING ~KIT.IDS~ ~script compiler~
 END
 
-//////////////////////////////////////////////////////////////////////\
-// Messengers Fix
-//////////////////////////////////////////////////////////////////////\
-
-PRINT ~Messengers Fix (by Vlad)~
-
-COPY_EXISTING ~Baldur.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-        REPLACE_TEXTUALLY
-~GlobalTimerExpired("MakeBrusWait","GLOBAL")~
-~GlobalTimerExpired("MakeBrusWait","GLOBAL")
-Global("VP_StopBrusSpawn","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~CreateCreatureObjectOffScreen("BRUS3",Player1,0,0,0)~
-~SetGlobal("VP_StopBrusSpawn","GLOBAL",1)
-CreateCreatureObjectOffScreen("BRUS3",Player1,0,0,0)~
-   END
-
-COPY_EXISTING ~Aerie.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(CITY)[^!]*AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-    END
-
-COPY_EXISTING ~Anomen.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)[^!]*AreaType(CITY)~
-~!AreaCheck("AR1900")
-!AreaCheck("AR1400")
-!AreaCheck("AR1404")
-!AreaCheck("AR2500")
-!AreaCheck("AR2600")
-!AreaCheck("TT9000")
-!AreaType(DUNGEON)
-CombatCounter(0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)
-CombatCounter(0)~
-        REPLACE_TEXTUALLY
-~Global("LoveTalk","LOCALS",27)~
-~Global("LoveTalk","LOCALS",27)
-CombatCounter(0)
-OR(23)
-    AreaCheck("AR0020")
-    AreaCheck("AR0021")
-    AreaCheck("AR0022")
-    AreaCheck("AR0300")
-    AreaCheck("AR0313")
-    AreaCheck("AR0314")
-    AreaCheck("AR0319")
-    AreaCheck("AR0400")
-    AreaCheck("AR0408")
-    AreaCheck("AR0500")
-    AreaCheck("AR0700")
-    AreaCheck("AR0702")
-    AreaCheck("AR0703")
-    AreaCheck("AR0704")
-    AreaCheck("AR0706")
-    AreaCheck("AR0709")
-    AreaCheck("AR0713")
-    AreaCheck("AR0900")
-    AreaCheck("AR1002")
-    AreaCheck("AR1010")
-    AreaCheck("AR1100")
-    AreaCheck("AR1200")
-    AreaCheck("AR2000")~
-    END
-
-COPY_EXISTING ~Jaheira.bcs~ ~override~
-   DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~!AreaType(CITY)[^!]*AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)
-CombatCounter(0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-        REPLACE_TEXTUALLY
-~CreateCreatureObjectOffScreen("JAERTO1","Jaheira",0,0,0)[^!]*CreateCreatureObjectOffScreen("JAERTO2","Jaheira",0,0,0)[^!]*CreateCreatureObjectOffScreen("JAERTO3","Jaheira",0,0,0)[^!]*CreateCreatureObjectOffScreen("JAERTO4","Jaheira",0,0,0)[^!]*CreateCreatureObject("JAERTOF","Jaheira",0,0,0)[^!]*ActionOverride("Ertof",Wait(3))~
-~CreateCreatureObject("JAERTO1","Jaheira",0,0,0)
-CreateCreatureObject("JAERTO2","Jaheira",0,0,0)
-CreateCreatureObject("JAERTO3","Jaheira",0,0,0)
-CreateCreatureObject("JAERTO4","Jaheira",0,0,0)
-CreateCreatureObject("JAERTOF","Jaheira",0,0,0)~
-    END
-
- COPY_EXISTING ~Minsc.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(CITY)[^!]* AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-    END
-
-COPY_EXISTING ~Edwin.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-   END
-
-COPY_EXISTING ~Mazzy.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-   END
-
-COPY_EXISTING ~Jan.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-   END
-
 //Bodhi in Asylum Fix - 15.12.2017
 COPY_EXISTING ~PPBODHI4.BCS~ ~override~
        DECOMPILE_AND_PATCH BEGIN
@@ -7744,18 +7316,6 @@ BUT_ONLY
 
 EXTEND_BOTTOM ~ar2201.bcs~ ~NeJE\bdash\new_fix\exAR2201.BAF~
 
-//Fixing Korgan's stutter
-COPY_EXISTING ~Korgan.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~Dead("Mummy")~ ~Dead("Mummy03")~
-    END
-
-COPY_EXISTING ~AR0802.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~CreateCreature("Mummy",[1062.2121],3)~ ~CreateCreature("Mummy03",[1062.2121],3)~
-        REPLACE_TEXTUALLY ~Dead("Mummy")~ ~Dead("Mummy03")~
-    END
-
 //////////////////////////////////////////////////////////////////////////
 //09-06-2018 - Removing buggy OnCreation() triggers from scripts
 //////////////////////////////////////////////////////////////////////////\
@@ -7784,27 +7344,6 @@ COPY_EXISTING ~Nalia.bcs~ ~override~
     REPLACE_BCS_BLOCK ~NeJE\bdash\Nalia\baf\yNalia.BAF~ ~NeJE\bdash\Nalia\baf\sNalia.BAF~
     REPLACE_BCS_BLOCK ~NeJE\bdash\Nalia\baf\zNalia.BAF~ ~NeJE\bdash\Nalia\baf\tNalia.BAF~
 
-COPY_EXISTING ~Nalia.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~!Global("Chapter","GLOBAL",7)~
-~!Global("Chapter","GLOBAL",7)
-Global("VP_OnIsland","GLOBAL",0)
-Global("VP_On_Island","GLOBAL",0)
-Global("VP_InHalruaa","GLOBAL",0)
-Global("VP_In_Halruaa","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~AreaType(OUTDOOR)~
-~!AreaType(DUNGEON)~
-        REPLACE_TEXTUALLY
-~AreaType(CITY)~
-~!AreaType(DUNGEON)~
-        REPLACE_TEXTUALLY
-~StartDialogNoSet([PC])[^!]*SetGlobal("NaliaInitKeepOnce","GLOBAL",1)~
-~SetGlobal("NaliaInitKeepOnce","GLOBAL",1)
-StartDialogNoSet([PC])~
-        END
-BUT_ONLY
 
 //Fixing Viconia's release scene
 COPY_EXISTING ~Viconia.bcs~ ~override~
