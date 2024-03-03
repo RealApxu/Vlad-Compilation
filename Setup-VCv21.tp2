@@ -25,6 +25,7 @@ LANGUAGE ~Deutsch~
 BEGIN ~MY COMPILATION~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
 
+/*
 ACTION_IF (FILE_EXISTS ~data/CTB-RULE.BIF~) 
        OR (FILE_EXISTS ~data/SOS-RULE.BIF~)
        OR (FILE_EXISTS ~data/TDD-RULE.BIF~) THEN BEGIN
@@ -53,6 +54,7 @@ ACTION_IF FILE_EXISTS ~Setup-GUI.tp2~ THEN BEGIN
     UNINSTALL ~Setup-GUI.tp2~ ~18~
     UNINSTALL ~Setup-GUI.tp2~ ~19~
 END
+*/
 
 /*
 MKDIR ~NeJE\dlgialog.bak~
@@ -183,9 +185,6 @@ COPY_EXISTING ~TOOLTIP.2DA~ ~override~
     REPLACE ~77777702~ ~Mordecai's Insect Swarm~
     REPLACE ~99999932~ ~Project Image~
     REPLACE ~77777763~ ~Mass Invisibility~
-
-AT_INTERACTIVE_NOW ~Install_NeJEAreasSounds.bat~
-//AT_INTERACTIVE_UNINSTALL ~TSUninstaller.bat~
 
 BEGIN ~Baldurdash Fix Pack for SoA-ToB, v1.76 WeiDU~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
