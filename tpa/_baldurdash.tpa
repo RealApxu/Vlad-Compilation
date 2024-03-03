@@ -201,10 +201,10 @@ COPY ~NeJE/bdash/copy_itm/clck17.itm~ override
 COPY ~NeJE/bdash/copy_itm/clck26.itm~ override
 
 //Icons for Cromwell Item Upgrate
-COPY ~NeJE/bdash/copy_itm/iplatcrd.itm~ override
-COPY ~NeJE/bdash/copy_itm/irobeang.itm~ override
-COPY ~NeJE/bdash/copy_itm/iscalese.itm~ override
-COPY ~NeJE/bdash/copy_itm/istaffbe.itm~ override
+COPY ~NeJE/bdash/copy_itm/iplatcrd.bam~ override
+COPY ~NeJE/bdash/copy_itm/irobeang.bam~ override
+COPY ~NeJE/bdash/copy_itm/iscalese.bam~ override
+COPY ~NeJE/bdash/copy_itm/istaffbe.bam~ override
 
 //Change timing mode for magic globe item
 COPY ~NeJE/bdash/copy_itm/mglobe.itm~ override
@@ -2458,9 +2458,7 @@ BUT_ONLY
 
 COPY_EXISTING ~MGAPPR03.DLG~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~CreateItem("dagg19")
-        GiveItem("dagg19",Player1)~
-        ~GiveItemCreate("dagg19",Player1,0,0,0)~
+        REPLACE_TEXTUALLY ~CreateItem("dagg19")[ %TAB%%LNL%%MNL%%WNL%]+GiveItem("dagg19",Player1)~ ~GiveItemCreate("dagg19",Player1,0,0,0)~
     END
 BUT_ONLY
 
@@ -2523,10 +2521,7 @@ BUT_ONLY
 
 COPY_EXISTING ~PPSAEM3.DLG~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~EraseJournalEntry(7075)
-        EraseJournalEntry(16563)
-        GiveItem(\[PC\],"misc8u")~ ~EraseJournalEntry(7075)
-        EraseJournalEntry(16563)~
+        REPLACE_TEXTUALLY ~EraseJournalEntry(7075)[ %TAB%%LNL%%MNL%%WNL%]+EraseJournalEntry(16563)[ %TAB%%LNL%%MNL%%WNL%]+GiveItem(\[PC\],"misc8u")~ ~EraseJournalEntry(7075) EraseJournalEntry(16563)~
     END
 BUT_ONLY
 
@@ -5220,8 +5215,7 @@ COMPILE ~NeJE/bdash/baf/druidad.baf~
 //Used in Keldorn Romance to make Keldorn move out of sewers if you rejected his help
 COMPILE ~NeJE/bdash/baf/keldfix.baf~
 
-//The same as in original game
-/*
+//Recompile corrupted scripts
 COMPILE ~NeJE/bdash/baf/rdog.baf~
 COMPILE ~NeJE/bdash/baf/rdwarf.baf~
 COMPILE ~NeJE/bdash/baf/retter.baf~
@@ -5233,7 +5227,6 @@ COMPILE ~NeJE/bdash/baf/rkobold.baf~
 COMPILE ~NeJE/bdash/baf/rogre.baf~
 COMPILE ~NeJE/bdash/baf/rsiren.baf~
 COMPILE ~NeJE/bdash/baf/rsirine.baf~
-*/
 
 //Global("itFight","R0406P",3) => Global("PitFight","R0406P",3)
 COMPILE ~NeJE/bdash/baf/rufpal.baf~
@@ -7733,10 +7726,7 @@ EXTEND_BOTTOM ~ar1602.bcs~ ~NeJE\bdash\new_fix\exAR1602.BAF~
 //1. Saemon in Brynnlaw
 COPY_EXISTING ~PPSAEM3.DLG~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~EscapeAreaMove("AR1600",2949,2504,8)~
-~SetGlobal("VP_EscapeAreaFixSm","GLOBAL",1)
-EscapeAreaMove("AR1600",2949,2504,8)~
+        REPLACE_TEXTUALLY ~EscapeAreaMove("AR1600",2949,2504,8)~ ~SetGlobal("VP_EscapeAreaFixSm","GLOBAL",1) EscapeAreaMove("AR1600",2949,2504,8)~
     END
 BUT_ONLY
 

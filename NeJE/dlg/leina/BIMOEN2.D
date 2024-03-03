@@ -1,4 +1,4 @@
-BEGIN ~BIMOEN2~
+APPEND ~BIMOEN2~
 
 IF ~~ THEN BEGIN LeiTheat
   SAY ~(*Rolling her eyes*) What... you.. an idea?  May the gods protect us.~
@@ -266,38 +266,33 @@ END
 IF ~~ THEN BEGIN LeiRadi2
   SAY ~Minsc, you can tell Boo not to fret, I have just the thing to untangle a girl's hair when it becomes wayward and I am sure it will work just as well on hamster fur.~
 	IF ~~ THEN EXTERN ~BMINSC~ LeiRadi2
-END		
+END
+
+END
 
 //////////////////////////////CHAINS///////////////////////////////////
 
 CHAIN IF ~Global("VP_BLeina","LOCALS",2)~ THEN BIMOEN2 leinlove
-  ~So, the bard Leina appears to have stolen my newly found brothers heart.~
+~So, the bard Leina appears to have stolen my newly found brothers heart.~
 DO ~SetGlobal("VP_BLeina","LOCALS",3)~
 == BLEINA ~(*She tosses her head back and laughs*) Fear not Imoen, for your brother's heart is still his own.~
 == BIMOEN2 ~(*Studying the bard's face*) So you telling me that this isn't love that I sense between you and <CHARNAME>? Pull the other one Leina, I may have lost my soul but I still got my eyes!~
 == BLEINA ~(*Her expression becomes serious*) Imoen, know that my love for <CHARNAME> is of the friendship kind, my true love lies with my music.~
-=
-~I will not be so naive as to trust my heart to a man again, my music keeps me content in a way that nothing else can.~
+= ~I will not be so naive as to trust my heart to a man again, my music keeps me content in a way that nothing else can.~
 == BIMOEN2 ~(*Her eyes light up but she tries to make her face appear tragic*) Ooh, I sense a real tale of tragedy here, of love unrequited.~
-=
-~Please tell Leina, what manner of beast took your heart and dashed it upon the rocks, leaving it broken, scarred for the whole of eternity?~
+= ~Please tell Leina, what manner of beast took your heart and dashed it upon the rocks, leaving it broken, scarred for the whole of eternity?~
 == BLEINA ~(*She smiles at the young girls romantic interpretation of her life*) Ay Imoen, I took a man once, called him husband, loved him, worshipped him, only to have my heart broken, my dreams shattered in return.~
-=
-~When my heart finally became whole again, I promised it I would never allow it to suffer such pain again, I swore an oath never to love or to allow a man's love to ever touch it again.~
+= ~When my heart finally became whole again, I promised it I would never allow it to suffer such pain again, I swore an oath never to love or to allow a man's love to ever touch it again.~
 == BIMOEN2 ~(*She looks at Leina, with genuine sadness in her face*) To never love again, how... I mean... never?~
 == BLEINA ~(*She looks at Imoen and smiles*) Please Imoen, no sad face for me. Love truly doesn't interest me anymore, I have all I need in my music. So come, be happy for me.~
 == BIMOEN2 ~Don't you miss the comfort that comes from being loved back, from knowing that someone thinks you are special?~
 == BLEINA ~You of all people know the pain of having a part of you torn away. Would you want to risk the same pain when you are finally made whole again?~
-=
-~If I never again let a man into my heart then I know also that pain and deceit will never enter it either.~
+= ~If I never again let a man into my heart then I know also that pain and deceit will never enter it either.~
 == BIMOEN2 ~But surely you don't believe that all men are the same, there are some good honest men in the world. <CHARNAME> to name but one.~
 == BLEINA ~Ah Imoen, I see this love you hold for your brother is very dear, but I live for my music, and nothing will sway me from that.~
-=
-~Never again will I be tricked by false feelings and deceit again. No, I will not be fooled twice. Music has the ability to lighten the heart where love has the ability to kill it.~
+= ~Never again will I be tricked by false feelings and deceit again. No, I will not be fooled twice. Music has the ability to lighten the heart where love has the ability to kill it.~
 == BIMOEN2 ~Love can also heal it you know Leina.~
 == BLEINA ~You have much trust in love, and no doubt if I had only your happy experiences of it then I would be a different person to who I am today.~
-=
-~As it is, the strength and wisdom I have gained through my struggle has helped me to see that this thing called love that we all seek, is not destined for us all.~
-=
-~I swore off love to protect my heart and in truth, I have never been happier. You search for love if it is what you dream of Imoen, but do so with open eyes and remember, that  there are none so blind as those blinded by love.~
+= ~As it is, the strength and wisdom I have gained through my struggle has helped me to see that this thing called love that we all seek, is not destined for us all.~
+= ~I swore off love to protect my heart and in truth, I have never been happier. You search for love if it is what you dream of Imoen, but do so with open eyes and remember, that  there are none so blind as those blinded by love.~
 EXIT

@@ -1,4 +1,4 @@
-BEGIN ~BIMOEN2~
+APPEND ~BIMOEN2~
 
 IF ~~ THEN BEGIN 0
   SAY ~(Shudders) Yes, Kachiko it was an awful place, run by an insane madman... I thought that I would never be able to sleep peacefully again... ~

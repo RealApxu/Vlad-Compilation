@@ -192,7 +192,7 @@ COPY ~NeJE\bdash\edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
 COPY ~NeJE\bdash\edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
 COPY ~NeJE\bdash\edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
 
-ACTION_IF GAME_IS ~bgee tutu tutu_totsc bgt eet~
+ACTION_IF GAME_IS ~bgee tutu tutu_totsc bgt eet~ BEGIN
     COPY ~NeJE\bdash\edwin\edwin.cre~ ~override/edwin.cre~
     COPY ~NeJE\bdash\edwin\edwin2.cre~ ~override/edwin2.cre~
     COPY ~NeJE\bdash\edwin\edwin4.cre~ ~override/edwin4.cre~
