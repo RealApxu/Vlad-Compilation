@@ -2,7 +2,7 @@
 // Dak'kon's Blade
 ///////////////////////
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\WA2DAK.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/WA2DAK.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Zerth Blade~
     SAY DESC ~Dak'kon's Zerth Blade +2
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
@@ -32,11 +32,11 @@ COPY_EXISTING ~WA2DAK.ITM~ ~override~
     READ_SHORT 0x70  "glob_eff_cnt"
     SET ccc=0
     FOR( cnt=0; cnt<"%glob_eff_cnt%"; cnt=cnt+1 ) BEGIN
-        WRITE_BYTE ("%eff_offset%"+cnt*0x30)+13  0   //Not dispell\Bypass resistance
+        WRITE_BYTE ("%eff_offset%"+cnt*0x30)+13  0   //Not dispell/Bypass resistance
     END
 BUT_ONLY
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\WA2DAK2.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/WA2DAK2.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Streaming Blade~
     SAY DESC ~Dak'kon's Streaming Blade +2
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
@@ -64,7 +64,7 @@ Not Usable By:
  Druid
  Cleric~
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\WA2DAK3.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/WA2DAK3.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Streaming Blade~
     SAY DESC ~Dak'kon's Streaming Blade +3
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
@@ -95,7 +95,7 @@ Not Usable By:
  Druid
  Cleric~
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\WA2DAK4.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/WA2DAK4.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Streaming Blade~
     SAY DESC ~Dak'kon's Streaming Blade +4
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.
@@ -127,7 +127,7 @@ Not Usable By:
  Druid
  Cleric~
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\WA2DAK5.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/WA2DAK5.ITM~ ~override~
     SAY NAME2 ~Dak'kon's Streaming Blade~
     SAY DESC ~Dak'kon's Streaming Blade +5
 This sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.  After the Nameless One's battle with the powerful entity, he restored Dak'kon to life and freed him of the oath he had to the Nameless One. This is the blade that was formed after Dak'kon was free from his oath.
@@ -160,4 +160,4 @@ Not Usable By:
  Druid
  Cleric~
 
-COPY ~%MOD_FOLDER%/components/bdash/dakkon\scripts~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/dakkon/scripts~ ~override~

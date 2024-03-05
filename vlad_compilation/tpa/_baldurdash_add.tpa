@@ -142,16 +142,16 @@ COPY ~%MOD_FOLDER%/components/bdash/copy_wav/boonej1.wav~ override
 COPY ~%MOD_FOLDER%/components/bdash/new_wat~ ~override~
 
 //NPC adding to areas
-EXTEND_TOP ~AR0604.bcs~ ~%MOD_FOLDER%/components/bdash/npc\eAR0604.baf~
-EXTEND_TOP ~AR0701.bcs~ ~%MOD_FOLDER%/components/bdash/npc\eAR0701.baf~
-EXTEND_TOP ~AR1000.bcs~ ~%MOD_FOLDER%/components/bdash/npc\eAR1000.baf~
-EXTEND_TOP ~AR0304.bcs~ ~%MOD_FOLDER%/components/bdash/npc\eAR0304.baf~
-EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/bdash/npc\eAR0406.baf~
+EXTEND_TOP ~AR0604.bcs~ ~%MOD_FOLDER%/components/bdash/npc/eAR0604.baf~
+EXTEND_TOP ~AR0701.bcs~ ~%MOD_FOLDER%/components/bdash/npc/eAR0701.baf~
+EXTEND_TOP ~AR1000.bcs~ ~%MOD_FOLDER%/components/bdash/npc/eAR1000.baf~
+EXTEND_TOP ~AR0304.bcs~ ~%MOD_FOLDER%/components/bdash/npc/eAR0304.baf~
+EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/bdash/npc/eAR0406.baf~
 
 ACTION_IF FILE_EXISTS ~AR1101.bcs~ THEN BEGIN
-    EXTEND_BOTTOM ~AR1101.bcs~ ~%MOD_FOLDER%/components/bdash/npc\AR1101.baf~
+    EXTEND_BOTTOM ~AR1101.bcs~ ~%MOD_FOLDER%/components/bdash/npc/AR1101.baf~
 END ELSE BEGIN
-    COMPILE ~%MOD_FOLDER%/components/bdash/npc\AR1101.baf~
+    COMPILE ~%MOD_FOLDER%/components/bdash/npc/AR1101.baf~
 END
 
 /////////////////////////
@@ -166,16 +166,16 @@ COPY_EXISTING ~AR0406.bcs~ ~override~
     END
 BUT_ONLY
 
-EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/bdash/bonusmer\eAR0406.baf~ //create Joluv
+EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/bdash/bonusmer/eAR0406.baf~ //create Joluv
 
 ACTION_IF FILE_EXISTS ~AR0702.bcs~ THEN BEGIN
     COPY_EXISTING ~AR0702.bcs~ ~override~
         WRITE_ASCII 0x94 ~AR0702~                 //setting area script
         WRITE_BYTE (0x94+6) 0                    //terminating 0
     BUT_ONLY
-    EXTEND_TOP ~AR0702.bcs~ ~%MOD_FOLDER%/components/bdash/bonusmer\eAR0702.baf~ //create Deidre
+    EXTEND_TOP ~AR0702.bcs~ ~%MOD_FOLDER%/components/bdash/bonusmer/eAR0702.baf~ //create Deidre
 END ELSE BEGIN
-    COPY ~%MOD_FOLDER%/components/bdash/bonusmer\AR0702.bcs~ ~override~
+    COPY ~%MOD_FOLDER%/components/bdash/bonusmer/AR0702.bcs~ ~override~
     COPY_EXISTING ~AR0702.ARE~ ~override~
         WRITE_ASCII 0x94 ~AR0702~                 //setting area script
         WRITE_BYTE (0x94+6) 0                    //terminating 0
@@ -262,9 +262,9 @@ COMPILE ~%MOD_FOLDER%/components/bdash/baf/keldfix.baf~
 //Cespenar healing party script
 COMPILE ~%MOD_FOLDER%/components/bdash/baf/vphealcp.baf~
 
-    //////////////////////////////////////////////////////////////////////\
+//////////////////////////////////////////////////////////////////////
 // Messengers Fix
-//////////////////////////////////////////////////////////////////////\
+//////////////////////////////////////////////////////////////////////
 
 PRINT ~Messengers Fix (by Vlad)~
 

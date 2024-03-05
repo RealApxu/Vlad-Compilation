@@ -6,9 +6,9 @@
 
 BEGIN ~Enhanced Encounter with Illasera in ToB (by Vlad)~
 
-COPY ~%MOD_FOLDER%/components/bdash/illasera\copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/illasera/copy~ ~override~
 
-COPY ~%MOD_FOLDER%/components/bdash/illasera\itm\RiSw1H02.itm~ ~override/RiSw1H02.itm~
+COPY ~%MOD_FOLDER%/components/bdash/illasera/itm/RiSw1H02.itm~ ~override~
     SAY NAME2 ~Rithtellium Short Sword +5~
     SAY DESC ~This short sword is extremely light and give off a shimmering blue hue. Closer examination reveals that it is made from *rithtellium*, a mystical alloy, the forging of which is a closely guarded secret, known only to those who forge it. It requires both  mage and smith to forge weapons from rithtellium, the end result being weapons with a shimmering blue hue which are usable by wizards as if proficient in their use.
 

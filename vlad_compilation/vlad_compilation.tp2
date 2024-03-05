@@ -12,15 +12,15 @@ ALWAYS
     
 END
 
-AUTO_TRA ~%MOD_FOLDER%/components/bdash/language\%s~
+AUTO_TRA ~%MOD_FOLDER%/components/bdash/language/%s~
 
 LANGUAGE ~English~
          ~english~
-         ~%MOD_FOLDER%/components/bdash/Language\english\setup.tra~
+         ~%MOD_FOLDER%/components/bdash/Language/english/setup.tra~
 
 LANGUAGE ~Deutsch~
          ~deutsch~
-         ~%MOD_FOLDER%/components/bdash/Language\deutsch\korrektur.tra~
+         ~%MOD_FOLDER%/components/bdash/Language/deutsch/korrektur.tra~
 
 BEGIN ~MY COMPILATION~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
@@ -57,12 +57,12 @@ END
 */
 
 /*
-MKDIR ~NeJE\dlgialog.bak~
+MKDIR ~NeJE/dlgialog.bak~
 
-COPY + ~dialog.tlk~ ~NeJE\dlgialog.bak\dialog.tlk~
+COPY + ~dialog.tlk~ ~NeJE/dlgialog.bak/dialog.tlk~
 
 ACTION_IF FILE_EXISTS ~dialogF.tlk~ THEN BEGIN
-    COPY + ~dialogF.tlk~ ~NeJE\dlgialog.bak\dialogF.tlk~
+    COPY + ~dialogF.tlk~ ~NeJE/dlgialog.bak/dialogF.tlk~
 END
 */
 
@@ -240,7 +240,7 @@ INCLUDE ~%MOD_FOLDER%/tpa/_dakkon.tpa~
 
 BEGIN ~Improved Nymph (Woodland Being) Script (by Goeran Rimen)~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
-COMPILE ~%MOD_FOLDER%/components/bdash/nymph\NYMPH.BAF~
+COMPILE ~%MOD_FOLDER%/components/bdash/nymph/NYMPH.BAF~
 
 /* Deprecated - Use Rogue Rebalancing
 BEGIN ~Dual Wielding Fix for Rogues (by aVENGER)~
@@ -282,14 +282,14 @@ INCLUDE ~%MOD_FOLDER%/tpa/_npc_viconia.tpa~
 
 BEGIN ~Enhanced Encounter with Yaga Shura in ToB (by Vlad)~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
-COPY ~%MOD_FOLDER%/components/bdash/yagashur\copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/yagashur/copy~ ~override~
 
 BEGIN ~Enhanced Encounter with Abazigal in ToB (by Vlad)~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
 
-COPY ~%MOD_FOLDER%/components/bdash/abazig\copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/abazig/copy~ ~override~
 
-COPY ~%MOD_FOLDER%/components/bdash/abazig\cre\BazDra04.cre~ ~override\BazDra04.cre~
+COPY ~%MOD_FOLDER%/components/bdash/abazig/cre/BazDra04.cre~ ~override/BazDra04.cre~
     SAY NAME1 ~Purple~
     SAY NAME2 ~Purple~
 

@@ -1,5 +1,5 @@
-COPY ~NeJE\gui_anim~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/intro\Theme\themea.acm~ ~music\Theme\themea.acm~
+COPY ~NeJE/gui_anim~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/intro/Theme/themea.acm~ ~music/Theme/themea.acm~
 
 ///////////////////////////////////////
 // 2. String replacements

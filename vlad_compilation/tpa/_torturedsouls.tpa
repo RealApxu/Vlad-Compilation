@@ -2314,7 +2314,7 @@ COPY~%MOD_FOLDER%/components/TS/cre/Valyg11.cre~ ~override/Valyg11.cre~
 COPY~%MOD_FOLDER%/components/TS/cre/Valyg12.cre~ ~override/Valyg12.cre~
 COPY~%MOD_FOLDER%/components/TS/cre/Valyg14.cre~ ~override/Valyg14.cre~
 
-/*COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+/*COPY_EXISTING ~BALDUR.GAM~ ~override/BALDUR.GAM~
   READ_LONG 0x30 "npc_off"
   READ_SHORT 0x34 "npc_num"
   FOR (i=0; i<"%npc_num%"; i=i+1) BEGIN
@@ -2416,7 +2416,7 @@ COPY ~%MOD_FOLDER%/components/Leina/music/VPBlank.mus~ ~music/VPBlank.mus~
 COPY_EXISTING ~songlist.2da~ ~override~
 SET_2DA_ENTRY 0 2 3 ~VPBlank.mus~
 
-COPY_EXISTING + ~SONGLIST.2da~ ~override\1.txt~
+COPY_EXISTING + ~SONGLIST.2da~ ~override/1.txt~
 COPY_EXISTING + ~1.txt~ ~override~
  COUNT_2DA_ROWS 3 "rows_cnt"
  SET kachiko = 0

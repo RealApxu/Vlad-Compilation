@@ -2,7 +2,7 @@
 // Improved Shadow Dragon and her Dungeon
 ///////////////////////////////////////////////////////
 
-COPY ~%MOD_FOLDER%/components/bdash/shadows\copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/shadows/copy~ ~override~
 
 COPY_EXISTING ~AR1404.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN

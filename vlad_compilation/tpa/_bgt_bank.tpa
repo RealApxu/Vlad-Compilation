@@ -4,7 +4,7 @@
 //__________________________________________//
 //                                          //
 
-COPY ~%MOD_FOLDER%/components/bdash/BGTComp\itm\SW2H06.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/itm/SW2H06.ITM~ ~override~
 
 //Merchant League Store (Bank)
 COPY_EXISTING ~AR7228.bcs~ ~override~
@@ -27,7 +27,7 @@ ReputationGT(Player1,8)~
 ~SetGlobal("SarevokBoutToDie","GLOBAL",3)
 ReputationInc(2)~
     END
-    EXTEND_BOTTOM ~AR7225.bcs~ ~%MOD_FOLDER%/components/bdash/BGTcomp\bank\aAR7225.baf~
+    EXTEND_BOTTOM ~AR7225.bcs~ ~%MOD_FOLDER%/components/bdash/BGTcomp/bank/aAR7225.baf~
 
 COMPILE ~%MOD_FOLDER%/components/bdash/BGTcomp/bank/aAldeth.d~
 

@@ -31,7 +31,7 @@ APPEND ~SPELL.IDS~
 3187 Aerie_Elemental_Summoning
 3188 Aerie_Greater_Elemental_Summoning~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\spl_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/spl_copy~ ~override~
 
 ADD_KIT ~WILWANDERER_OF_BAERVAN~
 
@@ -51,7 +51,7 @@ ADD_KIT ~WILWANDERER_OF_BAERVAN~
 
 ~PRIEST_OF_BAERVAN      1       0       1       1       0       1~
 
-~%MOD_FOLDER%/components/bdash/Aerie\rules\CLABBAPR.2DA~
+~%MOD_FOLDER%/components/bdash/Aerie/rules/CLABBAPR.2DA~
 
 ~~
 
@@ -104,34 +104,34 @@ At level 15, Wildwanderers of Baervan receive a Holy Symbol of Baervan.
 Disadvantages:
 -  None~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERBOD01.CRE~ ~override\AERBOD01.CRE~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERBOD01.CRE~ ~override/AERBOD01.CRE~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE6.cre~ ~override\AERIE6.cre~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE6.cre~ ~override/AERIE6.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE7.cre~ ~override\AERIE7.cre~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE7.cre~ ~override/AERIE7.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE9.cre~ ~override\AERIE9.cre~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE9.cre~ ~override/AERIE9.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE10.CRE~ ~override\AERIE10.CRE~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE10.CRE~ ~override/AERIE10.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE11.cre~ ~override\AERIE11.cre~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE11.cre~ ~override/AERIE11.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\copy\AERIE12.cre~ ~override\AERIE12.cre~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/copy/AERIE12.cre~ ~override/AERIE12.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%WILWANDERER_OF_BAERVAN%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
@@ -146,18 +146,18 @@ COPY_EXISTING ~AR0607.bcs~ ~override~
 
 /*
 COPY_EXISTING ~AR0607.bcs~ ~override~
-    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/Aerie\baf\oAR0607.baf~ ~%MOD_FOLDER%/components/bdash/Aerie\baf\nAR0607.baf~
+    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/Aerie/baf/oAR0607.baf~ ~%MOD_FOLDER%/components/bdash/Aerie/baf/nAR0607.baf~
 */
 
 //Fixing Aerie animation - AerieFix.d
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\itm\GBerryA.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/itm/GBerryA.ITM~ ~override~
     SAY NAME1 ~Baervan's Bilberry~
     SAY NAME2 ~Baervan's Bilberry~
     SAY UNIDENTIFIED_DESC ~This very special bilberry created by Aerie will heal 20 points of damage instantly for each berry eaten.~
     SAY DESC ~This very special bilberry created by Aerie will heal 20 points of damage instantly for each berry eaten.~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\spl\SPIN168.SPL~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/spl/SPIN168.SPL~ ~override~
     SAY NAME1 ~Baervan's Bilberries~
     SAY NAME2 ~Baervan's Bilberries~
     SAY 0x50 ~Baervan's Bilberries (Alteration, Evocation)
@@ -181,7 +181,7 @@ Saving Throw: None
 
 Casting a Baervan's Bilberries spell creates five magical berries that the caster can carry with him. These berries cure 20 points of physical damage for each one eaten.~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\itm\CLCKAERI.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/itm/CLCKAERI.ITM~ ~override~
     SAY NAME2 ~Aerie's Cloak~
     SAY DESC ~Aerie's Cloak
 
@@ -207,7 +207,7 @@ Improves Casting Speed by 4
 Usable By:
  Aerie~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\itm\RingBaer.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/itm/RingBaer.ITM~ ~override~
     SAY NAME2 ~Holy Symbol of Baervan~
     SAY DESC ~Only those most worthy and devoted servants of the Masked Leaf are granted these powerful holy symbols which provide essential protections and increase the amount of priest high-level spells they can memorise. This particular ring has a signet with a raccon's face.
 
@@ -228,7 +228,7 @@ Equipped Bonuses:
 Usable By:
  Aerie~
 
-COPY ~%MOD_FOLDER%/components/bdash/Aerie\itm\BELT12.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Aerie/itm/BELT12.ITM~ ~override~
     SAY DESC ~Only those most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols which provide essential protections and increase the amount of priest high-level spells they can memorise.
 
 STATISTICS:
@@ -252,7 +252,7 @@ COPY_EXISTING ~AERIE.bcs~ ~override~
     END
 
 /*
-COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+COPY_EXISTING ~BALDUR.GAM~ ~override/BALDUR.GAM~
   READ_LONG 0x30 "npc_off"
   READ_SHORT 0x34 "npc_num"
   FOR (i=0; i<"%npc_num%"; i=i+1) BEGIN

@@ -9,7 +9,7 @@ PRINT ~Patching text resources...~
 //BGT Compatibility
 ////////////////////
 
-ACTION_IF FILE_EXISTS ~data\BG1ARE.bif~ THEN BEGIN
+ACTION_IF FILE_EXISTS ~data/BG1ARE.bif~ THEN BEGIN
     STRING_SET 4341 @2
     STRING_SET 5395 ~~ [BIMOEN18]
     STRING_SET 5396 ~~ [BIMOEN19]

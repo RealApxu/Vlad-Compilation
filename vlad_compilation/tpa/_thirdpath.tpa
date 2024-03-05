@@ -4,27 +4,27 @@
 
 BEGIN ~Third Path (by Vlad)~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\toda\SCENE04T.2da~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/toda/SCENE04T.2da~ ~override~
 REPLACE ~scene04t~ ~CHAPTER THREE
 
 Allies are expensive in the City of Coin, and you have decided to invest in none of them. You have assassinated Gaelan Bayle and obtained a key from the lair of Aran Linvail, Shadowmaster of Athkatla. As ominous as that may sound, you have now little other choice but to plan an assault on Aran's lair to find any clue in your search for Irenicus.~ [theme4]
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\toda\SCRTXT33.2da~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/toda/SCRTXT33.2da~ ~override~
 REPLACE ~scrtxt33~ ~CHAPTER FOUR
 
   After few hours of uninterrupted sail you see a shiny circlet on the horizon. It is the portal! Saemon slows "Gallante" down. Your seasoned captain looks nervous as the ship enters the time gate. "Athkatla" says he steadily... and the familiar harbor appears in view... You do not stop in the port however, but lay your course straight for Brinnlaw.
 
   The journey is uneventful, and if there were other ships on the same course they must have kept a discreet distance. You make good time, and soon there is a sizable island on the horizon. It might have been considered a pleasant place, but a grim shadow extends the length of it. The asylum, Spellhold, looms from a cliff side.~ [theme5]
 
-COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP\cutscene~
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\copy_cre~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\copy_bcs~ ~override~
+COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/cutscene~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/copy_cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/copy_bcs~ ~override~
 
 COPY_EXISTING ~AR0311.bcs~ ~override~
-EXTEND_TOP ~AR0311.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAR0311.baf~
+EXTEND_TOP ~AR0311.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0311.baf~
 
 COPY_EXISTING ~AR0300.bcs~ ~override~
-EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAR0300.baf~
+EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0300.baf~
 
 COPY_EXISTING ~STGUARD1.bcs~ ~override~
        DECOMPILE_AND_PATCH BEGIN
@@ -112,30 +112,30 @@ Global("VP_Guild_Attacked","GLOBAL",0)~
         END
 
 COPY_EXISTING ~AMNTRP01.bcs~ ~override~
-EXTEND_TOP ~AMNTRP01.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAMNTRP0.baf~
+EXTEND_TOP ~AMNTRP01.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
 
 COPY_EXISTING ~AMNTRP02.bcs~ ~override~
-EXTEND_TOP ~AMNTRP02.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAMNTRP0.baf~
+EXTEND_TOP ~AMNTRP02.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
 
 COPY_EXISTING ~AMNTRP03.bcs~ ~override~
-EXTEND_TOP ~AMNTRP03.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAMNTRP0.baf~
+EXTEND_TOP ~AMNTRP03.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
 
 COPY_EXISTING ~BODHITRP.bcs~ ~override~
-EXTEND_TOP ~BODHITRP.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eBODHITR.baf~
+EXTEND_TOP ~BODHITRP.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eBODHITR.baf~
 
 COPY_EXISTING ~STGUARD1.bcs~ ~override~
-EXTEND_TOP ~STGUARD1.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eSTGUARD.BAF~
+EXTEND_TOP ~STGUARD1.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eSTGUARD.BAF~
 
 COPY_EXISTING ~AR0312.bcs~ ~override~
-EXTEND_TOP ~AR0312.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAR0312.BAF~
+EXTEND_TOP ~AR0312.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0312.BAF~
 
 COPY_EXISTING ~Yoshimo.bcs~ ~override~
-EXTEND_TOP ~Yoshimo.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eYoshimo.BAF~
+EXTEND_TOP ~Yoshimo.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eYoshimo.BAF~
 
 COPY_EXISTING ~AR0313.bcs~ ~override~
-EXTEND_TOP ~AR0313.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAR0313.BAF~
+EXTEND_TOP ~AR0313.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0313.BAF~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\aranlett.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/aranlett.itm~ ~override~
     SAY NAME1 ~Aran's Letter~
     SAY NAME2 ~Aran's Letter~
     SAY UNIDENTIFIED_DESC ~Aran,
@@ -146,7 +146,7 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\aranlett.itm~ ~override~
 
                           Saemon.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett1.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett1.itm~ ~override~
     SAY NAME1 ~Fragment of a letter~
     SAY NAME2 ~Fragment of a letter~
     SAY UNIDENTIFIED_DESC ~This is a fragment of a burnt letter:
@@ -156,13 +156,13 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett1.itm~ ~override~
 
     "...sow panic and chaos around Amn, and especially in Athkatla. Keep them busy and not interested in..."~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett2.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett2.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Refugees from Tethyr flooded Athkatla, and rumors of the wealth of the city reached the most distant lands of the kingdom. Watch out for them, as among them may be hiding spies. Destroy the spies at the slightest suspicion.~
     SAY DESC ~Refugees from Tethyr flooded Athkatla, and rumors of the wealth of the city reached the most distant lands of the kingdom. Watch out for them, as among them may be hiding spies. Destroy the spies at the slightest suspicion.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett3.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett3.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Instead of leading a trade war with Athkatla, it is better to rely on the help of Queen Zarand. She is very angry at the Council of Six. They treated her concubine in Athkatla like a slut, with no proper respect, nor the promised assistance.
@@ -172,7 +172,7 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett3.itm~ ~override~
 
                           Lady Aura.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett4.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett4.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~There is a group of mercenaries hiding somewhere in Athkatla, whose task is to destroy my family. Find them and dispose of them.
@@ -182,7 +182,7 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett4.itm~ ~override~
 
                           Lady Aura.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett5.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett5.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~My dearest lady Aura,
@@ -200,13 +200,13 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett5.itm~ ~override~
 
                           Captain Dennis.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett6.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett6.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~War is inevitable, my lady. You were absolutely right - the rich of Athkatla accepted the declared trade war as a personal insult. It is strange that our Council is so short-sighted underestimating the military strength of Amn. We must be prepared for the worst case scenario.~
     SAY DESC ~War is inevitable, my lady. You were absolutely right - the rich of Athkatla accepted the declared trade war as a personal insult. It is strange that our Council is so short-sighted underestimating the military strength of Amn. We must be prepared for the worst case scenario.~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett7.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett7.itm~ ~override~
     SAY NAME1 #13195
     SAY NAME2 #13195
     SAY UNIDENTIFIED_DESC ~Please look for me on the second floor of the Delosar's Inn in the Bridge District.
@@ -217,8 +217,8 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP\itm\spylett7.itm~ ~override~
                    Captain Dennis.~
 
 COPY_EXISTING ~AR0329.bcs~ ~override~
-  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP\baf\o1AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\n1AR0329.baf~
-  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP\baf\o2AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\n2AR0329.baf~
+  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o1AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n1AR0329.baf~
+  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o2AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n2AR0329.baf~
 
 COPY_EXISTING ~BALDUR.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
@@ -235,41 +235,41 @@ InMyArea(Player1)
 Global("VP_Guild_Attacked","GLOBAL",0)~
     END
 
-COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP\baf\VPThirdP.baf~
-COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP\baf\STDEATH.baf~
-COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP\baf\MVALLY.baf~
-COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP\baf\MVALLY2.baf~
+COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/VPThirdP.baf~
+COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/STDEATH.baf~
+COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/MVALLY.baf~
+COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/MVALLY2.baf~
 
 COPY_EXISTING ~Baldur.bcs~ ~override~
-EXTEND_TOP ~Baldur.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eBaldur.baf~
+EXTEND_TOP ~Baldur.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eBaldur.baf~
 
 COPY_EXISTING ~AR0404.bcs~ ~override~
-EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP\baf\eAR0404.baf~
+EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0404.baf~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\PHILC.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/PHILC.cre~ ~override~
     SAY NAME1 ~Coulson~
     SAY NAME2 ~Coulson~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\MELINDAM.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/MELINDAM.cre~ ~override~
     SAY NAME1 ~May~
     SAY NAME2 ~May~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\LEOF.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/LEOF.cre~ ~override~
     SAY NAME1 ~Fitz~
     SAY NAME2 ~Fitz~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\JEMMAS.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/JEMMAS.cre~ ~override~
     SAY NAME1 ~Simmons~
     SAY NAME2 ~Simmons~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\DAISYJ.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/DAISYJ.cre~ ~override~
     SAY NAME1 ~Skye~
     SAY NAME2 ~Skye~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\LINCOLN.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/LINCOLN.cre~ ~override~
     SAY NAME1 ~Lincoln~
     SAY NAME2 ~Lincoln~
 
-COPY ~%MOD_FOLDER%/components/bdash/ThirdP\cre\MACKM.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/MACKM.cre~ ~override~
     SAY NAME1 ~Mack~
     SAY NAME2 ~Mack~

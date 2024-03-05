@@ -15,10 +15,10 @@ COPY_EXISTING ~AR1603.ARE~ ~override~
  WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
-COMPILE ~%MOD_FOLDER%/components/bdash/cromwell\AR1603.BAF~
-COMPILE ~%MOD_FOLDER%/components/bdash/cromwell\rWSMITH.d~
+COMPILE ~%MOD_FOLDER%/components/bdash/cromwell/AR1603.BAF~
+COMPILE ~%MOD_FOLDER%/components/bdash/cromwell/rWSMITH.d~
 
-//EXTEND_BOTTOM ~AR0334.BAF~ ~%MOD_FOLDER%/components/bdash/cromwell\eAR0334.BAF~
+//EXTEND_BOTTOM ~AR0334.BAF~ ~%MOD_FOLDER%/components/bdash/cromwell/eAR0334.BAF~
 
 COPY_EXISTING ~PPSTOR01.STO~ ~override~
     ADD_STORE_ITEM + ~BELT08~ #0 #0 #0 ~IDENTIFIED~ #1
@@ -29,7 +29,7 @@ COPY_EXISTING ~PPSTOR01.STO~ ~override~
 
 EXTEND_TOP ~AR0334.bcs~ ~%MOD_FOLDER%/components/bdash/cromwell/eAR0334.baf~
 
-EXTEND_BOTTOM ~BOTSMITH.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_b\eBOTSMIT.BAF~
+EXTEND_BOTTOM ~BOTSMITH.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_b/eBOTSMIT.BAF~
 
 //1. Enhanced King Strohm Mask
 COPY ~%MOD_FOLDER%/components/bdash/cromwell/KingMask.ITM~ ~override/KingMask.ITM~
@@ -363,7 +363,7 @@ Not Usable By:
 */
 
 //Improved Holy Symbol of Helm
-COPY ~%MOD_FOLDER%/components/bdash/itm\BELT13.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/BELT13.ITM~ ~override~
     SAY DESC ~Only those most worthy and devoted servants of the Watcher are granted these powerful holy symbols which provide essential protections and increase the amount of priest high-level spells they can memorise.
 
 STATISTICS:
@@ -384,7 +384,7 @@ Usable By:
 Clerics of Neutral alignment~
 
 //Improved Foebane
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H62.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H62.ITM~ ~override~
     SAY DESC ~The Archmage Demron created this powerful blade for Captain Fflar of Myth Drannor.  When the elven city fell, the sword was lost beneath the rubble of the once great metropolis.
 
 STATISTICS:
@@ -407,7 +407,7 @@ Not Usable By:
  Mage
  Thief~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H63.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H63.ITM~ ~override~
     SAY NAME2 ~Foebane +6~
     SAY DESC ~Reunited with Fflar's Scabbard, Foebane is an even greater weapon than the legends claimed.
 
@@ -435,7 +435,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\CHAN20.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/CHAN20.ITM~ ~override~
     SAY DESC ~Not surprisingly, this full plate armor created from the scales of a young Ice Dragon provides the wearer with protection from cold and ice. Lightweight and natural-source, it can be worn by more classes than other similarly protective armors.
 
 STATISTICS:
@@ -465,7 +465,7 @@ Not Usable By:
  Avenger
  Kensai~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HELM32.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HELM32.ITM~ ~override~
     SAY DESC ~With the addition of the horns, the Helm of the Rock is even more powerful. Generals and military leaders can command both fear and respect simply by wearing this helm.
 
 STATISTICS:
@@ -489,7 +489,7 @@ Special: Protects Against Critical Hits
 Usable By:
  Fighter~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HELM28.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HELM28.ITM~ ~override~
     SAY DESC ~Combined with the Bronze Ioun Stone, the Circlet of Netheril is a great boon to any practitioner of the arcane arts. Of course, something so valuable is likely to attract unwanted attention from rival mages.
 
 STATISTICS:
@@ -509,7 +509,7 @@ Special: Protects Against Critical Hits
 Usable By:
  Mage~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HELM30.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HELM30.ITM~ ~override~
     SAY DESC ~There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
 
 STATISTICS:
@@ -532,7 +532,7 @@ Special: Protects Against Critical Hits
 Usable by:
  Thieves~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H61.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H61.ITM~ ~override~
     SAY DESC ~The true power of Frithiof's blazing sword has been unleashed by the Liquid Mercury.
 
 STATISTICS:
@@ -568,7 +568,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\CLCK32.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/CLCK32.ITM~ ~override~
     SAY DESC ~This is the fabled cloak of Montolio DeBrouchee, the aged, blind mentor of the dark elf ranger Drizzt Do'Urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
 
 STATISTICS:
@@ -577,7 +577,7 @@ STATISTICS:
    +3 bonus to all saving throws
    +2 THAC0 with off hand~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\AX1H14.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/AX1H14.ITM~ ~override~
     SAY DESC ~This axe was last seen in the gnarled fists of Glimred Heavyhand, an aging dwarven hero who disappeared in the deepest caverns beneath the Marching Mountains.
 
 STATISTICS
@@ -607,7 +607,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\AX1H15.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/AX1H15.ITM~ ~override~
     SAY DESC ~Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now the most fearsome of weapons - a vorpal edged axe capable of severing an opponents head with a single blow.
 
 STATISTICS
@@ -643,7 +643,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HAMM11.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HAMM11.ITM~ ~override~
     SAY DESC ~The Rune of Clangeddin is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
 
 STATISTICS:
@@ -679,7 +679,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\BLUN29.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/BLUN29.ITM~ ~override~
     SAY DESC ~Infused with the otherworldly Starfall Ore, the powers of this already formidable weapon are greatly enhanced.
 
 STATISTICS:
@@ -708,7 +708,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW2H18.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW2H18.ITM~ ~override~
     SAY DESC ~Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
 
 STATISTICS
@@ -748,7 +748,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\PLAT20.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/PLAT20.ITM~ ~override~
     SAY DESC ~The light but durable scales of the Blue Dragon provide excellent protection against weapons and all forms of electricity.
 
 STATISTICS:
@@ -780,7 +780,7 @@ Not Usable By:
  Kensai
  Monk~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HAMM09.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HAMM09.ITM~ ~override~
     SAY DESC ~Crom Faeyr
 
 This is the true name that the dwarven weaponsmith, Silverblade, gave to the weapon he intended to create for his son.  Alas, his son died before the weapon was ever completed, but here it stands complete... forged from the combined magic of the original hammer with the Gauntlets of Ogre Power and a Girdle of Frost Giant Strength.  Crom Faeyr gifts its users with all the powers of the original Hammer of Thunderbolts, in addition to enormous strength and the ability to kill golems, ettins and trolls in one blow.
@@ -811,7 +811,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\OGI.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/OGI.ITM~ ~override~
     SAY NAME2 ~Ogi-Luc's Great Robe~
     SAY DESC ~This robe was fashioned from strong fabric and dyed dark blue, the favorite color of its proud owner, the archmage Ogi-Luc. A Sembian by birth, Ogi-Luc was a powerful man, as strong in body as he was in mind. However, Ogi-Luc wasn't content to merely be strong. He wanted to be exceptionally strong. When he put on this robe, proud men stood aside and braggarts stilled their tongues. For all of Ogi-Luc's pride and prowess, he was unable to defeat the Red Wizard abjurer Nesk Vhaltim. Nesk took the robe as a prize. It were later stolen and sold by a daring rogue.
 
@@ -830,7 +830,7 @@ Weight:  5
 Only Usable By:
   Mage~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\BracKens.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/BracKens.ITM~ ~override~
     SAY NAME2 ~Kensai Gloves~
     SAY DESC ~These special leather gloves are enchanted so as to any kensai can wear them, as well as any one else.
 
@@ -854,7 +854,7 @@ Not Usable By:
  Wizard Slayer~
 
 //Improved Purifier
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H64.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H64.ITM~ ~override~
     SAY DESC ~This single handed weapon is infused with the very essence of virtue, and is rumored to be the sanctified blade of the famous paladin Sir Wediyer.  The weapon was lost when Sir Wediyer pursued a fleeing pit fiend through a planar rift.  Neither the fiend nor Sir Wediyer ever returned.
 
 STATISTICS
@@ -883,7 +883,7 @@ Usable By:
  Rangers
  Paladins~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H65.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H65.ITM~ ~override~
     SAY NAME2 ~Purifier +6~
     SAY DESC ~With the Eye of Tyr set into its pommel, Purifier is perhaps the greatest single instrument of holy justice on the face of Faerun.
 
@@ -918,7 +918,7 @@ Usable By:
  Paladins~
 
 //Flame Tongue (Enhanced by Cromwell)
-COPY ~%MOD_FOLDER%/components/bdash/itm\FLAMSW1H.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/FLAMSW1H.ITM~ ~override~
     SAY DESC ~Flame Tongue +4 (Enhanced by Cromwell)
 
 There was a time before Neverwinter was warm and before the great Anauroch was dry... or so it is said. Few relics remain to prove such an age existed, and fewer still have an identifiable purpose. "The Burning Earth" seems straightforward enough - it burns a victim with magical fire, and a cryptic rune seems to suggest that the power comes from the ground itself- but whomever constructed it remains a mystery. It looks a perfectly serviceable weapon, but something in the balance or grip is... wrong. It strains the forearm a touch, and does not fit the hand just right. It doesn't seem to hurt a warrior's performance, aside from the nagging doubt that the blade was not made for him... or any other humanoid.
@@ -950,12 +950,12 @@ Not Usable By:
  Beast Master~
 
 //10. Crimson Dragon Scales
-COPY ~%MOD_FOLDER%/components/bdash/itm\ScaleSel.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/ScaleSel.ITM~ ~override~
     SAY NAME1 ~Crimson Dragon Scales~
     SAY NAME2 ~Crimson Dragon Scales~
     SAY DESC ~There are a large number of scales salvaged from the crimson dragon. Legend has it they can be magically forged into powerful armor.~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\PlatCrDr.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/PlatCrDr.ITM~ ~override~
     SAY NAME2 ~Crimson Dragon Scale~
     SAY DESC ~This suit of armor is formed from interlocking crimson dragon scales. It is light of weight, strong, and resistant to fire and magic. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly crimson ones.
 
@@ -989,7 +989,7 @@ Not Usable By:
  Shapeshifter~
 
 //11. Enhanced Melodic Chain
-COPY ~%MOD_FOLDER%/components/bdash/itm\CHAN15N.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/CHAN15N.ITM~ ~override~
     SAY NAME2 ~Melodic Chain +5~
     SAY DESC ~The Bards of Melody were a small band of half-elf bardic warriors who entertained and defended scattered elven communities throughout Calimshan. Enchantments allowed only minstrels to wear their armor, the magical links sliding together to produce beautiful melodies as they danced or fought. Unfortunately the Bards of Melody were disbanded hundreds of years ago, and the secret of 'playing' the armor faded with them. This chain armour has been enhanced by Cromwell.
 
@@ -1015,7 +1015,7 @@ Usable By:
  Bard~
 
 //12. Enhanced Mercykiller Ring
-COPY ~%MOD_FOLDER%/components/bdash/itm\WA2RING2.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/WA2RING2.ITM~ ~override~
     SAY NAME2 ~Mercykiller Ring (Enhanced by Cromwell)~
     SAY DESC ~The Mercykillers are a powerful faction based out of the planar city of Sigil. This ring is given out to Mercykiller assassins when they are sent out to punish those who have broken the laws of Sigil. Often these assassins will roam as far as the Prime Material plane.
 
@@ -1107,7 +1107,7 @@ END
 */
 
 //Cespenar Upgrades
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW2HSAR.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW2HSAR.ITM~ ~override~
     SAY DESC ~Silver Sword (enhanted by Cespenar)
 This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
 
@@ -1146,7 +1146,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\BlackNi2.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/BlackNi2.ITM~ ~override~
     SAY NAME2 ~Blade Of The Night~
     SAY DESC ~Blade Of The Night (enhanted by Cespenar)
 This was the weapon used by the most famous assassin in Kara Tur, but none knew her name apart from the emperor. She was the greatest thief the world had ever seen. She received this powerful weapon after completing a series of succesful missions for the emperor, who decided she was worthy of the blade. It was made by the emperors best weapon smiths, and then tempered in the bloods of red, black, silver and blue dragons. The legend says this weapon would make anyone almost as good as thief as the original owner, but because of the strong enchantments, the katana requires much from its wielder, and it is only usable by a thief.
@@ -1187,7 +1187,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\UMHULK2.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/UMHULK2.ITM~ ~override~
     SAY NAME1 ~Umber Hulk Plate~
     SAY NAME2 ~Umber Hulk Plate~
     SAY DESC ~Umber Hulk Plate (enhanted by Cespenar)

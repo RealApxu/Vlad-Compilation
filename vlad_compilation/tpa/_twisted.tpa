@@ -1,23 +1,23 @@
 
 ///////////////////////////////////////////
-//Restored Slave Lord\Twisted Rune Quest
+//Restored Slave Lord/Twisted Rune Quest
 ///////////////////////////////////////////
 
-EXTEND_TOP ~ar0313.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_t\tAR0313.BAF~
+EXTEND_TOP ~ar0313.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_t/tAR0313.BAF~
 
-EXTEND_TOP ~ar0906.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_t\tAR0906.BAF~
+EXTEND_TOP ~ar0906.bcs~ ~%MOD_FOLDER%/components/bdash/BAF_t/tAR0906.BAF~
 
 COPY_EXISTING ~Tran1008.bcs~ ~override~
- REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/BAF_x\xTR1008.BAF~ ~%MOD_FOLDER%/components/bdash/BAF_r\rTR1008.BAF~
+ REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/BAF_x/xTR1008.BAF~ ~%MOD_FOLDER%/components/bdash/BAF_r/rTR1008.BAF~
 
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\HLKOSHI.CRE~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\HLKETTA.CRE~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\HLKETTA2.CRE~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\SCRL3IBD.ITM~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\DEMMAG.CRE~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\fsdragon.CRE~ ~override~ //to remove Hindo's Doom
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/HLKOSHI.CRE~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/HLKETTA.CRE~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/HLKETTA2.CRE~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/SCRL3IBD.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/DEMMAG.CRE~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/fsdragon.CRE~ ~override~ //to remove Hindo's Doom
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\STAF12BD.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/STAF12BD.ITM~ ~override~
   SAY NAME2 ~Staff of Dracandros~
   SAY DESC ~Staff of Dracandros
 A mage's staff is far more than just a gilded walking stick, most being enchanted to an impressive degree. This one is no exception, and whoever the previous owner was, they were powerful indeed.
@@ -38,7 +38,7 @@ Requires: 5 Strength
 Usable By
  Mages~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\BLUN17.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/BLUN17.ITM~ ~override~
   SAY NAME2 ~Morningstar +4: Wyvern's Tail~
   SAY DESC ~The large spike at the head of this morningstar is actually the lethal stinger of a wyvern.  The mage-fighter Sedej created this weapon, using his magical abilities to keep the stinger capable of producing poison.  The magic he used has actually made the Wyvern's Tail a living weapon, that pulses with life in the hands of its wielder.
 
@@ -60,14 +60,14 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\POTNRES.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/POTNRES.ITM~ ~override~
   SAY NAME2 ~Potion of Restoration~
   SAY DESC ~As the name implies, this potion will restore the life energy level of the imbiber. This reverses any previous life energy level drain of the creature by a force or monster. The restoration is instant and the potion may only be used once.
 
 Usable By:
  All~
 
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\SW1H70.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/SW1H70.ITM~ ~override~
   SAY DESC ~Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
 
 STATISTICS
@@ -89,7 +89,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/twistrun\SW1H71.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/twistrun/SW1H71.ITM~ ~override~
   SAY DESC ~Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
 
 STATISTICS

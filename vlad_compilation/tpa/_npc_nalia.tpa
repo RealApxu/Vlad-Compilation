@@ -5,7 +5,7 @@
 //
 /////////////////////////////////////
 
-COPY ~%MOD_FOLDER%/components/bdash/Nalia\itm\NPRING01.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Nalia/itm/NPRING01.ITM~ ~override~
     SAY DESC ~De'Arnise Signet Ring
 
 This ring was given to Nalia by her father upon her ascension to adulthood. Bonded to her blood as it is, the ring may not be removed from Nalia, nor its powers used by anyone else. On top of all its bonuses, the ring doubles the amount of spells Nalia can memorise.
@@ -27,20 +27,20 @@ Thieving Skills Bonus: +50%
 Usable By:
  Nalia~
 
-COPY ~%MOD_FOLDER%/components/bdash/Nalia\cre_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Nalia/cre_copy~ ~override~
 
 //Improved Keep
-COPY ~%MOD_FOLDER%/components/bdash/Nalia\dearnise~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Nalia/dearnise~ ~override~
 COPY_EXISTING ~AR1301.bcs~ ~override~
-    EXTEND_TOP ~AR1301.bcs~ ~%MOD_FOLDER%/components/bdash/Nalia\baf\eAR1301.baf~
+    EXTEND_TOP ~AR1301.bcs~ ~%MOD_FOLDER%/components/bdash/Nalia/baf/eAR1301.baf~
 COPY_EXISTING ~AR1302.bcs~ ~override~
-    EXTEND_TOP ~AR1302.bcs~ ~%MOD_FOLDER%/components/bdash/Nalia\baf\eAR1302.baf~
+    EXTEND_TOP ~AR1302.bcs~ ~%MOD_FOLDER%/components/bdash/Nalia/baf/eAR1302.baf~
 
 //Fixing the bug when the copy of original Nalia is brought back
-COPY ~%MOD_FOLDER%/components/bdash/Nalia\copy_bcs~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Nalia/copy_bcs~ ~override~
 
 /*
-COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+COPY_EXISTING ~BALDUR.GAM~ ~override/BALDUR.GAM~
     READ_LONG 0x30 "npc_off"
     READ_SHORT 0x34 "npc_num"
     FOR (i=0; i<"%npc_num%"; i=i+1) BEGIN

@@ -781,7 +781,7 @@ END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/KeldornR/sExt/KAYPAL03.bcs~ ~override~
 END
 
-/*COPY_EXISTING ~BALDUR.GAM~ ~override\BALDUR.GAM~
+/*COPY_EXISTING ~BALDUR.GAM~ ~override/BALDUR.GAM~
   READ_LONG 0x30 "npc_off"
   READ_SHORT 0x34 "npc_num"
   FOR (i=0; i<"%npc_num%"; i=i+1) BEGIN

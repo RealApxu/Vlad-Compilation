@@ -1,11 +1,11 @@
 
-////////////////////\
+/////////////////////
 //BGT v0.99b3 Kompatibilitaet
-////////////////////\
-ACTION_IF FILE_EXISTS ~data\BG1ARE.bif~ THEN
+/////////////////////
+ACTION_IF FILE_EXISTS ~data/BG1ARE.bif~ THEN
 BEGIN
 COPY_EXISTING ~BRDBYEND.DLG~ ~override~
-  COMPILE ~%MOD_FOLDER%/components/bdash/Language\deutsch\replace.d~
+  COMPILE ~%MOD_FOLDER%/components/bdash/Language/deutsch/replace.d~
 END
 ELSE BEGIN
 // Imoen sound changes
@@ -39,7 +39,7 @@ STRING_SET 4331 @1004331
 4799 @1004799
 12493 @1012493
 12494 @1012494
-// Soundset: Grammatical\Spelling\Punctuation Fixes
+// Soundset: Grammatical/Spelling/Punctuation Fixes
 4505 @1004505
 4519 @1004519
 4599 @1004599
@@ -78,7 +78,7 @@ STRING_SET 4331 @1004331
 11737 @1011737
 11739 @1011739
 20314 @1020314
-// Soundsets: Incorrect sound entry\No entry at all
+// Soundsets: Incorrect sound entry/No entry at all
 3437 @1003437
 4898 @1004898
 11618 @1011618
@@ -88,12 +88,12 @@ STRING_SET 4331 @1004331
 //73245 @1073245 Wegen TS
 END
 
-//////////////////////////\
+///////////////////////////
 // SOS v1.2 Kompatibilitaet
-//////////////////////////\
-ACTION_IF FILE_EXISTS ~data\SOS-RULE.BIF~ THEN
+///////////////////////////
+ACTION_IF FILE_EXISTS ~data/SOS-RULE.BIF~ THEN
 BEGIN
- ACTION_IF NOT FILE_EXISTS ~data\BG1ARE.BIF~ THEN
+ ACTION_IF NOT FILE_EXISTS ~data/BG1ARE.BIF~ THEN
  BEGIN
  STRING_SET 4519 @1004519
  4925 @1004925
@@ -108,8 +108,8 @@ END
 //////////////////////////
 // TS v6.0 Kompatibilitaet
 //////////////////////////
-ACTION_IF NOT FILE_EXISTS ~data\TS-TIS.BIF~
-OR ~data\BG1ARE.BIF~ THEN
+ACTION_IF NOT FILE_EXISTS ~data/TS-TIS.BIF~
+OR ~data/BG1ARE.BIF~ THEN
 BEGIN
 STRING_SET 73245 @1073245
 END
@@ -117,9 +117,9 @@ END
 //////////////////////////
 // NEJ v2.3 Kompatibilitaet
 //////////////////////////
-ACTION_IF FILE_EXISTS ~override\Bag02NeJ.ITM~
-AND ~override\EyeBite.itm~
-AND ~data\BG1ARE.bif~ THEN
+ACTION_IF FILE_EXISTS ~override/Bag02NeJ.ITM~
+AND ~override/EyeBite.itm~
+AND ~data/BG1ARE.bif~ THEN
 BEGIN
 END
 ELSE BEGIN
@@ -17807,9 +17807,9 @@ STRING_SET 1 @1000001
 74105 @1074105
 74106 @1074106
 
-////////////////////////////\
+/////////////////////////////
 //dialog und dialogF getrennt
-////////////////////////////\
+/////////////////////////////
 
 77 @1000077
 285 @1000285

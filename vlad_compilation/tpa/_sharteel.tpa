@@ -75,7 +75,7 @@ Disadvantages:
 //////////////////////////////////////////////////////////////////////////////
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
-    COPY ~%MOD_FOLDER%/components/bdash/BGTComp\sharteel\ar9400.bcs~ ~override~
+    COPY ~%MOD_FOLDER%/components/bdash/BGTComp/sharteel/ar9400.bcs~ ~override~
 END
 
 ///////ST's dialogues have to be updated!////////////

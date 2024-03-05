@@ -4,7 +4,7 @@
 //
 /////////////////////////////////////
 
-COPY ~%MOD_FOLDER%/components/bdash/Anomen\cre_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Anomen/cre_copy~ ~override~
 
 /*
 COPY_EXISTING ~ANOMEN6.CRE~ ~override~
@@ -24,7 +24,7 @@ COPY_EXISTING ~ANOMEN6.CRE~ ~override~
 BUT_ONLY
 */
 
-COPY ~%MOD_FOLDER%/components/bdash/Anomen\itm\HelmAnom.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Anomen/itm/HelmAnom.itm~ ~override~
     SAY NAME1 #6346
     SAY NAME2 ~Helm of Radiance~
     SAY UNIDENTIFIED_DESC #19725
@@ -60,7 +60,7 @@ Weight: 2
 Usable By:
  Anomen~
 
-COPY ~%MOD_FOLDER%/components/bdash/Anomen\itm\ShldAnom.itm~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/Anomen/itm/ShldAnom.itm~ ~override~
     SAY NAME1 #8482
     SAY NAME2 #8482
     SAY UNIDENTIFIED_DESC #6819

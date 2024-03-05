@@ -1,7 +1,7 @@
 
 //Improved Anti-Dragon Items
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SHLD21.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SHLD21.ITM~ ~override~
     SAY NAME2 ~Dragon Scale Shield +5~
     SAY DESC ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a steel frame.  Green and white dragon scales adorn the red background in a pattern that, when looked in the right way, reveals the face of an ancient dragon.
 
@@ -21,7 +21,7 @@ Not Usable By:
  Monk
  Kensai~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H31.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H31.ITM~ ~override~
     SAY DESC ~Sunblade: Daystar
 Whether created specifically for use in the service of Torm or appropriated at some point in the long history of the church, Paladins of the Loyal Fury have made good use of Daystar in their battles against evil undead.  Through magic or blessing it is empowered with the Sunray, a force of pure life energy so potent that it slays both living and unliving.
 
@@ -48,7 +48,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H35.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H35.ITM~ ~override~
     SAY NAME2 ~Adjatha the Drinker +4~
     SAY DESC ~This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
 
@@ -80,7 +80,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H51.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H51.ITM~ ~override~
     SAY DESC ~Katana +4
 To enchant a katana is no simple process.  Unlike conventional weapons, the katana is already a near-perfect fighting sword.  To improve it usually requires a sacrifice, perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana.  The wielder of an enchanted katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle.  Not doing so could drastically change one's luck for the worse.
 
@@ -133,13 +133,13 @@ Not Usable By:
  END
 BUT_ONLY
 
-COPY_EXISTING ~SW1H35.ITM~ ~override\SW1H35.ITM~
+COPY_EXISTING ~SW1H35.ITM~ ~override/SW1H35.ITM~
     WRITE_BYTE 0x237  0x02
     WRITE_BYTE 0x267  0x02
     WRITE_BYTE 0x297  0x02
     WRITE_BYTE 0x2C7  0x02*/
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H32.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H32.ITM~ ~override~
     SAY DESC ~Long sword +5:  Dragonslayer (Peridan)
 Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerun's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also bolsters with regeneration, dispels magics whenever the sword strikes an enemy, and dares to do double damage against the greatest creatures of the Realms.
 
@@ -167,7 +167,7 @@ Not Usable By:
  Mage
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\LEAT19.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/LEAT19.ITM~ ~override~
     SAY DESC ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful with some essential extra protections.
 
 STATISTICS:
@@ -194,7 +194,7 @@ Not Usable By:
  Monk
  Shapeshifter~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\HELM21.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/HELM21.ITM~ ~override~
     SAY DESC ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity.  It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 
 Equipped Abilities:
@@ -211,7 +211,7 @@ Not Usable By:
  Monk
  Kensai~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\PLAT18.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/PLAT18.ITM~ ~override~
     SAY DESC ~This suit of armor is formed from interlocking red dragon scales. It is light of weight, strong, and resistant to fire and magic. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
 
 STATISTICS:
@@ -237,7 +237,7 @@ Not Usable By:
  Monk
  Shapeshifter~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\CHAN18.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/CHAN18.ITM~ ~override~
     SAY DESC ~This was the armor of Seffer Ekr, and a sign of the goddess Mielikii's favor.  She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest.  A heart attack claimed him when his time was done, not an enemy's blade.
 
 STATISTICS
@@ -257,7 +257,7 @@ Not Usable By:
  Kensai
  Monk~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW2H15.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW2H15.ITM~ ~override~
     SAY DESC ~Silver Sword
 This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
 
@@ -293,7 +293,7 @@ Not Usable By:
  Monk
  Beast Master~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\SW1H54.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H54.ITM~ ~override~
     SAY DESC ~Long Sword: The Equalizer
 Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality", it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
 
@@ -357,7 +357,7 @@ END
 
 //Improved Ring of Gaxx
 //String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
-COPY ~%MOD_FOLDER%/components/bdash/itm\Ring39.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/Ring39.ITM~ ~override~
     SAY DESC ~Ring of Gaxx
 This ring is relatively unadorned, but the vile magic within radiates intense evil.  Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power.  It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains.  The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
 
@@ -380,7 +380,7 @@ Not Usable By:
 
 //Improved Horns of Valhalla
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\MISC3I.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3I.ITM~ ~override~
   SAY DESC ~Silver Horn of Valhalla
 
 In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a twelveth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
@@ -388,7 +388,7 @@ In the halls of Valhalla rest the most valiant of warriors. Their service to war
 Not Usable By:
  Wizard Slayer~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\MISC3J.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3J.ITM~ ~override~
   SAY DESC ~Bronze Horn of Valhalla
 
 In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a fifteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
@@ -396,7 +396,7 @@ In the halls of Valhalla rest the most valiant of warriors. Their service to war
 Not Usable By:
  Wizard Slayer~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm\MISC3K.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3K.ITM~ ~override~
   SAY DESC ~Iron Horn of Valhalla
 
 In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth an eighteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.

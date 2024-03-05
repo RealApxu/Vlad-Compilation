@@ -39,7 +39,7 @@ ADD_KIT ~RED_WIZARD~
 
 ~RED_WIZARD      1       1       0       1       0       0~
 
-~%MOD_FOLDER%/components/bdash/edwin\CLABEDW.2DA~
+~%MOD_FOLDER%/components/bdash/edwin/CLABEDW.2DA~
 
 ~~
 
@@ -78,25 +78,25 @@ Advantages:
 Disadvantages:
 -  None~
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN7.cre~ ~override\EDWIN7.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN7.cre~ ~override/EDWIN7.cre~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN9.cre~ ~override\EDWIN9.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN9.cre~ ~override/EDWIN9.cre~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN11.cre~ ~override\EDWIN11.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN11.cre~ ~override/EDWIN11.cre~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN12.CRE~ ~override/EDWIN12.CRE~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN13.cre~ ~override/EDWIN13.cre~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN15.cre~ ~override/EDWIN15.cre~
 
 
-COPY ~%MOD_FOLDER%/components/bdash/edwin\spl_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/spl_copy~ ~override~
 */
 
 /////////////////////
@@ -185,18 +185,18 @@ LAF fl#add_kit_ee
 END
 
 //Buffed Edwin stats
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN7.cre~ ~override\EDWIN7.cre~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN9.cre~ ~override\EDWIN9.cre~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN11.cre~ ~override\EDWIN11.cre~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN12.CRE~ ~override\EDWIN12.CRE~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN13.cre~ ~override\EDWIN13.cre~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\EDWIN15.cre~ ~override\EDWIN15.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN7.cre~ ~override/EDWIN7.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN9.cre~ ~override/EDWIN9.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN11.cre~ ~override/EDWIN11.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN12.CRE~ ~override/EDWIN12.CRE~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN13.cre~ ~override/EDWIN13.cre~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/EDWIN15.cre~ ~override/EDWIN15.cre~
 
 ACTION_IF GAME_IS ~bgee tutu tutu_totsc bgt eet~ BEGIN
-    COPY ~%MOD_FOLDER%/components/bdash/edwin\edwin.cre~ ~override/edwin.cre~
-    COPY ~%MOD_FOLDER%/components/bdash/edwin\edwin2.cre~ ~override/edwin2.cre~
-    COPY ~%MOD_FOLDER%/components/bdash/edwin\edwin4.cre~ ~override/edwin4.cre~
-    COPY ~%MOD_FOLDER%/components/bdash/edwin\edwin6.cre~ ~override/edwin6.cre~
+    COPY ~%MOD_FOLDER%/components/bdash/edwin/edwin.cre~ ~override/edwin.cre~
+    COPY ~%MOD_FOLDER%/components/bdash/edwin/edwin2.cre~ ~override/edwin2.cre~
+    COPY ~%MOD_FOLDER%/components/bdash/edwin/edwin4.cre~ ~override/edwin4.cre~
+    COPY ~%MOD_FOLDER%/components/bdash/edwin/edwin6.cre~ ~override/edwin6.cre~
 END
 
 //Adding kit to cre files
@@ -236,8 +236,8 @@ Usable By:
 
 //Edwina Portrait change (Use Tweaks Anthology)
 /*
-COPY ~%MOD_FOLDER%/components/bdash/edwin\spl_copy/nedwinam.bmp~ ~override~
-COPY ~%MOD_FOLDER%/components/bdash/edwin\spl_copy/nedwinas.bmp~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/spl_copy/nedwinam.bmp~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/edwin/spl_copy/nedwinas.bmp~ ~override~
 
 COPY_EXISTING ~EDWIN.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN

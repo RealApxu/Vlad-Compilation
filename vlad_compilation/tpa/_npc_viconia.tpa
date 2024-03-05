@@ -41,7 +41,7 @@ ADD_KIT ~DARKCLOAK_OF_SHAR~
 
 ~DARKCLOAK_OF_SHAR      1       0       1       1       0       1~
 
-~%MOD_FOLDER%/components/bdash/viccy\CLABSHAR.2DA~
+~%MOD_FOLDER%/components/bdash/viccy/CLABSHAR.2DA~
 
 ~~
 
@@ -92,37 +92,37 @@ Advantages:
 Disadvantages:
 -  None~
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI6.cre~ ~override\VICONI6.cre~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI6.cre~ ~override/VICONI6.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI8.cre~ ~override\VICONI8.cre~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI8.cre~ ~override/VICONI8.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI9.cre~ ~override\VICONI9.cre~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI9.cre~ ~override/VICONI9.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI11.CRE~ ~override\VICONI11.CRE~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI11.CRE~ ~override/VICONI11.CRE~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI13.cre~ ~override\VICONI13.cre~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI13.cre~ ~override/VICONI13.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\VICONI16.cre~ ~override\VICONI16.cre~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/VICONI16.cre~ ~override/VICONI16.cre~
     WRITE_SHORT 0x244 0 // doesn't change
     WRITE_BYTE 0x246 ~%DARKCLOAK_OF_SHAR%~ // the internal name of your kit, surrounded by %
     WRITE_BYTE 0x247 0x40 // doesn't change
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\spl_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/spl_copy~ ~override~
 
 COPY ~%MOD_FOLDER%/components/bdash/viccy/VicAmul.ITM~ ~override~
     SAY NAME2 ~Dark Shadow of Shar~
@@ -152,7 +152,7 @@ Weight:  3
 Usable By:
  Viconia~
 
-COPY ~%MOD_FOLDER%/components/bdash/viccy\CloakSh.ITM~ ~override~
+COPY ~%MOD_FOLDER%/components/bdash/viccy/CloakSh.ITM~ ~override~
     SAY NAME2 ~Dark Cloak of Shar~
     SAY DESC ~Dark Cloak of Shar
 Only those most worthy and devoted servants of the Lady of Loss are granted these powerful cloaks which provide essential protections and increase the amount of priest high-level spells they can memorise.
