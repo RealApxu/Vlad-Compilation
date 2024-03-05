@@ -12,6 +12,7 @@ ALWAYS
     
 END
 
+/*
 AUTO_TRA ~%MOD_FOLDER%/components/bdash/language/%s~
 
 LANGUAGE ~English~
@@ -21,6 +22,7 @@ LANGUAGE ~English~
 LANGUAGE ~Deutsch~
          ~deutsch~
          ~%MOD_FOLDER%/components/bdash/Language/deutsch/korrektur.tra~
+*/
 
 BEGIN ~MY COMPILATION~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
