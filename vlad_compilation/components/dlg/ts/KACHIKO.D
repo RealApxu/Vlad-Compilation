@@ -2,28 +2,25 @@ BEGIN ~KACHIKO~
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//		Situation 1: Yoshimo is in Party
+//  Situation 1: Yoshimo is in Party
 //
-//		1) If Kachiko is joined:
-//												VP_Kachiko_Joined is set to 1
-//												VP_Kachiko_Meet is set to 2
+//  1) If Kachiko is joined:
+//  VP_Kachiko_Joined is set to 1
+//  VP_Kachiko_Meet is set to 2
 //
-//		2) If Kachiko is not joined, both go to SeaBounty:
-//												VP_YoshFollowsKach is set to 1
-//												VP_Kachiko_Meet is set to 3 --> GOTO Situation 3
+//  2) If Kachiko is not joined, both go to SeaBounty:
+//  VP_YoshFollowsKach is set to 1
+//  VP_Kachiko_Meet is set to 3 --> GOTO Situation 3
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-IF WEIGHT #2 ~NumberOfTimesTalkedTo(0)
-InParty("Yoshimo")
-Global("VP_Kachiko_Meet","GLOBAL",1)
-Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 0
+IF WEIGHT #2 ~NumberOfTimesTalkedTo(0) InParty("Yoshimo") Global("VP_Kachiko_Meet","GLOBAL",1) Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 0
   SAY ~Ah, here you are, bastard! You thought you could flee far enough? I promised to find you even in Nine Hells! I am Kachiko Nakanishi, prepare to die!~ [KACHI01]
   IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ EXTERN ~YOSHJ~ TS152
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~Who are these people with you? Are they your new associates? Don’t think you’re so safe. I can deal with all of them if they try to stop me.~ [KACHI02]
+  SAY ~Who are these people with you? Are they your new associates? Donï¿½t think youï¿½re so safe. I can deal with all of them if they try to stop me.~ [KACHI02]
   IF ~~ THEN REPLY ~Do you mind if I interrupt your polemic?~ GOTO 2
   IF ~~ THEN REPLY ~Shut up, both of you. You, crazy one, are gonna die!~ EXTERN ~YOSHJ~ TS153
   IF ~~ THEN REPLY ~[Silent]~ EXTERN ~YOSHJ~ TS154
@@ -36,22 +33,22 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~There is no peaceful solution, but... Hmm... May be you really don’t know anything about this snake. I am Kachiko Nakanishi. From Kozakura. Do you know much of your associate, Yoshimo?~
+  SAY ~There is no peaceful solution, but... Hmm... May be you really donï¿½t know anything about this snake. I am Kachiko Nakanishi. From Kozakura. Do you know much of your associate, Yoshimo?~
   IF ~~ THEN REPLY ~No. Please, tell more.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
-  SAY ~This... this... man, Yoshimo, standing behind you is accused of my brother’s murder...~
+  SAY ~This... this... man, Yoshimo, standing behind you is accused of my brotherï¿½s murder...~
   IF ~~ THEN EXTERN ~YOSHJ~ TS156
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~I won’t listen to your lies.~
+  SAY ~I wonï¿½t listen to your lies.~
   IF ~~ THEN EXTERN ~YOSHJ~ TS155
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you’re not the murderer. But if you lied...~
+  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that youï¿½re not the murderer. But if you lied...~
   IF ~~ THEN EXTERN ~YOSHJ~ TS159
 END
 
@@ -71,50 +68,45 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-  SAY ~Don’t lie to me. You won’t escape again. I’ll follow you, and I’ll watch you. And once you close your deal with <CHARNAME>, you’ll come with me. <CHARNAME>, do you need another companion in your group? My grandfather trained me equally in the spiritual and martial arts. I am not very strong and cannot wear armour, but I am fast and deadly in combat. Perhaps, in the future I may improve my wizard skills, as it is within my ability.~
+  SAY ~Donï¿½t lie to me. You wonï¿½t escape again. Iï¿½ll follow you, and Iï¿½ll watch you. And once you close your deal with <CHARNAME>, youï¿½ll come with me. <CHARNAME>, do you need another companion in your group? My grandfather trained me equally in the spiritual and martial arts. I am not very strong and cannot wear armour, but I am fast and deadly in combat. Perhaps, in the future I may improve my wizard skills, as it is within my ability.~
   IF ~~ THEN REPLY ~No, Kachiko, I have no room for you right now. Perhaps I will need your help later.~ GOTO 11
   IF ~~ THEN REPLY ~Of course, I need a good fighter-mage.~ EXTERN ~YOSHJ~ TS165
-  IF ~~ THEN REPLY ~Sorry, I don’t need your help, and I won’t allow you to follow us. Go back to Kara-Tur alone.~ GOTO 12
-  IF ~~ THEN REPLY ~I don’t know you, I don’t need your problems, and I won’t allow you to follow us. I should have killed you right away.~ EXTERN ~YOSHJ~ TS153
+  IF ~~ THEN REPLY ~Sorry, I donï¿½t need your help, and I wonï¿½t allow you to follow us. Go back to Kara-Tur alone.~ GOTO 12
+  IF ~~ THEN REPLY ~I donï¿½t know you, I donï¿½t need your problems, and I wonï¿½t allow you to follow us. I should have killed you right away.~ EXTERN ~YOSHJ~ TS153
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~I have neither time, nor desire to wait for you in this dreadful barbaric city. But I won’t leave without Yoshimo.~
+  SAY ~I have neither time, nor desire to wait for you in this dreadful barbaric city. But I wonï¿½t leave without Yoshimo.~
   IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",3)~ EXTERN ~YOSHJ~ TS163
 END
 
 IF ~~ THEN BEGIN 12
-  SAY ~I won’t come back without Yoshimo.~
+  SAY ~I wonï¿½t come back without Yoshimo.~
   IF ~~ THEN EXTERN ~YOSHJ~ TS164
 END
 
 IF ~~ THEN BEGIN 13
-  SAY ~Watch your tongue, ’friend’.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY)
-SetGlobal("VP_Kachiko_Joined","GLOBAL",1)
-JoinParty()~ EXIT
+  SAY ~Watch your tongue, ï¿½friendï¿½.~
+  IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY) SetGlobal("VP_Kachiko_Joined","GLOBAL",1) JoinParty()~ EXIT
 END
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//		Situation 2: Yoshimo is not in Party
+//  Situation 2: Yoshimo is not in Party
 //
-//		1) If Kachiko is joined:
-//												VP_Kachiko_Joined is set to 1
-//												VP_Kachiko_Meet is set to 2
-//												VP_YoshimoSearch is set to 1
+//  1) If Kachiko is joined:
+//  VP_Kachiko_Joined is set to 1
+//  VP_Kachiko_Meet is set to 2
+//  VP_YoshimoSearch is set to 1
 //
-//		2) If Kachiko is not joined, she escapes to Sea Bounty Tavern
+//  2) If Kachiko is not joined, she escapes to Sea Bounty Tavern
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-IF WEIGHT #1 ~NumberOfTimesTalkedTo(0)
-!InParty("Yoshimo")
-Global("VP_Kachiko_Meet","GLOBAL",1)
-Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 14
-  SAY ~You! Have you seen Yoshimo?  I know he’s around here somewhere!~ [KACHI04]
-  IF ~~ THEN REPLY ~Yes, I saw him not long time ago. Err...who, might I ask, are you? And what’s the matter?~ DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ GOTO 15
-  IF ~~ THEN REPLY ~No, I didn’t see him before.~ DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ GOTO 21
+IF WEIGHT #1 ~NumberOfTimesTalkedTo(0) !InParty("Yoshimo") Global("VP_Kachiko_Meet","GLOBAL",1) Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 14
+  SAY ~You! Have you seen Yoshimo?  I know heï¿½s around here somewhere!~ [KACHI04]
+  IF ~~ THEN REPLY ~Yes, I saw him not long time ago. Err...who, might I ask, are you? And whatï¿½s the matter?~ DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ GOTO 15
+  IF ~~ THEN REPLY ~No, I didnï¿½t see him before.~ DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ GOTO 21
   IF ~~ THEN REPLY ~Who is Yoshimo?~ DO ~SetGlobal("VP_Kachiko_Meet","GLOBAL",2)~ GOTO 22
 END
 
@@ -132,46 +124,37 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~Could you help me finding Yoshimo and bringing him to justice?~
-  IF ~~ THEN REPLY ~Of course, I’ll help you. You may join my company if you wish.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1)
-SetGlobal("VP_YoshimoSearch","GLOBAL",1)
-JoinParty()~ EXIT
+  IF ~~ THEN REPLY ~Of course, Iï¿½ll help you. You may join my company if you wish.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1) SetGlobal("VP_YoshimoSearch","GLOBAL",1) JoinParty()~ EXIT
   IF ~~ THEN REPLY ~And what is the profit?~ GOTO 18
   IF ~~ THEN REPLY ~Sorry, I have no time for another quest. You are on your own.~ GOTO 20
 END
 
 IF ~~ THEN BEGIN 18
-  SAY ~I’ll help you in your quests, if you help me to find Yoshimo... dead or alive.~
+  SAY ~Iï¿½ll help you in your quests, if you help me to find Yoshimo... dead or alive.~
   IF ~~ THEN REPLY ~What makes you think that I need your help?~ GOTO 19
-  IF ~~ THEN REPLY ~You have a deal.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1)
-SetGlobal("VP_YoshimoSearch","GLOBAL",1)
-JoinParty()~ EXIT
+  IF ~~ THEN REPLY ~You have a deal.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1) SetGlobal("VP_YoshimoSearch","GLOBAL",1) JoinParty()~ EXIT
   IF ~~ THEN REPLY ~Sorry, I have no time for another quest. You are on your own.~ GOTO 20
 END
 
 IF ~~ THEN BEGIN 19
   SAY ~My grandfather trained me equally in the spiritual and martial arts. I am not very strong and cannot wear armour, but I am fast and deadly in combat. Perhaps, in the future I may improve my wizard skills, as it is within my ability.~
-  IF ~~ THEN REPLY ~Well then you convinced me. Join me, and I’ll help you to find Yoshimo.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1)
-SetGlobal("VP_YoshimoSearch","GLOBAL",1)
-JoinParty()~ EXIT
+  IF ~~ THEN REPLY ~Well then you convinced me. Join me, and Iï¿½ll help you to find Yoshimo.~ DO ~SetGlobal("VP_Kachiko_Joined","GLOBAL",1) SetGlobal("VP_YoshimoSearch","GLOBAL",1) JoinParty()~ EXIT
   IF ~~ THEN REPLY ~Sorry, I have no time for another quest. You are on your own.~ GOTO 20
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~I’ll find him eventually!  I SWEAR I’ll find him! There has to be somewhere I haven’t looked!~ [KACHI07]
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1)
-EscapeAreaMove("AR0313",784,333,8)~ EXIT
+  SAY ~Iï¿½ll find him eventually!  I SWEAR Iï¿½ll find him! There has to be somewhere I havenï¿½t looked!~ [KACHI07]
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1) EscapeAreaMove("AR0313",784,333,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN 21
   SAY ~Liar! I know you hide him here.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1)
-EscapeAreaMove("AR0313",784,333,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1) EscapeAreaMove("AR0313",784,333,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN 22
-  SAY ~Don’t make a fool of me! I know you hide him here.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1)
-EscapeAreaMove("AR0313",784,333,8)~ EXIT
+  SAY ~Donï¿½t make a fool of me! I know you hide him here.~
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",1) EscapeAreaMove("AR0313",784,333,8)~ EXIT
 END
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -180,20 +163,15 @@ END
 
 IF ~~ THEN BEGIN 23
   SAY ~I think it is a good idea! Better than staying in this barbaric tavern and listening to drunkard sailors!~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)
-ActionOverride("Yoshimo",JoinParty())
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0) ActionOverride("Yoshimo",JoinParty()) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
   SAY ~If that is what you wish.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)
-ActionOverride("Yoshimo",JoinParty())
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0) ActionOverride("Yoshimo",JoinParty()) JoinParty()~ EXIT
 END
 
-IF WEIGHT #0 ~Global("VP_YoshFollowsKach","GLOBAL",1)
-Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 25
+IF WEIGHT #0 ~Global("VP_YoshFollowsKach","GLOBAL",1) Global("VP_KachikoInTavern","GLOBAL",0)~ THEN BEGIN 25
   SAY ~It is good to see you again. I had hoped you would return. We still have not managed to get a ship. Do you need another party member or two?~
   IF ~~ THEN REPLY ~Yes.~ DO ~SetGlobal("VP_YoshFollowsKach","GLOBAL",0)~ GOTO 26
   IF ~~ THEN REPLY ~No.~ GOTO 27
@@ -201,8 +179,7 @@ END
 
 IF ~~ THEN BEGIN 26
   SAY ~Good.  Not another word, then.~
-  IF ~~ THEN DO ~SetGlobal("VP_JoinYoshimo","GLOBAL",1)
-SetGlobal("Kicked_Out","LOCALS",0)~ EXTERN ~YOSHP~ TS25
+  IF ~~ THEN DO ~SetGlobal("VP_JoinYoshimo","GLOBAL",1) SetGlobal("Kicked_Out","LOCALS",0)~ EXTERN ~YOSHP~ TS25
 END
 
 IF ~~ THEN BEGIN 27
@@ -210,10 +187,7 @@ IF ~~ THEN BEGIN 27
   IF ~~ THEN DO ~SetGlobal("VP_YoshFollowsKach","GLOBAL",1)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("VP_KachikoInTavern","GLOBAL",1)
-!InParty(Myself)
-!InParty("Yoshimo")
-!See("Yoshimo")~ THEN BEGIN N28
+IF WEIGHT #-1 ~Global("VP_KachikoInTavern","GLOBAL",1) !InParty(Myself) !InParty("Yoshimo") !See("Yoshimo")~ THEN BEGIN N28
   SAY ~It is good to see you again. Was there something that you wished?~
   IF ~~ THEN REPLY ~Maybe you can join my party?~ GOTO N29
   IF ~~ THEN REPLY ~No.~ GOTO N30
@@ -221,9 +195,7 @@ END
 
 IF ~~ THEN BEGIN N29
   SAY ~Good. Not another word, then.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
-SetGlobal("Kicked_Out","LOCALS",0)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) SetGlobal("Kicked_Out","LOCALS",0) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN N30
@@ -233,16 +205,13 @@ END
 
 // Waiting in Sea Bounty and detecting Yoshimo
 
-IF WEIGHT #-2 ~Global("VP_KachikoInTavern","GLOBAL",1)
-!InParty(Myself)
-InParty("Yoshimo")
-Detect("Yoshimo")~ THEN BEGIN N31
+IF WEIGHT #-2 ~Global("VP_KachikoInTavern","GLOBAL",1) !InParty(Myself) InParty("Yoshimo") Detect("Yoshimo")~ THEN BEGIN N31
   SAY ~Ah, here you are, bastard! You thought you could flee far enough? I promised to find you even in Nine Hells! Prepare to die!~
   IF ~~ THEN  EXTERN ~YOSHJ~ SB06
 END
 
 IF ~~ THEN BEGIN N32
-  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you’re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
+  SAY ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that youï¿½re not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
   IF ~~ THEN REPLY ~Kachiko, are you going back on your offer to help me?~ GOTO N33
   IF ~~ THEN REPLY ~Of course, Kachiko, I understand. Farewell.~ EXTERN ~YOSHJ~ SB10
 END
@@ -258,8 +227,6 @@ IF ~~ THEN BEGIN N34
 END
 
 IF ~~ THEN BEGIN N35
-  SAY ~Don’t lie to me. You won’t escape again. I’ll watch you even if I have to break my word to <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
-SetGlobal("Kicked_Out","LOCALS",0)
-JoinParty()~ EXIT
+  SAY ~Donï¿½t lie to me. You wonï¿½t escape again. Iï¿½ll watch you even if I have to break my word to <CHARNAME>.~
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) SetGlobal("Kicked_Out","LOCALS",0) JoinParty()~ EXIT
 END

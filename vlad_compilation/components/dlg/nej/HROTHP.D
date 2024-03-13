@@ -21,9 +21,7 @@ END
 
 IF ~~ THEN BEGIN 3
   SAY ~Then together it is <CHARNAME>, let us continue as we were.~ [HROT_L02]
-  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0)
-SetGlobal("VP_Break_NeJ_Plot","GLOBAL",0)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0) SetGlobal("VP_Break_NeJ_Plot","GLOBAL",0) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -33,9 +31,7 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~And I would welcome the chance to walk your road again <CHARNAME>. Come, you can tell me all that has been happening in my absence as we travel.~ [HROT_L12]
-  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0)
-SetGlobal("VP_Break_NeJ_Plot","GLOBAL",0)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",0) SetGlobal("VP_Break_NeJ_Plot","GLOBAL",0) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -46,59 +42,24 @@ END
 IF ~~ THEN BEGIN 7
   SAY ~If this is farewell I shall continue alone and hopefully find my way back to my home. I will remain here but only for a brief time should you have need to find for me again. We may meet at some future time and we may not. I wish you luck in your search for your destiny <CHARNAME>. Fare thee well.~ [HROT_L03]
   IF ~Global("VP_In_IWD_Part1","GLOBAL",1)~ THEN REPLY ~You may as well continue your own path Hrothgar. I cannot see me having a need to seek you out again any time soon. Farewell.~ GOTO 8
-  IF ~Global("VP_In_IWD_Part1","GLOBAL",0)
-!AreaCheck("AR0301")
-!AreaCheck("AR0302")
-!AreaCheck("AR0303")
-!AreaCheck("AR0304")
-!AreaCheck("AR0305")
-!AreaCheck("AR0306")
-!AreaCheck("AR0307")
-!AreaCheck("AR0509")
-!AreaCheck("AR0510")
-!AreaCheck("AR0511")
-!AreaCheck("AR1102")
-!AreaCheck("AR1107")
-!AreaCheck("AR0801")
-!AreaCheck("AR0803")
-!AreaCheck("AR1300")
-!AreaCheck("AR1301")
-!AreaCheck("AR1302")
-!AreaCheck("AR1303")
-!AreaCheck("AR0604")
-!AreaCheck("AR0605")
-!AreaCheck("AR0606")~ THEN REPLY ~Then it is here that I shall look should I have need of you again Hrothgar. Farewell my friend.~ GOTO 9
-  IF ~OR(5)
-AreaCheck("AR0601")
-AreaCheck("AR0602")
-AreaCheck("AR0603")
-Global("VP_In_IWD_Part1","GLOBAL",0)
-Global("VP_OnIsland","GLOBAL",0)~ THEN REPLY ~It would be best if you were to make your way to one of the inns or taverns Hrothgar, it would be quicker for me to find you there than here.~ GOTO 10
-  IF ~OR(3)
-Global("VP_In_IWD_Part1","GLOBAL",1)
-Global("VP_OnIsland","GLOBAL",1)
-Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. I'll pick up you later.~ GOTO 9
+  IF ~Global("VP_In_IWD_Part1","GLOBAL",0) !AreaCheck("AR0301") !AreaCheck("AR0302") !AreaCheck("AR0303") !AreaCheck("AR0304") !AreaCheck("AR0305") !AreaCheck("AR0306") !AreaCheck("AR0307") !AreaCheck("AR0509") !AreaCheck("AR0510") !AreaCheck("AR0511") !AreaCheck("AR1102") !AreaCheck("AR1107") !AreaCheck("AR0801") !AreaCheck("AR0803") !AreaCheck("AR1300") !AreaCheck("AR1301") !AreaCheck("AR1302") !AreaCheck("AR1303") !AreaCheck("AR0604") !AreaCheck("AR0605") !AreaCheck("AR0606")~ THEN REPLY ~Then it is here that I shall look should I have need of you again Hrothgar. Farewell my friend.~ GOTO 9
+  IF ~OR(5) AreaCheck("AR0601") AreaCheck("AR0602") AreaCheck("AR0603") Global("VP_In_IWD_Part1","GLOBAL",0) Global("VP_OnIsland","GLOBAL",0)~ THEN REPLY ~It would be best if you were to make your way to one of the inns or taverns Hrothgar, it would be quicker for me to find you there than here.~ GOTO 10
+  IF ~OR(3) Global("VP_In_IWD_Part1","GLOBAL",1) Global("VP_OnIsland","GLOBAL",1) Global("VP_InHalruaa","GLOBAL",1)~ THEN REPLY ~If you can, try and wait here. I'll pick up you later.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~No one can ever be sure of what or whom he will have need of come tomorrow. I wish you luck on your road to your destiny <CHARNAME>. For now, I say fare thee well and keep safe.~ [HROT_L05]
-  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",1)
-EscapeAreaMove("TT1004",777,300,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) EscapeAreaMove("TT1004",777,300,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 9
   SAY ~I wish you luck on your road to your destiny <CHARNAME> but do not leave it too late to look me up should you have need. For now, I say fare thee well and keep safe my friend.~ [HROT_L04]
-  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",1)
-SetGlobalTimer("VP_Leaving_Timer","LOCALS",ONE_DAY)
-SetGlobal("VP_Break_NeJ_Plot","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) SetGlobalTimer("VP_Leaving_Timer","LOCALS",ONE_DAY) SetGlobal("VP_Break_NeJ_Plot","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
   SAY ~No matter where I wait <CHARNAME>, it will only be for a brief time, but if you say an inn or tavern will be more convenient, then that is where you will find me. Just do not leave it too late before you return. I wish you luck in your search for your destiny <CHARNAME>. For now I say fare thee well and keep safe my friend.~ [HROT_L06]
-  IF ~~ THEN  DO ~SetGlobal("KickedOut","LOCALS",1)
-SetGlobalTimer("VP_Leaving_Timer","LOCALS",TEN_DAYS)
-SetGlobal("VP_Break_NeJ_Plot","GLOBAL",1)
-EscapeAreaMove("AR0406",1114,1368,12)~ EXIT
+  IF ~~ THEN  DO ~SetGlobal("KickedOut","LOCALS",1) SetGlobalTimer("VP_Leaving_Timer","LOCALS",TEN_DAYS) SetGlobal("VP_Break_NeJ_Plot","GLOBAL",1) EscapeAreaMove("AR0406",1114,1368,12)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
@@ -114,4 +75,4 @@ END
 IF ~~ THEN BEGIN 13
   SAY ~It is true, I knew you joined my expedition to Kuldahar for your own gains but I had no idea how ruthless you were <CHARNAME>. The fact that I overlooked your cruel nature in the beginning does not mean I have to continue to watch your wickedness anymore. My honour will not allow me to follow this evil path of yours any longer. So it is fare thee well <CHARNAME> and remember, we will all be judged by our deeds in time.~ [HROT_L10]
   IF ~~ THEN DO ~EscapeArea()~ EXIT
-END  
+END

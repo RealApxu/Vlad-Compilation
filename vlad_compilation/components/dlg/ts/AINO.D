@@ -1,14 +1,12 @@
 BEGIN ~AINO~ 74548
 
-IF ~NumberOfTimesTalkedTo(0)
-GlobalLT("Kachiko_Saved","GLOBAL",2)
-~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) GlobalLT("Kachiko_Saved","GLOBAL",2) ~ THEN BEGIN 0
   SAY ~My son! Welcome. I have been waiting for you to come.~
   IF ~~ THEN EXTERN ~YOSHJ~ TS178
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~I will...I do not understand it well myself, Yoshimo, but I'll tell you what I know. After you fled, the hatred between Nakanishi and Hashimoto became unbearable... Nakanishi tried to accuse you of Naoko’s death in order to have the emperor’s wizards find you and execute you... We used all our influence to prevent it. Then they sent an assassin after you... Kachiko.~
+  SAY ~I will...I do not understand it well myself, Yoshimo, but I'll tell you what I know. After you fled, the hatred between Nakanishi and Hashimoto became unbearable... Nakanishi tried to accuse you of Naokoï¿½s death in order to have the emperorï¿½s wizards find you and execute you... We used all our influence to prevent it. Then they sent an assassin after you... Kachiko.~
   IF ~~ THEN EXTERN ~KACHIJ~ N28
 END
 
@@ -41,14 +39,10 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~Well spoken, daughter! Attack the foreigners!~
-  IF ~~ THEN DO ~SetGlobal("MyHome_Attacked","GLOBAL",1)
-SetGlobal("Hashimoto_Attacked","LOCALS",1)
-SetGlobal("TT_Evil_Path","GLOBAL",1)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("MyHome_Attacked","GLOBAL",1) SetGlobal("Hashimoto_Attacked","LOCALS",1) SetGlobal("TT_Evil_Path","GLOBAL",1) Enemy()~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)
-GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 8
+IF ~NumTimesTalkedToGT(0) GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 8
   SAY ~Please hurry... we don't have much time.~
   IF ~~ THEN EXIT
 END
@@ -63,9 +57,7 @@ IF ~~ THEN BEGIN 10
   IF ~~ THEN EXTERN ~NAJOKI~ 10
 END
 
-IF ~OR(2)
-Global("Kachiko_Saved","GLOBAL",3)
-Global("TT_Evil_Path","GLOBAL",2)~ THEN BEGIN 11
+IF ~OR(2) Global("Kachiko_Saved","GLOBAL",3) Global("TT_Evil_Path","GLOBAL",2)~ THEN BEGIN 11
   SAY ~My son, your friends and you fought valiantly and I am grateful. Unfortunately, the curse is not lifted, and we will wake up tomorrow to battle Nakanishi once more. They have Kachiko back with them now, but I have no heart to pull you into this madness. Here is the wardstone, which will let you to get away. Run, my son and run swiftly... Farewell.~
   IF ~~ THEN DO ~GiveItem("TimeWard",Player1)~ EXTERN ~YOSHJ~ TS202
 END

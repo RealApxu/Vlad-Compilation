@@ -5,8 +5,11 @@
 //                                                     //
 
 ADD_TRANS_TRIGGER ~RENAL~ 0 ~!InParty("Melora")~ DO 0
+
 ADD_TRANS_TRIGGER ~RENAL~ 0 ~!InParty("Melora")~ DO 1
+
 ADD_TRANS_TRIGGER ~RENAL~ 0 ~!InParty("Melora")~ DO 2
+
 ADD_TRANS_TRIGGER ~RENAL~ 0 ~!InParty("Melora")~ DO 3
 
 EXTEND_BOTTOM RENAL 0
@@ -14,8 +17,11 @@ EXTEND_BOTTOM RENAL 0
 END
 
 ADD_TRANS_TRIGGER ~RENAL~ 1 ~!InParty("Melora")~ DO 0
+
 ADD_TRANS_TRIGGER ~RENAL~ 1 ~!InParty("Melora")~ DO 1
+
 ADD_TRANS_TRIGGER ~RENAL~ 1 ~!InParty("Melora")~ DO 2
+
 ADD_TRANS_TRIGGER ~RENAL~ 1 ~!InParty("Melora")~ DO 3
 
 EXTEND_BOTTOM RENAL 1

@@ -1,7 +1,6 @@
 BEGIN ~MAIA~
 
-IF ~  NumberOfTimesTalkedTo(0)
-~ THEN BEGIN 0
+IF ~  NumberOfTimesTalkedTo(0) ~ THEN BEGIN 0
   SAY ~Thank the gods! Well met strangers, I am Maia. We were sent here to rid this area of its foul inhabitants.~
   IF ~~ THEN GOTO 1
 END
@@ -62,7 +61,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~This druid’s idea of fun is to open the exits and give you the chance to fight your way through his pets, whilst he observes how you try to outwit the might of the wolfweres.~
+  SAY ~This druidï¿½s idea of fun is to open the exits and give you the chance to fight your way through his pets, whilst he observes how you try to outwit the might of the wolfweres.~
   IF ~~ THEN GOTO 12
 END
 
@@ -73,19 +72,15 @@ END
 
 IF ~~ THEN BEGIN 13
   SAY ~This is the only cave we have not explored completely so I am certain it is here somewhere. We were resting for a short while before embarking on the search for this gem ourselves when you arrived.~
-  IF ~~ THEN REPLY ~Some choice! Looks like I have to contend with werewolves whether I play this druid’s game or not. I guess I may as well wait around and have it out with him when puts in an appearance.~ GOTO 14
-  IF ~~ THEN REPLY ~I will not be a pawn for anyone’s amusement, this druid has chosen the wrong person to play games with this time!~ GOTO 14
+  IF ~~ THEN REPLY ~Some choice! Looks like I have to contend with werewolves whether I play this druidï¿½s game or not. I guess I may as well wait around and have it out with him when puts in an appearance.~ GOTO 14
+  IF ~~ THEN REPLY ~I will not be a pawn for anyoneï¿½s amusement, this druid has chosen the wrong person to play games with this time!~ GOTO 14
   IF ~~ THEN REPLY ~You can hang about if you wish, but as soon as night falls I am out of here. I have fought wolfweres and werewolves before and I am not afraid to do so again. If this Shendru gets in my way then I will fight him as well!~ GOTO 14
   IF ~~ THEN REPLY ~You say the druid himself spoke of this light gem, can you be sure it was not part of his insane game? Maybe he is sadistic enough to give you hope where there is non?~ GOTO 15
 END
 
 IF ~~ THEN BEGIN 14
   SAY ~If Shendru had been that easy to deal with we could have taken him ourselves, but he does not hang around long enough for you to take action against him, as you will see soon enough for yourself.~
-  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",5)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutM05")
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",5) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutM05") ~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -95,11 +90,7 @@ END
 
 IF ~~ THEN BEGIN 16
   SAY ~We have to try for the gem, as I see it, that is our only hope.~
-  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",5)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutM05")
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",5) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutM05") ~ EXIT
 END
 
 IF ~~ THEN BEGIN 17
@@ -133,57 +124,37 @@ END
 
 IF ~~ THEN BEGIN 22
   SAY ~I shall pray for your success <CHARNAME>. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",7)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",7) ~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
   SAY ~Then take care of him we shall, even at the cost of all our lives. Such evil cannot be permitted to continue. Farewell <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",7)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",7) ~ EXIT
 END
 
-IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6)
-GlobalLT("VP_Melora_Quest","GLOBAL",9)
-!PartyHasItem("lightgem")
-OR(2)
-!Global("SPRITE_IS_DEADWwolfM","GLOBAL",0)
-GlobalGT("VP_First_Visit","MYAREA",1)
-~ THEN BEGIN 24
+IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6) GlobalLT("VP_Melora_Quest","GLOBAL",9) !PartyHasItem("lightgem") OR(2) !Global("SPRITE_IS_DEADWwolfM","GLOBAL",0) GlobalGT("VP_First_Visit","MYAREA",1) ~ THEN BEGIN 24
   SAY ~I see you were no more successful than we were <CHARNAME>. We were about to embark on a search for the light gem. Some of our wounds are still far from healed but with you gone the gem was our only hope.~
   IF ~~ THEN GOTO 25
 END
 
 IF ~~ THEN BEGIN 25
   SAY ~You are still in much better shape than we <CHARNAME>, so if you wish to search for the gem, you would stand a much better chance of retrieving it and returning alive than we.~
-  IF ~  !Global("SPRITE_IS_DEADWwolfM","GLOBAL",0)
-~ THEN REPLY ~It was insane Maia! I am no coward but I have never seen so many of the beasts. It was as though for every one we killed two more appeared to take its place! Where does this druid keep so many hidden? Indeed the gem is now our only hope, we will begin a search immediately.~ GOTO 26
-  IF ~  !Global("SPRITE_IS_DEADWwolfM","GLOBAL",0)
-~ THEN REPLY ~It is impossible, we were overwhelmed and I could swear I heard the mocking laughter of the druid himself with every beast we killed! If this gem exists then by the gods we shall find it and this insanity stops now!~ GOTO 26
-  IF ~  Global("SPRITE_IS_DEADWwolfM","GLOBAL",0)
-~ THEN REPLY ~Can you watch over us while we rest?~ GOTO 34
+  IF ~  !Global("SPRITE_IS_DEADWwolfM","GLOBAL",0) ~ THEN REPLY ~It was insane Maia! I am no coward but I have never seen so many of the beasts. It was as though for every one we killed two more appeared to take its place! Where does this druid keep so many hidden? Indeed the gem is now our only hope, we will begin a search immediately.~ GOTO 26
+  IF ~  !Global("SPRITE_IS_DEADWwolfM","GLOBAL",0) ~ THEN REPLY ~It is impossible, we were overwhelmed and I could swear I heard the mocking laughter of the druid himself with every beast we killed! If this gem exists then by the gods we shall find it and this insanity stops now!~ GOTO 26
+  IF ~  Global("SPRITE_IS_DEADWwolfM","GLOBAL",0) ~ THEN REPLY ~Can you watch over us while we rest?~ GOTO 34
 END
 
 IF ~~ THEN BEGIN 26
   SAY ~We shall remain here and pray that you return safely with the gem <CHARNAME>. Be assured that nothing will get past us to hinder you in your search. Come, rest a while for now, my brave friends.~
-  IF ~~ THEN DO ~RestParty()
-~ EXIT
+  IF ~~ THEN DO ~RestParty() ~ EXIT
 END
 
-IF ~  Global("VP_EvilAct","GLOBAL",1)
-~ THEN BEGIN 27
+IF ~  Global("VP_EvilAct","GLOBAL",1) ~ THEN BEGIN 27
   SAY ~You return <CHARNAME>! The gods be prais... by all that is holy... what have you... no... aaaargh...~
-  IF ~~ THEN DO ~SetGlobal("VP_EvilAct","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutM08")
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_EvilAct","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutM08") ~ EXIT
 END
 
-IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6)
-GlobalLT("VP_Melora_Quest","GLOBAL",9)
-PartyHasItem("lightgem")
-~ THEN BEGIN 28
+IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6) GlobalLT("VP_Melora_Quest","GLOBAL",9) PartyHasItem("lightgem") ~ THEN BEGIN 28
   SAY ~You return <CHARNAME>! The gods be praised! Do you have the gem? Please tell me that it does exist and that you have it?~
   IF ~~ THEN REPLY ~I do and I am out of here before that druid closes the exits. You can follow or stay, it is up to you.~ GOTO 29
   IF ~~ THEN REPLY ~I have it but I intend finding the druid before I leave here. It is time to play the last scene in this game.~ GOTO 29
@@ -202,23 +173,15 @@ END
 
 IF ~~ THEN BEGIN 31
   SAY ~However fate chooses to end this, I want to thank you for all that you have done <CHARNAME>. May the gods walk with you this night and keep you safe. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",9)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Melora_Quest","GLOBAL",9) ~ EXIT
 END
 
-IF ~  Global("VP_Melora_Quest","GLOBAL",9)
-~ THEN BEGIN 32
+IF ~  Global("VP_Melora_Quest","GLOBAL",9) ~ THEN BEGIN 32
   SAY ~Come, rest a while for now, my brave friends.~
-  IF ~~ THEN DO ~RestParty()
-~ EXIT
+  IF ~~ THEN DO ~RestParty() ~ EXIT
 END
 
-IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6)
-GlobalLT("VP_Melora_Quest","GLOBAL",9)
-!PartyHasItem("lightgem")
-Global("SPRITE_IS_DEADWwolfM","GLOBAL",0)
-GlobalLT("VP_First_Visit","MYAREA",2)
-~ THEN BEGIN 33
+IF ~  GlobalGT("VP_Melora_Quest","GLOBAL",6) GlobalLT("VP_Melora_Quest","GLOBAL",9) !PartyHasItem("lightgem") Global("SPRITE_IS_DEADWwolfM","GLOBAL",0) GlobalLT("VP_First_Visit","MYAREA",2) ~ THEN BEGIN 33
   SAY ~You return <CHARNAME>! Do you want to rest?~
   IF ~~ THEN REPLY ~Thank you, Maia.~ GOTO 34
   IF ~~ THEN REPLY ~Thank you, Maia, but we need to leave.~ GOTO 35
@@ -226,8 +189,7 @@ END
 
 IF ~~ THEN BEGIN 34
   SAY ~Come, rest a while for now, my brave friends.~
-  IF ~~ THEN DO ~RestParty()
-~ EXIT
+  IF ~~ THEN DO ~RestParty() ~ EXIT
 END
 
 IF ~~ THEN BEGIN 35

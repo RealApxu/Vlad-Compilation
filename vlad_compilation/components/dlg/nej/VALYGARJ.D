@@ -3,25 +3,14 @@ APPEND ~VALYGARJ~
 IF ~~ THEN BEGIN NEJ158
   SAY ~A ruined academy of magic, now we get to see first hand the havoc mages cause.~
   IF ~True()~ THEN EXTERN ~HROTHJ~ 60
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko")
-!InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
 END
 
 IF ~~ THEN BEGIN NEJ159
@@ -32,18 +21,11 @@ END
 IF ~~ THEN BEGIN NEJ160
   SAY ~If any of those wizards as much as looks at me and makes any hand gestures in my direction, I swear by all that I hold dear, I will not be responsible for my actions!~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
 END
 
 IF ~~ THEN BEGIN NEJ161
@@ -83,34 +65,25 @@ END
 
 IF ~~ THEN BEGIN NEJ166
   SAY ~Poetic justice I say, a mage ending up as spell components.~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
 END
 
 IF ~~ THEN BEGIN NEJ167
- SAY ~As long as her tongue speak I say we don't give her a chance to use it!~
- IF ~True()~ THEN EXTERN ~KHARESSE~ 1
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 125
+  SAY ~As long as her tongue speak I say we don't give her a chance to use it!~
+  IF ~True()~ THEN EXTERN ~KHARESSE~ 1
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 125
 END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Trusting a wizard and their black arts was always going to end badly for you gnome.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
 END
+
 END

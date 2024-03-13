@@ -13,6 +13,7 @@ REPLACE_STATE_TRIGGER KELDOR 16
 
 ADD_TRANS_TRIGGER KELDOR 2 ~Global("WorkingForBodhi","GLOBAL",0)
 Global("WorkingForAran","GLOBAL",0)~ DO 1
+
 EXTEND_BOTTOM KELDOR 2
   IF ~Global("WorkingForBodhi","GLOBAL",1)~ THEN REPLY #8317 GOTO KR4A
   IF ~Global("WorkingForAran","GLOBAL",1)~ THEN REPLY #8317 GOTO 4
@@ -34,16 +35,12 @@ END
 
 IF ~~ THEN BEGIN K25
   SAY #10844 /* ~I have everything I can bring with me, if that is what you mean. Come, let us go.~ */
-  IF ~~ THEN DO ~SetGlobal("KeldornLeave","GLOBAL",99)
-SetGlobal("KickedOut","LOCALS",0)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("KeldornLeave","GLOBAL",99) SetGlobal("KickedOut","LOCALS",0) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN K26
   SAY #10845 /* ~If that is your wish... I would be grateful for it... Take care, <CHARNAME>, and travel with the blessings of the gods.~ */
-  IF ~~ THEN DO ~EscapeArea()
-SetGlobal("KeldornLeave","GLOBAL",99)
-SetGlobal("KickedOut","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~EscapeArea() SetGlobal("KeldornLeave","GLOBAL",99) SetGlobal("KickedOut","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN K27
@@ -51,9 +48,10 @@ IF ~~ THEN BEGIN K27
   IF ~~ THEN REPLY #10852 /* ~Certainly. Have you everything you need?~ */ GOTO K25
   IF ~~ THEN REPLY #10853 /* ~Actually Keldorn, I've been thinking... The quest for Imoen is my own and I have no right the force it upon a good friend against his will... You need to be here with your family.~ */ GOTO K26
 END
-END
 
 //IF ~~ THEN BEGIN KR4B
 //  SAY ~Sorry, friend, but I recognise you. You are working for Shadow Thieves, and I cannot be a party to it. Now excuse me, but I have some other tasks to perform elsewhere.~
 // IF ~~ THEN DO ~EscapeArea()~ EXIT
 //END
+
+END

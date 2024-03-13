@@ -1,7 +1,6 @@
 BEGIN ~NAJOKI~
 
-IF ~NumberOfTimesTalkedTo(0)
-GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 0
   SAY ~So I meet Yoshimo Hashimoto...~
   IF ~~ THEN EXTERN ~YOSHJ~ TS189
 END
@@ -35,31 +34,20 @@ END
 
 IF ~~ THEN BEGIN 6
   SAY ~You do not know what love is? Love is strong and it can defeat both hatred and fate. I have a hope that if Hashimoto pledges his heart to Nakanishi, despite everything, the curse will be broken...~
-  IF ~!InParty("Aerie")
-!InParty("Korgan")
-!InParty("Keldorn")
-!InParty("Viconia")~ THEN REPLY ~Could you be more specific?~ GOTO 7
+  IF ~!InParty("Aerie") !InParty("Korgan") !InParty("Keldorn") !InParty("Viconia")~ THEN REPLY ~Could you be more specific?~ GOTO 7
   IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ TS219
-  IF ~!InParty("Aerie")
-InParty("Korgan")~ THEN EXTERN ~KORGANJ~ TS222
-  IF ~!InParty("Aerie")
-!InParty("Korgan")
-InParty("Keldorn")~ THEN EXTERN ~KELDORJ~ TS253
-  IF ~!InParty("Aerie")
-!InParty("Korgan")
-!InParty("Keldorn")
-InParty("Viconia")~ THEN EXTERN ~VICONIJ~ TS183
+  IF ~!InParty("Aerie") InParty("Korgan")~ THEN EXTERN ~KORGANJ~ TS222
+  IF ~!InParty("Aerie") !InParty("Korgan") InParty("Keldorn")~ THEN EXTERN ~KELDORJ~ TS253
+  IF ~!InParty("Aerie") !InParty("Korgan") !InParty("Keldorn") InParty("Viconia")~ THEN EXTERN ~VICONIJ~ TS183
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~If you will help Yoshimo to save my daughter I will give you a map... The wizard who cursed us gave it to me as a cruel joke. The map shows the Shiny Gate, the magical portal, which would teleport you wherever you wish to go... We spent years trying to build a seaworthy ship... but none would float. The wizard gave us yet another false hope and another torture for our souls... I will give you the map if you save my daughter.~
   IF ~~ THEN REPLY ~That's a suitable reward. Deal, we will help Yoshimo.~ DO ~GiveItemCreate("SCRL63",Player1,0,0,0)~ EXIT
-  IF ~~ THEN REPLY ~Why give... Do not tire yourself so, Najoki. I will take it from you myself!~ DO ~SetGlobal("TT_Evil_Path","GLOBAL",2)
-Enemy()~ EXIT
+  IF ~~ THEN REPLY ~Why give... Do not tire yourself so, Najoki. I will take it from you myself!~ DO ~SetGlobal("TT_Evil_Path","GLOBAL",2) Enemy()~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)
-GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 8
+IF ~NumTimesTalkedToGT(0) GlobalLT("Kachiko_Saved","GLOBAL",2)~ THEN BEGIN 8
   SAY ~Please hurry... my daughter's life hangs in the balance.~
   IF ~PartyHasItem("SCRL63")~ THEN EXIT
   IF ~!PartyHasItem("SCRL63")~ THEN DO ~GiveItemCreate("SCRL63",Player1,0,0,0)~ EXIT
@@ -72,7 +60,5 @@ END
 
 IF ~~ THEN BEGIN 10
   SAY ~Kachiko and Yoshimo, each of you is now the only surviving member of your family. We paid dearly for our hatred, but now it's no more. Love defeated death. Both Nakanishi and Hashimoto shall continue in your children. Bless you my daughter and fare thee well... Yoshimo, take a good care of her.~
-  IF ~~ THEN DO ~GiveItem("SeaChart",Player1)
-StartCutScene("TTcutFin")
-~ EXIT
+  IF ~~ THEN DO ~GiveItem("SeaChart",Player1) StartCutScene("TTcutFin") ~ EXIT
 END

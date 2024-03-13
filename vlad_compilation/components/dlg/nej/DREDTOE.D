@@ -1,7 +1,7 @@
 BEGIN ~DREDTOE~ 87289 // non-zero flags may indicate non-pausing dialogue
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
-  SAY ~Move out of way!  ~
+  SAY ~Move out of way! ~
   IF ~~ THEN REPLY ~Whoa... hold on a second.  I have a few questions for you.~  GOTO 1
   IF ~~ THEN REPLY ~How rude.  I think it's time someone taught you some manners.~  GOTO 2
   IF ~~ THEN REPLY ~Whatever you say, big fella.  The road is yours.  Farewell.~  DO ~SetGlobal("Red_Escape","GLOBAL",1)~ EXIT
@@ -21,20 +21,18 @@ IF ~~ THEN BEGIN 2 // from: 0.1
   IF ~CheckStatLT(Player1,10,INT)~ THEN REPLY ~Red Toe?  Who is Red Toe?~  GOTO 3
   IF ~CheckStatGT(Player1,9,INT)~ THEN REPLY ~What kind of name is Red Toe?~  GOTO 4
   IF ~~ THEN REPLY ~You're not too bright, are you?~  GOTO 8
-  IF ~~ THEN REPLY ~Sorry, but the world will be a much better place without you in it.  Hold still... this will only hurt for a moment.~  DO ~Enemy()
-Attack(Player1)~ EXIT
+  IF ~~ THEN REPLY ~Sorry, but the world will be a much better place without you in it.  Hold still... this will only hurt for a moment.~  DO ~Enemy() Attack(Player1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3 // from: 2.1 1.0
   SAY ~Me Red Toe.  Great verbeeg warrior.~
   IF ~~ THEN REPLY ~What kind of name is Red Toe?~  GOTO 4
   IF ~~ THEN REPLY ~If you're such a great warrior, why are you fleeing this place in such a hurry?~  GOTO 5
-  IF ~~ THEN REPLY ~It's a pleasure to meet you Red Toe.  Now, it's going to be an even greater pleasure to kill you.~  DO ~Enemy()
-Attack(Player1)~ EXIT
+  IF ~~ THEN REPLY ~It's a pleasure to meet you Red Toe.  Now, it's going to be an even greater pleasure to kill you.~  DO ~Enemy() Attack(Player1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4 // from: 3.0 2.2 1.1
-  SAY ~When Red Toe was child, he drops big rock on foot.  Rock smashes foot and makes him yell.  Other verbeeg laugh and call him Red Toe.  ~
+  SAY ~When Red Toe was child, he drops big rock on foot.  Rock smashes foot and makes him yell.  Other verbeeg laugh and call him Red Toe. ~
   IF ~~ THEN REPLY ~I see.  Why are you in such a hurry?  What are you running from?~  GOTO 5
   IF ~~ THEN REPLY ~You're not too bright, are you?~  GOTO 8
 END
@@ -48,16 +46,14 @@ END
 IF ~~ THEN BEGIN 6 // from: 8.1 7.0 5.0
   SAY ~Yes.  Red Toe was guard for friend priests in holy place.  But then bad priests come.  Begin killing friend priests and other verbeeg guards with hurtful magic.  But Red Toe smart.  He falls on ground and makes bad priests think he's dead.  When they gone, Red Toe gets up and runs from holy place.~
   IF ~~ THEN REPLY ~Tell me about these "bad priests."  Why did they attack the temple?~  GOTO 9
-  IF ~~ THEN REPLY ~You're nothing but a cowardly deserter... you don't deserve to live.  Die!~  DO ~Enemy()
-Attack(Player1)~ EXIT
+  IF ~~ THEN REPLY ~You're nothing but a cowardly deserter... you don't deserve to live.  Die!~  DO ~Enemy() Attack(Player1)~ EXIT
   IF ~~ THEN REPLY ~Pretty smart... for a big barbarian ass.  Off you go then, but don't let me catch you anywhere near Kuldahar.~  DO ~SetGlobal("Red_Escape","GLOBAL",1)~ EXTERN ~HROTHJ~ 118
 END
 
 IF ~~ THEN BEGIN 7 // from: 8.0 5.1
   SAY ~Others.  Inside holy place.  Red Toe not go back there.  Not safe for verbeeg anymore.~
   IF ~~ THEN REPLY ~Holy Place?  You mean the temple over yonder?~  GOTO 6
-  IF ~~ THEN REPLY ~No place is safe for cowardly deserters while we're around. Time for you to die, brute!~  DO ~Enemy()
-Attack(Player1)~ EXIT
+  IF ~~ THEN REPLY ~No place is safe for cowardly deserters while we're around. Time for you to die, brute!~  DO ~Enemy() Attack(Player1)~ EXIT
   IF ~~ THEN REPLY ~Very well.  Off you go then, but don't let me catch you anywhere near Kuldahar.~  DO ~SetGlobal("Red_Escape","GLOBAL",1)~ EXTERN ~HROTHJ~ 118
 END
 

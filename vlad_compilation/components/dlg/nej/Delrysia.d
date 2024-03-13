@@ -53,11 +53,7 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~(*She becomes angry*)... I don't believe you, Bartlemy knew of my plight, he also knew that there was a chance that I would take the ring with me when I ran. He would have made sure he had something to bargain with before embarking on his search... you shall not have the ring, nor shall anyone in this cursed academy.~
-  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",2) // Delrysia turns hostile and attacks
-DestroyItem("DeRing")
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT08")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",2) DestroyItem("DeRing") ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT08")~ EXIT // Delrysia turns hostile and attacks
 END
 
 IF ~~ THEN BEGIN 8
@@ -74,11 +70,7 @@ END
 
 IF ~~ THEN BEGIN 10
   SAY ~This ring was complete except for my part, as I said previously, I was studying to specialise as a water elementalist and should have immediately followed Sheveira, she was our fire elementalist, but Bartlemy insisted we add the necromantic component before I acted. I urge you do not to attempt to restore it yourself. Farewell and thank you again my friend.~
-  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",3) // Delrysia leaves granting the ring
-SetGlobal("VP_Restore_Ring","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT06")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",3) SetGlobal("VP_Restore_Ring","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT06")~ EXIT // Delrysia leaves granting the ring
 END
 
 IF ~~ THEN BEGIN 11
@@ -101,10 +93,8 @@ END // => Bartlemy 18 => Lavallin 21
 
 IF ~GlobalGT("VP_Lavallins_Plot","GLOBAL",10)~ THEN BEGIN 13
   SAY ~You have spoken to Bartlemy? Has he agreed to help me?~
-  IF ~PartyHasItem("TuPotnD1")
-Global("VP_Lavallins_Plot","GLOBAL",11)~ THEN REPLY ~I have a potion that Bartlemy was carrying. He spoke of having the means to free you but would not surrender it willingly. I had no choice other than to kill him for it. The ring for the potion Delrysia?~ GOTO 14
-  IF ~PartyHasItem("TuPotnD1")
-Global("VP_Lavallins_Plot","GLOBAL",12)~ THEN REPLY ~I have a potion that Bartlemy has given to me. The ring for the potion Delrysia?~ GOTO 14
+  IF ~PartyHasItem("TuPotnD1") Global("VP_Lavallins_Plot","GLOBAL",11)~ THEN REPLY ~I have a potion that Bartlemy was carrying. He spoke of having the means to free you but would not surrender it willingly. I had no choice other than to kill him for it. The ring for the potion Delrysia?~ GOTO 14
+  IF ~PartyHasItem("TuPotnD1") Global("VP_Lavallins_Plot","GLOBAL",12)~ THEN REPLY ~I have a potion that Bartlemy has given to me. The ring for the potion Delrysia?~ GOTO 14
   IF ~Global("VP_Lavallins_Plot","GLOBAL",11)~ THEN REPLY ~I have a potion which I took from Bartlemy's body. More to the point, do you have the ring?~ GOTO 19
   IF ~Global("VP_Lavallins_Plot","GLOBAL",12)~ THEN REPLY ~Bartlemy has given me a potion but you must agree to help him restore the ring before I give it to you?~ GOTO 20
   IF ~Global("VP_Lavallins_Plot","GLOBAL",11)~ THEN REPLY ~I have a potion which I took from Bartlemy's body, I will give it to you only if you agree to help me restore the ring?~ GOTO 20
@@ -134,10 +124,7 @@ END
 
 IF ~~ THEN BEGIN 18
   SAY ~I urge you do not to attempt to restore it yourself. Farewell, and thank you again, my friend... (*She gulps down the potion and instantly returns to her human form*)...~
-  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT06")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT06")~ EXIT
 END
 
 IF ~~ THEN BEGIN 19
@@ -161,28 +148,18 @@ IF ~~ THEN BEGIN 21
 I gave Bartlemy's potion to Delrysia in the hope that it would restore her. It was a great relief to see that it worked, I had feared that the necromancer may have concocted a potion to harm her rather than cure her. In return she has given me what can only be Bartlemy's ring of might and a warning that only an elementalist mage should be entrusted to attempt to finish that which they had started.~ GOTO 22
   IF ~~ THEN REPLY ~I think you are desperate enough not to return here without it. Shall we find out?~ GOTO 24
 END
- 			
+
 IF ~~ THEN BEGIN 22
   SAY ~I thank you for your aid. The ring is yours to do with as you please. I give you one piece of advice do not try to restore the ring yourself.~
-  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",3)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT06")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT06")~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
   SAY ~If you have no intentions to help me, death by your hand will be a welcome release.~
-  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",2)
-DestroyItem("DeRing")
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT08")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Meeting_Delrysia","GLOBAL",2) DestroyItem("DeRing") ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT08")~ EXIT
 END
 
 IF ~~ THEN BEGIN 24
   SAY ~As you wish.~
-  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT08")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT08")~ EXIT
 END

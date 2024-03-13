@@ -2,39 +2,37 @@ BEGIN ~VAMPKEL~
 
 IF ~~ THEN BEGIN 0
   SAY ~As you desire, Mistress... (Suddenly the hiss of the vampire is interrupted by the voice you know so well)... You are mistaken, demon. It's not easy to enslave a paladin. You tainted me with your vampire curse, but you have no power over me!~
-  	IF ~~ THEN EXTERN ~C6BODHI~ vampamb3
+  IF ~~ THEN EXTERN ~C6BODHI~ vampamb3
 END
 
 IF ~~ THEN BEGIN 1
   SAY ~Yes, mistress... (Keldorn twitches with pain, then slowly regains his composure)... I... I f-found a target... m-more to my liking...~
-  	IF ~~ THEN EXTERN ~C6BODHI~ vampamb4
+  IF ~~ THEN EXTERN ~C6BODHI~ vampamb4
 END
 
 IF ~Global("VP_KeldVamp_Alive","GLOBAL",1)~ THEN BEGIN 2
   SAY ~So it is done! There is but one thing left my darling... you must kill me. I know it is difficult for you to find it in your heart to do this but I am dead already. Or is it your wish that I should remain a vampire?~
-  	IF ~~ THEN REPLY ~No, no! You mustn't say this. (You throw your arms around him and then shocked, you quickly jump away from his touch) Oh Keldorn, you are so... so cold.~ GOTO 3
-  	IF ~~ THEN REPLY ~Kill? Again? What then... ask Kelemvor to return you once again? He would not do it, he can't interfere.~ GOTO 4
-  	IF ~~ THEN REPLY ~No, there must be something... we will find a way? I will ask Kelemvor.~ GOTO 5
+  IF ~~ THEN REPLY ~No, no! You mustn't say this. (You throw your arms around him and then shocked, you quickly jump away from his touch) Oh Keldorn, you are so... so cold.~ GOTO 3
+  IF ~~ THEN REPLY ~Kill? Again? What then... ask Kelemvor to return you once again? He would not do it, he can't interfere.~ GOTO 4
+  IF ~~ THEN REPLY ~No, there must be something... we will find a way? I will ask Kelemvor.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 3
   SAY ~(Sadly) Look at me <CHARNAME>, can you not see that I am naught but a walking corpse? Save me. I beg you, kill me.~
-  	IF ~~ THEN REPLY ~I... all right but what if you were to die for good this time?~ GOTO 6
+  IF ~~ THEN REPLY ~I... all right but what if you were to die for good this time?~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 4
   SAY ~No, my darling, I will not die. I will only sleep, so I doubt I will arrive at Kelemvor's.~
-  	IF ~~ THEN REPLY ~(The tears stream down your cheeks) Yea gods... my love.~ GOTO 6
+  IF ~~ THEN REPLY ~(The tears stream down your cheeks) Yea gods... my love.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~No, my love. You must not bother so great a god about trifles. I am sure that a skilled priest will be able to tell you how to recall me back to life.~
-  	IF ~~ THEN REPLY ~I... I can't. What if you were to die for good?~ GOTO 6
+  IF ~~ THEN REPLY ~I... I can't. What if you were to die for good?~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~<CHARNAME>. I don't recognize you! Where does all this indecision come from? Worry not all will be well. Let death pass between us once again, and then we will be together forever!~
-		IF ~~ THEN DO ~SetGlobal("VP_KeldornVampire","GLOBAL",3)
-SetGlobal("VP_KeldVamp_Alive","GLOBAL",2)
-Kill(Myself)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KeldornVampire","GLOBAL",3) SetGlobal("VP_KeldVamp_Alive","GLOBAL",2) Kill(Myself)~ EXIT
 END

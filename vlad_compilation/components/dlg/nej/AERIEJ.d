@@ -3,45 +3,24 @@ APPEND ~AERIEJ~
 IF ~~ THEN BEGIN NEJ222
   SAY ~To see yet more of this land and not from a cage, it is so...so... so exciting!~
   IF ~True()~ THEN EXTERN ~HROTHJ~ 60
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko")
-!InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 12
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ185
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ310
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ186
-  IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ117
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ185
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ310
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ186
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ117
 END
 
 IF ~~ THEN BEGIN NEJ223
@@ -52,38 +31,21 @@ END
 IF ~~ THEN BEGIN NEJ224
   SAY ~(*She looks away quickly but not before you notice tears well up in her eyes. You know what is in her thoughts, but you also know that words would not ease her pain so you keep silent.*)~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ189
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ311
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ187
-  IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ118
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ189
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ311
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ187
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ118
 END
 
 IF ~~ THEN BEGIN NEJ225
@@ -139,25 +101,16 @@ END
 
 IF ~~ THEN BEGIN NEJ235
   SAY ~Ugh! Please don't do this <CHARNAME>. I... I think I am going to be sick just thinking about what this mage has in mind.~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
-	IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
-	IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 70
-	IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
-	IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ333
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 70
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ333
 END
 
 IF ~~ THEN BEGIN abjurer2
@@ -170,7 +123,7 @@ IF ~~ THEN BEGIN abjurer3
   SAY ~What a beastly thing to say, <CHARNAME>. I did my best.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
-	
+
 IF ~~ THEN BEGIN abjurer4
   SAY ~I am so glad you understand, <CHARNAME>.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
@@ -218,7 +171,7 @@ IF ~~ THEN BEGIN vashon3
   SAY ~At least I am not too proud to admit my failings, <CHARNAME>. As to whether you accept my apology or not, that is up to you.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail
 END
-	
+
 IF ~~ THEN BEGIN vashon4
   SAY ~I still failed and if I am to be as good a mage as uncle Quayle has tried to teach me to be, I must learn to think more for myself.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail
@@ -226,41 +179,22 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Oh my!(*Putting a hand on the Umberhulk's shoulder*) I know what you must be feeling Taffic. I was also trapped in a monstrous body for a while until <CHARNAME> released me. I am sure there is a way to do the same for you.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
- IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
- IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
-  IF ~InParty("Nalia")
-!Dead("Nalia")
-OR(2)
-Global("EnteredAR1304","GLOBAL",1)
-!Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
- IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
- IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
- IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
- IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ tafficuh
- IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ tafficuh
- IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ tafficuh
- IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ tafficuh
+  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
+  IF ~InParty("Nalia") !Dead("Nalia") OR(2) Global("EnteredAR1304","GLOBAL",1) !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ tafficuh
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ tafficuh
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ tafficuh
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ tafficuh
 END
+
 END

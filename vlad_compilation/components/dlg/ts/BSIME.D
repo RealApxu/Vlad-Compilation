@@ -123,8 +123,7 @@ END
 
 IF ~~ THEN BEGIN 569
   SAY ~I see. Know <CHARNAME>, that I will not ask you for your love again. It looks that you find a good place for it. But hid my advice, tell her how I loved you. The foolish ones hold the sense of victory in more esteem than the tenderness of the first days together. When you would spend the last penny of your happiness with your sweetheart, on the night of my triumph, do not come to me! I will not know you. And how will I be able to help? I would not know how to heal the happiness.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_Sime_vs_Aerie","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_Sime_vs_Aerie","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 570
@@ -229,8 +228,7 @@ END
 
 IF ~~ THEN BEGIN 273
   SAY ~You are mad! He was trying to rape me! I... I will not stay any longer.~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 274
@@ -696,11 +694,8 @@ END
 
 IF ~~ THEN BEGIN 111
   SAY ~On the contrary, <PRO_HESHE> praised your youthful and cheerful spirit, Imoen. I was awaiting to meet you. By Mielikki, we have enough gloom around us. Sad and grim is our business. We can use a ray of sunshine, like your smile.~
-  IF ~OR(2)
-InParty("Jaheira")
-Global("VP_MeetJaheira","LOCALS",1)~ THEN EXTERN ~BIMOEN2~ 8
-  IF ~!InParty("Jaheira")
-Global("VP_MeetJaheira","LOCALS",0)~ THEN EXTERN ~BIMOEN2~ 8A
+  IF ~OR(2) InParty("Jaheira") Global("VP_MeetJaheira","LOCALS",1)~ THEN EXTERN ~BIMOEN2~ 8
+  IF ~!InParty("Jaheira") Global("VP_MeetJaheira","LOCALS",0)~ THEN EXTERN ~BIMOEN2~ 8A
 END
 
 IF ~~ THEN BEGIN 112
@@ -755,7 +750,7 @@ IF ~~ THEN BEGIN 115
 END
 
 IF ~~ THEN BEGIN 116
-  SAY ~I wonder if he ever read it?   He's obviously never read it.~
+  SAY ~I wonder if he ever read it?  He's obviously never read it.~
   IF ~True()~ THEN EXIT
   IF ~InParty("Viconia")~ THEN EXTERN ~BIMOEN2~ 25
   IF ~InParty("Edwin")~ THEN EXTERN ~BIMOEN2~ 24
@@ -992,8 +987,7 @@ END
 
 IF ~~ THEN BEGIN 586
   SAY ~Jaheira, you do not have to... I was rude, I am sorry... I am afraid it is too late, <CHARNAME>. Her mind was set on leaving. I am sorry, I did not mean for you to loose your friend.~
-  IF ~~ THEN DO ~ActionOverride("Jaheira",LeaveParty())
-ActionOverride("Jaheira",EscapeArea())~ EXIT
+  IF ~~ THEN DO ~ActionOverride("Jaheira",LeaveParty()) ActionOverride("Jaheira",EscapeArea())~ EXIT
 END
 
 // Edwin
@@ -1391,22 +1385,17 @@ IF ~~ THEN BEGIN 214
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-31 ~Global("VP_BSime43","LOCALS",2)
-Global("VP_Dyna_Appears","GLOBAL",0)~ THEN BEGIN 215
+IF WEIGHT #-31 ~Global("VP_BSime43","LOCALS",2) Global("VP_Dyna_Appears","GLOBAL",0)~ THEN BEGIN 215
   SAY ~Oh, Minsc, I do not know if that's a good idea. It looks like Boo does not want to leave your shoulder.~ [SIMEMI03]
   IF ~~ THEN DO ~SetGlobal("VP_BSime43","LOCALS",3)~ EXTERN ~BMINSC~ TS118
 END
 
 IF ~~ THEN BEGIN 267
   SAY ~Here we go. Good hamst... Ouch! It bit me! Where are you going, silly rat? Please, everyone, help me catch it! Minsc! Oh, MY DEAR MIELIKKI! <CHARNAME>! Come here! I do not understand... It was Minsc just a moment ago! Now it is some woman! She is unconscious, but she is alive. I do not understand...~ [SIMEMI04]
-  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD01")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD01")~ EXIT
 END
 
-IF WEIGHT #-21 ~Global("VP_BSime43","LOCALS",3)
-Global("VP_Dyna_Appears","GLOBAL",1)~ THEN BEGIN 268
+IF WEIGHT #-21 ~Global("VP_BSime43","LOCALS",3) Global("VP_Dyna_Appears","GLOBAL",1)~ THEN BEGIN 268
   SAY ~Who is this black woman? What is going on here?~
   IF ~~ THEN REPLY ~Dynaheir? DYNAHEIR! Please, wake up!~ GOTO 269
   IF ~~ THEN REPLY ~It is Dynaheir, a witch Minsc was guarding before she was killed. This seems to be some sort of vile joke from Jon Irenicus' depraved mind. It appears that Boo is now an enchanted animal that keeps Minsc in his true form. Here, I got Boo, please put him on her, we shall see if she turns back into Minsc.~ GOTO 270
@@ -1415,17 +1404,12 @@ END
 
 IF ~~ THEN BEGIN 269
   SAY ~She is waking up. May be she can tell her story.~
-  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD02")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 270
   SAY ~You are right! He is Minsc again.~
-  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",3)
-StartCutSceneMode()
-StartCutScene("VPCutD03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Dyna_Appears","GLOBAL",3) StartCutSceneMode() StartCutScene("VPCutD03")~ EXIT
 END
 
 IF WEIGHT #-30 ~Global("VP_BSime44","LOCALS",2)~ THEN BEGIN 216
@@ -1550,9 +1534,7 @@ END
 
 IF ~~ THEN BEGIN 240
   SAY ~I shall leave you to your efforts then.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD05")~ EXIT
 END
 
 IF WEIGHT #-25 ~Global("VP_BSime49","LOCALS",2)~ THEN BEGIN 241
@@ -1572,9 +1554,7 @@ END
 
 IF ~~ THEN BEGIN 244
   SAY ~I do not doubt.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD05")~ EXIT
 END
 
 IF WEIGHT #-24 ~Global("VP_BSime50","LOCALS",2)~ THEN BEGIN 245
@@ -1609,9 +1589,7 @@ END
 
 IF ~~ THEN BEGIN 251
   SAY ~(*smiles*) Yes.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD05")~ EXIT
 END
 
 IF WEIGHT #-23 ~Global("VP_BSime51","LOCALS",2)~ THEN BEGIN 252
@@ -1636,9 +1614,7 @@ END
 
 IF ~~ THEN BEGIN 256
   SAY ~ I can never understand when you talk seriously and when you are not. But it is an odd joke nonetheless.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD05")~ EXIT
 END
 
 IF WEIGHT #-22 ~Global("VP_BSime52","LOCALS",2)~ THEN BEGIN 257
@@ -1663,9 +1639,7 @@ END
 
 IF ~~ THEN BEGIN 261
   SAY ~Oh, I see.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutD05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutD05")~ EXIT
 END
 
 /////////////////////////////////
@@ -1702,8 +1676,7 @@ END
 // LT1
 /////////////////////////////////
 
-IF WEIGHT #-99 ~Global("LoveTalk","LOCALS",2)
-Gender(Player1,MALE)~ THEN BEGIN 275
+IF WEIGHT #-99 ~Global("LoveTalk","LOCALS",2) Gender(Player1,MALE)~ THEN BEGIN 275
   SAY ~I know who you are, m'<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal's child or it was a mishap?~ [SIME1_1]
   IF ~~ THEN REPLY ~I do not know, Sime. After I defeated Sarevok, my heritage became common knowledge. The rumours in this land spread faster than wildfire. I wonder sometimes what do they pay messengers for?~ GOTO 276
   IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion's ward mantle for longer, but it was stripped away from me. By the way, Sime, if you'd stop calling me "m'<PRO_LADYLORD>" that might greatly improve the intimacy of our friendship.~ GOTO 281
@@ -1731,23 +1704,17 @@ END
 
 IF ~~ THEN BEGIN 278
   SAY ~<CHARNAME>? I think I rather like your name. Try it again? Why not? You are a good kisser, even when caught unaware.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 279
   SAY ~Fear not, <CHARNAME>, I am in full control of what I am doing.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 280
   SAY ~My <PRO_LADYLORD>, I was only wishing to cheer you. If you prefer to revel in your grim thoughts, suit yourself.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 281
@@ -1759,23 +1726,17 @@ END
 
 IF ~~ THEN BEGIN 282
   SAY ~I understand. Or at least I can see why you are aggravated. I cannot stop the fools from gaping at you, but I can promise that I shall think of you as a person, not as something menacing and unusual.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 283
   SAY ~(*Shrugs*) If you say so.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 284
   SAY ~Funny? You are gifted with a happy character if you find it funny. I cannot stop the fools from gaping at you, but I can promise that I shall think of you as a person, not as something menacing and unusual.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 285
@@ -1787,20 +1748,16 @@ END
 
 IF ~~ THEN BEGIN 286
   SAY ~Then I shall call you by your name. <CHARNAME>... I like the sound of it. I think we have something in common: my mother had very unusual tastes where men were concerned it seems. But at least she picked a local murderer and a thief, not the Lord of Murder.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 287
   SAY ~We shall not then.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 288
-  SAY ~(*Laughs*) Your warning is belated, m'<PRO_LADYLORD>. I am now Sime Linvail, the one who travels in the company of Bhaalspawn! ~
+  SAY ~(*Laughs*) Your warning is belated, m'<PRO_LADYLORD>. I am now Sime Linvail, the one who travels in the company of Bhaalspawn!~
   IF ~~ THEN REPLY ~Sime, I really do not have time for a small talk.~ GOTO 289
   IF ~~ THEN REPLY ~But I warned you! And Sime, do call me <CHARNAME>. "My <PRO_LADYLORD>" unnerves me.~ GOTO 290
   IF ~~ THEN REPLY ~What have I done! I doomed you! And since we have such an intimate connection as a common curse, would you consider calling me <CHARNAME>?~ GOTO 291
@@ -1808,27 +1765,20 @@ END
 
 IF ~~ THEN BEGIN 289
   SAY ~(*Shrugs*) If you say so.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 290
   SAY ~Thank you for the warning, <CHARNAME>. I think I rather like your name.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 291
   SAY ~<CHARNAME>? I think I rather like your name. I shall use it often.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",3) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
-IF WEIGHT #-98 ~Global("LoveTalk","LOCALS",2)
-Gender(Player1,FEMALE)~ THEN BEGIN 587
+IF WEIGHT #-98 ~Global("LoveTalk","LOCALS",2) Gender(Player1,FEMALE)~ THEN BEGIN 587
   SAY ~I know who you are, m'<PRO_LADYLORD>. Or rather what you are. If that was a secret, then it was not guarded carefully. Tell me, <CHARNAME>, was it your intention to let the world know that you are Bhaal's child or it was a mishap?~
   IF ~~ THEN REPLY ~I do not know, Sime. After I defeated Sarevok, my heritage became common knowledge. The rumours in this land spread faster than wildfire. I wonder sometimes what do they pay messengers for?~ GOTO 276
   IF ~~ THEN REPLY ~Bad mishap, Sime. I wish I could keep my Gorion's ward mantle for longer, but it was stripped away from me. By the way, Sime, if you'd stop calling me "milord" that might greatly improve the intimacy of our friendship.~ GOTO 281
@@ -1867,26 +1817,17 @@ END
 
 IF ~~ THEN BEGIN 294
   SAY ~You sound so sure,<CHARNAME>. So be it. But you need only ask for my help, should you change your mind.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 295
   SAY ~Oh, you are one of those who would go through the worst torture to gain even the smallest grain of knowledge or power? Suit yourself then. But you need only ask for my help, should you change your mind.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 296
-  SAY ~My kisses are known to wake a <PRO_MANWOMAN> up, not to put <PRO_HIMHER> to sleep. ~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  SAY ~My kisses are known to wake a <PRO_MANWOMAN> up, not to put <PRO_HIMHER> to sleep.~
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 297
@@ -1899,10 +1840,7 @@ END
 
 IF ~~ THEN BEGIN 298
   SAY ~(*Smiles*) Of course. A lovesick cat it was. Should you meet that poor animal, do let me know. I might have a potion or two to help the unfortunate beast to sleep better.~ [SIME2_4]
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 299
@@ -1916,10 +1854,7 @@ END
 
 IF ~~ THEN BEGIN 300
   SAY ~Have it your own way then, you stubborn lout. You will not hear another word from me, but a battle cry.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",5) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF WEIGHT #-96 ~Global("LoveTalk","LOCALS",6)~ THEN BEGIN 301
@@ -1952,23 +1887,17 @@ END
 
 IF ~~ THEN BEGIN 305
   SAY ~Yes, him. Darriel is not among the living any more, <CHARNAME>... I would rather not continue the story now. A sad storyteller would not lift your spirit, and I wish to see you smiling.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 306
   SAY ~Do not you try to be smart with me! You know well enough that my father's talents are of different sort than needed for the Arcane Arts devotee. You need not remind me of his true calling.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 307
   SAY ~I did not mean to bore you to tears, <CHARNAME>. I shall be quiet from now on.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 308
@@ -1985,9 +1914,7 @@ END
 
 IF ~~ THEN BEGIN 310
   SAY ~I think that talking to a wooden statue is a better than talking to you! At least it is silent. You ARE Bhaal's blood, cold and unfeeling, I know now.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",7) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF WEIGHT #-95 ~Global("LoveTalk","LOCALS",8)~ THEN BEGIN 311
@@ -2015,23 +1942,17 @@ END
 
 IF ~~ THEN BEGIN 314
   SAY ~Of course, you are right. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 315
   SAY ~I am not afraid to fall in love <CHARNAME> and I loved many. But no man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 316
   SAY ~As you wish. I can see that you have little interest in me, so I'll spare you from now on.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 317
@@ -2043,9 +1964,7 @@ END
 
 IF ~~ THEN BEGIN 318
   SAY ~No, I am actually grateful to you. It feels easier somehow after I said it. No man have I loved like I loved my father, and I was so bitterly disappointed. Since then I have a trapped door on the bottom of my heart and I will not allow any man to enter it. That's why not Darriel.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 319
@@ -2058,9 +1977,7 @@ END
 
 IF ~~ THEN BEGIN 320
   SAY ~May be the god's part of your soul is well fitting what Bhaal had hoped for, but I find that the mortal part of your soul is wanting.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",9) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF WEIGHT #-94 ~Global("LoveTalk","LOCALS",10)~ THEN BEGIN 321
@@ -2071,8 +1988,7 @@ IF WEIGHT #-94 ~Global("LoveTalk","LOCALS",10)~ THEN BEGIN 321
   IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
   IF ~Class(Player1,RANGER_ALL)~ THEN REPLY ~Sime, there is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 328
-  IF ~!Class(Player1,RANGER_ALL)
-!Class(Player1,PALADIN_ALL)~ THEN REPLY ~Sime, there is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
+  IF ~!Class(Player1,RANGER_ALL) !Class(Player1,PALADIN_ALL)~ THEN REPLY ~Sime, there is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
 END
 
 IF ~~ THEN BEGIN 322
@@ -2081,8 +1997,7 @@ IF ~~ THEN BEGIN 322
   IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
   IF ~Class(Player1,RANGER)~ THEN REPLY ~You think that I am a good-looking fellow, flatterer? I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 328
-  IF ~!Class(Player1,RANGER)
-!Class(Player1,PALADIN)~ THEN REPLY ~You think that I am a good-looking fellow, flatterer? I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
+  IF ~!Class(Player1,RANGER) !Class(Player1,PALADIN)~ THEN REPLY ~You think that I am a good-looking fellow, flatterer? I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
 END
 
 IF ~~ THEN BEGIN 323
@@ -2094,31 +2009,24 @@ END
 
 IF ~~ THEN BEGIN 324
   SAY ~I guess, you are right. I must be thinking too suspiciously of my father. After all, Aran has never tried to use me in his designs before. Why should he now? I am sorry for wasting your time with my doubts. It is just I would not want to hurt you in any way. The one who is warned is safe, they say.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 325
   SAY ~Your words have cheered me up. I must be thinking too low of my father. After all, Aran has never tried to use me in his designs before. Why should he now? I am sorry for wasting your time with my doubts. It is just I would not want to hurt you in any way. The one who is warned is safe, they say.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 326
   SAY ~You are very kind. It is just I would not want to hurt you in any way. The one who is warned is safe, they say. And you know what, <CHARNAME>? I would gladly stay very near you.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",11) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 327
   SAY ~No, you should not have. My father is a dark man, but he has a code of honour of a sort and he is a living being. The rival guild mistress has neither of those qualities. Aran might have some sort of hidden design or he may not. But she is your enemy for sure, an enemy to anybody of flesh and blood. She is hatred incarnate. Fear her, <CHARNAME>.~
   IF ~Class(Player1,PALADIN)~ THEN REPLY ~Speaking of Bodhi. Here is a reason for you. There is a guild war out there, remember? May be Aran thinks that you are safer by my side?~ GOTO 323
   IF ~Class(Player1,RANGER)~ THEN REPLY ~Speaking of Bodhi. Here is a reason for you. There is a guild war out there, remember? May be Aran thinks that you are safer by my side?~ GOTO 328
-  IF ~!Class(Player1,RANGER)
-!Class(Player1,PALADIN)~ THEN REPLY ~Speaking of Bodhi. Here is a reason for you. There is a guild war out there, remember? May be Aran thinks that you are safer by my side?~ GOTO 329
+  IF ~!Class(Player1,RANGER) !Class(Player1,PALADIN)~ THEN REPLY ~Speaking of Bodhi. Here is a reason for you. There is a guild war out there, remember? May be Aran thinks that you are safer by my side?~ GOTO 329
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
 END
 
@@ -2138,29 +2046,20 @@ END
 
 IF ~~ THEN BEGIN 330
   SAY ~If you think that it is a solution, then so be it.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",11)
-SetGlobal("Kicked_Out","LOCALS",1)
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeAreaMove("AR0307",4642,2000,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",11) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0307",4642,2000,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 331
   SAY ~Yes, my father always argued against my ranging.~
   IF ~Class(Player1,PALADIN)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side? ~ GOTO 323
   IF ~Class(Player1,RANGER)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side? ~ GOTO 328
-  IF ~!Class(Player1,RANGER)
-!Class(Player1,PALADIN)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
+  IF ~!Class(Player1,RANGER) !Class(Player1,PALADIN)~ THEN REPLY ~I am not sure, but I think I might guess his reason. There is a guild war out there, remember? May be he thinks you are safer by my side?~ GOTO 329
   IF ~~ THEN REPLY ~You think it is a part of some sinister plan of his? May be I should have accepted Bodhi's offer.~ GOTO 327
   IF ~~ THEN REPLY ~I have a great solution to the problem: you go back to your father and we all will have fewer things to worry about.~ GOTO 330
 END
 
 IF WEIGHT #-93 ~Global("LoveTalk","LOCALS",12)~ THEN BEGIN 332
   SAY ~(*Sime stands still for a moment, facing the wind, her locks flying wild around her face. Then she smiles and turns to you.*)
-
 Do you like my new hairdo? I have the best hairdresser in the world.~ [SIME6_1]
   IF ~~ THEN REPLY ~Sime, all I see is you, facing gusts of wind. Not that you do not look pretty, with your hair flying, but what sort of hairdo is that?~ GOTO 333
   IF ~~ THEN REPLY ~Wind will be your hairdresser then?~ GOTO 333
@@ -2185,44 +2084,32 @@ END
 
 IF ~~ THEN BEGIN 335
   SAY ~I will take this task very close to my heart, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",13)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",13) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 336
   SAY ~Honesty is one of your finest qualities, <CHARNAME>. Do not worry, I will leave you alone.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",13)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",13) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 337
   SAY ~Oh, I see. I think, I get the hint.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",13)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",13) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 338
   SAY ~I will be waiting for a demonstration... impatiently.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",13)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",13) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 339
   SAY ~I am afraid we have different idea on beauty.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",13)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",13) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 340
   SAY ~I will not, do not worry.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",13)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",13) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 341
@@ -2230,10 +2117,7 @@ IF ~~ THEN BEGIN 341
   IF ~~ THEN REPLY ~Oh, a compliment? The Lady's desire will be granted then. I like your style, Sime. I always wanted to meet a woman who looks lovely without an effort.~ GOTO 334
   IF ~~ THEN REPLY ~Now if you would only cut your hair, make some of those little curls whatever they call them, and put some make up on, then I'd say you improved your appearance. Letting the wind to make a mess of your hair will not do anything for your looks.~ GOTO 339
   IF ~~ THEN REPLY ~Why do I get a disturbing feeling that the next thing you will ask me will be if you look fat in your armor?~ GOTO 340
-  IF ~OR(3)
-Class(Player1,FIGHTER)
-Class(Player1,PALADIN)
-Class(Player1,RANGER)~ THEN REPLY ~Sorry, Sime the rough lips of this warrior are unaccustomed to saying gallant nonsense. ~ GOTO 334
+  IF ~OR(3) Class(Player1,FIGHTER) Class(Player1,PALADIN) Class(Player1,RANGER)~ THEN REPLY ~Sorry, Sime the rough lips of this warrior are unaccustomed to saying gallant nonsense. ~ GOTO 334
 END
 
 IF WEIGHT #-92 ~Global("LoveTalk","LOCALS",14)~ THEN BEGIN 342
@@ -2248,18 +2132,12 @@ IF ~~ THEN BEGIN 343
   IF ~~ THEN REPLY ~To prove to my Lady that I am skilled in gentle matters I shall sing a song of love and let's see if the Lady can continue. Will you play this little game with me, Sime?~ GOTO 345
   IF ~Gender(Player1,FEMALE)~ THEN REPLY ~On the second thought it is too taxing. I mean to talk and whatever. Can I just kiss you and buy you a dozen of crimson rodelias if we happen to pass by a flower shop?~ GOTO 344
   IF ~Gender(Player1,MALE)~ THEN REPLY ~On the second thought it is too taxing. I mean to talk and whatever. Can I just kiss your hand and buy you a dozen of crimson rodelias if we happen to pass by a flower shop?~ GOTO 344
-  IF ~OR(3)
-Class(Player1,FIGHTER)
-Class(Player1,PALADIN)
-Class(Player1,RANGER)~ THEN REPLY ~I am an old soldier and I rarely speak the words of love, but I shall sing a song about it and let's see if you can continue. Will you play this little game with me, Sime?~ GOTO 345
+  IF ~OR(3) Class(Player1,FIGHTER) Class(Player1,PALADIN) Class(Player1,RANGER)~ THEN REPLY ~I am an old soldier and I rarely speak the words of love, but I shall sing a song about it and let's see if you can continue. Will you play this little game with me, Sime?~ GOTO 345
 END
 
 IF ~~ THEN BEGIN 344
   SAY ~Rest then, <CHARNAME>. And do not overexert yourself by looking for flowers.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",15)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",15) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 345
@@ -2267,7 +2145,7 @@ IF ~~ THEN BEGIN 345
   IF ~~ THEN REPLY ~The fountains mingle with the river
 And the rivers with the ocean,
 The winds of heaven mix for ever
-With a sweet emotion...          ~ GOTO 346
+With a sweet emotion...  ~ GOTO 346
   IF ~~ THEN REPLY ~Ahem... Love, love me do,
 You know I love you...~ GOTO 352
   IF ~~ THEN REPLY ~I love a maiden young as spring,
@@ -2318,10 +2196,7 @@ END
 
 IF ~~ THEN BEGIN 349
   SAY ~Oh, but it is wonderful. Makes me wonder though who the Lady in question might be.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 350
@@ -2331,18 +2206,12 @@ IF ~~ THEN BEGIN 350
 And the moonbeams kiss the sea-
 What are all these kissings worth,
 If thou kiss not me?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 351
   SAY ~Already? I thought we just started. Well, it was amusing and I must admit that you sounded very sweet. Good night, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 352
@@ -2353,7 +2222,7 @@ What a lovely song. What will you try next?~
   IF ~~ THEN REPLY ~The fountains mingle with the river
 And the rivers with the ocean,
 The winds of heaven mix for ever
-With a sweet emotion...          ~ GOTO 353
+With a sweet emotion...  ~ GOTO 353
   IF ~~ THEN REPLY ~I love a maiden young as spring
 Her eyes bloom as flowers green
 Her hair sways as golden wheat
@@ -2377,18 +2246,12 @@ END
 
 IF ~~ THEN BEGIN 354
   SAY ~Sleep tight then.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",15)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",15) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 355
   SAY ~At least you are honest.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",15)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",15) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 356
@@ -2399,10 +2262,7 @@ END
 
 IF ~~ THEN BEGIN 357
   SAY ~I know, that I would.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 358
@@ -2413,51 +2273,34 @@ END
 
 IF ~~ THEN BEGIN 359
   SAY ~I like libraries. I visited once an Edificant library with Darriel and another time we went through Silverymoon. I love the feeling of ages and peoples of old watching you from the shelves. I think I rather fancy the idea to visit Candlekeep.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 360
   SAY ~If you'd live there maybe you can help me to get over the city wall or something. I do not own much.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 361
   SAY ~I am not sure. I avoid interfering with the business of gods, yet I would not like the taint to change you into a merciless killing machine. I've become a ranger against my father's will. It must be a much harder battle for you.~
-  IF ~!Alignment(Player1,CHAOTIC_EVIL)
-!Alignment(Player1,LAWFUL_EVIL)
-!Alignment(Player1,NEUTRAL_EVIL)~ THEN REPLY ~I fear it myself Sime and I watch my heart carefully. I will not let Bhaal take over. ~ GOTO 362
+  IF ~!Alignment(Player1,CHAOTIC_EVIL) !Alignment(Player1,LAWFUL_EVIL) !Alignment(Player1,NEUTRAL_EVIL)~ THEN REPLY ~I fear it myself Sime and I watch my heart carefully. I will not let Bhaal take over. ~ GOTO 362
   IF ~~ THEN REPLY ~What's your problem, ranger? I am Bhaal's spawn and I am not as shy of the callings of my blood.~ GOTO 363
   IF ~~ THEN REPLY ~You are being too grim. I do not notice any evil influences in me. Surely men point their fingers and call me names, and maniacs like Irenicus hunt me, and I have nightmares sometimes... Oops, I guess there is something evil around me, but I shall be all right.~ GOTO 364
 END
 
 IF ~~ THEN BEGIN 362
   SAY ~I am surely glad to hear that.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 363
   SAY ~Indeed, my advice was useless then.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",15)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",15) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 364
   SAY ~I think I worried needlessly. You are far too cheerful to be overtaken by the God of Murder.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",15) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF WEIGHT #-91 ~Global("LoveTalk","LOCALS",16)~ THEN BEGIN 365
@@ -2493,26 +2336,17 @@ END
 
 IF ~~ THEN BEGIN 369
   SAY ~They can say all they want, those others. Sometimes I wish to cast a silence spell when I hear old crows trading dark stories about you. But I am no crow, I know you and I trust my heart. I am not afraid of you, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 370
   SAY ~Good night then.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 371
   SAY ~You cannot forbid me to feel. I did not know that the fact that someone is concerned about your wellbeing would upset you so. But have it your own way.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",17)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",17) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 372
@@ -2537,11 +2371,8 @@ IF ~~ THEN BEGIN 374
 END
 
 IF ~~ THEN BEGIN 375
-  SAY ~(*Sime walks away*) ~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  SAY ~(*Sime walks away*)~
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",17) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF WEIGHT #-90 ~Global("LoveTalk","LOCALS",18)~ THEN BEGIN 376
@@ -2573,9 +2404,7 @@ END
 
 IF ~~ THEN BEGIN 380
   SAY ~You are right, words are empty. It is time for us to deal with something more material.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",19)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",19)~ EXIT
 END
 
 IF ~~ THEN BEGIN 381
@@ -2585,9 +2414,7 @@ END
 
 IF ~~ THEN BEGIN 382
   SAY ~But do not look for the culprit among the members of the Guild. Look closer... (*Quietly*). You will find <PRO_HIMHER> in the looking glass.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",19)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",19) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 383
@@ -2604,9 +2431,7 @@ END
 
 IF ~~ THEN BEGIN 385
   SAY ~Oh, so my opinion is rubbish? How very sweet of you to let me know that. I will make sure that you are not bothered by it anymore.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",19)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",19)~ EXIT
 END
 
 IF ~~ THEN BEGIN 386
@@ -2618,9 +2443,7 @@ END
 
 IF ~~ THEN BEGIN 387
   SAY ~I will in the future.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",19)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",19)~ EXIT
 END
 
 IF ~~ THEN BEGIN 388
@@ -2657,19 +2480,13 @@ END
 
 IF ~~ THEN BEGIN 394
   SAY ~Sure, let us go. I am ranting far too much.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",19)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",19) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-90 ~Global("LoveTalk","LOCALS",20)~ THEN BEGIN 395
   SAY ~I cannot believe it! Come, <CHARNAME>, look at this! I have never seen it grow in these parts and never does it bloom at this time of the year. It is a small miracle, this flower.~ [SIME12_1]
-  IF ~OR(2)
-Class(Player1,DRUID_ALL)
-Class(Player1,RANGER_ALL)~ THEN REPLY ~Why, I think it is Suna's Bloom. Is not it? I have not seen one before.~ GOTO 396
-  IF ~OR(2)
-Class(Player1,MAGE_ALL)
-Class(Player1,SORCERER)~ THEN REPLY ~Hmm, what do we have here? I believe that it's commonly called "Suna's Blessing" or Solanum Carolinense Eunwoe in Elvish. Dwarves call it a Lay Flower and Forest Gnomes in Tethyr know it under the name of Auglim Leaf. The Halfing name would be... would be...~ GOTO 408
+  IF ~OR(2) Class(Player1,DRUID_ALL) Class(Player1,RANGER_ALL)~ THEN REPLY ~Why, I think it is Suna's Bloom. Is not it? I have not seen one before.~ GOTO 396
+  IF ~OR(2) Class(Player1,MAGE_ALL) Class(Player1,SORCERER)~ THEN REPLY ~Hmm, what do we have here? I believe that it's commonly called "Suna's Blessing" or Solanum Carolinense Eunwoe in Elvish. Dwarves call it a Lay Flower and Forest Gnomes in Tethyr know it under the name of Auglim Leaf. The Halfing name would be... would be...~ GOTO 408
   IF ~~ THEN REPLY ~A nice enough purple flower it is, Sime. But a miracle?~ GOTO 409
   IF ~~ THEN REPLY ~Ahem, what is all this noise about? A couple leaves and few purple buds on a stem? Women!~ GOTO 409
   IF ~~ THEN REPLY ~Sime, has anyone told you before that you have an impossible voice? I, for my part, do not wish to hear it more often than absolutely necessary.~ GOTO 410
@@ -2677,10 +2494,7 @@ END
 
 IF ~~ THEN BEGIN 396
   SAY ~It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna's Bloom?~
-  IF ~OR(3)
-Class(Player1,DRUID)
-Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~OR(3) Class(Player1,DRUID) Class(Player1,RANGER) Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
   IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
@@ -2697,9 +2511,7 @@ END
 
 IF ~~ THEN BEGIN 398
   SAY ~You are as wise as you are handsome, <CHARNAME>. Let the flower grow unharmed.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",21)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",21) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 399
@@ -2717,20 +2529,12 @@ END
 
 IF ~~ THEN BEGIN 401
   SAY ~I'll let you guess that one on your own.~
-  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Player1,1,0,0)
-ActionOverride(Player1,UseItem("BELADONA",Myself))
-SetGlobal("LoveTalk","LOCALS",21)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Player1,1,0,0) ActionOverride(Player1,UseItem("BELADONA",Myself)) SetGlobal("LoveTalk","LOCALS",21) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 402
   SAY ~It is too late. The spell is on you and it cannot be reversed. Do not worry, in few short hours you will be your old self again. And I promise to guard you against any unwanted attention.~
-  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Player1,1,0,0)
-ActionOverride(Player1,UseItem("BELADONA",Myself))
-SetGlobal("LoveTalk","LOCALS",21)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Player1,1,0,0) ActionOverride(Player1,UseItem("BELADONA",Myself)) SetGlobal("LoveTalk","LOCALS",21) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 403
@@ -2742,20 +2546,12 @@ END
 
 IF ~~ THEN BEGIN 404
   SAY ~Such gentle words, My Lord, are to be rewarded by a grateful maiden. (*She kisses you gently and runs away giggling*)~
-  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Myself,1,0,0)
-UseItem("BELADONA",Myself)
-SetGlobal("LoveTalk","LOCALS",21)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Myself,1,0,0) UseItem("BELADONA",Myself) SetGlobal("LoveTalk","LOCALS",21) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 405
   SAY ~Good to know that we can trust our scholars. (*Laughs*). Oh, I see you are growing impatient. I am coming!~
-  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Myself,1,0,0)
-UseItem("BELADONA",Myself)
-SetGlobal("LoveTalk","LOCALS",21)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("BELADONA",Myself,1,0,0) UseItem("BELADONA",Myself) SetGlobal("LoveTalk","LOCALS",21) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 406
@@ -2769,17 +2565,12 @@ END
 
 IF ~~ THEN BEGIN 407
   SAY ~You do not respect Love? Then you are a fool and a servant of Death.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",21)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",21)~ EXIT
 END
 
 IF ~~ THEN BEGIN 408
   SAY ~Do not try to remember: there is no name in Halfling speech for this one. It is a very rare plant. I am surprised you know of it. Do you know why it is called Suna's Bloom?~
-  IF ~OR(3)
-Class(Player1,DRUID)
-Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~OR(3) Class(Player1,DRUID) Class(Player1,RANGER) Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
   IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
@@ -2787,10 +2578,7 @@ END
 
 IF ~~ THEN BEGIN 409
   SAY ~It is a very rare plant. And it is called Suna's Bloom for a reason.~
-  IF ~OR(3)
-Class(Player1,DRUID)
-Class(Player1,RANGER)
-Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
+  IF ~OR(3) Class(Player1,DRUID) Class(Player1,RANGER) Class(Player1,MAGE)~ THEN REPLY ~I have heard tales, Sime. Is it true that a freshly picked flower of Suna's Bloom will make one more attractive to the opposite sex?~ GOTO 397
   IF ~~ THEN REPLY ~So, why it is called Suna's Bloom? Sounds rather intriguing.~ GOTO 406
   IF ~CheckStatGT(Player1,12,WIS)~ THEN REPLY ~I have a feeling that you will tell me whether I want to know or not. Speak, Sime, I am all ears.~ GOTO 406
   IF ~~ THEN REPLY ~I am not sure I want to know. Suna is not a deity I am prone to worship.~ GOTO 407
@@ -2798,9 +2586,7 @@ END
 
 IF ~~ THEN BEGIN 410
   SAY ~You will not.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",21)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",21)~ EXIT
 END
 
 IF WEIGHT #-89 ~Global("LoveTalk","LOCALS",22)~ THEN BEGIN 411
@@ -2822,12 +2608,7 @@ END
 
 IF ~~ THEN BEGIN 413
   SAY ~Then move and let me lay by your side and shower you with kisses, my sweet lover.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SleptSime","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",23)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SleptSime","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",23) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 414
@@ -2840,12 +2621,7 @@ END
 
 IF ~~ THEN BEGIN 415
   SAY ~Now, those are the words I wish to hear! Let me lay by your side and shower you with kisses, my sweet lover.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SleptSime","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",23)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SleptSime","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",23) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 416
@@ -2865,20 +2641,12 @@ END
 
 IF ~~ THEN BEGIN 418
   SAY ~Now, those are the words I wish to hear! Let me lay by your side and shower you with kisses, my sweet lover.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SleptSime","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",23)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SleptSime","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",23) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 419
   SAY ~Then I shall return into my cold bed alone. Only in the tales of heroes-of-old does one get three chances, <CHARNAME>. With Sime it is only one and you missed it. Sleep tight.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",23)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",23) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 420
@@ -2889,32 +2657,21 @@ END
 
 IF ~~ THEN BEGIN 421
   SAY ~Let me lay by your side and shower you with kisses, my sweet lover.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SleptSime","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",23)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",2) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SleptSime","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",23) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 422
   SAY ~Only in the tales of old does a hero get three chances, <CHARNAME>. With Sime it is only one and you missed it. Sleep tight.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",23)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",23) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 423
-  SAY ~I wish you every happiness then. ~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",23)
-RestParty()~ EXIT
+  SAY ~I wish you every happiness then.~
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",23) RestParty()~ EXIT
 END
 
 IF WEIGHT #-88 ~Global("LoveTalk","LOCALS",24)~ THEN BEGIN 424
-  SAY ~Wake up, m'<PRO_LADYLORD>, the dawn is spreading over the sky! And the woman of the yester eve is up already and her eyes spell trouble for you. Wake up, m'<PRO_LADYLORD>, the world is holding its breath in anticipation of your decisions. Shall we live or shall we not? Shall we love or shan't we? ~
+  SAY ~Wake up, m'<PRO_LADYLORD>, the dawn is spreading over the sky! And the woman of the yester eve is up already and her eyes spell trouble for you. Wake up, m'<PRO_LADYLORD>, the world is holding its breath in anticipation of your decisions. Shall we live or shall we not? Shall we love or shan't we?~
   IF ~~ THEN REPLY ~No-yet still steadfast, still unchangeable,
 Pillow'd upon my fair love's ripening breast,
 To feel for ever its soft fall and swell,
@@ -2935,27 +2692,21 @@ END
 
 IF ~~ THEN BEGIN 426
   SAY ~My point exactly, <CHARNAME>. Now, MOVE!~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 427
   SAY ~I love you even if you are merely a demi-god. But do get up.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 428
   SAY ~Fair enough. Take my heart or loose it, <CHARNAME>, as you desire.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 429
-  SAY ~I hope the analogy does not go any further than my loud voice? Or was last eve torturous for you? ~
+  SAY ~I hope the analogy does not go any further than my loud voice? Or was last eve torturous for you?~
   IF ~~ THEN REPLY ~The play between the sheets is play between the sheets, Sime. It was fine, but now we must get moving.~ GOTO 426
   IF ~Gender(Player1,MALE)~ THEN REPLY ~Sime, my sweet Sime, if I were a god I would make this night last forever. But since I am only a measly demi-god I must put my feelings in words: it was awesome, wonderful, and unforgettable.  Kiss me another time to give me small consolation; for I must now take my hands off your body and let you hide it from me under your armor.~ GOTO 427
   IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Sime, my sweet Sime, if I were a goddess I would make this night last forever. But since I am only a measly demi-goddess I must put my feelings in words: it was awesome, wonderful, and unforgettable.  Kiss me another time to give me small consolation; for I must now take my hands off your body and let you hide it from me under your armor.~ GOTO 589
@@ -2972,9 +2723,7 @@ END
 
 IF ~~ THEN BEGIN 589
   SAY ~I love you even if you are merely a demi-goddess. But do get up.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",25) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-87 ~Global("LoveTalk","LOCALS",26)~ THEN BEGIN 431
@@ -2987,9 +2736,7 @@ END
 
 IF ~~ THEN BEGIN 432
   SAY ~Well, I see that you have the attitude I desire, even if it was not put in the most gentle of words.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 433
@@ -3008,9 +2755,7 @@ END
 
 IF ~~ THEN BEGIN 435
   SAY ~I just do not want love to be an obligation! I do not want our love to turn against us or to become a necessity. Look at my parents: they loved each other against all odds and look what it brought them? My mother is dead and my father wasting himself on whores. I... I am getting very upset and I do not like it. I am sorry to have started this conversation.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 436
@@ -3022,22 +2767,17 @@ END
 
 IF ~~ THEN BEGIN 437
   SAY ~You are ever so gentle, my love. Sometimes, it makes me wonder if I can play by my own rules with you.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 438
   SAY ~As I said - you are free to go at any time. Let it be now then.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("LoveTalk","LOCALS",27)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("LoveTalk","LOCALS",27)~ EXIT
 END
 
 IF ~~ THEN BEGIN 439
   SAY ~Sometimes I wonder, how could you endure all these trials, and keep your soul so young and gentle. You are truly a noble <PRO_MANWOMAN>. Just remember, it was not me who gave you that hope.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 440
@@ -3049,17 +2789,13 @@ END
 
 IF ~~ THEN BEGIN 441
   SAY ~You are right. Let's continue on our journey. Passion shall rule our nights, but not our day life.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",27) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-86 ~Global("LoveTalk","LOCALS",28)~ THEN BEGIN 442
   SAY ~You know what I was doing last night? I was counting stars and giving them different names. I even considered calling one after you. Guess which one?~
   IF ~~ THEN REPLY ~Mystra's star? Though, it's my preference to think about you while watching it: it is so bright, beautiful, and mysterious.~ GOTO 443
-  IF ~OR(2)
-Class(Player1,MAGE_ALL)
-Class(Player1,SORCERER)~ THEN REPLY ~I think Mystra's star is the obvious choice.~ GOTO 448
+  IF ~OR(2) Class(Player1,MAGE_ALL) Class(Player1,SORCERER)~ THEN REPLY ~I think Mystra's star is the obvious choice.~ GOTO 448
   IF ~~ THEN REPLY ~Ieryn - the star of the North? I know it is sacred to Selunites and you have a deep spiritual connection with your mother. May be you were speaking of me to her while watching the night sky and Ieryn came to your mind?~ GOTO 449
   IF ~~ THEN REPLY ~Shaundral? An erratic star who shines brightest before disaster? Like me, whose coming was foretold in Alaundo's prophesies?~ GOTO 450
   IF ~~ THEN REPLY ~King's Coin? The star of the rulers for Men and the Kingslayer to Elves? Do you think I am destined for greatness or great failure?~ GOTO 451
@@ -3080,26 +2816,17 @@ END
 
 IF ~~ THEN BEGIN 445
   SAY ~And I am yearning for a bedroll right now. Care to join me there? You have not embraced me for far too long, my lazy lover.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 446
   SAY ~(*Laughs*)... It can be as long or as short as you wish, <CHARNAME>. But I remember that on occasion you are prepared to forsake your sleep. So, what are you waiting for? Care to join me? You for have not embraced me for far too long, and I do not fancy lazy lovers.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 447
   SAY ~By Mielikki, I have created a monster! If you wish to begin your very own star lore book right now, I can help you I suppose. Alternatively, you may join me in my bedroll. I would like to bring to your attention that you have not embraced me for far too long and that I do not fancy lazy lovers.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",29) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 448
@@ -3181,37 +2908,27 @@ END
 
 IF ~~ THEN BEGIN 457
   SAY ~Do not bother to look for me at the slave market, <CHARNAME>. Nothing lasts forever and that is a good thing. It is all the sweeter that way.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 458
   SAY ~I will not laugh, but I will smile.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 459
   SAY ~Let me hope not. I want the love of a mortal person, the one of flesh and blood, not divine favor. It is the Forest Lady I pray to, not you.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 460
   SAY ~And none shall withstand our combined wrath. Speaking of which - it is past time we rejoin the others and press onward.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 461
   SAY ~If that will ever be your choice, I will leave your side, <CHARNAME>. If our paths should cross again afterwards, we shall join in battle as bitter foes.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 462
@@ -3229,16 +2946,12 @@ END
 
 IF ~~ THEN BEGIN 464
   SAY ~And none shall withstand our combined wrath. Speaking of which - it is past time we rejoin the others and press onward.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 465
   SAY ~If that will ever be your choice, I will leave your side, <CHARNAME>. If our paths should cross again afterwards, we shall join in battle as bitter foes.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 466
@@ -3257,23 +2970,17 @@ END
 
 IF ~~ THEN BEGIN 468
   SAY ~And that is the only way to live! I am glad to hear you say that. But I think we should rejoin the others and press onward now.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 469
-  SAY ~(*Quietly*) Was not that how Sarevok felt? ~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  SAY ~(*Quietly*) Was not that how Sarevok felt?~
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 470
   SAY ~We cannot have that, can we? Let us rejoin the others and press onward then.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 471
@@ -3299,16 +3006,12 @@ END
 
 IF ~~ THEN BEGIN 474
   SAY ~A mad Lord will cause great grief to his people. Because of that, I wish no ruler or his courtier to be mad.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 475
   SAY ~Let us rejoin the others and press onward then.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",31) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 476
@@ -3330,9 +3033,7 @@ END
 
 IF ~~ THEN BEGIN 478
   SAY ~Is that true? Oh, no matter that sounds way too sweet for me to question it.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 479
@@ -3347,9 +3048,7 @@ END
 
 IF ~~ THEN BEGIN 480
   SAY ~Oh well, I'll let the bards figure it out for their songs.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 481
@@ -3366,23 +3065,17 @@ END
 
 IF ~~ THEN BEGIN 483
   SAY ~I find that this sort of wound can only be healed by more radical means. The heart is like a port: as one ship is leaving another is entering. Fear not, <CHARNAME>, I foresee that you will love and be loved many more times.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 484
   SAY ~You are never serious, are you? I like that about you.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 485
   SAY ~Is that true? Oh, no matter that sounds way too sweet for me to question it.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 486
@@ -3399,22 +3092,16 @@ END
 
 IF ~~ THEN BEGIN 488
   SAY ~For her sake I hope she will wake up one day and meet someone more honorable. It always saddens me when hearts bleed for an unworthy person.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 IF ~~ THEN BEGIN 489
   SAY ~(*Laughs*)...  Then she committed a grave mistake. I did never meet a lord more honorable and valiant than you. I would dearly like to have seen you in the beginning of your travels. A bit shabbier you may have been, but with less pain in your eyes, and more starlight and youth.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 490
   SAY ~For her sake I hope she will wake up one day and meet someone more honorable. But she will not have you now; I am a greedy woman.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 491
@@ -3424,9 +3111,7 @@ END
 
 IF ~~ THEN BEGIN 492
   SAY ~I know how it feels to lose a lover to death, <CHARNAME>.  That's when our spinning and ringing world of battles and adventures comes to a crashing stop.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 493
@@ -3442,21 +3127,16 @@ END
 
 IF ~~ THEN BEGIN 495
   SAY ~Yes, but I feel not comforted by that.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 496
   SAY ~A worthy idea! And we are hard at it already, do not you think?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",33) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-83 ~Global("LoveTalk","LOCALS",34)~ THEN BEGIN 497
   SAY ~(*Reads to you from an old tome*)
-
 "And His Grace the King came then upon Sir Knight and his Lady Wife. They were asleep on his cloak shielded by the branches of an ancient oak tree. Sir Knight's great sword lay between them and so the King saw that his honor was not despoiled.  His Grace kneeled and slipped his own ring onto his Lady's finger and then he rode off..."~
   IF ~~ THEN GOTO 498
 END
@@ -3479,29 +3159,17 @@ END
 
 IF ~~ THEN BEGIN 500
   SAY ~Now, that you started this talk about kissing, think we can delay the story's ending till tomorrow night? And do some serious research on the ways the rangers love?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 501
   SAY ~Absolutely true, <CHARNAME>. Do you think we can delay the story's  ending till tomorrow night? And do some serious research on the ways the rangers love?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 502
   SAY ~I am afraid it can take some significant amount of time. Do you think we can delay the story's ending till tomorrow night? And do some serious research on the ways the rangers love?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 503
@@ -3512,20 +3180,12 @@ END
 
 IF ~~ THEN BEGIN 504
   SAY ~May be, but I have heard it from a very reliable source. Do you think we can delay this discussion? And do some serious research on the ways the other rangers love?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 505
   SAY ~Am I glad to hear that, <CHARNAME>. I was wondering how long it would take you to figure out that I had not been kissed tonight yet.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 506
@@ -3537,47 +3197,27 @@ END
 
 IF ~~ THEN BEGIN 507
   SAY ~How about  warming up our bed ourselves?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 508
   SAY ~He's off hunting. But at any rate, the werewolf did not work for Jon, why should it work for us?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 509
   SAY ~No, it did not. His lady was just as persistent as I am. I hope you will follow his suit and join me under the covers now.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 510
   SAY ~Am I glad to hear that, <CHARNAME>. I was wondering how long it would take you to figure out that I had not yet been kissed tonight.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF ~~ THEN BEGIN 511
   SAY ~How about warming up our bed as well?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-StartCutSceneMode()
-StartCutScene("Cut34a")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",35) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) StartCutSceneMode() StartCutScene("Cut34a")~ EXIT
 END
 
 IF WEIGHT #-82 ~Global("LoveTalk","LOCALS",36)~ THEN BEGIN 512
@@ -3589,9 +3229,7 @@ END
 
 IF ~~ THEN BEGIN 513
   SAY ~Sleep tight then, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",37)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",37)~ EXIT
 END
 
 IF ~~ THEN BEGIN 514
@@ -3605,29 +3243,20 @@ IF ~~ THEN BEGIN 515
   SAY ~Give me your hand, <CHARNAME>...
 
 Kaimeldor panta annonta ten'lle...~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",1)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",37)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutS01")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",1) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",37) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutS01")~ EXIT
 END
 
 IF WEIGHT #-81 ~Global("LoveTalk","LOCALS",38)~ THEN BEGIN 516
   SAY ~I am glad to feel the warmth of the sun on my skin and see the light and the shadows play. I have not liked it at all in the caverns of the Underdark and its creepy inhabitants. How do you feel now that we have returned to the Surface? Are you a creature of light?~
   IF ~~ THEN REPLY ~I am a creature of light, Sime, no matter what they say about me. I have never been as jolly as when we came back under the gaze of the sun. I disliked the Underdark and all the foul creatures that populate it.~ GOTO 517
-  IF ~!Race(Player1,ELF)
-!Race(Player1,HALF_ELF)~ THEN REPLY ~Dark it is my fair Lady, but many riches are hidden within. I took a look around the mines that those gnomes worked. I say that the rock there might yield clear diamonds and glowing garnet gems. And that was naught but a small corner of the Underdark. Nays, Sime, do not judge the place unlikable too hastily.~ GOTO 518
+  IF ~!Race(Player1,ELF) !Race(Player1,HALF_ELF)~ THEN REPLY ~Dark it is my fair Lady, but many riches are hidden within. I took a look around the mines that those gnomes worked. I say that the rock there might yield clear diamonds and glowing garnet gems. And that was naught but a small corner of the Underdark. Nays, Sime, do not judge the place unlikable too hastily.~ GOTO 518
   IF ~~ THEN REPLY ~I agree with you in that I feel more comfortable on the Surface. But there is a certain beauty in the Underdark. And not all creatures that populate it are foul.~ GOTO 522
   IF ~~ THEN REPLY ~I have to say that I felt fine in the Underdark. Drow are no worse than the snotty Elves in Suldanesselar. Solaufein fellow was quite decent. Deep gnomes are cute... Of course there were few unpleasant meetings, but that's no different than on the Surface. Besides it is always warm there and it does not rain. In fact I am thinking of journeying there again when I will have time.~ GOTO 523
 END
 
 IF ~~ THEN BEGIN 517
   SAY ~I am glad we think alike.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 518
@@ -3639,37 +3268,27 @@ END
 
 IF ~~ THEN BEGIN 519
   SAY ~I can propose an even more economic solution: give me your love, that's all I need.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 520
   SAY ~Here you got me! Well, I guess I was not born to be a miner, but I shall be grateful that others were. Though if there were not any weapons ever made... there wouldn't be fighting. Nay, I am silly. One can fight with wooden weapons, his bare hands or spells if he really wants to.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 521
   SAY ~Both flowers and gems are given by nature to us, and they both are beautiful. I am talking nonsense, <CHARNAME>. I guess the fresh air after the stuffiness of the Underdark made me feel queer.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 522
   SAY ~Indeed, <CHARNAME>. I am talking nonsense, I am afraid. I guess the fresh air after the stuffiness of the Underdark made me feel queer.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 523
   SAY ~I thought that I would never want to part with you, but I doubt that I would like to accompany you back to the Underdark. However... however there is a certain beauty in the Underdark. And not all creatures that populate it are foul. May be we shall go back. After all, I like a good adventure!~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",39) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-80 ~Global("LoveTalk","LOCALS",40)~ THEN BEGIN 524
@@ -3702,23 +3321,17 @@ END
 
 IF ~~ THEN BEGIN 528
   SAY ~I am glad that you go into this battle leaving hatred behind, but I urge you to clear your mind of the thought of revenge as well. Have not you seen people obsessed with revenge and how empty their life becomes after the sworn enemy is dead? Please, promise me to reflect on that, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 529
   SAY ~(*Smiles and touches your cheek*)... You know that your staying alive will make at least one more person happy, do not you? May be you are right, <CHARNAME>, maybe it is you or him. But be merciful if you should have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 530
   SAY ~Then I admire your strength, <CHARNAME>. For you will be fighting two battles instead of one. But be merciful if you should have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 531
@@ -3745,9 +3358,7 @@ END
 
 IF ~~ THEN BEGIN 534
   SAY ~Oh, that was deep.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 535
@@ -3759,23 +3370,17 @@ END
 
 IF ~~ THEN BEGIN 536
   SAY ~I am glad that you go into this battle leaving hatred behind, but I urge you to clear your mind of the thought of revenge as well. Have not you seen people obsessed with revenge and how empty their lives become after the sworn enemy is dead? Please, promise me to reflect on that, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 537
   SAY ~(*Smiles and touches your cheek.*)... You know that your staying alive will make at least one more person happy, do not you? May be you are right, <CHARNAME>, maybe it is you or him. But be merciful if you will have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 538
   SAY ~Then I admire your strength, <CHARNAME>. For you will be fighting two battles instead of one. But be merciful if you should have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 539
@@ -3788,30 +3393,22 @@ END
 
 IF ~~ THEN BEGIN 540
   SAY ~I doubt it not, <CHARNAME>. You scare even me sometimes. But be merciful if you should have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 541
   SAY ~May be... after all, you know him better than I do. Let it be, then. But be merciful if you should have a chance, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 542
   SAY ~<CHARNAME>, pleasing me is not the concern here... By Mielikki, you are grinning! Are you ever serious?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",41) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 543
   SAY ~You are thinking cannon fodder, are not you? You... you are a beast!~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("LoveTalk","LOCALS",41)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("LoveTalk","LOCALS",41)~ EXIT
 END
 
 IF ~~ THEN BEGIN 544
@@ -3844,23 +3441,17 @@ END
 
 IF ~~ THEN BEGIN 548
   SAY ~It does not make sense, does it? Oh, Nine Hells, just kiss me, will you?~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 549
   SAY ~Wonderful idea! That is guaranteed to cheer me up.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 550
   SAY ~You are supposed to say "uh-huh" and kiss me.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",43) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 551
@@ -3893,22 +3484,12 @@ END
 
 IF ~~ THEN BEGIN 555
   SAY ~But, we rangers are also supposed to promote good deeds like maiden saving... And I really want to be a damsel in distress for once... Come, give me your hand!  Kaimeldor panta annonta ten'lle, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",45)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutS03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",45) SetGlobal("VP_LoveTalkDelay","LOCALS",0) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutS03")~ EXIT
 END
 
 IF ~~ THEN BEGIN 556
   SAY ~Oh, yes! Come, give me your hand! Kaimeldor panta annonta ten'lle, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",45)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutS03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",45) SetGlobal("VP_LoveTalkDelay","LOCALS",0) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutS03")~ EXIT
 END
 
 IF ~~ THEN BEGIN 557
@@ -3919,18 +3500,12 @@ END
 
 IF ~~ THEN BEGIN 558
   SAY ~I will have to practice harder then.~
-  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",45)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("LoveTalk","LOCALS",45) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 559
   SAY ~Oh, yes! Come, give me your hand!  Kaimeldor panta annonta ten'lle, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1)
-SetGlobal("LoveTalk","LOCALS",45)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutS03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_Dragon","GLOBAL",1) SetGlobal("LoveTalk","LOCALS",45) SetGlobal("VP_LoveTalkDelay","LOCALS",0) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutS03")~ EXIT
 END
 
 IF ~~ THEN BEGIN 560

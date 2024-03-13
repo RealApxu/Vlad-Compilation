@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~(*laughs and shakes his head*) Got it all covered, don't they? And I guess there is an Immortal in charge of the potential husband's wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily. ~
+  SAY ~(*laughs and shakes his head*) Got it all covered, don't they? And I guess there is an Immortal in charge of the potential husband's wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily.~
   IF ~~ THEN EXTERN ~BKACHI~ 44
 END
 
@@ -66,7 +66,7 @@ IF ~~ THEN BEGIN TS161
 END
 
 IF ~~ THEN BEGIN TS162
-  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father's doing, no doubt. The bird reached the shore safely and transformed into Abyssina.   They were married the very next day.~
+  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father's doing, no doubt. The bird reached the shore safely and transformed into Abyssina.  They were married the very next day.~
   IF ~~ THEN EXTERN ~BVALYGA~ TS533
 END
 

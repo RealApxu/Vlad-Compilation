@@ -12,9 +12,7 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~Yoshimo, you are unlike any other man I met among our kin as well. I am afraid that we are together not because we are so right for each other, but because we are so wrong for anyone else...~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3)
-SetGlobalTimer("VP_KachikoRomance","GLOBAL",TWO_DAYS)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3) SetGlobalTimer("VP_KachikoRomance","GLOBAL",TWO_DAYS) RestParty()~ EXIT
 END
 
 IF WEIGHT #-8 ~Global("ExpLoveTalk","LOCALS",4)~ THEN BEGIN 3
@@ -39,9 +37,7 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~Yoshimo... I love you too and I want us to be together. Please, stay with me...~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5)
-SetGlobalTimer("VP_KachikoRomance","GLOBAL",TWO_DAYS)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5) SetGlobalTimer("VP_KachikoRomance","GLOBAL",TWO_DAYS) RestParty()~ EXIT
 END
 
 IF WEIGHT #-7 ~Global("ExpLoveTalk","LOCALS",6)~ THEN BEGIN 8
@@ -85,7 +81,7 @@ IF ~~ THEN BEGIN 15
 END
 
 IF ~~ THEN BEGIN 16
-  SAY ~Valygar, of course! You know well enough that Yoshimo’s soul was redeemed with her help and we cannot imagine our wedding without <CHARNAME> as our most honored guest, but I was hoping you would come together...~
+  SAY ~Valygar, of course! You know well enough that Yoshimoï¿½s soul was redeemed with her help and we cannot imagine our wedding without <CHARNAME> as our most honored guest, but I was hoping you would come together...~
   IF ~~ THEN EXTERN ~BVALYG25~ TS144
 END
 

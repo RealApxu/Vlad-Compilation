@@ -11,7 +11,7 @@ IF ~~ THEN BEGIN TS135
 END
 
 IF ~~ THEN BEGIN TS136
-  SAY ~A dimwit more like. I hit low times and I told him, I'd go to his darned church and sleep there. ~
+  SAY ~A dimwit more like. I hit low times and I told him, I'd go to his darned church and sleep there.~
   IF ~~ THEN EXTERN ~BSIME~ 19
 END
 

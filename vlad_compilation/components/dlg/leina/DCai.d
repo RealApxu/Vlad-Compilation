@@ -9,6 +9,5 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~I have my orders. No stranger comes in here unless accompanied by Vulova himself and as I do not see him amongst you, I am going to presume that you have murdered him. If that is the case, you would do well to know that my orders do not change. Men, finish this rabble now!!~
-  IF ~~ THEN DO ~Shout(89)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~Shout(89) Enemy()~ EXIT
 END

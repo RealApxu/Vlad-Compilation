@@ -60,10 +60,7 @@ IF ~RandomNum(12, 12)~ THEN BEGIN 11 // from:
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("VP_Garron_Search","LOCALS",0)
-OR(2)
-Global("VP_Create_Garron","GLOBAL",2)
-PartyHasItem("TuLette5")~ THEN BEGIN 12
+IF WEIGHT #-1 ~Global("VP_Garron_Search","LOCALS",0) OR(2) Global("VP_Create_Garron","GLOBAL",2) PartyHasItem("TuLette5")~ THEN BEGIN 12
   SAY ~Hello, I haven't seen you before. You must be new, I am Moradz, welcome.~
   IF ~~ THEN REPLY ~Hello Moradz. I am <GABBER>, thank you for such a warm welcome. Tell me, do you know where I might find a student named Garron?~ GOTO 13
   IF ~~ THEN REPLY ~Well met Moradz, I am <GABBER>. You don't happen to know a student named Garron do you? I promised a cousin of his I would look him up if I ever got to Halruaa, but his cousin didn't say which specialisation he is studying.~ GOTO 13
@@ -93,6 +90,5 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~Now if you'll excuse me, I am in a hurry and must bid you farewell.~
-  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)
-EscapeArea()~ EXIT
-END   
+  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1) EscapeArea()~ EXIT
+END

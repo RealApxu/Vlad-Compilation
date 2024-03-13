@@ -1,40 +1,18 @@
 BEGIN ~DGELARIT~
 
-IF ~NumberOfTimesTalkedTo(0)
-GlobalLT("Astrolab","GLOBAL",4)
-~ THEN BEGIN 0
-  SAY ~Blasted machine!  I’ll never get her fixed!  ~
-  IF ~~ THEN REPLY ~Might I ask what’s wrong with *her?*~ GOTO 1
+IF ~NumberOfTimesTalkedTo(0) GlobalLT("Astrolab","GLOBAL",4)~ THEN BEGIN 0
+  SAY ~Blasted machine!  Iï¿½ll never get her fixed~
+  IF ~~ THEN REPLY ~Might I ask whatï¿½s wrong with *her?*~ GOTO 1
   IF ~~ THEN REPLY ~Who are you?~ GOTO 3
-  IF ~PartyHasItem("PIECE1")
-~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1")
-SetGlobal("ASTRO1","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE2")
-~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2")
-SetGlobal("ASTRO2","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE3")
-~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3")
-SetGlobal("ASTRO3","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE4")
-~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like it’s part of that machine.~ DO ~TakePartyItem("PIECE4")
-SetGlobal("ASTRO4","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~~ THEN REPLY ~I have intruded, forgive me.  I’ll come back later.~ EXIT
+  IF ~PartyHasItem("PIECE1")~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1") SetGlobal("ASTRO1","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE2")~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2") SetGlobal("ASTRO2","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE3")~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3") SetGlobal("ASTRO3","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE4")~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like itï¿½s part of that machine.~ DO ~TakePartyItem("PIECE4") SetGlobal("ASTRO4","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~~ THEN REPLY ~I have intruded, forgive me.  Iï¿½ll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~Can’t you see she’s broken?  I can’t power her up until her missing pieces are replaced.~
+  SAY ~Canï¿½t you see sheï¿½s broken?  I canï¿½t power her up until her missing pieces are replaced.~
   IF ~~ THEN REPLY ~What missing pieces?~ GOTO 2
   IF ~~ THEN REPLY ~Can you tell me about yourself?~ GOTO 3
   IF ~~ THEN REPLY ~Perhaps you will have made more progress when I return.  Farewell.~ EXIT
@@ -46,14 +24,14 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~GAHHH!  You waste my time with pointless chatter.    My name is Geralith.  During the days when I was alive, I built and maintained this hunk of junk that used to be an astrolabe.~
+  SAY ~GAHHH!  You waste my time with pointless chatter.  My name is Geralith.  During the days when I was alive, I built and maintained this hunk of junk that used to be an astrolabe.~
   IF ~~ THEN REPLY ~How did you end up here when the Hand fell?~ GOTO 5
   IF ~~ THEN REPLY ~You built the astrolabe?~ GOTO 4
-  IF ~~ THEN REPLY ~I’m sorry I have wasted your time.  Farewell.~ EXIT
+  IF ~~ THEN REPLY ~Iï¿½m sorry I have wasted your time.  Farewell.~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
-  SAY ~That I did.  Larrel charged me with designing and building this machine.   A device was needed by the wizards to help research the stars and the moons.  Now it’s only good for collecting dust.~
+  SAY ~That I did.  Larrel charged me with designing and building this machine.  A device was needed by the wizards to help research the stars and the moons.  Now itï¿½s only good for collecting dust.~
   IF ~~ THEN REPLY ~How did you end up here when the Hand fell?~ GOTO 5
   IF ~~ THEN REPLY ~Perhaps Larrel has some insight?~ GOTO 6
   IF ~~ THEN REPLY ~I must take my leave.  Farewell.~ EXIT
@@ -67,77 +45,34 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-  SAY ~Have you spoken to him?  All he does is rant about worthless dribble.  I can’t make any sense out of him.  Quite different from the noble elven wizard he once was.~
+  SAY ~Have you spoken to him?  All he does is rant about worthless dribble.  I canï¿½t make any sense out of him.  Quite different from the noble elven wizard he once was.~
   IF ~~ THEN REPLY ~How did you end up here when the Hand fell?~ GOTO 5
   IF ~~ THEN REPLY ~You said you built the astrolabe?~ GOTO 4
   IF ~~ THEN REPLY ~Maybe I can make some sense out of him.  Farewell.~ EXIT
 END
 
 IF ~~ THEN BEGIN 7
-  SAY ~Well send me to the abyss.  You might be right.  If you find any more pieces, let me know.  Otherwise, check back with me after I’ve put the part in.~
-  IF ~PartyHasItem("PIECE1")
-~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1")
-SetGlobal("ASTRO1","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE2")
-~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2")
-SetGlobal("ASTRO2","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE3")
-~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3")
-SetGlobal("ASTRO3","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE4")
-~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like it’s part of that machine.~ DO ~TakePartyItem("PIECE4")
-SetGlobal("ASTRO4","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~~ THEN REPLY ~I’ll check back with you after you’ve put it together.  Farewell.~ EXIT
+  SAY ~Well send me to the abyss.  You might be right.  If you find any more pieces, let me know.  Otherwise, check back with me after Iï¿½ve put the part in.~
+  IF ~PartyHasItem("PIECE1")~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1") SetGlobal("ASTRO1","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE2")~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2") SetGlobal("ASTRO2","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE3")~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3") SetGlobal("ASTRO3","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE4")~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like itï¿½s part of that machine.~ DO ~TakePartyItem("PIECE4") SetGlobal("ASTRO4","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~~ THEN REPLY ~Iï¿½ll check back with you after youï¿½ve put it together.  Farewell.~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)
-GlobalLT("Astrolab","GLOBAL",4)
-~ THEN BEGIN 8
+IF ~NumTimesTalkedToGT(0) GlobalLT("Astrolab","GLOBAL",4)~ THEN BEGIN 8
   SAY ~Gah!  This infernal machine will never be fixed!~
-  IF ~PartyHasItem("PIECE1")
-~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1")
-SetGlobal("ASTRO1","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE2")
-~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2")
-SetGlobal("ASTRO2","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE3")
-~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3")
-SetGlobal("ASTRO3","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~PartyHasItem("PIECE4")
-~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like it’s part of that machine.~ DO ~TakePartyItem("PIECE4")
-SetGlobal("ASTRO4","GLOBAL",1)
-IncrementGlobal("ASTROLAB","GLOBAL",1)
-AddexperienceParty(19500)
-~ GOTO 10
-  IF ~~ THEN REPLY ~Might I ask what’s wrong with *her?*~ GOTO 1
+  IF ~PartyHasItem("PIECE1")~ THEN REPLY ~Kaylessa bestowed me with this piece of machinery.  Perhaps this is what you seek?~ DO ~TakePartyItem("PIECE1") SetGlobal("ASTRO1","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE2")~ THEN REPLY ~This piece of machinery was retrieved from Solonor Tower.  Could you use this to fix the machine?~ DO ~TakePartyItem("PIECE2") SetGlobal("ASTRO2","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE3")~ THEN REPLY ~I found this piece in one of the war rooms.  It might be able to help you.~ DO ~TakePartyItem("PIECE3") SetGlobal("ASTRO3","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~PartyHasItem("PIECE4")~ THEN REPLY ~I removed this piece from an undead shadow within the Hand.  It looks like itï¿½s part of that machine.~ DO ~TakePartyItem("PIECE4") SetGlobal("ASTRO4","GLOBAL",1) IncrementGlobal("ASTROLAB","GLOBAL",1) AddexperienceParty(19500)~ GOTO 10
+  IF ~~ THEN REPLY ~Might I ask whatï¿½s wrong with *her?*~ GOTO 1
   IF ~~ THEN REPLY ~Who are you?~ GOTO 3
-  IF ~~ THEN REPLY ~I have intruded, forgive me.  I’ll come back later.~ EXIT
+  IF ~~ THEN REPLY ~I have intruded, forgive me.  Iï¿½ll come back later.~ EXIT
 END
 
-IF ~Global("Astrolab","GLOBAL",4)
-Global("VP_Astrolabe_Fixed","GLOBAL",1)~ THEN BEGIN 9
-  SAY ~Look at her!  Isn’t she beautiful?  You have my eternal gratitude for helping me fix her.  May Corellon guide you.~
+IF ~Global("Astrolab","GLOBAL",4) Global("VP_Astrolabe_Fixed","GLOBAL",1)~ THEN BEGIN 9
+  SAY ~Look at her!  Isnï¿½t she beautiful?  You have my eternal gratitude for helping me fix her.  May Corellon guide you.~
   IF ~~ THEN REPLY ~A moment Geralith, I have more questions about this astrolabe of yours.~ GOTO 11
   IF ~~ THEN REPLY ~I have helped you fix her now maybe you can help me.~ GOTO 12
   IF ~~ THEN REPLY ~Yes she is beautiful, more so than you can imagine, I need yours and her help Geralith.~ GOTO 13
@@ -172,30 +107,30 @@ END
 IF ~~ THEN BEGIN 14
   SAY ~That is what I built her for and Larrel seemed well pleased with her performance, but I have no idea what he discovered during his research. You would need to speak with Larrel himself. Now if that is all I must tend my machine.~
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17A
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17A
 END
 
 IF ~~ THEN BEGIN 15
   SAY ~Very little I am afraid. I built this beautiful machine and I was her keeper, but all the research done by Larrel and his wizards was kept among themselves. To learn more you will have to speak with Larrel himself.~
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17A
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17A
 END
 
 IF ~~ THEN BEGIN 16
   SAY ~Well, she was built to study time and space but as to whether she can be used to travel I have never given it a thought. It is an intriguing idea I must say, but I am puzzled as to why you should need to ask such a question? You should probably speak with Larrel, he may have answers for you.~
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",0)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~Thank you Geralith, I will. Farewell.~ GOTO 17A
-  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you don’t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
+  IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~What sort of a builder are you when you donï¿½t even know what your creation is capable of? Bah, perhaps the crazed wizard can tell me more!~ GOTO 17A
   IF ~Global("VP_Mute_Hrothgar","LOCALS",1)~ THEN REPLY ~I have other questions for Larrel, I only  hope he is of a mind to give me answers. Farewell Geralith.~ GOTO 17A
 END
 
@@ -213,12 +148,9 @@ IF ~~ THEN BEGIN 18
   IF ~Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Larrel, actually, we need to re-supply before we can continue our journey. Could you take us to Kuldahar instead?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ EXTERN ~HROTHJ~ 238
 END
 
-IF ~Global("Astrolab","GLOBAL",4)
-Global("VP_Astrolabe_Fixed","GLOBAL",0)
-Global("VP_Larrel_May_Talk","GLOBAL",0)~ THEN BEGIN 19
-  SAY ~Thank you very much for helping me fix her. She is in order now. Isn’t she beautiful?~
-  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Fixed","GLOBAL",1)
-SetGlobal("VP_Larrel_May_Talk","GLOBAL",1)~ EXIT
+IF ~Global("Astrolab","GLOBAL",4) Global("VP_Astrolabe_Fixed","GLOBAL",0) Global("VP_Larrel_May_Talk","GLOBAL",0)~ THEN BEGIN 19
+  SAY ~Thank you very much for helping me fix her. She is in order now. Isnï¿½t she beautiful?~
+  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Fixed","GLOBAL",1) SetGlobal("VP_Larrel_May_Talk","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 17A

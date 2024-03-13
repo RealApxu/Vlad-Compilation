@@ -33,22 +33,12 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~In this case, you know too much and your life is forfeit. Come, my friends. It seems that the Twisted Rune shall have some amusement today.~
-  IF ~~ THEN DO ~CreateVisualEffect("SPHEALIN",[962.554])
-Wait(1)
-CreateVisualEffect("SPFLSRIN",[962.554])
-JumpToPoint([532.744])
-SetGlobal("ShangalarMove","AR1008",1)
-~ EXIT
+  IF ~~ THEN DO ~CreateVisualEffect("SPHEALIN",[962.554]) Wait(1) CreateVisualEffect("SPFLSRIN",[962.554]) JumpToPoint([532.744]) SetGlobal("ShangalarMove","AR1008",1) ~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~As you like. Come friends. It seems that the Twisted Rune shall have a bit of amusement today.~
-  IF ~~ THEN DO ~CreateVisualEffect("SPHEALIN",[962.554])
-Wait(1)
-CreateVisualEffect("SPFLSRIN",[962.554])
-JumpToPoint([532.744])
-SetGlobal("ShangalarMove","AR1008",1)
-~ EXIT
+  IF ~~ THEN DO ~CreateVisualEffect("SPHEALIN",[962.554]) Wait(1) CreateVisualEffect("SPFLSRIN",[962.554]) JumpToPoint([532.744]) SetGlobal("ShangalarMove","AR1008",1) ~ EXIT
 END
 
 IF ~~ THEN BEGIN 7

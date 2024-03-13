@@ -25,7 +25,7 @@ Dead("Nalia")
 END
 
 EXTEND_BOTTOM KPCAPT01 49
-	  IF ~Global("SorcererAratArrows","LOCALS",1)~ THEN EXIT
+      IF ~Global("SorcererAratArrows","LOCALS",1)~ THEN EXIT
 END
 
 REPLACE_STATE_TRIGGER KPCAPT01 50

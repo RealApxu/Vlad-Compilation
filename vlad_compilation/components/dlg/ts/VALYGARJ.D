@@ -1,10 +1,6 @@
 APPEND ~VALYGARJ~
 
-IF ~Global("SPRITE_IS_DEADKiotsi","GLOBAL",1)
-Global("Kiotsi_Dead","GLOBAL",1)
-!Global("LavokDead","GLOBAL",1)
-!Global("ValygarSeesOrb","GLOBAL",1)
-Global("VP_OnIsland","GLOBAL",1)~ THEN BEGIN TS123
+IF ~Global("SPRITE_IS_DEADKiotsi","GLOBAL",1) Global("Kiotsi_Dead","GLOBAL",1) !Global("LavokDead","GLOBAL",1) !Global("ValygarSeesOrb","GLOBAL",1) Global("VP_OnIsland","GLOBAL",1)~ THEN BEGIN TS123
   SAY ~Something about this place reminds me of my family... Undead mages, twisted honor. I expect my mother to appear every minute dragging my zombied father along... Did I tell you I had to kill them both to stop my mother's madness? Still gives me creeps. Let's be done quickly and be out of here.~
   IF ~~ THEN DO ~SetGlobal("Kiotsi_Dead","GLOBAL",2)~ EXIT
 END
@@ -22,15 +18,7 @@ IF ~~ THEN BEGIN TS126
   IF ~~ THEN EXTERN ~BODHIAMB~ TS21
 END
 
-IF ~GlobalGT("LoveTalk","LOCALS",4)
-GlobalLT("LoveTalk","LOCALS",22)
-!Global("ValygarSeesOrb","GLOBAL",1)
-!Global("LavokDead","GLOBAL",1)
-!Global("Kiotsi_Dead","GLOBAL",1)
-Global("ValygarMatch","GLOBAL",1)
-OR(2)
-Global("ValygarRomanceActive","GLOBAL",1)
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS128
+IF ~GlobalGT("LoveTalk","LOCALS",4) GlobalLT("LoveTalk","LOCALS",22) !Global("ValygarSeesOrb","GLOBAL",1) !Global("LavokDead","GLOBAL",1) !Global("Kiotsi_Dead","GLOBAL",1) Global("ValygarMatch","GLOBAL",1) OR(2) Global("ValygarRomanceActive","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS128
   SAY ~Your eyes stop on Valygar. "It is a rare sight," you think suddenly, since the ranger spends the most of his  time scouting ahead of the party or guarding the flanks or watching the rear... or one of those endless things rangers do and which all by some reason or another require them to disappear from view. May be you should seize this opportunity to interact with him?~
   IF ~~ THEN REPLY ~You try to sneak up on Valygar from behind and cover his eyes with your palms...~ GOTO TS129
   IF ~~ THEN REPLY ~"Valygar, how are you faring?"~ GOTO TS130
@@ -46,46 +34,22 @@ END
 IF ~~ THEN BEGIN TS127
   SAY ~No, do not waste your words. Perhaps not all magic is evil, <CHARNAME>. But Irenicus is worse than anything Lavok ever was, I am sure of it. I would ask you to stay here in safety and wait until I return with the head of the mad mage... But I know, that I'd have to tie you up to keep you out of this battle. So I will not suggest it. I accept the same courtesy of you. We will fight for your soul, <CHARNAME> side by side. I am ready to die for your cause if need be. Besides, sending yet another wizard to Abyss is a pleasure, not labor for Valygar Corthala. Let us go.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~PLAYER1~ 41
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
+  IF ~InParty("Anomen") !Dead("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") !Dead("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") !Dead("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") !Dead("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Dead("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Dead("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Dead("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Dead("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~PLAYER1~ 41
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
 END
 
 IF ~~ THEN BEGIN TS129
@@ -133,15 +97,7 @@ IF ~~ THEN BEGIN TS137
   IF ~~ THEN EXIT
 END
 
-IF ~GlobalGT("LoveTalk","LOCALS",22)
-GlobalLT("LoveTalk","LOCALS",36)
-!Global("ValygarSeesOrb","GLOBAL",1)
-!Global("LavokDead","GLOBAL",1)
-!Global("Kiotsi_Dead","GLOBAL",1)
-Global("ValygarMatch","GLOBAL",1)
-OR(2)
-Global("ValygarRomanceActive","GLOBAL",1)
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS138
+IF ~GlobalGT("LoveTalk","LOCALS",22) GlobalLT("LoveTalk","LOCALS",36) !Global("ValygarSeesOrb","GLOBAL",1) !Global("LavokDead","GLOBAL",1) !Global("Kiotsi_Dead","GLOBAL",1) Global("ValygarMatch","GLOBAL",1) OR(2) Global("ValygarRomanceActive","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS138
   SAY ~Before you can help it your mind wanders away from the problems of the day and you think about Valygar. You remember him sitting by your feet near a campfire or the way he seems never to loose your sight in battle, ready to rush to your side at any moment. Sometimes you even suspect that he might be in love with you. Though you did not mean to, you say his name out loud. Presently, he turns towards you: "<CHARNAME>?"~
   IF ~~ THEN REPLY ~"I was thinking about you..."~ GOTO TS139
   IF ~~ THEN REPLY ~"Ahem... it was nothing important, really... "~ GOTO TS140
@@ -165,7 +121,7 @@ IF ~~ THEN BEGIN TS140
 END
 
 IF ~~ THEN BEGIN TS141
-  SAY ~"Of course". When you are finished drinking he leans towards you, and kisses a drop off your cheek: "No need to waste the sweet water, <CHARNAME>". ~
+  SAY ~"Of course". When you are finished drinking he leans towards you, and kisses a drop off your cheek: "No need to waste the sweet water, <CHARNAME>".~
   IF ~~ THEN EXIT
 END
 
@@ -199,15 +155,7 @@ IF ~~ THEN BEGIN TS147
   IF ~~ THEN EXIT
 END
 
-IF ~GlobalGT("LoveTalk","LOCALS",36)
-GlobalLT("LoveTalk","LOCALS",50)
-!Global("ValygarSeesOrb","GLOBAL",1)
-!Global("LavokDead","GLOBAL",1)
-!Global("Kiotsi_Dead","GLOBAL",1)
-Global("ValygarMatch","GLOBAL",1)
-OR(2)
-Global("ValygarRomanceActive","GLOBAL",1)
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS148
+IF ~GlobalGT("LoveTalk","LOCALS",36) GlobalLT("LoveTalk","LOCALS",50) !Global("ValygarSeesOrb","GLOBAL",1) !Global("LavokDead","GLOBAL",1) !Global("Kiotsi_Dead","GLOBAL",1) Global("ValygarMatch","GLOBAL",1) OR(2) Global("ValygarRomanceActive","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS148
   SAY ~Sometimes people mask their feelings so well or imagine non-existent obstacles... You picked up a daisy another day and you plucked away its petals: "He loves me, he loves me not..." until only one is left.  You wonder if daisies know anything about grim rangers.~
   IF ~~ THEN REPLY ~"Valygar, I have a daisy here and it is her expert opinion that you are in love with me."~ GOTO TS149
   IF ~~ THEN REPLY ~"Do you think that flowers can lie, Valygar?"~ GOTO TS150
@@ -230,7 +178,7 @@ IF ~~ THEN BEGIN TS150
 END
 
 IF ~~ THEN BEGIN TS151
-  SAY ~Valygar takes your hand and sighs:  "I thought you can use a bit of gentleness m'lady. The destiny is too rough on you." ~
+  SAY ~Valygar takes your hand and sighs:  "I thought you can use a bit of gentleness m'lady. The destiny is too rough on you."~
   IF ~~ THEN EXIT
 END
 

@@ -29,4 +29,5 @@ IF ~~ THEN BEGIN TS73
   SAY ~There is nothing greater than love, Valygar.~
   IF ~~ THEN EXTERN ~BVALYG25~ TS117
 END
+
 END

@@ -61,14 +61,12 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~If that is your final word, I will thank you again for my rescue and return to the inn to assure Samuel that I am safe but I will not remain there for long. Goodbye to you, <CHARNAME>.~ [leina_07]
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",10)
-EscapeAreaMove("AR0509",313,437,14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",10) EscapeAreaMove("AR0509",313,437,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
   SAY ~It gives me great comfort to hear you say this. Please, <CHARNAME>, accompany me to the inn so that I may collect my things and we will leave this place together.~ [leina_08]
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",11)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",11) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
@@ -80,14 +78,12 @@ END
 
 IF ~~ THEN BEGIN 12
   SAY ~If that is your final word, I will thank you again for my rescue and return to the Five Flagons Inn, but I will not remain there for long. Goodbye to you, <CHARNAME>.~ [leina_10]
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",12)
-EscapeAreaMove("AR0509",313,437,14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",12) EscapeAreaMove("AR0509",313,437,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN 13
   SAY ~It gives me great comfort to hear you say this. Please, <CHARNAME>, accompany me to the Five Flagons Inn, so that I may collect my things and we will leave this place together.~ [leina_08]
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",13)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",13) JoinParty()~ EXIT
 END
 
 IF ~Global("VP_ResqueLeina","GLOBAL",10)~ THEN BEGIN 14

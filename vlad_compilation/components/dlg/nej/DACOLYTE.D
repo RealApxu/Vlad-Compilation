@@ -1,7 +1,6 @@
 BEGIN ~DACOLYTE~
 
-IF ~NumberOfTimesTalkedTo(0)
-~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~Defilers!  Again you profane this temple with your murderous presence!~
   IF ~~ THEN REPLY ~There must be some mistake... we've never set foot in this temple before now.~ GOTO 2
   IF ~~ THEN REPLY ~Calm yourself, friend.  We mean you no harm.  We've come from the beleaguered town of Kuldahar on a mission of great importance.~ GOTO 1

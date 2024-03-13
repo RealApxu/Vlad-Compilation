@@ -12,6 +12,5 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~I have no choice but to force you to give me your heart and your soul.~
-  IF ~~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",4)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",4) Enemy()~ EXIT
 END

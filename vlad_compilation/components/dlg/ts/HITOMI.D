@@ -1,11 +1,8 @@
 BEGIN ~HITOMI~ 74773
 
-IF ~See("Yoshimo")
-Global("Hitomi_Meet","GLOBAL",0)
-~ THEN BEGIN 0
+IF ~See("Yoshimo") Global("Hitomi_Meet","GLOBAL",0) ~ THEN BEGIN 0
   SAY ~You have come for my daughter, Yoshimo Hashimoto...~
-  IF ~!Dead("Najoki")
-!Global("TT_Evil_Path","GLOBAL",2)~ THEN REPLY ~Sir, I am afraid we have terrible misunderstanding here... See, your wife suggested that if Yoshimo is allowed to speak to Kachiko, all of us, Nakanishi, and Hashimoto... we can get away...~ DO ~SetGlobal("Hitomi_Meet","GLOBAL",1)~ GOTO 1
+  IF ~!Dead("Najoki") !Global("TT_Evil_Path","GLOBAL",2)~ THEN REPLY ~Sir, I am afraid we have terrible misunderstanding here... See, your wife suggested that if Yoshimo is allowed to speak to Kachiko, all of us, Nakanishi, and Hashimoto... we can get away...~ DO ~SetGlobal("Hitomi_Meet","GLOBAL",1)~ GOTO 1
   IF ~~ THEN REPLY ~I did not come here to talk. I do Hashimoto's bidding, which is to end your sorry lives!~ DO ~SetGlobal("Hitomi_Meet","GLOBAL",1)~ GOTO 3
 END
 
@@ -24,86 +21,44 @@ IF ~~ THEN BEGIN 3
   IF ~~ THEN EXTERN ~YOSHJ~ TS197
 END
 
-IF ~Global("Player_Against_Michio","GLOBAL",0)
-Global("Player_Against_Momoko","GLOBAL",3)
-Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 4
+IF ~Global("Player_Against_Michio","GLOBAL",0) Global("Player_Against_Momoko","GLOBAL",3) Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 4
   SAY ~I see that Momoko proved the weaker... Who should stand against my elder son, Michio?~
-  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut11")~ EXIT
-  IF ~InParty(Player2)
-!StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut12")~ EXIT
-  IF ~InParty(Player3)
-!StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut13")~ EXIT
-  IF ~InParty(Player4)
-!StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut14")~ EXIT
-  IF ~InParty(Player5)
-!StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut15")~ EXIT
-  IF ~InParty(Player6)
-!StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut16")~ EXIT
+  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut11")~ EXIT
+  IF ~InParty(Player2) !StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode() StartCutScene("TTcut12")~ EXIT
+  IF ~InParty(Player3) !StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode() StartCutScene("TTcut13")~ EXIT
+  IF ~InParty(Player4) !StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut14")~ EXIT
+  IF ~InParty(Player5) !StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode() StartCutScene("TTcut15")~ EXIT
+  IF ~InParty(Player6) !StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode() StartCutScene("TTcut16")~ EXIT
   IF ~~ THEN REPLY ~I think we need a short break.~ EXIT
 END
 
-IF ~Global("Player_Against_Michio","GLOBAL",0)
-Global("Player_Against_Momoko","GLOBAL",2)
-Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 5
+IF ~Global("Player_Against_Michio","GLOBAL",0) Global("Player_Against_Momoko","GLOBAL",2) Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 5
   SAY ~The battle is over. Momoko stands undefeated. Is there another who would try their skill against my son?~
-  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut01")~ EXIT
-  IF ~InParty(Player2)
-!StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut02")~ EXIT
-  IF ~InParty(Player3)
-!StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut03")~ EXIT
-  IF ~InParty(Player4)
-!StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut04")~ EXIT
-  IF ~InParty(Player5)
-!StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut05")~ EXIT
-  IF ~InParty(Player6)
-!StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut06")~ EXIT
+  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut01")~ EXIT
+  IF ~InParty(Player2) !StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode() StartCutScene("TTcut02")~ EXIT
+  IF ~InParty(Player3) !StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode() StartCutScene("TTcut03")~ EXIT
+  IF ~InParty(Player4) !StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut04")~ EXIT
+  IF ~InParty(Player5) !StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode() StartCutScene("TTcut05")~ EXIT
+  IF ~InParty(Player6) !StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode() StartCutScene("TTcut06")~ EXIT
   IF ~~ THEN REPLY ~No, I think we will cut our losses this day. ~ GOTO 9
   IF ~~ THEN REPLY ~I think we need a short break.~ EXIT
 END
 
-IF ~Global("Player_Against_Michio","GLOBAL",3)
-Global("Player_Against_Momoko","GLOBAL",3)
-Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 6
+IF ~Global("Player_Against_Michio","GLOBAL",3) Global("Player_Against_Momoko","GLOBAL",3) Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 6
   SAY ~I stand alone now between you and my daughter. She is still alive. I sense the presence of her soul...~
-  IF ~CheckStatGT(LastTalkedToBy(Myself),14,WIS)
-!Global("TT_Evil_Path","GLOBAL",2)~ THEN REPLY ~Hitomi, please, trust what your wife said. May be her words are true? May be it is our only chance?  Besides, we can always fight after we try to bring Kachiko back to life. ~ GOTO 11
+  IF ~CheckStatGT(LastTalkedToBy(Myself),14,WIS) !Global("TT_Evil_Path","GLOBAL",2)~ THEN REPLY ~Hitomi, please, trust what your wife said. May be her words are true? May be it is our only chance?  Besides, we can always fight after we try to bring Kachiko back to life. ~ GOTO 11
   IF ~~ THEN REPLY ~Nothing will stand in my way! Be prepared to cower and flee!~ GOTO 12
   IF ~~ THEN REPLY ~Do you still want to fight against us?~ GOTO 13
 END
 
-IF ~Global("Player_Against_Michio","GLOBAL",2)
-Global("Player_Against_Momoko","GLOBAL",3)
-Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 7
+IF ~Global("Player_Against_Michio","GLOBAL",2) Global("Player_Against_Momoko","GLOBAL",3) Global("Nakanishi_Duel","GLOBAL",0)~ THEN BEGIN 7
   SAY ~The battle is over. Michio stands undefeated. Is there another who would try their skill against my elder son?~
-  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut11")~ EXIT
-  IF ~InParty(Player2)
-!StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut12")~ EXIT
-  IF ~InParty(Player3)
-!StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut13")~ EXIT
-  IF ~InParty(Player4)
-!StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut14")~ EXIT
-  IF ~InParty(Player5)
-!StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut15")~ EXIT
-  IF ~InParty(Player6)
-!StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut16")~ EXIT
+  IF ~!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut11")~ EXIT
+  IF ~InParty(Player2) !StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode() StartCutScene("TTcut12")~ EXIT
+  IF ~InParty(Player3) !StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode() StartCutScene("TTcut13")~ EXIT
+  IF ~InParty(Player4) !StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut14")~ EXIT
+  IF ~InParty(Player5) !StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode() StartCutScene("TTcut15")~ EXIT
+  IF ~InParty(Player6) !StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode() StartCutScene("TTcut16")~ EXIT
   IF ~~ THEN REPLY ~No, I'm not ready yet.~ EXIT
   IF ~~ THEN REPLY ~No, I think we will cut our losses this day. ~ GOTO 9
 END
@@ -125,9 +80,7 @@ END
 
 IF ~~ THEN BEGIN 11
   SAY ~May be Najoki is right... I can see that you are stronger than me, and I shall not dishonor myself anymore. I love my daughter, but I can do nothing to save her. I am a dead man. My soul cannot find a place outside this damned island. And I have no choice but to trust you... Possibly, you are my last chance... Here is my wardstone. Take it, save my daughter, and find your way outside the island.  Now, I beg you to stand back and let me commit my last ritual suicide... Last... (*you don't know why but you feel a great sorrow about this man when you see he smiles*)~
-  IF ~~ THEN DO ~GiveItem("ExitWard",Player1)
-StartCutSceneMode()
-StartCutScene("TTcutHit")~ EXIT
+  IF ~~ THEN DO ~GiveItem("ExitWard",Player1) StartCutSceneMode() StartCutScene("TTcutHit")~ EXIT
 END
 
 IF ~~ THEN BEGIN 12
@@ -138,17 +91,15 @@ END
 IF ~~ THEN BEGIN 13
   SAY ~I can see that you are stronger than me, and I shall not dishonor myself by loosing a battle to a foreigner. Now, I beg you to stand back and let me commit a ritual suicide.~
   IF ~~ THEN REPLY ~My custom condemns suicide as a sin. Fight and die with honor in battle!~ GOTO 14
-  IF ~~ THEN REPLY ~*You step back and keep quiet while Hitomi commits harakiri*~ DO ~StartCutSceneMode()
-StartCutScene("TTcutHit")~ EXIT
+  IF ~~ THEN REPLY ~*You step back and keep quiet while Hitomi commits harakiri*~ DO ~StartCutSceneMode() StartCutScene("TTcutHit")~ EXIT
 END
 
 IF ~~ THEN BEGIN 14
-  SAY ~I shall honor your custom, as you just have honored mine in agreeing to the duels. So be it, let's fight to your death. ~
+  SAY ~I shall honor your custom, as you just have honored mine in agreeing to the duels. So be it, let's fight to your death.~
   IF ~~ THEN DO ~SetGlobal("Hitomi_Attacked","GLOBAL",1)~ EXIT
 END
 
-IF ~!See("Yoshimo")
-Global("Hitomi_Meet","GLOBAL",0)~ THEN BEGIN 15
+IF ~!See("Yoshimo") Global("Hitomi_Meet","GLOBAL",0)~ THEN BEGIN 15
   SAY ~Until you bring Yoshimo Hashimoto to me, I have nothing to say to you.~
   IF ~~ THEN EXIT
 END

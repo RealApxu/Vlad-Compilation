@@ -105,5 +105,3 @@ IF ~~ THEN BEGIN 17
   SAY ~So good luck in meeting Vulova and finding the girl.~
   IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",8)~ EXIT
 END
-
-   

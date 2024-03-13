@@ -1,9 +1,6 @@
 BEGIN ~Govan3~
 
-IF ~NumTimesTalkedTo(0)
-OR(2)
-GlobalGT("VP_Govan_Bribes_Me","GLOBAL",2)
-GlobalGT("VP_Killian_Bribes_Me","GLOBAL",1)~ THEN BEGIN 0
+IF ~NumTimesTalkedTo(0) OR(2) GlobalGT("VP_Govan_Bribes_Me","GLOBAL",2) GlobalGT("VP_Killian_Bribes_Me","GLOBAL",1)~ THEN BEGIN 0
   SAY ~What... the... <CHARNAME>!~
   IF ~~ THEN REPLY ~Hello, Duvaine. Do shut your mouth, it is not a very dignified look.~ GOTO 1
   IF ~~ THEN REPLY ~Well, Duvaine, I half expected you to be gone. You must have a lot of confidence in your assassins abilities to risk staying here.~ GOTO 1
@@ -54,24 +51,14 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~I can assure you my guards here are better trained than a group of unruly assassins, let me demonstrate. Men...~
-  IF ~~ THEN DO ~CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-Shout(89)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) Shout(89) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~You need not concern yourself, father. I can handle this, a business venture gone wrong is that not right, <CHARNAME>?~
-  IF ~~ THEN REPLY ~You are right there, Duvaine. How about you explain to your father just how wrong it did go?~ DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutL01")~ EXIT
-  IF ~~ THEN REPLY ~The first truth to come out of that lying mouth of yours, Duvaine. You're going to tell your father the truth of the son he raised or shall I?~DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutL01")~ EXIT
-  IF ~~ THEN REPLY ~So, Duvaine, playing happy families are we? Hold, someone is missing, now where is the blushing bride to be? Maybe your parents would like to hear how you courted and won her heart?~DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutL01")~ EXIT
+  IF ~~ THEN REPLY ~You are right there, Duvaine. How about you explain to your father just how wrong it did go?~ DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutL01")~ EXIT
+  IF ~~ THEN REPLY ~The first truth to come out of that lying mouth of yours, Duvaine. You're going to tell your father the truth of the son he raised or shall I?~DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutL01")~ EXIT
+  IF ~~ THEN REPLY ~So, Duvaine, playing happy families are we? Hold, someone is missing, now where is the blushing bride to be? Maybe your parents would like to hear how you courted and won her heart?~DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutL01")~ EXIT
 END
 
 IF ~~ THEN BEGIN 6

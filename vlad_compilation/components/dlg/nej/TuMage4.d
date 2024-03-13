@@ -10,10 +10,7 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~I heard the noise you made acquiring Graeme's wares, in fact, the whole of Halruaa probably heard you. What you took from him is mine.~
-  IF ~Global("VP_Graeme_Password","GLOBAL",1)
-OR(2)
-CheckStatGT(Player1,14,WIS)
-CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Answer me this then, mage... *the beast howls at night*...~ GOTO 2
+  IF ~Global("VP_Graeme_Password","GLOBAL",1) OR(2) CheckStatGT(Player1,14,WIS) CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Answer me this then, mage... *the beast howls at night*...~ GOTO 2
   IF ~~ THEN REPLY ~How is it yours if I took it from him?~ GOTO 3
   IF ~~ THEN REPLY ~No, sorry it is not yours as you never actually paid, Graeme I think you called him. You were going to pay him, yes?~ GOTO 3
   IF ~~ THEN REPLY ~Spoils of war, my friend. What was this Graeme's is now mine.~ GOTO 6
@@ -36,9 +33,7 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~Now that is what I deem being sensible. I trust the gold is sufficient enough to make sure word of this does not reach the ears of certain mages above us!~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT09")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT09")~ EXIT
 END
 
 IF ~~ THEN BEGIN 5

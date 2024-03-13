@@ -170,7 +170,7 @@ END
 IF ~~ THEN BEGIN NEJ130
   SAY ~Minsc can feel Boo's whiskers twitching as he thinks of the words Leina will sing when she sings of the deeds of Minsc and Boo kicking all the butts of evil.~
   IF ~True()~ THEN EXTERN ~BLEINA~ 32
-  IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ 0
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ 0
 END
+
 END

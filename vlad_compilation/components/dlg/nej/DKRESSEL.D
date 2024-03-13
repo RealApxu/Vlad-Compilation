@@ -8,9 +8,7 @@ IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
   IF ~~ THEN REPLY ~I have no time for this banter, farewell.~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)
-GlobalLT("Kress_Quest","GLOBAL",3)
-~ THEN BEGIN 1
+IF ~NumTimesTalkedToGT(0) GlobalLT("Kress_Quest","GLOBAL",3) ~ THEN BEGIN 1
   SAY ~Once more you grace me with your presence. Why?~ [KRES_02]
   IF ~~ THEN REPLY ~I would know who you are, spirit.~ GOTO 3
   IF ~~ THEN REPLY ~I seek the evil that plagues Kuldahar.~ GOTO 14
@@ -33,8 +31,7 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~Hmn. Why indeed... That is a tale long in the telling. Would you hear it?~ [KRES_05]
-  IF ~~ THEN REPLY ~Yes, I am listening.~ DO ~SetGlobal("Kress_Tale","GLOBAL",1)
-~ GOTO 5
+  IF ~~ THEN REPLY ~Yes, I am listening.~ DO ~SetGlobal("Kress_Tale","GLOBAL",1) ~ GOTO 5
   IF ~~ THEN REPLY ~No, I think not. Farewell.~ EXIT
 END
 
@@ -86,10 +83,8 @@ END
 
 IF ~~ THEN BEGIN 14
   SAY ~If it is evil that you seek, then you need look no further. I stand here before you. However, I am not the one who plagues Kuldahar. For that evil, you must look elsewhere.~ [KRES_15]
-  IF ~GlobalGT("Kress_Tale","GLOBAL",0)
-!InParty("Minsc")~ THEN REPLY ~Having heard of your past deeds, why should I believe you to be innocent?~ GOTO 15
-  IF ~Global("Kress_Tale","GLOBAL",0)
-!InParty("Minsc")~ THEN REPLY ~Why should I believe you to be innocent, spirit?~ GOTO 15
+  IF ~GlobalGT("Kress_Tale","GLOBAL",0) !InParty("Minsc")~ THEN REPLY ~Having heard of your past deeds, why should I believe you to be innocent?~ GOTO 15
+  IF ~Global("Kress_Tale","GLOBAL",0) !InParty("Minsc")~ THEN REPLY ~Why should I believe you to be innocent, spirit?~ GOTO 15
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ280
 END
 
@@ -106,8 +101,7 @@ END
 IF ~~ THEN BEGIN 17
   SAY ~Who indeed... I can answer your question, but I require a boon first. Perform a task for me, and I will answer you.~ [KRES_18]
   IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",0)~ THEN REPLY ~What task, spirit?~ GOTO 18
-  IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",1)~ THEN REPLY ~What task, spirit?~ DO ~SetGlobal("Kress_Quest","GLOBAL",4)
-AddexperienceParty(7915)~ GOTO 34
+  IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",1)~ THEN REPLY ~What task, spirit?~ DO ~SetGlobal("Kress_Quest","GLOBAL",4) AddexperienceParty(7915)~ GOTO 34
 END
 
 IF ~~ THEN BEGIN 18
@@ -174,32 +168,23 @@ IF ~Global("Kress_Quest","GLOBAL",2)~ THEN BEGIN 27
   IF ~~ THEN REPLY ~Have you reconsidered? Will you tell me who is behind the evil that plagues Kuldahar?~ GOTO 41
 END
 
-IF ~NumTimesTalkedToGT(0)
-Global("Kress_Quest","GLOBAL",3)~ THEN BEGIN 28
+IF ~NumTimesTalkedToGT(0) Global("Kress_Quest","GLOBAL",3)~ THEN BEGIN 28
   SAY ~You have returned. You have performed the task that I set before you?~ [KRES_29]
-  IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",1)~ THEN REPLY ~Yes, the priestess is dead.~ DO ~SetGlobal("Kress_Quest","GLOBAL",4)
-EraseJournalEntry(%Vale of Shadows.
+  IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",1)~ THEN REPLY ~Yes, the priestess is dead.~ DO ~SetGlobal("Kress_Quest","GLOBAL",4) EraseJournalEntry(%Vale of Shadows.
 
-We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%)
-EraseJournalEntry(%Vale of Shadows.
+We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%) EraseJournalEntry(%Vale of Shadows.
 
-The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%)
-EraseJournalEntry(%Vale of Shadows.
+The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%) EraseJournalEntry(%Vale of Shadows.
 
-We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%)
-AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
+We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%) AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
 
 We killed Lysan, the Auril priestess, and returned to Kresselack. Unfortunately, all Kresselack could tell us was that neither he or nor anyone in the Vale of Shadows was responsible for the evil plaguing Kuldahar. It seems we will need to go back to Arundel and inform him of this. Perhaps he will have a clue as to what we should do next.~ GOTO 29
   IF ~Global("SPRITE_IS_DEADLYSAN","GLOBAL",0)~ THEN REPLY ~No, I have yet to find her.~ GOTO 31
@@ -220,9 +205,7 @@ IF ~~ THEN BEGIN 31
   IF ~~ THEN REPLY ~Farewell.~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)
-Global("Kress_Quest","GLOBAL",4)
-~ THEN BEGIN 32
+IF ~NumTimesTalkedToGT(0) Global("Kress_Quest","GLOBAL",4) ~ THEN BEGIN 32
   SAY ~You have done me a great service by removing the threat of the Aurilite priestess. For that, I am grateful.~ [KRES_33]
   IF ~~ THEN GOTO 33
 END
@@ -236,26 +219,19 @@ IF ~~ THEN BEGIN 34
   SAY ~I... Hmm. Interesting... It seems you've already slain Lysan. I sense her death at your hands. As a reward, you may take what you find in my sarcophagus.~ [KRES_35]
   IF ~~ THEN REPLY ~Then will you answer my question, spirit?~ DO ~EraseJournalEntry(%Vale of Shadows.
 
-We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%)
-EraseJournalEntry(%Vale of Shadows.
+We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%) EraseJournalEntry(%Vale of Shadows.
 
-The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%)
-EraseJournalEntry(%Vale of Shadows.
+The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%) EraseJournalEntry(%Vale of Shadows.
 
-We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%)
-AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
+We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%) AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
 
 We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar, but he knows who is... since we had already slain the Auril priestess that he wished dead, he was willing to share his knowledge with us. Unfortunately, all Kresselack could tell me was that neither he nor anyone in the Vale of Shadows was responsible for the evil plaguing Kuldahar. It seems we will need to go back to Arundel and inform him of this. Perhaps he will have a clue as to what we should do next.~ GOTO 35
   IF ~~ THEN REPLY ~Why was this... Lysan, of importance to you?~ GOTO 36
@@ -285,26 +261,19 @@ IF ~~ THEN BEGIN 39
   SAY ~I am certain that she was plotting a way to enter here and carry out the will of Auril. With her gone, I need not worry.~ [KRES_40]
   IF ~~ THEN REPLY ~Then will you answer my question, spirit?~ DO ~EraseJournalEntry(%Vale of Shadows.
 
-We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%)
-EraseJournalEntry(%Vale of Shadows.
+We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar... but he claims to know who is. In exchange for an answer, he asked a boon of our party: slay a priestess of Auril who has recently tried to enter his tomb and extinguish the warmth within. Only when she is dead would he give us the answer we seek.%) EraseJournalEntry(%Vale of Shadows.
 
-The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%)
-EraseJournalEntry(%Vale of Shadows.
+The spirit of Kresselack asked us to slay an Aurilite priestess whom he thinks intends to destroy his tomb. We have agreed to find this priestess and deal with her but not necessarily slay her. In any case, Kresselack says that he senses her presence within the Vale of Shadows. We should begin our search there.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with Arundel, the Archdruid of Kuldahar. The old man explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. We have agreed to help discover the source of the evil by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%)
-EraseJournalEntry(%Vale of Shadows.
+We finally spoke with that tree-loving codger who calls himself the Archdruid of Kuldahar. The old druid explained the reason why he sent for help from Easthaven. It seems that there are evil forces stirring in the mountains nearby. He believes this evil is somehow affecting the weather in the pass, causing the ring of warmth that centers around Kuldahar's Great Oak to slowly shrink. He also believes that the evil is behind the numerous monster sightings and the mysterious abductions about town. Reluctantly, we have agreed to help by investigating a nearby vale. Apparently, there have been rumors of undead stirring within some ancient crypts located within this "Vale of Shadows."  We are to travel to the Vale, discover if there is a connection between the undead and the disturbances in Kuldahar, then return to Arundel with whatever information we find.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. Once she revealed herself, we attacked her.%) EraseJournalEntry(%Vale of Shadows.
 
-We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%)
-EraseJournalEntry(%Vale of Shadows.
+We found the priestess of Auril that Kresselack spoke of, a woman named Lysan. She didn't welcome the intrusion, and she attacked us.%) EraseJournalEntry(%Vale of Shadows.
 
-We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%)
-AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
+We met the priestess of Auril, and recognized her as a barmaid from Kuldahar. Once she revealed herself, we attacked her.%) AddexperienceParty(16769)~ JOURNAL ~Vale of Shadows.
 
 We spoke with Kresselack's spirit, and he claims he is not responsible for the evil that plagues Kuldahar, but he knows who is... since we had already slain the Auril priestess that he wished dead, he was willing to share his knowledge with us. Unfortunately, all Kresselack could tell me was that neither he nor anyone in the Vale of Shadows was responsible for the evil plaguing Kuldahar. It seems we will need to go back to Arundel and inform him of this. Perhaps he will have a clue as to what we should do next.~ GOTO 35
 END

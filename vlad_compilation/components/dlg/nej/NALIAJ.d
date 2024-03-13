@@ -3,50 +3,28 @@ APPEND ~NALIAJ~
 IF ~~ THEN BEGIN NEJ321
   SAY ~I fail to see how visiting a ruin is helping the needy of Athkatla! Still I suppose there must needy people everywhere looking for aid, we may be of some help to someone on our journey to this Ulcaster.~
   IF ~True()~ THEN EXTERN ~HROTHJ~ 60
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko")
-!InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 12
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
 END
 
 IF ~~ THEN BEGIN NEJ322
   SAY ~A wizards academy. No matter that this one is in the past, I just never dreamt I would get to see such a place!~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
 END
 
 IF ~~ THEN BEGIN NEJ323
@@ -102,23 +80,15 @@ END
 
 IF ~~ THEN BEGIN NEJ333
   SAY ~Dead is dead! He will never come back so what does it matter?~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
-	IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
-	IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 70
-	IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 70
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
 END
 
 IF ~~ THEN BEGIN abjurer2
@@ -131,7 +101,7 @@ IF ~~ THEN BEGIN abjurer3
   SAY ~That's unfair! Let me remind you that you can't lose what you never had.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
-	
+
 IF ~~ THEN BEGIN abjurer4
   SAY ~You're very gracious, <CHARNAME>.~
   IF ~~ THEN EXTERN ~TUPHIN~ npcfail
@@ -171,23 +141,14 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~I... I cannot look at you Taffic without remembering that it was creatures such as you have become that helped the trolls burrow into my home and brought about the death of my father.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
- IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
- IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
+  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
 END
 
 IF ~~ THEN BEGIN vashon
@@ -200,7 +161,7 @@ IF ~~ THEN BEGIN vashon3
   SAY ~See at as you like. It was not an excuse, it was an apology for no reason other than me feeling badly over letting you down.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail
 END
-	
+
 IF ~~ THEN BEGIN vashon4
   SAY ~Still, a mage should always try to be prepared for the unknown element in any situation she must face. I will remember that in future.~
   IF ~~ THEN EXTERN ~TUVASHON~ npcfail

@@ -9,10 +9,8 @@ IF WEIGHT #-31 ~Global("ExpLoveTalk","LOCALS",2)~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~I understand... You are a very sensible person <CHARNAME>. I hope you will not fly too far away one day. ~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  SAY ~I understand... You are a very sensible person <CHARNAME>. I hope you will not fly too far away one day.~
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS154
@@ -23,22 +21,17 @@ END
 
 IF ~~ THEN BEGIN TS155
   SAY ~I hope you are serious. I can never tell it with you.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS156
   SAY ~Fine. Do what you want... it's got nothing to do with me.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS157
   SAY ~Really? You want all those things? But that's wonderful! Well, I mean, it's great that you know so well what you want.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",3) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-30 ~Global("ExpLoveTalk","LOCALS",4)~ THEN BEGIN TS158
@@ -58,23 +51,17 @@ END
 
 IF ~~ THEN BEGIN TS160
   SAY ~Say nothing then.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS161
   SAY ~I am not easily frightened, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS162
-  SAY ~You give me hope that one day there will be more to our lives than swords and spells... But... even now we need to go. ~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  SAY ~You give me hope that one day there will be more to our lives than swords and spells... But... even now we need to go.~
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",5) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",600) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS163
@@ -87,8 +74,7 @@ END
 
 IF ~~ THEN BEGIN TS164
   SAY ~I-I'm sorry, <CHARNAME>... I didn't mean to bother you. I'll talk to somebody else, instead.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF WEIGHT #-29 ~Global("ExpLoveTalk","LOCALS",6)~ THEN BEGIN TS165
@@ -115,8 +101,7 @@ END
 
 IF ~~ THEN BEGIN TS168
   SAY ~Oh... of course, <CHARNAME>. I didn't mean to bother you.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS169
@@ -133,16 +118,12 @@ END
 
 IF ~~ THEN BEGIN TS171
   SAY ~You are kind to say so, my lady. Thank you.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",2)
-SetGlobal("ExpLoveTalk","LOCALS",7)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",2) SetGlobal("ExpLoveTalk","LOCALS",7) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS172
   SAY ~As you wish. Let my cold silence be your companion, then.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS173
@@ -160,8 +141,7 @@ END
 
 IF ~~ THEN BEGIN TS175
   SAY ~Oh, well that's okay, then.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS176
@@ -194,8 +174,7 @@ END
 
 IF ~~ THEN BEGIN TS70
   SAY ~Oh... of course, <CHARNAME>. I didn't mean to bother you.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS71
@@ -214,9 +193,7 @@ END
 
 IF ~~ THEN BEGIN TS73
   SAY ~(*though being confused, he stays silent*)~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS74
@@ -240,34 +217,22 @@ END
 
 IF ~~ THEN BEGIN TS76
   SAY ~I should have known better than trying to impress a child who was brought up in Candlekeep Library... There was a time when I hated this poem also... may be I shall hate it again, who knows?~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS77
   SAY ~Good night to you, troublemaker.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",9) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200) RestParty()~ EXIT
 END
 
-IF WEIGHT #-27 ~Global("ExpLoveTalk","LOCALS",10)
-Global("ExpBvalygar3","LOCALS",0)~ THEN BEGIN TS16
+IF WEIGHT #-27 ~Global("ExpLoveTalk","LOCALS",10) Global("ExpBvalygar3","LOCALS",0)~ THEN BEGIN TS16
   SAY ~Something has been troubling me... may I talk to you?~ [VALY2504]
-  IF ~~ THEN REPLY ~Certainly, Valygar.  What's on your mind?~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1)
-SetGlobal("ExpLoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 18
-  IF ~~ THEN REPLY ~If you must.  Try to make it quick, though.~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1)
-SetGlobal("ExpLoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 18
-  IF ~~ THEN REPLY ~I'm not really in the mood to talk right now.~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1)
-SetGlobal("ExpLoveTalk","LOCALS",11)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 17
+  IF ~~ THEN REPLY ~Certainly, Valygar.  What's on your mind?~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1) SetGlobal("ExpLoveTalk","LOCALS",11) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 18
+  IF ~~ THEN REPLY ~If you must.  Try to make it quick, though.~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1) SetGlobal("ExpLoveTalk","LOCALS",11) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 18
+  IF ~~ THEN REPLY ~I'm not really in the mood to talk right now.~ DO ~SetGlobal("ExpBvalygar3","LOCALS",1) SetGlobal("ExpLoveTalk","LOCALS",11) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)~ GOTO 17
 END
 
-IF WEIGHT #-26 ~Global("ExpLoveTalk","LOCALS",10)
-!Global("ExpBvalygar3","LOCALS",0)~ THEN BEGIN TS82A
+IF WEIGHT #-26 ~Global("ExpLoveTalk","LOCALS",10) !Global("ExpBvalygar3","LOCALS",0)~ THEN BEGIN TS82A
   SAY ~Do you watch the stars often? You look dreamy. Which one attracted your attention?  The magnificent Correlian? The best place to see Correlian is from Evereska they say.  Or was it Auranamn, the swordsman of the sky?~
   IF ~~ THEN REPLY ~I do not know what you are talking about. I was just stretching my neck.~ GOTO TS83
   IF ~~ THEN REPLY ~Auranamn it was. He still guards the elves, and directs them to good, as he did when he sided with Correllon during the great battle with Gruumsh. His spirit will never die. May be he can protect me from my destiny?~ GOTO TS96
@@ -296,7 +261,7 @@ IF ~~ THEN BEGIN TS84
 END
 
 IF ~~ THEN BEGIN TS85
-  SAY ~Does it inconvenience you? ~
+  SAY ~Does it inconvenience you?~
   IF ~~ THEN REPLY ~Yes it does. It is a bit too... intimate for my liking. I think this talk is over.~ GOTO TS86
   IF ~~ THEN REPLY ~No, not at all. I just wanted to know if you knew.~ GOTO TS87
   IF ~~ THEN REPLY ~(*move closer and do not answer*)~ GOTO TS87
@@ -304,8 +269,7 @@ END
 
 IF ~~ THEN BEGIN TS86
   SAY ~Of course, nightingale. I am sorry... I was impatient. I will go now and leave you in peace.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS87
@@ -318,23 +282,17 @@ END
 
 IF ~~ THEN BEGIN TS88
   SAY ~Ohhhh.... Mmmmm......~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",13)
-RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("CUT34A")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",13) RealSetGlobalTimer("VP_ValygarRomance","GLOBAL",1200) ClearAllActions() StartCutSceneMode() StartCutScene("CUT34A")~ EXIT
 END
 
 IF ~~ THEN BEGIN TS89
   SAY ~Of course, nightingale. I am sorry... I was impatient. Sleep well.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS90
   SAY ~I will not. I am sorry.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS91
@@ -354,14 +312,12 @@ END
 
 IF ~~ THEN BEGIN TS93
   SAY ~Of course, nightingale. I am sorry... I was impatient. Sleep well.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS94
   SAY ~Fine, fine. Do not make a habit of teasing men. You are playing with fire.~
-  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS95
@@ -394,16 +350,12 @@ END
 
 IF ~~ THEN BEGIN TS99
   SAY ~Yes, of course.~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",15)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",15) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS100
   SAY ~Ohhhh.... Mmmmm......~
-  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",15)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("CUT34A")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ExpLoveTalk","LOCALS",15) ClearAllActions() StartCutSceneMode() StartCutScene("CUT34A")~ EXIT
 END
 
 IF ~~ THEN BEGIN TS101
@@ -451,13 +403,8 @@ END
 
 IF ~Global("VP_BExpValygar4","LOCALS",2)~ THEN BEGIN TS118
   SAY ~What is it, Sarevok?~
-  IF ~OR(3)
-Class(Player1,MAGE)
-Class(Player1,MAGE_ALL)
-Class(Player1,SORCERER)~ THEN DO ~SetGlobal("VP_BExpValygar4","LOCALS",3)~ EXTERN ~BSAREV25~ TS145
-  IF ~!Class(Player1,MAGE)
-!Class(Player1,MAGE_ALL)
-!Class(Player1,SORCERER)~ THEN DO ~SetGlobal("VP_BExpValygar4","LOCALS",3)~ EXTERN ~BSAREV25~ TS146
+  IF ~OR(3) Class(Player1,MAGE) Class(Player1,MAGE_ALL) Class(Player1,SORCERER)~ THEN DO ~SetGlobal("VP_BExpValygar4","LOCALS",3)~ EXTERN ~BSAREV25~ TS145
+  IF ~!Class(Player1,MAGE) !Class(Player1,MAGE_ALL) !Class(Player1,SORCERER)~ THEN DO ~SetGlobal("VP_BExpValygar4","LOCALS",3)~ EXTERN ~BSAREV25~ TS146
 END
 
 IF ~~ THEN BEGIN TS119
@@ -621,7 +568,7 @@ IF ~~ THEN BEGIN TS150
 END
 
 IF ~~ THEN BEGIN TS151
-  SAY ~If something goes wrong I know whom to blame, do not I? ~
+  SAY ~If something goes wrong I know whom to blame, do not I?~
   IF ~~ THEN EXTERN ~BKACHI25~ 23
 END
 
@@ -642,8 +589,7 @@ END
 
 IF ~~ THEN BEGIN TS181
   SAY ~(*laughs*) Of course milady. I erred. I shall not bother you and your lover any longer.~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS182
@@ -762,11 +708,9 @@ IF ~~ THEN BEGIN TS204
   IF ~~ THEN EXTERN ~BNALIA25~ TS62
 END
 
-IF ~Global("VP_BExpValygar1","LOCALS",2)
-Global("VP_Banter_Switch","LOCALS",1)~ THEN BEGIN TS102
+IF ~Global("VP_BExpValygar1","LOCALS",2) Global("VP_Banter_Switch","LOCALS",1)~ THEN BEGIN TS102
   SAY ~What's your opinion on marriage?~
-  IF ~~ THEN REPLY ~Marriage? I...~ DO ~SetGlobal("VP_BExpValygar1","LOCALS",3)
-SetGlobal("VP_Banter_Switch","LOCALS",0)~ EXTERN ~BIMOEN25~ TS112
+  IF ~~ THEN REPLY ~Marriage? I...~ DO ~SetGlobal("VP_BExpValygar1","LOCALS",3) SetGlobal("VP_Banter_Switch","LOCALS",0)~ EXTERN ~BIMOEN25~ TS112
 END
 
 IF ~~ THEN BEGIN TS103
@@ -784,11 +728,9 @@ IF ~~ THEN BEGIN TS105
   IF ~~ THEN EXIT
 END
 
-IF ~Global("VP_BExpValygar2","LOCALS",2)
-Global("VP_Banter_Switch","LOCALS",1)~ THEN BEGIN TS106
+IF ~Global("VP_BExpValygar2","LOCALS",2) Global("VP_Banter_Switch","LOCALS",1)~ THEN BEGIN TS106
   SAY ~Our latest exploits made me doubt that a large family is such a good thing after all... Look, your so-called father manifests himself even after his death by transforming <CHARNAME> into some kind of a monster. Maniacal half-siblings of yours do their best to drag your lives into Nine Hells or exterminate you, along with the half of the Sword Coast population for a good measure...~
-  IF ~~ THEN DO ~SetGlobal("VP_BExpValygar2","LOCALS",3)
-SetGlobal("VP_Banter_Switch","LOCALS",0)~ EXTERN ~BIMOEN25~ TS117
+  IF ~~ THEN DO ~SetGlobal("VP_BExpValygar2","LOCALS",3) SetGlobal("VP_Banter_Switch","LOCALS",0)~ EXTERN ~BIMOEN25~ TS117
 END
 
 IF ~~ THEN BEGIN TS107

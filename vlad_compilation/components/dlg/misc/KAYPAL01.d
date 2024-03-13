@@ -1,19 +1,12 @@
 REPLACE_STATE_TRIGGER KAYPAL01 0
-~NumTimesTalkedTo(0)
-OR(2)
-!InParty("Keldorn")
-Dead("Keldorn")~
+~NumTimesTalkedTo(0) OR(2) !InParty("Keldorn") Dead("Keldorn")~
 
 REPLACE_STATE_TRIGGER KAYPAL01 5
-~NumTimesTalkedTo(0)
-InParty("Keldorn")
-!Dead("Keldorn")~
+~NumTimesTalkedTo(0) InParty("Keldorn") !Dead("Keldorn")~
 
 ALTER_TRANS KAYPAL02 // file name
-BEGIN 28 END // state number (can be more than one)
-BEGIN 0 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
-  "TRIGGER" ~False()~
+BEGIN 28 END // state number (can be more than one) BEGIN 0 END // transition number (can be more than one) BEGIN // list of changes, see below for flags
+"TRIGGER" ~False()~
 END
 
 EXTEND_BOTTOM KAYPAL02 28
@@ -21,10 +14,8 @@ EXTEND_BOTTOM KAYPAL02 28
 END
 
 ALTER_TRANS KAYPAL01 // file name
-BEGIN 3 END // state number (can be more than one)
-BEGIN 0 1 2 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
-  "TRIGGER" ~False()~
+BEGIN 3 END // state number (can be more than one) BEGIN 0 1 2 END // transition number (can be more than one) BEGIN // list of changes, see below for flags
+"TRIGGER" ~False()~
 END
 
 EXTEND_BOTTOM KAYPAL01 3
@@ -35,11 +26,8 @@ APPEND ~KAYPAL01~
 
 IF ~~ THEN BEGIN A1
   SAY ~Did not Ryan Trawl send you to kill me and my comrades?~
-  IF ~OR(2)
-!InParty("Keldorn")
-Dead("Keldorn")~ THEN GOTO A2
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP1
+  IF ~OR(2) !InParty("Keldorn") Dead("Keldorn")~ THEN GOTO A2
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP1
 END
 
 IF ~~ THEN BEGIN A2
@@ -61,11 +49,8 @@ END
 
 IF ~~ THEN BEGIN A5
   SAY ~Ha! Discredit! As if the reputation of the Order can be dropped even lower!~
-  IF ~OR(2)
-!InParty("Keldorn")
-Dead("Keldorn")~ THEN GOTO A7
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP2
+  IF ~OR(2) !InParty("Keldorn") Dead("Keldorn")~ THEN GOTO A7
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP2
 END
 
 IF ~~ THEN BEGIN A6
@@ -75,18 +60,16 @@ END
 
 IF ~~ THEN BEGIN A7
   SAY ~Okay, okay, I say nothing more. Here's what, my dear <PRO_LADYLORD>. Return the Cup to Sir Ryan and tell him that you have completed the task, and I promise you that we will leave Athkatla. It is a troubled time now, it seems a conflict with Riatavin is unavoidable... I hope that the war will not come soon though... Take care, my <PRO_LADYLORD>, and farewell!~
-  IF ~~ THEN DO ~AddexperienceParty(25000)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutFP")~ EXIT
+  IF ~~ THEN DO ~AddexperienceParty(25000) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutFP")~ EXIT
 END
 
 IF ~~ THEN BEGIN A8
   SAY ~Draw your swords and do your best.~
-	IF ~~ THEN REPLY ~Stop it! That's not true! Sirs, forgive me for lying to you, but I needed to see Sir Anarg. You did not give me other chance.~ GOTO A1
-	IF ~~ THEN REPLY ~Why do you think that I came to kill you, Sir Anarg? I'm not going to do that.~ GOTO A1
-	IF ~~ THEN REPLY ~Sir Anarg, can we talk before drawing our swords?~ GOTO A1
+  IF ~~ THEN REPLY ~Stop it! That's not true! Sirs, forgive me for lying to you, but I needed to see Sir Anarg. You did not give me other chance.~ GOTO A1
+  IF ~~ THEN REPLY ~Why do you think that I came to kill you, Sir Anarg? I'm not going to do that.~ GOTO A1
+  IF ~~ THEN REPLY ~Sir Anarg, can we talk before drawing our swords?~ GOTO A1
 END
+
 END
 
 APPEND ~KELDORJ~
@@ -105,4 +88,5 @@ IF ~~ THEN BEGIN FP3
   SAY ~Sir Anarg...~
   IF ~~ THEN EXTERN ~KAYPAL01~ A7
 END
+
 END

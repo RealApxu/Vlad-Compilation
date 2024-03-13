@@ -2,8 +2,7 @@ BEGIN ~BHROTH~
 
 IF ~Global("VP_BDar","LOCALS",2)~ THEN BEGIN 0
   SAY ~Dar I am intrigued, tell me how it is that you are so well versed in the common tongue? This is indeed a rare thing among your kind.~ [HROT_101]
-  IF ~~ THEN DO ~SetGlobal("VP_BDar_Check","LOCALS",1)
-SetGlobal("VP_BDar","LOCALS",3)~ EXTERN ~BDAR~ 0
+  IF ~~ THEN DO ~SetGlobal("VP_BDar_Check","LOCALS",1) SetGlobal("VP_BDar","LOCALS",3)~ EXTERN ~BDAR~ 0
 END
 
 IF ~~ THEN BEGIN 1
@@ -53,14 +52,10 @@ END
 
 IF ~Global("VP_BPC","LOCALS",5)~ THEN BEGIN 10
   SAY ~Yes <CHARNAME>? (*Hrothgar looks at you.*)~ [HROT_301]
-  IF ~~ THEN REPLY ~I did not say anything Hrothgar.~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1)
-SetGlobal("VP_BPC","LOCALS",6)~ GOTO 11
-  IF ~~ THEN REPLY ~Are you reading my mind Hrothgar?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1)
-SetGlobal("VP_BPC","LOCALS",6)~ GOTO 11
-  IF ~~ THEN REPLY ~Was that a question or an answer Hrothgar, as I certainly did not speak?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1)
-SetGlobal("VP_BPC","LOCALS",6)~ GOTO 12
-  IF ~~ THEN REPLY ~What... did you speak Hrothgar?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1)
-SetGlobal("VP_BPC","LOCALS",6)~ GOTO 12
+  IF ~~ THEN REPLY ~I did not say anything Hrothgar.~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1) SetGlobal("VP_BPC","LOCALS",6)~ GOTO 11
+  IF ~~ THEN REPLY ~Are you reading my mind Hrothgar?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1) SetGlobal("VP_BPC","LOCALS",6)~ GOTO 11
+  IF ~~ THEN REPLY ~Was that a question or an answer Hrothgar, as I certainly did not speak?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1) SetGlobal("VP_BPC","LOCALS",6)~ GOTO 12
+  IF ~~ THEN REPLY ~What... did you speak Hrothgar?~ DO ~SetGlobal("VP_BPC_Check","LOCALS",1) SetGlobal("VP_BPC","LOCALS",6)~ GOTO 12
 END
 
 IF ~~ THEN BEGIN 11
@@ -81,7 +76,7 @@ IF ~~ THEN BEGIN 13
   SAY ~(*Smiles to himself*) A legend you say. Well, suppose you tell me what you have heard that makes Hrothgar a legend?~ [HROT_304]
   IF ~~ THEN REPLY ~Why do you always do that Hrothgar!? Answer my question with one of your own?~ GOTO 15
   IF ~~ THEN REPLY ~Are you really interested in hearing what rumour says or is this just another way to avoid my questions?~ GOTO 15
-  IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15									
+  IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15
   IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse's mouth so as to speak!~ GOTO 16
 END
 
@@ -89,14 +84,14 @@ IF ~~ THEN BEGIN 14
   SAY ~(*Smiles to himself*) Curiosity is good and I am also curious as to what rumour has to say about Hrothgar?~ [HROT_305]
   IF ~~ THEN REPLY ~Why do you always do that Hrothgar!? Answer my question with one of your own?~ GOTO 15
   IF ~~ THEN REPLY ~Are you really interested in hearing what rumour says or is this just another way to avoid my questions?~ GOTO 15
-  IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15									
+  IF ~~ THEN REPLY ~Again you show reluctance to talk of yourself. I am beginning to wonder if you have something to hide?~ GOTO 15
   IF ~~ THEN REPLY ~I would rather hear the truth of it from the horse's mouth so as to speak!~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 15
   SAY ~I do not mean to be evasive <CHARNAME>. I am intrigued and wish to know what has been passed down in my name. Does that surprise you?~ [HROT_306]
   IF ~~ THEN REPLY ~There is really only one tale Hrothgar, and that tells of your death by the hand of a demon as you fought, very bravely it is said, to save your town of Easthaven.~ GOTO 17
-  IF ~~ THEN REPLY ~ If I remember correctly, lore says that you were slain, by a demon. It tells of your brave fight at Easthaven and of your dying a hero. An incredible tale do you not agree?~ GOTO 17
+  IF ~~ THEN REPLY ~If I remember correctly, lore says that you were slain, by a demon. It tells of your brave fight at Easthaven and of your dying a hero. An incredible tale do you not agree?~ GOTO 17
   IF ~~ THEN REPLY ~Remembering what I was told, the legendary Hrothgar was slain whilst trying to rid the town of some demon. Whether successfully or not I do not recall. More of a fool than a hero if you ask me for even attempting to take on a demon, but I suppose that is the stuff legends are made of.~ GOTO 18
   IF ~~ THEN REPLY ~Legend says you died a hero at Easthaven Hrothgar. Now, my being here with you before the event, is too weird to even try to fathom the truth of it.~ GOTO 19
 END
@@ -104,7 +99,7 @@ END
 IF ~~ THEN BEGIN 16
   SAY ~Patience <CHARNAME>! Allow me the courtesy of hearing what has been told of me first. Surely you understand my curiosity.~ [HROT_307]
   IF ~~ THEN REPLY ~There is really only one tale Hrothgar, and that tells of your death by the hand of a demon as you fought, very bravely it is said, to save your town of Easthaven.~ GOTO 17
-  IF ~~ THEN REPLY ~ If I remember correctly, lore says that you were slain, by a demon. It tells of your brave fight at Easthaven and of your dying a hero. An incredible tale do you not agree?~ GOTO 17
+  IF ~~ THEN REPLY ~If I remember correctly, lore says that you were slain, by a demon. It tells of your brave fight at Easthaven and of your dying a hero. An incredible tale do you not agree?~ GOTO 17
   IF ~~ THEN REPLY ~Remembering what I was told, the legendary Hrothgar was slain whilst trying to rid the town of some demon. Whether successfully or not I do not recall. More of a fool than a hero if you ask me for even attempting to take on a demon, but I suppose that is the stuff legends are made of.~ GOTO 18
   IF ~~ THEN REPLY ~Legend says you died a hero at Easthaven Hrothgar. Now, my being here with you before the event, is too weird to even try to fathom the truth of it.~ GOTO 19
 END
@@ -323,17 +318,10 @@ END
 
 IF ~~ THEN BEGIN 54
   SAY ~I haven't mentioned it because it involves you telling me a little of the future. All I ask of you is to tell me whether all this running around is a necessary part of this mission or could we reach our goal quicker by going down another path?~
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ465
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ465
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
 END
 
 IF ~~ THEN BEGIN 55
@@ -376,17 +364,10 @@ END
 
 IF ~~ THEN BEGIN 61
   SAY ~Kuldahar is my main concern and equally as worrying, is whether Easthaven itself is in any danger. So I ask you to tell me please <CHARNAME>, is all this running around necessary or should we be looking elsewhere?~
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ465
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
-  IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ465
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~I will be truthful with you Hrothgar, I do not know.~ GOTO 56
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~I know you are worried for Kuldahar, but there isn't anything I can tell you.~ GOTO 58
+  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~There is nothing I can tell you. You know the risk of learning too much too soon Hrothgar or you would have asked me sooner.~ GOTO 58
 END
 
 IF ~~ THEN BEGIN 62
@@ -461,8 +442,7 @@ END
 
 IF ~~ THEN BEGIN 76
   SAY ~(*He puts his hand on her shoulder*). If that is how it is to be, then know that I am also proud to have so brave a companion to fight by my side. Let us hope we never see such a day Accalia, but if we should, then we will face it ... draw strength from each others resolve to defy all that is evil and who knows, maybe Tempus will look kindly upon the bravest of his battle priests and we shall prevail.~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Accalia_PC","GLOBAL",10)
-SetGlobal("VP_Astrolabe_Talks","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Accalia_PC","GLOBAL",10) SetGlobal("VP_Astrolabe_Talks","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 77
@@ -502,255 +482,172 @@ END
 
 IF ~~ THEN BEGIN 84
   SAY ~Well that was... ahem... entertaining. Dancing has certainly come a long way since my days.~
-  IF ~Gender(Player1,FEMALE)
-!InParty("Melora")~ THEN EXTERN ~BLEINA~ PCF2Leina38a
-	IF ~Gender(Player1,MALE)
-!InParty("Melora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
-	IF ~Gender(Player1,FEMALE)
-InParty("Melora")
-InParty("Taffic")~ THEN EXTERN ~BMELORA~ 53
-	IF ~Gender(Player1,MALE)
-InParty("Melora")
-InParty("Taffic")~ THEN EXTERN ~BMELORA~ 56
-	IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
-	IF ~InParty("Kachiko")~ THEN EXTERN ~BKACHI~ NEJ0
-	IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
-	IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
-	IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
-	IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
-	IF ~InParty("Dar")~ THEN EXTERN ~BDAR~ 126
+  IF ~Gender(Player1,FEMALE) !InParty("Melora")~ THEN EXTERN ~BLEINA~ PCF2Leina38a
+  IF ~Gender(Player1,MALE) !InParty("Melora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+  IF ~Gender(Player1,FEMALE) InParty("Melora") InParty("Taffic")~ THEN EXTERN ~BMELORA~ 53
+  IF ~Gender(Player1,MALE) InParty("Melora") InParty("Taffic")~ THEN EXTERN ~BMELORA~ 56
+  IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+  IF ~InParty("Kachiko")~ THEN EXTERN ~BKACHI~ NEJ0
+  IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
+  IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
+  IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
+  IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+  IF ~InParty("Dar")~ THEN EXTERN ~BDAR~ 126
 END
 
 IF ~~ THEN BEGIN 85
   SAY ~Well, I must say it has been a while since I've kicked up my heels, but if the lady insists... just give me lots of space Leina.~
   IF ~Gender(Player1,FEMALE)~ THEN EXTERN ~BLEINA~ PCF2Leina24a
-	IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina24a
+  IF ~Gender(Player1,MALE)~ THEN EXTERN ~BLEINA~ PCM4Leina24a
 END
 
 IF ~~ THEN BEGIN 86
   SAY ~I couldn't agree with you more Leina.~
-	IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest2
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ140
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ 58
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ 129
+  IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest2
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ140
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ 58
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ 129
 END
 
 IF ~~ THEN BEGIN 87
   SAY ~(*Sternly*) Please, this is a temple, and not the market place! Or have you two forgotten whose presence we stand before!~
-	IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest17
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ 8
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ 130
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ 59
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ141
-	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ499
+  IF ~True()~ THEN EXTERN ~BLEINA~ ClericQuest17
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ 8
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ 130
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ 59
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ141
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ499
 END
 
 IF ~~ THEN BEGIN 88
-	SAY ~Well it is up to you <CHARNAME>, do we get our hot baths and Leina her warm fluffy towel now or later?~
-	IF ~~ THEN REPLY ~Later.~ GOTO 89
-	IF ~~ THEN REPLY ~Better now then later.~ GOTO 90
+  SAY ~Well it is up to you <CHARNAME>, do we get our hot baths and Leina her warm fluffy towel now or later?~
+  IF ~~ THEN REPLY ~Later.~ GOTO 89
+  IF ~~ THEN REPLY ~Better now then later.~ GOTO 90
 END
 
 IF ~~ THEN BEGIN 89
-	SAY ~As you wish <CHARNAME>.~
-	IF ~~ THEN EXTERN ~BLEINA~ ClericQuest21
+  SAY ~As you wish <CHARNAME>.~
+  IF ~~ THEN EXTERN ~BLEINA~ ClericQuest21
 END
-	
+
 IF ~~ THEN BEGIN 90
-	SAY ~As you wish <CHARNAME>.~
-	IF ~~ THEN EXTERN ~BLEINA~ ClericQuest20
+  SAY ~As you wish <CHARNAME>.~
+  IF ~~ THEN EXTERN ~BLEINA~ ClericQuest20
 END
 
 IF ~~ THEN BEGIN LeiDear1
-	SAY ~No Leina, we only had small hamlets in my time... (*Coughs several times and scans the looks on the servants faces, relieved to see none has noticed his slip*)... er hem... I mean in the areas I have travelled.~
-	IF ~~ THEN EXTERN ~BLEINA~ DeArnise17	
+  SAY ~No Leina, we only had small hamlets in my time... (*Coughs several times and scans the looks on the servants faces, relieved to see none has noticed his slip*)... er hem... I mean in the areas I have travelled.~
+  IF ~~ THEN EXTERN ~BLEINA~ DeArnise17
 END
 
 IF ~~ THEN BEGIN LeiDear2
-	SAY ~Not in the least, Leina. They were quite civil having the same amenities as the towns around here only on a smaller scale. Why do you ask?~
-	IF ~~ THEN EXTERN ~BLEINA~ DeArnise18	
+  SAY ~Not in the least, Leina. They were quite civil having the same amenities as the towns around here only on a smaller scale. Why do you ask?~
+  IF ~~ THEN EXTERN ~BLEINA~ DeArnise18
 END
 
 IF ~~ THEN BEGIN LeiDear3
-	SAY ~(*Looking at Leina as if she is a little girl up to some prank, he lowers his voice*) Leina just because I lived 100 yrs ago doesn't mean we lived in caves!~
-	IF ~~ THEN GOTO LeiDear3a
+  SAY ~(*Looking at Leina as if she is a little girl up to some prank, he lowers his voice*) Leina just because I lived 100 yrs ago doesn't mean we lived in caves!~
+  IF ~~ THEN GOTO LeiDear3a
 END
 
 IF ~~ THEN BEGIN LeiDear3a
-	SAY ~(*Then a little louder*) Oh yes we had many a fine galas. We would dress in our finest, that is after washing off the grime of the day, for only when the grime of hard work was scrubbed away could you smell the fragrance of the many flowers decorating the courtyards. You know Leina, even then after a hard day nothing felt better then a hot bath.~
-	IF ~True()~ THEN EXTERN ~BLEINA~ DeArnise28
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BLEINA~ DeArnise19
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~BLEINA~ DeArnise22	
+  SAY ~(*Then a little louder*) Oh yes we had many a fine galas. We would dress in our finest, that is after washing off the grime of the day, for only when the grime of hard work was scrubbed away could you smell the fragrance of the many flowers decorating the courtyards. You know Leina, even then after a hard day nothing felt better then a hot bath.~
+  IF ~True()~ THEN EXTERN ~BLEINA~ DeArnise28
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BLEINA~ DeArnise19
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BLEINA~ DeArnise22
 END
 
 IF ~~ THEN BEGIN LeiSpher1
-	SAY ~We had better help her or we will never get any where... a house?~
-	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere10
-	IF ~InParty("Yoshimo")
-!Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher1
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher2
-	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher1
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher4
-	IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
-	IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiSpher2	
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher1	
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1	
-	IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiSpher1			
+  SAY ~We had better help her or we will never get any where... a house?~
+  IF ~True()~ THEN EXTERN ~BLEINA~ Sphere10
+  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher1
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher2
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher1
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher4
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiSpher2
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher1
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1
+  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiSpher1
 END
 
 IF ~~ THEN BEGIN LeiSpher2
-	SAY ~Now that you mention it back when I was young there was a tale they use to sing about a man who had a box that was bigger on the inside then the outside. It was sung as a joke to get people laughing. It probably is the same tale. It could be quite true Leina for I am here in your time from the past and we did just come out of this sphere.~
-	IF ~True()~ THEN EXTERN ~BLEINA~ Sphere26
-	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher4
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher4	
+  SAY ~Now that you mention it back when I was young there was a tale they use to sing about a man who had a box that was bigger on the inside then the outside. It was sung as a joke to get people laughing. It probably is the same tale. It could be quite true Leina for I am here in your time from the past and we did just come out of this sphere.~
+  IF ~True()~ THEN EXTERN ~BLEINA~ Sphere26
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher4
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher4
 END
 
 IF ~~ THEN BEGIN LeiTheat
   SAY ~I'm thinking we are going to hear this idea whether we want to or not, so go on, <CHARNAME>, tell us what you have in mind.~
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiTheat
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiTheat	
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiTheat
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiTheat
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiTheat
 END
 
 IF ~~ THEN BEGIN LeiThea3
   SAY ~(*Laughs heartily*) How little you know Leina my friend!~
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea3
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea3	
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea3
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea3
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea3
 END
 
 IF ~~ THEN BEGIN LeiThea4
   SAY ~(*Laughing to himself*) I am not sure who will be getting who, but it will be fun to observe.~
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
- IF ~!IsValidForPartyDialogue("Dar")
-!IsValidForPartyDialogue("Melora")
-!IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea4
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea4
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+  IF ~!IsValidForPartyDialogue("Dar") !IsValidForPartyDialogue("Melora") !IsValidForPartyDialogue("Taffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea4
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea4
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea4
 END
 
 IF ~~ THEN BEGIN LeiThea1
   SAY ~(*He looks towards Leina. She quickly winks at him and turns again to Samuel*) Well, I never... If I didn't know better, I'd say that young lady is playing with us!~
-	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea1
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea1	
+  IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ151
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea1
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea1
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea1
 END
 
 IF ~~ THEN BEGIN LeiThea2
   SAY ~Leina, I do not do this for fame and my presence in this time must not be known... ever! Do you hear me child?~
-	IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ161
-	IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2
-	IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea2
-	IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea2
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea2
-	IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiThea2
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiThea2
-	IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiThea2
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea2
-	IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiThea2
-	IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea2
-	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea2
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea2
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea2
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea2
+  IF ~True()~ THEN EXTERN ~BLEINA~ TheaQ161
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiThea2
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea2
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea2
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea2
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiThea2
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiThea2
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiThea2
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea2
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiThea2
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea2
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea2
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiThea2
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiThea2
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiThea2
 END
 
 IF ~~ THEN BEGIN LeiRadia
   SAY ~Leina, without you I believe we would spend our lives resting in peasant chambers only.~
-	IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
-	IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiRadia
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
- IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
-	IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiRadia
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~BDAR~ LeiRadia
+  IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiRadia
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
+  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiRadia
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiRadia
 END

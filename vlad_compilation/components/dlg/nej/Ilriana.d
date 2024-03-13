@@ -2,8 +2,7 @@ BEGIN ~ILRIANA~
 
 IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~What are you stopping for, you have rested once already today. Keep digging you lazy, misshapen... (*Then spinning around as she hears your approach*) Who the blazes are you?~
-=
-~You should know better than to creep up on a lady when she has her back to you, especially if the lady in question is an accomplished mage such as myself.~
+  = ~You should know better than to creep up on a lady when she has her back to you, especially if the lady in question is an accomplished mage such as myself.~
   IF ~~ THEN REPLY ~I am <CHARNAME> and you are?~ GOTO 2
   IF ~~ THEN REPLY ~And hello to you too.  I am <CHARNAME>, Might I ask who you are?~ GOTO 2
   IF ~~ THEN REPLY ~I apologise for startling you. I am <CHARNAME>. Might I ask who you might be and what you are looking for down here?~ GOTO 3
@@ -39,8 +38,7 @@ END
 
 IF ~~ THEN BEGIN 6
   SAY ~What do I care for the earth above, what is down here will benefit mages everywhere and make me a very rich and powerful woman.~
-=
-~I will continue to dig, even if I have to reach into the bowels of the Nine Hells and rip it out with my bare hands! Now, begone all of you!~
+  = ~I will continue to dig, even if I have to reach into the bowels of the Nine Hells and rip it out with my bare hands! Now, begone all of you!~
   IF ~~ THEN REPLY ~I cannot permit you to do that. I believe your digging is allowing poisonous vapours to seep into the underground feeds to the pond above, the land is dying. Please Ilriana, you must stop!~ GOTO 7
   IF ~~ THEN REPLY ~You will stop Ilriana. I will not permit your greed to continue poisoning that which is struggling above. Cease now or pay the price for your greed!~ GOTO 7
   IF ~~ THEN REPLY ~Ok. Maybe I do not want all this trouble after all. I will just back up and leave the way I came. The druids can take it from here.~ GOTO 7
@@ -48,14 +46,12 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~I think not. This has become tiresome, first you interrupt my work and now you force me to deal with you, wasting yet more time! No matter, my gnomes can make up the delay later.~
-		IF ~~ THEN DO ~SetGlobal("VP_Dar_Quest","GLOBAL",11)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Dar_Quest","GLOBAL",11) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~That was no threat, that was a promise. What is down here will benefit mages everywhere, as well as  making me a very rich and very  powerful woman.~
-=
-~I am not about to let anyone take that from me, I will continue to dig, even if I have to reach into the bowels of the Nine Hells to find and rip it out with my bare hands! Now, begone all of you!~
+  = ~I am not about to let anyone take that from me, I will continue to dig, even if I have to reach into the bowels of the Nine Hells to find and rip it out with my bare hands! Now, begone all of you!~
   IF ~~ THEN REPLY ~Come Ilriana, a deal. Would you not prefer to have a half share in whatever is going to buy you all this power than no share at all? You get my meaning!~ GOTO 7
   IF ~~ THEN REPLY ~A promise you say Ilriana. Do you seriously consider yourself a match for us? You do not have this power that you seek quite yet, maybe you should think again about that promise?~ GOTO 7
   IF ~~ THEN REPLY ~Ok. Maybe I do not want all this trouble after all. I will just back up and leave the way I came. The druids can take it from here.~ GOTO 7

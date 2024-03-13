@@ -1,31 +1,21 @@
 BEGIN ~THALAN~
 
-IF WEIGHT #1 ~NumberOfTimesTalkedTo(0)
-~ THEN BEGIN 0
+IF WEIGHT #1 ~NumberOfTimesTalkedTo(0) ~ THEN BEGIN 0
   SAY ~I don't have much patience for strangers on my property.  Do us both a favor and move along... unless of course you have magic for sale.  From the looks of you, you don't look as if you could afford the items I have for sale.~
-  IF ~~ THEN DO ~SetGlobal("Golem","GLOBAL",1)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Golem","GLOBAL",1) ~ EXIT
 END
 
-IF WEIGHT #7 ~Global("ThalantyrRumours","GLOBAL",0)
-~ THEN BEGIN 1
+IF WEIGHT #7 ~Global("ThalantyrRumours","GLOBAL",0) ~ THEN BEGIN 1
   SAY ~I sincerely hope you have some reason for bothering me.  I've already stated that I wish you to leave.~
-  IF ~~ THEN REPLY ~Rumors talk of a powerful mage that lives out here.  If it is you, I would like to speak with you.~ DO ~SetGlobal("ThalantyrRumours","GLOBAL",1)
-~ GOTO 2
+  IF ~~ THEN REPLY ~Rumors talk of a powerful mage that lives out here.  If it is you, I would like to speak with you.~ DO ~SetGlobal("ThalantyrRumours","GLOBAL",1) ~ GOTO 2
   IF ~~ THEN REPLY ~I go where I wish and stay as long as I please.  Don't threaten me.~ GOTO 3
   IF ~~ THEN REPLY ~I apologize for the intrusion, and will leave immediately.~ GOTO 4
-  IF ~PartyHasItem("MISC49")
-~ THEN REPLY ~Well... it's rather amusing actually.  You see, I happened to rescue this... um... talking chicken...~ DO ~TakePartyItem("MISC49")
-DestroyItem("MISC49")
-CreateCreature("MELICA",[286.398],0)
-ActionOverride("Melicamp",SetNumTimesTalkedTo(2))
-~ GOTO 7
+  IF ~PartyHasItem("MISC49") ~ THEN REPLY ~Well... it's rather amusing actually.  You see, I happened to rescue this... um... talking chicken...~ DO ~TakePartyItem("MISC49") DestroyItem("MISC49") CreateCreature("MELICA",[286.398],0) ActionOverride("Melicamp",SetNumTimesTalkedTo(2)) ~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 2
   SAY ~Rumors?  Bah! There is no mage here that wishes to speak or be spoken of.  Unless, of course, if you have magic that you wish to sell.~
-  IF ~~ THEN REPLY ~We're interested in selling or even buying magical items.  What do you have?~ DO ~StartStore("highhedg",LastTalkedToBy(Myself))
-~ EXIT
+  IF ~~ THEN REPLY ~We're interested in selling or even buying magical items.  What do you have?~ DO ~StartStore("highhedg",LastTalkedToBy(Myself)) ~ EXIT
   IF ~~ THEN REPLY ~Sorry but we do not.~ EXIT
 END
 
@@ -39,9 +29,7 @@ IF ~~ THEN BEGIN 4
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #6 ~NumberOfTimesTalkedTo(2)
-!PartyHasItem("MISC49")
-~ THEN BEGIN 5
+IF WEIGHT #6 ~NumberOfTimesTalkedTo(2) !PartyHasItem("MISC49") ~ THEN BEGIN 5
   SAY ~I have nothing more to say to you.  Leave me.~
   IF ~~ THEN EXIT
 END
@@ -67,41 +55,28 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~Apprentice?!  I have had no apprentices!  I teach no one about what I... wait... Melicamp?  MELICAMP, is that you?!!~
-  IF ~~ THEN DO ~SetGlobal("FoundChicken","GLOBAL",1)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("FoundChicken","GLOBAL",1) ~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
   SAY ~I would just as soon have done with both of you, but I will settle for just the one leaving.  I will do the minimum that I can for this unfortunate foul.~
-  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf())
-EraseJournalEntry(87664)
-EraseJournalEntry(87665)
-EraseJournalEntry(87666)
-~ SOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf()) EraseJournalEntry(87664) EraseJournalEntry(87665) EraseJournalEntry(87666) ~ SOLVED_JOURNAL ~A talking chicken.
 
 I have taken Melicamp the chicken to Thalantyr at High Hedge.  I do not wish to see how the poor wizard turns out, not because I hold anything against him.  Rather, Thalantyr's rather insulting demeanour leaves me no choice.~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
   SAY ~You know nothing of me!  Best that you pray, to whatever deity turns your crank, that you NEVER face what I have seen.  Bah!  The inexperience and STUPIDITY of youth.  I care not if you go out and get yourself killed, for it's not the least favorable end you could face!  If you have business here I suggest you get to it!  Otherwise, begone!~
-  IF ~ReactionGT(LastTalkedToBy,NEUTRAL_UPPER)
-~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 13
+  IF ~ReactionGT(LastTalkedToBy,NEUTRAL_UPPER) ~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 13
   IF ~~ THEN REPLY ~My sincerest apologies for presuming to know your situation.  I shall leave quickly, though I wish to leave this feathered fellow with you.  I lack the means to free him myself.~ GOTO 10
-  IF ~ReactionLT(LastTalkedToBy,NEUTRAL_LOWER)
-~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 14
+  IF ~ReactionLT(LastTalkedToBy,NEUTRAL_LOWER) ~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 14
   IF ~~ THEN REPLY ~No need to bite my head off for your past weaknesses.  I am quite well aware of the dangers, and I keep them a blade's length away.  Had you been more competent in your youth, perhaps you would not be the scared little man you are today.~ GOTO 12
-  IF ~ReactionLT(LastTalkedToBy,FRIENDLY_LOWER)
-ReactionGT(LastTalkedToBy,HOSTILE_UPPER)
-~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 15
+  IF ~ReactionLT(LastTalkedToBy,FRIENDLY_LOWER) ReactionGT(LastTalkedToBy,HOSTILE_UPPER) ~ THEN REPLY ~Um... sorry for bringing up bad memories.  Your experience does not change mine though, and however serious and depressing the past may be, we are still currently left with this talking chicken.  Care to parley with the poulet, or should I just give you the bird?~ GOTO 15
 END
 
 IF ~~ THEN BEGIN 12
   SAY ~May you live to be as scared as I am, instead of as naive as you are.  Begone, and I shall do what is necessary for this feathered fool.~
-  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf())
-EraseJournalEntry(87664)
-EraseJournalEntry(87665)
-EraseJournalEntry(87666)
-~ SOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf()) EraseJournalEntry(87664) EraseJournalEntry(87665) EraseJournalEntry(87666) ~ SOLVED_JOURNAL ~A talking chicken.
 
 I have taken Melicamp the chicken to Thalantyr at High Hedge.  I do not wish to see how the poor wizard turns out, not because I hold anything against him.  Rather, Thalantyr's rather insulting demeanour leaves me no choice.~ EXIT
 END
@@ -114,11 +89,7 @@ END
 
 IF ~~ THEN BEGIN 14
   SAY ~You are too much a lout to carry such puerile behavior.  I am neither amused, nor impressed.  Leave me the bird and I will do what I can.  That said, I wish you to leave immediately.~
-  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf())
-EraseJournalEntry(87664)
-EraseJournalEntry(87665)
-EraseJournalEntry(87666)
-~ SOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~ActionOverride("Melicamp",DestroySelf()) EraseJournalEntry(87664) EraseJournalEntry(87665) EraseJournalEntry(87666) ~ SOLVED_JOURNAL ~A talking chicken.
 
 I have taken Melicamp the chicken to Thalantyr at High Hedge.  I do not wish to see how the poor wizard turns out, not because I hold anything against him.  Rather, Thalantyr's rather insulting demeanour leaves me no choice.~ EXIT
 END
@@ -183,45 +154,24 @@ END
 
 IF ~~ THEN BEGIN 25
   SAY ~There must be a dead element, yes.  That is what the skull is for.  I cannot fully explain what I am to try, but it's something of a reversal on the reincarnation scheme.  The age of the enchantment that changed you may allow for a loophole in the laws of magic.  Of course it may just kill us both in the casting.  Such is life.  Off you go to some dungeon or another.  Return with the skull.  Go.~
-  IF ~~ THEN DO ~SetGlobal("HelpThalantyr","GLOBAL",1)
-~ UNSOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~SetGlobal("HelpThalantyr","GLOBAL",1) ~ UNSOLVED_JOURNAL ~A talking chicken.
 
 I must bring a skull back to Thalantyr, so he can try to restore Melicamp to a human form.~ EXIT
 END
 
-IF WEIGHT #2 ~Global("HelpThalantyr","GLOBAL",1)
-!PartyHasItem("MISC50")
-Global("TransformedChicken","GLOBAL",0)
-!Dead("Melicamp")
-!Dead("Melicamp")
-~ THEN BEGIN 26
+IF WEIGHT #2 ~Global("HelpThalantyr","GLOBAL",1) !PartyHasItem("MISC50") Global("TransformedChicken","GLOBAL",0) !Dead("Melicamp") !Dead("Melicamp") ~ THEN BEGIN 26
   SAY ~You have returned without the needed component.  Bring a skeleton's skull to me, or this young lad may just as well begin planning a life full of nestbuilding and egg-laying.~
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #3 ~Global("HelpThalantyr","GLOBAL",1)
-PartyHasItem("MISC50")
-Global("TransformedChicken","GLOBAL",0)
-!Dead("Melicamp")
-!Dead("Melicamp")
-~ THEN BEGIN 27
+IF WEIGHT #3 ~Global("HelpThalantyr","GLOBAL",1) PartyHasItem("MISC50") Global("TransformedChicken","GLOBAL",0) !Dead("Melicamp") !Dead("Melicamp") ~ THEN BEGIN 27
   SAY ~Hello again, my young adventurers.  I see you have the needed component.  Well, shall we see if our young man regains his life, or if he'll eventually be someone's festhall dinner?~
-  IF ~~ THEN DO ~TakePartyItem("MISC50")
-DestroyItem("MISC50")
-SetGlobal("TransformedChicken","GLOBAL",1)
-SendTrigger("Thalantyr",1)
-~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("MISC50") DestroyItem("MISC50") SetGlobal("TransformedChicken","GLOBAL",1) SendTrigger("Thalantyr",1) ~ EXIT
 END
 
-IF WEIGHT #4 ~Dead("Melicamp")
-Global("TransformedChicken","GLOBAL",1)
-~ THEN BEGIN 28
+IF WEIGHT #4 ~Dead("Melicamp") Global("TransformedChicken","GLOBAL",1) ~ THEN BEGIN 28
   SAY ~And that, as they say, is that.  I fear our young friend did not survive the casting, and I feel a touch weary myself.  Such are the ways of magic: unpredictable at the best of times.  Do not feel responsible for his death, there was little more we could have done.  His body simply couldn't withstand the change once again.  A lesson, I suppose, for the rest of us.  Take good care to treat "found" items with respect.  If you will excuse me, I have some work to do.  I imagine you've a dungeon to storm somewhere.  I wish you "intelligence," because "luck" runs out.~
-  IF ~~ THEN DO ~SetGlobal("TransformedChicken","GLOBAL",2)
-EraseJournalEntry(87664)
-EraseJournalEntry(87665)
-EraseJournalEntry(87666)
-~ SOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~SetGlobal("TransformedChicken","GLOBAL",2) EraseJournalEntry(87664) EraseJournalEntry(87665) EraseJournalEntry(87666) ~ SOLVED_JOURNAL ~A talking chicken.
 
 I brought a skull back to Thalantyr as he requested, but his attempt to restore Melicamp was unfortunately a failure. Apparently the young man's body could not stand the shock of transformation again. Thalantyr said there was nothing we could have done to have changed the outcome, it was simply a matter of luck. Magic remains an uncertain force, and care must be taken in its use.~ EXIT
 END
@@ -231,9 +181,7 @@ IF ~~ THEN BEGIN 29
   IF ~~ THEN EXTERN ~MELICA~ 24
 END
 
-IF WEIGHT #5 ~!Dead("Melicamp")
-Global("TransformedChicken","GLOBAL",1)
-~ THEN BEGIN 30
+IF WEIGHT #5 ~!Dead("Melicamp") Global("TransformedChicken","GLOBAL",1) ~ THEN BEGIN 30
   SAY ~And that, as they say, is that.~
   IF ~~ THEN EXTERN ~MELICA~ 23
 END
@@ -245,16 +193,12 @@ END
 
 IF ~~ THEN BEGIN 32
   SAY ~*sigh*  I suppose your master I must be.  And you <CHARNAME>.  I trust you will be cautious in your travels as well?  I wish you "intelligence" on your journeys.  I would wish you "luck," but it runs out much quicker than you would think.  Good day.~
-  IF ~~ THEN DO ~EraseJournalEntry(87664)
-EraseJournalEntry(87665)
-EraseJournalEntry(87666)
-~ SOLVED_JOURNAL ~A talking chicken.
+  IF ~~ THEN DO ~EraseJournalEntry(87664) EraseJournalEntry(87665) EraseJournalEntry(87666) ~ SOLVED_JOURNAL ~A talking chicken.
 
 I brought a skull back to Thalantyr as he requested, and his attempt to restore Melicamp was a success. The young man's body withstood the strain of transformation again, and he seems eager to learn from his mistakes.  Thalantyr cautioned that a tragic ending was just as likely, and that care should always be taken in the use of magic, no matter how benign it seems.~ EXIT
 END
 
-IF WEIGHT #0 ~StateCheck(Myself,STATE_CHARMED)
-~ THEN BEGIN 33
+IF WEIGHT #0 ~StateCheck(Myself,STATE_CHARMED) ~ THEN BEGIN 33
   SAY ~I am Thalantyr, and I am known as the High Hedge wizard.  I suffered something I won't even tell you, my closest friend, so I live up here alone.  I used to adventure, but I'll not go back to those foolish days.  You would do well to be careful too.~
   IF ~~ THEN EXIT
 END
@@ -266,176 +210,139 @@ END
 
 IF WEIGHT #8 ~True()~ THEN BEGIN 35
   SAY ~I sincerely hope you have some reason for bothering me.  I've already stated that I wish you to leave.~
-  	IF ~~ THEN REPLY ~We're interested in selling or even buying magical items.  What do you have?~ DO ~StartStore("highhedg",LastTalkedToBy(Myself))~ EXIT
-  	IF ~~ THEN REPLY ~I go where I wish and stay as long as I please.  Don't threaten me.~ GOTO 3
-  	IF ~~ THEN REPLY ~I apologize for the intrusion, and will leave immediately.~ GOTO 4
-  	IF ~PartyHasItem("MISC49")~ THEN REPLY ~Well... it's rather amusing actually.  You see, I happened to rescue this... um... talking chicken...~ DO ~TakePartyItem("MISC49")
-DestroyItem("MISC49")
-CreateCreature("MELICA",[286.398],0)
-ActionOverride("Melicamp",SetNumTimesTalkedTo(2))~ GOTO 7
-		IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0)
-!Global("VP_GoTo_Thalantyr","GLOBAL",3)
-!Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I thought it too much for a mage of your repute to remember me, but maybe you recall the unfortunate situation Melicamp was in when I brought him to you on my previous visit... he was shall we shall in *fowl* form.~ GOTO thalan2
-		IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0)
-!Global("VP_GoTo_Thalantyr","GLOBAL",3)
-!Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I am here seeking knowledge that I have been led to believe you may have.~ GOTO thalan3
-		IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0)
-!Global("VP_GoTo_Thalantyr","GLOBAL",3)
-!Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~My friend Taffic here requires your aid in order to achieve a life long dream of his.~ GOTO thalan3
-		IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0)
-!Global("VP_GoTo_Thalantyr","GLOBAL",3)
-!Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I have come here in the hope that you can teach this gnome some sense and in doing so give me some peace from his insane fantasy.~ GOTO thalan3
-		IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0)
-!Global("VP_GoTo_Thalantyr","GLOBAL",3)
-!Global("VP_GoTo_Thalantyr","GLOBAL",7)
-PartyHasItem("tafflet1")~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
-		IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Look here, I have come all the way from Athkatla in order to speak with you and I am not leaving until you have heard what it is I have to say!~ GOTO thalan5
-  	IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~I have travelled far in order to speak with you and my temper is becoming frayed... you will listen to me!~ GOTO thalan6
-  	IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Please, I have had a long and arduous journey to get here, won't you at least humour me and listen to my plea?~ GOTO thalan6
+  IF ~~ THEN REPLY ~We're interested in selling or even buying magical items.  What do you have?~ DO ~StartStore("highhedg",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY ~I go where I wish and stay as long as I please.  Don't threaten me.~ GOTO 3
+  IF ~~ THEN REPLY ~I apologize for the intrusion, and will leave immediately.~ GOTO 4
+  IF ~PartyHasItem("MISC49")~ THEN REPLY ~Well... it's rather amusing actually.  You see, I happened to rescue this... um... talking chicken...~ DO ~TakePartyItem("MISC49") DestroyItem("MISC49") CreateCreature("MELICA",[286.398],0) ActionOverride("Melicamp",SetNumTimesTalkedTo(2))~ GOTO 7
+  IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0) !Global("VP_GoTo_Thalantyr","GLOBAL",3) !Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I thought it too much for a mage of your repute to remember me, but maybe you recall the unfortunate situation Melicamp was in when I brought him to you on my previous visit... he was shall we shall in *fowl* form.~ GOTO thalan2
+  IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0) !Global("VP_GoTo_Thalantyr","GLOBAL",3) !Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I am here seeking knowledge that I have been led to believe you may have.~ GOTO thalan3
+  IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0) !Global("VP_GoTo_Thalantyr","GLOBAL",3) !Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~My friend Taffic here requires your aid in order to achieve a life long dream of his.~ GOTO thalan3
+  IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0) !Global("VP_GoTo_Thalantyr","GLOBAL",3) !Global("VP_GoTo_Thalantyr","GLOBAL",7)~ THEN REPLY ~I have come here in the hope that you can teach this gnome some sense and in doing so give me some peace from his insane fantasy.~ GOTO thalan3
+  IF ~!Global("VP_GoTo_Thalantyr","GLOBAL",0) !Global("VP_GoTo_Thalantyr","GLOBAL",3) !Global("VP_GoTo_Thalantyr","GLOBAL",7) PartyHasItem("tafflet1")~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
+  IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Look here, I have come all the way from Athkatla in order to speak with you and I am not leaving until you have heard what it is I have to say!~ GOTO thalan5
+  IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~I have travelled far in order to speak with you and my temper is becoming frayed... you will listen to me!~ GOTO thalan6
+  IF ~Global("VP_GoTo_Thalantyr","GLOBAL",3)~ THEN REPLY ~Please, I have had a long and arduous journey to get here, won't you at least humour me and listen to my plea?~ GOTO thalan6
 END
 
 IF ~~ THEN BEGIN thalan2
   SAY ~That was you? (*Peering at you closer*) I suppose you could be that person... many faces have come and gone ... with them goes any reason to remember them. It is Melicamp who is beholden to you not me so unless you have magic to sell I suggest you leave.~
-  	IF ~~ THEN REPLY ~Hold a second... you have not heard my reason for being here. Surely you can spare a few moments of your time to hear me out.~ GOTO thalan3
-  	IF ~~ THEN REPLY ~Now just one second here, just who do you think you are to be dismissing me without hearing what I have to say?~ GOTO thalan3
- 	 	IF ~~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
+  IF ~~ THEN REPLY ~Hold a second... you have not heard my reason for being here. Surely you can spare a few moments of your time to hear me out.~ GOTO thalan3
+  IF ~~ THEN REPLY ~Now just one second here, just who do you think you are to be dismissing me without hearing what I have to say?~ GOTO thalan3
+  IF ~~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
 END
 
 IF ~~ THEN BEGIN thalan3
   SAY ~I buy and I sell magic... I do not teach nor do I advise. As for the world and the problems of its people, they are no concern of mine. If you are not here to trade then I have nothing to say to you... now leave me be.~
-  	IF ~~ THEN DO ~SetGlobal("VP_GoTo_Thalantyr","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_GoTo_Thalantyr","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN thalan5
   SAY ~Athkatla you say... well I wish you a pleasant and safe journey back to Athkatla.~
-		IF ~~ THEN REPLY ~Mighty mage or not, I will not be spoken down to as though I were nothing but an insect buzzing around your head... something irritating to be flicked away!~ GOTO 34
-  	IF ~~ THEN REPLY ~This has been a huge waste of my time, we will learn nothing from this mage. We may as well do as he says and leave before we anger him any more.~ EXTERN ~TAFFICJ~ thal2
+  IF ~~ THEN REPLY ~Mighty mage or not, I will not be spoken down to as though I were nothing but an insect buzzing around your head... something irritating to be flicked away!~ GOTO 34
+  IF ~~ THEN REPLY ~This has been a huge waste of my time, we will learn nothing from this mage. We may as well do as he says and leave before we anger him any more.~ EXTERN ~TAFFICJ~ thal2
 END
 
 IF ~~ THEN BEGIN thalan6
   SAY ~No, but you will listen to me. You see these golems I have around the place... well it is not for their scintillating conversation that I keep them. One word from me and they are more than capable of taking care of undesirable trespassers in my home. Now, be a good little adventurer and leave me be.~
-		IF ~~ THEN REPLY ~Mighty mage or not, I will not be spoken down to as though I were nothing but an insect buzzing around your head... something irritating to be flicked away!~ GOTO 34
-  	IF ~~ THEN REPLY ~This has been a huge waste of my time, we will learn nothing from this mage. We may as well do as he says and leave before we anger him any more.~ EXTERN ~TAFFICJ~ thal2
+  IF ~~ THEN REPLY ~Mighty mage or not, I will not be spoken down to as though I were nothing but an insect buzzing around your head... something irritating to be flicked away!~ GOTO 34
+  IF ~~ THEN REPLY ~This has been a huge waste of my time, we will learn nothing from this mage. We may as well do as he says and leave before we anger him any more.~ EXTERN ~TAFFICJ~ thal2
 END
 
 IF ~~ THEN BEGIN thalan7
   SAY ~You still here? Did I not ask you to leave me be?~
-		IF ~~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
+  IF ~~ THEN REPLY ~I have a letter here from one Leanaro and he has written that you may be able to help with the plight of my friend Taffic here.~ GOTO thalan8
 END
 
 IF ~~ THEN BEGIN thalan8
   SAY ~Leanaro you say ... now that is a name I haven't thought of in a long while. Tell me how is the canny elf?~
- 	 IF ~~ THEN REPLY ~I have to admit I do not know Leanaro, but I have his letter to Deidre. Here, you are welcome to read it for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
- 	 IF ~~ THEN REPLY ~Here, I think it best if you read the letter yourself as it explains our purpose for being here.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
- 	 IF ~~ THEN REPLY ~He speaks fondly of you too Thalantyr, here read his letter for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
+  IF ~~ THEN REPLY ~I have to admit I do not know Leanaro, but I have his letter to Deidre. Here, you are welcome to read it for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
+  IF ~~ THEN REPLY ~Here, I think it best if you read the letter yourself as it explains our purpose for being here.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
+  IF ~~ THEN REPLY ~He speaks fondly of you too Thalantyr, here read his letter for yourself.~ DO ~TakePartyItem("tafflet1")~ GOTO thalan9
 END
 
 IF ~~ THEN BEGIN thalan9
   SAY ~(*To your surprise a smile comes to the mage's lips and he even chuckles softly as he reads the letter*). Well I never... so Leanaro married Carialie after all.~
-=
-~I wonder how he managed to talk that old goat of a father of hers into agreeing to giving him his daughter's hand?~
-=
-~If things had been different... no matter, what's past is past, let's see why he has sent you young adventurers to my abode.~
-=
-~So it is the miracle of Gravelk that we seek. (*Looking at Taffic*) Then you must be the gnome he speaks of eh?~
-=
-~So you also have big ideas do you, is there some fair maiden that you wish to impress my little discontented gnome?~
-		IF ~~ THEN EXTERN ~TAFFICJ~ thal5
+  = ~I wonder how he managed to talk that old goat of a father of hers into agreeing to giving him his daughter's hand?~
+  = ~If things had been different... no matter, what's past is past, let's see why he has sent you young adventurers to my abode.~
+  = ~So it is the miracle of Gravelk that we seek. (*Looking at Taffic*) Then you must be the gnome he speaks of eh?~
+  = ~So you also have big ideas do you, is there some fair maiden that you wish to impress my little discontented gnome?~
+  IF ~~ THEN EXTERN ~TAFFICJ~ thal5
 END
 
 IF ~~ THEN BEGIN thalan10
   SAY ~Possibly I can, Leanaro speaks the truth of what I witnessed at the home of Aldruis.~
-=
-~When I speak of the miracle of Gravelk I am referring to the dwarf whom he speaks of in his letter, the dwarf who became an elf.~
-=
-~Now the question is, what can you do for me in exchange for what I know?~
-		IF ~~ THEN EXTERN ~TAFFICJ~ thal6
+  = ~When I speak of the miracle of Gravelk I am referring to the dwarf whom he speaks of in his letter, the dwarf who became an elf.~
+  = ~Now the question is, what can you do for me in exchange for what I know?~
+  IF ~~ THEN EXTERN ~TAFFICJ~ thal6
 END
 
 IF ~~ THEN BEGIN thalan11
   SAY ~<CHARNAME> now that is a name known widely in this area. I did not realise who your companion was until you spoke their name.~
-=
-~Rumour has it that <PRO_HESHE> is one of the children of Bhaal, although it is only whispered but many believe it to be true.~
-=
-~What do you say <CHARNAME>, is there some truth in those whispered rumours?~
-		IF ~~ THEN REPLY ~It is true, Bhaal is my father but having the god of murder for a father is not something I make a point of advertising.~ GOTO thalan12
-  	IF ~~ THEN REPLY ~It is true, but once known the fact often brings out the worst in people so I prefer not to make my identity common knowledge if I can help it.~ GOTO thalan12
-		IF ~~ THEN REPLY ~Maybe it is true and maybe it is not, but that is no one's business but my own.~ GOTO thalan12
+  = ~Rumour has it that <PRO_HESHE> is one of the children of Bhaal, although it is only whispered but many believe it to be true.~
+  = ~What do you say <CHARNAME>, is there some truth in those whispered rumours?~
+  IF ~~ THEN REPLY ~It is true, Bhaal is my father but having the god of murder for a father is not something I make a point of advertising.~ GOTO thalan12
+  IF ~~ THEN REPLY ~It is true, but once known the fact often brings out the worst in people so I prefer not to make my identity common knowledge if I can help it.~ GOTO thalan12
+  IF ~~ THEN REPLY ~Maybe it is true and maybe it is not, but that is no one's business but my own.~ GOTO thalan12
 END
 
 IF ~~ THEN BEGIN thalan12
   SAY ~Then we shall speak no more of it, the matter is forgotten.~
-=
-~However, there is still the matter of what you can do for me and as your gnome here has kindly informed me that nothing is beyond you, I think I may have the very thing that needs taking care of.~
-=
-~This area is notorious for the numerous amount of undead that walk and no matter how many are destroyed, the very next day as many appear again. It is getting to the point where people are afraid to visit my store and my sales of magic are slowly diminishing.~
- 	 IF ~~ THEN EXTERN ~TAFFICJ~ thal7
+  = ~However, there is still the matter of what you can do for me and as your gnome here has kindly informed me that nothing is beyond you, I think I may have the very thing that needs taking care of.~
+  = ~This area is notorious for the numerous amount of undead that walk and no matter how many are destroyed, the very next day as many appear again. It is getting to the point where people are afraid to visit my store and my sales of magic are slowly diminishing.~
+  IF ~~ THEN EXTERN ~TAFFICJ~ thal7
 END
 
 IF ~~ THEN BEGIN thalan13
   SAY ~Not so fast my little friend, has no one ever told you not to agree to anything until you have heard the whole story?~
-=
-~Anyway, as I was about to say, I have at last discovered where it is they originate from but as of yet I have not had the time to deal with the problem. There is a house just west of here and it has been taken over by a necromancer.~
-=
-~It would seem that he is doing some research into undead creatures and he is continually animating them, then discarding them when he has finished whatever it is he is doing, leaving them to roam at will.~
-=
-~If you would take care of this problem for me then I will tell you what I know of changing person's race.~
-		IF ~~ THEN REPLY ~I will put an end to this abomination immediately.~ GOTO thalan14
-  	IF ~~ THEN REPLY ~I will seek out this necromancer and if he refuses to cease this practise he will join his creations in the ranks of the dead.~ GOTO thalan14
-  	IF ~~ THEN REPLY ~A simple enough task I will return when it is done.~ GOTO thalan14
-  	IF ~~ THEN REPLY ~Another distasteful task! I am tired of doing the dirty work of others, you will have to take care of him yourself. Come we are leaving.~ EXTERN ~TAFFICJ~ thal8
+  = ~Anyway, as I was about to say, I have at last discovered where it is they originate from but as of yet I have not had the time to deal with the problem. There is a house just west of here and it has been taken over by a necromancer.~
+  = ~It would seem that he is doing some research into undead creatures and he is continually animating them, then discarding them when he has finished whatever it is he is doing, leaving them to roam at will.~
+  = ~If you would take care of this problem for me then I will tell you what I know of changing person's race.~
+  IF ~~ THEN REPLY ~I will put an end to this abomination immediately.~ GOTO thalan14
+  IF ~~ THEN REPLY ~I will seek out this necromancer and if he refuses to cease this practise he will join his creations in the ranks of the dead.~ GOTO thalan14
+  IF ~~ THEN REPLY ~A simple enough task I will return when it is done.~ GOTO thalan14
+  IF ~~ THEN REPLY ~Another distasteful task! I am tired of doing the dirty work of others, you will have to take care of him yourself. Come we are leaving.~ EXTERN ~TAFFICJ~ thal8
 END
 
 IF ~~ THEN BEGIN thalan14
   SAY ~Good, now hurry along and come back when the problem is sorted.~
-  	IF ~~ THEN DO ~SetGlobal("VP_GoTo_Thalantyr","GLOBAL",6)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_GoTo_Thalantyr","GLOBAL",6)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("VP_GoTo_Thalantyr","GLOBAL",6)~ THEN BEGIN 35
   SAY ~Has the necromancer and his minions been dealt with <CHARNAME>? Is the area around my abode safe once more?~
-		IF ~OR(2)
-!Global("SPRITE_IS_DEADNecrias","GLOBAL",1)
-GlobalLT("SPRITE_IS_DEADSkelwan","GLOBAL",8)~ THEN REPLY ~Not yet. I will return when it is done.~ GOTO necr0
-		IF ~Global("SPRITE_IS_DEADNecrias","GLOBAL",1)
-Global("SPRITE_IS_DEADSkelwan","GLOBAL",8)~ THEN EXTERN ~TAFFICJ~ Taffic11
+  IF ~OR(2) !Global("SPRITE_IS_DEADNecrias","GLOBAL",1) GlobalLT("SPRITE_IS_DEADSkelwan","GLOBAL",8)~ THEN REPLY ~Not yet. I will return when it is done.~ GOTO necr0
+  IF ~Global("SPRITE_IS_DEADNecrias","GLOBAL",1) Global("SPRITE_IS_DEADSkelwan","GLOBAL",8)~ THEN EXTERN ~TAFFICJ~ Taffic11
 END
 
 IF ~~ THEN BEGIN necr0
   SAY ~Then hurry and come back when the problem is sorted.~
-  	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN Thal16
   SAY ~So <CHARNAME>, tell me, how did you suddenly take on the semblance of a forest gnome? Was it some trick played on you by the necromancer?~
-  	IF ~~ THEN REPLY ~You must forgive Taffic, sometimes his delusions of grandeur, make him forget who he is.~ GOTO Thal17
-  	IF ~~ THEN REPLY ~He's just excited, he truly believes that you can help him become what he isn't.~ GOTO Thal17
-  	IF ~~ THEN REPLY ~Jesting aside, I have done what you asked and now it is for you to give me, or rather, to give Taffic the information he wants before he bursts a blood vessel through excitement.~ GOTO Thal17
+  IF ~~ THEN REPLY ~You must forgive Taffic, sometimes his delusions of grandeur, make him forget who he is.~ GOTO Thal17
+  IF ~~ THEN REPLY ~He's just excited, he truly believes that you can help him become what he isn't.~ GOTO Thal17
+  IF ~~ THEN REPLY ~Jesting aside, I have done what you asked and now it is for you to give me, or rather, to give Taffic the information he wants before he bursts a blood vessel through excitement.~ GOTO Thal17
 END
 
 IF ~~ THEN BEGIN Thal17
   SAY ~Of course, you must be anxious to be on your way ... all of you, just as I am anxious to have my home to myself once more.~
-=
-~Let me assure you that what Leanaro wrote in his letter was true, a dwarf did enter the home of my friend Aldruis and an elf did leave...~
-		IF ~~ THEN EXTERN ~TAFFICJ~ Taffic12
+  = ~Let me assure you that what Leanaro wrote in his letter was true, a dwarf did enter the home of my friend Aldruis and an elf did leave...~
+  IF ~~ THEN EXTERN ~TAFFICJ~ Taffic12
 END
 
 IF ~~ THEN BEGIN Thal18
   SAY ~Not so fast Taffic. I said I was witness to it... I didn't take part in the sorcery myself. That was all Aldruis' doing and unfortunately he didn't impart the secret to me.~
-=
-~I couldn't even be certain that it was not an illusion put on by Aldruis for my benefit, it was the sort of thing he would do and at the time, nor anytime since, have I ever thought to question what I saw.~
-=
-~There was however, another witness present, his apprentice Rhezon and you can be sure Aldruis will have passed all his knowledge of arcane magic on to Rhezon. He looked upon the boy as if he were the son he never had...~
-		IF ~~ THEN EXTERN ~TAFFICJ~ Taffic13
+  = ~I couldn't even be certain that it was not an illusion put on by Aldruis for my benefit, it was the sort of thing he would do and at the time, nor anytime since, have I ever thought to question what I saw.~
+  = ~There was however, another witness present, his apprentice Rhezon and you can be sure Aldruis will have passed all his knowledge of arcane magic on to Rhezon. He looked upon the boy as if he were the son he never had...~
+  IF ~~ THEN EXTERN ~TAFFICJ~ Taffic13
 END
-	
+
 IF ~~ THEN BEGIN Thal19
   SAY ~(*Sternly*) Hm. A bold statement were I an orc or a hobgoblin. I am however, not someone it would be wise for you to attack my little gnome.~
-=
-~I will forgive your outburst this once but you would be wise to let a man finish speaking before interrupting again, another may not be as tolerant as me. As I was about to say ... when Aldruis died, I heard that Rhezon had travelled and settled in Trademeet.~
-=
-~A town not too far from where you have just travelled from I believe. I also hear that Rhezon has made quite a name for himself as a very powerful and knowledgeable sage.~
-=
-~He is the one you must now seek out ... now if you will excuse me our business is concluded and I wish you to leave.~
-		IF ~~ THEN EXTERN ~TAFFICJ~ Taffic14
+  = ~I will forgive your outburst this once but you would be wise to let a man finish speaking before interrupting again, another may not be as tolerant as me. As I was about to say ... when Aldruis died, I heard that Rhezon had travelled and settled in Trademeet.~
+  = ~A town not too far from where you have just travelled from I believe. I also hear that Rhezon has made quite a name for himself as a very powerful and knowledgeable sage.~
+  = ~He is the one you must now seek out ... now if you will excuse me our business is concluded and I wish you to leave.~
+  IF ~~ THEN EXTERN ~TAFFICJ~ Taffic14
 END
-  

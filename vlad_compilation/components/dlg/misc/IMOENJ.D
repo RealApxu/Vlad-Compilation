@@ -117,7 +117,7 @@ IF ~~ THEN BEGIN NEJ93
 END
 
 IF ~~ THEN BEGIN NEJ94
- SAY ~(*Muttering under her breath as she walks away*)... Hmph! She needn't think I won't find out what she has written, because I will, you can bet on it! ~
+ SAY ~(*Muttering under her breath as she walks away*)... Hmph! She needn't think I won't find out what she has written, because I will, you can bet on it!~
  IF ~~ THEN EXIT
 END
 
@@ -220,7 +220,7 @@ IF ~~ THEN BEGIN NEJ112
  IF ~~ THEN REPLY ~All good memories are worth hanging onto, but that is all they are, memories. Whereas the past will always be with us, we have a future to look to now, even if fate decrees that our futures now lie in this strange land.~ GOTO NEJ117
  IF ~~ THEN REPLY ~Come Imoen this is not the time to relive old memories, and please, put that snowball down, I am quite wet enough thank you.~ GOTO NEJ117
 END
-	
+
 IF ~~ THEN BEGIN NEJ113
  SAY ~(*Picking up a handfull of fresh snow*)... I know <CHARNAME>, but it feels so good to be walking free again.~
  IF ~~ THEN GOTO NEJ114
@@ -254,20 +254,14 @@ END
 
 IF ~~ THEN BEGIN NEJ118
  SAY ~Maybe not <CHARNAME>, but we would have a heck of a lot more fun.~
- IF ~OR(2)
-Dead("Jaheira")
-!InParty("Jaheira")~ THEN EXIT
- IF ~!Dead("Jaheira")
-InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
+ IF ~OR(2) Dead("Jaheira") !InParty("Jaheira")~ THEN EXIT
+ IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
 END
 
 IF ~~ THEN BEGIN NEJ119
  SAY ~You got lucky there, bet I get you with my next one!~
- IF ~OR(2)
-Dead("Jaheira")
-!InParty("Jaheira")~ THEN EXIT
- IF ~!Dead("Jaheira")
-InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
+ IF ~OR(2) Dead("Jaheira") !InParty("Jaheira")~ THEN EXIT
+ IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
 END
 
 IF ~~ THEN BEGIN NEJ120
@@ -303,10 +297,8 @@ END
 IF ~~ THEN BEGIN NEJ126
  SAY ~(*Giggles*) It Looks like our lady priest has got a crush on Hrothgar and him being so old... yuck!~
  IF ~InParty("Jaheira")~ THEN GOTO NEJ127
- IF ~!InParty("Jaheira")
-InParty("Minsc")~ THEN GOTO NEJ129
- IF ~!InParty("Jaheira")
-!InParty("Minsc")~ THEN GOTO NEJ131
+ IF ~!InParty("Jaheira") InParty("Minsc")~ THEN GOTO NEJ129
+ IF ~!InParty("Jaheira") !InParty("Minsc")~ THEN GOTO NEJ131
 END
 
 IF ~~ THEN BEGIN NEJ127
@@ -373,10 +365,8 @@ END
 IF ~~ THEN BEGIN NEJ139
  SAY ~That was scary!!!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 113
- IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 26
- IF ~InParty("Accalia")
-!Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 31
+ IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 26
+ IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 31
 END
 
 IF ~~ THEN BEGIN NEJ140
@@ -392,8 +382,7 @@ END
 IF ~~ THEN BEGIN NEJ142
  SAY ~I think I may change my name to Imoen-of-the... Imoen-of-the what? Mmm, I am going to have to think some more on this one, after all, it has to reflect the colour of my skin or maybe even my hair.~
  IF ~True()~ THEN EXIT
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ587
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ587
 END
 
 IF ~~ THEN BEGIN NEJ143
@@ -424,19 +413,15 @@ END
 IF ~~ THEN BEGIN NEJ148
  SAY ~(*Screwing up her nose*) Ugg! What a horrible thought, those big lizards killing people to feed to slimy snake men!~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 273
- IF ~InParty("Accalia")
-!Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 59
+ IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 59
 END
 
 IF ~~ THEN BEGIN NEJ149
  SAY ~Hey, they're already waiting for us... why give 'em more time I say?~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 274
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ292
- IF ~InParty("Accalia")
-!Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 60
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ628
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ292
+ IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 60
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ628
 END
 
 IF ~~ THEN BEGIN NEJ150
@@ -457,12 +442,9 @@ END
 IF ~~ THEN BEGIN NEJ153
  SAY ~(*Smiling a wan smile*) At least we won't be bored.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 280
- IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 35
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ297
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ595
+ IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 35
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ297
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ595
 END
 
 IF ~~ THEN BEGIN NEJ154
@@ -486,58 +468,40 @@ END
 
 IF ~~ THEN BEGIN NEJ173
  SAY ~It's... it's not like we are being asked to kill real people is it? I mean they were real people once, brave people, but now they are just restless spirits... right?~
- IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
-RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
- IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
- IF ~InParty("Accalia")
-!Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
- IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 44
+ IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
+ IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
+ IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 44
 END
 
 IF ~~ THEN BEGIN NEJ174
  SAY ~You're not alone there Dar. Jaheira is always telling me to be wary and to maintain balance within myself, but do you know what Dar... no matter how wary I am I still find I fall over at times... (*giggles*)... and all this snow doesn't do much for a girl's balance either.~
- IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
-RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
- IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
- IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 206
- IF ~InParty("Accalia")
-!Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ614
+ IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
+ IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 206
+ IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ614
 END
 
 IF ~~ THEN BEGIN NEJ175
  SAY ~When we meet these heroes Minsc, you just have to remember what Kaylessa said, that they are the twisted spirits of what once were heroes. We are putting to rest that which should have been allowed to die a long time ago.~
  IF ~True()~ THEN EXTERN ~HROTHJ~ 208
- IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 46
+ IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 46
 END
 
 IF ~~ THEN BEGIN NEJ176
-	SAY ~I hope this works <CHARNAME>, I really want out of here.~
- IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4)
-ClearAllActions()
-StartCutSceneMode()
-StartCutscene("VPCutH07")~ EXIT
+    SAY ~I hope this works <CHARNAME>, I really want out of here.~
+ IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4) ClearAllActions() StartCutSceneMode() StartCutscene("VPCutH07")~ EXIT
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 42
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ317
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ616
 END
 
 IF ~~ THEN BEGIN NEJ177
-	SAY ~I don't care two hoots about balance Jaheira! It can be tipped upside down and standing on its head for all I care... I just want to go home.~
- IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4)
-ClearAllActions()
-StartCutSceneMode()
-StartCutscene("VPCutH07")~ EXIT
+    SAY ~I don't care two hoots about balance Jaheira! It can be tipped upside down and standing on its head for all I care... I just want to go home.~
+ IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4) ClearAllActions() StartCutSceneMode() StartCutscene("VPCutH07")~ EXIT
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 42
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ317
 END
@@ -590,12 +554,9 @@ END
 
 IF ~~ THEN BEGIN NEJ186
  SAY ~Aaaw... quit worrying Hrothgar! <CHARNAME> has never made a wrong decision yet. Have you <CHARNAME>?~
- IF ~~ THEN REPLY ~I am not convinced that my decisions are always right Imoen, but they do have a knack of coming out right in the end.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
-SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
- IF ~~ THEN REPLY ~Thanks for the vote of confidence Imoen, let's hope this one comes out okay.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
-SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
- IF ~~ THEN REPLY ~No... and that's why this is the right one too.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7)
-SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
+ IF ~~ THEN REPLY ~I am not convinced that my decisions are always right Imoen, but they do have a knack of coming out right in the end.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7) SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
+ IF ~~ THEN REPLY ~Thanks for the vote of confidence Imoen, let's hope this one comes out okay.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7) SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
+ IF ~~ THEN REPLY ~No... and that's why this is the right one too.~ DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",7) SetGlobal("VP_BackTo_Kuldahar","GLOBAL",2)~ GOTO NEJ187
 END
 
 IF ~~ THEN BEGIN NEJ187
@@ -611,17 +572,10 @@ END
 
 IF ~~ THEN BEGIN NEJ189
  SAY ~Great! Just great! Now we get to be dogs in a dogfight. I wonder how much he has bet on the winner.~
- IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~For now, let's just make sure that one of these enemies is unhappy with the outcome.~ EXTERN ~HROTHJ~ 284
- IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN ~HROTHJ~ 284
- IF ~OR(2)
-!InParty("Jaheira")
-Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN ~HROTHJ~ 284
- IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ631
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~For now, let's just make sure that one of these enemies is unhappy with the outcome.~ EXTERN ~HROTHJ~ 284
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN ~HROTHJ~ 284
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN ~HROTHJ~ 284
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ631
 END
 
 IF ~~ THEN BEGIN NEJ190
@@ -642,7 +596,7 @@ IF ~Global("VP_Imoen_In_IWD","GLOBAL",2)~ THEN BEGIN NEJ192 // 1
 END
 
 IF ~~ THEN BEGIN NEJ193 // 3
- SAY ~Now you're really scaring me! We've never been here before... I would remember all this snow if we had. How can you know him?~		
+ SAY ~Now you're really scaring me! We've never been here before... I would remember all this snow if we had. How can you know him?~
  IF ~~ THEN REPLY ~I did not say I know him, only I know of him. Hrothgar of Easthaven, the name has become a legend in our time.~ GOTO NEJ194
  IF ~~ THEN REPLY ~There is something very wrong here. Legend says Hrothgar of Easthaven died over 100 years ago!~ GOTO NEJ194
  IF ~~ THEN REPLY ~I remember Gorion telling me stories of great men and women. Legends of heroes who have left their mark on The Realms in some way. Hrothgar of Easthaven was such a man.~ GOTO NEJ194
@@ -668,7 +622,7 @@ IF ~~ THEN BEGIN NEJ196
  IF ~~ THEN REPLY ~Even if I have to wait the next hundred years out... I will find him Imoen and when I do, it'll be him caged and tortured in that hell hole of his.~ GOTO NEJ198
  IF ~~ THEN REPLY ~Believe me Imoen, Irenicus's days are numbered even as we stand here. I am not about to let a little thing like where or when we are keep me from cutting out that black heart of his and handing it to him... still beating!~ GOTO NEJ199
 END
-						
+
 IF ~~ THEN BEGIN NEJ197
  SAY ~(*Her face brightens a little at your words*) Then what are we waiting for, let's go find us another portal and kick some ass.~
  IF ~~ THEN EXIT
@@ -712,13 +666,13 @@ IF ~~ THEN BEGIN NEJ203
 END
 
 IF ~~ THEN BEGIN NEJ204 // 2
-	SAY ~Please, you're beginning to scare me <CHARNAME>. What's not possible... is it something to do with that man, Hrothgar?~
- 	IF ~~ THEN REPLY ~I... I know that man Imoen... at least I know of him.~ GOTO NEJ193
- 	IF ~~ THEN REPLY ~Hrothgar! A name I know but this makes no sense!~ GOTO NEJ193
+    SAY ~Please, you're beginning to scare me <CHARNAME>. What's not possible... is it something to do with that man, Hrothgar?~
+     IF ~~ THEN REPLY ~I... I know that man Imoen... at least I know of him.~ GOTO NEJ193
+     IF ~~ THEN REPLY ~Hrothgar! A name I know but this makes no sense!~ GOTO NEJ193
 END
 
 IF ~~ THEN BEGIN NEJ205
-	SAY ~(*Groans*)... Aargh... another portal! What is it with this mage, doesn't he believe in good old fashioned wooden doors?~
+    SAY ~(*Groans*)... Aargh... another portal! What is it with this mage, doesn't he believe in good old fashioned wooden doors?~
  IF ~~ THEN EXTERN ~HROTHJ~ 371
 END
 
@@ -726,7 +680,7 @@ IF ~~ THEN BEGIN NEJ206
   SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasn't angry when he did those things, but he will be now and I don't think I could stand it if he caught us again.~
   IF ~~ THEN GOTO NEJ207
 END
-	
+
 IF ~~ THEN BEGIN NEJ207
   SAY ~Please Hrothgar, you teleported us once, please do it again... get us out of here... please!~
   IF ~~ THEN EXTERN ~SHARTJ~ imscared
@@ -764,18 +718,18 @@ END
 
 IF ~~ THEN BEGIN sharaval
   SAY ~You are so cruel Shar-Teel! I don't know why <CHARNAME> didn't leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
-	IF ~True()~ THEN EXTERN ~HROTHJ~ 401
-	IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+    IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+    IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 END
 
 IF ~~ THEN BEGIN NEJ206fix
   SAY ~(*She turns deathly pale and begins shaking*)... Hrothgar please... Irenicus did horrible things to <CHARNAME> and me. He wasn't angry when he did those things, but he will be now and I don't think I could stand it if he caught us again.~
   IF ~~ THEN GOTO NEJ207fix
 END
-	
+
 IF ~~ THEN BEGIN NEJ207fix
   SAY ~Please Hrothgar, you teleported us once, please do it again... get us out of here... please!~
-	IF ~~ THEN EXTERN ~HROTHJ~ 372
+    IF ~~ THEN EXTERN ~HROTHJ~ 372
 END
 
 IF ~~ THEN BEGIN NEJ209fix
@@ -790,7 +744,7 @@ END
 
 IF ~~ THEN BEGIN NEJ211fix
   SAY ~Hrothgar... you... you teleported us once, please do it again... please, get us out of here!~
-	IF ~~ THEN EXTERN ~HROTHJ~ 372
+    IF ~~ THEN EXTERN ~HROTHJ~ 372
 END
 
 IF ~~ THEN BEGIN NEJ212fix
@@ -800,11 +754,11 @@ END
 
 IF ~~ THEN BEGIN IWDEREV1
   SAY ~Oh yes, we'll have so much to share with you. Great foods such as mud pies, butterfly wheels, and pixie stuffing!~
-	IF ~~ THEN EXTERN ~EREVAINJ~ 4
+    IF ~~ THEN EXTERN ~EREVAINJ~ 4
 END
 
 IF ~~ THEN BEGIN IWDEREV2
   SAY ~Oh, don't take everything so literal Erevain. There's so many fun things to experience! You'll love it somewhere warmer.~
-	IF ~~ THEN EXTERN ~EREVAINJ~ 5
+    IF ~~ THEN EXTERN ~EREVAINJ~ 5
 END
 END

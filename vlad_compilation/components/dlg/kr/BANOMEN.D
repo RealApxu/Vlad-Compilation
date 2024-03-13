@@ -2,10 +2,8 @@ APPEND ~BANOMEN~
 
 IF WEIGHT #2 ~Global("VP_AnomenJealous","GLOBAL",6)~ THEN BEGIN AHK_st0
   SAY ~<CHARNAME>! Can we have a word?~
-=
-~You love him, don't you? Please, do not bother denying it. I see it, I'm losing to him in each and every way.~
-=
-~I understand... I just have to speak out as it is. Maybe it would be best if I left and kept out of your way?~
+    = ~You love him, don't you? Please, do not bother denying it. I see it, I'm losing to him in each and every way.~
+    = ~I understand... I just have to speak out as it is. Maybe it would be best if I left and kept out of your way?~
   IF ~~ THEN REPLY ~Anomen, it is your decision. I have no right to forbid you.~ GOTO AHK_st1
   IF ~~ THEN REPLY ~Have it your way. I do not care.~ GOTO AHK_st1
   IF ~~ THEN REPLY ~Yes, it's probably for the best. You should leave.~ GOTO AHK_st2
@@ -13,9 +11,8 @@ END
 
 IF ~~ THEN BEGIN AHK_st1
   SAY ~(Becomes thoughtful) What of the group, you will be left without a cleric? Your adventure is full of dangers, <CHARNAME>, and I do not want you to suffer because of my lack of reserve. After all sir Ryan did commission me to accompany you.~
-=
-~You remember I once told you that you remind me of Moira? Maybe I can start learning to love you as sister, now that there is nothing else left for me.~
-	IF ~~ THEN DO ~SetGlobal("VP_AnomenJealous","GLOBAL",7)~ EXIT
+  = ~You remember I once told you that you remind me of Moira? Maybe I can start learning to love you as sister, now that there is nothing else left for me.~
+  IF ~~ THEN DO ~SetGlobal("VP_AnomenJealous","GLOBAL",7)~ EXIT
 END
 
 IF ~~ THEN BEGIN AHK_st2
@@ -36,16 +33,14 @@ END
 
 IF ~~ THEN BEGIN AFr_st1
   SAY ~(Turns sulky) No, my love. I have my own head on my shoulders, but I did my father's bidding. Neither you, nor I have enough experience to have been able to foresee the outcome.~
-=
-~(In a confused and low voice) I should have listened to Keldorn, but I couldn't stand another of those sermons of his, and this, all of this will come to no good.~
-=
-~I... I should leave you my love, and disappear forever. It hurts me so much to see your love for another. Please tell him that I still have the greatest respect for him. Farewell.~
+  = ~(In a confused and low voice) I should have listened to Keldorn, but I couldn't stand another of those sermons of his, and this, all of this will come to no good.~
+  = ~I... I should leave you my love, and disappear forever. It hurts me so much to see your love for another. Please tell him that I still have the greatest respect for him. Farewell.~
   IF ~~ THEN REPLY ~Where will you go?~ GOTO AFr_st2
 END
 
 IF ~~ THEN BEGIN AFr_st2
   SAY ~To Oisig. Helm shall not forsake me.~
-  	IF ~~ THEN EXTERN ~KELDORJ~ AnomLeav
+  IF ~~ THEN EXTERN ~KELDORJ~ AnomLeav
 END
 
 IF ~~ THEN BEGIN AnomBye
@@ -62,9 +57,9 @@ END
 
 /////////////CHAINs////////////////
 
-CHAIN IF WEIGHT #0 ~Global("VP_AnomenJealous","GLOBAL",2)~ THEN
-BANOMEN AnomenHatred1
-  ~Lord Keldorn! May I have a word with you?~
+CHAIN
+IF WEIGHT #0 ~Global("VP_AnomenJealous","GLOBAL",2)~ THEN BANOMEN AnomenHatred1
+~Lord Keldorn! May I have a word with you?~
 DO ~SetGlobal("VP_AnomenJealous","GLOBAL",3)~
 == BKELDOR ~By all means Anomen, what troubles you?~
 == BANOMEN ~Sir Keldorn, it has not escaped my attention that you have frequent and long conversations with <CHARNAME>.~
@@ -79,9 +74,9 @@ DO ~SetGlobal("VP_AnomenJealous","GLOBAL",3)~
 == BKELDOR ~Isn't it a little too early to speak of love, Anomen? And trust me the Order is of greater importance. It's good, when love is with you, when it is mutual... love inspires, it gives a special meaning to life. But if there is none, that is no tragedy either. To perform one's duty and to uphold the honour, that's the true path of a would-be knight.~
 EXIT
 
-CHAIN IF WEIGHT #1 ~Global("VP_AnomenJealous","GLOBAL",4)~ THEN
-BANOMEN AnomenHatred2
-  ~Sir Keldorn! You remember our talk? You said then, that passing the test and becoming a knight of The Order were of the most importance to me.~
+CHAIN
+IF WEIGHT #1 ~Global("VP_AnomenJealous","GLOBAL",4)~ THEN BANOMEN AnomenHatred2
+~Sir Keldorn! You remember our talk? You said then, that passing the test and becoming a knight of The Order were of the most importance to me.~
 DO ~SetGlobal("VP_AnomenJealous","GLOBAL",5)~
 == BKELDOR ~And you have accomplished that! I am very pleased for you, Sir Anomen.~
 == BANOMEN ~Thank you. But I was talking about another matter.~

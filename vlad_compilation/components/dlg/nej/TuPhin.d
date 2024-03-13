@@ -48,37 +48,23 @@ END
 IF ~~ THEN BEGIN 6
   SAY ~The first test will be for you to protect yourself from spells that I will be casting at you. I will not make it easy by telling you the level of these spells but I will tell you that I will cast three in total. The second test will give you the opportunity to break down my own defence. Are we set to begin <CHARNAME>?~
   IF ~~ THEN REPLY ~I am, Phineas.~ GOTO 7
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~No, I have the spells but not memorised Phineas.~ GOTO 8
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~No, I have the spells but not memorised Phineas.~ GOTO 9
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
-  IF ~InParty("Kachiko")
-!Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
-  IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~No, I have the spells but not memorised Phineas.~ GOTO 8
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~No, I have the spells but not memorised Phineas.~ GOTO 9
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
+  IF ~InParty("Kachiko") !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
+  IF ~InParty("Jan") !Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
   IF ~~ THEN REPLY ~That's hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
   IF ~~ THEN REPLY ~Perhaps this is not a good time for me after all. Maybe some other time Phineas.~ GOTO 12
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~Exellent! In your own time begin your casting.~
-  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-SetGlobal("VP_My_Test","LOCALS",1)
-RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) SetGlobal("VP_My_Test","LOCALS",1) RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
 END //=> Abjurer: Test 1 (Waiting). If ready --> GOTO 26
 
 IF ~~ THEN BEGIN 8
@@ -90,7 +76,7 @@ IF ~~ THEN BEGIN 9
   SAY ~You disappoint me, student, here I was me thinking your keenness was an indication that you were prepared. I propose that you leave now and come back when you are prepared.~
   IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",3)~ EXIT
 END //Abjurer: Test 1 is postponed
-		
+
 IF ~~ THEN BEGIN 10
   SAY ~(*Rolls his eyes*) What are we teaching our students today I ask myself, or is it they are just not listening? The tasks I have just set you, student, are doable by any number of abjuration spells and yet you say you don't have any of them.~
   IF ~~ THEN REPLY ~Do you disregard my abilities solely because I do not have the spells required for this test of yours?~ GOTO 18
@@ -118,28 +104,16 @@ END //Abjurer: Test 1 is rejected
 IF ~~ THEN BEGIN 14
   SAY ~Circumstances being as they are, you decision to reconsider is the right one <CHARNAME>. You know the tasks, are you and your spells readied?~
   IF ~~ THEN REPLY ~I have, Phineas.~ GOTO 7
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
-  IF ~InParty("Kachiko")
-!Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
-  IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I have the spells, Phineas, but I have not had the opportunity to memorise them.~ GOTO 8
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I have the spells, Phineas, but I have not had the opportunity to memorise them.~ GOTO 9
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
+  IF ~InParty("Kachiko") !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
+  IF ~InParty("Jan") !Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I have the spells, Phineas, but I have not had the opportunity to memorise them.~ GOTO 8
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I have the spells, Phineas, but I have not had the opportunity to memorise them.~ GOTO 9
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_ENCHANTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 15
@@ -162,9 +136,7 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~Now let us see if you have made a wise choice <CHARNAME>. We will proceed when you are ready.~
-  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-SetGlobal("VP_My_Test","LOCALS",1)
-RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) SetGlobal("VP_My_Test","LOCALS",1) RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
 END //=> Abjurer: Test 1 (Waiting). If ready --> GOTO 26
 
 IF ~~ THEN BEGIN 18
@@ -185,78 +157,26 @@ END
 
 IF ~~ THEN BEGIN 20
   SAY ~All that remains now is to see if you have prepared wisely. We will proceed when you are ready.~
-  IF ~Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT18")~ EXIT
-  IF ~Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutN03")~ EXIT
-  IF ~Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutK03")~ EXIT
-  IF ~Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutA03")~ EXIT
-  IF ~Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutTf3")~ EXIT
-  IF ~Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutJ03")~ EXIT
-  IF ~Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutE03")~ EXIT
+  IF ~Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT18")~ EXIT
+  IF ~Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutN03")~ EXIT
+  IF ~Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutK03")~ EXIT
+  IF ~Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutA03")~ EXIT
+  IF ~Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutTf3")~ EXIT
+  IF ~Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutJ03")~ EXIT
+  IF ~Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutE03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent(Player1,100)
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 21
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent(Player1,100) Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 21
   SAY ~Nicely done <CHARNAME>. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT19")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT19")~ EXIT
 END //Abjurer: Test 2 starts
 
 IF ~Global("VP_My_Test","LOCALS",4)~ THEN BEGIN 22
   SAY ~You will have only one minute to breach my defense. Within a minute you may cast any spell you wish but after that you must immediately cease your spell casting and inform me about this.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",5)
-RealSetGlobalTimer("VP_Abjurer_Test2","GLOBAL",60)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",5) RealSetGlobalTimer("VP_Abjurer_Test2","GLOBAL",60)~ EXIT
 END //=> Abjurer: Test 2 (Waiting). If too late --> GOTO 28
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT(Player1,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 23
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT(Player1,100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 23
   SAY ~ I am sorry <CHARNAME>, but you do need  to succeed in both tasks in order to pass. You should return to your studies for now, and I will see you again when I return and then you may try again. Farewell.~
   IF ~~ THEN REPLY ~Please, Phineas, let me attempt the task once more. I will not fail again.~ GOTO 24
   IF ~~ THEN REPLY ~You cannot possibly fail me after only one attempt, Phineas!~ GOTO 24
@@ -265,526 +185,293 @@ END
 
 IF ~~ THEN BEGIN 24
   SAY ~One attempt is all you get! You may try again but not at this time. Now, you will return to your studies and I will see you again when my other business is concluded. Farewell.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT21")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT21")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 25
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 25
   SAY ~I am sorry, a brave attempt, but you do need to succeed in both tasks in order to pass. You should return to your studies for now, and I will see you again when I return and you may try again. Farewell.~
   IF ~~ THEN REPLY ~But surely having passed the first test, I can be given another attempt at the second?~ GOTO 24
   IF ~~ THEN REPLY ~I have proven capable in one task, Phineas, is that not enough?~ GOTO 24
   IF ~~ THEN REPLY ~Come Phineas, who will know if you let me attempt the second task again?~ GOTO 24
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 26
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 26
   SAY ~I guess you are ready <CHARNAME>, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT18")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT18")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 27
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 27
   SAY ~I am sorry, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test. Now, you may return to your studies, and I will see you again when my other business is concluded. Farewell.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT21")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT21")~ EXIT
 END //Abjurer: Test 1 is rejected
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 28
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 28
   SAY ~I am sorry, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test. Now, you may return to your studies, and I will see you again when my other business is concluded. Farewell.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT21")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT21")~ EXIT
 END //Abjurer: Test 2 is rejected
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Nalia_AbjQuest","GLOBAL",0)
-Global("VP_Kachi_AbjQuest","GLOBAL",0)
-Global("VP_Aerie_AbjQuest","GLOBAL",0)
-Global("VP_Taffic_AbjQuest","GLOBAL",0)
-Global("VP_Jan_AbjQuest","GLOBAL",0)
-Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 29
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Nalia_AbjQuest","GLOBAL",0) Global("VP_Kachi_AbjQuest","GLOBAL",0) Global("VP_Aerie_AbjQuest","GLOBAL",0) Global("VP_Taffic_AbjQuest","GLOBAL",0) Global("VP_Jan_AbjQuest","GLOBAL",0) Global("VP_Edwin_AbjQuest","GLOBAL",0)~ THEN BEGIN 29
   SAY ~Congratulations <GABBER>, you show more promise than I have seen in a student for a long while. I will personally monitor your progress carefully. Return to your studies, and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT20")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT20")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Nalia",100)
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 30
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Nalia",100) Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 30
   SAY ~Nicely done, Nalia. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutN04")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutN04")~ EXIT
 END //Abjurer: Test 2 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Kachiko",100)
-Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 31
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Kachiko",100) Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 31
   SAY ~Nicely done, Kachiko. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutK04")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutK04")~ EXIT
 END //Abjurer: Test 2 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Aerie",100)
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 32
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Aerie",100) Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 32
   SAY ~Nicely done, Aerie. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutA04")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutA04")~ EXIT
 END //Abjurer: Test 2 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Nalia",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 33
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Nalia",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 33
   SAY ~I am sorry, Nalia, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~NALIAJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Kachiko",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 34
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Kachiko",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 34
   SAY ~I am sorry, Kachiko, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~KACHIJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Aerie",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 35
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Aerie",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 35
   SAY ~I am sorry, Aerie, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~AERIEJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 36
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 36
   SAY ~I guess you are ready Nalia, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutN03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutN03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 37
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 37
   SAY ~I guess you are ready Kachiko, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutK03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutK03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 38
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 38
   SAY ~I guess you are ready Aerie, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutA03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutA03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 39
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN 39
   SAY ~Congratulations, Nalia, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutN05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutN05")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 40
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Kachi_AbjQuest","GLOBAL",1)~ THEN BEGIN 40
   SAY ~Congratulations, Kachiko, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutK05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutK05")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 41
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN 41
   SAY ~Congratulations, Aerie, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutA05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutA05")~ EXIT
 END
 
 IF ~~ THEN BEGIN npcstest
   SAY ~If not yourself <CHARNAME>, then let me explain the test and you can introduce me to the candidate when I am done.~
-=
-~The test consists of two very simple tasks which will help me assess your magical ability in two areas of abjuration magic.~
-=
-~The first task will be for you to protect yourself from spells that I will be casting at you. I will not make it easy by telling you the level of these spells but I will tell you that I will cast three in total. The second test will give you the opportunity to break down my own defences. Are we set to begin?~
+  = ~The test consists of two very simple tasks which will help me assess your magical ability in two areas of abjuration magic.~
+  = ~The first task will be for you to protect yourself from spells that I will be casting at you. I will not make it easy by telling you the level of these spells but I will tell you that I will cast three in total. The second test will give you the opportunity to break down my own defences. Are we set to begin?~
   IF ~~ THEN REPLY ~I am ready to pass your exams.~ GOTO 7
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I am ready to pass your exams and I have the spells, but not memorised Phineas.~ GOTO 8
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I am ready to pass your exams and I have the spells, but not memorised Phineas.~ GOTO 9
-  IF ~Class(Player1,MAGE_ALL)
-!Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
-  IF ~OR(2)
-!Class(Player1,MAGE_ALL)
-Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
-  IF ~InParty("Kachiko")
-!Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
-  IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I am ready to pass your exams and I have the spells, but not memorised Phineas.~ GOTO 8
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I am ready to pass your exams and I have the spells, but not memorised Phineas.~ GOTO 9
+  IF ~Class(Player1,MAGE_ALL) !Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 10
+  IF ~OR(2) !Class(Player1,MAGE_ALL) Kit(Player1,MAGESCHOOL_TRANSMUTER)~ THEN REPLY ~I do not have the required spells in my spell book.~ GOTO 11
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN REPLY ~Nalia is going to test her abilities.~ EXTERN ~NALIAJ~ NEJ325
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN REPLY ~Aerie is prepared to be assessed.~ EXTERN ~AERIEJ~ NEJ227
+  IF ~InParty("Kachiko") !Dead("Kachiko")~ THEN REPLY ~Kachiko is ready.~ EXTERN ~KACHIJ~ NEJ63
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN REPLY ~Taffic may be small but he believes himself more than capable.~ EXTERN ~TAFFICJ~ abjurer
+  IF ~InParty("Jan") !Dead("Jan")~ THEN REPLY ~Jan, imagine how funny it will be when your cousin Willy falls off his chair after he learns that you have passed your exam at Halruaa's Academy of Magic.~ EXTERN ~JANJ~ abjurer
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN REPLY ~Edwin, I wouldn't normally bother you... what with you being above this Halruaa and its mages, but as the only mage in the group, please I could really do with your help here. I realize that this silly exam is an insult to your intelligence, but if you could see your way clear to do this for me, the trinkets and new spells we gain if you pass will more than compensate for the inconvenience.~ EXTERN ~EDWINJ~ abjurer
   IF ~~ THEN REPLY ~That's hardly a challenge and certainly not worth wasting my time on. I am out of here, farewell Phineas.~ GOTO 12
   IF ~~ THEN REPLY ~Perhaps this is not a good time for me after all. Maybe some other time Phineas.~ GOTO 12
 END
 
 IF ~~ THEN BEGIN npcfail
   SAY ~I know you are disappointed, but don't lose heart, there will be another time. I have other business away from the academy, but come and see me in a few days after my return.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT21")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT21")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN nalifail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN nalifail
   SAY ~I am sorry, Nalia, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~NALIAJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN naliasl1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN naliasl1
   SAY ~I am sorry, Nalia, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~NALIAJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN naliasl2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Nalia_AbjQuest","GLOBAL",1)~ THEN BEGIN naliasl2
   SAY ~I am sorry, Nalia, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~NALIAJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachfail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachfail
   SAY ~I am sorry, Kachiko, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~KACHIJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachisl1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachisl1
   SAY ~I am sorry, Kachiko, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~KACHIJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachisl2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Kachiko_AbjQuest","GLOBAL",1)~ THEN BEGIN kachisl2
   SAY ~I am sorry, Kachiko, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~KACHIJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerifail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerifail
   SAY ~I am sorry, Aerie, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~AERIEJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerislo1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerislo1
   SAY ~I am sorry, Aerie, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~AERIEJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerislo2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Aerie_AbjQuest","GLOBAL",1)~ THEN BEGIN aerislo2
   SAY ~I am sorry, Aerie, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~AERIEJ~ abjurer2
 END
 
 ///////////////////////////////////////
-////////   Taffic   //////////////////
+////////  Taffic  //////////////////
 //////////////////////////////////////
 
 IF ~~ THEN BEGIN taffcast
   SAY ~In your own time begin your casting, Taffic.~
-  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-SetGlobal("VP_My_Test","LOCALS",1)
-RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) SetGlobal("VP_My_Test","LOCALS",1) RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
 END //=> Abjurer: Test 1 (Waiting). If ready --> GOTO 26
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Taffic",100)
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic1
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Taffic",100) Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic1
   SAY ~Nicely done, Taffic. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutTf4")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutTf4")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Taffic",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic2
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Taffic",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic2
   SAY ~I am sorry, Taffic, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~TAFFICJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic3
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic3
   SAY ~I guess you are ready Taffic, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutTf3")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutTf3")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic4
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN taffic4
   SAY ~Congratulations, Taffic, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutTf5")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutTf5")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafifail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafifail
   SAY ~I am sorry, Taffic, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~TAFFICJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafislo1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafislo1
   SAY ~I am sorry, Taffic, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~TAFFICJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafislo2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Taffic_AbjQuest","GLOBAL",1)~ THEN BEGIN tafislo2
   SAY ~I am sorry, Taffic, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~TAFFICJ~ abjurer2
 END
 
 ///////////////////////////////////////
-////////   Jan   //////////////////
+////////  Jan  //////////////////
 //////////////////////////////////////
 
 IF ~~ THEN BEGIN jancast
   SAY ~In your own time begin your casting, Jan.~
-  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-SetGlobal("VP_My_Test","LOCALS",1)
-RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) SetGlobal("VP_My_Test","LOCALS",1) RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
 END //=> Abjurer: Test 1 (Waiting). If ready --> GOTO 26
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Jan",100)
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan1
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Jan",100) Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan1
   SAY ~Nicely done, Jan. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutJ04")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutJ04")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Jan",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan2
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Jan",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan2
   SAY ~I am sorry, Jan, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~JANJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan3
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan3
   SAY ~I guess you are ready, Jan, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutJ03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutJ03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan4
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN jan4
   SAY ~Congratulations, Jan, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutJ05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutJ05")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janfail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janfail
   SAY ~I am sorry, Jan, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~JANJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow1
   SAY ~I am sorry, Jan, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~JANJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Jan_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow2
   SAY ~I am sorry, Jan, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~JANJ~ abjurer2
 END
 
 ///////////////////////////////////////
-////////   Edwin   //////////////////
+////////  Edwin  //////////////////
 //////////////////////////////////////
 
 IF ~~ THEN BEGIN edwcast
   SAY ~In your own time begin your casting, Edwin.~
-  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-SetGlobal("VP_My_Test","LOCALS",1)
-RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) SetGlobal("VP_My_Test","LOCALS",1) RealSetGlobalTimer("VP_Abjurer_Test1","GLOBAL",360)~ EXIT
 END //=> Abjurer: Test 1 (Waiting). If ready --> GOTO 26
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercent("Edwin",100)
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin1
+IF ~Global("VP_My_Test","LOCALS",2) HPPercent("Edwin",100) Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin1
   SAY ~Nicely done, Edwin. You chose your spell wisely. Now onto the second task.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutE04")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",4) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutE04")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",2)
-HPPercentLT("Edwin",100)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin2
+IF ~Global("VP_My_Test","LOCALS",2) HPPercentLT("Edwin",100) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin2
   SAY ~I am sorry, Edwin, but you have failed the first task and therefore forfeit the chance to attempt the second. You do need to successfully complete both tasks at the first attempt in order pass.~
   IF ~~ THEN EXTERN ~EDWINJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin3
+IF ~Global("VP_My_Test","LOCALS",1) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin3
   SAY ~I guess you are ready, Edwin, so let's proceed with the first test.~
-  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2)
-ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutE03")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_My_Test","LOCALS",2) ReallyForceSpell(LastTalkedToBy,GENIE_LIMITED_WISH_HEAL_ALL) ClearAllActions() StartCutSceneMode() StartCutScene("VPCutE03")~ EXIT
 END //Abjurer: Test 1 starts
 
-IF ~Global("VP_My_Test","LOCALS",5)
-!RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-HPPercentLT(Myself,100)
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin4
+IF ~Global("VP_My_Test","LOCALS",5) !RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") HPPercentLT(Myself,100) Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN edwin4
   SAY ~Congratulations, Edwin, you have done well and have earned your pass. Please return to your studies and I will see you again when you are once more ready to advance. Until then, I wish you luck. Farewell for now.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutE05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutE05")~ EXIT
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-HPPercent(Myself,100)
-!RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janfail
+IF ~Global("VP_My_Test","LOCALS",5) HPPercent(Myself,100) !RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janfail
   SAY ~I am sorry, Edwin, a brave attempt my young friend, but you do need  to complete both tasks successfully to obtain a pass.~
   IF ~~ THEN EXTERN ~EDWINJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",1)
-RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL")
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow1
+IF ~Global("VP_My_Test","LOCALS",1) RealGlobalTimerExpired("VP_Abjurer_Test1","GLOBAL") Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow1
   SAY ~I am sorry, Edwin, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~EDWINJ~ abjurer2
 END
 
-IF ~Global("VP_My_Test","LOCALS",5)
-RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL")
-Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow2
+IF ~Global("VP_My_Test","LOCALS",5) RealGlobalTimerExpired("VP_Abjurer_Test2","GLOBAL") Global("VP_Edwin_AbjQuest","GLOBAL",1)~ THEN BEGIN janslow2
   SAY ~I am sorry, Edwin, but you were too slow in casting spells. You have cost your life! I should by rights refuse you and mark you down for failing the test.~
   IF ~~ THEN EXTERN ~EDWINJ~ abjurer2
 END

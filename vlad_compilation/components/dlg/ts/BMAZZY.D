@@ -1,7 +1,7 @@
 APPEND ~BMAZZY~
 
 IF ~~ THEN BEGIN TS127
-  SAY ~The spirit, Kachiko is not always coached from childhood... Sometimes it's like a fire breaking through no matter the attempts to extinguish it. A legend of great deeds, which I heard from a passing bard woke my heart. And I have followed the calling ever since.  ~
+  SAY ~The spirit, Kachiko is not always coached from childhood... Sometimes it's like a fire breaking through no matter the attempts to extinguish it. A legend of great deeds, which I heard from a passing bard woke my heart. And I have followed the calling ever since. ~
   IF ~~ THEN EXTERN ~BKACHI~ 62
 END
 

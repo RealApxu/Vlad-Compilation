@@ -35,27 +35,19 @@ END
 IF ~~ THEN BEGIN 4
   SAY ~Wait a moment! I have not finished speaking with you yet. I sense something in your manner that I have not seen in students before. Come closer so we may truth read you.~
   IF ~True()~ THEN GOTO 5
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 62
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ262
-  IF ~InParty("Yoshimo")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ154
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ548
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 9
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 62
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ262
+  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ154
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ548
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 9
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~Your hesitation has given me the time to glimpse your real purpose in coming to Halruaa. You are not students but spies for Ulcaster! Fools! Did you really think you could deceive us?~
-	IF ~~ THEN GOTO 6
+  IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~Now you will pay the price for your deception! (*Turning to one of the accompanying mages*) Run Lon, call for guards.~
-  IF ~~ THEN DO ~SetGlobal("VP_HalruaaAlarm","MYAREA",1)
-ActionOverride("TuMage2",MoveToPointNoInterrupt([1056.2791]))
-Shout(99)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_HalruaaAlarm","MYAREA",1) ActionOverride("TuMage2",MoveToPointNoInterrupt([1056.2791])) Shout(99) Enemy()~ EXIT
 END

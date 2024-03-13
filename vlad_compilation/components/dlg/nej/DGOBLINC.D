@@ -2,29 +2,15 @@ BEGIN ~DGOBLINC~ 83278 // non-zero flags may indicate non-pausing dialogue
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
   SAY ~What am I doing here?  Rrrrr...~
-  IF ~OR(3)
-!InParty("Erevain")
-Dead("Erevain")
-!See("Erevain")~ THEN REPLY ~Uh, you can speak Common?~  GOTO 1
-  IF ~OR(3)
-!InParty("Erevain")
-Dead("Erevain")
-!See("Erevain")~ THEN REPLY ~Well, it looks like you're looting and pillaging this mill.~  JOURNAL ~Kuldahar Pass.
+  IF ~OR(3) !InParty("Erevain") Dead("Erevain") !See("Erevain")~ THEN REPLY ~Uh, you can speak Common?~  GOTO 1
+  IF ~OR(3) !InParty("Erevain") Dead("Erevain") !See("Erevain")~ THEN REPLY ~Well, it looks like you're looting and pillaging this mill.~  JOURNAL ~Kuldahar Pass.
 
 We met a goblin marshal in Kuldahar Pass who was going mad with pain.  He asked us what he was doing there.  We responded by telling him the obvious.  It looked like he and his cousins were looting and pillaging the mill.  He responded angrily, telling us that that they were without food and had been "called" to the pass.~  GOTO 2
-  IF ~OR(3)
-!InParty("Erevain")
-Dead("Erevain")
-!See("Erevain")~ THEN REPLY ~What do you mean?~  JOURNAL ~Kuldahar Pass.
+  IF ~OR(3) !InParty("Erevain") Dead("Erevain") !See("Erevain")~ THEN REPLY ~What do you mean?~  JOURNAL ~Kuldahar Pass.
 
 We met a goblin marshal in Kuldahar Pass who was going mad with pain.  He asked us what he was doing there.  We asked him what he meant.  He responded bluntly, claiming that he didn't understand why he and his kin were "called" to the pass.~  GOTO 3
-  IF ~OR(3)
-!InParty("Erevain")
-Dead("Erevain")
-!See("Erevain")~ THEN REPLY ~Sorry, but I can't talk right now.  Farewell.~  EXIT
-  IF ~InParty("Erevain")
-!Dead("Erevain")
-See("Erevain")~ THEN EXTERN ~EREVAINJ~ 15
+  IF ~OR(3) !InParty("Erevain") Dead("Erevain") !See("Erevain")~ THEN REPLY ~Sorry, but I can't talk right now.  Farewell.~  EXIT
+  IF ~InParty("Erevain") !Dead("Erevain") See("Erevain")~ THEN EXTERN ~EREVAINJ~ 15
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.0

@@ -24,4 +24,5 @@ IF ~~ THEN BEGIN KR4
   SAY ~It is not true! You were there, but you came back because of her! You did everything for her! You left us to die because of her.~
    IF ~~ THEN EXTERN ~KELDO25J~ LoveOne4
 END
+
 END

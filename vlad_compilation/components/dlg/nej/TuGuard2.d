@@ -15,10 +15,7 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~I'll take this sword and talk to Lavallin. You shall be warned only once. The rules must and will be upheld by all!~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60)
-TakePartyItem("TuSwordP")
-DestroyItem("TuSwordP")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60) TakePartyItem("TuSwordP") DestroyItem("TuSwordP") EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 3
@@ -28,19 +25,10 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~You shall be warned only once. The rules must and will be upheld by all!~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60)
-TakePartyItem("TuSw1H01")
-TakePartyItem("TuSw1H02")
-TakePartyItem("TuMace")
-DestroyItem("TuSw1H01")
-DestroyItem("TuSw1H02")
-DestroyItem("TuMace")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_Last_Warning","GLOBAL",60) TakePartyItem("TuSw1H01") TakePartyItem("TuSw1H02") TakePartyItem("TuMace") DestroyItem("TuSw1H01") DestroyItem("TuSw1H02") DestroyItem("TuMace") EscapeArea()~ EXIT
 END
 
 IF ~Global("VP_Breaking_Rules","GLOBAL",2)~ THEN BEGIN 5
   SAY ~You have been warned.~
-  IF ~~ THEN DO ~SetGlobal("VP_Breaking_Rules","GLOBAL",3)
-SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Breaking_Rules","GLOBAL",3) SetGlobal("VP_HalruaaHostile","GLOBAL",1) Enemy()~ EXIT
 END

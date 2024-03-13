@@ -48,7 +48,7 @@ IF ~~ THEN BEGIN 6
   SAY ~You are not students of this academy, you would not be so openly defiant to your superior if you were. I can only deduce that you are supporters of Ulcaster. You have taken a dangerous step in coming here and now you will pay for your arrogance! Thinking you could outwit us... now you will feel the power of real magic.~ // Garron turns hostile. After finding Garron's letter: Hrothgar1.
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
-	
+
 IF ~~ THEN BEGIN 7
   SAY ~(*Scoffs*) And do you really think this pathetic little group of yours is going to stop us? If it has not escaped your notice this is an academy full of powerful wizards, you have no chance of leaving with anything you may have discovered.~
   IF ~~ THEN GOTO 8
@@ -67,4 +67,4 @@ END
 IF ~~ THEN BEGIN 10
   SAY ~Your own words have condemned you as spies for Ulcaster and therefore enemies of Halruaa. Prepare yourselves to see the power of real magic before you all die.~ // Garron turns hostile. After finding Garron's letter:  Hrothgar1.
   IF ~~ THEN DO ~Enemy()~ EXIT
-END  
+END

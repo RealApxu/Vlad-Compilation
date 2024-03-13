@@ -45,14 +45,10 @@ END
 IF ~~ THEN BEGIN 8
   SAY ~If you've taught me anything, it's that power isn't something to always fear.  I only hope that the life you choose isn't one you regret.  As for me... our time together has been worth everything.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
 END
 
 IF ~~ THEN BEGIN 9
@@ -110,12 +106,7 @@ IF ~~ THEN BEGIN TS29
   IF ~~ THEN EXTERN ~LOVEONE5~ 3
 END
 
-IF ~GlobalGT("ExpLoveTalk","LOCALS",0)
-GlobalLT("ExpLoveTalk","LOCALS",8)
-Global("ValygarMatch","GLOBAL",1)
-OR(2)
-Global("ValygarRomanceActive","GLOBAL",1)
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS30
+IF ~GlobalGT("ExpLoveTalk","LOCALS",0) GlobalLT("ExpLoveTalk","LOCALS",8) Global("ValygarMatch","GLOBAL",1) OR(2) Global("ValygarRomanceActive","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS30
   SAY ~Valygar had been almost everything for you: a man you hunted, a reluctant ally, a comrade at arms, a friend... Through thick and thin you went together and now you suspect that he is about to become your lover as well.~
   IF ~~ THEN REPLY ~You brush  past Valygar, "accidentally" making your hips  touch...~ GOTO TS31
   IF ~~ THEN REPLY ~You kiss Valygar lightly on the cheek: "Thank you for being with me after all that happened."~ GOTO TS32
@@ -146,9 +137,7 @@ IF ~~ THEN BEGIN TS34
 "Then we shall drink some ale,
 To make our life a bliss
 Though even ale of course
-Here tastes like piss..."
-
-~
+Here tastes like piss..."~
   IF ~~ THEN EXIT
 END
 
@@ -162,10 +151,7 @@ IF ~~ THEN BEGIN TS36
   IF ~~ THEN EXIT
 END
 
-IF ~GlobalGT("ExpLoveTalk","LOCALS",7)
-GlobalLT("ExpLoveTalk","LOCALS",12)
-Global("ValygarMatch","GLOBAL",1)
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS37
+IF ~GlobalGT("ExpLoveTalk","LOCALS",7) GlobalLT("ExpLoveTalk","LOCALS",12) Global("ValygarMatch","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN BEGIN TS37
   SAY ~The world swirls around you. You feel that since the day you left Candlekeep with Gorion you were sure of nothing.~
   IF ~~ THEN REPLY ~You announce to your group: "My friends, I feel a bit uneasy and wish for some... rest. Please, take a break. Will you walk with me, Valygar?"~ GOTO TS38
   IF ~~ THEN REPLY ~Ignoring everyone you give Valygar a deep, long kiss.~ GOTO TS39
@@ -204,4 +190,5 @@ IF ~~ THEN BEGIN TS43
   SAY ~"I don't know, but what I can promise you that I shall protect you from any harm until I live."~
   IF ~~ THEN EXIT
 END
+
 END

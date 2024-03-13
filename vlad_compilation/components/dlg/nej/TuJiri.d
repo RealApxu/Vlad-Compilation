@@ -20,15 +20,12 @@ IF ~~ THEN BEGIN 2
   IF ~~ THEN REPLY ~Then that is where I am heading, thank you, Jiri.~ EXIT
 END
 
-IF ~!NumberOfTimesTalkedTo(0)
-Global("VP_Brial_Search","LOCALS",1)~ THEN BEGIN 3
+IF ~!NumberOfTimesTalkedTo(0) Global("VP_Brial_Search","LOCALS",1)~ THEN BEGIN 3
   SAY ~Good day to you, <GABBER>.~
   IF ~~ THEN EXIT
 END
 
-IF ~!NumberOfTimesTalkedTo(0)
-Global("VP_Brial_Search","LOCALS",0)
-PartyHasItem("TuLette4")~ THEN BEGIN 4
+IF ~!NumberOfTimesTalkedTo(0) Global("VP_Brial_Search","LOCALS",0) PartyHasItem("TuLette4")~ THEN BEGIN 4
   SAY ~Well hello again <GABBER>. Now that you have had time to settle in, what do you think of our academy here?~
   IF ~~ THEN REPLY ~It's good to see you again Jiri. I am certainly impressed by what I have seen so far. Tell me Jiri, who is Brial and where might I find her?~ GOTO 5
   IF ~~ THEN REPLY ~Jiri, you couldn't have timed your appearance better. I am looking for Brial, have you any idea where I might find her?~ GOTO 5
@@ -65,9 +62,7 @@ END
 
 IF ~~ THEN BEGIN 10
   SAY ~Take my advice, give the message to another tutor to pass on. Now, I must take my leave of you. Farewell and enjoy your time at the academy... it is a great place to learn and has much to offer.~
-  IF ~~ THEN DO ~SetGlobal("VP_Brial_Search","LOCALS",1)
-MoveToPointNoInterrupt([2362.1028])
-Face(14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Brial_Search","LOCALS",1) MoveToPointNoInterrupt([2362.1028]) Face(14)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
@@ -94,9 +89,7 @@ END
 
 IF ~~ THEN BEGIN 15
   SAY ~So I'll forget this conversation happened, but please take care <GABBER> and if I should run into Brial, I'll be sure to tell her that you are looking for her. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("VP_Brial_Search","LOCALS",1)
-MoveToPointNoInterrupt([2362.1028])
-Face(14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Brial_Search","LOCALS",1) MoveToPointNoInterrupt([2362.1028]) Face(14)~ EXIT
 END
 
 IF ~~ THEN BEGIN 16
@@ -111,9 +104,7 @@ IF ~~ THEN BEGIN 17
   IF ~~ THEN REPLY ~She sent a message that she wanted to see me but the messenger forgot to tell me where to find her.~ GOTO 11
 END
 
-IF ~!NumberOfTimesTalkedTo(0)
-Global("VP_Brial_Search","LOCALS",0)
-!PartyHasItem("TuLette4")~ THEN BEGIN 18
+IF ~!NumberOfTimesTalkedTo(0) Global("VP_Brial_Search","LOCALS",0) !PartyHasItem("TuLette4")~ THEN BEGIN 18
   SAY ~Good day to you, <GABBER>.~
   IF ~~ THEN EXIT
 END

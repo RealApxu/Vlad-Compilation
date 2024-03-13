@@ -38,9 +38,6 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~You need not concern yourself with events from now on. All of Halruaa's mages are in agreement with what must be done. They are not alone, specialist mages throughout The Realms have passed through Halruaa and gathered to offer their support. Now, I am needed elsewhere and I am sure that you have things that you should be doing.~
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN DO ~EscapeArea()~ EXIT
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN DO ~EscapeArea()~ EXTERN ~HROTHJ~ 79
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN DO ~EscapeArea()~ EXIT
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN DO ~EscapeArea()~ EXTERN ~HROTHJ~ 79
 END

@@ -27,16 +27,12 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~Thank you, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("ValygarVampire","GLOBAL",3)
-SetGlobal("VP_ValygarVamp_Alive","GLOBAL",2)
-Kill(Myself)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarVampire","GLOBAL",3) SetGlobal("VP_ValygarVamp_Alive","GLOBAL",2) Kill(Myself)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~You know what's funny? I loved you. What's even funnier - I still love you and I cannot hurt you. What are you standing here for? Go, Bhaal's daughter, leave me to my fate.~
-  IF ~~ THEN DO ~SetGlobal("ValygarVampire","GLOBAL",3)
-SetGlobal("VP_ValygarVamp_Alive","GLOBAL",2)
-ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ValygarVampire","GLOBAL",3) SetGlobal("VP_ValygarVamp_Alive","GLOBAL",2) ReallyForceSpellDead(Myself,VAMPIRE_GAS_FORM_CHANGE)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6

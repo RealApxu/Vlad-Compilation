@@ -1,5 +1,4 @@
-ADD_TRANS_TRIGGER ANOMENJ 262 ~!InParty("Sime")
-See("ppsime")~ DO 0
+ADD_TRANS_TRIGGER ANOMENJ 262 ~!InParty("Sime") See("ppsime")~ DO 0
 
 EXTEND_BOTTOM ANOMENJ 262
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ 20

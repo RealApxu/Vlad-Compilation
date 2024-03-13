@@ -145,8 +145,7 @@ IF ~~ THEN BEGIN 24
   IF ~~ THEN EXTERN ~BHROTH~ 76
 END
 
-IF ~Global("VP_BPC","LOCALS",4)
-Global("VP_Astrolabe_Talks","GLOBAL",1)~ THEN BEGIN 25 //1
+IF ~Global("VP_BPC","LOCALS",4) Global("VP_Astrolabe_Talks","GLOBAL",1)~ THEN BEGIN 25 //1
   SAY ~Tell me <CHARNAME>, if another portal was to appear in front of us now, would you take it?~
   IF ~~ THEN REPLY ~I do not know Accalia... there would be much to consider.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 26 //-->2
   IF ~~ THEN REPLY ~What I would and would not do is nothing to do with you Accalia.~ DO ~SetGlobal("VP_BPC","LOCALS",5)~ GOTO 29 //-->5
@@ -175,22 +174,22 @@ END
 
 IF ~~ THEN BEGIN 29 //5
   SAY ~You are right, your concerns are your own. I merely wish to ascertain where your loyalty would lie if a portal were to appear this minute.~
-	IF ~~ THEN GOTO 30
+  IF ~~ THEN GOTO 30
 END
 
 IF ~~ THEN BEGIN 30
   SAY ~Hrothgar can not complete his mission alone and it would be good to know whether his choice of allies are behind him to the end and not only until an alternative road presents itself. I can see I will have to wait for such an event to get my answers.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 31 //6
   SAY ~Not the reassuring answer that I was hoping for but at least it is good to know that you will at least consider honouring your word to aid Hrothgar in any decision you make.~
-	IF ~~ THEN GOTO 32
+  IF ~~ THEN GOTO 32
 END
 
 IF ~~ THEN BEGIN 32
   SAY ~He is a good man <CHARNAME> and he will battle this enemy alone if necessary to save the innocent, but I am sure that you are already aware of this. I have no more questions, may Tempus guide your heart in these evil times.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 33 //7
@@ -216,7 +215,7 @@ END
 
 IF ~~ THEN BEGIN 36 //10
   SAY ~If that is the path that you are set on <CHARNAME>, then I will say many prayers to Tempus on your behalf and ask that he heals your heart, so that it does not suffer the bitterness that so often fills the space that revenge leaves. I pray that it will be enough.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 37 //11
@@ -236,7 +235,7 @@ END
 
 IF ~~ THEN BEGIN 39 //13
   SAY ~You have your own secrets do you not <CHARNAME>? I do not see you rushing to confide in Hrothgar nor do I see him pressing you for answers in exchange for loyalty.~
-	IF ~~ THEN GOTO 40
+  IF ~~ THEN GOTO 40
 END
 
 IF ~~ THEN BEGIN 40
@@ -249,7 +248,7 @@ END
 
 IF ~~ THEN BEGIN 41 //14
   SAY ~How many times does Hrothgar need to reassure you that your future is not in this time, that you will find your way home... if one portal closes another will surely be found? Can you not find it to look into your heart and let it guide you to seeing that Hrothgar knows that what he speaks is truth?~
-	IF ~~ THEN GOTO 42
+  IF ~~ THEN GOTO 42
 END
 
 IF ~~ THEN BEGIN 42
@@ -259,24 +258,23 @@ IF ~~ THEN BEGIN 42
   IF ~~ THEN REPLY ~I hear and see the wisdom in your words Accalia, and perhaps another time I would give some thought to them. As it is, they make very little difference to what I know to be right ... I do not belong here.~ GOTO 43 //-->15
   IF ~~ THEN REPLY ~I have answered your question Accalia and there is no more to be said. Now I would be grateful if you let the matter drop.~ GOTO 45 //-->16
 END
-	
+
 IF ~~ THEN BEGIN 43 //15
   SAY ~Perhaps you don't belong here, but either by design or by accident you are here and I ask that you please think on why this should be? Without your aid Hrothgar can not prevail against this evil, you <CHARNAME> are all that stands between triumph or failure.~
-	IF ~~ THEN GOTO 44
+  IF ~~ THEN GOTO 44
 END
 
 IF ~~ THEN BEGIN 44
   SAY ~If by the time we have found and spoken to Larrel you still believe you do not belong then I will be the first to wish you luck when you find your portal home. I ask that Tempus guide you as you consider my words.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 45 //16
   SAY ~As you wish <CHARNAME>. I have said what I felt needed to be said. I ask only that you think on my words and look into your heart before you make any decisions when you next find your portal. I ask that Tempus guide you as you consider my words.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
-IF ~Global("VP_BHrothgar","LOCALS",7)
-Global("VP_Astrolabe_Talks","GLOBAL",2)~ THEN BEGIN 46
+IF ~Global("VP_BHrothgar","LOCALS",7) Global("VP_Astrolabe_Talks","GLOBAL",2)~ THEN BEGIN 46
   SAY ~The wizards here had a machine that they were using to research time and space... an astrolabe. Do you know of such machines Hrothgar?~
   IF ~~ THEN DO ~SetGlobal("VP_BHrothgar","LOCALS",8)~ EXTERN ~BHROTH~ 77
 END
@@ -308,7 +306,7 @@ END
 
 IF ~~ THEN BEGIN 52
   SAY ~You know me well enough to know that if you ask me to leave a thing then I will. You would not have told me so much knowing that you could say no more if you didn't.~
-	IF ~~ THEN GOTO 53
+  IF ~~ THEN GOTO 53
 END
 
 IF ~~ THEN BEGIN 53
@@ -350,4 +348,4 @@ END
 IF ~~ THEN BEGIN 59
   SAY ~I will not let him down, and if it is his will that I survive this test and live to honour his name in battles of the future... or that I should fail and fall... his will be done.~
   IF ~~ THEN EXIT
-END    
+END

@@ -29,4 +29,5 @@ IF ~~ THEN BEGIN TS171
   SAY ~No... nothing... Do not mind me...~
   IF ~~ THEN EXTERN ~BVALYG25~ TS195
 END
+
 END

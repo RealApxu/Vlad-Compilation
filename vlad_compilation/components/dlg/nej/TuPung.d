@@ -9,7 +9,7 @@ IF ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~Pung find mashter‘s fings, mashter sends Pung home, nows you here, mashter kills Pung. Go pleess!~
+  SAY ~Pung find mashterï¿½s fings, mashter sends Pung home, nows you here, mashter kills Pung. Go pleess!~
   IF ~~ THEN REPLY ~Pung please listen, what is it the master is looking for?~ GOTO 2
   IF ~~ THEN REPLY ~Who is this master Pung and where is he?~ GOTO 2
   IF ~~ THEN REPLY ~However did you get here Pung, I see no door?~ GOTO 2
@@ -25,9 +25,7 @@ END
 
 IF ~~ THEN BEGIN 3
   SAY ~N... No!~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT05")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT05")~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -37,26 +35,20 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~Noo! Mashter musht sends Pung home!!~
-  IF ~~ THEN DO ~SetGlobal("VP_Lavallins_Plot","GLOBAL",9)
-ActionOverride("Bartlemy",Enemy())
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Lavallins_Plot","GLOBAL",9) ActionOverride("Bartlemy",Enemy()) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~Yessh, mashter, Pung keeps uvver pretty fing, mashter? You sends Pung home, yessh?~
-  IF ~~ THEN DO ~SetGlobal("VP_Lavallins_Plot","GLOBAL",9)
-GiveItem("TuKey",Player1)~ EXTERN ~BARTLEMY~ 17
+  IF ~~ THEN DO ~SetGlobal("VP_Lavallins_Plot","GLOBAL",9) GiveItem("TuKey",Player1)~ EXTERN ~BARTLEMY~ 17
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~Noo! Mashter musht sends Pung home!!~
-  IF ~~ THEN DO ~ActionOverride("Bartlemy",Enemy())
-Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("Bartlemy",Enemy()) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~Noo! Mashter musht sends Pung home!!~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutT39")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutT39")~ EXIT
 END

@@ -3,10 +3,7 @@ BEGIN ~DHROTH~
 // WARNING: this file contains non-trivial WEIGHTs
 //////////////////////////////////////////////////
 
-IF WEIGHT #5 ~NumberOfTimesTalkedTo(0)
-Global("Know_Hrothgar","GLOBAL",1)
-Global("Join_Posse","GLOBAL",0)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 0 // from:
+IF WEIGHT #5 ~NumberOfTimesTalkedTo(0) Global("Know_Hrothgar","GLOBAL",1) Global("Join_Posse","GLOBAL",0) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 0 // from:
   SAY ~What's this?  New face in town, eh?  Well met, stranger. The name is Hrothgar, originally of Hillsfar, but now, after years of traveling up, down, and under Faerun, I am content to call this town my home.  Who might you be?~ [HROT_01]
   IF ~~ THEN REPLY ~Greetings, Hrothgar. My name is <CHARNAME>. Nice to meet you.~ GOTO 1
   IF ~~ THEN REPLY ~Who I am is none of your concern.~ GOTO 22
@@ -22,9 +19,7 @@ IF ~~ THEN BEGIN 2 // from: 22.0 1.0
   IF ~~ THEN GOTO 23
 END
 
-IF WEIGHT #0 ~Global("Know_Hrothgar","GLOBAL",2)
-GlobalLT("Join_Posse","GLOBAL",2)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 3 // from:
+IF WEIGHT #0 ~Global("Know_Hrothgar","GLOBAL",2) GlobalLT("Join_Posse","GLOBAL",2) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 3 // from:
   SAY ~Well met, friend.  And welcome to my home.  Make yourselves comfortable, but try not to break anything.  Many of these curiosities that you see lying about have... sentimental value.~ [HROT_04]
   IF ~~ THEN REPLY ~Where did you get all this stuff?~  GOTO 4
   IF ~~ THEN REPLY ~Sentimental value?  You don't strike me as the sentimental type.~  GOTO 4
@@ -123,25 +118,19 @@ IF ~~ THEN BEGIN 17 // from: 16.0
   IF ~NumInPartyGT(1)~ THEN REPLY ~Very well.  We shall return in a few days.~  GOTO 28
 END
 
-IF WEIGHT #1 ~Global("Join_Posse", "GLOBAL", 2)
-Global("Know_Hrothgar","GLOBAL",3)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 18 // from:
+IF WEIGHT #1 ~Global("Join_Posse", "GLOBAL", 2) Global("Know_Hrothgar","GLOBAL",3) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 18 // from:
   SAY ~Back again I see.  Have you reconsidered my offer to join the expedition?~ [HROT_19]
   IF ~NumInPartyLT(2)~ THEN REPLY ~Alright, alright.  I'll join your expedition.~  GOTO 16
   IF ~NumInPartyGT(1)~ THEN REPLY ~Alright, alright.  We'll join your expedition.~  GOTO 16
   IF ~~ THEN REPLY ~No, just stopping by to say hello.  Farewell.~  EXIT
 END
 
-IF WEIGHT #2 ~Global("Join_Posse","GLOBAL",3)
-Global("Supply_Quest","GLOBAL",1)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 19 // from:
+IF WEIGHT #2 ~Global("Join_Posse","GLOBAL",3) Global("Supply_Quest","GLOBAL",1) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 19 // from:
   SAY ~Ho there, friend.  Everything is nearly in order.  We shall be departing for Kuldahar soon.  I suggest you get that supply list over to Pomab before he starts whining.  Testy little fellow, that one.~ [HROT_20]
   IF ~~ THEN REPLY ~I will.  Farewell.~  EXIT
 END
 
-IF WEIGHT #3 ~Global("Join_Posse","GLOBAL",3)
-Global("Supply_Quest","GLOBAL",2)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 20 // from:
+IF WEIGHT #3 ~Global("Join_Posse","GLOBAL",3) Global("Supply_Quest","GLOBAL",2) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 20 // from:
   SAY ~There you are!  All is set.  The others are assembling as we speak.  Are you ready to leave as well?~ [HROT_21]
   IF ~NumInPartyGT(1)~ THEN REPLY ~Yes, we are ready.  Let us be off.~ GOTO 41
   IF ~NumInPartyLT(2)~ THEN REPLY ~Yes, I am ready.  Let us be off.~ GOTO 41
@@ -176,10 +165,7 @@ END
 
 IF ~~ THEN BEGIN 26 // from: 25.0
   SAY ~Once you've had a chance to rest up and get your bearings, come by and see me at my house. It's just a couple doors west of here. There's some business I would discuss with you. Farewell.~ [HROT_27]
-  IF ~~ THEN REPLY ~Farewell.~ DO ~SetGlobal("Know_Hrothgar","GLOBAL",2)
-SetGlobal("VP_Jaheira_In_IWD","GLOBAL",1)
-SetGlobal("VP_Imoen_In_IWD","GLOBAL",1)
-EscapeAreaMove("TT1004",777,300,14)~ JOURNAL ~Never Ending Journey: Spine Of The World.
+  IF ~~ THEN REPLY ~Farewell.~ DO ~SetGlobal("Know_Hrothgar","GLOBAL",2) SetGlobal("VP_Jaheira_In_IWD","GLOBAL",1) SetGlobal("VP_Imoen_In_IWD","GLOBAL",1) EscapeAreaMove("TT1004",777,300,14)~ JOURNAL ~Never Ending Journey: Spine Of The World.
 
 Somehow we were teleported from the strange dungeon to the snowy, lakefront community known as Easthaven. Weary and half-frozen from the road, we hastily made our way into the local tavern to find a hot meal and some friendly conversation. Scarcely had we seated ourselves at a table by the hearth when we were approached by a burly warrior who called himself Hrothgar. He seemed friendly enough, but something in his eyes warned us that he wasn't one to cross. He politely asked us to come see him at his home, a couple doors west of the tavern, to discuss business of some sort.~ EXIT
 END
@@ -216,8 +202,7 @@ END
 
 IF ~~ THEN BEGIN 33 // from: 32.0
   SAY ~Return here as quickly as you can, we must make for Kuldahar Pass while the weather is favorable.  Good luck.  Safe journey.~ [HROT_34]
-  IF ~Global("Caravan_Quest","GLOBAL",0)~ THEN REPLY ~Farewell.~ DO ~SetGlobal("Caravan_Quest","GLOBAL",1)
-SetGlobal("Know_Hrothgar","GLOBAL",3)~ UNSOLVED_JOURNAL ~Finding a missing caravan.
+  IF ~Global("Caravan_Quest","GLOBAL",0)~ THEN REPLY ~Farewell.~ DO ~SetGlobal("Caravan_Quest","GLOBAL",1) SetGlobal("Know_Hrothgar","GLOBAL",3)~ UNSOLVED_JOURNAL ~Finding a missing caravan.
 
 Hrothgar asked us to find a missing caravan out of Caer-Dinival.  The caravan was carrying valuable supplies intended for Easthaven.  Hrothgar suggested we take the south bridge out of town and search for the caravan in the hills along the shores of Lac Dinneshere.  We are to return to Easthaven and to Hrothgar either with the caravan, or with news of its mysterious fate.~ EXIT
   IF ~Global("Caravan_Quest","GLOBAL",2)~ THEN REPLY ~I already came across this caravan just outside of town.  It looked as if it had been attacked some time ago.  There were no survivors and no sign of the supplies.~ DO ~SetGlobal("Know_Hrothgar","GLOBAL",3)~ SOLVED_JOURNAL ~Finding a missing caravan.
@@ -230,13 +215,7 @@ END
 
 IF ~~ THEN BEGIN 34 // from: 39.1 33.1
   SAY ~This is grave news indeed.  My only hope is that the town has enough supplies to last us through the winter.  In any case, at least we now know for certain what happened to the caravan.  Now I can concentrate getting everything in order for our expedition to Kuldahar.~ [HROT_35]
-  IF ~~ THEN REPLY ~Great.  When do we leave?~ DO ~AddXPObject(Player1,500)
-AddXPObject(Player2,500)
-AddXPObject(Player3,500)
-AddXPObject(Player4,500)
-AddXPObject(Player5,500)
-AddXPObject(Player6,500)
-SetGlobal("Caravan_Quest","GLOBAL",4)~ GOTO 37
+  IF ~~ THEN REPLY ~Great.  When do we leave?~ DO ~AddXPObject(Player1,500) AddXPObject(Player2,500) AddXPObject(Player3,500) AddXPObject(Player4,500) AddXPObject(Player5,500) AddXPObject(Player6,500) SetGlobal("Caravan_Quest","GLOBAL",4)~ GOTO 37
 END
 
 IF ~~ THEN BEGIN 35 // from: 39.2 33.2
@@ -246,13 +225,7 @@ END
 
 IF ~~ THEN BEGIN 36 // from: 35.0
   SAY ~In any case, at least we can still retrieve the supplies, thanks to you.  You've proven yourself to be quite capable... I'm glad you've decided to come along with us to Kuldahar. ~ [HROT_37]
-  IF ~~ THEN REPLY ~Thank you.  When do we leave?~ DO ~AddXPObject(Player1,2500)
-AddXPObject(Player2,2500)
-AddXPObject(Player3,2500)
-AddXPObject(Player4,2500)
-AddXPObject(Player5,2500)
-AddXPObject(Player6,2500)
-SetGlobal("Caravan_Quest","GLOBAL",4)~ GOTO 37
+  IF ~~ THEN REPLY ~Thank you.  When do we leave?~ DO ~AddXPObject(Player1,2500) AddXPObject(Player2,2500) AddXPObject(Player3,2500) AddXPObject(Player4,2500) AddXPObject(Player5,2500) AddXPObject(Player6,2500) SetGlobal("Caravan_Quest","GLOBAL",4)~ GOTO 37
 END
 
 IF ~~ THEN BEGIN 37 // from: 36.0 34.0
@@ -265,11 +238,7 @@ IF ~~ THEN BEGIN 38 // from: 37.0
   IF ~~ THEN GOTO 45
 END
 
-IF WEIGHT #4 ~Global("Join_Posse","GLOBAL",3)
-Global("Know_Hrothgar","GLOBAL",3)
-GlobalLT("Caravan_Quest","GLOBAL",4)
-GlobalGT("Caravan_Quest","GLOBAL",0)
-Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 39 // from:
+IF WEIGHT #4 ~Global("Join_Posse","GLOBAL",3) Global("Know_Hrothgar","GLOBAL",3) GlobalLT("Caravan_Quest","GLOBAL",4) GlobalGT("Caravan_Quest","GLOBAL",0) Global("VP_Hrothgar_Waits","GLOBAL",0)~ THEN BEGIN 39 // from:
   SAY ~Ah, good... you've returned.  What news of the caravan from Caer-Dinival?~ [HROT_40]
   IF ~Global("Caravan_Quest", "GLOBAL", 1)~ THEN REPLY ~No news, I'm afraid.  I haven't gone looking for it yet.~  GOTO 21
   IF ~Global("Caravan_Quest", "GLOBAL", 2)~ THEN REPLY ~I came across the caravan just outside of town.  It looked as if it had been attacked some time ago.  There were no survivors and no sign of the supplies.~ SOLVED_JOURNAL ~Finding a missing caravan.
@@ -286,8 +255,7 @@ END
 
 IF ~~ THEN BEGIN 40
   SAY ~I think you have already spoken with my folks. If you don't, then I highly recommend you to do this before we continue our conversation.~ [HROT_41]
-  IF ~~ THEN DO ~SetGlobal("Join_Posse","GLOBAL",2)
-SetGlobal("Know_Hrothgar","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Join_Posse","GLOBAL",2) SetGlobal("Know_Hrothgar","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 41
@@ -315,18 +283,14 @@ IF ~~ THEN BEGIN 43
   IF ~~ THEN DO ~SetGlobal("VP_Hrothgar_Waits","GLOBAL",1)~ EXIT
 END
 
-IF ~OR(2)
-Global("MURDER_ALARM","GLOBAL",1)
-Global("MyAreaUnderAttack","GLOBAL",1)~ THEN BEGIN 44
+IF ~OR(2) Global("MURDER_ALARM","GLOBAL",1) Global("MyAreaUnderAttack","GLOBAL",1)~ THEN BEGIN 44
   SAY ~I told you these folks are under my protection, and anyone who would seek to do harm to them in any way shall answer to me.~ [HROT_45]
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 45
   SAY ~And please talk to Accalia. She is an initiate at the temple of Tempus. I have recently spoken with her. She is willing to join our expedition.~ [HROT_46]
-  IF ~~ THEN REPLY ~Very well. I shall return shortly.~ DO ~SetGlobal("Supply_Quest","GLOBAL",1)
-GiveItemCreate("List",Protagonist,1,0,0)
-SetGlobal("Join_Accalia","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY ~Very well. I shall return shortly.~ DO ~SetGlobal("Supply_Quest","GLOBAL",1) GiveItemCreate("List",Protagonist,1,0,0) SetGlobal("Join_Accalia","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 46
@@ -410,8 +374,7 @@ END
 
 IF ~~ THEN BEGIN 58
   SAY ~If that is so, then you were lucky to find the portal and make good your escape before this Irenicus discovered you gone. What I cannot understand is why the portal led you to Easthaven and why this particular time?~
-  IF ~InParty("Jaheira")
-!Dead("Khalid")~ THEN REPLY ~Lucky yes, but unfortunately not all of us made it out, Jaheira's husband Khalid is still somewhere in that infernal place. I have to hope that there is some way of finding our back to him.~ JOURNAL ~Never Ending Journey: Spine Of The World.
+  IF ~InParty("Jaheira") !Dead("Khalid")~ THEN REPLY ~Lucky yes, but unfortunately not all of us made it out, Jaheira's husband Khalid is still somewhere in that infernal place. I have to hope that there is some way of finding our back to him.~ JOURNAL ~Never Ending Journey: Spine Of The World.
 
 So it was that the patchwork militia set off from Easthaven, bound for the troubled village of Kuldahar with the party of strangers in tow. On they traveled, across the windswept tundra of the Dale, through the foothills of the Spine of the World, and upwards on the steep and treacherous trails of the Kuldahar Pass. Eager to seek out the evil that threatened the Pass, they did not expect it to find them first.  High upon the cliffs of the Pass, a band of frost giants had prepared an ambush. Hurling boulders and dislodging massive outcroppings of rock and snow, the giants sparked an avalanche that thundered down the mountainside and crashed down upon the heads of the unsuspecting expedition. Those fortunate enough to survive the avalanche pulled themselves free of the mountain of snow and bodies that now barred the way back to Easthaven. Battered and disheartened by the loss of their comrades, the survivors had little choice but to continue on to Kuldahar... alone.~ GOTO 59
   IF ~~ THEN REPLY ~Fortunate for Irenicus, yes, because his sending us here puts him well out of my reach and beyond any retribution I would visit back on him!~ JOURNAL ~Never Ending Journey: Spine Of The World.
@@ -427,26 +390,17 @@ END
 
 IF ~~ THEN BEGIN 59
   SAY ~I shudder when I imagine what you have suffered <CHARNAME>, at what you have all suffered and I feel sorrow for what Jaheira is still suffering. I will pray that it is the will of the gods that a way back will be found for you all and soon she will once again be united with her Khalid. For now, we will concentrate on the task ahead and speak no more of that place.~
-  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("LUA2000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("LUA2000")~ EXIT
 END
 
 IF ~~ THEN BEGIN 60
   SAY ~I can only imagine what you suffered at the hands of this Irenicus <CHARNAME> and I well understand you feel the need for revenge, but retribution is best left to the gods. Irenicus will be judged, as we all must be, be content that your ordeal is over and enjoy your freedom once more. Come, we will concentrate on the task ahead and speak no more of Irenicus today.~
-  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("LUA2000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("LUA2000")~ EXIT
 END
 
 IF ~~ THEN BEGIN 61
   SAY ~I shudder when I imagine what you have suffered <CHARNAME>, at what you have all suffered, but let us give thanks to the gods that your ordeal is over and that they grant you a lighter road to walk. Come let us concentrate on the task ahead and speak now more of that place.~
-  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("LUA2000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("LUA2000")~ EXIT
 END
 
 IF ~~ THEN BEGIN 62
@@ -471,10 +425,7 @@ END
 
 IF ~~ THEN BEGIN 65
   SAY ~If that is your wish, then I shall respect it, however, if at any time you are ready to confide in me and tell me your story, then I will be willing to listen.~
-  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("LUA2000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("LUA2000")~ EXIT
 END
 
 IF ~~ THEN BEGIN 66
@@ -523,17 +474,12 @@ END
 
 IF ~~ THEN BEGIN 73
   SAY ~I have yet to be convinced that it is no more than coincidence that you arrive in such troubled times. However... my questions will wait until you are in a more congenial mood, until then you will do well to heed my warning.~
-  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("LUA2000")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("StartIWD","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("LUA2000")~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("Join_Posse", "GLOBAL", 3)
-Global("Supply_Quest","GLOBAL",2)
-Global("VP_Hrothgar_Waits","GLOBAL",1)~ THEN BEGIN 74 // from:
+IF WEIGHT #-1 ~Global("Join_Posse", "GLOBAL", 3) Global("Supply_Quest","GLOBAL",2) Global("VP_Hrothgar_Waits","GLOBAL",1)~ THEN BEGIN 74 // from:
   SAY ~Back again I see.  Have you reconsidered my offer to join the expedition?~ [HROT_19]
   IF ~NumInPartyLT(2)~ THEN REPLY ~Alright, alright.  I'll join your expedition.~  GOTO 41
   IF ~NumInPartyGT(1)~ THEN REPLY ~Alright, alright.  We'll join your expedition.~  GOTO 41
   IF ~~ THEN REPLY ~No, just stopping by to say hello.  Farewell.~  EXIT
-END	
+END  

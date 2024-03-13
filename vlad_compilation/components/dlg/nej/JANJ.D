@@ -18,37 +18,20 @@ END
 IF ~~ THEN BEGIN NEJ188
   SAY ~Poor great uncle was never allowed to set foot in a classroom again. Shame, by all accounts, they were really good turnips.~
   IF ~True()~ THEN EXTERN ~HROTHJ~ 60
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko")
-!InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 12
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
 END
 
 IF ~~ THEN BEGIN NEJ189
@@ -69,30 +52,17 @@ END
 IF ~~ THEN BEGIN NEJ192
   SAY ~Us Jansen's sometimes get a glimpse of him as he flickers in and out and we always try to catch a hold of him but he always seems to go again before we can get a firm enough grip to pull him out. Maybe he will flicker in at Halruaa and Tilorn can bring him back with us.~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
 END
 
 IF ~~ THEN BEGIN NEJ193
@@ -133,18 +103,15 @@ END
 
 IF ~~ THEN BEGIN NEJ200
   SAY ~Body snatching is it? This might be a good time for me to tell you of a couple of my cousins twice removed when they set out to... but then again maybe not. They came to a very sticky end and I don't mean it was strawberry jam that they were covered in when they were found!~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
 END
 
 IF ~~ THEN BEGIN NEJ201
   SAY ~Looks like something granny Jansen used to keep the cows out of her turnip patch.~
- 	IF ~True()~ THEN EXTERN ~HROTHJ~ 335
- 	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ leveler1
- 	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 25
+  IF ~True()~ THEN EXTERN ~HROTHJ~ 335
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ leveler1
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 25
 END
 
 IF ~~ THEN BEGIN tranfail
@@ -186,71 +153,54 @@ END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~From Taffic to Umberhulk... now can I recall such an event ever happening in the Jansen family before.~
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
- IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
- IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
-  IF ~InParty("Nalia")
-!Dead("Nalia")
-OR(2)
-Global("EnteredAR1304","GLOBAL",1)
-!Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
- IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
- IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
- IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
+  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
+  IF ~InParty("Nalia") !Dead("Nalia") OR(2) Global("EnteredAR1304","GLOBAL",1) !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
 END
 
 IF ~~ THEN BEGIN transmut
- SAY ~Now there's a thought! I'll be able to read of Jan Jansen's success in the past whilst living in the present, or at least it will be the present if Hrothgar here ever gets us home again.~
+  SAY ~Now there's a thought! I'll be able to read of Jan Jansen's success in the past whilst living in the present, or at least it will be the present if Hrothgar here ever gets us home again.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_TraQuest","GLOBAL",1)~ EXTERN ~TUMALV~ janjan
 END
 
 IF ~~ THEN BEGIN abjurer
-	SAY ~That reminds me of the last time cousin Willy fell off his chair and knocked himself out. Of course that was during an earthquake and when he woke up he wrote something called The Tempest. We Jansen's had to agree, one of his best pieces of work to date.~
-  	IF ~~ THEN REPLY ~Very interesting Jan, but are ready to pass this exam?~ GOTO abjurer1
+  SAY ~That reminds me of the last time cousin Willy fell off his chair and knocked himself out. Of course that was during an earthquake and when he woke up he wrote something called The Tempest. We Jansen's had to agree, one of his best pieces of work to date.~
+  IF ~~ THEN REPLY ~Very interesting Jan, but are ready to pass this exam?~ GOTO abjurer1
 END
 
 IF ~~ THEN BEGIN abjurer1
-	SAY ~Oh, I can do that.~
+  SAY ~Oh, I can do that.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_AbjQuest","GLOBAL",1)~ EXTERN ~TUPHIN~ jancast
 END
 
 IF ~~ THEN BEGIN abjurer2
-	SAY ~There must have been a griffin about.~
-	 IF ~~ THEN REPLY ~Well, Jan, when this gets back to your cousin Willy, he is certainly going to fall of his chair... laughing.~ GOTO abjurer3
-	 IF ~~ THEN REPLY ~They do appear at the most inconvenient moments don't they, Jan?~ GOTO abjurer4
+  SAY ~There must have been a griffin about.~
+  IF ~~ THEN REPLY ~Well, Jan, when this gets back to your cousin Willy, he is certainly going to fall of his chair... laughing.~ GOTO abjurer3
+  IF ~~ THEN REPLY ~They do appear at the most inconvenient moments don't they, Jan?~ GOTO abjurer4
 END
 
 IF ~~ THEN BEGIN abjurer3
- SAY ~Then best we don't tell him or he might never write again or worse, he might expect Jan here to write for him... come to think of it, that may not be such a bad thing.~
- 	IF ~~ THEN EXTERN ~TUPHIN~ npcfail
+  SAY ~Then best we don't tell him or he might never write again or worse, he might expect Jan here to write for him... come to think of it, that may not be such a bad thing.~
+  IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 
 IF ~~ THEN BEGIN abjurer4
- SAY ~(*Scratching his head*) Mmm, *a griffin in a magic academy*... must tell great aunt Jaykay about that one, I am sure she will make a great story out it.~
- 	IF ~~ THEN EXTERN ~TUPHIN~ npcfail
+  SAY ~(*Scratching his head*) Mmm, *a griffin in a magic academy*... must tell great aunt Jaykay about that one, I am sure she will make a great story out it.~
+  IF ~~ THEN EXTERN ~TUPHIN~ npcfail
 END
 
 IF ~~ THEN BEGIN vashtest
   SAY ~I'll have you know that the name Jan Jansen is already a legend, just waiting to pass into history as the greatest gnomish inventor ever. But thinking about it... if I pass this test it will already be written in history as the greatest gnomish illusionist to come out of Halruaa academy.~
-=
-~What a story that will be to tell Ma Jansen and the wee ones.~
+  = ~What a story that will be to tell Ma Jansen and the wee ones.~
   IF ~~ THEN DO ~SetGlobal("VP_Jan_IllQuest","GLOBAL",1)~ EXTERN ~TUVASHON~ janjan
 END
 

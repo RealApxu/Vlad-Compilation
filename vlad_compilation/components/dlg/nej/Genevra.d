@@ -1,7 +1,6 @@
 BEGIN ~GENEVRA~
 
-IF ~Global("VP_Restore_Ring","GLOBAL",6)
-Global("VP_Enhance_Ring","GLOBAL",1)~ THEN BEGIN 0
+IF ~Global("VP_Restore_Ring","GLOBAL",6) Global("VP_Enhance_Ring","GLOBAL",1)~ THEN BEGIN 0
   SAY ~Hello, I am Genevra, can I assist you?~
   IF ~~ THEN REPLY ~Well met Genevra, I am <GABBER>. You are just the person I seek.~ GOTO 1
   IF ~~ THEN REPLY ~You most certainly can Genevra. I am <GABBER>.~ GOTO 1
@@ -55,11 +54,7 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~That should cover it yes, but only just. Give me the ring and the gold and meet me here after one day has passed. Now, the only other thing I insist on is that no-one hears of my involvement with you in this matter.~
-  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",2) //Genevra went to enhance the ring
-SetGlobalTimer("VP_Genevra_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(8000)
-TakePartyItem("DeRing2")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",2) SetGlobalTimer("VP_Genevra_Returns","GLOBAL",ONE_DAY) TakePartyGold(8000) TakePartyItem("DeRing2") EscapeArea()~ EXIT //Genevra went to enhance the ring
 END
 
 IF ~~ THEN BEGIN 8
@@ -121,6 +116,5 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~Farewell <GABBER>, this has truly been an enlightening experience, but one I will not rush or even wish to repeat again.~
-	IF ~~ THEN DO ~GiveItemCreate("DeRing3",LastTalkedToBy,0,0,0)
-EscapeArea()~ EXIT
-END //Genevra is granting the enhanced ring (+fire element)
+  IF ~~ THEN DO ~GiveItemCreate("DeRing3",LastTalkedToBy,0,0,0) EscapeArea()~ EXIT
+END //Genevra is granting the enhanced ring (+fire element) 

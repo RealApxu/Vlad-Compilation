@@ -6,9 +6,7 @@ BEGIN ~DLARREL~
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-IF WEIGHT #2 ~OR(2)
-GlobalLT("Astrolab","GLOBAL",4)
-Global("VP_Larrel_May_Talk","GLOBAL",0)~ THEN BEGIN 0
+IF WEIGHT #2 ~OR(2) GlobalLT("Astrolab","GLOBAL",4) Global("VP_Larrel_May_Talk","GLOBAL",0)~ THEN BEGIN 0
   SAY ~... free... my... people...
 ...Astrolabe... whirls... twirls...~ [LARR_01]
   IF ~~ THEN REPLY ~We have finally found you!  We need your help to use the Heartstone Gem.~ GOTO 1
@@ -20,8 +18,7 @@ END
 IF ~~ THEN BEGIN 1
   SAY ~... free... my... people...
 ...Astrolabe... whirls... twirls...~ [LARR_02]
-  IF ~~ THEN REPLY ~We will not tolerate your ramblings anymore!  Prepare to be sent to the abyss!~ DO ~Enemy()
-~ EXIT
+  IF ~~ THEN REPLY ~We will not tolerate your ramblings anymore!  Prepare to be sent to the abyss!~ DO ~Enemy() ~ EXIT
   IF ~~ THEN REPLY ~I see we will need to return at a later time.  Farewell.~ EXIT
 END
 
@@ -31,9 +28,7 @@ END
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-IF WEIGHT #3 ~Global("Astrolab","GLOBAL",4)
-Global("Know_Larrel","GLOBAL",0)
-Global("VP_Larrel_May_Talk","GLOBAL",1)~ THEN BEGIN 2
+IF WEIGHT #3 ~Global("Astrolab","GLOBAL",4) Global("Know_Larrel","GLOBAL",0) Global("VP_Larrel_May_Talk","GLOBAL",1)~ THEN BEGIN 2
   SAY ~Uhhhh... Greetings, adventurers... Pardon me while I gather my thoughts.  Who are you, and what has just come to pass?~ [LARR_10]
   IF ~~ THEN REPLY ~We are adventurers who have come to the Severed Hand to seek your knowledge and power.  In doing so, we learned of the curse bestowed here and your sanity lost centuries ago.  We have restored you to some of your former self and beseech you for aid.~ DO ~SetGlobal("Know_Larrel","GLOBAL",1)~ GOTO 3
   IF ~~ THEN REPLY ~To further our journeys, we came to the Severed Hand to find that in order to continue, we had to restore you to some semblance of your former state.  Now we ask that you return the favor and divine what we need from the Heartstone.~ DO ~SetGlobal("Know_Larrel","GLOBAL",1)~ GOTO 4
@@ -53,7 +48,7 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-  SAY ~I was mistaken to think you adventurers were here for reasons other than personal gain.  I will not make that same mistake again.  Tell me what you want and be quick about it.   I will only tolerate so much from orc dung.~ [LARR_14]
+  SAY ~I was mistaken to think you adventurers were here for reasons other than personal gain.  I will not make that same mistake again.  Tell me what you want and be quick about it.  I will only tolerate so much from orc dung.~ [LARR_14]
   IF ~Global("HearstoneGiven","GLOBAL",0)~ THEN REPLY ~You stand corrected.  You will give us the power we need from the Heartstone.~ GOTO 6
   IF ~~ THEN REPLY ~You will relate to us the events that lead to the destruction of the Hand.~ GOTO 10
   IF ~~ THEN REPLY ~You are mistaken.  Orc dung would show more mercy than us.  Prepare to die once again, Larrel.~ DO ~Enemy()~ EXIT
@@ -84,97 +79,63 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~Then you will have what you seek.  Hand me the Heartstone Gem.~ [LARR_18]
-  IF ~~ THEN REPLY ~Here you are.~ DO ~SetGlobal("Larrel_Cutscene","GLOBAL",1)
-TakePartyItem("HeartGM")
-SetGlobal("HearstoneGiven","GLOBAL",1)
-AddexperienceParty(45500)
-EraseJournalEntry(%Dragon's Eye.
+  IF ~~ THEN REPLY ~Here you are.~ DO ~SetGlobal("Larrel_Cutscene","GLOBAL",1) TakePartyItem("HeartGM") SetGlobal("HearstoneGiven","GLOBAL",1) AddexperienceParty(45500) EraseJournalEntry(%Dragon's Eye.
 
-It turns out that Albion, the kind old priest of Eldath, is really an agent of some snake god.  When I questioned him about some of the things I saw in the sanctuary, he went crazy.  He yelled something about Sseth and his princess, Yxunomei, before he attacked me.%)
-EraseJournalEntry(%Dragon's Eye.
+It turns out that Albion, the kind old priest of Eldath, is really an agent of some snake god.  When I questioned him about some of the things I saw in the sanctuary, he went crazy.  He yelled something about Sseth and his princess, Yxunomei, before he attacked me.%) EraseJournalEntry(%Dragon's Eye.
 
-We ventured down to the fourth level of the Dragon's Eye volcano.  We found a priest of Eldath, the goddess of peace, there.  He told us that he and his students are part of an Eldathyn retreat in Dragon's Eye.  He offered us healing and a place to rest.%)
-EraseJournalEntry(%Dragon's Eye.
+We ventured down to the fourth level of the Dragon's Eye volcano.  We found a priest of Eldath, the goddess of peace, there.  He told us that he and his students are part of an Eldathyn retreat in Dragon's Eye.  He offered us healing and a place to rest.%) EraseJournalEntry(%Dragon's Eye.
 
-We saved a priestess of Ilmater, Egenia, from a group of Talonite priests and trolls. She came up into Dragon's Eye to join in the suffering of the abducted villagers. She told us that she would wait in Dragon's Eye to aid us until we had destroyed the source of evil.%)
-EraseJournalEntry(%Ilmater Clergy in Kuldahar.
+We saved a priestess of Ilmater, Egenia, from a group of Talonite priests and trolls. She came up into Dragon's Eye to join in the suffering of the abducted villagers. She told us that she would wait in Dragon's Eye to aid us until we had destroyed the source of evil.%) EraseJournalEntry(%Ilmater Clergy in Kuldahar.
 
-We spoke with Sister Calliana, the acting head priest of the Temple of Ilmater in Kuldahar.  She's assumed the role of head priest of the temple ever since Mother Egenia vanished a few weeks ago.  Calliana also mentioned that another member of the Ilmater clergy, a man by the name of Brother Poquelin, passed through Kuldahar recently from all the way from Cormyr and was going to try and get help from the Monastery of the Weeping Lilac in Bryn Shader.  Calliana fears he may have been abducted as well.%)
-EraseJournalEntry(%Never Ending Journey: Spine Of The World.
+We spoke with Sister Calliana, the acting head priest of the Temple of Ilmater in Kuldahar.  She's assumed the role of head priest of the temple ever since Mother Egenia vanished a few weeks ago.  Calliana also mentioned that another member of the Ilmater clergy, a man by the name of Brother Poquelin, passed through Kuldahar recently from all the way from Cormyr and was going to try and get help from the Monastery of the Weeping Lilac in Bryn Shader.  Calliana fears he may have been abducted as well.%) EraseJournalEntry(%Never Ending Journey: Spine Of The World.
 
-Somehow we were teleported from the strange dungeon to the snowy, lakefront community known as Easthaven. Weary and half-frozen from the road, we hastily made our way into the local tavern to find a hot meal and some friendly conversation. Scarcely had we seated ourselves at a table by the hearth when we were approached by a burly warrior who called himself Hrothgar. He seemed friendly enough, but something in his eyes warned us that he wasn't one to cross. He politely asked us to come see him at his home, a couple doors west of the tavern, to discuss business of some sort.%)
-EraseJournalEntry(%Never Ending Journey: Spine Of The World.
+Somehow we were teleported from the strange dungeon to the snowy, lakefront community known as Easthaven. Weary and half-frozen from the road, we hastily made our way into the local tavern to find a hot meal and some friendly conversation. Scarcely had we seated ourselves at a table by the hearth when we were approached by a burly warrior who called himself Hrothgar. He seemed friendly enough, but something in his eyes warned us that he wasn't one to cross. He politely asked us to come see him at his home, a couple doors west of the tavern, to discuss business of some sort.%) EraseJournalEntry(%Never Ending Journey: Spine Of The World.
 
-So it was that the patchwork militia set off from Easthaven, bound for the troubled village of Kuldahar with the party of strangers in tow. On they traveled, across the windswept tundra of the Dale, through the foothills of the Spine of the World, and upwards on the steep and treacherous trails of the Kuldahar Pass. Eager to seek out the evil that threatened the Pass, they did not expect it to find them first.  High upon the cliffs of the Pass, a band of frost giants had prepared an ambush. Hurling boulders and dislodging massive outcroppings of rock and snow, the giants sparked an avalanche that thundered down the mountainside and crashed down upon the heads of the unsuspecting expedition. Those fortunate enough to survive the avalanche pulled themselves free of the mountain of snow and bodies that now barred the way back to Easthaven. Battered and disheartened by the loss of their comrades, the survivors had little choice but to continue on to Kuldahar... alone.%)
-EraseJournalEntry(%Search for the Heartstone Gem.
+So it was that the patchwork militia set off from Easthaven, bound for the troubled village of Kuldahar with the party of strangers in tow. On they traveled, across the windswept tundra of the Dale, through the foothills of the Spine of the World, and upwards on the steep and treacherous trails of the Kuldahar Pass. Eager to seek out the evil that threatened the Pass, they did not expect it to find them first.  High upon the cliffs of the Pass, a band of frost giants had prepared an ambush. Hurling boulders and dislodging massive outcroppings of rock and snow, the giants sparked an avalanche that thundered down the mountainside and crashed down upon the heads of the unsuspecting expedition. Those fortunate enough to survive the avalanche pulled themselves free of the mountain of snow and bodies that now barred the way back to Easthaven. Battered and disheartened by the loss of their comrades, the survivors had little choice but to continue on to Kuldahar... alone.%) EraseJournalEntry(%Search for the Heartstone Gem.
 
-We penetrated the inner sanctum of the Temple of the Forgotten God only to find that someone had gotten their before us. The pedestal that, presumably, had once held the artifact was empty. Bodies lay strewn about the chamber, indicating that the acolytes and their verbeeg guardians had put up fight in the defense of the gem. Among the bodies was the corpse of man garbed in the vestments of a priest of Talona. It is difficult to say what part he might have played in the battle or the resulting theft. Perhaps we should return to Arundel and see what sense he can make of all this.%)
-EraseJournalEntry(%Search for the Heartstone Gem.
+We penetrated the inner sanctum of the Temple of the Forgotten God only to find that someone had gotten their before us. The pedestal that, presumably, had once held the artifact was empty. Bodies lay strewn about the chamber, indicating that the acolytes and their verbeeg guardians had put up fight in the defense of the gem. Among the bodies was the corpse of man garbed in the vestments of a priest of Talona. It is difficult to say what part he might have played in the battle or the resulting theft. Perhaps we should return to Arundel and see what sense he can make of all this.%) EraseJournalEntry(%Search for the Heartstone Gem.
 
-We returned to Kuldahar - only to find someone masquerading as Arundel. The shapechanger, whoever he was, thanked us for disposing of Yxunomei and allowing him "free reign" over Kuldahar and Easthaven. He vanished before we could learn more. I fear that with Arundel's murder, darker times are ahead for the people of Kuldahar and Easthaven.%)
-EraseJournalEntry(%Severed Hand.
+We returned to Kuldahar - only to find someone masquerading as Arundel. The shapechanger, whoever he was, thanked us for disposing of Yxunomei and allowing him "free reign" over Kuldahar and Easthaven. He vanished before we could learn more. I fear that with Arundel's murder, darker times are ahead for the people of Kuldahar and Easthaven.%) EraseJournalEntry(%Severed Hand.
 
-We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid's own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.%)
-EraseJournalEntry(%Severed Hand.
+We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid's own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.%) EraseJournalEntry(%Severed Hand.
 
-We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%)
-EraseJournalEntry(%Severed Hand.
+We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%) EraseJournalEntry(%Severed Hand.
 
-Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%)
-EraseJournalEntry(%Severed Hand.
+Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%) EraseJournalEntry(%Severed Hand.
 
-Custhantos made an interesting comment about an elven warrior who had visited him recently.  She took a book with magical artifact sketches and a book about unicorns.%)
-EraseJournalEntry(%To battle the soldiers of Kaylessa.
+Custhantos made an interesting comment about an elven warrior who had visited him recently.  She took a book with magical artifact sketches and a book about unicorns.%) EraseJournalEntry(%To battle the soldiers of Kaylessa.
 
-We returned to Kaylessa and told her all her soldiers have been put to rest.%)
-EraseJournalEntry(%To lay the priests of the Severed Hand to rest.
+We returned to Kaylessa and told her all her soldiers have been put to rest.%) EraseJournalEntry(%To lay the priests of the Severed Hand to rest.
 
-We returned to Denaini and told her that the priests have all been laid to rest.  She was very grateful that they now can move on to the afterlife.%)
-EraseJournalEntry(%To restore the pools of the elven shrine.
+We returned to Denaini and told her that the priests have all been laid to rest.  She was very grateful that they now can move on to the afterlife.%) EraseJournalEntry(%To restore the pools of the elven shrine.
 
-We gave Denaini the holy water she requested so that the pools for the elven shrine can be restored.%)
-EraseJournalEntry(%A bottle of wine for Old Jed.
+We gave Denaini the holy water she requested so that the pools for the elven shrine can be restored.%) EraseJournalEntry(%A bottle of wine for Old Jed.
 
-We delivered a bottle of wine to Old Jed, one of the local Easthaven fishermen.%)
-EraseJournalEntry(%Blade of Aihonen.
+We delivered a bottle of wine to Old Jed, one of the local Easthaven fishermen.%) EraseJournalEntry(%Blade of Aihonen.
 
-We told Jhonen why he was plagued with dreams, and we returned to him his ancestor's blade that Elisia wished to give him.  He was dumbfounded by the gift, and he seemed more than a little sad that she would not be returning to him.  Such sadnesses are the way of people from two worlds.%)
-EraseJournalEntry(%Blade of Aihonen.
+We told Jhonen why he was plagued with dreams, and we returned to him his ancestor's blade that Elisia wished to give him.  He was dumbfounded by the gift, and he seemed more than a little sad that she would not be returning to him.  Such sadnesses are the way of people from two worlds.%) EraseJournalEntry(%Blade of Aihonen.
 
-We returned and told Elisia we had delivered the blade to Jhonen.  She was pleased, and she rewarded us for our efforts.%)
-EraseJournalEntry(%Claim for the Evening Shade.
+We returned and told Elisia we had delivered the blade to Jhonen.  She was pleased, and she rewarded us for our efforts.%) EraseJournalEntry(%Claim for the Evening Shade.
 
-We showed Aldwin Eidan's signet ring that we had found upstairs, and he confessed to having forged the claim to the Evening Shade... with enough pressure, he eventually agreed that he would go confess his crime to the elders of Kuldahar and face whatever punishment they see fit to give him.%)
-EraseJournalEntry(%Damien's fish.
+We showed Aldwin Eidan's signet ring that we had found upstairs, and he confessed to having forged the claim to the Evening Shade... with enough pressure, he eventually agreed that he would go confess his crime to the elders of Kuldahar and face whatever punishment they see fit to give him.%) EraseJournalEntry(%Damien's fish.
 
-We were able to help Damien out, and we gave him some fish to take to his father so he wouldn't get in trouble.%)
-EraseJournalEntry(%Finding a missing caravan.
+We were able to help Damien out, and we gave him some fish to take to his father so he wouldn't get in trouble.%) EraseJournalEntry(%Finding a missing caravan.
 
-We told Gaspar the Fishmonger about the lost caravan and showed him the contract from Ilmus Gallaway we'd found in the orc caves.  Once he knew the caravan had been lost, Gaspar set about re-negotiating a contract and insuring that a new caravan of supplies reaches Easthaven.  He thanked us for our trouble, and he paid us a small sum of gold.%)
-EraseJournalEntry(%Finding a missing caravan.
+We told Gaspar the Fishmonger about the lost caravan and showed him the contract from Ilmus Gallaway we'd found in the orc caves.  Once he knew the caravan had been lost, Gaspar set about re-negotiating a contract and insuring that a new caravan of supplies reaches Easthaven.  He thanked us for our trouble, and he paid us a small sum of gold.%) EraseJournalEntry(%Finding a missing caravan.
 
-We found the ambushed caravan bound from Caer-Dinival to Easthaven.  We returned to Hrothgar to tell him of our discovery and of how we tracked the marauding orc raiders back to their lair.  The stout warrior seemed somewhat worried about the orc attack, but was relieved to know that the supplies were still recoverable.%)
-EraseJournalEntry(%Finding Sheemish, Conlan's son.
+We found the ambushed caravan bound from Caer-Dinival to Easthaven.  We returned to Hrothgar to tell him of our discovery and of how we tracked the marauding orc raiders back to their lair.  The stout warrior seemed somewhat worried about the orc attack, but was relieved to know that the supplies were still recoverable.%) EraseJournalEntry(%Finding Sheemish, Conlan's son.
 
-We freed Conlan's son, Sheemish from the depths of Dragon's Eye and returned to check on him to make sure he got home all right. He gave us a key to a chest in Conlan's house that contains some kind of enchanted hammer.%)
-EraseJournalEntry(%Finding the Heartstone Gem.
+We freed Conlan's son, Sheemish from the depths of Dragon's Eye and returned to check on him to make sure he got home all right. He gave us a key to a chest in Conlan's house that contains some kind of enchanted hammer.%) EraseJournalEntry(%Finding the Heartstone Gem.
 
-We met Yxunomei in the heart of Dragon's Eye.  She was surprised that we were there, interfering with her "vendetta".  We asked her about the vendetta, but she told us our involvement in the matter was irrelevant.%)
-EraseJournalEntry(%Get rid of the wolf in Apsel's workshop.
+We met Yxunomei in the heart of Dragon's Eye.  She was surprised that we were there, interfering with her "vendetta".  We asked her about the vendetta, but she told us our involvement in the matter was irrelevant.%) EraseJournalEntry(%Get rid of the wolf in Apsel's workshop.
 
-We succeeded in getting rid of the wolf in Apsel's workshop.  Apparently the beast had chewed its way inside to get at the fish bones the old man had stored inside.  Apsel was quite relieved and graciously rewarded us with some gold and carved scrimshaw dagger.%)
-EraseJournalEntry(%Mirek's family heirloom.
+We succeeded in getting rid of the wolf in Apsel's workshop.  Apparently the beast had chewed its way inside to get at the fish bones the old man had stored inside.  Apsel was quite relieved and graciously rewarded us with some gold and carved scrimshaw dagger.%) EraseJournalEntry(%Mirek's family heirloom.
 
-We were able to retrieve Mirek of Kuldahar's family heirloom.%)
-EraseJournalEntry(%Remedy for Ghereg.
+We were able to retrieve Mirek of Kuldahar's family heirloom.%) EraseJournalEntry(%Remedy for Ghereg.
 
-We told Ghereg, the ogre in Kuldahar Pass, a recipe that would make his headache go away. He was very grateful, and promptly left.%)
-EraseJournalEntry(%To restore the pools of the elven shrine.
+We told Ghereg, the ogre in Kuldahar Pass, a recipe that would make his headache go away. He was very grateful, and promptly left.%) EraseJournalEntry(%To restore the pools of the elven shrine.
 
-We came upon Denaini in Solonor's Tower of the Severed Hand.  She told us the sad tale of how the Severed Hand fell and Larrel's disastrous attempt at saving his people by casting a Mythal, a form of ancient elven magic.%)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("ShLarMov")~ SOLVED_JOURNAL ~Heartstone Gem.
+We came upon Denaini in Solonor's Tower of the Severed Hand.  She told us the sad tale of how the Severed Hand fell and Larrel's disastrous attempt at saving his people by casting a Mythal, a form of ancient elven magic.%) ClearAllActions() StartCutSceneMode() StartCutScene("ShLarMov")~ SOLVED_JOURNAL ~Heartstone Gem.
 
 We gave the Heartstone Gem to Larrel, and he used its power to discover the location of the evil that plagues Kuldahar.  From what the Heartstone was able to divine, the threat lies deep within the dwarven fortress of Dorn's Deep.~ EXIT
 END
@@ -280,7 +241,7 @@ IF ~~ THEN BEGIN 23
 END
 
 IF ~~ THEN BEGIN 24
-  SAY ~I concocted a plan to protect my people and buy us some time.   Ancient elven magic speaks of a spell used in days of old, named the 'Mythal'.  This Mythal embodies the land with a living and protective life force personifying all that is elven.~ [LARR_35]
+  SAY ~I concocted a plan to protect my people and buy us some time.  Ancient elven magic speaks of a spell used in days of old, named the 'Mythal'.  This Mythal embodies the land with a living and protective life force personifying all that is elven.~ [LARR_35]
   IF ~~ THEN REPLY ~Continue...~ GOTO 25
   IF ~~ THEN REPLY ~I'd like to hear the other aspects of what came to be.~ GOTO 10
   IF ~~ THEN REPLY ~Forgive me, Larrel.  I must take my leave.  I may return.~ EXIT
@@ -301,7 +262,7 @@ IF ~~ THEN BEGIN 26
 END
 
 IF ~~ THEN BEGIN 27
-  SAY ~In the weeks that came to pass, we fortified what remained of our forces within the Hand.  My wizards and I locked ourselves within this tower and began the arduous process of laying a Mythal.    ~ [LARR_38]
+  SAY ~In the weeks that came to pass, we fortified what remained of our forces within the Hand.  My wizards and I locked ourselves within this tower and began the arduous process of laying a Mythal.  ~ [LARR_38]
   IF ~~ THEN REPLY ~Continue...~ GOTO 28
   IF ~~ THEN REPLY ~I'd like to hear the other aspects of what came to be.~ GOTO 10
   IF ~~ THEN REPLY ~Forgive me, Larrel.  I must take my leave.  I may return.~ EXIT
@@ -370,28 +331,19 @@ END
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-IF WEIGHT #-1 ~Global("Astrolab","GLOBAL",4)
-Global("Know_Larrel","GLOBAL",1)
-!Global("VP_Astrolabe_Talks","GLOBAL",4)
-!Global("Larrel_Cutscene","GLOBAL",1)
-GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 36
+IF WEIGHT #-1 ~Global("Astrolab","GLOBAL",4) Global("Know_Larrel","GLOBAL",1) !Global("VP_Astrolabe_Talks","GLOBAL",4) !Global("Larrel_Cutscene","GLOBAL",1) GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 36
   SAY ~You have returned.~ [LARR_47]
   IF ~Global("HearstoneGiven","GLOBAL",0)~ THEN REPLY ~I seek knowledge that only can be divined through the Heartstone.~ GOTO 6
   IF ~~ THEN REPLY ~I wish to know more of the events that came to pass here in the Hand.~ GOTO 10
   IF ~Global("DarkestHourRead","GLOBAL",0)~ THEN REPLY ~If the Astrolabe has been restored, why do you still remain?~ GOTO 37
-  IF ~PartyHasItem("BookEva")~ THEN REPLY ~Larrel, we found this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva")
-SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
-	IF ~Global("HearstoneGiven","GLOBAL",1)
-Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Larrel, can you take us to Kuldahar?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once)
-  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3)
-GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)
-  IF ~~ THEN REPLY ~And we will return again.  Farewell.~ EXIT
+  IF ~PartyHasItem("BookEva")~ THEN REPLY ~Larrel, we found this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva") SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
+  IF ~Global("HearstoneGiven","GLOBAL",1) Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Larrel, can you take us to Kuldahar?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once)  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3) GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)  IF ~~ THEN REPLY ~And we will return again.  Farewell.~ EXIT
 END
 
 IF ~~ THEN BEGIN 37
   SAY ~As simple as that question is, I do not have an answer.  Perhaps there are other elves here that need my help to return to Arvandor.  Maybe there is something else I need to resolve in order to complete my punishment.~ [LARR_48]
   IF ~~ THEN REPLY ~I'd like to hear the other aspects of what came to be.~ GOTO 10
-	IF ~Global("HearstoneGiven","GLOBAL",0)~ THEN REPLY ~I seek knowledge that only can be divined through the Heartstone.~ GOTO 6
+  IF ~Global("HearstoneGiven","GLOBAL",0)~ THEN REPLY ~I seek knowledge that only can be divined through the Heartstone.~ GOTO 6
   IF ~~ THEN REPLY ~I hope you find peace, Larrel. Farewell.~ EXIT
 END
 
@@ -437,8 +389,7 @@ END
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-IF WEIGHT #1 ~Global("Larrel_Cutscene","GLOBAL",1)
-GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 43
+IF WEIGHT #1 ~Global("Larrel_Cutscene","GLOBAL",1) GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 43
   SAY ~Even if Labelas' curse had taken my eyesight, I would still recognize that hole.  What you have seen is Dorn's Deep, den of the betrayers.  In here is where the wretched dwarves hollowed out their home.~ [LARR_54]
   IF ~~ THEN DO ~SetGlobal("Larrel_Cutscene","GLOBAL",2)~ GOTO 44
 END
@@ -447,25 +398,15 @@ IF ~~ THEN BEGIN 44
   SAY ~Be warned if your journey takes you there.  If any of the dwarves remain, expect no quarter, for they will give none.  Believe none of their lies, as they will all lead to treachery.~ [LARR_55]
   IF ~~ THEN REPLY ~I wish to know more of the events that came to pass here in the Hand.~ GOTO 10
   IF ~Global("DarkestHourRead","GLOBAL",0)~ THEN REPLY ~If the Astrolabe has been restored, why do you still remain?~ GOTO 37
-  IF ~PartyHasItem("BookEva")~ THEN REPLY ~One other thing before we depart.  We came upon this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva")
-SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
-  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3)
-GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)
-  IF ~~ THEN REPLY ~Larrel, take us to Dorn's Deep.~ GOTO 45 //--> closed
-  IF ~Global("HearstoneGiven","GLOBAL",1)
-Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Larrel, can you take us to Kuldahar?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once)
-END
+  IF ~PartyHasItem("BookEva")~ THEN REPLY ~One other thing before we depart.  We came upon this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva") SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
+  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3) GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)  IF ~~ THEN REPLY ~Larrel, take us to Dorn's Deep.~ GOTO 45 //--> closed
+  IF ~Global("HearstoneGiven","GLOBAL",1) Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Larrel, can you take us to Kuldahar?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once) END
 
 IF ~~ THEN BEGIN 45
   SAY ~I am sorry adventurer, but my power is sorely limited at present. If you wish to travel to Dorn's Deep, then you must find your own way, or return at a later time when I am fully restored.~
-  IF ~Global("HearstoneGiven","GLOBAL",1)
-Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Actually, we need to re-supply before we can continue our journey. Could you take us to Kuldahar instead?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once)
-  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3)
-GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, then I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)
-  IF ~~ THEN REPLY ~I wish to know more of the events that came to pass here in the Hand.~ GOTO 10
+  IF ~Global("HearstoneGiven","GLOBAL",1) Global("VP_Kuldahar_Portal","GLOBAL",0)~ THEN REPLY ~Actually, we need to re-supply before we can continue our journey. Could you take us to Kuldahar instead?~ DO ~SetGlobal("VP_Kuldahar_Portal","GLOBAL",1)~ GOTO 47 //--> to Kuldahar  (only once)  IF ~GlobalLT("VP_Astrolabe_Talks","GLOBAL",3) GlobalLT("VP_Larrel_Astrolab","GLOBAL",2)~ THEN REPLY ~Larrel, then I have some questions about the astrolabe and of the research that you were doing before the Hand fell.~ GOTO 46 //--> to time travel talks (only once)  IF ~~ THEN REPLY ~I wish to know more of the events that came to pass here in the Hand.~ GOTO 10
   IF ~Global("DarkestHourRead","GLOBAL",0)~ THEN REPLY ~If the Astrolabe has been restored, why do you still remain?~ GOTO 37
-  IF ~PartyHasItem("BookEva")~ THEN REPLY ~One other thing before we depart.  We came upon this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva")
-SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
+  IF ~PartyHasItem("BookEva")~ THEN REPLY ~One other thing before we depart.  We came upon this diary belonging to your daughter.~ DO ~TakePartyItem("BookEva") SetGlobal("Eva_quest","GLOBAL",1)~ GOTO 38
   IF ~~ THEN REPLY ~Not right now. I have some unfinished business I'd like to attend to. Farewell.~ EXIT
 END
 
@@ -491,11 +432,9 @@ IF ~~ THEN BEGIN 47
   SAY ~I can if that is your wish adventurer and... is it also your wish that you travel now?~
   IF ~~ THEN DO ~EraseJournalEntry(%Severed Hand.
 
-Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%)
-EraseJournalEntry(%Severed Hand.
+Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%) EraseJournalEntry(%Severed Hand.
 
-We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%)
-EraseJournalEntry(%Ilmater Clergy in Kuldahar.
+We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%) EraseJournalEntry(%Ilmater Clergy in Kuldahar.
 
 We spoke with Sister Calliana, the acting head priest of the Temple of Ilmater in Kuldahar.  She's assumed the role of head priest of the temple ever since Mother Egenia vanished a few weeks ago.  Calliana also mentioned that another member of the Ilmater clergy, a man by the name of Brother Poquelin, passed through Kuldahar recently from all the way from Cormyr and was going to try and get help from the Monastery of the Weeping Lilac in Bryn Shader.  Calliana fears he may have been abducted as well.%)~ EXTERN ~HROTHJ~ 238
 END
@@ -521,84 +460,50 @@ END
 
 IF ~~ THEN BEGIN 50
   SAY ~Fascinating... fascinating I must say! There was a time when I would have been intrigued by your story but as I have said, I am no longer concerned with what has gone or what is yet to come. I will speak with Geralith and see what needs to be done if we are to get you home.~
-  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",3)
-EraseJournalEntry(%Severed Hand.
+  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",3) EraseJournalEntry(%Severed Hand.
 
-Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%)
-EraseJournalEntry(%Severed Hand.
+Lethias mentioned that in the final days of the Severed Hand, Larrel and his wizards were locked atop Labelas Tower.%) EraseJournalEntry(%Severed Hand.
 
-We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%)
-EraseJournalEntry(%Ilmater Clergy in Kuldahar.
+We met what was left of the Bladesinger, Lethias.  He told the tale of the great sacrifice he made in the destruction of Sehanine Tower.%) EraseJournalEntry(%Ilmater Clergy in Kuldahar.
 
-We spoke with Sister Calliana, the acting head priest of the Temple of Ilmater in Kuldahar.  She's assumed the role of head priest of the temple ever since Mother Egenia vanished a few weeks ago.  Calliana also mentioned that another member of the Ilmater clergy, a man by the name of Brother Poquelin, passed through Kuldahar recently from all the way from Cormyr and was going to try and get help from the Monastery of the Weeping Lilac in Bryn Shader.  Calliana fears he may have been abducted as well.%)
-ClearAllActions()
-StartCutSceneMode()
-StartCutscene("VPCutFix")~ EXIT
+We spoke with Sister Calliana, the acting head priest of the Temple of Ilmater in Kuldahar.  She's assumed the role of head priest of the temple ever since Mother Egenia vanished a few weeks ago.  Calliana also mentioned that another member of the Ilmater clergy, a man by the name of Brother Poquelin, passed through Kuldahar recently from all the way from Cormyr and was going to try and get help from the Monastery of the Weeping Lilac in Bryn Shader.  Calliana fears he may have been abducted as well.%) ClearAllActions() StartCutSceneMode() StartCutscene("VPCutFix")~ EXIT
 END
 
-IF WEIGHT #0 ~Global("VP_Astrolabe_Talks","GLOBAL",4)
-!Global("Larrel_Cutscene","GLOBAL",1)
-GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 51
+IF WEIGHT #0 ~Global("VP_Astrolabe_Talks","GLOBAL",4) !Global("Larrel_Cutscene","GLOBAL",1) GlobalLT("VP_TeleportDialog","GLOBAL",4)~ THEN BEGIN 51
   SAY ~Adventurer... I have news. When first I spoke to Geralith of all that I had learnt with the aid of the astrolabe, he was certain that it could not be modified and used for the purpose you asked but he said he would look once more into the machine's workings. It was then he got very excited and...~ [mute]
-  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",5)
-EraseJournalEntry(%Dragon's Eye.
+  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",5) EraseJournalEntry(%Dragon's Eye.
 
-We ventured down to the fourth level of the Dragon's Eye volcano.  We found a priest of Eldath, the goddess of peace, there.  He told us that he and his students are part of an Eldathyn retreat in Dragon's Eye.  He offered us healing and a place to rest.%)
-EraseJournalEntry(%Dragon's Eye.
+We ventured down to the fourth level of the Dragon's Eye volcano.  We found a priest of Eldath, the goddess of peace, there.  He told us that he and his students are part of an Eldathyn retreat in Dragon's Eye.  He offered us healing and a place to rest.%) EraseJournalEntry(%Dragon's Eye.
 
-We saved a priestess of Ilmater, Egenia, from a group of Talonite priests and trolls. She came up into Dragon's Eye to join in the suffering of the abducted villagers. She told us that she would wait in Dragon's Eye to aid us until we had destroyed the source of evil.%)
-EraseJournalEntry(%Search for the Heartstone Gem.
+We saved a priestess of Ilmater, Egenia, from a group of Talonite priests and trolls. She came up into Dragon's Eye to join in the suffering of the abducted villagers. She told us that she would wait in Dragon's Eye to aid us until we had destroyed the source of evil.%) EraseJournalEntry(%Search for the Heartstone Gem.
 
-We have agreed to search for a missing druidic artifact called the Heartstone Gem. Apparently, it was stolen from the druids of Kuldahar years ago by one of their own. Arundel believes that it might be located within a temple that lies in a canyon far to the east of Kuldahar. We are to travel to this temple and discover if the Heartstone is indeed there. If it is, we are to return it to Arundel so that he may use its power to divine the location of the true evil behind the disturbances in the pass.%)
-EraseJournalEntry(%Search for the Heartstone Gem.
+We have agreed to search for a missing druidic artifact called the Heartstone Gem. Apparently, it was stolen from the druids of Kuldahar years ago by one of their own. Arundel believes that it might be located within a temple that lies in a canyon far to the east of Kuldahar. We are to travel to this temple and discover if the Heartstone is indeed there. If it is, we are to return it to Arundel so that he may use its power to divine the location of the true evil behind the disturbances in the pass.%) EraseJournalEntry(%Search for the Heartstone Gem.
 
-We penetrated the inner sanctum of the Temple of the Forgotten God only to find that someone had gotten their before us. The pedestal that, presumably, had once held the artifact was empty. Bodies lay strewn about the chamber, indicating that the acolytes and their verbeeg guardians had put up fight in the defense of the gem. Among the bodies was the corpse of man garbed in the vestments of a priest of Talona. It is difficult to say what part he might have played in the battle or the resulting theft. Perhaps we should return to Arundel and see what sense he can make of all this.%)
-EraseJournalEntry(%Search for the Heartstone Gem.
+We penetrated the inner sanctum of the Temple of the Forgotten God only to find that someone had gotten their before us. The pedestal that, presumably, had once held the artifact was empty. Bodies lay strewn about the chamber, indicating that the acolytes and their verbeeg guardians had put up fight in the defense of the gem. Among the bodies was the corpse of man garbed in the vestments of a priest of Talona. It is difficult to say what part he might have played in the battle or the resulting theft. Perhaps we should return to Arundel and see what sense he can make of all this.%) EraseJournalEntry(%Search for the Heartstone Gem.
 
-Our search for the Heartstone Gem continues. Arundel has managed to piece together the possible location of the Gem from the clues we discovered at the temple. We are to journey to the volcanic caverns known as Dragon's Eye and discover the identities of the mysterious thieves who sacked the temple and stole the Gem. Hopefully, the artifact is still in their possession.%)
-EraseJournalEntry(%Severed Hand.
+Our search for the Heartstone Gem continues. Arundel has managed to piece together the possible location of the Gem from the clues we discovered at the temple. We are to journey to the volcanic caverns known as Dragon's Eye and discover the identities of the mysterious thieves who sacked the temple and stole the Gem. Hopefully, the artifact is still in their possession.%) EraseJournalEntry(%Severed Hand.
 
-We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid's own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.%)
-EraseJournalEntry(%Vale of Shadows.
+We discovered Arundel in the upstairs chamber of his cottage, struck down by a man that wore the Archdruid's own face and whose hands were as blood.  Arundel barely had the strength to tell us to seek out the ancient elven fortress of the Severed Hand, and that within the fortress is an elven mage named Larrel, the last person who can use the gem to find the source of evil plaguing Kuldahar.  Arundel told us nature would guide us to the Severed Hand.%) EraseJournalEntry(%Vale of Shadows.
 
 We killed Lysan, the Auril priestess, and returned to Kresselack. Unfortunately, all Kresselack could tell us was that neither he or nor anyone in the Vale of Shadows was responsible for the evil plaguing Kuldahar. It seems we will need to go back to Arundel and inform him of this. Perhaps he will have a clue as to what we should do next.%)~ EXTERN ~DGELARIT~ 18
 END
 
 IF ~~ THEN BEGIN 52
   SAY ~As you wish adventurer...~
-  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",6)
-SetGlobal("OpenDornsDeep","GLOBAL",1)
-SetGlobal("Know_Larrel","GLOBAL",2)
-SetGlobal("VP_NewGame_NoDD","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("ShLarKul")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",6) SetGlobal("OpenDornsDeep","GLOBAL",1) SetGlobal("Know_Larrel","GLOBAL",2) SetGlobal("VP_NewGame_NoDD","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("ShLarKul")~ EXIT
 END
 
 IF ~~ THEN BEGIN 53
   SAY ~If you do decide to venture forth to that dwarven vestige of evil, adventurer, I have the power to take you there if you wish.~ [LARR_56]
-  IF ~~ THEN DO ~SetGlobal("OpenDornsDeep","GLOBAL",1)
-SetGlobal("Know_Larrel","GLOBAL",2)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("ShLarWrf")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("OpenDornsDeep","GLOBAL",1) SetGlobal("Know_Larrel","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("ShLarWrf")~ EXIT
 END
 
 IF ~~ THEN BEGIN 54
   SAY ~As you wish adventurer...~
-  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",6)
-SetGlobal("OpenDornsDeep","GLOBAL",1)
-SetGlobal("Know_Larrel","GLOBAL",2)
-SetGlobal("VP_NewGame_NoDD","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("ShLarKu2")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",6) SetGlobal("OpenDornsDeep","GLOBAL",1) SetGlobal("Know_Larrel","GLOBAL",2) SetGlobal("VP_NewGame_NoDD","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("ShLarKu2")~ EXIT
 END
 
 IF ~~ THEN BEGIN 55
   SAY ~As you wish adventurer...~
-  IF ~~ THEN DO ~SetGlobal("OpenDornsDeep","GLOBAL",1)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("ShLarKu3")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("OpenDornsDeep","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("ShLarKu3")~ EXIT
 END

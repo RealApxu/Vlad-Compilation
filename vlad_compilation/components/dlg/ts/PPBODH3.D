@@ -1,6 +1,5 @@
 REPLACE_STATE_TRIGGER PPBODHI3 0
-~NumTimesTalkedTo(0)
-Global("Start_Island","GLOBAL",0)~
+~NumTimesTalkedTo(0) Global("Start_Island","GLOBAL",0)~
 
 APPEND ~PPBODHI3~
 
@@ -14,8 +13,7 @@ IF ~~ THEN BEGIN TS24
   IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
-IF ~GlobalGT("Start_Island","GLOBAL",0)
-Global("VP_Bodhi_Joins","GLOBAL",1)~ THEN BEGIN TS25
+IF ~GlobalGT("Start_Island","GLOBAL",0) Global("VP_Bodhi_Joins","GLOBAL",1)~ THEN BEGIN TS25
   SAY ~I see, you come to seek refuge in this 'peaceful' place as well...~
   IF ~~ THEN REPLY ~Peaceful? Are you mocking me? Bodhi, we are fighting for our lives here! Look, my companions and I carry grievous wounds and Kachiko was taken from us! We have no choice but to fight - that's our only hope to get off this Island!~ GOTO TS26
 END
@@ -28,8 +26,7 @@ END
 
 IF ~~ THEN BEGIN TS27
   SAY ~And so I shall. Lead on!~
-  IF ~~ THEN DO ~SetGlobal("VP_Bodhi_Joins","GLOBAL",2)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Bodhi_Joins","GLOBAL",2) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS28
@@ -45,8 +42,6 @@ END
 
 IF ~Global("VP_Bodhi_Joins","GLOBAL",4)~ THEN BEGIN TS30
   SAY ~I must go and check if the treacherous captain and his ship are still on the island... See you later...~
-  IF ~~ THEN DO ~SetGlobal("VP_Bodhi_Joins","GLOBAL",5)
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Bodhi_Joins","GLOBAL",5) LeaveParty() EscapeArea()~ EXIT
 END
 END

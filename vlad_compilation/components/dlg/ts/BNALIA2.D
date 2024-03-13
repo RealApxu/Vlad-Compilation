@@ -19,4 +19,5 @@ IF ~~ THEN BEGIN TS62
   SAY ~It does sound odd, but I will find the place a bit friendlier and less frightening if something like that was done. I know, it is still the Nine Hells part and its grim nature will not change.~
   IF ~~ THEN EXIT
 END
+
 END

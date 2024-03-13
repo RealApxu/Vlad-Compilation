@@ -23,8 +23,5 @@ END
 
 IF WEIGHT #0 ~HPLT(Myself,9)~ THEN BEGIN 3 // from:
   SAY #19965 /* ~No, no, NO! I'm not dying here! I'm not! Gah, my head hurts! I have to get to the surface! I have to go!~ [IMOENP61] */
-  IF ~~ THEN DO ~LeaveParty()
-Wait(1)
-GivePartyAllEquipment()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() Wait(1) GivePartyAllEquipment() EscapeArea()~ EXIT
 END

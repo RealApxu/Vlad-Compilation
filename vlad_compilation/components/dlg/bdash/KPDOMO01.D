@@ -16,17 +16,17 @@ See("Nalia")~
 END
 
 EXTEND_BOTTOM KPDOMO01 1
-	IF ~!InParty("Nalia")
+    IF ~!InParty("Nalia")
 !See("Nalia")~ THEN GOTO N2
 END
 
 EXTEND_BOTTOM KPDOMO01 11
-	IF ~!InParty("Nalia")
+    IF ~!InParty("Nalia")
 !See("Nalia")~ THEN GOTO 13
 END
 
 EXTEND_BOTTOM KPDOMO01 115
-	IF ~!InParty("Nalia")
+    IF ~!InParty("Nalia")
 !See("Nalia")~ THEN GOTO 116
 END
 

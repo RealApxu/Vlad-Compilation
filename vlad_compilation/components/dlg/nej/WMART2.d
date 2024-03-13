@@ -1,12 +1,9 @@
 REPLACE_STATE_TRIGGER WMART2 0
-~!Global("VP_I_Know_Taffic","LOCALS",1)
-!Global("VP_Find_Rithelium","GLOBAL",1)
-NumTimesTalkedTo(0)~
+~!Global("VP_I_Know_Taffic","LOCALS",1) !Global("VP_Find_Rithelium","GLOBAL",1) NumTimesTalkedTo(0)~
 
 APPEND ~WMART2~
 
-IF ~Global("VP_I_Know_Taffic","LOCALS",1)
-!Global("VP_Find_Rithelium","GLOBAL",1)~ THEN BEGIN 2
+IF ~Global("VP_I_Know_Taffic","LOCALS",1) !Global("VP_Find_Rithelium","GLOBAL",1)~ THEN BEGIN 2
   SAY ~Taffic... my little forest gnome. I had a feeling I would be seeing you as soon as news of my return got out. Surely you could have at least let me hang up my cloak before descending on me... I find travelling wearies me more and more with each passing season.~
   IF ~~ THEN GOTO 3
 END
@@ -93,7 +90,7 @@ IF ~~ THEN BEGIN 17
   SAY ~I did approach them but they got very suspicious as to why I should want a lump of ore that no one else has shown any interest in. When I explained that it could only be forged by means of secrets long forgotten they didn't believe me and asked for an exorbitant amount of gold for it.~
   IF ~~ THEN GOTO 18
 END
-  	
+
 IF ~~ THEN BEGIN 18
   SAY ~I can only surmise that they know my reputation for looking into the past and thought I had already discovered the secrets. When in fact my only interest in the rithtellium is as a collector of all things past... one day I hope to learn of its forging but I do not believe the piece they have is big enough to make a weapon of any kind.~
   IF ~~ THEN REPLY ~I fail to see why you need me for simple burglary.~ GOTO 19
@@ -108,12 +105,9 @@ END
 
 IF ~~ THEN BEGIN 20
   SAY ~Very few not of the guild are ever invited into their quarters... you however they are interested in and I believe safe entry will be afforded you if it has not yet already been given. As the wards are attuned to prevent entry from any not authorised, you would be safe. You can see my dilemma, so in exchange for my information you will retrieve the rithtellium for me.~
-  IF ~PartyHasItem("rithtel")
-!PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithtel")~ GOTO 22
-  IF ~!PartyHasItem("rithtel")
-PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
-  IF ~PartyHasItem("rithtel")
-PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
+  IF ~PartyHasItem("rithtel") !PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithtel")~ GOTO 22
+  IF ~!PartyHasItem("rithtel") PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
+  IF ~PartyHasItem("rithtel") PartyHasItem("rithore")~ THEN REPLY ~I happen to have some ore that I found and I have not been able to identify it. Could this perhaps be rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 22
   IF ~~ THEN REPLY ~That seems easy enough, I'll be back with your ore shortly.~ GOTO 24
   IF ~~ THEN REPLY ~A small price to pay if it stops the gnome's whining... I still say it will take a miracle not magic to turn him into something he is not.~ GOTO 24
   IF ~~ THEN REPLY ~From what I hear the Shadow Thieves are a very powerful organisation and the last thing I need is to have them assaulting me every time I turn a corner... (*Turning to Taffic*) I am sorry Taffic, but I am not going to do this.~ EXTERN ~TAFFICJ~ 19
@@ -136,21 +130,15 @@ END
 
 IF ~~ THEN BEGIN 23
   SAY ~Of course... forgive my exuberance, I never really expected to see, let alone hold such a rare commodity in my hand. Thank you <CHARNAME>. As for Taffic's dream, I wasn't able to learn anything that I could do for him myself but here, take this letter which was given to me by a very dear friend of mine, it will tell you all that you need to know. It might also help you gain an audience with the man mentioned. Now, if you will excuse me I have much to do.~
-  IF ~~ THEN REPLY ~I have met this Thalantyr, pompous fellow... calls himself mighty mage of Beregost or at least he did when first I met him. A meeting which involved me aiding him transform a chicken named Melicamp back into its human form, but that is another story, still, maybe Thalantyr will remember the incident and me.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
-  IF ~~ THEN REPLY ~So Taffic, it seems we have yet another journey to make before we can put this nonsense out of your head for good.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
-  IF ~~ THEN REPLY ~I am sorry Taffic but this nonsense stops here. If we have reason to visit Beregost then I will speak to Thalantyr, but for the moment it is too far out of my way.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
-  IF ~~ THEN REPLY ~Beregost! Forget it Taffic, there is no way I am journeying that distance only to be told that which I already know ... that your dream is naught but the fantasy of your egotistical mind.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
+  IF ~~ THEN REPLY ~I have met this Thalantyr, pompous fellow... calls himself mighty mage of Beregost or at least he did when first I met him. A meeting which involved me aiding him transform a chicken named Melicamp back into its human form, but that is another story, still, maybe Thalantyr will remember the incident and me.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
+  IF ~~ THEN REPLY ~So Taffic, it seems we have yet another journey to make before we can put this nonsense out of your head for good.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
+  IF ~~ THEN REPLY ~I am sorry Taffic but this nonsense stops here. If we have reason to visit Beregost then I will speak to Thalantyr, but for the moment it is too far out of my way.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
+  IF ~~ THEN REPLY ~Beregost! Forget it Taffic, there is no way I am journeying that distance only to be told that which I already know ... that your dream is naught but the fantasy of your egotistical mind.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
 END
 
 IF ~~ THEN BEGIN 24
   SAY ~Return here when you have the rithtellium and I will then share with you all that I have learnt about your friend's plight.~
-  IF ~~ THEN DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",1)
-SetGlobal("VP_Taffic_Grumbles","GLOBAL",1)
-RealSetGlobalTimer("VP_TfGrumblesDelay","GLOBAL",1800)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",1) SetGlobal("VP_Taffic_Grumbles","GLOBAL",1) RealSetGlobalTimer("VP_TfGrumblesDelay","GLOBAL",1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25
@@ -160,12 +148,9 @@ END
 
 IF ~Global("VP_Find_Rithelium","GLOBAL",1)~ THEN BEGIN 26
   SAY ~You return, does this mean you have the rithtellium?~
-  IF ~PartyHasItem("rithtel")
-!PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithtel")~ GOTO 27
-  IF ~!PartyHasItem("rithtel")
-PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 27
-  IF ~PartyHasItem("rithtel")
-PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 27
+  IF ~PartyHasItem("rithtel") !PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithtel")~ GOTO 27
+  IF ~!PartyHasItem("rithtel") PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 27
+  IF ~PartyHasItem("rithtel") PartyHasItem("rithore")~ THEN REPLY ~I believe I do Deidre. Here is this rithtellium?~ DO ~TakePartyItemAll("rithore")~ GOTO 27
   IF ~~ THEN REPLY ~No I have not been able to find it. Is it possible that the Shadow Thieves have found themselves a buyer after all?~ GOTO 29
   IF ~~ THEN REPLY ~No I have not Deidre and I am not prepared to spend the time necessary to look further. I suggest instead that you give Taffic the information that he seeks in exchange for your life... now that is more than a fair price wouldn't you agree?~ GOTO 25
 END
@@ -177,14 +162,10 @@ END
 
 IF ~~ THEN BEGIN 28
   SAY ~Here, take this letter which was given to me by a very dear friend of mine, it will tell you all that you need to know. It might also help you gain an audience with the man mentioned. I am only sorry that I can do nothing to help Taffic myself... now, if you will excuse me I have much to do.~
-  IF ~~ THEN REPLY ~I have met this Thalantyr, pompous fellow... calls himself mighty mage of Beregost or at least he did when first I met him. A meeting which involved me aiding him transform a chicken named Melicamp back into its human form, but that is another story, still, maybe Thalantyr will remember the incident and me.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
-  IF ~~ THEN REPLY ~So Taffic, it seems we have yet another journey to make before we can put this nonsense out of your head for good.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
-  IF ~~ THEN REPLY ~I am sorry Taffic but this nonsense stops here. If we have reason to visit Beregost then I will speak to Thalantyr, but for the moment it is too far out of my way.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
-  IF ~~ THEN REPLY ~Beregost! Forget it Taffic, there is no way I am journeying that distance only to be told that which I already know... that your dream is naught but the fantasy of your egotistical mind.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2)
-GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
+  IF ~~ THEN REPLY ~I have met this Thalantyr, pompous fellow... calls himself mighty mage of Beregost or at least he did when first I met him. A meeting which involved me aiding him transform a chicken named Melicamp back into its human form, but that is another story, still, maybe Thalantyr will remember the incident and me.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
+  IF ~~ THEN REPLY ~So Taffic, it seems we have yet another journey to make before we can put this nonsense out of your head for good.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 15
+  IF ~~ THEN REPLY ~I am sorry Taffic but this nonsense stops here. If we have reason to visit Beregost then I will speak to Thalantyr, but for the moment it is too far out of my way.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
+  IF ~~ THEN REPLY ~Beregost! Forget it Taffic, there is no way I am journeying that distance only to be told that which I already know... that your dream is naught but the fantasy of your egotistical mind.~ DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",2) GiveItemCreate("tafflet1","Taffic",0,0,0)~ EXTERN ~TAFFICJ~ 17
 END
 
 IF ~~ THEN BEGIN 29
@@ -198,11 +179,10 @@ IF ~~ THEN BEGIN 30
   IF ~~ THEN DO ~SetGlobal("VP_Find_Rithelium","GLOBAL",1)~ EXIT
 END
 
-IF ~!Global("VP_I_Know_Taffic","LOCALS",1)
-!Global("VP_Find_Rithelium","GLOBAL",1)
-!NumTimesTalkedTo(0)~ THEN BEGIN 31
+IF ~!Global("VP_I_Know_Taffic","LOCALS",1) !Global("VP_Find_Rithelium","GLOBAL",1) !NumTimesTalkedTo(0)~ THEN BEGIN 31
   SAY ~Greetings adventurer, would you be interested in taking a look at my wares?~
   IF ~~ THEN REPLY ~Yes.~ DO ~StartStore("wmart2",LastTalkedToBy)~ EXIT
   IF ~~ THEN REPLY ~Not at the moment.~ EXIT
 END
+
 END  

@@ -60,10 +60,7 @@ IF ~RandomNum(12, 12)~ THEN BEGIN 11 // from:
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("VP_Garron_Search","LOCALS",0)
-OR(2)
-Global("VP_Create_Garron","GLOBAL",2)
-PartyHasItem("TuLette5")~ THEN BEGIN 12
+IF WEIGHT #-1 ~Global("VP_Garron_Search","LOCALS",0) OR(2) Global("VP_Create_Garron","GLOBAL",2) PartyHasItem("TuLette5")~ THEN BEGIN 12
   SAY ~Good day, I am Chaileun Kal-Vu'Ryi, but my friends call me Chailu. How can I be of help?~
   IF ~~ THEN REPLY ~Hello Chailu, I am <GABBER> and I am very pleased to meet you. Tell me Chailu, you don't by any chance know where I might find a student named Garron do you?~ GOTO 13
   IF ~~ THEN REPLY ~Well met Chailu, I am <GABBER>. You don't happen to know a student named Garron do you? I promised a cousin of his I would look him up if I ever got to Halruaa, but his cousin didn't say which specialisation he is studying.~ GOTO 13
@@ -98,8 +95,7 @@ END
 
 IF ~~ THEN BEGIN 18
   SAY ~I have said too much already so if you'll excuse me, I must leave you to find Garron as I have some studies to catch up on. Goodbye and good luck in your own endeavours here at Halruaa.~
-  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 19
@@ -136,6 +132,5 @@ END
 
 IF ~~ THEN BEGIN 25
   SAY ~Now if you'll excuse me, I have some studies of my own to catch up on.~
-  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1)
-EscapeArea()~ EXIT
-END     
+  IF ~~ THEN DO ~SetGlobal("VP_Garron_Search","LOCALS",1) EscapeArea()~ EXIT
+END

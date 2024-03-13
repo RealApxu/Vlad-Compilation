@@ -10,12 +10,12 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~It is not necessary for you to know my name, as to my knowing your name... my Mistress knows much about you already. You are known to us, if not us to you.~
-	IF ~~ THEN GOTO 2
+  IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
   SAY ~Your business with Armagaran Vulova is your own and of no interest to my Mistress. However, and listen to my words, for I speak only the truth when I say to you, that she can and will help you gain access to his estate.~
-	IF ~~ THEN GOTO 3
+  IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
@@ -28,16 +28,13 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~Patience <CHARNAME>... all answers will be given in due time...~
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 380
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN GOTO 5
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 380
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~(*The hooded man looks around furtively*)... I must go, for guards approach and I must not be seen. Consider... (*Consider... his final word echos in your mind as the shadowy figure melts into the shadows and out of sight.*)~
-	IF ~~ THEN DO ~DestroySelf()~ EXIT
+  IF ~~ THEN DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -47,14 +44,11 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~(*The mysterious figure laughs softly and the sound of his mirth, wraps itself around your heart, turning the blood it pumps to ice*)... Your choices are not so much your own as you would like to believe... if you were to be given a hundred choices or only two, the terms would still be laid down by the one offering those choices.~
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 380
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN GOTO 8
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 380
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~(*He looks around furtively*)... I must go, for guards approach and I must not be seen. Consider... (*Consider... his final word echos in your mind as the shadowy figure melts into the shadows and out of sight.*)~
-	IF ~~ THEN DO ~DestroySelf()~ EXIT
-END         
+  IF ~~ THEN DO ~DestroySelf()~ EXIT
+END

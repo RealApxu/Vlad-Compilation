@@ -3,16 +3,11 @@ BEGIN ~DELISIA~ 83063 // non-zero flags may indicate non-pausing dialogue
 IF ~GlobalLT("Siren_Quest", "GLOBAL", 2)~ THEN BEGIN 0
   SAY ~This woman has the skin like the surface of the lake, light green hair, and delicate features, like that of an elf.  At your approach, she begins to sing a soft, flowing song, like the sound of a great undersea current - but you have no idea *why* the song reminds you of that.  In a moment, the song... and the feeling... passes, and the woman looks at you hopefully.~
   IF ~Global("Siren_Quest", "GLOBAL", 1)~ THEN REPLY ~That song -- are you the woman that Jhonen sees in his dreams?~  DO ~SetGlobal("Know_Elisia", "GLOBAL", 1)~ GOTO 5
-  IF ~Class(Player1, BARD)
-Global("Bard_Greeting", "GLOBAL", 0)~ THEN REPLY ~Perhaps I can answer your song with another, my lady...~  DO ~SetGlobal("Bard_Greeting", "GLOBAL", 1)
-AddExperienceParty(5000)
-SetGlobal("Know_Elisia", "GLOBAL", 1)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
+  IF ~Class(Player1, BARD) Global("Bard_Greeting", "GLOBAL", 0)~ THEN REPLY ~Perhaps I can answer your song with another, my lady...~  DO ~SetGlobal("Bard_Greeting", "GLOBAL", 1) AddExperienceParty(5000) SetGlobal("Know_Elisia", "GLOBAL", 1)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
 
 We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.~  GOTO 3
-  IF ~Class(Player1, BARD)
-Global("Bard_Greeting", "GLOBAL", 1)~ THEN REPLY ~I'm sorry, my lady.  We have not yet found the one you seek.~  EXIT
-  IF ~Race(Player1, ELF)
-!Class(Player1, BARD)~ THEN REPLY ~As one elf to another, I ask that you speak in the tongue of those that walk upon the land  - what has brought you from your home in the lake, sister?~  DO ~SetGlobal("Know_Elisia", "GLOBAL", 1)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
+  IF ~Class(Player1, BARD) Global("Bard_Greeting", "GLOBAL", 1)~ THEN REPLY ~I'm sorry, my lady.  We have not yet found the one you seek.~  EXIT
+  IF ~Race(Player1, ELF) !Class(Player1, BARD)~ THEN REPLY ~As one elf to another, I ask that you speak in the tongue of those that walk upon the land  - what has brought you from your home in the lake, sister?~  DO ~SetGlobal("Know_Elisia", "GLOBAL", 1)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
 
 We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.~  GOTO 1
   IF ~~ THEN REPLY ~Who in the hells are you?  What are you doing here?~  DO ~SetGlobal("Know_Elisia", "GLOBAL", 1)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
@@ -27,11 +22,8 @@ END
 IF ~~ THEN BEGIN 1
   SAY ~The woman looks pained, but she does not respond.~
   IF ~Global("Siren_Quest", "GLOBAL", 1)~ THEN REPLY ~That song -- are you the woman that Jhonen sees in his dreams?~  GOTO 5
-  IF ~Class(Player1, BARD)
-Global("Bard_Greeting", "GLOBAL", 0)~ THEN REPLY ~Perhaps I can answer your song with another, my lady...~  DO ~SetGlobal("Bard_Greeting", "GLOBAL", 1)
-AddExperienceParty(5000)~ GOTO 3
-  IF ~Class(Player1, BARD)
-Global("Bard_Greeting", "GLOBAL", 1)~ THEN REPLY ~I'm sorry, my lady.  We have not yet found the one you seek.~  EXIT
+  IF ~Class(Player1, BARD) Global("Bard_Greeting", "GLOBAL", 0)~ THEN REPLY ~Perhaps I can answer your song with another, my lady...~  DO ~SetGlobal("Bard_Greeting", "GLOBAL", 1) AddExperienceParty(5000)~ GOTO 3
+  IF ~Class(Player1, BARD) Global("Bard_Greeting", "GLOBAL", 1)~ THEN REPLY ~I'm sorry, my lady.  We have not yet found the one you seek.~  EXIT
   IF ~~ THEN REPLY ~Begone from here, spirit!  If you are seen on these shores again, plaguing the townsfolk, I'll see to it you're gutted like a fish!  Now go!~  GOTO 2
   IF ~~ THEN REPLY ~Won't talk, eh?  Then perhaps some steel would teach you to speak up when your betters address you.~  DO ~ReputationInc(-1)~ GOTO 2
   IF ~~ THEN REPLY ~Farewell, then.  You'd best conceal yourself if you don't want the other townsfolk to see you.~  EXIT
@@ -39,13 +31,7 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~The woman looks startled, then suddenly vanishes, her body streaming away to water.~
-  IF ~~ THEN DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1)
-StartCutSceneMode()
-ActionOverride("elisia",Wait(1))
-ActionOverride("elisia",DestroySelf())
-ActionOverride("elisia",EndCutSceneMode())
-ForceSpell(Myself,DRYAD_TELEPORT)
-~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1) StartCutSceneMode() ActionOverride("elisia",Wait(1)) ActionOverride("elisia",DestroySelf()) ActionOverride("elisia",EndCutSceneMode()) ForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 END
 
 IF ~~ THEN BEGIN 3
@@ -80,7 +66,7 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-  SAY ~::The one from whom Jho-nyn comes asked I see his blade returned to those of his blood if the queen serpent Icasaracht drank his life.::  ::She did, but not before he dealt her a mortal blow.::  ::From the depths of the lake, I have brought the fire-shaped steel that ended her life.::  ::It is intended that it be belonging of Jho-nyn now.::  ~
+  SAY ~::The one from whom Jho-nyn comes asked I see his blade returned to those of his blood if the queen serpent Icasaracht drank his life.::  ::She did, but not before he dealt her a mortal blow.::  ::From the depths of the lake, I have brought the fire-shaped steel that ended her life.::  ::It is intended that it be belonging of Jho-nyn now.:: ~
   IF ~~ THEN REPLY ~So you wish to return the sword of Jhonen's ancestor to him, but you cannot because the sight of you will make you stream away to water?~  GOTO 10
 END
 
@@ -92,13 +78,10 @@ END
 
 IF ~~ THEN BEGIN 11
   SAY ~::Here, then, I entrust this to your keeping until your path crosses with that of Jho-nyn.::  ::Return when you have given it to him.::  ::I must know if it has found its way back to its home.::~
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~I'll return when I've given it to Jhonen, Elisia.  Farewell.~  UNSOLVED_JOURNAL ~Blade of Aihonen.
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~I'll return when I've given it to Jhonen, Elisia.  Farewell.~  UNSOLVED_JOURNAL ~Blade of Aihonen.
 
 We discovered that the blue-skinned woman by the lake is named Elisia, and she is responsible for the dreams plaguing Jhonen.  She promised one of his ancestors who lies dead beneath the lake that she would return his blade to Jhonen, but because of the laws of her community, she cannot allow Jhonen to see her.  We agreed to take the blade to Jhonen, then return and tell her when we've done what she asked.~  EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN REPLY ~I'll return when I've given it to Jhonen, Elisia.  Farewell.~  UNSOLVED_JOURNAL ~Blade of Aihonen.
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~I'll return when I've given it to Jhonen, Elisia.  Farewell.~  UNSOLVED_JOURNAL ~Blade of Aihonen.
 
 We discovered that the blue-skinned woman by the lake is named Elisia, and she is responsible for the dreams plaguing Jhonen.  She promised one of his ancestors who lies dead beneath the lake that she would return his blade to Jhonen, but because of the laws of her community, she cannot allow Jhonen to see her.  We agreed to take the blade to Jhonen, then return and tell her when we've done what she asked.~  EXTERN ~MINSCJ~ NEJ282
 END
@@ -109,7 +92,7 @@ IF ~~ THEN BEGIN 12
 END
 
 IF ~~ THEN BEGIN 13
-  SAY ~::The dreams were the only way I could speak to him::  ::The blade is for him.::  ::I only wish him to dwell in the waves beside me.::  ~
+  SAY ~::The dreams were the only way I could speak to him::  ::The blade is for him.::  ::I only wish him to dwell in the waves beside me.:: ~
   IF ~~ THEN REPLY ~But humans can't *live* beneath the waves, Elisia.  For your kind, you are obviously headstrong to appear upon the shores here where anyone may see you.  That speaks to me a desperate heart.  And a desperate heart does dangerous things.~  GOTO 14
 END
 
@@ -132,21 +115,16 @@ END
 
 IF ~GlobalGT("Siren_Quest", "GLOBAL", 1)~ THEN BEGIN 17
   SAY ~::Have you found Jho-nyn?::~
-  IF ~Global("Siren_Quest", "GLOBAL", 3)~ THEN REPLY ~Yes, and I returned the blade to him.~  DO ~AddExperienceParty(3500)
-GiveItemCreate("Misc36", Player1, 0, 0, 0)
-EraseJournalEntry(%Blade of Aihonen.
+  IF ~Global("Siren_Quest", "GLOBAL", 3)~ THEN REPLY ~Yes, and I returned the blade to him.~  DO ~AddExperienceParty(3500) GiveItemCreate("Misc36", Player1, 0, 0, 0) EraseJournalEntry(%Blade of Aihonen.
 
-We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.%)
-EraseJournalEntry(%Blade of Aihonen.
+We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.%) EraseJournalEntry(%Blade of Aihonen.
 
 We discovered that the blue-skinned woman by the lake is named Elisia, and she is responsible for the dreams plaguing Jhonen.  She promised one of his ancestors who lies dead beneath the lake that she would return his blade to Jhonen, but because of the laws of her community, she cannot allow Jhonen to see her.  We agreed to take the blade to Jhonen, then return and tell her when we've done what she asked.%)~ SOLVED_JOURNAL ~Blade of Aihonen.
 
 We returned and told Elisia we had delivered the blade to Jhonen.  She was pleased, and she rewarded us for our efforts.~  GOTO 18
-  IF ~Global("Siren_Quest", "GLOBAL", 2)~ THEN REPLY ~Er, yes, I have.  He was very happy to get that broken sword you dredged up, and tells you that you should reward me if you can for my efforts.  Oh, and he said, don't ever send him any more dreams or speak to him - he wants to be left alone, to, uh, enjoy the blade.~  DO ~GiveItemCreate("Misc36", Player1, 0, 0, 0)
-EraseJournalEntry(%Blade of Aihonen.
+  IF ~Global("Siren_Quest", "GLOBAL", 2)~ THEN REPLY ~Er, yes, I have.  He was very happy to get that broken sword you dredged up, and tells you that you should reward me if you can for my efforts.  Oh, and he said, don't ever send him any more dreams or speak to him - he wants to be left alone, to, uh, enjoy the blade.~  DO ~GiveItemCreate("Misc36", Player1, 0, 0, 0) EraseJournalEntry(%Blade of Aihonen.
 
-We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.%)
-EraseJournalEntry(%Blade of Aihonen.
+We encountered a strange blue-skinned woman upon the shores of Kuldahar - she spoke in song, and she seemed pained that we couldn't understand her.  There must be something drawing her to Easthaven, but we know not what.%) EraseJournalEntry(%Blade of Aihonen.
 
 We discovered that the blue-skinned woman by the lake is named Elisia, and she is responsible for the dreams plaguing Jhonen.  She promised one of his ancestors who lies dead beneath the lake that she would return his blade to Jhonen, but because of the laws of her community, she cannot allow Jhonen to see her.  We agreed to take the blade to Jhonen, then return and tell her when we've done what she asked.%)~ UNSOLVED_JOURNAL ~Blade of Aihonen.
 
@@ -156,28 +134,16 @@ END
 
 IF ~~ THEN BEGIN 18
   SAY ~::You have my gratitude.::  ::Please take this shaped piece of sand which I have taken from the bed of the lake.::  ::I have heard that those that walk upon land value such things.::~
-  IF ~~ THEN REPLY ~Thank you, Elisia.  Farewell.~  DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1)
-StartCutSceneMode()
-ActionOverride("elisia",Wait(1))
-ActionOverride("elisia",DestroySelf())
-ActionOverride("elisia",EndCutSceneMode())
-ForceSpell(Myself,DRYAD_TELEPORT)
-SetGlobal("Siren_Quest", "GLOBAL", 4)~ EXIT
+  IF ~~ THEN REPLY ~Thank you, Elisia.  Farewell.~  DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1) StartCutSceneMode() ActionOverride("elisia",Wait(1)) ActionOverride("elisia",DestroySelf()) ActionOverride("elisia",EndCutSceneMode()) ForceSpell(Myself,DRYAD_TELEPORT) SetGlobal("Siren_Quest", "GLOBAL", 4)~ EXIT
 END
 
 IF ~~ THEN BEGIN 19
   SAY ~::You have my gratitude.::  ::Please take this shaped piece of sand which I have taken from the bed of the lake.::  ::I have heard that those that walk upon land value such things.::~
-  IF ~~ THEN REPLY ~Excellent, excellent... thank you.  Farewell.~  DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1)
-StartCutSceneMode()
-ActionOverride("elisia",Wait(1))
-ActionOverride("elisia",DestroySelf())
-ActionOverride("elisia",EndCutSceneMode())
-ForceSpell(Myself,DRYAD_TELEPORT)
-SetGlobal("Siren_Quest", "GLOBAL", 4)~ EXIT
+  IF ~~ THEN REPLY ~Excellent, excellent... thank you.  Farewell.~  DO ~SetGlobal("Elisia_Vanish", "GLOBAL", 1) StartCutSceneMode() ActionOverride("elisia",Wait(1)) ActionOverride("elisia",DestroySelf()) ActionOverride("elisia",EndCutSceneMode()) ForceSpell(Myself,DRYAD_TELEPORT) SetGlobal("Siren_Quest", "GLOBAL", 4)~ EXIT
 END
 
 IF ~~ THEN BEGIN 20
-  SAY ~::Do not worry for me gentle ranger.::  ::I am Elisia-of-the-Sky's-Mirror, and I was born to reflect the colour of the sky.::   ::My skin has nothing to do with the coldness of the air, nor would it become a rosy pink if you wrapped me in a hundred cloaks.::~
+  SAY ~::Do not worry for me gentle ranger.::  ::I am Elisia-of-the-Sky's-Mirror, and I was born to reflect the colour of the sky.::  ::My skin has nothing to do with the coldness of the air, nor would it become a rosy pink if you wrapped me in a hundred cloaks.::~
   IF ~~ THEN EXTERN ~MINSCJ~ NEJ284
 END
 

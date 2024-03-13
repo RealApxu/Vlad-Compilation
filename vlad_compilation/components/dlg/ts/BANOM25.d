@@ -31,8 +31,7 @@ END
 
 IF ~~ THEN BEGIN TS139
   SAY ~I do not want to hear another word! I have to be alone now.~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS140
@@ -42,12 +41,7 @@ END
 
 IF ~~ THEN BEGIN TS141
   SAY ~How dare you are...~
-  IF ~~ THEN DO ~SetGlobal("AnomenValygarFight","GLOBAL",1)
-SetLeavePartyDialogFile()
-LeaveParty()
-ChangeAIScript("",DEFAULT)
-ChangeAIScript("useitem",GENERAL)
-ChangeAIScript("anvsval",SPECIFICS)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("AnomenValygarFight","GLOBAL",1) SetLeavePartyDialogFile() LeaveParty() ChangeAIScript("",DEFAULT) ChangeAIScript("useitem",GENERAL) ChangeAIScript("anvsval",SPECIFICS)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS142
@@ -69,4 +63,5 @@ IF ~~ THEN BEGIN TS145
   SAY ~[*Chuckles*] Indeed my Lady, it is difficult to imagine you indifferent to a battle. I have been a witness to your prowess. But you said my Lady, "while the love lasts". Do you mean that all love expires?~
   IF ~~ THEN EXTERN ~BSIME~ TSTOB18
 END
+
 END

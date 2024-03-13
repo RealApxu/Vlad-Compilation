@@ -1,14 +1,10 @@
 REPLACE_STATE_TRIGGER YOSHIMO 14
 
-~Global("MetYoshimo","GLOBAL",1)
-!InParty("Kachiko")
-!See("Kachiko")~
+~Global("MetYoshimo","GLOBAL",1) !InParty("Kachiko") !See("Kachiko")~
 
 REPLACE_STATE_TRIGGER YOSHIMO 21
 
-~Global("DishonorYoshimo","GLOBAL",1)
-!InParty("Kachiko")
-!See("Kachiko")~
+~Global("DishonorYoshimo","GLOBAL",1) !InParty("Kachiko") !See("Kachiko")~
 
 APPEND ~YOSHIMO~
 
@@ -40,20 +36,15 @@ END
 
 IF ~~ THEN BEGIN TS58
   SAY ~Thank you, <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS59
   SAY ~<CHARNAME>, what are you doing? I�m not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-  IF ~~ THEN DO ~ActionOverride("Kachiko",LeaveParty())
-ActionOverride("Kachiko",Enemy())
-Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("Kachiko",LeaveParty()) ActionOverride("Kachiko",Enemy()) Enemy()~ EXIT
 END
 
-IF WEIGHT #-1 ~AreaCheck("AR0313")
-Global("VP_OnIsland","GLOBAL",0)
-GlobalLT("Chapter","GLOBAL",4)~ THEN BEGIN TS8
+IF WEIGHT #-1 ~AreaCheck("AR0313") Global("VP_OnIsland","GLOBAL",0) GlobalLT("Chapter","GLOBAL",4)~ THEN BEGIN TS8
   SAY ~Heya, <CHARNAME> how are you?~
   IF ~~ THEN REPLY ~I am well, thank you. Did you manage to find a ship?~ GOTO TS9
   IF ~~ THEN REPLY ~Actually things have been pretty rough. Yoshimo, do you have time to help me out?~ GOTO TS10
@@ -67,9 +58,7 @@ END
 
 IF ~~ THEN BEGIN TS10
   SAY ~Kachiko, what do you think?~
-  IF ~OR(2)
-Global("VP_Kachiko_Joined","GLOBAL",0)
-Global("VP_YoshFollowsKach","GLOBAL",1)~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)~ EXTERN ~KACHIKO~ 23
+  IF ~OR(2) Global("VP_Kachiko_Joined","GLOBAL",0) Global("VP_YoshFollowsKach","GLOBAL",1)~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)~ EXTERN ~KACHIKO~ 23
   IF ~Global("VP_Kachiko_Joined","GLOBAL",1)~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0)~ EXTERN ~KACHIP~ 0
 END
 

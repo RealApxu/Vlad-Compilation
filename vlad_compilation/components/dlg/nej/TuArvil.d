@@ -60,8 +60,7 @@ IF ~RandomNum(12, 12)~ THEN BEGIN 11 // from:
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("VP_Brial_Search","LOCALS",0)
-PartyHasItem("TuLette4")~ THEN BEGIN 12
+IF WEIGHT #-1 ~Global("VP_Brial_Search","LOCALS",0) PartyHasItem("TuLette4")~ THEN BEGIN 12
   SAY ~Hey! Do I know you?~
   IF ~~ THEN REPLY ~No I am new here... name's <GABBER>, I am looking for a tutor named Brial. Any idea where she might be?~ GOTO 13
 END

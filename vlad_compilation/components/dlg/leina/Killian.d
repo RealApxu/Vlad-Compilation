@@ -31,9 +31,7 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~Stand easy, <GABBER>. Do you think I am foolish enough to come here alone? Come friends, make yourselves known.~
-  IF ~~ THEN DO ~CreateCreature("KilHelp1",[485.625],15)
-CreateCreature("KilHelp2",[537.584],0)
-CreateCreature("KilHelp3",[594.605],1)~ GOTO 5
+  IF ~~ THEN DO ~CreateCreature("KilHelp1",[485.625],15) CreateCreature("KilHelp2",[537.584],0) CreateCreature("KilHelp3",[594.605],1)~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -76,9 +74,7 @@ END
 
 IF ~~ THEN BEGIN 11
   SAY ~You have a death wish I see, <GABBER>. Allow me to be the one to grant it!~
-  IF ~~ THEN DO ~SetGlobal("VP_Govan_Bribes_Me","GLOBAL",3)
-Shout(89)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Govan_Bribes_Me","GLOBAL",3) Shout(89) Enemy()~ EXIT
 END //If PC leaves for the Vulova estate then => Scenario: Vulova Estate 2
 
 IF ~~ THEN BEGIN 12
@@ -88,11 +84,7 @@ END
 
 IF ~~ THEN BEGIN 13
   SAY ~Now you make sure that they know who it was that sent you. Been a real pleasure doing business with you.~
-  IF ~~ THEN DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1)
-ActionOverride("KilHelp1",EscapeArea())
-ActionOverride("KilHelp2",EscapeArea())
-ActionOverride("KilHelp3",EscapeArea())
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1) ActionOverride("KilHelp1",EscapeArea()) ActionOverride("KilHelp2",EscapeArea()) ActionOverride("KilHelp3",EscapeArea()) EscapeArea()~ EXIT
 END //If PC leaves for the Vulova estate then => Scenario: Vulova Estate 3
 
 IF ~~ THEN BEGIN 14
@@ -107,9 +99,5 @@ END
 
 IF ~~ THEN BEGIN 16
   SAY ~Now you make sure that they know who it was that sent you. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1)
-ActionOverride("KilHelp1",EscapeArea())
-ActionOverride("KilHelp2",EscapeArea())
-ActionOverride("KilHelp3",EscapeArea())
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1) ActionOverride("KilHelp1",EscapeArea()) ActionOverride("KilHelp2",EscapeArea()) ActionOverride("KilHelp3",EscapeArea()) EscapeArea()~ EXIT
 END //If PC leaves for the Vulova estate then => Scenario: Vulova Estate 3

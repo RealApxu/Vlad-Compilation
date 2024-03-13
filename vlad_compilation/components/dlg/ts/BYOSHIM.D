@@ -100,9 +100,7 @@ IF ~~ THEN BEGIN TS100
 
 Like cherry blossom,
 beautiful Kachiko
-is among us...
-
-~
+is among us...~
   IF ~~ THEN EXTERN ~BANOMEN~ TS588
 END
 

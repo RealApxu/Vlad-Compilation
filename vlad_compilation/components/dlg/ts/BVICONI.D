@@ -6,7 +6,7 @@ IF ~~ THEN BEGIN TS575
 END
 
 IF ~~ THEN BEGIN TS576
-  SAY ~Do not think me a fool. In Kara-Tur women are slaves of men... The ones who sell themselves are considered to be "free"! ~
+  SAY ~Do not think me a fool. In Kara-Tur women are slaves of men... The ones who sell themselves are considered to be "free"!~
   IF ~~ THEN EXTERN ~BKACHI~ 33
 END
 
@@ -181,9 +181,7 @@ END
 
 IF ~~ THEN BEGIN TS610
   SAY ~I was going to. (*laughs*)  But I wanted to kill your blonde first. Ssun usst - fear me!~
-  IF ~~ THEN DO ~SetGlobal("ViconiaRomanceActive","GLOBAL",3)
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("ViconiaRomanceActive","GLOBAL",3) LeaveParty() EscapeArea()~ EXIT
 END
 
 END

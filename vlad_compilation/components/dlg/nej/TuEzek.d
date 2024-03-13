@@ -1,12 +1,6 @@
 BEGIN ~TuEzek~
 
-IF ~NumTimesTalkedTo(0)
-IsGabber(Protagonist)
-OR(4)
-	Class(LastTalkedToBy,MAGE)
-	Class(LastTalkedToBy,MAGE_ALL)
-	Class(LastTalkedToBy,BARD)
-	Class(LastTalkedToBy,SORCERER)~ THEN BEGIN 0
+IF ~NumTimesTalkedTo(0) IsGabber(Protagonist) OR(4)  Class(LastTalkedToBy,MAGE)  Class(LastTalkedToBy,MAGE_ALL)  Class(LastTalkedToBy,BARD)  Class(LastTalkedToBy,SORCERER)~ THEN BEGIN 0
   SAY ~Another mageling hoping to pass our little tests. I am Ezekiel and you are?~
   IF ~~ THEN REPLY ~I am <CHARNAME>. Ah yes, the tests. Tell me what you have thought up for me to do Ezekiel?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 1
   IF ~~ THEN REPLY ~Greetings Ezekiel, I am <CHARNAME>. Can we dispense with the pleasantries and get straight to the testing?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 2
@@ -58,54 +52,35 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~Excellent <GABBER>, the secret door is in the room adjacent to, and on the right of this one... now go, I will be here awaiting your return.~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
-	IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
-	IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 70
-	IF ~InParty("Sime")
-!Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
-	IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
-	IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ333
-	IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ NEJ235
-	IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ331
-	IF ~InParty("Yoshimo")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ156
-	IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ634
-	IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 62
-	IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 289
-	IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 16
-	IF ~InParty("Taffic")
-!Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ necrtest
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 70
+  IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ333
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ NEJ235
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ331
+  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ156
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ634
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 62
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 289
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 16
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~TAFFICJ~ necrtest
 END
-	
+
 IF ~~ THEN BEGIN 8
   SAY ~I am sorry you feel that way <GABBER>, but let me wish luck in your studies.~
-  IF ~~ THEN REPLY ~Thank you and farewell Ezekiel.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",2)
-EscapeArea()~ EXIT //Quest is lost to PC.
+  IF ~~ THEN REPLY ~Thank you and farewell Ezekiel.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",2) EscapeArea()~ EXIT //Quest is lost to PC.
   IF ~~ THEN REPLY ~Wait, I suppose I must find time now for this task of yours Ezekiel.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 9
   SAY ~There are always substitutes <GABBER>, but I need to be sure my new spells work as they should before I start trying to substitute components. If you find this task so distasteful, then I suggest you return to your studies. I do not have the time to set another test for you as I have duties that will shortly take me away from the academy for a while. Farewell.~
-  IF ~~ THEN REPLY ~Farewell Ezekiel.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",2)
-EscapeArea()~ EXIT //Quest is lost to PC.
+  IF ~~ THEN REPLY ~Farewell Ezekiel.~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",2) EscapeArea()~ EXIT //Quest is lost to PC.
   IF ~~ THEN REPLY ~If this is indeed my only chance for a while perhaps I can put my feelings aside for this once. It is not like the mage still inhabits the body, it is but a shell. I will make the attempt Ezekiel.~ GOTO 7
 END
 
@@ -125,34 +100,28 @@ IF ~~ THEN BEGIN 12
   IF ~~ THEN GOTO 4
 END
 
-IF ~Global("VP_Necro_Test","GLOBAL",6)
-!PartyHasItem("TuNeBody")~ THEN BEGIN 13
+IF ~Global("VP_Necro_Test","GLOBAL",6) !PartyHasItem("TuNeBody")~ THEN BEGIN 13
   SAY ~How disappointing. You made quite a noise there. It could have been embarrassing for us all had you been found in the mausoleum. Now I shall have to wait for another interment and you have to wait until I have the time to set a new task. Unfortunately that will not be for a while as I have work elsewhere. Farewell.~
   IF ~~ THEN REPLY ~Hey what's the big idea? We almost had your body for you when the guards entered! Now let us come back and bring the body for you!~ GOTO 14
   IF ~~ THEN REPLY ~Is that it Ezekiel? We have fought bravely so it should take no time at all to get your body if we go back now.~ GOTO 14
 END
 
-IF ~Global("VP_Necro_Test","GLOBAL",6)
-PartyHasItem("TuNeBody")~ THEN BEGIN 13a
+IF ~Global("VP_Necro_Test","GLOBAL",6) PartyHasItem("TuNeBody")~ THEN BEGIN 13a
   SAY ~How disappointing. You made quite a noise there. It could have been embarrassing for us all had you been found in the mausoleum.~
 =
 ~Nevertheless, I see you brought the body, and it has not deteriorated at all, wonderful! You have done well. You may keep whatever else you may have found, trinkets are of no use to me, this is the real prize (*indicating the body*).~
   IF ~~ THEN GOTO 17
-END	
-	
+END
+
 IF ~~ THEN BEGIN 14
   SAY ~I would gladly give you another chance <GABBER>, however a guard will have most assuredly been placed in the mausoleum until the clamour dies down. The body will be passed being of any use to me by that time. As I have said, I will have to wait for another interment. Now please go!~
   IF ~True()~ DO ~EscapeArea()~ EXIT
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 291
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ635
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 71
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 291
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ635
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 71
 END
 
-IF ~!Global("VP_Necro_Test","GLOBAL",0)
-!Global("VP_Necro_Test","GLOBAL",6)~ THEN BEGIN 15
+IF ~!Global("VP_Necro_Test","GLOBAL",0) !Global("VP_Necro_Test","GLOBAL",6)~ THEN BEGIN 15
   SAY ~You return, and do you have that which I sent you for?~
   IF ~PartyHasItem("TuNeBody")~ THEN REPLY ~I do Ezekiel. It is yours to do with as you please.~ GOTO 16
   IF ~PartyHasItem("TuNeBody")~ THEN REPLY ~That was some challenge but yes I have the body, looks to be in perfect health... oops... I meant perfect death or at least in pristine spell component condition.~ GOTO 16
@@ -167,38 +136,24 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~Mmm... I think Kalinor will be a lot more useful in death than he ever was in life. You have earned your prize, now go.~
-  IF ~~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",6)
-AddexperienceParty(15500)
-TakePartyItem("TuNeBody")
-GiveItemCreate("shatbons",LastTalkedToBy,0,0,0)
-GiveItemCreate("mogansti",LastTalkedToBy,0,0,0)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",6) AddexperienceParty(15500) TakePartyItem("TuNeBody") GiveItemCreate("shatbons",LastTalkedToBy,0,0,0) GiveItemCreate("mogansti",LastTalkedToBy,0,0,0) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 18
   SAY ~How disappointing! I shall have to wait for another interment and you have to wait until I have the time to set a new task. Unfortunately that will not be for a while as I have work elsewhere. Farewell.~
   IF ~True()~ DO ~EscapeArea()~ EXIT
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 291
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ635
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 71
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 291
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ635
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 71
 END
 
 
-IF ~NumTimesTalkedTo(0)
-!IsGabber(Protagonist)~ THEN BEGIN 19
+IF ~NumTimesTalkedTo(0) !IsGabber(Protagonist)~ THEN BEGIN 19
   SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy! Clearly you are no student... still, if the students here are so caught up in their own self importance to recognise a conspiracy when it presents itself... that's hardly my concern. Now to the tests... who here leads this little group? I speak only with your leader.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",1)~ EXIT
 END
 
-IF ~NumTimesTalkedTo(0)
-IsGabber(Protagonist)
-!Class(LastTalkedToBy,MAGE)
-!Class(LastTalkedToBy,MAGE_ALL)
-!Class(LastTalkedToBy,BARD)
-!Class(LastTalkedToBy,SORCERER)~ THEN BEGIN 20
+IF ~NumTimesTalkedTo(0) IsGabber(Protagonist) !Class(LastTalkedToBy,MAGE) !Class(LastTalkedToBy,MAGE_ALL) !Class(LastTalkedToBy,BARD) !Class(LastTalkedToBy,SORCERER)~ THEN BEGIN 20
   SAY ~(*Grin*) Well now... what have we here... another spy penetrating our academy. Clearly you are no mage... (*makes a long pause and  gazes at you*)... but don't look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",2)~ GOTO 21
 END
@@ -208,20 +163,15 @@ IF ~~ THEN BEGIN 21
   IF ~~ THEN REPLY ~Greetings Ezekiel, I am <CHARNAME>. Tell me, what test do you speak of?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 24
   IF ~~ THEN REPLY ~I am <CHARNAME>, and I am not worried. I know my capabilities. Why do I need to prove myself to the likes of you?~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 24
   IF ~~ THEN REPLY ~I am not worried, nor do your threats frighten me mage!~ DO ~SetGlobal("VP_Necro_Test","GLOBAL",1)~ GOTO 25
-	IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-Enemy()~ EXIT
+  IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1) Enemy()~ EXIT
 END
 
-IF ~Global("VP_Know_Ezekiel","LOCALS",1)
-Global("VP_Necro_Test","GLOBAL",0)
-!IsGabber(Protagonist)~ THEN BEGIN 22
+IF ~Global("VP_Know_Ezekiel","LOCALS",1) Global("VP_Necro_Test","GLOBAL",0) !IsGabber(Protagonist)~ THEN BEGIN 22
   SAY ~I told you I'll speak only with your leader.~
   IF ~~ THEN EXIT
 END
 
-IF ~Global("VP_Know_Ezekiel","LOCALS",1)
-Global("VP_Necro_Test","GLOBAL",0)
-IsGabber(Protagonist)~ THEN BEGIN 23
+IF ~Global("VP_Know_Ezekiel","LOCALS",1) Global("VP_Necro_Test","GLOBAL",0) IsGabber(Protagonist)~ THEN BEGIN 23
   SAY ~(*Grin*) Well, well, well... So you are the infamous leader of this little group of spies... (*makes a long pause and gazes at you*)...  but don't look so worried, you have nothing to fear from me. I am not about to reveal your little conspiracy as long as you agree to help me out with ah... shall we say, a rather delicate matter.~
   IF ~~ THEN DO ~SetGlobal("VP_Know_Ezekiel","LOCALS",2)~ GOTO 21
 END
@@ -234,39 +184,17 @@ END
 IF ~~ THEN BEGIN 25
   SAY ~Believe me, my words aren't meant as a threat. I see they don't frighten you... you who don't belong to this world... to this time even. You see, I have more knowledge than you credit me with.~
   IF ~~ THEN REPLY ~Okay Ezekiel, I am <CHARNAME>, and I am carefully listening to you.~ GOTO 24
-	IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-Enemy()~ EXIT
+  IF ~~ THEN REPLY ~I'll smash you over the floor, you bloody necromancer!~ DO ~SetGlobal("VP_HalruaaHostile","GLOBAL",1) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 26
   SAY ~It was only yesterday that one Kalinor was laid to rest, and it seems a shame to let a perfectly good body go to waste when the owner no longer has need of it.~
-  IF ~OR(4)
-!InParty("Sharteel")
-Dead("Sharteel")
-StateCheck("Sharteel",STATE_SLEEPING)
-Dead("Sharteel")~ THEN REPLY ~No problem, I will start immediately.~ GOTO 7
-  IF ~OR(4)
-!InParty("Sharteel")
-Dead("Sharteel")
-StateCheck("Sharteel",STATE_SLEEPING)
-Dead("Sharteel")~ THEN REPLY ~As you say, this mage has no further use of his body. Why waste a valuable commodity. I will bring you this body.~ GOTO 7
-  IF ~OR(4)
-!InParty("Sharteel")
-Dead("Sharteel")
-StateCheck("Sharteel",STATE_SLEEPING)
-Dead("Sharteel")~ THEN REPLY ~I cannot do this. The thought of what you intend doing with this body is abhorrent to me. Surely there are substitute components you can use for your spells?~ GOTO 9
-  IF ~InParty("Sharteel")
-!Dead("Sharteel")
-!StateCheck("Sharteel",STATE_SLEEPING)
-!Dead("Sharteel")~ THEN REPLY ~No problem, I will start immediately.~ EXTERN ~SHARTJ~ ezequest1
-  IF ~InParty("Sharteel")
-!Dead("Sharteel")
-!StateCheck("Sharteel",STATE_SLEEPING)
-!Dead("Sharteel")~ THEN REPLY ~As you say, this mage has no further use of his body. Why waste a valuable commodity. I will bring you this body.~ EXTERN ~SHARTJ~ ezequest1
-  IF ~InParty("Sharteel")
-!Dead("Sharteel")
-!StateCheck("Sharteel",STATE_SLEEPING)
-!Dead("Sharteel")~ THEN REPLY ~I cannot do this. The thought of what you intend doing with this body is abhorrent to me. Surely there are substitute components you can use for your spells?~ EXTERN ~SHARTJ~ ezequest2
+  IF ~OR(4) !InParty("Sharteel") Dead("Sharteel") StateCheck("Sharteel",STATE_SLEEPING) Dead("Sharteel")~ THEN REPLY ~No problem, I will start immediately.~ GOTO 7
+  IF ~OR(4) !InParty("Sharteel") Dead("Sharteel") StateCheck("Sharteel",STATE_SLEEPING) Dead("Sharteel")~ THEN REPLY ~As you say, this mage has no further use of his body. Why waste a valuable commodity. I will bring you this body.~ GOTO 7
+  IF ~OR(4) !InParty("Sharteel") Dead("Sharteel") StateCheck("Sharteel",STATE_SLEEPING) Dead("Sharteel")~ THEN REPLY ~I cannot do this. The thought of what you intend doing with this body is abhorrent to me. Surely there are substitute components you can use for your spells?~ GOTO 9
+  IF ~InParty("Sharteel") !Dead("Sharteel") !StateCheck("Sharteel",STATE_SLEEPING) !Dead("Sharteel")~ THEN REPLY ~No problem, I will start immediately.~ EXTERN ~SHARTJ~ ezequest1
+  IF ~InParty("Sharteel") !Dead("Sharteel") !StateCheck("Sharteel",STATE_SLEEPING) !Dead("Sharteel")~ THEN REPLY ~As you say, this mage has no further use of his body. Why waste a valuable commodity. I will bring you this body.~ EXTERN ~SHARTJ~ ezequest1
+  IF ~InParty("Sharteel") !Dead("Sharteel") !StateCheck("Sharteel",STATE_SLEEPING) !Dead("Sharteel")~ THEN REPLY ~I cannot do this. The thought of what you intend doing with this body is abhorrent to me. Surely there are substitute components you can use for your spells?~ EXTERN ~SHARTJ~ ezequest2
 END
 
 IF ~~ THEN BEGIN 27
@@ -284,5 +212,3 @@ IF ~~ THEN BEGIN 28
   IF ~~ THEN REPLY ~This place is full of secrets! Ok necromancer, you have my word. What is it I am not going to be telling anyone?~ GOTO 12
   IF ~~ THEN REPLY ~In that case yes you have my word.(*For what it is worth*).~ GOTO 12
 END
-
-  

@@ -1,7 +1,6 @@
 BEGIN ~OWAIN~
 
-IF ~Global("VP_Restore_Ring","GLOBAL",6)
-Global("VP_Enhance_Ring","GLOBAL",7)~ THEN BEGIN 0
+IF ~Global("VP_Restore_Ring","GLOBAL",6) Global("VP_Enhance_Ring","GLOBAL",7)~ THEN BEGIN 0
   SAY ~Greetings fellow student. Do I know you?~
   IF ~~ THEN REPLY ~Greetings I am <GABBER>. I seek an air specialist by name of Owain would that by chance be you?~ GOTO 1
   IF ~~ THEN REPLY ~Not yet, I am <GABBER>. I believe you can help me if you are Owain, air specialist?~ GOTO 1
@@ -34,34 +33,14 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~A ring you say and what sort of a ring are we talking about here, a ring of protection, a ring of summoning, I need to know more than *it's a ring* and if it is only a ring why the need to come to me?~
-  IF ~CheckStatGT(LastTalkedToBy,14,INT)
-CheckStatGT(LastTalkedToBy,11,WIS)
-CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~It is a Ring of Might, or at least that was what its makers intended it to be.~ GOTO 5
-  IF ~CheckStatGT(LastTalkedToBy,14,INT)
-CheckStatGT(LastTalkedToBy,11,WIS)
-CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~The ring is a modification of the original Rings of Might.~ GOTO 5
-  IF ~CheckStatGT(LastTalkedToBy,14,INT)
-CheckStatGT(LastTalkedToBy,11,WIS)
-CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~This ring was constructed by elementalist mages in an attempt to forge a Ring of Might, but they never completed it.~ GOTO 5
-  IF ~CheckStatGT(LastTalkedToBy,14,INT)
-CheckStatGT(LastTalkedToBy,11,WIS)
-CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~It is a partially constructed Ring of Might, so you see why I find it necessary to come to you for aid?~ GOTO 5
-  IF ~OR(3)
-CheckStatLT(LastTalkedToBy,15,INT)
-CheckStatLT(LastTalkedToBy,12,WIS)
-CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~It is a Ring of Might, or at least that was what its makers intended it to be.~ GOTO 14
-  IF ~OR(3)
-CheckStatLT(LastTalkedToBy,15,INT)
-CheckStatLT(LastTalkedToBy,12,WIS)
-CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~The ring is a modification of the original Rings of Might.~ GOTO 14
-  IF ~OR(3)
-CheckStatLT(LastTalkedToBy,15,INT)
-CheckStatLT(LastTalkedToBy,12,WIS)
-CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~This ring was constructed by elementalist mages in an attempt to forge a Ring of Might, but they never completed it.~ GOTO 14
-  IF ~OR(3)
-CheckStatLT(LastTalkedToBy,15,INT)
-CheckStatLT(LastTalkedToBy,12,WIS)
-CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~It is a partially constructed Ring of Might, so you see why I find it necessary to come to you for aid?~ GOTO 14
+  IF ~CheckStatGT(LastTalkedToBy,14,INT) CheckStatGT(LastTalkedToBy,11,WIS) CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~It is a Ring of Might, or at least that was what its makers intended it to be.~ GOTO 5
+  IF ~CheckStatGT(LastTalkedToBy,14,INT) CheckStatGT(LastTalkedToBy,11,WIS) CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~The ring is a modification of the original Rings of Might.~ GOTO 5
+  IF ~CheckStatGT(LastTalkedToBy,14,INT) CheckStatGT(LastTalkedToBy,11,WIS) CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~This ring was constructed by elementalist mages in an attempt to forge a Ring of Might, but they never completed it.~ GOTO 5
+  IF ~CheckStatGT(LastTalkedToBy,14,INT) CheckStatGT(LastTalkedToBy,11,WIS) CheckStatGT(LastTalkedToBy,14,CHR)~ THEN REPLY ~It is a partially constructed Ring of Might, so you see why I find it necessary to come to you for aid?~ GOTO 5
+  IF ~OR(3) CheckStatLT(LastTalkedToBy,15,INT) CheckStatLT(LastTalkedToBy,12,WIS) CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~It is a Ring of Might, or at least that was what its makers intended it to be.~ GOTO 14
+  IF ~OR(3) CheckStatLT(LastTalkedToBy,15,INT) CheckStatLT(LastTalkedToBy,12,WIS) CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~The ring is a modification of the original Rings of Might.~ GOTO 14
+  IF ~OR(3) CheckStatLT(LastTalkedToBy,15,INT) CheckStatLT(LastTalkedToBy,12,WIS) CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~This ring was constructed by elementalist mages in an attempt to forge a Ring of Might, but they never completed it.~ GOTO 14
+  IF ~OR(3) CheckStatLT(LastTalkedToBy,15,INT) CheckStatLT(LastTalkedToBy,12,WIS) CheckStatLT(LastTalkedToBy,15,CHR)~ THEN REPLY ~It is a partially constructed Ring of Might, so you see why I find it necessary to come to you for aid?~ GOTO 14
 END
 
 IF ~~ THEN BEGIN 5
@@ -78,11 +57,7 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~That will probably just about compensate for my time and the risk. Give me your ring and the gold, it will probably only take me one day to complete. Meet me here then, but I must insist no mention is made of my name to anyone over this.~
-  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",8) //Owain went to enhance the ring
-SetGlobalTimer("VP_Owain_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(8000)
-TakePartyItem("DeRing4")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",8) SetGlobalTimer("VP_Owain_Returns","GLOBAL",ONE_DAY) TakePartyGold(8000) TakePartyItem("DeRing4") EscapeArea()~ EXIT //Owain went to enhance the ring
 END
 
 IF ~~ THEN BEGIN 8
@@ -95,11 +70,7 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~That will probably just about compensate for my time and the risk. Give me your ring and the gold, it will probably only take me one day to complete. Meet me here then, but I must insist no mention is made of my name to anyone over this.~
-  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",8) //Owain went to enhance the ring
-SetGlobalTimer("VP_Owain_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(10000)
-TakePartyItem("DeRing4")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",8) SetGlobalTimer("VP_Owain_Returns","GLOBAL",ONE_DAY) TakePartyGold(10000) TakePartyItem("DeRing4") EscapeArea()~ EXIT //Owain went to enhance the ring
 END
 
 IF ~~ THEN BEGIN 10
@@ -151,18 +122,11 @@ END
 
 //IF ~~ THEN BEGIN 18
 //  SAY ~Whereas it has been a joy to work on the artifact, I cannot risk the memory re-surfacing in my mind. As from now I must forget that I ever touched or even saw a Ring of Might. Farewell <GABBER>.~
-//	IF ~~ THEN DO ~GiveItemCreate("DeRing5",LastTalkedToBy,0,0,0)
-//EscapeArea()~ EXIT
+//  IF ~~ THEN DO ~GiveItemCreate("DeRing5",LastTalkedToBy,0,0,0) //EscapeArea()~ EXIT
 //END //Owain is granting the enhanced ring (+air element)
 
 IF ~Global("VP_Enhance_Ring","GLOBAL",9)~ THEN BEGIN 16
   SAY ~I'm sorry <GABBER>, but I had to report you. Whereas it would be a joy to work on the artifact, I could not risk my future and my reputation here.~
-=
-~Anyway, I have to say I am impressed with the potential this ring has. To see the power this ring holds as it is, is to see why mages pursue the creation of true Rings of Might. As from now I must forget that I ever touched or even saw a Ring of Might. Guards!~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_Reveal_Spies_E","GLOBAL",ONE_DAY)
-SetGlobal("VP_Leaving_Halruaa","GLOBAL",3)
-DestroyItem("DeRing4")
-CreateCreatureObjectDoor("TuAlert1",Myself,0,0,0)
-CreateCreatureObjectDoor("TuAlert2",Myself,0,0,0)
-EscapeArea()~ EXIT
+  = ~Anyway, I have to say I am impressed with the potential this ring has. To see the power this ring holds as it is, is to see why mages pursue the creation of true Rings of Might. As from now I must forget that I ever touched or even saw a Ring of Might. Guards!~
+  IF ~~ THEN DO ~SetGlobalTimer("VP_Reveal_Spies_E","GLOBAL",ONE_DAY) SetGlobal("VP_Leaving_Halruaa","GLOBAL",3) DestroyItem("DeRing4") CreateCreatureObjectDoor("TuAlert1",Myself,0,0,0) CreateCreatureObjectDoor("TuAlert2",Myself,0,0,0) EscapeArea()~ EXIT
 END

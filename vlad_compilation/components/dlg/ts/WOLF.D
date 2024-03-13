@@ -12,8 +12,5 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~*Sime strokes Veter's head gently, and it suddenly turns into the figurine.*~
-  IF ~~ THEN DO ~GiveItemCreate("Wolf","Sime",0,0,0)
-SetGlobal("VP_Veter","GLOBAL",1)
-SetGlobal("VP_VeterRest","GLOBAL",0)
-DestroySelf()~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("Wolf","Sime",0,0,0) SetGlobal("VP_Veter","GLOBAL",1) SetGlobal("VP_VeterRest","GLOBAL",0) DestroySelf()~ EXIT
 END

@@ -1,7 +1,6 @@
 BEGIN ~MELORA~
 
-IF ~NumberOfTimesTalkedTo(0)
-~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) ~ THEN BEGIN 0
   SAY ~Hey look were you are going! This road would be more than big enough for the both of us if you were not taking up so much of it for yourself!~
   IF ~~ THEN REPLY ~Steady there little one, you almost ran me down! Oh! I see that it is a Hafling that tries to run me down.~ GOTO 1
   IF ~~ THEN REPLY ~Watch your step little one! Well, well, what do we have here? A Hafling lass no less.~ GOTO 1

@@ -1,7 +1,6 @@
 BEGIN ~DPOMAB~
 
-IF ~NumTimesTalkedTo(0)
-Global("Know_Balance", "GLOBAL", 0)~ THEN BEGIN 0 // from:
+IF ~NumTimesTalkedTo(0) Global("Know_Balance", "GLOBAL", 0)~ THEN BEGIN 0 // from:
   SAY ~What... by the Nine Hells... what are you lot doing back here? Thieves, barbarians come I demand some answers now?~
   IF ~~ THEN REPLY ~Barbarians?  I think you're mistaken, friend.~  GOTO 1
   IF ~~ THEN REPLY ~I'd watch where you wag that tongue of yours, shopkeeper. I am not in the best of moods.~  GOTO 2
@@ -10,7 +9,7 @@ Global("Know_Balance", "GLOBAL", 0)~ THEN BEGIN 0 // from:
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.0
-  SAY ~Am I now?  I do not think so. All of you northerners are the same to me. Smelly and barbaric. ~
+  SAY ~Am I now?  I do not think so. All of you northerners are the same to me. Smelly and barbaric.~
   IF ~~ THEN REPLY ~Keep pushing it... I'll show you just how barbaric I can be.~  GOTO 2
   IF ~~ THEN REPLY ~Northerners?  I take it you are not from around here.~  GOTO 3
   IF ~~ THEN REPLY ~Right. I'd like to see what you have for sale.~  GOTO 4
@@ -18,7 +17,7 @@ IF ~~ THEN BEGIN 1 // from: 0.0
 END
 
 IF ~~ THEN BEGIN 2 // from: 15.1 15.0 12.2 12.1 12.0 11.2 11.0 4.2 4.1 4.0 1.0 0.1
-  SAY ~How dare you speak to me in such a manner!  Do you know who I am?  ~
+  SAY ~How dare you speak to me in such a manner!  Do you know who I am? ~
   IF ~~ THEN REPLY ~No, but I'm sure you're going to tell me.~  GOTO 3
   IF ~~ THEN REPLY ~Yes, you are a pompous, little man who runs a little shop... somewhere I have no idea.~  GOTO 3
   IF ~~ THEN REPLY ~I don't care who you are... I just want to buy something!~  GOTO 3
@@ -33,7 +32,7 @@ IF ~~ THEN BEGIN 3 // from: 2.2 2.1 2.0 1.1
 END
 
 IF ~~ THEN BEGIN 4 // from: 1.2 0.2
-  SAY ~And I would like to see some coin before I go to the trouble of showing you my wares. I have no patience for those who are "just browsing."  ~
+  SAY ~And I would like to see some coin before I go to the trouble of showing you my wares. I have no patience for those who are "just browsing." ~
   IF ~~ THEN REPLY ~There's no need to be rude. I assure you, I intend to buy. Now, may I see your wares?~  GOTO 2
   IF ~~ THEN REPLY ~Look you toad, I have gold and I need supplies. Are you going to sell to me or not?~  GOTO 2
   IF ~~ THEN REPLY ~Maybe it would be easier if I cut your greedy little heart out and just take what I want. What do you think about that?~  DO ~ReputationInc(-1)~ GOTO 2
@@ -72,13 +71,9 @@ IF ~~ THEN BEGIN 9 // from: 6.2
   IF ~~ THEN REPLY ~As you wish. Farewell, your Royalness.~  EXIT
 END
 
-IF ~NumTimesTalkedTo(0)
-Global("Supply_Quest", "GLOBAL", 1)
-Global("Know_Balance", "GLOBAL", 0)~ THEN BEGIN 10 // from:
+IF ~NumTimesTalkedTo(0) Global("Supply_Quest", "GLOBAL", 1) Global("Know_Balance", "GLOBAL", 0)~ THEN BEGIN 10 // from:
   SAY ~What is this?  More barbarians come to my shop?  No doubt with nothing to barter with but more wolf pelts and polished stones. Very well... let us get this over with. What do you want?~
-  IF ~PartyHasItem("LIST")~ THEN REPLY ~Actually, Hrothgar sent me. I am to deliver this supply list and outfit myself for the expedition to Kuldahar.~  DO ~TakePartyItem("LIST")
-SetGlobal("Supply_Quest", "GLOBAL", 2)
-AddExperienceParty(3500)~ GOTO 11
+  IF ~PartyHasItem("LIST")~ THEN REPLY ~Actually, Hrothgar sent me. I am to deliver this supply list and outfit myself for the expedition to Kuldahar.~  DO ~TakePartyItem("LIST") SetGlobal("Supply_Quest", "GLOBAL", 2) AddExperienceParty(3500)~ GOTO 11
   IF ~!PartyHasItem("LIST")~ THEN REPLY ~Actually, Hrothgar sent me. I was supposed to deliver a supply list and outfit myself for the expedition to Kuldahar, but I seem to have misplaced the list.~  GOTO 12
 END
 
@@ -96,17 +91,9 @@ IF ~~ THEN BEGIN 12 // from: 10.1
   IF ~~ THEN REPLY ~Whatever, little man. Just show me what you have for sale.~  GOTO 2
 END
 
-IF ~NumTimesTalkedToGT(0)
-Global("Know_Balance", "GLOBAL", 0)
-OR(3)
-!InParty("Erevain")
-Dead("Erevain")
-Global("VP_Talk_to_Erevain","LOCALS",1)~ THEN BEGIN 13 // from:
+IF ~NumTimesTalkedToGT(0) Global("Know_Balance", "GLOBAL", 0) OR(3) !InParty("Erevain") Dead("Erevain") Global("VP_Talk_to_Erevain","LOCALS",1)~ THEN BEGIN 13 // from:
   SAY ~You again. Why must you continuously pester me?  I have much to do and little time to trifle with the likes of you.~
-  IF ~Global("Supply_Quest", "GLOBAL", 1)
-PartyHasItem("LIST")~ THEN REPLY ~I have come to deliver the supply list from Hrothgar.~  DO ~TakePartyItem("LIST")
-SetGlobal("Supply_Quest", "GLOBAL", 2)
-AddExperienceParty(3500)~ GOTO 14
+  IF ~Global("Supply_Quest", "GLOBAL", 1) PartyHasItem("LIST")~ THEN REPLY ~I have come to deliver the supply list from Hrothgar.~  DO ~TakePartyItem("LIST") SetGlobal("Supply_Quest", "GLOBAL", 2) AddExperienceParty(3500)~ GOTO 14
   IF ~~ THEN REPLY ~I would like to buy something.~  DO ~StartStore("EHPomab", Player1)~ EXIT
   IF ~~ THEN REPLY ~Sorry to disturb you. Farewell.~  EXIT
 END
@@ -129,11 +116,7 @@ IF ~~ THEN BEGIN 16 // from: 1.3
   IF ~~ THEN DO ~SetGlobal("Know_Pomab","GLOBAL",1)~ GOTO 5
 END
 
-IF ~NumTimesTalkedToGT(0)
-Global("Know_Balance", "GLOBAL", 0)
-Global("VP_Talk_to_Erevain","LOCALS",0)
-InParty("Erevain")
-!Dead("Erevain")~ THEN BEGIN 17
+IF ~NumTimesTalkedToGT(0) Global("Know_Balance", "GLOBAL", 0) Global("VP_Talk_to_Erevain","LOCALS",0) InParty("Erevain") !Dead("Erevain")~ THEN BEGIN 17
   SAY ~You again. Why must you continuously pester me?  I have much to do and little time to trifle with the likes of you.~
   IF ~~ THEN EXTERN ~EREVAINJ~ 11
 END

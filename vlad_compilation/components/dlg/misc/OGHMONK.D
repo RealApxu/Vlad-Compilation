@@ -1,15 +1,11 @@
 ADD_STATE_TRIGGER OGHMONK1 0
-  ~!PartyHasItem("MISC7L")
-!PartyHasItem("MISCBSIM")~
+~!PartyHasItem("MISC7L") !PartyHasItem("MISCBSIM")~
 
 ADD_STATE_TRIGGER OGHMONK1 1
-  ~!PartyHasItem("MISC7L")
-!PartyHasItem("MISCBSIM")~
+~!PartyHasItem("MISC7L") !PartyHasItem("MISCBSIM")~
 
 ADD_STATE_TRIGGER OGHMONK1 2
-  ~!PartyHasItem("MISC7L")
-!PartyHasItem("MISCBSIM")~
+~!PartyHasItem("MISC7L") !PartyHasItem("MISCBSIM")~
 
 ADD_STATE_TRIGGER OGHMONK1 3
-  ~!PartyHasItem("MISC7L")
-!PartyHasItem("MISCBSIM")~
+~!PartyHasItem("MISC7L") !PartyHasItem("MISCBSIM")~

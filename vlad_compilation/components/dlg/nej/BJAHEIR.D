@@ -159,7 +159,7 @@ IF ~~ THEN BEGIN NEJ487
 END
 
 IF ~~ THEN BEGIN NEJ488
-  SAY ~	You chose not to take the portal and we chose to follow you. You could have just as easily have made the decision to take the portal and we would probably still have chosen to follow you. You chose our path, not fate and now we have to live with the consequences of that choice.~
+  SAY ~You chose not to take the portal and we chose to follow you. You could have just as easily have made the decision to take the portal and we would probably still have chosen to follow you. You chose our path, not fate and now we have to live with the consequences of that choice.~
   IF ~~ THEN REPLY ~I cannot help what you feel or believe. I have put my trust in Hrothgar and his is the path we now follow. That is... until we find a way home.~ GOTO NEJ489
   IF ~~ THEN REPLY ~Hrothgar has assured me that my actions here will not affect my future, so I see no reason not to continue aiding him in his mission.~ GOTO NEJ489
   IF ~~ THEN REPLY ~Whatever, circumstances being what they are, we have very little choice now, as Hrothgar is our only means of leaving here safely.~ GOTO NEJ489
@@ -172,6 +172,7 @@ END
 
 IF ~~ THEN BEGIN NEJ490
   SAY ~We are now dependent on his staying alive in order to get us out of here, and you can guarantee that he knows this and he is more than likely relying on this to stop us questioning him too closely. Anything happens to Hrothgar and we could be wandering these cold wastelands, forever lost in time and searching for a way home. Trust him if you want, but I shall watch him closely.~
-	IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
+
 END

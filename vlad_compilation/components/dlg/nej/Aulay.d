@@ -1,7 +1,6 @@
 BEGIN ~AULAY~
 
-IF ~Global("VP_Restore_Ring","GLOBAL",6)
-Global("VP_Enhance_Ring","GLOBAL",4)~ THEN BEGIN 0
+IF ~Global("VP_Restore_Ring","GLOBAL",6) Global("VP_Enhance_Ring","GLOBAL",4)~ THEN BEGIN 0
   SAY ~(*Brusquely*) You wanting to speak with me?~
   IF ~~ THEN REPLY ~If you are Aulay then yes I do.~ GOTO 1
   IF ~~ THEN REPLY ~That depends on who you are?~ GOTO 1
@@ -54,11 +53,7 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~8000 gold it is but I must also insist on some discretion on your part <GABBER>, in so much as, you do not mention that it was Aulay who aided you should you be discovered. Now, give me your ring and the gold, and meet me here in say one day.~
-  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",5) //Aulay went to enhance the ring
-SetGlobalTimer("VP_Aulay_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(8000)
-TakePartyItem("DeRing3")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",5) SetGlobalTimer("VP_Aulay_Returns","GLOBAL",ONE_DAY) TakePartyGold(8000) TakePartyItem("DeRing3") EscapeArea()~ EXIT //Aulay went to enhance the ring
 END
 
 IF ~~ THEN BEGIN 8
@@ -71,11 +66,7 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~6000 gold it is but I must also insist on some discretion on your part <GABBER>, in so much as, you do not mention that it was Aulay who aided you should you be discovered. Now, give me your ring and the gold, and meet me here in say one day.~
-  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",5) //Aulay went to enhance the ring
-SetGlobalTimer("VP_Aulay_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(6000)
-TakePartyItem("DeRing3")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Enhance_Ring","GLOBAL",5) SetGlobalTimer("VP_Aulay_Returns","GLOBAL",ONE_DAY) TakePartyGold(6000) TakePartyItem("DeRing3") EscapeArea()~ EXIT //Aulay went to enhance the ring
 END
 
 IF ~~ THEN BEGIN 10
@@ -127,6 +118,5 @@ END
 
 IF ~~ THEN BEGIN 18
   SAY ~Farewell, and if you ever find yourself another artifact that needs restoring, please, do not bring it to me!~
-	IF ~~ THEN DO ~GiveItemCreate("DeRing4",LastTalkedToBy,0,0,0)
-EscapeArea()~ EXIT
-END //Aulay is granting the enhanced ring (+earth element)  
+  IF ~~ THEN DO ~GiveItemCreate("DeRing4",LastTalkedToBy,0,0,0) EscapeArea()~ EXIT
+END //Aulay is granting the enhanced ring (+earth element)

@@ -8,9 +8,7 @@ END
 
 IF ~~ THEN BEGIN TS153
   SAY ~<CHARNAME>, what are you doing? I'm not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-  IF ~~ THEN DO ~ActionOverride("Kachiko",Enemy())
-LeaveParty()
-Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("Kachiko",Enemy()) LeaveParty() Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS154
@@ -20,13 +18,7 @@ END
 
 IF ~~ THEN BEGIN TS155
   SAY ~Kachiko, I won't draw my sword against you. Sorry, <CHARNAME>, but I have to leave. I'll see you later.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-SetGlobal("VP_YoshimoEscapes","GLOBAL",1)
-ActionOverride("Kachiko",Enemy())
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogueFile()
-LeaveParty()
-EscapeAreaMove("AR0406",1368,1922,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshimoEscapes","GLOBAL",1) ActionOverride("Kachiko",Enemy()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() LeaveParty() EscapeAreaMove("AR0406",1368,1922,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS156
@@ -68,25 +60,12 @@ END
 
 IF ~~ THEN BEGIN TS163
   SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life. If you change your mind in a few days, you will find us in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-SetGlobal("VP_YoshFollowsKach","GLOBAL",1)
-ActionOverride("Kachiko",EscapeAreaMove("AR0313",784,333,8))
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeAreaMove("AR0313",723,319,14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshFollowsKach","GLOBAL",1) ActionOverride("Kachiko",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS164
   SAY ~<CHARNAME>, I am really sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-ActionOverride("Kachiko",EscapeArea())
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-DestroyItem("NPSW02")
-GivePartyAllEquipment()
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() DestroyItem("NPSW02") GivePartyAllEquipment() LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS165
@@ -98,7 +77,6 @@ IF ~~ THEN BEGIN TS168
   SAY ~No, I had spent several years sailing around Kara-Tur. This place reminds nothing of what I have seen and with a bay like that it would be a lively port be it in Kara-Tur. The spell went astray, I suppose... I am very sorry <CHARNAME>.~
   IF ~~ THEN REPLY ~We are neither at Spellhold, nor Kara-Tur. Damn you, Harkle Harpel and the whole mad family of yours! But we have to deal with our plight here now. I heard you are resourceful, Saemon. Any suggestions?~ EXTERN ~PPSAEM~ TS5
 END
-
 
 IF WEIGHT #6 ~Global("Dead_Bodies","GLOBAL",1)~ THEN BEGIN TS169
   SAY ~Dead bodies? Here? Must be another group stranded on this piece of land. We must step carefully.~
@@ -131,7 +109,7 @@ IF ~~ THEN BEGIN TS174
 END
 
 IF ~~ THEN BEGIN TS175
-  SAY ~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see it's indeed a time for me to talk to my father. ~
+  SAY ~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see it's indeed a time for me to talk to my father.~
   IF ~~ THEN EXTERN ~OTAKO~ 3
 END
 
@@ -144,8 +122,7 @@ END
 
 IF WEIGHT #7 ~Global("Kachiko_Kidnapped","GLOBAL",1)~ THEN BEGIN TS177
   SAY ~No! Kachiko... No! I will kill them all! If they harm her in any way, I swear I will kill them all!~
-  IF ~~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",2)
-RealSetGlobalTimer("NKensais_Spawn","GLOBAL",10)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",2) RealSetGlobalTimer("NKensais_Spawn","GLOBAL",10)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS178
@@ -223,8 +200,7 @@ END
 IF ~~ THEN BEGIN TS192
   SAY ~My friends... Uhm... Najoki-san, I do not command my friends... I need to ask <CHARNAME> if they'd help me... <CHARNAME>?~
   IF ~~ THEN REPLY ~Yoshimo, your father said that the only way for everyone to be freed of the curse is to kill one of the families during a single day. Every person...~ EXTERN ~NAJOKI~ 4
-  IF ~~ THEN REPLY ~I am with you, Yoshimo! We have to save Kachiko! Let's go!~ DO ~GiveItemCreate("SCRL63",Player1,0,0,0)
-~ EXIT
+  IF ~~ THEN REPLY ~I am with you, Yoshimo! We have to save Kachiko! Let's go!~ DO ~GiveItemCreate("SCRL63",Player1,0,0,0) ~ EXIT
   IF ~~ THEN REPLY ~I am not sure... Najoki, would you give me any practical help, like giving us directions back to civilization if I go save your daughter?~ EXTERN ~NAJOKI~ 7
 END
 
@@ -250,38 +226,18 @@ END
 
 IF ~~ THEN BEGIN TS197
   SAY ~<CHARNAME>, I should warn you that in such a combat only two weapons are allowed: a noble katana and your hand, and no armor is to cover the fighter's body. And no one is permitted to leave the fighting arena until the fight is over... I am ready and willing to answer the challenge, but it's your decision who shall fight.~
-  IF ~InParty(Player2)
-See(Player2)
-!StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut02")~ EXIT
-  IF ~InParty(Player3)
-See(Player3)
-!StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut03")~ EXIT
-  IF ~InParty(Player4)
-See(Player4)
-!StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut04")~ EXIT
-  IF ~InParty(Player5)
-See(Player5)
-!StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut05")~ EXIT
-  IF ~See(Player1)
-!StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut01")~ EXIT
-  IF ~InParty(Player6)
-See(Player6)
-!StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode()
-StartCutScene("TTcut06")~ EXIT
+  IF ~InParty(Player2) See(Player2) !StateCheck(Player2,STATE_SLEEPING)~ THEN REPLY ~<PLAYER2> would represent us.~ DO ~StartCutSceneMode() StartCutScene("TTcut02")~ EXIT
+  IF ~InParty(Player3) See(Player3) !StateCheck(Player3,STATE_SLEEPING)~ THEN REPLY ~<PLAYER3> shall face him now.~ DO ~StartCutSceneMode() StartCutScene("TTcut03")~ EXIT
+  IF ~InParty(Player4) See(Player4) !StateCheck(Player4,STATE_SLEEPING)~ THEN REPLY ~<PLAYER4> is ready to answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut04")~ EXIT
+  IF ~InParty(Player5) See(Player5) !StateCheck(Player5,STATE_SLEEPING)~ THEN REPLY ~<PLAYER5> shall be our champion.~ DO ~StartCutSceneMode() StartCutScene("TTcut05")~ EXIT
+  IF ~See(Player1) !StateCheck(Player1,STATE_SLEEPING)~ THEN REPLY ~I, myself, shall answer your challenge.~ DO ~StartCutSceneMode() StartCutScene("TTcut01")~ EXIT
+  IF ~InParty(Player6) See(Player6) !StateCheck(Player6,STATE_SLEEPING)~ THEN REPLY ~<PLAYER6>, go ahead.~ DO ~StartCutSceneMode() StartCutScene("TTcut06")~ EXIT
 END
 
 IF ~~ THEN BEGIN TS198
-  SAY ~Kachiko... oh, Kachiko. She is so pale and cold... ~
-  IF ~!Global("TT_Evil_Path","GLOBAL",2)
-!Dead("Najoki")~ THEN EXTERN ~KACHIP~ 10
-  IF ~OR(2)
-Global("TT_Evil_Path","GLOBAL",2)
-Dead("Najoki")~ THEN EXTERN ~KACHIP~ 14
+  SAY ~Kachiko... oh, Kachiko. She is so pale and cold...~
+  IF ~!Global("TT_Evil_Path","GLOBAL",2) !Dead("Najoki")~ THEN EXTERN ~KACHIP~ 10
+  IF ~OR(2) Global("TT_Evil_Path","GLOBAL",2) Dead("Najoki")~ THEN EXTERN ~KACHIP~ 14
 END
 
 IF ~~ THEN BEGIN TS199
@@ -295,11 +251,8 @@ IF ~~ THEN BEGIN TS200
 END
 
 IF ~~ THEN BEGIN TS201
-  SAY ~Kachiko, from the moment I saw you there in Athkatla, I knew that I would not allow any evil to come to you. I love you, Kachiko, and nothing could stop me. I would go to Nine Hells after you if I have to. With you around I feel like I have never been... I... I can be a better person... ~
-  IF ~~ THEN DO ~ChangeAlignment(Myself,CHAOTIC_GOOD)
-AddXPObject(Myself,80000)
-ActionOverride("Kachiko",ChangeAlignment(Myself,CHAOTIC_GOOD))
-ActionOverride("Kachiko",AddXPObject(Myself,80000))~ EXTERN ~KACHIP~ 13
+  SAY ~Kachiko, from the moment I saw you there in Athkatla, I knew that I would not allow any evil to come to you. I love you, Kachiko, and nothing could stop me. I would go to Nine Hells after you if I have to. With you around I feel like I have never been... I... I can be a better person...~
+  IF ~~ THEN DO ~ChangeAlignment(Myself,CHAOTIC_GOOD) AddXPObject(Myself,80000) ActionOverride("Kachiko",ChangeAlignment(Myself,CHAOTIC_GOOD)) ActionOverride("Kachiko",AddXPObject(Myself,80000))~ EXTERN ~KACHIP~ 13
 END
 
 IF ~~ THEN BEGIN TS202
@@ -314,9 +267,7 @@ END
 
 IF ~~ THEN BEGIN TS204
   SAY ~Nothing, <CHARNAME>. You were right, we should not have come here. Now, let's go rescue your friend.~
-  IF ~~ THEN DO ~SetGlobal("TT_Evil_Path","GLOBAL",3)
-ChangeAlignment(Myself,CHAOTIC_EVIL)
-StartCutScene("TTcutFi2")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("TT_Evil_Path","GLOBAL",3) ChangeAlignment(Myself,CHAOTIC_EVIL) StartCutScene("TTcutFi2")~ EXIT
 END
 
 IF ~~ THEN BEGIN TS205
@@ -334,8 +285,7 @@ IF ~~ THEN BEGIN TS207
   IF ~~ THEN EXTERN ~KACHIP~ 17
 END
 
-IF WEIGHT #8 ~Global("Kachiko_Saved","GLOBAL",1)
-~ THEN BEGIN TS208
+IF WEIGHT #8 ~Global("Kachiko_Saved","GLOBAL",1) ~ THEN BEGIN TS208
   SAY ~<CHARNAME>, please cast the scroll. I cannot see her dead...~
   IF ~~ THEN EXIT
 END
@@ -372,39 +322,22 @@ END
 
 IF ~~ THEN BEGIN TS214
   SAY ~Sorry, <CHARNAME>. I cannot leave her alone. We must continue our mission.~
-  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",3)
-SetGlobal("Kicked_Out","LOCALS",1)
-ActionOverride("Kachiko",EscapeAreaMove("TT0102",165,727,8))
-LeaveParty()
-EscapeAreaMove("TT0102",225,683,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",3) SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("TT0102",165,727,8)) LeaveParty() EscapeAreaMove("TT0102",225,683,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS215
   SAY ~Sorry, <CHARNAME>. I cannot leave Kachiko alone. I must take a care of her. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-ActionOverride("Kachiko",EscapeAreaMove("AR0406",1368,1922,0))
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeAreaMove("AR0406",1381,1959,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("AR0406",1368,1922,0)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0406",1381,1959,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS216
   SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-ActionOverride("Kachiko",EscapeAreaMove("AR0313",723,319,14))
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeAreaMove("AR0313",784,333,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("AR0313",723,319,14)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",784,333,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS217
   SAY ~<CHARNAME>, I am sorry, but I shall stay with Kachiko.~
-  IF ~~ THEN DO ~ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogueFile()
-SetGlobal("Kicked_Out","LOCALS",1)
-LeaveParty()~ EXIT
+  IF ~~ THEN DO ~ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() SetGlobal("Kicked_Out","LOCALS",1) LeaveParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS218
@@ -423,24 +356,16 @@ IF ~~ THEN BEGIN TS220
 END
 
 IF ~~ THEN BEGIN TS221
-	SAY ~Irenicus is my sworn enemy. I am eager to fight him.~
+  SAY ~Irenicus is my sworn enemy. I am eager to fight him.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
   IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
   IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
   IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
@@ -451,36 +376,22 @@ Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
   IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
   IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
-  IF ~InParty("Sime")
-OR(2)
-Global("SimeRomanceActive","GLOBAL",1)
-Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
-  IF ~InParty("Sime")
-OR(2)
-Global("SimeRomanceActive","GLOBAL",0)
-Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-	IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
+  IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
+  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
 END
 
 IF ~~ THEN BEGIN TS222
-	SAY ~I side with the one, whose wise council brought Kachiko back to life and granted my family eternal peace. Do not fear, <CHARNAME> my blade will not backstab you.~
+  SAY ~I side with the one, whose wise council brought Kachiko back to life and granted my family eternal peace. Do not fear, <CHARNAME> my blade will not backstab you.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
   IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
   IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
   IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
@@ -491,24 +402,14 @@ Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
   IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
   IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
-  IF ~InParty("Sime")
-OR(2)
-Global("SimeRomanceActive","GLOBAL",1)
-Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
-  IF ~InParty("Sime")
-OR(2)
-Global("SimeRomanceActive","GLOBAL",0)
-Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-	IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
+  IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
+  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
 END
 
-IF WEIGHT #0 ~Global("VP_Kachiko_Dies","GLOBAL",3)
-See(Player1)
-!StateCheck(Player1,STATE_SLEEPING)~ THEN BEGIN TS223
-  SAY ~<CHARNAME>, it's my fault. I couldn't save Kachiko... And she was my only reason to live in this damned world... No, I have no rights to continue this miserable existance... I am very sorry, <CHARNAME>... (*Suddenly, the blick of Yoshimo's katana, and... *) ~
-  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Dies","GLOBAL",4)
-StartCutSceneMode()
-StartCutScene("TSCutK03")~ EXIT
+IF WEIGHT #0 ~Global("VP_Kachiko_Dies","GLOBAL",3) See(Player1) !StateCheck(Player1,STATE_SLEEPING)~ THEN BEGIN TS223
+  SAY ~<CHARNAME>, it's my fault. I couldn't save Kachiko... And she was my only reason to live in this damned world... No, I have no rights to continue this miserable existance... I am very sorry, <CHARNAME>... (*Suddenly, the blick of Yoshimo's katana, and... *)~
+  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Dies","GLOBAL",4) StartCutSceneMode() StartCutScene("TSCutK03")~ EXIT
 END
 
 //IF ~~ THEN BEGIN TS224
@@ -538,59 +439,35 @@ END
 
 //IF ~~ THEN BEGIN TS228
 //  SAY ~I am afraid, I have to insist. I hope you will forgive me. I entrust Kachiko to your care and I will catch up with you later. If I am to live. Fare thee well.~
-//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2)
-//ActionOverride("yoshmess",EscapeArea())
-//LeaveParty()
-//GivePartyAllEquipment()
-//MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
+//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2) //ActionOverride("yoshmess",EscapeArea()) //LeaveParty() //GivePartyAllEquipment() //MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
 //END
 
 //IF ~~ THEN BEGIN TS229
 //  SAY ~I cannot take Kachiko with me, <CHARNAME>. It is too dangerous and a secret I was entrusted with should not be shared even with her. I entrust Kachiko to your care and I will catch up with you later. If I am to live. Fare thee well.~
-//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2)
-//ActionOverride("yoshmess",EscapeArea())
-//LeaveParty()
-//GivePartyAllEquipment()
-//MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
+//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2) //ActionOverride("yoshmess",EscapeArea()) //LeaveParty() //GivePartyAllEquipment() //MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
 //END
 
 //IF ~~ THEN BEGIN TS230
 //  SAY ~Thank you, my friend. I cannot take Kachiko with me, <CHARNAME>. It is too dangerous and a secret I was entrusted with should not be shared even with her. I entrust Kachiko to your care and I will catch up with you later. If I am to live. Fare thee well.~
-//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2)
-//ActionOverride("yoshmess",EscapeArea())
-//LeaveParty()
-//GivePartyAllEquipment()
-//MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
+//  IF ~~ THEN DO ~SetGlobal("VP_YoshimoEscapes","GLOBAL",2) //ActionOverride("yoshmess",EscapeArea()) //LeaveParty() //GivePartyAllEquipment() //MoveGlobal("AR5003","Yoshimo",[1181.979])~ EXTERN ~KACHIJ~ 42
 //END
 
 IF ~~ THEN BEGIN TS231
   SAY ~Say the word you think is proper. But be you god or be you mortal, always remember that Yoshimo is your friend.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
-  IF ~InParty("Valygar")
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
-  IF ~InParty("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
+  IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
+  IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
   IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
-  IF ~InParty("Sarevok")
-!Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
-  IF ~InParty("Sarevok")
-Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
+  IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
+  IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
   IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
   IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
@@ -628,13 +505,7 @@ END
 
 IF ~~ THEN BEGIN SB05
   SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
-ActionOverride("Kachiko",EscapeArea())
-SetGlobal("Kicked_Out","LOCALS",1)
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("Kachiko",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN SB06
@@ -660,13 +531,7 @@ END
 
 IF ~~ THEN BEGIN SB10
   SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0)
-ActionOverride("Kachiko",EscapeArea())
-SetGlobal("Kicked_Out","LOCALS",1)
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("Kachiko",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
 END
 
 END

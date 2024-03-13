@@ -8,10 +8,7 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~Sure, proceed without me if you are so inclined. I will stay here for the time being and you can always count on my help if you change your mind.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1)
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -61,10 +58,8 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-  SAY ~In truth - I do not know... He might have done something else... or faked the necklace. My father is quite resourceful. ~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
+  SAY ~In truth - I do not know... He might have done something else... or faked the necklace. My father is quite resourceful.~
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
 END
 
 IF ~~ THEN BEGIN 12
@@ -86,30 +81,22 @@ END
 
 IF ~~ THEN BEGIN 38
   SAY ~You think so? I am glad I have entertained you... Begone.~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 39
   SAY ~If you wish.~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 84
   SAY ~Got it! No romantic nonsense in <CHARNAME>'s company!~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 85
   SAY ~I am glad to hear that! I also thought that it was one of the most outrageous of my father's notions. On the other hand that lead to my birth, so I guess I cannot complain too much.~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",2700)~ EXIT
 END
 
 // Sime Romance
@@ -130,10 +117,7 @@ END
 
 IF ~~ THEN BEGIN 88
   SAY ~I get the message. Sorry, I had mistaken you for someone with a heart.~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",5)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",5) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 89
@@ -145,40 +129,24 @@ END
 
 IF ~~ THEN BEGIN 90
   SAY ~ Thank you, <CHARNAME>... and you always have my ear.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",1)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",3600)
-RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",1800)
-SetGlobal("LoveTalk","LOCALS",1)
-SetGlobal("VP_MyFlirt","LOCALS",5)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",1) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",3600) RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",1800) SetGlobal("LoveTalk","LOCALS",1) SetGlobal("VP_MyFlirt","LOCALS",5) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 91
   SAY ~Oh! You like the stories and songs of the doomed love? I might have one or two more for you then.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",1)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-RealSetGlobalTimer("VP_SimeRomance","GLOBAL",3600)
-RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",1800)
-SetGlobal("LoveTalk","LOCALS",1)
-SetGlobal("VP_MyFlirt","LOCALS",5)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",1) SetGlobal("VP_LoveTalkDelay","LOCALS",0) RealSetGlobalTimer("VP_SimeRomance","GLOBAL",3600) RealSetGlobalTimer("VP_SimeFlirtTimer","GLOBAL",1800) SetGlobal("LoveTalk","LOCALS",1) SetGlobal("VP_MyFlirt","LOCALS",5) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 92
   SAY ~I did. Thank you for taking the pain and listening.~
-  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",5)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("SimeRomanceActive","GLOBAL",3)
-RestParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_MyFlirt","LOCALS",5) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("SimeRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 // Sime Romance
 // Vampires Encounter
 /////////////////////////////////
 
-IF WEIGHT #-97 ~Global("VP_SimeSolas","LOCALS",1)
-Global("VP_SimeDefeatedSols","GLOBAL",0)~ THEN BEGIN 28
+IF WEIGHT #-97 ~Global("VP_SimeSolas","LOCALS",1) Global("VP_SimeDefeatedSols","GLOBAL",0)~ THEN BEGIN 28
   SAY ~What? I can barely recognize you. Now I can see that it is true that Bodhi turns anyone unfortunate enough to her service. Evil assassins you were in life and evil beasts you became in undeath. I do not know whether to loathe or pity you.~ [SIMESO01]
   IF ~~ THEN EXTERN ~SOL~ 0
 END
@@ -191,15 +159,10 @@ Will joyously restore to life the ores,
 The dead flames and the tarnished mirrors
 
 No restoration will you find and never will your spirit know rest after you have been destroyed. You say you are powerful? That we shall see! For the glory of life and light I shall strike you down!~ [SIMESO02]
-  IF ~~ THEN DO ~SetGlobal("VP_SimeSolas","LOCALS",2)
-ActionOverride("Sol",Enemy())
-ActionOverride("Sola",Enemy())
-ActionOverride("Solauf",Enemy())
-AttackReevaluate("Sol",75)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_SimeSolas","LOCALS",2) ActionOverride("Sol",Enemy()) ActionOverride("Sola",Enemy()) ActionOverride("Solauf",Enemy()) AttackReevaluate("Sol",75)~ EXIT
 END
 
-IF WEIGHT #-96 ~Global("VP_SimeSolas","LOCALS",2)
-Global("VP_SimeDefeatedSols","GLOBAL",1)~ THEN BEGIN 30
+IF WEIGHT #-96 ~Global("VP_SimeSolas","LOCALS",2) Global("VP_SimeDefeatedSols","GLOBAL",1)~ THEN BEGIN 30
   SAY ~It seems that I am an unfortunate companion, <CHARNAME>. This is not the first time I am attacked by those who wish to harm my father. With the Guild war growing ever more cruel maybe you would prefer not to be affiliated with Linvail's daughter?~
   IF ~~ THEN REPLY ~It was not the first time? Sime, you should have told me that before! I have enough enemies as is! I think you are right. Let's part.~ GOTO 31
   IF ~~ THEN REPLY ~Nonsense, Sime! The more the merrier! Let them all come and they will get their punishment from me.~ GOTO 32
@@ -210,15 +173,7 @@ END
 
 IF ~~ THEN BEGIN 31
   SAY ~So be it.~
-  IF ~~ THEN DO ~SetGlobal("VP_SimeDefeatedSols","GLOBAL",3)
-SetGlobal("Kicked_Out","LOCALS",1)
-DestroyItem("Wolf")
-DestroyItem("SiLeat")
-DestroyItem("SiAmul")
-DestroyItem("HelmSun")
-GivePartyAllEquipment()
-LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_SimeDefeatedSols","GLOBAL",3) SetGlobal("Kicked_Out","LOCALS",1) DestroyItem("Wolf") DestroyItem("SiLeat") DestroyItem("SiAmul") DestroyItem("HelmSun") GivePartyAllEquipment() LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 32
@@ -233,12 +188,7 @@ END
 
 IF ~~ THEN BEGIN 34
   SAY ~I'd go then. I would not want to be responsible for your death or for the death of our companions. Should you need me, I will probably stay with father for a time.~
-  IF ~~ THEN DO ~SetGlobal("VP_SimeDefeatedSols","GLOBAL",2)
-SetGlobal("Kicked_Out","LOCALS",1)
-ChangeAIScript("",DEFAULT)
-SetLeavePartyDialogFile()
-LeaveParty()
-EscapeAreaMove("AR0307",4642,2000,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_SimeDefeatedSols","GLOBAL",2) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0307",4642,2000,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 35
@@ -248,39 +198,29 @@ END
 
 /////////////////////////////////
 
-IF WEIGHT #-95 ~Global("AsylumPlot","GLOBAL",2)
-Global("simespeak","LOCALS",0)~ THEN BEGIN 16
-  SAY ~I do not trust this pirate, <CHARNAME>. His manner is that of a fool, but his behavior on the damned island and then during the voyage betrays a cunning mind beneath. ~
-  IF ~~ THEN REPLY ~He has delivered us as promised. There are more important things to worry about. ~ DO ~SetGlobal("simespeak","LOCALS",1)
-SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
-  IF ~~ THEN REPLY ~Kill him if you wish. I don't care either way.~ DO ~SetGlobal("simespeak","LOCALS",1)
-SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 18
-  IF ~~ THEN REPLY ~He seems amiable enough to me. Come, you'll feel better once off the ship.~ DO ~SetGlobal("simespeak","LOCALS",1)
-SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
+IF WEIGHT #-95 ~Global("AsylumPlot","GLOBAL",2) Global("simespeak","LOCALS",0)~ THEN BEGIN 16
+  SAY ~I do not trust this pirate, <CHARNAME>. His manner is that of a fool, but his behavior on the damned island and then during the voyage betrays a cunning mind beneath.~
+  IF ~~ THEN REPLY ~He has delivered us as promised. There are more important things to worry about. ~ DO ~SetGlobal("simespeak","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
+  IF ~~ THEN REPLY ~Kill him if you wish. I don't care either way.~ DO ~SetGlobal("simespeak","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 18
+  IF ~~ THEN REPLY ~He seems amiable enough to me. Come, you'll feel better once off the ship.~ DO ~SetGlobal("simespeak","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ GOTO 17
 END
 
 IF ~~ THEN BEGIN 17
-  SAY ~Agreed. Be prepared, this place is dangerous enough even without my suspicions of Saemon. ~
+  SAY ~Agreed. Be prepared, this place is dangerous enough even without my suspicions of Saemon.~
   IF ~~ THEN DO ~MoveToPoint([863.2422])~ EXIT
 END
 
 IF ~~ THEN BEGIN 18
-  SAY ~We may need his ship for our return. No, just be on your guard. He is probably the least of our worries in this place. ~
-  IF ~~ THEN DO ~MoveToPoint([863.2422])
-SaveGame(0)~ EXIT
+  SAY ~We may need his ship for our return. No, just be on your guard. He is probably the least of our worries in this place.~
+  IF ~~ THEN DO ~MoveToPoint([863.2422]) SaveGame(0)~ EXIT
 END
 
 IF WEIGHT #-94 ~Global("AsylumPlot","GLOBAL",5)~ THEN BEGIN 19
-  SAY ~I knew he would prove treacherous. Our threats were sufficient to keep us safe while afloat, but there must be someone here that he fears even more. ~
-  IF ~!IfValidForPartyDialogue("Jaheira")
-!IfValidForPartyDialogue("Viconia")
-!IfValidForPartyDialogue("Anomen")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ GOTO 20
+  SAY ~I knew he would prove treacherous. Our threats were sufficient to keep us safe while afloat, but there must be someone here that he fears even more.~
+  IF ~!IfValidForPartyDialogue("Jaheira") !IfValidForPartyDialogue("Viconia") !IfValidForPartyDialogue("Anomen")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ GOTO 20
   IF ~IfValidForPartyDialogue("Jaheira")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ EXTERN ~JAHEIRAJ~ 456
-  IF ~!IfValidForPartyDialogue("Jaheira")
-IfValidForPartyDialogue("Viconia")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ EXTERN ~VICONIJ~ 125
-  IF ~!IfValidForPartyDialogue("Jaheira")
-!IfValidForPartyDialogue("Viconia")
-IfValidForPartyDialogue("Anomen")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ EXTERN ~ANOMENJ~ 262
+  IF ~!IfValidForPartyDialogue("Jaheira") IfValidForPartyDialogue("Viconia")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ EXTERN ~VICONIJ~ 125
+  IF ~!IfValidForPartyDialogue("Jaheira") !IfValidForPartyDialogue("Viconia") IfValidForPartyDialogue("Anomen")~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",6)~ EXTERN ~ANOMENJ~ 262
 END
 
 IF ~~ THEN BEGIN 20
@@ -291,7 +231,7 @@ IF ~~ THEN BEGIN 20
 END
 
 IF ~~ THEN BEGIN 21
-  SAY ~There are more important things to worry about right now, anyway. I must see that you are able to enter the asylum. ~
+  SAY ~There are more important things to worry about right now, anyway. I must see that you are able to enter the asylum.~
   IF ~~ THEN GOTO 22
 END
 
@@ -320,22 +260,14 @@ END
 IF ~~ THEN BEGIN TOL21
   SAY ~Irenicus had willfully damaged the Tree of Life. Thus he became an enemy of everyone with elven blood in their veins. I will fight him with you.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
   IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
   IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
   IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
@@ -351,22 +283,14 @@ END
 IF ~~ THEN BEGIN TOL22
   SAY ~Give me one good reason why a ranger should run away from a battle with an evil wizard who endangered the whole world in his madness? You are silent? Good. I stand ready to fight.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
   IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
   IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
   IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
@@ -382,22 +306,14 @@ END
 IF ~~ THEN BEGIN TOL23
   SAY ~You are right, we do not have time to chat. Just give me a signal to attack.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
   IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
   IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
   IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
@@ -436,16 +352,12 @@ END
 
 IF ~~ THEN BEGIN 43
   SAY ~Father! You should lower your voice if you wish to keep your words secret! And do not you dare to threaten him! Father!~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_Aran","GLOBAL",2)
-SetGlobal("VP_AranLeaves","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_Aran","GLOBAL",2) SetGlobal("VP_AranLeaves","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 44
   SAY ~Good-bye, father.~
-  IF ~~ THEN DO ~SetGlobal("VP_Aran_Ring","GLOBAL",1)
-SetGlobal("VP_Sime_Aran","GLOBAL",2)
-SetGlobal("VP_AranLeaves","GLOBAL",1)
-GiveItemCreate("AranRing",Player1,3,0,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Aran_Ring","GLOBAL",1) SetGlobal("VP_Sime_Aran","GLOBAL",2) SetGlobal("VP_AranLeaves","GLOBAL",1) GiveItemCreate("AranRing",Player1,3,0,0)~ EXIT
 END
 
 IF WEIGHT #-93 ~Global("VP_Aran_Ring","GLOBAL",2)~ THEN BEGIN 45
@@ -465,22 +377,16 @@ END
 
 IF ~~ THEN BEGIN 47
   SAY ~You and your odd sense of humor! All right, I guess we will worry about it when the time comes. And you took the ring! My father was trying to press this thing on me for ages. I do not like it, but I guess now I'll have to take it so I will not land you in trouble.~
-  IF ~~ THEN DO ~TakePartyItem("AranRing")
-SetGlobal("VP_Aran_Ring","GLOBAL",3)
-SetGlobal("VP_Sime_PCThief","GLOBAL",1)
-RealSetGlobalTimer("VP_SimeThiefBanter","GLOBAL",1800)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("AranRing") SetGlobal("VP_Aran_Ring","GLOBAL",3) SetGlobal("VP_Sime_PCThief","GLOBAL",1) RealSetGlobalTimer("VP_SimeThiefBanter","GLOBAL",1800)~ EXIT
 END
 
 IF ~~ THEN BEGIN 48
   SAY ~By Mielikki! My father was trying to press this thing on me for ages. I do not like it, but I guess now I'll have to take it so I will not land you in trouble.~
-  IF ~~ THEN DO ~TakePartyItem("AranRing")
-SetGlobal("VP_Aran_Ring","GLOBAL",3)
-SetGlobal("VP_Sime_PCThief","GLOBAL",1)
-RealSetGlobalTimer("VP_SimeThiefBanter","GLOBAL",1800)~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("AranRing") SetGlobal("VP_Aran_Ring","GLOBAL",3) SetGlobal("VP_Sime_PCThief","GLOBAL",1) RealSetGlobalTimer("VP_SimeThiefBanter","GLOBAL",1800)~ EXIT
 END
 
 IF WEIGHT #-92 ~Global("VP_Sime_PCThief","GLOBAL",2)~ THEN BEGIN 49
-  SAY ~I was comparing you to my father, <CHARNAME>, and I came to the conclusion that you are very similar. I am sure that he was the same way as you are in his youth. No law but his own law, live fast, live on the edge, consider everything to be easy come, easy go. It is attractive, but I know what has happened to my father at the end. ~
+  SAY ~I was comparing you to my father, <CHARNAME>, and I came to the conclusion that you are very similar. I am sure that he was the same way as you are in his youth. No law but his own law, live fast, live on the edge, consider everything to be easy come, easy go. It is attractive, but I know what has happened to my father at the end.~
   IF ~~ THEN REPLY ~Where is this ominous talk leading?~ GOTO 50
   IF ~GlobalGT("PlayerThiefGuild","GLOBAL",0)~ THEN REPLY ~Is it because I took charge of the Guild?~ GOTO 54
   IF ~~ THEN REPLY ~So what? Do not all girls fall hardest for those who remind them of their fathers?~ GOTO 55
@@ -497,23 +403,17 @@ END
 
 IF ~~ THEN BEGIN 51
   SAY ~I love my father against my good judgement and all my adult life I was fighting to change him into something he is not. I do not wish that to be repeated with you. You should follow your own way, <CHARNAME>, and I shall follow mine. There is nothing more to discuss.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 52
   SAY ~No, I do not want you to do that. <CHARNAME>, I love my father against my good judgement and all my adult life I was fighting to change him into something he is not. I do not wish that to be repeated with you. You should follow your own way, <CHARNAME>, and I shall follow mine. There is nothing more to discuss.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 53
   SAY ~There is nothing more to discuss then.~
-  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_Sime_PCThief","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 54
@@ -573,23 +473,17 @@ END
 
 IF ~~ THEN BEGIN 97
   SAY ~I wish to properly thank you for sharing such a significant part of yourself with me... (*Sime kisses you deeply*).~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 98
   SAY ~I like the song and I love the singer.~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 99
   SAY ~(*Laughs*)... You always put all your heart in what you are doing, <CHARNAME>!~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 100
@@ -606,38 +500,29 @@ END
 
 IF ~~ THEN BEGIN 101
   SAY ~I wish to properly thank you for sharing such a significant part of yourself with me... (*Sime kisses you deeply*).~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 102
   SAY ~Now we have no shortage of adventure it seems and little precious time for love. I'd like to remind you of what's the passion is like... (*Sime kisses you deeply*)~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN 103
   SAY ~So you did not forget the passion we shared last night? I am glad to feel that in your kiss.~
-  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800)
-SetGlobal("VP_LoveTalkDelay","LOCALS",0)
-SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("VP_SimeRomance","GLOBAL",1800) SetGlobal("VP_LoveTalkDelay","LOCALS",0) SetGlobal("VP_SimeTalksAgain","GLOBAL",2)~ EXIT
 END
 
 ////////////////////////////////////////////////
 
 IF WEIGHT #-90 ~Global("VP_Sime_DreamIsland","GLOBAL",1)~ THEN BEGIN 56
   SAY ~You wanted me here as well? I am... surprised.~
-  IF ~OR(2)
-Race(Player1,ELF)
-Race(Player1,HALF_ELF)~ THEN REPLY ~Sime, where are we?~ GOTO 57
-  IF ~!Race(Player1,ELF)
-!Race(Player1,HALF_ELF)~ THEN REPLY ~Sime, where are we?~ GOTO 63
+  IF ~OR(2) Race(Player1,ELF) Race(Player1,HALF_ELF)~ THEN REPLY ~Sime, where are we?~ GOTO 57
+  IF ~!Race(Player1,ELF) !Race(Player1,HALF_ELF)~ THEN REPLY ~Sime, where are we?~ GOTO 63
 END
 
 IF ~~ THEN BEGIN 57
-  SAY ~We are in the Land of Dreams, the Kaimeldor. You are one of our kin, have you never heard of it?   It is an ancient Elven enchantment that allows one to live ones' dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
+  SAY ~We are in the Land of Dreams, the Kaimeldor. You are one of our kin, have you never heard of it?  It is an ancient Elven enchantment that allows one to live ones' dreams for a time. Kaimeldor appears different to everyone. The hunter will come to a forest full of game, and an older man will enter an inn and would taste the best ale...~
   IF ~~ THEN REPLY ~I have been raised by a human, Sime. I have never heard of this enchantment. So, am I dreaming? In this case it should not surprise you that you are here.~ GOTO 58
   IF ~~ THEN REPLY ~I am not as versed in Elven lore as I would like to be, Sime. This enchantment, I have never heard of it, but I like it. Why does it surprise you that you are by my side in Kaimeldor?~ GOTO 58
   IF ~~ THEN REPLY ~I must have been really drunk, when I dreamt this place up. Flowers and silly butterflies everywhere! Give me battles and gore, not some gardens! I do dream of you sometimes, I must confess. If Kaimeldor is what you are saying it to be, then I am not surprised that you are here. How the rest got included is the mystery to me.~ GOTO 62
@@ -651,24 +536,18 @@ IF ~~ THEN BEGIN 58
 END
 
 IF ~~ THEN BEGIN 59
-  SAY ~I do not think it is impossible... May that's why we are here today. You called me the love of your life, <CHARNAME>. I guess... I guess you are the one for me as well. Amin mela lle, <CHARNAME>. Amin mela lle. ~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
-StartCutSceneMode()
-StartCutScene("VPCutS02")~ EXIT
+  SAY ~I do not think it is impossible... May that's why we are here today. You called me the love of your life, <CHARNAME>. I guess... I guess you are the one for me as well. Amin mela lle, <CHARNAME>. Amin mela lle.~
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2) StartCutSceneMode() StartCutScene("VPCutS02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 60
   SAY ~(*Laughs*)... If those are the only words you know how to say in all these languages, than you picked up the right ones to learn. But why would we use the foul language of the Dark ones or a roaring one of the fierce dwarves? We are kin and I think you are right - we are meant for each other. I can hear the voice of my heart clearly. Amin mela lle, <CHARNAME>. Amin mela lle.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
-StartCutSceneMode()
-StartCutScene("VPCutS02")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2) StartCutSceneMode() StartCutScene("VPCutS02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 61
-  SAY ~I think there is a meaning to that outing, <CHARNAME>. I think that I came here with you today so I can see that we are meant for each other. I can hear the voice of my heart clearly. Amin mela lle, <CHARNAME>. I love you. ~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
-StartCutSceneMode()
-StartCutScene("VPCutS02")~ EXIT
+  SAY ~I think there is a meaning to that outing, <CHARNAME>. I think that I came here with you today so I can see that we are meant for each other. I can hear the voice of my heart clearly. Amin mela lle, <CHARNAME>. I love you.~
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2) StartCutSceneMode() StartCutScene("VPCutS02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 62
@@ -694,16 +573,12 @@ END
 
 IF ~~ THEN BEGIN 65
   SAY ~I do not think it is impossible... May be that's why we are here today. I guess... I guess I love you. Amin mela lle, <CHARNAME>. Amin mela lle.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
-StartCutSceneMode()
-StartCutScene("VPCutS02")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2) StartCutSceneMode() StartCutScene("VPCutS02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 66
   SAY ~I think there is a meaning to that outing, <CHARNAME>. I think that I came here with you today so I can see that we are meant for each other. I can hear the voice of my heart clearly. Amin mela lle, <CHARNAME>. Amin mela lle.~
-  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2)
-StartCutSceneMode()
-StartCutScene("VPCutS02")~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Sime_DreamIsland","GLOBAL",2) StartCutSceneMode() StartCutScene("VPCutS02")~ EXIT
 END
 
 IF ~~ THEN BEGIN 67
@@ -735,79 +610,41 @@ END
 IF ~~ THEN BEGIN slayer2
   SAY ~I'm not sure you should try to control it. We must distance you from it, not embrace it. We will make due, despite the danger.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN slayer3
   SAY ~No, you should not be alone during this. We will get through, I am sure. We just have to keep going, no matter what comes.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN slayer4
@@ -818,40 +655,21 @@ END
 IF ~~ THEN BEGIN slayer5
   SAY ~<CHARNAME>, please, let's just keep moving. We'll get through, I'm sure of it. Really.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 68
@@ -872,157 +690,81 @@ END
 IF ~~ THEN BEGIN 70
   SAY ~By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 71
   SAY ~I am calm, <CHARNAME>, I am deadly calm. And so I will be the day we catch up with Irenicus.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 72
   SAY ~Then the Evil got its grip on you... Fight it if you can, oh, please, I beg you! It pains me to see the light in your eyes to change to insatiable hunger of a killer! Fight it, <CHARNAME>.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 73
   SAY ~That's what I am here for, <CHARNAME>. By the first day and the last day of Toril, by the torment of Abyss and by the triumph of light over darkness, by the multitude of Planes, by your breath on my cheek, by my bliss and by my torture, by my love for you, I swear that I shall not abandon your fight till we have won.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 74
@@ -1035,87 +777,48 @@ END
 IF ~~ THEN BEGIN 75
   SAY ~There is no need to snap at me. If you feel uncomfortable with me loving you, you should have so earlier.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 76
   SAY ~One woman, yes, but I am your woman and I would not let some dead god or a crazed mage to take you away from me. Let them all come, I am ready to give them a fight... (*Laughs and strokes your hair*)... We will get through this, <CHARNAME>, do not worry.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 77
   SAY ~Do you really care?~
   IF ~~ THEN REPLY ~No, let them talk!~ GOTO 78
   IF ~~ THEN REPLY ~Yes! (*You free yourself from her arms*)~ GOTO 79
-  IF ~InParty("Imoen2")
-See("Imoen2")~ THEN REPLY ~Imoen, what's the matter?~ EXTERN ~IMOEN2J~ TS40
+  IF ~InParty("Imoen2") See("Imoen2")~ THEN REPLY ~Imoen, what's the matter?~ EXTERN ~IMOEN2J~ TS40
 END
 
 IF ~~ THEN BEGIN 78
@@ -1124,7 +827,7 @@ IF ~~ THEN BEGIN 78
 END
 
 IF ~~ THEN BEGIN 79
-  SAY ~I see... I will not embarrass you with my unwanted attention any more, I swear. ~
+  SAY ~I see... I will not embarrass you with my unwanted attention any more, I swear.~
   IF ~~ THEN DO ~SetGlobal("SimeRomanceActive","GLOBAL",3)~ EXIT
 END
 
@@ -1136,118 +839,61 @@ END
 IF ~~ THEN BEGIN 81
   SAY ~Imoen, let us make a deal: I will listen to your story tonight, and we will leave <CHARNAME> out of it.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 82
   SAY ~Imoen, I believe you. But let us make a deal: I will listen to your story tonight, and we will leave <CHARNAME> out of it, he seems to be turning greenish for some reason. You know how men are...~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 83
   SAY ~Imoen, I believe you. But let us make a deal: I will listen to your story tonight, and we will leave <CHARNAME> out of it, he seems to be turning greenish for some reason. You know how men are...~
   IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-!Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
-  IF ~InParty("Valygar")
-!Dead("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
-  IF ~InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+  IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+  IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
 END
 
 IF ~~ THEN BEGIN 93
@@ -1307,161 +953,76 @@ END
 IF ~~ THEN BEGIN TOL1
   SAY ~Irenicus had willfully damaged the Tree of Life. Thus he became an enemy of everyone with Elven blood in their veins. Irenicus had hurt and tormented a man I love. How many more reasons do you want me to give you? I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
+  IF ~InParty("Anomen") !Dead("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") !Dead("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") !Dead("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") !Dead("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Dead("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Dead("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Dead("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Dead("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
 END
 
 IF ~~ THEN BEGIN TOL2
   SAY ~No. Let's not waste words. I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
+  IF ~InParty("Anomen") !Dead("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") !Dead("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") !Dead("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") !Dead("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Dead("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Dead("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Dead("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Dead("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
 END
 
 IF ~~ THEN BEGIN TOL3
   SAY ~I am partaking readily and willingly. You are right, we do not have time to chat. Just give me a signal to attack.~
   IF ~True()~ THEN EXTERN ~PLAYER1~ 53
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
-  IF ~InParty("Anomen")
-!Dead("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
-  IF ~InParty("Aerie")
-!Dead("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
-  IF ~InParty("Viconia")
-!Dead("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
-  IF ~InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")
-Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
-  IF ~InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
+  IF ~InParty("Anomen") !Dead("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
+  IF ~InParty("Aerie") !Dead("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
+  IF ~InParty("Viconia") !Dead("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
+  IF ~InParty("Jaheira") !Dead("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
+  IF ~InParty("Anomen") !Dead("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
+  IF ~InParty("Aerie") !Dead("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
+  IF ~InParty("Viconia") !Dead("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
+  IF ~InParty("Jaheira") !Dead("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
+  IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~PLAYER1~ 44
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~PLAYER1~ 43
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~PLAYER1~ 42
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
+  IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~PLAYER1~ 39
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~PLAYER1~ 38
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~PLAYER1~ 36
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~PLAYER1~ 35
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
 END
 
-IF WEIGHT #-87 ~GlobalLT("AsylumPlot","GLOBAL",5)
-Global("simespeak","LOCALS",1)~ THEN BEGIN 115
+IF WEIGHT #-87 ~GlobalLT("AsylumPlot","GLOBAL",5) Global("simespeak","LOCALS",1)~ THEN BEGIN 115
   SAY ~Saemon looks nervous. Find out what he wants.~
   IF ~~ THEN EXIT
 END
@@ -1469,53 +1030,30 @@ END
 IF ~~ THEN BEGIN 116
   SAY ~I often said to myself when it was getting rough - it could be worst, it could be Nine Hells... But now I am afraid we are in Nine Hells. (*Shrugs*)~
   IF ~True()~ THEN EXIT
-  IF ~InParty("Edwin")
-See("Edwin")~ THEN EXTERN ~EDWINJ~ 95
-  IF ~InParty("Nalia")
-See("Nalia")~ THEN EXTERN ~NALIAJ~ 268
-  IF ~InParty("Keldorn")
-See("Keldorn")~ THEN EXTERN ~KELDORJ~ 189
-  IF ~InParty("Haerdalis")
-See("Haerdalis")~ THEN EXTERN ~HAERDAJ~ 100
-  IF ~InParty("Anomen")
-See("Anomen")~ THEN EXTERN ~ANOMENJ~ 258
-  IF ~InParty("Mazzy")
-See("Mazzy")~ THEN EXTERN ~MAZZYJ~ 166
-  IF ~InParty("Cernd")
-See("Cernd")~ THEN EXTERN ~CERNDJ~ 100
-  IF ~InParty("Jaheira")
-See("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 450
-  IF ~InParty("Yoshimo")
-See("Yoshimo")~ THEN EXTERN ~YOSHJ~ 90
-  IF ~InParty("Viconia")
-See("Viconia")~ THEN EXTERN ~VICONIJ~ 117
-  IF ~InParty("Jan")
-See("Jan")~ THEN EXTERN ~JANJ~ 147
-  IF ~InParty("Korgan")
-See("Korgan")~ THEN EXTERN ~KORGANJ~ 115
-  IF ~InParty("Valygar")
-See("Valygar")~ THEN EXTERN ~VALYGARJ~ 77
-  IF ~InParty("Minsc")
-See("Minsc")~ THEN EXTERN ~MINSCJ~ 155
-  IF ~InParty("Aerie")
-See("Aerie")~ THEN EXTERN ~AERIEJ~ 131
-  IF ~InParty("Imoen2")
-See("Imoen2")~ THEN EXTERN ~IMOEN2J~ 10
-  IF ~InParty("Kachiko")
-See("Kachiko")~ THEN EXTERN ~KACHIJ~ N55
-//  IF ~InParty("Dynaheir")
-//See("Dynaheir")~ THEN EXTERN ~DYNAJ~ TS03
-//  IF ~InParty("Coran")
-//See("Coran")~ THEN EXTERN ~CORANJ~ TS6
+  IF ~InParty("Edwin") See("Edwin")~ THEN EXTERN ~EDWINJ~ 95
+  IF ~InParty("Nalia") See("Nalia")~ THEN EXTERN ~NALIAJ~ 268
+  IF ~InParty("Keldorn") See("Keldorn")~ THEN EXTERN ~KELDORJ~ 189
+  IF ~InParty("Haerdalis") See("Haerdalis")~ THEN EXTERN ~HAERDAJ~ 100
+  IF ~InParty("Anomen") See("Anomen")~ THEN EXTERN ~ANOMENJ~ 258
+  IF ~InParty("Mazzy") See("Mazzy")~ THEN EXTERN ~MAZZYJ~ 166
+  IF ~InParty("Cernd") See("Cernd")~ THEN EXTERN ~CERNDJ~ 100
+  IF ~InParty("Jaheira") See("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 450
+  IF ~InParty("Yoshimo") See("Yoshimo")~ THEN EXTERN ~YOSHJ~ 90
+  IF ~InParty("Viconia") See("Viconia")~ THEN EXTERN ~VICONIJ~ 117
+  IF ~InParty("Jan") See("Jan")~ THEN EXTERN ~JANJ~ 147
+  IF ~InParty("Korgan") See("Korgan")~ THEN EXTERN ~KORGANJ~ 115
+  IF ~InParty("Valygar") See("Valygar")~ THEN EXTERN ~VALYGARJ~ 77
+  IF ~InParty("Minsc") See("Minsc")~ THEN EXTERN ~MINSCJ~ 155
+  IF ~InParty("Aerie") See("Aerie")~ THEN EXTERN ~AERIEJ~ 131
+  IF ~InParty("Imoen2") See("Imoen2")~ THEN EXTERN ~IMOEN2J~ 10
+  IF ~InParty("Kachiko") See("Kachiko")~ THEN EXTERN ~KACHIJ~ N55
+//  IF ~InParty("Dynaheir") //See("Dynaheir")~ THEN EXTERN ~DYNAJ~ TS03
+//  IF ~InParty("Coran") //See("Coran")~ THEN EXTERN ~CORANJ~ TS6
 END
 
 //FLIRTS - Phase A
 
-IF ~GlobalGT("LoveTalk","LOCALS",2)
-GlobalLT("LoveTalk","LOCALS",23)
-OR(2)
-	Global("SimeRomanceActive","GLOBAL",1)
-	Global("SimeRomanceActive","GLOBAL",2)~ THEN BEGIN flirts_A
+IF ~GlobalGT("LoveTalk","LOCALS",2) GlobalLT("LoveTalk","LOCALS",23) OR(2)  Global("SimeRomanceActive","GLOBAL",1)  Global("SimeRomanceActive","GLOBAL",2)~ THEN BEGIN flirts_A
   SAY ~(*You notice Sime approaching you with a smile on her lips. The two of you have become quite close lately, growing beyond that of simple companionship.*)~
   IF ~~ THEN REPLY ~(*Sime stands close to you and gently eases her body against yours for support. You wrap an arm firmly about her shoulder, and kiss the side of her head softly.*)~ GOTO flirt_14
   IF ~~ THEN REPLY ~(*Sime pulls your body to hers and hugs you close. She fits perfectly against you, as though your bodies had grown to come together in perfect harmony, like the pieces of a puzzle... As soon as you come into contact with each other, her breathing eases into a steady, content rhythm. It warms your heart to know you can soothe her in such a way.*)~ GOTO flirt_15
@@ -1524,77 +1062,65 @@ OR(2)
   IF ~~ THEN REPLY ~<CHARNAME>, I just wanted to thank you for allowing me to see the world with you. You have been a good friend to me  (*Sime smiles and clasps hands with yours*)...~ GOTO flirt_18
   IF ~~ THEN REPLY ~(*Sime giggles and bites at the tip of your nose playfully*)...~ GOTO flirt_19
   IF ~~ THEN REPLY ~(*Sime quickly inspects the straps of your traveling gear and pack. She notices that a strap is loose on your arm, and tightens it for you.*)~ GOTO flirt_20
-  IF ~AreaType(OUTDOOR)
-CheckStatLT(Player1,16,STR)~ THEN REPLY ~(*As the party silently walks down the beaten path, Sime decides to break the lull and pounces on your back.*)~ GOTO flirt_21a
-  IF ~AreaType(OUTDOOR)
-CheckStatGT(Player1,15,STR)~ THEN REPLY ~(*As the party silently walks down the beaten path, Sime decides to break the lull and pounces on your back.*)~ GOTO flirt_21b
+  IF ~AreaType(OUTDOOR) CheckStatLT(Player1,16,STR)~ THEN REPLY ~(*As the party silently walks down the beaten path, Sime decides to break the lull and pounces on your back.*)~ GOTO flirt_21a
+  IF ~AreaType(OUTDOOR) CheckStatGT(Player1,15,STR)~ THEN REPLY ~(*As the party silently walks down the beaten path, Sime decides to break the lull and pounces on your back.*)~ GOTO flirt_21b
 END
 
 IF ~~ THEN BEGIN flirt_14
-	SAY ~(*Sime turns her bright gaze upward into your eyes and, leaning into you, gives you an impassioned kiss to your lips.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime turns her bright gaze upward into your eyes and, leaning into you, gives you an impassioned kiss to your lips.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_15
-	SAY ~(*She kisses your cheek firmly before releasing you. You can't help but feel more empty now that she is out of your arms.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*She kisses your cheek firmly before releasing you. You can't help but feel more empty now that she is out of your arms.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_16
-	SAY ~(*You hope for more, but instead she turns her back to you, allowing you a splendid view of her graceful figure.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You hope for more, but instead she turns her back to you, allowing you a splendid view of her graceful figure.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_17
-	SAY ~(*She begins to quietly hum a random tune and turns away, pretending to occupy herself with cleaning her weapons while still watching you from the corner of her eye.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*She begins to quietly hum a random tune and turns away, pretending to occupy herself with cleaning her weapons while still watching you from the corner of her eye.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_18
-	SAY ~(*She gazes into your eyes with a look that mixes between wonder and affection, and runs her free hand down your cheek and jaw line, sending a slight shiver to course down your spine.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*She gazes into your eyes with a look that mixes between wonder and affection, and runs her free hand down your cheek and jaw line, sending a slight shiver to course down your spine.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_19
-	SAY ~(*Before you can ask what brought that on, she has already moved behind you, and wraps her arms wrapped around your neck, breathing contently.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Before you can ask what brought that on, she has already moved behind you, and wraps her arms wrapped around your neck, breathing contently.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_20
-	SAY ~(*She smiles and runs her hand down the length of your arm and over the back of your hand in a gentle caress.*) You must remember to keep your traveling equipment in proper order, though I do not mind lending a hand every now and then.~
-	IF ~~ THEN EXIT
+  SAY ~(*She smiles and runs her hand down the length of your arm and over the back of your hand in a gentle caress.*) You must remember to keep your traveling equipment in proper order, though I do not mind lending a hand every now and then.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_21a
-	SAY ~(*You lurch forward with a forlorn yelp, resigned to the fact that the hard ground is quite suddenly rushing up to meet you. Both you and Sime hit the dirt with a resounding smack, but Sime at least has a most convenient cushion for her fall.*)~
-=
-	~(*Sime giggles into your ear and whispers a half-hearted apology before kissing your temple. The pain from the fall vanishes from your mind as you roll under Sime and stare up into her smiling, beautiful features.*)~
-=
-	~Do you forgive me, <CHARNAME>? (*Sime wears her most innocent look, and trails a finger down your forehead and the length of your nose, stopping at your lips.*)~
-=
-	~(*She then leans down and kisses you very sweetly on the lips, causing your heart to beat fiercely and your stomach to tie in knots*)... I knew you would! ~
-=
-	~(*She lets you up then, allowing you to gather your equipment and the last bit of your dignity before hugging you tightly, and resuming her place in line.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You lurch forward with a forlorn yelp, resigned to the fact that the hard ground is quite suddenly rushing up to meet you. Both you and Sime hit the dirt with a resounding smack, but Sime at least has a most convenient cushion for her fall.*)~
+  = ~(*Sime giggles into your ear and whispers a half-hearted apology before kissing your temple. The pain from the fall vanishes from your mind as you roll under Sime and stare up into her smiling, beautiful features.*)~
+  = ~Do you forgive me, <CHARNAME>? (*Sime wears her most innocent look, and trails a finger down your forehead and the length of your nose, stopping at your lips.*)~
+  = ~(*She then leans down and kisses you very sweetly on the lips, causing your heart to beat fiercely and your stomach to tie in knots*)... I knew you would!~
+  = ~(*She lets you up then, allowing you to gather your equipment and the last bit of your dignity before hugging you tightly, and resuming her place in line.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_21b
-	SAY ~(*You stumble forward with a surprised yell, alerting the other party members who, at first think, you were attacked by some vicious animal. When they notice it is only a giggling Sime all they can do is roll their eyes.*)~
-=
-	~(*You manage to support the combined weight of Sime, along with both her and your own equipment.*)~
-=
-	~(*Sime bears no shame, and is giggling madly as you hoist her farther up your back, but you decide to turn the tables against her by reaching behind and grabbing her waist, and with a might swing, she is soon facing you and haning off of your hips.*)~
-=
-	~(*You mash a long and deep kiss upon her rosy lips, both out of pure desire and to stifle the incessant laughing she emits. After your reluctant parting, she slips down from your arms and hugs you tightly, before resuming pace with the rest of the party.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You stumble forward with a surprised yell, alerting the other party members who, at first think, you were attacked by some vicious animal. When they notice it is only a giggling Sime all they can do is roll their eyes.*)~
+  = ~(*You manage to support the combined weight of Sime, along with both her and your own equipment.*)~
+  = ~(*Sime bears no shame, and is giggling madly as you hoist her farther up your back, but you decide to turn the tables against her by reaching behind and grabbing her waist, and with a might swing, she is soon facing you and haning off of your hips.*)~
+  = ~(*You mash a long and deep kiss upon her rosy lips, both out of pure desire and to stifle the incessant laughing she emits. After your reluctant parting, she slips down from your arms and hugs you tightly, before resuming pace with the rest of the party.*)~
+  IF ~~ THEN EXIT
 END
 
 //FLIRTS - Phase B
 
-IF ~GlobalGT("LoveTalk","LOCALS",22)
-OR(2)
-	Global("SimeRomanceActive","GLOBAL",1)
-	Global("SimeRomanceActive","GLOBAL",2)~ THEN BEGIN flirts_B
+IF ~GlobalGT("LoveTalk","LOCALS",22) OR(2)  Global("SimeRomanceActive","GLOBAL",1)  Global("SimeRomanceActive","GLOBAL",2)~ THEN BEGIN flirts_B
   SAY ~(*You find your gaze wandering over to Sime. Her sweet disposition belies the crowd of grim Shadow Thieves you found her hanging around with, and you are eager to learn more about her.*)~
 /*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",0)~ THEN REPLY ~(*Admire Sime's exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",1)~ GOTO flirt_1a
 /*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",1)~ THEN REPLY ~(*Admire Sime's exquisite beauty and unmatched grace. You realize that you have never before come across such a fair and exotic woman in all of your travels.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",2)~ GOTO flirt_1b
@@ -1624,9 +1150,7 @@ OR(2)
 /*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",1)~ THEN REPLY ~(*Cup Sime's face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",2)~ GOTO flirt_9b
 /*9*/ IF ~Global("VP_Flirt_Option_9","LOCALS",2)~ THEN REPLY ~(*Cup Sime's face between your palms. You slide your tongue easily between full lips that part eagerly for you and massage her tongue with your own.*)~ DO ~SetGlobal("VP_Flirt_Option_9","LOCALS",0)~ GOTO flirt_9c
 /*10*/ IF ~AreaType(FOREST)~ THEN REPLY ~(*You present to Sime a branch of berries you found along a path earlier that morn. After carefully testing their flavor and safety, you tingle with excitement as Sime takes the berries from you.*)~ GOTO flirt_10
-/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",0)
-AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
-
+/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",0) AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 Lady of my life, gentle maiden of my dreams and fairy tails,
 Let this poor <PRO_MANWOMAN> be blessed by your touch,
 The feel of your featherlike hand across my skin
@@ -1637,9 +1161,7 @@ I am yours, my Sime
 Now, and forevermore.
 
 ~ DO ~SetGlobal("VP_Flirt_Option_11","LOCALS",1)~ GOTO flirt_11a
-/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",1)
-AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
-
+/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",1) AreaType(OUTDOOR)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 Sime, your beauty in this light
 And any light for that matter,
 Is unmatched by even the most
@@ -1655,276 +1177,233 @@ Like a thunderous underground waterfall
 In a shining, diamond cavern.
 
 ~ DO ~SetGlobal("VP_Flirt_Option_11","LOCALS",2)~ GOTO flirt_11b
-/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",2)
-AreaType(OUTDOOR)
-CheckStatLT(Player1,13,INT)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
-
+/*11*/ IF ~Global("VP_Flirt_Option_11","LOCALS",2) AreaType(OUTDOOR) CheckStatLT(Player1,13,INT)~ THEN REPLY ~(*The sun glistening off of Sime's honey hair inspires you to humble yourself before her, and recite lines of love and adoration to her.*)
 Uh... demons are red,
 Xvarts  are blue,
 The Abyss is really hot,
 ... and so are you!
 
 ~ DO ~SetGlobal("VP_Flirt_Option_11","LOCALS",0)~ GOTO flirt_11c
-/*12*/ IF ~Global("VP_Flirt_Option_12","LOCALS",0)
-AreaType(DUNGEON)~ THEN REPLY ~(*You notice that Sime seems a bit on edge as of late. You come up beside her and rest an arm about her small shoulders and pull her close to you. Sime looks up at you with gratitude, and you kiss the side of her head softly to comfort her*) Is everything well, my shining star?~ DO ~SetGlobal("VP_Flirt_Option_12","LOCALS",1)~ GOTO flirt_12a
-/*12*/ IF ~Global("VP_Flirt_Option_12","LOCALS",1)
-AreaType(DUNGEON)~ THEN REPLY ~(*You notice that Sime seems a bit on edge as of late. You come up beside her and rest an arm about her small shoulders and pull her close to you. Sime looks up at you with gratitude, and you kiss the side of her head softly to comfort her*) Is everything well, my shining star?~ DO ~SetGlobal("VP_Flirt_Option_12","LOCALS",0)~ GOTO flirt_12b
-/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",0)
-AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",1)~ GOTO flirt_13a
-/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",1)
-AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",2)~ GOTO flirt_13b
-/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",2)
-AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",0)~ GOTO flirt_13c
+/*12*/ IF ~Global("VP_Flirt_Option_12","LOCALS",0) AreaType(DUNGEON)~ THEN REPLY ~(*You notice that Sime seems a bit on edge as of late. You come up beside her and rest an arm about her small shoulders and pull her close to you. Sime looks up at you with gratitude, and you kiss the side of her head softly to comfort her*) Is everything well, my shining star?~ DO ~SetGlobal("VP_Flirt_Option_12","LOCALS",1)~ GOTO flirt_12a
+/*12*/ IF ~Global("VP_Flirt_Option_12","LOCALS",1) AreaType(DUNGEON)~ THEN REPLY ~(*You notice that Sime seems a bit on edge as of late. You come up beside her and rest an arm about her small shoulders and pull her close to you. Sime looks up at you with gratitude, and you kiss the side of her head softly to comfort her*) Is everything well, my shining star?~ DO ~SetGlobal("VP_Flirt_Option_12","LOCALS",0)~ GOTO flirt_12b
+/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",0) AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",1)~ GOTO flirt_13a
+/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",1) AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",2)~ GOTO flirt_13b
+/*13*/ IF ~Global("VP_Flirt_Option_13","LOCALS",2) AreaType(DUNGEON)~ THEN REPLY ~(*The party takes a short break in order to restore vitality through food and rest. A small campfire is built, and the blackened shadows swiftly retreat from the intrusion of the light. Sime stares into the flames, lost in thought.*)~ DO ~SetGlobal("VP_Flirt_Option_13","LOCALS",0)~ GOTO flirt_13c
 END
 
 IF ~~ THEN BEGIN flirt_1a
-	SAY ~(*Your eyes linger over the half-elf's features and body. You note the way her hair flows behind her like a sun-kissed cloth, how her eyes glitter whenever a laugh escapes her lips, and how the trials and tribulations you endure with her never seem to wipe a smile off of her fair face.*)~
-=
-	~(*Her eyes meet yours suddenly, causing your stomach to flutter. She tilts her head to the side and starts making silly faces at you, giggling when you feel your neck and ears heat in an embarrassed blush.*)~
-=
-	~I thought I heard you singing about love, <CHARNAME>. It was lovely enough, but your voice could use a bit of  tuning, however.~
-=
-	~(*Sime giggles at you, and you can only imagine how red your ears and neck must have turned.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Your eyes linger over the half-elf's features and body. You note the way her hair flows behind her like a sun-kissed cloth, how her eyes glitter whenever a laugh escapes her lips, and how the trials and tribulations you endure with her never seem to wipe a smile off of her fair face.*)~
+  = ~(*Her eyes meet yours suddenly, causing your stomach to flutter. She tilts her head to the side and starts making silly faces at you, giggling when you feel your neck and ears heat in an embarrassed blush.*)~
+  = ~I thought I heard you singing about love, <CHARNAME>. It was lovely enough, but your voice could use a bit of  tuning, however.~
+  = ~(*Sime giggles at you, and you can only imagine how red your ears and neck must have turned.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_1b
-	SAY ~(*Sime is currently walking ahead of you, making it easier for you to admire her without being noticed. The easy swaying of her hips and her graceful step are only a few of the great many things about her that you notice.*)~
-=
-	~(*You suddenly find yourself aching for her touch, and burning for the feel of her in your arms. Sime whirls suddenly and presses her mouth against yours, expertly slipping her tongue into your mouth. When the moment is over, she laughs heartily at your surprised expression.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime is currently walking ahead of you, making it easier for you to admire her without being noticed. The easy swaying of her hips and her graceful step are only a few of the great many things about her that you notice.*)~
+  = ~(*You suddenly find yourself aching for her touch, and burning for the feel of her in your arms. Sime whirls suddenly and presses her mouth against yours, expertly slipping her tongue into your mouth. When the moment is over, she laughs heartily at your surprised expression.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_1c
-	SAY ~(*Her glistening eyes captivate you as you stare into them. They each have their own inner glow as bright as a thousand suns.*)~
-=
-	~(*Your gaze wanders to the slight curve of her nose to her rich yet subtle lips. When you look back up to her eyes she finds herself staring straight back at you, making you blink in surprise.*)~
-=
-	~(*Sime giggles*) It seems I won that staring contest, <CHARNAME>!~
-	IF ~~ THEN EXIT
+  SAY ~(*Her glistening eyes captivate you as you stare into them. They each have their own inner glow as bright as a thousand suns.*)~
+  = ~(*Your gaze wanders to the slight curve of her nose to her rich yet subtle lips. When you look back up to her eyes she finds herself staring straight back at you, making you blink in surprise.*)~
+  = ~(*Sime giggles*) It seems I won that staring contest, <CHARNAME>!~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_2a
-	SAY ~(*You slowly reach out with your right hand toward her left, but pull away nervously. A moment later, you try to take her hand again but find yourself too nervous to go through with it, and you pull away yet again.*)~
-=
-	~(*Finally, you muster enough courage to reach for her a third time, but Sime snatches your hand in hers. Surprised, you look into her face and see her smiling.*)~
-=
-	~You should try and learn some more subtlety, <CHARNAME>. (*She says, tossing you a wink.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You slowly reach out with your right hand toward her left, but pull away nervously. A moment later, you try to take her hand again but find yourself too nervous to go through with it, and you pull away yet again.*)~
+  = ~(*Finally, you muster enough courage to reach for her a third time, but Sime snatches your hand in hers. Surprised, you look into her face and see her smiling.*)~
+  = ~You should try and learn some more subtlety, <CHARNAME>. (*She says, tossing you a wink.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_2b
-	SAY ~(*You wrap her free hand in your own, reveling in her touch.*)~
-=
-	~(*Sime looks to you in puzzlement, and politely releases herself from your grip*) I'm sorry, <CHARNAME>, it was sweet, but this isn't a good time.~
-	IF ~~ THEN EXIT
+  SAY ~(*You wrap her free hand in your own, reveling in her touch.*)~
+  = ~(*Sime looks to you in puzzlement, and politely releases herself from your grip*) I'm sorry, <CHARNAME>, it was sweet, but this isn't a good time.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_2c
-	SAY ~(*After interlocking your fingers with hers, Sime's hand trembles slightly at the sudden contact, but she does not pull away. The two of you walk on for a while as such, until she decisively turns and breaks your hold, in order to inspect her weapons and armor.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*After interlocking your fingers with hers, Sime's hand trembles slightly at the sudden contact, but she does not pull away. The two of you walk on for a while as such, until she decisively turns and breaks your hold, in order to inspect her weapons and armor.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_3a
-	SAY ~(*Sime at first doesn't react to the sudden brush of your lips on hers, as if she isn't quite certain of what just happened. She quickly regains her composure and yanks her head back, looking at you with a dark expression on her face.*)~
-=
-	~Look, <CHARNAME>, you have been very kind to me so far, but I do not think I'm prepared to advance our...relationship...that far yet.~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime at first doesn't react to the sudden brush of your lips on hers, as if she isn't quite certain of what just happened. She quickly regains her composure and yanks her head back, looking at you with a dark expression on her face.*)~
+  = ~Look, <CHARNAME>, you have been very kind to me so far, but I do not think I'm prepared to advance our...relationship...that far yet.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_3b
-	SAY ~(*Sime's lips lock with yours for a brief moment. You are nearly overcome by the sweetness of the moment, but Sime soon breaks away before any further advancement.*)~
-=
-	~Ah, <CHARNAME>, what exactly have you been drinking as of late?~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime's lips lock with yours for a brief moment. You are nearly overcome by the sweetness of the moment, but Sime soon breaks away before any further advancement.*)~
+  = ~Ah, <CHARNAME>, what exactly have you been drinking as of late?~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_3c
-	SAY ~(*To your surprise, Sime returns your kiss. It is not the sensual kiss of lovers, but it is more than the formal peck of friends as well. The two of you part quickly, and you feel your heart pounding in your chest. You look to Sime, only to find that she has turned and is walking away from you.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*To your surprise, Sime returns your kiss. It is not the sensual kiss of lovers, but it is more than the formal peck of friends as well. The two of you part quickly, and you feel your heart pounding in your chest. You look to Sime, only to find that she has turned and is walking away from you.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_4a
-	SAY ~(*You hungrily begin kissing Sime on her forehead, then moving down to her eyelids and the very tip of her nose. She does not pull away or resist your attention, until you reach her neck and upper chest.*)~
-=
-	~(*She lightly but firmly pushes you away, a clear message in her eyes warning you to keep your hands to yourself.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You hungrily begin kissing Sime on her forehead, then moving down to her eyelids and the very tip of her nose. She does not pull away or resist your attention, until you reach her neck and upper chest.*)~
+  = ~(*She lightly but firmly pushes you away, a clear message in her eyes warning you to keep your hands to yourself.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_4b
-	SAY ~(*You kiss both of Sime's cheeks, and then her nose. You do not get much farther than that, for she pulls back, trying to suppress a giggle.*)~
-=
-	~I'm sorry <CHARNAME>, but I'm ticklish there!~
-	IF ~~ THEN EXIT
+  SAY ~(*You kiss both of Sime's cheeks, and then her nose. You do not get much farther than that, for she pulls back, trying to suppress a giggle.*)~
+  = ~I'm sorry <CHARNAME>, but I'm ticklish there!~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_4c
-	SAY ~(*Sime presses her hand on the back of your head, pulling you closer and encouraging your assault. You stop your affectionate kisses at the base of her neck and pull back, beaming at her. Sime rewards you with a long and deep kiss to your lips.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime presses her hand on the back of your head, pulling you closer and encouraging your assault. You stop your affectionate kisses at the base of her neck and pull back, beaming at her. Sime rewards you with a long and deep kiss to your lips.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_5a
-	SAY ~Thank you, <CHARNAME>. I enjoy being with you as well, but remember, I'm also here for my own reasons, not just for bringing pleasure to you.~
-	IF ~~ THEN EXIT
+  SAY ~Thank you, <CHARNAME>. I enjoy being with you as well, but remember, I'm also here for my own reasons, not just for bringing pleasure to you.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_5b
-	SAY ~And I am glad as well. I much prefer your company than a guild of pickpockets and thieves.~
-	IF ~~ THEN EXIT
+  SAY ~And I am glad as well. I much prefer your company than a guild of pickpockets and thieves.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_5c
-	SAY ~Why thank you, <CHARNAME>. I do my best to aid you, and it pleases me to hear I am doing well.~
-	IF ~~ THEN EXIT
+  SAY ~Why thank you, <CHARNAME>. I do my best to aid you, and it pleases me to hear I am doing well.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_6a
-	SAY ~(*Sime rests her body against yours with a gentle grace. Her light breathing caresses the neck of your skin as you hold her close, causing a tingle to run up your spine.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime rests her body against yours with a gentle grace. Her light breathing caresses the neck of your skin as you hold her close, causing a tingle to run up your spine.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_6b
-	SAY ~(*You seem to have picked the perfect moment to give Sime comfort, for she clings to you with desperation.*)~
-=
-	~(*Sime balls her hands into fists while she grips your clothing tightly, and softly whispers something into your shoulder*) Mielikki, bless you.~
-	IF ~~ THEN EXIT
+  SAY ~(*You seem to have picked the perfect moment to give Sime comfort, for she clings to you with desperation.*)~
+  = ~(*Sime balls her hands into fists while she grips your clothing tightly, and softly whispers something into your shoulder*) Mielikki, bless you.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_6c
-	SAY ~(*Sime nuzzles her nose against your neck as you hold each other. You are suddenly overcome in a wave of warmth and care, and from the way that Sime holds you as though making sure you are real, you can tell she is experiencing the same.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime nuzzles her nose against your neck as you hold each other. You are suddenly overcome in a wave of warmth and care, and from the way that Sime holds you as though making sure you are real, you can tell she is experiencing the same.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_7a
-	SAY ~(*Sime is distracted momentarily by the attention, but she quickly grips your wandering hands by the wrists and pushes you back.*)~
-=
-	~Do not... do not touch me that way, <CHARNAME>.~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime is distracted momentarily by the attention, but she quickly grips your wandering hands by the wrists and pushes you back.*)~
+  = ~Do not... do not touch me that way, <CHARNAME>.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_7b
-	SAY ~(*Sime slaps your hands away from her body angrily*) I am not an object, <CHARNAME>. Do not treat me as something to be manhandled as such.~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime slaps your hands away from her body angrily*) I am not an object, <CHARNAME>. Do not treat me as something to be manhandled as such.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_7c
-	SAY ~(*You reach towards Sime, but she turns away unexpectedly, making your hands bump into her back. She turns her head around and gazes at you warily, but softens her visage quickly.*)~
-=
-	~(*Sime leans backward into you and presses her back against your stomach while wrapping your arms around her*) You could have just asked if you wanted a hug, <CHARNAME>.~
-=
-	~(*Though it is not exactly what you had in mind, the hug is still quite intimate.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You reach towards Sime, but she turns away unexpectedly, making your hands bump into her back. She turns her head around and gazes at you warily, but softens her visage quickly.*)~
+  = ~(*Sime leans backward into you and presses her back against your stomach while wrapping your arms around her*) You could have just asked if you wanted a hug, <CHARNAME>.~
+  = ~(*Though it is not exactly what you had in mind, the hug is still quite intimate.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_8a
-	SAY ~(*Sime welcomes your touch and closes her eyes and smiles to herself as you stroke and play with her hair.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime welcomes your touch and closes her eyes and smiles to herself as you stroke and play with her hair.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_8b
-	SAY ~(*Sime smiles mischievously, then she flips her head about, sending her hair flying into your face. Sime laughs sweetly as the loose strands momentarily blind your eyes, and as you sputter to remove the pieces of hair that flew into your mouth.*)~
-=
-	~I'm sorry, <CHARNAME>, it was just too tempting! And you know I love to tease you. (*Sime kisses you once, then twice on the lips in an effort to apologize.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime smiles mischievously, then she flips her head about, sending her hair flying into your face. Sime laughs sweetly as the loose strands momentarily blind your eyes, and as you sputter to remove the pieces of hair that flew into your mouth.*)~
+  = ~I'm sorry, <CHARNAME>, it was just too tempting! And you know I love to tease you. (*Sime kisses you once, then twice on the lips in an effort to apologize.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_8c
-	SAY ~(*Sime reaches out slowly and likewise runs her fingers through your hair. Her soft stroking soothes you, and you feel at peace. She looks as if she wants to say something, but seems to be afraid of spoiling the moment. Instead, she compromises by leaning forward and moves up and down the side of your neck leaving soft, wet kisses in her wake.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime reaches out slowly and likewise runs her fingers through your hair. Her soft stroking soothes you, and you feel at peace. She looks as if she wants to say something, but seems to be afraid of spoiling the moment. Instead, she compromises by leaning forward and moves up and down the side of your neck leaving soft, wet kisses in her wake.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_9a
-	SAY ~(*Sime's breath quickens in your mouth and she presses against you with a fierce and fiery passion. Your tongues fight each other in a playful match for dominance of the other's mouth.*)~
-=
-	~(*Your parting is slow and breathless, and Sime's eyes speak an unfathomable amount of trust and dedication for you.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime's breath quickens in your mouth and she presses against you with a fierce and fiery passion. Your tongues fight each other in a playful match for dominance of the other's mouth.*)~
+  = ~(*Your parting is slow and breathless, and Sime's eyes speak an unfathomable amount of trust and dedication for you.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_9b
-	SAY ~(*Sime's reaction is initially slow, but the passion between you two builds wonderfully quickly.*)~
-=
-	~You make me so happy, <CHARNAME>... (*Sime manages to say between chaste kisses. You make certain that your responding kiss tells her of all the adoration you hold for her as well.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime's reaction is initially slow, but the passion between you two builds wonderfully quickly.*)~
+  = ~You make me so happy, <CHARNAME>... (*Sime manages to say between chaste kisses. You make certain that your responding kiss tells her of all the adoration you hold for her as well.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_9c
-	SAY ~(*Sime moves her head backwards denying you the sweetness of her mouth for a moment and tries to speak to you when you suddenly press your mouth on hers, and her words flow into your mouth as an incoherent stream of sound.*)~
-=
-	~(*Her tongue rolls over yours in a wild and beautiful dance inside your mouth*)...~
-=
-	~(*When you finally break the embrace, she grins widely while catching her breath*)... I was just about to say that it had been a while since you last kissed me, <CHARNAME>. Are you certain that one of your gifts as a Bhaalspawn isn't telepathy?~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime moves her head backwards denying you the sweetness of her mouth for a moment and tries to speak to you when you suddenly press your mouth on hers, and her words flow into your mouth as an incoherent stream of sound.*)~
+  = ~(*Her tongue rolls over yours in a wild and beautiful dance inside your mouth*)...~
+  = ~(*When you finally break the embrace, she grins widely while catching her breath*)... I was just about to say that it had been a while since you last kissed me, <CHARNAME>. Are you certain that one of your gifts as a Bhaalspawn isn't telepathy?~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_10
-	SAY ~(*Sime teases you delightfully. She carefully plucks a berry from the branch, and rolls it betwixt her fingers. She brings it to her nose, and smells it slowly. Then, she runs the berry over her succulent lips, slipping her tongue from her mouth and tasting the sweetness of the fruit.*)~
-=
-	~(*You think you hear a pitiful whimpering, and only then you realize it is coming from you. Sime ends her game by slowly inserting the fruit into her delicate mouth, and reverentially chews it before swallowing.*)~
-=
-	~(*She giggles while looking at you, then spits the pit out so that it bounces off of your sweating forehead*)... Mmm, delicious, <CHARNAME>...~
-=
-	~(*You groan in exasperation and surrender the rest of the branch to her.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime teases you delightfully. She carefully plucks a berry from the branch, and rolls it betwixt her fingers. She brings it to her nose, and smells it slowly. Then, she runs the berry over her succulent lips, slipping her tongue from her mouth and tasting the sweetness of the fruit.*)~
+  = ~(*You think you hear a pitiful whimpering, and only then you realize it is coming from you. Sime ends her game by slowly inserting the fruit into her delicate mouth, and reverentially chews it before swallowing.*)~
+  = ~(*She giggles while looking at you, then spits the pit out so that it bounces off of your sweating forehead*)... Mmm, delicious, <CHARNAME>...~
+  = ~(*You groan in exasperation and surrender the rest of the branch to her.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_11a
-	SAY ~(*You think you see a tear well in one of Sime's eyes, but she blinks it away.*)~
-=
-	~That was... wonderful <CHARNAME>, but know you that I am not one to condone slavery. (*She giggles*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You think you see a tear well in one of Sime's eyes, but she blinks it away.*)~
+  = ~That was... wonderful <CHARNAME>, but know you that I am not one to condone slavery. (*She giggles*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_11b
-	SAY ~(*Thank... thank you, <CHARNAME>. That was much better than the one lined poems some of the Shadow Thieves would grant me... I did not know you felt so much about me.*)~
-=
-	~(*She looks as if she wants to say something to tease you, but thinks better of it. This is a rare moment when Sime actually doesn't have a clever retort to give... you must have touched her deeply indeed.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Thank... thank you, <CHARNAME>. That was much better than the one lined poems some of the Shadow Thieves would grant me... I did not know you felt so much about me.*)~
+  = ~(*She looks as if she wants to say something to tease you, but thinks better of it. This is a rare moment when Sime actually doesn't have a clever retort to give... you must have touched her deeply indeed.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_11c
-	SAY ~Umm... thank you, <CHARNAME>. Please tell me that you didn't spend all day thinking of that one.~
-	IF ~~ THEN EXIT
+  SAY ~Umm... thank you, <CHARNAME>. Please tell me that you didn't spend all day thinking of that one.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_12a
-	SAY ~(*Sime smiles at you and snuggles closer to you*)... Everything is all right now, my walking headrest. (*She accentuates her claim by resting her head against your shoulder, humming gently to herself.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*Sime smiles at you and snuggles closer to you*)... Everything is all right now, my walking headrest. (*She accentuates her claim by resting her head against your shoulder, humming gently to herself.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_12b
-	SAY ~Hmm? Oh... of course, I am fine. I thought I smelled undead... I always become distant when the air tastes of the stench of a mummy or vampire. I have never taken a liking to them...~
-=
-	~(*Sime's distracted look returns to her countenance, but you decide to respect her privacy and not press it any further.*)~
-	IF ~~ THEN EXIT
+  SAY ~Hmm? Oh... of course, I am fine. I thought I smelled undead... I always become distant when the air tastes of the stench of a mummy or vampire. I have never taken a liking to them...~
+  = ~(*Sime's distracted look returns to her countenance, but you decide to respect her privacy and not press it any further.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_13a
-	SAY ~(*You begin singing a well-known song of valor and love, seeing if the rest of the group will join in.*)~
-=
-	~(*No one else joins in with your singing, but the mood does seem to lighten because of it. Sime, however, continues to stare into the flames.*)~
-=
-	~(*Undaunted, you raise the tone of your voice and change the fair lady's name in the song to 'Sime'. You certainly arouse her attention then, and she shakes her head almost resolutely. Seeing you falter in your singing brings a tired, but genuine smile to her face, a reward in itself  for your efforts.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You begin singing a well-known song of valor and love, seeing if the rest of the group will join in.*)~
+  = ~(*No one else joins in with your singing, but the mood does seem to lighten because of it. Sime, however, continues to stare into the flames.*)~
+  = ~(*Undaunted, you raise the tone of your voice and change the fair lady's name in the song to 'Sime'. You certainly arouse her attention then, and she shakes her head almost resolutely. Seeing you falter in your singing brings a tired, but genuine smile to her face, a reward in itself  for your efforts.*)~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_13b
-	SAY ~(*You playfully toss a pebble in her direction.*)~
-=
-	~(*Sime's head shoots up after the pebble bounces harmlessly off of her. You try to suppress a laugh, but to no avail. At first she glares at you in hurt and betrayal, but then it seems she decides she is being too serious and mediocre for her own good.*)~
-=
-	~(*Sime quickly retaliates by launching a barrage of small stones and pebbles back at you, making you squirm and wriggle in surprise. It then becomes a full-fledged throwing contest, and you are soon resorting to food, wrappers, and even the occasional pillow.*)~
-=
-	~(*By the end of your play, you and Sime are laying side by side giggling and laughing at each other's expense. Sime sits up on her elbows, leaning over you. She then leans down and kisses you softly, sliding her tongue against yours*)...~
-=
-	~I feel better now, <CHARNAME>, thank you.~
-	IF ~~ THEN EXIT
+  SAY ~(*You playfully toss a pebble in her direction.*)~
+  = ~(*Sime's head shoots up after the pebble bounces harmlessly off of her. You try to suppress a laugh, but to no avail. At first she glares at you in hurt and betrayal, but then it seems she decides she is being too serious and mediocre for her own good.*)~
+  = ~(*Sime quickly retaliates by launching a barrage of small stones and pebbles back at you, making you squirm and wriggle in surprise. It then becomes a full-fledged throwing contest, and you are soon resorting to food, wrappers, and even the occasional pillow.*)~
+  = ~(*By the end of your play, you and Sime are laying side by side giggling and laughing at each other's expense. Sime sits up on her elbows, leaning over you. She then leans down and kisses you softly, sliding her tongue against yours*)...~
+  = ~I feel better now, <CHARNAME>, thank you.~
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN flirt_13c
-	SAY ~(*You do nothing.*)~
-=
-	~(*Sime glances up at you from time to time, shifting her gaze from the fire to your face. After a moment of more contemplation, she turns away, and settles into her bedroll, and is soon asleep.*)~
-	IF ~~ THEN EXIT
+  SAY ~(*You do nothing.*)~
+  = ~(*Sime glances up at you from time to time, shifting her gaze from the fire to your face. After a moment of more contemplation, she turns away, and settles into her bedroll, and is soon asleep.*)~
+  IF ~~ THEN EXIT
 END
 
 // TOB
@@ -1971,25 +1450,16 @@ END
 IF ~~ THEN BEGIN TSTOB7
   SAY ~I will not hold you, <CHARNAME>. I love you, but your destiny... It is beyond any words I have at my disposal. You were destined for greatness, you were born into it. What is one woman's desire to hold you close every night compare to that?~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
-  IF ~InParty("Valygar")
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
-  IF ~InParty("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
+  IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
+  IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
   IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
-  IF ~InParty("Sarevok")
-!Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
-  IF ~InParty("Sarevok")
-Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
+  IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
+  IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
   IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
   IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
@@ -1999,8 +1469,8 @@ Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
   IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
-//  IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
-//  IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
+//IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
+//IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
   IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
@@ -2008,21 +1478,14 @@ END
 IF ~~ THEN BEGIN TSTOB8
   SAY ~I must be feeling really special now for sharing the bedroll of the <PRO_LADYLORD> of Murder. Oh, Nine Hells! What's done is done. Hopefully my father does not aspire to take Mask's place. For he is the only person I love left on this plane of existence.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 33
-  IF ~InParty("Valygar")
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 11
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 20
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 18
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 20
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 18
+  IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 11
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 20
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 18
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 20
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 18
   IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 18
-  IF ~InParty("Sarevok")
-Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 4
-  IF ~InParty("Sarevok")
-!Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 6
+  IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 4
+  IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 6
 END
 
 IF ~~ THEN BEGIN TSTOB9
@@ -2038,31 +1501,19 @@ END
 IF ~~ THEN BEGIN TSTOB10
   SAY ~You are going to ascend, won't you? You have proven a person of goodness and wisdom. Such a person can succeed in changing the dark domain of the Lord of Murder.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
-  IF ~InParty("Valygar")
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
-  IF ~InParty("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
+  IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
+  IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
   IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
-  IF ~InParty("Sarevok")
-!Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
-  IF ~InParty("Sarevok")
-Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
+  IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
+  IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
   IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
   IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
@@ -2072,8 +1523,8 @@ Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
   IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
-//  IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
-//  IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
+//IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
+//IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
   IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
@@ -2081,31 +1532,19 @@ END
 IF ~~ THEN BEGIN TSTOB11
   SAY ~I know that you have power and blood of a god, but the Lord of Murder's domain is a dark one. I... I hope you will not make it darker still.~
   IF ~True()~ THEN EXTERN ~FINSOL01~ 28
-  IF ~InParty("Valygar")
-Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
-  IF ~InParty("Anomen")
-Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
-  IF ~InParty("Viconia")
-Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
-  IF ~InParty("Aerie")
-Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
-  IF ~InParty("Jaheira")
-Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
-  IF ~InParty("Valygar")
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
-  IF ~InParty("Anomen")
-!Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
-  IF ~InParty("Viconia")
-!Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
-  IF ~InParty("Aerie")
-!Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
-  IF ~InParty("Jaheira")
-!Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
+  IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
+  IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
+  IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
+  IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
+  IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
+  IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
+  IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
+  IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
+  IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
+  IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
   IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
-  IF ~InParty("Sarevok")
-!Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
-  IF ~InParty("Sarevok")
-Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
+  IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
+  IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
   IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
   IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
@@ -2115,8 +1554,8 @@ Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
   IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
-//  IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
-//  IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
+//IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
+//IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
   IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
@@ -2147,44 +1586,44 @@ IF ~~ THEN BEGIN TSTOB16
 END
 
 IF ~~ THEN BEGIN Kelem0 //224
-	SAY ~What is it, where am I? There is cold and no trace of life. What is this horrible place?~
-  	IF ~~ THEN REPLY ~This is the plan of Kelemvor, Sime.~ GOTO Kelem1
-  	IF ~~ THEN REPLY ~This is a bad place for priestesses of Mielikki, Sime. Here... Here are only dead.~ GOTO Kelem1
-  	IF ~~ THEN REPLY ~Hunter turned into victim.~ GOTO Kelem2
+  SAY ~What is it, where am I? There is cold and no trace of life. What is this horrible place?~
+  IF ~~ THEN REPLY ~This is the plan of Kelemvor, Sime.~ GOTO Kelem1
+  IF ~~ THEN REPLY ~This is a bad place for priestesses of Mielikki, Sime. Here... Here are only dead.~ GOTO Kelem1
+  IF ~~ THEN REPLY ~Hunter turned into victim.~ GOTO Kelem2
 END
 
 IF ~~ THEN BEGIN Kelem1
-	SAY ~So this is how that world looks like! Of course. I should have guessed. You placed the ring on a finger, turned into a fury and killed us all with such ease. But why?~  	
-  	IF ~~ THEN REPLY ~I don't know. Why would I kill you? We are comrades in arms. But the ring ... it drove me crazy. I was not I, Sime.~ GOTO Kelem3
-  	IF ~~ THEN REPLY ~I was not I, Sime. That was Bhaal wearing my skin who killed you.~ GOTO Kelem3  	
-END 	
+  SAY ~So this is how that world looks like! Of course. I should have guessed. You placed the ring on a finger, turned into a fury and killed us all with such ease. But why?~
+  IF ~~ THEN REPLY ~I don't know. Why would I kill you? We are comrades in arms. But the ring ... it drove me crazy. I was not I, Sime.~ GOTO Kelem3
+  IF ~~ THEN REPLY ~I was not I, Sime. That was Bhaal wearing my skin who killed you.~ GOTO Kelem3
+END
 
 IF ~~ THEN BEGIN Kelem2
-	SAY ~(Shudders) Bad joke.~
-  	IF ~~ THEN REPLY ~Sorry, Sime. Indeed, bad joke, I agree. I ... I do not know what to say for myself, Sime. The ring of Cyric is to be blamed.~ GOTO Kelem3
-  	IF ~~ THEN REPLY ~Sorry, Sime. Let's get out of here, to light and life.~ GOTO Kelem4  	
-END 	
+  SAY ~(Shudders) Bad joke.~
+  IF ~~ THEN REPLY ~Sorry, Sime. Indeed, bad joke, I agree. I ... I do not know what to say for myself, Sime. The ring of Cyric is to be blamed.~ GOTO Kelem3
+  IF ~~ THEN REPLY ~Sorry, Sime. Let's get out of here, to light and life.~ GOTO Kelem4
+END
 
 IF ~~ THEN BEGIN Kelem3
-	SAY ~(Supprisingly) You thought that the ring of Cyric would allow you to remove the curse from Keldorn? The curse put by the priest of same Cyric?~
-  	IF ~~ THEN REPLY ~Yes, it was stupid. But Kelemvor has already taken the ring, so that we can get out of here. He lets us go.~ GOTO Kelem4	
-END 	
+  SAY ~(Supprisingly) You thought that the ring of Cyric would allow you to remove the curse from Keldorn? The curse put by the priest of same Cyric?~
+  IF ~~ THEN REPLY ~Yes, it was stupid. But Kelemvor has already taken the ring, so that we can get out of here. He lets us go.~ GOTO Kelem4
+END
 
 IF ~~ THEN BEGIN Kelem4
-	SAY ~Yes, yes! Let's go quickly to the sun and fresh air.~	  	  	
-  	IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  	IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
-  	IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
-  	IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
-  	IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
-  	IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
-  	IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
-  	IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
-  	IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kelem0
-  	IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kelem0
-  	IF ~InParty("Cernd")~ THEN EXTERN ~CERNDJ~ Kelem0
-  	IF ~InParty("Nalia")~ THEN EXTERN ~NALIAJ~ Kelem0
-  	IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ Kelem0
+  SAY ~Yes, yes! Let's go quickly to the sun and fresh air.~
+  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
+  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
+  IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
+  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
+  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
+  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
+  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
+  IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kelem0
+  IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kelem0
+  IF ~InParty("Cernd")~ THEN EXTERN ~CERNDJ~ Kelem0
+  IF ~InParty("Nalia")~ THEN EXTERN ~NALIAJ~ Kelem0
+  IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ Kelem0
 END
 
 IF ~~ THEN BEGIN sailoff1
@@ -2210,131 +1649,70 @@ END
 IF ~~ THEN BEGIN NEJ117
   SAY ~I know the road to Ulcaster, <CHARNAME>, it was once fraught with bandits until you rid the area of their pestilence. I hope the journey back does not hold too many unpleasant memories for you.~
   IF ~True()~ THEN EXTERN ~HROTHJ~ 60
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko")
-!InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 12
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ185
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ310
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ186
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ252
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ222
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ188
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ185
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ310
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ186
 END
 
 IF ~~ THEN BEGIN NEJ118
   SAY ~It seems that all who travel with you, <CHARNAME>, are bound to be touched by mystery and intrigue. This journey that we take with you into the past is sure to be one of many intrigues this group will face.~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
-  IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
-  IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
-  IF ~InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
-  IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
-  IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
-  IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
-  IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ189
-  IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ311
-  IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ187
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
+  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
+  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ253
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ223
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ189
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ189
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ311
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ187
 END
 
 IF ~~ THEN BEGIN NEJ119
   SAY ~May Mielikki look into my heart and know I do this only to aid the search for an unfortunate girl.~
-	IF ~True()~ THEN EXIT
-	IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
-	IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
-	IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
-	IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
-	IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
-	IF ~InParty("Dar")
-!Dead("Dar")~ THEN EXTERN ~DARJ~ 70
+  IF ~True()~ THEN EXIT
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
+  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
+  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 70
 END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Taffic, I am sorry for I know of no spells that will heal the misery that I see in the face of the beast you that you have become.~
  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko")
-InParty("Yoshimo")
-!Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo")
-InParty("Kachiko")
-!Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora")
-!Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
- IF ~InParty("Valygar")
-!Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
- IF ~InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
-  IF ~InParty("Nalia")
-!Dead("Nalia")
-OR(2)
-Global("EnteredAR1304","GLOBAL",1)
-!Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
- IF ~InParty("Keldorn")
-!Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
- IF ~InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
- IF ~InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
- IF ~InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ tafficuh
- IF ~InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ tafficuh
- IF ~InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ tafficuh
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
+ IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
+ IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+ IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
+ IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
+ IF ~InParty("Nalia") !Dead("Nalia") OR(2) Global("EnteredAR1304","GLOBAL",1) !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ tafficuh
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ tafficuh
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ tafficuh
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ tafficuh
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ tafficuh
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ tafficuh
 END

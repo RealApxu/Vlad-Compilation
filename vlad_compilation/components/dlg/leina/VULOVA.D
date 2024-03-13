@@ -1,17 +1,13 @@
 BEGIN ~VULOVA~
 
-IF ~NumTimesTalkedTo(0)
-~ THEN BEGIN 0 // from:
+IF ~NumTimesTalkedTo(0) ~ THEN BEGIN 0 // from:
   SAY ~What? Who are you? I demand to know what you are doing in here!~ /* #35084 */
   IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~Fine. I am here to kill you and to blame your murder on the Shadow Thieves.~ /* #35085 */ GOTO 1
   IF ~~ THEN REPLY ~Nothing. Sorry to have disturbed you. I'll be going now.~ /* #35086 */ GOTO 2
   IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~I have been sent to kill you, but if you hide yourself for a time I may not have to.~ /* #35087 */ GOTO 3
-  IF ~Global("BodhiJob","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I am <CHARNAME>, and I am looking for Leina.~ GOTO 13
-  IF ~Global("BodhiJob","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~Are you Senior Armagaran Vulova? Samuel Thunderburp, the bartender of The Five Flagons was concerned for Leina's safety and bid us to find her.~ GOTO 13
-  IF ~Global("BodhiJob","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~You must be Armagaran Vulova. We were promised a reward by the old barkeep of The Five Flagons if we found your daughter safe.~ GOTO 13
+  IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I am <CHARNAME>, and I am looking for Leina.~ GOTO 13
+  IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~Are you Senior Armagaran Vulova? Samuel Thunderburp, the bartender of The Five Flagons was concerned for Leina's safety and bid us to find her.~ GOTO 13
+  IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~You must be Armagaran Vulova. We were promised a reward by the old barkeep of The Five Flagons if we found your daughter safe.~ GOTO 13
 END
 
 IF ~~ THEN BEGIN 1 // from: 0.0
@@ -41,12 +37,7 @@ END
 IF ~~ THEN BEGIN 5 // from: 5.2 5.1 3.1 1.1
   SAY ~No! Guards! To my side! Please!~ /* #35104 */
   IF ~GlobalGT("VP_ResqueLeina","GLOBAL",7)~ THEN REPLY ~One moment Vulova, before you turn on me, what of your daughter, what of Leina? Do you deny that she is here?~ GOTO 10
-  IF ~GlobalLT("VP_ResqueLeina","GLOBAL",8)~ THEN DO ~Shout(89)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-Enemy()
-~ EXIT
+  IF ~GlobalLT("VP_ResqueLeina","GLOBAL",8)~ THEN DO ~Shout(89) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) Enemy() ~ EXIT
 END
 
 IF ~~ THEN BEGIN 6 // from: 5.0
@@ -67,12 +58,7 @@ END
 
 IF ~~ THEN BEGIN 9 // from: 7.0
   SAY ~Guards! Kill them while I run! Now!~ /* #35126 */
-  IF ~~ THEN DO ~Shout(89)
-SetGlobal("FailedBodhi2","GLOBAL",1)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-EscapeArea()~ UNSOLVED_JOURNAL ~Perform Bodhi's tasks to receive her aid.
+  IF ~~ THEN DO ~Shout(89) SetGlobal("FailedBodhi2","GLOBAL",1) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) EscapeArea()~ UNSOLVED_JOURNAL ~Perform Bodhi's tasks to receive her aid.
 
 I decided to give the merchant Vulova a chance to run and hide somewhere, instead of being forced to kill him.  He was ungrateful enough to sic his guards on me, but at least he's gone.  Now all that remains is to return to Bodhi and hope that she's fooled by my ruse.~ /* #22930 */ EXIT
 END
@@ -93,11 +79,7 @@ END
 
 IF ~~ THEN BEGIN 12 // from: 7.0
   SAY ~Liar! You take me for a fool! Do you think that I do not know what manner of creature has sent you here, or that your purpose is to ensure that neither I nor my daughter remain alive? You may take me but you will not find Leina!~
-  IF ~~ THEN DO ~Shout(89)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~Shout(89) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 13
@@ -116,9 +98,5 @@ END
 
 IF ~~ THEN BEGIN 15
   SAY ~Liar! You take me for a fool! Do you think that I do not know that your purpose is to ensure that neither I nor my daughter remain alive? You may take me but you will not find Leina!~
-  IF ~~ THEN DO ~Shout(89)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~Shout(89) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VulGuard",Player1,0,0,0) Enemy()~ EXIT
 END

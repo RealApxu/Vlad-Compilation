@@ -14,11 +14,9 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~Silence whilst I speak! The tomb of one of our most honoured masters has been desecrated, his body stolen for what hellish purpose I can only imagine. His body must be found before the fiend has chance to desecrate it further.~
-	IF ~True()~ THEN GOTO 2
-  IF ~!Dead("Hrothgar")
-InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 385
-  IF ~!Dead("Leina")
-InParty("Leina")~ THEN EXTERN ~LEINAJ~ 130
+  IF ~True()~ THEN GOTO 2
+  IF ~!Dead("Hrothgar") InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 385
+  IF ~!Dead("Leina") InParty("Leina")~ THEN EXTERN ~LEINAJ~ 130
 END
 
 IF ~~ THEN BEGIN 2
@@ -39,19 +37,14 @@ END
 IF ~~ THEN BEGIN 4
   SAY ~Well, if you should see or hear anything come straight to me, I am Kharesse by the way. I will turn this academy upside down and inside out, I will find the fiend responsible for this sacrilege!~
   IF ~True()~ THEN DO ~EscapeArea()~ EXIT
-  IF ~!Dead("Hrothgar")
-InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 386
-  IF ~!Dead("Dar")
-InParty("Dar")~ THEN EXTERN ~DARJ~ 89
+  IF ~!Dead("Hrothgar") InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 386
+  IF ~!Dead("Dar") InParty("Dar")~ THEN EXTERN ~DARJ~ 89
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~Ezekiel, who else! He should have been my first thought! He has gone too far this time, if he does have Kalinor's body no amount of scheming or lies will keep him from banishment this time. Thank you, you may carry on now.~
-  IF ~True()~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",7)
-SetGlobalTimer("VP_Confront_Timer","GLOBAL",ONE_DAY)
-EscapeArea()~ EXIT
-  IF ~!Dead("Hrothgar")
-InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 387
+  IF ~True()~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",7) SetGlobalTimer("VP_Confront_Timer","GLOBAL",ONE_DAY) EscapeArea()~ EXIT
+  IF ~!Dead("Hrothgar") InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 387
 END
 
 IF ~Global("VP_Necro_Test","GLOBAL",8)~ THEN BEGIN 6
@@ -114,12 +107,7 @@ END
 
 IF ~~ THEN BEGIN 14
   SAY ~GUARDS!~
-  IF ~~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",9)
-SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-Shout(99)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Necro_Test","GLOBAL",9) SetGlobal("VP_HalruaaHostile","GLOBAL",1) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) Shout(99) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 15
@@ -128,4 +116,4 @@ IF ~~ THEN BEGIN 15
   IF ~~ THEN REPLY ~Forget it! I am not going anywhere with you.~ GOTO 14
   IF ~~ THEN REPLY ~I would love to help you with this troublesome necromancer but I have an errand I should be seeing to.~ GOTO 12
   IF ~~ THEN REPLY ~As a tutor Ezekiel is your problem and I am not about to get involved with discrediting a tutor because you don't like his methods.~ GOTO 12
-END  
+END

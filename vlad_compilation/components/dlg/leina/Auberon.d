@@ -12,9 +12,7 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY ~I would like to hear your story, Leina.~
-  IF ~~ THEN DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("VPCutL02")~ EXIT
+  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutL02")~ EXIT
 END
 
 IF ~Global("VP_LeinaAppears","GLOBAL",3)~ THEN BEGIN 3
@@ -68,17 +66,7 @@ END
 
 IF ~~ THEN BEGIN 10
   SAY ~You have behaved no better than he has, <CHARNAME>, therefore, whatever punishment you see fitting to deal out to my son, you  also deserve.~
-  IF ~~ THEN DO ~SetGlobal("VP_DuvainesAttack","GLOBAL",1)
-SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY)
-ActionOverride("Beatrice",EscapeArea())
-ActionOverride("Govan3",Enemy())
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0)
-Shout(89)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_DuvainesAttack","GLOBAL",1) SetGlobalTimer("VP_Duvaines_Spawn","GLOBAL",ONE_DAY) ActionOverride("Beatrice",EscapeArea()) ActionOverride("Govan3",Enemy()) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("DuvGuard",Player1,0,0,0) Shout(89) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
@@ -107,10 +95,7 @@ END
 
 IF ~~ THEN BEGIN 14
   SAY ~Govan, move!~
-  IF ~~ THEN DO ~SetGlobal("VP_AuberonBribesMe","GLOBAL",1)
-ActionOverride("Govan3",EscapeArea())
-ActionOverride("Beatrice",EscapeArea())
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_AuberonBribesMe","GLOBAL",1) ActionOverride("Govan3",EscapeArea()) ActionOverride("Beatrice",EscapeArea()) EscapeArea()~ EXIT
 END
 
 IF WEIGHT #0 ~Global("VP_DuvainesRevenge","GLOBAL",3)~ THEN BEGIN 15
@@ -125,17 +110,10 @@ END
 
 IF ~~ THEN BEGIN 17
   SAY ~People will talk if the price is right. Did you seriously expect me not to uncover the truth?~
-  IF ~InParty("Leina")
-!Dead("Leina")~ THEN EXTERN ~LEINAJ~ 23
-  IF ~OR(2)
-!InParty("Leina")
-Dead("Leina")~ THEN REPLY ~Your son Duvaine, abducted a young woman by the name of Leina Vulova-Katuron, with the intentions of  forcing a marriage between them. Not because he was crazy with love for this Leina, but for the wealth her fortune would bring to him.~ GOTO 18
-  IF ~OR(2)
-!InParty("Leina")
-Dead("Leina")~ THEN REPLY ~Your son tried to force a marriage between himself and a young woman by the name of Leina Vulova-Katuron by abducting and holding her against her will. He had some idea that wealth afforded him the privilege to force his will on others.~ GOTO 18
-  IF ~OR(2)
-!InParty("Leina")
-Dead("Leina")~ THEN REPLY ~He was a bad lot, Duvaine. I cannot honestly believe that your coin did not uncover the reason your son is dead. Or do you choose to ignore the crime of kidnapping and unlawful imprisonment?~ GOTO 18
+  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 23
+  IF ~OR(2) !InParty("Leina") Dead("Leina")~ THEN REPLY ~Your son Duvaine, abducted a young woman by the name of Leina Vulova-Katuron, with the intentions of  forcing a marriage between them. Not because he was crazy with love for this Leina, but for the wealth her fortune would bring to him.~ GOTO 18
+  IF ~OR(2) !InParty("Leina") Dead("Leina")~ THEN REPLY ~Your son tried to force a marriage between himself and a young woman by the name of Leina Vulova-Katuron by abducting and holding her against her will. He had some idea that wealth afforded him the privilege to force his will on others.~ GOTO 18
+  IF ~OR(2) !InParty("Leina") Dead("Leina")~ THEN REPLY ~He was a bad lot, Duvaine. I cannot honestly believe that your coin did not uncover the reason your son is dead. Or do you choose to ignore the crime of kidnapping and unlawful imprisonment?~ GOTO 18
 END
 
 IF ~~ THEN BEGIN 18
@@ -158,13 +136,5 @@ END
 
 IF ~~ THEN BEGIN 21
   SAY ~A plea of self defence may sit well with the courts, <CHARNAME>, but that is not the justice I want for my boy. I have had my say, now I will have my justice.~
-  IF ~~ THEN DO ~SetGlobal("VP_DuvainesRevenge","GLOBAL",4)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0)
-Shout(89)
-Enemy()~ EXIT
-END  
+  IF ~~ THEN DO ~SetGlobal("VP_DuvainesRevenge","GLOBAL",4) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player2,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player3,0,0,0) Shout(89) Enemy()~ EXIT
+END

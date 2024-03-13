@@ -23,8 +23,7 @@ Of cloudless climes and starry skies;
 And all that's best of dark and bright
 Meet in her aspect and her eyes:
 Thus mellow'd to that tender light
-Which heaven to gaudy day denies...
-~
+Which heaven to gaudy day denies...~
   IF ~~ THEN EXTERN ~BKACHI~ 17
 END
 
@@ -98,8 +97,7 @@ END
 
 IF ~~ THEN BEGIN TS604
   SAY ~Oh, I see... Well, then I'll relieve you from the necessity of being in my company. Fare thee well.~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS605
@@ -203,8 +201,7 @@ END
 
 IF ~~ THEN BEGIN TS624
   SAY ~I do not want to hear another word! I have to be alone now.~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS625
@@ -214,12 +211,7 @@ END
 
 IF ~~ THEN BEGIN TS626
   SAY ~How dare you are...~
-  IF ~~ THEN DO ~SetGlobal("AnomenValygarFight","GLOBAL",1)
-SetLeavePartyDialogueFile()
-LeaveParty()
-ChangeAIScript("",DEFAULT)
-ChangeAIScript("useitem",GENERAL)
-ChangeAIScript("anvsval",SPECIFICS)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("AnomenValygarFight","GLOBAL",1) SetLeavePartyDialogueFile() LeaveParty() ChangeAIScript("",DEFAULT) ChangeAIScript("useitem",GENERAL) ChangeAIScript("anvsval",SPECIFICS)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS627

@@ -6,7 +6,7 @@ IF ~~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~
+  SAY~
 
 One evening made of pink and mystical blue,
 We will exchange a single flash from afar,

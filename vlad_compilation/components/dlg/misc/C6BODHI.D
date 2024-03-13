@@ -1,23 +1,19 @@
 EXTEND_BOTTOM ~C6BODHI~ 21
-IF ~OR(4)
-Global("ValygarVampire","GLOBAL",2)
-Global("VP_SimeVampire","GLOBAL",2)
-Global("VP_KeldornVampire","GLOBAL",2)
-Global("VP_LeinaVampire","GLOBAL",2)~ THEN EXTERN C6BODHI 23
+  IF ~OR(4) Global("ValygarVampire","GLOBAL",2) Global("VP_SimeVampire","GLOBAL",2) Global("VP_KeldornVampire","GLOBAL",2) Global("VP_LeinaVampire","GLOBAL",2)~ THEN EXTERN C6BODHI 23
 END
 
 EXTEND_BOTTOM ~C6BODHI~ 23
-	IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Valygar will not save you.~ EXTERN C6BODHI  TS29
-  	IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Valygar!~ EXTERN C6BODHI  TS29
-  	IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Valygar and perhaps I will be merciful.~ EXTERN C6BODHI  TS29
-  	IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Valygar alone. He is very important to me.~ EXTERN C6BODHI  TS29
-  	IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment.  The theft of Sime will not save you.~ EXTERN C6BODHI TS32
-  	IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already!  You will return both Imoen's soul and Sime!~ EXTERN C6BODHI TS32
-  	IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Sime and perhaps I will be merciful.~ EXTERN C6BODHI TS32
-  	IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Sime alone. She is very important to me.~ EXTERN C6BODHI TS32
-	IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~Bodhi, you nefarious hag! I will tear out your black heart and feed it to the beasts, I swear I will!~ EXTERN ~C6BODHI~ vampamb2
-  	IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Keldorn!~ EXTERN ~C6BODHI~ vampamb2
-  	IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Keldorn and perhaps I will be merciful.~ EXTERN ~C6BODHI~ vampamb2
+  IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Valygar will not save you.~ EXTERN C6BODHI  TS29
+  IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Valygar!~ EXTERN C6BODHI  TS29
+  IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Valygar and perhaps I will be merciful.~ EXTERN C6BODHI  TS29
+  IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Valygar alone. He is very important to me.~ EXTERN C6BODHI  TS29
+  IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment.  The theft of Sime will not save you.~ EXTERN C6BODHI TS32
+  IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already!  You will return both Imoen's soul and Sime!~ EXTERN C6BODHI TS32
+  IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Sime and perhaps I will be merciful.~ EXTERN C6BODHI TS32
+  IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Sime alone. She is very important to me.~ EXTERN C6BODHI TS32
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~Bodhi, you nefarious hag! I will tear out your black heart and feed it to the beasts, I swear I will!~ EXTERN ~C6BODHI~ vampamb2
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Keldorn!~ EXTERN ~C6BODHI~ vampamb2
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Keldorn and perhaps I will be merciful.~ EXTERN ~C6BODHI~ vampamb2
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Leina will not save you.~ EXTERN C6BODHI leiamb1
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Leina!~ EXTERN C6BODHI leiamb1
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Leina and perhaps I will be merciful.~ EXTERN C6BODHI leiamb1
@@ -38,14 +34,7 @@ END
 
 IF ~~ THEN BEGIN TS31
   SAY ~What? How dare you are? Terrible pain will be your punishment!~
-  IF ~~ THEN DO ~ReallyForceSpell("Vampval",0)
-ActionOverride("Vampval",PlayDead(2))
-OpenDoor("DOOR01")
-OpenDoor("DOOR02")
-CreateCreature("BODFGT01",[1107.281],0)
-CreateCreature("BODFGT01",[1667.220],2)
-SetGlobal("C6BodhiFight","AR0809",1)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell("Vampval",0) ActionOverride("Vampval",PlayDead(2)) OpenDoor("DOOR01") OpenDoor("DOOR02") CreateCreature("BODFGT01",[1107.281],0) CreateCreature("BODFGT01",[1667.220],2) SetGlobal("C6BodhiFight","AR0809",1) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS32
@@ -57,12 +46,7 @@ END
 
 IF ~~ THEN BEGIN TS33
   SAY ~Love... I should have sealed my doors tighter against that perpetrator. I have no times for follies, stupid bitch. Punishment you want - then you should get it. Die.~
-  IF ~~ THEN DO ~SetGlobal("C6BodhiFight","AR0809",1)
-OpenDoor("DOOR01")
-OpenDoor("DOOR02")
-CreateCreature("BODFGT01",[1107.281],0)
-CreateCreature("BODFGT01",[1667.220],2)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("C6BodhiFight","AR0809",1) OpenDoor("DOOR01") OpenDoor("DOOR02") CreateCreature("BODFGT01",[1107.281],0) CreateCreature("BODFGT01",[1667.220],2) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN vampamb2
@@ -77,14 +61,7 @@ END
 
 IF ~~ THEN BEGIN vampamb4
   SAY ~What? How dare you are? You will die nevertheless! Naive romantic.~
-  IF ~~ THEN DO ~ReallyForceSpell("vampkel",0)
-ActionOverride("vampkel",PlayDead(2))
-OpenDoor("DOOR01")
-OpenDoor("DOOR02")
-CreateCreature("BODFGT01",[1107.281],0)
-CreateCreature("BODFGT01",[1667.220],2)
-SetGlobal("C6BodhiFight","AR0809",1)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~ReallyForceSpell("vampkel",0) ActionOverride("vampkel",PlayDead(2)) OpenDoor("DOOR01") OpenDoor("DOOR02") CreateCreature("BODFGT01",[1107.281],0) CreateCreature("BODFGT01",[1667.220],2) SetGlobal("C6BodhiFight","AR0809",1) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN leiamb1
@@ -96,11 +73,7 @@ END
 
 IF ~~ THEN BEGIN leiamb2
   SAY ~Love... I should have sealed my doors tighter against that perpetrator. I have no times for follies, stupid bitch. Punishment you want - then you should get it. Die.~
-  IF ~~ THEN DO ~SetGlobal("C6BodhiFight","AR0809",1)
-OpenDoor("DOOR01")
-OpenDoor("DOOR02")
-CreateCreature("BODFGT01",[1107.281],0)
-CreateCreature("BODFGT01",[1667.220],2)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("C6BodhiFight","AR0809",1) OpenDoor("DOOR01") OpenDoor("DOOR02") CreateCreature("BODFGT01",[1107.281],0) CreateCreature("BODFGT01",[1667.220],2) Enemy()~ EXIT
 END
+
 END

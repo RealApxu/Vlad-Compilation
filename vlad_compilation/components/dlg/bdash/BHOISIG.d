@@ -1,8 +1,8 @@
 REPLACE_TRIGGER_TEXT BHOISIG
 ~Alignment(Player1,MASK_GENEUTRAL)~
 ~OR(2)
-	Alignment(Player1,MASK_GENEUTRAL)
-	Global("VP_OisigGivesQuest","GLOBAL",1)~
+    Alignment(Player1,MASK_GENEUTRAL)
+    Global("VP_OisigGivesQuest","GLOBAL",1)~
 
 ALTER_TRANS BHOISIG // file name
 BEGIN 3 END // state number (can be more than one)

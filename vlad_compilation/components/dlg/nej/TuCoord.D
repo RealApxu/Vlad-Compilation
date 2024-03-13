@@ -8,7 +8,7 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY ~ That is indeed why I am here. One of my many duties is to welcome new students, show them around and to advise them on the various aspects of the specialist schools.~
-  IF ~~ THEN GOTO 2								
+  IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
@@ -47,7 +47,7 @@ IF ~Global("VP_HalruaaTour","GLOBAL",1)~ THEN BEGIN 8
 END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",2)~ THEN BEGIN 9
-  SAY ~This is the rune of the *White Necromancy* college, which specialises in the positive energy affecting the life forces of a creature... it is magic of a benign and beneficial nature. It includes spells which restore and fortify the living body or the life force of creatures; the wizard may well have to draw upon his own life force to fuel the casting if these spells. ~
+  SAY ~This is the rune of the *White Necromancy* college, which specialises in the positive energy affecting the life forces of a creature... it is magic of a benign and beneficial nature. It includes spells which restore and fortify the living body or the life force of creatures; the wizard may well have to draw upon his own life force to fuel the casting if these spells.~
   IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",3)~ EXIT
 END
 
@@ -63,7 +63,7 @@ END
 
 IF ~~ THEN BEGIN 12
   SAY ~Now let's proceed to the *Elemental* school, which deals with the material plane energy. It includes two sub-schools tentatively called *Conjuration* and *Summoning*. Conjuration and summoning, although two different types of magic, they both involve bringing in matter from another place.~
-	IF ~~ THEN GOTO 13
+  IF ~~ THEN GOTO 13
 END
 
 IF ~~ THEN BEGIN 13
@@ -73,7 +73,7 @@ END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",5)~ THEN BEGIN 14
   SAY ~Whereas the elemental wizard is a fairly new specialisation, elementalism is not a school in itself but an area of specialisation, focusing on spells of the four prime elements. We at Halruaa embrace all forms of specialisation and therefore include it as a school.~
-	IF ~~ THEN GOTO 15
+  IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 15
@@ -98,7 +98,7 @@ END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",9)~ THEN BEGIN 19
   SAY ~And finally we come to the symbol of the college of *Summoning*, which contains spells that concern the summoning of creatures of progressive power. Now I know how impressive that sounds to a new student, but the practising wizard must always be aware that certain summoned creatures, will not be too happy at having been yanked out of their own environment... I am sure I need say no more about summoning spells my young friend.~
-	IF ~~ THEN GOTO 20
+  IF ~~ THEN GOTO 20
 END
 
 IF ~~ THEN BEGIN 20
@@ -108,7 +108,7 @@ END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",10)~ THEN BEGIN 21
   SAY ~This is the rune of the college of *Enchantment*. This college specialises in the learning of *enchantment* and *charm* type spells. Both of which imbue the subject with magical energy in order to create specific effects.~
-	IF ~~ THEN GOTO 22
+  IF ~~ THEN GOTO 22
 END
 
 IF ~~ THEN BEGIN 22
@@ -118,7 +118,7 @@ END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",11)~ THEN BEGIN 23
   SAY ~This rune symbolises the college of *Nature*, which specialises in learning spells that control plants, animals, and natural forces. The wizard who can call on the forces of nature herself, holds very powerful allies and magic in his hands!~
-	IF ~~ THEN GOTO 24
+  IF ~~ THEN GOTO 24
 END
 
 IF ~~ THEN BEGIN 24
@@ -133,7 +133,7 @@ END
 
 IF ~Global("VP_HalruaaTour","GLOBAL",13)~ THEN BEGIN 26
   SAY ~We then have the college of *Illusion*. Whereas illusion spells bend reality to create apparent changes in the environment, in the caster or in other creatures, they do not cause real change as do alteration spells, but instead, they alter the way creatures perceive reality... what we know as illusion. We do however, still include it as a college in the school of Alteration here at Halruaa.~
-	IF ~~ THEN GOTO 27	
+  IF ~~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 27
@@ -178,6 +178,5 @@ END
 
 IF ~~ THEN BEGIN 35
   SAY ~Now you may meditate upon your choices for a short time, choose the school that most suits your personality, temperament and nature. Your choice will affect the rest of your life, and indeed, your suitability for your chosen school may well mean the difference between life or death in the future! All that remains is for me to wish you good luck in your studies and I hope to see you soon within our quarters. Farewell <CHARNAME>.~
-  IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",18)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_HalruaaTour","GLOBAL",18) EscapeArea()~ EXIT
 END

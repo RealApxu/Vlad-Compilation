@@ -1,43 +1,27 @@
 ALTER_TRANS PPIRENI1 // file name
-BEGIN 32 END // state number (can be more than one)
-BEGIN 0 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
-  "TRIGGER" ~InParty("Yoshimo")
-!Dead("Yoshimo")~
+BEGIN 32 END // state number (can be more than one) BEGIN 0 END // transition number (can be more than one) BEGIN // list of changes, see below for flags
+  "TRIGGER" ~InParty("Yoshimo") !Dead("Yoshimo")~
 END
 
 ALTER_TRANS PPIRENI1 // file name
-BEGIN 32 END // state number (can be more than one)
-BEGIN 1 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
-  "TRIGGER" ~InParty("Yoshimo")
-Dead("Yoshimo")~
+BEGIN 32 END // state number (can be more than one) BEGIN 1 END // transition number (can be more than one) BEGIN // list of changes, see below for flags
+  "TRIGGER" ~InParty("Yoshimo") Dead("Yoshimo")~
 END
 
 ALTER_TRANS PPIRENI1 // file name
-BEGIN 32 END // state number (can be more than one)
-BEGIN 2 END // transition number (can be more than one)
-BEGIN // list of changes, see below for flags
+BEGIN 32 END // state number (can be more than one) BEGIN 2 END // transition number (can be more than one) BEGIN // list of changes, see below for flags
   "TRIGGER" ~!InParty("Yoshimo")~
 END
 
 ADD_TRANS_TRIGGER PPIRENI1 34
-~OR(2)
-!Global("Kachiko_Saved","GLOBAL",2)
-Global("TT_Evil_Path","GLOBAL",3)~ DO 0
+~OR(2) !Global("Kachiko_Saved","GLOBAL",2) Global("TT_Evil_Path","GLOBAL",3)~ DO 0
 
 EXTEND_BOTTOM PPIRENI1 34
-  IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",20)
-DisplayString(Myself,50707)
-Spell(Myself,DO_NOTHING)
-StartCutSceneMode()
-StartCutScene("Cut41gN")~ EXIT
+  IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN DO ~SetGlobal("AsylumPlot","GLOBAL",20) DisplayString(Myself,50707) Spell(Myself,DO_NOTHING) StartCutSceneMode() StartCutScene("Cut41gN")~ EXIT
 END
 
 ADD_TRANS_TRIGGER PPIRENI1 45
-~OR(2)
-Global("Kachiko_Saved","GLOBAL",3)
-Global("TT_Evil_Path","GLOBAL",3)~ DO 0
+~OR(2) Global("Kachiko_Saved","GLOBAL",3) Global("TT_Evil_Path","GLOBAL",3)~ DO 0
 
 EXTEND_BOTTOM PPIRENI1 45
   IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN EXTERN ~YOSHJ~ TS209
@@ -74,28 +58,17 @@ END
 
 IF ~~ THEN BEGIN 52
   SAY ~(*He laughs*) No, I would think not. But don't be so upset, Yoshimo. You couldn't help them, and believe me they got what they deserved. Remember that, and listen all of you to the words I have to say, since your time is short.~
-=
-~What is life? Life is a miserable reflection of death. My life, in this world, seems so very distant... the memories clouded like those of a child. And a child I was, then... probing the darkest magic, given glimpses of the truths yet to come. Yes, look at me. And what do you see? A monster? An abomination?~
-=
-~(*Again he laughs*) I was an elven mage of great power, perhaps the most powerful elven mage who has ever been. For 200 years I studied the magic of Necromancy... the arts of physical and spiritual healing, the resurrection of the souls of the dead... Perhaps it is just the way of humans, but what I had seen and learned was not enough.~
-=
-~My studies were of the souls of the dead. Once I had seen the darker side of Necromancy, I began to speak with those souls, to animate the soulless, to quench the lives of the living. The bodies I experimented upon were already dead! If I raised their souls to again quench them, who is to say I didn't have the right?~
-=
-~I craved knowledge, felt the shadow of my own mortality. And so I looked deeper, and the secrets of Black Necromancy were shown to me, and I reveled in the truths I had uncovered, and I shared them with my people.~
-=
-~They saw it differently than me, though... (*he laughs to himself*) They didn't know what to think, and how could they? These were new discoveries, there were no precedents... and they listened to Her over the voice of their own reason, over my voice.~
-=
-~She had never loved me, She lied to me, She betrayed me, She waited for an opportunity to defame me, and when it came She viciously attacked.~
-=
-~I'm no monster... I know that the line between good and evil is a gray one, and perhaps all of my actions weren't necessarily pure, but who are they to judge me? And banishment? Banishment for some questionable experiments?~
-=
-~They prepared to exile me, to throw me out of their number... but no! Her jealousy turned them against me, forced their hand. Her words became the evidence against me, and they sentenced me to the Void.~
-=
-~That place has no time as you know it. I've been there for years uncounted, and yet I've not aged at all... I feel as I did the moment they sent me there, or as when the Dark Elves first called to me.~
-=
-~Do you now see? Being there I can do everything I did in your world, but I am unfettered by the chains of mortality that time hangs upon us.~
-=
-~My reasons for returning aren't what you'd think. I have no aspirations for power or domination like you. I need you powerful living soul to come back and pay an old debt of mine. I need your power to plan my revenge.~
+  = ~What is life? Life is a miserable reflection of death. My life, in this world, seems so very distant... the memories clouded like those of a child. And a child I was, then... probing the darkest magic, given glimpses of the truths yet to come. Yes, look at me. And what do you see? A monster? An abomination?~
+  = ~(*Again he laughs*) I was an elven mage of great power, perhaps the most powerful elven mage who has ever been. For 200 years I studied the magic of Necromancy... the arts of physical and spiritual healing, the resurrection of the souls of the dead... Perhaps it is just the way of humans, but what I had seen and learned was not enough.~
+  = ~My studies were of the souls of the dead. Once I had seen the darker side of Necromancy, I began to speak with those souls, to animate the soulless, to quench the lives of the living. The bodies I experimented upon were already dead! If I raised their souls to again quench them, who is to say I didn't have the right?~
+  = ~I craved knowledge, felt the shadow of my own mortality. And so I looked deeper, and the secrets of Black Necromancy were shown to me, and I reveled in the truths I had uncovered, and I shared them with my people.~
+  = ~They saw it differently than me, though... (*he laughs to himself*) They didn't know what to think, and how could they? These were new discoveries, there were no precedents... and they listened to Her over the voice of their own reason, over my voice.~
+  = ~She had never loved me, She lied to me, She betrayed me, She waited for an opportunity to defame me, and when it came She viciously attacked.~
+  = ~I'm no monster... I know that the line between good and evil is a gray one, and perhaps all of my actions weren't necessarily pure, but who are they to judge me? And banishment? Banishment for some questionable experiments?~
+  = ~They prepared to exile me, to throw me out of their number... but no! Her jealousy turned them against me, forced their hand. Her words became the evidence against me, and they sentenced me to the Void.~
+  = ~That place has no time as you know it. I've been there for years uncounted, and yet I've not aged at all... I feel as I did the moment they sent me there, or as when the Dark Elves first called to me.~
+  = ~Do you now see? Being there I can do everything I did in your world, but I am unfettered by the chains of mortality that time hangs upon us.~
+  = ~My reasons for returning aren't what you'd think. I have no aspirations for power or domination like you. I need you powerful living soul to come back and pay an old debt of mine. I need your power to plan my revenge.~
   IF ~~ THEN REPLY ~I have come to the conclusion that you are really insane. This asylum is the most suitable place for you where you may continue planning your revenge. I'll just take Imoen and be going...~ GOTO 69
   IF ~~ THEN REPLY ~The time for talk is over. Let's finish this.~ GOTO 70
   IF ~~ THEN REPLY ~Uh... I think that I'm still gonna kill you.~ GOTO 71
@@ -120,4 +93,5 @@ IF ~~ THEN BEGIN 72
   SAY ~Now you will find you are powerless. I have taken precautions that you will not be damaged. Rage would be wasted.~
   IF ~~ THEN GOTO 34
 END
+
 END

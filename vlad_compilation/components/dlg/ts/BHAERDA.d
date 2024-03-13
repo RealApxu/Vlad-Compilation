@@ -91,7 +91,7 @@ IF ~~ THEN BEGIN TS181
 END
 
 IF ~~ THEN BEGIN TS182
-  SAY ~
+  SAY~
 
 I was made that way.
 When I wish to laugh
@@ -100,9 +100,7 @@ I laugh till it hurts.
 I love the one who loves me
 And is it really my fault
 that it is not the same man
-I love every night?
-
-~
+I love every night?~
   IF ~~ THEN EXTERN ~BSIME~ 194
 END
 
@@ -116,9 +114,7 @@ As the tide wears the dove-gray sands,
 And with heart much older than the horn
 That is brimmed from the pale fire of time:
 White woman with numberless dreams,
- I bring you my passionate rhyme.
-
-~
+ I bring you my passionate rhyme.~
   IF ~~ THEN EXTERN ~BSIME~ 196
 END
 
@@ -161,4 +157,5 @@ IF ~~ THEN BEGIN TS191
   SAY ~That's a relief. You could not begin to imagine how I suffer over it!~
   IF ~~ THEN EXTERN ~BSIME~ 206
 END
+
 END

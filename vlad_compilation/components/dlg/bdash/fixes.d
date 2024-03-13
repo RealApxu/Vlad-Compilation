@@ -437,9 +437,9 @@ REPLACE_ACTION_TEXT KELDO25P
 
 ADD_TRANS_TRIGGER BKELDO25 55
 ~OR(3)
-	!InParty("Jan")
-	!See("Jan")
-	StateCheck("Jan",STATE_SLEEPING)~ DO 0
+    !InParty("Jan")
+    !See("Jan")
+    StateCheck("Jan",STATE_SLEEPING)~ DO 0
 
 REPLACE_ACTION_TEXT GORCHR
 ~TakeItemReplace("GORCHRAM","GORCHR",Myself)~

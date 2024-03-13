@@ -1,8 +1,6 @@
 BEGIN ~LHILLIAS~
 
-IF ~GlobalGT("VP_Restore_Ring","GLOBAL",0)
-GlobalLT("VP_Restore_Ring","GLOBAL",4)
-PartyHasItem("TuBook")~ THEN BEGIN 0
+IF ~GlobalGT("VP_Restore_Ring","GLOBAL",0) GlobalLT("VP_Restore_Ring","GLOBAL",4) PartyHasItem("TuBook")~ THEN BEGIN 0
   SAY ~Can I help you?~
   IF ~~ THEN REPLY ~Are you Lhillias?~ GOTO 1
   IF ~~ THEN REPLY ~Possibly, I am looking for Lhillias?~ GOTO 1
@@ -39,7 +37,7 @@ IF ~~ THEN BEGIN 3
   IF ~!PartyHasItem("DeRing")~ THEN REPLY ~Here, read his notes and then tell me you do not know him!~ GOTO 4
   IF ~!PartyHasItem("DeRing")~ THEN REPLY ~I have looked through his notes but most of it is meaningless, a lot of equations and symbols. Some symbols I recognise, the ones that depict the four elements and they seem to appear on most pages. Here, see if you can make any sense of it Lhillias.~ GOTO 4
 END
-			
+
 IF ~~ THEN BEGIN 4
   SAY ~(*Opens the book*) The writings seem to deal with the construction of an artifact, namely a Ring of Might.~
   IF ~~ THEN GOTO 5
@@ -144,7 +142,7 @@ IF ~~ THEN BEGIN 20
   IF ~~ THEN REPLY ~What is this going to cost me Lhillias? I am sure you have your price?~ GOTO 21
   IF ~~ THEN REPLY ~Tell me, what do you expect in return Lhillias? I have come to learn that you get nothing in this world for free, everyone has their price. What is yours?~ GOTO 21
 END
-	
+
 IF ~~ THEN BEGIN 21
   SAY ~I am a student <GABBER>, and unfortunately I do not have an affluent family to pay for my tuition. Whereas, I will learn much from this endeavour, the cost is beyond my means. I think 5000 gold for each of us should cover the cost and the risk that we will be taking, making 20000 gold in total.~
   IF ~PartyGoldGT(19999)~ THEN REPLY ~You have a deal. Here take the gold and the ring, but please, if at any time you feel things are starting to go wrong, you must abandon the task. It is not worth four more lives.~ GOTO 22
@@ -156,10 +154,7 @@ END
 IF ~~ THEN BEGIN 22
   SAY ~I will meet you at the backyard near the rune of my colledge in a day <GABBER> if all goes well. There is very little left for me to do. Farewell for now.~
   IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",4) //Lhillias went to restore the ring
-SetGlobalTimer("VP_Lhillias_Returns","GLOBAL",ONE_DAY)
-TakePartyGold(20000)
-TakePartyItem("DeRing")
-EscapeArea()~ EXIT
+SetGlobalTimer("VP_Lhillias_Returns","GLOBAL",ONE_DAY) TakePartyGold(20000) TakePartyItem("DeRing") EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 23
@@ -167,7 +162,7 @@ IF ~~ THEN BEGIN 23
   IF ~PartyGoldGT(19999)~ THEN REPLY ~I still say it is an outrageous sum! I expect you to deliver what I am paying for!~ GOTO 22
   IF ~~ THEN REPLY ~I am not prepared to pay that. Farewell Lhillias.~ GOTO 25
 END
-							
+
 IF ~~ THEN BEGIN 24
   SAY ~As you wish <GABBER>. Be warned, from what I have read in Bartlemy's notes, only an elementalist mage should be entrusted to do the work. Also It is forbidden to do so on Academy grounds, you may not find another as willing as I to undertake the task.~
   IF ~PartyGoldGT(19999)~ THEN REPLY ~I still say it is an outrageous sum! I expect you to deliver what I am paying for!~ GOTO 22
@@ -232,21 +227,12 @@ END
 
 IF ~~ THEN BEGIN 34
   SAY ~Whereas I could only enhance their work, theirs was the skill that brought the ring into being and all due praise should go to them. It has been a joy to work on such an item. Farewell <GABBER>.~
-	IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",6)
-GiveItemCreate("DeRing2",LastTalkedToBy,0,0,0)
-GiveGoldForce(15000)
-TakePartyItem("TuBook")
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",6) GiveItemCreate("DeRing2",LastTalkedToBy,0,0,0) GiveGoldForce(15000) TakePartyItem("TuBook") EscapeArea()~ EXIT
 END //Lhillias is granting the enhanced ring (+water element)
-
 IF ~~ THEN BEGIN 35
   SAY ~Then I bid you farewell <GABBER>, but not without saying take care in whom you pass these documents to, in the wrong hands they are a proven recipe for disaster.~
-	IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",6)
-GiveItemCreate("DeRing2",LastTalkedToBy,0,0,0)
-GiveGoldForce(15000)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Restore_Ring","GLOBAL",6) GiveItemCreate("DeRing2",LastTalkedToBy,0,0,0) GiveGoldForce(15000) EscapeArea()~ EXIT
 END //Lhillias is granting the enhanced ring (+water element)
-
 IF ~~ THEN BEGIN 36
   SAY ~And alert the academy to you and the ring's presence? I think not <GABBER>.~
   IF ~~ THEN GOTO 37

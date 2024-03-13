@@ -12,14 +12,12 @@ END
 
 IF ~~ THEN BEGIN TS108
   SAY ~Fortunately to me, and unfortunately to you, we won't meet again (*finally, I get rid of these fools*).~
-  IF ~~ THEN DO ~LeaveParty()
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS109
   SAY ~You will suffer yet...~
-  IF ~~ THEN DO ~LeaveParty()
-Enemy()~ EXIT
+  IF ~~ THEN DO ~LeaveParty() Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS110

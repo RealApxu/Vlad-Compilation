@@ -2,38 +2,22 @@ BEGIN ~Graeme~
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~The beast howls at night...~
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN REPLY ~Uh?~ EXTERN ~HROTHJ~ 70
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN REPLY ~What beast would that be my friend?~ EXTERN ~HROTHJ~ 70
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN REPLY ~Do you know, sometimes I feel like doing that myself.~ EXTERN ~HROTHJ~ 70
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN REPLY ~I have not heard this beast of yours or any other beast around here.~ EXTERN ~HROTHJ~ 70
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Uh?~ GOTO 1
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~What beast would that be my friend?~ GOTO 1
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Do you know, sometimes I feel like doing that myself.~ GOTO 1
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~I have not heard this beast of yours or any other beast around here.~ GOTO 1
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN REPLY ~Uh?~ EXTERN ~HROTHJ~ 70
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN REPLY ~What beast would that be my friend?~ EXTERN ~HROTHJ~ 70
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN REPLY ~Do you know, sometimes I feel like doing that myself.~ EXTERN ~HROTHJ~ 70
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN REPLY ~I have not heard this beast of yours or any other beast around here.~ EXTERN ~HROTHJ~ 70
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~Uh?~ GOTO 1
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~What beast would that be my friend?~ GOTO 1
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~Do you know, sometimes I feel like doing that myself.~ GOTO 1
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~I have not heard this beast of yours or any other beast around here.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
   SAY ~I repeat the beast howls at night...~
   IF ~~ THEN REPLY ~Sorry, but I believe you have mistaken me for someone else. I have no interest in what you or your howling beast are up to, if you do not mind I will be on my way.~ GOTO 2
   IF ~~ THEN REPLY ~And I repeat... what beast would that be my friend?~ GOTO 5
-  IF ~OR(2)
-CheckStatGT(Player1,14,WIS)
-CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Oh, I see... I am supposed to answer you with some equally cryptic reply and we shake hands right? OK. How does *because the beast is afraid of the dark* sound to you?~ GOTO 5
-  IF ~OR(2)
-CheckStatGT(Player1,14,WIS)
-CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Of course... the beast howls at night... when it sees the full moon?~ GOTO 5
+  IF ~OR(2) CheckStatGT(Player1,14,WIS) CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Oh, I see... I am supposed to answer you with some equally cryptic reply and we shake hands right? OK. How does *because the beast is afraid of the dark* sound to you?~ GOTO 5
+  IF ~OR(2) CheckStatGT(Player1,14,WIS) CheckStatGT(LastTalkedToBy,14,WIS)~ THEN REPLY ~Of course... the beast howls at night... when it sees the full moon?~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 2
@@ -46,16 +30,13 @@ END
 IF ~~ THEN BEGIN 3
   SAY ~Sorry, but I am not about to take the chance that you lie and have you spoil my little business arrangement here by allowing you to run to those wizards with your information.~
   IF ~~ THEN REPLY ~It might interest you to know that it is in my own best interest for me to have as little contact with Halruaa's mages as I can, so you can be assured I will not be telling any wizard anything when I leave here.~ GOTO 4
-  IF ~~ THEN REPLY ~I am quite happy to walk away and leave you to whatever it is you do in peace, but if you insist on a confrontation I will happily oblige you!~ GOTO 4	
+  IF ~~ THEN REPLY ~I am quite happy to walk away and leave you to whatever it is you do in peace, but if you insist on a confrontation I will happily oblige you!~ GOTO 4
   IF ~~ THEN REPLY ~Please, I really do not want this to escalate into violence, just let me pass and I will not say anything to anyone.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
   SAY ~As I said sorry and all that but...~
-  IF ~~ THEN DO ~SetGlobal("VP_Graeme_Password","GLOBAL",1)
-ActionOverride("TuSmug",Enemy())
-Shout(89)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Graeme_Password","GLOBAL",1) ActionOverride("TuSmug",Enemy()) Shout(89) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 5

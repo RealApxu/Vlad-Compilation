@@ -2,17 +2,10 @@ BEGIN ~TuCaius~
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
   SAY ~You there, what business do you have here, and more importantly what is your name?~
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~I am new here and still finding my way around. I have obviously taken a wrong turning.~ GOTO 2
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Forgive my intrusion. I have been here but a short while and I am having difficulties finding my way about. I will leave now.~ GOTO 2
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~I am new and did not mean to disturb you. My mistake.~ GOTO 2
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 74
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~I am new here and still finding my way around. I have obviously taken a wrong turning.~ GOTO 2
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~Forgive my intrusion. I have been here but a short while and I am having difficulties finding my way about. I will leave now.~ GOTO 2
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~I am new and did not mean to disturb you. My mistake.~ GOTO 2
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 74
 END
 
 IF ~~ THEN BEGIN 1
@@ -31,7 +24,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-  SAY ~<CHARNAME>, no that is not one of the names that I have been told to expect. A new arrival you say, then it is no wonder that I did not recognise you. Mind you having to put faces to so many renown names, it is a wonder that I remember anyone at the moment. I am Caius, welcome.~			
+  SAY ~<CHARNAME>, no that is not one of the names that I have been told to expect. A new arrival you say, then it is no wonder that I did not recognise you. Mind you having to put faces to so many renown names, it is a wonder that I remember anyone at the moment. I am Caius, welcome.~
   IF ~~ THEN REPLY ~Is it your place to greet all new comers to Halruaa, Caius?~ JOURNAL ~Halruaa's Internal Affairs.
 
 From what I have learnt from Matej and Caius, it would seem that the mages here are indeed plotting, but what I can not yet be sure... the disappearance of most of the academy's senior mages, the arrival of high profile visitors being directed to secret meetings and then Caius's hurried attempts to cover his words when he realised that he had said more than he should have. Could Tilorn be right in his belief that Ulcaster's downfall was instigated by the mages here and if so, can I find the means to prevent an event that has in effect, already occurred? More importantly should I even be trying?~ GOTO 4
@@ -45,21 +38,21 @@ END
 
 IF ~~ THEN BEGIN 4
   SAY ~No it is not. These guests that are assembling are too important to be met by just anyone!~
-  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7	
+  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7
   IF ~~ THEN REPLY ~Mages are always trying to keep their activities secret. Is that not so, Caius?~ GOTO 7
   IF ~~ THEN REPLY ~Where better to hold a secret meeting of mages than in an academy of magic?~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 5
   SAY ~A few more than normal yes, that is why I have been assigned to help direct them to the proper place.~
-  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7	
+  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7
   IF ~~ THEN REPLY ~Mages are always trying to keep their activities secret. Is that not so, Caius?~ GOTO 7
   IF ~~ THEN REPLY ~Where better to hold a secret meeting of mages than in an academy of magic?~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 6
   SAY ~Halruaa is indeed frequented by many high profile guests, though never quite so many at one time.~
-  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7	
+  IF ~~ THEN REPLY ~A meeting of mages, eh? Now that smells of a conspiracy... I am jesting of course, Caius!~ GOTO 7
   IF ~~ THEN REPLY ~Mages are always trying to keep their activities secret. Is that not so, Caius?~ GOTO 7
   IF ~~ THEN REPLY ~Where better to hold a secret meeting of mages than in an academy of magic?~ GOTO 7
 END
@@ -82,13 +75,8 @@ END
 
 IF ~~ THEN BEGIN 8
   SAY ~Yes, well, there is nothing special about this meeting, in fact it is one of many that has taken place over the last few weeks. Now, as you are new to the Academy, I suggest you make yourself known to Ray Von, he can usually be found on one of the upper floors of this building. For now, you are dismissed.~
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN DO ~SetGlobal("VP_Know_Caius","GLOBAL",1)
-EscapeAreaMove("TT0067",1354,1464,12)~ EXIT
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN DO ~SetGlobal("VP_Know_Caius","GLOBAL",1)
-EscapeAreaMove("TT0067",1354,1464,12)~ EXTERN ~HROTHJ~ 75
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN DO ~SetGlobal("VP_Know_Caius","GLOBAL",1) EscapeAreaMove("TT0067",1354,1464,12)~ EXIT
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN DO ~SetGlobal("VP_Know_Caius","GLOBAL",1) EscapeAreaMove("TT0067",1354,1464,12)~ EXTERN ~HROTHJ~ 75
 END
 
 IF ~Global("VP_Know_Caius","GLOBAL",2)~ THEN BEGIN 9

@@ -1,7 +1,6 @@
 BEGIN ~TuKimSia~
 
-IF ~NumberOfTimesTalkedTo(0)
-Global("VP_Know_KimSia","GLOBAL",1)~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) Global("VP_Know_KimSia","GLOBAL",1)~ THEN BEGIN 0
   SAY ~What do you mean by barging in here uninvited? Don't you know that this floor and these apartments are off limits to students?~
   IF ~~ THEN REPLY ~I am sorry, I didn't mean to barge. I am looking for Brial.~ GOTO 1
   IF ~~ THEN REPLY ~I was told Brial had her apartments here, can you point me to where they may be?~ GOTO 12
@@ -33,9 +32,7 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~As RayVon has sent you, I will not report your presence... this time, but I will warn you, should I find you here again at any time in the future, you will be dealt with most severely. Now, return to your own quarters!~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -56,9 +53,7 @@ END
 
 IF ~~ THEN BEGIN 9
   SAY ~Be sure that you do.~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 10
@@ -69,12 +64,7 @@ END
 
 IF ~~ THEN BEGIN 11
   SAY ~I will take your words as an admission that you are spying for Ulcaster, and therefore a traitor to this academy! Why else would you wish to destroy that which is Halruaa's greatest hope in putting down his accursed academy... I can not let you discover it's whereabouts.~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-Shout(99)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobal("VP_HalruaaHostile","GLOBAL",1) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) Shout(99) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 12
@@ -101,10 +91,8 @@ END
 
 IF ~~ THEN BEGIN 16
   SAY ~I'll ask you one more time... what are you doing here, and please, don't insult me with more lies?~
-  IF ~CheckStatGT(LastTalkedToBy,14,WIS)
-CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 17
-  IF ~CheckStatGT(LastTalkedToBy,14,WIS)
-CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 20
+  IF ~CheckStatGT(LastTalkedToBy,14,WIS) CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 17
+  IF ~CheckStatGT(LastTalkedToBy,14,WIS) CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 20
   IF ~~ THEN REPLY ~As I said, Brial asked to see me, she said that it was time I was taught how to deploy the leveller.~ GOTO 21
   IF ~~ THEN REPLY ~You are right, Brial didn't ask to see me. I am here to find and destroy the leveller. Now where is she?~ GOTO 11
 END
@@ -121,29 +109,17 @@ END
 
 IF ~~ THEN BEGIN 19
   SAY ~Lesson number two, don't let me catch you in this area again because I will not be so lenient a second time... new student or not, the penalties for being found here are severe. You are dismissed but heed my warning well.~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 20
   SAY ~Please, credit me with intelligence enough to know when you are stalling. Now I know that you lie, and I will take your words as an admission that you are spying for Ulcaster, and therefore a traitor to this academy!~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-Shout(99)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobal("VP_HalruaaHostile","GLOBAL",1) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) Shout(99) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 21
   SAY ~Now I know that you lie, for it is Garron who is to deploy the leveller in our stand against Ulcaster. RayVon would not trust such a task to a new student. I am assuming that it is your intention to find and use the leveller against Halruaa, I can not allow this...~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobal("VP_HalruaaHostile","GLOBAL",1)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0)
-Shout(99)
-Enemy()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobal("VP_HalruaaHostile","GLOBAL",1) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) CreateCreatureObjectOffScreen("TuMage3",Player1,0,0,0) Shout(99) Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN 22
@@ -158,17 +134,13 @@ END
 
 IF ~~ THEN BEGIN 24
   SAY ~The penalties, should you be discovered here a second time, will be severe indeed my young friend. You are dismissed but heed well my warning.~
-  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2)
-SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Know_KimSia","GLOBAL",2) SetGlobalTimer("VP_Reveal_Spies_A","GLOBAL",SIX_DAYS) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 25
   SAY ~Brial sent for you? Now why should a senior member of staff, who has had no hand in tutoring for some time now, suddenly take it into her head to ask a new student to meet her in her private apartments? No, I think you are lying to me my young friend... I'll ask you just once more, what are you doing here?~
-  IF ~CheckStatGT(LastTalkedToBy,14,WIS)
-CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 17
-  IF ~CheckStatGT(LastTalkedToBy,14,WIS)
-CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 20
+  IF ~CheckStatGT(LastTalkedToBy,14,WIS) CheckStatGT(LastTalkedToBy,11,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 17
+  IF ~CheckStatGT(LastTalkedToBy,14,WIS) CheckStatLT(LastTalkedToBy,12,CHR)~ THEN REPLY ~I am sorry you are right. I am a new student and I wandered in here by mistake. As soon as I realised where I was I knew that I would be in trouble, so I thought if I said I had been summoned by a senior, it would be ok. I will leave immediately.~ GOTO 20
   IF ~~ THEN REPLY ~As I said, Brial asked to see me, she said that it was time I was taught how to deploy the leveller.~ GOTO 21
   IF ~~ THEN REPLY ~You are right, Brial didn't ask to see me. I am here to find and destroy the leveller. Now where is she?~ GOTO 11
 END

@@ -1,7 +1,6 @@
 BEGIN ~OTAKO~
 
-IF ~NumberOfTimesTalkedTo(0)
-~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) ~ THEN BEGIN 0
   SAY ~Yoshimo-san. My great pleasure is to see you again. Uncle often said you will return to help your family and so you did.~
   IF ~~ THEN EXTERN ~YOSHJ~ TS173
 END

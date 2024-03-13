@@ -25,8 +25,7 @@ END
 
 IF ~~ THEN BEGIN 3
   SAY ~My friend, life itself is an uncertain road and holds no fear for me. Nor shall this road of yours.~ [DAR_04]
-  IF ~~ THEN DO ~SetGlobalTimer("VP_Dar_PC","GLOBAL",THIRTEEN_DAYS)
-JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobalTimer("VP_Dar_PC","GLOBAL",THIRTEEN_DAYS) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -36,8 +35,7 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~I'm saddened you feel as you do but I well understand your attitude toward me, though I don't accept it. I will continue my road alone and wish you well on yours.~ [DAR_05]
-  IF ~~ THEN DO ~EscapeArea()
-~ EXIT
+  IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 //IF WEIGHT #0 ~NumberOfTimesTalkedTo(0)~ THEN BEGIN 6

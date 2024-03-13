@@ -1,7 +1,6 @@
 BEGIN ~DKAYLESS~
 
-IF ~NumTimesTalkedTo(0)
-Global("K_Done", "GLOBAL", 0)~ THEN BEGIN 0
+IF ~NumTimesTalkedTo(0) Global("K_Done", "GLOBAL", 0)~ THEN BEGIN 0
   SAY ~Adventurers?  Here in the Hand of the Seldarine?  You must have fought past the horde below.  Battle ready, I take it?  Tell me, why are you here?~
   IF ~~ THEN REPLY ~We seek to find Larrel.  Evil stalks the land, and we need his powers to find the source.~ GOTO 1
   IF ~~ THEN REPLY ~Very battle ready, I might add.  More than adequate to deal with another ghost if she thinks to attack us.~ GOTO 2
@@ -90,16 +89,8 @@ IF ~~ THEN BEGIN 14
 END
 
 IF ~~ THEN BEGIN 15
-  SAY ~My soldiers do not deserve what has befallen them -- they deserve to die in battle.  They would want to meet their end with steel in their hands upon the battlefield.   I would ask that you climb the tower and send them to eternal rest.~
-  IF ~GlobalGT("SoldiersDead","GLOBAL",24)
-Global("K_Done", "GLOBAL", 0)~ THEN REPLY ~Kaylessa, I have already encountered your soldiers on the upper levels. They all fought with great honor.  They rest in peace now.~ DO ~AddXPObject(Player1,35000)
-AddXPObject(Player2,35000)
-AddXPObject(Player3,35000)
-AddXPObject(Player4,35000)
-AddXPObject(Player5,35000)
-AddXPObject(Player6,35000)
-SetGlobal("K_Done", "GLOBAL", 1)
-EraseJournalEntry(%To battle the soldiers of Kaylessa.
+  SAY ~My soldiers do not deserve what has befallen them -- they deserve to die in battle.  They would want to meet their end with steel in their hands upon the battlefield.  I would ask that you climb the tower and send them to eternal rest.~
+  IF ~GlobalGT("SoldiersDead","GLOBAL",24) Global("K_Done", "GLOBAL", 0)~ THEN REPLY ~Kaylessa, I have already encountered your soldiers on the upper levels. They all fought with great honor.  They rest in peace now.~ DO ~AddXPObject(Player1,35000) AddXPObject(Player2,35000) AddXPObject(Player3,35000) AddXPObject(Player4,35000) AddXPObject(Player5,35000) AddXPObject(Player6,35000) SetGlobal("K_Done", "GLOBAL", 1) EraseJournalEntry(%To battle the soldiers of Kaylessa.
 
 We met Kaylessa in Shevarash Tower in the Severed Hand.  She has asked us to battle her soldiers and put them to proper rest.  In return, she will give us some strange piece of machinery for an astrolabe.%)~ SOLVED_JOURNAL ~To battle the soldiers of Kaylessa.
 
@@ -112,40 +103,22 @@ END
 
 IF ~~ THEN BEGIN 16
   SAY ~You have my heartfelt thanks. Return to me when my soldiers are at peace.~
- IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2)
-RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
- IF ~InParty("Sharteel")
-!Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 209
-  IF ~InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
-  IF ~InParty("Imoen")
-!Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ173
-  IF ~InParty("Imoen2")
-!Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX89
+  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
+  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 209
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
+  IF ~InParty("Imoen") !Dead("Imoen")~ THEN EXTERN ~IMOENJ~ NEJ173
+  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ VP_FIX89
 END
 
-IF ~NumTimesTalkedToGT(0)
-Global("K_Done", "GLOBAL", 0)~ THEN BEGIN 17
+IF ~NumTimesTalkedToGT(0) Global("K_Done", "GLOBAL", 0)~ THEN BEGIN 17
   SAY ~I see you have returned, adventurers.~
   IF ~~ THEN REPLY ~Greetings once again, Kaylessa.  You had mentioned you were the Hand's weapon master?~ GOTO 5
   IF ~~ THEN REPLY ~We still seek to find Larrel.  Can you help us?~ GOTO 8
-  IF ~GlobalGT("SoldiersDead","GLOBAL",24)
-Global("KaylessaQuest","GLOBAL",1)
-Global("K_Done", "GLOBAL", 0)~ THEN REPLY ~Kaylessa, your soldiers all fought with great honor.  Their suffering has ended, and they rest now.~ DO ~AddXPObject(Player1,35000)
-AddXPObject(Player2,35000)
-AddXPObject(Player3,35000)
-AddXPObject(Player4,35000)
-AddXPObject(Player5,35000)
-AddXPObject(Player6,35000)
-SetGlobal("K_Done", "GLOBAL", 1)
-EraseJournalEntry(%To battle the soldiers of Kaylessa.
+  IF ~GlobalGT("SoldiersDead","GLOBAL",24) Global("KaylessaQuest","GLOBAL",1) Global("K_Done", "GLOBAL", 0)~ THEN REPLY ~Kaylessa, your soldiers all fought with great honor.  Their suffering has ended, and they rest now.~ DO ~AddXPObject(Player1,35000) AddXPObject(Player2,35000) AddXPObject(Player3,35000) AddXPObject(Player4,35000) AddXPObject(Player5,35000) AddXPObject(Player6,35000) SetGlobal("K_Done", "GLOBAL", 1) EraseJournalEntry(%To battle the soldiers of Kaylessa.
 
-Kaylessa asked us to put her soldiers to rest on the field of battle.  We told her that we had already encountered them and that they all fought with great honor.%)
-EraseJournalEntry(%To battle the soldiers of Kaylessa.
+Kaylessa asked us to put her soldiers to rest on the field of battle.  We told her that we had already encountered them and that they all fought with great honor.%) EraseJournalEntry(%To battle the soldiers of Kaylessa.
 
 We met Kaylessa in Shevarash Tower in the Severed Hand.  She has asked us to battle her soldiers and put them to proper rest.  In return, she will give us some strange piece of machinery for an astrolabe.%)~ SOLVED_JOURNAL ~To battle the soldiers of Kaylessa.
 
@@ -177,4 +150,4 @@ IF ~~ THEN BEGIN 21 //4
   SAY ~Find Geralith, he is around somewhere, probably atop the tower with Larrel. If I am right, then he will be trying to repair the astrolabe. It was he who built the machine and he who was responsible for its upkeep.~
   IF ~~ THEN REPLY ~Geralith is trying to repair the astrolabe... are you saying that it is broken?~ GOTO 12
   IF ~~ THEN REPLY ~Damn! Just my luck to hear of a machine that could possibly take me home, and then in the next breath to be told it is broken! Are you sure of this Kaylessa?~ GOTO 12
-END     
+END  

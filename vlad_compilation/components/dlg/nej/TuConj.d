@@ -36,11 +36,10 @@ END
 
 IF ~~ THEN BEGIN 6
   SAY ~Farewell, Mordecai.~
-  IF ~~ THEN DO ~SetGlobal("VP_Ghiala_Escapes","GLOBAL",1)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Ghiala_Escapes","GLOBAL",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~Well Mordecai, as long as the students you keep testing to silence me keep failing, my students get the benefit of uninterrupted lectures. (*Smiles at Mordecai*) Which is more than can be said for yours when I get to set the tests.~
-    IF ~~ THEN EXTERN ~TUMORD~ 36
-END 
+  IF ~~ THEN EXTERN ~TUMORD~ 36
+END

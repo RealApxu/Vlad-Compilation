@@ -1,7 +1,6 @@
 APPEND ~FFBART~
 
-IF WEIGHT #-1 ~Global("VP_ResqueLeina","GLOBAL",1)
-InPartySlot(LastTalkedToBy,0)~ THEN BEGIN NEJ26
+IF WEIGHT #-1 ~Global("VP_ResqueLeina","GLOBAL",1) InPartySlot(LastTalkedToBy,0)~ THEN BEGIN NEJ26
   SAY ~I was so relieved when Ikey told me that you had agreed to speak with me, <CHARNAME>. Yes, I know your name, and so do most folks around here.~
   IF ~~ THEN DO ~SetGlobal("VP_Met_FFBarkeep","GLOBAL",1)~ GOTO NEJ27
 END
@@ -125,35 +124,19 @@ IF ~~ THEN BEGIN NEJ46
   IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",2)~ EXIT
 END
 
-IF WEIGHT #-2 ~Global("VP_ResqueLeina","GLOBAL",1)
-!InPartySlot(LastTalkedToBy,0)~ THEN BEGIN NEJ47
+IF WEIGHT #-2 ~Global("VP_ResqueLeina","GLOBAL",1) !InPartySlot(LastTalkedToBy,0)~ THEN BEGIN NEJ47
   SAY ~Greetings to you. I am Samuel Thunderburp. And you are, of course, one of the traveling companions of <CHARNAME>. I had hoped to speak with <PRO_HIMHER>, but you are certainly worthy.~
   IF ~~ THEN DO ~SetGlobal("VP_Met_FFBarkeep","GLOBAL",1)~ GOTO NEJ27
 END
 
-IF WEIGHT #-4 ~GlobalGT("VP_ResqueLeina","GLOBAL",1)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)~ THEN BEGIN NEJ48 // from:
+IF WEIGHT #-4 ~GlobalGT("VP_ResqueLeina","GLOBAL",1) GlobalLT("VP_ResqueLeina","GLOBAL",5)~ THEN BEGIN NEJ48 // from:
   SAY ~Did you discover anything, <CHARNAME>, any clues as the whereabouts of my Leina? Tell me, did you learn anything that will help to find her?~
   IF ~GlobalLT("VP_ResqueLeina","GLOBAL",3)~ THEN REPLY ~I'm afraid not yet, but I intend to keep looking.~ GOTO NEJ49
-  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)
-!PartyHasItem("GovanLet")~ THEN REPLY ~I'm afraid not yet, but I intend to keep looking.~ GOTO NEJ49
-  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)
-PartyHasItem("GovanLet")~ THEN REPLY ~Hey, not so fast Samuel. Her room is a right mess up there, not any of my doing I hasten to add. I did find this letter, crumpled and thrown in the corner of the room amid some roses. Here, read this and tell me what you know of this Govan Duvaine?~ DO ~TakePartyItem("GovanLet")
-SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ50
-  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)
-PartyHasItem("GovanLet")~ THEN REPLY ~Seems this Leina of yours had a suitor that she did not take too kindly to. Spurned his advances I would say by the looks of things upstairs. Here, take a look and tell me what you know of the man who signs this letter.~ DO ~TakePartyItem("GovanLet")
-SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ50
-  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)
-PartyHasItem("GovanLet")~ THEN REPLY ~Her room is a mess Samuel and I found this crumpled letter amongst some roses hastily discarded. I am sorry but I cannot spare anymore time on this search. Here take the letter, perhaps it will aid you in your search for her. Farewell, Samuel.~ DO ~TakePartyItem("GovanLet")
-SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ55
-  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3)
-GlobalLT("VP_ResqueLeina","GLOBAL",5)
-PartyHasItem("GovanLet")~ THEN REPLY ~By the looks of things upstairs, I would say this Leina of yours has fallen foul of a spurned suitor. You would have discovered as much yourself if you had taken the time to look. Here take this letter and do with it as you please, I can spare no more time to help you. Farewell.~ DO ~TakePartyItem("GovanLet")
-SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ55
+  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3) GlobalLT("VP_ResqueLeina","GLOBAL",5) !PartyHasItem("GovanLet")~ THEN REPLY ~I'm afraid not yet, but I intend to keep looking.~ GOTO NEJ49
+  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3) GlobalLT("VP_ResqueLeina","GLOBAL",5) PartyHasItem("GovanLet")~ THEN REPLY ~Hey, not so fast Samuel. Her room is a right mess up there, not any of my doing I hasten to add. I did find this letter, crumpled and thrown in the corner of the room amid some roses. Here, read this and tell me what you know of this Govan Duvaine?~ DO ~TakePartyItem("GovanLet") SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ50
+  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3) GlobalLT("VP_ResqueLeina","GLOBAL",5) PartyHasItem("GovanLet")~ THEN REPLY ~Seems this Leina of yours had a suitor that she did not take too kindly to. Spurned his advances I would say by the looks of things upstairs. Here, take a look and tell me what you know of the man who signs this letter.~ DO ~TakePartyItem("GovanLet") SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ50
+  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3) GlobalLT("VP_ResqueLeina","GLOBAL",5) PartyHasItem("GovanLet")~ THEN REPLY ~Her room is a mess Samuel and I found this crumpled letter amongst some roses hastily discarded. I am sorry but I cannot spare anymore time on this search. Here take the letter, perhaps it will aid you in your search for her. Farewell, Samuel.~ DO ~TakePartyItem("GovanLet") SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ55
+  IF ~GlobalGT("VP_ResqueLeina","GLOBAL",3) GlobalLT("VP_ResqueLeina","GLOBAL",5) PartyHasItem("GovanLet")~ THEN REPLY ~By the looks of things upstairs, I would say this Leina of yours has fallen foul of a spurned suitor. You would have discovered as much yourself if you had taken the time to look. Here take this letter and do with it as you please, I can spare no more time to help you. Farewell.~ DO ~TakePartyItem("GovanLet") SetGlobal("VP_ResqueLeina","GLOBAL",5)~ GOTO NEJ55
 END
 
 IF ~~ THEN BEGIN NEJ49
@@ -188,8 +171,7 @@ END
 
 IF ~~ THEN BEGIN NEJ54
   SAY ~Here take this letter you found and confront him with it, see what he has to say for himself.~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",7)
-GiveItem("GovanLet",[PC])~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",7) GiveItem("GovanLet",[PC])~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ55
@@ -207,46 +189,29 @@ END
 
 IF ~~ THEN BEGIN NEJ57
   SAY ~At least, I hope so... (*Samuel turns and walks away.*)~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",6)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",6) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ58
   SAY ~It is every copper that I own... (*Samuel turns and walks away.*)~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",6)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",6) EscapeArea()~ EXIT
 END
 
 
-IF WEIGHT #-3 ~GlobalGT("VP_ResqueLeina","GLOBAL",1)
-GlobalLT("VP_ResqueLeina","GLOBAL",8)~ THEN BEGIN NEJ59 // from:
+IF WEIGHT #-3 ~GlobalGT("VP_ResqueLeina","GLOBAL",1) GlobalLT("VP_ResqueLeina","GLOBAL",8)~ THEN BEGIN NEJ59 // from:
   SAY ~Did you discover anything, <CHARNAME>, any clues as the whereabouts of my Leina? Tell me, did you learn anything that will help to find her?~
   IF ~~ THEN REPLY ~I'm afraid not yet, but I intend to keep looking.~ GOTO NEJ49
 END
 
 IF WEIGHT #-5 ~Global("VP_ResqueLeina","GLOBAL",36)~ THEN BEGIN NEJ60 // from:
   SAY ~I see that Leina is not with you. Have you no news of her at all for me? What of that n'er-do-well Duvaine, what did he have to say for himself?~
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ61
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova. I have no idea where to look for this guy who could verify the whole story.~ GOTO NEJ61
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I would like to pay Vulova a call, but his estate is locked, and I cannot waste anymore of my time waiting for him to show up.~ GOTO NEJ61
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. Vulova was not at home when I paid him a call and I cannot waste anymore of my time waiting for him to show up. You will have to continue the search yourself. Here, take Duvaine's letter, it is of no further use to me. Farewell.~ DO ~GiveItem("GovanLet",[PC])~ GOTO NEJ61
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova, only of course he wasn't home. All I got for my trouble was a cryptic story, told to me by a person of dubious character, and which meant absolutely nothing to me. To top it all, Duvaine himself had done a runner. I have wasted enough time on this chase! I return only to say that my involvement in this matter is done. Farewell.~ GOTO NEJ61
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he insists it was Leina's father's idea that they should marry, he thought to keep her in Athkatla by marrying her to Duvaine. I tried to verify his story by going to the Vulova estate but there was no sign of Leina nor of her father. Instead, I was accosted by a shady character with some cryptic story that I couldn't make sense of. I am sorry but I really cannot see what else I can do at this time. If I learn any more on my travels, I'll be sure and get back to you, until then, I bid you farewell Samuel.~ GOTO NEJ61
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~I learnt from Duvaine that Leina's father could well be behind her disappearance... the marriage being his idea to keep Leina close to home. I took a trip across the city only to discover the estate locked tight, but my visit wasn't altogether fruitless. My only clue is a little obscure to say the least, but trust me Samuel, I am not about to give up so easily... I am confident that I will find her for you.~ GOTO NEJ86
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ61
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova. I have no idea where to look for this guy who could verify the whole story.~ GOTO NEJ61
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I would like to pay Vulova a call, but his estate is locked, and I cannot waste anymore of my time waiting for him to show up.~ GOTO NEJ61
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. Vulova was not at home when I paid him a call and I cannot waste anymore of my time waiting for him to show up. You will have to continue the search yourself. Here, take Duvaine's letter, it is of no further use to me. Farewell.~ DO ~GiveItem("GovanLet",[PC])~ GOTO NEJ61
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova, only of course he wasn't home. All I got for my trouble was a cryptic story, told to me by a person of dubious character, and which meant absolutely nothing to me. To top it all, Duvaine himself had done a runner. I have wasted enough time on this chase! I return only to say that my involvement in this matter is done. Farewell.~ GOTO NEJ61
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he insists it was Leina's father's idea that they should marry, he thought to keep her in Athkatla by marrying her to Duvaine. I tried to verify his story by going to the Vulova estate but there was no sign of Leina nor of her father. Instead, I was accosted by a shady character with some cryptic story that I couldn't make sense of. I am sorry but I really cannot see what else I can do at this time. If I learn any more on my travels, I'll be sure and get back to you, until then, I bid you farewell Samuel.~ GOTO NEJ61
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","AR1000",1)~ THEN REPLY ~I learnt from Duvaine that Leina's father could well be behind her disappearance... the marriage being his idea to keep Leina close to home. I took a trip across the city only to discover the estate locked tight, but my visit wasn't altogether fruitless. My only clue is a little obscure to say the least, but trust me Samuel, I am not about to give up so easily... I am confident that I will find her for you.~ GOTO NEJ86
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ49
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova...~ GOTO NEJ49
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I'm going to pay Vulova a call...~ GOTO NEJ49
@@ -265,13 +230,12 @@ IF ~~ THEN BEGIN NEJ62
 END
 
 ////////////////////////////////////////
-//                                    //
+//  //
 // Old States for Correction In v4.2b //
-//                                    //
+//  //
 ////////////////////////////////////////
 
-IF WEIGHT #-6 ~Global("VP_Met_FFBarkeep","GLOBAL",1)
-Global("VP_Govan_Bribes_Me","GLOBAL",1)~ THEN BEGIN NEJ63
+IF WEIGHT #-6 ~Global("VP_Met_FFBarkeep","GLOBAL",1) Global("VP_Govan_Bribes_Me","GLOBAL",1)~ THEN BEGIN NEJ63
   SAY ~You have news of my Leina at last, <CHARNAME>? Please say that you do?~
   IF ~~ THEN REPLY ~I have, Samuel. It seems your Leina has had a change of heart. She has agreed to marry Govan Duvaine. I have spoken to her and she asks me to tell you that she is happy.~ GOTO NEJ64
   IF ~~ THEN REPLY ~Yes, barkeep, in fact Leina sends you her best regards and wishes you to know that she is marrying Govan Duvaine and she expects to be very happy with him.~ GOTO NEJ64
@@ -291,12 +255,11 @@ END
 
 IF ~~ THEN BEGIN NEJ66
   SAY ~Thank you for putting my mind at ease, <CHARNAME>. I expect she will come tell me herself when the wedding is to be. Here is the 1000 gold pieces I promised you. Fare thee well.~
-  IF ~~ THEN DO ~GiveGoldForce(1000)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)~ EXIT
+  IF ~~ THEN DO ~GiveGoldForce(1000) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)~ EXIT
 END //If PC proceeds to meeting with Killian then => Scenario: Meeting With Killian
 
-/*IF WEIGHT #-7 ~Global("VP_Met_FFBarkeep","GLOBAL",1)
-Global("VP_ResqueLeina","GLOBAL",17)~ THEN BEGIN NEJ67
+/*
+IF WEIGHT #-7 ~Global("VP_Met_FFBarkeep","GLOBAL",1) Global("VP_ResqueLeina","GLOBAL",17)~ THEN BEGIN NEJ67
   SAY ~Leina arrived ahead of you, <CHARNAME>, and I give thanks to you for her safe return. She has told me of her father's death and that she lays no blame at your feet for it.~
   IF ~~ THEN GOTO NEJ68
 END
@@ -315,12 +278,11 @@ END
 
 IF ~~ THEN BEGIN NEJ70
   SAY ~Then there is no more to be said. Here is your gold <CHARNAME>. If you change your mind about taking Leina along with you, you know where she can be found. Fare thee well.~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",18)
-GivePartyGold(1000)~ EXIT
-END*/
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",18) GivePartyGold(1000)~ EXIT
+END
+*/
 
-IF WEIGHT #-8 ~InParty("Leina")
-Global("VP_ResqueLeina","GLOBAL",16)~ THEN BEGIN NEJ71
+IF WEIGHT #-8 ~InParty("Leina") Global("VP_ResqueLeina","GLOBAL",16)~ THEN BEGIN NEJ71
   SAY ~Praise be! You are safe, Leina. I thought... well, I do not know what I thought, but you are here now, praise be!~
   IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",18)~ EXTERN ~LEINAJ~ 18
 END
@@ -344,14 +306,10 @@ END
 
 IF ~~ THEN BEGIN NEJ75
   SAY ~Then I bid you fare thee well, <CHARNAME>, but mark you well what my final words were to you.~
-  IF ~~ THEN DO ~GiveGoldForce(1000)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)~ EXIT
+  IF ~~ THEN DO ~GiveGoldForce(1000) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)~ EXIT
 END
 
-IF WEIGHT #-9 ~Global("VP_LeinaReturns","GLOBAL",0)
-Global("VP_LeinaThanks","GLOBAL",2)
-GlobalGT("VP_Govan_Bribes_Me","GLOBAL",2)
-Global("VP_DuvainesAttack","GLOBAL",0)~ THEN BEGIN NEJ76
+IF WEIGHT #-9 ~Global("VP_LeinaReturns","GLOBAL",0) Global("VP_LeinaThanks","GLOBAL",2) GlobalGT("VP_Govan_Bribes_Me","GLOBAL",2) Global("VP_DuvainesAttack","GLOBAL",0)~ THEN BEGIN NEJ76
   SAY ~You have returned my Leina to me, <CHARNAME>, and I give thanks to you for her safe return. She has taken to her room for some quiet she says but was pretty shaken when she walked through the door. I fear she may decide to leave Athkatla soon and I do not blame the lass if she did.~
   IF ~~ THEN DO ~SetGlobal("VP_LeinaReturns","GLOBAL",1)~ GOTO NEJ77
 END
@@ -391,16 +349,10 @@ END
 
 IF ~~ THEN BEGIN NEJ83
   SAY ~If I hear of any pain or grief brought to her on your account, you will answer to Samuel Thunderburp. Fare thee well.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY)
-SetGlobal("VP_Samuel_Helps","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-EscapeAreaMove("AR1002",516,638,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY) SetGlobal("VP_Samuel_Helps","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) EscapeAreaMove("AR1002",516,638,8)~ EXIT
 END
 
-IF WEIGHT #-10 ~Global("VP_LeinaReturns","GLOBAL",1)
-GlobalGT("VP_DuvainesRevenge","GLOBAL",0)
-Global("VP_Samuel_Helps","GLOBAL",0)
-!InParty("Leina")~ THEN BEGIN NEJ84
+IF WEIGHT #-10 ~Global("VP_LeinaReturns","GLOBAL",1) GlobalGT("VP_DuvainesRevenge","GLOBAL",0) Global("VP_Samuel_Helps","GLOBAL",0) !InParty("Leina")~ THEN BEGIN NEJ84
   SAY ~Are you here to tell me that you have changed your mind about taking Leina with you, <CHARNAME>?~
   IF ~~ THEN REPLY ~She can travel with me, barkeep, but I cannot guarantee that my road will be any safer for her if she remained here.~ GOTO NEJ90
   IF ~~ THEN REPLY ~Leina may travel with me but I will not be held responsible for her safety and only until a safe place for her can be found.~ GOTO NEJ90
@@ -408,10 +360,7 @@ Global("VP_Samuel_Helps","GLOBAL",0)
   IF ~~ THEN REPLY ~I have no need for a minstrel, barkeep, I will have to take my chances in the city.~ GOTO NEJ96
 END
 
-IF WEIGHT #-11 ~Global("VP_LeinaReturns","GLOBAL",1)
-GlobalGT("VP_DuvainesRevenge","GLOBAL",0)
-Global("VP_Samuel_Helps","GLOBAL",0)
-InParty("Leina")~ THEN BEGIN NEJ85
+IF WEIGHT #-11 ~Global("VP_LeinaReturns","GLOBAL",1) GlobalGT("VP_DuvainesRevenge","GLOBAL",0) Global("VP_Samuel_Helps","GLOBAL",0) InParty("Leina")~ THEN BEGIN NEJ85
   SAY ~Praise be! You have a change of heart and take Leina with you, <CHARNAME>?~
   IF ~~ THEN REPLY ~She can travel with me, barkeep, but I cannot guarantee that my road will be any safer for her if she remained here.~ GOTO NEJ90
   IF ~~ THEN REPLY ~Leina may travel with me but I will not be held responsible for her safety and only until a safe place for her can be found.~ GOTO NEJ90
@@ -434,13 +383,12 @@ IF ~~ THEN BEGIN NEJ88
 END
 
 //////////////////////////////////////
-//                                  //
+//  //
 // New & Corrected States for v4.2b //
-//                                  //
+//  //
 //////////////////////////////////////
 
-IF WEIGHT #-12 ~Global("VP_ResqueLeina","GLOBAL",10)
-Global("VP_MyQuest_Is_Over","LOCALS",1)~ THEN BEGIN NEJ89
+IF WEIGHT #-12 ~Global("VP_ResqueLeina","GLOBAL",10) Global("VP_MyQuest_Is_Over","LOCALS",1)~ THEN BEGIN NEJ89
   SAY ~Are you here to tell me that you have changed your mind about taking Leina with you, <CHARNAME>?~
   IF ~~ THEN REPLY ~She can travel with me, barkeep, but I cannot guarantee that my road will be any safer for her if she remained here.~ GOTO NEJ90
   IF ~~ THEN REPLY ~Leina may travel with me but I will not be held responsible for her safety and only until a safe place for her can be found.~ GOTO NEJ90
@@ -450,23 +398,16 @@ END
 IF ~~ THEN BEGIN NEJ90
   SAY ~I will get to sorting this mess straight away. In the meantime you take good care of my Leina <CHARNAME>.~
   IF ~Global("VP_ResqueLeina","GLOBAL",10)~ THEN EXTERN ~LEINA~ 17
-  IF ~OR(2)
-Global("VP_ResqueLeina","GLOBAL",17)
-Global("VP_DuvainesAttack","GLOBAL",1)~ THEN EXTERN ~LEINAP~ 27
+  IF ~OR(2) Global("VP_ResqueLeina","GLOBAL",17) Global("VP_DuvainesAttack","GLOBAL",1)~ THEN EXTERN ~LEINAP~ 27
   IF ~InParty("Leina")~ THEN GOTO NEJ83
 END
 
 IF ~~ THEN BEGIN NEJ91
   SAY ~If I hear of any pain or grief brought to her on your account, you will answer to Samuel Thunderburp. Fare thee well.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY)
-SetGlobal("VP_Samuel_Helps","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-ActionOverride("Leina",JoinParty())
-EscapeAreaMove("AR1002",516,638,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY) SetGlobal("VP_Samuel_Helps","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) ActionOverride("Leina",JoinParty()) EscapeAreaMove("AR1002",516,638,8)~ EXIT
 END
 
-IF WEIGHT #-13 ~Global("VP_Met_FFBarkeep","GLOBAL",1)
-Global("VP_ResqueLeina","GLOBAL",17)~ THEN BEGIN NEJ92
+IF WEIGHT #-13 ~Global("VP_Met_FFBarkeep","GLOBAL",1) Global("VP_ResqueLeina","GLOBAL",17)~ THEN BEGIN NEJ92
   SAY ~You have returned my Leina to me, <CHARNAME>, and she has told me the whole sordid tale. It is a mess for sure that you have got yourself into.~
   IF ~~ THEN DO ~SetGlobal("VP_LeinaReturns","GLOBAL",1)~ GOTO NEJ93
 END
@@ -533,16 +474,10 @@ END
 
 IF ~~ THEN BEGIN NEJ104
   SAY ~Then I bid you fare thee well <CHARNAME> but mark you well what my final words were to you.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY)
-SetGlobal("VP_Samuel_Helps","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobalTimer("VP_Sam_Helps_Timer","GLOBAL",ONE_DAY) SetGlobal("VP_Samuel_Helps","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) EscapeArea()~ EXIT
 END
 
-IF WEIGHT #-14 ~Global("VP_LeinaThanks2","GLOBAL",2)
-Global("VP_AuberonBribesMe","GLOBAL",1)
-Global("VP_Samuel_Helps","GLOBAL",0)
-!InParty("Leina")~ THEN BEGIN NEJ105
+IF WEIGHT #-14 ~Global("VP_LeinaThanks2","GLOBAL",2) Global("VP_AuberonBribesMe","GLOBAL",1) Global("VP_Samuel_Helps","GLOBAL",0) !InParty("Leina")~ THEN BEGIN NEJ105
   SAY ~So <CHARNAME>, I wonder you have the nerve to show your face in my inn again! You come back and tell me a pack of lies... tell me my Leina is content to marry Duvaine and all the time you'd  betrayed the trust I put in you.~
   IF ~~ THEN GOTO NEJ106
 END
@@ -562,34 +497,22 @@ END
 
 IF ~~ THEN BEGIN NEJ108
   SAY ~I am certain your only thought was to net yourself a fine profit at my Leina's expense... here, if gold is of so much importance to you, take the reward I promised and don't show yourself in my inn again.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) GiveGoldForce(1000)~ EXIT
 END
 
-IF WEIGHT #-15 ~Global("VP_Samuel_Breaks","GLOBAL",1)
-!InParty("Leina")~ THEN BEGIN NEJ109
+IF WEIGHT #-15 ~Global("VP_Samuel_Breaks","GLOBAL",1) !InParty("Leina")~ THEN BEGIN NEJ109
   SAY ~Get out of my inn!~
   IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",2)~ EXIT
 END
 
-IF WEIGHT #-16 ~Global("VP_Samuel_Breaks","GLOBAL",2)
-!InParty("Leina")~ THEN BEGIN NEJ110
+IF WEIGHT #-16 ~Global("VP_Samuel_Breaks","GLOBAL",2) !InParty("Leina")~ THEN BEGIN NEJ110
   SAY ~I told you to get out of my inn unless I call for guards!~
   IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",3)~ EXIT
 END
 
-IF WEIGHT #-17 ~Global("VP_Samuel_Breaks","GLOBAL",3)
-!InParty("Leina")~ THEN BEGIN NEJ111
+IF WEIGHT #-17 ~Global("VP_Samuel_Breaks","GLOBAL",3) !InParty("Leina")~ THEN BEGIN NEJ111
   SAY ~Guards!~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",4)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",4) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) CreateCreatureObjectOffScreen("VPGuard",Player1,0,0,0) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ112
@@ -604,15 +527,10 @@ END
 
 IF ~~ THEN BEGIN NEJ114
   SAY ~Here, if gold is of so much importance to you, take the reward I promised and don't show yourself in my inn again.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) GiveGoldForce(1000)~ EXIT
 END
 
-IF WEIGHT #-18 ~Global("VP_LeinaThanks2","GLOBAL",2)
-Global("VP_AuberonBribesMe","GLOBAL",1)
-Global("VP_Samuel_Helps","GLOBAL",0)
-InParty("Leina")~ THEN BEGIN NEJ115
+IF WEIGHT #-18 ~Global("VP_LeinaThanks2","GLOBAL",2) Global("VP_AuberonBribesMe","GLOBAL",1) Global("VP_Samuel_Helps","GLOBAL",0) InParty("Leina")~ THEN BEGIN NEJ115
   SAY ~Praise be! You have a change of heart and take Leina with you, <CHARNAME>?~
   IF ~~ THEN REPLY ~She can travel with me, barkeep, but I cannot guarantee that my road will be any safer for her if she remained here.~ GOTO NEJ90
   IF ~~ THEN REPLY ~Leina may travel with me but I will not be held responsible for her safety and only until a safe place for her can be found.~ GOTO NEJ90
@@ -626,14 +544,10 @@ END
 
 IF ~~ THEN BEGIN NEJ117
   SAY ~No honourable person would have treated my Leina in the way that you have... no... your behaviour is as reprehensible as I suspect are your motives... here, if gold is of so much importance to you, take the reward I promised and don't show yourself in my inn again.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1)
-SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS)
-GiveGoldForce(1000)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Breaks","GLOBAL",1) SetGlobalTimer("VP_Sam_Misses_Leina","GLOBAL",TEN_DAYS) GiveGoldForce(1000)~ EXIT
 END
 
-IF WEIGHT #-19 ~Global("VP_LeinaReturns","GLOBAL",0)
-Global("VP_LeinaThanks","GLOBAL",2)
-Global("VP_DuvainesAttack","GLOBAL",1)~ THEN BEGIN NEJ118
+IF WEIGHT #-19 ~Global("VP_LeinaReturns","GLOBAL",0) Global("VP_LeinaThanks","GLOBAL",2) Global("VP_DuvainesAttack","GLOBAL",1)~ THEN BEGIN NEJ118
   SAY ~Well, you have stirred up a hornets nest <CHARNAME>. It's nothing more than you deserve.~
   IF ~~ THEN DO ~SetGlobal("VP_LeinaReturns","GLOBAL",1)~ GOTO NEJ119
 END
@@ -707,10 +621,7 @@ IF ~~ THEN BEGIN NEJ130
   IF ~~ THEN GOTO NEJ122
 END
 
-IF WEIGHT #0 ~Global("VP_Met_FFBarkeep","GLOBAL",1)
-!InParty("Leina")
-Global("VP_Samuel_Worries","GLOBAL",0)
-Global("VP_Samuel_Breaks","GLOBAL",0)~ THEN BEGIN NEJ131
+IF WEIGHT #0 ~Global("VP_Met_FFBarkeep","GLOBAL",1) !InParty("Leina") Global("VP_Samuel_Worries","GLOBAL",0) Global("VP_Samuel_Breaks","GLOBAL",0)~ THEN BEGIN NEJ131
   SAY ~(*His eyes anxiously search amongst your ranks*) Leina... I don't see her with you? Please, tell me that she is well and that you haven't come to my inn bearing the worst of news?~
   IF ~~ THEN REPLY ~Calm yourself Samuel, Leina is well. I had to let her go because her skills were no longer required by the group.~ GOTO NEJ132
   IF ~~ THEN REPLY ~She left on her own accord barkeep, she just threw a tantrum and said she could no longer work with me.~ GOTO NEJ132
@@ -723,7 +634,7 @@ IF ~~ THEN BEGIN NEJ132
   SAY ~(*A look of relief crosses his face*). Praise the gods! When I didn't see her smiling face amongst your numbers, my heart sank and I feared that she was lost to me forever. Tell me <CHARNAME>, did she say what her plans were before she left your company... is she coming home... to Athkatla?~
   IF ~~ THEN REPLY ~No, I am sorry, she didn't say anything to me. I assure you though, her time with us has made her a woman well able to look after herself. She will be fine Samuel.~ GOTO NEJ133
   IF ~~ THEN REPLY ~No, she said nothing to me.~ GOTO NEJ143
-  IF ~~ THEN REPLY ~No and I didn't ask her either. Temperamental, ungrateful minstrel... after all I did to secure her freedom!~ GOTO NEJ146   	
+  IF ~~ THEN REPLY ~No and I didn't ask her either. Temperamental, ungrateful minstrel... after all I did to secure her freedom!~ GOTO NEJ146
 END
 
 IF ~~ THEN BEGIN NEJ133
@@ -737,7 +648,7 @@ IF ~~ THEN BEGIN NEJ134
 END
 
 IF ~~ THEN BEGIN NEJ135
-  SAY ~Now, is there some service that The Five Flagons can offer you... a drink maybe to wash the dust of the road from your throats?~ 	
+  SAY ~Now, is there some service that The Five Flagons can offer you... a drink maybe to wash the dust of the road from your throats?~
   IF ~~ THEN REPLY ~Thank you... a drink will be most welcome.~ DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",1)~ GOTO 1
   IF ~~ THEN REPLY ~No thank you Samuel, I have to be on my way, another time maybe.~ GOTO NEJ136
 END
@@ -763,8 +674,7 @@ END
 
 IF ~~ THEN BEGIN NEJ139
   SAY ~Please, I ask that you leave me now <CHARNAME> for I shall close The Five Flagons so's I can mourn my Leina and pay my respects to her passing as is fitting. There will be no business conducted in The Five Flagons until a full day has come and gone.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ140
@@ -779,8 +689,7 @@ END
 
 IF ~~ THEN BEGIN NEJ142
   SAY ~Please, I ask that you leave me now <CHARNAME> for I shall close The Five Flagons so's I can mourn my Leina and pay my respects to her passing as is fitting. There will be no business conducted in The Five Flagons until a full day has come and gone.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ143
@@ -826,8 +735,7 @@ END
 
 IF ~~ THEN BEGIN NEJ150
   SAY ~As you wish.~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",1)
-StartStore("ffbart",LastTalkedToBy())~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",1) StartStore("ffbart",LastTalkedToBy())~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ151
@@ -854,8 +762,7 @@ END
 
 IF ~~ THEN BEGIN NEJ155
   SAY ~Good bye <CHARNAME>!~
-  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2)
-SetGlobal("VP_Samuel_Breaks","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Samuel_Worries","GLOBAL",2) SetGlobal("VP_Samuel_Breaks","GLOBAL",1)~ EXIT
 END
 
 IF WEIGHT #1 ~Global("VP_Leina_Samuel","GLOBAL",7)~ THEN BEGIN NEJ156
@@ -875,29 +782,15 @@ END
 
 IF ~~ THEN BEGIN NEJ159
   SAY ~(*Then turning to you*)... You have built up quite a reputation since leaving Athkatla <CHARNAME>, but Samuel Thunderburp is not one to go listening to gossip. The sight of my Leina so happy tells me all I need to know of you. I thank you for taking such good care of her.~
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ GOTO NEJ160
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ GOTO NEJ160
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ GOTO NEJ160
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ GOTO NEJ160
-  IF ~OR(2)
-!InParty("Minsc")
-Dead("Minsc")~ THEN REPLY ~Believe me barkeep, if the bard hadn't proved to be of any use to me I would have left her the first time she fell, regardless of where that might have been.~ GOTO NEJ170
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ EXTERN ~MINSCJ~ NEJ338
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ EXTERN ~MINSCJ~ NEJ338
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ EXTERN ~MINSCJ~ NEJ338
-  IF ~InParty("Minsc")
-!Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ EXTERN ~MINSCJ~ NEJ338
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ GOTO NEJ160
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ GOTO NEJ160
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ GOTO NEJ160
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ GOTO NEJ160
+  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~Believe me barkeep, if the bard hadn't proved to be of any use to me I would have left her the first time she fell, regardless of where that might have been.~ GOTO NEJ170
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ EXTERN ~MINSCJ~ NEJ338
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ EXTERN ~MINSCJ~ NEJ338
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ EXTERN ~MINSCJ~ NEJ338
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ EXTERN ~MINSCJ~ NEJ338
 END
 
 IF ~~ THEN BEGIN NEJ160
@@ -951,7 +844,7 @@ END
 
 IF ~~ THEN BEGIN NEJ169
   SAY ~Samuel Thunderburp will always be here at The Five Flagons as will a place for you should you ever have need. Now if these obligations of <CHARNAME>'s are so important I suggest you set about sorting them... just you keep yourself safe and come visit again soon.~
-	IF ~~ THEN DO ~SetGlobal("VP_Errant_Husband","GLOBAL",1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Errant_Husband","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN NEJ170
@@ -977,27 +870,13 @@ END
 
 IF WEIGHT #-5 ~Global("VP_ResqueLeina","GLOBAL",8)~ THEN BEGIN NEJ174 // from:
   SAY ~I see that Leina is not with you. Have you no news of her at all for me? What of that n'er-do-well Duvaine, what did he have to say for himself?~
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ175
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova. I have no idea where to look for this guy who could verify the whole story.~ GOTO NEJ175
-  IF ~OR(2)
-Global("BodhiJob","GLOBAL",0)
-GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I would like to pay Vulova a call, but his estate is locked, and I cannot waste anymore of my time waiting for him to show up.~ GOTO NEJ179
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. Vulova was not at home when I paid him a call and I cannot waste anymore of my time waiting for him to show up. You will have to continue the search yourself. Here, take Duvaine's letter, it is of no further use to me. Farewell.~ DO ~GiveItem("GovanLet",[PC])~ GOTO NEJ179
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova, only of course he wasn't home. All I got for my trouble was a cryptic story, told to me by a person of dubious character, and which meant absolutely nothing to me. To top it all, Duvaine himself had done a runner. I have wasted enough time on this chase! I return only to say that my involvement in this matter is done. Farewell.~ GOTO NEJ179
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he insists it was Leina's father's idea that they should marry, he thought to keep her in Athkatla by marrying her to Duvaine. I tried to verify his story by going to the Vulova estate but there was no sign of Leina nor of her father. Instead, I was accosted by a shady character with some cryptic story that I couldn't make sense of. I am sorry but I really cannot see what else I can do at this time. If I learn any more on my travels, I'll be sure and get back to you, until then, I bid you farewell Samuel.~ GOTO NEJ175
-  IF ~GlobalLT("BodhiJob","GLOBAL",2)
-GlobalGT("BodhiAppear","GLOBAL",1)
-Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~I learnt from Duvaine that Leina's father could well be behind her disappearance... the marriage being his idea to keep Leina close to home. I took a trip across the city only to discover the estate locked tight, but my visit wasn't altogether fruitless. My only clue is a little obscure to say the least, but trust me Samuel, I am not about to give up so easily... I am confident that I will find her for you.~ GOTO NEJ175
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ175
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova. I have no idea where to look for this guy who could verify the whole story.~ GOTO NEJ175
+  IF ~OR(2) Global("BodhiJob","GLOBAL",0) GlobalLT("BodhiAppear","GLOBAL",2)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I would like to pay Vulova a call, but his estate is locked, and I cannot waste anymore of my time waiting for him to show up.~ GOTO NEJ179
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. Vulova was not at home when I paid him a call and I cannot waste anymore of my time waiting for him to show up. You will have to continue the search yourself. Here, take Duvaine's letter, it is of no further use to me. Farewell.~ DO ~GiveItem("GovanLet",[PC])~ GOTO NEJ179
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova, only of course he wasn't home. All I got for my trouble was a cryptic story, told to me by a person of dubious character, and which meant absolutely nothing to me. To top it all, Duvaine himself had done a runner. I have wasted enough time on this chase! I return only to say that my involvement in this matter is done. Farewell.~ GOTO NEJ179
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he insists it was Leina's father's idea that they should marry, he thought to keep her in Athkatla by marrying her to Duvaine. I tried to verify his story by going to the Vulova estate but there was no sign of Leina nor of her father. Instead, I was accosted by a shady character with some cryptic story that I couldn't make sense of. I am sorry but I really cannot see what else I can do at this time. If I learn any more on my travels, I'll be sure and get back to you, until then, I bid you farewell Samuel.~ GOTO NEJ175
+  IF ~GlobalLT("BodhiJob","GLOBAL",2) GlobalGT("BodhiAppear","GLOBAL",1) Global("VP_Spawn_HoodedMan","GLOBAL",1)~ THEN REPLY ~I learnt from Duvaine that Leina's father could well be behind her disappearance... the marriage being his idea to keep Leina close to home. I took a trip across the city only to discover the estate locked tight, but my visit wasn't altogether fruitless. My only clue is a little obscure to say the least, but trust me Samuel, I am not about to give up so easily... I am confident that I will find her for you.~ GOTO NEJ175
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~I am sorry Samuel. I have spoken to Duvaine, he says it was Leina's father's idea that they should marry, and he thought to keep her in Athkatla by marrying her to Duvaine. How much of what he said is true, I have no idea.~ GOTO NEJ175
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~Duvaine pleads ignorance over Leina's disappearance. He reckons the marriage was her father's idea and sent us on a wild goose chase halfway across the city to speak to Vulova.~ GOTO NEJ175
   IF ~GlobalGT("BodhiJob","GLOBAL",1)~ THEN REPLY ~Duvaine was of no help barkeep, except to say that maybe Leina's father is behind her sudden departure, he swears he had nothing to do with it. I'm going to pay Vulova a call.~ GOTO NEJ175
@@ -1032,4 +911,5 @@ IF ~~ THEN BEGIN NEJ180
   SAY ~I hope and pray that she is safe and well. Thank you again and fare thee well.~
   IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",9)~ EXIT
 END
+
 END

@@ -1,8 +1,7 @@
 APPEND ~BSAREV25~
 
 IF ~~ THEN BEGIN TS145
-  SAY ~Corthala, there is a discrepancy I cannot help wondering about. You make no secret of your strong aversion of arcane magic, suspecting it corrupts all who wields it without exception.
-~
+  SAY ~Corthala, there is a discrepancy I cannot help wondering about. You make no secret of your strong aversion of arcane magic, suspecting it corrupts all who wields it without exception.~
   IF ~~ THEN EXTERN ~BVALYG25~ TS119
 END
 
@@ -42,7 +41,7 @@ IF ~~ THEN BEGIN TS152
 END
 
 IF ~~ THEN BEGIN TS153
-  SAY ~What had happened in Baldur’s Gate is between <CHARNAME> and I. Do not dare to judge Bhaal’s blood, human! You will never understand that even as mortal enemies we are still one. My sister feels the same about this.~
+  SAY ~What had happened in Baldurï¿½s Gate is between <CHARNAME> and I. Do not dare to judge Bhaalï¿½s blood, human! You will never understand that even as mortal enemies we are still one. My sister feels the same about this.~
   IF ~~ THEN EXTERN ~BVALYG25~ TS128
 END
 
@@ -92,12 +91,12 @@ IF ~~ THEN BEGIN TS162
 END
 
 IF ~~ THEN BEGIN TS163
-  SAY ~That’s why I had been so... passionate lately. She has spoken to me, and she is rather... upset about our endless arguments.~
+  SAY ~Thatï¿½s why I had been so... passionate lately. She has spoken to me, and she is rather... upset about our endless arguments.~
   IF ~~ THEN EXTERN ~BVALYG25~ TS138
 END
 
 IF ~~ THEN BEGIN TS164
-  SAY ~(*chuckle*) Aye, there is truth to that. Possibly I got a bit carried away. But remember, whether you are impressed or not, my sister’s welfare matters to me like nothing else.~
+  SAY ~(*chuckle*) Aye, there is truth to that. Possibly I got a bit carried away. But remember, whether you are impressed or not, my sisterï¿½s welfare matters to me like nothing else.~
   IF ~~ THEN EXTERN ~BVALYG25~ TS139
 END
 
@@ -112,7 +111,7 @@ IF ~~ THEN BEGIN TS166
 END
 
 IF ~~ THEN BEGIN TS167
-  SAY ~The attractiveness of a sin, is not it? Women! To make a perfect one it takes all things the goodly gods can bestow and a drop of a demon’s blood.~
+  SAY ~The attractiveness of a sin, is not it? Women! To make a perfect one it takes all things the goodly gods can bestow and a drop of a demonï¿½s blood.~
   IF ~~ THEN EXTERN ~BSIME~ TSTOB3
 END
 
@@ -130,4 +129,5 @@ IF ~~ THEN BEGIN TS170
   SAY ~Power, Sime, is a better lover than any woman and it tastes sweeter than wine and fills your hands fuller than gold coins.~
   IF ~~ THEN EXTERN ~BSIME~ TSTOB7
 END
+
 END

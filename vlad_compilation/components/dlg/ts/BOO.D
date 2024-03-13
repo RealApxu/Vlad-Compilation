@@ -2,16 +2,12 @@ BEGIN ~BOO~
 
 IF ~!CharName("Minsc",LastTalkedToBy)~ THEN BEGIN Boo1
   SAY ~(You grab Boo and give 'him' to Minsc.)~ [BOOHL]
-  IF ~~ THEN DO ~GiveItemCreate("Boo","Minsc",0,0,0)
-RealSetGlobalTimer("VP_NoBoo","GLOBAL",6)
-DestroySelf()~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("Boo","Minsc",0,0,0) RealSetGlobalTimer("VP_NoBoo","GLOBAL",6) DestroySelf()~ EXIT
 END
 
 IF ~CharName("Minsc",LastTalkedToBy)~ THEN BEGIN Boo2
   SAY ~(Minsc grabs Boo and places 'him' on his shoulder.)~ [BOOHL]
-  IF ~~ THEN DO ~GiveItemCreate("Boo","Minsc",0,0,0)
-RealSetGlobalTimer("VP_NoBoo","GLOBAL",6)
-DestroySelf()~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("Boo","Minsc",0,0,0) RealSetGlobalTimer("VP_NoBoo","GLOBAL",6) DestroySelf()~ EXIT
 END
 
 APPEND ~BOO~
@@ -22,7 +18,7 @@ IF ~~ THEN BEGIN N0
 END
 
 IF ~~ THEN BEGIN N1
-  SAY ~At least I make a hamster of intellect and wit remarkable. I wonder if a spell can be cast by a hamster? (*shrieks*) No, I have tried already. My paws are too short to go through the proper movements and I lack spell components. Giving advice to Minsc, that’s all I am good for.~
+  SAY ~At least I make a hamster of intellect and wit remarkable. I wonder if a spell can be cast by a hamster? (*shrieks*) No, I have tried already. My paws are too short to go through the proper movements and I lack spell components. Giving advice to Minsc, thatï¿½s all I am good for.~
   IF ~~ THEN EXTERN ~BSIME~ 238
 END
 
@@ -137,7 +133,8 @@ IF ~~ THEN BEGIN 23
 END
 
 IF ~~ THEN BEGIN 24
-  SAY ~That was the king’s fool, not the king. They gave him the hamster and he was showing it to everyone and shouting that it was the tournament’s winner. Until he sold it to Minsc who thought that it was the bravest animal in the Realms.~
+  SAY ~That was the kingï¿½s fool, not the king. They gave him the hamster and he was showing it to everyone and shouting that it was the tournamentï¿½s winner. Until he sold it to Minsc who thought that it was the bravest animal in the Realms.~
   IF ~~ THEN EXTERN ~BSIME~ 260
 END
+
 END

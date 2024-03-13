@@ -1,15 +1,9 @@
 BEGIN ~DMARCH~
 
-IF WEIGHT #0 ~NumTimesTalkedTo(0)
-Global("VP_KnightsHelp","GLOBAL",1)~ THEN BEGIN 0
+IF WEIGHT #0 ~NumTimesTalkedTo(0) Global("VP_KnightsHelp","GLOBAL",1)~ THEN BEGIN 0
   SAY ~AHHH!  Get back you damned snake fiends!  Back!  BACK!  I'll kill you all!~
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Wait!  What are you talking about?~ DO ~SetGlobal("Yuanti_Inferno","GLOBAL",1)
-SetGlobal("VP_KnightsHelp","GLOBAL",2)~ GOTO 1
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN DO ~SetGlobal("Yuanti_Inferno","GLOBAL",1)
-SetGlobal("VP_KnightsHelp","GLOBAL",2)~ EXTERN ~HROTHJ~ 9
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~Wait!  What are you talking about?~ DO ~SetGlobal("Yuanti_Inferno","GLOBAL",1) SetGlobal("VP_KnightsHelp","GLOBAL",2)~ GOTO 1
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN DO ~SetGlobal("Yuanti_Inferno","GLOBAL",1) SetGlobal("VP_KnightsHelp","GLOBAL",2)~ EXTERN ~HROTHJ~ 9
 END
 
 IF ~~ THEN BEGIN 1
@@ -35,14 +29,9 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~We played dead.  Hey, I know it sounds bad, but there was no way we would have won the battle in our state.  They threw us in here with all of the slaughtered caravan merchants and guards - weapons and all.  I don't know how long we've been in here.  Thank Tymora you came along!~
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~No problem.  Can you watch over us while we rest?  It's a long hike up to the mountainside.~ GOTO 6
-  IF ~OR(2)
-!InParty("Hrothgar")
-Dead("Hrothgar")~ THEN REPLY ~Farewell, Marchon.~ GOTO 7
-  IF ~InParty("Hrothgar")
-!Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 10
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~No problem.  Can you watch over us while we rest?  It's a long hike up to the mountainside.~ GOTO 6
+  IF ~OR(2) !InParty("Hrothgar") Dead("Hrothgar")~ THEN REPLY ~Farewell, Marchon.~ GOTO 7
+  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 10
 END
 
 IF ~~ THEN BEGIN 6
@@ -55,10 +44,7 @@ IF ~~ THEN BEGIN 7
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #2 ~NumTimesTalkedToGT(0)
-Global("VP_KnightsHelp","GLOBAL",3)
-Global("Marchon_Free","GLOBAL",1)
-GlobalGT("SPRITE_IS_DEADYUANTI","GLOBAL",28)~ THEN BEGIN 8
+IF WEIGHT #2 ~NumTimesTalkedToGT(0) Global("VP_KnightsHelp","GLOBAL",3) Global("Marchon_Free","GLOBAL",1) GlobalGT("SPRITE_IS_DEADYUANTI","GLOBAL",28)~ THEN BEGIN 8
   SAY ~I'm glad as hell that we won that battle. I was afraid we were done for sure. Thanks.~
   IF ~~ THEN DO ~SetGlobal("VP_KnightsHelp","GLOBAL",4)~ EXIT
 END
@@ -68,10 +54,7 @@ IF ~~ THEN BEGIN 9
   IF ~~ THEN REPLY ~Go on.~ GOTO 4
 END
 
-IF WEIGHT #3 ~NumTimesTalkedToGT(0)
-Global("Marchon_Free","GLOBAL",1)
-GlobalGT("SPRITE_IS_DEADYUANTI","GLOBAL",28)
-Global("VP_KnightsHelp","GLOBAL",4)~ THEN BEGIN 10
+IF WEIGHT #3 ~NumTimesTalkedToGT(0) Global("Marchon_Free","GLOBAL",1) GlobalGT("SPRITE_IS_DEADYUANTI","GLOBAL",28) Global("VP_KnightsHelp","GLOBAL",4)~ THEN BEGIN 10
   SAY ~Welcome back, friend.  Need someone to watch over you while you rest?~
   IF ~~ THEN REPLY ~Yes, thanks.~ DO ~RestParty()~ EXIT
   IF ~~ THEN REPLY ~No.  I'm fine.  Farewell, Marchon.~ EXIT
@@ -108,9 +91,7 @@ IF ~~ THEN BEGIN 16
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #1 ~Global("Marchon_Free","GLOBAL",1)
-GlobalLT("SPRITE_IS_DEADYUANTI","GLOBAL",29)
-Global("VP_KnightsHelp","GLOBAL",2)~ THEN BEGIN 17
+IF WEIGHT #1 ~Global("Marchon_Free","GLOBAL",1) GlobalLT("SPRITE_IS_DEADYUANTI","GLOBAL",29) Global("VP_KnightsHelp","GLOBAL",2)~ THEN BEGIN 17
   SAY ~I can't talk right now.  There are more snake creatures hiding somewhere nearby.  Please, help us defeat them.~
   IF ~~ THEN EXIT
 END

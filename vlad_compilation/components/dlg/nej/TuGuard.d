@@ -18,16 +18,12 @@ IF ~~ THEN BEGIN 2
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ190
 END
 
-IF ~!NumberOfTimesTalkedTo(0)
-TimeGT(DUSK_START)
-TimeLT(DAWN_START)~ THEN BEGIN 3
+IF ~!NumberOfTimesTalkedTo(0) TimeGT(DUSK_START) TimeLT(DAWN_START)~ THEN BEGIN 3
   SAY ~You are not allowed to enter the Academy at night.~
   IF ~~ THEN EXIT
 END
 
-IF ~!NumberOfTimesTalkedTo(0)
-TimeLT(DUSK_START)
-TimeGT(DAWN_START)~ THEN BEGIN 4
+IF ~!NumberOfTimesTalkedTo(0) TimeLT(DUSK_START) TimeGT(DAWN_START)~ THEN BEGIN 4
   SAY ~Welcome to the Academy of Halruaa!~
   IF ~~ THEN EXIT
 END

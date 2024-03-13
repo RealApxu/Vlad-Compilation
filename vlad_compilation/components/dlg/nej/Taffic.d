@@ -43,10 +43,10 @@ END
 
 IF ~~ THEN BEGIN 6
   SAY ~What do you know of what is possible and what is not <CHARNAME>? I have spent a lot of time researching this matter and I am therefore in a better position than you to say what can and what cannot be done or undone. If you are reluctant to help me then I shall proceed without you. When we next meet, I will be Taffic The Great and you will see just how wrong you were to disbelieve me.~ [taffic07]
-	IF ~~ THEN DO ~EscapeArea()~ EXIT
+  IF ~~ THEN DO ~EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 7
   SAY ~I am happy indeed to hear that you will help me <CHARNAME>. Quickly now, I am impatient for the start of my new life.~ [taffic08]
-	IF ~~ THEN DO ~JoinParty()~ EXIT
+  IF ~~ THEN DO ~JoinParty()~ EXIT
 END

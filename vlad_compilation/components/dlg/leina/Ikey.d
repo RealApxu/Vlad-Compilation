@@ -8,20 +8,19 @@ IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 // from:
   IF ~~ THEN REPLY ~Tell me boy, why  does this Samuel Thunderburp think I can help him?~ GOTO 2
   IF ~~ THEN REPLY ~Gold you say, well now that is something I am always ready to discuss. You run along and tell this Samuel Thunderburp that I will be around shortly.~ UNSOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
-I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I told the lad that to run and tell him I’d be there shortly. I can always find a use for gold.~ GOTO 1
+I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I told the lad that to run and tell him Iï¿½d be there shortly. I can always find a use for gold.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
   SAY ~Very well, m'<PRO_LADYLORD>. 'E will be 'appy to 'ear that. I will take yer message straight back to 'im.~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",1)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
   SAY ~I don't rightly know, m'<PRO_LADYLORD>` but 'e is sure worried 'bout summit, and 'is customers are complaining 'cause there aint no singer a singing there now. P'raps its summit to do with that.~
   IF ~~ THEN REPLY ~I suppose I can spare him a few minutes. Okay. Boy, you go tell this barkeep that we will be around shortly to hear his story.~ UNSOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
-I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I told the lad that to run and tell him I’d be there shortly. I can always find a use for gold.~ GOTO 1
+I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I told the lad that to run and tell him Iï¿½d be there shortly. I can always find a use for gold.~ GOTO 1
   IF ~~ THEN REPLY ~Sorry sonny, you will have to go tell this barkeep that I have more important things to see to than to look for his missing minstrel.~ UNSOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 
 I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I have enough troubles of my own without getting caught up in the affairs of others so I declined to help.~ GOTO 4
@@ -32,8 +31,7 @@ END
 
 IF ~~ THEN BEGIN 3
   SAY ~As you wish, m'<PRO_LADYLORD>. I 'ave been 'lready paid, but yer knows where 'e is if yer changes yer mind. Good day to yer.~
-  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",1)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_ResqueLeina","GLOBAL",1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN 4

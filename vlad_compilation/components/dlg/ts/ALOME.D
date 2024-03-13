@@ -1,7 +1,6 @@
 BEGIN ~ALOME~
 
-IF ~NumberOfTimesTalkedTo(0)
-See("Yoshimo")~ THEN BEGIN 0
+IF ~NumberOfTimesTalkedTo(0) See("Yoshimo")~ THEN BEGIN 0
   SAY ~Yoshimo, Yoshimo!~
   IF ~~ THEN EXTERN ~YOSHJ~ TS184
 END
@@ -28,6 +27,5 @@ END
 
 IF ~~ THEN BEGIN 5
   SAY ~I guess, no. Mummy asked me to give you this rope, and said that you must be very quiet....~
-  IF ~~ THEN DO ~GiveItemCreate("Pitrope",Player1,0,0,0)
-EscapeArea()~ EXIT
+  IF ~~ THEN DO ~GiveItemCreate("Pitrope",Player1,0,0,0) EscapeArea()~ EXIT
 END
