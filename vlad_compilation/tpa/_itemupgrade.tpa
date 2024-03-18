@@ -11,8 +11,8 @@
 //BEGIN ~Cromwell in Brynnlaw and Item Upgrade (by Vlad)~
 
 COPY_EXISTING ~AR1603.ARE~ ~override~
- WRITE_ASCII 0x94 ~AR1603~                 //setting area script
- WRITE_BYTE (0x94+6) 0                    //terminating 0
+    WRITE_ASCII 0x94 ~AR1603~                 //setting area script
+    WRITE_BYTE (0x94+6) 0                    //terminating 0
 BUT_ONLY
 
 COMPILE ~%MOD_FOLDER%/components/bdash/cromwell/AR1603.BAF~

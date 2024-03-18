@@ -2,9 +2,7 @@
 //
 //            Improved Gromnir
 //
-/////////////////////////////////////
-
-BEGIN ~Enhanced Encounter with Gromnir in ToB (by Vlad)~
+//////////////////////////////////////
 
 COPY ~%MOD_FOLDER%/components/bdash/gromnir/copy~ ~override~
 COPY ~%MOD_FOLDER%/components/bdash/gromnir/itm/AXECHAR2.ITM~ ~override~

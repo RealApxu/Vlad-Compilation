@@ -2,137 +2,87 @@
 //Third Path
 ///////////////////////////
 
-BEGIN ~Third Path (by Vlad)~
+STRING_SET 62124 ~Third Path. Aran Linvail, the Shadowmaster of the Shadow Thieves in Athkatla, is dead.  Now I must find another way to get to Imoen.~
 
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/toda/SCENE04T.2da~ ~override~
-REPLACE ~scene04t~ ~CHAPTER THREE
+    REPLACE ~scene04t~ ~CHAPTER THREE
 
 Allies are expensive in the City of Coin, and you have decided to invest in none of them. You have assassinated Gaelan Bayle and obtained a key from the lair of Aran Linvail, Shadowmaster of Athkatla. As ominous as that may sound, you have now little other choice but to plan an assault on Aran's lair to find any clue in your search for Irenicus.~ [theme4]
 
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/toda/SCRTXT33.2da~ ~override~
-REPLACE ~scrtxt33~ ~CHAPTER FOUR
+    REPLACE ~scrtxt33~ ~CHAPTER FOUR
 
   After few hours of uninterrupted sail you see a shiny circlet on the horizon. It is the portal! Saemon slows "Gallante" down. Your seasoned captain looks nervous as the ship enters the time gate. "Athkatla" says he steadily... and the familiar harbor appears in view... You do not stop in the port however, but lay your course straight for Brinnlaw.
 
   The journey is uneventful, and if there were other ships on the same course they must have kept a discreet distance. You make good time, and soon there is a sizable island on the horizon. It might have been considered a pleasant place, but a grim shadow extends the length of it. The asylum, Spellhold, looms from a cliff side.~ [theme5]
 
 COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/cutscene~
+
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/copy_cre~ ~override~
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/copy_bcs~ ~override~
 
 COPY_EXISTING ~AR0311.bcs~ ~override~
-EXTEND_TOP ~AR0311.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0311.baf~
+    EXTEND_TOP ~AR0311.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0311.baf~
 
 COPY_EXISTING ~AR0300.bcs~ ~override~
-EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0300.baf~
+    EXTEND_TOP ~AR0300.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0300.baf~
 
 COPY_EXISTING ~STGUARD1.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-            REPLACE_TEXTUALLY
-~Global("AttackedThieves","GLOBAL",0)~
-~Global("AttackedThieves","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-            REPLACE_TEXTUALLY
-~SetGlobal("StGuardAttack","AR0300",1)~
-~SetGlobal("StGuardAttack","AR0300",1)
-SetGlobal("VP_Guild_Attacked","GLOBAL",1)~
-            REPLACE_TEXTUALLY
-~SetGlobal("AttackedThieves","GLOBAL",1)~
-~SetGlobal("AttackedThieves","GLOBAL",1)
-SetGlobal("VP_Guild_Attacked","GLOBAL",1)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("AttackedThieves","GLOBAL",0)~ ~Global("AttackedThieves","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+        REPLACE_TEXTUALLY ~SetGlobal("StGuardAttack","AR0300",1)~ ~SetGlobal("StGuardAttack","AR0300",1) SetGlobal("VP_Guild_Attacked","GLOBAL",1)~
+        REPLACE_TEXTUALLY ~SetGlobal("AttackedThieves","GLOBAL",1)~ ~SetGlobal("AttackedThieves","GLOBAL",1) SetGlobal("VP_Guild_Attacked","GLOBAL",1)~
+    END
 
 COPY_EXISTING ~AR0300.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("BodhiJob","GLOBAL",0)~
-~Global("BodhiJob","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("BodhiJob","GLOBAL",0)~ ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
 COPY_EXISTING ~AR0312.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~SetGlobal("ArledHostile","GLOBAL",1)~
-~SetGlobal("ArledHostile","AR0312",1)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~SetGlobal("ArledHostile","GLOBAL",1)~ ~SetGlobal("ArledHostile","AR0312",1)~
+    END
 
 COPY_EXISTING ~Baldur.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("ImTooSexyForThisBrus","GLOBAL",0)~
-~Global("ImTooSexyForThisBrus","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("ImTooSexyForThisBrus","GLOBAL",0)~ ~Global("ImTooSexyForThisBrus","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
 COPY_EXISTING ~C6SPWN3.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("C6messSpawn","GLOBAL",0)~
-~Global("C6messSpawn","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("C6messSpawn","GLOBAL",0)~ ~Global("C6messSpawn","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
 COPY_EXISTING ~C6SPWN4.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("C6messSpawn","GLOBAL",0)~
-~Global("C6messSpawn","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("C6messSpawn","GLOBAL",0)~ ~Global("C6messSpawn","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
 COPY_EXISTING ~C6SPWN5.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("C6messSpawn","GLOBAL",0)~
-~Global("C6messSpawn","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("C6messSpawn","GLOBAL",0)~ ~Global("C6messSpawn","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
 COPY_EXISTING ~Gaelan.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("GaelanMove2","GLOBAL",0)~
-~Global("Attacked","LOCALS",0)~
-        REPLACE_TEXTUALLY
-~AttackedBy([GOODCUTOFF],DEFAULT)~
-~AttackedBy([ANYONE],DEFAULT)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("GaelanMove2","GLOBAL",0)~ ~Global("Attacked","LOCALS",0)~
+        REPLACE_TEXTUALLY ~AttackedBy([GOODCUTOFF],DEFAULT)~ ~AttackedBy([ANYONE],DEFAULT)~
+    END
 
 COPY_EXISTING ~AR0800.bcs~ ~override~
-       DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~Global("Movie02","GLOBAL",0)~
-~Global("Movie02","GLOBAL",0)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        REPLACE_TEXTUALLY
-~Global("BodhiAppear","GLOBAL",1)~
-~Global("BodhiAppear","GLOBAL",1)
-Global("VP_Guild_Attacked","GLOBAL",0)~
-        END
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("Movie02","GLOBAL",0)~ ~Global("Movie02","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",0)~
+        REPLACE_TEXTUALLY ~Global("BodhiAppear","GLOBAL",1)~ ~Global("BodhiAppear","GLOBAL",1) Global("VP_Guild_Attacked","GLOBAL",0)~
+    END
 
-COPY_EXISTING ~AMNTRP01.bcs~ ~override~
 EXTEND_TOP ~AMNTRP01.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
-
-COPY_EXISTING ~AMNTRP02.bcs~ ~override~
 EXTEND_TOP ~AMNTRP02.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
-
-COPY_EXISTING ~AMNTRP03.bcs~ ~override~
 EXTEND_TOP ~AMNTRP03.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAMNTRP0.baf~
-
-COPY_EXISTING ~BODHITRP.bcs~ ~override~
 EXTEND_TOP ~BODHITRP.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eBODHITR.baf~
-
-COPY_EXISTING ~STGUARD1.bcs~ ~override~
 EXTEND_TOP ~STGUARD1.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eSTGUARD.BAF~
-
-COPY_EXISTING ~AR0312.bcs~ ~override~
 EXTEND_TOP ~AR0312.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0312.BAF~
-
-COPY_EXISTING ~Yoshimo.bcs~ ~override~
 EXTEND_TOP ~Yoshimo.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eYoshimo.BAF~
-
-COPY_EXISTING ~AR0313.bcs~ ~override~
 EXTEND_TOP ~AR0313.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0313.BAF~
 
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/aranlett.itm~ ~override~
@@ -217,22 +167,17 @@ COPY ~%MOD_FOLDER%/components/bdash/ThirdP/itm/spylett7.itm~ ~override~
                    Captain Dennis.~
 
 COPY_EXISTING ~AR0329.bcs~ ~override~
-  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o1AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n1AR0329.baf~
-  REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o2AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n2AR0329.baf~
+    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o1AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n1AR0329.baf~
+    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/components/bdash/ThirdP/baf/o2AR0329.baf~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/n2AR0329.baf~
 
 COPY_EXISTING ~BALDUR.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~GlobalTimerExpired("ValenAppearTimer","GLOBAL")~
-            ~Global("VP_Guild_Attacked","GLOBAL",0)
-GlobalTimerExpired("ValenAppearTimer","GLOBAL")~
+        REPLACE_TEXTUALLY ~GlobalTimerExpired("ValenAppearTimer","GLOBAL")~ ~Global("VP_Guild_Attacked","GLOBAL",0) GlobalTimerExpired("ValenAppearTimer","GLOBAL")~
     END
 
 COPY_EXISTING ~AR0400.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~Global("BrusShow3","GLOBAL",0)~
-            ~Global("BrusShow3","GLOBAL",0)
-InMyArea(Player1)
-Global("VP_Guild_Attacked","GLOBAL",0)~
+        REPLACE_TEXTUALLY ~Global("BrusShow3","GLOBAL",0)~ ~Global("BrusShow3","GLOBAL",0) InMyArea(Player1) Global("VP_Guild_Attacked","GLOBAL",0)~
     END
 
 COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/VPThirdP.baf~
@@ -240,10 +185,7 @@ COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/STDEATH.baf~
 COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/MVALLY.baf~
 COMPILE ~%MOD_FOLDER%/components/bdash/ThirdP/baf/MVALLY2.baf~
 
-COPY_EXISTING ~Baldur.bcs~ ~override~
 EXTEND_TOP ~Baldur.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eBaldur.baf~
-
-COPY_EXISTING ~AR0404.bcs~ ~override~
 EXTEND_TOP ~AR0404.bcs~ ~%MOD_FOLDER%/components/bdash/ThirdP/baf/eAR0404.baf~
 
 COPY ~%MOD_FOLDER%/components/bdash/ThirdP/cre/PHILC.cre~ ~override~

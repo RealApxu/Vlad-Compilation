@@ -74,7 +74,7 @@ Disadvantages:
 // We need to differentiate between BGT and stand-alone version - SUSPENDED!
 //////////////////////////////////////////////////////////////////////////////
 
-ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+ACTION_IF GAME_IS ~bgt~ BEGIN
     COPY ~%MOD_FOLDER%/components/bdash/BGTComp/sharteel/ar9400.bcs~ ~override~
 END
 
@@ -82,7 +82,7 @@ END
 /////////////////////////////////////////////////////
 //New Shar-Teel character
 //Shar-teel creatures update - BGT
-ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+ACTION_IF GAME_IS ~bgt~ BEGIN
     COPY_EXISTING ~SHARTE.cre~ ~override/SHARTE.cre~
                   ~SHARTE4.cre~ ~override/SHARTE4.cre~
                   ~SHARTE6.cre~ ~override/SHARTE6.cre~
@@ -117,29 +117,27 @@ ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
         DELETE_BYTES "%item_off%" ("%slot_off%" - "%item_off%")
         WRITE_LONG 0x2b8 "%item_off%"
         WRITE_LONG 0x2c0 0 // number of items
-END
 
-ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
     //unique Shar-teel creature patches
     COPY_EXISTING ~SHARTE.cre~ ~override/SHARTE.cre~
-    WRITE_SHORT 0x24 21 //current HP
-    WRITE_SHORT 0x26 21 //max HP
-    ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
-    ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
-    ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
-    COPY_EXISTING ~SHARTE4.cre~ ~override/SHARTE4.cre~
-    WRITE_SHORT 0x24 42 //current HP
-    WRITE_SHORT 0x26 42 //max HP
-    ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
-    ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
-    ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
-    COPY_EXISTING ~SHARTE6.cre~ ~override/SHARTE6.cre~
-    WRITE_SHORT 0x24 63 //current HP
-    WRITE_SHORT 0x26 63 //max HP
-    ADD_CRE_ITEM ~HELM04~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
-    ADD_CRE_ITEM ~PLAT02~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
-    ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
-    END
+        WRITE_SHORT 0x24 21 //current HP
+        WRITE_SHORT 0x26 21 //max HP
+        ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+        ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+        ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+        COPY_EXISTING ~SHARTE4.cre~ ~override/SHARTE4.cre~
+        WRITE_SHORT 0x24 42 //current HP
+        WRITE_SHORT 0x26 42 //max HP
+        ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~
+        ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+        ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+        COPY_EXISTING ~SHARTE6.cre~ ~override/SHARTE6.cre~
+        WRITE_SHORT 0x24 63 //current HP
+        WRITE_SHORT 0x26 63 //max HP
+        ADD_CRE_ITEM ~HELM04~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~
+        ADD_CRE_ITEM ~PLAT02~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+        ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
+END
 
 COPY ~%MOD_FOLDER%/components/sharteel/cre/SHARTE7.cre~ ~override/SHARTE7.cre~
     WRITE_SHORT 0x244 0 // doesn't change
@@ -270,36 +268,31 @@ COPY_EXISTING ~AR0602.ARE~ ~override~
     END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR0602.BCS~ THEN BEGIN
-    COPY_EXISTING ~AR0602.BCS~ ~override~
-        EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/exAR0602.BCS~
+    EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/exAR0602.BCS~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/exAR0602.BCS~ ~override/AR0602.BCS~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~SHARTEEL.BCS~ THEN BEGIN
-    COPY_EXISTING ~SHARTEEL.BCS~ ~override/SHARTEEL.BCS~
-        EXTEND_TOP ~SHARTEEL.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/extSHART.BAF~
+    EXTEND_TOP ~SHARTEEL.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/extSHART.BAF~
 END ELSE BEGIN
     COMPILE ~%MOD_FOLDER%/components/sharteel/scripts/extSHART.BAF~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TT1016.BCS~ THEN BEGIN
-    COPY_EXISTING ~TT1016.BCS~ ~override/TT1016.BCS~
-        EXTEND_TOP ~TT1016.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eTT1016.BCS~
+    EXTEND_TOP ~TT1016.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eTT1016.BCS~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/eTT1016.BCS~ ~override/TT1016.BCS~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR0700.BCS~ THEN BEGIN
-    COPY_EXISTING ~AR0700.BCS~ ~override/AR0700.BCS~
     EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eAR0700.BCS~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/eAR0700.BCS~ ~override/AR0700.BCS~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR1203.BCS~ THEN BEGIN
-    COPY_EXISTING ~AR1203.BCS~ ~override/AR1203.BCS~
-        EXTEND_TOP ~AR1203.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eAR1203.BAF~
+    EXTEND_TOP ~AR1203.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eAR1203.BAF~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/AR1203.BCS~ ~override/AR1203.BCS~
 END
@@ -310,7 +303,6 @@ COPY_EXISTING ~AR1203.ARE~ ~override~
 BUT_ONLY
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR1202.BCS~ THEN BEGIN
-    COPY_EXISTING ~AR1202.BCS~ ~override/AR1202.BCS~
     EXTEND_TOP ~AR1202.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/eAR1202.BAF~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/AR1202.BCS~ ~override/AR1202.BCS~
@@ -322,8 +314,8 @@ COPY ~%MOD_FOLDER%/components/sharteel/scripts/SHARTD.BCS~ ~override~
 COPY ~%MOD_FOLDER%/components/sharteel/cre/IDEMON02.CRE~ ~override/IDEMON02.CRE~
 
 COPY ~%MOD_FOLDER%/components/sharteel/cre/DURBIN.CRE~ ~override/DURBIN.CRE~
-  SAY NAME1 ~Durbin~
-  SAY NAME2 ~Durbin~
+    SAY NAME1 ~Durbin~
+    SAY NAME2 ~Durbin~
 
 //Modified Irenicus dungeon
 COPY ~%MOD_FOLDER%/components/sharteel/dungeon~ ~override~
@@ -358,18 +350,14 @@ COPY ~%MOD_FOLDER%/components/sharteel/cre/FIRORC01.CRE~ ~override/FIRORC01.CRE~
 COPY ~%MOD_FOLDER%/components/sharteel/cre/FIRRAK01.CRE~ ~override/FIRRAK01.CRE~
 COPY ~%MOD_FOLDER%/components/sharteel/cre/FIRKRA04.CRE~ ~override/FIRKRA04.CRE~
 COPY ~%MOD_FOLDER%/components/sharteel/scripts/FIRKRA04.BCS~ ~override/FIRKRA04.BCS~
+
 COPY ~%MOD_FOLDER%/components/sharteel/cre/firgole1.CRE~ ~override/firgole1.CRE~
+     ~%MOD_FOLDER%/components/sharteel/cre/firgole2.CRE~ ~override/firgole2.CRE~
+     ~%MOD_FOLDER%/components/sharteel/cre/firgole3.CRE~ ~override/firgole3.CRE~
+     ~%MOD_FOLDER%/components/sharteel/cre/FIRGOLES.CRE~ ~override/FIRGOLES.CRE~
     SAY NAME1 ~Fire Golem~
     SAY NAME2 ~Fire Golem~
-COPY ~%MOD_FOLDER%/components/sharteel/cre/firgole2.CRE~ ~override/firgole2.CRE~
-    SAY NAME1 ~Fire Golem~
-    SAY NAME2 ~Fire Golem~
-COPY ~%MOD_FOLDER%/components/sharteel/cre/firgole3.CRE~ ~override/firgole3.CRE~
-    SAY NAME1 ~Fire Golem~
-    SAY NAME2 ~Fire Golem~
-COPY ~%MOD_FOLDER%/components/sharteel/cre/FIRGOLES.CRE~ ~override/FIRGOLES.CRE~
-    SAY NAME1 ~Fire Golem~
-    SAY NAME2 ~Fire Golem~
+
 COPY ~%MOD_FOLDER%/components/sharteel/cre/firgolem.ITM~ ~override/firgolem.ITM~
 COPY ~%MOD_FOLDER%/components/sharteel/cre/FIRTRL01.CRE~ ~override/FIRTRL01.CRE~
 COPY ~%MOD_FOLDER%/components/sharteel/cre/TAZOK.CRE~ ~override/TAZOK.CRE~
@@ -400,8 +388,7 @@ COPY ~%MOD_FOLDER%/components/sharteel/cre/EsAnima5.CRE~ ~override/EsAnima5.CRE~
     SAY NAME2 #6409
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR1106.BCS~ THEN BEGIN
-    COPY_EXISTING ~AR1106.BCS~ ~override/AR1106.BCS~
-        EXTEND_TOP ~AR1106.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/xAR1106.BAF~
+    EXTEND_TOP ~AR1106.BCS~ ~%MOD_FOLDER%/components/sharteel/scripts/xAR1106.BAF~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/sharteel/scripts/AR1106.BCS~ ~override~
 END
@@ -414,7 +401,7 @@ BUT_ONLY
 */
 
 //Dialogues
-ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
+ACTION_IF GAME_IS ~bgt~ BEGIN
     COMPILE ~%MOD_FOLDER%/components/sharteel/dlg/aSHARTE.d~
     COMPILE ~%MOD_FOLDER%/components/sharteel/dlg/aSHARTP.d~
 END ELSE BEGIN

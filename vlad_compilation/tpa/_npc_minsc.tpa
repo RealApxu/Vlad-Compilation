@@ -163,8 +163,7 @@ APPEND ~SPELL.IDS~
 ~3299 BOO_HEALING_LICK
 3204 BOO_DETECT_EVIL~
 
-COPY_EXISTING ~Baldur.bcs~ ~override~
-    EXTEND_TOP ~Baldur.bcs~ ~%MOD_FOLDER%/components/bdash/Boo/baf/sBaldur.baf~
+EXTEND_TOP ~Baldur.bcs~ ~%MOD_FOLDER%/components/bdash/Boo/baf/sBaldur.baf~
 
 COPY ~%MOD_FOLDER%/components/bdash/Boo/itm_copy~ ~override~
 COPY ~%MOD_FOLDER%/components/bdash/Boo/cre_copy~ ~override~
@@ -203,11 +202,8 @@ COPY ~%MOD_FOLDER%/components/bdash/Boo/spl/BooREST.spl~ ~override~
 COMPILE ~%MOD_FOLDER%/components/bdash/Boo/baf/BOO.BAF~
 
 ACTION_IF FILE_EXISTS ~data/BG1ARE.BIF~ THEN BEGIN
-    COPY_EXISTING ~BGMINSC.bcs~ ~override~
-        EXTEND_TOP ~BGMINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
-    COPY_EXISTING ~MINSC.bcs~ ~override~
-        EXTEND_TOP ~MINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
+    EXTEND_TOP ~BGMINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
+    EXTEND_TOP ~MINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
 END ELSE BEGIN
-    COPY_EXISTING ~MINSC.bcs~ ~override~
-        EXTEND_TOP ~MINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
+    EXTEND_TOP ~MINSC.BCS~ ~%MOD_FOLDER%/components/bdash/Boo/baf/aMinsc.baf~
 END

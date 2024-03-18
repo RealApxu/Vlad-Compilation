@@ -9,30 +9,30 @@ COPY ~%MOD_FOLDER%/components/KeldornR/img~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/are~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/tiz~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/eff~ ~override~
-COPY ~%MOD_FOLDER%/components/KeldornR/cre_copy~ ~override~
-COPY ~%MOD_FOLDER%/components/KeldornR/bcs_copy~ ~override~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre_COPY ~ ~override~
+COPY ~%MOD_FOLDER%/components/KeldornR/bcs_COPY ~ ~override~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT63.2da~ ~override~
-REPLACE ~txtwar1~ ~NEW CHAPTER
+    REPLACE ~txtwar1~ ~NEW CHAPTER
 
   An army of ten thousand heavily armed mercenaries is gathered by two of the richest houses of Athkatla. Your party is moving together with the troops towards Riatavin. On the way to your goal you discover that Amn's attempt to eliminate the Riatavin officials has failed. The assassins were seized and butchered by the enemy. On day 39 you reach Eshpurta, the rendezvous point with general Craumerdaun, Amn's regular army commander.~ [theme4]
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT64.2da~ ~override~
-REPLACE ~txtwar2~ ~Not burdened by slow moving troops, your party reaches Esmeltaran in 24 hours. Keldorn had to use all of his influence to persuade Dehaunder, the Duke of Esmeltaran, to send his army to general Craumerdaun. The Duke reluctantly agreed to leave the city defenseless. Keldorn sent a messenger to the castle of Firecam with a message that he might soon visit the castle. He then proceeded to move his battalion through the King's Arch Bridge, heading towards the south road. However, the scouts detected the Sythillisians army moving towards Ishla. Keldorn turned his battalion back and ordered that the bridge be destroyed. This action gave him the necessary two-three days he needed in order to prepare the city's defenses.~ [theme1]
+    REPLACE ~txtwar2~ ~Not burdened by slow moving troops, your party reaches Esmeltaran in 24 hours. Keldorn had to use all of his influence to persuade Dehaunder, the Duke of Esmeltaran, to send his army to general Craumerdaun. The Duke reluctantly agreed to leave the city defenseless. Keldorn sent a messenger to the castle of Firecam with a message that he might soon visit the castle. He then proceeded to move his battalion through the King's Arch Bridge, heading towards the south road. However, the scouts detected the Sythillisians army moving towards Ishla. Keldorn turned his battalion back and ordered that the bridge be destroyed. This action gave him the necessary two-three days he needed in order to prepare the city's defenses.~ [theme1]
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT65.2da~ ~override~
-REPLACE ~txtorm~ ~You call to the gods, one by one, but get no answer. Handsome Torm was shaking his head sympathetically, Tyr's dispassionate face glanced at you with empty eye sockets, you caught a quick glimpse of Mystra's back, Lathander shrugged his shoulders guiltily... not one of them came to your aid. You take Cyric's ring... IT WILL DESTROY YOU! - Keldorn's words echo in your ears! Not without good reason did he beg you not to don the ring, but now, now he is lying motionless, barely breathing. As you watch his features contorting, you realize that soon, only one God will be able to aid you. Kelemvor... cold and indifferent Kelemvor. You decide that there's no chance to persuade Kelemvor. You feel Cyric's ring burning into your hand and preparing for the worst you put it on.
+    REPLACE ~txtorm~ ~You call to the gods, one by one, but get no answer. Handsome Torm was shaking his head sympathetically, Tyr's dispassionate face glanced at you with empty eye sockets, you caught a quick glimpse of Mystra's back, Lathander shrugged his shoulders guiltily... not one of them came to your aid. You take Cyric's ring... IT WILL DESTROY YOU! - Keldorn's words echo in your ears! Not without good reason did he beg you not to don the ring, but now, now he is lying motionless, barely breathing. As you watch his features contorting, you realize that soon, only one God will be able to aid you. Kelemvor... cold and indifferent Kelemvor. You decide that there's no chance to persuade Kelemvor. You feel Cyric's ring burning into your hand and preparing for the worst you put it on.
 
 It's getting dark in front of your eyes, you can't breathe, your heart stops beating. Suddenly you feel yourself being torn, no more of a feeling that your very being is splitting in two. You watch, as a spectator as your human essence, your soul leaves the body, and as you watch once again Keldorn's words echo through your mind but it is too late. The ring is on the finger of the body which is no longer under your control. With a cruel and murderous scream, you kill all your group members. Suddenly, a voice echoing behind you 'GET THEE HENCE TO THE PLACE OF NO RETURN'!~ [letgo]
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT66.2da~ ~override~
-REPLACE ~txtwar3~ ~The defense of the castle continues. Seeing that Keldorn is still in charge of the defence and that their plan has failed, the enemy retreats. On day 51 the army of Amn finally reach fort Keshla and after three days fighting retook it. After three more days, cavalry reached Tobold, where wounded of fallen Esmeltaran started to arrive. The Mayor of the city sent a messenger to general Craumerdaun, and a week later, after having learnt of the fall of Esmeltaran, Craumerdaun turned the army back. Esmeltaran was also retaken. History dissembles how the general blamed himself for not listening to count Firecam, and that cost the lives of 500 volunteers of Esmeltaran.~ [theme3]
+    REPLACE ~txtwar3~ ~The defense of the castle continues. Seeing that Keldorn is still in charge of the defence and that their plan has failed, the enemy retreats. On day 51 the army of Amn finally reach fort Keshla and after three days fighting retook it. After three more days, cavalry reached Tobold, where wounded of fallen Esmeltaran started to arrive. The Mayor of the city sent a messenger to general Craumerdaun, and a week later, after having learnt of the fall of Esmeltaran, Craumerdaun turned the army back. Esmeltaran was also retaken. History dissembles how the general blamed himself for not listening to count Firecam, and that cost the lives of 500 volunteers of Esmeltaran.~ [theme3]
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT67.2da~ ~override~
-REPLACE ~txtwar4~ ~I had a vision: defence is breached, goblins and giants conquer Firecam's castle and kill everyone within. Keldorn is dead. I have only a void left in my soul. But I know that I must at least save Imoen. I must resist the dark power that is raging inside me, in memory of Keldorn. To him I own that much... Now, back to Athkatla.~ [theme3]
+    REPLACE ~txtwar4~ ~I had a vision: defence is breached, goblins and giants conquer Firecam's castle and kill everyone within. Keldorn is dead. I have only a void left in my soul. But I know that I must at least save Imoen. I must resist the dark power that is raging inside me, in memory of Keldorn. To him I own that much... Now, back to Athkatla.~ [theme3]
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/KELDORD1.2da~ ~override~
-REPLACE ~keldr01~ ~Keldorn and <CHARNAME> have returned to Esmeltaran and had their wedding shortly after. Many friends, former companions and even Elminster, were there in the old castle. Volo was composing ballads, telling about the courageous daughter of Bhaal and brisk Cespenar was serving drinks.  Yes-yes, when Keldorn had learned that the little imp was facing the perspective of spending an eternity in Abyss, he offered Cespenar a position of butler in his castle. The imp agreed gladly.
+    REPLACE ~keldr01~ ~Keldorn and <CHARNAME> have returned to Esmeltaran and had their wedding shortly after. Many friends, former companions and even Elminster, were there in the old castle. Volo was composing ballads, telling about the courageous daughter of Bhaal and brisk Cespenar was serving drinks.  Yes-yes, when Keldorn had learned that the little imp was facing the perspective of spending an eternity in Abyss, he offered Cespenar a position of butler in his castle. The imp agreed gladly.
 
 <CHARNAME> hardly managed to survive through the childbirth: gods are not the ones to be born easily. When she finally recovered and their daughter Crystal had grown up a little, the Faercam family took to the road again. Keldorn remembered Kelemvor's order ' to teach the young goddess about goodness and justice, this cannot be taught correctly hiding behind castle walls. They traveled through all the Faerun, length and width, they visited Kara-Tur, paid a visit to Ajantis's parents in Waterdeep. But they did come back to the castle occasionally, and on one of their visits the second child, a boy, was born. When Keldorn asked his wife how she wants to name their son, <CHARNAME> has blurted out against her will: "Gorion".
 
@@ -43,14 +43,14 @@ Once Crystal had entered the weaponry with Keldorn, and then reached for the Car
 But Keldorn and <CHARNAME> weren't alone for long. Kelemvor has appeared again soon and said, that in return for the good education of Crystal he grants them the right to see a new goddess. As he offered his hands, Keldorn and <CHARNAME> understood that he's taking them with him. They had not lived for long, but happily, and died on the same day.~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/KELDORD2.2da~ ~override~
-REPLACE ~keldr02~ ~After his arrival alone, Keldorn had resigned from the Order, and sequestered himself. He waited for the birth of the child, hoping that it would give him a new sense to his life. <CHARNAME> didn't visit him and so he grew sadder and sadder, thinking that she had forgotten about him. But one day <CHARNAME> did appear with a child, a boy, in her hands. She laid him on Keldorn's knees and said: "I've named him Romuald. I hope you don't mind? I am going to leave him; you can teach him everything you think is necessary".
+    REPLACE ~keldr02~ ~After his arrival alone, Keldorn had resigned from the Order, and sequestered himself. He waited for the birth of the child, hoping that it would give him a new sense to his life. <CHARNAME> didn't visit him and so he grew sadder and sadder, thinking that she had forgotten about him. But one day <CHARNAME> did appear with a child, a boy, in her hands. She laid him on Keldorn's knees and said: "I've named him Romuald. I hope you don't mind? I am going to leave him; you can teach him everything you think is necessary".
 
 Caring for his son had become for Keldorn a new purpose in his life. He taught little Romuald, but he never fully understood, why he was chosen for this task. Or why there was no one who could teach a small child? <CHARNAME> explained that the gods are too busy and have no time to potter with children. And that such a thing is not common between gods. The boy should grow up before he takes his place at the side of his mother.
 
 Fifteen years Keldorn has spent with his son, after that Romuald grew up and his mother took him away. Without his son, Keldorn lost his taste for life. And soon he died silently.~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/KELDORD3.2da~ ~override~
-REPLACE ~keldr03~ ~After the return, <CHARNAME> and Keldorn have had their wedding. Soon the children were born: a boy and a girl. They were named after the dead parents ' Alyana and Thomas. Twins have grown up very energetic and restless, being interested in everything, including traveling and adventure. <CHARNAME> and Keldorn took their children and headed for the road. They visited Candlekeep and Gorion's grave; they found many of their friends; they went far up north in search of Branwen; even visited Koran in Tethir's forest. After their journey, they came back home and the children's laughter could be heard in the old castle of Esmeltaran again.
+    REPLACE ~keldr03~ ~After the return, <CHARNAME> and Keldorn have had their wedding. Soon the children were born: a boy and a girl. They were named after the dead parents ' Alyana and Thomas. Twins have grown up very energetic and restless, being interested in everything, including traveling and adventure. <CHARNAME> and Keldorn took their children and headed for the road. They visited Candlekeep and Gorion's grave; they found many of their friends; they went far up north in search of Branwen; even visited Koran in Tethir's forest. After their journey, they came back home and the children's laughter could be heard in the old castle of Esmeltaran again.
 
 Though Keldorn had officially resigned from his duty in the Order, he and his wife were often asked to help. And though their health sometimes refused them ' because of their past life and old wounds from countless battles ' Count and Countess Firecam always made the impression of a lively and strong couple, who loved life and each other. Alyana and Thomas got a little brother and later, a little sister.
 
@@ -61,12 +61,12 @@ Fate has shown its mercy on Keldorn, so he managed to see his daughter Alyana ge
 One winter Keldorn felt himself much worse. <CHARNAME> leaned to her husband, whispering that he should not worry because Kelemvor isn't there yet. Keldorn saw the God of Death, who has appeared behind her back, and his heart suddenly grew smaller from suffering: Keldorn didn't want to part with his wife. But <CHARNAME> approved that her decision to go with him remains still. They hugged each other for the last time and Kelemvor has taken them in to his eternal kingdom. They had lived long and happily, and died on the same day.~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/KELDORD4.2da~ ~override~
-REPLACE ~keldr04~ ~After he said goodbye to the woman he loved, Keldorn returned to the Order of the Radiant Heart. Though evil tongues had spoken that he was unworthy to be a paladin because he had accepted Bhaal's blood, nevertheless Keldorn had replaced Wessalen at his post as the prelate for the Order. He lived in the barracks of the Order and he never stepped foot near the old house again. <CHARNAME> was visiting him and squires were questioning themselves, why do they sometimes hear a quiet woman's voice, laughing and crying, coming from the prelate's room. But nobody ever dared to speak of it, so Keldorn's reputation was never questioned. <CHARNAME> really was visiting him and telling him what was happening up there. Keldorn seemed revived after these visits, so much so, that this was fueling many rumors and gossips. There still were battles across Faerun and Keldorn took part in them. But he always managed to come out just slightly wounded or merely scratched. <CHARNAME> was always protecting him, though prolong his life she couldn't.
+    REPLACE ~keldr04~ ~After he said goodbye to the woman he loved, Keldorn returned to the Order of the Radiant Heart. Though evil tongues had spoken that he was unworthy to be a paladin because he had accepted Bhaal's blood, nevertheless Keldorn had replaced Wessalen at his post as the prelate for the Order. He lived in the barracks of the Order and he never stepped foot near the old house again. <CHARNAME> was visiting him and squires were questioning themselves, why do they sometimes hear a quiet woman's voice, laughing and crying, coming from the prelate's room. But nobody ever dared to speak of it, so Keldorn's reputation was never questioned. <CHARNAME> really was visiting him and telling him what was happening up there. Keldorn seemed revived after these visits, so much so, that this was fueling many rumors and gossips. There still were battles across Faerun and Keldorn took part in them. But he always managed to come out just slightly wounded or merely scratched. <CHARNAME> was always protecting him, though prolong his life she couldn't.
 
 In the meantime, Keldorn had decided to clean Athkatla from all thieves and slavers. And he succeeded! Many influential persons have lost their places because they were supporting the slavers. Once Keldorn returned to his bachelor apartment from the courtroom and suddenly felt himself very ill. <CHARNAME> appeared by his side, her hand holding Keldorn's in his death hour. Even Torm himself has come to follow his loyal servant to his grave. Squires and knights of the Order of Radiant Heart for the rest of their lives remembered the appearance of Torm. A giant figure, clad in golden armor, holding a figure of a prelate in his hand and the goddess of dazzling beauty was standing nearby with tears of pearl falling from her eyes. Keldorn was given the right to leave Torm's plane in order to meet with his only love, the daughter of Bhaal.~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SAREVND1.2da~ ~override~
-REPLACE ~sarevnd1~ ~Sarevok was strongly affected by travels with his sister and Keldorn. He felt that his life changed; that he could not remain what he was before. <CHARNAME> and her husband became for him the only close people and Sarevok spent much time with them. When Gorion was born, Sarevok felt that time has come to return his debt and atone for the murder of his sister's stepfather. The boy grew bold and strong and he was getting close to his uncle more and more as if he was feeling an approach of the parting with his parents and sister. Sarevok trained him, and when Gorion grew up, managed to persuade <CHARNAME> to let the boy go with him to Kara-Tur, so he could learn the art of the sword from real masters. <CHARNAME> knew that the boy would become lone soon and became happy at this opportunity. She gave her son the Celestial Fury (which excited the boy much), told him to listen to his uncle and bid her farewell. Keldorn was hard at making this decision, but he understood that his son would be better off together with Sarevok than alone in the vast Castle Firecam. Neither Sarevok, nor Gorion Firecam were seen in Fae'run since.~
+    REPLACE ~sarevnd1~ ~Sarevok was strongly affected by travels with his sister and Keldorn. He felt that his life changed; that he could not remain what he was before. <CHARNAME> and her husband became for him the only close people and Sarevok spent much time with them. When Gorion was born, Sarevok felt that time has come to return his debt and atone for the murder of his sister's stepfather. The boy grew bold and strong and he was getting close to his uncle more and more as if he was feeling an approach of the parting with his parents and sister. Sarevok trained him, and when Gorion grew up, managed to persuade <CHARNAME> to let the boy go with him to Kara-Tur, so he could learn the art of the sword from real masters. <CHARNAME> knew that the boy would become lone soon and became happy at this opportunity. She gave her son the Celestial Fury (which excited the boy much), told him to listen to his uncle and bid her farewell. Keldorn was hard at making this decision, but he understood that his son would be better off together with Sarevok than alone in the vast Castle Firecam. Neither Sarevok, nor Gorion Firecam were seen in Fae'run since.~
 
 ////////////////////////////////////////////
 //Let's add new kit to Keldorn
@@ -147,7 +147,7 @@ COMPILE ~%MOD_FOLDER%/components/KeldornR/baf~
 
 //LT2 - Removing music in AR0900
 COPY_EXISTING ~AR0900.ARE~ ~override~
- WRITE_SHORT 0x5f94 0
+    WRITE_SHORT 0x5f94 0
 BUT_ONLY
 
 //LT6 (My lady, have I told you that I live in the Government District?) replaces the original banter on enetering AR1000.
@@ -180,156 +180,156 @@ COPY_EXISTING ~BYLANNA.CRE~ ~override~
 BUT_ONLY
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/av#mess.cre~ ~override/av#mess.cre~
-  SAY NAME1 #12834
-  SAY NAME2 #12834
+    SAY NAME1 #12834
+    SAY NAME2 #12834
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KRWOMAN.cre~ ~override~
-  SAY NAME1 ~Lady Edmonda van Burg~
-  SAY NAME2 ~Lady Edmonda van Burg~
+    SAY NAME1 ~Lady Edmonda van Burg~
+    SAY NAME2 ~Lady Edmonda van Burg~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/krwarmes.cre~ ~override~
-  SAY NAME1 ~Sir Randor Darm~
-  SAY NAME2 ~Sir Randor Darm~
+    SAY NAME1 ~Sir Randor Darm~
+    SAY NAME2 ~Sir Randor Darm~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/siegemes.cre~ ~override~
-  SAY NAME1 ~Sir Getharic Firecam~
-  SAY NAME2 ~Sir Getharic Firecam~
+    SAY NAME1 ~Sir Getharic Firecam~
+    SAY NAME2 ~Sir Getharic Firecam~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KKnight1.cre~ ~override~
-  SAY NAME1 ~Sir Derrick Rorn~
-  SAY NAME2 ~Sir Derrick Rorn~
+    SAY NAME1 ~Sir Derrick Rorn~
+    SAY NAME2 ~Sir Derrick Rorn~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KKnight2.cre~ ~override~
-  SAY NAME1 ~Sir Laurence Firecam~
-  SAY NAME2 ~Sir Laurence Firecam~
+    SAY NAME1 ~Sir Laurence Firecam~
+    SAY NAME2 ~Sir Laurence Firecam~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KKnight3.cre~ ~override~
-  SAY NAME1 ~Sir Gregory Liegar~
-  SAY NAME2 ~Sir Gregory Liegar~
+    SAY NAME1 ~Sir Gregory Liegar~
+    SAY NAME2 ~Sir Gregory Liegar~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/kdmess.cre~ ~override~
-  SAY NAME1 ~Firecam Guard~
-  SAY NAME2 ~Firecam Guard~
+    SAY NAME1 ~Firecam Guard~
+    SAY NAME2 ~Firecam Guard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/ADJUTANT.cre~ ~override~
-  SAY NAME1 ~Adjutant~
-  SAY NAME2 ~Craumerdaun's Adjutant~
+    SAY NAME1 ~Adjutant~
+    SAY NAME2 ~Craumerdaun's Adjutant~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/CRAUMER.cre~ ~override~
-  SAY NAME1 ~Craumerdaun~
-  SAY NAME2 ~General Craumerdaun~
+    SAY NAME1 ~Craumerdaun~
+    SAY NAME2 ~General Craumerdaun~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/CRGUARD1.cre~ ~override~
-  SAY NAME1 #42625
-  SAY NAME2 ~Craumerdaun's Bodyguard~
+    SAY NAME1 #42625
+    SAY NAME2 ~Craumerdaun's Bodyguard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/CRGUARD2.cre~ ~override~
-  SAY NAME1 #42625
-  SAY NAME2 ~Craumerdaun's Bodyguard~
+    SAY NAME1 #42625
+    SAY NAME2 ~Craumerdaun's Bodyguard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/CRGUARD3.cre~ ~override~
-  SAY NAME1 #42625
-  SAY NAME2 ~Craumerdaun's Bodyguard~
+    SAY NAME1 #42625
+    SAY NAME2 ~Craumerdaun's Bodyguard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/LadyAlia.cre~ ~override~
-  SAY NAME1 ~Lady Alia~
-  SAY NAME2 ~Lady Alia~
+    SAY NAME1 ~Lady Alia~
+    SAY NAME2 ~Lady Alia~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/FRIDA.CRE~ ~override~
-  SAY NAME1 ~Frida~
-  SAY NAME2 ~Frida~
+    SAY NAME1 ~Frida~
+    SAY NAME2 ~Frida~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KRGUARD1.cre~ ~override~
-  SAY NAME1 ~Firecam Guard Captain~
-  SAY NAME2 ~Firecam Guard Captain~
+    SAY NAME1 ~Firecam Guard Captain~
+    SAY NAME2 ~Firecam Guard Captain~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KRGUARD2.cre~ ~override~
-  SAY NAME1 ~Firecam Guard~
-  SAY NAME2 ~Firecam Guard~
+    SAY NAME1 ~Firecam Guard~
+    SAY NAME2 ~Firecam Guard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/Zornnag.cre~ ~override~
-  SAY NAME1 ~Captain Amlos Zornnag~
-  SAY NAME2 ~Captain Amlos Zornnag~
+    SAY NAME1 ~Captain Amlos Zornnag~
+    SAY NAME2 ~Captain Amlos Zornnag~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/PrCyric.cre~ ~override~
-  SAY NAME1 ~Priest of Cyric~
-  SAY NAME2 ~Priest of Cyric~
+    SAY NAME1 ~Priest of Cyric~
+    SAY NAME2 ~Priest of Cyric~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/SKnight1.cre~ ~override~
-  SAY NAME1 ~Sythillisian Knight~
-  SAY NAME2 ~Sythillisian Knight~
+    SAY NAME1 ~Sythillisian Knight~
+    SAY NAME2 ~Sythillisian Knight~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/SKnight2.cre~ ~override~
-  SAY NAME1 ~Sythillisian Knight~
-  SAY NAME2 ~Sythillisian Knight~
+    SAY NAME1 ~Sythillisian Knight~
+    SAY NAME2 ~Sythillisian Knight~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KeldorD.cre~ ~override~
-  SAY NAME1 #9144
-  SAY NAME2 #9144
+    SAY NAME1 #9144
+    SAY NAME2 #9144
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/Eye.cre~ ~override~
-  SAY NAME1 ~Meganarri~
-  SAY NAME2 ~Baator Guard~
+    SAY NAME1 ~Meganarri~
+    SAY NAME2 ~Baator Guard~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/Kelemvor.cre~ ~override~
-  SAY NAME1 ~Kelemvor~
-  SAY NAME2 ~Kelemvor~
+    SAY NAME1 ~Kelemvor~
+    SAY NAME2 ~Kelemvor~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KeldornM.cre~ ~override~
-  SAY NAME1 #9144
-  SAY NAME2 #9144
+    SAY NAME1 #9144
+    SAY NAME2 #9144
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/Torm.cre~ ~override~
-  SAY NAME1 ~Torm~
-  SAY NAME2 ~Torm~
+    SAY NAME1 ~Torm~
+    SAY NAME2 ~Torm~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/TormVoic.cre~ ~override~
-  SAY NAME1 ~Torm~
-  SAY NAME2 ~Torm~
+    SAY NAME1 ~Torm~
+    SAY NAME2 ~Torm~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/Kelemvo1.cre~ ~override~
-  SAY NAME1 ~Kelemvor~
-  SAY NAME2 ~Kelemvor~
+    SAY NAME1 ~Kelemvor~
+    SAY NAME2 ~Kelemvor~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KeldornC.cre~ ~override~
-  SAY NAME1 ~Keldorn~
-  SAY NAME2 ~Keldorn~
+    SAY NAME1 ~Keldorn~
+    SAY NAME2 ~Keldorn~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/SlayerDr.cre~ ~override~
-  SAY NAME1 ~Slayer~
-  SAY NAME2 ~Slayer~
+    SAY NAME1 ~Slayer~
+    SAY NAME2 ~Slayer~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KKpCapt.cre~ ~override~
-  SAY NAME1 ~Firecam Castle Lieutenant~
-  SAY NAME2 ~Firecam Castle Lieutenant~
+    SAY NAME1 ~Firecam Castle Lieutenant~
+    SAY NAME2 ~Firecam Castle Lieutenant~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/cre/KKpSold.cre~ ~override~
-  SAY NAME1 ~Firecam Castle Guard~
-  SAY NAME2 ~Firecam Castle Guard~
+    SAY NAME1 ~Firecam Castle Guard~
+    SAY NAME2 ~Firecam Castle Guard~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill1.cre~ ~override~
-  SAY NAME1 ~Sythillisian Elite~
-  SAY NAME2 ~Sythillisian Elite~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill1.cre~ ~override~
+    SAY NAME1 ~Sythillisian Elite~
+    SAY NAME2 ~Sythillisian Elite~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill2.cre~ ~override~
-  SAY NAME1 ~Sythillisian Archer~
-  SAY NAME2 ~Sythillisian Archer~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill2.cre~ ~override~
+    SAY NAME1 ~Sythillisian Archer~
+    SAY NAME2 ~Sythillisian Archer~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill3.cre~ ~override~
-  SAY NAME1 ~Sythillisian Battle Mage~
-  SAY NAME2 ~Sythillisian Battle Mage~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill3.cre~ ~override~
+    SAY NAME1 ~Sythillisian Battle Mage~
+    SAY NAME2 ~Sythillisian Battle Mage~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill4.cre~ ~override~
-  SAY NAME1 ~Sythillisian Warlord~
-  SAY NAME2 ~Sythillisian Warlord~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill4.cre~ ~override~
+    SAY NAME1 ~Sythillisian Warlord~
+    SAY NAME2 ~Sythillisian Warlord~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill5.cre~ ~override~
-  SAY NAME1 ~Sythillisian Warlord~
-  SAY NAME2 ~Sythillisian Warlord~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Sythill5.cre~ ~override~
+    SAY NAME1 ~Sythillisian Warlord~
+    SAY NAME2 ~Sythillisian Warlord~
 
- COPY ~%MOD_FOLDER%/components/KeldornR/cre/Abishai.cre~ ~override~
-  SAY NAME1 ~Abishai~
-  SAY NAME2 ~Abishai~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre/Abishai.cre~ ~override~
+    SAY NAME1 ~Abishai~
+    SAY NAME2 ~Abishai~
 
 ///////////////////////////
 //Items
@@ -567,7 +567,7 @@ COMPILE ~%MOD_FOLDER%/components/KeldornR/vamp~
 //In AR0800 (in Chapter 5), Bodhi appears --> aBODHIAM.dlg --> KELDORJ --> aBODHIAM.dlg --> VPCut53g.bcs --> VAMPAMB.cre
 EXTEND_TOP ~VAMPAMB.bcs~ ~%MOD_FOLDER%/components/KeldornR/vamp/sVAMPAMB.baf~
 //AR0809 --> script --> create VAMPKEL.cre
-COPY~%MOD_FOLDER%/components/KeldornR/vamp/VAMPKEL.cre~ ~override~
+COPY ~%MOD_FOLDER%/components/KeldornR/vamp/VAMPKEL.cre~ ~override~
 //Bodhi's dialogue C6BODHI.dlg --> VAMPKEL.dlg --> VAMPKEL.bcs
 //After the fight
 EXTEND_TOP ~AR0809.bcs~ ~%MOD_FOLDER%/components/KeldornR/vamp/sAR0809.baf~
@@ -600,7 +600,7 @@ END
 COPY ~%MOD_FOLDER%/components/KeldornR/itm_nej/dragblue.CRE~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/itm_nej/KPFORGE.BCS~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/itm_nej/BLUN30.itm~ ~override~
-  SAY DESC ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
+    SAY DESC ~This flail has been in the care of Lord de'Arnise for some time, a relic of his adventuring youth. It has been kept disassembled, the individual pieces stored in separate locations, and only used in the direst of emergencies. Lord Arnise was likely concerned about the powerful magic that the weapon radiated when compiled, and rightfully so. A trail of destruction has followed it through history, leading straight back to the original owners. The flail was the creation of the warlike Rakshasa, a race of vengeful spirits that crave human meat, and used as an adaptable weapon that could suit any battle. During a particularly violent hunt the flail was lost, only to be returned when they used their affinity for magic to locate its powerful aura. They discovered that the weapon had found its way into the hands of a great human warrior, and the battle that followed was truly splendid. They have since used the item as bait countless times, 'losing' it again and again. Powerful items gravitate towards powerful people, and powerful people yield the most glorious battles.
 
 With the addition of the fifth and final head to this weapon created by the evil Rakshasa race the true potential of the Flail of Ages is finally realized.
 
@@ -717,7 +717,7 @@ Not Usable By:
  Stalker~
 
 ACTION_IF FILE_EXISTS ~AR0206.bcs~ THEN BEGIN
-     COPY_EXISTING ~AR0206.bcs~ ~override~
+    COPY_EXISTING ~AR0206.bcs~ ~override~
         EXTEND_TOP ~AR0206.bcs~ ~%MOD_FOLDER%/components/KeldornR/itm_nej/eAR0206.baf~
 END ELSE BEGIN
     COPY ~%MOD_FOLDER%/components/KeldornR/itm_nej/AR0206.bcs~ ~override~

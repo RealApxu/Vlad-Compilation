@@ -4,8 +4,6 @@
 //
 /////////////////////////////////////
 
-BEGIN ~Enhanced Encounter with Illasera in ToB (by Vlad)~
-
 COPY ~%MOD_FOLDER%/components/bdash/illasera/copy~ ~override~
 
 COPY ~%MOD_FOLDER%/components/bdash/illasera/itm/RiSw1H02.itm~ ~override~
