@@ -1,4 +1,4 @@
-COPY ~NeJE/gui_anim~ ~override~
+COPY ~NeJE/gui~ ~override~
 COPY ~%MOD_FOLDER%/components/bdash/intro/Theme/themea.acm~ ~music/Theme/themea.acm~
 
 ///////////////////////////////////////
