@@ -207,6 +207,15 @@ Improves Casting Speed by 4
 Usable By:
  Aerie~
 
+SPRINT tooltip1 #14263
+SPRINT tooltip2 #25613
+SPRINT tooltip3 #44948
+
+APPEND EVAL ~TOOLTIP.2DA~ ~CLCKAERI %tooltip1% %tooltip2% %tooltip3%~
+
+COPY_EXISTING ~TOOLTIP.2DA~ override
+    PRETTY_PRINT_2DA
+
 COPY ~%MOD_FOLDER%/components/bdash/Aerie/itm/RingBaer.ITM~ ~override~
     SAY NAME2 ~Holy Symbol of Baervan~
     SAY DESC ~Only those most worthy and devoted servants of the Masked Leaf are granted these powerful holy symbols which provide essential protections and increase the amount of priest high-level spells they can memorise. This particular ring has a signet with a raccon's face.

@@ -9,8 +9,10 @@ COPY ~%MOD_FOLDER%/components/KeldornR/img~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/are~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/tiz~ ~override~
 COPY ~%MOD_FOLDER%/components/KeldornR/eff~ ~override~
-COPY ~%MOD_FOLDER%/components/KeldornR/cre_COPY ~ ~override~
-COPY ~%MOD_FOLDER%/components/KeldornR/bcs_COPY ~ ~override~
+COPY ~%MOD_FOLDER%/components/KeldornR/cre_COPY~ ~override~
+COPY ~%MOD_FOLDER%/components/KeldornR/bcs_COPY~ ~override~
+
+COMPILE ~%MOD_FOLDER%/components/dlg/kr~
 
 COPY ~%MOD_FOLDER%/components/KeldornR/screens/SCRTXT63.2da~ ~override~
     REPLACE ~txtwar1~ ~NEW CHAPTER
@@ -529,6 +531,12 @@ Armor Class: -2
 Weight: 15
 Requires: 8 Strength~
 
+SPRINT tooltip1 #38569
+SPRINT tooltip2 RESOLVE_STR_REF(~Ethereal Purge~)
+SPRINT tooltip3 #1453
+
+APPEND EVAL ~TOOLTIP.2DA~ ~KelChan %tooltip1% %tooltip2% %tooltip3%~
+
 COPY ~%MOD_FOLDER%/components/KeldornR/itm/kring222.itm~ ~override~
     SAY NAME1 #6348
     SAY NAME2 ~Gorion's Ring~
@@ -554,6 +562,9 @@ Not Usable By:
  Gnomes
  Half-Orcs
  Thieves (single, dual or multi)~
+
+COPY_EXISTING ~TOOLTIP.2DA~ override
+    PRETTY_PRINT_2DA
 
 //Save your beloved Keldorn from vampirism inflicted by Bodhi
 

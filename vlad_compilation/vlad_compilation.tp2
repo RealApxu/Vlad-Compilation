@@ -10,6 +10,10 @@ ALWAYS
     OUTER_SPRINT workspace "weidu_external/workspace/%MOD_FOLDER%"
     MKDIR "%workspace%"
     
+    COPY_EXISTING ~interdia.2da~ ~override~
+        SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
+    BUT_ONLY
+
 END
 
 /*
@@ -74,119 +78,7 @@ END
 
 PRINT ~Patching dialogs...~
 
-COPY_EXISTING ~interdia.2da~ ~override~
-    SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
-BUT_ONLY
-
-COMPILE ~%MOD_FOLDER%/components/dlg/bdash~
-        ~%MOD_FOLDER%/components/dlg/kr~
-        ~%MOD_FOLDER%/components/dlg/leina~
-        ~%MOD_FOLDER%/components/dlg/misc~
-        ~%MOD_FOLDER%/components/dlg/nej~
-        ~%MOD_FOLDER%/components/dlg/ts~
-
-APPEND ~TOOLTIP.2DA~ ~SiMace2           99998921        99998922       99998923kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~FANMACE           66666661        77777772       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~FANSTAFF          66666662        77777772       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~FANSTAR           66666663        77777772       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~FANSWOR1          66666664        77777772       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~FANSWOR2          66666665        77777772       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~ROGUE             77777774        77777775       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~SCARAB            77777776        77777777       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~WUJEN             77777783        99998921       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~BLACKNI2          77777783        99998921       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~HelmAnom          99999981        99999982       99999983kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~KelChan           99999984        99999985       99998921kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~NPRING01          99999921        99999922       99999923kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~CLCKAERI          99999911        99999912       99999913kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~ROBEARM2          99999922        77777753       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~KINGMASK          66667753        66667754       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~RINGED            88888887        88888888       88888889kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~LeiAmulM          99998923        99998921       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~LeiAmul           99998921        99998922       99998923kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DarChain          66666611        77777712       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~StaffPow          77777738        77777739       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DERING5           99999991        99999992       99999993kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DERING4           99999994        99999992       99999993kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DERING3           99999994        99999995       99999993kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DERING2           99999996        99999997       99999998kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~DERING            99999999        99999995       99999997kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~staffsw           77777703        77777702       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~STAFFBES          77777708        77777709       -1kkkkkk~
-APPEND ~TOOLTIP.2DA~ ~invcloak          99999932        77777763       -1kkkkkk~
-
-COPY_EXISTING ~TOOLTIP.2DA~ ~override~
-    //******** number of items in appended rows ***
-    SET present_cols = 29
-    //*********************************************
-    SET rows=2
-    SET rows_prev=0
-    SET col_cnt=0
-    WHILE "%rows%">1 BEGIN
-        col_cnt = col_cnt + 1
-        rows_prev = rows
-        COUNT_2DA_ROWS col_cnt rows
-    END
-    col_cnt = col_cnt - 1
-    SET ccc = col_cnt - 1
-
-    SPRINT str_add ""
-    FOR(cnt="%present_cols%"; cnt<"%col_cnt%"; cnt+=1) BEGIN
-        SPRINT str_add "%str_add%"^"         -1"
-    END
-
-    REPLACE_TEXTUALLY ~kkkkkk~ "%str_add%"
-
-    REPLACE ~99998921~ ~Heal~
-    REPLACE ~99998922~ ~True Sight~
-    REPLACE ~99998923~ ~Mass Cure~
-    REPLACE ~66666661~ ~Mace~
-    REPLACE ~77777772~ ~Dispel Magic~
-    REPLACE ~66666662~ ~Quaterstaff~
-    REPLACE ~66666663~ ~Morning Star~
-    REPLACE ~66666664~ ~Long Sword~
-    REPLACE ~66666665~ ~Two-Handed Sword~
-    REPLACE ~77777774~ ~Blindness~
-    REPLACE ~77777775~ ~Color Spray~
-    REPLACE ~77777776~ ~Friends~
-    REPLACE ~77777777~ ~Charm~
-    REPLACE ~77777783~ ~Greater Restoration~
-    REPLACE ~99999981~ ~Fireball~
-    REPLACE ~99999982~ ~Prismatic Spray~
-    REPLACE ~99999983~ ~Sunray~
-    REPLACE ~99999984~ ~False Dawn~
-    REPLACE ~99999985~ ~Ethereal Purge~
-    REPLACE ~99999921~ ~Imroved Invisibility~
-    REPLACE ~99999922~ ~Improved Haste~
-    REPLACE ~99999923~ ~Blur~
-    REPLACE ~99999911~ ~Summon Aerial Servant~
-    REPLACE ~99999912~ ~Summon Nymph~
-    REPLACE ~99999913~ ~Nature's Beauty~
-    REPLACE ~77777753~ ~Protective Mode~
-    REPLACE ~66667753~ ~Aura of Terror~
-    REPLACE ~66667754~ ~X-Ray Vision~
-    REPLACE ~88888887~ ~Adamantine Skin~
-    REPLACE ~88888888~ ~Blue Fire Shield~
-    REPLACE ~88888889~ ~Summon Fire Golem~
-    REPLACE ~66666611~ ~Call Lightning~
-    REPLACE ~77777712~ ~Lightning Bolt~
-    REPLACE ~77777738~ ~Lightning Bolt of Paralyzation~
-    REPLACE ~77777739~ ~Globe of Invulnerability~
-    REPLACE ~99999991~ ~Summon Air Elemental~
-    REPLACE ~99999992~ ~Summon Lesser Earth Elemental~
-    REPLACE ~99999993~ ~Summon Greater Fire Elemental~
-    REPLACE ~99999994~ ~Fire Shield (Red)~
-    REPLACE ~99999995~ ~Charm Air Elemental~
-    REPLACE ~99999996~ ~Fire Shield (Blue)~
-    REPLACE ~99999997~ ~Charm Earth Elemental~
-    REPLACE ~99999998~ ~Summon Water Elemental~
-    REPLACE ~99999999~ ~Charm Fire Elemental~
-    REPLACE ~77777708~ ~Remove Magic~
-    REPLACE ~77777709~ ~Lower Magic Resistance~
-    REPLACE ~77777703~ ~Neutralize Poison~
-    REPLACE ~77777702~ ~Mordecai's Insect Swarm~
-    REPLACE ~99999932~ ~Project Image~
-    REPLACE ~77777763~ ~Mass Invisibility~
+COMPILE ~%MOD_FOLDER%/components/dlg/misc~
 
 BEGIN ~Baldurdash Fix Pack for SoA-ToB, v1.76 WeiDU~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~

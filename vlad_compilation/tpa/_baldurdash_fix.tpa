@@ -1,5 +1,7 @@
 PRINT ~Core Baldurdash Fixes (by Kevin Dorner)~
 
+COMPILE ~%MOD_FOLDER%/components/dlg/bdash~
+
 //PRINT ~Throne of Bhaal Extender (TobEx) v0026 (by Ascension64)~
 
 //OUTER_SPRINT TOBEX_MOD_DIRECTORY "./NeJE"

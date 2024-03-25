@@ -61,6 +61,11 @@ Not Usable By:
  Monk
  Kensai~
 
+SPRINT tooltip1 RESOLVE_STR_REF(~Aura of Terror~)
+SPRINT tooltip2 RESOLVE_STR_REF(~X-Ray Vision~)
+
+APPEND EVAL ~TOOLTIP.2DA~ ~KingMask %tooltip1% %tooltip2% -1~
+
 //2. Enhanced Carsomyr
 COPY ~%MOD_FOLDER%/components/bdash/cromwell/LILARCO2.ITM~ ~override/LILARCO2.ITM~
     SAY NAME2 ~Enhanced Carsomyr~
@@ -174,6 +179,11 @@ Armor Class: 0
 Weight:  5
 Only Usable By:
  Mage (Single, Dual-, and Multi-)~
+
+SPRINT tooltip1 #25937
+SPRINT tooltip2 RESOLVE_STR_REF(~Protective Mode~)
+
+APPEND EVAL ~TOOLTIP.2DA~ ~ROBEARM2 %tooltip1% %tooltip2% -1~
 
 //5. Enhanced Staff of Besieging
 COPY ~%MOD_FOLDER%/components/bdash/cromwell/STAFFBE2.ITM~ ~override/STAFFBE2.ITM~
@@ -1186,6 +1196,11 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
+
+SPRINT tooltip1 #35603
+SPRINT tooltip2 #1453
+
+APPEND EVAL ~TOOLTIP.2DA~ ~BLACKNI2 %tooltip1% %tooltip2% -1~
 
 COPY ~%MOD_FOLDER%/components/bdash/itm/UMHULK2.ITM~ ~override~
     SAY NAME1 ~Umber Hulk Plate~

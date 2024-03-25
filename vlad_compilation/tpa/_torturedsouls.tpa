@@ -50,6 +50,8 @@ COPY ~%MOD_FOLDER%/components/TS/toda/YOSHIMOD.2da~ ~override~
 
 The Hashimoto family first doubled then tripled and all of their children grew up during the endless family journey. The eldest child was called <CHARNAME> in memory of their old friend. Yoshimo and Kachiko never returned to Kozakura, the demise of their families weighed heavily on them. Eventually, they retired to Athkatla. Yoshimo now owns the "Adventurer's Mart" and the Hashimoto's small home in the Bridge district is full of grandchildren and all sorts of wanderers.~
 
+COMPILE ~%MOD_FOLDER%/components/dlg/ts~
+
 //Adding NPCs to 2DA
 
 COPY_EXISTING ~PDIALOG.2da~ ~override/PDIALOG.2da~
@@ -531,15 +533,40 @@ COPY ~%MOD_FOLDER%/components/TS/itm/ExitWard.itm~ ~override/ExitWard.itm~
     SAY DESC ~Upon closer examination this wardstone appears to be a gem of mediocre value, with several symbols carved upon the outer edge.~
 
 COPY ~%MOD_FOLDER%/components/TS/itm/FanMace.itm~ ~override/FanMace.itm~
+    READ_LONG 0x08 tooltip1
+
+SPRINT tooltip2 #12026
+APPEND EVAL ~TOOLTIP.2DA~ ~fanmace %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/FanPotn1.itm~ ~override/FanPotn1.itm~
 COPY ~%MOD_FOLDER%/components/TS/itm/FanPotn2.itm~ ~override/FanPotn2.itm~
 COPY ~%MOD_FOLDER%/components/TS/itm/FanPotn3.itm~ ~override/FanPotn3.itm~
 COPY ~%MOD_FOLDER%/components/TS/itm/FanRing.itm~ ~override/FanRing.itm~
 COPY ~%MOD_FOLDER%/components/TS/itm/FanRobe.itm~ ~override/FanRobe.itm~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/FanStaff.itm~ ~override/FanStaff.itm~
+    READ_LONG 0x08 tooltip1
+
+SPRINT tooltip2 #12026
+APPEND EVAL ~TOOLTIP.2DA~ ~FanStaff %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/FanStar.itm~ ~override/FanStar.itm~
+    READ_LONG 0x08 tooltip1
+
+SPRINT tooltip2 #12026
+APPEND EVAL ~TOOLTIP.2DA~ ~FanStar %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/FanSwor1.itm~ ~override/FanSwor1.itm~
+    READ_LONG 0x08 tooltip1
+
+SPRINT tooltip2 #12026
+APPEND EVAL ~TOOLTIP.2DA~ ~FanSwor1 %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/FanSwor2.itm~ ~override/FanSwor2.itm~
+    READ_LONG 0x08 tooltip1
+
+SPRINT tooltip2 #12026
+APPEND EVAL ~TOOLTIP.2DA~ ~FanSwor2 %tooltip1% %tooltip2% -1~
 
 COPY ~%MOD_FOLDER%/components/TS/itm/GodBless.ITM~ ~override/GodBless.ITM~
     SAY NAME2 ~Ring of Holiness II~
@@ -840,6 +867,12 @@ Only Usable By:
  Mage (Single, Dual-, and Multi-)
  Bard~
 
+SPRINT tooltip1 #8300
+SPRINT tooltip2 #12061
+SPRINT tooltip3 RESOLVE_STR_REF(~Summon Fire Golem~)
+
+APPEND EVAL ~TOOLTIP.2DA~ ~ringed %tooltip1% %tooltip2% %tooltip3%~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/ROBEARM.ITM~ ~override/ROBEARM.ITM~
     SAY NAME2 ~Robe of Armory~
     SAY DESC ~There are a small number of these valuable gold and crimson robes floating around the Realms, and all of them are the creation of an abjurer named Delgam of the Many Hands - so called for his extensive use of the expression "on the other hand..."  Delgam eschewed imbuing his items with offensive powers or other miscellaneous magic effects.  Instead, he focused on what abjurers tend to focus on: defense.  His robes were extremely popular, so much so that mages were coming to him from all over the world to demand that he make more for them.  Delgam decided to fade into obscurity rather than cater to packs of power-hungry wizards.  His robes are his most well known legacy.
@@ -869,6 +902,11 @@ Only Usable By:
  Ranger (Single, Dual-, and Multi-Class)
  Bard~
 
+SPRINT tooltip1 #12015
+SPRINT tooltip2 #12075
+
+APPEND EVAL ~TOOLTIP.2DA~ ~rogue %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/TS/itm/SCARAB.ITM~ ~override/SCARAB.ITM~
     SAY NAME2 ~Scarab of Goodwill~
     SAY DESC ~This type of amulet takes the form of a sculpted beetle, and is typically only found in areas around Mulhorand. This particular scarab was crafted by a priest of Nepthys named Ani Haloua. She used it in negotiations with local businesses and the general populace.  Similar scarabs are believed to be circulating in the Realms. Priests of Waukeen are particularly fond of them.
@@ -881,6 +919,11 @@ Can cast Friends and Charm 1/Day.
 
 Not Usable By:
   Evil Characters~
+
+SPRINT tooltip1 #12949
+SPRINT tooltip2 #14033
+
+APPEND EVAL ~TOOLTIP.2DA~ ~scarab %tooltip1% %tooltip2% -1~
 
 COPY ~%MOD_FOLDER%/components/TS/itm/SeaChart.itm~ ~override/SeaChart.itm~
 
@@ -1006,6 +1049,12 @@ Not Usable By:
  Druid
  Mage
  Thief~
+
+SPRINT tooltip1 #1453
+SPRINT tooltip2 #25633
+SPRINT tooltip3 #7468
+
+APPEND EVAL ~TOOLTIP.2DA~ ~SiMace2 %tooltip1% %tooltip2% %tooltip3%~
 
 COPY ~%MOD_FOLDER%/components/TS/itm/SiSling.ITM~ ~override/SiSling.ITM~
     SAY NAME2 ~Giant Killer~
@@ -1208,6 +1257,11 @@ Not Usable By:
 Usable Only By:
  Good or Neutral Alignment~
 
+SPRINT tooltip1 #35603
+SPRINT tooltip2 #1453
+
+APPEND EVAL ~TOOLTIP.2DA~ ~wujen %tooltip1% %tooltip2% -1~
+
 //Yoshimo's New Armour
 
 COPY ~%MOD_FOLDER%/components/TS/itm/MOURNER.ITM~ ~override/MOURNER.ITM~
@@ -1237,7 +1291,8 @@ Weight: 20
 Usable By:
  Thieves~
 
-
+COPY_EXISTING ~TOOLTIP.2DA~ override
+    PRETTY_PRINT_2DA
 
 /////////////////////////////////////
 //Stores

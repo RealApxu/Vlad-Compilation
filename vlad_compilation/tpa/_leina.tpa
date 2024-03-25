@@ -26,6 +26,8 @@ COPY ~%MOD_FOLDER%/components/Leina/ends/LEINAFND.2da~ ~override~
 COPY ~%MOD_FOLDER%/components/Leina/ends/LEINAND2.2da~ ~override~
     REPLACE ~leina2fi~ ~After half-a-dozen visits by Samuel's messengers it became evident to <CHARNAME> and Leina that it was time to visit Athkatla again. It was not much of a surprise to <CHARNAME> that Samuel decided to retire and sold his tavern and inn to Leina. Leina took over the Five Flagons Inn and hosted many beautiful shows and perfomances there. The tavern became so popular that many famous bards, bands and performers, as well as respectable audience, from all over the world visited it frequently. Even Volo himself was always staying for a few nights in the Five Flagons Inn on his way from Calimshan to Baldur's Gate. <CHARNAME> helped Leina managing the Five Flagons Inn, and they lived happily in Athkatla, in the house of Leina's father. However, the happy life did not stop them from leading the nomadic lifestyle and together they traveled the land for many years. In their travels, Leina wrote many new songs and poems, and when they returned to Athkatla, she published a collection of her poetry with the title "All You Need Is Love". It is said that the couple has seen the birth of a son and a daughter. Eventually the tales about <CHARNAME> and Leina became so unbelievable that one can only assume that they were no more.~
 
+COMPILE ~%MOD_FOLDER%/components/dlg/leina~
+
 //Leina's Bard Kit
 
 APPEND ~SPELL.IDS~
@@ -763,6 +765,11 @@ Special Abilities:
   Mass Cure (thrice per day)
   Cure (thrice per day)~
 
+SPRINT tooltip1 #7468
+SPRINT tooltip2 #1453
+
+APPEND EVAL ~TOOLTIP.2DA~ ~LeiAmulM %tooltip1% %tooltip2% -1~
+
 COPY ~%MOD_FOLDER%/components/Leina/itm/LeiAmulF.itm~ ~override/LeiAmulF.itm~
     SAY NAME2 ~Vulova's Pendant~
     SAY UNIDENTIFIED_DESC ~Pendants are usually jewels that are meant to be worn around the neck and next to the skin. The type of chain that comes with a pendant generally increases the item's aesthetic value.~
@@ -803,6 +810,11 @@ Special Abilities:
  Leina may contact her mother's spirit should she be injured in any way:
   Mass Cure (thrice per day)
   Cure (thrice per day)~
+
+SPRINT tooltip1 #1453
+SPRINT tooltip2 #25633
+
+APPEND EVAL ~TOOLTIP.2DA~ ~LeiAmul %tooltip1% %tooltip2% -1~
 
 COPY ~%MOD_FOLDER%/components/Leina/itm/BeatRobe.itm~ ~override/BeatRobe.itm~
     SAY NAME1 ~~

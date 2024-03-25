@@ -60,6 +60,12 @@ Weight: 2
 Usable By:
  Anomen~
 
+SPRINT tooltip1 #1465
+SPRINT tooltip2 #25960
+SPRINT tooltip3 #2664
+
+APPEND EVAL ~TOOLTIP.2DA~ ~HelmAnom %tooltip1% %tooltip2% %tooltip3%~
+
 COPY ~%MOD_FOLDER%/components/bdash/Anomen/itm/ShldAnom.itm~ ~override~
     SAY NAME1 #8482
     SAY NAME2 #8482
@@ -78,3 +84,6 @@ Equipped Abilities:
 
 Usable By:
  Anomen~
+
+COPY_EXISTING ~TOOLTIP.2DA~ override
+    PRETTY_PRINT_2DA
