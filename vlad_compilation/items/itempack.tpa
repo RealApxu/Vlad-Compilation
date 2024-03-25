@@ -1,0 +1,68 @@
+//////////////////////////////////////////////////
+// Items added in vanilla game locations
+//////////////////////////////////////////////////
+
+//Change quest rewards BG1
+COMPILE ~%MOD_FOLDER%/components/bdash/BGTComp/dlg/forduli.d~
+
+//Two new items in BG1: Fighting Gauntlets and Answerer +2
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+    COPY_EXISTING ~TANAR.CRE~ ~override~
+        ADD_CRE_ITEM ~ULFISTS~ #0 #0 #0 ~NONE~ ~INV1~
+END ELSE BEGIN
+    COPY_EXISTING ~WMART1.STO~ ~override~
+        ADD_STORE_ITEM + ~ULFISTS~ #0 #0 #0 ~IDENTIFIED~ #1
+END
+
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/itm/VPSword.itm~ ~override~
+    SAY NAME2 ~The Answerer +2~
+    SAY DESC ~The last swing of a battle is more important than the first. Such is the philosophy embodied in this powerful weapon. Although the strange design of The Answerer makes it difficult to take the initiative in combat, with each hit it makes an opponent more vulnerable to subsequent attacks.
+
+STATISTICS:
+
+Each hit lowers opponents' Magic Resistance by 5%
+Each hit applies a penalty of -1 to opponents' AC
+
+THAC0: +2 bonus
+Damage: 1D8 + 2
+Damage type: slashing
+Weight: 2
+Speed Factor: 9
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+Druid
+Cleric
+Mage
+Beast Master~
+
+
+//Replace BG1 Rashad's Talon with new sword
+COPY_EXISTING ~ARD000.ARE~ ~override~
+    READ_LONG 0x78 item_off
+    READ_SHORT 0x76 item_num
+    FOR (i=0;i<"%item_num%";i+=1) BEGIN
+        READ_ASCII ("%item_off%" + "%i%"*0x14) item_name
+        PATCH_IF (("%item_name%" STRING_COMPARE_CASE "SW1H23")=0) BEGIN
+            WRITE_ASCII ("%item_off%" + "%i%"*0x14) "VPSWORD"
+        END
+    END
+BUT_ONLY
+
+//Removes Flame Tongue, replacing with Long Sword
+COPY_EXISTING ~ARD014.ARE~ ~override~
+    READ_LONG 0x78 item_off
+    READ_SHORT 0x76 item_num
+    FOR (i=0;i<"%item_num%";i+=1) BEGIN
+        READ_ASCII ("%item_off%" + "%i%"*0x14) item_name
+        PATCH_IF (("%item_name%" STRING_COMPARE_CASE "SW1H24")=0) BEGIN
+            WRITE_ASCII ("%item_off%" + "%i%"*0x14) "SW1H04"
+        END
+    END
+BUT_ONLY
+
+//Change Flame Tongue with Flame Blade
+COPY_EXISTING ~CEDRUID2.CRE~ override
+    REMOVE_CRE_ITEM sw1h24
+    ADD_CRE_ITEM sw1h53 #0 #0 #0 none inv2

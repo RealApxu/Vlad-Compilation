@@ -1,0 +1,28 @@
+//Change Earth Elemental Animation to IWD version
+COPY_EXISTING ~ELEAR01.CRE~ override
+              ~ELEARG01.CRE~ override
+              ~ELEARPR.CRE~ override
+              ~ELEARPR2.CRE~ override
+              ~ELEARPR3.CRE~ override
+              ~ELEARSU.CRE~ override
+              ~ELEARSU2.CRE~ override
+              ~ELEARSU3.CRE~ override
+              ~ELEARSU4.CRE~ override
+              ~ELEEEL01.CRE~ override
+    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_EARTH_ELEMENTAL~)
+BUT_ONLY
+
+//Rename Olhydra and change animation to IWD
+COPY_EXISTING ~ELEMHYDR.CRE~ override
+    SAY 0x8 ~Greater Water Elemental~
+    SAY 0xc ~Greater Water Elemental~
+    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_ORC_RANGE2~)
+BUT_ONLY
+
+//Change Greater Water Elemental animation to IWD
+COPY_EXISTING ~ELWATG01.CRE~ override
+    WRITE_LONG 0x28 IDS_OF_SYMBOL(~ANIMATE~ ~IC_ORC_RANGE2~)
+BUT_ONLY
+
+//Change animation ids for orc archers to free up the slot for IWD water elemental
+COPY ~%MOD_FOLDER%/components/bdash/new_wat~ ~override~

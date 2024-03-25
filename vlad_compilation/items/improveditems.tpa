@@ -1,0 +1,422 @@
+
+//Improved Anti-Dragon Items
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SHLD21.ITM~ ~override~
+    SAY NAME2 ~Dragon Scale Shield +5~
+    SAY DESC ~Another powerful item created by the warlock Wormsor, this shield consists of red dragon skin stretched over a steel frame.  Green and white dragon scales adorn the red background in a pattern that, when looked in the right way, reveals the face of an ancient dragon.
+
+STATISTICS:
+
+Equipped Abilities:
+ Fire, Cold and Electrical Resistance: +50%
+
+Armor Class Bonus: 6
+Weight: 5
+Requires: 12 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief
+ Monk
+ Kensai~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H31.ITM~ ~override~
+    SAY DESC ~Sunblade: Daystar
+Whether created specifically for use in the service of Torm or appropriated at some point in the long history of the church, Paladins of the Loyal Fury have made good use of Daystar in their battles against evil undead.  Through magic or blessing it is empowered with the Sunray, a force of pure life energy so potent that it slays both living and unliving.
+
+STATISTICS:
+Special Abilities (twice per day):
+Sunray
+ Damage: 3D6 (save vs. spells or be blinded for 10 rounds)
+ Undead: an additional 1d6 points of damage per level of caster (save vs. spells or be destroyed)
+ Range: 20 ft
+ Area: 20 ft radius
+
+Always considered to be of +4 enchantment when determining what it can hit.
+THAC0:  +4 bonus, +4 vs. evil creatures
+Damage:  2D6 + 4, +4 vs. evil creatures, does double damage against undead
+Damage type:  slashing
+Weight: 2
+Speed Factor: 3
+Proficiency Type: Long sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H35.ITM~ ~override~
+    SAY NAME2 ~Adjatha the Drinker +4~
+    SAY DESC ~This blade belonged to Dabbar, a long dead servant of Bhaal that exercised control over his minions in the most brutal of ways. In addition to strengthening the mind against the guile of others, the sword absorbs life energy from an opponent with each successful hit, healing the user. Dabbar considered it a failure of his officers if he returned from battle in less than perfect health, and as the rest of the company watched, he would administer beatings until fully healed.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armour Class Bonus: +2
+ Saving Throws Bonus: +2
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects and psionics)
+
+Combat Abilities:
+ Larloch's Minor Drain
+  (Each successful hit drains 6 HP from a target and adds it to the wielder with no save)
+ Level Drain
+  (10% chance to drain one level from the opponent with every hit)
+
+THAC0:  +4 bonus
+Damage:  1D8 + 4
+Damage type:  slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H51.ITM~ ~override~
+    SAY DESC ~Katana +4
+To enchant a katana is no simple process.  Unlike conventional weapons, the katana is already a near-perfect fighting sword.  To improve it usually requires a sacrifice, perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana.  The wielder of an enchanted katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle.  Not doing so could drastically change one's luck for the worse.
+
+STATISTICS:
+
+Special Abilities:
+    Lightning Strike:  Once per day
+    Blindness:  Once per day
+
+Combat Abilities:
+    Booming Thunder whenever the sword strikes an opponent
+        (Save vs. Spell or be stunned for one round)
+    Shocking Blow chance when sword strikes an opponent
+        (5% chance of 20 additional electrical damage)
+
+THAC0: +4 bonus
+Damage:  1D10 + 4
+Damage type:  slashing
+Weight:  3
+Speed Factor: 1
+Proficiency Type: Katana
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+//-------------------------------------------------------------------------
+//Adjatha The Drinker Healing Magic Resistance Failure Fix
+//-------------------------------------------------------------------------
+/*COPY_EXISTING ~SW1H35.ITM~ ~override~
+ WRITE_BYTE 0x26 6  //min STR
+ READ_LONG 0x64 "ability_offset"
+ READ_SHORT 0x68 "ability_cnt"
+ READ_LONG 0x6a "eff_offset"
+ FOR( cnt=0; cnt<"%ability_cnt%"; cnt=cnt+1 ) BEGIN
+   READ_BYTE ("%ability_offset%"+0x38*cnt) "type"
+   PATCH_IF ("%type%"=1) BEGIN      //Melee
+     READ_SHORT ("%ability_offset%"+0x38*cnt+0x1e)  eff_number
+     READ_SHORT ("%ability_offset%"+0x38*cnt+0x20)  eff_idx
+     FOR( cnt2=0; cnt2<eff_number; cnt2=cnt2+1 ) BEGIN
+       READ_SHORT ("%eff_offset%"+0x30*(cnt2+eff_idx))  "eff_type"
+       PATCH_IF( "%eff_type%" = 17 ) BEGIN  //current HP bonus
+         WRITE_BYTE ("%eff_offset%"+0x30*(cnt2+eff_idx)+13) 2   //not bypass resistance
+       END
+     END
+   END
+ END
+BUT_ONLY
+
+COPY_EXISTING ~SW1H35.ITM~ ~override/SW1H35.ITM~
+    WRITE_BYTE 0x237  0x02
+    WRITE_BYTE 0x267  0x02
+    WRITE_BYTE 0x297  0x02
+    WRITE_BYTE 0x2C7  0x02*/
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H32.ITM~ ~override~
+    SAY DESC ~Long sword +5:  Dragonslayer (Peridan)
+Few dare to create items such as this, for who does not fear the wrath of dragons, and what action would more tempt their reckoning? Yet, at a time lost in Faerun's past, there was a need, and this sword was forged in answer. Tempered by a wizard's skill, this blade protects the wielder from the fear they should rightly feel while staring down a dragon's maw. It also bolsters with regeneration, dispels magics whenever the sword strikes an enemy, and dares to do double damage against the greatest creatures of the Realms.
+
+STATISTICS:
+
+Equipped Abilities:
+ Immunity to Fear and Panic
+ Regenerate 1 hit point every round
+
+Combat Abilities:
+ Dispels Magic
+  (whenever the sword strikes an opponent)
+
+THAC0:  +5 bonus
+Damage:  1D8 + 5, double damage against dragons
+Damage type:  slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/LEAT19.ITM~ ~override~
+    SAY DESC ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful with some essential extra protections.
+
+STATISTICS:
+
+Special Abilities:
+ Spellcasting is possible
+
+Bonuses:
+ Cold and Acid Resistance: +50%
+ Magic Resistance: +10%
+ Hide in Shadows and Move Silently: + 25%
+
+Equipped Abilities:
+ Immunity to Normal Weapons
+ Immunity to Backstab
+ Movement Rate Bonus x2
+
+Armor Class: 1
+Weight: 10
+Requires: 6 Strength
+Not Usable By:
+ Mage
+ Kensai
+ Monk
+ Shapeshifter~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/HELM21.ITM~ ~override~
+    SAY DESC ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity.  It is hard to determine whether the benefits originate within the scales or the spells of the mage.
+
+Equipped Abilities:
+ Cold, Fire and Electrical Resistance: +50%
+
+Armor Class Bonus: +2
+Saving Throws: +2
+Hit Point Max: +15
+Weight: 2
+Not Usable By:
+ Mage
+ Bard
+ Thief
+ Monk
+ Kensai~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/PLAT18.ITM~ ~override~
+    SAY DESC ~This suit of armor is formed from interlocking red dragon scales. It is light of weight, strong, and resistant to fire and magic. Because of these properties it is much sought after, but finding, let alone slaying, a powerful ancient dragon is nearly impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+
+STATISTICS:
+
+Special Abilities:
+ Spellcasting is possible
+
+Bonuses:
+ Fire and Acid Resistance: +50%
+ Magic Resistance: +10%
+ Immunity to Normal Weapons
+ Immunity to Backstab
+ True Free Action
+  (Immunity to any slowing, holding and paralyzation magics)
+
+Armor Class: -3
+Saving Throws: +3 Bonus
+Weight: 10
+Requires: 6 Strength
+Not Usable By:
+ Mage
+ Kensai
+ Monk
+ Shapeshifter~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/CHAN18.ITM~ ~override~
+    SAY DESC ~This was the armor of Seffer Ekr, and a sign of the goddess Mielikii's favor.  She had rewarded the ranger's loyalty with the promise that he would never die in battle, and he defied death for many years, holding orcish hordes back from his home forest.  A heart attack claimed him when his time was done, not an enemy's blade.
+
+STATISTICS
+
+Bonuses:  +3 bonuses to all saving throws
+Armor Class: -2
+Weight: 35
+Requires: 15 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief
+ Archer
+ Stalker
+ Beast Master
+ Kensai
+ Monk~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW2H15.ITM~ ~override~
+    SAY DESC ~Silver Sword
+This is truly a legendary weapon called Vorpal or Silver Sword. No wonder that githyanki wanted to procure it so much and return it to their ancestral city of Tu'narath. Vorpal is their ritual sword radiating a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+
+Besides bein a ritual sword, Vorpal also serves the purpose of getting rid the world of the hateful illithids. Those who wield the Vorpal have a complete mind shield including immunity to charm, domination, confusion and psionics. In addition, the sword provides the wearer the freedom to move under any movement-alterating spells.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armour Class Bonus: +2
+ Saving Throws Bonus: +2
+ True Free Action
+  (Immunity to any movement-alterating effects)
+ Complete Mind Shield
+  (Immunity to any mind-alterating effects and psionics)
+
+Combat Abilities:
+ Instant Death
+  (Each hit may instantly slay an opponent with a 25% chance unless a saving throw vs death is made at -2 penalty)
+
+THAC0: +5 bonus
+Damage:  1D12 + 5
+Damage type:  slashing
+Weight: 10
+Speed Factor: 5
+Proficiency Type: Two Handed sword
+Type:  2-handed
+Requires: 14 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Thief
+ Monk
+ Beast Master~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/SW1H54.ITM~ ~override~
+    SAY DESC ~Long Sword: The Equalizer
+Such is the age of this sword that its true origin has been lost to time, but markings hint that it was possibly forged in the service of Helm. Also called the "Sword of Neutrality", it seems designed to seek and terminate extremes, to shift the universe closer to harmonious equilibrium. The further the behavior of a target from true balance, the more potent the damage they suffer.
+
+STATISTICS:
+
+Combat Abilities:
+   Level Drain
+      (20% chance to drain one level from opponent with every hit)
+   Booming Thunder whenever the sword strikes an opponent
+      (Save vs. Spell or be stunned for one round)
+
+Equipped Abilities:
+   Armour class: +2
+   Saving throws: +2
+   Magic Resistance: +20%
+
+THAC0: +5 bonus
+Damage:  2D8 + 5
+Additional THAC0 & damage:
+  vs True Neutral: +0 to hit, +0 damage
+  vs Chaotic Neutral, Lawful Neutral: +1 to hit, +2 damage
+  vs Neutral Good, Neutral Evil: +2 to hit, +4 damage
+  vs other alignments: +3 to hit, +6 damage
+Damage type:  slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long sword
+Type:  1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~
+
+//Buffed Two-handed Sword +3
+ACTION_IF GAME_IS ~bgt~ BEGIN
+    COPY ~%MOD_FOLDER%/components/bdash/BGTComp/itm/bgsw2h07.itm~ ~override~
+        SAY NAME2 ~The World's Edge +3~
+        SAY DESC ~This is a legendary weapon of heroic proportions, especially among the far-northern tribes of barbarians. Champion after champion has wielded this blade against countless enemies, and the blood it has spilled could fill a small sea. History will not admit that such a blade could be forged and each consecutive owner seems to tie its origin to whatever creation myth they believe. The most grandiose of these tales is that of a great chieftain who sailed to the cliffs that supposedly bordered the world. There he reached into the void, and his will shaped the blade from nothing. Whatever the truth, in the right hands this sword is a fearsome thing.
+
+STATISTICS:
+
+Equipped Abilities:
+Armour Class bonus: +2
+Constitution bonus: +2
+
+Damage:  1D12 + 3
+THAC0:  +3 bonus
+Damage Type:  slashing
+Weight:  9
+Speed Factor:  7
+Proficiency Type: Two Handed Sword
+Type:  2-handed
+Not usable by:
+Druid
+Cleric
+Mage
+Thief~
+END
+
+//Improved Ring of Gaxx
+//String #5695 - the description of the ring - is replaced with an updated description, but to make sure it IS updated, the DESC is included here
+COPY ~%MOD_FOLDER%/components/bdash/itm/Ring39.ITM~ ~override~
+    SAY DESC ~Ring of Gaxx
+This ring is relatively unadorned, but the vile magic within radiates intense evil.  Indeed, its creator, Kangaxx, was no less evil himself, even before millennia of undeath honed his power.  It is said that a cadre of Netheril mages fought and imprisoned the demilich once, but being unable to truly destroy him they became liches themselves to stand guard over his remains.  The construction of the ring may have led to their enmity, as each of the gem's nine facets was supposedly empowered by sacrifice and death.
+
+STATISTICS
+
+Equipped Abilities:
+   Immunity to Disease and Poison
+   Regenerate 1 hit point every round
+
+Special Abilities:
+   Invisibility (thrice per day)
+   Imroved Haste (thrice per day)
+
+Armor Class:  +3 Bonus
+Saving Throws:  +3 Bonus
+Magic Resistance:  +15% Bonus
+
+Not Usable By:
+ Wizard Slayer~
+
+//Improved Horns of Valhalla
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3I.ITM~ ~override~
+  SAY DESC ~Silver Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a twelveth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3J.ITM~ ~override~
+  SAY DESC ~Bronze Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth a fifteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+COPY ~%MOD_FOLDER%/components/bdash/itm/MISC3K.ITM~ ~override~
+  SAY DESC ~Iron Horn of Valhalla
+
+In the halls of Valhalla rest the most valiant of warriors. Their service to war during their lives has rewarded them with honored positions in Valhalla. As part of their service these warriors must offer their service to any who blow a horn of Valhalla. This horn will summon forth an eighteenth level warrior who will fight for the summoner for one minute. The horn may be used once per day.
+
+Not Usable By:
+ Wizard Slayer~
+
+//Improved Berserks from Horns of Valhalla
+COPY ~%MOD_FOLDER%/components/bdash/copy_cre/berser02.cre~ override
+     ~%MOD_FOLDER%/components/bdash/copy_cre/berser03.cre~ override
+     ~%MOD_FOLDER%/components/bdash/copy_cre/bersersu.cre~ override
+
+
+//Increase damage of Dragonslayer
+COPY ~%MOD_FOLDER%/components/bdash/copy_eff/sw1h32a.eff~ override
+     ~%MOD_FOLDER%/components/bdash/copy_eff/sw1h32c.eff~ override
+
+//Add level drain immunity to Azuredge
+COPY ~%MOD_FOLDER%/components/bdash/copy_itm/ax1h10.itm~ override
+
+
+//Buff Spear of the Unicorn
+COPY ~%MOD_FOLDER%/components/bdash/copy_itm/sper07.itm~ override

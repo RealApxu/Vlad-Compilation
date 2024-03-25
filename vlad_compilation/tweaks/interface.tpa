@@ -1,0 +1,14 @@
+////////////////////////////////////////
+// New Interface
+////////////////////////////////////////
+
+//Graphic Files
+COPY ~%MOD_FOLDER%/tweaks/interface/bam~ override
+COPY ~%MOD_FOLDER%/tweaks/interface/chu~ override
+COPY ~%MOD_FOLDER%/tweaks/interface/mos~ override
+
+//New Main Menu music
+COPY ~%MOD_FOLDER%/tweaks/interface/music/themea.acm~ ~music/Theme/themea.acm~
+
+//String replacement
+STRING_SET ~shadows of amn~ ~play game~

@@ -1,0 +1,14 @@
+//Buffed stats for Aec'Letec
+COPY_EXISTING ~TANAR.CRE~ ~override~
+    WRITE_SHORT 0x24 123 //Current HP
+    WRITE_SHORT 0x26 123 //Max HP
+    WRITE_BYTE 0x62 0 //THAC0
+    WRITE_BYTE 0x53 5 //# attacks
+BUT_ONLY
+
+//Improved stats for minotaurs
+COPY ~%MOD_FOLDER%/components/bdash/copy_cre/garock.cre~ override
+COPY ~%MOD_FOLDER%/components/bdash/copy_cre/rock.cre~ override
+
+//Improved stats for dragon Saladrex
+COPY ~%MOD_FOLDER%/components/bdash/copy_cre/gorsal.cre~ override

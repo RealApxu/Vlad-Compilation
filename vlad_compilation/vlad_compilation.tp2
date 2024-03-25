@@ -189,20 +189,7 @@ COPY ~%MOD_FOLDER%/components/bdash/yagashur/copy~ ~override~
 
 BEGIN ~Enhanced Encounter with Abazigal in ToB (by Vlad)~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
-
-COPY ~%MOD_FOLDER%/components/bdash/abazig/copy~ ~override~
-
-COPY ~%MOD_FOLDER%/components/bdash/abazig/cre/BazDra04.cre~ ~override/BazDra04.cre~
-    SAY NAME1 ~Purple~
-    SAY NAME2 ~Purple~
-
-COPY_EXISTING ~AR6000.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY
-~TriggerActivation("Tran6001",FALSE)~
-~TriggerActivation("Tran6001",FALSE)
-CreateCreature("BazDra04",[694.945],12)~
-    END
+INCLUDE ~%MOD_FOLDER%/encounters/abazigal.tpa~
 
 BEGIN ~Tougher Black Talone Elites (BGT required!) (by Vlad)~
 REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
@@ -228,6 +215,8 @@ GROUP ~Tweaks~
 REQUIRE_PREDICATE GAME_IS ~tob bgt~ ~Please install "Throne Of Bhaal" and the official ToB 26498 patch before installation of this mod.~
 INCLUDE ~%MOD_FOLDER%/tpa/_monk.tpa~
 
+/*
 BEGIN ~BGT-Transition~
 REQUIRE_PREDICATE GAME_IS ~bgt~ ~Please install BGT before installation of this component.~
 INCLUDE ~%MOD_FOLDER%/tpa/_bgt.tpa~
+*/

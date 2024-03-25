@@ -1,0 +1,14 @@
+//////////////////////////////////////////////
+//COPY ~%MOD_FOLDER%/components/bdash/BGTcomp/copy~ ~override~
+//////////////////////////////////////////////
+
+//Deprecated for current version of bgt
+/*
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/copy/flamal.cre~ override
+*/
+
+//Improved stats for Khalid
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/copy/khalid.cre~ override
+     ~%MOD_FOLDER%/components/bdash/BGTComp/copy/khalid2.cre~ override
+     ~%MOD_FOLDER%/components/bdash/BGTComp/copy/khalid4.cre~ override
+     ~%MOD_FOLDER%/components/bdash/BGTComp/copy/khalid6.cre~ override
