@@ -6,7 +6,6 @@ COPY ~%MOD_FOLDER%/components/bdash/shadows/copy~ ~override~
 
 COPY_EXISTING ~AR1404.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-        REPLACE_TEXTUALLY ~NumDeadGT("shdafi01",0)~ ~NumDeadGT("shadfi01",0)~
         REPLACE_TEXTUALLY ~CreateCreature("shadfi01",\[4359.188\],0)~ ~CreateCreature("shadfi01",[4359.188],0) CreateCreature("shadfi01",[4359.188],0) CreateCreature("shadfi01",[4359.188],0)~
         REPLACE_TEXTUALLY ~CreateCreature("shadfi01",\[4533.265\],0)~ ~CreateCreature("shadfi01",[4533.265],0) CreateCreature("shadfi01",[4533.265],0) CreateCreature("shadfi01",[4533.265],0)~
     END

@@ -133,16 +133,13 @@ COPY ~%MOD_FOLDER%/components/bdash/copy_itm/ring46.itm~ override
 //Remove glowing from immunity ring
 COPY ~%MOD_FOLDER%/components/bdash/copy_itm/ring99.itm~ override
 
-//Remove usability restrictions from raise dead scroll for TS
-COPY ~%MOD_FOLDER%/components/bdash/copy_itm/scrl63.itm~ override
-
 //Remove undocumented saves bonuses from staff of curing
 COPY ~%MOD_FOLDER%/components/bdash/copy_itm/staf10.itm~ override
 
 //Fix piercing damage on Staff of the Ram
 COPY ~%MOD_FOLDER%/components/bdash/copy_itm/staf22.itm~ override
 
-//Remove undocumented immunities Arbane's Sword
+//Remove undocumented immunities from Arbane's Sword
 COPY ~%MOD_FOLDER%/components/bdash/copy_itm/sw1h27.itm~ override
 
 ////////////////////////////////////////
@@ -209,6 +206,12 @@ COPY_EXISTING ~interdia.2da~ ~override~
     SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
 BUT_ONLY
 */
+
+COPY_EXISTING ~AR1404.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~NumDeadGT("shdafi01",0)~ ~NumDeadGT("shadfi01",0)~
+    END
+BUT_ONLY
 
 //***********************************************************************************************
 //   RULESETS
@@ -7372,125 +7375,6 @@ PRINT ~Fixing triggers and actions in dialogues ...~
 
 //COMPILE ~%MOD_FOLDER%/components/bdash/new_fix/fixdumb.d~
 COMPILE ~%MOD_FOLDER%/components/bdash/new_fix/fixglobal.d~
-
-/*
-COPY_EXISTING_REGEXP GLOB ~.+\.dlg$~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Anomen")~ ~OR(3) !InParty("Anomen") Dead("Anomen") !See("Anomen")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Anomen")~ ~InParty("Anomen") !Dead("Anomen") See("Anomen")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Aerie")~ ~OR(3) !InParty("Aerie") Dead("Aerie") !See("Aerie")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Aerie")~ ~InParty("Aerie") !Dead("Aerie") See("Aerie")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Cernd")~ ~OR(3) !InParty("Cernd") Dead("Cernd") !See("Cernd")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Cernd")~ ~InParty("Cernd") !Dead("Cernd") See("Cernd")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Haerdalis")~ ~OR(3) !InParty("Haerdalis") Dead("Haerdalis") !See("Haerdalis")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Haerdalis")~ ~InParty("Haerdalis") !Dead("Haerdalis") See("Haerdalis")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Viconia")~ ~OR(3) !InParty("Viconia") Dead("Viconia") !See("Viconia")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Viconia")~ ~InParty("Viconia") !Dead("Viconia") See("Viconia")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jaheira")~ ~OR(3) !InParty("Jaheira") Dead("Jaheira") !See("Jaheira")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jaheira")~ ~InParty("Jaheira") !Dead("Jaheira") See("Jaheira")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Valygar")~ ~OR(3) !InParty("Valygar") Dead("Valygar") !See("Valygar")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Valygar")~ ~InParty("Valygar") !Dead("Valygar") See("Valygar")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Keldorn")~ ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Keldorn")~ ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Korgan")~ ~OR(3) !InParty("Korgan") Dead("Korgan") !See("Korgan")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Korgan")~ ~InParty("Korgan") !Dead("Korgan") See("Korgan")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Jan")~ ~OR(3) !InParty("Jan") Dead("Jan") !See("Jan")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Jan")~ ~InParty("Jan") !Dead("Jan") See("Jan")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Nalia")~ ~OR(3) !InParty("Nalia") Dead("Nalia") !See("Nalia")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Nalia")~ ~InParty("Nalia") !Dead("Nalia") See("Nalia")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Mazzy")~ ~OR(3) !InParty("Mazzy") Dead("Mazzy") !See("Mazzy")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Mazzy")~ ~InParty("Mazzy") !Dead("Mazzy") See("Mazzy")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Edwin")~ ~OR(3) !InParty("Edwin") Dead("Edwin") !See("Edwin")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Edwin")~ ~InParty("Edwin") !Dead("Edwin") See("Edwin")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Imoen2")~ ~OR(3) !InParty("Imoen2") Dead("Imoen2") !See("Imoen2")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Imoen2")~ ~InParty("Imoen2") !Dead("Imoen2") See("Imoen2")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Minsc")~ ~OR(3) !InParty("Minsc") Dead("Minsc") !See("Minsc")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Minsc")~ ~InParty("Minsc") !Dead("Minsc") See("Minsc")~
-
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialog("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~!IsValidForPartyDialogue("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialog("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IsValidForPartyDialogue("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
-        REPLACE_TEXTUALLY ~!IfValidForPartyDialogue("Yoshimo")~ ~OR(3) !InParty("Yoshimo") Dead("Yoshimo") !See("Yoshimo")~
-        REPLACE_TEXTUALLY ~IfValidForPartyDialogue("Yoshimo")~ ~InParty("Yoshimo") !Dead("Yoshimo") See("Yoshimo")~
-    END
-BUT_ONLY
-*/
 
 COPY_EXISTING ~AR4500.ARE~ ~override~
     READ_SHORT  0x48 "flags"

@@ -2512,3 +2512,6 @@ COPY ~%MOD_FOLDER%/components/bdash/copy_eff/sumelepf.eff~ override
 COPY ~%MOD_FOLDER%/components/bdash/copy_itm/npsw02.itm~ override
 
 COPY ~%MOD_FOLDER%/components/bdash/copy_wav/boohl.wav~ override
+
+//Remove usability restrictions from raise dead scroll for TS
+COPY ~%MOD_FOLDER%/components/bdash/copy_itm/scrl63.itm~ override

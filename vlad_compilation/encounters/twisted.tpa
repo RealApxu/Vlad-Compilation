@@ -38,79 +38,9 @@ Requires: 5 Strength
 Usable By
  Mages~
 
-COPY ~%MOD_FOLDER%/components/bdash/itm/BLUN17.ITM~ ~override~
-  SAY NAME2 ~Morningstar +4: Wyvern's Tail~
-  SAY DESC ~The large spike at the head of this morningstar is actually the lethal stinger of a wyvern.  The mage-fighter Sedej created this weapon, using his magical abilities to keep the stinger capable of producing poison.  The magic he used has actually made the Wyvern's Tail a living weapon, that pulses with life in the hands of its wielder.
-
-STATISTICS
-
-Combat Abilities: Victims must make a saving throw vs. poison or take 6 hit points of poison damage
-THAC0:  +4
-Damage:  2D4 + 4
-Damage type:  crushing
-Weight: 9
-Speed Factor: 5
-Proficiency Type: Flail/Morningstar
-Type:  1-handed
-Requires: 11 Strength
-Not Usable By:
- Druid
- Mage
- Thief
- Monk
- Beast Master~
-
 COPY ~%MOD_FOLDER%/components/bdash/itm/POTNRES.ITM~ ~override~
   SAY NAME2 ~Potion of Restoration~
   SAY DESC ~As the name implies, this potion will restore the life energy level of the imbiber. This reverses any previous life energy level drain of the creature by a force or monster. The restoration is instant and the potion may only be used once.
 
 Usable By:
  All~
-
-COPY ~%MOD_FOLDER%/components/bdash/twistrun/SW1H70.ITM~ ~override~
-  SAY DESC ~Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
-
-STATISTICS
-
-Equipped Abilities:
-   Dexterity: +2 bonus
-
-THAC0: +3 bonus, +4 vs. undead
-Damage:  1D10 + 3, +4 vs. undead
-Damage type:  slashing
-Weight:  3
-Speed Factor: 1
-Proficiency Type: Katana
-Type:  1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
-
-COPY ~%MOD_FOLDER%/components/bdash/twistrun/SW1H71.ITM~ ~override~
-  SAY DESC ~Hindo was a samurai of great renown, a staunch defender of his people against the evil undead that often ravaged his homelands.
-
-STATISTICS
-
-Equipped Abilities:
-   Dexterity: +3 bonus
-
-Special Abilities:
-   20% Magic Resistance when equipped
-   Immunity to all forms of death magic when equipped
-
-THAC0: +4 bonus
-Damage:  1D10 + 4, double damage against undead
-Damage type:  slashing
-Weight:  2
-Speed Factor: 0
-Proficiency Type: Katana
-Type:  1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
