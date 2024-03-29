@@ -26,3 +26,10 @@ BUT_ONLY
 
 //Change animation ids for orc archers to free up the slot for IWD water elemental
 COPY ~%MOD_FOLDER%/components/bdash/new_wat~ ~override~
+
+COPY_EXISTING ~FIRORC03.CRE~ ~override~
+              ~SARBUL04.CRE~ ~override~
+              ~SARGRD04.CRE~ ~override~
+              ~SARGRD10.CRE~ ~override~
+    WRITE_SHORT 0x28   0xE800       //animation IC_ORC_MELEE1 instead of IC_ORC_MELEE3
+BUT_ONLY

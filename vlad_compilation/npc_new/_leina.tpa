@@ -356,8 +356,7 @@ Govan Duvaine.~
 
 COPY ~%MOD_FOLDER%/components/Leina/are~ ~override~
 
-COPY_EXISTING ~AR0406.bcs~ ~override/AR0406.bcs~
-    EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR0406.bcs~
+EXTEND_TOP ~AR0406.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR0406.bcs~
 
 COPY ~%MOD_FOLDER%/components/Leina/cre/Govan.cre~ ~override/Govan.cre~
     SAY NAME1 ~Govan Duvaine~
@@ -366,8 +365,7 @@ COPY ~%MOD_FOLDER%/components/Leina/itm/KeyVulov.itm~ ~override/KeyVulov.itm~
     SAY NAME2 ~Govan's Key~
     SAY UNIDENTIFIED_DESC ~This is the key that was pickpocketed from Govan Duvaine.~
 
-COPY_EXISTING ~AR1000.bcs~ ~override/AR1000.bcs~
-    EXTEND_TOP ~AR1000.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR1000.bcs~
+EXTEND_TOP ~AR1000.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR1000.bcs~
 
 COPY ~%MOD_FOLDER%/components/Leina/cre/Vulova.cre~ ~override/Vulova.cre~
 COPY ~%MOD_FOLDER%/components/Leina/cre/VULFGT01.CRE~ ~override/VULFGT01.CRE~
@@ -715,8 +713,7 @@ COPY ~%MOD_FOLDER%/components/Leina/itm/GovRing.itm~ ~override/GovRing.itm~
     SAY NAME2 ~Govan's Ring~
     SAY DESC ~This is the ring that was given to you by Govan Duvaine. He tells you that a man named Killian who handles the financial side of the Duvaine business will exchange the ring for the gold, but not until you have spoken with Samuel Thunderburp.~
 
-COPY_EXISTING ~AR1007.bcs~ ~override/AR1007.bcs~
-    EXTEND_TOP ~AR1007.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR1007.bcs~
+EXTEND_TOP ~AR1007.bcs~ ~%MOD_FOLDER%/components/Leina/scripts/aAR1007.bcs~
 
 COPY ~%MOD_FOLDER%/components/Leina/cre/Govan3.cre~ ~override/Govan3.cre~
     SAY NAME1 ~Govan Duvaine~
