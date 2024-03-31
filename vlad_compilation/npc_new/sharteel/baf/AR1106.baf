@@ -14,6 +14,3 @@ THEN
 		CreateCreature("EsAnima5",[581.1099],0)
 		RealSetGlobalTimer("VP_SharTeel_Notes","GLOBAL",10)
 END
-
-
-

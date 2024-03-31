@@ -1,0 +1,9 @@
+INTERJECT_COPY_TRANS JAHEIRAJ 9 khaldead
+== VPSHAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~Wow... looks like he really pissed someone off! They sure as hell didn't want him resurrected did they... can't say I blame them!~
+== JAHEIRAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~Hold your tongue you black hearted vixen! Khalid was a gentle man and it's true he loathed to fight but that didn't make him any less a man.~
+== VPSHAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~He would have sacrificed his life for any one of his friends... you have no idea of the gentle and loving heart that beat in his breast. I find your words both cruel and contemptuous Shar-Teel.~
+== VPSHAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~You're wrong there druid... we can all see quite plainly how big his heart is...~
+== JAHEIRAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~Devil spawn... I should strike you down where you stand for your callousness!~
+== JAHEIRAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~My hand is stayed because I know Khalid and if he were looking down on this scene, his gentle heart would be saddened to think he were the cause of yet more blood to stain my hands.~
+== JAHEIRAJ IF ~InParty("sharteel") InMyArea("sharteel") !StateCheck("sharteel",CD_STATE_NOTVALID)~ THEN ~For his sake, this time my weapon is stilled... next time it may not be!~ DO ~SetGlobal("SawKhalid","AR0603",1)~
+END
