@@ -1094,21 +1094,6 @@ IF ~~ THEN BEGIN LFlirts1403
   IF ~~ THEN DO ~SetGlobal("VP_Flirt_Option_14","LOCALS",0)~ EXIT
 END
 
-IF ~~ THEN BEGIN driadsint_lei1
-  SAY ~I am sure Melora wasn't including you in her derision Minsc. A pretty face would not find it easy to sway our brave ranger's mind once he had it firmly set and nor could a pretty face that hides an evil heart ever fool his quick mind.~
-  IF ~~ THEN EXTERN ~MINSCJ~ driadsint_min2
-END
-
-IF ~~ THEN BEGIN driadsint_lei2
-  SAY ~Oh... go boil your head Shar-Teel and while you're at it, boil that acerbic tongue of yours as well!~
-  IF ~~ THEN GOTO driadsint_lei3
-END
-
-IF ~~ THEN BEGIN driadsint_lei3
-  SAY ~Minsc has always shown only the highest regard and respect to every female in this group... yourself included. So he doesn't deserve such a scathing tirade from you... although I for one would not blame him if his regard for you were to suddenly change... (*She turns away angrily*)~
-  IF ~~ THEN EXTERN ~SHARTJ~ legacy225
-END
-
 IF ~~ THEN BEGIN firattak
   SAY ~(*Quietly to herself, her eyes wide with awe*) It's true, all that she told me is true... this one, he's magnificent and so... so haughty!~
   IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a

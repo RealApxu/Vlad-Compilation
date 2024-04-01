@@ -33,7 +33,7 @@ CHAIN VPSHAJ avalan3
 END
 
 
-
+//NeJ Dialogue - Leaving NeJ1
 CHAIN VPSHAJ nearportal
 ~(*Looking around at the group she scoffs*)... Just listen to yourselves...~ [mute]
  IF ~~ THEN EXTERN ~HROTHJ~ shargrp
@@ -99,6 +99,7 @@ CHAIN VPSHAJ onminsc3
  IF ~~ THEN EXTERN ~HROTHJ~ shargrp
 END
 
+//NeJ Dialogue - Severed Hand
 CHAIN VPSHAJ sevhand1
 ~(*Looking around bewildered*) What... curses, where did that come from... how the hell did he do that? That was no magician's wand he was waving around!~
  IF ~~ THEN GOTO sevhand2
@@ -119,6 +120,7 @@ CHAIN VPSHAJ kaylsold
  IF ~~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
 END
 
+//NeJ Dialogue - Come back
 CHAIN VPSHAJ comebck1
 ~(*As it dawns upon her where she is, the corners of her mouth curl up into a cruel grin*)...~
  IF ~~ THEN GOTO comebck2
@@ -129,6 +131,7 @@ CHAIN VPSHAJ comebck2
  IF ~~ THEN EXTERN ~HROTHJ~ 369
 END
 
+//Promenade Talk
 IF ~Global("PostCutSpeak","AR0700",1)~ THEN BEGIN imytaken
 ~NOOOO... bring him back you cowled bastards!~ [mute]
  = ~You pathetic wizards have not the means to torment him in the way he deserves, nor will he escape me no matter where you may have taken him...~
@@ -143,6 +146,7 @@ CHAIN VPSHAJ imytakenfix
  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ N147
 END
 
+//Nej 2 - Go to Ulcaster
 CHAIN VPSHAJ gotoulcr
 ~You are off your head if you think you're going discover anything at Ulcaster.~
  = ~Been there, done that, left everything that bleeds dead and I'm damn sure no stone was left unturned... even the old ghost has deserted his ruins now.~
@@ -150,11 +154,13 @@ CHAIN VPSHAJ gotoulcr
  IF ~~ THEN EXTERN ~HROTHJ~ 404
 END
 
+//Nej 2 - Leave Armor
 CHAIN VPSHAJ leavarmo
 ~Ha, now we sort the men from the boys! My fist is as honed as my blade and will draw blood just as easily... how many of you can boast the same... eh!?~
  IF ~~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",1) GiveItemCreate("TulRobe",Player1,0,0,0) GiveItemCreate("TulRobe",Player2,0,0,0) GiveItemCreate("TulRobe",Player3,0,0,0) GiveItemCreate("TulRobe",Player4,0,0,0) GiveItemCreate("TulRobe",Player5,0,0,0) GiveItemCreate("TulRobe",Player6,0,0,0)~ EXIT
 END
 
+//Nej 2 - Arrival
 CHAIN VPSHAJ arrivhal
 ~Phew... for a minute there I thought <CHARNAME> was going to ask him to join us!~
  = ~Hrothgar and friend of Hrothgar together in one group!? One holier than thou egotistic male is maybe just about tolerable but two... no two would be stretching a girl's need to keep her word too far!~
@@ -162,6 +168,7 @@ CHAIN VPSHAJ arrivhal
  IF ~InParty("Melora")~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXTERN ~MELORAJ~ 10
 END
 
+//Nej 2 - Iezikiel Quest
 CHAIN VPSHAJ ezequest1
 ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
  = ~At least we're going after a fresh one this time! Those of you too morally challenged can stay with the necromancer...~
@@ -169,6 +176,7 @@ CHAIN VPSHAJ ezequest1
  IF ~~ THEN EXTERN ~TuEzek~ 7
 END
 
+//Nej Interjections
 CHAIN VPSHAJ ezequest2
 ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
  = ~At least we're going after a fresh one this time!~
@@ -244,268 +252,7 @@ CHAIN VPSHAJ nearpor2
  IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutNJ4")~ EXIT
 END
 
-CHAIN VPSHAJ legacy11
-~(*Gruffly*) So, you expect me to be a dogsbody again! Nothing more than a lackey paid to do battle with marauders to do what? Save the lands of a pompous, cretinous male, too yellow bellied to sully his own hands!~
- IF ~~ THEN GOTO legacy12
-END
-
-CHAIN VPSHAJ legacy12
-~I say we head on out there alright, take care of his problem and then skewer the jumped up Lord... taking his lands for ourselves.~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee1
-END
-
-CHAIN VPSHAJ legacy13
-~(*She looks him squarely in the eyes... her face devoid of all emotion and snarls coldly*)... Not Dossan, that's for sure!~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee3
-END
-
-CHAIN VPSHAJ legacy14
-~Save your words... your pathetic attempt at male flattery is wasted on me! One only remembers what they fear and I remember not even the gutter snake of a man you mention! So if you're hoping to collect some debt owed you, I warn you, if you try to collect, the only payment you'll get from me will be in steel!~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee4
-END
-
-CHAIN VPSHAJ legacy15
-~Your delusions of grandeur are pathetic you mindless zombie! You flatter yourself if you think I am here looking to settle old scores. For that you'll find Angelo Dossan in the abyss, go take your grievances to him there.~
- IF ~~ THEN GOTO legacy16
-END
-
-CHAIN VPSHAJ legacy16
-~You bother me again and I'll send you on your way... Bah... let's get out of this place, the one I seek isn't to found among the likes of the scum here. (*She turns to leave*)...~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee7
-END
-
-CHAIN VPSHAJ legacy17
-~Oh I'd know him alright! If he were here, we'd all know it. He'd be pretty hard to miss... and of course there's the stench, even a blind man could pick up on the stink he gives off.~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee8
-END
-
-CHAIN VPSHAJ legacy18
-~Yea gods, is there no limit to a male's ego? Men really are pathetic! You must have a tapeworm in your brain addling it if you expect me to believe that it was you who taught him... you who are too weak to protect your own!~
- IF ~~ THEN GOTO legacy19
-END
-
-CHAIN VPSHAJ legacy19
-~I heard that the snake out foxed and wormed his knowledge out of a...~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee9
-END
-
-CHAIN VPSHAJ legacy20
-~Why the egotistical braggart... curses on me for believing a male's pathetic fantasies! His ego was bigger than yours! (*Then letting her fingers stroke the hilt of her sword... flames begin to flicker at her fingertips*)...~
- IF ~~ THEN GOTO legacy21
-END
-
-CHAIN VPSHAJ legacy21
-~If what you say is truth then I have a proposition for you. You return that which he paid you with and I'll not show these good people the true colour of a coward's heart. A fair trade wouldn't you say?~
- IF ~~ THEN EXTERN ~FIRKRA01~ shartee12
-END
-
-IF WEIGHT #-7 ~Global("VP_AngelosLegacy","GLOBAL",2)~ THEN BEGIN legacy22
-~(*Angrily*) Dossan! The chancroid, mindless bastard had the gall to call me Dossan!! To the abyss with him... that insult will cost him dearly!~ [mute]
- IF ~~ THEN GOTO legacy23
-END
-
-CHAIN VPSHAJ legacy23
-~What are we waiting for? Let's get the hell to sorting out his bloody problem and then I swear, when next we meet, his lands will run red with his own blood... I'll have both his heart and my legacy!~
- ++ ~Ten thousand gold and a legacy, the day just keeps on getting better! Let's give the arrogant lord what he wants... collect the gold and you can then have your fun taking this legacy of yours from him.~ GOTO legacy24
- ++ ~Skeletons in the closet eh... keeping secrets are we? If I'm to risk my neck then you best be quick and tell me what this legacy is worth?~ GOTO legacy25
- ++ ~Of course and you can tell me about this legacy of Angelo's along the way.~ GOTO legacy25
- ++ ~Not so fast my girl... not before you tell me what that was all about?~ GOTO legacy25
- ++ ~No, Shar-Seel! We lend our arms and leave when I say we do and not before!~ GOTO legacy30
-END
-
-CHAIN VPSHAJ legacy24
-~(*She smiles to herself as you walk away*)... This is going to be easier than I thought... and it's going to be a real pleasure teaching that snooty, pathetic sap Firkraag that he made a big mistake in judging the daughter by the father!~
- IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
-END
-
-CHAIN VPSHAJ legacy25
-~(*Snarls*) That is none of your bloody business! The gold offered is more than enough reward for you. The other is personal and will remain so. If not, then you can forget our deal and I'll be leaving!~
- ++ ~Hummm... point taken! The gold will suffice but I am still curious about this legacy but we will talk about that later.~ GOTO legacy26
- ++ ~It is my business if you want me to aid you in collecting it! So... what did Angelo give our Lord Firkraag that's got you so fired up?~ GOTO legacy27
- ++ ~Look here, you want me to risk the group's lives for this legacy, so you'd better be telling me what it is or we aren't going anywhere near Windspear Hills!~ GOTO legacy27
- ++ ~Come Shar-Teel, it is not my intention to take it from you... especially if it's all you have left of your father. I am curious only to know how much Angelo's knowledge was worth to him. No matter, if it's so important to you we will of course leave immediately.~ GOTO legacy29
-END
-
-CHAIN VPSHAJ legacy26
-~Good! You stick to that and we'll both come out of this richer for our troubles.~
- IF ~~ THEN GOTO legacy24
-END
-
-CHAIN VPSHAJ legacy27
-~(*Begrudgingly she glares at you and answers*)... It's personal! All you need know is after the bastard had sown his seed he turned tail and skulked away before the sun hit the sky! He took his pleasure and now he is dead!~
- IF ~~ THEN GOTO legacy28
-END
-
-CHAIN VPSHAJ legacy28
-~I didn't ask for the life that I was brought into... the least he can do is compensate me with a few luxuries. It's mine and I intend to have it! So can we stop yammering and get after the pompous cretin?~
- ++ ~Okay, okay... point taken! By rights it is your legacy, your help with Firkraag will be payment enough, the gold is all that I am after.~ GOTO legacy26
- ++ ~It is not my intention to take it from you... especially if it's all you have left of your father. I was curious that is all. We will of course leave immediately.~ GOTO legacy29
- ++ ~No, Shar-Teel! We lend our arms and leave when I say we do and not before!~ GOTO legacy30
- ++ ~You're quick enough to demand a share in the spoils Shar-Teel and so it will be with this legacy of yours. Now if that doesn't suit you, you can go ask Lord Firkraag for it yourself!~ GOTO legacy31
-END
-
-CHAIN VPSHAJ legacy29
-~Hey, don't you go getting the wrong idea here! There's no sentiments attached to this quest, it's about me getting back what, by birth, is rightfully mine... and it's going to be a real pleasure teaching that stuck up, pathetic fool Firkraag that he made a big mistake in judging the daughter by the father!~
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Yoshimo") !IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
- IF ~IsValidForPartyDialog("Minsc")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~MINSCJ~ 96
- IF ~!IsValidForPartyDialog("Minsc") IsValidForPartyDialog("Yoshimo")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~YOSHJ~ 42
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Yoshimo") IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~JAHEIRAJ~ 356
-END
-
-CHAIN VPSHAJ legacy30
-~Well don't leave it too long... a couple of days and I am gone from this miserable group of cowardly misfits!~
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Yoshimo") !IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ EXIT
- IF ~IsValidForPartyDialog("Minsc")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~MINSCJ~ 96
- IF ~!IsValidForPartyDialog("Minsc") IsValidForPartyDialog("Yoshimo")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~YOSHJ~ 42
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Yoshimo") IsValidForPartyDialog("Jaheira")~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3)~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXTERN ~JAHEIRAJ~ 356
-END
-
-CHAIN VPSHAJ legacy31
-~I'll do just that and collect the gold as well for my trouble! Now that I'm finally released from this infernal duty, I swear by every god in a million pantheons, I'll NEVER lose another duel and put myself in the service of a group of cowardly misfits again!~
- IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",3) GivePartyAllEquipment() DropInventory() LeaveParty() EscapeArea()~ EXIT
-END
-
 /*ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() SetGlobal("KickedOut","LOCALS",1) LeaveParty() EscapeAreaMove("AR0086",9,9,9)*/
-
-CHAIN VPSHAJ legacy201
-~(*Casting a glance at the bodies in the room*) If that's the best Lord Firkraag has then we should be back in time for supper. So get the pot boiling. Nothing sharpens the appetite or quickens the pulse quite like the screams of the enemy and the sight of their blood at the height of the battle... music to my ears it is.~
- IF ~~ THEN EXTERN ~GARREN~ shartee15
-END
-
-CHAIN VPSHAJ legacy202
-~(*Scoffs at the man's concern*) His tricks don't frighten me. He's a cowardly, spineless lump of jelly who hides behind magic to discredit us and then sends others to do his dirty work! I have the measure of the craven cur and when he feels cold steel slide into his belly he'll finally have the measure of me!~
- IF ~~ THEN EXTERN ~GARREN~ shartee17
-END
-
-CHAIN VPSHAJ legacy203
-~The sodding arrogance of men! If he thinks I'm going to let a scum bag of a lord sit back and think he has the better of me then he's in for a rude awakening!~
- IF ~~ THEN GOTO legacy204
-END
-
-CHAIN VPSHAJ legacy204
-~Surprising how the feel of cold steel and the sight of a man's own blood spurting out of his body will cause him to rethink his ideas but by then of course, he's as good as dead and doesn't have a lot of time for this renewed reflection.~
- IF ~~ THEN GOTO legacy205
-END
-
-CHAIN VPSHAJ legacy205
-~I will help this band of misfits to free your child but only to add insult to injury... I have my own reasons to be paying our lord Firkraag a visit.~
- IF ~~ THEN EXTERN ~GARREN~ shartee19
-END
-
-CHAIN VPSHAJ legacy211
-~Hey now hold on just a minute! We do you a favour in bringing you these acorns and all you can say is, "the bloody forest welcomes you!" Is that it?~
- IF ~~ THEN EXTERN ~VAELASA~ shartee20
-END
-
-CHAIN VPSHAJ legacy212
-~Look here sister, I'm not over the moon at having to be here... all this sickly sisterly love is making me want to throw up over the lot of you but if it wasn't for us, your little playmates wouldn't be here, so how about you answer a couple of questions and then you can get on with your mindless games?~
- IF ~~ THEN EXTERN ~VAELASA~ shartee23
-END
-
-CHAIN VPSHAJ legacy213
-~(*Looking around she shrugs*) Huh... shadow? All this fooling around with those fauns must be making you all blind... Still, I'm betting you've been around these parts for some time... tell me, do you recall a man, a human coming here some years ago in search of Lord Firkraag?~
- IF ~~ THEN EXTERN ~VAELASA~ shartee24
-END
-
-CHAIN VPSHAJ legacy214
-~(*Gruffly*) Oh the bastard is dead alright! Just for the record, he was no friend and I am not here to mourn him but if what Firkraag says is true, then this man came in search of knowledge and brought with him gifts, valuable and possibly even magical gifts to pay for that knowledge.~
- IF ~~ THEN GOTO legacy215
-END
-
-CHAIN VPSHAJ legacy215
-~If it is true! It's sounding more and more like this Firkraag lied just to get me here. Bah, both men are as despicable and as arrogant as each other. I should have expected no less... men are pathetic!~
- IF ~~ THEN EXTERN ~VAELASA~ shartee25
-END
-
-CHAIN VPSHAJ legacy216
-~It is just possible the two met elsewhere.~
- IF ~~ THEN GOTO legacy217
-END
-
-CHAIN VPSHAJ legacy217
-~(*Her eyes suddenly flash with anger*) To the abyss with both Firkraag and Dossan! To the abyss with all men, weak pathetic creatures that they are! Why don't they just face up to it... they are the weaker sex and fuling their ego's with lies and fantasy won't change what is?! I'll have the truth out of him and flay the hide from his back for his arrogance!~
- IF ~~ THEN EXTERN ~VAELASA~ shartee27
-END
-
-CHAIN VPSHAJ legacy218
-~(*Looking at Vaelessa... not even bothering to disguise the disgust in her voice*)... I am about done here anyway! I find your games as you call them, obscene. Whilst you allow your nymphs to frolic and indulge a man's every whim, how can we as women ever expect to teach the males of this world to acknowledge and respect our superiority?~
- IF ~~ THEN GOTO legacy219
-END
-
-CHAIN VPSHAJ legacy219
-~Bah... go back to your brainless fauns, I'm sure they are wondering why the chase has been interrupted.~
- IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ driadsint_jan
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ driadsint_kor
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ driadsint_vic
-END
-
-CHAIN VPSHAJ legacy220
-~Why so wizard? Maybe because you know that the women of this world really are the stronger sex and the only way that could be reversed would be by casting all females in the mould of the nymph?~
- IF ~~ THEN GOTO legacy221
-END
-
-CHAIN VPSHAJ legacy221
-~Well face up to it you pathetic moron, you're only going to see such a world in your fantasies!~
- IF ~~ THEN EXTERN ~EDWINJ~ driadsint_edw2
-END
-
-CHAIN VPSHAJ legacy222
-~(*Her fingers begin to twitch and glow slightly as she answers him*) Ho... I heard that! Think on you piece of mule dung, I am not the one wearing a dress here. So if my wearing armour says that about me, what does your choice of attire say about you?~
- IF ~~ THEN EXTERN ~EDWINJ~ driadsint_edw3
-END
-
-CHAIN VPSHAJ legacy223
-~(*She stills her hands as she glares furiously at the departing wizard's back*)... You'll turn your back on me once too often male scum! One of these days you'll do it and you'll find an inferno on your tail!~
- IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
-END
-
-CHAIN VPSHAJ legacy224
-~(*Turns to Leina and snarls*) Yea gods bard, stop encouraging the goon! You'll have him thinking you want him in your bed the way you're carrying on. He may not have much of a brain but like all men, he thinks with what he keeps in his breeches!~
- IF ~~ THEN EXTERN ~LEINAJ~ driadsint_lei2
-END
-
-CHAIN VPSHAJ legacy225
-~Bah... you'd have thought that one would have learnt her lesson. She gets her fingers burnt by a pig headed male and still she sticks up for one of them... it's not only abhorrent but obscene to see a female behave so pathetically over male scum!~
- IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
-END
-
-CHAIN VPSHAJ legacy226
-~(*Turns to Melora and snarls*) Yea gods hafling, what are you woman or mouse? Don't let this male scum here put words into your mouth! Say what you mean... the ranger is a male and like all men, he thinks with what he keeps in his breeches!~
- IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel4
-END
-
-CHAIN VPSHAJ legacy227
-~(*She deliberately bends to bring her gaze level with the hafling's*)... Is this better... I'm down to your level now so you needn't stretch those stunted legs of yours so hard?~
- ++ ~Give over you two! As much as I would enjoy the sight another time, I've not come all this way to watch a cat fight!~ GOTO legacy228
- ++ ~I've nothing against you two settling your differences but until we've done what we came here to do, I need you both alive.~ GOTO legacy228
- ++ ~Enough, both of you. I need you alive to finish what we started here because I'm damned if I'm going to make the long trek back to the city in order to replace one or the both of you!~ GOTO legacy228
- ++ ~Please, girls... we've enough on our plates without fighting amongst ourselves.~ GOTO legacy228
-END
-
-CHAIN VPSHAJ legacy228
-~You got lucky this time hafling but don't get to thinking you're indispensable. A ten foot pole can easily replace you when it comes to finding and setting off traps. As for locks, most will, eventually, succumb to a good bashing.~
- IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel5
-END
 
 IF WEIGHT #-8 ~Global("VP_STB_orcsambush","LOCALS",1)~ THEN BEGIN legacy300
 ~(*Angrily she snarls*) An ambush... why the son of a bitch! The slime ball fights using the coward's tactics! So be it! If that's the way he wants it then it'll be a coward's death for the male scum!~
@@ -738,298 +485,6 @@ IF WEIGHT #-11 ~Global("VP_Firkrag_Is_Dead","GLOBAL",1)~ THEN BEGIN legacy409
  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ firkdead1
 END
 
-EXTEND_BOTTOM ~FIRKRA01~ 9
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ legacy11
-END
-
-APPEND ~FIRKRA01~
-
-CHAIN VPSHAJ shartee1
-~(*Stops and turns back... his fiery glare meeting the equally cold gaze of Shar-Teel*)... That would not be a wise move. Let me warn you girl...~
- IF ~~ THEN GOTO shartee2
-END
-
-CHAIN VPSHAJ shartee2
-~(*He stops and looks closer at the girl, his eyes suddenly seem to glow*)... Well now, what do we have here? Dossan leaves an heir I see... what do they call you girl?~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy13
-END
-
-CHAIN VPSHAJ shartee3
-~(*A bemused look comes to his face*)... What ever name you go by, I recognise the father's eyes looking out from the daughter's face... eyes as dark and pitiless as those of Angelo Dossan's are not easily forgotten.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy14
-END
-
-CHAIN VPSHAJ shartee4
-~(*He laughs*)... Ah the fierceness and spirit of youth... how well I remember it! You truly are your father's daughter Shar-Teel... yes you are known to me.~
- IF ~~ THEN GOTO shartee5
-END
-
-CHAIN VPSHAJ shartee5
-~Does that surprise you? Or are you perhaps wondering why I bothered asking your name when I already knew it? It was out of politeness, nothing more than politeness... after all, we hadn't been properly introduced had we?~
- IF ~~ THEN GOTO shartee6
-END
-
-CHAIN VPSHAJ shartee6
-~You see, there's not a lot that gets past the eyes and ears of my servants. I knew our paths were destined to cross some day and my kin are renowned for their patience.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy15
-END
-
-CHAIN VPSHAJ shartee7
-~Not so fast young lady. Look around you, are you so certain that the one you seek isn't here? Would you even know him if you saw him?~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy17
-END
-
-CHAIN VPSHAJ shartee8
-~(*A sly smile plays around the corners of his mouth*) Then I apologise for my presumptuousness in thinking that you were looking for the one who taught your father in order to take back that with which he paid for his knowledge. Ah... a most excellent pupil he was too, devious but gifted.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy18
-END
-
-CHAIN VPSHAJ shartee9
-~(*Sharply interrupting her*) Whatever you may have heard, Angelo Dossan came to me for instruction. I was his teacher and all that he was he owed to me. Mind you, he paid handsomely for his knowledge!~
- IF ~~ THEN GOTO shartee10
-END
-
-CHAIN VPSHAJ shartee10
-~When first he approached me I was amused by the man's audacity, but it wasn't long before I saw a kindred spirit in him. A man whose quick and devious mind came second only to my own.~
- IF ~~ THEN GOTO shartee11
-END
-
-CHAIN VPSHAJ shartee11
-~So I undertook to teach him a fraction of what I know, but it was enough and he left content... besides, it had been a while since anyone had plucked up nerve enough to seek me out. No one has sparked my interest or deemed themselves worthy of my notice since.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy20
-END
-
-CHAIN VPSHAJ shartee12
-~(*Smirks*) Looks can be deceptive my girl... believe me when I say you'll not find me an easy target for that sword of yours!~
- IF ~~ THEN GOTO shartee13
-END
-
-CHAIN VPSHAJ shartee13
-~Besides, kill me and you'll never see your father's legacy.~
- IF ~~ THEN GOTO shartee14
-END
-
-CHAIN VPSHAJ shartee14
-~Do as I ask, free my lands of the intruders that I spoke of and then you will have that which you seek... Shar-Teel Dossan.~
- IF ~~ THEN DO ~SetGlobal("VP_AngelosLegacy","GLOBAL",1) RevealAreaOnMap("AR1200") EscapeArea()~ UNSOLVED_JOURNAL ~Journey to the Windspear Hills.
-
-I was approached by a Lord Jierdan Firkraag, whose lands outside of Athkatla are being plagued by ogre bandits. He has asked that I journey to the Windspear Hills and kill these ogres, and has offered a 10,000 gp reward for the deed.~ EXIT
-END
-
-END
-
-EXTEND_BOTTOM ~GARREN~ 35
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ legacy201
-END
-
-EXTEND_BOTTOM ~GARREN~ 36
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ legacy201
-END
-
-EXTEND_BOTTOM ~GARREN~ 37
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ legacy201
-END
-
-APPEND ~GARREN~
-
-CHAIN VPSHAJ shartee15
-~(*A look of concern crosses the man's face*) Please, don't underestimate him young woman, you've seen the trickery he is capable of and you can be sure he won't have sent his best lackeys to execute so menial a task as kidnapping.~
- IF ~~ THEN GOTO shartee16
-END
-
-CHAIN VPSHAJ shartee16
-~No, as well as arrogant, he's extremely ruthless in his dealings with men. These people were expendable, just like any who choose to serve him.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy202
-END
-
-CHAIN VPSHAJ shartee17
-~Even now he knows that you have taken up his challenge... he is toying with you as a cat toys with a mouse before the kill. I beg you, no matter how much he goads you, you must not give him the satisfaction of starting the fight!~
- IF ~~ THEN GOTO shartee18
-END
-
-CHAIN VPSHAJ shartee18
-~He fears no one but it serves his vanity to let it be known that should you die, he will have acted in self defence and can not be called to account for your deaths. Not that anyone would dare challenge him on that account.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy203
-END
-
-CHAIN VPSHAJ shartee19
-~(*Shaking his head sadly*) You will not heed my warning! I have tried, what more can I say except, please be wary and remember that all is not as it seems in these parts... as you well know? May the gods watch over you, may they bring you and my child safely through this ordeal.~
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Aerie") !IsValidForPartyDialog("Jan")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3) SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS) ~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
-
-Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXIT
- IF ~IsValidForPartyDialog("Minsc")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3) SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
-
-Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~MINSCJ~ 99
- IF ~!IsValidForPartyDialog("Minsc") IsValidForPartyDialog("Aerie")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3) SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
-
-Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~AERIEJ~ 57
- IF ~!IsValidForPartyDialog("Minsc") !IsValidForPartyDialog("Aerie") IsValidForPartyDialog("Jan")~ THEN DO ~SetGlobal("Kidnap","GLOBAL",3) SetGlobalTimer("ddKidnapTimer","GLOBAL",THREE_DAYS)~ UNSOLVED_JOURNAL ~Rescue Garren's child from Firkraag.
-
-Garren's child has been kidnapped, no doubt by Firkraag's men. Garren has convinced the Most Noble Order of the Radiant Heart of my innocence, so I am free once again to travel without being hounded by paladins bent on vengeance. Garren doesn't know why Firkraag would continue to hound him... nor where his child's kidnappers would have taken their prisoner.~ EXTERN ~JANJ~ 98
-END
-END
-
-EXTEND_BOTTOM ~VAELASA~ 8
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ legacy211
-END
-
-APPEND ~VAELASA~
-
-CHAIN VPSHAJ shartee20
-~Is it recompense for your time that you seek sister?~
- IF ~~ THEN GOTO shartee21
-END
-
-CHAIN VPSHAJ shartee21
-~Nay, my mistake! I should not call you sister, for there is a darkness about you. Its roots stem from deep within your heart.~
- IF ~~ THEN GOTO shartee22
-END
-
-CHAIN VPSHAJ shartee22
-~Go, leave this place for only goodness and light may tarry among us.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy212
-END
-
-CHAIN VPSHAJ shartee23
-~You are right, whatever your heart, you have done us a great service in returning Ulene, Cania and Elyme to us. Ask your questions but make them quick for your darkness casts a shadow over this place.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy213
-END
-
-CHAIN VPSHAJ shartee24
-~(*Shaking her head sadly*) There have been many come in search of him but none have of them ever leave. So if you are searching for your friend I am sorry for he is surely dead.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy214
-END
-
-CHAIN VPSHAJ shartee25
-~He brought gifts... you say this man brought magical gifts for Lord Firkraag? Never have I known such a thing! Men have come in order to seek glory or revenge but to bring gifts? (*She laughs softly*)...~
- IF ~~ THEN GOTO shartee26
-END
-
-CHAIN VPSHAJ shartee26
-~Knowing his nature and his greed, that may well have amused him... a man laying gifts at his feet, yes that would indeed have amused our Lord Firkgraag but I am sorry, I don't recall such a person ever coming here.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy216
-END
-
-CHAIN VPSHAJ shartee27
-~(*Shuddering*) I will answer no more of your questions, nor I will allow your rancour to despoil this place! So I must ask you to leave lest you taint it beyond redemption and our games are spoilt for ever!~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy218
-END
-
-END
-
-APPEND ~VICONIJ~
-
-CHAIN VPSHAJ driadsint_vic
-~Yours is another race that blights the surface. That you are beautiful is not in dispute, but the way you use your looks to beguile and capture the hearts of men is obscene. It sickens me to my stomach to see females fawn over and indulge the male his fantasies the way that you do... regardless of his race!~
- IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ driadsint_jan
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ driadsint_kor
-END
-
-END
-
-APPEND ~KORGANJ~
-
-CHAIN VPSHAJ driadsint_kor
-~Speak fer yerself girly. I don't see nowt wrong in chasing a comely lass, 'specially if she lets 'erself get caught! Just ya yell if ya wants a real man to catch yer, ol Korgan is always willing to oblige the ladies.~
- IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ driadsint_jan
-END
-
-END
-
-APPEND ~JANJ~
-
-CHAIN JANJ driadsint_jan
-~Ol' Jan here has had his share of chasing a pretty nymph or two and I'm telling you, to catch and be rewarded by a kiss from one of these fair creatures blows the socks clean off your feet.~
- IF ~~ THEN GOTO driadsint_jan1
-END
-
-CHAIN JANJ driadsint_jan1
-~A distant cousin of Uncle Willie found this to be true when he was walking past such goings on and some poor sods boots came flying and hit him in the head, followed closely by the fellow's socks. It weren't the boots that knocked this cousin unconscious, it were the stench of those socks, the fellow had been wearing them a twelve month at least!~
- IF ~True()~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ driadsint_edw1
-END
-
-END
-
-APPEND ~EDWINJ~
-
-CHAIN EDWINJ driadsint_edw1
-~Delightful creatures, absolutely delightful. It's a shame the gods didn't stick to this design when creating females of the other races.~
- IF ~True()~ THEN EXTERN ~SHARTJ~ legacy220
- IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ driadsint_mel1
-END
-
-CHAIN EDWINJ driadsint_edw2
-~And what world, may I ask, would you be living in... not the real one that's for sure? Your delusions appear to have conjured up an imaginary world and now your poor, weak female brain actually believes you are living in this illusion! [Poor girl, she really believes that because she wears armour and can use a sword adequately, she is as good as a man.]~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy222
-END
-
-CHAIN EDWINJ driadsint_edw3
-~Oh do stop that with your fingers... I could, if I so desired it, hurl a fireball at you before you've managed to summon as much as a spark!~
- IF ~~ THEN GOTO driadsint_edw4
-END
-
-CHAIN EDWINJ driadsint_edw4
-~Before you go casting further aspersions as to my character you would do well to remember that... the wearing of the red robe is a prestigious form of dress that marks my brethren and myself as a very powerful force.~
- IF ~~ THEN GOTO driadsint_edw5
-END
-
-CHAIN EDWINJ driadsint_edw5
-~Red was chosen as a warning that we are not to be messed with... not for its colourfulness. Now go away and practice doing something useful with those fingers of yours... like maybe lighting the camp fires!~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy223
-END
-
-CHAIN EDWINJ driadsint_edw6
-~I'll have you know that I have entertained and been entertained by many intelligent as well as beautiful women. There is just something graceful... sensual about a nymph that is not found in women of any other race. [Not that an ungainly half breed such as she would understand 'sensual' or 'graceful'.]~
- IF ~~ THEN EXTERN ~MELORAJ~ driadsint_mel2
-END
-
-END
-
-APPEND ~MINSCJ~
-
-CHAIN MINSCJ N238
-#61013 /* ~No, this cannot be! The murderer of Dynaheir flees from righteous butt-kicking vengeance! And he takes Imoen with him, too!~ */
- IF ~~ THEN GOTO N239
-END
-
-CHAIN MINSCJ N239
-#61014 /* ~Something must be done, <CHARNAME>! We must find this evil wizard! All that is goodness cries out for this! Even little Boo, although he cannot cry out quite so loudly.~ */
- IF ~True()~ THEN EXIT
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ N150
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ N530
-END
-
-CHAIN MINSCJ driadsint_min1
-~That can not be so Melora. Minsc always thinks with his mind, sometimes he thinks so hard all the thinking gives him big headaches. Ask Boo, he knows how much Minsc's head hurts sometimes. Right Boo?~ [BOONEJ1]
- IF ~True()~ THEN EXTERN ~MELORAJ~ driadsint_mel8
- IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ driadsint_hrt1
- IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ driadsint_lei1
-END
-
-CHAIN MINSCJ driadsint_min2
-~(*A huge smile spreads across the ranger's face*)... Oooo thank you Leina, you say such nice things and make Minsc feel all fuzzy.~
- IF ~~ THEN EXTERN ~SHARTJ~ legacy224
-END
-
-CHAIN MINSCJ driadsint_min3
-~(*A huge smile spreads across the ranger's face*)... Ooo, thank you Melora. Boo says to tell Melora that the group would not be the same without her pretty face and happy smiles... and Minsc, as always, agrees with Boo.~
- IF ~~ THEN DO ~SetGlobal("frLeaveDryads","ar1200",1) GiveItemCreate("kamul111",Player1,0,0,0) EraseJournalEntry(34092) EraseJournalEntry(34093) ActionOverride("vaelasa",EscapeArea())~ SOLVED_JOURNAL ~Helping Irenicus' captive dryads.
-
-I have returned their acorns to the Fairy Queen, Vaelasa, and the dryads captive in Irenicus' dungeon have been freed. All have left to plant the acorns and allow their trees to grow once again, and Vaelasa herself expressed both her welcome and gratitude for my deed.~ EXIT
-END
-
-END
 
 APPEND ~FIRORC02~
 
@@ -1109,24 +564,24 @@ END
 
 APPEND ~FIRKRA02~
 
-CHAIN VPSHAJ firecr01
+CHAIN FIRKRA02 firecr01
 ~Now what about you my little firecracker, you still looking to take on Lord Firkraag or do you now find my true form a little... shall we say... intimidating?~
  IF ~~ THEN DO ~SetGlobal("VP_Lit_Firecracker","GLOBAL",1) SetGlobal("Firmag01Move","GLOBAL",1) ActionOverride("firmag01",ForceSpell(Myself,DRYAD_TELEPORT))~ UNSOLVED_JOURNAL #15724 EXTERN ~SHARTJ~ legacy401
 END
 
-CHAIN VPSHAJ firecr02
+CHAIN FIRKRA02 firecr02
 ~Brave words but I suspect they are more for the benefit of your friends' ears than mine. Now be a good little girl and go wrest the Windspear brat from Conster before he toasts it! I am done with you.~
  IF ~~ THEN EXTERN ~SHARTJ~ legacy402
 END
 
-CHAIN VPSHAJ firecr03
+CHAIN FIRKRA02 firecr03
 ~(*Small puffs of smoke leave the dragon's nostrils*) Don't you mess with me girl... I'll not look as kindly on the daughter as I did the father!~
  = ~Dossan intrigued me and that is the only reason I tolerated his presence... you however, do not! Believe me when I say you do not want to test my patience nor do you want to feel the full fury of a dragon's wrath!~
  = ~Now go away and leave me to ponder on more important matters.~
  IF ~~ THEN EXTERN ~SHARTJ~ legacy403
 END
 
-CHAIN VPSHAJ firecr04
+CHAIN FIRKRA02 firecr04
 ~You are either very brave or very foolish... like father like daughter it would seem.~
  = ~Well, daughter of Dossan, know that I could have wrested those trinkets from your father easily, but his naiveness and audacity in thinking he could bargain with me was... well, shall we say... refreshing.~
  = ~Besides, it gave me the opportunity to experience the emotion you humans call benevolence. Living as long as we do, my kin like to experience all that there is to experience... including all the emotions of your other races.~
@@ -1135,7 +590,7 @@ CHAIN VPSHAJ firecr04
  IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN EXTERN ~SHARTJ~ legacy405
 END
 
-CHAIN VPSHAJ firecr05
+CHAIN FIRKRA02 firecr05
 ~(*Small flames dance menacingly from his tongue as he speaks*) Ho, not so fast my fiery maiden... if it's a heated confrontation you want I am more than willing to oblige.~
  = ~You are a credit to Dossan. In fact you would make any dragon proud to have sired you. A temper such as yours could be nurtured to reach untold heights.~
  = ~The fool Dossan didn't know what he had spawned, you do him proud, daughter of Dossan, but before you do anything foolish which will surely lead to your death, I have a proposition to put to you and this little group. What say you <CHARNAME>, are you up for bargaining?~
@@ -1145,7 +600,7 @@ CHAIN VPSHAJ firecr05
  ++ ~That temper of yours will be the death of us yet! Ah what the heck, nothing ventured nothing gained. Let's make this quick... before he has chance to stoke that fiery breath of his.~ EXTERN ~SHARTJ~ legacy405a
 END
 
-CHAIN VPSHAJ firecr06
+CHAIN FIRKRA02 firecr06
 ~(*His nostrils flare*) Be quiet girl, you are not the one making decisions here!~
  = ~(*Turning his attention back to you*) My proposition is one that should not prove too difficult to a capable person such as yourself. If you find and bring to me the thief... No, come to think of it, I have no need of the thief, his body will suffice.~
  = ~Bring me the traitor's body and all that he stole from me, and I shall reward you with riches beyond anything you can imagine. What say you child of Bhaal?~
@@ -1159,7 +614,7 @@ CHAIN VPSHAJ firecr06
  ++ ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ GOTO firecr09
 END
 
-CHAIN VPSHAJ firecr07
+CHAIN FIRKRA02 firecr07
 ~Hm... now there is my dilemma... you see if I knew where the traitor was holed up I wouldn't be needing your services now would I?~
  = ~The last sighting of the coward was somewhere in the forest, far north of this place but he has evaded all my endeavours to track him to his hole. My guess is he is long gone by now, and my property lost with him.~
  = ~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one's time when seeking to overcome life's little hiccups... impetuosity often as not ends with one's demise.~
@@ -1170,13 +625,13 @@ CHAIN VPSHAJ firecr07
  ++ ~I don't think so... I'll just relieve you of that hoard that you're sitting on as payment for wasting my time.~ EXTERN ~SHARTJ~ legacy405a
 END
 
-CHAIN VPSHAJ firecr08
+CHAIN FIRKRA02 firecr08
 ~Yes... well... let's not be getting ahead of ourselves. If you do manage to find my possessions, then and only then dare you venture back into my presence. If you are foolhardy enough to attempt to gain entry without them, I will see this as an assault on myself and will act accordingly.~
  = ~(*Yawning*) Now go... we are done talking. Remember my warning and return only when you have completed your part of our bargain.~
  IF ~~ THEN EXTERN ~SHARTJ~ legacy408
 END
 
-CHAIN VPSHAJ firecr09
+CHAIN FIRKRA02 firecr09
 ~Yes, and along the way I have lost both talon and tooth to win such prizes. I'll not relinquish so easily that which has cost me. No matter whether I paid with talon or knowledge, the price was paid and by rights the *trinkets* are mine.~
  = ~What ever they may or may not be is neither here nor there... they are mine and I simply wish them returned to me. In return I have offered you wealth beyond your imagining and be assured, I'll not repeat such an offer again... so what is your answer?~
  ++ ~I can imagine plenty... still I never say no to more. Where might I find this thief?~ GOTO firecr07
@@ -1184,7 +639,7 @@ CHAIN VPSHAJ firecr09
  ++ ~I am no common assassin, but tell me where this thief can be found and maybe if I'm passing, I'll have a word with him on your behalf.~ GOTO firecr07
 END
 
-CHAIN VPSHAJ firecr10
+CHAIN FIRKRA02 firecr10
 ~Durbin... yes... the name is vaguely familiar to me, but then I have had so many servants over the centuries I can't be expected to remember one name out of so many.~
  = ~I have sent my servants to explore each and every sighting of him, and for all my pains they return empty handed. My guess is he is long gone by now, and my property lost with him.~
  = ~You child of Bhaal, have a long journey ahead of you before you find your place in the scheme of things, but you might just run into him somewhere along this strange path of yours. I am a patient being, age has taught me both patience and wisdom and that it is better to take one's time when seeking to overcome life's little hiccups... impetuosity often as not ends in death.~
