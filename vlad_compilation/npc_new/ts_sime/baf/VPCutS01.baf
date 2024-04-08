@@ -14,5 +14,3 @@ THEN
 		CreateCreature("SimeDr",[264.356],12)
 		EndCutSceneMode()
 END
-
-

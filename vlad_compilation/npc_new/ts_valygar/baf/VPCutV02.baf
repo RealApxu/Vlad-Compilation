@@ -9,5 +9,3 @@ THEN
 		Interact(Player1)
 		EndCutSceneMode()
 END
-
-

@@ -339,3 +339,14 @@ Global("VP_In_Halruaa","GLOBAL",0)~
 StartDialogNoSet([PC])~
         END
 BUT_ONLY
+
+/*
+//Reputation for Bank
+COPY_EXISTING ~AR7225.bcs~ override
+    DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~Global("SarevokBoutToDie","GLOBAL",2)~ ~Global("SarevokBoutToDie","GLOBAL",2) ReputationGT(Player1,8)~
+        REPLACE_TEXTUALLY ~SetGlobal("SarevokBoutToDie","GLOBAL",3)~ ~SetGlobal("SarevokBoutToDie","GLOBAL",3) ReputationInc(2)~
+    END
+
+EXTEND_BOTTOM ~AR7225.bcs~ ~%MOD_FOLDER%/quests/bank/aAR7225.baf~
+*/

@@ -1,0 +1,107 @@
+
+COPY_EXISTING ~AR1400.BCS~ ~override~
+ DECOMPILE_AND_PATCH BEGIN
+     REPLACE_TEXTUALLY ~Wait(2)[^!]*SetGlobal("RangerInit","AR1400",1)~ ~SetGlobal("RangerInit","AR1400",1)~
+ END
+
+ 
+///////////////////////////
+// Tortured Souls - Valygar
+///////////////////////////
+
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Valyg8.cre~ ~override~
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Valyg9.cre~ ~override~
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Valyg11.cre~ ~override~
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Valyg12.cre~ ~override~
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Valyg14.cre~ ~override~
+
+
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Vampval.cre~ ~override~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/Loveone5.cre~ override
+    SAY NAME1 ~Merella~
+    SAY NAME2 ~Merella~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/toda/VALYGFND.2da~ ~override~
+    REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family's estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar's was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/toda/VALYGND.2da~ ~override~
+    REPLACE ~valfin~ ~After parting ways with <CHARNAME>, Valygar continued his adventures for several years, traveling in the wilds of northern Faerun and becoming a common sight in the area of Waterdeep.  Later he was content to finally return to Athkatla and retire to the quiet, contemplative life at his family's estate that he had always desired.  Pressure from admirers within the local nobility saw him taking up the mantle of Chief Inspector, a responsibility he never desired but took on willingly to combat the growing corruption within the city.  For many years, Valygar's was the name spat by every criminal or slaver who dared to place a foot within the city.  Valygar was dauntless, turning the city garrison into a force even the most self-confident thief had to respect.  Valygar and the Shadow Thieves sparred many times, eventually reaching a point of mutual respect...though most considered the ranger the victor even then.  Surprising even himself, Valygar eventually restored the good name of the Corthalas in Athkatla and even married.  His only son, the pride of his life, took the lessons of his father to heart? Valygar would watch him go on to become the head of the Cowled Wizards and its greatest agent of reform, and for once in his life Valygar would know pride.  Remembering the man that he had once been, fleeing his history into the deepest woods of Amn, the ranger would be thankful that <CHARNAME> had entered his life and forever wish his old friend well.~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/toda/VALYGND2.2da~ ~override~
+    REPLACE ~val2fin~ ~Really, <CHARNAME>, it should be you writing this... For you know best what happened to your loyal friend Valygar after you rejected your place in pantheon as a Lady of Murder. Valygar traveled with <CHARNAME>, and one day their road led to a village in Zakhara. Much to Valygar's surprise, he found that he had large family there, not a single member of which was Tainted with Corthala curse. Abyssina's son and <CHARNAME> received a warm welcome and before they knew it the whole village turned into a carnival celebrating their marriage. Not to disappoint the gathering, Valygar and <CHARNAME> exchanged their vows in front of the village and any gods that might have been listening. They lived happily ever after and died in the same place.~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/itm/npchan.ITM~ ~override~
+    SAY DESC ~This armor, long in the Corthala bloodline, protects the user against many forms of attacks. The armor is finished with elven metal straps enchanted so it grants the same protections and armor class to Valygar as the full plate armor. It also adds a bonus to resisting fire and cold damage. The armor also makes Valygar immune to dragon's breath and to energy and level drain. As it is specially fitted for Valygar, few other than he may wear it.
+
+STATISTICS:
+
+Equipped Abilities:
+   Negative Plane Protection
+   Immunity to non-magical weapons
+   Immunity to Wing Buffet
+
+Armor Class: -2
+Saving Throws: +2 Bonus
+Fire/Cold Resistance:  +30% Bonus
+Weight: 9
+Usable By:
+   Valygar~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/itm/NPSW04.ITM~ ~override~
+    SAY DESC~Corthala Family Blade
+This fine katana radiates magical energy when wielded by Valygar. The blade was designed to respond only to those with the blood of the family Corthala flowing through their veins. The blade can instantly slain an opponent and causes additional bleeding damage when it strikes an opponent.
+
+STATISTICS
+
+Equipped Abilities:
+ Free Action
+  (Immunity to any slowing and holding effects)
+
+Equipped Bonuses:
+ Armor Class Bonus: 2
+ Constitution Bonus: 2
+ Off-Hand THAC0 Bonus: 3
+
+Special Abilities:
+ 10% chance to instantly slain a target
+ 3 points of bleeding damage on a target every round for 3 rounds
+
+THAC0: +4 bonus
+Damage:  1D10 + 4
+Damage type:  slashing
+Weight:  4
+Speed Factor: 2
+Proficiency Type: Katana
+Type:  1-handed
+Usable By:
+   Valygar~
+
+    
+COPY ~%MOD_FOLDER%/quests/torturedsouls/itm/ValNeck1.ITM~ ~override~
+    SAY NAME2 ~Abyssina's Necklace~
+  SAY DESC ~This necklace consists of white, pink and very rare blue pearls. Mysterious shimmer enhances its exquisite beauty and you can guess that it is imbibed with a strong enchantment. The necklace once belonged to Abyssina Corthala, a mage of no small repute.
+
+STATISTICS
+
+Equipped Abilities:
+ Armor Class Bonus: +3
+ Magic Resistance:  +20%
+ Immunity to Poison
+ Complete Mind Shield
+  (Immunity to Panic, Fear, Confusion, Charm and Psionics)~
+
+COPY ~%MOD_FOLDER%/quests/torturedsouls/itm/ValNeck2.ITM~ ~override~
+    SAY NAME2 ~Abyssina's Necklace~
+  SAY DESC ~This necklace consists of white, pink and very rare blue pearls. Mysterious shimmer enhances its exquisite beauty and you can guess that it is imbibed with a strong enchantment. The necklace once belonged to Abyssina Corthala, a mage of no small repute.
+
+STATISTICS
+
+Equipped Abilities:
+ Armor Class Bonus: +3
+ Magic Resistance:  +20%
+ Immunity to Poison
+ Complete Mind Shield
+  (Immunity to Panic, Fear, Confusion, Charm and Psionics)~

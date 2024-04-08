@@ -254,12 +254,6 @@ END
 
 /*ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() SetGlobal("KickedOut","LOCALS",1) LeaveParty() EscapeAreaMove("AR0086",9,9,9)*/
 
-IF WEIGHT #-11 ~Global("VP_Firkrag_Is_Dead","GLOBAL",1)~ THEN BEGIN legacy409
-~(*Stabbing her sword into the bloody carcase of the dragon*) Ha, see how easily the mighty has fallen... see how the dirt beneath the stones eagerly drink its blood. So much blood... and so, those who dare trifle with me as this creature... so shall they share the same fate.~
- IF ~OR(2) !InParty("Leina") Dead("Leina")~ THEN DO ~SetGlobal("VP_Firkrag_Is_Dead","GLOBAL",2)~ EXIT
- IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ firkdead1
-END
-
 //NeJ Interjection - starting dialogue
 CHAIN VPSHAJ nejopen1
 ~(*Drawing her sword*)... Then it'll be my pleasure to leave the dogs on the floor lapping up their own blood!~ [mute]
@@ -274,3 +268,45 @@ CHAIN IMOENJ sharaval
 END
  IF ~True()~ THEN EXTERN ~HROTHJ~ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+
+//Leina Interactions
+
+IF ~~ THEN BEGIN LeiSpher1
+  SAY ~What do you take me for... I am a warrior not a bloody contestant in your guessing game bard!~
+  IF ~True()~ THEN EXTERN ~BLEINA~ Sphere10
+  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher1
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher2
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher1
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher4
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3
+  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiSpher2
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher1
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1
+END
+
+IF ~~ THEN BEGIN RadianQ
+  SAY ~Finally the stinkin' male is gettin' a brain. Your damn right, <CHARNAME>, who gives a crap who starts it and how. As long as blood flows. So you shut your yammering bard!~
+  IF ~True()~ THEN EXTERN ~BLEINA~ RadiaQ10
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadianQB
+END
+
+IF ~~ THEN BEGIN RadianQ1
+  SAY ~I think a snowball has a better chance in hell than this bard being able to change her pie in the sky attitude. For all her, *I've grown* attitude, she still doesn't use her brain!~
+  IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ19A
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ RadianQ
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ RadianQ
+END
+
+IF ~~ THEN BEGIN LeiRadia
+  SAY ~Oh suck it up bard, who the hell cares where we sit as long as they have ale and hot water. I'll never know how in the nine hells you ever got into this party. You're such a prig!~
+  IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
+  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
+  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiRadia
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
+END

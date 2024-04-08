@@ -1,17 +1,11 @@
-BEGIN ~MERCBANK~ 2 // non-zero flags may indicate non-pausing dialogue
+BEGIN MERCBANK
 
-IF ~True()~ THEN BEGIN 0 // from:
-  SAY ~’Allo <LADYLORD>! Would you care to invest into our merchant bank?~
-  IF ~~ THEN REPLY #24763 /* ~Let's see what you have.~ */ DO ~StartStore("mercbank",LastTalkedToBy())~ EXIT
-  IF ~~ THEN REPLY #14641 /* ~Maybe another time.~ */ GOTO 1
+CHAIN IF ~True()~ THEN MERCBANK 0
+~'Allo <LADYLORD>! Would you care to invest into our merchant bank?~
 END
+ ++ ~Let's see what you have.~ DO ~StartStore("mercbank",LastTalkedToBy())~ EXIT //BG2 #24763
+ ++ ~Maybe another time.~ EXTERN MERCBANK 1 //BG2 #14641
 
-IF ~~ THEN BEGIN 1 // from:
-  SAY #14644 /* ~As you will. Have a nice <DAYNIGHT>!~ */
-  IF ~~ THEN EXIT
-END
-
-IF ~False()~ THEN BEGIN 2 // from:
-  SAY #14646 /* ~Come again!~ */
-  IF ~~ THEN EXIT
-END
+CHAIN MERCBANK 1
+~As you will. Have a nice <DAYNIGHT>!~ //BG2 #14644
+EXIT

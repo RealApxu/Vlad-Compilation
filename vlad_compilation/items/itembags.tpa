@@ -1,0 +1,90 @@
+COPY_EXISTING ~ulgoth.sto~ override
+    ADD_STORE_ITEM ~vpambelt~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpgenbag~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpscrbag~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpptnbag~ #0 #0 #0 ~IDENTIFIED~ #1
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/quests/bank/sto/aldeth.sto~ override
+    SAY STORE_NAME ~Merchant League~
+    ADD_STORE_ITEM ~vpambelt~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpgenbag~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpscrbag~ #0 #0 #0 ~IDENTIFIED~ #1
+    ADD_STORE_ITEM ~vpptnbag~ #0 #0 #0 ~IDENTIFIED~ #1
+
+    
+COPY ~%MOD_FOLDER%/quests/bank/VPAmBelt.itm~ override
+    SAY NAME1 ~Quiver~
+    SAY NAME2 ~Quiver~
+    SAY UNIDENTIFIED_DESC ~This quiver is ideally suited for holding arrows, bullets, darts and bolts.
+
+STATISTICS:
+
+Capacity: 1200 missile units in total
+Weight: 2~
+SAY DESC ~This quiver is ideally suited for holding arrows, bullets, darts and bolts.
+
+STATISTICS:
+
+Capacity: 1200 missile units in total
+Weight: 2~
+
+COPY ~%MOD_FOLDER%/quests/bank/VPGenBag.itm~ override
+SAY NAME1 ~Cloth Sack~
+SAY NAME2 ~Cloth Sack~
+    SAY UNIDENTIFIED_DESC ~A common cloth sack of about 1 feet by 3 feet in size and of limited capacity.
+
+STATISTICS:
+
+Capacity: 60 items (stackable or not)
+Weight: 5~
+    SAY DESC ~A common cloth sack of about 1 feet by 3 feet in size and of limited capacity.
+
+STATISTICS:
+
+Capacity: 60 items (stackable or not)
+Weight: 5~
+
+COPY ~%MOD_FOLDER%/quests/bank/VPPtnBag.itm~ override
+    SAY NAME1 ~Potion Case~
+    SAY NAME2 ~Potion Case~
+    SAY UNIDENTIFIED_DESC ~Typically carried by traveling healers, this small leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel. Regardless of how many potions are contained in this case, it always weighs the same amount.
+
+STATISTICS:
+
+Capacity: 100 bottles
+Weight: 2~
+    SAY DESC ~Typically carried by traveling healers, this small leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel. Regardless of how many potions are contained in this case, it always weighs the same amount.
+
+STATISTICS:
+
+Capacity: 100 bottles
+Weight: 2~
+
+COPY ~%MOD_FOLDER%/quests/bank/VPScrBag.itm~ override
+    SAY NAME1 ~Scroll Tubus~
+    SAY NAME2 ~Scroll Tubus~
+    SAY UNIDENTIFIED_DESC ~This sturdy tubular container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.
+
+STATISTICS:
+
+Capacity: 100 scrolls
+Weight: 2~
+    SAY DESC ~This sturdy tubular container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.
+
+STATISTICS:
+
+Capacity: 45 scrolls
+Weight: 2~
+
+COPY ~%MOD_FOLDER%/quests/bank/sto/VPAmBelt.sto~ override
+    SAY STORE_NAME ~Quiver~
+
+COPY ~%MOD_FOLDER%/quests/bank/sto/VPGenBag.sto~ override
+    SAY STORE_NAME ~Cloth Sack~
+
+COPY ~%MOD_FOLDER%/quests/bank/sto/VPPtnBag.sto~ override
+    SAY STORE_NAME ~Potion Case~
+
+COPY ~%MOD_FOLDER%/quests/bank/sto/VPScrBag.sto~ override
+    SAY STORE_NAME ~Scroll Tubus~

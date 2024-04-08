@@ -12,5 +12,3 @@ THEN
 		StartDialogueNoSet("Sol")
 		EndCutSceneMode()
 END
-
-

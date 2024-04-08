@@ -1,8 +1,8 @@
 2DA V1.0
-*NVALYGAL
+*SIMEM
                         0           1
 SWITCH                  DEFAULT     DEFAULT
-DEFAULT                 71020       val2fin
+DEFAULT                 71020       sime2fin
 DWARF                   0           0
 ELF                     0           0
 HALFELF                 0           0
