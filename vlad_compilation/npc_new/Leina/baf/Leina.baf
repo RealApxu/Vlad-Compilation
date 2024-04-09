@@ -70,7 +70,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(3)
 		StartDialogueNoSet(Player1)
 		EndCutSceneMode()
@@ -90,7 +90,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(3)
 		StartDialogueNoSet(Player1)
 		EndCutSceneMode()
@@ -129,7 +129,7 @@ THEN
 		SetGlobal("VP_Break_Point","LOCALS",1)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(3)
 		Interact(Player1)
 		EndCutSceneMode()
@@ -312,8 +312,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	Global("VP_BKachiko","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -324,23 +324,23 @@ END
 IF
 	GlobalTimerExpired("VP_Leina_Kachiko","GLOBAL")
 	InParty(Myself)
-	InParty("Kachiko")
-	See("Kachiko")
-	!Dead("Kachiko")
-	!StateCheck("Kachiko",STATE_SLEEPING)
+	InParty("vpkachi")
+	See("vpkachi")
+	!Dead("vpkachi")
+	!StateCheck("vpkachi",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BKachiko","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BKachiko","LOCALS",2)
-		Interact("Kachiko")
+		Interact("vpkachi")
 END
 
 IF
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	Global("VP_BDar","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -351,17 +351,17 @@ END
 IF
 	GlobalTimerExpired("VP_Leina_Dar","GLOBAL")
 	InParty(Myself)
-	InParty("Dar")
-	See("Dar")
-	!Dead("Dar")
-	!StateCheck("Dar",STATE_SLEEPING)
+	InParty("njdar")
+	See("njdar")
+	!Dead("njdar")
+	!StateCheck("njdar",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BDar","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BDar","LOCALS",2)
-		Interact("Dar")
+		Interact("njdar")
 END
 
 IF
@@ -386,7 +386,7 @@ THEN
 		SetGlobal("VP_BPC","LOCALS",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -396,8 +396,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	Global("VP_BDar","LOCALS",3)
 THEN
 	RESPONSE #100
@@ -408,17 +408,17 @@ END
 IF
 	GlobalTimerExpired("VP_Leina_Dar","GLOBAL")
 	InParty(Myself)
-	InParty("Dar")
-	See("Dar")
-	!Dead("Dar")
-	!StateCheck("Dar",STATE_SLEEPING)
+	InParty("njdar")
+	See("njdar")
+	!Dead("njdar")
+	!StateCheck("njdar",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BDar","LOCALS",4)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BDar","LOCALS",5)
-		Interact("Dar")
+		Interact("njdar")
 END
 
 IF
@@ -443,7 +443,7 @@ THEN
 		SetGlobal("VP_BPC","LOCALS",5)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -474,7 +474,7 @@ THEN
 		SetGlobal("VP_BPC","LOCALS",8)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -524,7 +524,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -552,7 +552,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -580,7 +580,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -619,7 +619,7 @@ THEN
 		RealSetGlobalTimer("VP_BPC_LT","GLOBAL",1)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -645,7 +645,7 @@ THEN
 		SetGlobalTimer("VP_BPC_LT","GLOBAL",TWO_DAYS)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -680,7 +680,7 @@ THEN
 		SetGlobal("VP_LoveTalk","LOCALS",2)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -892,7 +892,7 @@ THEN
 		SetGlobal("VP_LoveTalk","LOCALS",5)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -961,7 +961,7 @@ THEN
     	SetGlobal("VP_LeinaRomanceAct","GLOBAL",2)
 		ClearAllActions()
 		StartCutSceneMode()
-    	MoveViewObject("Leina",INSTANT)
+    	MoveViewObject("vpleina",INSTANT)
     	Wait(1)
     	PlaySong(666)
 		Wait(3)
@@ -1027,7 +1027,7 @@ THEN
 		SetGlobal("VP_Danicng_Queen","GLOBAL",1)
 		ClearAllActions()
 		StartCutSceneMode()
-       MoveViewObject("Leina",INSTANT)
+       MoveViewObject("vpleina",INSTANT)
        Wait(1)
        PlaySong(666)
 		Wait(3)
@@ -1184,7 +1184,7 @@ THEN
        SetGlobal("VP_LoveTalk","LOCALS",11)
 		ClearAllActions()
 		StartCutSceneMode()
-       MoveViewObject("Leina",INSTANT)
+       MoveViewObject("vpleina",INSTANT)
        Wait(1)
        PlaySong(666)
 		Wait(3)
@@ -1237,7 +1237,7 @@ THEN
 		ClearAllActions()
 		StartCutSceneMode()
 		DayNight(MIDNIGHT)
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -1276,7 +1276,7 @@ THEN
 		ClearAllActions()
 		StartCutSceneMode()
 		DayNight(MIDNIGHT)
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -1493,8 +1493,8 @@ IF
 	OR(2)
 		!InParty("Mazzy")
 		!See("Mazzy")
-	InParty("Hrothgar")
-	See("Hrothgar")
+	InParty("njhroth")
+	See("njhroth")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck(Player1,STATE_SLEEPING)
@@ -1503,7 +1503,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Ric_DeArnise","LOCALS",1)
-		Interact("Hrothgar")
+		Interact("njhroth")
 END
 
 ////////////////////////////
@@ -1594,7 +1594,7 @@ THEN
 		SetGlobalTimer("VP_NewLT_Timer","GLOBAL",ONE_DAY)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -1675,7 +1675,7 @@ THEN
 		IncrementGlobal("VP_LoveTalk","LOCALS",1)
 		ClearAllActions()
 		StartCutSceneMode()
-		MoveViewObject("Leina",INSTANT)
+		MoveViewObject("vpleina",INSTANT)
 		Wait(1)
 		PlaySong(666)
 		Wait(3)
@@ -1685,8 +1685,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Melora")
-	!Dead("Melora")
+	InParty("njmelora")
+	!Dead("njmelora")
 	Global("VP_Leina_Melora","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -1698,22 +1698,22 @@ IF
 	RealGlobalTimerExpired("VP_Lei_Mel_Timer","GLOBAL")
 	Global("VP_Leina_Melora","LOCALS",1)
 	InParty(Myself)
-	InParty("Melora")
-	See("Melora")
-	!Dead("Melora")
-	!StateCheck("Melora",STATE_SLEEPING)
+	InParty("njmelora")
+	See("njmelora")
+	!Dead("njmelora")
+	!StateCheck("njmelora",STATE_SLEEPING)
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Leina_Melora","LOCALS",2)
-		Interact("Melora")
+		Interact("njmelora")
 END
 
 IF
 	InParty(Myself)
-	InParty("Melora")
-	!Dead("Melora")
+	InParty("njmelora")
+	!Dead("njmelora")
 	Global("VP_Leina_Melora","LOCALS",3)
 THEN
 	RESPONSE #100
@@ -1725,16 +1725,16 @@ IF
 	GlobalTimerExpired("VP_Lei_Mel_Timer","GLOBAL")
 	Global("VP_Leina_Melora","LOCALS",4)
 	InParty(Myself)
-	InParty("Melora")
-	See("Melora")
-	!Dead("Melora")
-	!StateCheck("Melora",STATE_SLEEPING)
+	InParty("njmelora")
+	See("njmelora")
+	!Dead("njmelora")
+	!StateCheck("njmelora",STATE_SLEEPING)
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Leina_Melora","LOCALS",5)
-		Interact("Melora")
+		Interact("njmelora")
 END
 
 ////////////////////////////

@@ -4,8 +4,8 @@ IF
 	Global("Kachiko_Saved","GLOBAL",2)
 	InParty("Yoshimo")
 	!Dead("Yoshimo")
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	!StateCheck(Player1,STATE_SLEEPING)
 THEN
 	RESPONSE #100

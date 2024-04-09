@@ -6,8 +6,8 @@ REPLACE ~PPSAEM~
 /////////////////////////////////////////////
 IF ~~ THEN BEGIN 13
   SAY ~Hold fast, the journey begins.~
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ sailoff1
-  IF ~!InParty("Kachiko")~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41c")~ EXIT  // --->  to Brynnlaw with Bodhi (no Kachiko in party)
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ sailoff1
+  IF ~!InParty("vpkachi")~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41c")~ EXIT  // --->  to Brynnlaw with Bodhi (no Kachiko in party)
 END
 /////////////////////////////////////////////
 //  //
@@ -31,9 +31,9 @@ END
 /////////////////////////////////////////////
 IF ~~ THEN BEGIN 52
   SAY ~Hold fast, the journey begins.~
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ sailoff1
-  IF ~!InParty("Kachiko") Global("Sime_Meet","GLOBAL",0)~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41d")~ EXIT // ---> Kachiko is not in party ---> original cutscene, new in-game Sime is destroyed and re-created
-  IF ~!InParty("Kachiko") Global("Sime_Meet","GLOBAL",1)~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41dS")~ EXIT  // ---> Kachiko is not in party ---> go directly to Brynnlaw, Sime is joinable and moved to Brynnlaw
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ sailoff1
+  IF ~!InParty("vpkachi") Global("Sime_Meet","GLOBAL",0)~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41d")~ EXIT // ---> Kachiko is not in party ---> original cutscene, new in-game Sime is destroyed and re-created
+  IF ~!InParty("vpkachi") Global("Sime_Meet","GLOBAL",1)~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41dS")~ EXIT  // ---> Kachiko is not in party ---> go directly to Brynnlaw, Sime is joinable and moved to Brynnlaw
 END
 
 END
@@ -71,8 +71,8 @@ END
 IF ~~ THEN BEGIN KR2
   SAY ~Thank you <CHARNAME>. Then we are fully staffed and ready to sail. Never a fear nor worry should cross your thoughts this eve, m'<PRO_LADYLORD>. I have traveled this sea a good many times, and I foresee no troubles.~
   =  ~Although, I am sure, nothing untoward will happen during our crossing, best that we get underway as soon as possible. Please follow me to the docks where my ship is waiting for us.~
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ sailoff1
-  IF ~!InParty("Kachiko")~ THEN DO ~TakePartyGold(10000) DestroyGold(10000) ClearAllActions() StartCutSceneMode() StartCutScene("VPMov03B")~ EXIT // --> to Brynnlaw (no Kachiko in party) => VPMov03B => VPMov03D => CUT41td
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ sailoff1
+  IF ~!InParty("vpkachi")~ THEN DO ~TakePartyGold(10000) DestroyGold(10000) ClearAllActions() StartCutSceneMode() StartCutScene("VPMov03B")~ EXIT // --> to Brynnlaw (no Kachiko in party) => VPMov03B => VPMov03D => CUT41td
 END
 
 IF ~~ THEN BEGIN KR3
@@ -189,8 +189,8 @@ END
 
 IF ~~ THEN BEGIN TS19
   SAY ~Then we are fully staffed and ready to sail. Best that we get underway as soon as possible. Disembark, m'lord, and we shall away.~
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ sailoff1
-  IF ~!InParty("Kachiko")~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41da")~ EXIT // --->  to Brynnlaw with Sime being in-party
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ sailoff1
+  IF ~!InParty("vpkachi")~ THEN DO ~StartCutSceneMode() StartCutScene("Cut41da")~ EXIT // --->  to Brynnlaw with Sime being in-party
 END
 
 END

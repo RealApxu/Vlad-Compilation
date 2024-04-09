@@ -90,8 +90,8 @@ END
 //Banter 2 - Day 1
 IF
 	InParty(Myself)
-	InParty("Hrothgar")
-	!Dead("Hrothgar")
+	InParty("njhroth")
+	!Dead("njhroth")
 	Global("VP_BHrothgar","LOCALS",0)
 	Global("VP_In_IWD_Part1","GLOBAL",1)
 	Global("VP_Start_Banters","GLOBAL",1)
@@ -105,24 +105,24 @@ END
 IF
 	RealGlobalTimerExpired("VP_Imoen_Hrothgar","GLOBAL")
 	InParty(Myself)
-	InParty("Hrothgar")
-	See("Hrothgar")
-	!Dead("Hrothgar")
-	!StateCheck("Hrothgar",STATE_SLEEPING)
+	InParty("njhroth")
+	See("njhroth")
+	!Dead("njhroth")
+	!StateCheck("njhroth",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BHrothgar","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BHrothgar","LOCALS",2)
-		StartDialogueNoSet("Hrothgar")
+		StartDialogueNoSet("njhroth")
 END
 
 //Banter 3 - Day 1
 IF
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	Global("VP_BDar","LOCALS",0)
 	Global("VP_In_IWD_Part1","GLOBAL",1)
 	Global("VP_Start_Banters","GLOBAL",1)
@@ -142,17 +142,17 @@ IF
 		AreaCheck("TT3600")
 		AreaCheck("TT4000")	
 	InParty(Myself)
-	InParty("Dar")
-	See("Dar")
-	!Dead("Dar")
-	!StateCheck("Dar",STATE_SLEEPING)
+	InParty("njdar")
+	See("njdar")
+	!Dead("njdar")
+	!StateCheck("njdar",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BDar","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BDar","LOCALS",2)
-		StartDialogueNoSet("Dar")
+		StartDialogueNoSet("njdar")
 END
 
 //Banter 4 - Day 6
@@ -246,17 +246,17 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Hrothgar")
-	!Dead("Hrothgar")
+	InParty("njhroth")
+	!Dead("njhroth")
 	CombatCounter(0)
-	!StateCheck("Hrothgar",STATE_SLEEPING)
+	!StateCheck("njhroth",STATE_SLEEPING)
 	!See([ENEMY])
 	Global("SPRITE_IS_DEADYXUNOMEI","GLOBAL",1)
 	Global("VP_YxunomeiDead","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("VP_YxunomeiDead","GLOBAL",1)
-		StartDialogueNoSet("Hrothgar")
+		StartDialogueNoSet("njhroth")
 END
 
 IF
@@ -272,8 +272,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Leina")
-	!Dead("Leina")
+	InParty("vpleina")
+	!Dead("vpleina")
 	Gender(Player1,MALE)
 	Global("VP_BLeina","LOCALS",0)
 	Global("VP_Imoen_Returns","GLOBAL",1)
@@ -286,15 +286,15 @@ END
 IF
 	GlobalTimerExpired("VP_Imoen_Leina","GLOBAL")
 	InParty(Myself)
-	InParty("Leina")
-	See("Leina")
-	!Dead("Leina")
-	!StateCheck("Leina",STATE_SLEEPING)
+	InParty("vpleina")
+	See("vpleina")
+	!Dead("vpleina")
+	!StateCheck("vpleina",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BLeina","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BLeina","LOCALS",2)
-		Interact("Leina")
+		Interact("vpleina")
 END

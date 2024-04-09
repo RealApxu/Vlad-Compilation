@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN Kelem1
   SAY ~<CHARNAME>? You killed me? Ah, I see... I'm not angry with you. Though I do not approve of foul magic... and look where it has led us to, you could not help yourself. Still, let's forget it and leave this place.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -44,7 +44,7 @@ IF ~~ THEN BEGIN Kelem2
   SAY ~(Shrugs his shoulders) You killed me, <CHARNAME>. Ah, I see... I'm not angry with you. Though I do not approve of foul magic... and look where it has led us to, you could not help yourself. Still, let's forget it and leave this place.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 14
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0

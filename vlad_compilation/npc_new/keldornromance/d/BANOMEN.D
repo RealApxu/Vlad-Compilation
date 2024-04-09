@@ -1,59 +1,57 @@
-APPEND ~BANOMEN~
 
-IF WEIGHT #2 ~Global("VP_AnomenJealous","GLOBAL",6)~ THEN BEGIN AHK_st0
-  SAY ~<CHARNAME>! Can we have a word?~
-    = ~You love him, don't you? Please, do not bother denying it. I see it, I'm losing to him in each and every way.~
-    = ~I understand... I just have to speak out as it is. Maybe it would be best if I left and kept out of your way?~
-  IF ~~ THEN REPLY ~Anomen, it is your decision. I have no right to forbid you.~ GOTO AHK_st1
-  IF ~~ THEN REPLY ~Have it your way. I do not care.~ GOTO AHK_st1
-  IF ~~ THEN REPLY ~Yes, it's probably for the best. You should leave.~ GOTO AHK_st2
+CHAIN
+IF WEIGHT #2 ~Global("VP_AnomenJealous","GLOBAL",6)~ THEN BANOMEN AHK_st0
+~<CHARNAME>! Can we have a word?~
+= ~You love him, don't you? Please, do not bother denying it. I see it, I'm losing to him in each and every way.~
+= ~I understand... I just have to speak out as it is. Maybe it would be best if I left and kept out of your way?~
 END
+ ++ ~Anomen, it is your decision. I have no right to forbid you.~ EXTERN BANOMEN AHK_st1
+ ++ ~Have it your way. I do not care.~ EXTERN BANOMEN AHK_st1
+ ++ ~Yes, it's probably for the best. You should leave.~ EXTERN BANOMEN AHK_st2
 
-IF ~~ THEN BEGIN AHK_st1
-  SAY ~(Becomes thoughtful) What of the group, you will be left without a cleric? Your adventure is full of dangers, <CHARNAME>, and I do not want you to suffer because of my lack of reserve. After all sir Ryan did commission me to accompany you.~
-  = ~You remember I once told you that you remind me of Moira? Maybe I can start learning to love you as sister, now that there is nothing else left for me.~
-  IF ~~ THEN DO ~SetGlobal("VP_AnomenJealous","GLOBAL",7)~ EXIT
-END
+CHAIN BANOMEN AHK_st1
+~(Becomes thoughtful) What of the group, you will be left without a cleric? Your adventure is full of dangers, <CHARNAME>, and I do not want you to suffer because of my lack of reserve. After all sir Ryan did commission me to accompany you.~
+= ~You remember I once told you that you remind me of Moira? Maybe I can start learning to love you as sister, now that there is nothing else left for me.~
+DO ~SetGlobal("VP_AnomenJealous","GLOBAL",7)~
+EXIT
 
-IF ~~ THEN BEGIN AHK_st2
-  SAY ~Then I'll go to Oisig. Helm shall not forsake me. Farewell, my love.~
-  IF ~~ THEN DO ~SetGlobal("VP_Anom_Frustrated","GLOBAL",3)
+CHAIN BANOMEN AHK_st2
+~Then I'll go to Oisig. Helm shall not forsake me. Farewell, my love.~
+DO ~SetGlobal("VP_Anom_Frustrated","GLOBAL",3)
 SetGlobal("KickedOut","LOCALS",1)
 ChangeAIScript("",DEFAULT)
 SetLeavePartyDialogueFile()
 LeaveParty()
-EscapeAreaMove("AR0901",705,711,4)~ EXIT
-END
+EscapeAreaMove("AR0901",705,711,4)~
+EXIT
 
-IF WEIGHT #3 ~Global("VP_Anom_Frustrated","GLOBAL",2)~ THEN BEGIN AFr_st0
-  SAY ~Be so kind and tell *your* Keldorn to leave me in peace! I have lost everything, don't you see? Everything! The dream of my life, my first love...~
-  IF ~~ THEN REPLY ~Anomen, that is not reason enough for you to take your hurt out on Keldorn! After all he is older and wiser than you!~ GOTO AFr_st1
-  IF ~~ THEN REPLY ~This is all my fault! I must have talked you out of that. I am so sorry.~ GOTO AFr_st1
+CHAIN
+IF WEIGHT #3 ~Global("VP_Anom_Frustrated","GLOBAL",2)~ THEN BANOMEN AFr_st0
+~Be so kind and tell *your* Keldorn to leave me in peace! I have lost everything, don't you see? Everything! The dream of my life, my first love...~
 END
+ ++ ~Anomen, that is not reason enough for you to take your hurt out on Keldorn! After all he is older and wiser than you!~ EXTERN BANOMEN AFr_st1
+ ++ ~This is all my fault! I must have talked you out of that. I am so sorry.~ EXTERN BANOMEN AFr_st1
 
-IF ~~ THEN BEGIN AFr_st1
-  SAY ~(Turns sulky) No, my love. I have my own head on my shoulders, but I did my father's bidding. Neither you, nor I have enough experience to have been able to foresee the outcome.~
-  = ~(In a confused and low voice) I should have listened to Keldorn, but I couldn't stand another of those sermons of his, and this, all of this will come to no good.~
-  = ~I... I should leave you my love, and disappear forever. It hurts me so much to see your love for another. Please tell him that I still have the greatest respect for him. Farewell.~
-  IF ~~ THEN REPLY ~Where will you go?~ GOTO AFr_st2
+CHAIN BANOMEN AFr_st1
+~(Turns sulky) No, my love. I have my own head on my shoulders, but I did my father's bidding. Neither you, nor I have enough experience to have been able to foresee the outcome.~
+= ~(In a confused and low voice) I should have listened to Keldorn, but I couldn't stand another of those sermons of his, and this, all of this will come to no good.~
+= ~I... I should leave you my love, and disappear forever. It hurts me so much to see your love for another. Please tell him that I still have the greatest respect for him. Farewell.~
 END
+ ++ ~Where will you go?~ EXTERN BANOMEN AFr_st2
 
-IF ~~ THEN BEGIN AFr_st2
-  SAY ~To Oisig. Helm shall not forsake me.~
-  IF ~~ THEN EXTERN ~KELDORJ~ AnomLeav
-END
+CHAIN BANOMEN AFr_st2
+~To Oisig. Helm shall not forsake me.~
+EXTERN KELDORJ AnomLeav
 
-IF ~~ THEN BEGIN AnomBye
-  SAY ~Farewell, my love, farewell forever.~
-  IF ~~ THEN DO ~SetGlobal("VP_Anom_Frustrated","GLOBAL",3)
+CHAIN BANOMEN AnomBye
+~Farewell, my love, farewell forever.~
+DO ~SetGlobal("VP_Anom_Frustrated","GLOBAL",3)
 SetGlobal("KickedOut","LOCALS",1)
 ChangeAIScript("",DEFAULT)
 SetLeavePartyDialogueFile()
 LeaveParty()
-EscapeAreaMove("AR0901",705,711,4)~ EXIT
-END
-
-END
+EscapeAreaMove("AR0901",705,711,4)~
+EXIT
 
 /////////////CHAINs////////////////
 
@@ -83,7 +81,7 @@ DO ~SetGlobal("VP_AnomenJealous","GLOBAL",5)~
 == BKELDOR ~(With a sigh) Anomen, even if I ceased talking to her, it would hardly affect your relationship.~
 == BANOMEN ~(Lowering his head) I'm afraid you are right, sir Keldorn. She can't take her eyes off you.~
 == BKELDOR ~My friend, you exaggerate!~
-== BANOMEN ~No. I can see it... me...  I'm looking at her all the time and I realize that. I... I perceive that I am no match for you, Sir Keldorn.~
+== BANOMEN ~No. I can see it... me... I'm looking at her all the time and I realize that. I... I perceive that I am no match for you, Sir Keldorn.~
 == BKELDOR ~Anomen...~
 == BANOMEN ~(With passion) Don't you care? Why do you persist in stringing her along?~
 == BKELDOR ~(Meeting his eyes) Of course I care, just as I care for anyone I have sworn to protect. Anomen, this conversation is not leading us anywhere.~

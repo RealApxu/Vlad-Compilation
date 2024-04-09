@@ -1046,7 +1046,7 @@ IF ~~ THEN BEGIN 116
   IF ~InParty("Minsc") See("Minsc")~ THEN EXTERN ~MINSCJ~ 155
   IF ~InParty("Aerie") See("Aerie")~ THEN EXTERN ~AERIEJ~ 131
   IF ~InParty("Imoen2") See("Imoen2")~ THEN EXTERN ~IMOEN2J~ 10
-  IF ~InParty("Kachiko") See("Kachiko")~ THEN EXTERN ~KACHIJ~ N55
+  IF ~InParty("vpkachi") See("vpkachi")~ THEN EXTERN ~KACHIJ~ N55
 //  IF ~InParty("Dynaheir") //See("Dynaheir")~ THEN EXTERN ~DYNAJ~ TS03
 //  IF ~InParty("Coran") //See("Coran")~ THEN EXTERN ~CORANJ~ TS6
 END
@@ -1471,7 +1471,7 @@ IF ~~ THEN BEGIN TSTOB7
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
 //IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
 //IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
 
@@ -1525,7 +1525,7 @@ IF ~~ THEN BEGIN TSTOB10
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
 //IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
 //IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
 
@@ -1556,7 +1556,7 @@ IF ~~ THEN BEGIN TSTOB11
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
 //IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
 //IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
 END
 
@@ -1612,7 +1612,7 @@ END
 IF ~~ THEN BEGIN Kelem4
   SAY ~Yes, yes! Let's go quickly to the sun and fresh air.~
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -1648,15 +1648,15 @@ END
 
 IF ~~ THEN BEGIN NEJ117
   SAY ~I know the road to Ulcaster, <CHARNAME>, it was once fraught with bandits until you rid the area of their pestilence. I hope the journey back does not hold too many unpleasant memories for you.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ 60
+  IF ~True()~ THEN EXTERN NJHROJ 60
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
-  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ57
-  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
-  IF ~InParty("Kachiko") !InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ58
-  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 35
-  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 7
-  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 12
+  IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ57
+  IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
+  IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ58
+  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ 35
+  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 7
+  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 12
   IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ158
   IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ206
   IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ321
@@ -1672,10 +1672,10 @@ IF ~~ THEN BEGIN NEJ118
   SAY ~It seems that all who travel with you, <CHARNAME>, are bound to be touched by mystery and intrigue. This journey that we take with you into the past is sure to be one of many intrigues this group will face.~
   IF ~True()~ THEN EXTERN ~TILORN~ 19
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
-  IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ NEJ59
-  IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
-  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ 36
-  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ 8
+  IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ59
+  IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ 36
+  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 8
   IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ159
   IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ207
   IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ322
@@ -1695,17 +1695,17 @@ IF ~~ THEN BEGIN NEJ119
   IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
   IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
   IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
-  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 70
+  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 70
 END
 
 IF ~~ THEN BEGIN tafficuh
   SAY ~Taffic, I am sorry for I know of no spells that will heal the misery that I see in the face of the beast you that you have become.~
  IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("Kachiko") InParty("Yoshimo") !Dead("Kachiko")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo") InParty("Kachiko") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
- IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ tafficuh
- IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~MELORAJ~ tafficuh
+ IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ tafficuh
+ IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+ IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ tafficuh
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ tafficuh
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ tafficuh
  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ tafficuh
  IF ~InParty("Nalia") !Dead("Nalia") OR(2) Global("EnteredAR1304","GLOBAL",1) !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN ~NALIAJ~ tafficuh

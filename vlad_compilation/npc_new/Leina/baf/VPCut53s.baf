@@ -2,8 +2,8 @@ IF
 	True()
 THEN
 	RESPONSE #100
-		CutSceneId("Leina")
-		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","Leina")
+		CutSceneId("vpleina")
+		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","vpleina")
 		SetGlobal("VP_LeinaVampire","GLOBAL",1)
 		Wait(1)
 		CreateVisualEffectObject("SPDISPMA",Myself)

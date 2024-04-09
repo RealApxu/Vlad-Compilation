@@ -16,9 +16,9 @@ END
 
 IF ~~ THEN BEGIN NEJ75
  SAY ~I am sorry, <CHARNAME>. A few moments ago we were celebrating our freedom, only to find ourselves trapped in this... this horrible place again! Please, please let us get moving and just get out of here, quickly.~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 369
+ IF ~True()~ THEN EXTERN NJHROJ 369
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ comebck1
- IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 5
+ IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 5
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ246
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ534
 END
@@ -38,37 +38,37 @@ END
 
 IF WEIGHT #-1 ~Global("VP_BHrothgar","LOCALS",2)~ THEN BEGIN NEJ78
  SAY ~Hrothgar, can I ask why you have so much junk in your otherwise nice house?~
- IF ~~ THEN DO ~SetGlobal("VP_BHrothgar","LOCALS",3)~ EXTERN ~HROTHJ~ 94
+ IF ~~ THEN DO ~SetGlobal("VP_BHrothgar","LOCALS",3)~ EXTERN NJHROJ 94
 END
 
 IF ~~ THEN BEGIN NEJ79
  SAY ~Stories you say, but how many times can you hear a story before you get fed up with it and no longer wish to hear it ever again? Get what I mean?~
- IF ~~ THEN EXTERN ~HROTHJ~ 95
+ IF ~~ THEN EXTERN NJHROJ 95
 END
 
 IF ~~ THEN BEGIN NEJ80
  SAY ~Wow, that is so sad Hrothgar, and I bet you don't even know why?~
- IF ~~ THEN EXTERN ~HROTHJ~ 96
+ IF ~~ THEN EXTERN NJHROJ 96
 END
 
 IF ~~ THEN BEGIN NEJ81
  SAY ~Because your house is full of things from the past. Looks to me like you surround yourself with your ju... shall we call them keepsakes, because your life is no longer as exciting as it was when you were young. You have to keep these things to remind you of exciting past times. Right Hrothgar?~
- IF ~~ THEN EXTERN ~HROTHJ~ 97
+ IF ~~ THEN EXTERN NJHROJ 97
 END
 
 IF ~~ THEN BEGIN NEJ82
  SAY ~Hey, don't go getting so uppity. I never said you were old, maybe just a little lonely. Did you never think to marry, bring a little romance and... well... a different sort of excitement to your life?~
- IF ~~ THEN EXTERN ~HROTHJ~ 98
+ IF ~~ THEN EXTERN NJHROJ 98
 END
 
 IF ~~ THEN BEGIN NEJ83
  SAY ~Well, was there such a lady?~
- IF ~~ THEN EXTERN ~HROTHJ~ 99
+ IF ~~ THEN EXTERN NJHROJ 99
 END
 
 IF ~~ THEN BEGIN NEJ84
  SAY ~Wow, I didn't expect to hear your life story Hrothgar. It could definitely do with some more action, what do you say? Maybe this trip will put some into it for you.~
- IF ~~ THEN EXTERN ~HROTHJ~ 102
+ IF ~~ THEN EXTERN NJHROJ 102
 END
 
 IF WEIGHT #-2 ~Global("VP_BAccalia","LOCALS",2)~ THEN BEGIN NEJ85
@@ -364,8 +364,8 @@ END
 
 IF ~~ THEN BEGIN NEJ139
  SAY ~That was scary!!!~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 113
- IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 26
+ IF ~True()~ THEN EXTERN NJHROJ 113
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 26
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 31
 END
 
@@ -402,7 +402,7 @@ END
 
 IF ~~ THEN BEGIN NEJ146
  SAY ~Are you sure Arundel is playing with a full set Hrothgar? Could he not be getting senile, he seemed pretty old to me?~
- IF ~~ THEN EXTERN ~HROTHJ~ 130
+ IF ~~ THEN EXTERN NJHROJ 130
 END
 
 IF ~~ THEN BEGIN NEJ147
@@ -412,13 +412,13 @@ END
 
 IF ~~ THEN BEGIN NEJ148
  SAY ~(*Screwing up her nose*) Ugg! What a horrible thought, those big lizards killing people to feed to slimy snake men!~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 273
+ IF ~True()~ THEN EXTERN NJHROJ 273
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 59
 END
 
 IF ~~ THEN BEGIN NEJ149
  SAY ~Hey, they're already waiting for us... why give 'em more time I say?~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 274
+ IF ~True()~ THEN EXTERN NJHROJ 274
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ292
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 60
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ628
@@ -436,13 +436,13 @@ END
 
 IF WEIGHT #-7 ~Global("VP_YxunomeiDead","GLOBAL",1)~ THEN BEGIN NEJ152
  SAY ~What the hell was that thing?~
- IF ~~ THEN DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN ~HROTHJ~ 148
+ IF ~~ THEN DO ~SetGlobal("VP_YxunomeiDead","GLOBAL",2)~ EXTERN NJHROJ 148
 END
 
 IF ~~ THEN BEGIN NEJ153
  SAY ~(*Smiling a wan smile*) At least we won't be bored.~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 280
- IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 35
+ IF ~True()~ THEN EXTERN NJHROJ 280
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 35
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ297
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ595
 END
@@ -454,8 +454,8 @@ END
 
 IF ~~ THEN BEGIN NEJ171
  SAY ~Wow... that was some move Hrothgar! Uh... care to tell us how you did it?~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 196
- IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 43
+ IF ~True()~ THEN EXTERN NJHROJ 196
+ IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 43
  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ314
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 38
  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ611
@@ -463,7 +463,7 @@ END
 
 IF ~~ THEN BEGIN NEJ172
  SAY ~I thought we were helping you Hrothgar? Is there really some evil here that you are working with, or are you doing this for Irenicus? Is... is he here somewhere even now laughing at our foolishness in trusting you? Hrothgar, tell me... is he here waiting to torture us some more?~
- IF ~~ THEN EXTERN ~HROTHJ~ 196
+ IF ~~ THEN EXTERN NJHROJ 196
 END
 
 IF ~~ THEN BEGIN NEJ173
@@ -473,22 +473,22 @@ IF ~~ THEN BEGIN NEJ173
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
- IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 44
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 44
 END
 
 IF ~~ THEN BEGIN NEJ174
  SAY ~You're not alone there Dar. Jaheira is always telling me to be wary and to maintain balance within myself, but do you know what Dar... no matter how wary I am I still find I fall over at times... (*giggles*)... and all this snow doesn't do much for a girl's balance either.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
- IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ 206
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ 206
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ614
 END
 
 IF ~~ THEN BEGIN NEJ175
  SAY ~When we meet these heroes Minsc, you just have to remember what Kaylessa said, that they are the twisted spirits of what once were heroes. We are putting to rest that which should have been allowed to die a long time ago.~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 208
- IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 46
+ IF ~True()~ THEN EXTERN NJHROJ 208
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 46
 END
 
 IF ~~ THEN BEGIN NEJ176
@@ -520,18 +520,18 @@ END
 
 IF ~~ THEN BEGIN NEJ180
  SAY ~I guess they have said it all for me Accalia. I will miss you and when you meet this big evil, be sure you show him a fight for me.~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 233
- IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 49
+ IF ~True()~ THEN EXTERN NJHROJ 233
+ IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 49
 END
 
 IF ~~ THEN BEGIN NEJ181 //3.01
  SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you don't need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
- IF ~~ THEN EXTERN ~HROTHJ~ 235 //-->H7.01
+ IF ~~ THEN EXTERN NJHROJ 235 //-->H7.01
 END
 
 IF ~~ THEN BEGIN NEJ182 //3.02
  SAY ~You are clever sometimes Minsc. He is right Hrothgar, you can come with us and travel with <CHARNAME>. That's got to be better than staying here and being killed by some evil thing. Come on, what do you say Hrothgar?~
- IF ~~ THEN EXTERN ~HROTHJ~ 235 //-->H7.01
+ IF ~~ THEN EXTERN NJHROJ 235 //-->H7.01
 END
 
 IF ~~ THEN BEGIN NEJ183
@@ -548,8 +548,8 @@ END
 
 IF ~~ THEN BEGIN NEJ185
  SAY ~I guess they have said it all for me Accalia. I will miss you and when you meet this big evil, be sure you show him a fight for me.~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 258
- IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 59
+ IF ~True()~ THEN EXTERN NJHROJ 258
+ IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 59
 END
 
 IF ~~ THEN BEGIN NEJ186
@@ -561,20 +561,20 @@ END
 
 IF ~~ THEN BEGIN NEJ187
  SAY ~So... what are we waiting for? Let's get out of here!~
- IF ~~ THEN EXTERN ~HROTHJ~ 262
+ IF ~~ THEN EXTERN NJHROJ 262
 END
 
 IF ~~ THEN BEGIN NEJ188
  SAY ~Pretty good magic user though and an ok fellow... if you didn't listen to him too closely that was.~
- IF ~~ THEN REPLY ~It was pretty hard not to listen to him ... why do you think I stuck him at the back of the group all the time? Anyway, enough talk, we must move on before we share Erevain's fate and become a meal for the creatures of this place.~ EXTERN ~HROTHJ~ 271
- IF ~~ THEN REPLY ~He had his uses, magic users were in short supply back then... or at least any that were willing to join our inexperienced little group, but that was then and this is now. We can do no more here, let us move on before we share this fools fate.~ EXTERN ~HROTHJ~ 271
+ IF ~~ THEN REPLY ~It was pretty hard not to listen to him ... why do you think I stuck him at the back of the group all the time? Anyway, enough talk, we must move on before we share Erevain's fate and become a meal for the creatures of this place.~ EXTERN NJHROJ 271
+ IF ~~ THEN REPLY ~He had his uses, magic users were in short supply back then... or at least any that were willing to join our inexperienced little group, but that was then and this is now. We can do no more here, let us move on before we share this fools fate.~ EXTERN NJHROJ 271
 END
 
 IF ~~ THEN BEGIN NEJ189
  SAY ~Great! Just great! Now we get to be dogs in a dogfight. I wonder how much he has bet on the winner.~
- IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~For now, let's just make sure that one of these enemies is unhappy with the outcome.~ EXTERN ~HROTHJ~ 284
- IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN ~HROTHJ~ 284
- IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN ~HROTHJ~ 284
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~For now, let's just make sure that one of these enemies is unhappy with the outcome.~ EXTERN NJHROJ 284
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN NJHROJ 284
+ IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN NJHROJ 284
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ631
 END
 
@@ -585,7 +585,7 @@ END
 
 IF ~~ THEN BEGIN NEJ191
  SAY ~You have to come with us Hrothgar. Why die fighting some evil thing when you don't need to. You can travel with <CHARNAME>, there is a lot of evil even in the future that needs fighting... Come on, what do you say Hrothgar?~
- IF ~~ THEN EXTERN ~HROTHJ~ 287
+ IF ~~ THEN EXTERN NJHROJ 287
 END
 
 IF ~Global("VP_Imoen_In_IWD","GLOBAL",2)~ THEN BEGIN NEJ192 // 1
@@ -673,7 +673,7 @@ END
 
 IF ~~ THEN BEGIN NEJ205
     SAY ~(*Groans*)... Aargh... another portal! What is it with this mage, doesn't he believe in good old fashioned wooden doors?~
- IF ~~ THEN EXTERN ~HROTHJ~ 371
+ IF ~~ THEN EXTERN NJHROJ 371
 END
 
 IF ~~ THEN BEGIN NEJ206
@@ -718,7 +718,7 @@ END
 
 IF ~~ THEN BEGIN sharaval
   SAY ~You are so cruel Shar-Teel! I don't know why <CHARNAME> didn't leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
-    IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+    IF ~True()~ THEN EXTERN NJHROJ 401
     IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 END
 
@@ -729,7 +729,7 @@ END
 
 IF ~~ THEN BEGIN NEJ207fix
   SAY ~Please Hrothgar, you teleported us once, please do it again... get us out of here... please!~
-    IF ~~ THEN EXTERN ~HROTHJ~ 372
+    IF ~~ THEN EXTERN NJHROJ 372
 END
 
 IF ~~ THEN BEGIN NEJ209fix
@@ -744,7 +744,7 @@ END
 
 IF ~~ THEN BEGIN NEJ211fix
   SAY ~Hrothgar... you... you teleported us once, please do it again... please, get us out of here!~
-    IF ~~ THEN EXTERN ~HROTHJ~ 372
+    IF ~~ THEN EXTERN NJHROJ 372
 END
 
 IF ~~ THEN BEGIN NEJ212fix

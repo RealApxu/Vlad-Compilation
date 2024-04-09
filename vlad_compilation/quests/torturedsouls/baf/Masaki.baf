@@ -1,9 +1,9 @@
 IF
 	NumTimesTalkedTo(0)
-	Detect("Kachiko")
+	Detect("vpkachi")
 THEN
 	RESPONSE #100
-		StartDialogueNoSetInterrupt("Kachiko")
+		StartDialogueNoSetInterrupt("vpkachi")
 END
 
 IF

@@ -388,10 +388,10 @@ END
 IF ~~ THEN BEGIN NEJ56
   SAY ~This land suprises me more and more. To find a man not afraid to lay bare his heart and soul to a woman, to risk rejection is a rare man indeed. This Govan will surely be upset to discover that his love is missing.~
   IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXIT
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ 47
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ 47
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ157
   IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ259
-  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ 7
+  IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 7
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ NEJ185
   IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ NEJ205
   IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ NEJ221
@@ -400,14 +400,14 @@ END
 
 IF ~~ THEN BEGIN NEJ57
   SAY ~Curious, you are worried for another's safety, Yoshimo? I cannot believe that you show concern for a girl you hardly know. Your flight from Kara-Tur was the action of a coward who's only thought was, and always will be, for his own skin.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ 60
+  IF ~True()~ THEN EXTERN NJHROJ 60
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
 END
 
 IF ~~ THEN BEGIN NEJ58
   SAY ~I do not believe I will find Yoshimo Hashimoto among these ruins, <CHARNAME>. I am certain his trail ends somewhere here in Athkatla, but then, I never was very good at tracking, he could be hiding out in such a place, I will follow for now.~
-  IF ~True()~ THEN EXTERN ~HROTHJ~ 60
+  IF ~True()~ THEN EXTERN NJHROJ 60
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
 END
@@ -421,7 +421,7 @@ END
 IF ~~ THEN BEGIN NEJ60
   SAY ~I know of magic, <CHARNAME>. I sense that this mage is powerful, but his power is nothing compared to the power unleashed should we be forced to face the wrath of the whole academy! Let us do what we must quickly!~
   IF ~True()~ THEN EXTERN ~RAYVON~ 2
-  IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ rayvon2
+  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ rayvon2
   IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ rayvon
   IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ155
 END

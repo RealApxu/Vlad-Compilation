@@ -1,22 +1,22 @@
 IF
-	HPPercentLT("Leina",50)
+	HPPercentLT("vpleina",50)
 	HaveSpell(CLERIC_HEAL)
 THEN
 	RESPONSE #100
-		Spell("Leina",CLERIC_HEAL)
+		Spell("vpleina",CLERIC_HEAL)
 END
 
 IF
 	HaveSpell(CLERIC_FREE_ACTION)
-	See("Leina")
-	StateCheck("Leina",STATE_HELPLESS)
+	See("vpleina")
+	StateCheck("vpleina",STATE_HELPLESS)
 THEN
 	RESPONSE #100
-		Spell("Leina",CLERIC_FREE_ACTION)
+		Spell("vpleina",CLERIC_FREE_ACTION)
 END
 
 IF
-	Dead("Leina")
+	Dead("vpleina")
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Leina_Calls_Mom","GLOBAL",0)
@@ -26,7 +26,7 @@ END
 IF
 	CombatCounter(0)
 	OR(2)
-		HPPercentGT("Leina",49)
+		HPPercentGT("vpleina",49)
 		!HaveSpell(CLERIC_HEAL)
 THEN
 	RESPONSE #100
@@ -144,20 +144,20 @@ THEN
 END
 
 IF
-	HPPercentLT("Leina",30)
+	HPPercentLT("vpleina",30)
 	HaveSpell(CLERIC_HEAL)
 THEN
 	RESPONSE #100
-		Spell("Leina",CLERIC_HEAL)
+		Spell("vpleina",CLERIC_HEAL)
 END
 
 IF
 	HaveSpell(CLERIC_FREE_ACTION)
-	See("Leina")
-	StateCheck("Leina",STATE_HELPLESS)
+	See("vpleina")
+	StateCheck("vpleina",STATE_HELPLESS)
 THEN
 	RESPONSE #100
-		Spell("Leina",CLERIC_FREE_ACTION)
+		Spell("vpleina",CLERIC_FREE_ACTION)
 END
 
 IF

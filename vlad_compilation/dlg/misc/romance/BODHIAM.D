@@ -1,7 +1,7 @@
 EXTEND_BOTTOM BODHIAMB 5
   IF ~Global("ValygarRomanceActive","GLOBAL",2) InParty("Valygar")~ THEN EXTERN BODHIAMB TS20
   IF ~Global("VP_KrRomanceActive","GLOBAL",2) InParty("Keldorn")~ THEN EXTERN BODHIAMB vampamb0
-  IF ~Gender(Player1,MALE) InParty("Leina") Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN BODHIAMB vampamb7
+  IF ~Gender(Player1,MALE) InParty("vpleina") Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN BODHIAMB vampamb7
   IF ~Global("SimeRomanceActive","GLOBAL",2) InParty("Sime") Gender(Player1,MALE)~ THEN EXTERN BODHIAMB TS22
 END
 
@@ -53,8 +53,8 @@ END
 
 IF ~~ THEN BEGIN vampamb7
   SAY ~You follow in the hopes of retrieving something dear to you. I say that the longer you keep this up, the more you will lose. Consider the Vulova's daughter by your side. It is so disappointing to lose something, which you were only starting to dream of...~
-  IF ~OR(2) !InPartyAllowDead("Leina") Dead("Leina") !Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN GOTO 6
-  IF ~InPartyAllowDead("Leina") !Dead("Leina") Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ vampamb0
+  IF ~OR(2) !InPartyAllowDead("vpleina") Dead("vpleina") !Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN GOTO 6
+  IF ~InPartyAllowDead("vpleina") !Dead("vpleina") Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ vampamb0
 END
 
 IF ~~ THEN BEGIN vampamb

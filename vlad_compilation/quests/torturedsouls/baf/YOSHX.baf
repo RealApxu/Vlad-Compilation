@@ -1,31 +1,31 @@
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	HPPercentLT("Kachiko",50)
-	!HP("Kachiko",1)
-	Exists(LastAttackerOf("Kachiko"))
+	InParty("vpkachi")
+	HPPercentLT("vpkachi",50)
+	!HP("vpkachi",1)
+	Exists(LastAttackerOf("vpkachi"))
 	Global("VP_Kachiko_Dies","GLOBAL",0)
-	Exists(LastAttackerOf("Kachiko"))
+	Exists(LastAttackerOf("vpkachi"))
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Kachiko_Dies","GLOBAL",1)
 		EquipMostDamagingMelee()
 		DisplayStringHead(Myself,~Kachiko, don't give up, I will help you!~)
-		MoveToObjectNoInterrupt(LastAttackerOf("Kachiko"))
-		AttackReevaluate(LastAttackerOf("Kachiko"),75)
+		MoveToObjectNoInterrupt(LastAttackerOf("vpkachi"))
+		AttackReevaluate(LastAttackerOf("vpkachi"),75)
 		Continue()
 END
 
 IF
 	InParty(Myself)
-	Dead("Kachiko")
+	Dead("vpkachi")
 	Global("VP_Kachiko_Dies","GLOBAL",1)
-	Exists(LastAttackerOf("Kachiko"))
+	Exists(LastAttackerOf("vpkachi"))
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Kachiko_Dies","GLOBAL",2)
 		DisplayStringHead(Myself,~Kachiko! Nooooo!!!~)
-		Attack(LastAttackerOf("Kachiko"))
+		Attack(LastAttackerOf("vpkachi"))
 END
 
 IF

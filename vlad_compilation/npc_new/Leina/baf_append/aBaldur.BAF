@@ -49,7 +49,7 @@ IF
 	!GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
 	Global("VP_LiedToSamuel","GLOBAL",0)
 	Global("VP_DuvainesRevenge","GLOBAL",0)
-	!InParty("Leina")  // Leina
+	!InParty("vpleina")  // Leina
 	Global("SPRITE_IS_DEADAuberon","GLOBAL",0)
 	OR(2)
 		Global("SPRITE_IS_DEADGovan2","GLOBAL",1)
@@ -74,7 +74,7 @@ IF
 	!GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
 	Global("VP_LiedToSamuel","GLOBAL",0)
 	Global("VP_DuvainesRevenge","GLOBAL",0)
-	!InParty("Leina")  // Leina
+	!InParty("vpleina")  // Leina
 	Global("SPRITE_IS_DEADAuberon","GLOBAL",1)
 	OR(6)
 		AreaCheck("AR0020")
@@ -100,7 +100,7 @@ END
 IF
 	GlobalTimerExpired("VP_Sam_Helps_Timer","GLOBAL")
 	Global("VP_LiedToSamuel","GLOBAL",0)
-	InParty("Leina")  // Leina
+	InParty("vpleina")  // Leina
 	!AreaCheck("AR0020")
 	!AreaCheck("AR0021")
 	!AreaCheck("AR0022")
@@ -154,8 +154,8 @@ IF
 	Dead("UnseeingEye")
 	AreaCheck("AR0900")
 	OR(2)
-		!InParty("Leina")
-		Dead("Leina")
+		!InParty("vpleina")
+		Dead("vpleina")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck(Player1,STATE_SLEEPING)	
@@ -170,8 +170,8 @@ IF
 	Global("KeepPlot","GLOBAL",1)
 	Global("PCKeepOwner","GLOBAL",1)
 	OR(2)
-		!InParty("Leina")
-		Dead("Leina")
+		!InParty("vpleina")
+		Dead("vpleina")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck(Player1,STATE_SLEEPING)	
@@ -186,8 +186,8 @@ IF
 	Global("VP_SphereTalk","GLOBAL",1)
 	Dead("lavok02")
 	OR(2)
-		!InParty("Leina")
-		Dead("Leina")
+		!InParty("vpleina")
+		Dead("vpleina")
 	Global("LavokDead","GLOBAL",1)
 	CombatCounter(0)
 	!See([ENEMY])
@@ -201,8 +201,8 @@ END
 IF
 	AreaCheck("AR0509")
 	OR(2)
-		!InParty("Leina")
-		Dead("Leina")
+		!InParty("vpleina")
+		Dead("vpleina")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck(Player1,STATE_SLEEPING)
@@ -231,8 +231,8 @@ IF
 		Global("PaladinOrder","GLOBAL",1)
 		Global("VP_EnhancedFirkrag","GLOBAL",1)
 	OR(2)
-		!InParty("Leina")
-		Dead("Leina")
+		!InParty("vpleina")
+		Dead("vpleina")
 	CombatCounter(0)
 	!See([ENEMY])
 	!StateCheck(Player1,STATE_SLEEPING)

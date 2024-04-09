@@ -1,8 +1,3 @@
-APPEND ~AERIEJ~
-
-IF ~~ THEN BEGIN TS219
-  SAY ~How... how romantic...~
-  IF ~~ THEN EXTERN ~NAJOKI~ 7
-END
-
-END
+CHAIN AERIEJ TS219
+~How... how romantic...~
+EXTERN ~NAJOKI~ 7

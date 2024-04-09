@@ -45,7 +45,7 @@ IF ~~ THEN BEGIN Kelem3
   SAY ~(Sadly) You need me... even now when it was that you required my help and I failed  you? Well... you have asked me, so I will come with you.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -65,7 +65,7 @@ IF ~~ THEN BEGIN Kelem4
   SAY ~(Lowering his eyes) I do not want... I do not want to have to watch and see you love another. It is too cruel so under other circumstances I would bid you fare thee well, but I do not want... I do not want to leave you without my help. Let's go my lady.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -85,7 +85,7 @@ IF ~~ THEN BEGIN Kelem5
   SAY ~(Claps his forehead in vexation) Kelemvor... I should have known! All right, my lady, I will return with you and from henceforth I promise to be wiser.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -110,7 +110,7 @@ IF ~~ THEN BEGIN Kelem7
   SAY ~That matters not. I am guilty but next time I will be wise.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0

@@ -34,12 +34,12 @@ IF
 	GlobalTimerExpired("VP_Sharteel_Dar","GLOBAL")
 	Global("VP_STB_Dar","LOCALS",4)
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_STB_Dar","LOCALS",5)
-		Interact("Dar")
+		Interact("njdar")
 END

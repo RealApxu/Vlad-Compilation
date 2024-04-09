@@ -101,23 +101,23 @@ CHAIN
 IF ~Global("VP_STB_Melora","LOCALS",2)~ THEN BSHART STB_Melora
 ~You're not half bad with that blade of yours thief. A big improvement on that other milksop of a wimp I've had to put up with. The gods only know why in the nine hells <CHARNAME> suffered her simpering face for this long.~
 DO ~SetGlobal("VP_STB_Melora","LOCALS",3)~
-== BMELORA ~Imoen isn't it? Strange that... everyone else keeps saying how brave she is. I haven't heard one bad word against her... until now.~
+== NJMELB ~Imoen isn't it? Strange that... everyone else keeps saying how brave she is. I haven't heard one bad word against her... until now.~
 = ~Stranger still that the sorcerer thought her important enough to ensure she was taken along with himself... even more important then even <CHARNAME>... any ideas why?~
 == BSHART ~Hey, when the gods answer your prayers, you don't turn around and ask why! Good riddance to the snooty bitch is what I say.~
-== BMELORA ~Oh now come on... surely even you can show some compassion for the unfortunate girl? The sorcerer has already tortured her relentlessly, she must be scared out of her wits to find herself at his mercy once again.~
+== NJMELB ~Oh now come on... surely even you can show some compassion for the unfortunate girl? The sorcerer has already tortured her relentlessly, she must be scared out of her wits to find herself at his mercy once again.~
 == BSHART ~(*Scoffs*) Compassion, for a little sneak thief whose idea of fighting is a quick stab in the back and then to run away and hide. Often as not leaving us to finish the poor bastard off... she seldom managed a clean kill! I have only contempt for her kind!~
-== BMELORA ~That is so typical of those with brawn and no brain! Just as the world has many races, so are its people born with different abilities.~
+== NJMELB ~That is so typical of those with brawn and no brain! Just as the world has many races, so are its people born with different abilities.~
 = ~The tall and strong find it easy to wield weapons... my kind are born with nimbleness of both mind and body... and if were not for the dexterity of the one you deride, you may well be still rotting in a cell!~
 = ~We are all gifted differently, but that is no reason to deride those not like yourself!~
 == BSHART ~(*Sneers*) My... quite the little people lover aren't we! Tell me Melora, what of the one who uses his gifts to wield magic, what of the wizard Melora... is he also included in your warm and fuzzy we must love all people philosophy?~
-== BMELORA ~(*Looking coldly at Shar-Teel*) Don't even go there Shar-Teel, that is personal and none of your damn business!~
+== NJMELB ~(*Looking coldly at Shar-Teel*) Don't even go there Shar-Teel, that is personal and none of your damn business!~
 = ~I know about the foul arts of magic and of those who wield them, so I can empathise with Imoen's friends... understand how they fear for her and the fate which has befallen her.~
 = ~Yet you... you who fought beside her gloat at her misfortune as though the gods themselves had done this in answer to your plea. You are as cold as the steel in that blade you carry!~
 == BSHART ~I tell it like it is and if you don't like it then don't listen... simple as that. Better still, reserve your judgment until after you meet the little snotling... that is providing we rescue her before Irenicus finishes what he started and leaves us nothing to rescue!~
-== BMELORA ~You'd better watch your mouth... There's those here who, hearing you talk like that, would be only to happy to shut it for you. Have a care Shar-Teel!~
+== NJMELB ~You'd better watch your mouth... There's those here who, hearing you talk like that, would be only to happy to shut it for you. Have a care Shar-Teel!~
 == BSHART ~Do I look worried? Believe me, many have tried and many have fallen because they objected to my... shall we say, plain speaking! As for you... you stunted half breed, what are you going to do... run and tell them what the big bad Shar-Teel said about their darling Imoen?~
 = ~I never back away from the chance to get in some more killing. So please, do me a favour and go tell them.~
-== BMELORA ~(*Pulling herself up to her full height and glaring at the fighter*) I'm not intimidated by you, I've knocked down bigger and better than you... you foul mouthed harpy!~
+== NJMELB ~(*Pulling herself up to her full height and glaring at the fighter*) I'm not intimidated by you, I've knocked down bigger and better than you... you foul mouthed harpy!~
 = ~You're the pits you really are and I am sickened to find myself in cahoots with such evil. I've no need to tell tales, you'll drop yourself in it sooner or later... your kind always do.~
 = ~(*She begins to walk away, but then she turns and looks squarely at Shar-Teel*)... Be wary of the shadows, you never can be sure of what lurks just out of sight!~
 EXIT

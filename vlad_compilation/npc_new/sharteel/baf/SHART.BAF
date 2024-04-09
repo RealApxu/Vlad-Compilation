@@ -37,8 +37,8 @@ END
 
 IF
 	Global("VP_Create_Dar","GLOBAL",7)
-	InParty("Dar")
-	See("Dar")
+	InParty("njdar")
+	See("njdar")
 	Global("VP_SharT_VsDar","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -57,8 +57,8 @@ END
 
 IF
 	Global("VP_Create_Dar","GLOBAL",7)
-	InParty("Dar")
-	See("Dar")
+	InParty("njdar")
+	See("njdar")
 	Global("VP_SharT_VsDar","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -98,8 +98,8 @@ END
 //Banter 2 - Day 3 (Dar)
 IF
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	Global("VP_STB_Dar","LOCALS",0)
 	Global("VP_Start_Banters","GLOBAL",1)
 THEN
@@ -111,17 +111,17 @@ END
 IF
 	GlobalTimerExpired("VP_Sharteel_Dar","GLOBAL")
 	InParty(Myself)
-	InParty("Dar")
-	See("Dar")
-	!Dead("Dar")
-	!StateCheck("Dar",STATE_SLEEPING)
+	InParty("njdar")
+	See("njdar")
+	!Dead("njdar")
+	!StateCheck("njdar",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_STB_Dar","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_STB_Dar","LOCALS",2)
-		Interact("Dar")
+		Interact("njdar")
 END
 
 //Banter 3 - Day 5, on rest (Imoen)
@@ -228,8 +228,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Hrothgar")
-	!Dead("Hrothgar")
+	InParty("njhroth")
+	!Dead("njhroth")
 	Global("VP_STB_Hrothgar","LOCALS",0)
 	Global("VP_Start_Banters","GLOBAL",1)
 THEN
@@ -241,17 +241,17 @@ END
 IF
 	GlobalTimerExpired("VP_Sharteel_Hrothgar","GLOBAL")
 	InParty(Myself)
-	InParty("Hrothgar")
-	See("Hrothgar")
-	!Dead("Hrothgar")
-	!StateCheck("Hrothgar",STATE_SLEEPING)
+	InParty("njhroth")
+	See("njhroth")
+	!Dead("njhroth")
+	!StateCheck("njhroth",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_STB_Hrothgar","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_STB_Hrothgar","LOCALS",2)
-		Interact("Hrothgar")
+		Interact("njhroth")
 END
 
 IF
@@ -349,8 +349,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Melora")
-	!Dead("Melora")
+	InParty("njmelora")
+	!Dead("njmelora")
 	Global("VP_STB_Melora","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -361,17 +361,17 @@ END
 IF
 	GlobalTimerExpired("VP_Sharteel_Melora","GLOBAL")
 	InParty(Myself)
-	InParty("Melora")
-	See("Melora")
-	!Dead("Melora")
-	!StateCheck("Melora",STATE_SLEEPING)
+	InParty("njmelora")
+	See("njmelora")
+	!Dead("njmelora")
+	!StateCheck("njmelora",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_STB_Melora","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_STB_Melora","LOCALS",2)
-		Interact("Melora")
+		Interact("njmelora")
 END
 
 IF
@@ -401,7 +401,7 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Leina")
+	InParty("vpleina")
 	Global("VP_SharTeel_Leina","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -413,21 +413,21 @@ IF
 	GlobalTimerExpired("VP_ShT_Leina_Timer","GLOBAL")
 	Global("VP_SharTeel_Leina","LOCALS",1)
 	InParty(Myself)
-	InParty("Leina")
-	See("Leina")
-	!Dead("Leina")
-	!StateCheck("Leina",STATE_SLEEPING)
+	InParty("vpleina")
+	See("vpleina")
+	!Dead("vpleina")
+	!StateCheck("vpleina",STATE_SLEEPING)
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_SharTeel_Leina","LOCALS",2)
-		Interact("Leina")
+		Interact("vpleina")
 END
 
 IF
 	InParty(Myself)
-	InParty("Taffic")
+	InParty("njtaffic")
 	Global("VP_SharTeel_Taffic","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -439,38 +439,38 @@ IF
 	GlobalTimerExpired("VP_ShT_Taff_Timer","GLOBAL")
 	Global("VP_SharTeel_Taffic","LOCALS",1)
 	InParty(Myself)
-	InParty("Taffic")
-	See("Taffic")
-	!Dead("Taffic")
-	!StateCheck("Taffic",STATE_SLEEPING)
+	InParty("njtaffic")
+	See("njtaffic")
+	!Dead("njtaffic")
+	!StateCheck("njtaffic",STATE_SLEEPING)
 	CombatCounter(0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_SharTeel_Taffic","LOCALS",2)
-		Interact("Taffic")
+		Interact("njtaffic")
 END
 
 IF
 	Global("VP_Meeting_Xan","GLOBAL",1)
 	InParty(Myself)
-	InParty("Hrothgar")
-	See("Hrothgar")
-	!Dead("Hrothgar")
-	!StateCheck("Hrothgar",STATE_SLEEPING)
+	InParty("njhroth")
+	See("njhroth")
+	!Dead("njhroth")
+	!StateCheck("njhroth",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_In_Halruaa_Talk","LOCALS",0)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_In_Halruaa_Talk","LOCALS",1)
-		Interact("Hrothgar")
+		Interact("njhroth")
 END
 
 IF
 	InParty(Myself)
-	InParty("Dar")
-	!Dead("Dar")
+	InParty("njdar")
+	!Dead("njdar")
 	Global("VP_STB_Dar","LOCALS",3)
 THEN
 	RESPONSE #100

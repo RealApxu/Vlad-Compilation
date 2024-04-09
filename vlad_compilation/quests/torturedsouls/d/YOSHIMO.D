@@ -1,10 +1,10 @@
 REPLACE_STATE_TRIGGER YOSHIMO 14
 
-~Global("MetYoshimo","GLOBAL",1) !InParty("Kachiko") !See("Kachiko")~
+~Global("MetYoshimo","GLOBAL",1) !InParty("vpkachi") !See("vpkachi")~
 
 REPLACE_STATE_TRIGGER YOSHIMO 21
 
-~Global("DishonorYoshimo","GLOBAL",1) !InParty("Kachiko") !See("Kachiko")~
+~Global("DishonorYoshimo","GLOBAL",1) !InParty("vpkachi") !See("vpkachi")~
 
 APPEND ~YOSHIMO~
 
@@ -41,7 +41,7 @@ END
 
 IF ~~ THEN BEGIN TS59
   SAY ~<CHARNAME>, what are you doing? I�m not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-  IF ~~ THEN DO ~ActionOverride("Kachiko",LeaveParty()) ActionOverride("Kachiko",Enemy()) Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",Enemy()) Enemy()~ EXIT
 END
 
 IF WEIGHT #-1 ~AreaCheck("AR0313") Global("VP_OnIsland","GLOBAL",0) GlobalLT("Chapter","GLOBAL",4)~ THEN BEGIN TS8

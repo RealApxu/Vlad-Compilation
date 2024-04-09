@@ -56,7 +56,7 @@ IF ~~ THEN BEGIN Kelem3
   SAY ~You do not blame me? I was afraid to ask Shar for aid, but you know how much I... I respect Keldorn. I... let's go, maybe I can help him yet.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
 END
 

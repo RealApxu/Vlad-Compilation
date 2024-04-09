@@ -5,32 +5,32 @@ END
 EXTEND_BOTTOM FINSOL01 27
 //IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
 //IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
   IF ~InParty("Sime") Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,MALE)~ THEN EXTERN ~SIMEJ~ TSTOB7
   IF ~InParty("Sime") OR(2) !Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,FEMALE)~ THEN EXTERN ~SIMEJ~ TSTOB6
-  IF ~InParty("Leina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ TSTOB7
-  IF ~InParty("Leina") Gender(Player1,FEMALE)~ THEN EXTERN ~LEINAJ~ TSTOB6
+  IF ~InParty("vpleina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ TSTOB7
+  IF ~InParty("vpleina") Gender(Player1,FEMALE)~ THEN EXTERN VPLEIJ TSTOB6
 END
 
 EXTEND_BOTTOM FINSOL01 29
   IF ~InParty("Sime") Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,MALE)~ THEN EXTERN ~SIMEJ~ TSTOB8
-  IF ~InParty("Leina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ TSTOB8
+  IF ~InParty("vpleina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ TSTOB8
 END
 
 EXTEND_BOTTOM FINSOL01 30
   IF ~InParty("Sime") Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,MALE)~ THEN EXTERN ~SIMEJ~ TSTOB8
-  IF ~InParty("Leina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ TSTOB8
+  IF ~InParty("vpleina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ TSTOB8
 END
 
 EXTEND_BOTTOM FINSOL01 31
   IF ~InParty("Sime") Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,MALE)~ THEN EXTERN ~SIMEJ~ TSTOB8
-  IF ~InParty("Leina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ TSTOB8
+  IF ~InParty("vpleina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ TSTOB8
 END
 
 EXTEND_BOTTOM FINSOL01 32
   IF ~InParty("Sime") Global("SimeRomanceActive","GLOBAL",2) Gender(Player1,MALE)~ THEN EXTERN ~SIMEJ~ TSTOB9
-  IF ~InParty("Leina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN ~LEINAJ~ TSTOB9
+  IF ~InParty("vpleina") Gender(Player1,MALE) Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ TSTOB9
 END
 
 APPEND ~FINSOL01~

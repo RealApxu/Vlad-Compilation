@@ -718,7 +718,7 @@ IF ~~ THEN BEGIN 114
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
   IF ~InParty("Cernd")~ THEN EXTERN ~BIMOEN2~ 15
@@ -739,7 +739,7 @@ IF ~~ THEN BEGIN 115
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
   IF ~InParty("Cernd")~ THEN EXTERN ~BIMOEN2~ 15
@@ -759,7 +759,7 @@ IF ~~ THEN BEGIN 116
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
   IF ~InParty("Cernd")~ THEN EXTERN ~BIMOEN2~ 15
@@ -783,7 +783,7 @@ IF ~~ THEN BEGIN 118
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
   IF ~InParty("Cernd")~ THEN EXTERN ~BIMOEN2~ 15
@@ -800,7 +800,7 @@ IF ~~ THEN BEGIN 119
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
   IF ~InParty("Cernd")~ THEN EXTERN ~BIMOEN2~ 15
@@ -816,7 +816,7 @@ IF ~~ THEN BEGIN 120
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
   IF ~InParty("Jan")~ THEN EXTERN ~BIMOEN2~ 16
 END
@@ -831,7 +831,7 @@ IF ~~ THEN BEGIN 121
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
   IF ~InParty("Yoshimo")~ THEN EXTERN ~BIMOEN2~ 17
 END
 
@@ -845,7 +845,7 @@ IF ~~ THEN BEGIN 122
   IF ~InParty("Mazzy")~ THEN EXTERN ~BIMOEN2~ 21
   IF ~InParty("Keldorn")~ THEN EXTERN ~BIMOEN2~ 20
   IF ~InParty("Nalia")~ THEN EXTERN ~BIMOEN2~ 19
-  IF ~InParty("Kachiko")~ THEN EXTERN ~BIMOEN2~ 18
+  IF ~InParty("vpkachi")~ THEN EXTERN ~BIMOEN2~ 18
 END
 
 IF ~~ THEN BEGIN 123

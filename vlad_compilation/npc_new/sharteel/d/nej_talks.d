@@ -192,8 +192,8 @@ CHAIN VPSHAJ halruaa3
 = ~If he tells us then we can high tail it back to this Tilorn with our wondrous news, and if he doesn't... well, we couldn't leave him alive now could we?~
 = ~(*Her eyes glaze over slightly, and take on a thousand mile stare, a slight smile of anticipation crosses her lips*) Come to think of it, we couldn't leave him alive if he did talk. Or...~
 = ~Second, we stop trying to see past the magic and blow up the academy along with every last one of its bloody conspirators. Ulcaster is triumphant, Tilorn's happy and we get to go home. Now that idea I like!~
-== NJMELJ IF ~InParty("Melora") !Dead("Melora")~ THEN ~(*Her little eyes light up*) Sounds good to me. The only good magic academy is a razed magic academy!~
-== VPSHAJ IF ~InParty("Melora") !Dead("Melora")~ THEN ~So <CHARNAME>, sounds good?~
+== NJMELJ IF ~InParty("njmelora") !Dead("njmelora")~ THEN ~(*Her little eyes light up*) Sounds good to me. The only good magic academy is a razed magic academy!~
+== VPSHAJ IF ~InParty("njmelora") !Dead("njmelora")~ THEN ~So <CHARNAME>, sounds good?~
 END
  ++ ~As appealing as it is, we'd have to take the academy in one fell swoop and we don't have enough fire power to do that. As for confronting a senior mage, he'd chew us up and spit us out in bubbles before we got near him. Bad ideas both of them.~ EXTERN VPSHAJ halruaa4
  ++ ~You really are insane girl! Take on a senior mage, raze the academy! Can't you feel the power pulsing through this place? it would become a hundred fold stronger should we raise arms against it! Bad plan Shar-Teel, very bad plan!~ EXTERN VPSHAJ halruaa4
@@ -243,8 +243,8 @@ CHAIN VPSHAJ halruaa0
 ~(*Gruffly*) In the meantime we do what? Sit and knit hose for the poor? These wizards aren't going to give themselves away, at least, not before we have made ourselves enough hose to cover the feet of everyone this side of Faerun.~
 = ~I say we grab one of those high and mighty wizards and make him talk, or we simply blow up the academy along with every last one of its bloody conspirators!~
 = ~Ulcaster is triumphant, Tilorn's happy and we get to go home. Now that idea I like!~
-== NJMELJ IF ~InParty("Melora") !Dead("Melora")~ THEN ~(*Her little eyes light up*) Sounds good to me. The only good magic academy is a razed magic academy!~
-== VPSHAJ IF ~InParty("Melora") !Dead("Melora")~ THEN ~So <CHARNAME>, sounds good?~
+== NJMELJ IF ~InParty("njmelora") !Dead("njmelora")~ THEN ~(*Her little eyes light up*) Sounds good to me. The only good magic academy is a razed magic academy!~
+== VPSHAJ IF ~InParty("njmelora") !Dead("njmelora")~ THEN ~So <CHARNAME>, sounds good?~
 END
  ++ ~As appealing as it is, we'd have to take the academy in one fell swoop and we don't have enough fire power to do that. As for confronting a senior mage, he'd chew us up and spit us out in bubbles before we got near him. Bad ideas both of them.~ EXTERN VPSHAJ halruaa4
  ++ ~You really are insane girl! Take on a senior mage, raze the academy! Can't you feel the power pulsing through this place? it would become a hundred fold stronger should we raise arms against it! Bad plan Shar-Teel, very bad plan!~ EXTERN VPSHAJ halruaa4

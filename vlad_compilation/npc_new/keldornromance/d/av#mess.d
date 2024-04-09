@@ -1,11 +1,11 @@
-BEGIN ~AV#MESS~
+BEGIN AV#MESS
 
-IF ~Global("VP_Talk_To_Keldorn","LOCALS",1)~ THEN BEGIN AV#MESS1
-  SAY ~Sir Keldorn Firecam! Is there a sir Keldorn here?~
-  IF ~~ THEN DO ~SetGlobal("VP_Talk_To_Keldorn","LOCALS",2)~ EXTERN ~KELDORJ~ AV#KR90a
-END
+CHAIN
+IF ~Global("VP_Talk_To_Keldorn","LOCALS",1)~ THEN AV#MESS AV#MESS1
+~Sir Keldorn Firecam! Is there a sir Keldorn here?~
+DO ~SetGlobal("VP_Talk_To_Keldorn","LOCALS",2)~
+EXTERN KELDORJ AV#KR90a
 
-IF ~~ THEN BEGIN AV#MESS2
-  SAY ~Here's a letter from your wife, sir.~
-  IF ~~ THEN EXTERN ~KELDORJ~ AV#KR90b
-END
+CHAIN AV#MESS AV#MESS2
+~Here's a letter from your wife, sir.~
+EXTERN KELDORJ AV#KR90b

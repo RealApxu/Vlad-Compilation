@@ -31,7 +31,7 @@ THEN
 END
 
 IF
-  InParty("Kachiko")  // Kachiko
+  InParty("vpkachi")  // Kachiko
   !InParty(Myself)
   Global("VP_JoinYoshimo","GLOBAL",1)
 THEN
@@ -43,8 +43,8 @@ END
 
 IF
   !InParty(Myself)
-  InParty("Kachiko")  // Kachiko
-  See("Kachiko")  // Kachiko
+  InParty("vpkachi")  // Kachiko
+  See("vpkachi")  // Kachiko
   GlobalGT("VP_YoshimoSearch","GLOBAL",0)
   GlobalLT("VP_YoshimoSearch","GLOBAL",4)
   Global("VP_YoshimoIsFound","GLOBAL",0)
@@ -58,26 +58,26 @@ END
 
 IF
   InParty(Myself)
-  InParty("Kachiko")  // Kachiko
-  HPPercentLT("Kachiko",20)  // Kachiko
-  !Dead("Kachiko")  // Kachiko
+  InParty("vpkachi")  // Kachiko
+  HPPercentLT("vpkachi",20)  // Kachiko
+  !Dead("vpkachi")  // Kachiko
   !CombatCounter(0)
-  Exists(LastAttackerOf("Kachiko"))  // Kachiko
-  Allegiance(LastAttackerOf("Kachiko"),ENEMY)  // Kachiko
+  Exists(LastAttackerOf("vpkachi"))  // Kachiko
+  Allegiance(LastAttackerOf("vpkachi"),ENEMY)  // Kachiko
   Global("VP_Kachiko_Dies","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("VP_Kachiko_Dies","GLOBAL",1)
     EquipMostDamagingMelee()
-    DisplayStringHead(Myself,~Kachiko, don’t give up, I will help you!~)  // ~Kachiko, don’t give up, I will help you!~
-    MoveToObjectNoInterrupt(LastAttackerOf("Kachiko"))
-    AttackReevaluate(LastAttackerOf("Kachiko"),75)
+    DisplayStringHead(Myself,~Kachiko, donï¿½t give up, I will help you!~)  // ~Kachiko, donï¿½t give up, I will help you!~
+    MoveToObjectNoInterrupt(LastAttackerOf("vpkachi"))
+    AttackReevaluate(LastAttackerOf("vpkachi"),75)
     Continue()
 END
 
 IF
   InParty(Myself)
-  Dead("Kachiko")  // Kachiko
+  Dead("vpkachi")  // Kachiko
   CombatCounter(0)
   Global("VP_Kachiko_Is_Dead","GLOBAL",0)
 THEN
@@ -100,8 +100,8 @@ END
 
 IF
   InParty(Myself)
-  InParty("Kachiko")  // Kachiko
-  !Dead("Kachiko")  // Kachiko
+  InParty("vpkachi")  // Kachiko
+  !Dead("vpkachi")  // Kachiko
   Global("VP_Kachiko_Dies","GLOBAL",1)
   CombatCounter(0)
 THEN
@@ -110,7 +110,7 @@ THEN
 END
 
 IF
-  InParty("Kachiko")  // Kachiko
+  InParty("vpkachi")  // Kachiko
   !InParty(Myself)
   Global("VP_JoinYoshimo","GLOBAL",1)
 THEN
@@ -259,7 +259,7 @@ END
 
 IF
   InParty(Myself)
-  InParty("Dar")
+  InParty("njdar")
   Global("VP_Yoshi_Dar_Talk","LOCALS",0)
 THEN
   RESPONSE #100
@@ -270,21 +270,21 @@ END
 IF
   InParty(Myself)
   RealGlobalTimerExpired("VP_Yoshi_Dar_Timer","GLOBAL")
-  InParty("Dar")
-  See("Dar")
-  !Dead("Dar")
-  !StateCheck("Dar",STATE_SLEEPING)
+  InParty("njdar")
+  See("njdar")
+  !Dead("njdar")
+  !StateCheck("njdar",STATE_SLEEPING)
   CombatCounter(0)
   Global("VP_Yoshi_Dar_Talk","LOCALS",1)
 THEN
   RESPONSE #100
 		SetGlobal("VP_Yoshi_Dar_Talk","LOCALS",2)
-    	Interact("Dar")
+    	Interact("njdar")
 END
 
 IF
   InParty(Myself)
-  InParty("Hrothgar")
+  InParty("njhroth")
   Global("VP_Yoshi_InHalruaa","LOCALS",0)
   Global("VP_InHalruaa","GLOBAL",1)
 THEN
@@ -299,16 +299,16 @@ IF
   OR(2)
   	!Global("VP_InHalruaa","GLOBAL",0)
   	!Global("VP_In_Halruaa","GLOBAL",0)
-  InParty("Hrothgar")
-  See("Hrothgar")
-  !Dead("Hrothgar")
-  !StateCheck("Hrothgar",STATE_SLEEPING)
+  InParty("njhroth")
+  See("njhroth")
+  !Dead("njhroth")
+  !StateCheck("njhroth",STATE_SLEEPING)
   CombatCounter(0)
   Global("VP_Yoshi_InHalruaa","LOCALS",1)
 THEN
   RESPONSE #100
 		SetGlobal("VP_Yoshi_InHalruaa","LOCALS",2)
-    	Interact("Hrothgar")
+    	Interact("njhroth")
 END
 
 IF

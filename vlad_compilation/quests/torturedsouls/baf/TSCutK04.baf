@@ -2,7 +2,7 @@ IF
 	True()
 THEN
 	RESPONSE #100
-		CutSceneId("Kachiko")
+		CutSceneId("vpkachi")
 		AddXPObject(Myself,200000)
 		ForceSpell(Myself,HELL_GAIN_WIS)
 		ForceSpell(Myself,HELL_GAIN_WIS)

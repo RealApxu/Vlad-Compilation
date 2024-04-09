@@ -14,7 +14,7 @@ THEN
 		SetGlobal("VP_Govan_Bribes_Me","GLOBAL",4)
 		ActionOverride("Vulova",DestroySelf())
 		CreateCreature("Govan3",[694.570],10)
-		MoveGlobal("AR1007","Leina",[625.610])
+		MoveGlobal("AR1007","vpleina",[625.610])
 		CreateCreature("GovBud",[254.580],10)
 		CreateCreature("GovDude",[693.186],0)
 		Continue()

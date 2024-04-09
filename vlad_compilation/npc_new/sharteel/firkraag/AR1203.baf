@@ -35,13 +35,13 @@ IF
 		!InMyArea("Sharteel")  // Shar-Teel
 		Dead("Sharteel")  // Shar-Teel
 	OR(2)
-		InParty("Leina")  // Leina
-		InMyArea("Leina")  // Leina
-	!Dead("Leina")  // Leina
+		InParty("vpleina")  // Leina
+		InMyArea("vpleina")  // Leina
+	!Dead("vpleina")  // Leina
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Firkrag_Is_Dead","GLOBAL",1)
-		ActionOverride("Leina",StartDialogNoSet([PC]))
+		ActionOverride("vpleina",StartDialogNoSet([PC]))
 END
 
 IF

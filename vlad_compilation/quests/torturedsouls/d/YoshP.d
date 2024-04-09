@@ -1,8 +1,8 @@
-REPLACE_STATE_TRIGGER YOSHP 0 ~Global("Kicked_Out","LOCALS",1) Global("VP_OnIsland","GLOBAL",0) !InParty("Kachiko") !See("Kachiko")~
+REPLACE_STATE_TRIGGER YOSHP 0 ~Global("Kicked_Out","LOCALS",1) Global("VP_OnIsland","GLOBAL",0) !InParty("vpkachi") !See("vpkachi")~
 
-REPLACE_STATE_TRIGGER YOSHP 3 ~HappinessLT(Myself,-290) !InParty("Kachiko") Global("VP_OnIsland","GLOBAL",0)~
+REPLACE_STATE_TRIGGER YOSHP 3 ~HappinessLT(Myself,-290) !InParty("vpkachi") Global("VP_OnIsland","GLOBAL",0)~
 
-REPLACE_STATE_TRIGGER YOSHP 4 ~Global("Kicked_Out","LOCALS",0) Global("VP_OnIsland","GLOBAL",0) !InParty("Kachiko")~
+REPLACE_STATE_TRIGGER YOSHP 4 ~Global("Kicked_Out","LOCALS",0) Global("VP_OnIsland","GLOBAL",0) !InParty("vpkachi")~
 
 REPLACE_ACTION_TEXT yoshp
 ~SetGlobal("KickedOut","LOCALS",1)[^!]*EscapeAreaMove("AR0406",1368,1922,0)~
@@ -41,7 +41,7 @@ END
 
 IF ~~ THEN BEGIN TS18
   SAY ~<CHARNAME>, perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life. Thank you for being so understanding. Kachiko and I will be in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur. Look us up if you require any assistance.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",ChangeAIScript("",DEFAULT)) ActionOverride("Kachiko",SetLeavePartyDialogFile()) ActionOverride("Kachiko",LeaveParty()) ActionOverride("Kachiko",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",ChangeAIScript("",DEFAULT)) ActionOverride("vpkachi",SetLeavePartyDialogFile()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS19
@@ -51,18 +51,18 @@ END
 
 IF ~~ THEN BEGIN TS20
   SAY ~<CHARNAME>, what are you doing? I'm not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-  IF ~~ THEN DO ~ActionOverride("Kachiko",LeaveParty()) ActionOverride("Kachiko",Enemy()) Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",Enemy()) Enemy()~ EXIT
 END
 
 // Parting ways
 
-IF WEIGHT #7 ~Global("Kicked_Out","LOCALS",0) Global("VP_OnIsland","GLOBAL",0) InParty("Kachiko")~ THEN BEGIN TS7
+IF WEIGHT #7 ~Global("Kicked_Out","LOCALS",0) Global("VP_OnIsland","GLOBAL",0) InParty("vpkachi")~ THEN BEGIN TS7
   SAY ~I do not wish to end our pairing before our tasks are done, but perhaps a rest is in order.  Are you sure you want to go seperate paths?~ [YOSHIM65]
   IF ~~ THEN REPLY ~We don't need your services right now. Sorry Yoshimo.~ GOTO TS12
   IF ~~ THEN REPLY ~No, I don't want you to leave just yet, Yoshimo.~ DO ~JoinParty()~ EXIT
 END
 
-IF WEIGHT #6 ~Global("Kicked_Out","LOCALS",1) !InParty("Kachiko") See("Kachiko") Global("VP_OnIsland","GLOBAL",0) GlobalLT("Chapter","GLOBAL",4)~ THEN BEGIN TS8
+IF WEIGHT #6 ~Global("Kicked_Out","LOCALS",1) !InParty("vpkachi") See("vpkachi") Global("VP_OnIsland","GLOBAL",0) GlobalLT("Chapter","GLOBAL",4)~ THEN BEGIN TS8
   SAY ~Heya, <CHARNAME> how are you?~
   IF ~AreaCheck("AR0313")~ THEN REPLY ~I am well, thank you. Did you manage to find a ship?~ GOTO TS9
   IF ~~ THEN REPLY ~Actually things have been pretty rough. Yoshimo, do you have time to help me out?~ GOTO TS10
@@ -84,8 +84,8 @@ END
 
 IF WEIGHT #5 ~Global("Kicked_Out","LOCALS",0) Global("VP_OnIsland","GLOBAL",1)~ THEN BEGIN TS11
   SAY ~<CHARNAME>, are you serious? You want to leave me when I really need your help?~
-  IF ~!InParty("Kachiko")~ THEN REPLY ~Yes, Yoshimo. I am tired of all these complications with your crazy families. Look for somebody else to help you. I need to save Imoen.~ GOTO TS21
-  IF ~InParty("Kachiko")~ THEN REPLY ~Yes, Yoshimo. I am tired of all these complications with your crazy families. Look for somebody else to help you. I need to save Imoen.~ GOTO partway1
+  IF ~!InParty("vpkachi")~ THEN REPLY ~Yes, Yoshimo. I am tired of all these complications with your crazy families. Look for somebody else to help you. I need to save Imoen.~ GOTO TS21
+  IF ~InParty("vpkachi")~ THEN REPLY ~Yes, Yoshimo. I am tired of all these complications with your crazy families. Look for somebody else to help you. I need to save Imoen.~ GOTO partway1
   IF ~~ THEN REPLY ~Sorry, Yoshimo. I've just pressed the wrong button.~ GOTO TS22
 END
 
@@ -116,7 +116,7 @@ IF ~~ THEN BEGIN TS22
   IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0) JoinParty()~ EXIT
 END
 
-IF WEIGHT #4 ~Global("Kicked_Out","LOCALS",1) Global("VP_OnIsland","GLOBAL",1) !InParty("Kachiko")~ THEN BEGIN TS23
+IF WEIGHT #4 ~Global("Kicked_Out","LOCALS",1) Global("VP_OnIsland","GLOBAL",1) !InParty("vpkachi")~ THEN BEGIN TS23
   SAY ~<CHARNAME>, how are you? I see you didn't leave the island yet. So, could I beg your assisstance once again? Kachiko is dying... Please, join me to save her.~
   IF ~~ THEN REPLY ~Of course.~ GOTO TS24
   IF ~~ THEN REPLY ~No, not just yet.~ GOTO 2
@@ -129,7 +129,7 @@ END
 
 IF ~~ THEN BEGIN TS25
   SAY ~Oh, well that's okay, then.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0) ActionOverride("Kachiko",JoinParty()) JoinParty()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",0) ActionOverride("vpkachi",JoinParty()) JoinParty()~ EXIT
 END
 
 END

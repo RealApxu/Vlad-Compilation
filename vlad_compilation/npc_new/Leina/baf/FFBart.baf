@@ -12,8 +12,8 @@ THEN
 END
 
 IF
-	InParty("Leina")
-	See("Leina")
+	InParty("vpleina")
+	See("vpleina")
 	Global("VP_MyQuest_Is_Over","LOCALS",0)
 	OR(2)
 		Global("VP_ResqueLeina","GLOBAL",16)
@@ -25,8 +25,8 @@ THEN
 END
 
 IF
-	InParty("Leina")
-	See("Leina")
+	InParty("vpleina")
+	See("vpleina")
 	Global("VP_MyLastTalk","LOCALS",0)
 	OR(3)
 		GlobalGT("VP_Leina_Samuel","GLOBAL",0)
@@ -36,7 +36,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("VP_MyLastTalk","LOCALS",1)
 		SetGlobal("VP_Leina_Samuel","GLOBAL",7)
-		StartDialogueNoSet("Leina")
+		StartDialogueNoSet("vpleina")
 END
 
 IF

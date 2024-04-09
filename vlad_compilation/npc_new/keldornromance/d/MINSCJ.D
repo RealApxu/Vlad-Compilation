@@ -18,7 +18,7 @@ IF ~~ THEN BEGIN Kelem1
   SAY ~Ha-ha! You have also become berserk, like Minsc? Well-well... that's all right, Minsc and Boo are ready to rejoin you!~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0

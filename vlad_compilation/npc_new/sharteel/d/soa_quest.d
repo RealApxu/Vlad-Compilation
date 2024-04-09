@@ -175,8 +175,8 @@ CHAIN MINSCJ vpSharteelQuestVaelasa6
 ~That can not be so Melora. Minsc always thinks with his mind, sometimes he thinks so hard all the thinking gives him big headaches. Ask Boo, he knows how much Minsc's head hurts sometimes. Right Boo?~ [BOONEJ1]
 END
  IF ~True()~ THEN EXTERN NJMELJ vpSharteelQuestVaelasa9
- IF ~InParty("Hrothgar") !Dead("Hrothgar")~ THEN EXTERN ~HROTHJ~ vpSharteelQuestVaelasa8
- IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ vpSharteelQuestVaelasa7
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ vpSharteelQuestVaelasa8
+ IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ vpSharteelQuestVaelasa7
 
 CHAIN VPLEIJ vpSharteelQuestVaelasa7
 ~I am sure Melora wasn't including you in her derision Minsc. A pretty face would not find it easy to sway our brave ranger's mind once he had it firmly set and nor could a pretty face that hides an evil heart ever fool his quick mind.~

@@ -1,6 +1,6 @@
 IF
-	InParty("Leina")
-	!Dead("Leina")
+	InParty("vpleina")
+	!Dead("vpleina")
 	See([PC])
 	Allegiance(Myself,NEUTRAL)
 	Global("VP_NumTimesTalked","LOCALS",0)

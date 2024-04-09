@@ -20,6 +20,6 @@ THEN
 		Wait(1)
 		CreateVisualEffect("SPFLESHS",[2565.1677])
 		Wait(1)
-		MoveGlobal("AR1401","Leina",[2565.1677])
+		MoveGlobal("AR1401","vpleina",[2565.1677])
 		SetInterrupt(TRUE)
 END

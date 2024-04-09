@@ -4,7 +4,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("Dead_Bodies","GLOBAL",3)
-		ActionOverride("Kachiko",StartDialogueNoSet(Player1))
+		ActionOverride("vpkachi",StartDialogueNoSet(Player1))
 END
 
 

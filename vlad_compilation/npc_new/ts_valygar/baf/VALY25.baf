@@ -322,8 +322,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	Global("ValygarMatch","GLOBAL",1)
 	Global("VP_BExpValygar8","LOCALS",0)
 THEN
@@ -336,23 +336,23 @@ IF
 	GlobalTimerExpired("VP_Valygar_Kachiko3","GLOBAL")
 	Global("VP_LoveTalkDelay","LOCALS",0)
 	InParty(Myself)
-	InParty("Kachiko")
-	See("Kachiko")
-	!Dead("Kachiko")
-	!StateCheck("Kachiko",STATE_SLEEPING)
+	InParty("vpkachi")
+	See("vpkachi")
+	!Dead("vpkachi")
+	!StateCheck("vpkachi",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BExpValygar8","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BExpValygar8","LOCALS",2)
-		Interact("Kachiko")
+		Interact("vpkachi")
 END
 
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	Global("ValygarMatch","GLOBAL",1)
 	Global("VP_BExpValygar9","LOCALS",0)
 THEN
@@ -365,17 +365,17 @@ IF
 	GlobalTimerExpired("VP_Valygar_Kachiko4","GLOBAL")
 	Global("VP_LoveTalkDelay","LOCALS",0)
 	InParty(Myself)
-	InParty("Kachiko")
-	See("Kachiko")
-	!Dead("Kachiko")
-	!StateCheck("Kachiko",STATE_SLEEPING)
+	InParty("vpkachi")
+	See("vpkachi")
+	!Dead("vpkachi")
+	!StateCheck("vpkachi",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BExpValygar9","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BExpValygar9","LOCALS",2)
-		Interact("Kachiko")
+		Interact("vpkachi")
 END
 
 IF

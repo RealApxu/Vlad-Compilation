@@ -1,42 +1,43 @@
-BEGIN ~SARBARD~
+BEGIN SARBARD
 
-IF ~Global("VP_Kr_Bard_Song","GLOBAL",1)~ THEN BEGIN 0
-  SAY ~Please, excuse me for my impudence, sir, but I see the embodiment of what a true knight should be in you. In my ballads, I always see a knight, such as yourself. Will you allow me to sing for you?~
-  IF ~~ THEN EXTERN ~KELDO25J~ BA0
-END
+CHAIN
+IF ~Global("VP_Kr_Bard_Song","GLOBAL",1)~ THEN SARBARD 0
+~Please, excuse me for my impudence, sir, but I see the embodiment of what a true knight should be in you. In my ballads, I always see a knight, such as yourself. Will you allow me to sing for you?~
+EXTERN KELDO25J BA0
 
-IF ~~ THEN BEGIN 1
-  SAY ~The sky is the stage, with a storm all around;
+
+CHAIN SARBARD 1
+~The sky is the stage, with a storm all around;
 The audience helplessly waits on the ground.
 
 The dragons above claim the sky as their own,
 And flame marks the path over which they have flown.~
-  = ~Then up from below comes a thunderous cry;
+= ~Then up from below comes a thunderous cry;
 The paladin airborne appears in the sky!
 
 Each knight on his pegasus, lances at hand;
 To battle they ride, in a glorious stand.~
-  = ~Mere words can't describe the magnificent fight,
+= ~Mere words can't describe the magnificent fight,
 As dragon and paladin battle this night.
 
 Raw courage and steel against talon and breath,
 As more than one hero earns honor in death.~
-  = ~The blood of both evil and good falls like rain,
+= ~The blood of both evil and good falls like rain,
 But when it is over, no dragons remain.
 
 Perhaps but a dream, or a vision, and yet,
 Those sharing this vision shall never forget.~
-  IF ~~ THEN EXTERN ~KELDO25J~ BA1
-END
+EXTERN KELDO25J BA1
 
-IF ~~ THEN BEGIN 2
-  SAY ~(Sadly) So this is true. This city is really doomed. My travels brought me here by chance. Is there really no hope for us to be saved, sir?~
-  IF ~~ THEN EXTERN ~KELDO25J~ BA2
-END
 
-IF ~~ THEN BEGIN 3
-  SAY ~(Falls to her knees and raises her hands up to you) Oh, lady, I will pray to lord Oghma for your success! Please, let me sing for you.~
-  = ~His mithril armor burnished bright,
+CHAIN SARBARD 2
+~(Sadly) So this is true. This city is really doomed. My travels brought me here by chance. Is there really no hope for us to be saved, sir?~
+EXTERN KELDO25J BA2
+
+
+CHAIN SARBARD 3
+~(Falls to her knees and raises her hands up to you) Oh, lady, I will pray to lord Oghma for your success! Please, let me sing for you.~
+= ~His mithril armor burnished bright,
 One gauntlet black, the other white.
 His helm alive with brilliant light,
 His longsword danced with flame.
@@ -45,7 +46,7 @@ This hero faced his greatest test;
 This battle would complete his quest.
 The shield he carried bore his crest;
 Sir Osis was his name.~
-  = ~For courage and for strength he prayed,
+= ~For courage and for strength he prayed,
 To Tyr, the god who he obeyed.
 His trust and faith would give him aid;
 He would not fight alone.
@@ -54,7 +55,7 @@ He would not fight alone.
 And leapt to battle for his lord.
 Opposing that unholy sword,
 He charged to match his own.~
-  = ~And locked in battle, toe to toe,
+= ~And locked in battle, toe to toe,
 He stood against his mortal foe,
 Exchanging blow for deadly blow,
 A small and savage war.
@@ -63,7 +64,7 @@ The damage done by each was vast;
 He knew his health was failing fast.
 The next exchange might be the last;
 He could not stand much more.~
-  = ~And yet he vowed he would not yield.
+= ~And yet he vowed he would not yield.
 He stood his ground, and raised his shield,
 To win or die upon this field;
 The fateful moment neared.
@@ -72,7 +73,7 @@ And in his rival, there was doubt.
 Afraid that he might lose this bout,
 The man of evil's nerve gave out;
 The coward disappeared.~
-  = ~His masquerade of honor gone,
+= ~His masquerade of honor gone,
 With craven guile, this evil spawn
 Did soon return, to battle on;
 Most foully did he fight.
@@ -81,7 +82,7 @@ But at our hero's side now stood
 The valiant Flaming Fools, who would,
 United on the side of good,
 Prove steadfast in their might.~
-  = ~Courageously, they joined the fray,
+= ~Courageously, they joined the fray,
 And only Phillip ran away.
 At last the party won the day,
 And killed the wicked beast.
@@ -90,22 +91,25 @@ Remember well, and heed this tale;
 The noble hearted will not fail.
 For in the end, the good prevail,
 And evil will be greased.~
-  IF ~~ THEN REPLY ~Those were beautiful verses, child. Here, take these 300 coins. If you will be able to leave the city, make your way to Athkatla. Find a tavern called "Five flagons inn", tell the inn keeper there, that the daughter of Bhaal sends him her best wishes, and he will help you settle.~ GOTO 4
-  IF ~~ THEN REPLY ~Thank you. You are very talented young bard. Here, take these 100 coins.~ GOTO 5
-  IF ~~ THEN REPLY ~That was very nice! Here, take these 25 coins.~ GOTO 6
 END
+ ++ ~Those were beautiful verses, child. Here, take these 300 coins. If you will be able to leave the city, make your way to Athkatla. Find a tavern called "Five flagons inn", tell the inn keeper there, that the daughter of Bhaal sends him her best wishes, and he will help you settle.~ EXTERN SARBARD 4
+ ++ ~Thank you. You are very talented young bard. Here, take these 100 coins.~ EXTERN SARBARD 5
+ ++ ~That was very nice! Here, take these 25 coins.~ EXTERN SARBARD 6
 
-IF ~~ THEN BEGIN 4
-  SAY ~(Her eyes light up) You have my deepest gratitude, my lady! You are very kind. Now I certainly believe that you will save us!~
-  IF ~~ THEN DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(15500) TakePartyGold(300) ReputationInc(1) EscapeArea()~ EXIT
-END
 
-IF ~~ THEN BEGIN 5
-  SAY ~(Bows) You have my gratitude, m'lady.~
-  IF ~~ THEN DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(6500) TakePartyGold(100) ReputationInc(1) EscapeArea()~ EXIT
-END
+CHAIN SARBARD 4
+~(Her eyes light up) You have my deepest gratitude, my lady! You are very kind. Now I certainly believe that you will save us!~
+DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(15500) TakePartyGold(300) ReputationInc(1) EscapeArea()~
+EXIT
 
-IF ~~ THEN BEGIN 6
-  SAY ~Thank you, m'lady.~
-  IF ~~ THEN DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) TakePartyGold(25) EscapeArea()~ EXIT
-END
+
+CHAIN SARBARD 5
+~(Bows) You have my gratitude, m'lady.~
+DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(6500) TakePartyGold(100) ReputationInc(1) EscapeArea()~
+EXIT
+
+
+CHAIN SARBARD 6
+~Thank you, m'lady.~
+DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) TakePartyGold(25) EscapeArea()~
+EXIT

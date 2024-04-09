@@ -16,7 +16,7 @@ IF ~~ THEN BEGIN Kelem1
   SAY ~A very bad place... a very bad place indeed. Yes please lead me out of here!~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
 END

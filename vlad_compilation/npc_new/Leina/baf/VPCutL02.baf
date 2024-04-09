@@ -5,7 +5,7 @@ THEN
 		CutSceneId(Player1)
 		SetGlobal("VP_LeinaAppears","GLOBAL",3)
 		Wait(1)
-		ActionOverride("Leina",FaceObject("Auberon"))
+		ActionOverride("vpleina",FaceObject("Auberon"))
 		Wait(7)
 		ActionOverride("Auberon",Dialogue("Govan3"))
 		EndCutSceneMode()

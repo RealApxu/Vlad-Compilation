@@ -10,7 +10,7 @@ END
 
 CHAIN VPSHAJ avalan1
 ~(*Then looking disparagingly at you*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+ IF ~True()~ THEN EXTERN NJHROJ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
@@ -18,7 +18,7 @@ END
 
 CHAIN VPSHAJ avalan2
 ~(*Then looking disparagingly at the male members of your group*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+ IF ~True()~ THEN EXTERN NJHROJ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
@@ -26,7 +26,7 @@ END
 
 CHAIN VPSHAJ avalan3
 ~...those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
- IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+ IF ~True()~ THEN EXTERN NJHROJ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
  IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
@@ -36,10 +36,10 @@ END
 //NeJ Dialogue - Leaving NeJ1
 CHAIN VPSHAJ nearportal
 ~(*Looking around at the group she scoffs*)... Just listen to yourselves...~ [mute]
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
  IF ~InParty("Minsc")~ THEN GOTO onminsc1
  IF ~InParty("Accalia")~ THEN GOTO onaccali
- IF ~InParty("Dar")~ THEN GOTO ondar
+ IF ~InParty("njdar")~ THEN GOTO ondar
  IF ~InParty("Jaheira")~ THEN GOTO onjahi
  IF ~OR(2) InParty("Imoen") InParty("Imoen2")~ THEN GOTO onimoen1
 END
@@ -51,24 +51,24 @@ END
 
 CHAIN VPSHAJ onimoen2
 ~The thief has a spine made of jelly. Let the wimp go home, she obviously hasn't backbone enough for this mission!~
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
  IF ~InParty("Minsc")~ THEN GOTO onminsc1
  IF ~InParty("Accalia")~ THEN GOTO onaccali
- IF ~InParty("Dar")~ THEN GOTO ondar
+ IF ~InParty("njdar")~ THEN GOTO ondar
  IF ~InParty("Jaheira")~ THEN GOTO onjahi
 END
 
 CHAIN VPSHAJ onjahi
 ~(*Looking at Jaheira*) You poor dear, being too long from "your Khalid's" side have you? I can't imagine why any woman would suffer such a bumbling, stuttering fool in her bed. Leave the fool where he is, he deserves no less!~
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
  IF ~InParty("Minsc")~ THEN GOTO onminsc1
  IF ~InParty("Accalia")~ THEN GOTO onaccali
- IF ~InParty("Dar")~ THEN GOTO ondar
+ IF ~InParty("njdar")~ THEN GOTO ondar
 END
 
 CHAIN VPSHAJ ondar
 ~(*Glancing next at Dar*) You may be an ugly great brute but at least you know your place is to follow and serve... it's a shame that quality can't be bred into the males of all races.~
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
  IF ~InParty("Minsc")~ THEN GOTO onminsc1
  IF ~InParty("Accalia")~ THEN GOTO onaccali
 END
@@ -80,7 +80,7 @@ END
 
 CHAIN VPSHAJ onaccali2
 ~(*Scoffs*)... Who do you think you're fooling priestess, it's as plain as the nose on your face that you wish your duty is to *lay with* the paladin! It has nothing to do with Tempus' will or the will of any other god either... weak pathetic woman you are!~
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
  IF ~InParty("Minsc")~ THEN GOTO onminsc1
 END
 
@@ -96,7 +96,7 @@ END
 
 CHAIN VPSHAJ onminsc3
 ~Hamster my ass, it's a rat with its tail cut off you idiot.~
- IF ~~ THEN EXTERN ~HROTHJ~ shargrp
+ IF ~~ THEN EXTERN NJHROJ shargrp
 END
 
 //NeJ Dialogue - Severed Hand
@@ -112,7 +112,7 @@ END
 
 CHAIN VPSHAJ sevhand3
 ~(*Then shaking her head as if to clear it*) Snap out of it girl, he's only a man and will bleed and die as easily as the next!~
- IF ~~ THEN EXTERN ~HROTHJ~ 195
+ IF ~~ THEN EXTERN NJHROJ 195
 END
 
 CHAIN VPSHAJ kaylsold
@@ -128,7 +128,7 @@ END
 
 CHAIN VPSHAJ comebck2
 ~Ho... maybe the gods are looking down on me after all! They sure as hell aren't looking out for that sorcerer by returning me here... his days, make that hours, are numbered. The son of a bitch can run but he can't hide!~
- IF ~~ THEN EXTERN ~HROTHJ~ 369
+ IF ~~ THEN EXTERN NJHROJ 369
 END
 
 //Promenade Talk
@@ -151,7 +151,7 @@ CHAIN VPSHAJ gotoulcr
 ~You are off your head if you think you're going discover anything at Ulcaster.~
  = ~Been there, done that, left everything that bleeds dead and I'm damn sure no stone was left unturned... even the old ghost has deserted his ruins now.~
  = ~You'll not find anything and there's certainly no glory in going over old ground... but I doubt you'll listen to sense, men never do, so I guess we're going anyway!~
- IF ~~ THEN EXTERN ~HROTHJ~ 404
+ IF ~~ THEN EXTERN NJHROJ 404
 END
 
 //Nej 2 - Leave Armor
@@ -165,7 +165,7 @@ CHAIN VPSHAJ arrivhal
 ~Phew... for a minute there I thought <CHARNAME> was going to ask him to join us!~
  = ~Hrothgar and friend of Hrothgar together in one group!? One holier than thou egotistic male is maybe just about tolerable but two... no two would be stretching a girl's need to keep her word too far!~
  IF ~True()~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXIT
- IF ~InParty("Melora")~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXTERN ~MELORAJ~ 10
+ IF ~InParty("njmelora")~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXTERN NJMELJ 10
 END
 
 //Nej 2 - Iezikiel Quest
@@ -186,24 +186,24 @@ END
 
 CHAIN VPSHAJ imscared
 ~Quit your blubbering you wimp! Can't some one do something to shut the crybaby up before she attracts the sorcerer's attention and he comes flying through this portal here?~
- IF ~~ THEN EXTERN ~HROTHJ~ 372
+ IF ~~ THEN EXTERN NJHROJ 372
 END
 
 CHAIN VPSHAJ frellaru
 ~(*Impatiently*) Yet more errands to be run for a man too up himself and full of his own self importance to risk his neck! What are we, warriors or bloody gophers?~
- IF ~~ THEN EXTERN ~HROTHJ~ shararu1
+ IF ~~ THEN EXTERN NJHROJ shararu1
 END
 
 CHAIN VPSHAJ frellaru2
 ~I need no convincing paladin, you and your kind are the worst sort of pathetic! You can't help sticking those over sized noses of yours into things that don't concern you.~
  = ~The old druid looked more than fit enough to sort this town... *his* town's problems, but no, Hrothgar the righteous has to stick his oar in and volunteer our necks instead whilst the druid does what... sits comfortably by his hearth contemplating his navel?! Men really are...~
- IF ~~ THEN EXTERN ~HROTHJ~ shararu2
+ IF ~~ THEN EXTERN NJHROJ shararu2
 END
 
 CHAIN VPSHAJ frellaru3
 ~Do not question my intentions. You don't have the power to dismiss me Paladin. An oath is an oath and I pledged my sword to aid <CHARNAME>, my word is my bond but make NO mistake... I follow only because of <PRO_HISHER> prowess in battle. When that falters, so does my loyalty.~
  = ~As for you paladin... I have no such loyalty to you, but you can be sure that as long as you don't cross me you have nothing to fear... cross me and it'll be your front you need to watch... back stabbing is the way of weak cowards!~
- IF ~~ THEN EXTERN ~HROTHJ~ shararu3
+ IF ~~ THEN EXTERN NJHROJ shararu3
 END
 
 CHAIN VPSHAJ dragoneye
@@ -217,7 +217,7 @@ END
 
 CHAIN VPSHAJ lizardking
 ~(*Wiping her sword on her sleeve*) That's that... one less slimy reptile hunting for his mistress. If that's the best she can muster then I reckon she and her minions are going to be pretty hungry, not to say angry when we find them... best we stay alert from here lest they see us as their next meal!~
- IF ~True()~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~HROTHJ~ 273
+ IF ~True()~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN NJHROJ 273
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~ACCALIJ~ 59
  IF ~InParty("Imoen") !Dead("Imoen")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~IMOENJ~ NEJ148
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~IMOEN2J~ VP_FIX64
@@ -227,7 +227,7 @@ END
 
 CHAIN VPSHAJ erevbody
 ~(*Scoffs*) Bloody foolish elf you mean! The arrogance of elves, the males especially... well this one certainly got what he deserved!~
- IF ~~ THEN EXTERN ~HROTHJ~ sharerev
+ IF ~~ THEN EXTERN NJHROJ sharerev
 END
 
 CHAIN VPSHAJ erevbod2
@@ -238,8 +238,8 @@ END
 CHAIN VPSHAJ egenia
 ~If you seriously believe that the gods give a toss about what is going on down here then you are all fools! I trust only my sword and my own eyes, not the off chance that the gods may be watching my back... or my front.~
  IF ~True()~ THEN EXIT
- IF ~InParty("Minsc") !Dead("Minsc") OR(2) !InParty("Dar") Dead("Dar")~ THEN EXTERN ~MINSCJ~ NEJ326
- IF ~InParty("Minsc") !Dead("Minsc") InParty("Dar") !Dead("Dar")~ THEN EXTERN ~DARJ~ 62
+ IF ~InParty("Minsc") !Dead("Minsc") OR(2) !InParty("njdar") Dead("njdar")~ THEN EXTERN ~MINSCJ~ NEJ326
+ IF ~InParty("Minsc") !Dead("Minsc") InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 62
 END
 
 CHAIN VPSHAJ nearpor1
@@ -266,7 +266,7 @@ END
 CHAIN IMOENJ sharaval
 ~You are so cruel Shar-Teel! I don't know why <CHARNAME> didn't leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
 END
- IF ~True()~ THEN EXTERN ~HROTHJ~ 401
+ IF ~True()~ THEN EXTERN NJHROJ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
 
 //Leina Interactions
@@ -282,9 +282,9 @@ IF ~~ THEN BEGIN LeiSpher1
   IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
   IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3
-  IF ~InParty("Dar") !Dead("Dar")~ THEN EXTERN ~BDAR~ LeiSpher2
-  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiSpher1
-  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1
+  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~BDAR~ LeiSpher2
+  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1
 END
 
 IF ~~ THEN BEGIN RadianQ
@@ -304,8 +304,8 @@ IF ~~ THEN BEGIN LeiRadia
   SAY ~Oh suck it up bard, who the hell cares where we sit as long as they have ale and hot water. I'll never know how in the nine hells you ever got into this party. You're such a prig!~
   IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
-  IF ~InParty("Taffic") !Dead("Taffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
-  IF ~InParty("Melora") !Dead("Melora")~ THEN EXTERN ~BMELORA~ LeiRadia
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
+  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
   IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
   IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia

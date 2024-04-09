@@ -683,7 +683,7 @@ COPY ~%MOD_FOLDER%/components/Leina/cre/LEINA14.CRE~ ~override/LEINA14.CRE~
 //Adding Leina's DLGs to 2DA
 
 APPEND ~pdialog.2da~ // TOB append
-~LEINA        LEINAP             LEINAJ            LEINAD         LEINAP            LEINAJ               LEINAD               leina~
+~LEINA        LEINAP             VPLEIJ            LEINAD         LEINAP            VPLEIJ               LEINAD               leina~
 UNLESS ~LEINA~ // we are already there, skip it
 
 APPEND ~interdia.2da~

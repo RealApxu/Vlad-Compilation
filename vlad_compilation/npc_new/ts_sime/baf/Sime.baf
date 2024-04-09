@@ -1272,8 +1272,8 @@ END
 
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	Global("VP_BSime20","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -1285,23 +1285,23 @@ IF
 	GlobalTimerExpired("VP_Sime_Kachiko","GLOBAL")
 	Global("VP_LoveTalkDelay","LOCALS",0)
 	InParty(Myself)
-	InParty("Kachiko")
-	See("Kachiko")
-	!Dead("Kachiko")
-	!StateCheck("Kachiko",STATE_SLEEPING)
+	InParty("vpkachi")
+	See("vpkachi")
+	!Dead("vpkachi")
+	!StateCheck("vpkachi",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BSime20","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime20","LOCALS",2)
-		Interact("Kachiko")
+		Interact("vpkachi")
 END
 
 IF
 	InParty(Myself)
-	InParty("Kachiko")
-	!Dead("Kachiko")
+	InParty("vpkachi")
+	!Dead("vpkachi")
 	Global("VP_BSime20","LOCALS",3)
 	Global("VP_BSime21","LOCALS",0)
 THEN
@@ -1314,17 +1314,17 @@ IF
 	GlobalTimerExpired("VP_Sime_Kachiko","GLOBAL")
 	Global("VP_LoveTalkDelay","LOCALS",0)
 	InParty(Myself)
-	InParty("Kachiko")
-	See("Kachiko")
-	!Dead("Kachiko")
-	!StateCheck("Kachiko",STATE_SLEEPING)
+	InParty("vpkachi")
+	See("vpkachi")
+	!Dead("vpkachi")
+	!StateCheck("vpkachi",STATE_SLEEPING)
 	CombatCounter(0)
 	Global("VP_BSime21","LOCALS",1)
 	!See([ENEMY])
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime21","LOCALS",2)
-		Interact("Kachiko")
+		Interact("vpkachi")
 END
 
 // Imoen

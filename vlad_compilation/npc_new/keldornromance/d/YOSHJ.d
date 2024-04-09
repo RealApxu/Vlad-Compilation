@@ -9,7 +9,7 @@ IF ~~ THEN BEGIN Kr_WarT2
   SAY ~Oh, nothing. I have nothing against taking action with the military. My skills will be of great use to you.~
   IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kr_WarTk
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kr_WarTk
 END
 
 IF ~~ THEN BEGIN Kelem0
@@ -32,7 +32,7 @@ IF ~~ THEN BEGIN Kelem3
   SAY ~Forgive you? Of course I will, you are not a bad girl, <CHARNAME>.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
 END
 
 END

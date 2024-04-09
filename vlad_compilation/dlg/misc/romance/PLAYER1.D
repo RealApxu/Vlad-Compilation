@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN N5
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
   IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
-  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ slayerba
+  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ slayerba
   IF ~InParty("Sime") !Dead("Sime") !Global("SimeRomanceActive","GLOBAL",1) !Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~SIMEJ~ slayerba
   IF ~InParty("Sime") !Dead("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~SIMEJ~ 68
   IF ~InParty("Valygar") !Dead("Valygar") OR(2) Global("ValygarRomanceActive","GLOBAL",1) Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ slayerba
@@ -109,16 +109,16 @@ END
 
 IF ~~ THEN BEGIN ToTLF
   SAY ~Leina is before you, the bard you had not come to know very well, though she was a loyal companion.~
-  IF ~~ THEN REPLY ~Leina, I know little of you, but Irenicus is no enemy of yours. You do not have to fight my battle...~ EXTERN ~LEINAJ~ TOL21
-  IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly.  IF you wish, you may take your leave now~ EXTERN ~LEINAJ~ TOL22
-  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL23
+  IF ~~ THEN REPLY ~Leina, I know little of you, but Irenicus is no enemy of yours. You do not have to fight my battle...~ EXTERN VPLEIJ TOL21
+  IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly.  IF you wish, you may take your leave now~ EXTERN VPLEIJ TOL22
+  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN VPLEIJ TOL23
 END
 
 IF ~~ THEN BEGIN ToTLM
   SAY ~Leina... You look at the maiden's eyes and you see what you have hoped and scared to see: the determination to follow you to the end of the world and beyond it. It is obvious that you might keep Leina out of this battle,  IF you,  SAY, tied her up and gagged her. Still, you want to give her a chance to reconsider.~
-  IF ~~ THEN REPLY ~Leina, Irenicus is no enemy of yours. You do not have to fight my battles.~ EXTERN ~LEINAJ~ TOL1
-  IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly. I am afraid that you might get hurt or die... I would rather... Do you think you might wait here?~ EXTERN ~LEINAJ~ TOL2
-  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN ~LEINAJ~ TOL3
+  IF ~~ THEN REPLY ~Leina, Irenicus is no enemy of yours. You do not have to fight my battles.~ EXTERN VPLEIJ TOL1
+  IF ~~ THEN REPLY ~You know how powerful Irenicus is, Leina. The fight is going to be deadly. I am afraid that you might get hurt or die... I would rather... Do you think you might wait here?~ EXTERN VPLEIJ TOL2
+  IF ~~ THEN REPLY ~Leina, that's not the best time to chat, but I need to know that you readily and willingly partaking in the fight with Irenicus.~ EXTERN VPLEIJ TOL3
 END
 END
 
@@ -170,7 +170,7 @@ IF ~~ THEN BEGIN slayer5
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
   IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
-  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ slayerba
+  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ slayerba
   IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ slayerba
 END
 
@@ -198,7 +198,7 @@ IF ~~ THEN BEGIN TL1
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
   IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
 END
 
@@ -232,7 +232,7 @@ IF ~~ THEN BEGIN TL3
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
   IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
 END
 
@@ -733,7 +733,7 @@ IF ~~ THEN BEGIN slayer5
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
   IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
   IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
-  IF ~InParty("Leina") !Dead("Leina")~ THEN EXTERN ~LEINAJ~ slayerba
+  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ slayerba
   IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ slayerba
 END
 
@@ -1073,7 +1073,7 @@ BEGIN 11 END // state number (can be more than one) BEGIN 0 END // transition nu
 END
 
 EXTEND_BOTTOM PLAYER1 25 // Finding Irenicus in Hell
-  IF ~InParty("Kachiko") See("Kachiko")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
+  IF ~InParty("vpkachi") See("vpkachi")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
 Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~KACHIJ~ N55
 //  IF ~InParty("Dynaheir") //See("Dynaheir")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
@@ -1085,9 +1085,9 @@ Irenicus' death did not have the same effect as Bodhi's did, and my soul has not
   IF ~InParty("Sime") See("Sime")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
 Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~SIMEJ~ 116
-  IF ~InParty("Leina") See("Leina")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
+  IF ~InParty("vpleina") See("vpleina")~ THEN UNSOLVED_JOURNAL ~Finding Irenicus in Hell
 
-Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN ~LEINAJ~ inhell
+Irenicus' death did not have the same effect as Bodhi's did, and my soul has not returned to me.  Perhaps it was because of the power he gathered from the Tree of Life, or because Bodhi was undead. Regardless, Irenicus has fallen, dragging both my soul and myself inexorably behind.  And such was the power that my party members that had fallen or were near death were drawn with us as well!  Together we are in Hell, and I am certain Irenicus is somewhere near.  Somehow, through all this, I feel I must find him and battle him once and for all to get my soul back.~ EXTERN VPLEIJ inhell
 END
 
 EXTEND_BOTTOM PLAYER1 33 // Tree of Life Talk
@@ -1095,11 +1095,11 @@ EXTEND_BOTTOM PLAYER1 33 // Tree of Life Talk
 //IF ~InParty("Dynaheir")~ THEN GOTO TS59
 //IF ~InParty("Coran")~ THEN GOTO TS57
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN GOTO TS56
-  IF ~InParty("Kachiko")~ THEN GOTO TS55
+  IF ~InParty("vpkachi")~ THEN GOTO TS55
   IF ~InParty("Yoshimo")~ THEN GOTO TS55yosh
   IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN GOTO KR_TL0
-  IF ~InParty("Leina") !Dead("Leina") Gender(Player1,MALE)~ THEN GOTO ToTLM
-  IF ~InParty("Leina") !Dead("Leina") Gender(Player1,FEMALE)~ THEN GOTO ToTLF
+  IF ~InParty("vpleina") !Dead("vpleina") Gender(Player1,MALE)~ THEN GOTO ToTLM
+  IF ~InParty("vpleina") !Dead("vpleina") Gender(Player1,FEMALE)~ THEN GOTO ToTLF
 END
 
 ALTER_TRANS PLAYER1 // file name
@@ -1139,14 +1139,14 @@ IF WEIGHT #-1 ~Global("VP_ResqueLeina","GLOBAL",4) Global("VP_NPC_LeinaRoom","GL
   IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXIT
   IF ~InParty("Valygar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~VALYGARJ~ NEJ157
   IF ~InParty("Minsc")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ259
-  IF ~InParty("Dar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~DARJ~ 7
+  IF ~InParty("njdar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~DARJ~ 7
   IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~VICONIJ~ NEJ185
   IF ~InParty("Mazzy")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MAZZYJ~ NEJ205
   IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~AERIEJ~ NEJ221
   IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~JAHEIRAJ~ NEJ544
-  IF ~InParty("Kachiko")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~KACHIJ~ NEJ56
+  IF ~InParty("vpkachi")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~KACHIJ~ NEJ56
   IF ~InParty("Nalia")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~NALIAJ~ NEJ320
-  IF ~InParty("Melora")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MELORAJ~ 0
+  IF ~InParty("njmelora")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN NJMELJ 0
 END
 
 IF WEIGHT #-2 ~Global("VP_ResqueLeina","GLOBAL",4) Global("VP_NPC_LeinaRoom","GLOBAL",0) !PartyHasItem("GovanLet")~ THEN BEGIN LQT2
@@ -1154,14 +1154,14 @@ IF WEIGHT #-2 ~Global("VP_ResqueLeina","GLOBAL",4) Global("VP_NPC_LeinaRoom","GL
   IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXIT
   IF ~InParty("Valygar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~VALYGARJ~ NEJ157
   IF ~InParty("Minsc")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MINSCJ~ NEJ259
-  IF ~InParty("Dar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~DARJ~ 7
+  IF ~InParty("njdar")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~DARJ~ 7
   IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~VICONIJ~ NEJ185
   IF ~InParty("Mazzy")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MAZZYJ~ NEJ205
   IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~AERIEJ~ NEJ221
   IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~JAHEIRAJ~ NEJ544
-  IF ~InParty("Kachiko")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~KACHIJ~ NEJ56
+  IF ~InParty("vpkachi")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~KACHIJ~ NEJ56
   IF ~InParty("Nalia")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~NALIAJ~ NEJ320
-  IF ~InParty("Melora")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN ~MELORAJ~ 0
+  IF ~InParty("njmelora")~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXTERN NJMELJ 0
 END
 
 END

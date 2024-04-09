@@ -1,6 +1,6 @@
 IF
 	Global("StartEndBios","AR6200",1)
-	InParty("Leina")
+	InParty("vpleina")
 	Global("VP_LeinaBio","GLOBAL",0)
 	!Global("VP_LeinaRomanceAct","GLOBAL",2)
 THEN
@@ -13,7 +13,7 @@ END
 
 IF
 	Global("StartEndBios","AR6200",1)
-	InParty("Leina")
+	InParty("vpleina")
 	OR(2)
 		!Global("VP_LeinaRomanceAct","GLOBAL",2)
 		Global("PlayerChoseEssence","GLOBAL",1)
@@ -28,7 +28,7 @@ END
 
 IF
 	Global("StartEndBios","AR6200",1)
-	InParty("Leina")
+	InParty("vpleina")
 	Global("PlayerChoseEssence","GLOBAL",0)
 	Global("VP_LeinaRomanceAct","GLOBAL",2)
 	Global("VP_LeinaBio","GLOBAL",0)

@@ -8,7 +8,7 @@ END
 
 IF ~~ THEN BEGIN TS153
   SAY ~<CHARNAME>, what are you doing? I'm not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-  IF ~~ THEN DO ~ActionOverride("Kachiko",Enemy()) LeaveParty() Enemy()~ EXIT
+  IF ~~ THEN DO ~ActionOverride("vpkachi",Enemy()) LeaveParty() Enemy()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS154
@@ -18,7 +18,7 @@ END
 
 IF ~~ THEN BEGIN TS155
   SAY ~Kachiko, I won't draw my sword against you. Sorry, <CHARNAME>, but I have to leave. I'll see you later.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshimoEscapes","GLOBAL",1) ActionOverride("Kachiko",Enemy()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() LeaveParty() EscapeAreaMove("AR0406",1368,1922,0)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshimoEscapes","GLOBAL",1) ActionOverride("vpkachi",Enemy()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() LeaveParty() EscapeAreaMove("AR0406",1368,1922,0)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS156
@@ -60,12 +60,12 @@ END
 
 IF ~~ THEN BEGIN TS163
   SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life. If you change your mind in a few days, you will find us in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshFollowsKach","GLOBAL",1) ActionOverride("Kachiko",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) SetGlobal("VP_YoshFollowsKach","GLOBAL",1) ActionOverride("vpkachi",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS164
   SAY ~<CHARNAME>, I am really sorry, but I shall go with Kachiko. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() DestroyItem("NPSW02") GivePartyAllEquipment() LeaveParty() EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() DestroyItem("NPSW02") GivePartyAllEquipment() LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN TS165
@@ -252,7 +252,7 @@ END
 
 IF ~~ THEN BEGIN TS201
   SAY ~Kachiko, from the moment I saw you there in Athkatla, I knew that I would not allow any evil to come to you. I love you, Kachiko, and nothing could stop me. I would go to Nine Hells after you if I have to. With you around I feel like I have never been... I... I can be a better person...~
-  IF ~~ THEN DO ~ChangeAlignment(Myself,CHAOTIC_GOOD) AddXPObject(Myself,80000) ActionOverride("Kachiko",ChangeAlignment(Myself,CHAOTIC_GOOD)) ActionOverride("Kachiko",AddXPObject(Myself,80000))~ EXTERN ~KACHIP~ 13
+  IF ~~ THEN DO ~ChangeAlignment(Myself,CHAOTIC_GOOD) AddXPObject(Myself,80000) ActionOverride("vpkachi",ChangeAlignment(Myself,CHAOTIC_GOOD)) ActionOverride("vpkachi",AddXPObject(Myself,80000))~ EXTERN ~KACHIP~ 13
 END
 
 IF ~~ THEN BEGIN TS202
@@ -322,17 +322,17 @@ END
 
 IF ~~ THEN BEGIN TS214
   SAY ~Sorry, <CHARNAME>. I cannot leave her alone. We must continue our mission.~
-  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",3) SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("TT0102",165,727,8)) LeaveParty() EscapeAreaMove("TT0102",225,683,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_Kachiko_Yoshimo","GLOBAL",3) SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",EscapeAreaMove("TT0102",165,727,8)) LeaveParty() EscapeAreaMove("TT0102",225,683,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS215
   SAY ~Sorry, <CHARNAME>. I cannot leave Kachiko alone. I must take a care of her. Farewell.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("AR0406",1368,1922,0)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0406",1381,1959,1)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",EscapeAreaMove("AR0406",1368,1922,0)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0406",1381,1959,1)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS216
   SAY ~<CHARNAME>, I am sorry, but I shall go with Kachiko.~
-  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Kachiko",EscapeAreaMove("AR0313",723,319,14)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",784,333,8)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",EscapeAreaMove("AR0313",723,319,14)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",784,333,8)~ EXIT
 END
 
 IF ~~ THEN BEGIN TS217
@@ -378,7 +378,7 @@ IF ~~ THEN BEGIN TS221
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
 END
 
 IF ~~ THEN BEGIN TS222
@@ -404,7 +404,7 @@ IF ~~ THEN BEGIN TS222
   IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",1) Global("SimeRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ TS60
   IF ~InParty("Sime") OR(2) Global("SimeRomanceActive","GLOBAL",0) Global("SimeRomanceActive","GLOBAL",3)~ THEN EXTERN ~PLAYER1~ TS56
-  IF ~InParty("Kachiko")~ THEN EXTERN ~PLAYER1~ TS55
+  IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
 END
 
 IF WEIGHT #0 ~Global("VP_Kachiko_Dies","GLOBAL",3) See(Player1) !StateCheck(Player1,STATE_SLEEPING)~ THEN BEGIN TS223
@@ -479,7 +479,7 @@ IF ~~ THEN BEGIN TS231
   IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
 //  IF ~InParty("Coran")~ THEN EXTERN ~CORAN25J~ 0
 //  IF ~InParty("Dynaheir")~ THEN EXTERN ~DYNA25J~ 0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHI25J~ 3
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
 END
 
 IF ~~ THEN BEGIN SB01
@@ -505,7 +505,7 @@ END
 
 IF ~~ THEN BEGIN SB05
   SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("Kachiko",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("vpkachi",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN SB06
@@ -531,7 +531,7 @@ END
 
 IF ~~ THEN BEGIN SB10
   SAY ~<CHARNAME>, it seems I have no choice in this matter. I must return to Kara-Tur with Kachiko so I can find who is a real murderer of Naoko and prove my innocence. Perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life.~
-  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("Kachiko",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
+  IF ~~ THEN DO ~SetGlobal("VP_KachikoInTavern","GLOBAL",0) ActionOverride("vpkachi",EscapeArea()) SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeArea()~ EXIT
 END
 
 END

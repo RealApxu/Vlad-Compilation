@@ -4,7 +4,7 @@
 //                                                                        //
 ////////////////////////////////////////////////////////////////////////////
 
-APPEND ~MELORAJ~
+APPEND NJMELJ
 
 IF ~~ THEN BEGIN Kelem0
   SAY ~So we are... I tried to escape from the bounty hunters, but instead turned out to be dead!~
@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN Kelem2
   SAY ~Of course. There is nothing to do here.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -35,16 +35,16 @@ IF ~~ THEN BEGIN Kelem2
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
   IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ Kelem0
-  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ Kelem0
-  IF ~InParty("Taffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
+  IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ Kelem0
+  IF ~InParty("njtaffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
   IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
-  IF ~InParty("Leina")~ THEN EXTERN ~LEINAJ~ Kelem0
+  IF ~InParty("vpleina")~ THEN EXTERN VPLEIJ Kelem0
 END
 
 END
 
-APPEND ~LEINAJ~
+APPEND VPLEIJ
 
 IF ~~ THEN BEGIN Kelem0
   SAY ~I ... I do not understand. Where I am? What is this horrible place?~
@@ -60,7 +60,7 @@ IF ~~ THEN BEGIN Kelem2
   SAY ~Dead? It explains everything. I'll think about it later. Now let's go.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -75,9 +75,9 @@ IF ~~ THEN BEGIN Kelem2
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
   IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ Kelem0
-  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ Kelem0
-  IF ~InParty("Taffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
+  IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ Kelem0
+  IF ~InParty("njtaffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
   IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
 END
 
@@ -109,7 +109,7 @@ IF ~~ THEN BEGIN Kelem4
   SAY ~Yes? This is good news indeed. Just no foolish things anymore!~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -124,9 +124,9 @@ IF ~~ THEN BEGIN Kelem4
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
   IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ Kelem0
-  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ Kelem0
-  IF ~InParty("Taffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
+  IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ Kelem0
+  IF ~InParty("njtaffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
 END
 
 END
@@ -157,7 +157,7 @@ IF ~~ THEN BEGIN Kelem4
   SAY ~And you will help me to fulfill my dream? Let's go, and remember, you owe me!~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -172,8 +172,8 @@ IF ~~ THEN BEGIN Kelem4
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
   IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ Kelem0
-  IF ~InParty("Dar")~ THEN EXTERN ~DARJ~ Kelem0
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
+  IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ Kelem0
 END
 
 END
@@ -204,7 +204,7 @@ IF ~~ THEN BEGIN Kelem4
   SAY ~Of course, <CHARNAME>. You do not need to ask me twice. I am going with you.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
@@ -219,12 +219,12 @@ IF ~~ THEN BEGIN Kelem4
   IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
   IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
   IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
-  IF ~InParty("Hrothgar")~ THEN EXTERN ~HROTHJ~ Kelem0
+  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
 END
 
 END
 
-APPEND ~HROTHJ~
+APPEND NJHROJ
 
 IF ~~ THEN BEGIN Kelem0
   SAY ~Great. I fear such an outcome nobody in the Brotherhood could foresee.~
@@ -255,7 +255,7 @@ IF ~~ THEN BEGIN Kelem5
   SAY ~I am ready to go.~
   IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
   IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("Kachiko")~ THEN EXTERN ~KACHIJ~ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
   IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
   IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
   IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0

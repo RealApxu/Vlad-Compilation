@@ -17,10 +17,10 @@ END
 //                                                     //
 
 ADD_STATE_TRIGGER BODHI 61
-~!InParty("Leina")~
+~!InParty("vpleina")~
 
 ADD_STATE_TRIGGER BODHI 63
-~!InParty("Leina")~
+~!InParty("vpleina")~
 
 ADD_TRANS_ACTION BODHI
 BEGIN 63 END
@@ -29,14 +29,14 @@ BEGIN 0 END
 
 APPEND BODHI
 
-IF WEIGHT #-1 ~Global("BodhiJob","GLOBAL",2) !Global("WorkingForAran","GLOBAL",1) Dead("Vulova") Global("PlantedEvidence","GLOBAL",1) InParty("Leina")~ THEN BEGIN NEJ135 // from:
+IF WEIGHT #-1 ~Global("BodhiJob","GLOBAL",2) !Global("WorkingForAran","GLOBAL",1) Dead("Vulova") Global("PlantedEvidence","GLOBAL",1) InParty("vpleina")~ THEN BEGIN NEJ135 // from:
   SAY #22111
-  IF ~~ THEN DO ~AddXPObject(Player1,28500) AddXPObject(Player2,28500) AddXPObject(Player3,28500) AddXPObject(Player4,28500) AddXPObject(Player5,28500) AddXPObject(Player6,28500)~ EXTERN ~LEINAJ~ 25
+  IF ~~ THEN DO ~AddXPObject(Player1,28500) AddXPObject(Player2,28500) AddXPObject(Player3,28500) AddXPObject(Player4,28500) AddXPObject(Player5,28500) AddXPObject(Player6,28500)~ EXTERN VPLEIJ 25
 END
 
-IF WEIGHT #-2 ~Global("BodhiJob","GLOBAL",2) !Global("WorkingForAran","GLOBAL",1) !Dead("Vulova") Global("FailedBodhi2","GLOBAL",1) InParty("Leina")~ THEN BEGIN NEJ136 // from:
+IF WEIGHT #-2 ~Global("BodhiJob","GLOBAL",2) !Global("WorkingForAran","GLOBAL",1) !Dead("Vulova") Global("FailedBodhi2","GLOBAL",1) InParty("vpleina")~ THEN BEGIN NEJ136 // from:
   SAY #22119
-  IF ~~ THEN UNSOLVED_JOURNAL #6956 DO ~AddXPObject(Player1,28500) AddXPObject(Player2,28500) AddXPObject(Player3,28500) AddXPObject(Player4,28500) AddXPObject(Player5,28500) AddXPObject(Player6,28500)~ EXTERN ~LEINAJ~ 31
+  IF ~~ THEN UNSOLVED_JOURNAL #6956 DO ~AddXPObject(Player1,28500) AddXPObject(Player2,28500) AddXPObject(Player3,28500) AddXPObject(Player4,28500) AddXPObject(Player5,28500) AddXPObject(Player6,28500)~ EXTERN VPLEIJ 31
 END
 
 END

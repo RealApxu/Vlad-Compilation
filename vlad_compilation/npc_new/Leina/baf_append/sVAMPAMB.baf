@@ -1,13 +1,13 @@
 IF
 	Global("CleanseVampire","AR1401",2)
 	Global("VP_LeinaVampire","GLOBAL",3)
-	Name("Leina",Myself)
+	Name("vpleina",Myself)
 	AreaCheck("AR1401")
 THEN
 	RESPONSE #100
 		SetGlobal("VP_LeinaVampire","GLOBAL",4)
 		DialogInterrupt(TRUE)
-		ChangeAIScript("Leina",OVERRIDE)
+		ChangeAIScript("vpleina",OVERRIDE)
 END
 
 IF
