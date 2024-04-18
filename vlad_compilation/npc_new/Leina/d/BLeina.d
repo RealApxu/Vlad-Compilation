@@ -222,7 +222,7 @@ A hope for his future, a place he'd call home.
 END
  IF ~True()~ THEN EXTERN VPLEIB 32
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 0
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ130
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ130
 
 
 CHAIN VPLEIB 32
@@ -1256,57 +1256,57 @@ DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~ EXIT
 
 IF ~Global("VP_BJaheira","LOCALS",2)~ THEN VPLEIB 184
 ~(*Adjusting the harp she carries she plucks a string accidentally*) Ooops!~ [mute]
-DO ~SetGlobal("VP_BJaheira","LOCALS",3)~ EXTERN ~BJAHEIR~ NEJ491
+DO ~SetGlobal("VP_BJaheira","LOCALS",3)~ EXTERN BJAHEIR NEJ491
 
 
 CHAIN VPLEIB 185
 ~I was not about to Jaheira, my harp slipped that was all.~
-EXTERN ~BJAHEIR~ NEJ492
+EXTERN BJAHEIR NEJ492
 
 
 CHAIN VPLEIB 186
 ~Firstly Jaheira, my harp is meant to be carried, to be ready to strum when the mood takes me or the situation calls for my song, not stuffed in a grubby back pack! Secondly, look closer, I am no child!~
-EXTERN ~BJAHEIR~ NEJ493
+EXTERN BJAHEIR NEJ493
 
 
 CHAIN VPLEIB 187
 ~There are not that many years between us Jaheira. You just appear older because you have let yourself go and allowed yourself to be weighed down by life instead of getting on top of it and enjoying what it has to offer.~
-EXTERN ~BJAHEIR~ NEJ494
+EXTERN BJAHEIR NEJ494
 
 
 CHAIN VPLEIB 188
 ~That was spiteful and uncalled for! This Imoen's abduction by Irenicus was not of her making. As for her insolence, perhaps you should look to yourself to see why she speaks to you in the way she does... and another thing, I have never professed to *knowing it all*!~
-EXTERN ~BJAHEIR~ NEJ495
+EXTERN BJAHEIR NEJ495
 
 
 CHAIN VPLEIB 189
 ~No Jaheira, it was not! There were no rebellious intentions on my part. My parents did not like my choice of husband that is true but I loved him and when they saw that I intended to follow my heart regardless, they gave us their blessing and... as I have already pointed out, you are not my elder by many years, so please my name is Leina, not child when you speak to me.~
-EXTERN ~BJAHEIR~ NEJ496
+EXTERN BJAHEIR NEJ496
 
 
 IF ~Global("VP_BMinsc","LOCALS",2)~ THEN VPLEIB 190
 ~Minsc please, my instruments are very precious to me and I prefer that no-one handles than other than me.~ [mute]
-DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN ~BMINSC~ NEJ131
+DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN BMINSC NEJ131
 
 
 CHAIN VPLEIB 191
 ~The music comes from the way the strings are moved Minsc and the way has to be learned or else only discord... a jumble of notes is made.~
-EXTERN ~BMINSC~ NEJ132
+EXTERN BMINSC NEJ132
 
 
 CHAIN VPLEIB 192
 ~I don't know, we are all different and as such so are our skills... the things we are good at. You are a ranger and know much more than me of the ways of the woods and its creatures, you are also a brave fearless warrior and those are your skills Minsc.~
-EXTERN ~BMINSC~ NEJ133
+EXTERN BMINSC NEJ133
 
 
 CHAIN VPLEIB 193
 ~Music has to come from the soul. I am not sure if you understand what I mean but it is as though it is inside you, bursting to be released, only it is all never fully released. The minute one melody is free, you feel another stirring waiting its turn to be born. That is the only way I can think to describe the gift of music to you Minsc.~
-EXTERN ~BMINSC~ NEJ134
+EXTERN BMINSC NEJ134
 
 
 CHAIN VPLEIB 194
 ~In a way my passion for music feels the same to me as your passion to rid the world of evil feels to you. It is the wise man who nurtures and excels in that which he is gifted and a fool who tries everything and succeeds in nothing.~
-EXTERN ~BMINSC~ NEJ135
+EXTERN BMINSC NEJ135
 
 
 CHAIN VPLEIB 195
@@ -1316,17 +1316,17 @@ EXIT
 
 IF ~Global("VP_BAerie","LOCALS",2)~ THEN VPLEIB 196
 ~Aerie, often when the group stops to rest, I see you stand away from us with your arms outstretched, and facing into the wind with your eyes closed. Is it some ritual you practise for your god?~ [mute]
-DO ~SetGlobal("VP_BAerie","LOCALS",3)~ EXTERN ~BAERIE~ NEJ449
+DO ~SetGlobal("VP_BAerie","LOCALS",3)~ EXTERN BAERIE NEJ449
 
 
 CHAIN VPLEIB 197
 ~I envy you your memories Aerie. I can only imagine the exhilaration of being up high with the birds, to join them in their songs of flight and freedom.~
-EXTERN ~BAERIE~ NEJ450
+EXTERN BAERIE NEJ450
 
 
 CHAIN VPLEIB 198
 ~The memory that you flew will always be with you, nothing will take that from you, it is only the sensations that will slowly be lost.~
-EXTERN ~BAERIE~ NEJ451
+EXTERN BAERIE NEJ451
 
 
 CHAIN VPLEIB 199
@@ -1336,7 +1336,7 @@ EXTERN VPLEIB 200
 
 CHAIN VPLEIB 200
 ~Such as the soft touch of the grass on your feet and the gentle splashing of the water as you walk through the rain, you will notice tiny creatures and insects that have escaped your eye because they are too small to see from above. There is much to learn and wonder at Aerie.~
-EXTERN ~BAERIE~ NEJ452
+EXTERN BAERIE NEJ452
 
 
 CHAIN VPLEIB 201
@@ -1389,24 +1389,24 @@ EXTERN BVALYGA NEJ155
 
 IF ~Global("VP_BNalia","LOCALS",2)~ THEN VPLEIB 210
 ~Nalia, what's wrong?~ [mute]
-DO ~SetGlobal("VP_BNalia","LOCALS",3)~ EXTERN ~BNALIA~ NEJ51
+DO ~SetGlobal("VP_BNalia","LOCALS",3)~ EXTERN BNALIA NEJ51
 
 
 CHAIN VPLEIB 211
 ~Come here, take your shoe off and let me see. I can see you are not used to walking the rough road, these are court shoes not walking shoes. You need to get yourself a stout pair of boots the next time we visit a store.~
 END
- IF ~!Dead("Torgal")~ THEN EXTERN ~BNALIA~ NEJ52
- IF ~Dead("Torgal")~ THEN EXTERN ~BNALIA~ NEJ53
+ IF ~!Dead("Torgal")~ THEN EXTERN BNALIA NEJ52
+ IF ~Dead("Torgal")~ THEN EXTERN BNALIA NEJ53
 
 
 CHAIN VPLEIB 212
 ~Sorry Nalia, but if you keep your foot still this might not hurt so much. It does not look as though the damage is too bad, more bruised than cut. Still it is going to be sore for a while. Here, you best put your shoe back on, it will be better than nothing on your foot.~
-EXTERN ~BNALIA~ NEJ54
+EXTERN BNALIA NEJ54
 
 
 CHAIN VPLEIB 213
 ~If anyone were to ask me, I would say that you are looking a lot healthier for being out of that musty old keep. You have colour in your cheeks and even your eyes look more alive now. Get yourself some boots, maybe more suitable clothes and you will do nicely Nalia.~
-EXTERN ~BNALIA~ NEJ56
+EXTERN BNALIA NEJ56
 
 
 CHAIN VPLEIB 214
@@ -1421,17 +1421,17 @@ EXIT
 
 IF ~Global("VP_BEdwin","LOCALS",2)~ THEN VPLEIB 216
 ~Edwin please, I do not need you to walk so close to me. See... I nearly stepped on your robe!~ [mute]
-DO ~SetGlobal("VP_BEdwin","LOCALS",3)~ EXTERN ~BEDWIN~ NEJ106
+DO ~SetGlobal("VP_BEdwin","LOCALS",3)~ EXTERN BEDWIN NEJ106
 
 
 CHAIN VPLEIB 217
 ~I have no need of your protection, nor that of any man. I am not the fragile flower you take me for.~
-EXTERN ~BEDWIN~ NEJ107
+EXTERN BEDWIN NEJ107
 
 
 CHAIN VPLEIB 218
 ~I am not some helpless half elf who has recently left the sanctuary of her forest home Edwin! I can handle a sword and magic as well as I play any instrument, so your concern is not necessary but thank you all the same.~
-EXTERN ~BEDWIN~ NEJ108
+EXTERN BEDWIN NEJ108
 
 
 CHAIN VPLEIB 219
@@ -1825,21 +1825,21 @@ CHAIN VPLEIB PCF2LeinaA
 ~The bard has been asked to play a rousing tune to get your feet a dancing. She has also been told to let it be known that we are all to take part in this merriment. No creeping off to ones bed roll, the order was *all*.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ137
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
  IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
  IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
  IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
@@ -1849,21 +1849,21 @@ CHAIN VPLEIB PCF2LeinaB
 ~This is a fine evening, see how the stars shine and the moon is full, a night such as this should not be wasted sleeping. We have fine ale and the bard shall sing a fine tune guaranteed to get your feet a dancing.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ137
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
  IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
  IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
  IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
@@ -1944,12 +1944,12 @@ CHAIN VPLEIB PCF2Leina13a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -1959,12 +1959,12 @@ CHAIN VPLEIB PCF2Leina14a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -1974,12 +1974,12 @@ CHAIN VPLEIB PCF2Leina15a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -1989,12 +1989,12 @@ CHAIN VPLEIB PCF2Leina16a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -2004,12 +2004,12 @@ CHAIN VPLEIB PCF2Leina17a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -2019,12 +2019,12 @@ CHAIN VPLEIB PCF2Leina18a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -2044,12 +2044,12 @@ CHAIN VPLEIB PCF2Leina21a
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
 
@@ -2058,65 +2058,65 @@ CHAIN VPLEIB PCF2Leina22a
 ~As you wish Taffic, but please try and remember whereas you may be small, we are not carrying you tomorrow.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ137
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
 
 
 CHAIN VPLEIB PCF2Leina23a
 ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn't matter.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ137
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
 
 
 CHAIN VPLEIB PCF2Leina23c
 ~Then take your boots off Minsc, go bare foot as shall I.~
-EXTERN ~BMINSC~ NEJ138
+EXTERN BMINSC NEJ138
 
 
 CHAIN VPLEIB PCF2Leina24a
 ~In case you had not noticed Hrothgar we are in the great outdoors, that should be enough space even for you.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
 
 
@@ -2127,26 +2127,26 @@ EXTERN NJDARB 128
 
 CHAIN VPLEIB PCF2Leina26a
 ~I forget how much of a toll the road takes on your legs Aerie, but maybe dancing will help strengthen those calves of yours, put some muscle on them.~
-EXTERN ~BAERIE~ NEJ455
+EXTERN BAERIE NEJ455
 
 
 CHAIN VPLEIB PCF2Leina27a
 ~Jan, if that is the case then you can lead.~
-EXTERN ~BJAN~ NEJ2
+EXTERN BJAN NEJ2
 
 
 CHAIN VPLEIB PCF2Leina28a
 ~Edwin... forget it!~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
 
 
@@ -2154,26 +2154,26 @@ CHAIN VPLEIB PCF2Leina29a
 ~No lady is pulling your strings Valygar. You are a fine figure of a man and I am sure any lady here would be proud to dance with you but none are going to pull your strings in order to.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
 
 
 CHAIN VPLEIB PCF2Leina30a
 ~I'll ignore the lewd suggestion behind that remark dwarf... for now!~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
 
 
@@ -2181,57 +2181,57 @@ CHAIN VPLEIB PCF2Leina31a
 ~I have no idea what you said Viconia, and as it's come out of your mouth I have no desire to know.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
 
 
 CHAIN VPLEIB PCF2Leina32a
 ~Come Keldorn, Maria will not think any less of you for we all dance together as friends this night and not as lovers.~
-EXTERN ~BKELDOR~ NEJ2
+EXTERN BKELDOR NEJ2
 
 
 CHAIN VPLEIB PCF2Leina33a
 ~(*Smiling at the paladin's flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
 
 
 CHAIN VPLEIB PCF2Leina34a
 ~Anomen, if you as gifted in dance as you in the tall stories then I fear you will steal my audience from me tonight.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
 
 
 CHAIN VPLEIB PCF2Leina35a
 ~(*Smiling at the hafling*) That is up to you Mazzy, seldom does a girl get the chance to wear other than her armour these days.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ58
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
 
 
 CHAIN VPLEIB PCF2Leina36a
 ~Then tonight we shall all dance in Khalid's memory. Instead of mourning his death Jaheira it is now time to celebrate his life.~
-EXTERN ~BJAHEIR~ NEJ498
+EXTERN BJAHEIR NEJ498
 
 
 CHAIN VPLEIB PCF2Leina37a
 ~I wonder Nalia, how much your aunt's fear for you were due to the circumstances of your mother's death and how much was due to her own escapades as a young girl.~
-EXTERN ~BNALIA~ NEJ59
+EXTERN BNALIA NEJ59
 
 
 CHAIN VPLEIB PCF2Leina38a
@@ -2677,18 +2677,18 @@ CHAIN VPLEIB PCM4Leina2
 ~(*Laughing*) Ah, but the song is promised now, and the barkeep will not have his patrons disappointed. See they have even made room should any of you wish to join me in the dance.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
  IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
@@ -2700,18 +2700,18 @@ CHAIN VPLEIB PCM4Leina3
 ~(*Laughing*) Oh, I think you are going to enjoy this one. See, they have even made room should any of you wish to join me in the dance.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
  IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
@@ -2815,15 +2815,15 @@ CHAIN VPLEIB PCM4Leina704
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ139
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
 
 
 CHAIN VPLEIB PCM4Leina8
@@ -2835,15 +2835,15 @@ CHAIN VPLEIB PCM4Leina8
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ139
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
 
 
 CHAIN VPLEIB PCM4Leina9
@@ -2856,33 +2856,33 @@ CHAIN VPLEIB PCM4Leina9
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ0
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
  IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN ~BMINSC~ NEJ139
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
 
 
 CHAIN VPLEIB PCM4Leina22a
 ~As you wish Taffic, but please try and remember whereas you may be small, we are not carrying you tomorrow.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
 
@@ -2891,18 +2891,18 @@ CHAIN VPLEIB PCM4Leina23a
 ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn't matter.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
  IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
 
@@ -2911,18 +2911,18 @@ CHAIN VPLEIB PCM4Leina24a
 ~I am sure the kindly barkeep will remove some more tables if there is not enough room for you Hrothgar.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN ~BEDWIN~ NEJ109
- IF ~InParty("Jan")~ THEN EXTERN ~BJAN~ NEJ1
- IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN ~BAERIE~ NEJ454
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
  IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
 
 
@@ -2930,14 +2930,14 @@ CHAIN VPLEIB PCM4Leina28a
 ~Edwin... forget it!~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
  IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
 
 
@@ -2945,26 +2945,26 @@ CHAIN VPLEIB PCM4Leina29a
 ~No lady is pulling your strings Valygar. You are a fine figure of a man and I am sure any lady here would be proud to dance with you but none are going to pull your strings in order to.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN ~BKORGAN~ NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
 
 
 CHAIN VPLEIB PCM4Leina30a
 ~I'll ignore the lewd suggestion behind that remark dwarf... for now!~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
 
 
@@ -2972,42 +2972,42 @@ CHAIN VPLEIB PCM4Leina31a
 ~I have no idea what you said Viconia, and as it's come out of your mouth I have no desire to know.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN ~BKELDOR~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
 
 
 CHAIN VPLEIB PCM4Leina33a
 ~(*Smiling at the paladin's flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN ~BANOMEN~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
 
 
 CHAIN VPLEIB PCM4Leina34a
 ~Anomen, if you as gifted in dance as you in the tall stories then I fear you will steal my audience from me tonight.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ1
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
 
 
 CHAIN VPLEIB PCM4Leina35a
 ~(*Smiling at the hafling*) That is up to you Mazzy, seldom does a girl get the chance to wear other than her armour these days.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN ~BYOSHIM~ NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN ~BJAHEIR~ NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN ~BNALIA~ NEJ60
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
 
 
 IF ~Global("VP_KorganNoDancing","LOCALS",6)~ THEN VPLEIB PCM4bKorgan1
@@ -3627,7 +3627,7 @@ IF WEIGHT #-1 ~Global("VP_Ric_ClericQuest","LOCALS",1)~ THEN VPLEIB ClericQuest1
 ~(*Breathing in deeply*) Oh at last, the sweet smell of fresh air!~ [mute]
 END
  IF ~True()~ THEN EXTERN VPLEIB ClericQuest2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ140
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ140
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 58
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 129
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 86
@@ -3743,8 +3743,8 @@ END
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 59
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ141
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ499
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ141
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ499
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 87
 
 
@@ -3775,12 +3775,12 @@ CHAIN VPLEIB ClericQuest19a
 END
  IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ NEJ2
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ NEJ500
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ NEJ1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 9
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 60
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ NEJ142
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ142
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 131
 
 
@@ -3950,17 +3950,17 @@ END
 
 IF WEIGHT #-5 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("RoenalControl","GLOBAL",1) InParty("Korgan") !Dead("Korgan")~ THEN VPLEIB DeArnise8
 ~Korgan, do your kin have such fine elegant buildings such as these?~
-EXTERN ~BKORGAN~ LeiDear1
+EXTERN BKORGAN LeiDear1
 
 
 CHAIN VPLEIB DeArnise9
 ~We shall not! It's not only your mind that stinks, so does your body!~
-EXTERN ~BKORGAN~ LeiDear2
+EXTERN BKORGAN LeiDear2
 
 
 CHAIN VPLEIB DeArnise10
 ~No matter how one tries to be civil to you, you always turn it to the sewer. If something in your past hasd made you this way then it is nothing to do withe me, nor anyone else in this group so why do you continue to berate everyone?~
-EXTERN ~BKORGAN~ LeiDear3
+EXTERN BKORGAN LeiDear3
 
 
 CHAIN VPLEIB DeArnise11
@@ -3978,17 +3978,17 @@ END
 
 IF WEIGHT #-6 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("RoenalControl","GLOBAL",1) InParty("Mazzy") !Dead("Mazzy") OR(2) !InParty("Korgan") Dead("Korgan")~ THEN VPLEIB DeArnise12
 ~Mazzy, I was wondering would you ever want to be in charge of protecting a keep such as this?~
-EXTERN ~BMAZZY~ LeiDear1
+EXTERN BMAZZY LeiDear1
 
 
 CHAIN VPLEIB DeArnise13
 ~I understand what you mean. Though it is indeed nice for a time, I am a bard and not just a singer. Songs do not come from crowds who drink too much or pomp with its luxuries. Tales are made in the song of a bird, the zing of an arrow and the clash of sword touching sword. They come from the heart and are brought forth after much nurturing.~
-EXTERN ~BMAZZY~ LeiDear2
+EXTERN BMAZZY LeiDear2
 
 
 CHAIN VPLEIB DeArnise14
 ~Yes, Mazzy I have noticed you in battle and you are a worthy adversary to all we meet. Hummm... me thinks you are bringing a tale to my notes. Which reminds me, don't you think it would do us good to rest the night here?~
-EXTERN ~BMAZZY~ LeiDear3
+EXTERN BMAZZY LeiDear3
 
 
 CHAIN VPLEIB DeArnise15
@@ -4035,22 +4035,22 @@ END
 
 CHAIN VPLEIB DeArnise22
 ~Minsc when you were in Rasheman did they have Keeps such as this? And did they throw parties or festivals?~
-EXTERN ~BMINSC~ LeiDear1
+EXTERN BMINSC LeiDear1
 
 
 CHAIN VPLEIB DeArnise23
 ~Then Minsc we must stay here so you can enjoy a feast and sing merry songs.~
-EXTERN ~BMINSC~ LeiDear2
+EXTERN BMINSC LeiDear2
 
 
 CHAIN VPLEIB DeArnise24
 ~Minsc you make me laugh! No, we shall sing better then <CHARNAME>, now that brings terror into even a bards heart.~
-EXTERN ~BMINSC~ LeiDear3
+EXTERN BMINSC LeiDear3
 
 
 CHAIN VPLEIB DeArnise25
 ~Ssssh... Minsc you should not be so loud, <CHARNAME> might think you are making fun of <PRO_HIMHER>.~
-EXTERN ~BMINSC~ LeiDear4
+EXTERN BMINSC LeiDear4
 
 
 CHAIN VPLEIB DeArnise25a
@@ -4196,7 +4196,7 @@ END
 
 CHAIN VPLEIB Sphere8
 ~(*Her finger tips start to glow, but then she thinks better of it*)...~
-EXTERN ~BKORGAN~ LeiSpher1
+EXTERN BKORGAN LeiSpher1
 
 
 CHAIN VPLEIB Sphere8a
@@ -4226,8 +4226,8 @@ CHAIN VPLEIB Sphere13
 ~Oh, please <CHARNAME>, you have miss interpreted my comment wrongly!~
 END
  IF ~True()~ THEN EXTERN VPLEIB Sphere13a
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher3
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher1
 
 
 CHAIN VPLEIB Sphere13a
@@ -4281,12 +4281,12 @@ END
  IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A gem bag?~ EXTERN VPLEIB Sphere19
  IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A flask?~ EXTERN VPLEIB Sphere19
  IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A clay jar?~ EXTERN VPLEIB Sphere19
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher3
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher2
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher5
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher2
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher3
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher3
@@ -4297,12 +4297,12 @@ CHAIN VPLEIB Sphere19
 ~Now don't be silly I said smaller, not tiny or teeny-weeny. It is not as big as a house nor is it as small as a mouse. It has to be big enough for you to get into. So it is about the dimensions to easily hold a person.~
 END
  IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A box?~ EXTERN VPLEIB Sphere20
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher3
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher4
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher6
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher3
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher3
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher4
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher4
@@ -4350,7 +4350,7 @@ CHAIN VPLEIB Sphere25
 ~Oh, <CHARNAME>, that is just it. It is no more then a silly song but it does make me wonder now if part of it could be true after seeing this sphere.~
 END
  IF ~True()~ THEN EXTERN VPLEIB Sphere26
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher4
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher4
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiSpher2
 
@@ -4752,13 +4752,13 @@ CHAIN VPLEIB heist8
 ~I am not sure myself. I did as you said and distracted the two guards, pretty easy really. Men... all it takes is the sight of a comely face and figure and they're distracted.~
  = ~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~
  = ~Look, there she is, ask her yourself. (*Leina waves at Imoen, beckoning her over.*)~
-EXTERN ~BIMOEN2~ heist5
+EXTERN BIMOEN2 heist5
 
 
 CHAIN VPLEIB heist9
 ~That's ok Melora, I am sure it will all come back to you soon.~
  = ~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now that's a wall I'd love to be a fly on.~
-EXTERN ~BIMOEN2~ heist9
+EXTERN BIMOEN2 heist9
 
 
 CHAIN VPLEIB heist10
@@ -4847,7 +4847,7 @@ CHAIN VPLEIB TheatrQ9
  = ~So you do feel your surroundings... it tickles you, hummmm. I must remember that. The big bad adventurer gets all ticklish!~
 END
  ++ ~Hey I'm not made of stone nor am I a troll...I do have feelings!~ EXTERN VPLEIB TheatQ10
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN ~BIMOEN2~ theatr
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN BIMOEN2 theatr
  IF ~OR(2) !InParty("Imoen2") Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN VPLEIB TheatQ11
  ++ ~Er... weren't we suppose to be having an ale about now.~ EXTERN VPLEIB TheatQ12
 
@@ -4912,21 +4912,21 @@ CHAIN VPLEIB TheaQ151
 END
  IF ~True()~ THEN EXTERN VPLEIB TheaQ161
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea2
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea2
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea2
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiThea2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiThea2
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiThea2
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea2
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiThea2
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea2
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea2
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea2
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea2
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiThea2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea2
 
 
 CHAIN VPLEIB TheatQ16
@@ -5079,7 +5079,7 @@ IF WEIGHT #-98 ~Global("VP_Ric_RadianQuest","LOCALS",2)~ THEN VPLEIB RadianQ0
  ++ ~What the... what in the nine hells is the matter now Leina?~ EXTERN VPLEIB RadianQ3
  ++ ~(*You look at Leina and think better of asking her what the matter is for she is looking annoyed over something*) Not now Leina. I'm not in the mood for a heated discussion!~ EXTERN VPLEIB RadiaQE
  ++ ~Steady up there Leina. What has just caused such an outburst this time?~ EXTERN VPLEIB RadianQ3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN REPLY ~Korgan! You making free with your hands again?!~ EXTERN ~BKORGAN~ RadianQ1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN REPLY ~Korgan! You making free with your hands again?!~ EXTERN BKORGAN RadianQ1
 
 
 CHAIN VPLEIB RadiaQE
@@ -5174,7 +5174,7 @@ CHAIN VPLEIB RadiQ101
 ~<CHARNAME>...~
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadianQA
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQA
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ
 
 
@@ -5251,7 +5251,7 @@ END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadiaQ13
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
 CHAIN VPLEIB RadiaQ18
@@ -5260,7 +5260,7 @@ END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadiaQ13
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
 CHAIN VPLEIB RadiQ19A
@@ -5312,11 +5312,11 @@ END
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiRadia
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiRadia
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiRadia
 
@@ -5331,7 +5331,7 @@ END
 
 CHAIN VPLEIB LeiRadE1
 ~(*Leina turns and her usually warm elven eyes glare icy cold*) That'll be a no you libidinous megalomaniac! A warning, when talking to yourself, make sure that no elf is standing nearby. (*She turns her back on him*)~
-EXTERN ~BEDWIN~ LeiRadi2
+EXTERN BEDWIN LeiRadi2
 
 
 CHAIN VPLEIB RadiaQ21
@@ -5675,13 +5675,13 @@ DO ~SetGlobal("VP_BMelora","LOCALS",6)~
 == NJMELB ~How many years does a half elf have Leina?~
 EXIT
 
-APPEND ~BIMOEN2~
+APPEND BIMOEN2
 
 CHAIN BIMOEN2 theatr
 ~Hey Leina, any time you want, I'll fill you in on all <PRO_HISHER> weak spots. One poke and it's usually all over but for the cry for mercy.~
 EXTERN VPLEIB TheatQ9a
 
-APPEND ~BHAERDA~
+APPEND BHAERDA
 
 CHAIN BHAERDA LeiTheat
 ~(*Looking knowingly towards Leina*) Ah my little fire fly, I believe you are somewhat responsible for this idea of <CHARNAME>'s.~
@@ -5695,13 +5695,13 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiTheat
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiTheat
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiTheat
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiTheat
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiTheat
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiTheat
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
 
 
 CHAIN BHAERDA LeiThea3
@@ -5716,13 +5716,13 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiThea3
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea3
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea3
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea3
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea3
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
 
 
 CHAIN BHAERDA LeiThea4
@@ -5737,13 +5737,13 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiThea4
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea4
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea4
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea4
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea4
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea4
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
 
 
 CHAIN BHAERDA LeiThea1
@@ -5756,13 +5756,13 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiThea1
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea1
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea1
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea1
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea1
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
 
 
 CHAIN BHAERDA LeiThea2
@@ -5770,9 +5770,9 @@ CHAIN BHAERDA LeiThea2
 END
  IF ~True()~ THEN EXTERN VPLEIB TheaQ161
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea2
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea2
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
 
 APPEND ~FFBART~
 
@@ -5809,21 +5809,21 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiTheat
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiTheat
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiTheat
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiTheat
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiTheat
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiTheat
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiTheat
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiTheat
- IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~BCERND~ LeiTheat
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiTheat
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiTheat
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiTheat
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiTheat
  IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiTheaB
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiTheat
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiTheat
 
 
 CHAIN FFBART theatr3c
@@ -5836,21 +5836,21 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiThea3
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea3
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea3
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea3
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea3
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea3
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiThea3
- IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~BCERND~ LeiThea3
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiThea3
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiThea3
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiThea3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea3
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea3
  IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiThea3
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiThea3
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiThea3
 
 
 CHAIN FFBART theatr3d
@@ -5863,21 +5863,21 @@ END
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiThea4
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~BMAZZY~ LeiThea4
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiThea4
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~BKELDOR~ LeiThea4
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~BJAN~ LeiThea4
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiThea4
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~BIMOEN2~ LeiThea4
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~BHAERDA~ LeiThea4
- IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~BCERND~ LeiThea4
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~BANOMEN~ LeiThea4
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~BAERIE~ LeiThea4
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiThea4
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea4
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea4
  IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiThea4
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiThea4
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiThea4
 
 CHAIN FFBART theatr4
 ~(*A huge grin covering his face*) That's my Leina, and if truth be told, I doubt you would have the lass any other way!~

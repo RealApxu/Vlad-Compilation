@@ -11,25 +11,25 @@ END
 CHAIN VPSHAJ avalan1
 ~(*Then looking disparagingly at you*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
  IF ~True()~ THEN EXTERN NJHROJ 401
- IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+ IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN2J sharaval
 END
 
 CHAIN VPSHAJ avalan2
 ~(*Then looking disparagingly at the male members of your group*)... Some with the help of others, those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
  IF ~True()~ THEN EXTERN NJHROJ 401
- IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+ IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN2J sharaval
 END
 
 CHAIN VPSHAJ avalan3
 ~...those who didn't were weak and deserve no more than death. At least as fodder for the beasts their bodies will serve a damn sight better than they would have served as warriors!~
  IF ~True()~ THEN EXTERN NJHROJ 401
- IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+ IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
  IF ~InParty("Imoen")~ THEN EXTERN ~IMOENJ~ sharaval
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN2J~ sharaval
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN2J sharaval
 END
 
 
@@ -91,7 +91,7 @@ END
 
 CHAIN VPSHAJ onminsc2
 ~The idiot ranger... how the nine hells you found your way into this group is beyond me! A half wit who asks a rat what his next move should be... need I say more?!~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ342
+ IF ~~ THEN EXTERN MINSCJ NEJ342
 END
 
 CHAIN VPSHAJ onminsc3
@@ -141,9 +141,9 @@ END
 CHAIN VPSHAJ imytakenfix
 ~VENGEANCE will be mine!~
  IF ~True()~ THEN EXIT
- IF ~ InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ N238
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ N528
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ N147
+ IF ~ InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ N238
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ N528
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ N147
 END
 
 //Nej 2 - Go to Ulcaster
@@ -210,9 +210,9 @@ CHAIN VPSHAJ dragoneye
 ~(*Pointing her sword*) I suppose it does somewhat resemble a dragon's head and I can see why some may find it impressive, but in reality... it's just another damp dungeon for us to crawl through.~
  IF ~True()~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXIT
  IF ~InParty("Imoen") !Dead("Imoen")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ147
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~IMOEN2J~ VP_FIX63
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~JAHEIRAJ~ NEJ591
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~MINSCJ~ NEJ288
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN IMOEN2J VP_FIX63
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN JAHEIRAJ NEJ591
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN MINSCJ NEJ288
 END
 
 CHAIN VPSHAJ lizardking
@@ -220,9 +220,9 @@ CHAIN VPSHAJ lizardking
  IF ~True()~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN NJHROJ 273
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~ACCALIJ~ 59
  IF ~InParty("Imoen") !Dead("Imoen")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~IMOENJ~ NEJ148
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~IMOEN2J~ VP_FIX64
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~JAHEIRAJ~ NEJ627
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~MINSCJ~ NEJ291
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN IMOEN2J VP_FIX64
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN JAHEIRAJ NEJ627
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN MINSCJ NEJ291
 END
 
 CHAIN VPSHAJ erevbody
@@ -238,8 +238,8 @@ END
 CHAIN VPSHAJ egenia
 ~If you seriously believe that the gods give a toss about what is going on down here then you are all fools! I trust only my sword and my own eyes, not the off chance that the gods may be watching my back... or my front.~
  IF ~True()~ THEN EXIT
- IF ~InParty("Minsc") !Dead("Minsc") OR(2) !InParty("njdar") Dead("njdar")~ THEN EXTERN ~MINSCJ~ NEJ326
- IF ~InParty("Minsc") !Dead("Minsc") InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 62
+ IF ~InParty("Minsc") !Dead("Minsc") OR(2) !InParty("njdar") Dead("njdar")~ THEN EXTERN MINSCJ NEJ326
+ IF ~InParty("Minsc") !Dead("Minsc") InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 62
 END
 
 CHAIN VPSHAJ nearpor1
@@ -267,46 +267,46 @@ CHAIN IMOENJ sharaval
 ~You are so cruel Shar-Teel! I don't know why <CHARNAME> didn't leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
 END
  IF ~True()~ THEN EXTERN NJHROJ 401
- IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+ IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
 
 //Leina Interactions
 
 IF ~~ THEN BEGIN LeiSpher1
   SAY ~What do you take me for... I am a warrior not a bloody contestant in your guessing game bard!~
-  IF ~True()~ THEN EXTERN ~BLEINA~ Sphere10
-  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~BYOSHIM~ LeiSpher1
-  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiSpher1
-  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiSpher2
-  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~BJAHEIR~ LeiSpher1
-  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiSpher4
-  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~BNALIA~ LeiSpher1
-  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~BVALYGA~ LeiSpher1
-  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiSpher3
-  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~BDAR~ LeiSpher2
+  IF ~True()~ THEN EXTERN VPLEIB Sphere10
+  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+  IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+  IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~BTAFFIC~ LeiSpher1
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher1
 END
 
 IF ~~ THEN BEGIN RadianQ
   SAY ~Finally the stinkin' male is gettin' a brain. Your damn right, <CHARNAME>, who gives a crap who starts it and how. As long as blood flows. So you shut your yammering bard!~
-  IF ~True()~ THEN EXTERN ~BLEINA~ RadiaQ10
-  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadianQB
+  IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQB
 END
 
 IF ~~ THEN BEGIN RadianQ1
   SAY ~I think a snowball has a better chance in hell than this bard being able to change her pie in the sky attitude. For all her, *I've grown* attitude, she still doesn't use her brain!~
-  IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ19A
-  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ RadianQ
-  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ RadianQ
+  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN RadianQ
 END
 
 IF ~~ THEN BEGIN LeiRadia
   SAY ~Oh suck it up bard, who the hell cares where we sit as long as they have ale and hot water. I'll never know how in the nine hells you ever got into this party. You're such a prig!~
-  IF ~True()~ THEN EXTERN ~BLEINA~ RadiQ21B
-  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~BVICONI~ LeiRadia
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~BTAFFIC~ LeiRadia
+  IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
-  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~BMINSC~ LeiRadia
-  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~BEDWIN~ LeiRadia
-  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ LeiRadia
+  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
 END

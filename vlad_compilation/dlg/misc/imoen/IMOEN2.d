@@ -6,15 +6,15 @@ BEGIN 21 END // state number (can be more than one) BEGIN 0 END // transition nu
 END
 
 EXTEND_BOTTOM IMOEN2 21
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
-  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN ~KELDORJ~ Imoen0
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
   IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
   IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ immy1
 END
 
-APPEND ~IMOEN2~
+APPEND IMOEN2
 
 IF ~~ THEN BEGIN leina1
   SAY ~What difference does that make? You think that if <CHARNAME> knew we were related, <PRO_HESHE> wouldn't have spoken so fondly of me?~
@@ -58,8 +58,8 @@ END
 IF ~~ THEN BEGIN leina8
   SAY ~Thank you, Leina.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
-  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN ~KELDORJ~ Imoen0
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
   IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
@@ -96,8 +96,8 @@ END
 IF ~~ THEN BEGIN melora6
   SAY ~Thank you, Melora.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
-  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN ~KELDORJ~ Imoen0
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
   IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
 END
@@ -133,8 +133,8 @@ END
 IF ~~ THEN BEGIN taffic6
   SAY ~(*Waving her hand dismissively at the gnome*) Whatever!~
   IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
-  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN ~KELDORJ~ Imoen0
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
 END
 
@@ -203,24 +203,24 @@ END
 IF ~~ THEN BEGIN hrothg12
   SAY ~I hope so.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
-  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN ~KELDORJ~ Imoen0
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
+  IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
 END
 
 IF ~~ THEN BEGIN MeetKr0
   SAY ~(Crossly) Yea, well I can't say I enjoyed being used as bait... it was <CHARNAME> whom he wanted. Who would have guessed that Athkatla has such foolish laws!~
-  IF ~~ THEN EXTERN ~KELDORJ~ Imoen1
+  IF ~~ THEN EXTERN KELDORJ Imoen1
 END
 
 IF ~~ THEN BEGIN MeetKr1
   SAY ~Steal me? Hey, what do you think I am... a scroll from the age of Netheril waiting to be stolen? Yes, I did a stupid thing... wait, what did you mean by that... that I would have done a stupid thing anyway?~
-  IF ~~ THEN EXTERN ~KELDORJ~ Imoen2
+  IF ~~ THEN EXTERN KELDORJ Imoen2
 END
 
 IF ~~ THEN BEGIN MeetKr2
   SAY ~Aw, don't worry sir paladin, I am not one to be crabby for long... I'm sure we'll have lots of chances to get better acquainted.~
   IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
-  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN ~KACHIJ~ N32
+  IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
 END
 
 IF ~~ THEN BEGIN KachiBye

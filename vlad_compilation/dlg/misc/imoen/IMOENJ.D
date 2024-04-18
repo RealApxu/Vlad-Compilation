@@ -2,7 +2,7 @@ APPEND ~IMOENJ~
 
 IF ~~ THEN BEGIN NEJ71
  SAY ~We've just had some very bad things done to us, but I don't believe the plan was to send us to the northern lands... Let's proceed warily.~
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ243
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ243
  IF ~!InParty("Minsc")~ THEN EXIT
 END
 
@@ -18,17 +18,17 @@ IF ~~ THEN BEGIN NEJ75
  SAY ~I am sorry, <CHARNAME>. A few moments ago we were celebrating our freedom, only to find ourselves trapped in this... this horrible place again! Please, please let us get moving and just get out of here, quickly.~
  IF ~True()~ THEN EXTERN NJHROJ 369
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ comebck1
- IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 5
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ246
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ534
+ IF ~InParty("njdar")~ THEN EXTERN NJDARJ 5
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ246
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ534
 END
 
 IF WEIGHT #-63 ~Global("TeleportDialog","GLOBAL",2)~ THEN BEGIN NEJ76
  SAY ~Are... are we free <CHARNAME>? Dare we hope? This room it feels different somehow.~
  IF ~True()~ THEN REPLY ~This place does feel different, but we should not get our hopes up nor let our guard down because of the way we feel. One thing is for sure, we will not discover anything standing around here so I suggest we move quickly and prepare ourselves for whoever or whatever lies in wait at the bottom of these stairs.~ GOTO NEJ77
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ nejopen1
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ265
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ555
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ265
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ555
 END
 
 IF ~~ THEN BEGIN NEJ77
@@ -123,27 +123,27 @@ END
 
 IF WEIGHT #-3 ~Global("VP_BDar","LOCALS",2)~ THEN BEGIN NEJ95
  SAY ~Does this snow ever go away Dar? It looks to me like it is always here.~
- IF ~~ THEN DO ~SetGlobal("VP_BDar","LOCALS",3)~ EXTERN ~DARJ~ 16
+ IF ~~ THEN DO ~SetGlobal("VP_BDar","LOCALS",3)~ EXTERN NJDARJ 16
 END
 
 IF ~~ THEN BEGIN NEJ96
  SAY ~But it is so... so horribly cold! I thought it looked real pretty at first, but now I find it cold and wet, and it seeps through my boots, making my feet cold and wet too.~
- IF ~~ THEN EXTERN ~DARJ~ 17
+ IF ~~ THEN EXTERN NJDARJ 17
 END
 
 IF ~~ THEN BEGIN NEJ97
  SAY ~(*Stamping her feet in a newly fallen area of snow*) It makes such a delicious sound Dar, like stomping on beetles, all crunchy. Here listen! (*She stamps her feet again to demonstrate what she means*). See what I mean.~
- IF ~~ THEN EXTERN ~DARJ~ 18
+ IF ~~ THEN EXTERN NJDARJ 18
 END
 
 IF ~~ THEN BEGIN NEJ98
  SAY ~Of course I have, well, maybe not so much of it in all one place. There was this island we were once transported to when some mage asked us to find a cloak for him, but...but that seems such a long time ago now. Anyhow, we were not there very long.~
- IF ~~ THEN EXTERN ~DARJ~ 19
+ IF ~~ THEN EXTERN NJDARJ 19
 END
 
 IF ~~ THEN BEGIN NEJ99
  SAY ~But that is not a fun way to walk Dar, no crunchy squashed beetle sounds!~
- IF ~~ THEN EXTERN ~DARJ~ 20
+ IF ~~ THEN EXTERN NJDARJ 20
 END
 
 IF ~~ THEN BEGIN NEJ100
@@ -153,22 +153,22 @@ END
 
 IF WEIGHT #-4 ~Global("VP_BMinsc","LOCALS",2)~ THEN BEGIN NEJ101
  SAY ~We have travelled some rough roads together Minsc, but this must be the strangest. I don't think I will ever see Candlekeep again. Damn Irenicus!~
- IF ~~ THEN DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN ~MINSCJ~ NEJ266
+ IF ~~ THEN DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN MINSCJ NEJ266
 END
 
 IF ~~ THEN BEGIN NEJ102
  SAY ~I don't want you to be sad Minsc, you have lots to be happy about. Here, in this place Dynaheir is not dead, but if we do get home you will be sad and have to avenge her being dead again.~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ267
+ IF ~~ THEN EXTERN MINSCJ NEJ267
 END
 
 IF ~~ THEN BEGIN NEJ103
  SAY ~No Minsc, you can't do that! You don't belong here anymore than I do. It's all so unfair! That damn portal dragging us here, I don't care a bit about Hrothgar and his big old evil! I just want to go home, feel the sun on my face instead of trudging through all this cold, horrible snow!~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ268
+ IF ~~ THEN EXTERN MINSCJ NEJ268
 END
 
 IF ~~ THEN BEGIN NEJ104
  SAY ~Thank you Minsc. I think a big strong arm is just what I need at the moment, only don't go telling the others, they still think of me as the baby here as it is.~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ269
+ IF ~~ THEN EXTERN MINSCJ NEJ269
 END
 
 IF ~~ THEN BEGIN NEJ105
@@ -255,33 +255,33 @@ END
 IF ~~ THEN BEGIN NEJ118
  SAY ~Maybe not <CHARNAME>, but we would have a heck of a lot more fun.~
  IF ~OR(2) Dead("Jaheira") !InParty("Jaheira")~ THEN EXIT
- IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
+ IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ556
 END
 
 IF ~~ THEN BEGIN NEJ119
  SAY ~You got lucky there, bet I get you with my next one!~
  IF ~OR(2) Dead("Jaheira") !InParty("Jaheira")~ THEN EXIT
- IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ556
+ IF ~!Dead("Jaheira") InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ556
 END
 
 IF ~~ THEN BEGIN NEJ120
  SAY ~And maybe you wouldn't be so grouchy if you put less starch in your knickers Jaheira... (*grinning*) then perhaps Khalid would smile more and stutter less!~
- IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ557
+ IF ~~ THEN EXTERN JAHEIRAJ NEJ557
 END
 
 IF ~~ THEN BEGIN NEJ121
  SAY ~Well... you should listen to yourself sometimes! You fuss around us like an old mother hen, when in fact you are neither a mother nor an old bird. Lighten up, live your own life and stop finding fault with everyone elses.~
- IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ558
+ IF ~~ THEN EXTERN JAHEIRAJ NEJ558
 END
 
 IF ~~ THEN BEGIN NEJ122
  SAY ~Why not say faults Jaheira, after all that is what you mean isn't it? If it is my nature to be as I am then surely nature is also responsible for what you call my faults? Now, remind me... who it is that believes we should not mess with nature?~
- IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ559
+ IF ~~ THEN EXTERN JAHEIRAJ NEJ559
 END
 
 IF ~~ THEN BEGIN NEJ123
  SAY ~Fine by me. I can't think of a more fun way to learn, at least when it comes to talking about a thing, I will know what I am talking about, having *experienced* it.~
- IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ560
+ IF ~~ THEN EXTERN JAHEIRAJ NEJ560
 END
 
 IF WEIGHT #-6 ~Global("VP_BAccalia","LOCALS",5)~ THEN BEGIN NEJ124
@@ -365,7 +365,7 @@ END
 IF ~~ THEN BEGIN NEJ139
  SAY ~That was scary!!!~
  IF ~True()~ THEN EXTERN NJHROJ 113
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 26
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 26
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 31
 END
 
@@ -382,7 +382,7 @@ END
 IF ~~ THEN BEGIN NEJ142
  SAY ~I think I may change my name to Imoen-of-the... Imoen-of-the what? Mmm, I am going to have to think some more on this one, after all, it has to reflect the colour of my skin or maybe even my hair.~
  IF ~True()~ THEN EXIT
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ587
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ587
 END
 
 IF ~~ THEN BEGIN NEJ143
@@ -392,7 +392,7 @@ END
 
 IF ~~ THEN BEGIN NEJ144
  SAY ~(*Giggles*) Nah, what gave you that idea?~
- IF ~~ THEN EXTERN ~JAHEIRAJ~ NEJ588
+ IF ~~ THEN EXTERN JAHEIRAJ NEJ588
 END
 
 IF ~~ THEN BEGIN NEJ145
@@ -419,19 +419,19 @@ END
 IF ~~ THEN BEGIN NEJ149
  SAY ~Hey, they're already waiting for us... why give 'em more time I say?~
  IF ~True()~ THEN EXTERN NJHROJ 274
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ292
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ292
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 60
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ628
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ628
 END
 
 IF ~~ THEN BEGIN NEJ150
  SAY ~We'll keep an eye on the big fella. He's family, and we need him around.~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ293
+ IF ~~ THEN EXTERN MINSCJ NEJ293
 END
 
 IF ~~ THEN BEGIN NEJ151
  SAY ~Yeah. I hate to tell you this big fella, but she's evil.~
- IF ~~ THEN EXTERN ~MINSCJ~ NEJ296
+ IF ~~ THEN EXTERN MINSCJ NEJ296
 END
 
 IF WEIGHT #-7 ~Global("VP_YxunomeiDead","GLOBAL",1)~ THEN BEGIN NEJ152
@@ -442,9 +442,9 @@ END
 IF ~~ THEN BEGIN NEJ153
  SAY ~(*Smiling a wan smile*) At least we won't be bored.~
  IF ~True()~ THEN EXTERN NJHROJ 280
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 35
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ297
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ595
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 35
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ297
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ595
 END
 
 IF ~~ THEN BEGIN NEJ154
@@ -455,10 +455,10 @@ END
 IF ~~ THEN BEGIN NEJ171
  SAY ~Wow... that was some move Hrothgar! Uh... care to tell us how you did it?~
  IF ~True()~ THEN EXTERN NJHROJ 196
- IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 43
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ314
+ IF ~InParty("njdar")~ THEN EXTERN NJDARJ 43
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ314
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 38
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ611
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ611
 END
 
 IF ~~ THEN BEGIN NEJ172
@@ -471,9 +471,9 @@ IF ~~ THEN BEGIN NEJ173
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~ EXIT
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ613
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ315
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 44
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ613
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ315
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 44
 END
 
 IF ~~ THEN BEGIN NEJ174
@@ -482,28 +482,28 @@ IF ~~ THEN BEGIN NEJ174
  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~SHARTJ~ kaylsold
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ 206
  IF ~InParty("Accalia") !Dead("Accalia")~ THEN EXTERN ~ACCALIJ~ 40
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ614
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ614
 END
 
 IF ~~ THEN BEGIN NEJ175
  SAY ~When we meet these heroes Minsc, you just have to remember what Kaylessa said, that they are the twisted spirits of what once were heroes. We are putting to rest that which should have been allowed to die a long time ago.~
  IF ~True()~ THEN EXTERN NJHROJ 208
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 46
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 46
 END
 
 IF ~~ THEN BEGIN NEJ176
     SAY ~I hope this works <CHARNAME>, I really want out of here.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4) ClearAllActions() StartCutSceneMode() StartCutscene("VPCutH07")~ EXIT
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 42
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ317
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ616
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ317
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ616
 END
 
 IF ~~ THEN BEGIN NEJ177
     SAY ~I don't care two hoots about balance Jaheira! It can be tipped upside down and standing on its head for all I care... I just want to go home.~
  IF ~True()~ THEN DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",4) ClearAllActions() StartCutSceneMode() StartCutscene("VPCutH07")~ EXIT
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 42
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ317
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ317
 END
 
 IF ~~ THEN BEGIN NEJ178
@@ -514,14 +514,14 @@ END
 IF ~~ THEN BEGIN NEJ179
  SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 46
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ319
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ617
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ319
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ617
 END
 
 IF ~~ THEN BEGIN NEJ180
  SAY ~I guess they have said it all for me Accalia. I will miss you and when you meet this big evil, be sure you show him a fight for me.~
  IF ~True()~ THEN EXTERN NJHROJ 233
- IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 49
+ IF ~InParty("njdar")~ THEN EXTERN NJDARJ 49
 END
 
 IF ~~ THEN BEGIN NEJ181 //3.01
@@ -542,14 +542,14 @@ END
 IF ~~ THEN BEGIN NEJ184
  SAY ~So before you begin to judge who is and who is not a coward ask yourself, is there really any point to us staying here, will our aid make a difference or are we wasting time trying to believe that it will?~
  IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 54
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ323
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ621
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ323
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ621
 END
 
 IF ~~ THEN BEGIN NEJ185
  SAY ~I guess they have said it all for me Accalia. I will miss you and when you meet this big evil, be sure you show him a fight for me.~
  IF ~True()~ THEN EXTERN NJHROJ 258
- IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ 59
+ IF ~InParty("njdar")~ THEN EXTERN NJDARJ 59
 END
 
 IF ~~ THEN BEGIN NEJ186
@@ -575,7 +575,7 @@ IF ~~ THEN BEGIN NEJ189
  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~For now, let's just make sure that one of these enemies is unhappy with the outcome.~ EXTERN NJHROJ 284
  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Each foe we dispatch leaves us one step closer to solving this puzzle.~ EXTERN NJHROJ 284
  IF ~OR(2) !InParty("Jaheira") Dead("Jaheira")~ THEN REPLY ~Ah! Who cares? Lets just plant these vermin!~ EXTERN NJHROJ 284
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ631
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ631
 END
 
 IF ~~ THEN BEGIN NEJ190
@@ -719,7 +719,7 @@ END
 IF ~~ THEN BEGIN sharaval
   SAY ~You are so cruel Shar-Teel! I don't know why <CHARNAME> didn't leave you locked in your cage for Irenicus to play with... but then again, I reckon you might have found an ally in your love of bloodshed!~
     IF ~True()~ THEN EXTERN NJHROJ 401
-    IF ~InParty ("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ sharaval
+    IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
 END
 
 IF ~~ THEN BEGIN NEJ206fix

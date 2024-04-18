@@ -1,6 +1,6 @@
-BEGIN ~NSONS~ 74343
+BEGIN NSONS
 
-IF ~True()~ THEN BEGIN 0
-  SAY ~I have no desire to speak with you.~
-  IF ~~ THEN EXIT
-END
+CHAIN
+IF ~True()~ THEN NSONS 0
+~I have no desire to speak with you.~
+EXIT

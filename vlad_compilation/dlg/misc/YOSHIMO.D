@@ -1,4 +1,4 @@
-REPLACE ~YOSHIMO~
+REPLACE YOSHIMO
 
 IF ~~ THEN BEGIN 31
   SAY ~I am very sorry to hear that. You shall find me in Athkatla should you need me. I will be staying at the Copper Coronet. Travel safely, <CHARNAME>.~

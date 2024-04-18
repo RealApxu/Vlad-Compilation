@@ -3,6 +3,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Boo_Moves","GLOBAL",0)
-		MoveGlobalObject("Boo","Minsc")
+		MoveGlobalObject("vpboo","Minsc")
 		Continue()
 END

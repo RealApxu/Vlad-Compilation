@@ -1,16 +1,18 @@
-BEGIN ~WOLF~
+BEGIN WOLF
 
-IF ~!CharName("Sime",LastTalkedToBy)~ THEN BEGIN 0
-  SAY ~Veter looks at you with suspicion, and after a moment's inspection, it turns and gives you full view of its rear while it strolls to Sime.~
-  IF ~~ THEN DO ~MoveToObject("Sime")~ EXIT
-END
+CHAIN
+IF ~!CharName("Sime",LastTalkedToBy)~ THEN WOLF 0
+~Veter looks at you with suspicion, and after a moment's inspection, it turns and gives you full view of its rear while it strolls to Sime.~
+DO ~MoveToObject("Sime")~
+EXIT
 
-IF ~CharName("Sime",LastTalkedToBy)~ THEN BEGIN 1
-  SAY ~Veter looks at Sime, its nose is twitching slightly, and its tail is shuddering...~
-  IF ~~ THEN REPLY ~Veter, come here...~ GOTO 2
+CHAIN
+IF ~CharName("Sime",LastTalkedToBy)~ THEN WOLF 1
+~Veter looks at Sime, its nose is twitching slightly, and its tail is shuddering...~
 END
+ ++ ~Veter, come here...~ EXTERN WOLF 2
 
-IF ~~ THEN BEGIN 2
-  SAY ~*Sime strokes Veter's head gently, and it suddenly turns into the figurine.*~
-  IF ~~ THEN DO ~GiveItemCreate("Wolf","Sime",0,0,0) SetGlobal("VP_Veter","GLOBAL",1) SetGlobal("VP_VeterRest","GLOBAL",0) DestroySelf()~ EXIT
-END
+CHAIN WOLF 2
+~*Sime strokes Veter's head gently, and it suddenly turns into the figurine.*~
+DO ~GiveItemCreate("Wolf","Sime",0,0,0) SetGlobal("VP_Veter","GLOBAL",1) SetGlobal("VP_VeterRest","GLOBAL",0) DestroySelf()~
+EXIT

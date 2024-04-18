@@ -8,40 +8,40 @@ EXTEND_BOTTOM BALTH 25
 EraseJournalEntry(67721)
 EraseJournalEntry(67722)
 EraseJournalEntry(67723)
-EraseJournalEntry(66357)~ EXTERN ~KELDO25J~ Bz0
+EraseJournalEntry(66357)~ EXTERN KELDO25J Bz0
 END
 
 APPEND ~BALTH~
 
 IF ~~ THEN BEGIN KR0
   SAY ~Are you going to tell me what my duty is, paladin?~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz1
+  IF ~~ THEN EXTERN KELDO25J Bz1
 END
 
 IF ~~ THEN BEGIN KR1
   SAY ~Very well. I am listening to you.~
-  IF ~Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDO25J~ Bz2
-  IF ~!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDO25J~ Bz2n
+  IF ~Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDO25J Bz2
+  IF ~!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDO25J Bz2n
 END
 
 IF ~~ THEN BEGIN KR2
   SAY ~(Throwing up his eyes) Your bride? You want to tell me that...~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz3
+  IF ~~ THEN EXTERN KELDO25J Bz3
 END
 
 IF ~~ THEN BEGIN KR3
   SAY ~She does not want to take her father's throne?~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz4
+  IF ~~ THEN EXTERN KELDO25J Bz4
 END
 
 IF ~~ THEN BEGIN KR4
   SAY ~But why? I have an absolute trust in myself that I will kill her and then I'll kill myself.~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz5
+  IF ~~ THEN EXTERN KELDO25J Bz5
 END
 
 IF ~~ THEN BEGIN KR5
   SAY ~I am ready to die, paladin!~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz6
+  IF ~~ THEN EXTERN KELDO25J Bz6
 END
 
 IF ~~ THEN BEGIN KR6
@@ -60,7 +60,7 @@ END
 
 /*IF ~~ THEN BEGIN KR6
   SAY ~But how can I be sure...~
-  IF ~~ THEN EXTERN ~KELDO25J~ Bz7
+  IF ~~ THEN EXTERN KELDO25J Bz7
 END
 
 IF ~~ THEN BEGIN KR7

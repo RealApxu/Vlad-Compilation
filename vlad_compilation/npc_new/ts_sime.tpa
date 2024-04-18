@@ -121,11 +121,11 @@ COPY ~%MOD_FOLDER%/quests/torturedsouls/cre/CDMaid5.cre~ override
 
 APPEND ~PDIALOG.2da~
 ~SIME SIMEP SIMEJ SIMED SIME25P SIMEJ *** sime~
-UNLESS ~SIME~
+UNLESS VPSIME
     
 APPEND ~INTERDIA.2da~
 ~SIME BSIME BSIME~
-UNLESS ~SIME~
+UNLESS VPSIME
 
 COPY ~%MOD_FOLDER%/quests/torturedsouls/itm/AranRing.ITM~ override
     SAY NAME2 ~Ring of Niri Alud~

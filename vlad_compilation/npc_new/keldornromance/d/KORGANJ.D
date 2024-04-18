@@ -1,15 +1,15 @@
-APPEND ~KORGANJ~
+APPEND KORGANJ
 
 IF ~~ THEN BEGIN Kr_WarTk
   SAY ~I be a mercenary as ye all know, so I fight beside thems that pays the best. Although... traveling with ye do promise huge trophies! Maybe the dwarf will take yer side in this <CHARNAME>, if ye don't mind.~
   IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kr_WarTk
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kr_WarTk
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kr_WarTk
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kr_WarTk
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kr_WarTk
-  IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kr_WarTk
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kr_WarTk
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kr_WarTk
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kr_WarTk
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kr_WarTk
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kr_WarTk
+  IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kr_WarTk
 END
 
 IF ~~ THEN BEGIN Kelem0
@@ -36,16 +36,16 @@ END
 
 IF ~~ THEN BEGIN Kelem4
   SAY ~Good and good. There's gold aplenty to be had together.~
-  IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
-  IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
-  IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kelem0
+  IF ~True()~ THEN EXTERN KELEMVOR 4A
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
+  IF ~InParty("Viconia")~ THEN EXTERN VICONIJ Kelem0
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kelem0
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kelem0
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kelem0
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kelem0
+  IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kelem0
 END
 
 END

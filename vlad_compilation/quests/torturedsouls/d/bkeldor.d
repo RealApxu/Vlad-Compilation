@@ -1,113 +1,89 @@
-APPEND ~BKELDOR~
+APPEND BKELDOR
 
-IF ~~ THEN BEGIN TS149
-  SAY ~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Order's charge...~
-  IF ~~ THEN EXTERN ~BKACHI~ 40
-END
+CHAIN BKELDOR TS149
+~Thank you, Kachiko. By Torm, I wish I could retire from this life of battle and smiting evil... I have done it for thirty years and see no end of it. I have a wonderful wife and two beautiful daughters; the elder would be about your age. I want to go home one day and never leave it again for yet another quest or the Order's charge...~
+EXTERN VPKACB 40
 
-IF ~~ THEN BEGIN TS150
-  SAY ~I serve Torm and I always thought that my last breath would release me from this servitude. There is so much evil and injustice in this world!~
-  IF ~~ THEN EXTERN ~BKACHI~ 41
-END
+CHAIN BKELDOR TS150
+~I serve Torm and I always thought that my last breath would release me from this servitude. There is so much evil and injustice in this world!~
+EXTERN VPKACB 41
 
-IF ~~ THEN BEGIN TS151
-  SAY ~Kachiko, my allegiance is with Torm. I would not desert my deity for a moment's weakness.~
-  IF ~~ THEN EXTERN ~BKACHI~ 42
-END
+CHAIN BKELDOR TS151
+~Kachiko, my allegiance is with Torm. I would not desert my deity for a moment's weakness.~
+EXTERN VPKACB 42
 
-IF ~~ THEN BEGIN TS152
-  SAY ~Why?~
-  IF ~~ THEN EXTERN ~BKACHI~ 43
-END
+CHAIN BKELDOR TS152
+~Why?~
+EXTERN VPKACB 43
 
-IF ~~ THEN BEGIN TS153
-  SAY ~(*laughs and shakes his head*) Got it all covered, don't they? And I guess there is an Immortal in charge of the potential husband's wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily.~
-  IF ~~ THEN EXTERN ~BKACHI~ 44
-END
+CHAIN BKELDOR TS153
+~(*laughs and shakes his head*) Got it all covered, don't they? And I guess there is an Immortal in charge of the potential husband's wisdom and intelligence? Sorry, Kachiko, I am not a singsong girl and cannot surrender my faith so easily.~
+EXTERN VPKACB 44
 
-IF ~~ THEN BEGIN TS154
-  SAY ~Valygar, there is a lack of respect in your words and tone when you speak of your parents. Events took an unfortunate turn after the death of your father, but you should not be so judgmental. You were away for a long time and...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS524
-END
+CHAIN BKELDOR TS154
+~Valygar, there is a lack of respect in your words and tone when you speak of your parents. Events took an unfortunate turn after the death of your father, but you should not be so judgmental. You were away for a long time and...~
+EXTERN BVALYGA TS524
 
-IF ~~ THEN BEGIN TS155
-  SAY ~Still, there were many things that you were not privy to.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS525
-END
+CHAIN BKELDOR TS155
+~Still, there were many things that you were not privy to.~
+EXTERN BVALYGA TS525
 
-IF ~~ THEN BEGIN TS156
-  SAY ~You seem too convinced that your mother had little use for Andreas Corthala. Let me tell you that it is not truth. I am old enough to remember the whispers...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS526
-END
+CHAIN BKELDOR TS156
+~You seem too convinced that your mother had little use for Andreas Corthala. Let me tell you that it is not truth. I am old enough to remember the whispers...~
+EXTERN BVALYGA TS526
 
-IF ~~ THEN BEGIN TS157
-  SAY ~Your mind is closed and you prefer to feel contempt and loathing rather than understand and forgive mistakes that were made. Suit yourself, ranger.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS527
-END
+CHAIN BKELDOR TS157
+~Your mind is closed and you prefer to feel contempt and loathing rather than understand and forgive mistakes that were made. Suit yourself, ranger.~
+EXTERN BVALYGA TS527
 
-IF ~~ THEN BEGIN TS158
-  SAY ~You are interested after all?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS529
-END
+CHAIN BKELDOR TS158
+~You are interested after all?~
+EXTERN BVALYGA TS529
 
-IF ~~ THEN BEGIN TS159
-  SAY ~So much anger and resentment in one so young. I pity you, Valygar. Now, the tale does involve magic. Still want to hear?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS530
-END
+CHAIN BKELDOR TS159
+~So much anger and resentment in one so young. I pity you, Valygar. Now, the tale does involve magic. Still want to hear?~
+EXTERN BVALYGA TS530
 
-IF ~~ THEN BEGIN TS160
-  SAY ~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your mother's people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS531
-END
+CHAIN BKELDOR TS160
+~Your mother arrived in Athkatla with a war ship from a distant part of Zakhara. Your mother's people were tall, dark and grim, unwilling to share what brought them to Athkatla or knowledge of their land. But they paid with gold and exotic skins...~
+EXTERN BVALYGA TS531
 
-IF ~~ THEN BEGIN TS161
-  SAY ~Indeed. But all changed when Abyssina met Andreas Corthala. The rumor has it that she asked permission to stay, but was prohibited from doing so. The ship was made ready to sail hastily. It was leaving port when Andreas approached the pier.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS532
-END
+CHAIN BKELDOR TS161
+~Indeed. But all changed when Abyssina met Andreas Corthala. The rumor has it that she asked permission to stay, but was prohibited from doing so. The ship was made ready to sail hastily. It was leaving port when Andreas approached the pier.~
+EXTERN BVALYGA TS532
 
-IF ~~ THEN BEGIN TS162
-  SAY ~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father's doing, no doubt. The bird reached the shore safely and transformed into Abyssina.  They were married the very next day.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS533
-END
+CHAIN BKELDOR TS162
+~He started a chant and a great bird flew from the ship followed by a swarm of arrows. But the arrows met with an invisible wall and fall into the ocean. Your father's doing, no doubt. The bird reached the shore safely and transformed into Abyssina. They were married the very next day.~
+EXTERN BVALYGA TS533
 
-IF ~~ THEN BEGIN TS163
-  SAY ~You are wrong to allow your family past to overshadow your own future. What will a woman who loves you say when she learns of this embargo?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS535
-END
+CHAIN BKELDOR TS163
+~You are wrong to allow your family past to overshadow your own future. What will a woman who loves you say when she learns of this embargo?~
+EXTERN BVALYGA TS535
 
-IF ~~ THEN BEGIN TS164
-  SAY ~Do you understand yourself, Valygar? No family can be complete without children!~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS536
-END
+CHAIN BKELDOR TS164
+~Do you understand yourself, Valygar? No family can be complete without children!~
+EXTERN BVALYGA TS536
 
-IF ~~ THEN BEGIN TS165
-  SAY ~True enough. I have missed many of the important things in my life. I would wish for others to make wiser choices. You are in danger of making a grave mistake and it as my duty to say as much.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS537
-END
+CHAIN BKELDOR TS165
+~True enough. I have missed many of the important things in my life. I would wish for others to make wiser choices. You are in danger of making a grave mistake and it as my duty to say as much.~
+EXTERN BVALYGA TS537
 
-IF ~~ THEN BEGIN TS166
-  SAY ~I am on the road because that's my duty.~
-  IF ~~ THEN EXTERN ~BSIME~ 160
-END
+CHAIN BKELDOR TS166
+~I am on the road because that's my duty.~
+EXTERN VPSIMB 160
 
-IF ~~ THEN BEGIN TS167
-  SAY ~If I were not on the road, Sime, some other husband would not return to his wife, slain by a monster or a bandit and his children would turn fatherless.~
-  IF ~~ THEN EXTERN ~BSIME~ 161
-END
+CHAIN BKELDOR TS167
+~If I were not on the road, Sime, some other husband would not return to his wife, slain by a monster or a bandit and his children would turn fatherless.~
+EXTERN VPSIMB 161
 
-IF ~~ THEN BEGIN TS168
-  SAY ~Far too often I waver, Sime. I wish not for you to add to my doubts. Please, allow me some peace.~
-  IF ~~ THEN EXTERN ~BSIME~ 162
-END
+CHAIN BKELDOR TS168
+~Far too often I waver, Sime. I wish not for you to add to my doubts. Please, allow me some peace.~
+EXTERN VPSIMB 162
 
-IF ~~ THEN BEGIN TS169
-  SAY ~I thought you might know a thing or two about lovers' talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
-  IF ~~ THEN EXTERN ~BSIME~ 164
-END
+CHAIN BKELDOR TS169
+~I thought you might know a thing or two about lovers' talk. I miss Maria deeply and I wanted to write her a letter. But I am an old soldier and have little experience with tender words. I know it does not suit me to act like a boy, but really, I need to tell her how of my love.~
+EXTERN VPSIMB 164
 
-IF ~~ THEN BEGIN TS170
-  SAY ~By Torm, that's a jolly good idea, milady!~
-  IF ~~ THEN EXTERN ~BSIME~ 165
-END
-
-END
+CHAIN BKELDOR TS170
+~By Torm, that's a jolly good idea, milady!~
+EXTERN VPSIMB 165

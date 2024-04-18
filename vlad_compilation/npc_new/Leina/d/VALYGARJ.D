@@ -1,4 +1,4 @@
-APPEND ~VALYGARJ~
+APPEND VALYGARJ
 
 IF ~~ THEN BEGIN NEJ157
   SAY ~See the contempt with which this young woman treats this man's heart, she throws scorn on his words and gift? I cannot believe a man would have written such as this if this Leina had not encouraged him in some way. Women are so fickle!~

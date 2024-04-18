@@ -1,4 +1,4 @@
-APPEND ~VICONIJ~
+APPEND VICONIJ
 
 IF WEIGHT #-1 ~Global("VP_Kr_ViccyWarTalk","GLOBAL",1)~ THEN BEGIN Kr_WarTk
   SAY ~(Thoughtfully) I know not what to do. You have saved my life more than once, <CHARNAME>, and I am certain you will find a use for my clerical skills.~
@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN Kr_WarT2
   SAY ~It will only bring trouble to us all. It does not matter what you know or think of me.~
-  IF ~~ THEN EXTERN ~KELDORJ~ KRVIWAR1
+  IF ~~ THEN EXTERN KELDORJ KRVIWAR1
 END
 
 IF ~~ THEN BEGIN Kr_WarT3
@@ -23,17 +23,17 @@ END
 
 IF ~~ THEN BEGIN Kr_WarT4
   SAY ~Are you saying that you have ceased hating drow, jaluk?~
-  IF ~~ THEN EXTERN ~KELDORJ~ KRVIWAR2
+  IF ~~ THEN EXTERN KELDORJ KRVIWAR2
 END
 
 IF ~~ THEN BEGIN Kr_WarT5
   SAY ~(Casting a quick look at him) As you wish, Keldorn.~
-  IF ~~ THEN EXTERN ~KELDORJ~ KRVIWAR3
+  IF ~~ THEN EXTERN KELDORJ KRVIWAR3
 END
 
 IF ~~ THEN BEGIN Prelate_st0
   SAY ~(Politely) Viconia DeVir, cleric of Shar, yours to command, my lord.~
-  IF ~~ THEN EXTERN ~KELDORJ~ Prelate_st1
+  IF ~~ THEN EXTERN KELDORJ Prelate_st1
 END
 
 IF ~~ THEN BEGIN Kr_Curse
@@ -54,10 +54,10 @@ END
 
 IF ~~ THEN BEGIN Kelem3
   SAY ~You do not blame me? I was afraid to ask Shar for aid, but you know how much I... I respect Keldorn. I... let's go, maybe I can help him yet.~
-  IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
+  IF ~True()~ THEN EXTERN KELEMVOR 4A
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
 END
 
 END

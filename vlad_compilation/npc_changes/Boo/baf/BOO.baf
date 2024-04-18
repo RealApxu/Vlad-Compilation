@@ -33,7 +33,7 @@ IF
 THEN
     RESPONSE #100
         SetGlobal("VP_Boo","GLOBAL",1)
-        GiveItemCreate("Boo",Player1,0,0,0)
+        GiveItemCreate("vpboo",Player1,0,0,0)
         DestroySelf()
 END
 

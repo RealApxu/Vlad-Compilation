@@ -5,7 +5,7 @@ THEN
 		CutSceneId("Sime")
 		FadeToColor([20.0],0)
 		Wait(1)
-		ActionOverride("Boo",DestroySelf())
+		ActionOverride("vpboo",DestroySelf())
 		Wait(1)
 		FadeFromColor([20.0],0)
 		EndCutSceneMode()

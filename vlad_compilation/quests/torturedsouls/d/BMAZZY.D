@@ -1,153 +1,121 @@
-APPEND ~BMAZZY~
+APPEND BMAZZY
 
-IF ~~ THEN BEGIN TS127
-  SAY ~The spirit, Kachiko is not always coached from childhood... Sometimes it's like a fire breaking through no matter the attempts to extinguish it. A legend of great deeds, which I heard from a passing bard woke my heart. And I have followed the calling ever since. ~
-  IF ~~ THEN EXTERN ~BKACHI~ 62
-END
+CHAIN BMAZZY TS127
+~The spirit, Kachiko is not always coached from childhood... Sometimes it's like a fire breaking through no matter the attempts to extinguish it. A legend of great deeds, which I heard from a passing bard woke my heart. And I have followed the calling ever since. ~
+EXTERN VPKACB 62
 
-IF ~~ THEN BEGIN TS128
-  SAY ~You are right. There was Patrick. He was a troubled kid, a funny sort... But I liked him a lot. We read together the books of old, going into all sorts of tricks to earn a gold piece a two for another tome. He... he ran away from home to become a sailor or some such and I could not let him do it on his own. Patrick was too... irresponsible. He needed someone to look after him, to keep him on the right track...~
-  IF ~~ THEN EXTERN ~BKACHI~ 63
-END
+CHAIN BMAZZY TS128
+~You are right. There was Patrick. He was a troubled kid, a funny sort... But I liked him a lot. We read together the books of old, going into all sorts of tricks to earn a gold piece a two for another tome. He... he ran away from home to become a sailor or some such and I could not let him do it on his own. Patrick was too... irresponsible. He needed someone to look after him, to keep him on the right track...~
+EXTERN VPKACB 63
 
-IF ~~ THEN BEGIN TS129
-  SAY ~Anyway, that was my reason to leave Trademeet. It was awkward for a while, but now I cannot stop. I wish to see all of Faerun! I would like to journey to faraway lands, like Maztica or Kara-Tur! I just cannot stop. My biggest grief is that Patrick is with me no more...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS153
-END
+CHAIN BMAZZY TS129
+~Anyway, that was my reason to leave Trademeet. It was awkward for a while, but now I cannot stop. I wish to see all of Faerun! I would like to journey to faraway lands, like Maztica or Kara-Tur! I just cannot stop. My biggest grief is that Patrick is with me no more...~
+EXTERN BVALYGA TS153
 
-IF ~~ THEN BEGIN TS130
-  SAY ~That would be a grand thing to do.~
-  IF ~~ THEN GOTO TS131
-END
+CHAIN BMAZZY TS130
+~That would be a grand thing to do.~
+EXTERN BMAZZY TS131
 
-IF ~~ THEN BEGIN TS131
-  SAY ~Valygar, you shall come along too, my loyal squire.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS154
-END
+CHAIN BMAZZY TS131
+~Valygar, you shall come along too, my loyal squire.~
+EXTERN BVALYGA TS154
 
-IF ~~ THEN BEGIN TS132
-  SAY ~Squire... Squire!~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS330
-END
+CHAIN BMAZZY TS132
+~Squire... Squire!~
+EXTERN BVALYGA TS330
 
-IF ~~ THEN BEGIN TS133
-  SAY ~Are you always listening to my conversations with Valygar? I do not need your help to give him instructions, <CHARNAME>.  You do not own him!~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS331
-END
+CHAIN BMAZZY TS133
+~Are you always listening to my conversations with Valygar? I do not need your help to give him instructions, <CHARNAME>. You do not own him!~
+EXTERN BVALYGA TS331
 
-IF ~~ THEN BEGIN TS134
-  SAY ~I know your name perfectly well, my loyal squire. Yet I did not start imagine that you preferred it over the title of a knight's squire.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS332
-END
+CHAIN BMAZZY TS134
+~I know your name perfectly well, my loyal squire. Yet I did not start imagine that you preferred it over the title of a knight's squire.~
+EXTERN BVALYGA TS332
 
-IF ~~ THEN BEGIN TS135
-  SAY ~I bet if it <CHARNAME> offered to let you be her squire, you'd be very willing.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS333
-END
+CHAIN BMAZZY TS135
+~I bet if it <CHARNAME> offered to let you be her squire, you'd be very willing.~
+EXTERN BVALYGA TS333
 
-IF ~~ THEN BEGIN TS136
-  SAY ~<CHARNAME>, let me judge for myself when I need speak to my squire.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS334
-END
+CHAIN BMAZZY TS136
+~<CHARNAME>, let me judge for myself when I need speak to my squire.~
+EXTERN BVALYGA TS334
 
-IF ~~ THEN BEGIN TS137
-  SAY ~Oh, so you did hear me? You just decided not to answer my call?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS335
-END
+CHAIN BMAZZY TS137
+~Oh, so you did hear me? You just decided not to answer my call?~
+EXTERN BVALYGA TS335
 
-IF ~~ THEN BEGIN TS138
-  SAY ~Might I know why?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS336
-END
+CHAIN BMAZZY TS138
+~Might I know why?~
+EXTERN BVALYGA TS336
 
-IF ~~ THEN BEGIN TS139
-  SAY ~Typical! <CHARNAME> says a single word and she is tact and kindness and gentleness incarnate... whereas I am merely bossy and complaining. Might I remind you that it is I that watched your back and who protected from blows that were to injure you in the last battle...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS337
-END
+CHAIN BMAZZY TS139
+~Typical! <CHARNAME> says a single word and she is tact and kindness and gentleness incarnate... whereas I am merely bossy and complaining. Might I remind you that it is I that watched your back and who protected from blows that were to injure you in the last battle...~
+EXTERN BVALYGA TS337
 
-IF ~~ THEN BEGIN TS140
-  SAY ~I apologize then that I have disturbed you. You can return to what you were doing... Staring at <CHARNAME> I believe...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS338
-END
+CHAIN BMAZZY TS140
+~I apologize then that I have disturbed you. You can return to what you were doing... Staring at <CHARNAME> I believe...~
+EXTERN BVALYGA TS338
 
-IF ~~ THEN BEGIN TS141
-  SAY ~No, no. I am in fine condition, ready for battle as always!~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS340
-END
+CHAIN BMAZZY TS141
+~No, no. I am in fine condition, ready for battle as always!~
+EXTERN BVALYGA TS340
 
-IF ~~ THEN BEGIN TS142
-  SAY ~I was thinking of someone... someone who is no longer with me... of Patrick. I miss him so much, Valygar. He was a wonderful person and a dear friend. I fell in love with him the day we met. Patrick could track an enemy tirelessly for days, he could fight like a lion, just like any other ranger, but he could also tell a story of old as if it happened before his very eyes...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS341
-END
+CHAIN BMAZZY TS142
+~I was thinking of someone... someone who is no longer with me... of Patrick. I miss him so much, Valygar. He was a wonderful person and a dear friend. I fell in love with him the day we met. Patrick could track an enemy tirelessly for days, he could fight like a lion, just like any other ranger, but he could also tell a story of old as if it happened before his very eyes...~
+EXTERN BVALYGA TS341
 
-IF ~~ THEN BEGIN TS143
-  SAY ~Patrick was not a halfing. You know Valygar, just because we were lovers, everyone assumes that he was a halfing. He was a human.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS342
-END
+CHAIN BMAZZY TS143
+~Patrick was not a halfing. You know Valygar, just because we were lovers, everyone assumes that he was a halfing. He was a human.~
+EXTERN BVALYGA TS342
 
-IF ~~ THEN BEGIN TS144
-  SAY ~Yes. You find that strange do you? That other races should find us, short people, attractive?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS343
-END
+CHAIN BMAZZY TS144
+~Yes. You find that strange do you? That other races should find us, short people, attractive?~
+EXTERN BVALYGA TS343
 
-IF ~~ THEN BEGIN TS145
-  SAY ~ Love should be reserved for tall and beautiful in the world of humans and elvenkind, is that it?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS344
-END
+CHAIN BMAZZY TS145
+~ Love should be reserved for tall and beautiful in the world of humans and elvenkind, is that it?~
+EXTERN BVALYGA TS344
 
-IF ~~ THEN BEGIN TS146
-  SAY ~Maybe... you are somewhat similar... But... But that does not imply that I might be falling for you! Not at all. Do not even think of that.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS345
-END
+CHAIN BMAZZY TS146
+~Maybe... you are somewhat similar... But... But that does not imply that I might be falling for you! Not at all. Do not even think of that.~
+EXTERN BVALYGA TS345
 
-IF ~~ THEN BEGIN TS147
-  SAY ~Pap! It is common knowledge and plain as the nose on your face that you are partial to <CHARNAME>'s attentions...~
-  IF ~~ THEN EXIT
-END
+CHAIN BMAZZY TS147
+~Pap! It is common knowledge and plain as the nose on your face that you are partial to <CHARNAME>'s attentions...~
+EXIT
 
-IF ~~ THEN BEGIN TS148
-  SAY ~None of them are here to trade a tale or share a glass of wine with. Shadows took them all.~
-  IF ~~ THEN EXTERN ~BSIME~ 84
-END
+CHAIN BMAZZY TS148
+~None of them are here to trade a tale or share a glass of wine with. Shadows took them all.~
+EXTERN VPSIMB 84
 
-IF ~~ THEN BEGIN TS149
-  SAY ~I was under the impression that you are a loner, Sime.~
-  IF ~~ THEN EXTERN ~BSIME~ 85
-END
+CHAIN BMAZZY TS149
+~I was under the impression that you are a loner, Sime.~
+EXTERN VPSIMB 85
 
-IF ~~ THEN BEGIN TS150
-  SAY ~So do I. To Patrick, my beloved!~
-  IF ~~ THEN EXTERN ~BSIME~ 86
-END
+CHAIN BMAZZY TS150
+~So do I. To Patrick, my beloved!~
+EXTERN VPSIMB 86
 
-IF ~~ THEN BEGIN TS151
-  SAY ~To Andrea and her little pseudo-dragon! I swear, I miss the little bugger.~
-  IF ~~ THEN EXTERN ~BSIME~ 262
-END
+CHAIN BMAZZY TS151
+~To Andrea and her little pseudo-dragon! I swear, I miss the little bugger.~
+EXTERN VPSIMB 262
 
-IF ~~ THEN BEGIN TS152
-  SAY ~But of course the sword! Long had the slender and bright blades fascinated me. Look, how well balanced it is and how it flows lightly through the air. Is it not beautiful?~
-  IF ~~ THEN EXTERN ~BSIME~ 88
-END
+CHAIN BMAZZY TS152
+~But of course the sword! Long had the slender and bright blades fascinated me. Look, how well balanced it is and how it flows lightly through the air. Is it not beautiful?~
+EXTERN VPSIMB 88
 
-IF ~~ THEN BEGIN TS153
-  SAY ~Your voice is impartial, but I can see the glimmer in your eyes. You like swords, Sime Linvail.~
-  IF ~~ THEN EXTERN ~BSIME~ 89
-END
+CHAIN BMAZZY TS153
+~Your voice is impartial, but I can see the glimmer in your eyes. You like swords, Sime Linvail.~
+EXTERN VPSIMB 89
 
-IF ~~ THEN BEGIN TS154
-  SAY ~Of course. Still I reckon you a fierce adversary, no matter what you wield. Swords do not win battles. Fighters do.~
-  IF ~~ THEN EXTERN ~BSIME~ 90
-END
+CHAIN BMAZZY TS154
+~Of course. Still I reckon you a fierce adversary, no matter what you wield. Swords do not win battles. Fighters do.~
+EXTERN VPSIMB 90
 
-IF ~~ THEN BEGIN TS155
-  SAY ~(*laughs*) Oh, that one! A wizards' toy!~
-  IF ~~ THEN EXTERN ~BSIME~ 91
-END
+CHAIN BMAZZY TS155
+~(*laughs*) Oh, that one! A wizards' toy!~
+EXTERN VPSIMB 91
 
-IF ~~ THEN BEGIN TS156
-  SAY ~I wish I had been there to see it. Serves as a good warning. A good fighter shall not entrust his life to a magical trinket!~
-  IF ~~ THEN EXTERN ~BSIME~ 92
-END
-
-END
+CHAIN BMAZZY TS156
+~I wish I had been there to see it. Serves as a good warning. A good fighter shall not entrust his life to a magical trinket!~
+EXTERN VPSIMB 92

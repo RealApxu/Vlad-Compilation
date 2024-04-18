@@ -1,14 +1,14 @@
-APPEND ~HAERDAJ~
+APPEND HAERDAJ
 
 IF ~~ THEN BEGIN Kr_WarTk
   SAY ~War... war is so ugly! I'm a poet, not a warrior, but all the same, I will write and sing ballads of your victories, my raven.~
   IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kr_WarTk
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kr_WarTk
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kr_WarTk
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kr_WarTk
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kr_WarTk
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kr_WarTk
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kr_WarTk
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kr_WarTk
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kr_WarTk
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kr_WarTk
 END
 
 IF ~~ THEN BEGIN Kelem0
@@ -41,15 +41,15 @@ END
 
 IF ~~ THEN BEGIN Kelem4
   SAY ~Well my little sparrow, friends should not have to settle old scores, so let us be gone lest my rhyme be dead.~
-  IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
-  IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
+  IF ~True()~ THEN EXTERN KELEMVOR 4A
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
+  IF ~InParty("Viconia")~ THEN EXTERN VICONIJ Kelem0
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kelem0
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kelem0
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kelem0
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kelem0
 END
 
 END

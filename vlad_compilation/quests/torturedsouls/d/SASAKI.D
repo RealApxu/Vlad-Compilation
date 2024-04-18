@@ -1,11 +1,11 @@
-BEGIN ~SASAKI~ 74284
+BEGIN SASAKI
 
-IF ~Name("Yoshimo",LastTalkedToBy)~ THEN BEGIN 0
-  SAY ~Yoshimo-san, I am glad to see you.~
-  IF ~~ THEN EXIT
-END
+CHAIN
+IF ~Name("Yoshimo",LastTalkedToBy)~ THEN SASAKI 0
+~Yoshimo-san, I am glad to see you.~
+EXIT
 
-IF ~OR(2) !InPartySlot(LastTalkedToBy,0) !Name("Yoshimo",LastTalkedToBy)~ THEN BEGIN 1
-  SAY ~Greetings to you. I am Sasaki.  I am always pleased to meet one of my brother's associates.~
-  IF ~~ THEN EXIT
-END
+CHAIN
+IF ~OR(2) !InPartySlot(LastTalkedToBy,0) !Name("Yoshimo",LastTalkedToBy)~ THEN SASAKI 1
+~Greetings to you. I am Sasaki. I am always pleased to meet one of my brother's associates.~
+EXIT

@@ -1,48 +1,35 @@
-APPEND ~BCERND~
+CHAIN BCERND TS100
+~What's your heart telling you on that account, ranger?~
+EXTERN VPSIMB 167
 
-IF ~~ THEN BEGIN TS100
-  SAY ~What's your heart telling you on that account, ranger?~
-  IF ~~ THEN EXTERN ~BSIME~ 167
-END
+CHAIN BCERND TS101
+~You sound very sure. Why ask me then, Sime?~
+EXTERN VPSIMB 168
 
-IF ~~ THEN BEGIN TS101
-  SAY ~You sound very sure. Why ask me then, Sime?~
-  IF ~~ THEN EXTERN ~BSIME~ 168
-END
+CHAIN BCERND TS102
+~I know that every living thing has dreams, Sime. The Oak Father granted me a rare spell once and I... I was fortunate enough to see the dreams of a beast then.~
+EXTERN VPSIMB 169
 
-IF ~~ THEN BEGIN TS102
-  SAY ~I know that every living thing has dreams, Sime. The Oak Father granted me a rare spell once and I... I was fortunate enough to see the dreams of a beast then.~
-  IF ~~ THEN EXTERN ~BSIME~ 169
-END
+CHAIN BCERND TS103
+~A spotted lion. A strange and wonderful thing are the beast's dreams, Sime. Wild and so... unrestricted.~
+EXTERN VPSIMB 170
 
-IF ~~ THEN BEGIN TS103
-  SAY ~A spotted lion. A strange and wonderful thing are the beast's dreams, Sime. Wild and so... unrestricted.~
-  IF ~~ THEN EXTERN ~BSIME~ 170
-END
+CHAIN BCERND TS104
+~(*shakes his head*) No, Sime. They cannot be put in words, those images. Pray to have an experience like that for yourself.~
+EXTERN VPSIMB 171
 
-IF ~~ THEN BEGIN TS104
-  SAY ~(*shakes his head*) No, Sime. They cannot be put in words, those images. Pray to have an experience like that for yourself.~
-  IF ~~ THEN EXTERN ~BSIME~ 171
-END
+CHAIN BCERND TS105
+~Yes. They are expecting me back at the Grove.~
+EXTERN VPSIMB 173
 
-IF ~~ THEN BEGIN TS105
-  SAY ~Yes. They are expecting me back at the Grove.~
-  IF ~~ THEN EXTERN ~BSIME~ 173
-END
+CHAIN BCERND TS106
+~All things happen in due course in nature. My part now is to follow Bhaal's child.~
+EXTERN VPSIMB 174
 
-IF ~~ THEN BEGIN TS106
-  SAY ~All things happen in due course in nature. My part now is to follow Bhaal's child.~
-  IF ~~ THEN EXTERN ~BSIME~ 174
-END
+CHAIN BCERND TS107
+~Demigods are strange creatures, Sime. I know that Bhaal's blood torments <CHARNAME>. If I am not mistaken, events mysterious and terrible are brewing... The fate of the greater balance depends on how well <CHARNAME> can maintain the balance of <PRO_HISHER> soul. Someone who understands the ways of Balance needs to be watching after <PRO_HIMHER>.~
+EXTERN VPSIMB 175
 
-IF ~~ THEN BEGIN TS107
-  SAY ~Demigods are strange creatures, Sime. I know that Bhaal's blood torments <CHARNAME>. If I am not mistaken, events mysterious and terrible are brewing... The fate of the greater balance depends on how well <CHARNAME> can maintain the balance of <PRO_HISHER> soul. Someone who understands the ways of Balance needs to be watching after <PRO_HIMHER>.~
-  IF ~~ THEN EXTERN ~BSIME~ 175
-END
-
-IF ~~ THEN BEGIN TS108
-  SAY ~I would, Sime. I yearn to return to the Grove and be with him. But the very fate of my child depends on the actions of <CHARNAME>. Balance must be preserved...~
-  IF ~~ THEN EXTERN ~BSIME~ 176
-END
-
-END
+CHAIN BCERND TS108
+~I would, Sime. I yearn to return to the Grove and be with him. But the very fate of my child depends on the actions of <CHARNAME>. Balance must be preserved...~
+EXTERN VPSIMB 176

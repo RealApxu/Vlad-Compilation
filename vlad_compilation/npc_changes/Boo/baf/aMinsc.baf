@@ -10,7 +10,7 @@ THEN
 END
 
 IF
-    PartyHasItem("Boo")
+    PartyHasItem("vpboo")
     !Global("VP_Boo","GLOBAL",1)
 THEN
     RESPONSE #100
@@ -18,31 +18,31 @@ THEN
 END
 
 IF
-    !PartyHasItem("Boo")
+    !PartyHasItem("vpboo")
     GlobalTimerExpired("VP_NoBoo","GLOBAL")
     Global("VP_Boo","GLOBAL",2)
 THEN
     RESPONSE #100
         SetGlobal("VP_Boo","GLOBAL",1)
-        GiveItemCreate("Boo",Myself,0,0,0)
+        GiveItemCreate("vpboo",Myself,0,0,0)
 END
 
 IF
-    !PartyHasItem("Boo")
+    !PartyHasItem("vpboo")
     Global("VP_Boo","GLOBAL",0)
     !GlobalTimerNotExpired("VP_NoBoo","GLOBAL")
-    !InMyArea("Boo")
+    !InMyArea("vpboo")
 THEN
     RESPONSE #100
-        MoveGlobalObject("Boo","Minsc")
-        ChangeEnemyAlly("Boo",CONTROLLED)
+        MoveGlobalObject("vpboo","Minsc")
+        ChangeEnemyAlly("vpboo",CONTROLLED)
         Continue()
 END
 
 IF
     Global("VP_BooRest","GLOBAL",0)
     PartyRested()
-    Detect("Boo")
+    Detect("vpboo")
 THEN
     RESPONSE #100
         SetGlobal("VP_BooRest","GLOBAL",1)

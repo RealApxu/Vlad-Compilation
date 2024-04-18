@@ -48,7 +48,7 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("KrCut33")~
 
-APPEND ~KELDORJ~
+APPEND KELDORJ
 
 //LT2
 CHAIN
@@ -569,43 +569,43 @@ CHAIN KELDORJ War_st1
 ~<CHARNAME>, I'm liable for military service and I may not disobey the order. Please, we must follow the Knight.~
 END
  IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
- IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kr_WarTk
- IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kr_WarTk
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kr_WarTk
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kr_WarTk
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kr_WarTk
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kr_WarTk
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kr_WarTk
- IF ~InParty("Cernd")~ THEN EXTERN ~CERNDJ~ Kr_WarTk
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIAJ~ Kr_WarTk
- IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ Kr_WarTk
- IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kr_WarTk
- IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kr_WarTk
+ IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+ IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kr_WarTk
+ IF ~InParty("Jan")~ THEN EXTERN JANJ Kr_WarTk
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kr_WarTk
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kr_WarTk
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kr_WarTk
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kr_WarTk
+ IF ~InParty("Korgan")~ THEN EXTERN KORGANJ Kr_WarTk
+ IF ~InParty("Cernd")~ THEN EXTERN CERNDJ Kr_WarTk
+ IF ~InParty("Nalia")~ THEN EXTERN NALIAJ Kr_WarTk
+ IF ~InParty("Aerie")~ THEN EXTERN AERIEJ Kr_WarTk
+ IF ~InParty("Valygar")~ THEN EXTERN VALYGARJ Kr_WarTk
+ IF ~InParty("Anomen")~ THEN EXTERN ANOMENJ Kr_WarTk
 
 CHAIN KELDORJ War_st2
 ~Are you staying with us then mage? You do surprise me.~
-EXTERN ~EDWINJ~ Kr_WarT4
+EXTERN EDWINJ Kr_WarT4
 
 CHAIN KELDORJ War_st3
 ~What's your interest in this war? If you are hoping to get rich on its trophies, THEN you'd be wise to remember that we will be joining with another army... you do understand what it is I am saying don't you?~
-EXTERN ~EDWINJ~ Kr_WarT5
+EXTERN EDWINJ Kr_WarT5
 
 CHAIN KELDORJ War_st4
 ~What does it matter to you that she is a daughter of Bhaal? It was important in Baldur's Gate, that I understand, but now...~
-EXTERN ~EDWINJ~ Kr_WarT6
+EXTERN EDWINJ Kr_WarT6
 
 CHAIN KELDORJ War_st5
 ~(Interrupting) ... and guided I might add. I know this Edwin.~
-EXTERN ~EDWINJ~ Kr_WarT7
+EXTERN EDWINJ Kr_WarT7
 
 CHAIN KELDORJ KRVIWAR1
 ~(Hollowly) Yes. I admit my previous words were... well, they matter no more. You have fought by our side, your dark goddess has nursed our wounds, and I no longer have reason to mistrust you. Though, your anxiety is understandable.~
-EXTERN ~VICONIJ~ Kr_WarT4
+EXTERN VICONIJ Kr_WarT4
 
 CHAIN KELDORJ KRVIWAR2
 ~(Wincing) Viconia please, do not call me that, I beg you.~
-EXTERN ~VICONIJ~ Kr_WarT5
+EXTERN VICONIJ Kr_WarT5
 
 CHAIN KELDORJ KRVIWAR3
 ~(His voice becomes conciliatory) Worry not, if we stay close together, nobody will say a word against you. To be sure, it would be best if you kept that hood of yours up at all times.~
@@ -660,15 +660,15 @@ DO ~SetGlobal("VP_LoveTalk","LOCALS",22) ClearAllActions() StartCutSceneMode() S
 
 CHAIN KELDORJ Imoen0
 ~Miss Imoen, I am truely glad that we have finally found you. At last you are safe and free from the clutches of that evil sorcerer!~
-EXTERN ~IMOEN2~ MeetKr0
+EXTERN IMOEN2 MeetKr0
 
 CHAIN KELDORJ Imoen1
 ~Yes, it is forbidden to use magic in the city without the permission of the authorities, but I believe child, that Irenicus would have found a way to steal you law or no law...~
-EXTERN ~IMOEN2~ MeetKr1
+EXTERN IMOEN2 MeetKr1
 
 CHAIN KELDORJ Imoen2
 ~No, no, of course I did not mean that... please forgive me if I have offended you unwittingly. What I meant to say was that I am very pleased to meet you, but alas I've done so rather awkwardly. I ask you once again, please forgive me.~
-EXTERN ~IMOEN2~ MeetKr2
+EXTERN IMOEN2 MeetKr2
 
 CHAIN KELDORJ LT24_st1
 ~(Tenderly touching your cheek with his lips) But I ask you, <CHARNAME>, please. If Bodhi has made up her mind to end things here, you can be sure she will do her damndest no matter what. You need to be prepared for that meeting.~
@@ -728,7 +728,7 @@ DO ~ActionOverride(Player1,ReallyForceSpell(Myself,SLAYER_CHANGE))~ EXIT
 //Bodhi Ambush - Taking Keldorn
 CHAIN KELDORJ vampamb0
 ~Stay away from her, vampire! You and your murderous bastard of a brother had taken too many lives as is. I will not allow you to harm <CHARNAME>...~
-EXTERN ~BODHIAMB~ vampamb1
+EXTERN BODHIAMB vampamb1
 
 CHAIN KELDORJ Alia0
 ~Mother please, is not our hasty decision a surprise and a bother to you?~
@@ -808,7 +808,7 @@ END
 
 CHAIN KELDORJ AnLv_st1
 ~(Stroking your back) Being tormented with remorse is a quality inherent in every man of honour. To see you so distressed brings a heaviness to my own heart.~
-EXTERN ~BANOMEN~ AnomBye
+EXTERN BANOMEN AnomBye
 
 IF ~Global("ThiefGroup","GLOBAL",0) Global("AsylumPlot","GLOBAL",2) Global("VP_SailTo_Brynnlaw","GLOBAL",4) Global("VP_SaemonSuspected","LOCALS",0)~ THEN KELDORJ Brynn0
 #43928 /* ~I do not trust this pirate, <CHARNAME>. His manner is that of a fool, but his behavior during the voyage betrays a cunning mind beneath.~ */

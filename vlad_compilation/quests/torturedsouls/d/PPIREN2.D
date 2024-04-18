@@ -69,36 +69,36 @@ ADD_TRANS_TRIGGER PPIRENI2 66
 ~OR(2) Global("Kachiko_Saved","GLOBAL",3) Global("TT_Evil_Path","GLOBAL",3)~ DO 0
 
 EXTEND_BOTTOM PPIRENI2 66
-  IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN EXTERN ~YOSHJ~ TS209
+  IF ~Global("Kachiko_Saved","GLOBAL",2)~ THEN EXTERN YOSHJ TS209
 END
 
-APPEND ~PPIRENI2~
+APPEND PPIRENI2
 
 IF ~~ THEN BEGIN N18
   SAY ~I don�t understand what are you talking about?~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS210
+  IF ~~ THEN EXTERN YOSHJ TS210
 END
 
 IF ~~ THEN BEGIN N68
   SAY ~What did you say? Hmm... And how did you manage to avoid the geas?~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS211
+  IF ~~ THEN EXTERN YOSHJ TS211
 END
 
 IF ~~ THEN BEGIN N69
   SAY ~So, <CHARNAME>, you have been much more capable than I thought.~
   IF ~~ THEN REPLY ~I hate to impose, but could you tell me what�s going on here?~ GOTO N71
-  IF ~~ THEN REPLY ~What is he talking about, Yoshimo?~ EXTERN ~YOSHJ~ TS212
+  IF ~~ THEN REPLY ~What is he talking about, Yoshimo?~ EXTERN YOSHJ TS212
   IF ~~ THEN REPLY ~I don�t know what�s going on here, but I know I don�t like it...~ GOTO N71
 END
 
 IF ~~ THEN BEGIN N71
   SAY ~I knew you were strong, but I couldn�t imagine that you are so powerful... I congratulate you, though I am really disappointed. Yoshimo was my best servant, but now he is betraying me without any obvious reason. We had a deal, and I paid him well... So, Yoshimo, you betrayed me to <CHARNAME>. I thought I had earned your soul...~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS212
+  IF ~~ THEN EXTERN YOSHJ TS212
 END
 
 IF ~~ THEN BEGIN N72
   SAY ~Are you serious? Do you think you�ve saved anybody? They are all dead... they were dead long time ago, even before I met you.~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS213
+  IF ~~ THEN EXTERN YOSHJ TS213
 END
 
 IF ~~ THEN BEGIN N73

@@ -1,6 +1,7 @@
-BEGIN ~KIOTSI~
+BEGIN KIOTSI
 
-IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
-  SAY ~I see it's my job to finish you off? Wonderful! I was looking forward to it!~
-  IF ~~ THEN DO ~Enemy()~ EXIT
-END
+CHAIN
+IF ~NumTimesTalkedTo(0)~ THEN KIOTSI 0
+~I see it's my job to finish you off? Wonderful! I was looking forward to it!~
+DO ~Enemy()~
+EXIT

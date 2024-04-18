@@ -1,4 +1,4 @@
-REPLACE_ACTION_TEXT ~BAERIE~ ~SetGlobal("BAerie4","LOCALS",0)~ ~SetGlobal("BAerie4","LOCALS",1)~
+REPLACE_ACTION_TEXT BAERIE ~SetGlobal("BAerie4","LOCALS",0)~ ~SetGlobal("BAerie4","LOCALS",1)~
 //state #25
 
 REPLACE_STATE_TRIGGER BAERIE 44

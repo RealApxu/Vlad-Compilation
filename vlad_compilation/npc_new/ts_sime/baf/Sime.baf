@@ -2080,7 +2080,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime48","LOCALS",2)
-		CreateCreatureObject("Boo",Myself,0,0,0) // Boo
+		CreateCreatureObject("vpboo",Myself,0,0,0) // Boo
 		Interact("Minsc")
 END
 
@@ -2112,7 +2112,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime49","LOCALS",2)
-		CreateCreatureObject("Boo",Myself,0,0,0) // Boo
+		CreateCreatureObject("vpboo",Myself,0,0,0) // Boo
 		Interact("Minsc")
 END
 
@@ -2144,7 +2144,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime50","LOCALS",2)
-		CreateCreatureObject("Boo",Myself,0,0,0) // Boo
+		CreateCreatureObject("vpboo",Myself,0,0,0) // Boo
 		Interact("Minsc")
 END
 
@@ -2176,7 +2176,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime51","LOCALS",2)
-		CreateCreatureObject("Boo",Myself,0,0,0) // Boo
+		CreateCreatureObject("vpboo",Myself,0,0,0) // Boo
 		Interact("Minsc")
 END
 
@@ -2208,7 +2208,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("VP_BSime52","LOCALS",2)
-		CreateCreatureObject("Boo",Myself,0,0,0) // Boo
+		CreateCreatureObject("vpboo",Myself,0,0,0) // Boo
 		Interact("Minsc")
 END
 

@@ -1,3 +1,3 @@
 CHAIN AERIEJ TS219
 ~How... how romantic...~
-EXTERN ~NAJOKI~ 7
+EXTERN NAJOKI 7

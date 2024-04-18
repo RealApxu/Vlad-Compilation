@@ -87,24 +87,24 @@ CHAIN KELEMVOR 4
 ~He is, but he is not here. We will talk about him later. First, you should take care of your friends.~
 END
  IF ~True()~ THEN EXTERN KELEMVOR 4A
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
- IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
- IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
- IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
- IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
- IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kelem0
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kelem0
- IF ~InParty("Cernd")~ THEN EXTERN ~CERNDJ~ Kelem0
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIAJ~ Kelem0
- IF ~InParty("Aerie")~ THEN EXTERN ~AERIEJ~ Kelem0
- IF ~InParty("Sime")~ THEN EXTERN ~SIMEJ~ Kelem0
- IF ~InParty("Valygar")~ THEN EXTERN ~VALYGARJ~ Kelem0
- IF ~InParty("Anomen")~ THEN EXTERN ~ANOMENJ~ Kelem0
+ IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+ IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
+ IF ~InParty("Viconia")~ THEN EXTERN VICONIJ Kelem0
+ IF ~InParty("Jan")~ THEN EXTERN JANJ Kelem0
+ IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kelem0
+ IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kelem0
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kelem0
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kelem0
+ IF ~InParty("Korgan")~ THEN EXTERN KORGANJ Kelem0
+ IF ~InParty("Cernd")~ THEN EXTERN CERNDJ Kelem0
+ IF ~InParty("Nalia")~ THEN EXTERN NALIAJ Kelem0
+ IF ~InParty("Aerie")~ THEN EXTERN AERIEJ Kelem0
+ IF ~InParty("Sime")~ THEN EXTERN VPSIMJ Kelem0
+ IF ~InParty("Valygar")~ THEN EXTERN VALYGARJ Kelem0
+ IF ~InParty("Anomen")~ THEN EXTERN ANOMENJ Kelem0
  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
- IF ~InParty("njdar")~ THEN EXTERN ~DARJ~ Kelem0
+ IF ~InParty("njdar")~ THEN EXTERN NJDARJ Kelem0
  IF ~InParty("njtaffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
  IF ~InParty("vpleina")~ THEN EXTERN VPLEIJ Kelem0

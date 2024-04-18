@@ -1,8 +1,8 @@
-EXTEND_BOTTOM ~C6BODHI~ 21
+EXTEND_BOTTOM C6BODHI 21
   IF ~OR(4) Global("ValygarVampire","GLOBAL",2) Global("VP_SimeVampire","GLOBAL",2) Global("VP_KeldornVampire","GLOBAL",2) Global("VP_LeinaVampire","GLOBAL",2)~ THEN EXTERN C6BODHI 23
 END
 
-EXTEND_BOTTOM ~C6BODHI~ 23
+EXTEND_BOTTOM C6BODHI 23
   IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Valygar will not save you.~ EXTERN C6BODHI  TS29
   IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Valygar!~ EXTERN C6BODHI  TS29
   IF ~Global("ValygarVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Valygar and perhaps I will be merciful.~ EXTERN C6BODHI  TS29
@@ -11,16 +11,16 @@ EXTEND_BOTTOM ~C6BODHI~ 23
   IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already!  You will return both Imoen's soul and Sime!~ EXTERN C6BODHI TS32
   IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Sime and perhaps I will be merciful.~ EXTERN C6BODHI TS32
   IF ~Global("VP_SimeVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Sime alone. She is very important to me.~ EXTERN C6BODHI TS32
-  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~Bodhi, you nefarious hag! I will tear out your black heart and feed it to the beasts, I swear I will!~ EXTERN ~C6BODHI~ vampamb2
-  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Keldorn!~ EXTERN ~C6BODHI~ vampamb2
-  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Keldorn and perhaps I will be merciful.~ EXTERN ~C6BODHI~ vampamb2
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~Bodhi, you nefarious hag! I will tear out your black heart and feed it to the beasts, I swear I will!~ EXTERN C6BODHI vampamb2
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Keldorn!~ EXTERN C6BODHI vampamb2
+  IF ~Global("VP_KeldornVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Keldorn and perhaps I will be merciful.~ EXTERN C6BODHI vampamb2
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~You place too much confidence in sentiment. The theft of Leina will not save you.~ EXTERN C6BODHI leiamb1
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~You have taken too much already! You will return both Imoen's soul and Leina!~ EXTERN C6BODHI leiamb1
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~And you have delivered on that promise. Return Leina and perhaps I will be merciful.~ EXTERN C6BODHI leiamb1
   IF ~Global("VP_LeinaVampire","GLOBAL",2)~ THEN REPLY ~I would have hunted you for your theft of Leina alone. She is very important to me.~ EXTERN C6BODHI leiamb1
 END
 
-APPEND ~C6BODHI~
+APPEND C6BODHI
 
 IF ~~ THEN BEGIN TS29
   SAY ~Ah yes, the noble hermit Valygar. Very naughty despite his declarations otherwise. I doubt your fumbling could inspire the loyalty I have taken with a bite and a gaze.~

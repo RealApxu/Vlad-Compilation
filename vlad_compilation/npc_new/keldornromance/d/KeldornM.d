@@ -43,12 +43,12 @@ END
 
 IF ~~ THEN BEGIN 7
   SAY ~(Shaking his head) Baator, guardian, Kelemvor... I can not take all of this in right now. However, you are right my lady, I need to return! You have done so much alone whilst I was away.~
-  IF ~~ THEN EXTERN ~KELEMVOR~ K3
+  IF ~~ THEN EXTERN KELEMVOR K3
 END
 
 IF ~~ THEN BEGIN 8
   SAY ~Then it looks as though I have deserted the battlefield? Ah, how awry! You are right, we must finish that which we started. How could I leave you now! Come, my dear friend, we must move swiftly.~
-  IF ~~ THEN EXTERN ~KELEMVOR~ K3
+  IF ~~ THEN EXTERN KELEMVOR K3
 END
 
 IF ~~ THEN BEGIN 9
@@ -64,17 +64,17 @@ END
 IF ~~ THEN BEGIN K3
   SAY ~I have told you that it is not within my power to forsake your care, and I will repeat it... I still can not forsake it anymore than I may forsake you.~
   = ~(Giving you his hand) I will go with you!~
-  IF ~~ THEN EXTERN ~KELEMVOR~ K3
+  IF ~~ THEN EXTERN KELEMVOR K3
 END
 
 IF ~~ THEN BEGIN K4
   SAY ~No, I do not agree! A young girl must not sacrifice herself for my sake... for the sake of an old man! No my lady, I will stay here. You must not pay for my stupidity!~
-  IF ~~ THEN EXTERN ~KELEMVOR~ K5
+  IF ~~ THEN EXTERN KELEMVOR K5
 END
 
 IF ~~ THEN BEGIN K5
   SAY ~I will become one of the fallen!~
-  IF ~~ THEN EXTERN ~KELEMVOR~ K6
+  IF ~~ THEN EXTERN KELEMVOR K6
 END
 
 IF ~~ THEN BEGIN K6

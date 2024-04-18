@@ -1,77 +1,75 @@
-BEGIN ~MASAKI~
+BEGIN MASAKI
 
-IF ~NumberOfTimesTalkedTo(0) Global("Kachiko_Kidnapped","GLOBAL",0) Global("Masaki_Meet","GLOBAL",0)~ THEN BEGIN 0
-  SAY ~Kachiko! You have returned and brought the fugitive Yoshimo back. Well done, the spirit of true kensai and true Nakanishi is in you, girl. I am happy to be the first to greet you upon your return.~
-  IF ~~ THEN DO ~SetGlobal("Masaki_Meet","GLOBAL",1)~ EXTERN ~KACHIJ~ N21
-END
+CHAIN
+IF ~NumberOfTimesTalkedTo(0) Global("Kachiko_Kidnapped","GLOBAL",0) Global("Masaki_Meet","GLOBAL",0)~ THEN MASAKI 0
+~Kachiko! You have returned and brought the fugitive Yoshimo back. Well done, the spirit of true kensai and true Nakanishi is in you, girl. I am happy to be the first to greet you upon your return.~
+DO ~SetGlobal("Masaki_Meet","GLOBAL",1)~
+EXTERN VPKACJ N21
 
-IF ~~ THEN BEGIN 1
-  SAY ~I had been young and foolish and did not want beautiful Kachiko to wonder far away from those who love her. But your deed honors our family. I would see that you have the privilege of executing the murderer.~
-  IF ~~ THEN EXTERN ~KACHIJ~ N22
-END
+CHAIN MASAKI 1
+~I had been young and foolish and did not want beautiful Kachiko to wonder far away from those who love her. But your deed honors our family. I would see that you have the privilege of executing the murderer.~
+EXTERN VPKACJ N22
 
-IF ~~ THEN BEGIN 2
-  SAY ~We are at home my dearest Kachiko, and the better home it is. No silly law is above us here and you do not have to go through the pains of trial and shifty advocates to accuse Yoshimo. Nor can he run. We, Nakanishi ourselves will exact punishment on him for killing our beloved brother, Naoko.~
-  IF ~~ THEN EXTERN ~KACHIJ~ N23
-END
+CHAIN MASAKI 2
+~We are at home my dearest Kachiko, and the better home it is. No silly law is above us here and you do not have to go through the pains of trial and shifty advocates to accuse Yoshimo. Nor can he run. We, Nakanishi ourselves will exact punishment on him for killing our beloved brother, Naoko.~
+EXTERN VPKACJ N23
 
-IF ~~ THEN BEGIN 3
-  SAY ~All in good time. First, let us get rid of this Hashimoto scum...~
-  IF ~~ THEN EXTERN ~KACHIJ~ N24
-END
+CHAIN MASAKI 3
+~All in good time. First, let us get rid of this Hashimoto scum...~
+EXTERN VPKACJ N24
 
-IF ~~ THEN BEGIN 4
-  SAY ~No, my dear - I defend Nakanishi�s honor. It is you who disgrace your family, consorting with the enemy in the time of dire need. Us, Nakanishi shall stand together against evil Hashimoto clan. Did you forget your duty completely in the foreign parts? Kill him and leave the side of these outlandish mercenaries. No earlier than that will the gates of our house be open for you.~
-  IF ~~ THEN EXTERN ~KACHIJ~ N25
-END
+CHAIN MASAKI 4
+~No, my dear - I defend Nakanishi�s honor. It is you who disgrace your family, consorting with the enemy in the time of dire need. Us, Nakanishi shall stand together against evil Hashimoto clan. Did you forget your duty completely in the foreign parts? Kill him and leave the side of these outlandish mercenaries. No earlier than that will the gates of our house be open for you.~
+EXTERN VPKACJ N25
 
-IF ~~ THEN BEGIN 5
-  SAY ~That I do, my sweet cousin. You shall bend to my will or we shall treat you as a Hashimoto�s consort. You are Nakanishi no more.~
-  IF ~~ THEN EXTERN ~KACHIJ~ N26
-END
+CHAIN MASAKI 5
+~That I do, my sweet cousin. You shall bend to my will or we shall treat you as a Hashimoto�s consort. You are Nakanishi no more.~
+EXTERN VPKACJ N26
 
-IF ~~ THEN BEGIN 6
-  SAY ~Fool girl! Ha-ha-ha... (*laughs threateningly*)~
-  IF ~~ THEN DO ~EscapeArea()~ EXIT
-END
+CHAIN MASAKI 6
+~Fool girl! Ha-ha-ha... (*laughs threateningly*)~
+DO ~EscapeArea()~
+EXIT
 
-IF ~~ THEN BEGIN 7
-  SAY ~Fool girl! You have been seen entering and leaving Hashimoto�s compound. Do you dare to deny it?~
-  IF ~~ THEN EXTERN ~KACHIJ~ N27
-END
+CHAIN MASAKI 7
+~Fool girl! You have been seen entering and leaving Hashimoto�s compound. Do you dare to deny it?~
+EXTERN VPKACJ N27
 
-IF ~~ THEN BEGIN 8
-  SAY ~I see. These foreigners have brainwashed you. But we are going to return you to your proper place in the family.~
-  IF ~~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",1) StartCutSceneMode() StartCutScene("TSCutK01")~ EXIT
-END
+CHAIN MASAKI 8
+~I see. These foreigners have brainwashed you. But we are going to return you to your proper place in the family.~
+DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",1) StartCutSceneMode() StartCutScene("TSCutK01")~
+EXIT
 
-IF ~Global("Kachiko_Kidnapped","GLOBAL",0) Global("Masaki_Meet","GLOBAL",1) Global("Hashimoto_Visited","GLOBAL",1)~ THEN BEGIN 9
-  SAY ~Fool girl! You have been seen entering and leaving Hashimoto�s compound. Do you dare to deny it?~
-  IF ~~ THEN EXTERN ~KACHIJ~ N27
-END
+CHAIN
+IF ~Global("Kachiko_Kidnapped","GLOBAL",0) Global("Masaki_Meet","GLOBAL",1) Global("Hashimoto_Visited","GLOBAL",1)~ THEN MASAKI 9
+~Fool girl! You have been seen entering and leaving Hashimoto�s compound. Do you dare to deny it?~
+EXTERN VPKACJ N27
 
-IF ~Global("Kachiko_Kidnapped","GLOBAL",3) Global("Alome_Meet","GLOBAL",1)~ THEN BEGIN 10
-  SAY ~You are stupid enough to come here? Do not you know that Nakanishi hold the dungeon now?~
-  IF ~Global("Kachiko_Hostile","GLOBAL",0) Global("TT_Evil_Path","GLOBAL",0)~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",4)~ EXTERN ~YOSHJ~ TS193
-  IF ~OR(2) Global("Kachiko_Hostile","GLOBAL",1) Global("TT_Evil_Path","GLOBAL",2)~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",4)~ EXTERN ~YOSHJ~ TS194
+CHAIN
+IF ~Global("Kachiko_Kidnapped","GLOBAL",3) Global("Alome_Meet","GLOBAL",1)~ THEN MASAKI 10
+~You are stupid enough to come here? Do not you know that Nakanishi hold the dungeon now?~
 END
+ IF ~Global("Kachiko_Hostile","GLOBAL",0) Global("TT_Evil_Path","GLOBAL",0)~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",4)~ EXTERN YOSHJ TS193
+ IF ~OR(2) Global("Kachiko_Hostile","GLOBAL",1) Global("TT_Evil_Path","GLOBAL",2)~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",4)~ EXTERN YOSHJ TS194
 
-IF ~~ THEN BEGIN 11
-  SAY ~Fool! Pathetic fool! For Nakanishi�s honor we shall strike you and the foreigners you aligned yourself with!~
-  IF ~~ THEN DO ~StartCutSceneMode() ActionOverride(Myself,ForceSpell(Myself,DRYAD_TELEPORT)) ActionOverride(Myself,EndCutSceneMode())~ EXIT
-END
+CHAIN MASAKI 11
+~Fool! Pathetic fool! For Nakanishi�s honor we shall strike you and the foreigners you aligned yourself with!~
+DO ~StartCutSceneMode() ActionOverride(Myself,ForceSpell(Myself,DRYAD_TELEPORT)) ActionOverride(Myself,EndCutSceneMode())~
+EXIT
 
-IF ~Global("Kachiko_Kidnapped","GLOBAL",4)~ THEN BEGIN 12
-  SAY ~Doing your best to stay alive? Let me tell you that it is not good enough! You cannot resist Nakanishi for much longer! For Nakanishi�s honor!~
-  IF ~~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",5)~ EXTERN ~YOSHJ~ TS195
-END
+CHAIN
+IF ~Global("Kachiko_Kidnapped","GLOBAL",4)~ THEN MASAKI 12
+~Doing your best to stay alive? Let me tell you that it is not good enough! You cannot resist Nakanishi for much longer! For Nakanishi�s honor!~
+DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",5)~
+EXTERN YOSHJ TS195
 
-IF ~~ THEN BEGIN 13
-  SAY ~Me? Fight scum like you? Ha-ha-ha...~
-  IF ~~ THEN DO ~StartCutSceneMode() ActionOverride(Myself,ForceSpell(Myself,DRYAD_TELEPORT)) ActionOverride(Myself,EndCutSceneMode()) ~ EXIT
-END
+CHAIN MASAKI 13
+~Me? Fight scum like you? Ha-ha-ha...~
+DO ~StartCutSceneMode() ActionOverride(Myself,ForceSpell(Myself,DRYAD_TELEPORT)) ActionOverride(Myself,EndCutSceneMode())~
+EXIT
 
-IF ~Global("Kachiko_Kidnapped","GLOBAL",5) ~ THEN BEGIN 14
-  SAY ~I see, that I would have to finish you off...short of doing it yourself, you would never get it done... Defend yourself! For Nakanishi�s honor!~
-  IF ~~ THEN DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",6) Enemy()~ EXIT
-END
+CHAIN
+IF ~Global("Kachiko_Kidnapped","GLOBAL",5) ~ THEN MASAKI 14
+~I see, that I would have to finish you off...short of doing it yourself, you would never get it done... Defend yourself! For Nakanishi�s honor!~
+DO ~SetGlobal("Kachiko_Kidnapped","GLOBAL",6) Enemy()~
+EXIT

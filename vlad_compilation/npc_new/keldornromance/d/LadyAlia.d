@@ -4,17 +4,17 @@ IF WEIGHT #0 ~NumTimesTalkedTo(0) Global("VP_Kr_TheWar","GLOBAL",8) Global("VP_T
   SAY ~Keldorn, my darling boy! How glad I am to see you... and you, my sweet <CHARNAME>. Keldorn has written of you many times, telling me how he could not have borne his sorrow without you. Those poor, sweet innocent girls...~
   = ~(For a moment, a shadow passes over lady Alia's face as she recalls her grand daughters' fate... then she forced herself to smile at you and continues)~
   = ~You know, my dear child, there was a young cleric from temple of Kelemvor asking for you. He left a package for you saying that it was very urgent. Marrius was very anxious that this should be delivered directly into your hands.~
-  IF ~~ THEN DO ~SetGlobal("VP_Kr_TheWar","GLOBAL",9)~ EXTERN ~KELDORJ~ kelemring_st0
+  IF ~~ THEN DO ~SetGlobal("VP_Kr_TheWar","GLOBAL",9)~ EXTERN KELDORJ kelemring_st0
 END
 
 IF WEIGHT #-1 ~Global("VP_Talk_To_Keldorn","LOCALS",2)~ THEN BEGIN 1
   SAY ~I am so happy for you both! I never dared hope that I would live to see such a joyous day... come, let me give you both a hug!~
-  IF ~~ THEN EXTERN ~KELDORJ~ Alia0
+  IF ~~ THEN EXTERN KELDORJ Alia0
 END
 
 IF ~~ THEN BEGIN 2
   SAY ~No, not in the least! You made the right decision in choosing not to wait. Now I will not need to worry so much over you.~
-  IF ~~ THEN EXTERN ~KELDORJ~ Alia1
+  IF ~~ THEN EXTERN KELDORJ Alia1
 END
 
 IF ~~ THEN BEGIN 3

@@ -9,16 +9,16 @@ EXTEND_BOTTOM HGWRA01 24
   IF ~Global("VP_Kr_LovedOne","GLOBAL",1)~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("cut218kr")~ EXIT
 END
 
-APPEND ~HGWRA01~
+APPEND HGWRA01
 
 IF ~~ THEN BEGIN TS29
   SAY ~What of the inevitable pain you must give to the one you love? This Linvail maid?~
-  IF ~~ THEN DO ~SetGlobal("LovedOne","GLOBAL",6)~ EXTERN ~SIMEJ~ TSTOB0
+  IF ~~ THEN DO ~SetGlobal("LovedOne","GLOBAL",6)~ EXTERN VPSIMJ TSTOB0
 END
 
 IF ~~ THEN BEGIN KR0
   SAY ~What of the inevitable pain you must give to the one you love? This desperate paladin?~
-  IF ~~ THEN DO ~SetGlobal("VP_Kr_LovedOne","GLOBAL",1)~ EXTERN ~KELDO25J~ LoveOne0
+  IF ~~ THEN DO ~SetGlobal("VP_Kr_LovedOne","GLOBAL",1)~ EXTERN KELDO25J LoveOne0
 END
 
 END

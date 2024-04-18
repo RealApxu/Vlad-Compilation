@@ -1,337 +1,271 @@
-APPEND ~BYOSHIM~
+CHAIN BYOSHIM NEJ8
+~What I had learnt cherry blossom? I could only stand in amazement at what you had learnt! I am sure you didn't learn that on Kara Tur!~
+EXTERN VPKACB NEJ1
 
-IF ~~ THEN BEGIN NEJ8
-  SAY ~What I had learnt cherry blossom? I could only stand in amazement at what you had learnt! I am sure you didn't learn that on Kara Tur!~
-  IF ~~ THEN EXTERN ~BKACHI~ NEJ1
-END
+CHAIN BYOSHIM NEJ9
+~(*Bows to Kachiko*) Will the lovely Kachiko put away her swords for one night and take the hand of Yoshimo in them instead?~
+EXTERN VPKACB NEJ2
 
-IF ~~ THEN BEGIN NEJ9
-  SAY ~(*Bows to Kachiko*) Will the lovely Kachiko put away her swords for one night and take the hand of Yoshimo in them instead?~
-  IF ~~ THEN EXTERN ~BKACHI~ NEJ2
-END
+CHAIN BYOSHIM NEJ10
+~Then you are in for a pleasant surprise my cherry blossom for I have learnt many things in my absence. The pleasure that comes from dancing with a beautiful girl for one... what does this beautiful girl say?~
+EXTERN VPKACB NEJ3
 
-IF ~~ THEN BEGIN NEJ10
-  SAY ~Then you are in for a pleasant surprise my cherry blossom for I have learnt many things in my absence. The pleasure that comes from  dancing with a beautiful girl for one... what does this beautiful girl say?~
-  IF ~~ THEN EXTERN ~BKACHI~ NEJ3
-END
+CHAIN BYOSHIM TS84
+~Ouch! A moment to catch my breath, fierce warrior!~
+EXTERN VPKACB 1
 
-IF ~~ THEN BEGIN TS84
-  SAY ~Ouch! A moment to catch my breath, fierce warrior!~
-  IF ~~ THEN EXTERN ~BKACHI~ 1
-END
+CHAIN BYOSHIM TS85
+~I have a rule to watch anyone who tried to kill me once. A very sensible rule, my cherry blossom. But I must admit it had been a chore before, not a pleasure.~
+EXTERN VPKACB 2
 
-IF ~~ THEN BEGIN TS85
-  SAY ~I have a rule to watch anyone who tried to kill me once. A very sensible rule, my cherry blossom. But I must admit it had been a chore before, not a pleasure.~
-  IF ~~ THEN EXTERN ~BKACHI~ 2
-END
+CHAIN BYOSHIM TS86
+~I was just trying to be entertaining, cherry blossom... Ouch! In gratitude for the informative fencing lesson... I have learnt that Kachiko does not like cherries, for example. Ouch! Ouch! Oh, I think <CHARNAME> is saying the break is over... Unfortunately, we have to stop the training for now...~
+DO ~RestParty()~
+EXIT
 
-IF ~~ THEN BEGIN TS86
-  SAY ~I was just trying to be entertaining, cherry blossom... Ouch! In gratitude for the informative fencing lesson... I have learnt that Kachiko does not like cherries, for example. Ouch! Ouch! Oh, I think <CHARNAME> is saying the break is over... Unfortunately, we have to stop the training for now...~
-  IF ~~ THEN DO ~RestParty()~ EXIT
-END
+CHAIN BYOSHIM TS87
+~I must say that sneaking away from you was becoming increasingly difficult. You were as a spirited young girl so fond of her older brother and you followed him as a shadow. I was very nearly crossed with you once, Kachiko.~
+EXTERN VPKACB 4
 
-IF ~~ THEN BEGIN TS87
-  SAY ~I must say that sneaking away from you was becoming increasingly difficult. You were as a spirited young girl so fond of her older brother and you followed him as a shadow. I was very nearly crossed with you once, Kachiko.~
-  IF ~~ THEN EXTERN ~BKACHI~ 4
-END
+CHAIN BYOSHIM TS88
+~There was no other way. Naoko and I were very young and you know first-hand how hostile our families are towards each other. If our friendship were discovered, it would have terrible consequences, well at least terrible for boys of our age.~
+DO ~RestParty()~
+EXIT
 
-IF ~~ THEN BEGIN TS88
-  SAY ~There was no other way. Naoko and I were very young and you know first-hand how hostile our families are towards each other. If our friendship were discovered, it would have terrible consequences, well at least terrible for boys of our age.~
-  IF ~~ THEN DO ~RestParty()~ EXIT
-END
+CHAIN BYOSHIM TS89
+~I fled our village and got on the ship sailing for far away Faerun. The rest is history.~
+EXTERN VPKACB 6
 
-IF ~~ THEN BEGIN TS89
-  SAY ~I fled our village and got on the ship sailing for far away Faerun. The rest is history.~
-  IF ~~ THEN EXTERN ~BKACHI~ 6
-END
+CHAIN BYOSHIM TS90
+~It is not a bedtime story, Kachiko. The world is a cold place for a boy running from home because he was accused of murdering his best friend. Later, in Faerun, I was shunned, beaten and taunted for looking and speaking differently...~
+EXTERN BYOSHIM TS91
 
-IF ~~ THEN BEGIN TS90
-  SAY ~It is not a bedtime story, Kachiko. The world is a cold place for a boy running from home because he was accused of murdering his best friend. Later, in Faerun, I was shunned, beaten and taunted for looking and speaking differently...~
-  IF ~~ THEN GOTO TS91
-END
+CHAIN BYOSHIM TS91
+~Well, on the bright side, being young and exotic can earn you few coins from bored rich ladies... Curse my long tongue! Kachiko, I am sorry...~
+EXTERN VPKACB 8
 
-IF ~~ THEN BEGIN TS91
-  SAY ~Well, on the bright side, being young and exotic can earn you few coins from bored rich ladies... Curse my long tongue! Kachiko, I am sorry...~
-  IF ~~ THEN EXTERN ~BKACHI~ 8
-END
+CHAIN BYOSHIM TS92
+~Not the destitute rogue I had become? When I look in those shiny eyes of yours I wish to tell you that I braved the fortune and became a pure-hearted paladin or a noble ranger... But I did not, Cherry Blossom. I am Yoshimo Hashimoto, a bounty hunter.~
+EXIT
 
-IF ~~ THEN BEGIN TS92
-  SAY ~Not the destitute rogue I had become? When I look in those shiny eyes of yours I wish to tell you that I braved the fortune and became a pure-hearted paladin or a noble ranger... But I did not, Cherry Blossom. I am Yoshimo Hashimoto, a bounty hunter.~
-  IF ~~ THEN EXIT
-END
+CHAIN BYOSHIM TS93
+~Cherry Blossom, our last conversation keeps nagging me. The way you said "honorable noble"... I remember craving honor. Until I stared in Naoko's dead face and realized that one of my own "honor-bound" kin must have killed him. I do not believe in honor any more.~
+EXTERN VPKACB 10
 
-IF ~~ THEN BEGIN TS93
-  SAY ~Cherry Blossom, our last conversation keeps nagging me. The way you said "honorable noble"... I remember craving honor. Until I stared in Naoko's dead face and realized that one of my own "honor-bound" kin must have killed him. I do not believe in honor any more.~
-  IF ~~ THEN EXTERN ~BKACHI~ 10
-END
+CHAIN BYOSHIM TS94
+~Indeed. I saw purest honor in a fiery maiden who put her sword away and agreed to listen to one whom she hated and had judged to be guilty...~
+EXTERN VPKACB 11
 
-IF ~~ THEN BEGIN TS94
-  SAY ~Indeed. I saw purest honor in a fiery maiden who put her sword away and agreed to listen to one whom she hated and had judged to be guilty...~
-  IF ~~ THEN EXTERN ~BKACHI~ 11
-END
+CHAIN BYOSHIM TS95
+~No, Kachiko. You are mistaken. I had done something terrible, which robbed me of honor forever. In a moment of weakness, I allowed a creature of pure evil to despoil my soul. I never thought I'd become a traitor, yet I am. Please, do not ask anymore, Kachiko, for I do not wish to cast a shade on your innocent heart.~
+EXTERN VPKACB 12
 
-IF ~~ THEN BEGIN TS95
-  SAY ~No, Kachiko. You are mistaken. I had done something terrible, which robbed me of honor forever. In a moment of weakness, I allowed a creature of pure evil to despoil my soul. I never thought I'd become a traitor, yet I am. Please, do not ask anymore, Kachiko, for I do not wish to cast a shade on your innocent heart.~
-  IF ~~ THEN EXTERN ~BKACHI~ 12
-END
+CHAIN BYOSHIM TS96
+~No, Kachiko, what's done cannot be undone. I will not allow you to be touched by my curse and my taint. That much I can do.~
+DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY)~
+EXIT
 
-IF ~~ THEN BEGIN TS96
-  SAY ~No, Kachiko, what's done cannot be undone. I will not allow you to be touched by my curse and my taint. That much I can do.~
-  IF ~~ THEN DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY)~ EXIT
-END
+CHAIN BYOSHIM TS97
+~Here, take my cloak. The nights are so much colder here than in Kara-Tur. It took me long to get used to it too...~
+EXTERN VPKACB 14
 
-IF ~~ THEN BEGIN TS97
-  SAY ~Here, take my cloak. The nights are so much colder here than in Kara-Tur. It took me long to get used to it too...~
-  IF ~~ THEN EXTERN ~BKACHI~ 14
-END
+CHAIN BYOSHIM TS98
+~Of course! You know my (whispers dramatically) darkest secret...~
+EXTERN VPKACB 15
 
-IF ~~ THEN BEGIN TS98
-  SAY ~Of course! You know my (whispers dramatically) darkest secret...~
-  IF ~~ THEN EXTERN ~BKACHI~ 15
-END
+CHAIN BYOSHIM TS99
+~Yes, Kachiko, I was only joking. Now sleep well, dear child (tucks the cloak around her). I was only joking...~
+DO ~RestParty()~
+EXIT
 
-IF ~~ THEN BEGIN TS99
-  SAY ~Yes, Kachiko, I was only joking. Now sleep well, dear child (tucks the cloak around her).  I was only joking...~
-  IF ~~ THEN DO ~RestParty()~ EXIT
-END
-
-IF ~~ THEN BEGIN TS100
-  SAY ~Look at Kachiko, Anomen! She is poetry herself; I just copy her to the paper:
+CHAIN BYOSHIM TS100
+~Look at Kachiko, Anomen! She is poetry herself; I just copy her to the paper:
 
 Like cherry blossom,
 beautiful Kachiko
 is among us...~
-  IF ~~ THEN EXTERN ~BANOMEN~ TS588
-END
+EXTERN BANOMEN TS588
 
-IF ~~ THEN BEGIN TS101
-  SAY ~Eh, it's finished actually...~
-  IF ~~ THEN EXTERN ~BANOMEN~ TS589
-END
+CHAIN BYOSHIM TS101
+~Eh, it's finished actually...~
+EXTERN BANOMEN TS589
 
-IF ~~ THEN BEGIN TS102
-  SAY ~My cherry blossom...~
-  IF ~~ THEN EXTERN ~BANOMEN~ TS590
-END
+CHAIN BYOSHIM TS102
+~My cherry blossom...~
+EXTERN BANOMEN TS590
 
-IF ~~ THEN BEGIN TS103
-  SAY ~Women...~
-  IF ~~ THEN EXIT
-END
+CHAIN BYOSHIM TS103
+~Women...~
+EXIT
 
-IF ~~ THEN BEGIN TS104
-  SAY ~Cherry Blossom, Lady Nalia?~
-  IF ~~ THEN EXTERN ~BNALIA~ TS52
-END
+CHAIN BYOSHIM TS104
+~Cherry Blossom, Lady Nalia?~
+EXTERN BNALIA TS52
 
-IF ~~ THEN BEGIN TS105
-  SAY ~How about witnessing a blade by your neck, poet?~
-  IF ~~ THEN EXTERN ~BHAERDA~ TS167
-END
+CHAIN BYOSHIM TS105
+~How about witnessing a blade by your neck, poet?~
+EXTERN BHAERDA TS167
 
-IF ~~ THEN BEGIN TS106
-  SAY ~What are you two arguing about?~
-  IF ~~ THEN EXTERN ~BKACHI~ 54
-END
+CHAIN BYOSHIM TS106
+~What are you two arguing about?~
+EXTERN VPKACB 54
 
-IF ~~ THEN BEGIN TS107
-  SAY ~That does it! I will not allow you to speak like that to Kachiko!~
-  IF ~~ THEN EXTERN ~BKACHI~ 57
-END
+CHAIN BYOSHIM TS107
+~That does it! I will not allow you to speak like that to Kachiko!~
+EXTERN VPKACB 57
 
-IF ~~ THEN BEGIN TS108
-  SAY ~I was drunk.~
-  IF ~~ THEN EXTERN ~BKACHI~ 73
-END
+CHAIN BYOSHIM TS108
+~I was drunk.~
+EXTERN VPKACB 73
 
-IF ~~ THEN BEGIN TS109
-  SAY ~And that was my answer. I was drunk. I was disgusted with myself. Once a city guard gave me a job to trace a man who was a suspected rapist. I found him easily and brought to the Magistrate. The man was immediately sentenced and thrown into the prison. Later I heard that he hanged himself in jail and that his only fault was that he found the favor of a general's daughter, but did not have the approval of the general.~
-  IF ~~ THEN EXTERN ~BKACHI~ 74
-END
+CHAIN BYOSHIM TS109
+~And that was my answer. I was drunk. I was disgusted with myself. Once a city guard gave me a job to trace a man who was a suspected rapist. I found him easily and brought to the Magistrate. The man was immediately sentenced and thrown into the prison. Later I heard that he hanged himself in jail and that his only fault was that he found the favor of a general's daughter, but did not have the approval of the general.~
+EXTERN VPKACB 74
 
-IF ~~ THEN BEGIN TS110
-  SAY ~I never bothered to check the city guard's story and I felt like a fool. I did not listen to the poor man's words; I just trusted the authorities. I did my job and I got paid. An innocent man died. So I got drunk. Then Irenicus showed up with his malicious tongue. He understood my mood quickly and before I knew it I was hanging to his every word and he convinced me that the world is one big snake pit... Do you want me to continue?~
-  IF ~~ THEN EXTERN ~BKACHI~ 75
-END
+CHAIN BYOSHIM TS110
+~I never bothered to check the city guard's story and I felt like a fool. I did not listen to the poor man's words; I just trusted the authorities. I did my job and I got paid. An innocent man died. So I got drunk. Then Irenicus showed up with his malicious tongue. He understood my mood quickly and before I knew it I was hanging to his every word and he convinced me that the world is one big snake pit... Do you want me to continue?~
+EXTERN VPKACB 75
 
-IF ~~ THEN BEGIN TS111
-  SAY ~I was weak, Kachiko. But everything that has happened since gave me new strength and new faith... you, Kachiko. And I swear to you, no lie will fool me again.~
-  IF ~~ THEN EXIT
-END
+CHAIN BYOSHIM TS111
+~I was weak, Kachiko. But everything that has happened since gave me new strength and new faith... you, Kachiko. And I swear to you, no lie will fool me again.~
+EXIT
 
-IF ~~ THEN BEGIN TS112
-  SAY ~Are you courting Kachiko, Valygar? Do not try anything stupid.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS411
-END
+CHAIN BYOSHIM TS112
+~Are you courting Kachiko, Valygar? Do not try anything stupid.~
+EXTERN BVALYGA TS411
 
-IF ~~ THEN BEGIN TS113
-  SAY ~Kachiko?~
-  IF ~~ THEN EXTERN ~BKACHI~ 84
-END
+CHAIN BYOSHIM TS113
+~Kachiko?~
+EXTERN VPKACB 84
 
-IF ~~ THEN BEGIN TS114
-  SAY ~Valygar is saying your heart is beyond reach. I shall warn you that some men in these parts of the world are not honorable. Please, be careful in choosing.~
-  IF ~~ THEN EXTERN ~BKACHI~ 85
-END
+CHAIN BYOSHIM TS114
+~Valygar is saying your heart is beyond reach. I shall warn you that some men in these parts of the world are not honorable. Please, be careful in choosing.~
+EXTERN VPKACB 85
 
-IF ~~ THEN BEGIN TS115
-  SAY ~No! You are not doing anything that dangerous! Unless it is a very small cliff and I stand underneath it to supervise your jump and to catch you.~
-  IF ~~ THEN EXTERN ~BKACHI~ 86
-END
+CHAIN BYOSHIM TS115
+~No! You are not doing anything that dangerous! Unless it is a very small cliff and I stand underneath it to supervise your jump and to catch you.~
+EXTERN VPKACB 86
 
-IF ~~ THEN BEGIN TS116
-  SAY ~Do not be a bore, Valygar, tell us all a tale. You must know hundreds from your time spent wandering the land.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS517
-END
+CHAIN BYOSHIM TS116
+~Do not be a bore, Valygar, tell us all a tale. You must know hundreds from your time spent wandering the land.~
+EXTERN BVALYGA TS517
 
-IF ~~ THEN BEGIN TS117
-  SAY ~That is a great disappointment ranger, next time I will insist.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS518
-END
+CHAIN BYOSHIM TS117
+~That is a great disappointment ranger, next time I will insist.~
+EXTERN BVALYGA TS518
 
-IF ~~ THEN BEGIN TS118
-  SAY ~Now Valygar, you have had time to decide upon a tale to tell us. There must surely be many bizarre yarns in your family's chronicles.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS520
-END
+CHAIN BYOSHIM TS118
+~Now Valygar, you have had time to decide upon a tale to tell us. There must surely be many bizarre yarns in your family's chronicles.~
+EXTERN BVALYGA TS520
 
-IF ~~ THEN BEGIN TS119
-  SAY ~Surely you cannot mean that you would frighten us all to death?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS521
-END
+CHAIN BYOSHIM TS119
+~Surely you cannot mean that you would frighten us all to death?~
+EXTERN BVALYGA TS521
 
-IF ~~ THEN BEGIN TS120
-  SAY ~I apologise my friend. We all need a good night's sleep.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS522
-END
+CHAIN BYOSHIM TS120
+~I apologise my friend. We all need a good night's sleep.~
+EXTERN BVALYGA TS522
 
-IF ~~ THEN BEGIN TS121
-  SAY ~Yet I have no doubts that you'd press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 1
-END
+CHAIN BYOSHIM TS121
+~Yet I have no doubts that you'd press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
+EXTERN VPKAC25B 1
 
-IF ~~ THEN BEGIN TS122
-  SAY ~Fiery maiden, your anger is in vain for I love you all the more for it. I love that you are different from what I was taught to treasure in a woman: the ideal wife shall be obedient, defenseless and rely on her husband to survive. More nonsense invented by old fools and repeated by young fools from generation to generation.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 2
-END
+CHAIN BYOSHIM TS122
+~Fiery maiden, your anger is in vain for I love you all the more for it. I love that you are different from what I was taught to treasure in a woman: the ideal wife shall be obedient, defenseless and rely on her husband to survive. More nonsense invented by old fools and repeated by young fools from generation to generation.~
+EXTERN VPKAC25B 2
 
-IF ~~ THEN BEGIN TS123
-  SAY ~Kachiko, ever since your family kidnapped you, I have been thinking of a way to prevent an incident like this happening in the future...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 4
-END
+CHAIN BYOSHIM TS123
+~Kachiko, ever since your family kidnapped you, I have been thinking of a way to prevent an incident like this happening in the future...~
+EXTERN VPKAC25B 4
 
-IF ~~ THEN BEGIN TS124
-  SAY ~And I came to the conclusion, that I need to stay by your side day and night to guard you.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 5
-END
+CHAIN BYOSHIM TS124
+~And I came to the conclusion, that I need to stay by your side day and night to guard you.~
+EXTERN VPKAC25B 5
 
-IF ~~ THEN BEGIN TS125
-  SAY ~Cherry blossom let me try it in another way then. (Yoshimo goes to his knees): Kachiko, the moment I saw you I wished for us to be together. You are the first woman I love and I feel inseparable from. Would you accept my plea and allow me to stay by your side tonight, Kachiko?~
-  IF ~~ THEN EXTERN ~BKACHI25~ 6
-END
+CHAIN BYOSHIM TS125
+~Cherry blossom let me try it in another way then. (Yoshimo goes to his knees): Kachiko, the moment I saw you I wished for us to be together. You are the first woman I love and I feel inseparable from. Would you accept my plea and allow me to stay by your side tonight, Kachiko?~
+EXTERN VPKAC25B 6
 
-IF ~~ THEN BEGIN TS126
-  SAY ~I just put on my most serious mask, my cherry blossom...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 7
-END
+CHAIN BYOSHIM TS126
+~I just put on my most serious mask, my cherry blossom...~
+EXTERN VPKAC25B 7
 
-IF ~~ THEN BEGIN TS127
-  SAY ~Yes, cherry blossom.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 9
-END
+CHAIN BYOSHIM TS127
+~Yes, cherry blossom.~
+EXTERN VPKAC25B 9
 
-IF ~~ THEN BEGIN TS128
-  SAY ~I saw it for sale at the local market and I acquired it. Are you interested in more details about my... hmm... purchase or do you want to join me in returning the freedom to this wondrous being?~
-  IF ~~ THEN EXTERN ~BKACHI25~ 10
-END
+CHAIN BYOSHIM TS128
+~I saw it for sale at the local market and I acquired it. Are you interested in more details about my... hmm... purchase or do you want to join me in returning the freedom to this wondrous being?~
+EXTERN VPKAC25B 10
 
-IF ~~ THEN BEGIN TS129
-  SAY ~As the wisest of our ancestors did.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 11
-END
+CHAIN BYOSHIM TS129
+~As the wisest of our ancestors did.~
+EXTERN VPKAC25B 11
 
-IF ~~ THEN BEGIN TS130
-  SAY ~And may they smile at Kachiko and grant her happiness...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 12
-END
+CHAIN BYOSHIM TS130
+~And may they smile at Kachiko and grant her happiness...~
+EXTERN VPKAC25B 12
 
-IF ~~ THEN BEGIN TS131
-  SAY ~I'll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 20
-END
+CHAIN BYOSHIM TS131
+~I'll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
+EXTERN VPKAC25B 20
 
-IF ~~ THEN BEGIN TS132
-  SAY ~Yes you do. After all, it is a private matter.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 21
-END
+CHAIN BYOSHIM TS132
+~Yes you do. After all, it is a private matter.~
+EXTERN VPKAC25B 21
 
-IF ~~ THEN BEGIN TS133
-  SAY ~(*sighs*) You and <CHARNAME> of course.~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS150
-END
+CHAIN BYOSHIM TS133
+~(*sighs*) You and <CHARNAME> of course.~
+EXTERN BVALYG25 TS150
 
-IF ~~ THEN BEGIN TS134
-  SAY ~Did he come one day as far as my land?~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS197
-END
+CHAIN BYOSHIM TS134
+~Did he come one day as far as my land?~
+EXTERN BVALYG25 TS197
 
-IF ~~ THEN BEGIN TS135
-  SAY ~That is a rare and magnificent weapon, Valygar.~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS198
-END
+CHAIN BYOSHIM TS135
+~That is a rare and magnificent weapon, Valygar.~
+EXTERN BVALYG25 TS198
 
-IF ~~ THEN BEGIN TS136
-  SAY ~Yes, Valygar. They read... To a warrior pure... You look surprised, Valygar.~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS199
-END
+CHAIN BYOSHIM TS136
+~Yes, Valygar. They read... To a warrior pure... You look surprised, Valygar.~
+EXTERN BVALYG25 TS199
 
-IF ~~ THEN BEGIN TS137
-  SAY ~But it referred to its owner. A gift from a lady or a comrade at arms mayhap?~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS200
-END
+CHAIN BYOSHIM TS137
+~But it referred to its owner. A gift from a lady or a comrade at arms mayhap?~
+EXTERN BVALYG25 TS200
 
-IF ~~ THEN BEGIN TS138
-  SAY ~Mayhap I admire the sight in front of me. Exquisite is your beauty, Sime, and perfect is your grace.~
-  IF ~~ THEN EXTERN ~BSIME~ 63
-END
+CHAIN BYOSHIM TS138
+~Mayhap I admire the sight in front of me. Exquisite is your beauty, Sime, and perfect is your grace.~
+EXTERN VPSIMB 63
 
-IF ~~ THEN BEGIN TS139
-  SAY ~(*bows*) You know more than you are willing to tell as well, Lady Sime.~
-  IF ~~ THEN EXTERN ~BSIME~ 64
-END
+CHAIN BYOSHIM TS139
+~(*bows*) You know more than you are willing to tell as well, Lady Sime.~
+EXTERN VPSIMB 64
 
-IF ~~ THEN BEGIN TS140
-  SAY ~Then tell me, my direct and honest Sime, what interest Linvail has in <CHARNAME>?~
-  IF ~~ THEN EXTERN ~BSIME~ 65
-END
+CHAIN BYOSHIM TS140
+~Then tell me, my direct and honest Sime, what interest Linvail has in <CHARNAME>?~
+EXTERN VPSIMB 65
 
-IF ~~ THEN BEGIN TS141
-  SAY ~Linvail wanted you, his most trusted ally, to follow <CHARNAME>.~
-  IF ~~ THEN EXTERN ~BSIME~ 66
-END
+CHAIN BYOSHIM TS141
+~Linvail wanted you, his most trusted ally, to follow <CHARNAME>.~
+EXTERN VPSIMB 66
 
-IF ~~ THEN BEGIN TS142
-  SAY ~And yet you are the only one who would mourn his death, Sime. That's an ally.~
-  IF ~~ THEN EXTERN ~BSIME~ 67
-END
+CHAIN BYOSHIM TS142
+~And yet you are the only one who would mourn his death, Sime. That's an ally.~
+EXTERN VPSIMB 67
 
-IF ~~ THEN BEGIN TS143
-  SAY ~Somehow the words of milady sound like a scold. Did you mean it to be a compliment?~
-  IF ~~ THEN EXTERN ~BSIME~ 69
-END
+CHAIN BYOSHIM TS143
+~Somehow the words of milady sound like a scold. Did you mean it to be a compliment?~
+EXTERN VPSIMB 69
 
-IF ~~ THEN BEGIN TS144
-  SAY ~You have no love for thieves, I take it? Why so? You must have seen deserving ones among Aran's cohorts.~
-  IF ~~ THEN EXTERN ~BSIME~ 70
-END
+CHAIN BYOSHIM TS144
+~You have no love for thieves, I take it? Why so? You must have seen deserving ones among Aran's cohorts.~
+EXTERN VPSIMB 70
 
-IF ~~ THEN BEGIN TS145
-  SAY ~Think what you may, Sime, but sometimes stealing means survival. Poor people had loved a thief or two more than they loved their lords. Noble lords turn thieves sometimes.~
-  IF ~~ THEN EXTERN ~BSIME~ 71
-END
+CHAIN BYOSHIM TS145
+~Think what you may, Sime, but sometimes stealing means survival. Poor people had loved a thief or two more than they loved their lords. Noble lords turn thieves sometimes.~
+EXTERN VPSIMB 71
 
-IF ~~ THEN BEGIN TS146
-  SAY ~Each tale has a grain of truth.~
-  IF ~~ THEN EXTERN ~BSIME~ 72
-END
-
-END
+CHAIN BYOSHIM TS146
+~Each tale has a grain of truth.~
+EXTERN VPSIMB 72

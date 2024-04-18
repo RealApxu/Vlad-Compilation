@@ -1,26 +1,22 @@
-BEGIN ~LOVEONE6~
+BEGIN LOVEONE6
 
-IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
-  SAY ~Sime Linvail... I was afraid that I would never see you again.~
-  IF ~~ THEN EXTERN ~SIMEJ~ TSTOB1
-END
+CHAIN
+IF ~NumTimesTalkedTo(0)~ THEN LOVEONE6 0
+~Sime Linvail... I was afraid that I would never see you again.~
+EXTERN VPSIM25J TSTOB1
 
-IF ~~ THEN BEGIN 1
-  SAY ~What is there to understand? I came to ask you why did you kill me?~
-  IF ~~ THEN EXTERN ~SIMEJ~ TSTOB2
-END
+CHAIN LOVEONE6 1
+~What is there to understand? I came to ask you why did you kill me?~
+EXTERN VPSIM25J TSTOB2
 
-IF ~~ THEN BEGIN 2
-  SAY ~Recklessness... Darling, I only became reckless, when I understood that you would give your heart to anyone, but me.~
-  IF ~~ THEN EXTERN ~SIMEJ~ TSTOB3
-END
+CHAIN LOVEONE6 2
+~Recklessness... Darling, I only became reckless, when I understood that you would give your heart to anyone, but me.~
+EXTERN VPSIM25J TSTOB3
 
-IF ~~ THEN BEGIN 3
-  SAY ~But you did not love me. Funny how it still hurts to see you with another <PRO_MANWOMAN>... just like it did in life.~
-  IF ~~ THEN EXTERN ~SIMEJ~ TSTOB4
-END
+CHAIN LOVEONE6 3
+~But you did not love me. Funny how it still hurts to see you with another <PRO_MANWOMAN>... just like it did in life.~
+EXTERN VPSIM25J TSTOB4
 
-IF ~~ THEN BEGIN 4
-  SAY ~And I loved you madly. I loved you so much that I did not want to live if you did not return my feelings... so I chose to fight as I was a berserker... sooner or later I knew that the death will find me...~
-  IF ~~ THEN EXTERN ~SIMEJ~ TSTOB5
-END
+CHAIN LOVEONE6 4
+~And I loved you madly. I loved you so much that I did not want to live if you did not return my feelings... so I chose to fight as I was a berserker... sooner or later I knew that the death will find me...~
+EXTERN VPSIM25J TSTOB5

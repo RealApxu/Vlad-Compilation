@@ -1,21 +1,19 @@
-BEGIN ~OTAKO~
+BEGIN OTAKO
 
-IF ~NumberOfTimesTalkedTo(0) ~ THEN BEGIN 0
-  SAY ~Yoshimo-san. My great pleasure is to see you again. Uncle often said you will return to help your family and so you did.~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS173
-END
+CHAIN
+IF ~NumberOfTimesTalkedTo(0)~ THEN OTAKO 0
+~Yoshimo-san. My great pleasure is to see you again. Uncle often said you will return to help your family and so you did.~
+EXTERN YOSHJ TS173
 
-IF ~~ THEN BEGIN 1
-  SAY ~Your father will explain the things happening around here to you better than I can. Hashimoto's stronghold is just to the east and south from here. Hurry there Yoshimo, for we need help. And you can kill the Nakanishi wench, you have captured. There is no law above us any more but the honor of Hashimoto.~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS174
-END
+CHAIN OTAKO 1
+~Your father will explain the things happening around here to you better than I can. Hashimoto's stronghold is just to the east and south from here. Hurry there Yoshimo, for we need help. And you can kill the Nakanishi wench, you have captured. There is no law above us any more but the honor of Hashimoto.~
+EXTERN YOSHJ TS174
 
-IF ~~ THEN BEGIN 2
-  SAY ~As you wish, Yoshimo-san. But you should remember that "one must aim not to disappoint his father." Have you forgotten the teachings of our ancestors in the strange lands?~
-  IF ~~ THEN EXTERN ~YOSHJ~ TS175
-END
+CHAIN OTAKO 2
+~As you wish, Yoshimo-san. But you should remember that "one must aim not to disappoint his father." Have you forgotten the teachings of our ancestors in the strange lands?~
+EXTERN YOSHJ TS175
 
-IF ~~ THEN BEGIN 3
-  SAY ~Ha-ha-ha...(*laughs madly*)~
-  IF ~~ THEN DO ~EscapeArea()~ EXTERN ~KACHIJ~ N20
-END
+CHAIN OTAKO 3
+~Ha-ha-ha...(*laughs madly*)~
+DO ~EscapeArea()~
+EXTERN VPKACJ N20

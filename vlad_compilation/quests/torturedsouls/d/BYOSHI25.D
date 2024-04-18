@@ -1,66 +1,53 @@
-BEGIN ~BYOSHI25~
+BEGIN VPYOS25B
 
-IF ~~ THEN BEGIN 0
-  SAY ~Yet I have no doubts that you'd press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 1
-END
+CHAIN VPYOS25B 0
+~Yet I have no doubts that you'd press on for as long as needed. I wonder at the spirit which is so strong in such a delicate body.~
+EXTERN VPKAC25B 1
 
-IF ~~ THEN BEGIN 1
-  SAY ~Fiery maiden, your anger is in vain for I love you all the more for it. I love that you are different from what I was taught to treasure in a woman: the ideal wife shall be obedient, defenseless and rely on her husband to survive. More nonsense invented by old fools and repeated by young fools from generation to generation.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 2
-END
+CHAIN VPYOS25B 1
+~Fiery maiden, your anger is in vain for I love you all the more for it. I love that you are different from what I was taught to treasure in a woman: the ideal wife shall be obedient, defenseless and rely on her husband to survive. More nonsense invented by old fools and repeated by young fools from generation to generation.~
+EXTERN VPKAC25B 2
 
-IF ~~ THEN BEGIN 2
-  SAY ~Kachiko, ever since your family kidnapped you, I have been thinking of a way to prevent an incident like this happening in the future...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 4
-END
+CHAIN VPYOS25B 2
+~Kachiko, ever since your family kidnapped you, I have been thinking of a way to prevent an incident like this happening in the future...~
+EXTERN VPKAC25B 4
 
-IF ~~ THEN BEGIN 3
-  SAY ~And I came to the conclusion, that I need to stay by your side day and night to guard you.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 5
-END
+CHAIN VPYOS25B 3
+~And I came to the conclusion, that I need to stay by your side day and night to guard you.~
+EXTERN VPKAC25B 5
 
-IF ~~ THEN BEGIN 4
-  SAY ~Cherry blossom let me try it in another way then. (Yoshimo goes to his knees): Kachiko, the moment I saw you I wished for us to be together. You are the first woman I love and I feel inseparable from. Would you accept my plea and allow me to stay by your side tonight, Kachiko?~
-  IF ~~ THEN EXTERN ~BKACHI25~ 6
-END
+CHAIN VPYOS25B 4
+~Cherry blossom let me try it in another way then. (Yoshimo goes to his knees): Kachiko, the moment I saw you I wished for us to be together. You are the first woman I love and I feel inseparable from. Would you accept my plea and allow me to stay by your side tonight, Kachiko?~
+EXTERN VPKAC25B 6
 
-IF ~~ THEN BEGIN 5
-  SAY ~I just put on my most serious mask, my cherry blossom...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 7
-END
+CHAIN VPYOS25B 5
+~I just put on my most serious mask, my cherry blossom...~
+EXTERN VPKAC25B 7
 
-IF ~~ THEN BEGIN 6
-  SAY ~Yes, cherry blossom.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 9
-END
+CHAIN VPYOS25B 6
+~Yes, cherry blossom.~
+EXTERN VPKAC25B 9
 
-IF ~~ THEN BEGIN 7
-  SAY ~I saw it for sale at the local market and I acquired it. Are you interested in more details about my... hmm... purchase or do you want to join me in returning the freedom to this wondrous being?~
-  IF ~~ THEN EXTERN ~BKACHI25~ 10
-END
+CHAIN VPYOS25B 7
+~I saw it for sale at the local market and I acquired it. Are you interested in more details about my... hmm... purchase or do you want to join me in returning the freedom to this wondrous being?~
+EXTERN VPKAC25B 10
 
-IF ~~ THEN BEGIN 8
-  SAY ~As the wisest of our ancestors did.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 11
-END
+CHAIN VPYOS25B 8
+~As the wisest of our ancestors did.~
+EXTERN VPKAC25B 11
 
-IF ~~ THEN BEGIN 9
-  SAY ~And may they smile at Kachiko and grant her happiness...~
-  IF ~~ THEN EXTERN ~BKACHI25~ 12
-END
+CHAIN VPYOS25B 9
+~And may they smile at Kachiko and grant her happiness...~
+EXTERN VPKAC25B 12
 
-IF ~~ THEN BEGIN 10
-  SAY ~I'll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 20
-END
+CHAIN VPYOS25B 10
+~I'll spare you this time, ranger. Cherry Blossom, you embarrass Valygar.~
+EXTERN VPKAC25B 20
 
-IF ~~ THEN BEGIN 11
-  SAY ~Yes you do. After all, it is a private matter.~
-  IF ~~ THEN EXTERN ~BKACHI25~ 21
-END
+CHAIN VPYOS25B 11
+~Yes you do. After all, it is a private matter.~
+EXTERN VPKAC25B 21
 
-IF ~~ THEN BEGIN 12
-  SAY ~(*Sighs*) You and <CHARNAME> of course.~
-  IF ~~ THEN EXTERN ~BVALYG25~ TS150
-END
+CHAIN VPYOS25B 12
+~(*Sighs*) You and <CHARNAME> of course.~
+EXTERN BVALYG25 TS150

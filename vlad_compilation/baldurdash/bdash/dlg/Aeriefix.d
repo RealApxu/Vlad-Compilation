@@ -1,4 +1,4 @@
-ADD_STATE_TRIGGER ~AERIEJ~ 7 ~!Global("QuayleRaelis","GLOBAL",1)~ 10
+ADD_STATE_TRIGGER AERIEJ 7 ~!Global("QuayleRaelis","GLOBAL",1)~ 10
 
 REPLACE_STATE_TRIGGER AERIE 26
 ~NumberOfTimesTalkedTo(0)

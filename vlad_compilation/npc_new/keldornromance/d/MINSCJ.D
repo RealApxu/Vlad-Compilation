@@ -1,11 +1,11 @@
-APPEND ~MINSCJ~
+APPEND MINSCJ
 
 IF ~~ THEN BEGIN Kr_WarTk
   SAY ~Minsc and Boo are always ready to do some butt-kicking to evil enemies!~
   IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kr_WarTk
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kr_WarTk
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kr_WarTk
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kr_WarTk
 END
 
 IF ~~ THEN BEGIN Kelem0
@@ -16,12 +16,12 @@ END
 
 IF ~~ THEN BEGIN Kelem1
   SAY ~Ha-ha! You have also become berserk, like Minsc? Well-well... that's all right, Minsc and Boo are ready to rejoin you!~
-  IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
-  IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
+  IF ~True()~ THEN EXTERN KELEMVOR 4A
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
+  IF ~InParty("Viconia")~ THEN EXTERN VICONIJ Kelem0
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kelem0
 END
 
 END

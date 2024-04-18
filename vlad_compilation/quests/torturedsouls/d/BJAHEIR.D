@@ -1,119 +1,92 @@
-APPEND ~BJAHEIR~
+CHAIN BJAHEIR TS461
+~You were pretty insistent on killing Yoshimo. Now you two act like the closest of friends. I find it suspicious.~
+EXTERN VPKACB 50
 
-IF ~~ THEN BEGIN TS461
-  SAY ~You were pretty insistent on killing Yoshimo. Now you two act like the closest of friends. I find it suspicious.~
-  IF ~~ THEN EXTERN ~BKACHI~ 50
-END
+CHAIN BJAHEIR TS462
+~No. My first impression never failed me. But tell me child, is it a blush I see on your cheeks when you speak of Yoshimo?~
+EXTERN VPKACB 51
 
-IF ~~ THEN BEGIN TS462
-  SAY ~No. My first impression never failed me. But tell me child, is it a blush I see on your cheeks when you speak of Yoshimo?~
-  IF ~~ THEN EXTERN ~BKACHI~ 51
-END
+CHAIN BJAHEIR TS463
+~Well, you may be hot, you may be ill or you may be in love. I assume the latter, since the weather is mild and you are a strong and healthy person.~
+EXTERN VPKACB 52
 
-IF ~~ THEN BEGIN TS463
-  SAY ~Well, you may be hot, you may be ill or you may be in love. I assume the latter, since the weather is mild and you are a strong and healthy person.~
-  IF ~~ THEN EXTERN ~BKACHI~ 52
-END
+CHAIN BJAHEIR TS464
+~Oh, then it is true...~
+EXTERN VPKACB 53
 
-IF ~~ THEN BEGIN TS464
-  SAY ~Oh, then it is true...~
-  IF ~~ THEN EXTERN ~BKACHI~ 53
-END
+CHAIN BJAHEIR TS465
+~And we were not arguing.~
+EXIT
 
-IF ~~ THEN BEGIN TS465
-  SAY ~And we were not arguing.~
-  IF ~~ THEN EXIT
-END
+CHAIN BJAHEIR TS466
+~Your katana is in satisfactory condition. Your soul truly is dull and requires polishing. I have heard you say to <CHARNAME> that you would not wed and have children. I find a claim like that...~
+EXTERN BVALYGA TS368
 
-IF ~~ THEN BEGIN TS466
-  SAY ~Your katana is in satisfactory condition. Your soul truly is dull and requires polishing. I have heard you say to <CHARNAME> that you would not wed and have children. I find a claim like that...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS368
-END
+CHAIN BJAHEIR TS467
+~Fool man. Talking of a thing like that with a girl, who never knew her mother and whose stepfather was killed at her very eyes! She have never known a joy of growing in a proper family, she had never been told of love her parents shared and that led to her birth... You do not solve your problems by complaining to her and you traumatize her with your unhealthy views on family building.~
+EXTERN BVALYGA TS369
 
-IF ~~ THEN BEGIN TS467
-  SAY ~Fool man. Talking of a thing like that with a girl, who never knew her mother and whose stepfather was killed at her very eyes! She have never known a joy of growing in a proper family, she had never been told of love her parents shared and that led to her birth... You do not solve your problems by complaining to her and you traumatize her with your unhealthy views on family building.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS369
-END
+CHAIN BJAHEIR TS468
+~I think you can. I suggest that you choose another, happier things to discuss with her, than your life story. By the way, you are getting to know <CHARNAME> very well, Valygar. I'd say you are actively seeking her friendship. I wonder why?~
+EXTERN BVALYGA TS370
 
-IF ~~ THEN BEGIN TS468
-  SAY ~I think you can. I suggest that you choose another, happier things to discuss with her, than your life story. By the way, you are getting to know <CHARNAME> very well, Valygar. I'd say you are actively seeking her friendship. I wonder why?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS370
-END
+CHAIN BJAHEIR TS469
+~I speak my mind freely and I care of my friends. If someone is unhappy with that... well that's their problem, not mine.~
+EXTERN BVALYGA TS372
 
-IF ~~ THEN BEGIN TS469
-  SAY ~I speak my mind freely and I care of my friends. If someone is unhappy with that... well that's their problem, not mine.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS372
-END
+CHAIN BJAHEIR TS470
+~I had been entrusted with the care of <CHARNAME> long ago by Gorion Spellwielder, a man whom I respected deeply. I would never back away from my promise to him. <CHARNAME>'s own qualities are exceptional, but as any child she requires guidance. And that I am willing to give her.~
+EXTERN BVALYGA TS373
 
-IF ~~ THEN BEGIN TS470
-  SAY ~I had been entrusted with the care of <CHARNAME> long ago by Gorion Spellwielder, a man whom I respected deeply. I would never back away from my promise to him. <CHARNAME>'s own qualities are exceptional, but as any child she requires guidance. And that I am willing to give her.~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS373
-END
-
-IF ~~ THEN BEGIN TS471
-  SAY ~O what can ail thee, knight-at-arms
+CHAIN BJAHEIR TS471
+~O what can ail thee, knight-at-arms
 Alone and palely loitering?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS375
-END
+EXTERN BVALYGA TS375
 
-IF ~~ THEN BEGIN TS472
-  SAY ~Yes, I am fine, thank you. Your question had reminded me what my husband Khalid told me when we first met. He said that he just found and lost the world. Then he read me these lines and asked if the faery daughter has a healing for his heart... Oh, Khalid...~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS376
-END
+CHAIN BJAHEIR TS472
+~Yes, I am fine, thank you. Your question had reminded me what my husband Khalid told me when we first met. He said that he just found and lost the world. Then he read me these lines and asked if the faery daughter has a healing for his heart... Oh, Khalid...~
+EXTERN BVALYGA TS376
 
-IF ~~ THEN BEGIN TS473
-  SAY ~It will not help you this time, Valygar. I know precisely what your sickness is, but I am not the one who can heal it. You are in love, Valygar. Shall I give you the name as well, or you know it yourself?~
-  IF ~~ THEN EXTERN ~BVALYGA~ TS377
-END
+CHAIN BJAHEIR TS473
+~It will not help you this time, Valygar. I know precisely what your sickness is, but I am not the one who can heal it. You are in love, Valygar. Shall I give you the name as well, or you know it yourself?~
+EXTERN BVALYGA TS377
 
-IF ~~ THEN BEGIN TS474
-  SAY ~Drop my guard? With the likes of you in the group? I am not mad enough.~
-  IF ~~ THEN EXTERN ~BSIME~ 132
-END
+CHAIN BJAHEIR TS474
+~Drop my guard? With the likes of you in the group? I am not mad enough.~
+EXTERN VPSIMB 132
 
-IF ~~ THEN BEGIN TS475
-  SAY ~I am not easily offended. But I have seen your type oft enough to be weary, Sime Linvail. I have heard you talking to men. Your words are honey, but your heart is cold.  You called yourself a hunter, as I recall. Indeed you are. But the heads of men are your trophies.~
-  IF ~~ THEN EXTERN ~BSIME~ 133
-END
+CHAIN BJAHEIR TS475
+~I am not easily offended. But I have seen your type oft enough to be weary, Sime Linvail. I have heard you talking to men. Your words are honey, but your heart is cold. You called yourself a hunter, as I recall. Indeed you are. But the heads of men are your trophies.~
+EXTERN VPSIMB 133
 
-IF ~~ THEN BEGIN TS476
-  SAY ~You may think so, Sime, but around women like you there is always some turmoil. You seek drama and thrill, and you break hearts without looking back.~
-  IF ~~ THEN EXTERN ~BSIME~ 134
-END
+CHAIN BJAHEIR TS476
+~You may think so, Sime, but around women like you there is always some turmoil. You seek drama and thrill, and you break hearts without looking back.~
+EXTERN VPSIMB 134
 
-IF ~~ THEN BEGIN TS477
-  SAY ~And what would you know of potions?~
-  IF ~~ THEN EXTERN ~BSIME~ 136
-END
+CHAIN BJAHEIR TS477
+~And what would you know of potions?~
+EXTERN VPSIMB 136
 
-IF ~~ THEN BEGIN TS478
-  SAY ~More talents. Aren't we fortunate to have someone so learned and well-traveled amongst us! But Sime, Tethyr is far away from Icewind Dale and we have found an acceptable substitute.~
-  IF ~~ THEN EXTERN ~BSIME~ 137
-END
+CHAIN BJAHEIR TS478
+~More talents. Aren't we fortunate to have someone so learned and well-traveled amongst us! But Sime, Tethyr is far away from Icewind Dale and we have found an acceptable substitute.~
+EXTERN VPSIMB 137
 
-IF ~~ THEN BEGIN TS479
-  SAY ~Jealous? No, I am not. Why would I? I am only pitying <CHARNAME>. The empty-headed toy like you would not give anything. You are not capable to give and instill the true deep feelings, warm and tender, of the sort my Khalid and I shared.~
-  IF ~~ THEN EXTERN ~BSIME~ 581
-END
+CHAIN BJAHEIR TS479
+~Jealous? No, I am not. Why would I? I am only pitying <CHARNAME>. The empty-headed toy like you would not give anything. You are not capable to give and instill the true deep feelings, warm and tender, of the sort my Khalid and I shared.~
+EXTERN VPSIMB 581
 
-IF ~~ THEN BEGIN TS480
-  SAY ~Child, are you going just to sit there and listen your mouth agape, to some foolish girl to shame your oldest friend?~
-  IF ~~ THEN EXTERN ~BSIME~ 582
-END
+CHAIN BJAHEIR TS480
+~Child, are you going just to sit there and listen your mouth agape, to some foolish girl to shame your oldest friend?~
+EXTERN VPSIMB 582
 
-IF ~~ THEN BEGIN TS481
-  SAY ~I? A loyal companion? So that's how you feel about me? I shall remember.~
-  IF ~~ THEN EXTERN ~BSIME~ 583
-END
+CHAIN BJAHEIR TS481
+~I? A loyal companion? So that's how you feel about me? I shall remember.~
+EXTERN VPSIMB 583
 
-IF ~~ THEN BEGIN TS482
-  SAY ~Oh, now I hear a man grown, not a boy!~
-  IF ~~ THEN EXTERN ~BSIME~ 584
-END
+CHAIN BJAHEIR TS482
+~Oh, now I hear a man grown, not a boy!~
+EXTERN VPSIMB 584
 
-IF ~~ THEN BEGIN TS483
-  SAY ~I think that I shall use it then.~
-  IF ~~ THEN EXTERN ~BSIME~ 586
-END
-
-END
+CHAIN BJAHEIR TS483
+~I think that I shall use it then.~
+EXTERN VPSIMB 586

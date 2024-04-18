@@ -1,16 +1,16 @@
-APPEND ~CERNDJ~
+APPEND CERNDJ
 
 IF ~~ THEN BEGIN Kr_WarTk
   SAY ~With war comes also serious damage to nature. If our aid brings a speedy end to this war then it is our duty to help... balance must be maintained!~
   IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kr_WarTk
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kr_WarTk
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kr_WarTk
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kr_WarTk
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kr_WarTk
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kr_WarTk
-  IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kr_WarTk
-  IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kr_WarTk
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kr_WarTk
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kr_WarTk
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kr_WarTk
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kr_WarTk
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kr_WarTk
+  IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kr_WarTk
+  IF ~InParty("Korgan")~ THEN EXTERN KORGANJ Kr_WarTk
 END
 
 IF ~~ THEN BEGIN Kr_Curse
@@ -26,17 +26,17 @@ END
 
 IF ~~ THEN BEGIN Kelem1
   SAY ~No, I don't, but from here on you must strive to maintain balance in yourself, <CHARNAME>.~
-  IF ~True()~ THEN EXTERN ~KELEMVOR~ 4A
-  IF ~InParty("Edwin")~ THEN EXTERN ~EDWINJ~ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN ~KACHIJ~ Kelem0
-  IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ Kelem0
-  IF ~InParty("Viconia")~ THEN EXTERN ~VICONIJ~ Kelem0
-  IF ~InParty("Jan")~ THEN EXTERN ~JANJ~ Kelem0
-  IF ~InParty("Minsc")~ THEN EXTERN ~MINSCJ~ Kelem0
-  IF ~InParty("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ Kelem0
-  IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZYJ~ Kelem0
-  IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERDAJ~ Kelem0
-  IF ~InParty("Korgan")~ THEN EXTERN ~KORGANJ~ Kelem0
+  IF ~True()~ THEN EXTERN KELEMVOR 4A
+  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+  IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ Kelem0
+  IF ~InParty("Viconia")~ THEN EXTERN VICONIJ Kelem0
+  IF ~InParty("Jan")~ THEN EXTERN JANJ Kelem0
+  IF ~InParty("Minsc")~ THEN EXTERN MINSCJ Kelem0
+  IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ Kelem0
+  IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ Kelem0
+  IF ~InParty("HaerDalis")~ THEN EXTERN HAERDAJ Kelem0
+  IF ~InParty("Korgan")~ THEN EXTERN KORGANJ Kelem0
 END
 
 END

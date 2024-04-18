@@ -764,10 +764,10 @@ CHAIN FFBART NEJ159
  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ EXTERN FFBART NEJ160
  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ EXTERN FFBART NEJ160
  IF ~OR(2) !InParty("Minsc") Dead("Minsc")~ THEN REPLY ~Believe me barkeep, if the bard hadn't proved to be of any use to me I would have left her the first time she fell, regardless of where that might have been.~ EXTERN FFBART NEJ170
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ EXTERN ~MINSCJ~ NEJ338
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ EXTERN ~MINSCJ~ NEJ338
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ EXTERN ~MINSCJ~ NEJ338
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ EXTERN ~MINSCJ~ NEJ338
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~There is no way I would allow anything to happen to Leina Samuel, she has become very dear to me and a great asset to the group.~ EXTERN MINSCJ NEJ338
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has made her own place not only in the group but also in my heart. She has brought joy and laughter to us all on some of the bleakest of days.~ EXTERN MINSCJ NEJ338
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~Leina has proven herself an invaluable ally and a stalwart companion to us all Samuel. There will always be a place for her in this group.~ EXTERN MINSCJ NEJ338
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN REPLY ~I admit I had my doubts as to the usefulness of a bard Samuel, but Leina has lifted our spirits many times on and off the battlefield. She has earned her place in the group as well as any warrior or wizard.~ EXTERN MINSCJ NEJ338
 
 CHAIN FFBART NEJ160
 ~(*His eyes take on a twinkle as he looks at you*)... So, my Leina has enchanted you as well has she <CHARNAME>?~

@@ -15,7 +15,7 @@ REPLACE_STATE_TRIGGER GAELAN 41
 
 APPEND ~GAELAN~
 
-IF ~~ THEN BEGIN NEJ2
+CHAIN GAELAN NEJ2
   SAY #20855 /* ~Coo!  You'd be the one I be looking for, if I not be mistaken.  <CHARNAME> be yer name, aye?~ [GAELEN02] */
   IF ~~ THEN REPLY #20856 /* ~Well, I'm afraid you are mistaken.~ */ DO ~SetGlobalTimer("ImoenDream1","GLOBAL",ONE_DAY)~ GOTO 1
   IF ~~ THEN REPLY #20857 /* ~Yes, I am <HESHE>.  What is it that you want?~ */ DO ~SetGlobalTimer("ImoenDream1","GLOBAL",ONE_DAY)~ GOTO 2
@@ -60,16 +60,16 @@ REPLACE_STATE_TRIGGER GAELAN 51
 ADD_TRANS_TRIGGER GAELAN 64 ~OR(3) !InParty("Keldorn") Dead("Keldorn") !See("Keldorn")~ DO 0
 
 EXTEND_BOTTOM GAELAN 64
-  IF ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~ THEN EXTERN ~KELDORJ~ LT2_new4
+  IF ~InParty("Keldorn") !Dead("Keldorn") See("Keldorn")~ THEN EXTERN KELDORJ LT2_new4
 END
 
 EXTEND_BOTTOM GAELAN 86
   IF ~!Global("ShadowWork","GLOBAL",0)~ THEN REPLY ~I'm not happy with the price and I don't trust anyone of you. I'll better kill you now and then deal with your friends. Prepare to die scum.~ GOTO N20
 END
 
-APPEND ~KELDORJ~
+APPEND KELDORJ
 
-IF ~~ THEN BEGIN LT2_new4
+CHAIN KELDORJ LT2_new4
   SAY ~This man works for the Shadow Thieves. Were the life of your friend not at stake, I would not tolerate it for a moment.~
   IF ~~ THEN EXIT
 END

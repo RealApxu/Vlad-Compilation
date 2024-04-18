@@ -203,7 +203,7 @@ BUT_ONLY
 /*
 //Fixing Imoen's banters
 COPY_EXISTING ~interdia.2da~ ~override~
-    SET_2DA_ENTRY 17 1 2 ~BIMOEN2~
+    SET_2DA_ENTRY 17 1 2 BIMOEN2
 BUT_ONLY
 */
 

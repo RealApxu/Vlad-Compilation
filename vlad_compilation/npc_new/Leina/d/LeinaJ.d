@@ -195,19 +195,19 @@ CHAIN VPLEIJ 35
 ~Ulcaster is naught but a ruin, <CHARNAME>, and so far away. Surely it has been plundered many times? There cannot possibly be anything left to find.~
 END
  IF ~True()~ THEN EXTERN NJHROJ 60
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ546
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ260
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ57
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ152
- IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ58
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
+ IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ57
+ IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ152
+ IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ58
 
 CHAIN VPLEIJ 36
 ~I marvel at walking beside Hrothgar of Easthaven, and now I have the chance to walk in the past! This is all too much like a dream.~
 END
- IF ~True()~ THEN EXTERN ~TILORN~ 19
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ261
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ59
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ153
+ IF ~True()~ THEN EXTERN TILORN 19
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ261
+ IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ59
+ IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ153
 
 IF WEIGHT #3 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) GlobalLT("VP_Enable_Flirts","LOCALS",3) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ 37
 ~Yes... you need me for something?~
@@ -349,19 +349,19 @@ CHAIN VPLEIJ 62
 ~Think before you make any rash decisions <CHARNAME>, for the mages here will not take kindly if one of their bodies goes missing.~
 END
  IF ~True()~ THEN EXIT
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ NEJ224
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ200
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN ~VALYGARJ~ NEJ166
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ NEJ312
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ NEJ255
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ 70
- IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN ~SIMEJ~ NEJ119
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ NEJ199
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ NEJ333
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ NEJ235
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ331
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ156
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ634
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN KORGANJ NEJ224
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ NEJ200
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN VALYGARJ NEJ166
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ NEJ312
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ NEJ255
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 70
+ IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN VPSIMJ NEJ119
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ NEJ199
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN NALIAJ NEJ333
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN AERIEJ NEJ235
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ331
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ156
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ634
 
 CHAIN VPLEIJ 63
 ~But just think Melora, it would also be down on our heads and would you really want to be buried along side so many mages?~
@@ -379,7 +379,7 @@ END
  IF ~True()~ THEN EXTERN NJHROJ 335
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ leveler1
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 25
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ NEJ201
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ NEJ201
 
 CHAIN VPLEIJ 66
 ~It's all turned out so horribly wrong Samuel... Govan... he is dead! He sought to use me to expand his own fortune... but I never wished him dead Samuel!~
@@ -599,7 +599,7 @@ CHAIN VPLEIJ 110
 ~(*She smiles mockingly*)... If Bjorn has indeed spent so much time searching for me, the least I can do is to spare a little time and hear the story he has painstakingly put together.~
 END
  IF ~True()~ THEN EXTERN ~BJORN~ 4
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ340
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ340
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 32
 
 CHAIN VPLEIJ 111
@@ -988,9 +988,9 @@ CHAIN VPLEIJ firattak
 END
  IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ firattak
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ firattak
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ firattak
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN ~DARJ~ firattak
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ firattak
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ firattak
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ firattak
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ firattak
 
 IF ~Global("VP_Firkrag_Is_Dead","GLOBAL",1)~ THEN VPLEIJ firkdead1
@@ -1084,13 +1084,13 @@ END
 CHAIN VPLEIJ rayvon
 ~He knows why we are... I can see it in his eyes. Please <CHARNAME>, I really don't think he is interested in any explanations.~
 END
- IF ~True()~ THEN EXTERN ~RAYVON~ 2
+ IF ~True()~ THEN EXTERN RAYVON 2
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ rayvon2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ rayvon
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ NEJ155
- IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ NEJ60
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ NEJ264
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ NEJ554
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ rayvon
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ155
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ60
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ264
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ554
 
 CHAIN VPLEIJ immy1
 ~(*Smiling affectionately*) Ah the infamous Imoen... at last we get to meet.~
@@ -1140,10 +1140,10 @@ END
 CHAIN VPLEIJ tafficuh
 ~I believe the most appropriate expression to use here would be something about pride coming before a fall. Wouldn't you agree Taffic?~
 END
- IF ~True()~ THEN EXTERN ~TAFFICP~ umberhk3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ tafficuh
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN ~KACHIJ~ tafficuh
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN ~YOSHJ~ tafficuh
+ IF ~True()~ THEN EXTERN NJTAFP umberhk3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ tafficuh
+ IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ tafficuh
+ IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ tafficuh
 
 IF WEIGHT #5 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) Global("VP_Enable_Flirts","LOCALS",4) GlobalGT("VP_LoveTalk","LOCALS",23) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ NewFlirts
 ~Yes... you need me for something?~
@@ -1403,7 +1403,7 @@ EXIT
 
 CHAIN VPLEIJ vampamb0
 ~Stay away from <PRO_HIMHER>, vampire! You and your murderous bastard of a brother had taken too many lives as is. I will not allow you to harm <CHARNAME>...~
-EXTERN ~BODHIAMB~ vampamb
+EXTERN BODHIAMB vampamb
 
 CHAIN VPLEIJ slayerat
 ~What is it <CHARNAME>? You called out in your slee... your face... what is wrong? (*She tries to rouse you*) Come waken... it is but another bad dream.~
@@ -1428,226 +1428,226 @@ CHAIN VPLEIJ slayer2
 = ~Please don't give up the fight, with or with out your soul you are strong enough to hold on to who you are. Together we will end this nightmare and you will be whole again. I promise.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~ EXIT
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
- IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN ~JANJ~ 178
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
- IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
- IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN2J~ 1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ 203
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN CERNDJ 130
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN NALIAJ 308
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ 178
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN KORGANJ 177
+ IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
+ IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ 149
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ 250
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN AERIEJ 116
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ 87
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ 432
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN IMOEN2J 1
 
 CHAIN VPLEIJ slayer3
 ~(*Stepping away from you*) I thought I knew you, how could I have got it so wrong again? If that is the sort of power that you lust after, then I want no part of you <CHARNAME>!~
 = ~I will help you see this quest of yours through, that much I owe you for my freedom, but if at anytime I feel you are a danger to these or other innocent people, then I will strike you down myself without a moments hesitation. (*She walks briskly away*).~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1) SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXIT
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~MINSCJ~ 203
- IF ~InParty("Cernd") !Dead("Cernd")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~CERNDJ~ 130
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~HAERDAJ~ 141
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~MAZZYJ~ 194
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~NALIAJ~ 308
- IF ~InParty("Jan") !Dead("Jan")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~JANJ~ 178
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~KORGANJ~ 177
- IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~KELDORJ~ 243
- IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~VALYGARJ~ 103
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~EDWINJ~ 149
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~ANOMENJ~ 250
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~AERIEJ~ 116
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~VICONIJ~ 87
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~JAHEIRAJ~ 432
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ~IMOEN2J~ 1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN MINSCJ 203
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN CERNDJ 130
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN HAERDAJ 141
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN MAZZYJ 194
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN NALIAJ 308
+ IF ~InParty("Jan") !Dead("Jan")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN JANJ 178
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN KORGANJ 177
+ IF ~InParty("Keldorn") !Dead("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",1) !Global("VP_KrRomanceActive","GLOBAL",2)~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN KELDORJ 243
+ IF ~InParty("Valygar") !Dead("Valygar") !Global("ValygarRomanceActive","GLOBAL",1) !Global("ValygarRomanceActive","GLOBAL",2)~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN VALYGARJ 103
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN EDWINJ 149
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN ANOMENJ 250
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN AERIEJ 116
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN VICONIJ 87
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN JAHEIRAJ 432
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LeinaRomanceAct","GLOBAL",3)~ EXTERN IMOEN2J 1
 
 CHAIN VPLEIJ inhell
 ~I often said to myself when it was getting rough - it could be worst, it could be Nine Hells... But now I am afraid we are in Nine Hells.~
 END
  IF ~True()~ THEN EXIT
- IF ~InParty("Edwin") See("Edwin")~ THEN EXTERN ~EDWINJ~ 95
- IF ~InParty("Nalia") See("Nalia")~ THEN EXTERN ~NALIAJ~ 268
- IF ~InParty("Keldorn") See("Keldorn")~ THEN EXTERN ~KELDORJ~ 189
- IF ~InParty("Haerdalis") See("Haerdalis")~ THEN EXTERN ~HAERDAJ~ 100
- IF ~InParty("Anomen") See("Anomen")~ THEN EXTERN ~ANOMENJ~ 258
- IF ~InParty("Mazzy") See("Mazzy")~ THEN EXTERN ~MAZZYJ~ 166
- IF ~InParty("Cernd") See("Cernd")~ THEN EXTERN ~CERNDJ~ 100
- IF ~InParty("Jaheira") See("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 450
- IF ~InParty("Yoshimo") See("Yoshimo")~ THEN EXTERN ~YOSHJ~ 90
- IF ~InParty("Viconia") See("Viconia")~ THEN EXTERN ~VICONIJ~ 117
- IF ~InParty("Jan") See("Jan")~ THEN EXTERN ~JANJ~ 147
- IF ~InParty("Korgan") See("Korgan")~ THEN EXTERN ~KORGANJ~ 115
- IF ~InParty("Valygar") See("Valygar")~ THEN EXTERN ~VALYGARJ~ 77
- IF ~InParty("Minsc") See("Minsc")~ THEN EXTERN ~MINSCJ~ 155
- IF ~InParty("Aerie") See("Aerie")~ THEN EXTERN ~AERIEJ~ 131
- IF ~InParty("Imoen2") See("Imoen2")~ THEN EXTERN ~IMOEN2J~ 10
- IF ~InParty("vpkachi") See("vpkachi")~ THEN EXTERN ~KACHIJ~ N55
+ IF ~InParty("Edwin") See("Edwin")~ THEN EXTERN EDWINJ 95
+ IF ~InParty("Nalia") See("Nalia")~ THEN EXTERN NALIAJ 268
+ IF ~InParty("Keldorn") See("Keldorn")~ THEN EXTERN KELDORJ 189
+ IF ~InParty("Haerdalis") See("Haerdalis")~ THEN EXTERN HAERDAJ 100
+ IF ~InParty("Anomen") See("Anomen")~ THEN EXTERN ANOMENJ 258
+ IF ~InParty("Mazzy") See("Mazzy")~ THEN EXTERN MAZZYJ 166
+ IF ~InParty("Cernd") See("Cernd")~ THEN EXTERN CERNDJ 100
+ IF ~InParty("Jaheira") See("Jaheira")~ THEN EXTERN JAHEIRAJ 450
+ IF ~InParty("Yoshimo") See("Yoshimo")~ THEN EXTERN YOSHJ 90
+ IF ~InParty("Viconia") See("Viconia")~ THEN EXTERN VICONIJ 117
+ IF ~InParty("Jan") See("Jan")~ THEN EXTERN JANJ 147
+ IF ~InParty("Korgan") See("Korgan")~ THEN EXTERN KORGANJ 115
+ IF ~InParty("Valygar") See("Valygar")~ THEN EXTERN VALYGARJ 77
+ IF ~InParty("Minsc") See("Minsc")~ THEN EXTERN MINSCJ 155
+ IF ~InParty("Aerie") See("Aerie")~ THEN EXTERN AERIEJ 131
+ IF ~InParty("Imoen2") See("Imoen2")~ THEN EXTERN IMOEN2J 10
+ IF ~InParty("vpkachi") See("vpkachi")~ THEN EXTERN VPKACJ N55
 
 CHAIN VPLEIJ TOL21
 ~Irenicus had willfully damaged the Tree of Life. Thus he became an enemy of everyone with elven blood in their veins. I will fight him with you.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TOL22
 ~Give me one good reason why I should run away from a battle with an evil wizard who endangered the whole world in his madness? You are silent? Good. I stand ready to fight.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TOL23
 ~You are right, we do not have time to chat. Just give me a signal to attack.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TOL1
 ~Irenicus had willfully damaged the Tree of Life. Thus he became an enemy of everyone with Elven blood in their veins. Irenicus had hurt and tormented a man I love. How many more reasons do you want me to give you? I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TOL2
 ~No. Let's not waste words. I am ready to fight, <CHARNAME> and this battle is mine, as well as yours.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TOL3
 ~I am partaking readily and willingly. You are right, we do not have time to chat. Just give me a signal to attack.~
 END
- IF ~True()~ THEN EXTERN ~PLAYER1~ 53
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 52
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 51
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 50
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 49
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 48
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 47
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 46
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~PLAYER1~ 45
- IF ~InParty("Cernd")~ THEN EXTERN ~PLAYER1~ 44
- IF ~InParty("Nalia")~ THEN EXTERN ~PLAYER1~ 43
- IF ~InParty("Korgan")~ THEN EXTERN ~PLAYER1~ 42
- IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ 41
- IF ~InParty("HaerDalis")~ THEN EXTERN ~PLAYER1~ 40
- IF ~InParty("Edwin")~ THEN EXTERN ~PLAYER1~ 39
- IF ~InParty("Jan")~ THEN EXTERN ~PLAYER1~ 38
- IF ~InParty("Mazzy")~ THEN EXTERN ~PLAYER1~ 37
- IF ~InParty("Valygar")~ THEN EXTERN ~PLAYER1~ 36
- IF ~InParty("Minsc")~ THEN EXTERN ~PLAYER1~ 35
- IF ~InParty("Imoen2")~ THEN EXTERN ~PLAYER1~ 34
- IF ~InParty("vpkachi")~ THEN EXTERN ~PLAYER1~ TS55
- IF ~InParty("Yoshimo")~ THEN EXTERN ~PLAYER1~ TS55yosh
- IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN ~PLAYER1~ KR_TL0
+ IF ~True()~ THEN EXTERN PLAYER1 53
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 52
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 51
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 50
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 49
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 48
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 47
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 46
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN PLAYER1 45
+ IF ~InParty("Cernd")~ THEN EXTERN PLAYER1 44
+ IF ~InParty("Nalia")~ THEN EXTERN PLAYER1 43
+ IF ~InParty("Korgan")~ THEN EXTERN PLAYER1 42
+ IF ~InParty("Keldorn") Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 41
+ IF ~InParty("HaerDalis")~ THEN EXTERN PLAYER1 40
+ IF ~InParty("Edwin")~ THEN EXTERN PLAYER1 39
+ IF ~InParty("Jan")~ THEN EXTERN PLAYER1 38
+ IF ~InParty("Mazzy")~ THEN EXTERN PLAYER1 37
+ IF ~InParty("Valygar")~ THEN EXTERN PLAYER1 36
+ IF ~InParty("Minsc")~ THEN EXTERN PLAYER1 35
+ IF ~InParty("Imoen2")~ THEN EXTERN PLAYER1 34
+ IF ~InParty("vpkachi")~ THEN EXTERN PLAYER1 TS55
+ IF ~InParty("Yoshimo")~ THEN EXTERN PLAYER1 TS55yosh
+ IF ~InParty("Keldorn") !Global("VP_KrRomanceActive","GLOBAL",0)~ THEN EXTERN PLAYER1 KR_TL0
 
 CHAIN VPLEIJ TSTOB6
 ~This is it, then? I cannot believe I am witnessing a mortal becoming a god.~
@@ -1659,40 +1659,40 @@ CHAIN VPLEIJ TSTOB7
 ~I will not hold you, <CHARNAME>. I love you, but your destiny... It is beyond any words I have at my disposal. You were destined for greatness, you were born into it. What is one woman's desire to hold you close every night compare to that?~
 END
  IF ~True()~ THEN EXTERN FINSOL01 28
- IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
- IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
- IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
- IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
- IF ~InParty("Jan")~ THEN EXTERN ~JAN25J~ 3
- IF ~InParty("Cernd")~ THEN EXTERN ~CERND25J~ 0
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZY25J~ 0
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
- IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
- IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
- IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
+ IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 3
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 11
+ IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 2
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 10
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 6
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 7
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 7
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN25J 15
+ IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 2
+ IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 3
+ IF ~InParty("Minsc")~ THEN EXTERN MINSC25J 0
+ IF ~InParty("Nalia")~ THEN EXTERN NALIA25J 1
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERD25J 1
+ IF ~InParty("Jan")~ THEN EXTERN JAN25J 3
+ IF ~InParty("Cernd")~ THEN EXTERN CERND25J 0
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZY25J 0
+ IF ~InParty("Edwin")~ THEN EXTERN EDWIN25J 0
+ IF ~InParty("Korgan")~ THEN EXTERN KORGA25J 2
+ IF ~InParty("Keldorn")~ THEN EXTERN KELDO25J 0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKAC25J 3
+ IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ TS231
 
 CHAIN VPLEIJ TSTOB8
 ~I must be feeling really special now for sharing the bedroll of the <PRO_LADYLORD> of Murder. Oh, Nine Hells! What's done is done.~
 END
  IF ~True()~ THEN EXTERN FINSOL01 33
- IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 11
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 20
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 18
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 20
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 18
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 18
- IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 4
- IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 6
+ IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 11
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 20
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 18
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 20
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 18
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN25J 18
+ IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 4
+ IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 6
 
 CHAIN VPLEIJ TSTOB9
 ~What? You choose to remain mortal? <CHARNAME>, <CHARNAME>, I do not know, I feel like berating you for ultimate stupidity, yet my heart sings. And I think I am crying. I must look silly.~
@@ -1707,59 +1707,59 @@ CHAIN VPLEIJ TSTOB10
 ~You are going to ascend, won't you? You have proven a person of goodness and wisdom. Such a person can succeed in changing the dark domain of the Lord of Murder.~
 END
  IF ~True()~ THEN EXTERN FINSOL01 28
- IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
- IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
- IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
- IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
- IF ~InParty("Jan")~ THEN EXTERN ~JAN25J~ 3
- IF ~InParty("Cernd")~ THEN EXTERN ~CERND25J~ 0
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZY25J~ 0
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
- IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
- IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
- IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
+ IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 3
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 11
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 8
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 9
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 9
+ IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 2
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 10
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 6
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 7
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 7
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN25J 15
+ IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 2
+ IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 3
+ IF ~InParty("Minsc")~ THEN EXTERN MINSC25J 0
+ IF ~InParty("Nalia")~ THEN EXTERN NALIA25J 1
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERD25J 1
+ IF ~InParty("Jan")~ THEN EXTERN JAN25J 3
+ IF ~InParty("Cernd")~ THEN EXTERN CERND25J 0
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZY25J 0
+ IF ~InParty("Edwin")~ THEN EXTERN EDWIN25J 0
+ IF ~InParty("Korgan")~ THEN EXTERN KORGA25J 2
+ IF ~InParty("Keldorn")~ THEN EXTERN KELDO25J 0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKAC25J 3
+ IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ TS231
 
 CHAIN VPLEIJ TSTOB11
 ~I know that you have power and blood of a god, but the Lord of Murder's domain is a dark one. I... I hope you will not make it darker still.~
 END
  IF ~True()~ THEN EXTERN FINSOL01 28
- IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 3
- IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 11
- IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 8
- IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 9
- IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 9
- IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
- IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
- IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
- IF ~InParty("Jan")~ THEN EXTERN ~JAN25J~ 3
- IF ~InParty("Cernd")~ THEN EXTERN ~CERND25J~ 0
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZY25J~ 0
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
- IF ~InParty("Keldorn")~ THEN EXTERN ~KELDO25J~ 0
- IF ~InParty("vpkachi")~ THEN EXTERN ~KACHI25J~ 3
- IF ~InParty("Yoshimo")~ THEN EXTERN ~YOSHJ~ TS231
+ IF ~InParty("Valygar") Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 3
+ IF ~InParty("Anomen") Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 11
+ IF ~InParty("Viconia") Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 8
+ IF ~InParty("Aerie") Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 9
+ IF ~InParty("Jaheira") Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 9
+ IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 2
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 10
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 6
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 7
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 7
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN25J 15
+ IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 2
+ IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 3
+ IF ~InParty("Minsc")~ THEN EXTERN MINSC25J 0
+ IF ~InParty("Nalia")~ THEN EXTERN NALIA25J 1
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERD25J 1
+ IF ~InParty("Jan")~ THEN EXTERN JAN25J 3
+ IF ~InParty("Cernd")~ THEN EXTERN CERND25J 0
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZY25J 0
+ IF ~InParty("Edwin")~ THEN EXTERN EDWIN25J 0
+ IF ~InParty("Korgan")~ THEN EXTERN KORGA25J 2
+ IF ~InParty("Keldorn")~ THEN EXTERN KELDO25J 0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKAC25J 3
+ IF ~InParty("Yoshimo")~ THEN EXTERN YOSHJ TS231
 
 CHAIN VPLEIJ TSTOB12
 ~For a moment I was worried that I was going to loose you. But then your eyes stopped at me. The way you looked at me made thousand of butterflies to be born in my heart. I love you, <CHARNAME>.~

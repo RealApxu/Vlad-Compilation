@@ -1,4 +1,4 @@
-APPEND ~KELDO25J~
+APPEND KELDO25J
 
 //First banter about Sarevok
 CHAIN
@@ -71,7 +71,7 @@ DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",
 
 CHAIN KELDO25J LoveOne0
 ~You're wrong, she does not bring me any pain.~
-EXTERN ~HGWRA01~ 24
+EXTERN HGWRA01 24
 
 CHAIN KELDO25J LoveOne1
 ~How dare you speak so, Leona! Where did you learn such words?~
@@ -88,9 +88,9 @@ EXTERN ~LEONA~ KR4
 CHAIN KELDO25J LoveOne4
 ~Leona!~
 END
- ++ ~Leona, do not torture your father, he has been tortured enough. I am the one who is guilty of your death!~ EXTERN ~HGWRA01~ 25
- ++ ~Gorion, stop it! He does not deserve such tortures!~ EXTERN ~HGWRA01~ 25
- ++ ~Keldorn, it is not Leona and Vesper, but only ghosts!~ EXTERN ~HGWRA01~ 25
+ ++ ~Leona, do not torture your father, he has been tortured enough. I am the one who is guilty of your death!~ EXTERN HGWRA01 25
+ ++ ~Gorion, stop it! He does not deserve such tortures!~ EXTERN HGWRA01 25
+ ++ ~Keldorn, it is not Leona and Vesper, but only ghosts!~ EXTERN HGWRA01 25
 
 //LT12-TOB - Dialogue with Torm, then morning dialogue
 CHAIN
@@ -120,19 +120,19 @@ CHAIN KELDO25J LT12st17
 ~(With naughty twinkle in his eyes) I do not think that our... how can I put this...joint dream, slipped away from our friends' attention. Be ready for many questions.~
 END
  IF ~!InParty("Mazzy") !InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
- IF ~InParty("Mazzy")~ EXTERN ~MAZZY25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
+ IF ~InParty("Mazzy")~ EXTERN MAZZY25J KRst0
 
 CHAIN KELDO25J LT12st18
 ~(Silently) You have already said what's most important. Nothing else matters.~
 END
  IF ~!InParty("Mazzy") !InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
- IF ~InParty("Mazzy")~ EXTERN ~MAZZY25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
+ IF ~InParty("Mazzy")~ EXTERN MAZZY25J KRst0
 
 CHAIN KELDO25J LT12st19
 ~(He looks on you from above) I was afraid, you know, that I would appear... in capable. But you were so tender, so sweet that all my fears appeared to be vain. Am I saying something wrong (his face becomes red from confusion).~
@@ -145,93 +145,93 @@ CHAIN KELDO25J LT12st20
 ~(With a happy, shiny smile on his face) Look at me! Are you still being uncertain? Of course, I am happy, my dearest!~
 END
  IF ~!InParty("Mazzy") !InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
- IF ~InParty("Mazzy")~ EXTERN ~MAZZY25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
+ IF ~InParty("Mazzy")~ EXTERN MAZZY25J KRst0
 
 CHAIN KELDO25J LT12st21
 ~(Gently kisses you in the lips) Jaheira hasn't warned you, has she? Women shouldn't have much for the first time. I can hurt you, and you... will be afraid. Be patient, my love.~
 END
  IF ~!InParty("Mazzy") !InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
- IF ~InParty("Mazzy")~ EXTERN ~MAZZY25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
+ IF ~InParty("Mazzy")~ EXTERN MAZZY25J KRst0
 
 CHAIN KELDO25J LT12st22
 ~(He hugs you strong, but gently, while bursting out in laughter.)~
 END
  IF ~!InParty("Mazzy") !InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
- IF ~InParty("Mazzy")~ EXTERN ~MAZZY25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
+ IF ~InParty("Mazzy")~ EXTERN MAZZY25J KRst0
 
 CHAIN KELDO25J LT12_Mz0
 ~(Smiles imperceptibly) Mazzy, of course, my girl.~
-EXTERN ~MAZZY25J~ KRst1
+EXTERN MAZZY25J KRst1
 
 CHAIN KELDO25J LT12_Mz1
 ~Mazzy...~
-EXTERN ~MAZZY25J~ KRst2
+EXTERN MAZZY25J KRst2
 
 CHAIN KELDO25J LT12_Mz2
 ~In common sense of this word, no.~
-EXTERN ~MAZZY25J~ KRst3
+EXTERN MAZZY25J KRst3
 
 CHAIN KELDO25J LT12_Mz3
 ~(Takes her hand) Mazzy, are you judging me?~
-EXTERN ~MAZZY25J~ KRst4
+EXTERN MAZZY25J KRst4
 
 CHAIN KELDO25J LT12_Mz4
 ~I love her. She loves me. We were going to have a wedding, but you do know what happened.~
-EXTERN ~MAZZY25J~ KRst5
+EXTERN MAZZY25J KRst5
 
 CHAIN KELDO25J LT12_Mz5
 ~The slayer is torturing her, confusing her. I had to interfere! Do you understand?~
-EXTERN ~MAZZY25J~ KRst6
+EXTERN MAZZY25J KRst6
 
 CHAIN KELDO25J LT12_Mz6
 ~(Thinks for himself) You are a good girl, that's why you understand. But, The High Order of the Radiant Heart might not be so easily persuaded without Torm's interference.~
 END
  IF ~!InParty("Sarevok") !InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
- IF ~InParty("Sarevok")~ EXTERN ~SAREV25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
+ IF ~InParty("Sarevok")~ EXTERN SAREV25J KRst0
 
 CHAIN KELDO25J LT12_Sr0
 ~(Firmly clasps the offered hand) Thank you, Sarevok. I am glad you understood and supported us.~
-EXTERN ~SAREV25J~ KRst1
+EXTERN SAREV25J KRst1
 
 CHAIN KELDO25J LT12_Sr1
 ~(With a smile on his face) But now are you sure she is happy?~
-EXTERN ~SAREV25J~ KRst2
+EXTERN SAREV25J KRst2
 
 CHAIN KELDO25J LT12_Sr2
 ~(Returning a smile) Good to know that~
 END
  IF ~!InParty("Jaheira") !InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
- IF ~InParty("Jaheira")~ EXTERN ~JAHEI25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
+ IF ~InParty("Jaheira")~ EXTERN JAHEI25J KRst0
 
 CHAIN KELDO25J LT12_Jh0
 ~Jaheira, my dear, what are you talking about?~
-EXTERN ~JAHEI25J~ KRst1
+EXTERN JAHEI25J KRst1
 
 CHAIN KELDO25J LT12_Jh1
 ~(Laughingly) Dear Jaheira, I have never doubted that we would have this discussion. What do you want to tell me? Are you judging us?~
-EXTERN ~JAHEI25J~ KRst2
+EXTERN JAHEI25J KRst2
 
 CHAIN KELDO25J LT12_Jh2
 ~(Smiling) So what is it that you want to say, Jaheira?~
-EXTERN ~JAHEI25J~ KRst3
+EXTERN JAHEI25J KRst3
 
 CHAIN KELDO25J LT12_Jh3
 ~(Seriously) In that you can be absolutely sure, Jaheira.~
 END
  IF ~!InParty("Imoen2")~ THEN DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
- IF ~InParty("Imoen2")~ EXTERN ~IMOEN25J~ KRst0
+ IF ~InParty("Imoen2")~ EXTERN IMOEN25J KRst0
 
 CHAIN KELDO25J LT12_Im0
 ~(Smiling) Imoen, I heard nothing.~
@@ -280,70 +280,70 @@ CHAIN KELDO25J KREND_0
 = ~<CHARNAME>, no matter what I say, you should decide for yourself. I will accept whatever choice you make, so do not look to me. It is you - the daughter of a god, we are just standing at your side and none of us have the right to influence your decision.~
 = ~I'm asking all of you: please, do not persuade her. She is wise; she has already made many difficult decisions, so we shall trust her judgment this time as well. Because if she listens to me, or any of you, then she will regret it.~
 = ~I am very grateful to you, <CHARNAME>. You have allowed me to love, and to feel loved again, so what else can I possibly say? Demand for you to decline something, that is yours by right? No, my love. Make your decision and don't worry about me. I will understand. You are making a difficult decision, that is yours alone to make.~
-EXTERN ~FINSOL01~ KR0
+EXTERN FINSOL01 KR0
 
 CHAIN KELDO25J KREND_1
 ~Yes, Solar. I have no use for it. (Solar takes legacy from Keldorn)~
 = ~(He reels and leans on his sword) Oh... I had forgotten how it feels to be old.~
 END
- IF ~True()~ THEN EXTERN ~FINSOL01~ 28
- IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYG25J~ 2
- IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ~ANOME25J~ 10
- IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN ~VICON25J~ 6
- IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN ~AERIE25J~ 7
- IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN ~JAHEI25J~ 7
- IF ~InParty("Imoen2")~ THEN EXTERN ~IMOEN25J~ 15
- IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 2
- IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN ~SAREV25J~ 3
- IF ~InParty("Minsc")~ THEN EXTERN ~MINSC25J~ 0
- IF ~InParty("Nalia")~ THEN EXTERN ~NALIA25J~ 1
- IF ~InParty("HaerDalis")~ THEN EXTERN ~HAERD25J~ 1
- IF ~InParty("Jan")~ THEN EXTERN ~JAN25J~ 3
- IF ~InParty("Cernd")~ THEN EXTERN ~CERND25J~ 0
- IF ~InParty("Mazzy")~ THEN EXTERN ~MAZZY25J~ 0
- IF ~InParty("Edwin")~ THEN EXTERN ~EDWIN25J~ 0
- IF ~InParty("Korgan")~ THEN EXTERN ~KORGA25J~ 2
+ IF ~True()~ THEN EXTERN FINSOL01 28
+ IF ~InParty("Valygar") !Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYG25J 2
+ IF ~InParty("Anomen") !Global("AnomenRomanceActive","GLOBAL",2)~ THEN EXTERN ANOME25J 10
+ IF ~InParty("Viconia") !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN EXTERN VICON25J 6
+ IF ~InParty("Aerie") !Global("AerieRomanceActive","GLOBAL",2)~ THEN EXTERN AERIE25J 7
+ IF ~InParty("Jaheira") !Global("JaheiraRomanceActive","GLOBAL",2)~ THEN EXTERN JAHEI25J 7
+ IF ~InParty("Imoen2")~ THEN EXTERN IMOEN25J 15
+ IF ~InParty("Sarevok") !Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 2
+ IF ~InParty("Sarevok") Alignment("Sarevok",MASK_EVIL)~ THEN EXTERN SAREV25J 3
+ IF ~InParty("Minsc")~ THEN EXTERN MINSC25J 0
+ IF ~InParty("Nalia")~ THEN EXTERN NALIA25J 1
+ IF ~InParty("HaerDalis")~ THEN EXTERN HAERD25J 1
+ IF ~InParty("Jan")~ THEN EXTERN JAN25J 3
+ IF ~InParty("Cernd")~ THEN EXTERN CERND25J 0
+ IF ~InParty("Mazzy")~ THEN EXTERN MAZZY25J 0
+ IF ~InParty("Edwin")~ THEN EXTERN EDWIN25J 0
+ IF ~InParty("Korgan")~ THEN EXTERN KORGA25J 2
 
 CHAIN KELDO25J KRENDst1
 ~For a moment, I thought I was going to die, I swear... (He drops his helmet and hugs you strongly) I still don't understand what you have found in an old man like me. But does it matter? Our child and his well-being is what's most important now.~
 END
- IF ~True()~ THEN EXTERN ~FINSOL01~ KR6
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN25J~ KRst8
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEI25J~ KRst4
- IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN ~SAREV25J~ KRst3
+ IF ~True()~ THEN EXTERN FINSOL01 KR6
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN IMOEN25J KRst8
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEI25J KRst4
+ IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN SAREV25J KRst3
 
 CHAIN KELDO25J KRENDs1A
 ~Will Bhaal be reborn in her body?~
-EXTERN ~KELEMVOR~ K16
+EXTERN KELEMVOR K16
 
 CHAIN KELDO25J KRENDs1B
 ~You will take her away, mighty Kelemvor?~
-EXTERN ~KELEMVOR~ K17
+EXTERN KELEMVOR K17
 
 CHAIN KELDO25J KRENDs1C
 ~(Leans his head) As you command, mighty Kelemvor.~
-DO ~SetGlobal("VP_Kr_Epilogue","GLOBAL",1) ActionOverride("Kelemvo1",DestroySelf())~ EXTERN ~FINSOL01~ 33 //remove Kelemvor
+DO ~SetGlobal("VP_Kr_Epilogue","GLOBAL",1) ActionOverride("Kelemvo1",DestroySelf())~ EXTERN FINSOL01 33 //remove Kelemvor
 
 CHAIN KELDO25J KRENDst2
 ~As I already said to you, I do understand. But our child's destiny troubles me. Will you be able to give birth, being a goddess? Won't you lose him while rising?~
-EXTERN ~FINSOL01~ KR7
+EXTERN FINSOL01 KR7
 
 CHAIN KELDO25J KRENDst3
 ~(He hugs you) I am so happy! We will get back to our castle, have our wedding and I hope, we will have our children very soon. Do not laugh, my dear. The Solar left something for me, and I feel myself so much younger and stronger now.~
 END
- IF ~True()~ THEN EXTERN ~FINSOL01~ KR9
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN25J~ KRst5
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEI25J~ KRst6
- IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN ~SAREV25J~ KRst5
+ IF ~True()~ THEN EXTERN FINSOL01 KR9
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN IMOEN25J KRst5
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEI25J KRst6
+ IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN SAREV25J KRst5
 
 CHAIN KELDO25J KRENDst4
 ~Why do you say so, my love? Duty calls you, I can understand that. Pain and emptiness awaits me while being without you, but I will bear it. You are going to battle against evil, and I am going to pray for you, asking Torm to help you henceforth.~
 = ~Don't worry about me, I will leave with the memory of our love, and it will be enough till the end of my life and there is not much of it left.~
 END
- IF ~True()~ THEN EXTERN ~FINSOL01~ KR10
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN ~IMOEN25J~ KRst4
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN ~JAHEI25J~ KRst7
- IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN ~SAREV25J~ KRst6
+ IF ~True()~ THEN EXTERN FINSOL01 KR10
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN IMOEN25J KRst4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEI25J KRst7
+ IF ~InParty("Sarevok") !Dead("Sarevok")~ THEN EXTERN SAREV25J KRst6
 
 ADD_TRANS_TRIGGER KELDO25J 0 ~!Global("VP_ToB_KrBanters","GLOBAL",1)~ DO 0
 

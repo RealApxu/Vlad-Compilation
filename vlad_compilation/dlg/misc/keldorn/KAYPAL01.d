@@ -27,7 +27,7 @@ APPEND ~KAYPAL01~
 IF ~~ THEN BEGIN A1
   SAY ~Did not Ryan Trawl send you to kill me and my comrades?~
   IF ~OR(2) !InParty("Keldorn") Dead("Keldorn")~ THEN GOTO A2
-  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP1
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ FP1
 END
 
 IF ~~ THEN BEGIN A2
@@ -50,12 +50,12 @@ END
 IF ~~ THEN BEGIN A5
   SAY ~Ha! Discredit! As if the reputation of the Order can be dropped even lower!~
   IF ~OR(2) !InParty("Keldorn") Dead("Keldorn")~ THEN GOTO A7
-  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN ~KELDORJ~ FP2
+  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ FP2
 END
 
 IF ~~ THEN BEGIN A6
   SAY ~What is it, Sir Keldorn? You do not mind that a crowd of armed men in shining armor sends a foreign <PRO_GIRLBOY> to do their dirty work for them? The main thing is to preserve the reputation of the Order! At any cost! Where are your principles, Sir Keldorn? Why did not you advise her to answer Sir Ryan as he deserved?~
-  IF ~~ THEN EXTERN ~KELDORJ~ FP3
+  IF ~~ THEN EXTERN KELDORJ FP3
 END
 
 IF ~~ THEN BEGIN A7
@@ -72,7 +72,7 @@ END
 
 END
 
-APPEND ~KELDORJ~
+APPEND KELDORJ
 
 IF ~~ THEN BEGIN FP1
   SAY ~Sir Anarg, you know our Sir Ryan, he wouldn't send us for that.~

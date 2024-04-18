@@ -1,4 +1,4 @@
-APPEND ~EDWINJ~
+APPEND EDWINJ
 
 IF ~~ THEN BEGIN Kr_WarTk
   SAY ~Fie, the war... I was hoping that you would mind your own business and not meddle in politics... (or at least those pitiful and pointless fussings that they call politics).~
@@ -15,23 +15,23 @@ END
 
 IF ~~ THEN BEGIN Kr_WarT3
   SAY ~Ha! Let's see what your paladin has to say to all this shall we. (My counsel will indeed be invaluable, but this blockhead will jib anyway).~
-  IF ~~ THEN EXTERN ~KELDORJ~ War_st2
+  IF ~~ THEN EXTERN KELDORJ War_st2
 END
 
 IF ~~ THEN BEGIN Kr_WarT4
   SAY ~Our lady persuaded me to stay.~
-  IF ~~ THEN EXTERN ~KELDORJ~ War_st3
+  IF ~~ THEN EXTERN KELDORJ War_st3
 END
 
 IF ~~ THEN BEGIN Kr_WarT5
   SAY ~(Grinning) That everything will be looted before we arrive? (I don't ever remember a time when <CHARNAME> missed her chance to participate in distribution of booty).~
   = ~Tell me paladin, why is it you think the only reasons that guide me are mercantile? Don't forget that I met <CHARNAME> before you... and knew who she was!~
-  IF ~~ THEN EXTERN ~KELDORJ~ War_st4
+  IF ~~ THEN EXTERN KELDORJ War_st4
 END
 
 IF ~~ THEN BEGIN Kr_WarT6
   SAY ~(Sighing) She's not just a daughter of Bhaal, she is *THE* child of Bhaal. There is great power hidden within her, and this power needs to be nurtured, developed, you might say...~
-  IF ~~ THEN EXTERN ~KELDORJ~ War_st5
+  IF ~~ THEN EXTERN KELDORJ War_st5
 END
 
 IF ~~ THEN BEGIN Kr_WarT7
@@ -59,7 +59,7 @@ END
 IF ~~ THEN BEGIN Kelem3
   SAY ~Kelemvor? So, you've met him, have you? That is a piece of good news, right... (Ponders, then he continues) I see that he took the ring from you... Wee, all right.~
   = ~So, you take me with you? Did I read your intentions correctly? (I can not help but wonder how this story will end?)~
-  IF ~~ THEN EXTERN ~KELEMVOR~ 4A
+  IF ~~ THEN EXTERN KELEMVOR 4A
 END
 
 END

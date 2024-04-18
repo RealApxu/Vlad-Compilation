@@ -27,37 +27,37 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM IMOEN2J 6
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
   IF ~  InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+!Dead("Edwin")~ THEN EXTERN EDWINJ 149
   IF ~  InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+!Dead("Anomen")~ THEN EXTERN ANOMENJ 250
   IF ~  InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+!Dead("Aerie")~ THEN EXTERN AERIEJ 116
   IF ~  InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+!Dead("Viconia")~ THEN EXTERN VICONIJ 87
   IF ~  InParty("Jaheira")
-!Dead("Jaheira")~ THEN EXTERN ~JAHEIRAJ~ 432
+!Dead("Jaheira")~ THEN EXTERN JAHEIRAJ 432
 END
 
 ADD_TRANS_TRIGGER JAHEIRAJ 433 ~True()~ DO 0
@@ -67,35 +67,35 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM JAHEIRAJ 433
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
   IF ~  InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+!Dead("Edwin")~ THEN EXTERN EDWINJ 149
   IF ~  InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+!Dead("Anomen")~ THEN EXTERN ANOMENJ 250
   IF ~  InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+!Dead("Aerie")~ THEN EXTERN AERIEJ 116
   IF ~  InParty("Viconia")
-!Dead("Viconia")~ THEN EXTERN ~VICONIJ~ 87
+!Dead("Viconia")~ THEN EXTERN VICONIJ 87
 END
 
 ADD_TRANS_TRIGGER VICONIJ 88 ~True()~ DO 0
@@ -105,33 +105,33 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM VICONIJ 88
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
   IF ~  InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+!Dead("Edwin")~ THEN EXTERN EDWINJ 149
   IF ~  InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+!Dead("Anomen")~ THEN EXTERN ANOMENJ 250
   IF ~  InParty("Aerie")
-!Dead("Aerie")~ THEN EXTERN ~AERIEJ~ 116
+!Dead("Aerie")~ THEN EXTERN AERIEJ 116
 END
 
 ADD_TRANS_TRIGGER AERIEJ 117 ~True()~ DO 0
@@ -141,31 +141,31 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM AERIEJ 117
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
   IF ~  InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+!Dead("Edwin")~ THEN EXTERN EDWINJ 149
   IF ~  InParty("Anomen")
-!Dead("Anomen")~ THEN EXTERN ~ANOMENJ~ 250
+!Dead("Anomen")~ THEN EXTERN ANOMENJ 250
 END
 
 ADD_TRANS_TRIGGER ANOMENJ 251 ~True()~ DO 0
@@ -175,29 +175,29 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM ANOMENJ 251
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
   IF ~  InParty("Edwin")
-!Dead("Edwin")~ THEN EXTERN ~EDWINJ~ 149
+!Dead("Edwin")~ THEN EXTERN EDWINJ 149
 END
 
 ADD_TRANS_TRIGGER EDWINJ 152 ~True()~ DO 0
@@ -207,27 +207,27 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM EDWINJ 152
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
   IF ~  InParty("Valygar")
 !Dead("Valygar")
 !Global("ValygarRomanceActive","GLOBAL",1)
-!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN ~VALYGARJ~ 103
+!Global("ValygarRomanceActive","GLOBAL",2)~ THEN EXTERN VALYGARJ 103
 END
 
 ADD_TRANS_TRIGGER VALYGARJ 104 ~True()~ DO 0
@@ -237,23 +237,23 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM VALYGARJ 104
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
   IF ~  InParty("Keldorn")
 !Dead("Keldorn")
 !Global("VP_KrRomanceActive","GLOBAL",1)
-!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN ~KELDORJ~ 243
+!Global("VP_KrRomanceActive","GLOBAL",2)~ THEN EXTERN KELDORJ 243
 END
 
 ADD_TRANS_TRIGGER KELDORJ 245 ~True()~ DO 0
@@ -263,19 +263,19 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM KELDORJ 245
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
   IF ~  InParty("Korgan")
-!Dead("Korgan")~ THEN EXTERN ~KORGANJ~ 177
+!Dead("Korgan")~ THEN EXTERN KORGANJ 177
 END
 
 ADD_TRANS_TRIGGER KORGANJ 179 ~True()~ DO 0
@@ -285,17 +285,17 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM KORGANJ 179
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
   IF ~  InParty("Jan")
-!Dead("Jan")~ THEN EXTERN ~JANJ~ 178
+!Dead("Jan")~ THEN EXTERN JANJ 178
 END
 
 ADD_TRANS_TRIGGER JANJ 180 ~True()~ DO 0
@@ -305,15 +305,15 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM JANJ 180
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
 END
 
 ADD_TRANS_TRIGGER JANJ 180 ~True()~ DO 0
@@ -323,15 +323,15 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM JANJ 180
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
   IF ~  InParty("Nalia")
-!Dead("Nalia")~ THEN EXTERN ~NALIAJ~ 308
+!Dead("Nalia")~ THEN EXTERN NALIAJ 308
 END
 
 ADD_TRANS_TRIGGER NALIAJ 310 ~True()~ DO 0
@@ -341,13 +341,13 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM NALIAJ 310
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
   IF ~  InParty("Mazzy")
-!Dead("Mazzy")~ THEN EXTERN ~MAZZYJ~ 194
+!Dead("Mazzy")~ THEN EXTERN MAZZYJ 194
 END
 
 ADD_TRANS_TRIGGER MAZZYJ 196 ~True()~ DO 0
@@ -357,11 +357,11 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM MAZZYJ 196
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
   IF ~  InParty("HaerDalis")
-!Dead("HaerDalis")~ THEN EXTERN ~HAERDAJ~ 141
+!Dead("HaerDalis")~ THEN EXTERN HAERDAJ 141
 END
 
 ADD_TRANS_TRIGGER HAERDAJ 145 ~True()~ DO 0
@@ -371,9 +371,9 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM HAERDAJ 145
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
   IF ~  InParty("Cernd")
-!Dead("Cernd")~ THEN EXTERN ~CERNDJ~ 130
+!Dead("Cernd")~ THEN EXTERN CERNDJ 130
 END
 
 ADD_TRANS_TRIGGER CERNDJ 132 ~True()~ DO 0
@@ -383,7 +383,7 @@ BEGIN 0 END
 ~SetGlobal("VP_Hrothgar_Slayer","GLOBAL",1)~
 EXTEND_BOTTOM CERNDJ 132
   IF ~  InParty("Minsc")
-!Dead("Minsc")~ THEN EXTERN ~MINSCJ~ 203
+!Dead("Minsc")~ THEN EXTERN MINSCJ 203
 END
 
 ADD_TRANS_TRIGGER MINSCJ 203 ~True()~ DO 0
