@@ -30,12 +30,14 @@ COMPILE ~%MOD_FOLDER%/components/dlg/leina~
 
 //Leina's Bard Kit
 
+/*
 APPEND ~SPELL.IDS~
 ~3191 LEINA_SONG_OF_REVENGE
 3411 LEINA_SONG_OF_LOVE_LOST
 3209 LEINA_SONG_OF_WISDOM_GAINED
 3192 LEINA_SONG_OF_TOMORROW
 4752 LEINA_BALLAD_OF_THE_FORSAKEN~
+*/
 
 COPY ~%MOD_FOLDER%/components/Leina/spl/SPIN191B.BAM~ ~override/SPIN191B.BAM~
 COPY ~%MOD_FOLDER%/components/Leina/spl/SPIN191.SPL~ ~override/SPIN191.SPL~
@@ -851,25 +853,15 @@ COPY~%MOD_FOLDER%/components/Leina/cre/VampLei.cre~ ~override/VampLei.cre~
     SAY NAME1 ~Leina~
     SAY NAME2 ~Leina~
 
-COPY_EXISTING ~AR0809.bcs~ ~override/AR0809.bcs~
-    EXTEND_TOP ~AR0809.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sAR0809.baf~
 
-COPY_EXISTING ~BODHIAMB.bcs~ ~override/BODHIAMB.bcs~
-    EXTEND_TOP ~BODHIAMB.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sBODHIAM.baf~
-
-COPY_EXISTING ~CLEANSE.bcs~ ~override/CLEANSE.bcs~
-    EXTEND_TOP ~CLEANSE.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sCLEANSE.baf~
-
-COPY_EXISTING ~VAMPAMB.bcs~ ~override/VAMPAMB.bcs~
-    EXTEND_TOP ~VAMPAMB.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sVAMPAMB.baf~
-
-COPY_EXISTING ~VLUVINFO.bcs~ ~override/VLUVINFO.bcs~
-    EXTEND_TOP ~VLUVINFO.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sVLUVINF.baf~
-
-COPY_EXISTING ~AR6200.bcs~ ~override/AR6200.bcs~
-    EXTEND_TOP ~AR6200.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sAR6200.baf~
+EXTEND_TOP ~AR0809.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sAR0809.baf~
+EXTEND_TOP ~BODHIAMB.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sBODHIAM.baf~
+EXTEND_TOP ~CLEANSE.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sCLEANSE.baf~
+EXTEND_TOP ~VAMPAMB.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sVAMPAMB.baf~
+EXTEND_TOP ~VLUVINFO.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sVLUVINF.baf~
+EXTEND_TOP ~AR6200.bcs~ ~%MOD_FOLDER%/components/Leina/sExt/sAR6200.baf~
 
 //Music
-COPY_EXISTING + ~LEINA.BCS~ ~override~
-                ~LEINAD.BCS~ ~override~
+COPY_EXISTING ~LEINA.BCS~ ~override~
+              ~LEINAD.BCS~ ~override~
     REPLACE_TEXTUALLY ~666~ "%leina%"
