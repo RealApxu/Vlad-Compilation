@@ -1,4 +1,3 @@
-
 CHAIN
 IF WEIGHT #2 ~Global("VP_AnomenJealous","GLOBAL",6)~ THEN BANOMEN AHK_st0
 ~<CHARNAME>! Can we have a word?~

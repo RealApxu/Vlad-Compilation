@@ -1,38 +1,39 @@
-APPEND KELDO25J
-
 //First banter about Sarevok
 CHAIN
 IF WEIGHT #-1 ~Global("VP_BSarevok","LOCALS",2)~ THEN KELDO25J SB1_st0
 ~I have something serious to discuss with you, <CHARNAME>. Your brother Sarevok, he is a servant of darkness, how can you trust him! Aren't you constantly thinking if he will stick a dagger in your back, or chop off your head when you're sleeping?~
 END
- ++ ~This is not like you, Keldorn! How can you say this about my brother? Please understand, that he's family, and how I can't trust him? Wasn't it you who said, that a paladin's first duty is to save lost souls? And now you deny that chance to my only brother?~ GOTO SB1_st1
- ++ ~(Frustratingly) But he is my brother, my kin. I killed him once, and now you want me to kill him again? Do I have the right to push him away, when he is in such need of my help? Please, let him stay, my love.~ GOTO SB1_st2
- ++ ~(Crafty) Keldorn, my love, did I ask for your advice? Do you remember the sahuagins, do you remember the old priestess, who cared so much about her tribe? You said she was a servant of darkness too. And her daughter, do you remember her?~ GOTO SB1_st3
+ ++ ~This is not like you, Keldorn! How can you say this about my brother? Please understand, that he's family, and how I can't trust him? Wasn't it you who said, that a paladin's first duty is to save lost souls? And now you deny that chance to my only brother?~ EXTERN KELDO25J SB1_st1
+ ++ ~(Frustratingly) But he is my brother, my kin. I killed him once, and now you want me to kill him again? Do I have the right to push him away, when he is in such need of my help? Please, let him stay, my love.~ EXTERN KELDO25J SB1_st2
+ ++ ~(Crafty) Keldorn, my love, did I ask for your advice? Do you remember the sahuagins, do you remember the old priestess, who cared so much about her tribe? You said she was a servant of darkness too. And her daughter, do you remember her?~ EXTERN KELDO25J SB1_st3
 
 CHAIN KELDO25J SB1_st1
 ~Your only brother... Yes, you're right, I'm wrong. You are performing your duty to your brother, Torm would not disapprove of your actions (he smiles and kisses you). You have made me feel ashamed of myself, my love.~
-DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~ EXIT
+DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~
+EXIT
 
 CHAIN KELDO25J SB1_st2
 ~You ask my permission to spare your brother's life? It unsettles me, that I have put you in a position to make such a choice. Please, forgive me. Henceforth I will not advise you on how to act towards your... relatives.~
-DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~ EXIT
+DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~
+EXIT
 
 CHAIN KELDO25J SB1_st3
 ~(Grows dark) Yes, I remember... That was a hard lesson to learn. A priestess, a worthy elderly woman, she sacrificed herself for the sake of her people; she raised a daughter, and taught her serving her tribe selflessly.~
 = ~I am ashamed of what I said back then. Yes, you're right to remind me of my shame. You are wiser, you seem to instantly understand the essence of those you speak with, so do as you deem worthy. I won't give further you any advice or make any claims... at least I'll try not to.~
-DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~ EXIT
+DO ~SetGlobal("VP_BSarevok","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",1)~
+EXIT
 
 CHAIN KELDO25J BA0
 ~(Confused) Oh, please, Miss... But to sing of course!~
-EXTERN ~SARBARD~ 1
+EXTERN SARBARD 1
 
 CHAIN KELDO25J BA1
 ~(Emotionally) Beautiful song, young lady! However, what are you doing here, in this doomed city? How did you come to Saradush?~
-EXTERN ~SARBARD~ 2
+EXTERN SARBARD 2
 
 CHAIN KELDO25J BA2
 ~Forgive me, child, but we cannot take you beyond the city walls. Nevertheless, you should not lose hope! If anyone is capable of rescuing Saradush, then this lady it is. However, she is a daughter of Bhaal...~
-EXTERN ~SARBARD~ 3
+EXTERN SARBARD 3
 
 //LT4-TOB - First Love Talk in ToB
 CHAIN
@@ -41,33 +42,37 @@ IF WEIGHT #-2 ~Global("VP_ToB_LoveTalk","LOCALS",2)~ THEN KELDO25J LT4TOB_0
 = ~Why didn't I think that Irenicus's threats were not as empty as they seemed to be? I couldn't even imagine that death would threaten you. I love you, <CHARNAME>, and I want you to be my wife.~
 = ~But, if you will decide otherwise, I will not hold you to the promise you made. Though it will be very hard for me, my only love.~
 END
- ++ ~Everything has changed so unexpectedly, my love. I have found my another sister, only to kill her. My second brother has the whole city under siege, and it's filled with my brothers and sisters. My third brother hides like the coward he is, unwilling to save neither them, nor himself. Why are you speaking about wedding, my love? How can I think about my own happiness, when there is so much suffering all around us?~ GOTO LT4TOB_1
- ++ ~Wedding... Yes, there were times, when I have dreamed about wedding, but now I cannot even think about it! I will ruin your life, my love. I am not suited for simple human happiness. Forgive me, please.~ GOTO LT4TOB_2
- ++ ~I will not decide otherwise, my love! I adore you and I want to be your wife. But we can't have our wedding here, can we? We should choose a better time and place for the wedding.~ GOTO LT4TOB_3
+ ++ ~Everything has changed so unexpectedly, my love. I have found my another sister, only to kill her. My second brother has the whole city under siege, and it's filled with my brothers and sisters. My third brother hides like the coward he is, unwilling to save neither them, nor himself. Why are you speaking about wedding, my love? How can I think about my own happiness, when there is so much suffering all around us?~ EXTERN KELDO25J LT4TOB_1
+ ++ ~Wedding... Yes, there were times, when I have dreamed about wedding, but now I cannot even think about it! I will ruin your life, my love. I am not suited for simple human happiness. Forgive me, please.~ EXTERN KELDO25J LT4TOB_2
+ ++ ~I will not decide otherwise, my love! I adore you and I want to be your wife. But we can't have our wedding here, can we? We should choose a better time and place for the wedding.~ EXTERN KELDO25J LT4TOB_3
 
 CHAIN KELDO25J LT4TOB_1
 ~Yes, you are right, my dear. I will not hurry your decision. I have waited so long for the joy your love will bring. So I can wait a little longer if need be (he kisses you).~
 END
- ++ ~(Gently) I am so ashamed my dear, and I am terribly sorry for Frida, who has sewn such a beautiful dress for me. I have never worn such an elegant dress before. Such a luxurious dress, Keldorn. And the poor girl was in such a haste and all for vain. But, I will marry you, I promise!~ GOTO LT4TOB_3
- ++ ~(Looking him in the eyes) How long will you wait for me, Keldorn? Until I deal with all my brothers and sisters?~ GOTO LT4TOB_4
- ++ ~But what happens, if I don't win? We are greatly outnumbered. What if I fall in this battle? The Gods have not promised us victory - neither Solar, nor Kelemvor.~ GOTO LT4TOB_5
+ ++ ~(Gently) I am so ashamed my dear, and I am terribly sorry for Frida, who has sewn such a beautiful dress for me. I have never worn such an elegant dress before. Such a luxurious dress, Keldorn. And the poor girl was in such a haste and all for vain. But, I will marry you, I promise!~ EXTERN KELDO25J LT4TOB_3
+ ++ ~(Looking him in the eyes) How long will you wait for me, Keldorn? Until I deal with all my brothers and sisters?~ EXTERN KELDO25J LT4TOB_4
+ ++ ~But what happens, if I don't win? We are greatly outnumbered. What if I fall in this battle? The Gods have not promised us victory - neither Solar, nor Kelemvor.~ EXTERN KELDO25J LT4TOB_5
 
 CHAIN KELDO25J LT4TOB_2
 ~(Turning pale) You... you are refusing to marry me? Don't you love me anymore? I do not even know what to say. I must think, I... I am not able to think straight right now.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~
+EXIT
 
 CHAIN KELDO25J LT4TOB_3
 ~(Hugs you) We will choose the perfect time and the place, my dear. I will think long and hard on this.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~
+EXIT
 
 CHAIN KELDO25J LT4TOB_4
 ~(Firmly) As I already said, as long as it takes, my love. I know how to wait.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~
+EXIT
 
 CHAIN KELDO25J LT4TOB_5
 ~(His voice shivers a bit) Do not say so, my love!~
 = ~(More firmly) Do not think about defeat; let your thoughts be only about victory! I will disturb you no more with discussions about our wedding.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",4)~
+EXIT
 
 CHAIN KELDO25J LoveOne0
 ~You're wrong, she does not bring me any pain.~
@@ -75,15 +80,15 @@ EXTERN HGWRA01 24
 
 CHAIN KELDO25J LoveOne1
 ~How dare you speak so, Leona! Where did you learn such words?~
-EXTERN ~LEONA~ KR1
+EXTERN LEONA KR1
 
 CHAIN KELDO25J LoveOne2
 ~Leona! Leona, dear, how can you say that? I have always loved you and Vesper, it is my service in the Order that took so much of my time. I've always wanted to be with you, but your mother...~
-EXTERN ~LEONA~ KR2
+EXTERN LEONA KR2
 
 CHAIN KELDO25J LoveOne3
 ~(Choking with tears) I... I truly am guilty! I couldn't show you my love and I couldn't find your murderers, you are right... If only I could have been there with you...~
-EXTERN ~LEONA~ KR4
+EXTERN LEONA KR4
 
 CHAIN KELDO25J LoveOne4
 ~Leona!~
@@ -96,15 +101,16 @@ END
 CHAIN
 IF WEIGHT #-3 ~Global("VP_ToB_LoveTalk","LOCALS",9)~ THEN KELDO25J LT12st15
 ~Torm, my lord, my master! Was I right to do this? Should I have been so fast to take her virginity? Have I destroyed her power? I am still not sure I had the right to do that. Please, grant me guidance, Torm!~
-EXTERN ~TORM~ 3
+EXTERN TORM 3
 
 CHAIN KELDO25J LT12Tor1
 ~Perhaps? Are you not sure, my lord?~
-EXTERN ~TORM~ 4
+EXTERN TORM 4
 
 CHAIN KELDO25J LT12Tor2
 ~Thank you, my lord.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",10) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut31")~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",10) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut31")~
+EXIT
 
 //LT12-TOB - Morning dialogue
 CHAIN
@@ -112,9 +118,9 @@ IF WEIGHT #-4 ~Global("VP_ToB_LoveTalk","LOCALS",10)~ THEN KELDO25J LT12st16
 ~(You open your eyes and you see that Keldorn is still sleeping. You rise up on one elbow and to look at him. Suddenly you understand that you are seeing him so calm and happy for the first time. Like all the ghosts were left in the past, and nothing disturbs him, even your frightening future. Not being able to help yourself, gently you touch your lips to his, but suddenly he opens his eyes.)~ [theme5]
 = ~(He hugs you tenderly) Good morning, my beloved wife! Don't be so surprised at my happiness, because you are my wife now, in the eyes of the gods and the people. Torm himself blessed our marriage, and I think Kelemvor will do the same.~
 END
- ++ ~(Smile happy) Good morning, my dear husband!~ GOTO LT12st17
- ++ ~(A little confused) I... I do not even know what to say. Only, that I love you.~ GOTO LT12st18
- ++ ~(Seriously) I woke early and was watching you sleep. I never imagined that I would see such a serene smile on your face. I feel a little responsible now for your expectations not being vain.~ GOTO LT12st19
+ ++ ~(Smile happy) Good morning, my dear husband!~ EXTERN KELDO25J LT12st17
+ ++ ~(A little confused) I... I do not even know what to say. Only, that I love you.~ EXTERN KELDO25J LT12st18
+ ++ ~(Seriously) I woke early and was watching you sleep. I never imagined that I would see such a serene smile on your face. I feel a little responsible now for your expectations not being vain.~ EXTERN KELDO25J LT12st19
 
 CHAIN KELDO25J LT12st17
 ~(With naughty twinkle in his eyes) I do not think that our... how can I put this...joint dream, slipped away from our friends' attention. Be ready for many questions.~
@@ -137,9 +143,9 @@ END
 CHAIN KELDO25J LT12st19
 ~(He looks on you from above) I was afraid, you know, that I would appear... in capable. But you were so tender, so sweet that all my fears appeared to be vain. Am I saying something wrong (his face becomes red from confusion).~
 END
- ++ ~(Shy) Please, tell me, are you happy?~ GOTO LT12st20
- ++ ~(Your face becomes red too) But I know nothing of it. I mean, Jaheira has told something to me, and Imoen too, but I still do not know, how to do it right. Maybe, I can try again?~ GOTO LT12st21
- ++ ~(With delight) But I am so happy to hear that!~ GOTO LT12st22
+ ++ ~(Shy) Please, tell me, are you happy?~ EXTERN KELDO25J LT12st20
+ ++ ~(Your face becomes red too) But I know nothing of it. I mean, Jaheira has told something to me, and Imoen too, but I still do not know, how to do it right. Maybe, I can try again?~ EXTERN KELDO25J LT12st21
+ ++ ~(With delight) But I am so happy to hear that!~ EXTERN KELDO25J LT12st22
 
 CHAIN KELDO25J LT12st20
 ~(With a happy, shiny smile on his face) Look at me! Are you still being uncertain? Of course, I am happy, my dearest!~
@@ -235,44 +241,46 @@ END
 
 CHAIN KELDO25J LT12_Im0
 ~(Smiling) Imoen, I heard nothing.~
-DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~ EXIT
+DO ~SetGlobal("VP_ToB_LoveTalk","LOCALS",11) SetGlobalTimer("VP_ToB_Kr_Timer","GLOBAL",ONE_DAY)~
+EXIT
 
 CHAIN KELDO25J Bz0
 ~You fail to understand your duty, Balthazar. You're not seeing the obvious. You consider yourself as a righteous person, having your sister accused in advance without giving her a chance to prove you wrong.~
-EXTERN ~BALTH~ KR0
+EXTERN BALTH KR0
 
 CHAIN KELDO25J Bz1
 ~Yes, I will. I am a paladin of Torm, God of duty, and I am going to teach you, monk. And you will listen to what I have to say, even if you do not want to.~
-EXTERN ~BALTH~ KR1
+EXTERN BALTH KR1
 
 CHAIN KELDO25J Bz2
 ~Your duty, Balthazar, is to serve the powers of Good. Help those who are in the service of these powers. Trust them. Tell me, why don't you believe your sister, my bride?~
-EXTERN ~BALTH~ KR2
+EXTERN BALTH KR2
 
 CHAIN KELDO25J Bz2n
 ~Your duty, Balthazar, is to serve the powers of Good. Help those who are in the service of these powers. Trust them. Tell me, why don't you believe your sister?~
-EXTERN ~BALTH~ KR3
+EXTERN BALTH KR3
 
 CHAIN KELDO25J Bz3
 ~Yes. When this all ends, we are going to be married.~
-EXTERN ~BALTH~ KR3
+EXTERN BALTH KR3
 
 CHAIN KELDO25J Bz4
 ~I am truly hoping that she does not. You do understand that one can not be absolutely sure in something?~
-EXTERN ~BALTH~ KR4
+EXTERN BALTH KR4
 
 CHAIN KELDO25J Bz5
 ~But what if you... won't be able to kill her? Or yourself? Have you thought about that, Balthazar?~
-EXTERN ~BALTH~ KR5
+EXTERN BALTH KR5
 
 CHAIN KELDO25J Bz6
 ~(Shaking his head) There is nothing heroic in pointless death, Balthazar. If you do not want to become a new god, then give up your legacy!~
-EXTERN ~BALTH~ KR6
+EXTERN BALTH KR6
 
-//CHAIN KELDO25J Bz7
-//~You are going to have to trust our word. Her word and mine. There is no other way, Balthazar. It is your duty to trust.~
-//EXTERN ~BALTH~ KR7
-//
+/*
+CHAIN KELDO25J Bz7
+~You are going to have to trust our word. Her word and mine. There is no other way, Balthazar. It is your duty to trust.~
+EXTERN BALTH KR7
+*/
 
 CHAIN KELDO25J KREND_0
 ~(Confusedly) So the moment I was so afraid is at hand. I... should give you an advice? Forgive me, but I can't. I can only say that I love you.~
@@ -348,7 +356,7 @@ END
 ADD_TRANS_TRIGGER KELDO25J 0 ~!Global("VP_ToB_KrBanters","GLOBAL",1)~ DO 0
 
 EXTEND_BOTTOM KELDO25J 0
- IF ~Global("VP_ToB_KrBanters","GLOBAL",1)~ THEN GOTO KREND_0
+ IF ~Global("VP_ToB_KrBanters","GLOBAL",1)~ THEN EXTERN KELDO25J KREND_0
 
 CHAIN
 IF WEIGHT #-15 ~Global("VP_BKeldorn","LOCALS",2)~ THEN BSAREV25 SarKeld1

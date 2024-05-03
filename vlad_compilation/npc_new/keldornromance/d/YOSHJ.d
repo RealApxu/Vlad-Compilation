@@ -1,38 +1,34 @@
-APPEND YOSHJ
-
-IF ~~ THEN BEGIN Kr_WarTk
-  SAY ~War? Well, maybe that is preferable to sailing to Spellhold.~
-  IF ~~ THEN REPLY ~What did you say, Yoshimo?~ GOTO Kr_WarT2
+CHAIN YOSHJ Kr_WarTk
+~War? Well, maybe that is preferable to sailing to Spellhold.~
 END
+ ++ ~What did you say, Yoshimo?~ EXTERN YOSHJ Kr_WarT2
 
-IF ~~ THEN BEGIN Kr_WarT2
-  SAY ~Oh, nothing. I have nothing against taking action with the military. My skills will be of great use to you.~
-  IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
-  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
-  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kr_WarTk
+CHAIN YOSHJ Kr_WarT2
+~Oh, nothing. I have nothing against taking action with the military. My skills will be of great use to you.~
 END
+ IF ~True()~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("KRCut04")~ EXIT
+ IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kr_WarTk
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kr_WarTk
 
-IF ~~ THEN BEGIN Kelem0
-  SAY ~No, this can't be happening. It is not my time to die yet, I haven't fulfilled my duties.~
-  IF ~~ THEN REPLY ~What duties Yoshimo?~ GOTO Kelem1
-  IF ~~ THEN REPLY ~Not your time? How can you know? Do you know the hour of your death Yoshimo?~ GOTO Kelem2
+CHAIN YOSHJ Kelem0
+~No, this can't be happening. It is not my time to die yet, I haven't fulfilled my duties.~
 END
+ ++ ~What duties Yoshimo?~ EXTERN YOSHJ Kelem1
+ ++ ~Not your time? How can you know? Do you know the hour of your death Yoshimo?~ EXTERN YOSHJ Kelem2
 
-IF ~~ THEN BEGIN Kelem1
-  SAY ~I promised you aid to solve the riddle of who imprisoned you and for what reason, remember? We have discovered who but not yet why.~
-  IF ~~ THEN REPLY ~True, but I have killed you, and now I need you to forgive me.~ GOTO Kelem3
+CHAIN YOSHJ Kelem1
+~I promised you aid to solve the riddle of who imprisoned you and for what reason, remember? We have discovered who but not yet why.~
 END
+ ++ ~True, but I have killed you, and now I need you to forgive me.~ EXTERN YOSHJ Kelem3
 
-IF ~~ THEN BEGIN Kelem2
-  SAY ~No-no... I do not know! I was so surprised that you killed me, but I do concede that you could not control your actions. I have not wronged you my friend.~
-  IF ~~ THEN REPLY ~Forgive me, my friend.~ GOTO Kelem3
+CHAIN YOSHJ Kelem2
+~No-no... I do not know! I was so surprised that you killed me, but I do concede that you could not control your actions. I have not wronged you my friend.~
 END
+ ++ ~Forgive me, my friend.~ EXTERN YOSHJ Kelem3
 
-IF ~~ THEN BEGIN Kelem3
-  SAY ~Forgive you? Of course I will, you are not a bad girl, <CHARNAME>.~
-  IF ~True()~ THEN EXTERN KELEMVOR 4A
-  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
-  IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0
+CHAIN YOSHJ Kelem3
+~Forgive you? Of course I will, you are not a bad girl, <CHARNAME>.~
 END
-
-END
+ IF ~True()~ THEN EXTERN KELEMVOR 4A
+ IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACJ Kelem0

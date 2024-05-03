@@ -6,13 +6,13 @@ INCLUDE ~%MOD_FOLDER%/lib/npcpack_check.tpa~
 
 //2da
 
-APPEND ~pdialog.2da~ // TOB append
-~SHARTEEL SHARTP SHARTJ SHARTD SHARTP SHARTJ SHARTD sharteel~
-UNLESS ~SHARTEEL~ // we are already there, skip it
+APPEND ~PDIALOG.2DA~ // TOB append
+~VPSHART VPSHAP VPSHAJ VPSHAD VPSHA25P VPSHA25J VPSHA25D VPSHA25~
+UNLESS ~VPSHART~ // we are already there, skip it
 
-APPEND ~interdia.2da~
-~SHARTEEL BSHART BSHART~
-UNLESS ~SHARTEEL~ // we are already there, skip it
+APPEND ~INTERDIA.2DA~
+~VPSHART VPSHAB VPSHA25B~
+UNLESS ~VPSHART~ // we are already there, skip it
 
 //are
 
@@ -36,13 +36,13 @@ BUT_ONLY
 
 //baf
 
-EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/AR0602.baf~
-EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/AR0700.baf~
-EXTEND_TOP ~AR1106.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/AR1106.BAF~
-EXTEND_TOP ~AR1202.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/AR1202.BAF~
+EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/ar0602.baf~
+EXTEND_TOP ~AR0700.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/ar0700.baf~
+EXTEND_TOP ~AR1106.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/ar1106.baf~
+EXTEND_TOP ~AR1202.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/ar1202.baf~
 
-COMPILE ~%MOD_FOLDER%/npc_new/sharteel/scripts/SHARTeel.BAF~
-COMPILE ~%MOD_FOLDER%/npc_new/sharteel/scripts/SHARTD.baf~
+COMPILE ~%MOD_FOLDER%/npc_new/sharteel/scripts/vpshart.baf~
+        ~%MOD_FOLDER%/npc_new/sharteel/scripts/vpshad.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TT1016.BCS~ BEGIN
     EXTEND_TOP ~TT1016.BCS~ ~%MOD_FOLDER%/npc_new/sharteel/scripts/TT1016.baf~

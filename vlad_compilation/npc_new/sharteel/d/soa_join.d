@@ -24,11 +24,11 @@ IF WEIGHT #-2 ~Global("VP_SharT_Released","GLOBAL",1)~ THEN VPSHART release6
 ~About time... now to get my hands on the bastard responsible for this.~
 DO ~SetGlobal("VP_SharT_Released","GLOBAL",2) TakePartyItem("vpshrkey") DestroyItem("vpshrkey")~
 END
-  ++ ~My sentiments exactly, join with me Shar-Teel and together we'll run him down and relish in his slow, bloody death.~ EXTERN VPSHART release7_im
-  IF ~Gender(Player1,MALE)~ THEN REPLY ~Sorry Shar-Teel, but I don't need you along with me this time. Take your freedom my blood thirsty warrior and keep safe.~ EXTERN VPSHART release10
-  IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Sorry Shar-Teel, but I don't need you along with me this time. Take your freedom my blood thirsty warrior and keep safe.~ EXTERN VPSHART release12
-  IF ~Gender(Player1,MALE)~ THEN REPLY ~Sorry Shar-Teel, I have had enough of your blood thirsty tendencies. Take your freedom and go.~ EXTERN VPSHART release8
-  IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Sorry Shar-Teel, I have had enough of your blood thirsty tendencies. Take your freedom and go.~ EXTERN VPSHART release11
+ ++ ~My sentiments exactly, join with me Shar-Teel and together we'll run him down and relish in his slow, bloody death.~ EXTERN VPSHART release7_im
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~Sorry Shar-Teel, but I don't need you along with me this time. Take your freedom my blood thirsty warrior and keep safe.~ EXTERN VPSHART release10
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Sorry Shar-Teel, but I don't need you along with me this time. Take your freedom my blood thirsty warrior and keep safe.~ EXTERN VPSHART release12
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~Sorry Shar-Teel, I have had enough of your blood thirsty tendencies. Take your freedom and go.~ EXTERN VPSHART release8
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Sorry Shar-Teel, I have had enough of your blood thirsty tendencies. Take your freedom and go.~ EXTERN VPSHART release11
 
 CHAIN VPSHART release7_im
 ~Then what are we waiting for... even now my hands itch to feel the sticky, warmth as I tear his still beating heart out of his chest, and wave it in front of his nose whilst watching his life's blood as it seeps into the dirt.~
@@ -45,7 +45,7 @@ CHAIN VPSHART release10
 EXTERN VPSHART release9
 
 CHAIN VPSHART release11
-~I don't recall asking for the company of you or your snotty little thief here. I ignored sense once before and followed you, see the mess that has brought me to. As if Id be  so stupid as to trust my skin to a goody-goody, male grovelling bitch!~
+~I don't recall asking for the company of you or your snotty little thief here. I ignored sense once before and followed you, see the mess that has brought me to. As if Id be so stupid as to trust my skin to a goody-goody, male grovelling bitch!~
 EXTERN VPSHART release9
 
 CHAIN VPSHART release12

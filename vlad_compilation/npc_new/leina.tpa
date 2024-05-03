@@ -689,7 +689,7 @@ APPEND ~pdialog.2da~ // TOB append
 UNLESS ~LEINA~ // we are already there, skip it
 
 APPEND ~interdia.2da~
-~LEINA       BLEINA      BLEINA~
+~LEINA       VPLEIB      VPLEIB~
 UNLESS ~LEINA~ // we are already there, skip it
 
 COPY ~%MOD_FOLDER%/components/Leina/cre/GovDude.cre~ ~override/GovDude.cre~

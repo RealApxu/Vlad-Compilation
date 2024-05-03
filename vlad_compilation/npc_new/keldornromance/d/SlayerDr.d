@@ -1,4 +1,4 @@
-BEGIN ~SLAYERDR~
+BEGIN SLAYERDR
 
 CHAIN
 IF WEIGHT #4 ~Global("Kr_Slayer_Talk","GLOBAL",0) Global("Kr_SlayerTalk_Fix","GLOBAL",1) Global("VP_Kr_PreWedding","GLOBAL",0)~ THEN SLAYERDR S0
@@ -13,13 +13,11 @@ CHAIN SLAYERDR S1
 = ~Now you... mmm... you my delicious darling are a good girl, you've saved yourself.~
 EXTERN KELDORNC K1
 
-
 CHAIN SLAYERDR S2
 ~But now you also are about to spoil everything.~
 = ~What do you need this old man for? He'll not be able to endure your gift, your blood will kill him in the end, and the sorcerer, Irenicus, he is a fool as well!~
 = ~Mere mortals are not meant to possess the things that are given to Gods. You will kill him and I will help you. Just trust me, melt into me.~
 EXTERN KELEMVOR K13
-
 
 CHAIN SLAYERDR S3
 ~(Holding you tightly... you find yourself enthralled as you move to the dance.) Don't pay attention to them. They are simply jealous of you. They are afraid of you because you are destined to become the most powerful goddess. If you obey me and don't resist.~
@@ -27,28 +25,25 @@ CHAIN SLAYERDR S3
 = ~You longed to save her so badly and perhaps your Imoen could have survived but Irenicus took what he wanted and killed her. So you are also guilty of her death. Yes, you are, as surely as if you had struck the fatal blow yourself.~
 EXTERN TORM 2
 
-
 CHAIN SLAYERDR S4
 ~What? You... you petty godling, you dare to threaten me with your puny toy sword? You think having killed Bane by a mere chance you can wrest down me?~
 END
  ++ ~(Seeing that the God of Duty's sword does not harm the Slayer, you start forward in horror. As soon as your hands touch Torm his strength becomes ten fold and with one stroke his sword cuts the Slayer's paw.)~ EXTERN SLAYERDR S41
 
-
 CHAIN SLAYERDR S41
 ~(Cursing you and Torm, the Slayer disappears, you turn joyfully towards Torm and wake up. Keldorn is holding you firmly in his embrace and you are suddenly amazed by the likeness between him and his God... something that until now had slipped your notice.)~
-DO ~SetGlobal("Kr_SlayerTalk_Fix","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("MovieKr2")~ EXIT
+DO ~SetGlobal("Kr_SlayerTalk_Fix","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("MovieKr2")~
+EXIT
 
 CHAIN
 IF WEIGHT #3 ~Global("Kr_Slayer_Talk","GLOBAL",0) Global("Kr_SlayerTalk_Fix2","GLOBAL",1) !Global("VP_Kr_PreWedding","GLOBAL",0)~ THEN SLAYERDR S5
 ~Stop, paladin, don't do this!~ [mortuary]
 EXTERN KELDORJ LT36_st32
 
-
 CHAIN SLAYERDR S6
 ~I do dare! You are stupid, paladin. It is I who preserves her connection with her soul. It is I, a demon, who supports her forces. If it were not for me she would be dead.~
 = ~And if you take her virginity now she will lose that connection with me and die! And I will die with her, we are connected too closely.~
 EXTERN KELDORJ LT36_st33
-
 
 CHAIN SLAYERDR S7
 ~... will kill her! It must not take place, paladin, at least until she gets her soul back.~
@@ -66,7 +61,6 @@ IF WEIGHT #2 ~Global("Kr_Slayer_Talk","GLOBAL",2)~ THEN SLAYERDR S8
 = ~(Unable to control yourself you carefully take Gorion's ring off Keldorn and approach the door but the ring starts glowing with a soft light and you hear a voice so familiar to you since your childhood.)~
 DO ~SetGlobal("Kr_Slayer_Talk","GLOBAL",3)~
 EXTERN KRRING R0
-
 
 CHAIN SLAYERDR S9
 ~Damn you daughter of Bhaal, I do not want to die!~
@@ -90,19 +84,16 @@ END
  ++ ~Why are you trying to bring back all my doubts, demon? I have just persuaded myself to give up the throne. I love Keldorn, why can't you understand this! However, on the other hand, I must sit on my father's throne; nobody except me can do this.~ EXTERN SLAYERDR S12
  ++ ~Be gone, demon! You will not deceive me with your words about power. I've heard enough of them. I do not want it ' you hear me? ' I have no interest in my father's throne! I dream about the day, when I will finally be free from you, your treacherous manipulations and this curse.~ EXTERN SLAYERDR S13
 
-
 CHAIN SLAYERDR S11
 ~I sense doubt in your voice. Think twice before you banish me! I can help you win the throne, I could help you after that. We would defeat your enemy, Cyric! We would have him groveling at your feet.~
 = ~How can you be indifferent to all this? How can simple care for a half-ruined castle and its lord be more important to you? Think well, oh daughter of Bhaal.~
 DO ~SetGlobal("VP_Slayer_Again","GLOBAL",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",5) RealSetGlobalTimer("VP_ToB_Kr_RTimer","GLOBAL",1800) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut29")~
 EXIT
 
-
 CHAIN SLAYERDR S12
 ~Your words ring true, child of a god! It is your duty to take the place of your father. And duty must prevail!~
 DO ~SetGlobal("VP_Slayer_Again","GLOBAL",3) SetGlobal("VP_Kr_NextTalk","GLOBAL",5) RealSetGlobalTimer("VP_ToB_Kr_RTimer","GLOBAL",1800) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut29")~
 EXIT
-
 
 CHAIN SLAYERDR S13
 ~How can you be so stupid! Well, I will let your brothers and sisters demonstrate their true power. And, in the end, you will destroy them all like a pack of goblins. Then you will recall my words, daughter of Bhaal.~
@@ -119,12 +110,10 @@ END
  ++ ~(Turning pale) What... what are you talking about? He repents? No, it can not be so... (tears are starting to fall quickly across your face) He couldn't do that, he loves me!~ EXTERN SLAYERDR S16
  ++ ~(Coldly) Leave your pathetic attempts. I do not believe you. You were trying to save yourself, not me, and don't you dare to demand any gratitude now~ EXTERN SLAYERDR S17
 
-
 CHAIN SLAYERDR S15
 ~Oh, I dare! And I will dare more. We are not done, child of Bhaal. You are still not feeling the true power of darkness.~
 DO ~SetGlobal("VP_Slayer_Farewell","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut29")~
 EXIT
-
 
 CHAIN SLAYERDR S16
 ~Loves?! You?! The demon spawn?! Are you out of your mind?! You think a paladin of Torm could seriously fall in love with some daughter of Bhaal? He's watching you, he has a task ' bring you to the li-i-ght. Pff!~
@@ -132,18 +121,15 @@ END
  ++ ~(In tears) No, this is not happening. But... you're right, maybe. Oh, Kelemvor, what should I do now?!~ EXTERN SLAYERDR S18
  ++ ~(Covering your ears with your hands) No-no-no! I do not want to hear that! Be silent!~ EXTERN SLAYERDR S19
 
-
 CHAIN SLAYERDR S17
 ~Oh, look how she sings now... We will see about that!~
 DO ~SetGlobal("VP_Slayer_Farewell","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut29")~
 EXIT
 
-
 CHAIN SLAYERDR S18
 ~What should you do? You should take the throne of your father, that's what!~
 DO ~SetGlobal("VP_Slayer_Farewell","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut29")~
 EXIT
-
 
 CHAIN SLAYERDR S19
 ~Will my silence change anything? It is not me, a demon, who's trying to persuade you, but yourself, your second entity.~

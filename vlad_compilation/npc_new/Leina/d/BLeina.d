@@ -5175,7 +5175,7 @@ CHAIN VPLEIB RadiQ101
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQA
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ
 
 
 CHAIN VPLEIB RadiaQF
@@ -5250,7 +5250,7 @@ CHAIN VPLEIB RadiaQ17
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ1
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
@@ -5259,7 +5259,7 @@ CHAIN VPLEIB RadiaQ18
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ RadianQ1
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ1
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
@@ -5315,7 +5315,7 @@ END
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN ~BSHART~ LeiRadia
+ IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB LeiRadia
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiRadia
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiRadia

@@ -172,8 +172,7 @@ EXIT
 
 CHAIN KELDORJ LT8_st4
 ~(Shoots a quick glance at you) Let us go.~
-DO ~SetGlobalTimer("VP_KrRomance_Timer","GLOBAL",TWO_DAYS)
-SetGlobal("VP_LoveTalk","LOCALS",8)~
+DO ~SetGlobalTimer("VP_KrRomance_Timer","GLOBAL",TWO_DAYS) SetGlobal("VP_LoveTalk","LOCALS",8)~
 JOURNAL ~We have visited sir Keldorn's Estate where I witnessed a confrontation between Keldorn and his wife (Oh God, what a beauty she is!) My faithful paladin was terribly distraught, it seemed to me that tears had been shed, on his part, for a love gone wrong. He seemed to be so sure of his wife. It was a sad, sad thing to see. He loves his wife and daughters so much, and they don't seem to have any affection for him at all. My heart felt for poor sir Keldorn!~
 EXIT
 
@@ -219,7 +218,7 @@ EXIT
 
 CHAIN KELDORJ AV#KR90a
 ~Yes, I am he. Who is it whom wishes to speak with me?~
-EXTERN ~AV#MESS~ AV#MESS2
+EXTERN AV#MESS AV#MESS2
 
 CHAIN KELDORJ AV#KR90b
 ~(Runs his eyes over the letter) Oh, Torm! No! No! This can not be!~
@@ -241,7 +240,8 @@ END
 
 CHAIN KELDORJ AV#KR906
 ~(Handing you Maria's letter) Here, read this. I do not comprehend everything here, you explain to me later... later.~
-DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",1) SetGlobal("KeldornFamilyGone","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut01")~ EXIT
+DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",1) SetGlobal("KeldornFamilyGone","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut01")~
+EXIT
 
 // The GLOBAL variable "KeldornFamilyGone" is set to 1 in order to remove Keldorn's family from AR1003
 // Then in AR1003.BCS, there is a block, which changes "KeldornFamilyGone" to 2 and destroy all CREs there
@@ -254,32 +254,34 @@ END
 
 CHAIN KELDORJ AV#KR905
 ~Wait? My beloved daughters are dead and you ask me to wait to lay them to rest? That is it... I am leaving. You are a steel-hearted creature, <CHARNAME>.~
-DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",3) SetGlobal("VP_Kr_Funneral","GLOBAL",1) SetGlobal("KeldornFamilyGone","GLOBAL",1) ActionOverride("av#mess",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() LeaveParty() EscapeArea()~ EXIT
+DO ~SetGlobal("VP_KrRomanceActive","GLOBAL",3) SetGlobal("VP_Kr_Funneral","GLOBAL",1) SetGlobal("KeldornFamilyGone","GLOBAL",1) ActionOverride("av#mess",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogueFile() LeaveParty() EscapeArea()~
+EXIT
 
 CHAIN
 IF WEIGHT #-99 ~Global("VP_Kr_Funneral","GLOBAL",3)~ THEN KELDORJ MariTk1
 ~(Gloomy) Maria? I await explanation... the full story! How could it be that the girls were alone at home?~ [mute]
-DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",4)~ EXTERN ~MARIA~ MariTk1
+DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",4)~
+EXTERN MARIA MariTk1
 
 CHAIN KELDORJ MariTk2
 ~Some? And where were you? I demand an answer!~
-EXTERN ~MARIA~ MariTk2
+EXTERN MARIA MariTk2
 
 CHAIN KELDORJ MariTk3
 ~We had enough people for both escorting and guarding the mansion.~
-EXTERN ~MARIA~ MariTk3
+EXTERN MARIA MariTk3
 
 CHAIN KELDORJ MariTk4
 ~(Tartly) And you what? You took every single one of them?~
-EXTERN ~MARIA~ MariTk4
+EXTERN MARIA MariTk4
 
 CHAIN KELDORJ MariTk5
 ~Go on.~
-EXTERN ~MARIA~ MariTk5
+EXTERN MARIA MariTk5
 
 CHAIN KELDORJ MariTk6
 ~(Covers his face with his hands and keeps silence for a very long time... then he pronounces hollowly) What you are saying here is that you left for an assignation with your lover, taking all our guards with you and leaving our daughters helpless... is that not so?~
-EXTERN ~MARIA~ MariTk6
+EXTERN MARIA MariTk6
 
 CHAIN KELDORJ MariTk7
 ~(Furiously) And where else would you possibly go at such an hour? Decent ladies do not pay calls on a night! I... I contravened the law and not to say my duty when I did not bring you to justice, when I should have!~
@@ -287,23 +289,23 @@ EXTERN KELDORJ MariTk7_B
 
 CHAIN KELDORJ MariTk7_B
 ~Now our precious daughters have paid the price for your folly. You will surely be imprisoned for what you have allowed to come about! I have condoned you and you, if I remember rightly, pledged your love for me... Why? You have never felt even the slightest compassion for me.~
-EXTERN ~MARIA~ MariTk7
+EXTERN MARIA MariTk7
 
 CHAIN KELDORJ MariTk8
 ~Tell me Maria, why did you agree to marry me? No one was forcing you into this marriage.~
-EXTERN ~MARIA~ MariTk8
+EXTERN MARIA MariTk8
 
 CHAIN KELDORJ MariTk9
 ~Go on...~
-EXTERN ~MARIA~ MariTk9
+EXTERN MARIA MariTk9
 
 CHAIN KELDORJ MariTk10
 ~Go on...~
-EXTERN ~MARIA~ MariTk10
+EXTERN MARIA MariTk10
 
 CHAIN KELDORJ MariTk11
 ~Finally... After so many years I am going to learn the truth.~
-EXTERN ~MARIA~ MariTk11
+EXTERN MARIA MariTk11
 
 CHAIN KELDORJ MariTk12
 ~He was indeed... I often wonder myself how I managed to slay him with such a wound. <CHARNAME>, remember I was telling you? You have seen the scar on my left side?~
@@ -317,15 +319,15 @@ END
 
 CHAIN KELDORJ MariTk14
 ~Yes, you are right, dear.~
-EXTERN ~MARIA~ MariTk12
+EXTERN MARIA MariTk12
 
 CHAIN KELDORJ MariTk15
 ~(Angrily) Shut your black mouth, Maria!~
-EXTERN ~MARIA~ MariTk13
+EXTERN MARIA MariTk13
 
 CHAIN KELDORJ MariTk16
 ~Maria!~ [KELDOR91]
-EXTERN ~MARIA~ MariTk14
+EXTERN MARIA MariTk14
 
 CHAIN KELDORJ MariTk17
 ~(Furious) You are outwearing my patience, Maria!~
@@ -334,35 +336,36 @@ END
 
 CHAIN KELDORJ MariTk18
 ~You are right, we must go to the temple. Your thoughtfulness has reminded me what is important here... (Hangs upon your shoulder) Come along.~
-EXTERN ~MARIA~ MariTk15
+EXTERN MARIA MariTk15
 
 CHAIN KELDORJ MariTk19
 ~Open your eyes woman, I am not hugging her, I'm holding on to her... You are a bitter, selfish woman, Maria, I do not understand how I could have been so blind for so long... Go sue for divorce, I'll agree to any terms. You can keep the house, I wouldn't be able to... stay here anyway.~
-EXTERN ~MARIA~ MariTk16
+EXTERN MARIA MariTk16
 
 CHAIN KELDORJ MariTk20
 ~Isn't this what you have striven for, why you tried to cause so much mayhem?~
-EXTERN ~MARIA~ MariTk17
+EXTERN MARIA MariTk17
 
 CHAIN KELDORJ MariTk21
 ~(Glumly) I see... you were hoping that I would kill sir William and as member of the Order, I would face the executioners axe myself... I pity you Maria... petition your divorce, I'll not stand in your way. Come <CHARNAME>, this place holds nothing for me now.~
-DO ~ActionOverride("Maria",EscapeArea()) StartCutSceneMode() StartCutScene("KRCut02")~ EXIT
+DO ~ActionOverride("Maria",EscapeArea()) StartCutSceneMode() StartCutScene("KRCut02")~
+EXIT
 
 CHAIN KELDORJ Funeral0
 ~I thank you, prelate. I... am to blame. I violated the law. I did not bring my wife to justice and I am ready to accept my sentence.~
-EXTERN ~KRPRELAT~ 1
+EXTERN KRPRELAT 1
 
 CHAIN KELDORJ Funeral1
 ~Prelate...~
-EXTERN ~KRPRELAT~ 2
+EXTERN KRPRELAT 2
 
 CHAIN KELDORJ Funeral2
 ~That is settled then?~
-EXTERN ~KRPRELAT~ 3
+EXTERN KRPRELAT 3
 
 CHAIN KELDORJ Funeral3
 ~(Gazes upon the crypt and sighs grievously) I can at least take comfort in the fact that they died my children, and not some bastard's.~
-EXTERN ~KRPRELAT~ 4
+EXTERN KRPRELAT 4
 
 //LT14
 CHAIN
@@ -403,7 +406,8 @@ EXIT
 CHAIN
 IF WEIGHT #-101 ~Global("VP_Kr_Funneral","GLOBAL",9) Global("VP_Talk_Bylanna","GLOBAL",1)~ THEN KELDORJ Bylanna1
 ~Lady Bylanna, I would ask you if there is any knowledge as to the identities of murderers of my daughters? I have an uneasy feeling that it was done intentionally. I have strong doubts that out-of-town thieves would rob a house in this district, more so one so close to the prison.~
-DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",10)~ EXTERN ~BYLANNA~ Keldorn1
+DO ~SetGlobal("VP_Kr_Funneral","GLOBAL",10)~
+EXTERN BYLANNA Keldorn1
 
 CHAIN KELDORJ Bylanna2
 ~(With a wince) Lady Bylanna, the terms "punitive action" and "Order of Radiant Heart" are incongruous... No, our interests have not conflicted of late. I thank you for the information, my lady.~
@@ -563,7 +567,7 @@ EXIT
 //War has been declared
 CHAIN KELDORJ War_st0
 ~What has happened, sir?~
-EXTERN ~KRWARMES~ KRWARM2
+EXTERN KRWARMES KRWARM2
 
 CHAIN KELDORJ War_st1
 ~<CHARNAME>, I'm liable for military service and I may not disobey the order. Please, we must follow the Knight.~
@@ -614,11 +618,11 @@ EXIT
 
 CHAIN KELDORJ Prelate_st0
 ~I remember you expressing your admiration for Drizzt DoUrden, prelate, if I remember correctly, he is a drow.~
-EXTERN ~HPRELATE~ GotoWar1
+EXTERN HPRELATE GotoWar1
 
 CHAIN KELDORJ Prelate_st1
 ~(Putting a hand on Viconia's shoulder) She is an old friend of <CHARNAME>...~
-EXTERN ~HPRELATE~ GotoWar2
+EXTERN HPRELATE GotoWar2
 
 CHAIN KELDORJ adjutant
 ~Mmm... now I wonder what the general needs of me? Come <CHARNAME>, let us find out.~
@@ -626,7 +630,7 @@ EXIT
 
 CHAIN KELDORJ craumer
 ~General... I'm not sure that the duke of Esmeltaran will agree to this. The city would be left defenseless.~
-EXTERN ~CRAUMER~ 1
+EXTERN CRAUMER 1
 
 CHAIN KELDORJ kelemring_st0
 ~(Bitterly) I imagine this priest has died. There is a letter and a ring here, <CHARNAME>.~
@@ -637,7 +641,9 @@ END
 
 CHAIN KELDORJ kelemring_st1
 ~(Fearfully) Then I beg you, please, on no account must you ever don that ring... it will destroy you, that I am sure!~
-DO ~GiveItemCreate("kelring",Player1,0,0,0) SetGlobal("VP_Kr_Casle_Siege","GLOBAL",1) RealSetGlobalTimer("VP_Kr_CasleSiege_T","GLOBAL",30)~ JOURNAL ~I've learned so much today! My Keldorn turned out to be a count, and he has a splendid family castle. His mother is so nice I didn't imagine that she would still be alive... and looking so elegant for her age! But that's not the half of it, the ring of Cyric that fell into my hands showed me a strange and horrible place with odd creatures, pillars of skulls... the vision sent a chill through my very soul... hopefully Keldorn didn't notice.~ EXIT
+DO ~GiveItemCreate("kelring",Player1,0,0,0) SetGlobal("VP_Kr_Casle_Siege","GLOBAL",1) RealSetGlobalTimer("VP_Kr_CasleSiege_T","GLOBAL",30)~
+JOURNAL ~I've learned so much today! My Keldorn turned out to be a count, and he has a splendid family castle. His mother is so nice I didn't imagine that she would still be alive... and looking so elegant for her age! But that's not the half of it, the ring of Cyric that fell into my hands showed me a strange and horrible place with odd creatures, pillars of skulls... the vision sent a chill through my very soul... hopefully Keldorn didn't notice.~
+EXIT
 
 CHAIN
 IF WEIGHT #-107 ~Global("VP_Kr_CyricPlot","GLOBAL",11)~ THEN KELDORJ Rest0
@@ -650,13 +656,15 @@ EXTERN KELDORJ Rest0_C
 
 CHAIN KELDORJ Rest0_C
 ~I will come for you my lady, when you are awake. Good night, my dearest girl (kisses you tenderly on your cheek).~
-DO ~SetGlobal("VP_Kr_CyricPlot","GLOBAL",12) SetGlobal("VP_LoveTalk","LOCALS",19) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~ EXIT
+DO ~SetGlobal("VP_Kr_CyricPlot","GLOBAL",12) SetGlobal("VP_LoveTalk","LOCALS",19) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~
+EXIT
 
 //LT22 (renumerated)
 CHAIN
 IF WEIGHT #-7 ~Global("VP_LoveTalk","LOCALS",20)~ THEN KELDORJ morning
 ~Good morning to you! You look lovely, and that dress is so becoming on you my lady. (Holding out his hand) Come, breakfast awaits.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",22) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut18")~ EXIT //the value of 21 is skipped to follow the original numbering
+DO ~SetGlobal("VP_LoveTalk","LOCALS",22) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut18")~
+EXIT //the value of 21 is skipped to follow the original numbering
 
 CHAIN KELDORJ Imoen0
 ~Miss Imoen, I am truely glad that we have finally found you. At last you are safe and free from the clutches of that evil sorcerer!~
@@ -708,11 +716,13 @@ END
 
 CHAIN KELDORJ LT24_st5
 ~You do not have to say anything. I will try to make things right. (Bends down and kisses your forehead.) For now, you must rest my dear.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",25) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",25) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~
+EXIT
 
 CHAIN KELDORJ LT24_st6
 ~(With a sigh) That is not what I meant. No matter, forget it and rest for now.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",25) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",25) ClearAllActions() StartCutSceneMode() Wait(4) RestParty() EndCutSceneMode()~
+EXIT
 
 CHAIN KELDORJ slayerat
 ~You are shivering, my dear. I will stoke the fire, though I fear your chill is not a fault of the air.~
@@ -723,7 +733,8 @@ END
 
 CHAIN KELDORJ slayer1
 ~Your lips move, but no sound emerges. Are you sure you are well... <CHARNAME>? By the gods, <CHARNAME>!!~
-DO ~ActionOverride(Player1,ReallyForceSpell(Myself,SLAYER_CHANGE))~ EXIT
+DO ~ActionOverride(Player1,ReallyForceSpell(Myself,SLAYER_CHANGE))~
+EXIT
 
 //Bodhi Ambush - Taking Keldorn
 CHAIN KELDORJ vampamb0
@@ -732,34 +743,37 @@ EXTERN BODHIAMB vampamb1
 
 CHAIN KELDORJ Alia0
 ~Mother please, is not our hasty decision a surprise and a bother to you?~
-EXTERN ~LADYALIA~ 2
+EXTERN LADYALIA 2
 
 CHAIN KELDORJ Alia1
 ~(Smiles) Why so?~
-EXTERN ~LADYALIA~ 3
+EXTERN LADYALIA 3
 
 /*
 CHAIN
 IF WEIGHT #-109 ~Global("VP_LoveTalk","LOCALS",33)~ THEN KELDORJ LT36_st31
 ~Demon!~ [letgo]
-EXTERN ~SlayerDr~ S5
+EXTERN SLAYERDR S5
 */
 
 CHAIN KELDORJ LT36_st32
 ~How dare you!~
-EXTERN ~SlayerDr~ S6
+EXTERN SLAYERDR S6
 
 CHAIN KELDORJ LT36_st33
 ~(Perplexedly) You mean to say that the wedding...~
-EXTERN ~SlayerDr~ S7
+EXTERN SLAYERDR S7
 
 CHAIN KELDORJ LT36_st34
 ~I don't believe you, demon! Wait...~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",35) SetGlobal("Kr_SlayerTalk_Fix2","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut25")~ JOURNAL ~That is it. The end of my happiness, my love, my dreams. I will never become his wife. Maybe if I manage to get rid of this curse, only then. I do not know! And nobody knows, even Great Kelemvor. Why? What have I done to deserve it?~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",35) SetGlobal("Kr_SlayerTalk_Fix2","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("KRCut25")~
+JOURNAL ~That is it. The end of my happiness, my love, my dreams. I will never become his wife. Maybe if I manage to get rid of this curse, only then. I do not know! And nobody knows, even Great Kelemvor. Why? What have I done to deserve it?~
+EXIT
 
 //Last SoA talk - good ending
 CHAIN KELDORJ LT38_st0
 ~(Embracing him and touching his cheek with your lips you feel that it is wet.)~ [ifyougo]
+END
  ++ ~Keldorn, you... you are crying? You have not slept at all?~ EXTERN KELDORJ LT38_st23
  ++ ~You... have heard everything? Why then did you not stop me?~ EXTERN KELDORJ LT38_st24
 
@@ -794,12 +808,12 @@ END
 CHAIN KELDORJ LT38_st26
 ~Frightening? Yes... because I am so afraid that you will be taken from me, afraid that you may be made to take your place as a goddess!~
 = ~What should I do then? I will probably be afraid now and for the rest of my life.~
-EXTERN ~SLAYERDR~ S9
+EXTERN SLAYERDR S9
 
 CHAIN KELDORJ LT38_st29
 ~(Embracing you tightly) Hush now, no more crying, otherwise your eyes will become red and swollen... not very becoming on such a beautiful face.~
 = ~Come, give me a hug my darling and never, never run away from me again!~
-EXTERN ~SLAYERDR~ S9
+EXTERN SLAYERDR S9
 
 CHAIN KELDORJ AnomLeav
 ~(In a low voice) I am to blame. By Torm I should have interfered and persuaded you to put him off his plan! I knew no good would come of it.~
@@ -812,23 +826,27 @@ EXTERN BANOMEN AnomBye
 
 IF ~Global("ThiefGroup","GLOBAL",0) Global("AsylumPlot","GLOBAL",2) Global("VP_SailTo_Brynnlaw","GLOBAL",4) Global("VP_SaemonSuspected","LOCALS",0)~ THEN KELDORJ Brynn0
 #43928 /* ~I do not trust this pirate, <CHARNAME>. His manner is that of a fool, but his behavior during the voyage betrays a cunning mind beneath.~ */
+END
  ++ #43929 /* ~He has delivered us as promised. There are more important things to worry about.~ */ DO ~SetGlobal("VP_SaemonSuspected","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ EXTERN KELDORJ Brynn1
  ++ #43930 /* ~Kill him if you wish. I don't care either way.~ */ DO ~SetGlobal("VP_SaemonSuspected","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ EXTERN KELDORJ Brynn2
  ++ #43931 /* ~He seems amiable enough to me. Come, you'll feel better once off the ship.~ */ DO ~SetGlobal("VP_SaemonSuspected","LOCALS",1) SetGlobal("SaemNoBodhi","GLOBAL",1)~ EXTERN KELDORJ Brynn1
 
 CHAIN KELDORJ Brynn1
 #43932 /* ~Agreed. Be prepared, this place is dangerous enough even without my suspicions of Saemon.~ */
-DO ~MoveToPoint([863.2422])~ EXIT
+DO ~MoveToPoint([863.2422])~
+EXIT
 
 CHAIN KELDORJ Brynn2
 #43933 /* ~We may need his ship for our return. No, just be on your guard. He is probably the least of our worries in this place.~ */
-DO ~MoveToPoint([863.2422])~ EXIT
+DO ~MoveToPoint([863.2422])~
+EXIT
 
 CHAIN
 IF WEIGHT #-250 ~Global("VP_Spy_Letter","GLOBAL",2)~ THEN KELDORJ morning
 ~I think I know what it is. Riatavin wanted to go under Tethyr, but the negotiations failed. Perhaps they want to hide that?~
 = ~But it's pointless! Why is to kill the refugees? What is it possibly that they could tell that diplomats do not know?~
-DO ~SetGlobal("VP_Spy_Letter","GLOBAL",3)~ EXIT
+DO ~SetGlobal("VP_Spy_Letter","GLOBAL",3)~
+EXIT
 
 CHAIN KELDORJ siege
 ~Getharic! I'm glad to see you, cousin. We'll join the defence forces at once. Right, <CHARNAME>?~

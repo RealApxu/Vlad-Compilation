@@ -1,3 +1,5 @@
+BEGIN KRWARMES
+
 CHAIN
 IF ~Global("VP_Kr_TheWar","GLOBAL",2) InParty("Anomen") !Dead("Anomen")~ THEN KRWARMES KRWARM1A
 ~Sir Keldorn Firecam, sir Anomen Delryn, you are both to proceed to the Headquarters of the Order immediately.~

@@ -1,0 +1,4 @@
+COMPILE ~%MOD_FOLDER%/tweaks/brynnlaw_sail/d/dialogue.d~
+
+COMPILE ~%MOD_FOLDER%/tweaks/brynnlaw_sail/baf/vpcutat.baf~
+COMPILE ~%MOD_FOLDER%/tweaks/brynnlaw_sail/baf/vpcutbr.baf~

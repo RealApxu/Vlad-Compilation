@@ -126,15 +126,15 @@ CHAIN
 IF ~Global("VP_SharTeel_Leina","LOCALS",2)~ THEN BSHART leina
 ~(*Clapping Leina on the shoulder*) Good on you girl!~
 DO ~SetGlobal("VP_SharTeel_Leina","LOCALS",3)~
-== BLEINA ~(*Spluttering from the unexpected touch of the fighter's hand*) Wha... what! Oh Shar-Teel it's you... yea gods you gave me a fright girl!~
+== VPLEIB ~(*Spluttering from the unexpected touch of the fighter's hand*) Wha... what! Oh Shar-Teel it's you... yea gods you gave me a fright girl!~
 == BSHART ~Didn't mean to scare you, I just wanted to say good on you for standing up to your father. Better to die than be forced to submit and share the bed of a man you so obviously despise, or any man if it comes to that!~
 = ~Where do men get off thinking they have the right to dictate what's best for us women!~
-== BLEINA ~It wasn't quite like that you know. My father, he... he wasn't himself.~
+== VPLEIB ~It wasn't quite like that you know. My father, he... he wasn't himself.~
 = ~A mystery still shrouds my mother death and I believe he blamed himself thinking it was revenge for an error of judgement on his part, that he had wronged someone in his dealings and she was made to pay for his mistake.~
 = ~He feared for my safety and to him it was the only way he could see to keep me close.~
 == BSHART ~(*Scoffs*) Here I was just thinking you had some back bone. Talk about being naive... Of course noooo one would think it had anything to do with both your families being rich and this was a nice way to increase his own wealth and power.~
 = ~No wonder that husband of yours was able to walk all over you. What did you do, lie down and let him use you as a doormat?  What were you thinking with wench, your brain or your...~
-== BLEINA ~(*Interrupts angrily*) Now hold it right there! One minute you're clapping me on the back and congratulating me and the next you're belittling me for something I had no control over.~
+== VPLEIB ~(*Interrupts angrily*) Now hold it right there! One minute you're clapping me on the back and congratulating me and the next you're belittling me for something I had no control over.~
 = ~Yes, I chose badly but at least I had the guts to take a chance in the first place and now, thanks to my experience, I have the strength to avoid such mistakes again.~
 = ~You... I look at you and I see a woman so scared of her own emotions that she deliberately derides all so that none will venture close.~
 == BSHART ~(*Gruffly*) You do, do you? Then you need to get yourself some new glasses bard and quick! Those you wear sometimes are distorting your vision so badly, soon you'll not be able to recognise friend from foe.~

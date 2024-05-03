@@ -99,13 +99,13 @@ END
 
 CHAIN SARBARD 4
 ~(Her eyes light up) You have my deepest gratitude, my lady! You are very kind. Now I certainly believe that you will save us!~
-DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(15500) TakePartyGold(300) ReputationInc(1) EscapeArea()~
+DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddExperienceParty(15500) TakePartyGold(300) ReputationInc(1) EscapeArea()~
 EXIT
 
 
 CHAIN SARBARD 5
 ~(Bows) You have my gratitude, m'lady.~
-DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddexperienceParty(6500) TakePartyGold(100) ReputationInc(1) EscapeArea()~
+DO ~SetGlobal("VP_Kr_Bard_Song","GLOBAL",2) AddExperienceParty(6500) TakePartyGold(100) ReputationInc(1) EscapeArea()~
 EXIT
 
 

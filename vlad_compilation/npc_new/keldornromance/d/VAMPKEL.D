@@ -10,8 +10,8 @@ EXTERN C6BODHI vampamb4
 
 CHAIN
 IF ~Global("VP_KeldVamp_Alive","GLOBAL",1)~ THEN VAMPKEL 2
-END
 ~So it is done! There is but one thing left my darling... you must kill me. I know it is difficult for you to find it in your heart to do this but I am dead already. Or is it your wish that I should remain a vampire?~
+END
  ++ ~No, no! You mustn't say this. (You throw your arms around him and then shocked, you quickly jump away from his touch) Oh Keldorn, you are so... so cold.~ EXTERN VAMPKEL 3
  ++ ~Kill? Again? What then... ask Kelemvor to return you once again? He would not do it, he can't interfere.~ EXTERN VAMPKEL 4
  ++ ~No, there must be something... we will find a way? I will ask Kelemvor.~ EXTERN VAMPKEL 5
