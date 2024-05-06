@@ -18,5 +18,5 @@ ALTER_TRANS BYOSHIM // file name
 BEGIN 0 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_BanterFix","LOCALS",3)~
+ "ACTION" ~SetGlobal("VP_BanterFix","LOCALS",3)~
 END

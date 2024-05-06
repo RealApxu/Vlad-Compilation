@@ -1,4 +1,4 @@
-//Fixing Korgan's stutter
+//Fixing Korgan's stutter (Not a fix)
 REPLACE_STATE_TRIGGER KORGANJ 2
 ~Global("KorganTomb","GLOBAL",1)
 Global("KorganMummy","GLOBAL",0)

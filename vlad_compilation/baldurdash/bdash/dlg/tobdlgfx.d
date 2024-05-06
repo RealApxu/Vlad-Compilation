@@ -40,6 +40,5 @@ REPLACE_TRIGGER_TEXT ~hgnya01~ ~"Imoen"~ ~"Imoen2"~
 REPLACE_TRIGGER_TEXT ~sarev25a~ ~"Imoen"~ ~"Imoen2"~
 
 EXTEND_TOP SAREV25A 1
-  IF ~~ THEN REPLY #22962
-    DO ~SetGlobal("TalkedToSarevok","GLOBAL",1)~ GOTO 3
+ IF ~~ THEN REPLY #22962 DO ~SetGlobal("TalkedToSarevok","GLOBAL",1)~ GOTO 3
 END

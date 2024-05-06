@@ -1,4 +1,4 @@
-REPLACE_ACTION_TEXT  ~UDSOLA01~
+REPLACE_ACTION_TEXT UDSOLA01
 ~SetInterrupt(FALSE)[^!]*
 DialogueInterrupt(FALSE)[^!]*
 SetGlobal("SolNoTalk1","GLOBAL",1)[^!]*
@@ -15,7 +15,6 @@ DialogueInterrupt(TRUE)[^!]*
 SetInterrupt(TRUE)[^!]*
 StartCutSceneMode()[^!]*
 StartCutScene("Cut44v")~
-
 ~SetInterrupt(FALSE)
 StartCutSceneMode()
 SetGlobal("SolNoTalk1","GLOBAL",1)

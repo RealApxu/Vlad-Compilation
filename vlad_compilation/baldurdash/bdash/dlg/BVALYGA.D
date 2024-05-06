@@ -9,5 +9,5 @@ ALTER_TRANS BVALYGA // file name
 BEGIN 65 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_BanterFix","LOCALS",1)~
+ "ACTION" ~SetGlobal("VP_BanterFix","LOCALS",1)~
 END

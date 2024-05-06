@@ -10,28 +10,28 @@ ALTER_TRANS BVICONI // file name
 BEGIN 103 END // state number (can be more than one)
 BEGIN 0 1 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "TRIGGER" ~~
+ "TRIGGER" ~~
 END
 
 ALTER_TRANS BVICONI // file name
 BEGIN 103 END // state number (can be more than one)
 BEGIN 0 1 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~~
+ "ACTION" ~~
 END
 
 ALTER_TRANS BVICONI // file name
 BEGIN 103 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "EPILOGUE" ~GOTO 367~
+ "EPILOGUE" ~GOTO 367~
 END
 
 ALTER_TRANS BVICONI // file name
 BEGIN 103 END // state number (can be more than one)
 BEGIN 1 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "EPILOGUE" ~GOTO 368~
+ "EPILOGUE" ~GOTO 368~
 END
 
 SET_WEIGHT BVICONI 103 #22
@@ -47,7 +47,7 @@ ALTER_TRANS BVICONI // file name
 BEGIN 7 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_BanterFix1","LOCALS",1)~
+ "ACTION" ~SetGlobal("VP_BanterFix1","LOCALS",1)~
 END
 
 REPLACE_STATE_TRIGGER BVICONI 8
@@ -61,7 +61,7 @@ ALTER_TRANS BVICONI // file name
 BEGIN 8 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_BanterFix2","LOCALS",1)~
+ "ACTION" ~SetGlobal("VP_BanterFix2","LOCALS",1)~
 END
 
 REPLACE_STATE_TRIGGER BVICONI 24
@@ -75,5 +75,5 @@ ALTER_TRANS BVICONI // file name
 BEGIN 24 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_BanterFix3","LOCALS",1)~
+ "ACTION" ~SetGlobal("VP_BanterFix3","LOCALS",1)~
 END

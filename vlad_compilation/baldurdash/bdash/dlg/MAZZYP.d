@@ -3,4 +3,3 @@ REPLACE_ACTION_TEXT ~MAZZYP~
 JoinParty()~
 ~SetGlobal("KickedOut","LOCALS",1)
 JoinParty()~
-

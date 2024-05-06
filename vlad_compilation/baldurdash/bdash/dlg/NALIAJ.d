@@ -23,7 +23,7 @@ ALTER_TRANS NALIAJ // file name
 BEGIN 95 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("NaliaGraveComplain","GLOBAL",2)
+ "ACTION" ~SetGlobal("NaliaGraveComplain","GLOBAL",2)
 GivePartyAllEquipment()
 ChangeAIScript("",DEFAULT)
 SetLeavePartyDialogFile()
@@ -37,7 +37,7 @@ ALTER_TRANS NALIAJ // file name
 BEGIN 165 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("PCKeepOwner","GLOBAL",1)
+ "ACTION" ~SetGlobal("PCKeepOwner","GLOBAL",1)
 RevealAreaOnMap("AR1304")
 HideAreaOnMap("AR1300")
 StartCutSceneMode()
@@ -48,12 +48,12 @@ ALTER_TRANS NALIAJ // file name
 BEGIN 191 END // state number (can be more than one)
 BEGIN 0 1 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "TRIGGER" ~~
+ "TRIGGER" ~~
 END
 
 ALTER_TRANS NALIAJ // file name
 BEGIN 191 END // state number (can be more than one)
 BEGIN 2 3 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "TRIGGER" ~False()~
+ "TRIGGER" ~False()~
 END

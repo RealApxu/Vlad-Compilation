@@ -11,7 +11,7 @@ ALTER_TRANS LAVOK // file name
 BEGIN 27 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
+ "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
 EraseJournalEntry(6509)
 EraseJournalEntry(6534)
 EraseJournalEntry(7994)
@@ -53,7 +53,7 @@ ALTER_TRANS LAVOK // file name
 BEGIN 30 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
+ "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
 SetGlobal("PCSphere","GLOBAL",1)
 EraseJournalEntry(6509)
 EraseJournalEntry(6534)
@@ -90,7 +90,7 @@ ALTER_TRANS LAVOK // file name
 BEGIN 58 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~StartCutSceneMode()
+ "ACTION" ~StartCutSceneMode()
 FadeToColor([30.0],0)
 Wait(1)
 ActionOverride(Player1,Wait(1))
@@ -119,7 +119,7 @@ ALTER_TRANS LAVOK // file name
 BEGIN 60 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
+ "ACTION" ~SetGlobal("VP_SphereTalk","GLOBAL",1)
 SetGlobal("PCSphere","GLOBAL",1)
 EraseJournalEntry(6509)
 EraseJournalEntry(6534)
@@ -157,5 +157,5 @@ ALTER_TRANS LAVOK // file name
 BEGIN 62 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
-  "ACTION" ~~
+ "ACTION" ~~
 END

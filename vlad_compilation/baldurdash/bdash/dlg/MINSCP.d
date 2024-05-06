@@ -1,3 +1,5 @@
+//Not a fix
+
 REPLACE_STATE_TRIGGER MINSCP 8
 ~Global("KickedOut","LOCALS",0)~
 
