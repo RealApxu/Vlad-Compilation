@@ -121,36 +121,6 @@ IF ~~ THEN BEGIN NEJ94
  IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-3 ~Global("VP_BDar","LOCALS",2)~ THEN BEGIN NEJ95
- SAY ~Does this snow ever go away Dar? It looks to me like it is always here.~
- IF ~~ THEN DO ~SetGlobal("VP_BDar","LOCALS",3)~ EXTERN NJDARJ 16
-END
-
-IF ~~ THEN BEGIN NEJ96
- SAY ~But it is so... so horribly cold! I thought it looked real pretty at first, but now I find it cold and wet, and it seeps through my boots, making my feet cold and wet too.~
- IF ~~ THEN EXTERN NJDARJ 17
-END
-
-IF ~~ THEN BEGIN NEJ97
- SAY ~(*Stamping her feet in a newly fallen area of snow*) It makes such a delicious sound Dar, like stomping on beetles, all crunchy. Here listen! (*She stamps her feet again to demonstrate what she means*). See what I mean.~
- IF ~~ THEN EXTERN NJDARJ 18
-END
-
-IF ~~ THEN BEGIN NEJ98
- SAY ~Of course I have, well, maybe not so much of it in all one place. There was this island we were once transported to when some mage asked us to find a cloak for him, but...but that seems such a long time ago now. Anyhow, we were not there very long.~
- IF ~~ THEN EXTERN NJDARJ 19
-END
-
-IF ~~ THEN BEGIN NEJ99
- SAY ~But that is not a fun way to walk Dar, no crunchy squashed beetle sounds!~
- IF ~~ THEN EXTERN NJDARJ 20
-END
-
-IF ~~ THEN BEGIN NEJ100
- SAY ~Was I complaining? I had not noticed, never mind. Still, I much prefer to be walking this cold place and be free, wet feet and all, than be in that horrible place we have just left. (*Sighs*) I suppose my feet will dry out eventually.~
- IF ~~ THEN EXIT
-END
-
 IF WEIGHT #-4 ~Global("VP_BMinsc","LOCALS",2)~ THEN BEGIN NEJ101
  SAY ~We have travelled some rough roads together Minsc, but this must be the strangest. I don't think I will ever see Candlekeep again. Damn Irenicus!~
  IF ~~ THEN DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN MINSCJ NEJ266
@@ -390,16 +360,6 @@ IF ~~ THEN BEGIN NEJ143
  IF ~~ THEN EXIT
 END
 
-IF ~~ THEN BEGIN NEJ144
- SAY ~(*Giggles*) Nah, what gave you that idea?~
- IF ~~ THEN EXTERN JAHEIRAJ NEJ588
-END
-
-IF ~~ THEN BEGIN NEJ145
- SAY ~Well, at least we won't be bored.~
- IF ~~ THEN DO ~ActionOverride("AcolyteD",Enemy())~ EXIT
-END
-
 IF ~~ THEN BEGIN NEJ146
  SAY ~Are you sure Arundel is playing with a full set Hrothgar? Could he not be getting senile, he seemed pretty old to me?~
  IF ~~ THEN EXTERN NJHROJ 130
@@ -450,20 +410,6 @@ END
 IF ~~ THEN BEGIN NEJ154
  SAY ~The nearest Inn I can think of is in Kuldahar, shall we go?~
  IF ~~ THEN EXIT
-END
-
-IF ~~ THEN BEGIN NEJ171
- SAY ~Wow... that was some move Hrothgar! Uh... care to tell us how you did it?~
- IF ~True()~ THEN EXTERN NJHROJ 196
- IF ~InParty("njdar")~ THEN EXTERN NJDARJ 43
- IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ314
- IF ~InParty("Accalia")~ THEN EXTERN ~ACCALIJ~ 38
- IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ611
-END
-
-IF ~~ THEN BEGIN NEJ172
- SAY ~I thought we were helping you Hrothgar? Is there really some evil here that you are working with, or are you doing this for Irenicus? Is... is he here somewhere even now laughing at our foolishness in trusting you? Hrothgar, tell me... is he here waiting to torture us some more?~
- IF ~~ THEN EXTERN NJHROJ 196
 END
 
 IF ~~ THEN BEGIN NEJ173

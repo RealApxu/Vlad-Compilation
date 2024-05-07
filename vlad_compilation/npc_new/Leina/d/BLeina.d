@@ -1,32 +1,6 @@
 BEGIN VPLEIB
 
 CHAIN
-IF ~Global("VP_BHrothgar","LOCALS",2)~ THEN VPLEIB 0
-~Hrothgar, I know many tales of Hrothgar Of Easthaven, and I find it incredible to find myself travelling with the legend himself.~ [leinab01]
-DO ~SetGlobal("VP_BHrothgar","LOCALS",3)~
-EXTERN NJHROB 33
-
-
-CHAIN VPLEIB 1
-~Does it not bother you that by moving to the future you have learnt the manner of your own death?~ [leinab02]
-EXTERN NJHROB 34
-
-
-CHAIN VPLEIB 2
-~Do you not feel that you have cheated both fate and the gods by being here? Surely as long as you remain in this time you will not meet the demon by whose hand you died at Easthaven?~
-EXTERN NJHROB 35
-
-
-CHAIN VPLEIB 3
-~One thing that is clearly true that the tales tell and that is that Hrothgar was an extremely brave man. I can see that he would indeed put the safety of his townsfolk before that of his own life. I do not know what it is that you seek Hrothgar and I will not ask as I feel sure that you have your own reasons for your silence, but knowing you for the short time that I have, I can see that you are indeed the sort of man that legends are made of.~
-EXTERN NJHROB 36
-
-
-CHAIN VPLEIB 4
-~(*Smiling at him*)... You already have Hrothgar whether you realise it or not!~
-EXIT
-
-CHAIN
 IF ~Global("VP_BKachiko","LOCALS",2)~ THEN VPLEIB 5
 ~Kachiko do you like my music?~
 DO ~SetGlobal("VP_BKachiko","LOCALS",3)~

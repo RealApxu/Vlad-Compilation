@@ -9,7 +9,7 @@ EXTEND_BOTTOM IMOEN2 21
   IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
   IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
   IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ immy1
 END
@@ -61,7 +61,7 @@ IF ~~ THEN BEGIN leina8
   IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
   IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
 END
 
@@ -99,35 +99,35 @@ IF ~~ THEN BEGIN melora6
   IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
   IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
   IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
 END
 
 IF ~~ THEN BEGIN taffic1
   SAY ~For an aspiring hero... I don't see anything inspirational about you either gnome!~
   = ~I am grateful however for your help in getting me out of that place... so for that, I guess I am in your debt. Maybe I'll get to repay the favour sometime.~
-  IF ~~ THEN EXTERN ~TAFFICJ~ immy2
+  IF ~~ THEN EXTERN NJTAFJ immy2
 END
 
 IF ~~ THEN BEGIN taffic2
   SAY ~It was no picnic for me either you know! Still, I've said I'm grateful and I am sure <CHARNAME> was equally as grateful for your aid in laying low so many foes on the road.~
   = ~I am sure you proved yourself to be a true hero.~
-  IF ~~ THEN EXTERN ~TAFFICJ~ immy3
+  IF ~~ THEN EXTERN NJTAFJ immy3
 END
 
 IF ~~ THEN BEGIN taffic3
   SAY ~I've said I'm thankful, apart from getting down and kissing your feet, and please, you're not meant to take that literally, what more do you want?~
-  IF ~~ THEN EXTERN ~TAFFICJ~ immy4
+  IF ~~ THEN EXTERN NJTAFJ immy4
 END
 
 IF ~~ THEN BEGIN taffic4
   SAY ~(*Hurriedly interrupting him*) Eeew!  Believe me, even then there'll still be no kissing of feet. Yea gods, for one so small you sure do have a large ego!~
-  IF ~~ THEN EXTERN ~TAFFICJ~ immy5
+  IF ~~ THEN EXTERN NJTAFJ immy5
 END
 
 IF ~~ THEN BEGIN taffic5
   SAY ~Phooey! Irenicus has taken all he wants from me and from <CHARNAME> for that matter. Why else do you think he threw us to Bodhi?~
   = ~You don't frighten me with your threats... go, and to use your word, 'zap' someone your own size. I've done had enough of this banter!~
-  IF ~~ THEN EXTERN ~TAFFICJ~ immy6
+  IF ~~ THEN EXTERN NJTAFJ immy6
 END
 
 IF ~~ THEN BEGIN taffic6

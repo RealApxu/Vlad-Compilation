@@ -371,13 +371,13 @@ CHAIN VPLEIJ 64
 ~Then, for Melora's peace of mind we are in agreement. We don't want to bring the academy down around anyone's head today.~
 END
  IF ~True()~ THEN EXTERN NJHROJ 323
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ 28
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ 28
 
 CHAIN VPLEIJ 65
 ~I have never seen the likes of it before <CHARNAME>, not even in our present time. I wonder how such technology comes to be found so far in the past?~
 END
  IF ~True()~ THEN EXTERN NJHROJ 335
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ leveler1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ leveler1
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 25
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ NEJ201
 
@@ -991,7 +991,7 @@ END
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ firattak
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ firattak
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ firattak
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ firattak
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ firattak
 
 IF ~Global("VP_Firkrag_Is_Dead","GLOBAL",1)~ THEN VPLEIJ firkdead1
 ~(*Slowly walking over to Firkraag, she slowly lets her gaze take in the features of the dragon's face. Mesmerized, she reaches out her hand ever so slowly, she lightly touches his face*)... See how... even in death... how glorious he looks...~
@@ -1134,7 +1134,7 @@ CHAIN VPLEIJ immy8
 END
  IF ~True()~ THEN EXTERN IMOEN2 leina8
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN IMOEN2 hrothg1
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ immy1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
 
 CHAIN VPLEIJ tafficuh

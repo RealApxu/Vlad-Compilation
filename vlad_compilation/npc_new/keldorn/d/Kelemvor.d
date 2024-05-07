@@ -105,7 +105,7 @@ END
  IF ~InParty("Anomen")~ THEN EXTERN ANOMENJ Kelem0
  IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
  IF ~InParty("njdar")~ THEN EXTERN NJDARJ Kelem0
- IF ~InParty("njtaffic")~ THEN EXTERN ~TAFFICJ~ Kelem0
+ IF ~InParty("njtaffic")~ THEN EXTERN NJTAFJ Kelem0
  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
  IF ~InParty("vpleina")~ THEN EXTERN VPLEIJ Kelem0
  IF ~InParty("njmelora")~ THEN EXTERN NJMELJ Kelem0

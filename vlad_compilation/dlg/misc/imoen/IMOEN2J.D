@@ -1214,7 +1214,7 @@ IF ~~ THEN BEGIN kulback4
   IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ kuldback
   IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ kuldback
   IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ kuldback
-  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN ~TAFFICJ~ kuldback
+  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ kuldback
   IF ~InParty("Sime") !Dead("Sime")~ THEN EXTERN VPSIMJ kuldback
   IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ kuldback
   IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ kuldback
@@ -1224,7 +1224,7 @@ IF ~~ THEN BEGIN hrotleft
   SAY ~Phew, for a moment there I thought you were going to go along with him! I'm glad to see you managed to hang on to your senses whilst Irenicus was pulling the rest of you apart.~
   = ~So, big <BROTHERSISTER>, what are we waiting around here for? Time to go show that soul stealing sorcerer and that demon sister of his that they can't go around whipping people's souls out willy nilly!~
   IF ~True()~ THEN DO ~ActionOverride("njhroth",LeaveParty()) ActionOverride("njhroth",EscapeArea())~ EXIT
-  IF ~InParty("njtaffic") !Dead("njtaffic") InParty("njmelora") !Dead("njmelora")~ THEN EXTERN ~TAFFICJ~ hrotleft
+  IF ~InParty("njtaffic") !Dead("njtaffic") InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJTAFJ hrotleft
 END
 
 IF ~~ THEN BEGIN kulback5
