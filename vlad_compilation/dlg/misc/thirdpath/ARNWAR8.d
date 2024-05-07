@@ -12,4 +12,4 @@ END
 
 CHAIN ARNWAR08 kr1
 ~Ah, you are not working for the mistress. Anyway, it matters not. You have no choice but to kill Aran or he will kill you.~
-EXTERN ARNWAR08
+EXTERN ARNWAR08 5

@@ -235,3 +235,84 @@ Not Usable By:
 COPY_EXISTING ~WEAPPROF.2da~ ~override/WEAPPROF.2da~
     REPLACE_TEXTUALLY ~CROSSBOW                 103                      31127                    34162                    0                        5                        0                        1                        1                        2                        0                        2                        2                        0                        2                        2                        1                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        0                        1                        5                        0                        0                        2                        2                        5                        2                        2                        1                        1                        1                        1                        1                        1                        0                        0                        0                        0                        0                        0                        0                        2                        0                        0                        0                        0                        1                        2                        5                        0~ ~CROSSBOW                    103     31127           34162       0       5       0       1       1       2       0       2       2               0               2               2                   1           0           0               5               0                   0               0       0           0       0           0           0       0           0           1           5               0       0           2           2               5       2       2           1       1               1               1       1       1       0               0               0               0       0       0          0     2          0 0 0 2 5 1~
 */
+
+//Jaheira update - BGT
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/jah_bg2/JAHEIR.cre~ ~override/JAHEIR.cre~
+    SAY 0x1a0 #30770
+    SAY 0x1a4 #30771
+    SAY 0x1a8 #30772
+    SAY 0x1ac #30775
+    SAY 0x1b0 #30776
+    SAY 0x1b4 #30777
+    SAY 0x1c0 #30780
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+    WRITE_BYTE 0x2c 99 //metal color
+    WRITE_BYTE 0x2d 66 //minor color
+    WRITE_BYTE 0x2e 52 //major color
+    WRITE_BYTE 0x2f 12 //skin color
+    WRITE_BYTE 0x30 94 //leather color
+    WRITE_BYTE 0x31 98 //armor color
+    WRITE_BYTE 0x32 0 //hair color
+    WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/jah_bg2/JAHEIR2.cre~ ~override/JAHEIR2.cre~
+    SAY 0x1a0 #30770
+    SAY 0x1a4 #30771
+    SAY 0x1a8 #30772
+    SAY 0x1ac #30775
+    SAY 0x1b0 #30776
+    SAY 0x1b4 #30777
+    SAY 0x1c0 #30780
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+    WRITE_BYTE 0x2c 99 //metal color
+    WRITE_BYTE 0x2d 66 //minor color
+    WRITE_BYTE 0x2e 52 //major color
+    WRITE_BYTE 0x2f 12 //skin color
+    WRITE_BYTE 0x30 94 //leather color
+    WRITE_BYTE 0x31 98 //armor color
+    WRITE_BYTE 0x32 0 //hair color
+    WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/jah_bg2/JAHEIR4.cre~ ~override/JAHEIR4.cre~
+    SAY 0x1a0 #30770
+    SAY 0x1a4 #30771
+    SAY 0x1a8 #30772
+    SAY 0x1ac #30775
+    SAY 0x1b0 #30776
+    SAY 0x1b4 #30777
+    SAY 0x1c0 #30780
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+    WRITE_BYTE 0x2c 99 //metal color
+    WRITE_BYTE 0x2d 66 //minor color
+    WRITE_BYTE 0x2e 52 //major color
+    WRITE_BYTE 0x2f 12 //skin color
+    WRITE_BYTE 0x30 94 //leather color
+    WRITE_BYTE 0x31 98 //armor color
+    WRITE_BYTE 0x32 0 //hair color
+    WRITE_BYTE 0x23b 17 //Wisdom
+
+COPY ~%MOD_FOLDER%/components/bdash/BGTComp/jah_bg2/JAHEIR6.cre~ ~override/JAHEIR6.cre~
+    SAY 0x1a0 #30770
+    SAY 0x1a4 #30771
+    SAY 0x1a8 #30772
+    SAY 0x1ac #30775
+    SAY 0x1b0 #30776
+    SAY 0x1b4 #30777
+    SAY 0x1c0 #30780
+    WRITE_SHORT 0x244 0 // doesn't change
+    WRITE_BYTE 0x246 ~%PRIEST_OF_SYLVANUS%~ // the internal name of your kit, surrounded by %
+    WRITE_BYTE 0x247 0x40 // doesn't change
+    WRITE_BYTE 0x2c 99 //metal color
+    WRITE_BYTE 0x2d 66 //minor color
+    WRITE_BYTE 0x2e 52 //major color
+    WRITE_BYTE 0x2f 12 //skin color
+    WRITE_BYTE 0x30 94 //leather color
+    WRITE_BYTE 0x31 98 //armor color
+    WRITE_BYTE 0x32 0 //hair color
+    WRITE_BYTE 0x23b 17 //Wisdom
