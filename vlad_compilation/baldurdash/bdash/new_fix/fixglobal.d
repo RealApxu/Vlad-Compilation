@@ -1377,7 +1377,7 @@ BEGIN 5 END // state number (can be more than one)
 BEGIN 0 END // transition number (can be more than one)
 BEGIN // list of changes, see below for flags
   "ACTION" ~AddexperienceParty(300)
-ChangeAIScript("SHARTEEL",OVERRIDE)
+ChangeAIScript("vpshart",OVERRIDE)
 SetGlobal("BeatSharteel","GLOBAL",5)
 EscapeArea()~
 END

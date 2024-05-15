@@ -38,7 +38,7 @@ IF ~~ THEN BEGIN Kelem2
   IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
   IF ~InParty("njdar")~ THEN EXTERN NJDARJ Kelem0
   IF ~InParty("njtaffic")~ THEN EXTERN NJTAFJ Kelem0
-  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
+  IF ~InParty("vpshart")~ THEN EXTERN VPSHAJ Kelem0
   IF ~InParty("vpleina")~ THEN EXTERN VPLEIJ Kelem0
 END
 
@@ -78,12 +78,12 @@ IF ~~ THEN BEGIN Kelem2
   IF ~InParty("njhroth")~ THEN EXTERN NJHROJ Kelem0
   IF ~InParty("njdar")~ THEN EXTERN NJDARJ Kelem0
   IF ~InParty("njtaffic")~ THEN EXTERN NJTAFJ Kelem0
-  IF ~InParty("Sharteel")~ THEN EXTERN ~SHARTJ~ Kelem0
+  IF ~InParty("vpshart")~ THEN EXTERN VPSHAJ Kelem0
 END
 
 END
 
-APPEND ~SHARTJ~
+APPEND VPSHAJ
 
 IF ~~ THEN BEGIN Kelem0
   SAY ~What the hell... Damn it, <CHARNAME>, where we are?~

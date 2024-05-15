@@ -1,8 +1,8 @@
 IF
 	Global("VP_Create_Esmond","GLOBAL",1)
 	!Global("VP_AngelosLegacy","GLOBAL",0)
-	InParty("Sharteel")
-	!Dead("Sharteel")
+	InParty("vpshart")
+	!Dead("vpshart")
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Create_Esmond","GLOBAL",2)

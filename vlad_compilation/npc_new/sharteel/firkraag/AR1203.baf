@@ -15,13 +15,13 @@ IF
 	CombatCounter(0)
 	Global("VP_Firkrag_Is_Dead","GLOBAL",0)
 	OR(2)
-		InParty("Sharteel")  // Shar-Teel
-		InMyArea("Sharteel")  // Shar-Teel
-	!Dead("Sharteel")  // Shar-Teel
+		InParty("vpshart")  // Shar-Teel
+		InMyArea("vpshart")  // Shar-Teel
+	!Dead("vpshart")  // Shar-Teel
 THEN
 	RESPONSE #100
 		SetGlobal("VP_Firkrag_Is_Dead","GLOBAL",1)
-		ActionOverride("Sharteel",StartDialogNoSet([PC]))
+		ActionOverride("vpshart",StartDialogNoSet([PC]))
 END
 
 IF
@@ -31,9 +31,9 @@ IF
 	CombatCounter(0)
 	Global("VP_Firkrag_Is_Dead","GLOBAL",0)
 	OR(3)
-		!InParty("Sharteel")  // Shar-Teel
-		!InMyArea("Sharteel")  // Shar-Teel
-		Dead("Sharteel")  // Shar-Teel
+		!InParty("vpshart")  // Shar-Teel
+		!InMyArea("vpshart")  // Shar-Teel
+		Dead("vpshart")  // Shar-Teel
 	OR(2)
 		InParty("vpleina")  // Leina
 		InMyArea("vpleina")  // Leina

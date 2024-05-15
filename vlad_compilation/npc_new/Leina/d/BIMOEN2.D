@@ -96,7 +96,7 @@ END
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB LeiRadia
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB LeiRadia
 
 CHAIN BIMOEN2 LeiRadi2
 ~Minsc, you can tell Boo not to fret, I have just the thing to untangle a girl's hair when it becomes wayward and I am sure it will work just as well on hamster fur.~

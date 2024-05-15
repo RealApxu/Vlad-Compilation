@@ -196,7 +196,7 @@ IF ~~ THEN BEGIN RadiaQ13
   SAY ~<CHARNAME>, oi let the dwarf help with this. I think a keg be called fer and then we shall all have a blasphemous time.~
   IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
   IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
-  IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ1
+  IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1
 END
 
 IF ~~ THEN BEGIN LeiRadia

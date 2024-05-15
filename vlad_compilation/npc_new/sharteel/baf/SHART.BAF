@@ -377,7 +377,7 @@ END
 IF
 	Global("VP_AngelosLegacy","GLOBAL",5)
 	InParty(Myself)
-	!Dead("Sharteel")
+	!Dead("vpshart")
 	Global("VP_After_Esm_Esape","LOCALS",0)
 THEN
 	RESPONSE #100
@@ -390,7 +390,7 @@ IF
 	RealGlobalTimerExpired("VP_After_Esm_Timer","GLOBAL")
 	Global("VP_After_Esm_Esape","LOCALS",1)
 	InParty(Myself)
-	!Dead("Sharteel")
+	!Dead("vpshart")
 	CombatCounter(0)
 	!See([ENEMY])
 THEN

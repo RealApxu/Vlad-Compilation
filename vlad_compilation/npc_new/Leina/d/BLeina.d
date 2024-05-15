@@ -5149,7 +5149,7 @@ CHAIN VPLEIB RadiQ101
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQA
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ
 
 
 CHAIN VPLEIB RadiaQF
@@ -5224,7 +5224,7 @@ CHAIN VPLEIB RadiaQ17
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ1
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
@@ -5233,7 +5233,7 @@ CHAIN VPLEIB RadiaQ18
 END
  IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB RadianQ1
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
 
 
@@ -5265,9 +5265,9 @@ END
 CHAIN VPLEIB RadiaQ20
 ~Well, you know how you are our leader and have to decide on our battle strategy. I just thought it would be nice to finally go to an inn to split a keg or two. It would so soothe the muscles to have a nice hot bath as well, but as I pointed out these over righteous warriors don't indulge in either so why don't we make our way over to Samuel's?~
 END
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~You know Leina, you're right we did have a rough go and since Samuel's is your favorite spot let's get on over there.~ EXTERN VPLEIB RadiaQ21
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~I don't know about Samuel's, the pickings are getting too familiar over there. The ale's great but a little variety does a body good.~ EXTERN VPLEIB RadiaQ22
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~When we get there I'm gonna ask Samuel to make a special tub to fit my size better. You know, we must be his best customers so me thinks he shouldn't be charging us rent.~ EXTERN VPLEIB RadiaQ23
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~You know Leina, you're right we did have a rough go and since Samuel's is your favorite spot let's get on over there.~ EXTERN VPLEIB RadiaQ21
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~I don't know about Samuel's, the pickings are getting too familiar over there. The ale's great but a little variety does a body good.~ EXTERN VPLEIB RadiaQ22
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~When we get there I'm gonna ask Samuel to make a special tub to fit my size better. You know, we must be his best customers so me thinks he shouldn't be charging us rent.~ EXTERN VPLEIB RadiaQ23
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN VPLEIB RadiQ21A
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN VPLEIB RadiQ21A
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN VPLEIB RadiQ21A
@@ -5277,7 +5277,7 @@ END
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN VPLEIB RadiQ21A
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN VPLEIB RadiQ21A
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPLEIB RadiQ21A
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPLEIB RadiQ21A
 
 
 CHAIN VPLEIB RadiQ21A
@@ -5289,7 +5289,7 @@ END
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
  IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
- IF ~InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAB LeiRadia
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB LeiRadia
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiRadia
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiRadia

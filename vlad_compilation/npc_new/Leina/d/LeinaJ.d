@@ -986,7 +986,7 @@ EXIT
 CHAIN VPLEIJ firattak
 ~(*Quietly to herself, her eyes wide with awe*) It's true, all that she told me is true... this one, he's magnificent and so... so haughty!~
 END
- IF ~True()~ THEN EXTERN ~SHARTJ~ legacy406a
+ IF ~True()~ THEN EXTERN VPSHAJ legacy406a
  IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ firattak
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ firattak
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ firattak

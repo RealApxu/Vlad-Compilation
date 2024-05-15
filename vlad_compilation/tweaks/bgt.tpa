@@ -102,10 +102,10 @@ COPY_EXISTING ~ARAM00.BCS~ ~override~
     DECOMPILE_AND_PATCH BEGIN
         REPLACE_TEXTUALLY
 ~SetGlobal("VP_AddSharTeelHere","GLOBAL",0)~
-~ActionOverride("Sharteel",LeaveParty())
-ActionOverride("Sharteel",ChangeAIScript("",DEFAULT))
-ActionOverride("Sharteel",SetDialog("SHARTP"))
+~ActionOverride("vpshart",LeaveParty())
+ActionOverride("vpshart",ChangeAIScript("",DEFAULT))
+ActionOverride("vpshart",SetDialog("SHARTP"))
 SetGlobal("SharteelPartyBG1","GLOBAL",1)
-ActionOverride("Sharteel",MoveBetweenAreas("AR0602",[3583.2919],9))~
+ActionOverride("vpshart",MoveBetweenAreas("AR0602",[3583.2919],9))~
     END
 BUT_ONLY

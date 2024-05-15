@@ -2887,7 +2887,7 @@ END
  ++ ~There was a Northerner, tall and proud, who traveled with me for a time. A true warrior Branwen was, and beautiful beyond belief.~ EXTERN VPSIMB 481
  ++ ~I often had my eyes upon Skie Silvershield, a daughter of a Grand Duke of Baldur's Gate.~ EXTERN VPSIMB 486
  ++ ~Dynaheir, her name was Dynaheir, but I rather not talk about it.~ EXTERN VPSIMB 491
- IF ~!InParty("Sharteel")~ THEN REPLY ~There was a fighter I fancied for a time, Shar Teel by name.~ EXTERN VPSIMB 493
+ IF ~!InParty("vpshart")~ THEN REPLY ~There was a fighter I fancied for a time, Shar Teel by name.~ EXTERN VPSIMB 493
 
 CHAIN VPSIMB 478
 ~Is that true? Oh, no matter that sounds way too sweet for me to question it.~

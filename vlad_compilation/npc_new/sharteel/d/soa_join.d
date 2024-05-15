@@ -64,14 +64,14 @@ IF ~Global("KickedOut","LOCALS",0) !HappinessLT(Myself,-299)~ THEN VPSHAP NEJ0
 ~Damn it, you lose one well-fought duel to an oafish lout of a man and you get attached. I almost hate to say it but you've earned my respect.~
 END
  IF ~OR(4) Global("VP_In_IWD_Part1","GLOBAL",1) Global("VP_InHalruaa","GLOBAL",1) Global("VP_OnIsland","GLOBAL",1) InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) EscapeArea()~ EXIT
- IF ~Global("VP_In_IWD_Part1","GLOBAL",0) Global("VP_InHalruaa","GLOBAL",0) Global("VP_OnIsland","GLOBAL",0) !InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) MoveGlobal("AR0702","Sharteel",[511.465])~ EXIT
+ IF ~Global("VP_In_IWD_Part1","GLOBAL",0) Global("VP_InHalruaa","GLOBAL",0) Global("VP_OnIsland","GLOBAL",0) !InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) MoveGlobal("AR0702","vpshart",[511.465])~ EXIT
 
 CHAIN
 IF ~Global("KickedOut","LOCALS",0) HappinessLT(Myself,-299)~ THEN VPSHAP NEJ1
 ~Ah, I'm finally released from this infernal duty! I swear by every god in a million pantheons that I will NEVER lose a duel to another overly masculine thug in my life.~
 END
  IF ~OR(4) Global("VP_In_IWD_Part1","GLOBAL",1) Global("VP_InHalruaa","GLOBAL",1) Global("VP_OnIsland","GLOBAL",1) InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) EscapeArea()~ EXIT
- IF ~Global("VP_In_IWD_Part1","GLOBAL",0) Global("VP_InHalruaa","GLOBAL",0) Global("VP_OnIsland","GLOBAL",0) !InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) MoveGlobal("AR0702","Sharteel",[511.465])~ EXIT
+ IF ~Global("VP_In_IWD_Part1","GLOBAL",0) Global("VP_InHalruaa","GLOBAL",0) Global("VP_OnIsland","GLOBAL",0) !InWatchersKeep()~ THEN DO ~SetGlobal("KickedOut","LOCALS",1) MoveGlobal("AR0702","vpshart",[511.465])~ EXIT
 
 CHAIN
 IF ~Global("KickedOut","LOCALS",1)~ THEN VPSHAP NEJ2

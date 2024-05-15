@@ -237,10 +237,10 @@ CHAIN
 IF WEIGHT #-1 ~NumTimesTalkedTo(0)~ THEN FIRORC02 orcsflee1
 ~Pleeze, mercy on us! Me sorry. Don't kill. Me just following orders. Didn't want to eat children or kick old people. Just job!~
 END
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~Foul orc! You will suffer the same fate as all your kind!~ EXTERN FIRORC02 2
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~Flee from here, foul creature, and never harm another!~ EXTERN FIRORC02 1
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~Cowardly creature, have some dignity in death even if you had none in life.~ EXTERN FIRORC02 3
- IF ~OR(2) InParty("Sharteel") !Dead("Sharteel")~ THEN EXTERN VPSHAJ legacy310
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Foul orc! You will suffer the same fate as all your kind!~ EXTERN FIRORC02 2
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Flee from here, foul creature, and never harm another!~ EXTERN FIRORC02 1
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Cowardly creature, have some dignity in death even if you had none in life.~ EXTERN FIRORC02 3
+ IF ~OR(2) InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAJ legacy310
 
 CHAIN VPSHAJ legacy310
 ~(*She looks contemptuously at the orcs and brandishing her sword, sparks flickering as her knuckles*)... Move out of the way... I've something here that'll soon have them squealing like a couple of stuck pigs!~
@@ -291,16 +291,16 @@ EXIT
 //Talk with Firkraag
 
 EXTEND_BOTTOM ~FIRKRA02~ 21
- IF ~InParty("Sharteel") !Dead("Sharteel") Global("VP_Lit_Firecracker","GLOBAL",0) !Global("VP_AngelosLegacy","GLOBAL",0)~ THEN GOTO firecr01
+ IF ~InParty("vpshart") !Dead("vpshart") Global("VP_Lit_Firecracker","GLOBAL",0) !Global("VP_AngelosLegacy","GLOBAL",0)~ THEN GOTO firecr01
 END
 
 REPLACE ~FIRKRA02~
 
 CHAIN FIRKRA02 24 // from: 23.0
 #43191 /* ~Do you still demand a battle? You shall have one, if you wish, but you will not win. Do not be foolish, <PRO_GIRLBOY>.~ */
- IF ~OR(3) !InParty("Sharteel") Dead("Sharteel") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43192 /* ~I will leave for now, but I will return.~ */ GOTO 20
- IF ~OR(3) !InParty("Sharteel") Dead("Sharteel") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43193 /* ~I will fight you, and I shall win. I can do no other.~ */ GOTO 25
- IF ~InParty("Sharteel") !Dead("Sharteel") Global("VP_Lit_Firecracker","GLOBAL",0) !Global("VP_AngelosLegacy","GLOBAL",0)~ THEN GOTO firecr01
+ IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43192 /* ~I will leave for now, but I will return.~ */ GOTO 20
+ IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43193 /* ~I will fight you, and I shall win. I can do no other.~ */ GOTO 25
+ IF ~InParty("vpshart") !Dead("vpshart") Global("VP_Lit_Firecracker","GLOBAL",0) !Global("VP_AngelosLegacy","GLOBAL",0)~ THEN GOTO firecr01
 END
 
 END
@@ -488,7 +488,7 @@ END
 CHAIN DURBIN D7
 ~(*Sighs*) I can not hope to best you in a fight, and anyway I am tired. I die knowing that I have lived a much longer life than I would have, had I not sworn my fealty to my master. I trust that when you meet him you do nothing foolish and treat him with respect, as that may be the only way to you leaving here alive.~
 END
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN DO ~EscapeArea()~ EXIT
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN DO ~EscapeArea()~ EXIT
  IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN EXTERN VPSHAJ durbin11
 
 CHAIN DURBIN D8
@@ -558,7 +558,7 @@ EXIT
 CHAIN DURBIN D23
 ~(*Sighs*) So, this rescue is just a reprieve. I escape the bellies of the beasts only to find myself at the mercy of another type of beast. Ah well, I was already resigned to my fate, do as you will.~
 END
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN DO ~EscapeArea()~ EXIT
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN DO ~EscapeArea()~ EXIT
  IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin17
  IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin18
 
@@ -572,7 +572,7 @@ CHAIN DURBIN D25
 ~I am and have been in the service of Lord Firkraag for many years now, an honour you couldn't possibly begin to understand. However, I don't flatter myself as being important in my Lord's eyes. Certainly not important enough for him to notice I was missing.~
 = ~If in time he discovered he was a servant or two down, he'd merely replace them thinking they'd perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
 END
- IF ~OR(2) !InParty("Sharteel") Dead("Sharteel")~ THEN REPLY ~I've no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~I've no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
  IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I've no quarrel with you, begone.~ EXTERN VPSHAJ durbin20
  IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I don't think so. I'm coming back for the dragon and dealing with you will leave me ones less servant hindering my goal.~ EXTERN VPSHAJ durbin20
  ++ ~(*Lie*) Your lord lays dead below, struck down by my hand. What say you now?~ EXTERN DURBIN D19
