@@ -406,20 +406,6 @@ END
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
 
-CHAIN VPKACJ NEJ59
-~When I left Kara-Tur, I knew I had a long journey ahead of me but I never dreamt that my hunt for Yoshimo Hashimoto would take me so far!~
-END
- IF ~True()~ THEN EXTERN TILORN 19
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ261
-
-CHAIN VPKACJ NEJ60
-~I know of magic, <CHARNAME>. I sense that this mage is powerful, but his power is nothing compared to the power unleashed should we be forced to face the wrath of the whole academy! Let us do what we must quickly!~
-END
- IF ~True()~ THEN EXTERN RAYVON 2
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ rayvon2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ rayvon
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ155
-
 CHAIN VPKACJ NEJ61
 ~Sure, I'll do it.~
 DO ~SetGlobal("VP_Kachi_EnchQuest","GLOBAL",1)~
@@ -497,12 +483,6 @@ END
 CHAIN VPKACJ invfail2
 ~I am Kensai as well as mage <CHARNAME>, trained with sword as well as magic. If I had been permitted to use the skills that I have been trained to use, then believe me, those vermin would be dead by now.~
 EXTERN TUTHEOD failtest
-
-CHAIN VPKACJ tafficuh
-~I... I do not know what I should say to you Taffic.~
-END
- IF ~True()~ THEN EXTERN NJTAFP umberhk3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ tafficuh
 
 CHAIN VPKACJ NEJ701
 ~I am confident I can do this.~

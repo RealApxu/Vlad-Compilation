@@ -1595,24 +1595,7 @@ END
  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ NEJ310
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ NEJ186
 
-CHAIN VPSIMJ NEJ118
-~It seems that all who travel with you, <CHARNAME>, are bound to be touched by mystery and intrigue. This journey that we take with you into the past is sure to be one of many intrigues this group will face.~
-END
- IF ~True()~ THEN EXTERN TILORN 19
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ261
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ59
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ153
- IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ 36
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 8
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN VALYGARJ NEJ159
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN MAZZYJ NEJ207
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN NALIAJ NEJ322
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ NEJ253
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN KORGANJ NEJ223
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ NEJ189
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ NEJ189
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ NEJ311
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ NEJ187
+
 
 CHAIN VPSIMJ NEJ119
 ~May Mielikki look into my heart and know I do this only to aid the search for an unfortunate girl.~
@@ -1624,22 +1607,3 @@ END
  IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ NEJ312
  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ NEJ255
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 70
-
-CHAIN VPSIMJ tafficuh
-~Taffic, I am sorry for I know of no spells that will heal the misery that I see in the face of the beast you that you have become.~
-END
- IF ~True()~ THEN EXTERN NJTAFP umberhk3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ tafficuh
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ tafficuh
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ tafficuh
- IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ tafficuh
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ tafficuh
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN VALYGARJ tafficuh
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN MAZZYJ tafficuh
- IF ~InParty("Nalia") !Dead("Nalia") OR(2) Global("EnteredAR1304","GLOBAL",1) !Global("NaliaKeepPlot","GLOBAL",0)~ THEN EXTERN NALIAJ tafficuh
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ tafficuh
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN KORGANJ tafficuh
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ tafficuh
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ tafficuh
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ tafficuh
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ tafficuh

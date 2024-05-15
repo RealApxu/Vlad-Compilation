@@ -417,22 +417,6 @@ CHAIN VPKACB 92
 ~And you do not believe so?~
 EXTERN VPSIMB 108
 
-CHAIN VPKACB 93
-~Dar, I would just like to say how well you are adapting to your new life in a strange time.~
-EXTERN NJDARB 92
-
-CHAIN VPKACB 94
-~My life in Kara Tur ill prepared me for what I would find in this part of the world. Of course I expected to experience a cultural difference, but you Dar, you had to except a change in time. Did it not unnerve you a little?~
-EXTERN NJDARB 93
-
-CHAIN VPKACB 95
-~No Dar, it is not so much your choice of companions but more who you are. You are showing people a side of you that they could never imagine exists. You escaped the cruel death dealt to so many with your heritage at birth. All things that are have a reason to be. Fate intervened at your birth because you have a reason to be, never ever lose sight of that Dar!~
-EXTERN NJDARB 94
-
-CHAIN VPKACB 96
-~I feel certain that you will hear a lot more such words in your future Dar. It is easy to see that you have a good heart.~
-EXTERN NJDARB 95
-
 CHAIN VPKACB 97
 ~Leina your music is very beautiful, but why do you sing so often of sadness when your voice is so much more suited to the songs of joy and love?~
 EXTERN VPLEIB 6

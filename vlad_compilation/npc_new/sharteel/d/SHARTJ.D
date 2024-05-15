@@ -41,12 +41,6 @@ CHAIN VPSHAJ gotoulcr
  IF ~~ THEN EXTERN NJHROJ 404
 END
 
-//Nej 2 - Leave Armor
-CHAIN VPSHAJ leavarmo
-~Ha, now we sort the men from the boys! My fist is as honed as my blade and will draw blood just as easily... how many of you can boast the same... eh!?~
- IF ~~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",1) GiveItemCreate("TulRobe",Player1,0,0,0) GiveItemCreate("TulRobe",Player2,0,0,0) GiveItemCreate("TulRobe",Player3,0,0,0) GiveItemCreate("TulRobe",Player4,0,0,0) GiveItemCreate("TulRobe",Player5,0,0,0) GiveItemCreate("TulRobe",Player6,0,0,0)~ EXIT
-END
-
 //Nej 2 - Arrival
 CHAIN VPSHAJ arrivhal
 ~Phew... for a minute there I thought <CHARNAME> was going to ask him to join us!~
@@ -127,11 +121,6 @@ CHAIN VPSHAJ egenia
  IF ~True()~ THEN EXIT
  IF ~InParty("Minsc") !Dead("Minsc") OR(2) !InParty("njdar") Dead("njdar")~ THEN EXTERN MINSCJ NEJ326
  IF ~InParty("Minsc") !Dead("Minsc") InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 62
-END
-
-CHAIN VPSHAJ nearpor1
-~At last we leave this miserable cold. What vexes me most is no one will believe we fought the ancestors of the creatures of our time and lived, it lessens the thrill of the kills we have made. It'll be good to be back where honest bloodshed is appreciated!~
- IF ~~ THEN DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutNJ2")~ EXIT
 END
 
 CHAIN VPSHAJ nearpor2

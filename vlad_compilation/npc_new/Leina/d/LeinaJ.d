@@ -201,16 +201,10 @@ END
  IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ152
  IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ58
 
-CHAIN VPLEIJ 36
-~I marvel at walking beside Hrothgar of Easthaven, and now I have the chance to walk in the past! This is all too much like a dream.~
-END
- IF ~True()~ THEN EXTERN TILORN 19
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ261
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ59
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ153
-
+CHAIN
 IF WEIGHT #3 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) GlobalLT("VP_Enable_Flirts","LOCALS",3) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ 37
 ~Yes... you need me for something?~
+END
 /*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",0)~ THEN REPLY ~(*You deliberately slow your pace so's to fall in alongside Leina.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",1)~ EXTERN VPLEIJ 38 // => Leina response 1.1
 /*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",1)~ THEN REPLY ~(*You deliberately slow your pace so's to fall in alongside Leina.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",2)~ EXTERN VPLEIJ 39 // => Leina response 1.2
 /*1*/ IF ~Global("VP_Flirt_Option_1","LOCALS",2)~ THEN REPLY ~(*You deliberately slow your pace so's to fall in alongside Leina.*)~ DO ~SetGlobal("VP_Flirt_Option_1","LOCALS",0)~ EXTERN VPLEIJ 40 // => Leina response 1.3
@@ -1081,17 +1075,6 @@ END
  IF ~OR(2) Gender(Player1,FEMALE) Global("VP_MyFlirt_Is_Over","LOCALS",1)~ THEN REPLY ~You were close to this teacher... I am sorry I didn't mean to open up old wounds forgive me.~ EXTERN VPLEIJ firkdead7
  IF ~OR(2) Gender(Player1,FEMALE) Global("VP_MyFlirt_Is_Over","LOCALS",1)~ THEN REPLY ~So these teachers of yours died before they could fill your head with more nonsense. Seems fate did you a favour.~ EXTERN VPLEIJ firkdead11
 
-CHAIN VPLEIJ rayvon
-~He knows why we are... I can see it in his eyes. Please <CHARNAME>, I really don't think he is interested in any explanations.~
-END
- IF ~True()~ THEN EXTERN RAYVON 2
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROJ rayvon2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ rayvon
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ155
- IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ60
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ264
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ554
-
 CHAIN VPLEIJ immy1
 ~(*Smiling affectionately*) Ah the infamous Imoen... at last we get to meet.~
 = ~I have heard much from <CHARNAME> about the lovable rogue Imoen, but then of course, neither of you knew you were siblings.~
@@ -1137,16 +1120,10 @@ END
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1
 
-CHAIN VPLEIJ tafficuh
-~I believe the most appropriate expression to use here would be something about pride coming before a fall. Wouldn't you agree Taffic?~
-END
- IF ~True()~ THEN EXTERN NJTAFP umberhk3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ tafficuh
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ tafficuh
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ tafficuh
-
+CHAIN
 IF WEIGHT #5 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) Global("VP_Enable_Flirts","LOCALS",4) GlobalGT("VP_LoveTalk","LOCALS",23) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ NewFlirts
 ~Yes... you need me for something?~
+END
 /*15*/ IF ~Global("VP_Flirt_Option_15","LOCALS",0)~ THEN REPLY ~(*You come up behind Leina and gently blow in to the back of her neck.*)~ DO ~SetGlobal("VP_Flirt_Option_15","LOCALS",1)~ EXTERN VPLEIJ NF1501
 /*15*/ IF ~Global("VP_Flirt_Option_15","LOCALS",1)~ THEN REPLY ~(*You come up behind Leina and gently blow in to the back of her neck.*)~ DO ~SetGlobal("VP_Flirt_Option_15","LOCALS",2)~ EXTERN VPLEIJ NF1502
 /*15*/ IF ~Global("VP_Flirt_Option_15","LOCALS",2)~ THEN REPLY ~(*You come up behind Leina and gently blow in to the back of her neck.*)~ DO ~SetGlobal("VP_Flirt_Option_15","LOCALS",0)~ EXTERN VPLEIJ NF1503
