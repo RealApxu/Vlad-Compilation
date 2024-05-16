@@ -70,23 +70,6 @@ CHAIN VPSHAJ imscared
  IF ~~ THEN EXTERN NJHROJ 372
 END
 
-CHAIN VPSHAJ frellaru
-~(*Impatiently*) Yet more errands to be run for a man too up himself and full of his own self importance to risk his neck! What are we, warriors or bloody gophers?~
- IF ~~ THEN EXTERN NJHROJ shararu1
-END
-
-CHAIN VPSHAJ frellaru2
-~I need no convincing paladin, you and your kind are the worst sort of pathetic! You can't help sticking those over sized noses of yours into things that don't concern you.~
- = ~The old druid looked more than fit enough to sort this town... *his* town's problems, but no, Hrothgar the righteous has to stick his oar in and volunteer our necks instead whilst the druid does what... sits comfortably by his hearth contemplating his navel?! Men really are...~
- IF ~~ THEN EXTERN NJHROJ shararu2
-END
-
-CHAIN VPSHAJ frellaru3
-~Do not question my intentions. You don't have the power to dismiss me Paladin. An oath is an oath and I pledged my sword to aid <CHARNAME>, my word is my bond but make NO mistake... I follow only because of <PRO_HISHER> prowess in battle. When that falters, so does my loyalty.~
- = ~As for you paladin... I have no such loyalty to you, but you can be sure that as long as you don't cross me you have nothing to fear... cross me and it'll be your front you need to watch... back stabbing is the way of weak cowards!~
- IF ~~ THEN EXTERN NJHROJ shararu3
-END
-
 CHAIN VPSHAJ dragoneye
 ~(*Pointing her sword*) I suppose it does somewhat resemble a dragon's head and I can see why some may find it impressive, but in reality... it's just another damp dungeon for us to crawl through.~
  IF ~True()~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXIT
