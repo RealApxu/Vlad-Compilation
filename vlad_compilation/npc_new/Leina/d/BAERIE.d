@@ -1,44 +1,7 @@
-CHAIN BAERIE NEJ449
-~(*Giggles*) What a funny thing to think Leina. No, it is no ritual. I like to stand and feel the wind beneath my arms and imagine it is lifting me into the air as though they were my wings. You see Leina, the only way I will ever fly again is in my dreams.~
-EXTERN VPLEIB 197
-
-CHAIN BAERIE NEJ450
-~To soar to the clouds, to feel the wind beneath you as you leave the ground is an experience that cannot be described, it has to be felt. I try to capture the memories, the feelings again and again but each time it becomes a little harder. I fear I am slowly losing that which I am.~
-EXTERN VPLEIB 198
-
-CHAIN BAERIE NEJ451
-~But I don't want to lose any of it! I am Avariel with or without my wings and to be Avariel is to know and to feel the freedom that which comes from soaring with the eagles and walking on the clouds. If I lose that what do I become and where do I belong?~
-EXTERN VPLEIB 199
-
-CHAIN BAERIE NEJ452
-~If I could walk on grass it would not be so bad but we tramp more often than not the hard rough road which hurt my feet, and as for the rain, it is always so cold and wet. I hate the way the coldness of it seeps through to my skin!~
-EXTERN BAERIE NEJ453
-
-CHAIN BAERIE NEJ453
-~(*Tears well in her eyes as she speaks*) I am Avariel, I was born to fly, to be one with the wind, not to trudge through mud!~
-EXTERN VPLEIB 201
 
 CHAIN BAERIE NEJ454
 ~I... I will just watch Leina. My legs really hurt from all the walking we have done today.~
 EXTERN VPLEIB PCF2Leina26a
-
-CHAIN BAERIE NEJ455
-~I'll get used to walking first before I try dancing thank you Leina.~
-END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
 
 CHAIN BAERIE LeiTheat
 ~That look, are you... are you sure it's a good idea?~

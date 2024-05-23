@@ -1,49 +1,6 @@
-CHAIN BMINSC NEJ131
-~Minsc is sorry Leina, but such beautiful music comes from the plucking of the strings, Minsc thought that if he could just touch the strings they would sing for him.~
-EXTERN VPLEIB 191
-
-CHAIN BMINSC NEJ132
-~Could Minsc learn the way to unjumble the notes? Would Leina teach him?~
-EXTERN VPLEIB 192
-
-CHAIN BMINSC NEJ133
-~Yes Minsc's boot is good for kicking evil when he meets evil, but when there is no evil to kick he would like to make everyone happy with music, like Leina.~
-EXTERN VPLEIB 193
-
-CHAIN BMINSC NEJ134
-~The only thing Minsc feels like that is his berserker rage when evil shows its evil head. Then there is a big bursting from inside Minsc and a big butt kicking for evil!~
-EXTERN VPLEIB 194
-
-CHAIN BMINSC NEJ135
-~So, if Minsc stays a ranger Leina, and not tries to be a bard, he will be a wise Minsc? Ooooh, do you hear that Boo, Minsc the wise ranger! Come Boo we must find out what being wise will mean for Minsc.~
-EXTERN VPLEIB 195
-
-CHAIN BMINSC NEJ136
-~Great fun, right Boo? All the whirling and twirling poor Minsc's eyes were going round in circles trying to watch Leina. Even Boo says Leina was faster than a hamster whirling in his wheel.~
-DO ~RestParty()~
-EXIT
-
 CHAIN BMINSC NEJ137
 ~Boo says Minsc's boots are big and for butt kicking evil, not dancing boots. Boo is very wise so Minsc will do as he says, drink the ale, but not dancing.~
 EXTERN VPLEIB PCF2Leina23c
-
-CHAIN BMINSC NEJ138
-~Oooo... that's not right Leina, Minsc has not got his dancing socks on either, only the ones that let his toes breathe.~
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
 
 CHAIN BMINSC NEJ139
 ~Ooooo... so much in and out of tables and swayings like the trees in the wind, Minsc's poor head is dizzy from the watching and the drinking. Boo is right, Minsc's boots are made for butt kicking and not dancing, they would be taking Minsc under the tables and not around the tables.~

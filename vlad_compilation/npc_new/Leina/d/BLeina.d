@@ -4,19 +4,14 @@ CHAIN
 IF ~Global("VP_BKachiko","LOCALS",2)~ THEN VPLEIB 5
 ~Kachiko do you like my music?~
 DO ~SetGlobal("VP_BKachiko","LOCALS",3)~
-EXTERN VPKACB 97
-
-CHAIN VPLEIB 6
-~Love Kachiko? My experience with what you call love brought only sadness and misery into my life. I see my songs as a very good reflection of love. Love and pain are the same thing.~
-EXTERN VPKACB 98
-
-CHAIN VPLEIB 7
-~It was a man Kachiko! Is it not always so? You give your heart, your soul and your whole being to one man. This man in return, swears to love you, to worship you, to protect you, so you allow him to entice you away from the family that also love you, with promises of a life of love that will be forever. Then one morning you awake and he is gone and so is everything that you own, that includes your heart and your dreams!~
-EXTERN VPKACB 99
-
-CHAIN VPLEIB 8
-~I am not lonely Kachiko. I have my music, that brings me all the passion that I need, warmth I can find in the arms of any man when I feel the need, love, well apart from my love of music, I neither need it nor do I desire it. Pursue it if you wish Kachiko, but do so with those bright, trusting eyes of yours wide open. Now, if you do not mind, I no longer wish to talk of love.~
-EXTERN VPKACB 100
+== VPKACB ~Leina your music is very beautiful, but why do you sing so often of sadness when your voice is so much more suited to the songs of joy and love?~
+== VPLEIB ~Love Kachiko? My experience with what you call love brought only sadness and misery into my life. I see my songs as a very good reflection of love. Love and pain are the same thing.~
+== VPKACB ~Oh Leina! You are too young to have such a hard heart! Do you wish to tell me what has turned your heart to stone?~
+== VPLEIB ~It was a man Kachiko! Is it not always so? You give your heart, your soul and your whole being to one man. This man in return, swears to love you, to worship you, to protect you, so you allow him to entice you away from the family that also love you, with promises of a life of love that will be forever. Then one morning you awake and he is gone and so is everything that you own, that includes your heart and your dreams!~
+== VPKACB ~I am sorry Leina, I should not have asked. It is plain to see the scars that you still carry are also in your music, but you should not let the actions of one man deny you the warmth and passion that real love brings. That way only leads to bitterness and a life of loneliness.~
+== VPLEIB ~I am not lonely Kachiko. I have my music, that brings me all the passion that I need, warmth I can find in the arms of any man when I feel the need, love, well apart from my love of music, I neither need it nor do I desire it. Pursue it if you wish Kachiko, but do so with those bright, trusting eyes of yours wide open. Now, if you do not mind, I no longer wish to talk of love.~
+== VPKACB ~As you please Leina, but I truly hope that someday you will feel the joy of love once again, with a man that will not abuse all that you have to give.~
+EXIT
 
 CHAIN
 IF ~Global("VP_BPC","LOCALS",2)~ THEN VPLEIB 15
@@ -114,14 +109,12 @@ EXIT
 
 CHAIN VPLEIB 38
 ~Of course <CHARNAME>, forgive me for asking. It's just that you show one face to the world and yet, I feel that there is much more hidden behind the face that you are reluctant to reveal. Still, as you so rightly say, it is no ones business but your own. Once again, forgive my inquisitive nature, I will now leave you to your own company as you seem to like it so much.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 39
 ~They are not as deep as they were yesterday and yesterday they were not as deep as the day before. If you had but seen me when I was left penniless and friendless, you would have seen only an open gash that refused to stop gushing.~
-EXTERN VPLEIB 40
-
-CHAIN VPLEIB 40
-~It was only the need to keep the wolf from the door that forced me to turn to the only thing I knew, music. It was music that slowly brought me out of the darkness where I dwelt, it was music that showed me day always follows night. You might say it was my saviour, and has since become my one passion, my one love, the only love I will ever need.~
+== VPLEIB ~It was only the need to keep the wolf from the door that forced me to turn to the only thing I knew, music. It was music that slowly brought me out of the darkness where I dwelt, it was music that showed me day always follows night. You might say it was my saviour, and has since become my one passion, my one love, the only love I will ever need.~
 END
  ++ ~Music is a gift Leina and a gift to be nurtured and treasured, but music can not bring the comfort and warmth that love brings to a body.~ EXTERN VPLEIB 41
  ++ ~And you have grown into a much stronger person through your pain, I am sure, but do not let this strength lead you into thinking that there is no room for love and the joy that sharing with another brings.~ EXTERN VPLEIB 41
@@ -131,18 +124,12 @@ END
 
 CHAIN VPLEIB 41
 ~I have no need for the love you speak of <CHARNAME>. The warmth I feel in my music fills any empty space within me to overflowing, but if I should find the need for the warmth of another to help me through life's darkest hours, then I can play the game of love as well as any man, enjoy the moment and leave with the dawn.~
-EXTERN VPLEIB 42
-
-CHAIN VPLEIB 42
-~I have no desire to greet the day in the arms of a man nor do I wish to have a man waken in mine. I am content. (*She turns away.*)~
+== VPLEIB ~I have no desire to greet the day in the arms of a man nor do I wish to have a man waken in mine. I am content. (*She turns away.*)~
 EXIT
 
 CHAIN VPLEIB 43
 ~We don't <CHARNAME>, our failure to recognise it when it presents itself is often the reason that it eludes so many and those that do find it, are not always content. There are those who continually crave the excitement that new love always brings and that is when love brings pain.~
-EXTERN VPLEIB 44
-
-CHAIN VPLEIB 44
-~I have loved yes, but I was not loved in return and that is a pain that will never touch me again. I am content to live for my music, it will never bring the pain that love has brought to me. (*She turns away.*)~
+== VPLEIB ~I have loved yes, but I was not loved in return and that is a pain that will never touch me again. I am content to live for my music, it will never bring the pain that love has brought to me. (*She turns away.*)~
 EXIT
 
 CHAIN VPLEIB 45
@@ -185,12 +172,11 @@ CHAIN VPLEIB 53
 ~I am not sure about the part the gods play in our lives <CHARNAME>, but it is my belief that fate takes a hand and sets our paths. However, she does it in such a way that we are led to believe that we are in charge of our own lives, but we can be sure that if we ever wander from her path, she will be sure to make another that leads us back to her chosen way.~
 EXIT
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",8)~ THEN VPLEIB 54
 ~I often look into your face and see the weariness in your eyes. Sometimes I even see confusion and another time I catch sight of a shadow that passes fleetingly over them, much like the shadows in my own.~
-DO ~SetGlobal("VP_BPC","LOCALS",9)~ EXTERN VPLEIB 55
-
-CHAIN VPLEIB 55
-~You are surrounded by friends who would gladly share some of what haunts you and yet you prefer to keep your turmoil to yourself. Have you not heard that a problem shared is a problem halved <CHARNAME>?~
+DO ~SetGlobal("VP_BPC","LOCALS",9)~
+== VPLEIB ~You are surrounded by friends who would gladly share some of what haunts you and yet you prefer to keep your turmoil to yourself. Have you not heard that a problem shared is a problem halved <CHARNAME>?~
 END
  ++ ~My thoughts are my own, and they are best left that way.~ EXTERN VPLEIB 56
  ++ ~I am not very happy being scrutinised here Leina, so please keep your eyes... out of my eyes!~ EXTERN VPLEIB 56
@@ -210,10 +196,7 @@ EXIT
 
 CHAIN VPLEIB 58
 ~But that is one of the joys of having friends, to share the bad as well as the good things that we meet on our journey. They share our hopes, our fears and our dreams. Sometimes along the way, our dreams become theirs and theirs our own.~
-EXTERN VPLEIB 59
-
-CHAIN VPLEIB 59
-~You do have dreams don't you <CHARNAME>? Perhaps there are times when your thoughts turn to a future away from the hazards and the dust that living on the road brings?~
+== VPLEIB ~You do have dreams don't you <CHARNAME>? Perhaps there are times when your thoughts turn to a future away from the hazards and the dust that living on the road brings?~
 END
  ++ ~I have dreams Leina but never have the time to pursue them.~ EXTERN VPLEIB 60
  ++ ~What good are dreams if fate persists in throwing obstacles in the way of them.~ EXTERN VPLEIB 61
@@ -236,6 +219,7 @@ CHAIN VPLEIB 63
 ~It may be true that no one is guaranteed a tomorrow, but to be able to dream of what tomorrow may bring, gives us a reason to hope that we will see tomorrow and the day after that and the day after that. Before we know it, we are dreaming of all the future tomorrows. With our dreams come hope, and hope is something no one should ever lose sight of <CHARNAME>, no matter what the world or fate throws at us.~
 EXIT
 
+CHAIN
 IF WEIGHT #0 ~Global("VP_BPC","LOCALS",11) GlobalLT("VP_MyFatherIsDead","LOCALS",3) GlobalLT("VP_Break_Point","LOCALS",2)~ THEN VPLEIB 64
 ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father's death.~
 END
@@ -263,10 +247,7 @@ END
 
 CHAIN VPLEIB 67
 ~I see no remorse, only coldness reflected in your eyes. I see no room for compassion in your heart and it is for that reason I show none to you and your cause.~
-EXTERN VPLEIB 68
-
-CHAIN VPLEIB 68
-~My father is dead for no other reason than to aid your lust for revenge. I cannot forgive this wanton disregard for life that I see in you, it sickens me and as such I refuse to aid you further.~
+== VPLEIB ~My father is dead for no other reason than to aid your lust for revenge. I cannot forgive this wanton disregard for life that I see in you, it sickens me and as such I refuse to aid you further.~
 END
  ++ ~Think for a second, if it were not for me you would still be a prisoner of your insane father, or worse married to the likes of Govan Duvaine. A little gratitude would not go amiss here!~ EXTERN VPLEIB 69
  ++ ~That is your choice. Your talents, or lack of them will not be missed.~ EXTERN VPLEIB 69
@@ -274,11 +255,9 @@ END
 
 CHAIN VPLEIB 69
 ~I am grateful enough for my rescue, but had I known beforehand the cost of my freedom I would not have asked for it.~
-EXTERN VPLEIB 70
-
-CHAIN VPLEIB 70
-~I pray that no more will pay the price my father has for your selfish agenda <CHARNAME>, but I fear that many will. Farewell.~
-DO ~LeaveParty() EscapeArea()~ EXIT
+== VPLEIB ~I pray that no more will pay the price my father has for your selfish agenda <CHARNAME>, but I fear that many will. Farewell.~
+DO ~LeaveParty() EscapeArea()~
+EXIT
 
 CHAIN VPLEIB 71
 ~Do not act so facetiously <CHARNAME>, you know full well what I meant! I am asking why, when you knew Bodhi for the creature she was, did you align yourself with her and murder an innocent stranger on her orders?~
@@ -290,10 +269,7 @@ END
 
 CHAIN VPLEIB 72
 ~I cannot believe the coldness I hear in your voice when you say *a means to an end, nothing more*! You actually believe your needs are what counts above all else, even the sanctity of life.~
-EXTERN VPLEIB 73
-
-CHAIN VPLEIB 73
-~You ally yourself to any who promise to give you that which you want regardless of the price or consequences that others will pay. Tell me, how can you condone what you have done?~
+== VPLEIB ~You ally yourself to any who promise to give you that which you want regardless of the price or consequences that others will pay. Tell me, how can you condone what you have done?~
 END
  ++ ~It is easy to kill when the victim is a stranger. I saw your father only as an obstacle to be removed from my path to Irenicus.~ EXTERN VPLEIB 66
  ++ ~Bodhi had knowledge of Irenicus, knowledge I had to have regardless of the price.~ EXTERN VPLEIB 66
@@ -362,15 +338,13 @@ END
 
 CHAIN VPLEIB 83
 ~Rage is a powerful emotion <CHARNAME> and revenge is a powerful spur. The blindness that comes to those who allow one such emotion to take hold leads to unpredictable results. To allow both emotions to take hold, then reason is also lost.~
-EXTERN VPLEIB 84
-
-CHAIN VPLEIB 84
-~It is then the innocent that get in the way that suffer. Neither rage nor vengeance are valid excuses for the murder of my father, there is never a valid reason for cold blooded murder.~
+== VPLEIB ~It is then the innocent that get in the way that suffer. Neither rage nor vengeance are valid excuses for the murder of my father, there is never a valid reason for cold blooded murder.~
 END
  ++ ~My rage and anger may have been the cause of my siding with Bodhi but I did not lose my reason. What ever you choose to may believe, murder was never my intention.~ EXTERN VPLEIB 75
  ++ ~I chose my path in haste, whilst anger raged in my heart that is true and once chosen their was no going back. By siding with Bodhi I had burnt all my bridges, it was she who wanted his death not me.~ EXTERN VPLEIB 75
  ++ ~That was not meant as an excuse, only a reason. Bodhi's price for her aid was the murder of your father, but I did not go to his home intending for him to die. You have to believe that.~ EXTERN VPLEIB 75
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",13)~ THEN VPLEIB 85
 ~Can I sit with you a while <CHARNAME>? I see you also prefer to linger in the solitude and the quiet after the others have retired. I have lost track of the number of times I have looked upward and counted the stars to try and ignore the thoughts that plague me in the silence.~
 END
@@ -388,7 +362,8 @@ END
 
 CHAIN VPLEIB 87
 ~Then I ask that you forgive my intrusion, I will leave you to your solitude and no longer force your ears to listen to my yammering. Sleep well <CHARNAME>.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 88
 ~Only recent events? Do you never find that mistakes of the past also creep into your mind at these times, forcing you to evaluate them as well?~
@@ -422,7 +397,8 @@ END
 
 CHAIN VPLEIB 92
 ~I will remain here a while longer, I am in no rush for my bed. I prefer to sit here than wrestle the ghosts that keep sleep from taking me. I trust your own slumber will be less troublesome. Sleep well <CHARNAME>.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 93
 ~I have always been a dreamer, an idealist but then given my upbringing, secluded and cosseted in my father's house how could I be anything else but. All I ever knew was the warmth, goodness and love of my parents. I had no idea how cruel and materialistic people really are!~
@@ -440,10 +416,7 @@ END
 
 CHAIN VPLEIB 95
 ~Still, I should have looked closer at my mother's life, asked why I spent so much time in the house, seldom allowed to play with other children. Now of course I see why, she sought to hide the prejudices that she endured from me, wanted me to know only love and goodness.~
-EXTERN VPLEIB 96
-
-CHAIN VPLEIB 96
-~I believe she even kept such things from my father, she loved him so completely that she would not have him think he had brought her to such a lonely existence... That was all I ever wanted from life, to find a love as passionate as theirs. How could I know that love could be so cruel and cause so much pain!~
+== VPLEIB ~I believe she even kept such things from my father, she loved him so completely that she would not have him think he had brought her to such a lonely existence... That was all I ever wanted from life, to find a love as passionate as theirs. How could I know that love could be so cruel and cause so much pain!~
 END
  ++ ~We are all born to seek love, it is the way nature ensures the continuation of all her creatures. Even so, not all are lucky enough to find it.~ EXTERN VPLEIB 98
  ++ ~We seldom have choice or control over whom we love, when are hearts are touched all sense leaves our mind, and we become slaves to our emotions.~ EXTERN VPLEIB 98
@@ -459,10 +432,7 @@ END
 
 CHAIN VPLEIB 98
 ~I no longer crave love, nor the warmth and passion it brings. To love is to open oneself to possible pain, your heart becomes vulnerable to the whims and moods of the one in whose hands you place it.~
-EXTERN VPLEIB 99
-
-CHAIN VPLEIB 99
-~No, I shall not love again nor will my heart ever be laid open for a man to enter and tear apart with his touch. These eyes have shed their last tears over love and if any man should mistake the warmth I find in his embrace for love then let him shed his tears for me!~
+== VPLEIB ~No, I shall not love again nor will my heart ever be laid open for a man to enter and tear apart with his touch. These eyes have shed their last tears over love and if any man should mistake the warmth I find in his embrace for love then let him shed his tears for me!~
 END
  ++ ~Where do such angry words come from Leina? I cannot conceive that your heart is so cold?~ EXTERN VPLEIB 100
  ++ ~Love will not be denied Leina. If your fate is entwined with another it will find you and when it does, no sacrifice will seem too great in order to hold on to it.~ EXTERN VPLEIB 100
@@ -471,10 +441,7 @@ END
 
 CHAIN VPLEIB 100
 ~I... I did not mean for this conversation to become so personal <CHARNAME>. A while back I allowed pride to dictate my actions and now I have to live with the regrets that so often accompany prideful decisions.~
-EXTERN VPLEIB 101
-
-CHAIN VPLEIB 101
-~These are the thoughts that haunt my mind, keeping sleep at bay each night. I have to find some way to combat them but I do not believe sharing them will help either of us rest easy tonight.~
+ VPLEIB ~These are the thoughts that haunt my mind, keeping sleep at bay each night. I have to find some way to combat them but I do not believe sharing them will help either of us rest easy tonight.~
 END
  ++ ~That is a relief, I really was not up for another sob story, in fact I suggest we get some rest before the others awaken.~ EXTERN VPLEIB 92
  ++ ~There will be other such hours, many I fear before my task is done. We can talk then, for now, let us both try and get some rest.~ EXTERN VPLEIB 102
@@ -482,8 +449,10 @@ END
 
 CHAIN VPLEIB 102
 ~I too sleep lightly so if you should ever find yourself in need of an ear or just to have someone sit beside you in the lonely hours you have but to ask. I will keep you from your rest no longer, sleep well <CHARNAME>.~
-DO ~SetGlobal("VP_Enable_Flirts","LOCALS",1) RestParty()~ EXIT //first flirt phase
+DO ~SetGlobal("VP_Enable_Flirts","LOCALS",1) RestParty()~
+EXIT //first flirt phase
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",15) Global("VP_BPC_Buffer1","LOCALS",1)~ THEN VPLEIB 103
 ~[The elven city of *Ael-el-Van-aira*, roughly translates to *The home in the great green forest*, pronounced Arl-el-Vahn-ara. Leina's mother's clan name *Tia'Llaeyth* pronounced Te-a-Lay-a-yith, roughly translated to mean *The people of magic and harmony*.]
 
@@ -528,14 +497,12 @@ END
 
 CHAIN VPLEIB 108
 ~(*Sighs*) The moment has passed, but the joy of hearing the melody again is still here... in my heart, where it will remain. Whoever sent you to me little bird knows my heart well, thank you for your song.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 109
 ~(*Sighs*) I wish you could have heard the same melody sung by my mother <CHARNAME>. There were many such songs she knew, how many I wonder took their melodies from the songs of the birds.~
-EXTERN VPLEIB 110
-
-CHAIN VPLEIB 110
-~She was elven born as you know and when she sang the words of her people it was truly as if she sang with the birds. I learnt all that all that I know listening to her. My father always said that she was blessed by the gods, but if that were true, why then did they take her from us so cruelly!~
+== VPLEIB ~She was elven born as you know and when she sang the words of her people it was truly as if she sang with the birds. I learnt all that all that I know listening to her. My father always said that she was blessed by the gods, but if that were true, why then did they take her from us so cruelly!~
 END
  ++ ~She sounds like she was a very special lady Leina, all mothers are special in their way. I only wish I could have known mine.~ EXTERN VPLEIB 111
  ++ ~It is no easy thing to face Leina, but we all know that there will come a time when our parents leave us, those fortunate to know their parents that is. It is the order of things and cannot be changed.~ EXTERN VPLEIB 111
@@ -544,14 +511,8 @@ END
 
 CHAIN VPLEIB 111
 ~(*Hotly*) Be thankful that you will never know the pain that only the death of one's mother brings because it is like a fire that can never be quenched!~
-EXTERN VPLEIB 112
-
-CHAIN VPLEIB 112
-~They tell you that time will heal and yes, maybe the flames do abate for a while... after you have forgiven yourself for all the things you never said, the things you never did or even the things you did say and did do.~
-EXTERN VPLEIB 113
-
-CHAIN VPLEIB 113
-~Then one day something quite trivial occurs, you hear a word, a song and once again fuel is added to those flames and the pain begins all over again.~
+== VPLEIB ~They tell you that time will heal and yes, maybe the flames do abate for a while... after you have forgiven yourself for all the things you never said, the things you never did or even the things you did say and did do.~
+== VPLEIB ~Then one day something quite trivial occurs, you hear a word, a song and once again fuel is added to those flames and the pain begins all over again.~
 END
  ++ ~I can see her death has effected you greatly but I feel there is more than grief here, there is also anger. Anger at who Leina, her for dying or the world you are forced to live in without her?~ EXTERN VPLEIB 114
  ++ ~I know of this pain that you speak of. Gorion was in all ways the only father I knew and I loved him dearly, but I would gladly risk the same pain just to know my mother, no matter how brief a time I was given.~ EXTERN VPLEIB 114
@@ -565,28 +526,16 @@ END
 
 CHAIN VPLEIB 115
 ~It is not easy to speak of her death, more so because no-one knows the real truth of it.~
-EXTERN VPLEIB 116
-
-CHAIN VPLEIB 116
-~She was from the elven city of Ael-el-Van-aira, north of The High Forest. The city has several large mithril mines known but to the few they permit trade with.~
-EXTERN VPLEIB 117
-
-CHAIN VPLEIB 117
-~It was from a visiting elf from Ael-el-Van-aira that my father heard of possible trade with the city. This visiting elf very soon became his wife and later my mother.~
+== VPLEIB ~She was from the elven city of Ael-el-Van-aira, north of The High Forest. The city has several large mithril mines known but to the few they permit trade with.~
+== VPLEIB ~It was from a visiting elf from Ael-el-Van-aira that my father heard of possible trade with the city. This visiting elf very soon became his wife and later my mother.~
 END
  ++ ~Ael-el-Van-aira? Not a name I have heard before.~ EXTERN VPLEIB 118
  ++ ~What was an elf from Ael-el-Van-aira doing in Athkatla?~ EXTERN VPLEIB 118
 
 CHAIN VPLEIB 118
 ~The city itself has very little contact with settlements this far south but the elven females of Ael-el-Van-aira are quite resourceful when it comes to looking for husbands and she met my father whilst he was overseeing business in Waterdeep.~
-EXTERN VPLEIB 119
-
-CHAIN VPLEIB 119
-~It was unusual to see Ael-el-Van-airians in Waterdeep and my father was smitten by her ethereal exotic beauty the moment he saw her.~
-EXTERN VPLEIB 120
-
-CHAIN VPLEIB 120
-~They married within weeks of meeting and instead of him taking her clan name as is traditional among her people she took his name believing it would make things less complicated for them living in Athkatla.~
+== VPLEIB ~It was unusual to see Ael-el-Van-airians in Waterdeep and my father was smitten by her ethereal exotic beauty the moment he saw her.~
+== VPLEIB ~They married within weeks of meeting and instead of him taking her clan name as is traditional among her people she took his name believing it would make things less complicated for them living in Athkatla.~
 END
  ++ ~She was an exceptional lady, very much like her daughter. Please continue.~ EXTERN VPLEIB 121
  ++ ~Your father was fortunate, such self sacrificing love is rare indeed, but please continue your tale.~ EXTERN VPLEIB 121
@@ -594,22 +543,10 @@ END
 
 CHAIN VPLEIB 121
 ~Do not rush me, I will tell it in my own time!~
-EXTERN VPLEIB 122
-
-CHAIN VPLEIB 122
-~Not long after I married and left Athkatka my mother received news she was to attend a meeting of the High Council of Ael-el-Van-aira but the messenger would not say why in front of my father... Damn the elves and all their secrecy!~
-EXTERN VPLEIB 123
-
-CHAIN VPLEIB 123
-~Later, he received news saying that she had succumbed to sickness whilst travelling and by the time she reached the city there was nothing they could do to save her.~
-EXTERN VPLEIB 124
-
-CHAIN VPLEIB 124
-~Sadly she was cremated before my father could reach Ael-el-Van-aira... to prevent the spread of infection he was told, he did not even have a grave he could mourn beside. All he had to remember her by was her pendant.~
-EXTERN VPLEIB 125
-
-CHAIN VPLEIB 125
-~He became convinced her clan was keeping something from him and he became paranoid to the point he was afraid the same fate might befall me should he lose sight of me.~
+== VPLEIB ~Not long after I married and left Athkatka my mother received news she was to attend a meeting of the High Council of Ael-el-Van-aira but the messenger would not say why in front of my father... Damn the elves and all their secrecy!~
+== VPLEIB ~Later, he received news saying that she had succumbed to sickness whilst travelling and by the time she reached the city there was nothing they could do to save her.~
+== VPLEIB ~Sadly she was cremated before my father could reach Ael-el-Van-aira... to prevent the spread of infection he was told, he did not even have a grave he could mourn beside. All he had to remember her by was her pendant.~
+== VPLEIB ~He became convinced her clan was keeping something from him and he became paranoid to the point he was afraid the same fate might befall me should he lose sight of me.~
 END
  ++ ~Poor Leina! So your marriage to Duvaine was a ploy to keep you in Athkatla, close to him.~ EXTERN VPLEIB 126
  ++ ~I am sorry Leina, but now I understand partly why he was prepared to hold you captive rather than risk you leaving Athkatla. Not That I condone his actions.~ EXTERN VPLEIB 126
@@ -617,14 +554,8 @@ END
 
 CHAIN VPLEIB 126
 ~Maybe my father was right to worry... one thing he knew for sure was that she could not have been wearing her pendant. If she had it would have sustained her life until she reached aid or until such a time she could be healed.~
-EXTERN VPLEIB 127
-
-CHAIN VPLEIB 127
-~According to my father, she never removed it in case I ever had need to call on her, so someone must have removed it deliberately knowing that in doing so she would die...~
-EXTERN VPLEIB 128
-
-CHAIN VPLEIB 128
-~(*Hotly*) I am Tia'Llaeyth my mother's daughter and heir! I swear one day I will go to Ael-el-Van-aira and demand the truth from her clan. As a rightful daughter they cannot deny me!~
+== VPLEIB ~According to my father, she never removed it in case I ever had need to call on her, so someone must have removed it deliberately knowing that in doing so she would die...~
+== VPLEIB ~(*Hotly*) I am Tia'Llaeyth my mother's daughter and heir! I swear one day I will go to Ael-el-Van-aira and demand the truth from her clan. As a rightful daughter they cannot deny me!~
 END
  ++ ~And do you believe that by doing this you will end the counting of the stars on sleepless nights?~ EXTERN VPLEIB 129
  ++ ~Why torture yourself so? I am sure it would aggrieve your mother to see her daughter so tormented.~ EXTERN VPLEIB 129
@@ -632,10 +563,7 @@ END
 
 CHAIN VPLEIB 129
 ~I have to know! If she truly got sick whilst travelling then I could have aided her... (*Pulling at the pendant around her neck*)... if not for my own stupid pride I would have been wearing this around my neck!~
-EXTERN VPLEIB 130
-
-CHAIN VPLEIB 130
-~Instead I shoved it in my backpack so she would not learn of my plight after being deserted by the rat I chose for a husband. In doing so, I severed the only connection that could have possibly saved her life.~
+== VPLEIB ~Instead I shoved it in my backpack so she would not learn of my plight after being deserted by the rat I chose for a husband. In doing so, I severed the only connection that could have possibly saved her life.~
 END
  ++ ~Storming into Ael-el-Van-aira and demanding answers will not change what has happened. You have to let go of your grief and anger, live the life your parents gave to you.~ EXTERN VPLEIB 131
  ++ ~You cannot dwell on what ifs Leina, their only purpose is to instill more guilt in ourselves and to prevent us from moving on.~ EXTERN VPLEIB 131
@@ -652,6 +580,7 @@ CHAIN VPLEIB 132
 ~When I do journey to Ael-el-Van-aira, you can be assured I will not be leaving the city without my answers and whatever they might be, they will be truth!~
 EXIT
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",15) Global("VP_BPC_Buffer2","LOCALS",1)~ THEN VPLEIB 133
 ~I am tired of carrying the grime of the road, can we not find an inn to spend this night?~
 END
@@ -712,10 +641,7 @@ EXIT
 
 CHAIN VPLEIB 141
 ~Maybe so, but think how much more she would be pleased if we took the time to show our respect by standing before her shining almost as brightly as she herself. She may even illuminate our road more brightly with her radiance when we are forced to travel the night.~
-EXTERN VPLEIB 142
-
-CHAIN VPLEIB 142
-~Please <CHARNAME>, let us not force her to look upon our road weary faces again, please say that we will sleep in the comfort of an inn tonight and rid ourselves of the dust from the road?~
+== VPLEIB ~Please <CHARNAME>, let us not force her to look upon our road weary faces again, please say that we will sleep in the comfort of an inn tonight and rid ourselves of the dust from the road?~
 END
  ++ ~If we do not find an inn Leina I promise you we will camp by a river, just so's you can bathe. I am sure we can spare a blanket for you to wrap yourself in when you are done.~ EXTERN VPLEIB 139
  ++ ~Let us see how far we get today and worry about where we will be sleeping when we tire Leina.~ EXTERN VPLEIB 140
@@ -734,6 +660,7 @@ END
 //Leina/PC.2a
 //Takes place when the group next rest at an inn.
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",16) Global("VP_BPC_Buffer2","LOCALS",3) Global("VP_Bathe_Talk","LOCALS",1)~ THEN VPLEIB 144
 ~I have spoken to the barkeep, he has only the one bath but he has assured me that he has plenty of hot water for us all. So make the most of it my friends and follow my lead.~
 END
@@ -787,35 +714,43 @@ END
 
 CHAIN VPLEIB 149
 ~Then I will take it upon myself to ensure there will be hot water when you rise <CHARNAME>. If you were to lead us tomorrow in your present state, all enemies within a league will know of our approach. Be sure to use it. Sleep well. (*She turns and heads towards the bath house.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 150
 ~That is true, but sometimes it takes the nose of another to notice that which our own noses miss. I have secured enough hot water for us all, use it or not, your choice. (*She turns and heads towards the bath house.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 151
 ~(*Laughs*) I believe it is the group that plays together stays together, but your interpretation is... interesting <CHARNAME>. (*She turns and heads for the bath house.*)~
-DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~ EXIT //second flirt phase
+DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~
+EXIT //second flirt phase
 
 CHAIN VPLEIB 152
 ~That is something you can decide amongst yourselves. I have a date with hot water and fluffy towels. (*She turns and heads for the bath house.*)~
-DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB 153
 ~(*Smiling*) Then as I pass, I will whisper in the barkeep's ear to ration his ales until all have partook of the hospitality of his bath house. (*She turns and heads for the bath house.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 154
 ~I think, *when the bard emerges dressed and refreshed* is a better turn of phrase don't you <CHARNAME>? (*She laughs and heads for the bath house.*)~
-DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~ EXIT //second flirt phase
+DO ~SetGlobal("VP_Enable_Flirts","LOCALS",2)~
+EXIT //second flirt phase
 
 CHAIN VPLEIB 155
 ~Don't worry <CHARNAME>, should you all nod off waiting, I know a rousing tune that is guaranteed to wake the dead from their slumber. (*She laughs and heads for the bath house.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 //Leina/PC.3a.
 //The next morning, after the group have roused from their rest.
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",16) Global("VP_BPC_Buffer2","LOCALS",5)~ THEN VPLEIB 156
 ~I had forgotten how good hot water and soap could make a person feel. I feel refreshed and ready to face whatever the day cares to throw at us.~
 END
@@ -842,7 +777,8 @@ END
 
 CHAIN VPLEIB 159
 ~(*Wrinkling her nose*) So I noticed as soon as I walked into the room <CHARNAME>, and after the trouble I went to, to secure hot water for when you awoke. Still, perhaps any enemies we meet today will also find the smell unpalatable and give you a wide berth, as I shall now. (*She turns away.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 160
 ~See, follow the bard, she will never lead you wrong. Seriously, you look more like a leader now the grime is gone from your face. Our enemies will see the confidence in your eye now that it is not hidden by so much dirt and know you are not to be messed with.~
@@ -854,30 +790,18 @@ END
 
 CHAIN VPLEIB 161
 ~I believe that is true. I have spent so much time alone, I forget the joy of having friends to accompany me on this journey we call life.~
-EXTERN VPLEIB 162
-
-CHAIN VPLEIB 162
-~Still, we have a different sort of journey that we should be thinking about today and we are lucky to have friends ready to accompany us. So come <CHARNAME>, let us make the most of this day and see where our road takes us.~
+== VPLEIB ~Still, we have a different sort of journey that we should be thinking about today and we are lucky to have friends ready to accompany us. So come <CHARNAME>, let us make the most of this day and see where our road takes us.~
 EXIT
 
 CHAIN VPLEIB 163
 ~Pain is not an easy thing to bear, is it any wonder we are impatient to be rid of it.~
-EXTERN VPLEIB 164
-
-CHAIN VPLEIB 164
-~It is also said that we learn through our pain but from what I know of pain it is the most unkind way to gain knowledge.~
-EXTERN VPLEIB 165
-
-CHAIN VPLEIB 165
-~Come <CHARNAME>, enough talk of pain, let us find what joy there is to be had in this new day.~
+== VPLEIB ~It is also said that we learn through our pain but from what I know of pain it is the most unkind way to gain knowledge.~
+== VPLEIB ~Come <CHARNAME>, enough talk of pain, let us find what joy there is to be had in this new day.~
 EXIT
 
 CHAIN VPLEIB 166
 ~I am not convinced that I will ever be truly free of the shadows <CHARNAME>, but I am grateful for each night that they lessen their grip on me.~
-EXTERN VPLEIB 167
-
-CHAIN VPLEIB 167
-~However, we are not resting and there is no place for nightmares whilst the mind and body are occupied. I am free of them for a few hours so let us enjoy what lies ahead before they return.~
+== VPLEIB ~However, we are not resting and there is no place for nightmares whilst the mind and body are occupied. I am free of them for a few hours so let us enjoy what lies ahead before they return.~
 EXIT
 
 CHAIN VPLEIB 168
@@ -886,7 +810,8 @@ EXIT
 
 CHAIN VPLEIB 169
 ~My singing can not be that hard on your ears <CHARNAME>, for it is you who gives the order for me to sing or play when the battle commences. You will do well to remember this the next time you feel compelled to prod me into action.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 170
 ~(*Laughs softly*) Ah but your words, they were unkind and cut to my soul <CHARNAME> and as you know music comes from the soul, so we must wait for mine to heal before it will release the music once more. There will be no music to inspire the group today, so let us hope we meet few enemies on our road.~
@@ -908,6 +833,7 @@ CHAIN VPLEIB 174
 ~But the enemy is often devious and stealthy <CHARNAME>. Many's the time he has come upon us before we have time to draw swords. At least with a clean face he can see you are a person to be feared and not just some unkempt, undisciplined low life.~
 EXIT
 
+CHAIN
 IF ~Global("VP_BPC","LOCALS",16) Global("VP_BPC_Buffer2","LOCALS",3) Global("VP_Bathe_Talk","LOCALS",0)~ THEN VPLEIB 175
 ~(*Sighs*) So, we are to rest once more under the skies <CHARNAME>, I suppose the extra layer of dust that I have collected today will help keep out the cold. I had so hoped to be rid of it and not depending on it to keep me warm.~
 END
@@ -918,7 +844,8 @@ END
 
 CHAIN VPLEIB 176
 ~I know, we sleep where we drop! Still, I have to admit I am tired enough just to be thankful to be off my feet, but don't you go getting any notions that I have given up on my inn with lashings of hot water and fluffy towels. It's out there... awaiting our next stop. Sleep well <CHARNAME>.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~
+EXIT
 
 CHAIN VPLEIB 177
 ~I know <CHARNAME>. I can see how weary the group is as well as you, but I fear my bedroll is recoiling at the thought of all the grime I am about to inflict on it again when I climb inside. Will it, or me for that matter, ever be able to scrub long enough and hard enough to be free of all this dirt I ask?~
@@ -931,177 +858,135 @@ END
 
 CHAIN VPLEIB 178
 ~I noticed it and I also noticed that we are not camped any where near it. What is it <CHARNAME>, cold water not to your taste?~
-EXTERN VPLEIB 179
-
-CHAIN VPLEIB 179
-~No matter, our next stop will have a bath house attached. You will not have to worry about your aversion to cold water and I am sure once the barkeep sees you do not intend muddying his nice clean sheets, he will have soft beds for us all. (*Laughing she turns and heads for her bed roll*)... Sleep well <CHARNAME>.~
-DO ~RestParty()~ EXIT
+== VPLEIB ~No matter, our next stop will have a bath house attached. You will not have to worry about your aversion to cold water and I am sure once the barkeep sees you do not intend muddying his nice clean sheets, he will have soft beds for us all. (*Laughing she turns and heads for her bed roll*)... Sleep well <CHARNAME>.~
+DO ~RestParty()~
+EXIT
 
 CHAIN VPLEIB 180
 ~So, it is not unusual for bed rolls to be unruly and afraid of a little dirt? I thank you for your advice, I will try being gentle with it and if that does not work then I will grab it, throw it to the ground and be on it before it can make a getaway. Show it who's boss, right? (*Laughing she turns and heads for her bed roll*)... Sleep well <CHARNAME>.~
-DO ~RestParty()~ EXIT
+DO ~RestParty()~
+EXIT
 
 CHAIN VPLEIB 181
 ~Then I'll not keep you from it. I... (*yawning*)... I have to say mine is looking a little less grubby and a little more inviting through half closed eyes. Sleep well <CHARNAME>.~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~ EXIT
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~
+EXIT
 
 CHAIN VPLEIB 182
 ~(*Laughing softly*) Anyone who tries shovelling more dirt on to me will be in for a surprise, they will be getting a whack with their own shovel, there is only so much dirt a girl will put up with on her person.~
-EXTERN VPLEIB 183
-
-CHAIN VPLEIB 183
-~Still, it is probably best we do not give them the chance. Sleep well <CHARNAME>. (*She turns and heads for her bed roll.*)~
-DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~ EXIT
-
-IF ~Global("VP_BJaheira","LOCALS",2)~ THEN VPLEIB 184
-~(*Adjusting the harp she carries she plucks a string accidentally*) Ooops!~ [mute]
-DO ~SetGlobal("VP_BJaheira","LOCALS",3)~ EXTERN BJAHEIR NEJ491
-
-CHAIN VPLEIB 185
-~I was not about to Jaheira, my harp slipped that was all.~
-EXTERN BJAHEIR NEJ492
-
-CHAIN VPLEIB 186
-~Firstly Jaheira, my harp is meant to be carried, to be ready to strum when the mood takes me or the situation calls for my song, not stuffed in a grubby back pack! Secondly, look closer, I am no child!~
-EXTERN BJAHEIR NEJ493
-
-CHAIN VPLEIB 187
-~There are not that many years between us Jaheira. You just appear older because you have let yourself go and allowed yourself to be weighed down by life instead of getting on top of it and enjoying what it has to offer.~
-EXTERN BJAHEIR NEJ494
-
-CHAIN VPLEIB 188
-~That was spiteful and uncalled for! This Imoen's abduction by Irenicus was not of her making. As for her insolence, perhaps you should look to yourself to see why she speaks to you in the way she does... and another thing, I have never professed to *knowing it all*!~
-EXTERN BJAHEIR NEJ495
-
-CHAIN VPLEIB 189
-~No Jaheira, it was not! There were no rebellious intentions on my part. My parents did not like my choice of husband that is true but I loved him and when they saw that I intended to follow my heart regardless, they gave us their blessing and... as I have already pointed out, you are not my elder by many years, so please my name is Leina, not child when you speak to me.~
-EXTERN BJAHEIR NEJ496
-
-IF ~Global("VP_BMinsc","LOCALS",2)~ THEN VPLEIB 190
-~Minsc please, my instruments are very precious to me and I prefer that no-one handles than other than me.~ [mute]
-DO ~SetGlobal("VP_BMinsc","LOCALS",3)~ EXTERN BMINSC NEJ131
-
-CHAIN VPLEIB 191
-~The music comes from the way the strings are moved Minsc and the way has to be learned or else only discord... a jumble of notes is made.~
-EXTERN BMINSC NEJ132
-
-CHAIN VPLEIB 192
-~I don't know, we are all different and as such so are our skills... the things we are good at. You are a ranger and know much more than me of the ways of the woods and its creatures, you are also a brave fearless warrior and those are your skills Minsc.~
-EXTERN BMINSC NEJ133
-
-CHAIN VPLEIB 193
-~Music has to come from the soul. I am not sure if you understand what I mean but it is as though it is inside you, bursting to be released, only it is all never fully released. The minute one melody is free, you feel another stirring waiting its turn to be born. That is the only way I can think to describe the gift of music to you Minsc.~
-EXTERN BMINSC NEJ134
-
-CHAIN VPLEIB 194
-~In a way my passion for music feels the same to me as your passion to rid the world of evil feels to you. It is the wise man who nurtures and excels in that which he is gifted and a fool who tries everything and succeeds in nothing.~
-EXTERN BMINSC NEJ135
-
-CHAIN VPLEIB 195
-~(*Chuckles softly*) Wise ranger eh, could I have just accidentally unleashed a new ranger into the woods?~
+== VPLEIB ~Still, it is probably best we do not give them the chance. Sleep well <CHARNAME>. (*She turns and heads for her bed roll.*)~
+DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1) RestParty()~
 EXIT
 
+CHAIN
+IF ~Global("VP_BJaheira","LOCALS",2)~ THEN VPLEIB 184
+~(*Adjusting the harp she carries she plucks a string accidentally*) Ooops!~ [mute]
+DO ~SetGlobal("VP_BJaheira","LOCALS",3)~
+== BJAHEIR ~Now is not a good time to treat us to a song child!~
+== VPLEIB ~I was not about to Jaheira, my harp slipped that was all.~
+== BJAHEIR ~That was all! We tread a perilous road, not knowing what lies ahead and you let your harp alert our presence to all a sundry. Why can't you put the thing in your backpack child, lessen the chances of it happening again?~
+== VPLEIB ~Firstly Jaheira, my harp is meant to be carried, to be ready to strum when the mood takes me or the situation calls for my song, not stuffed in a grubby back pack! Secondly, look closer, I am no child!~
+== BJAHEIR ~For a half elf you are still a child. You may think your time on the road and your experiences of the world entitles you to be seen as grown up, but your years, or should that be your lack of them, mark you as a child.~
+== VPLEIB ~There are not that many years between us Jaheira. You just appear older because you have let yourself go and allowed yourself to be weighed down by life instead of getting on top of it and enjoying what it has to offer.~
+== BJAHEIR ~My life has been fraught with responsibilities that you know nothing of child! Let me tell you of another I know with the same know it all and insolent attitude that you exhibit. You have probably heard <CHARNAME> speak of Imoen, she too thought she was all grown up. I wonder how her smart mouth is helping her cope with Irenicus now?~
+== VPLEIB ~That was spiteful and uncalled for! This Imoen's abduction by Irenicus was not of her making. As for her insolence, perhaps you should look to yourself to see why she speaks to you in the way she does... and another thing, I have never professed to *knowing it all*!~
+== BJAHEIR ~I am sorry child, that remark about Imoen was unfair, I admit. It's true my turns blood cold when I think what that poor child is being subjected to by that sadistic bastard. As for why she speaks as she does... it is because she is a child and enjoys rebelling against her elders. After all, is that not the real reason you ended up in an unsavoury marriage, to spite your parents?~
+== VPLEIB ~No Jaheira, it was not! There were no rebellious intentions on my part. My parents did not like my choice of husband that is true but I loved him and when they saw that I intended to follow my heart regardless, they gave us their blessing and... as I have already pointed out, you are not my elder by many years, so please my name is Leina, not child when you speak to me.~
+== BJAHEIR ~I will try to remember that, but it will be easier to do so if you have lost that insolent attitude of yours by the time we next speak.~
+EXIT
+
+CHAIN
+IF ~Global("VP_BMinsc","LOCALS",2)~ THEN VPLEIB 190
+~Minsc please, my instruments are very precious to me and I prefer that no-one handles than other than me.~ [mute]
+DO ~SetGlobal("VP_BMinsc","LOCALS",3)~
+== BMINSC ~Minsc is sorry Leina, but such beautiful music comes from the plucking of the strings, Minsc thought that if he could just touch the strings they would sing for him.~
+== VPLEIB ~The music comes from the way the strings are moved Minsc and the way has to be learned or else only discord... a jumble of notes is made.~
+== BMINSC ~Could Minsc learn the way to unjumble the notes? Would Leina teach him?~
+== VPLEIB ~I don't know, we are all different and as such so are our skills... the things we are good at. You are a ranger and know much more than me of the ways of the woods and its creatures, you are also a brave fearless warrior and those are your skills Minsc.~
+== BMINSC ~Yes Minsc's boot is good for kicking evil when he meets evil, but when there is no evil to kick he would like to make everyone happy with music, like Leina.~
+== VPLEIB ~Music has to come from the soul. I am not sure if you understand what I mean but it is as though it is inside you, bursting to be released, only it is all never fully released. The minute one melody is free, you feel another stirring waiting its turn to be born. That is the only way I can think to describe the gift of music to you Minsc.~
+== BMINSC ~The only thing Minsc feels like that is his berserker rage when evil shows its evil head. Then there is a big bursting from inside Minsc and a big butt kicking for evil!~
+== VPLEIB ~In a way my passion for music feels the same to me as your passion to rid the world of evil feels to you. It is the wise man who nurtures and excels in that which he is gifted and a fool who tries everything and succeeds in nothing.~
+== BMINSC ~So, if Minsc stays a ranger Leina, and not tries to be a bard, he will be a wise Minsc? Ooooh, do you hear that Boo, Minsc the wise ranger! Come Boo we must find out what being wise will mean for Minsc.~
+== VPLEIB ~(*Chuckles softly*) Wise ranger eh, could I have just accidentally unleashed a new ranger into the woods?~
+EXIT
+
+/*
+CHAIN BMINSC NEJ136
+~Great fun, right Boo? All the whirling and twirling poor Minsc's eyes were going round in circles trying to watch Leina. Even Boo says Leina was faster than a hamster whirling in his wheel.~
+DO ~RestParty()~
+EXIT
+*/
+
+CHAIN
 IF ~Global("VP_BAerie","LOCALS",2)~ THEN VPLEIB 196
 ~Aerie, often when the group stops to rest, I see you stand away from us with your arms outstretched, and facing into the wind with your eyes closed. Is it some ritual you practise for your god?~ [mute]
-DO ~SetGlobal("VP_BAerie","LOCALS",3)~ EXTERN BAERIE NEJ449
-
-CHAIN VPLEIB 197
-~I envy you your memories Aerie. I can only imagine the exhilaration of being up high with the birds, to join them in their songs of flight and freedom.~
-EXTERN BAERIE NEJ450
-
-CHAIN VPLEIB 198
-~The memory that you flew will always be with you, nothing will take that from you, it is only the sensations that will slowly be lost.~
-EXTERN BAERIE NEJ451
-
-CHAIN VPLEIB 199
-~You become whatever you wish Aerie. You were born Avarial and the loss of your wings cannot take that from you. Now you learn of the wonders that being earth bound has to offer.~
-EXTERN VPLEIB 200
-
-CHAIN VPLEIB 200
-~Such as the soft touch of the grass on your feet and the gentle splashing of the water as you walk through the rain, you will notice tiny creatures and insects that have escaped your eye because they are too small to see from above. There is much to learn and wonder at Aerie.~
-EXTERN BAERIE NEJ452
-
-CHAIN VPLEIB 201
-~(*Puts her arm around her*) Come Aerie, things will get better. It may not seem like it know but I promise you they will. Look how much better they are now to when you were caged and displayed as a freak in the circus.~
-EXTERN VPLEIB 202
-
-CHAIN VPLEIB 202
-~Now walk with me and wipe your tears, I will sing you a song of the wind in you hair and the clouds beneath your feet. We will soar above the clouds together.~
-EXTERN VPLEIB 203
-
-CHAIN VPLEIB 203
-~ (*She begins her song as she walks with her arm still around the girl*)...
+DO ~SetGlobal("VP_BAerie","LOCALS",3)~
+== BAERIE ~(*Giggles*) What a funny thing to think Leina. No, it is no ritual. I like to stand and feel the wind beneath my arms and imagine it is lifting me into the air as though they were my wings. You see Leina, the only way I will ever fly again is in my dreams.~
+== VPLEIB ~I envy you your memories Aerie. I can only imagine the exhilaration of being up high with the birds, to join them in their songs of flight and freedom.~
+== BAERIE ~To soar to the clouds, to feel the wind beneath you as you leave the ground is an experience that cannot be described, it has to be felt. I try to capture the memories, the feelings again and again but each time it becomes a little harder. I fear I am slowly losing that which I am.~
+== VPLEIB ~The memory that you flew will always be with you, nothing will take that from you, it is only the sensations that will slowly be lost.~
+== BAERIE ~But I don't want to lose any of it! I am Avariel with or without my wings and to be Avariel is to know and to feel the freedom that which comes from soaring with the eagles and walking on the clouds. If I lose that what do I become and where do I belong?~
+== VPLEIB ~You become whatever you wish Aerie. You were born Avarial and the loss of your wings cannot take that from you. Now you learn of the wonders that being earth bound has to offer.~
+== VPLEIB ~Such as the soft touch of the grass on your feet and the gentle splashing of the water as you walk through the rain, you will notice tiny creatures and insects that have escaped your eye because they are too small to see from above. There is much to learn and wonder at Aerie.~
+== BAERIE ~If I could walk on grass it would not be so bad but we tramp more often than not the hard rough road which hurt my feet, and as for the rain, it is always so cold and wet. I hate the way the coldness of it seeps through to my skin!~
+== BAERIE ~(*Tears well in her eyes as she speaks*) I am Avariel, I was born to fly, to be one with the wind, not to trudge through mud!~
+== VPLEIB ~(*Puts her arm around her*) Come Aerie, things will get better. It may not seem like it know but I promise you they will. Look how much better they are now to when you were caged and displayed as a freak in the circus.~
+== VPLEIB ~Now walk with me and wipe your tears, I will sing you a song of the wind in you hair and the clouds beneath your feet. We will soar above the clouds together.~
+== VPLEIB ~(*She begins her song as she walks with her arm still around the girl*)...
 
 "We are one with the wind as it catches our flight,
 As we soar through the clouds and the heavens we sight..."~
 EXIT
 
+CHAIN
 IF ~Global("VP_BValygar","LOCALS",2)~ THEN VPLEIB 204
 ~You are a man of many moods Valygar. One moment you are fighting the enemy with fire in your eyes and then within seconds you are calming the fiercest of wild creatures. Who is the real Valygar I ask?~ [mute]
-DO ~SetGlobal("VP_BValygar","LOCALS",3)~ EXTERN BVALYGA NEJ149
+DO ~SetGlobal("VP_BValygar","LOCALS",3)~
+== BVALYGA ~Are you asking, do I see myself as a warrior or as a woodsmen?~
+== VPLEIB ~I am. Tell me who is really behind the sombre man who stands and protects both man and creature alike?~
+== BVALYGA ~I don't see myself as sombre. I am not at home in the city and I do prefer my own company that is true but my life hasn't given me much to rejoice in either.~
+== BVALYGA ~I do however take delight in the open spaces and the smell of the forest and all its creatures but, at the same time, I also respect that it is their habitat and that I am the intruder when I walk amongst the trees, so if I can avoid killing a creature by befriending it then I will. No, I do not see myself as sombre at all.~
+== VPLEIB ~Then perhaps we should frequent the woods and the forests more often. On the chance that we might see a more relaxed Valygar and the fire in his eyes would burn a while longer.~
+== BVALYGA ~(*Laughs*) Leina... Leina, you are truly a bard. For one crossed in love you still have poetry in your soul.~
+== VPLEIB ~(*Laughing with him*)... And what of Valygar, has he also been crossed in love? Can that be why he prefers the company of the one person who cannot hurt him, namely Valygar?~
+== BVALYGA ~My story is not for the telling of bards. It is for my knowing alone. Too many have had their lives exaggerated by a bard's tale and as long as mine remains within me it stays true and uncomplicated.~
+== VPLEIB ~Unlike the man himself. I do not think anyone will ever see you as an uncomplicated man Valygar. Be it ranger, woodsman or warrior, however you see yourself, you have a fire within you that one day you will not be able to contain.~
+== BVALYGA ~I have contained that fire for a long time now Leina, I think I can safely say that it is almost quenched.~
+== VPLEIB ~Ah, but fires are funny things! Especially those which seem to be almost quenched. As long as there is a spark it takes but a small amount of fuel and it will become a conflagration. Be wary my friend is all I will say, for the fuel can come from the least likely of places and at the most unexpected of moments.~
+== BVALYGA ~Then I must be sure to carry plenty of water in my waterskin should this fire erupt some day.~
+EXIT
 
-CHAIN VPLEIB 205
-~I am. Tell me who is really behind the sombre man who stands and protects both man and creature alike?~
-EXTERN BVALYGA NEJ150
-
-CHAIN VPLEIB 206
-~Then perhaps we should frequent the woods and the forests more often. On the chance that we might see a more relaxed Valygar and the fire in his eyes would burn a while longer.~
-EXTERN BVALYGA NEJ152
-
-CHAIN VPLEIB 207
-~(*Laughing with him*)... And what of Valygar, has he also been crossed in love? Can that be why he prefers the company of the one person who cannot hurt him, namely Valygar?~
-EXTERN BVALYGA NEJ153
-
-CHAIN VPLEIB 208
-~Unlike the man himself. I do not think anyone will ever see you as an uncomplicated man Valygar. Be it ranger, woodsman or warrior, however you see yourself, you have a fire within you that one day you will not be able to contain.~
-EXTERN BVALYGA NEJ154
-
-CHAIN VPLEIB 209
-~Ah, but fires are funny things! Especially those which seem to be almost quenched. As long as there is a spark it takes but a small amount of fuel and it will become a conflagration. Be wary my friend is all I will say, for the fuel can come from the least likely of places and at the most unexpected of moments.~
-EXTERN BVALYGA NEJ155
-
+CHAIN
 IF ~Global("VP_BNalia","LOCALS",2)~ THEN VPLEIB 210
 ~Nalia, what's wrong?~ [mute]
-DO ~SetGlobal("VP_BNalia","LOCALS",3)~ EXTERN BNALIA NEJ51
-
-CHAIN VPLEIB 211
-~Come here, take your shoe off and let me see. I can see you are not used to walking the rough road, these are court shoes not walking shoes. You need to get yourself a stout pair of boots the next time we visit a store.~
-END
- IF ~!Dead("Torgal")~ THEN EXTERN BNALIA NEJ52
- IF ~Dead("Torgal")~ THEN EXTERN BNALIA NEJ53
-
-CHAIN VPLEIB 212
-~Sorry Nalia, but if you keep your foot still this might not hurt so much. It does not look as though the damage is too bad, more bruised than cut. Still it is going to be sore for a while. Here, you best put your shoe back on, it will be better than nothing on your foot.~
-EXTERN BNALIA NEJ54
-
-CHAIN VPLEIB 213
-~If anyone were to ask me, I would say that you are looking a lot healthier for being out of that musty old keep. You have colour in your cheeks and even your eyes look more alive now. Get yourself some boots, maybe more suitable clothes and you will do nicely Nalia.~
-EXTERN BNALIA NEJ56
-
-CHAIN VPLEIB 214
-~Fiddlesticks I say! Who cares what the Aunties of the world believe as long we feel good about ourselves, that is what counts.~
-EXTERN VPLEIB 215
-
-CHAIN VPLEIB 215
-~Come, I will walk behind with you as you are not going to keep up too well with the rest of the group until that bruise of yours goes down. As soon as we can we are going to hit the stores and together we are going to do some serious shopping.~
+DO ~SetGlobal("VP_BNalia","LOCALS",3)~
+== BNALIA ~It's this blasted shoe of mine! Look at it, a hole right through the sole and a stone has gotten inside.~
+== VPLEIB ~Come here, take your shoe off and let me see. I can see you are not used to walking the rough road, these are court shoes not walking shoes. You need to get yourself a stout pair of boots the next time we visit a store.~
+== BNALIA IF ~!Dead("Torgal")~ THEN ~Ouch, that hurt. I was not expecting to be on the road, those damn trolls never gave me the chance to change my shoes or anything else for that matter. Damn them and whoever told them the De'Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
+== BNALIA IF ~Dead("Torgal")~ THEN ~Ouch, that hurt. I guess I wasn't thinking clear enough after my father's death to consider that I wasn't suitable attired for hard travelling. Damn those trolls and whoever told them the De'Arnise keep was worth plundering! I hope their murderous carcases rot in the Abyss!~
+== VPLEIB ~Sorry Nalia, but if you keep your foot still this might not hurt so much. It does not look as though the damage is too bad, more bruised than cut. Still it is going to be sore for a while. Here, you best put your shoe back on, it will be better than nothing on your foot.~
+== BNALIA ~(*Putting her shoe back on*)... Thanks Leina, I guess it's true what they say about bards knowing a little of everything, even a bruised foot. Auntie would have a fit if she saw the state these shoes are in, *not fit to be seen on the feet of even the peasants* she would say.~
+== BNALIA ~(*Giggling*) Come to think of it she would probably have an apoplexy if she saw the state of the rest of me!~
+== VPLEIB ~If anyone were to ask me, I would say that you are looking a lot healthier for being out of that musty old keep. You have colour in your cheeks and even your eyes look more alive now. Get yourself some boots, maybe more suitable clothes and you will do nicely Nalia.~
+== BNALIA ~I have to admit I feel good too, being on the road, doing good things and helping others. It's what I've always dreamed of doing. Only Auntie would never let me on account of her blaming my mother's death on her having been contaminated by the peasants.~
+== VPLEIB ~Fiddlesticks I say! Who cares what the Aunties of the world believe as long we feel good about ourselves, that is what counts.~
+== VPLEIB ~Come, I will walk behind with you as you are not going to keep up too well with the rest of the group until that bruise of yours goes down. As soon as we can we are going to hit the stores and together we are going to do some serious shopping.~
 EXIT
 
+CHAIN
 IF ~Global("VP_BEdwin","LOCALS",2)~ THEN VPLEIB 216
 ~Edwin please, I do not need you to walk so close to me. See... I nearly stepped on your robe!~ [mute]
-DO ~SetGlobal("VP_BEdwin","LOCALS",3)~ EXTERN BEDWIN NEJ106
-
-CHAIN VPLEIB 217
-~I have no need of your protection, nor that of any man. I am not the fragile flower you take me for.~
-EXTERN BEDWIN NEJ107
-
-CHAIN VPLEIB 218
-~I am not some helpless half elf who has recently left the sanctuary of her forest home Edwin! I can handle a sword and magic as well as I play any instrument, so your concern is not necessary but thank you all the same.~
-EXTERN BEDWIN NEJ108
-
-CHAIN VPLEIB 219
-~Have it your own way. Walk where you like, but do not expect me to wash your robe after I have constantly trod it in the mud.~
+DO ~SetGlobal("VP_BEdwin","LOCALS",3)~
+== BEDWIN ~What is a bit of mud on the hem of a robe? A small price to pay for the honour of protecting such an exquisite flower. (*Besides, I am not about to let any of these imbeciles pluck the petals from this elven beauty.*)~
+== VPLEIB ~I have no need of your protection, nor that of any man. I am not the fragile flower you take me for.~
+== BEDWIN ~But if you are to inspire us with your fiery renditions, then it is for me to watch that no stray arrows or spells should find their way towards you before the fire is fully aflame.~
+== VPLEIB ~I am not some helpless half elf who has recently left the sanctuary of her forest home Edwin! I can handle a sword and magic as well as I play any instrument, so your concern is not necessary but thank you all the same.~
+== BEDWIN ~Ah, but it is necessary for my piece of mind, so you will not dissuade me from remaining close beside you my elven flower... (*and for the gratitude she will feel she owes me if I do manage to save the arrogant elf's life.*)~
+== VPLEIB ~Have it your own way. Walk where you like, but do not expect me to wash your robe after I have constantly trod it in the mud.~
 EXIT
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",2) Gender(Player1,MALE)~ THEN VPLEIB 220
 ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isn't right... My heart has no need to e'er... Drat, That's no good either!~
 END
@@ -1120,6 +1005,7 @@ END
 
 CHAIN VPLEIB 222
 ~I am not asking you to listen <CHARNAME>, after all, the song is mine to sing! If it is not to your taste then take your self out of earshot, your good opinion bothers me not.~ // Then CH.13-16.
+END
  ++ ~I would have move an awful long way to be out of earshot of your despondent mutterings.~ EXTERN VPLEIB 230
  ++ ~Why should I distant myself? You are the one constantly beating up on the world and love.~ EXTERN VPLEIB 230
  ++ ~We would all listen if you put some of that passion you say you have for your music into your songs.~ EXTERN VPLEIB 223
@@ -1127,6 +1013,7 @@ CHAIN VPLEIB 222
 
 CHAIN VPLEIB 223
 ~Real passion isn't instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.17-20.
+END
  ++ ~I have yet to hear that in anything you sing Leina.~ EXTERN VPLEIB 232
  ++ ~How about when next you sing, you give me nod when you get to the part with the passion, that way I'll not miss it.~ EXTERN VPLEIB 233
  ++ ~We definitely have different ideas of passion Leina.~ EXTERN VPLEIB 234
@@ -1134,6 +1021,7 @@ CHAIN VPLEIB 223
 
 CHAIN VPLEIB 224
 ~Bards have a way of composing music that is unique to themselves <CHARNAME>. I have never yet had a song born before its melody nor a melody born before its song. Both are inside me together and must be joined as they are born, never one before the other or they may never come together as one but remain separate forever.~ // Then CH.9-12.
+END
  ++ ~(*You smile as you answer*) Songs are born? The next thing you will be telling me is that they are conceived as well.~ EXTERN VPLEIB 226
  ++ ~(*You smile as you answer*) For something to be born it first has to be conceived, is this where the passion you speak of comes into play Leina?~ EXTERN VPLEIB 227
  ++ ~(*You smile as you answer*) How silly of me... here I am thinking that songs are written... not born.~ EXTERN VPLEIB 228
@@ -1141,6 +1029,7 @@ CHAIN VPLEIB 224
 
 CHAIN VPLEIB 225
 ~When a song is ready to be born, it will not wait. As soon as the first words or part of a melody comes into being, it will give me no peace until the two are one and are released. Every spark is a possible song, and therefore, very important to me <CHARNAME>.~ // Then CH.9-12.
+END
  ++ ~(*You smile as you answer*) Songs are born? The next thing you will be telling me is that they are conceived as well.~ EXTERN VPLEIB 226
  ++ ~(*You smile as you answer*) For something to be born it first has to be conceived, is this where the passion you speak of comes into play Leina?~ EXTERN VPLEIB 227
  ++ ~(*You smile as you answer*) How silly of me... here I am thinking that songs are written... not born.~ EXTERN VPLEIB 228
@@ -1148,44 +1037,51 @@ CHAIN VPLEIB 225
 
 CHAIN VPLEIB 226
 ~(*Laughs softly*) Oh, but they are <CHARNAME>. The conception of a song is the spark that begins with a word, a chord and then it germinates. More words and more chords are added until it is no longer just words and chords but the whole song. That is when it bursts free for all to see and enjoy. It is born, I can think of no other way to describe how it comes into being.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 227
 ~(*Her eyes twinkle as she answers*) Oh yes... plenty of passion goes into my music. It is a necessary component, as necessary as it is for the birth of a child.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 228
 ~(*Smiles*) A simple mistake <CHARNAME> and one any man who has never felt a song bursting for release could make.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 229
 ~(*Laughs softly*) Ah yes, the discord often heard before the wondrous sounds of love's labours... a beautiful new melody.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 230
 ~My eyes and my heart are my soul's guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
-EXTERN VPLEIB 231
-
-CHAIN VPLEIB 231
-~If I feel joy I sing of it, if I feel sorrow I sing of it, but I no longer feel the joy of love, so I no longer sing of it. I am sorry but that is how my music is born and I can not alter it nor would I wish to.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+== VPLEIB ~If I feel joy I sing of it, if I feel sorrow I sing of it, but I no longer feel the joy of love, so I no longer sing of it. I am sorry but that is how my music is born and I can not alter it nor would I wish to.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 232
 ~(*Laughs softly*) Then <CHARNAME>, I guess there is neither music nor passion in your soul.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 233
 ~I don't prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 234
 ~(*Smiles*) I doubt that <CHARNAME>. I can see the many faces of passion, whereas you, like most men, see only the one. The one that comes with desire.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 235
 ~(*Laughs softly*) If you were to do that <CHARNAME>, then it would be my pleasure to play for you until you do see the sort of passion that music can incite After all who can tell what surprises the end of a book brings if you read but the first couple of chapters. A song is after all a story that is told and not read.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",2) Gender(Player1,FEMALE)~ THEN VPLEIB 236
 ~(*Softly singing to herself*) No man will my heart, ever embrace... no... that isn't right... My heart has no need to e'er... Drat, That's no good either!~
 END
@@ -1197,6 +1093,7 @@ END
 
 CHAIN VPLEIB 237
 ~I... I didn't realise anyone was listening. This blasted tune, I can feel it struggling to be free but for some reason, the words and melody will not fit together, no matter how I turn them around.~ // Then CH.6-9.
+END
  ++ ~Then let me help. Perhaps we can sort the words between us and then you can add the tune later.~ EXTERN VPLEIB 238
  ++ ~Maybe if you concentrate on either the words or the tune, the other will follow.~ EXTERN VPLEIB 238
  ++ ~Why not leave it for a while and come back to it later? That nearly always works for me if I fail to get something right first go.~ EXTERN VPLEIB 238
@@ -1204,12 +1101,14 @@ CHAIN VPLEIB 237
 
 CHAIN VPLEIB 238
 ~If only it were that simple <CHARNAME>. All bards compose music in their own way. I have never yet had a song born before its melody nor a melody born before its song. Both are inside me together and must be joined as they are born, never one before the other or they may never come together as one but remain separate forever.~ // Then CH.10-12.
+END
  ++ ~Born, that is an odd term to apply to a song.~ EXTERN VPLEIB 239
  ++ ~You liken a new song to a new babe when you say born. Is it also, metaphorically speaking, conceived?~ EXTERN VPLEIB 239
  ++ ~This all sounds very romantic Leina, the joining together and becoming one. Yet you say you have no need for romance in your life.~ EXTERN VPLEIB 243
 
 CHAIN VPLEIB 239
 ~I speak as I feel. The conception of a song is the spark that begins with a word, a chord and then it germinates. More words and more chords are added until it is no longer just words and chords but the whole song. that is when it bursts free for all to see and enjoy. It is born, I can think of no other way to describe how it comes into being.~ // Then CH.13-16.
+END
  ++ ~I guess I would need to be a bard to understand that.~ EXTERN VPLEIB 240
  ++ ~When you use words in the way you do it is easy understand why your songs have so much passion in them.~ EXTERN VPLEIB 241
  ++ ~I may not understand this passion you say you feel for music, but I can hear it in your voice and see it in your face when you speak of it.~ EXTERN VPLEIB 241
@@ -1217,34 +1116,41 @@ CHAIN VPLEIB 239
 
 CHAIN VPLEIB 240
 ~(*Smiles*) Quite possible <CHARNAME>, quite possible.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 241
 ~Then perhaps you do understand a little of why music has taken such a hold on my life and why I will never forsake it or let it go.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 242
 ~(*Laughs softly*) As long as I draw breath there will always be a song for all to enjoy.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 243
 ~I have no need for romance that comes with love <CHARNAME>. What I feel for my music is a passion that goes beyond romantic love and it is this that is heard in the words of my songs and the manner in which I speak of them. If it sounds romantic to you then that is fine, for we all interpret what we see and hear in our own way.~ // Then CH.17-19.
+END
  ++ ~I guess only a bard could love with the passion you speak of Leina, whether it is for music or for another.~ EXTERN VPLEIB 240
  ++ ~To hear you speak is to see a passion that I hope one day to find myself.~ EXTERN VPLEIB 241
  ++ ~Leina, your words show you to be a very passionate woman and I can not help but feel that you have too much to give not to love again.~ EXTERN VPLEIB 244
 
 CHAIN VPLEIB 244
 ~I have loved but once <CHARNAME> and I gave my heart and my soul to that love. He tore them apart and discarded them as you would the entrails of rabbit you were preparing to cook, music filled and rebuilt what he left. Because my heart, my soul are built of music, there will only ever be room for music in them.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 245
 ~When a song is ready to be born, it will not wait. As soon as the first words or part of a melody comes into being, it will give me no peace until the two are one and are released. Every spark is a possible song, and therefore, very important to me <CHARNAME>.~ // Then CH.10-12.
+END
  ++ ~Born, that is an odd term to apply to a song.~ EXTERN VPLEIB 239
  ++ ~You liken a new song to a new babe when you say born. Is it also, metaphorically speaking, conceived?~ EXTERN VPLEIB 239
  ++ ~This all sounds very romantic Leina, the joining together and becoming one. Yet you say you have no need for romance in your life.~ EXTERN VPLEIB 243
 
 CHAIN VPLEIB 246
 ~When a song comes to me, it is usually born through my own feelings and not what some one else would like to hear. I am not asking you to listen <CHARNAME>, after all, the song is mine to sing! If it is not to your taste then please, take your self out of earshot.~ // Then CH.20-23.
+END
  ++ ~I would have move an awful long way to be out of earshot of your despondent mutterings.~ EXTERN VPLEIB 247
  ++ ~Why should I distant myself? You are the one constantly beating up on the world and love.~ EXTERN VPLEIB 247
  ++ ~We would all listen if you put some of that passion you say you have for your music into your songs.~ EXTERN VPLEIB 249
@@ -1252,14 +1158,13 @@ CHAIN VPLEIB 246
 
 CHAIN VPLEIB 247
 ~My eyes and my heart are my soul's guide to the music it releases <CHARNAME>. I can not sing of what I no longer believe in nor can I fool myself that the world is anything other than what I see.~
-EXTERN VPLEIB 248
-
-CHAIN VPLEIB 248
-~If I feel joy I sing of it, if I feel sorrow I sing of it, but I no longer feel the joy of love, so I no longer sing of it. I am sorry but that is how my music is born and I can not alter it nor would I wish to. (*She turns away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+== VPLEIB ~If I feel joy I sing of it, if I feel sorrow I sing of it, but I no longer feel the joy of love, so I no longer sing of it. I am sorry but that is how my music is born and I can not alter it nor would I wish to. (*She turns away.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 249
 ~Real passion isn't instantaneous <CHARNAME>. It simmers slowly until it comes to the boil, it is the same with music. The passion will be there for all to feel but only after the subtle strains of the beginning.~ // Then CH.24-27.
+END
  ++ ~I have yet to hear that in anything you sing Leina.~ EXTERN VPLEIB 250
  ++ ~How about when next you sing, you give me nod when you get to the part with the passion, that way I'll not miss it.~ EXTERN VPLEIB 251
  ++ ~I see that we definite passion differently Leina.~ EXTERN VPLEIB 252
@@ -1267,22 +1172,27 @@ CHAIN VPLEIB 249
 
 CHAIN VPLEIB 250
 ~(*Smiles*) Then I guess there is neither music nor passion in your soul <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 251
 ~I don't prompt my audience <CHARNAME>, there has never been a need. I suggest instead, that you open your ears and close your eyes when next you hear my song. Let what you hear bring the image to your heart and not what you see.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 252
 ~I don't think we do. I can see the many faces of passion but you can only see the face that shows itself with love. I once lived my dreams of finding the passion that comes with loving a man but I quickly discovered that pain walks hand in hand with your sort of passion, something I hope you never discover for yourself <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 253
 ~(*Laughs softly*) That might help <CHARNAME>. After all who can tell what surprises the end of a book brings if you read but the first couple of chapters. A song is after all a story that is told and not read.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB 254
 ~I think that can be arranged <CHARNAME>, after all music is to be enjoyed by all. Whereas my own songs are born of my own feelings, I have learnt others from bards I have met and sang with. Yes, I think it would do us all good to shake off the doom and gloom of the road for a while, but only if we make camp under the stars. The dance is never as merry under a roof as it is around the fire.~ // Then CH.28-30.
+END
  ++ ~Then we shall all eat, drink dance and make merry tonight as though we have no tomorrow. Providing we can buy the ale that is.~ EXTERN VPLEIB 255
  ++ ~Then let us hope for a clement night so that we are not sent scurrying for the shelter of an inn.~ EXTERN VPLEIB 256
  ++ ~This could be fun Leina. Maybe I should command that we all take part in the dance and those that refuse... well we shall just have to dance over them as they lay in their bed rolls.~ EXTERN VPLEIB 257
@@ -1290,32 +1200,34 @@ CHAIN VPLEIB 254
 
 CHAIN VPLEIB 255
 ~(*Smiles*) If it is the will of the gods there will be a tomorrow <CHARNAME>, so let us not forget that with it brings the need to be alert and awake. If we are staggering the road holding our heads, there will definitely not be another tomorrow for us ever again.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 256
 ~(*Laughs*) We will have no need for an inn <CHARNAME>. For if the night is cold we will dance to keep warm and if it should rain, its refreshing touch will take away the heat of the dance.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 257
 ~There will always be them that prefer the ale to the dance <CHARNAME> no matter how you command.. So maybe we should first hide all the bedrolls, that way there will be none for sleeping in nor dancing over.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 258
 ~When it comes to the romance of the dance <CHARNAME>, I have all the time in the world.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",3) SetGlobal("VP_We_Want_ToDance","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB 259
 ~(*Sighs*) I wish you could have heard the same melody sung by my mother <CHARNAME>. There were many such songs she knew, how many I wonder took their melodies from the songs of the birds.~
-EXTERN VPLEIB 260
-
-CHAIN VPLEIB 260
-~She was elven born as you know and when she sang the words of her people it was truly as if she sang with the birds. I learnt all that all that I know listening to her. My father always said that she was blessed by the gods, but if that were true, why then did they take her from us so cruelly!~
+== VPLEIB ~She was elven born as you know and when she sang the words of her people it was truly as if she sang with the birds. I learnt all that all that I know listening to her. My father always said that she was blessed by the gods, but if that were true, why then did they take her from us so cruelly!~
 END
  ++ ~She sounds like she was a very special lady Leina, all mothers are special in their way. I only wish I could have known mine.~ EXTERN VPLEIB 111
  ++ ~It is no easy thing to face Leina, but we all know that there will come a time when our parents leave us, those fortunate to know their parents that is. It is the order of things and cannot be changed.~ EXTERN VPLEIB 111
  ++ ~What happened Leina? She could not have lived one quarter of her lifespan when she died.~ EXTERN VPLEIB 115
  ++ ~I can see her death has effected you greatly but I feel there is more than grief here, there is also anger. Anger at who Leina, her for dying or the world you are forced to live in without her?~ EXTERN VPLEIB 115
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",5) Gender(Player1,MALE)~ THEN VPLEIB PCM2Leina1
 ~I... I will never get used to the sight of so much blood after a battle. It is... we are splattered with the life fluid of others, it covers our clothes, our weapons even our hands. Look at us <CHARNAME>!~
 END
@@ -1335,10 +1247,7 @@ END
 
 CHAIN VPLEIB PCM2Leina3
 ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a god's intention that it would not be denied and yet, you deny it every time you are forced to kill. Not once have I ever seen a spark of pleasure in you eyes when you are forced to act.~
-EXTERN VPLEIB PCM2Leina3a
-
-CHAIN VPLEIB PCM2Leina3a
-~No son is forced to take on the mantle of his father if it is not within him and murder is not within you <CHARNAME>.~
+== VPLEIB ~No son is forced to take on the mantle of his father if it is not within him and murder is not within you <CHARNAME>.~
 END
  ++ ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ EXTERN VPLEIB PCM2Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ EXTERN VPLEIB PCM2Leina7
@@ -1347,10 +1256,7 @@ END
 
 CHAIN VPLEIB PCM2Leina4
 ~Non of us ask to be born, that was our parents decision, or not as the case may be, and once we know how sweet life is, then nothing is greater than the instinct to survive. You fight to protect yourself and your friends, but that does not mean you enjoy having to deal out death.~
-EXTERN VPLEIB PCM2Leina4a
-
-CHAIN VPLEIB PCM2Leina4a
-~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god's name*)~
+== VPLEIB ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god's name*)~
 END
  ++ ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ EXTERN VPLEIB PCM2Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ EXTERN VPLEIB PCM2Leina7
@@ -1359,10 +1265,7 @@ END
 
 CHAIN VPLEIB PCM2Leina5
 ~Gorion may have taught you but he could not have done so if you had not chosen to listen. Even now, knowing the nature of your true father, you refuse to acknowledge the legacy that he has left within you.~
-EXTERN VPLEIB PCM2Leina5a
-
-CHAIN VPLEIB PCM2Leina5a
-~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god's name*)... and will always set you apart from him.~
+== VPLEIB ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god's name*)... and will always set you apart from him.~
 END
  ++ ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ EXTERN VPLEIB PCM2Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ EXTERN VPLEIB PCM2Leina7
@@ -1371,15 +1274,18 @@ END
 
 CHAIN VPLEIB PCM2Leina6
 ~(*Taking a firm hold of your arm*) I will never get used to the sight of wasted lives <CHARNAME>, but the touch and warmth of your arm at least reminds me that we are alive and we should be grateful that it is not our lives that were wasted this day.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB PCM2Leina7
 ~(*Her face relaxes and a smile comes to her lips*) When you have done rubbing my face away with that rough cloth <CHARNAME>, give it to me for your own face is difficult to see under so much grime.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB PCM2Leina8
 ~Then as long as you feel and understand the pain and sorrow that comes with dealing out death, you will never become that which your father was. You carry his blood but that is not all that makes a man, your heart and your soul are your own. Be true to them and you will be true to yourself.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB PCM2Leina9
 ~And does that excite you <CHARNAME>, the thought that you have to kill in order to survive, or are your words meant only as an excuse to kill?~
@@ -1391,10 +1297,7 @@ END
 
 CHAIN VPLEIB PCM2Leina10
 ~I am sorry, I should have looked closer before I asked. I can see in your eyes that dealing out death brings you no pleasure.~
-EXTERN VPLEIB PCM2Leina10a
-
-CHAIN VPLEIB PCM2Leina10a
-~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god's name*)... You carry his blood but there is no murder in you <CHARNAME>, you are not your father's son.~
+== VPLEIB ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god's name*)... You carry his blood but there is no murder in you <CHARNAME>, you are not your father's son.~
 END
  ++ ~Clearly I am not the only one shaken by death Leina. Here let my arm steady you, help drive away those shivers.~ EXTERN VPLEIB PCM2Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. Come, let me wipe the blood from your face... (*You take a cloth and start to clean her blood stained face*)~ EXTERN VPLEIB PCM2Leina7
@@ -1410,19 +1313,21 @@ END
 
 CHAIN VPLEIB PCM2Leina12
 ~We are not forced to take on the mantle of our parents, but I see that you have chosen to do so.~
-EXTERN VPLEIB PCM2Leina12a
+== VPLEIB ~I have no idea of what being touched by a god does to a man, so I do not know whether it is Bhaal's spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
-CHAIN VPLEIB PCM2Leina12a
-~I have no idea of what being touched by a god does to a man, so I do not know whether it is Bhaal's spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
-
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",5) Gender(Player1,FEMALE) Global("VP_We_Want_ToDance","LOCALS",1)~ THEN VPLEIB PCF2Leina1a
 ~(*Leina stands dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~ EXTERN VPLEIB PCF2LeinaA
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
+EXTERN VPLEIB PCF2LeinaA
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",5) Gender(Player1,FEMALE) Global("VP_We_Want_ToDance","LOCALS",0)~ THEN VPLEIB PCF2Leina1b
 ~(*Leina stands dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~ EXTERN VPLEIB PCF2LeinaB
+DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
+EXTERN VPLEIB PCF2LeinaB
 
 CHAIN VPLEIB PCF2LeinaA
 ~The bard has been asked to play a rousing tune to get your feet a dancing. She has also been told to let it be known that we are all to take part in this merriment. No creeping off to ones bed roll, the order was *all*.~
@@ -1486,14 +1391,8 @@ END
 
 CHAIN VPLEIB PCF2Leina4a
 ~(*As she picks up the tempo she skips nearer the fire, her face alive with her song and aglow in the light of the fire. She changes the rhythm and she whirls faster, causing her skirts to fly wide. Then laughing, she stops to answer you.*)~
-EXTERN VPLEIB PCF2Leina5a
-
-CHAIN VPLEIB PCF2Leina5a
-~You forget <CHARNAME>. This is not a song of mine. I can sing the songs of others and revel in the way they make me feel alive, but they do not reflect the truth of what is in my heart, only my own songs can do that.~
-EXTERN VPLEIB PCF2Leina6a
-
-CHAIN VPLEIB PCF2Leina6a
-~(*Smiling*) That doesn't mean I get no enjoyment in a song such as this, all music excites me, whether I believe in it or not. (*Then laughing she whirls away to finish her song.*)~
+== VPLEIB ~You forget <CHARNAME>. This is not a song of mine. I can sing the songs of others and revel in the way they make me feel alive, but they do not reflect the truth of what is in my heart, only my own songs can do that.~
+== VPLEIB ~(*Smiling*) That doesn't mean I get no enjoyment in a song such as this, all music excites me, whether I believe in it or not. (*Then laughing she whirls away to finish her song.*)~
 EXTERN VPLEIB PCF2Leina7a
 
 CHAIN VPLEIB PCF2Leina7a
@@ -1506,22 +1405,13 @@ END
 
 CHAIN VPLEIB PCF2Leina8a
 ~(*As she picks up the tempo she skips nearer the fire, her face alive with her song and aglow in the light of the fire. She changes the rhythm and she whirls faster, causing her skirts to fly wide. Then laughing, she stops to answer you.*)~
-EXTERN VPLEIB PCF2Leina9a
-
-CHAIN VPLEIB PCF2Leina9a
-~That I can not do <CHARNAME>. I can sing the songs of others but they are meaningless words to me. I feel the excitement in their music but it is my own songs which reflect that which is inside of me.~
-EXTERN VPLEIB PCF2Leina10a
-
-CHAIN VPLEIB PCF2Leina10a
-~To remain true to myself, I have to play my music, my own music and if you can not understand that then you do not understand me. (*Then laughing she whirls away to finish her song.*)~
+== VPLEIB ~That I can not do <CHARNAME>. I can sing the songs of others but they are meaningless words to me. I feel the excitement in their music but it is my own songs which reflect that which is inside of me.~
+== VPLEIB ~To remain true to myself, I have to play my music, my own music and if you can not understand that then you do not understand me. (*Then laughing she whirls away to finish her song.*)~
 EXTERN VPLEIB PCF2Leina7a
 
 CHAIN VPLEIB PCF2Leina11a
 ~(*As she picks up the tempo she skips nearer the fire, her face alive with her song and aglow in the light of the fire. She changes the rhythm and she whirls faster, causing her skirts to fly wide. Then laughing, she stops to answer you.*)~
-EXTERN VPLEIB PCF2Leina12a
-
-CHAIN VPLEIB PCF2Leina12a
-~If we are not more frugal with the ale <CHARNAME>, we may find ourselves sleeping through tomorrow and missing whatever it had planned for us altogether. (*Then laughing she whirls away to finish her song.*)~
+== VPLEIB ~If we are not more frugal with the ale <CHARNAME>, we may find ourselves sleeping through tomorrow and missing whatever it had planned for us altogether. (*Then laughing she whirls away to finish her song.*)~
 END
  ++ ~We must make a point of doing this again Leina, and soon. Thank you for lifting our spirits tonight.~ EXTERN VPLEIB PCF2Leina14a
  ++ ~Nothing like a mix of ale and fine music to lull one towards sleep. Let us hope tomorrow arrives gently and doesn't make us pay for tonight.~ EXTERN VPLEIB PCF2Leina13a
@@ -1615,14 +1505,8 @@ END
 
 CHAIN VPLEIB PCF2Leina19a
 ~We should always make time to play in our lives <CHARNAME>, even if our games are different to those which we played as children. Life would be very mundane and weary if it were nothing but toil.~
-EXTERN VPLEIB PCF2Leina20a
-
-CHAIN VPLEIB PCF2Leina20a
-~I believe a lot of those who opt out of living do so because their lives have become one long grind and they see nothing to look forward to from one day to the next. They have forgotten how to play and their souls have become melancholy, living only for when death claims them, but come, let us not end the evening on so black a note.~
-EXTERN VPLEIB PCF2Leina21a
-
-CHAIN VPLEIB PCF2Leina21a
-~I am to my rest whilst my own soul is still light.~
+== VPLEIB ~I believe a lot of those who opt out of living do so because their lives have become one long grind and they see nothing to look forward to from one day to the next. They have forgotten how to play and their souls have become melancholy, living only for when death claims them, but come, let us not end the evening on so black a note.~
+== VPLEIB ~I am to my rest whilst my own soul is still light.~
 END
  IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
@@ -1677,7 +1561,23 @@ END
 
 CHAIN VPLEIB PCF2Leina23c
 ~Then take your boots off Minsc, go bare foot as shall I.~
-EXTERN BMINSC NEJ138
+== BMINSC ~Oooo... that's not right Leina, Minsc has not got his dancing socks on either, only the ones that let his toes breathe.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
 
 CHAIN VPLEIB PCF2Leina24a
 ~In case you had not noticed Hrothgar we are in the great outdoors, that should be enough space even for you.~
@@ -1703,11 +1603,40 @@ EXTERN NJDARB 128
 
 CHAIN VPLEIB PCF2Leina26a
 ~I forget how much of a toll the road takes on your legs Aerie, but maybe dancing will help strengthen those calves of yours, put some muscle on them.~
-EXTERN BAERIE NEJ455
+== BAERIE ~I'll get used to walking first before I try dancing thank you Leina.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
 
 CHAIN VPLEIB PCF2Leina27a
 ~Jan, if that is the case then you can lead.~
-EXTERN BJAN NEJ2
+== BJAN ~Oh... I can do that.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
 
 CHAIN VPLEIB PCF2Leina28a
 ~Edwin... forget it!~
@@ -1761,7 +1690,10 @@ END
 
 CHAIN VPLEIB PCF2Leina32a
 ~Come Keldorn, Maria will not think any less of you for we all dance together as friends this night and not as lovers.~
-EXTERN BKELDOR NEJ2
+== BKELDOR ~(*A little flustered*) I didn't mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina33a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina33a
 
 CHAIN VPLEIB PCF2Leina33a
 ~(*Smiling at the paladin's flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
@@ -1792,16 +1724,27 @@ END
 
 CHAIN VPLEIB PCF2Leina36a
 ~Then tonight we shall all dance in Khalid's memory. Instead of mourning his death Jaheira it is now time to celebrate his life.~
-EXTERN BJAHEIR NEJ498
+== BJAHEIR ~(*To herself*) Would you approve dear heart, I wonder?~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
 
 CHAIN VPLEIB PCF2Leina37a
 ~I wonder Nalia, how much your aunt's fear for you were due to the circumstances of your mother's death and how much was due to her own escapades as a young girl.~
-EXTERN BNALIA NEJ59
+== BNALIA ~(*She giggles*) Auntie, and escapades! No, she's always been just auntie.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
 
 CHAIN VPLEIB PCF2Leina38a
 ~Sleep well <CHARNAME>.~
-DO ~RestParty()~ EXIT
+DO ~RestParty()~
+EXIT
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",8) Gender(Player1,FEMALE)~ THEN VPLEIB PCF3Leina1
 ~I... I will never get used to the sight of so much blood after a battle. It is... we are splattered with the life fluid of others, it covers our clothes, our weapons even our hands. Look at us <CHARNAME>!~
 END
@@ -1821,10 +1764,7 @@ END
 
 CHAIN VPLEIB PCF3Leina3
 ~(*She shivers visibly*) It can not be easy to deny that which flows through your every fibre. More so as it was a god's intention that it would not be denied and yet, you deny it every time you are forced to kill. I see regret, not pleasure in your eyes every time you are forced to act.~
-EXTERN VPLEIB PCF3Leina3a
-
-CHAIN VPLEIB PCF3Leina3a
-~Yours is a life touched by murder and yet I do not believe that it has touched your soul.~
+== VPLEIB ~Yours is a life touched by murder and yet I do not believe that it has touched your soul.~
 END
  ++ ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ EXTERN VPLEIB PCF3Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ EXTERN VPLEIB PCF3Leina7
@@ -1833,10 +1773,7 @@ END
 
 CHAIN VPLEIB PCF3Leina4
 ~Non of us ask to be born, that was our parents decision, or not as the case may be, and once we know how sweet life is, then nothing is greater than the instinct to survive. You fight to protect yourself and your friends, but that does not mean you enjoy having to deal out death.~
-EXTERN VPLEIB PCF3Leina4a
-
-CHAIN VPLEIB PCF3Leina4a
-~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god's name*)~
+== VPLEIB ~I can see that it does not come easy to you <CHARNAME>, just as I can see that murder is not in you, Bhaal has no hold on you... (*She shivers visibly at the mention of the dead god's name*)~
 END
  ++ ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ EXTERN VPLEIB PCF3Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ EXTERN VPLEIB PCF3Leina7
@@ -1845,10 +1782,7 @@ END
 
 CHAIN VPLEIB PCF3Leina5
 ~Gorion may have taught you but he could not have done so if you had not chosen to listen. Even now, knowing the nature of your true father, you refuse to acknowledge the legacy that he has left within you.~
-EXTERN VPLEIB PCF3Leina5a
-
-CHAIN VPLEIB PCF3Leina5a
-~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god's name*)... and will always set you apart from him.~
+== VPLEIB ~You deplore the taking of life and that is what makes you different to Bhaal... (*She shivers visibly at the mention of the dead god's name*)... and will always set you apart from him.~
 END
  ++ ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ EXTERN VPLEIB PCF3Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ EXTERN VPLEIB PCF3Leina7
@@ -1857,15 +1791,18 @@ END
 
 CHAIN VPLEIB PCF3Leina6
 ~But we are both survivors <CHARNAME>, and although I will never get used to the blood and death, we both do that which we must in order to survive.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCF3Leina7
 ~(*Looking at her blood stained armour*) The armour will wash <CHARNAME>, but I will always be aware of the stain it leaves on my hands and the sight of it in my eyes.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCF3Leina8
 ~You feel and understand the pain and sorrow that comes with dealing out death too much to become like your father. You carry his blood but it is the heart and the soul that makes the woman. Be true to them and you will be true to yourself.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCF3Leina9
 ~And does that excite you <CHARNAME>, the thought that you have to kill in order to survive, or are your words meant only as an excuse to kill?~
@@ -1877,10 +1814,7 @@ END
 
 CHAIN VPLEIB PCF3Leina10
 ~I am sorry, I should have looked closer before I asked. I can see in your eyes that dealing out death brings you no pleasure.~
-EXTERN VPLEIB PCF3Leina10a
-
-CHAIN VPLEIB PCF3Leina10a
-~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god's name*)... You carry his blood but there is no murder in you <CHARNAME>.~
+== VPLEIB ~It was wrong of me to presume that because your father was Bhaal, you had taken on his mantle... (*She shivers visibly at the mention of the dead god's name*)... You carry his blood but there is no murder in you <CHARNAME>.~
 END
  ++ ~What are we like Leina! Two woman forced to the road through no fault of our own and neither of us is truly equipped to face the horror that comes with it.~ EXTERN VPLEIB PCF3Leina6
  ++ ~Death in battle is neither pretty nor is it clean Leina. I for one can not wait to submerse myself in the first river we across in order to wash away its stench.~ EXTERN VPLEIB PCF3Leina7
@@ -1896,12 +1830,11 @@ END
 
 CHAIN VPLEIB PCF3Leina12
 ~We are not forced to take on the mantle of our parents, but I see that you have chosen to do so.~
-EXTERN VPLEIB PCF3Leina12a
+== VPLEIB ~I have no idea of what being touched by a god does to a person, so I do not know whether it is Bhaal's spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
-CHAIN VPLEIB PCF3Leina12a
-~I have no idea of what being touched by a god does to a person, so I do not know whether it is Bhaal's spark that has forced this choice on you or whether it is the way of your own heart. What I do know is that it is a cruel mantle you have donned and not one that I would wear with pride.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
-
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",8) Gender(Player1,MALE)~ THEN VPLEIB PCM3Leina1
 ~Do you believe in ghosts? I mean ghosts of the past, not the undead spirits we battle in crypts and tombs.~
 END
@@ -1921,11 +1854,13 @@ END
 
 CHAIN VPLEIB PCM3Leina3
 ~(*Sighs*) Then I guess I will have to bear my ghosts until those important events replace those which bring them.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina4
 ~(*Laughs softly*) A wise answer <CHARNAME>, although I suspect you were in no danger. Most creatures like meat on their bones and not bones on their meat when it comes to their dinner.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina5
 ~(*Sighs*) I know you are right but they are not easy to face alone and more difficult to find someone prepared to listen. You <CHARNAME>, are the first person I have felt enough at ease to talk with... would this perhaps be a good time to maybe talk a little more?~
@@ -1937,11 +1872,9 @@ END
 
 CHAIN VPLEIB PCM3Leina6
 ~(*Sighs*) I should have expected such an answer from you <CHARNAME>, but I had hoped that... never mind, I will not bother you further with my ghosts.~
-EXTERN VPLEIB PCM3Leina6a
-
-CHAIN VPLEIB PCM3Leina6a
-~I hope you never have cause to ask for help in laying ghosts of your own someday, because you may just get the same response from others that you have given me.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+== VPLEIB ~I hope you never have cause to ask for help in laying ghosts of your own someday, because you may just get the same response from others that you have given me.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina7
 ~You already know of my childhood, cosseted in my father's house, away from the prejudices of the real world and you know a little of my mother's death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
@@ -1953,14 +1886,8 @@ END
 
 CHAIN VPLEIB PCM3Leina8
 ~Maybe so, but... As I saying... when I met Bjorn, he was everything I had read about, everything I had dreamed the man I would love would be and he loved me with the same passion that my father loved my mother... or so he had me believe.~
-EXTERN VPLEIB PCM3Leina8a
-
-CHAIN VPLEIB PCM3Leina8a
-~Like me he had a great love for music and was a gifted bard. He told me tales of the joy that love between a man and a woman brings, he spoke to me in words that I had often heard my father say to my mother, how could I not love such a gentle and caring man.~
-EXTERN VPLEIB PCM3Leina8b
-
-CHAIN VPLEIB PCM3Leina8b
-~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
+== VPLEIB ~Like me he had a great love for music and was a gifted bard. He told me tales of the joy that love between a man and a woman brings, he spoke to me in words that I had often heard my father say to my mother, how could I not love such a gentle and caring man.~
+== VPLEIB ~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
 END
  ++ ~This Bjorn was wrong to deceive you as he did, but could you not see the emptiness of his words when you looked closer into his face?~ EXTERN VPLEIB PCM3Leina9
  ++ ~A bard is gifted with his use of words Leina, but as often as not they reflect his ego and not his heart.~ EXTERN VPLEIB PCM3Leina9
@@ -1968,14 +1895,8 @@ END
 
 CHAIN VPLEIB PCM3Leina9
 ~It wasn't only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
-EXTERN VPLEIB PCM3Leina9a
-
-CHAIN VPLEIB PCM3Leina9a
-~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
-EXTERN VPLEIB PCM3Leina9b
-
-CHAIN VPLEIB PCM3Leina9b
-~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
+== VPLEIB ~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
+== VPLEIB ~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
 END
  ++ ~Surely you can see now that he was a man only interested in his own comforts and not a man worthy of love?~ EXTERN VPLEIB PCM3Leina901
  ++ ~Men like him are no more than parasites. They take until there is no more to be taken, but they are shallow and empty inside and have nothing to give in return.~ EXTERN VPLEIB PCM3Leina901
@@ -1983,7 +1904,7 @@ END
 
 CHAIN VPLEIB PCM3Leina901
 ~I know that now but then... as I said, he took my heart and my soul before he took me, they were no longer my own. When he left, he took them with him. I loved and trusted him so completely that I had given him everything that was me.~
- = ~I lived in darkness and despair for a long time until I realised I still had a heart, or what there was left of it, beating in my breast... but it was enough. So I took my music, the one thing he had not taken... and the rest you know.~
+== VPLEIB ~I lived in darkness and despair for a long time until I realised I still had a heart, or what there was left of it, beating in my breast... but it was enough. So I took my music, the one thing he had not taken... and the rest you know.~
 END
  ++ ~Yes but why the ghosts Leina? You found the strength to re-build your life, why not use the same strength to lay those ghosts to rest?~ EXTERN VPLEIB PCM3Leina10
  ++ ~You gave your love to man not deserving of it Leina, why let his memory spoil your future?~ EXTERN VPLEIB PCM3Leina10
@@ -1992,7 +1913,7 @@ END
 
 CHAIN VPLEIB PCM3Leina10
 ~Have you not heard anything of what I just said? Bjorn still has that which he took from me.~
- = ~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
+== VPLEIB ~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
 END
  ++ ~I wish I could help you Leina , but I don't know where to begin.~ EXTERN VPLEIB PCM3Leina11
  ++ ~That sounds too complex for me. Apart from finding the guy and killing him I can not see how you are going to sort this one.~ EXTERN VPLEIB PCM3Leina12
@@ -2002,25 +1923,30 @@ END
 
 CHAIN VPLEIB PCM3Leina11
 ~(*Sighs*) No and neither do I, but thank you for listening <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina12
 ~(*Sighs*) I don't wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina13
 ~(*Hotly*) It was because I loved that I am fighting ghosts now! It was because of love that I carry the guilt of not being able to save my mother, although I hope to deal with that one in the future. No, love has done me no favours nor has it brought me much pleasure, I would be a fool to trust it again. (*She turns and walks away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina14
 ~(*She takes your hand and squeezes it lightly. You are taken aback by her move and yet you marvel at how small and fragile her hand feels in your own*)~
- = ~To find comfort in the touch of another will not lay my ghosts to rest, but it is a comfort I find I still need at times and it is most welcome. Thank you <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+== VPLEIB ~To find comfort in the touch of another will not lay my ghosts to rest, but it is a comfort I find I still need at times and it is most welcome. Thank you <CHARNAME>.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina15
 ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face one's ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
- = ~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+== VPLEIB ~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina16
 ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)...~
@@ -2032,8 +1958,9 @@ END
 
 CHAIN VPLEIB PCM3Leina17
 ~If it were that simple don't you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
- = ~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~ EXIT
+== VPLEIB ~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",9)~
+EXIT
 
 CHAIN VPLEIB PCM3Leina18
 ~And if the ghosts refuse to stay in the past, how can they be made to?~
@@ -2042,6 +1969,7 @@ END
  ++ ~Sort your feelings of guilt and rejection Leina and you may find that your ghosts will return to the past for good.~ EXTERN VPLEIB PCM3Leina17
  ++ ~By pulling yourself together and refusing to give in to something that can not be changed.~ EXTERN VPLEIB PCM3Leina17
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",11) Gender(Player1,FEMALE)~ THEN VPLEIB PCF4Leina1
 ~Do you believe in ghosts? I mean ghosts of the past, not the undead spirits we battle in crypts and tombs.~
 END
@@ -2061,11 +1989,13 @@ END
 
 CHAIN VPLEIB PCF4Leina3
 ~(*Sighs*) Then I guess I will have to bear my ghosts until those important events replace those which bring them.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina4
 ~(*Laughs softly*) A wise answer <CHARNAME>, although I suspect you were in no danger. The rest of the group are hardly about to let me feed you as fodder to some hungry beast.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina5
 ~(*Sighs*) I know you are right, but it is not always easy to find one who will listen. You are a busy woman <CHARNAME> and perhaps you do not have the time for the problems of others but I will ask as we seem to have a quiet moment, might this be a good time to maybe talk a little more?~
@@ -2077,8 +2007,9 @@ END
 
 CHAIN VPLEIB PCF4Leina6
 ~(*Sighs*) I should have expected such an answer from you <CHARNAME>, but I had hoped that... well as one woman to another... but never mind, I will not bother you further with my ghosts.~
- = ~I hope you never have cause to ask for help in laying ghosts of your own someday, because you may just get the same response from others that you have given me.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+== VPLEIB ~I hope you never have cause to ask for help in laying ghosts of your own someday, because you may just get the same response from others that you have given me.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina7
 ~You already know of my childhood, cosseted in my father's house, away from the prejudices of the real world and you know a little of my mother's death, well as much as I know myself. What I have not spoken of is my life after I left Athkatla, after I married and discovered that happy ever afters are only story book endings.~
@@ -2090,8 +2021,8 @@ END
 
 CHAIN VPLEIB PCF4Leina8
 ~Maybe so, but... As I was saying... when I met Bjorn, he was everything I had read about, everything I had dreamed the man I would love would be and he loved me with the same passion that my father loved my mother... or so he had me believe.~
- = ~Like me he had a great love for music and was a gifted bard. He told me tales of the joy that love between a man and a woman brings, he spoke to me in words that I had often heard my father say to my mother, how could I not love such a gentle and caring man.~
- = ~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
+== VPLEIB ~Like me he had a great love for music and was a gifted bard. He told me tales of the joy that love between a man and a woman brings, he spoke to me in words that I had often heard my father say to my mother, how could I not love such a gentle and caring man.~
+== VPLEIB ~I did not know the way of the world or of men but he was patient, taking the time to win my heart and my soul before taking my body... and then only after we were wed.~
 END
  ++ ~Ah, your husband was a bard. I too have heard the pretty words which fall from a bard's lips, they are infamous for their glib tongues.~ EXTERN VPLEIB PCF4Leina9
  ++ ~This Bjorn was wrong to deceive you as he did, but could you not see the emptiness of his words when you looked into his face?~ EXTERN VPLEIB PCF4Leina9
@@ -2100,8 +2031,8 @@ END
 
 CHAIN VPLEIB PCF4Leina9
 ~It wasn't only his words <CHARNAME>, his eyes shone with what I thought was love... of course now I see that it was my dowry I saw reflected in them.~
- = ~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
- = ~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
+== VPLEIB ~We were happy, blissfully happy, he coached me in my music and we played and danced each day until the sun went down.~
+== VPLEIB ~Then at night we would fall into each others arms oblivious to everything but the joy that only comes from two becoming one and when spent, we would fall asleep exhausted but content. However it was not enough, when my dowry ran out... so did he.~
 END
  ++ ~He was a selfish man, interested only in his own comforts and not worthy of a girl's love.~ EXTERN VPLEIB PCF4Leina10
  ++ ~Men like him are no more than parasites. They take until there is no more to be taken, but they are shallow and empty inside and have nothing to give in return.~ EXTERN VPLEIB PCF4Leina10
@@ -2109,7 +2040,7 @@ END
 
 CHAIN VPLEIB PCF4Leina10
 ~I know that now, but then... as I said, he took my heart and my soul before he took me, they were no longer my own. When he left, he took them with him. I loved and trusted him so completely that I had given him everything that was me.~
- = ~I lived in darkness and despair for a long time until I realised I still had a heart, or what there was left of it, beating in my breast... but it was enough. So I took my music, the one thing he had not taken... and the rest you know.~
+== VPLEIB ~I lived in darkness and despair for a long time until I realised I still had a heart, or what there was left of it, beating in my breast... but it was enough. So I took my music, the one thing he had not taken... and the rest you know.~
 END
  ++ ~Yes but why the ghosts Leina? You found the strength to re-build your life, why not use the same strength to lay those ghosts to rest?~ EXTERN VPLEIB PCF4Leina11
  ++ ~You gave your love to man not deserving of it Leina, why let his memory spoil your future?~ EXTERN VPLEIB PCF4Leina11
@@ -2118,7 +2049,7 @@ END
 
 CHAIN VPLEIB PCF4Leina11
 ~Have you not heard anything of what I just said? Bjorn still has that which he took from me.~
- = ~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
+== VPLEIB ~I gave myself so completely to him that it was impossible to completely unravel that which I gave to him from that which is him. The shadows they lessen, yes but I will never be free of them, he will always haunt me for as long as part of me is within him.~
 END
  ++ ~I wish I could help you Leina , but I don't know where to begin.~ EXTERN VPLEIB PCF4Leina12
  ++ ~That sounds too complex for me. Apart from finding and killing Bjorn I can not see how you are going to sort this one.~ EXTERN VPLEIB PCF4Leina13
@@ -2127,24 +2058,29 @@ END
 
 CHAIN VPLEIB PCF4Leina12
 ~(*Sighs*) No and neither do I, but thank you for listening <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina13
 ~(*Sighs*) I don't wish him dead <CHARNAME>! I can not wish anyone dead no matter what they have done. Death is too final and anyway, his spirit would continue to haunt me so I would gain nothing. Still, I thank you for listening.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina14
 ~(*Hotly*) It was because I loved that I am fighting ghosts now! It was because of love that I carry the guilt of not being able to save my mother, although I hope to deal with that one day in the future. No, love has done me no favours nor has it brought me much pleasure, I would be a fool to trust it again. (*She turns and walks away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina15
 ~To listen to your words it is as though you too have known the pain of loving a man so completely as only a woman can and then losing him, however I will not intrude. Perhaps there is a story there and perhaps there is not, but my ear is yours if you should wish to tell it. Thank you for listening <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina16
 ~(*Angrily*) I am not given to melodrama <CHARNAME>! You were the one who said to talk about and face one's ghosts was the best way to lay them to rest. I can see now you were probably just humouring me.~
- = ~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+== VPLEIB ~Well I am sorry but my ghosts are very real to me and I do not need a delusional would be godling calling me a drama queen. (*She turns and walks away.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina17
 ~You clearly have no understanding of what I am saying, do you <CHARNAME>? If you had you would not have needed to ask that question. (*She starts to turn away*)~
@@ -2156,8 +2092,9 @@ END
 
 CHAIN VPLEIB PCF4Leina18
 ~If it were that simple don't you think I would have done it? Do you think I enjoy counting the stars whilst the rest of you are asleep, oblivious to how dark or how lonely the night can be for those who sleep refuses to come?~
- = ~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~ EXIT
+== VPLEIB ~You yourself have sat up through the long hours because sleep has evaded you so I had hoped that at least you might understand some of what I have said... but I see I was wrong I will not bother you further <CHARNAME>.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12)~
+EXIT
 
 CHAIN VPLEIB PCF4Leina19
 ~And if the ghosts refuse to stay in the past, how can they be made to?~
@@ -2166,6 +2103,7 @@ END
  ++ ~Sort your feelings of guilt and rejection Leina and you may find that your ghosts will return to the past for good.~ EXTERN VPLEIB PCF4Leina18
  ++ ~By pulling yourself together and refusing to give in to something that can not be changed.~ EXTERN VPLEIB PCF4Leina18
 
+CHAIN
 IF ~Global("VP_Danicng_Queen","GLOBAL",1) Gender(Player1,MALE)~ THEN VPLEIB PCM4Leina1
 ~Ah, some respite from the road. Come I have spoken to the barkeep and he has agreed to let me sing. Now I will show you where real passion comes from <CHARNAME>... no arguments just prepare yourself to be... well just be prepared.~
 END
@@ -2239,27 +2177,15 @@ END
 
 CHAIN VPLEIB PCM4Leina4
 ~(*Tossing her head and laughing as she skips away from you*) Leina has never disappointed an audience yet. Just give me a moment to prepare and the bard will begin.~
-EXTERN VPLEIB PCM4Leina401
-
-CHAIN VPLEIB PCM4Leina401
-~(*She disappears only to return few moments later dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash. This is clearly a Leina you haven't seen before!*)~
-EXTERN VPLEIB PCM4Leina402
-
-CHAIN VPLEIB PCM4Leina402
-~What... you expected me to stomp around in my armour <CHARNAME>?~
+== VPLEIB ~(*She disappears only to return few moments later dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash. This is clearly a Leina you haven't seen before!*)~
+== VPLEIB ~What... you expected me to stomp around in my armour <CHARNAME>?~
 END
  ++ ~Leina please...~ EXTERN VPLEIB PCM4Leina403
 
 CHAIN VPLEIB PCM4Leina403
 ~(*Before you can say another word, she starts to sing, slowly and softly at first, her body swaying rhythmically to the slow pace, but as her voice starts to lift, the pace of the beat also picks up, as do the rhythmical movements of her body.*)~
-EXTERN VPLEIB PCM4Leina404
-
-CHAIN VPLEIB PCM4Leina404
-~(*The slow swaying suddenly changes as she starts to move deftly around the floor. Weaving slowly in and out of the tables and chairs she makes her way towards you, her large eyes bright and her face heightened with colour as the song takes her over*)...~
-EXTERN VPLEIB PCM4Leina5
-
-CHAIN VPLEIB PCM4Leina5
-~Come, dance with me <CHARNAME>... (*She unties the sash from her waist and wraps it around you neck, playfully pulling you towards her*)... Come feel the music.~
+== VPLEIB ~(*The slow swaying suddenly changes as she starts to move deftly around the floor. Weaving slowly in and out of the tables and chairs she makes her way towards you, her large eyes bright and her face heightened with colour as the song takes her over*)...~
+== VPLEIB ~Come, dance with me <CHARNAME>... (*She unties the sash from her waist and wraps it around you neck, playfully pulling you towards her*)... Come feel the music.~
 END
  ++ ~Uh... I... I don't dance.~ EXTERN VPLEIB PCM4Leina6
  ++ ~Leina, stop this nonsense, now!~ EXTERN VPLEIB PCM4Leina6
@@ -2269,10 +2195,7 @@ END
 
 CHAIN VPLEIB PCM4Leina6
 ~(*She tilts her head back and laughs. She deftly steps away from you before you can reach her. Twirling away her skirts fly, giving you just a glimpse of her well toned limbs. She leaves the sash still draped around your neck.*)~
-EXTERN VPLEIB PCM4Leina601
-
-CHAIN VPLEIB PCM4Leina601
-~So <CHARNAME>, is there enough passion in my music for you now, enough to entrance and bemuse the enemy do you think?~
+== VPLEIB ~So <CHARNAME>, is there enough passion in my music for you now, enough to entrance and bemuse the enemy do you think?~
 END
  ++ ~(*You look at her, not at all sure of her intentions behind her little performance*)...~ EXTERN VPLEIB PCM4Leina7
  ++ ~What do you want me to say Leina, that yes your music does incite passion in a man?~ EXTERN VPLEIB PCM4Leina7
@@ -2282,22 +2205,10 @@ END
 
 CHAIN VPLEIB PCM4Leina7
 ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
-EXTERN VPLEIB PCM4Leina701
-
-CHAIN VPLEIB PCM4Leina701
-~I merely try to show you why music incites a passion within me, a passion that will only be quenched by the release of the song. Unlike the risk of pain which the love and desire for a man can bring, music gives only joy in return... it is the only joy that I will ever need.~
-EXTERN VPLEIB PCM4Leina702
-
-CHAIN VPLEIB PCM4Leina702
-~Now, as I look into your face I can see that the music has touched you as I promised you it would.~
-EXTERN VPLEIB PCM4Leina703
-
-CHAIN VPLEIB PCM4Leina703
-~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
-EXTERN VPLEIB PCM4Leina704
-
-CHAIN VPLEIB PCM4Leina704
-~Oh, and please <CHARNAME>, keep the sash, I have others.~
+== VPLEIB ~I merely try to show you why music incites a passion within me, a passion that will only be quenched by the release of the song. Unlike the risk of pain which the love and desire for a man can bring, music gives only joy in return... it is the only joy that I will ever need.~
+== VPLEIB ~Now, as I look into your face I can see that the music has touched you as I promised you it would.~
+== VPLEIB ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
+== VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
@@ -2313,10 +2224,10 @@ END
 
 CHAIN VPLEIB PCM4Leina8
 ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
- = ~Do not mistake what you see in me as my own passion, what you see comes from the music, if there were no music then there would be no passion.~
- = ~Deny it all you want but I see that you have been touched by the music, the excitement that I feel, you have felt. Perhaps you understand a little more now how music incites such a passion within me, a passion that will only be quenched by the release of the song.~
- = ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
- = ~Oh, and please <CHARNAME>, keep the sash, I have others.~
+== VPLEIB ~Do not mistake what you see in me as my own passion, what you see comes from the music, if there were no music then there would be no passion.~
+== VPLEIB ~Deny it all you want but I see that you have been touched by the music, the excitement that I feel, you have felt. Perhaps you understand a little more now how music incites such a passion within me, a passion that will only be quenched by the release of the song.~
+== VPLEIB ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
+== VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
@@ -2332,11 +2243,11 @@ END
 
 CHAIN VPLEIB PCM4Leina9
 ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
- = ~When I can no longer dance and sing, then I shall turn my hand to writing or teaching others of the joy to found in music.~
- = ~Music has become my life and it will not desert me because my face gathers a few lines or my body is no longer pert and young. Whereas a man's love, all too often fades when the woman's beauty can only be seen in the faces of her daughters.~
- = ~Ah, but what is this I see in your face... you have heard the music and you have been touched by its excitement.~
- = ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
- = ~Oh, and please <CHARNAME>, keep the sash, I have others.~
+== VPLEIB ~When I can no longer dance and sing, then I shall turn my hand to writing or teaching others of the joy to found in music.~
+== VPLEIB ~Music has become my life and it will not desert me because my face gathers a few lines or my body is no longer pert and young. Whereas a man's love, all too often fades when the woman's beauty can only be seen in the faces of her daughters.~
+== VPLEIB ~Ah, but what is this I see in your face... you have heard the music and you have been touched by its excitement.~
+== VPLEIB ~(*Then turning, she laughs softly as she whirls away to finish her song. Once again causing her skirts to fly, giving you another glimpse of those limbs of hers and leaving you slightly bemused*)...~
+== VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
  IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
@@ -2483,6 +2394,7 @@ END
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
  IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
 
+CHAIN
 IF ~Global("VP_KorganNoDancing","LOCALS",6)~ THEN VPLEIB PCM4bKorgan1
 ~That dwarf has to be the most odious creature I have met! He even rates one ahead of that slime ball I called husband.~
 END
@@ -2494,7 +2406,8 @@ END
 
 CHAIN VPLEIB PCM4bKorgan2
 ~As long as he keeps away from me, there will be no reason to lose either of us but if he comes near me again with so much as a smirk on his face, he'll see that I wasn't joking about using my sword. When I am through with him, you'll still have your fighter <CHARNAME>, but he'll not pose a threat to another female!~
-DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~ EXIT
+DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~
+EXIT
 
 CHAIN VPLEIB PCM4bKorgan3
 ~I can handle the likes of him <CHARNAME>. I know that you would not tolerate his presence in the group if you didn't think him necessary to your mission, so please, don't worry on my behalf because I meant what I said about my sword and him singing opera.~
@@ -2505,7 +2418,8 @@ END
 
 CHAIN VPLEIB PCM4bKorgan4
 ~I thank you for your concern <CHARNAME>. I will heed your words but I feel that the dwarf and I have come to an understanding. If not then the next time that mouth of his spouts lurid proposals my way, well... (*Smiling*) it will be his loss but at least he will understand!~
-DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~ EXIT
+DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~
+EXIT
 
 CHAIN VPLEIB PCM4bKorgan5
 ~(*Laughs softly*) Ah, it is as I feared, chivalry is dead my not so gallant champion.~
@@ -2517,7 +2431,7 @@ END
 
 CHAIN VPLEIB PCM4bKorgan6
 ~(*She puts her hand on your arm, a gesture she seems to be making a habit of and laughs softly*)~
- = ~I was jesting my dear <CHARNAME>, you did right not to intervene. If the dwarf thinks me incapable of holding my own, he will give me no piece from that obscene tongue of his until he does feel the edge of my sword. This way he knows that I'll have none of his innuendos and you get to keep your fighter and your bard.~
+== VPLEIB ~I was jesting my dear <CHARNAME>, you did right not to intervene. If the dwarf thinks me incapable of holding my own, he will give me no piece from that obscene tongue of his until he does feel the edge of my sword. This way he knows that I'll have none of his innuendos and you get to keep your fighter and your bard.~
 END
  ++ ~Leina, you are worth 100 beserker dwarves!~ EXTERN VPLEIB PCM4bKorgan7
  ++ ~Leina, if I should have to choose between a beautiful, intelligent bard and a chaotic, beserker dwarf, I know who I would be prefer to have at my side.~ EXTERN VPLEIB PCM4bKorgan7
@@ -2526,9 +2440,11 @@ END
 
 CHAIN VPLEIB PCM4bKorgan7
 ~(*She looks up into your face, but looks away again quickly leaving you a little bewildered by the intensity of the look you see in those large almond shaped eyes of hers. When she speaks her voice is low with a hint of laughter.*)~
- = ~You are too kind my good sir and the lady thanks you for the compliment. (*She chuckles and drops a curtsy... as best her armour will allow*.)~
-DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~ EXIT
+== VPLEIB ~You are too kind my good sir and the lady thanks you for the compliment. (*She chuckles and drops a curtsy... as best her armour will allow*.)~
+DO ~SetGlobal("VP_KorganNoDancing","LOCALS",7)~
+EXIT
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",11) Gender(Player1,MALE)~ THEN VPLEIB PCM5Leina1
 ~As the child of a god, do you think the other gods take any interest in your life <CHARNAME>?~
 END
@@ -2555,12 +2471,13 @@ END
 
 CHAIN VPLEIB PCM5Leina4
 ~Seeing as how you were given life due the interference of a god, I thought you might have been curious enough to have given it some thought. Clearly I was wrong and I will not press you further, instead I will walk beside you and enjoy the company. It is better to walk in silent company than to walk alone.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB PCM5Leina5
 ~I am not sure what I believe. Recently I have had cause to remember the tales my mother told me of the goddess Melira Taralen *The Songstress*, the goddess of half eleven bards and elven minstrels... daughter of Hanali Celani *Lady Goldenheart*.~
- = ~Her stories told of a woman with pale golden hair, robed in the brightest of blue and with eyes to match, always a sword in one hand and a lute in her other.~
- = ~Two nights past when sleep evaded me, I would swear such a woman came to me <CHARNAME>.~
+== VPLEIB ~Her stories told of a woman with pale golden hair, robed in the brightest of blue and with eyes to match, always a sword in one hand and a lute in her other.~
+== VPLEIB ~Two nights past when sleep evaded me, I would swear such a woman came to me <CHARNAME>.~
 END
  ++ ~We have spoken recently of your mother Leina, could this not perhaps be the stirring of happy memories that you associate with her?~ EXTERN VPLEIB PCM5Leina6
  ++ ~You say you are not sure yourself, so maybe you had fallen asleep and she was a dream?~ EXTERN VPLEIB PCM5Leina7
@@ -2590,11 +2507,13 @@ END
 
 CHAIN VPLEIB PCM5Leina9
 ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I don't know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB PCM5Leina901
 ~Whether she was the true goddess or not, all I know is when she left she replaced much of the cold and darkness of the night with a measure of warmth and light. A comfort I will always be grateful for.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_NoRomantics","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB PCM5Leina10
 ~That will not be necessary, she gave me no reason to fear her. She didn't stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
@@ -2605,9 +2524,11 @@ END
 
 CHAIN VPLEIB PCM5Leina11
 ~(*She looks up into your face, but looks away again quickly. Leaving you a little bewildered by the bemused look you see in those large almond shaped eyes of hers*)~
- = ~Your company will be most welcome <CHARNAME>, but if her appearance is solely to bring me comfort or even my own mind's way of dealing with the long nights, then I feel we will be waiting in vain, but we shall see.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_LookAtStars","LOCALS",1)~ EXIT
+== VPLEIB ~Your company will be most welcome <CHARNAME>, but if her appearance is solely to bring me comfort or even my own mind's way of dealing with the long nights, then I feel we will be waiting in vain, but we shall see.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",12) SetGlobal("VP_LookAtStars","LOCALS",1)~
+EXIT
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",14) Gender(Player1,FEMALE)~ THEN VPLEIB PCF6Leina1
 ~As the child of a god, do you think the other gods take any interest in your life <CHARNAME>?~
 END
@@ -2634,12 +2555,13 @@ END
 
 CHAIN VPLEIB PCF6Leina4
 ~Seeing as how you were given life due interference of a god, I thought you might have been curious enough to have given it some thought. Clearly I was wrong and I will trouble you no further <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~
+EXIT
 
 CHAIN VPLEIB PCF6Leina5
 ~I am not sure what I believe. Recently I have had cause to remember the tales my mother told me of the goddess Melira Taralen *The Songstress*, the goddess of half eleven bards and elven minstrels... daughter of Hanali Celani *Lady Goldenheart*.~
- = ~Her stories told of a woman with pale golden hair, robed in the brightest of blue and with eyes to match, always a sword in one hand and a lute in her other.~
- = ~Two nights past when sleep evaded me, I would swear such a woman came to me <CHARNAME>.~
+== VPLEIB ~Her stories told of a woman with pale golden hair, robed in the brightest of blue and with eyes to match, always a sword in one hand and a lute in her other.~
+== VPLEIB ~Two nights past when sleep evaded me, I would swear such a woman came to me <CHARNAME>.~
 END
  ++ ~We have spoken recently of your mother Leina, could this not perhaps be the stirring of happy memories that you associate with her?~ EXTERN VPLEIB PCF6Leina6
  ++ ~You say you are not sure yourself, so maybe you had fallen asleep and she was a dream?~ EXTERN VPLEIB PCF6Leina7
@@ -2669,11 +2591,13 @@ END
 
 CHAIN VPLEIB PCF6Leina9
 ~She was mysterious yes, but there was nothing creepy about her. Whether she was a memory surfaced through my reminiscences or the true goddess come to reassure me I don't know. All I know is that the light she left behind lessened the cold and darkness of the night and I was grateful for that.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~
+EXIT
 
 CHAIN VPLEIB PCF6Leina901
 ~Whether she was the true goddess or not , all I know is when she left she replaced much of the cold and darkness of the night with a measure of warmth and light. A comfort I will always be grateful for.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~
+EXIT
 
 CHAIN VPLEIB PCF6Leina10
 ~That will not be necessary, she gave me no reason to fear her. She didn't stay very long , just long enough to raise her hand, smile and nod her head. Leaving me with the feeling that she approved, a good warm feeling and yet ... her true reasons for her appearance was left unsaid.~
@@ -2691,10 +2615,12 @@ END
 
 CHAIN VPLEIB PCF6Leina12
 ~(*Laughing*) I think I am going to like your Imoen when I eventually get to meet her.~
- = ~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen's?~
- = ~You could be right of course and if her sole purpose is bring comfort to me through the long night then she is not going to appear if I am in company, but I thank you all the same for the offer <CHARNAME>.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~ EXIT
+== VPLEIB ~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen's?~
+== VPLEIB ~You could be right of course and if her sole purpose is bring comfort to me through the long night then she is not going to appear if I am in company, but I thank you all the same for the offer <CHARNAME>.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15)~
+EXIT
 
+CHAIN
 IF ~Global("VP_LookAtStars","LOCALS",2) Gender(Player1,MALE)~ THEN VPLEIB PCM6Leina1
 ~So, once again we count the stars together <CHARNAME>... (*She fidgets slightly*) I am not distracting you from your rest am I?~
 END
@@ -2728,7 +2654,7 @@ END
 
 CHAIN VPLEIB PCM6Leina5
 ~I now see how narrow my selfish dreams were. I have learnt a lot since leaving my father's house. Whilst I lived there, oblivious to the real world, all I could dream of was the love of a good man and to live in his love for the rest of my days.~
- = ~Now I enjoy being plain Leina the bard, all I want is to build my life around music and show others the joy it can bring them. Quite different to the daydreams I once used to escape into.~
+== VPLEIB ~Now I enjoy being plain Leina the bard, all I want is to build my life around music and show others the joy it can bring them. Quite different to the daydreams I once used to escape into.~
 END
  ++ ~Leina, you were born to sing and to dance. Yours is a joy that is meant to be shared and it seems to me that you are doing exactly what you should be doing.~ EXTERN VPLEIB PCM6Leina6
  ++ ~Does it matter if our dreams change as long as we get to achieve them and find fulfilment?~ EXTERN VPLEIB PCM6Leina6
@@ -2738,7 +2664,7 @@ END
 
 CHAIN VPLEIB PCM6Leina501
 ~(*Smiles*) So we are both following unexpected roads, perhaps it is our brains that are addled. At least I can see the horizon now and have a much wider view than the narrow selfish daydreams I had as a girl, waiting for my story book life to begin.~
- = ~Now I enjoy being plain Leina the bard, all I want is to build my life around music and show others the joy it can bring them.~
+== VPLEIB ~Now I enjoy being plain Leina the bard, all I want is to build my life around music and show others the joy it can bring them.~
 END
  ++ ~Leina, you were born to sing and to dance. Yours is a joy that is meant to be shared and it seems to me that you are doing exactly what you should be doing.~ EXTERN VPLEIB PCM6Leina6
  ++ ~Does it matter if our dreams change as long as we get to achieve them and find fulfilment?~ EXTERN VPLEIB PCM6Leina6
@@ -2747,9 +2673,9 @@ END
 
 CHAIN VPLEIB PCM6Leina6
 ~(*She looks up at you, and not for the first time you notice a bemused look in those beautiful large eyes of hers.*)~
- = ~You are right. My foolish dreams as a girl were all about what I wanted and what I thought I would have. Whereas now I want only to share my own happiness with others.~
- = ~We do not live in the idyllic place that I once thought the world to be, but with a good song and good friends to enjoy it, it isn't half bad. (*She stands up to leave*)...~
- = ~Thank you for your time but I don't believe my goddess will be here tonight nor any other night. Sleep well <CHARNAME>.~
+== VPLEIB ~You are right. My foolish dreams as a girl were all about what I wanted and what I thought I would have. Whereas now I want only to share my own happiness with others.~
+== VPLEIB ~We do not live in the idyllic place that I once thought the world to be, but with a good song and good friends to enjoy it, it isn't half bad. (*She stands up to leave*)...~
+== VPLEIB ~Thank you for your time but I don't believe my goddess will be here tonight nor any other night. Sleep well <CHARNAME>.~
 END
  ++ ~(*You catch her hand as she turns to leave*) Leina... you don't have to leave, please, sit a while longer?~ EXTERN VPLEIB PCM6Leina7
  ++ ~(*You catch her hand as she turns to leave*) She isn't here but I am. Please, you don't have to leave just yet... do you Leina?~ EXTERN VPLEIB PCM6Leina7
@@ -2760,12 +2686,14 @@ END
 
 CHAIN VPLEIB PCM6Leina7
 ~(*She looks down at your hand and turning it over she scrutinises your palm. After a couple of seconds she turns it back over and releases it. Then smiling, she looks up into your face.*)~
- = ~But I do <CHARNAME>... for tonight anyway. Sleep well.~
-DO ~SetGlobal("VP_LookAtStars","LOCALS",3) SetGlobalTimer("VP_LoveTalkN_Timer","GLOBAL",ONE_DAY) RestParty()~ EXIT
+== VPLEIB ~But I do <CHARNAME>... for tonight anyway. Sleep well.~
+DO ~SetGlobal("VP_LookAtStars","LOCALS",3) SetGlobalTimer("VP_LoveTalkN_Timer","GLOBAL",ONE_DAY) RestParty()~
+EXIT
 
 CHAIN VPLEIB PCM6Leina8
 ~We shall see <CHARNAME>. Sleep well yourself.~
-DO ~SetGlobal("VP_LookAtStars","LOCALS",3) SetGlobalTimer("VP_LoveTalkN_Timer","GLOBAL",ONE_DAY) RestParty()~ EXIT
+DO ~SetGlobal("VP_LookAtStars","LOCALS",3) SetGlobalTimer("VP_LoveTalkN_Timer","GLOBAL",ONE_DAY) RestParty()~
+EXIT
 
 CHAIN VPLEIB PCM6Leina9
 ~Did your ghost appear?~
@@ -2776,15 +2704,16 @@ END
 
 CHAIN VPLEIB PCM6Leina10
 ~(*Laughs*) I just know that I am going to like your Imoen when I eventually get to meet her <CHARNAME>.~
- = ~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen's? I am also thinking that she may be, you see I have been giving some thought to your words and you could be right. I believe I understand at last why I feel the need for the assurance of *The Songstress*.~
+== VPLEIB ~You think maybe my goddess is a ghost of my overactive imagination, like your Imoen's? I am also thinking that she may be, you see I have been giving some thought to your words and you could be right. I believe I understand at last why I feel the need for the assurance of *The Songstress*.~
 END
  ++ ~Why is that, surely you are not doubting your own abilities?~ EXTERN VPLEIB PCM6Leina3
  ++ ~Why do you say that you feel you need reassurance Leina, you are a very confident lady in my eyes?~ EXTERN VPLEIB PCM6Leina3
  ++ ~I am pleased my words were of some help.~ EXTERN VPLEIB PCM6Leina3
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",14) Gender(Player1,MALE)~ THEN VPLEIB PCM7Leina1
 ~(*Leina walks up you and plants a kiss on your mouth*) Thank you.~
- = ~(*You are taken aback by the sudden feel of soft warm lips on your own*)~
+== VPLEIB ~(*You are taken aback by the sudden feel of soft warm lips on your own*)~
 END
  ++ ~You're welcome Leina, but tell me, what have I done to deserve so pleasurable a reward?~ EXTERN VPLEIB PCM7Leina2
  ++ ~Mmm... tell me what I did and I'll do it again?~ EXTERN VPLEIB PCM7Leina2
@@ -2794,7 +2723,7 @@ END
 
 CHAIN VPLEIB PCM7Leina2
 ~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful.~
- = ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and presses it to your lips instead.*)~
+== VPLEIB ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and presses it to your lips instead.*)~
 END
  ++ ~Always ready to help a lady straighten her head, especially when it happens to be such a pretty head.~ EXTERN VPLEIB PCM7Leina3
  ++ ~(*You kiss her finger before she can remove it from your lips*)... To see the spring return to your step and to know that I have brought this about is all the thanks I need.~ EXTERN VPLEIB PCM7Leina6
@@ -2810,23 +2739,25 @@ END
 
 CHAIN VPLEIB PCM7Leina4
 ~I am and always will be a bard <CHARNAME>... how can I be anything else when I have so great a love for music!~
- = ~I didn't choose music as a career, it chose me from the moment I first drew breath. It has just taken me a long time to see, that to be able to give birth to a song, to a melody, is a gift and not a skill a person learns.~
- = ~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
- = ~Leina is a bard and she is content.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
+== VPLEIB ~I didn't choose music as a career, it chose me from the moment I first drew breath. It has just taken me a long time to see, that to be able to give birth to a song, to a melody, is a gift and not a skill a person learns.~
+== VPLEIB ~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
+== VPLEIB ~Leina is a bard and she is content.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB PCM7Leina5
 ~(*A frown crosses her forehead for a second*)...~
- = ~I... that is... you are very special to me too <CHARNAME> and I don't want to leave the group, but none of us here know what tomorrow holds... there may come a time when parting is unavoidable.~
- = ~As for my career... well, I now know that I am and always will be a bard. It has just taken me a long time to see, that to be able to give birth to a song, to a melody is a gift and not a skill a person learns.~
- = ~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
- = ~Your bard is still a bard and she is content.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
+== VPLEIB ~I... that is... you are very special to me too <CHARNAME> and I don't want to leave the group, but none of us here know what tomorrow holds... there may come a time when parting is unavoidable.~
+== VPLEIB ~As for my career... well, I now know that I am and always will be a bard. It has just taken me a long time to see, that to be able to give birth to a song, to a melody is a gift and not a skill a person learns.~
+== VPLEIB ~Whereas it is true anyone can learn to sing or play an instrument, not everyone can bring a melody and words together and create something as beautiful as music.~
+== VPLEIB ~Your bard is still a bard and she is content.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB PCM7Leina6
 ~(*She draws her hand back from your lips... allowing it to caress your face lightly as she does so*)...~
- = ~Yes <CHARNAME>... it was your words that made me look more closely at my doubts and in doing so I was able to deal with them... and discover who I am.~
- = ~I still have no idea whether I saw my lady The Songstress or not, but now and for some reason I can't explain, I no longer feel the need to know... I know my way.~
+== VPLEIB ~Yes <CHARNAME>... it was your words that made me look more closely at my doubts and in doing so I was able to deal with them... and discover who I am.~
+== VPLEIB ~I still have no idea whether I saw my lady The Songstress or not, but now and for some reason I can't explain, I no longer feel the need to know... I know my way.~
 END
  ++ ~That is good to hear Leina, and does this mean that I still have my bard to cheer the dark days that still lie ahead of us?~ EXTERN VPLEIB PCM7Leina4
  ++ ~I hope this doesn't mean you are considering a change in career Leina. I already have the necessary skills I need for my mission and if you decide you are no longer a bard then I will have to let you go.~ EXTERN VPLEIB PCM7Leina4
@@ -2835,8 +2766,8 @@ END
 
 CHAIN VPLEIB PCM7Leina7
 ~(*She laughs as she draws her finger from your mouth and gently across your cheek*)...~
- = ~No, a man can not be blamed, for it is in the nature of a woman to ensure that many a man tastes but a sample of the honey, before she decides which man she gives the sweetest of delicacies to...~
- = ~Many a man is left yearning for that which he will never taste... whereas others acquire a sweet tooth too soon, and fail to recognise the delicacy for what it is when it is given.~
+== VPLEIB ~No, a man can not be blamed, for it is in the nature of a woman to ensure that many a man tastes but a sample of the honey, before she decides which man she gives the sweetest of delicacies to...~
+== VPLEIB ~Many a man is left yearning for that which he will never taste... whereas others acquire a sweet tooth too soon, and fail to recognise the delicacy for what it is when it is given.~
 END
  ++ ~Then perhaps the lady would be interested to know that this man does not have a sweet tooth and seldom seeks the honey pot. For him to express a desire for honey, it must be a very special honey that he seeks.~ EXTERN VPLEIB PCM7Leina8
  ++ ~Because I admit to having had a sweet tooth in the past Leina, am I to take it that you look upon me as shallow and insensitive?~ EXTERN VPLEIB PCM7Leina9
@@ -2844,27 +2775,30 @@ END
 
 CHAIN VPLEIB PCM7Leina8
 ~(*She looks at you puzzled but the twinkle in her eye gives away the ruse*)~
- = ~Now why would you think that little snippet would be of interest to me I wonder!~
- = ~(*She kisses her finger and presses it to your lips again before turning away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
+== VPLEIB ~Now why would you think that little snippet would be of interest to me I wonder!~
+== VPLEIB ~(*She kisses her finger and presses it to your lips again before turning away.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB PCM7Leina9
 ~You are too quick to think I am pointing the finger because I say it is true of some. Could it be that you have regrets over some aspects of your past <CHARNAME>?~
- = ~As for how you appear in my eyes, I would never presume to judge another by their conduct in the past. I know you for who you are now and that to me is what counts...~
- = ~(*She gently touches your face again before turning away.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
+== VPLEIB ~As for how you appear in my eyes, I would never presume to judge another by their conduct in the past. I know you for who you are now and that to me is what counts...~
+== VPLEIB ~(*She gently touches your face again before turning away.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB PCM7Leina10
 ~I have no doubt that it is <CHARNAME>, but it also true that after tasting many delicacies the taste buds lose their ability to distinguish one from another, and when that one special taste finally presents itself, it often goes unnoticed... lost forever...~
- = ~(*A look of sadness comes to her eyes as she gently touches your face before turning away*)...~
- = ~Of course it can also be said, that if the first taste is of the rarest of delicacies, then this spoils everything that may follow.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~ EXIT
+== VPLEIB ~(*A look of sadness comes to her eyes as she gently touches your face before turning away*)...~
+== VPLEIB ~Of course it can also be said, that if the first taste is of the rarest of delicacies, then this spoils everything that may follow.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",15) SetGlobal("VP_Enable_Flirts","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB PCM7Leina11
 ~(*She laughs softly*) I am sorry, that wasn't very discreet of me I know, a spur of the moment thank you to a dear friend.~
- = ~I may not seek love for myself but I am not against those who do, nor would I deliberately set out to spoil it for those who believe they have found it. I have noticed how your eyes brighten when she is close by, we all have.~
- = ~If she brings a song to your heart then be happy and treasure her and every moment that you spend together, for today is a but a brief moment in time and tomorrow comes all too soon.~
- = ~Mine was but a kiss from a friend, to say thank you for taking the time to help me get my head straight again.~
+== VPLEIB ~I may not seek love for myself but I am not against those who do, nor would I deliberately set out to spoil it for those who believe they have found it. I have noticed how your eyes brighten when she is close by, we all have.~
+== VPLEIB ~If she brings a song to your heart then be happy and treasure her and every moment that you spend together, for today is a but a brief moment in time and tomorrow comes all too soon.~
+== VPLEIB ~Mine was but a kiss from a friend, to say thank you for taking the time to help me get my head straight again.~
 END
  ++ ~Then I take it you have decided whether to be a bard or not to be a bard?~ EXTERN VPLEIB PCM7Leina4
  ++ ~That is good to hear Leina, and does this mean that the group can look forward you cheering us all through the dark days that still lie ahead of us?~ EXTERN VPLEIB PCM7Leina4
@@ -2872,8 +2806,8 @@ END
 
 CHAIN VPLEIB PCM7Leina12
 ~(*She laughs softly*) I am sorry <CHARNAME>, that wasn't very discreet of me I know and I didn't mean to embarrass you, but I see nothing wrong in one friend giving another dear friend a kiss as way of saying thank you.~
- = ~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful...~
- = ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and holds it to your lips instead*)... Thank you <CHARNAME>.~
+== VPLEIB ~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful...~
+== VPLEIB ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and holds it to your lips instead*)... Thank you <CHARNAME>.~
 END
  ++ ~Always ready to help a lady straighten her head, especially when it happens to be such a pretty head.~ EXTERN VPLEIB PCM7Leina3
  ++ ~(*You kiss her finger before she can remove it from your lips*)... To see the spring return to your step and to know that I have brought this about is all the thanks I need.~ EXTERN VPLEIB PCM7Leina6
@@ -2888,14 +2822,15 @@ END
 
 CHAIN VPLEIB PCM7Leina14
 ~(*She looks up into your face as if to kiss you again but smiles and kisses her finger and presses it to your lips instead*)...~
- = ~Let's not complicate our friendship with long term thoughts and wishes <CHARNAME>, even if they are spoken in jest.~
- = ~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful.~
- = ~Thank you <CHARNAME>.~
+== VPLEIB ~Let's not complicate our friendship with long term thoughts and wishes <CHARNAME>, even if they are spoken in jest.~
+== VPLEIB ~You have helped me to get my head straightened out, or at least helped me to get it straighter than it has been for a while now... and for that I am grateful.~
+== VPLEIB ~Thank you <CHARNAME>.~
 END
  ++ ~Always ready to help a lady straighten her head, especially when it happens to be such a pretty head.~ EXTERN VPLEIB PCM7Leina3
  ++ ~(*You kiss her finger before she can remove it from your lips*)... To see the spring return to your step and to know that I have brought this about is all the thanks I need.~ EXTERN VPLEIB PCM7Leina6
  ++ ~(*You press her finger to your mouth and make as if to nibble it*)... Mmm... so much sweetness in so small a part. Can a man be blamed if he yearns to taste the whole of such sweetness?~ EXTERN VPLEIB PCM7Leina7
 
+CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",17) Gender(Player1,MALE)~ THEN VPLEIB PCM8Leina1
 ~(*She grabs your hand and points excitedly to the sky*)... Quickly <CHARNAME>, make a wish!~
 END
@@ -2915,7 +2850,7 @@ END
 
 CHAIN VPLEIB PCM8Leina3
 ~(*She looks up at you, surprise on her face*)... With all that's going on in your life, you give your wish to me? You are truly a remarkable person <CHARNAME>.~
- = ~It's just as well that I wished for a future free of conflict and persecution for you... seeing as how you didn't.~
+== VPLEIB ~It's just as well that I wished for a future free of conflict and persecution for you... seeing as how you didn't.~
 END
  ++ ~(*You touch the hand, that is still held firmly by your own, to your lips*)... I thank the lady for her kind thoughts and her wish.~ EXTERN VPLEIB PCM8Leina4
  ++ ~Let us hope the gods grant both our wishes and we both get to live long, happy lives.~ EXTERN VPLEIB PCM8Leina4
@@ -2923,15 +2858,16 @@ END
 
 CHAIN VPLEIB PCM8Leina4
 ~(*Sadly*) Look, the star, it is no more! Is it not sad that its brilliance is lost to us forever... no more will it shine for us to stare up and wonder at its beauty?~
- = ~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina5
 ~"My own wish will be for you also...
 Star light, star bright,
 I wish I may, I wish I might,
 have the wish I wish tonight..."~
- = ~May the gods look favourably upon <CHARNAME> and grant him his wish for a life free of conflict and persecution.~
+== VPLEIB ~May the gods look favourably upon <CHARNAME> and grant him his wish for a life free of conflict and persecution.~
 END
  ++ ~(*You touch the hand, that is still held firmly by your own, to your lips*)... I thank the lady for her kind thoughts and her wish.~ EXTERN VPLEIB PCM8Leina4
  ++ ~I thank you... you have been generous with your wishes. Surely with you wishing on my behalf, the gods will look upon it as a selfless act and in granting you yours, give me mine also.~ EXTERN VPLEIB PCM8Leina4
@@ -2940,14 +2876,15 @@ END
 
 CHAIN VPLEIB PCM8Leina6
 ~I have had time to contemplate my life and whereas there are parts I would change, on a whole I am content.~
- = ~I have a couple of issues still to work through but I am confident that when I confront them, I now have the strength to resolve them without the aid of wishes...~
- = ~...but look <CHARNAME>, the star, it is no more! Is it not sad that its brilliance is lost to us forever... no more will it shine for us to stare up and wonder at its beauty?~
- = ~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~I have a couple of issues still to work through but I am confident that when I confront them, I now have the strength to resolve them without the aid of wishes...~
+== VPLEIB ~...but look <CHARNAME>, the star, it is no more! Is it not sad that its brilliance is lost to us forever... no more will it shine for us to stare up and wonder at its beauty?~
+== VPLEIB ~Now, we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina7
 ~You can't know that <CHARNAME>, no one knows how much the gods or even fate take a hand in our lives.~
- = ~(*She points to the sky again*)... Come, make your wish, see, not only is there a full moon tonight but a star is falling as well... two omens that bring luck if wished upon, but you must be quick, before the star touches the ground.~
+== VPLEIB ~(*She points to the sky again*)... Come, make your wish, see, not only is there a full moon tonight but a star is falling as well... two omens that bring luck if wished upon, but you must be quick, before the star touches the ground.~
 END
  ++ ~I wish only for happiness to come your way Leina, "...and may she one day take the time to look closer to home and see that there is one who cares and wishes only to see her happy".~ EXTERN VPLEIB PCM8Leina3
  ++ ~Then I wish good health to Leina, may she always be at my side and continue to be my own bright star, shining through and giving me hope whenever I fall or feel despair.~ EXTERN VPLEIB PCM8Leina8
@@ -2955,14 +2892,15 @@ END
 
 CHAIN VPLEIB PCM8Leina8
 ~(*She laughs*)... I thank you for your wish <CHARNAME>, but I think it is not as selfless as it first appears.~
- = ~It has often been told to me that when it comes to raising one's moral there is nothing like a good hearty song and who better to deliver the song than a bard.~
- = ~Don't worry that I have seen through your ruse, for this bard is more than content to remain in the company of those who appreciate her melodies.~
- = ~After all, what is music for if not to enrich the lives of others and to bring hope to everyone.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~It has often been told to me that when it comes to raising one's moral there is nothing like a good hearty song and who better to deliver the song than a bard.~
+== VPLEIB ~Don't worry that I have seen through your ruse, for this bard is more than content to remain in the company of those who appreciate her melodies.~
+== VPLEIB ~After all, what is music for if not to enrich the lives of others and to bring hope to everyone.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina9
 ~Aha! Me thinks <CHARNAME> has a secret fantasy, or maybe a secret desire he is too shy to share.~
- = ~Maybe he has his eye on a lady and he needs the gods intervention in getting her to look his way? What a wasted wish that would be, for if the lady has not looked your way on her own accord, and the gods force her head around, could you be sure that her feelings are true and not put in her heart by them?~
+== VPLEIB ~Maybe he has his eye on a lady and he needs the gods intervention in getting her to look his way? What a wasted wish that would be, for if the lady has not looked your way on her own accord, and the gods force her head around, could you be sure that her feelings are true and not put in her heart by them?~
 END
  ++ ~Don't be daft Leina!~ EXTERN VPLEIB PCM8Leina10
  ++ ~Oho... you are good Leina, but there is no way you will wheedle it out of me with your idle questions.~ EXTERN VPLEIB PCM8Leina10
@@ -2970,14 +2908,15 @@ END
 
 CHAIN VPLEIB PCM8Leina10
 ~Then it is a shame that the star is no more, for I would have wished to know what it was that you wished so secretly for, but the moment is gone.~
- = ~As brilliantly as it shines as it travels across the skies, it is sad when a star falls for it is lost to us forever... no more will it shine for us to stare up and wonder at its beauty.~
- = ~I hope you get your wish, whatever it was, but for now we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~As brilliantly as it shines as it travels across the skies, it is sad when a star falls for it is lost to us forever... no more will it shine for us to stare up and wonder at its beauty.~
+== VPLEIB ~I hope you get your wish, whatever it was, but for now we must be patient, because neither the gods nor fate will rush themselves on our behalf.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina11
 ~I don't normally. I am well aware that the moon has her cycles and is regularly seen shining in all her splendour... I have even, on occasion, stood and watched a star as it dies and plunges to the ground, but I have never been witness to both events happening in the same sky.~
- = ~If there was a time to believe in omens then tonight is such a time.~
- = ~Come, before the star touches the ground, throw caution to the wind and make a wish.~
+== VPLEIB ~If there was a time to believe in omens then tonight is such a time.~
+== VPLEIB ~Come, before the star touches the ground, throw caution to the wind and make a wish.~
 END
  ++ ~Forget it, such nonsense is for lovers and bards.~ EXTERN VPLEIB PCM8Leina12
  ++ ~I don't believe in omens, and as for wishes, I have yet to meet someone whom the gods have looked on fondly enough to grant them a wish, but don't let me stop you.~ EXTERN VPLEIB PCM8Leina13
@@ -2986,13 +2925,15 @@ END
 
 CHAIN VPLEIB PCM8Leina12
 ~You forget <CHARNAME>, I am a bard, so maybe I will just go ahead and do the bardic nonsense thing. (*She turns her attention back to the skies.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina13
 ~Just because you haven't met them it doesn't mean they aren't out there. Maybe there are those who prefer to keep their good fortune to themselves, fearing the consequence if they let it be known that they have been favoured by the gods.~
- = ~You yourself should understand the implications of letting the world know you have been touched by a god.~
- = ~I know nothing of omens but maybe just this once I will throw caution to the wind and make my wish. (*Turning her back on you she looks once again to the skies.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~You yourself should understand the implications of letting the world know you have been touched by a god.~
+== VPLEIB ~I know nothing of omens but maybe just this once I will throw caution to the wind and make my wish. (*Turning her back on you she looks once again to the skies.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina14
 ~There is but one god to blame for your troubles and he is dead. Regardless of your connection to Bhaal, who's to say the others won't look upon you favourable... make your wish, what have you to lose?~
@@ -3003,25 +2944,29 @@ END
 
 CHAIN VPLEIB PCM8Leina15
 ~I will wish for you too. Who knows, with both of us wishing...~
- = ~"Star light, star bright,
+== VPLEIB ~"Star light, star bright,
 I wish I may, I wish I might,
 have the wish I wish tonight..."~
- = ~May the gods look favourably upon <CHARNAME> and grant him his wish for a life free of conflict and persecution.~
- = ~Now all we need is patience and we will see if the gods have favoured us tonight.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~May the gods look favourably upon <CHARNAME> and grant him his wish for a life free of conflict and persecution.~
+== VPLEIB ~Now all we need is patience and we will see if the gods have favoured us tonight.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina16
 ~Done! That is one wish you will not have to wait for the favour of the gods, as from this moment you will not be bothered by this bard. She will keep her notions to herself and her presence at a distance in future.~
- = ~Now, please leave me to reflect on the last moments of that star's beauty before it is lost forever. (*Turning her back on you she looks once again to the skies.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+== VPLEIB ~Now, please leave me to reflect on the last moments of that star's beauty before it is lost forever. (*Turning her back on you she looks once again to the skies.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB PCM8Leina17
 ~I have had time to contemplate my life and whereas it has not been easy and I have a lot of regrets, I think I have grown into who I am because of them.~
- = ~To change things now would undoubtably change me and whose to say I would like the person I became.~
- = ~No, I will not ask the gods to tamper with time, I am confident that I will work out any remaining issues I have without the aid of wishes.~
- = ~I am happy and have no need to ask for a happy ever after life... as for my wish, that I will keep to myself, now if you'll excuse me... (*Turning her back on you she looks once again to the skies.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~ EXIT
+== VPLEIB ~To change things now would undoubtably change me and whose to say I would like the person I became.~
+== VPLEIB ~No, I will not ask the gods to tamper with time, I am confident that I will work out any remaining issues I have without the aid of wishes.~
+== VPLEIB ~I am happy and have no need to ask for a happy ever after life... as for my wish, that I will keep to myself, now if you'll excuse me... (*Turning her back on you she looks once again to the skies.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",18)~
+EXIT
 
+CHAIN
 IF WEIGHT #-1 ~Global("VP_Ric_ClericQuest","LOCALS",1)~ THEN VPLEIB ClericQuest1
 ~(*Breathing in deeply*) Oh at last, the sweet smell of fresh air!~ [mute]
 END
@@ -3047,15 +2992,18 @@ END
 
 CHAIN VPLEIB ClericQuest4
 ~(*Sighing*) When will <PRO_HESHE> ever learn that making the effort to be a little more presentable goes a long way with folk!~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB ClericQuest5
 ~(*Sighing*) Yes, well I'm guessing you don't have a clue which way the wind is blowing right now.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB ClericQuest6
 ~I'm not challenging your right to lead, so there's no need for you to be getting so testy!~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB ClericQuest7
 ~After our bath and rub down with fluffy towels, how better to end the day than by drinking ale and singing into the wee hours of the morning?~
@@ -3067,12 +3015,15 @@ END
 
 CHAIN VPLEIB ClericQuest8
 ~(*Laughing softly*) All types show up at the Five Flagons <CHARNAME>, who knows, you may get lucky.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB ClericQuest8a
 ~(*Laughing softly*) Maybe a hot bath and the luxury of a fluffy towel around you will awaken your senses to the need to relax, to enjoy the company of good friends and to rejoice at having got through another perilous day <CHARNAME>.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
+CHAIN
 IF WEIGHT #-2 ~Global("VP_Ric_ClericQuest","LOCALS",3)~ THEN VPLEIB ClericQuest9
 ~Uh, please wait up a moment <CHARNAME>, I have something very important to ask you.~
 END
@@ -3083,7 +3034,8 @@ END
 
 CHAIN VPLEIB ClericQuest10
 ~Hmm, maybe some other time then.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB ClericQuest11
 ~No it can not wait. Unless of course you care little about what you do, or the impression you make on others!~
@@ -3100,11 +3052,13 @@ END
 
 CHAIN VPLEIB ClericQuest13
 ~If that is what you want to do then so be it but do try to remember that we are in a temple and a little decorum wouldn't go amiss.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB ClericQuest14
 ~Whatever, but you may do well to remember it's not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB ClericQuest15
 ~Shhh, keep your voice down... we are in a temple, not some rag-tag tavern. Now since you didn't listen to me when we were outside. Are you going to hush now?~
@@ -3143,7 +3097,7 @@ END
 
 CHAIN VPLEIB ClericQuest19
 ~Your nose may not be working, but are you blind as well as deaf? Look at the mess on the carpet and the sewer grime on our clothes. We will make a better impression if we partake in a hot bath and the luxury of warm fluffy warm towels first.~
- = ~The job is done the reward can wait, and please, keep your voice down.~
+== VPLEIB ~The job is done the reward can wait, and please, keep your voice down.~
 END
  ++ ~Look who is calling the kettle black, just keep YOUR voice down and we'll get to an inn soon enough.~ EXTERN VPLEIB ClericQuest19a
  ++ ~You'll get to your bath soon enough! The reward first and then we can enjoy more of what the inn has to offer.~ EXTERN VPLEIB ClericQuest19a
@@ -3163,7 +3117,8 @@ END
 
 CHAIN VPLEIB ClericQuest20
 ~Then let us away to the Five Flagons, Samuel will understand and have hot water for us all in no time.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~
+EXIT
 
 CHAIN VPLEIB ClericQuest21
 ~(*Leina laughs softly and touches your arm*) What are we like?~
@@ -3180,12 +3135,15 @@ END
 
 CHAIN VPLEIB ClericQuest22a
 ~If that is what you want to do then so be it but do try to remember it's not always about hack, slash and get your reward. We are after all in a temple and little decorum might not go amiss.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB ClericQuest23
 ~I think you'll clean up just fine. We'll sneak in the back way so's we don't put Samuels patrons off their ale.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",4)~
+EXIT
 
+CHAIN
 IF WEIGHT #-3 ~Global("VP_Ric_ClericQuest","LOCALS",5)~ THEN VPLEIB ClericQuest24
 ~<CHARNAME>, are you satisfied now?~
 END
@@ -3194,7 +3152,8 @@ END
 
 CHAIN VPLEIB ClericQuest25
 ~(*Thinking aloud*) Mmm... I think I will call this one "The ballad of <CHARNAME> the smelly grouch".~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB ClericQuest26
 ~You say you don't want people to always be looking at you as a curiosity, so if you would stop once in awhile to listen to others we might be able to change that image of yours.~
@@ -3210,7 +3169,7 @@ END
 
 CHAIN VPLEIB ClericQuest28
 ~It is not about the quest or the reward. We are in this elegant temple and you march us in here as if it were a pig sty!~
- = ~I can see by the puzzled look you don't understand. We have just come from the sewers, what do you think we smell like and who do you think left those tracks on the clean floor?~
+== VPLEIB ~I can see by the puzzled look you don't understand. We have just come from the sewers, what do you think we smell like and who do you think left those tracks on the clean floor?~
 END
  ++ ~I see in your point another reason I need to keep you in the group. So what do you suggest we do?~ EXTERN VPLEIB ClericQuest29
  ++ ~I see and your point being we best get out of here before they try and make us clean it up, yes?~ EXTERN VPLEIB ClericQuest32
@@ -3225,23 +3184,29 @@ END
 
 CHAIN VPLEIB ClericQuest30
 ~I despair of you <CHARNAME>, I can only think that you want to be sent to Asylum permanently.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB ClericQuest31
 ~You maybe a Bhaalspawn and deserve to be feared but that's no excuse to go around smelling like a sewer rat... that'll only give people cause to avoid you, not fear you.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB ClericQuest32
 ~My point exactly, let's go to the Five Flagons for a hot bath, fluffy towels all round and ale.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
 CHAIN VPLEIB ClericQuest33
 ~(*Sighing*) I am sure they have, but we could have been a little more considerate and not brought the mess in with us to start with... still, what is done is done.~
- = ~Let us away to the Five Flagons for a hot bath, fluffy towels all round and ale, better late than never I say.~
-DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~ EXIT
+== VPLEIB ~Let us away to the Five Flagons for a hot bath, fluffy towels all round and ale, better late than never I say.~
+DO ~SetGlobal("VP_Ric_ClericQuest","LOCALS",6)~
+EXIT
 
+CHAIN
 IF WEIGHT #-4 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("PCKeepOwner","GLOBAL",1)~ THEN VPLEIB DeArnise1
 ~<CHARNAME>, are you in a hurry to leave?~ [mute]
+END
  ++ ~Yes we need to get on with business.~ EXTERN VPLEIB DeArnise2
  ++ ~Yes, I am. We are not drudges you know, the servants can handle everything from here on.~ EXTERN VPLEIB DeArnise3
  ++ ~Yes, we need to get a move on it before they think we are here to help clean this mess up.~ EXTERN VPLEIB DeArnise4
@@ -3274,7 +3239,8 @@ EXTERN VPLEIB DeArnise4b
 
 CHAIN VPLEIB DeArnise4b
 ~(*Then screwing up her nose and to hide a smile, she turns away*)... And when you my dear <CHARNAME>, find yourself leading whilst the rest of us follow downwind and at a distance, you may well wish you'd taken advantage of the luxuries the keep has to offer... Life is about to get lonely at the front.~
-DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB DeArnise5
 ~(*A gleam comes to her eye*) Mmmm... an interesting thought. Now that you mention it, you do swing a sword a lot like a broom... Ooops... couldn't resist that one <CHARNAME>. Anyway, I was just talking to Nalia and...~
@@ -3301,6 +3267,7 @@ END
  ++ ~The hot water sounds good but what ya trying to do, make a sissy out of me? Fluffy towels!~ EXTERN VPLEIB DeArnise32
  ++ ~Leina we really don't have time for this, we must be on our way.~ EXTERN VPLEIB DeArnise29
 
+CHAIN
 IF WEIGHT #-5 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("RoenalControl","GLOBAL",1) InParty("Korgan") !Dead("Korgan")~ THEN VPLEIB DeArnise8
 ~Korgan, do your kin have such fine elegant buildings such as these?~
 EXTERN BKORGAN LeiDear1
@@ -3324,6 +3291,7 @@ END
  ++ ~Leina we... ah well, what's the harm if they have enough ale to go around.~ EXTERN VPLEIB DeArnise30
  ++ ~Oh, and how grateful is she?~ EXTERN VPLEIB DeArnise31
 
+CHAIN
 IF WEIGHT #-6 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("RoenalControl","GLOBAL",1) InParty("Mazzy") !Dead("Mazzy") OR(2) !InParty("Korgan") Dead("Korgan")~ THEN VPLEIB DeArnise12
 ~Mazzy, I was wondering would you ever want to be in charge of protecting a keep such as this?~
 EXTERN BMAZZY LeiDear1
@@ -3343,6 +3311,7 @@ END
  ++ ~Leina we... ah well, what's the harm if they have enough ale to go around.~ EXTERN VPLEIB DeArnise30
  ++ ~Oh, and how grateful is she?~ EXTERN VPLEIB DeArnise31
 
+CHAIN
 IF WEIGHT #-7 ~Global("VP_Ric_DeArnise","LOCALS",1) Global("RoenalControl","GLOBAL",1) InParty("njhroth") !Dead("njhroth") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy")~ THEN VPLEIB DeArnise16
 ~Hrothgar in all your adventuring days were you ever able to acquire such a fine estate as this?~
 EXTERN NJHROB LeiDear1
@@ -3447,7 +3416,8 @@ EXTERN VPLEIB DeArnise34
 
 CHAIN VPLEIB DeArnise34
 ~Oh, and we need to keep on the best of terms with the locals so you they need to know that all the trolls are gone and that includes the stench.~
-DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB DeArnise35
 ~Didn't Gorion teach you anything about decorum?~
@@ -3455,8 +3425,10 @@ EXTERN VPLEIB DeArnise34
 
 CHAIN VPLEIB DeArnise36
 ~Take a bathe, and for tomorrow we celebrate tomorrow. The locals need to know that all the trolls are gone and that includes the stench. Dungeon crawlers, do you think <PRO_HESHE> will ever be the first to take a bath?~
-DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_DeArnise","LOCALS",2)~
+EXIT
 
+CHAIN
 IF WEIGHT #-8 ~Global("VP_Ric_Sphere","LOCALS",1)~ THEN VPLEIB Sphere1
 ~(*Looking puzzled*) I feel that there's something... I don't know, strange about all this.~
 END
@@ -3515,15 +3487,18 @@ EXTERN BKORGAN LeiSpher1
 
 CHAIN VPLEIB Sphere8a
 ~I am not a side of beef for the two of you or anyone to haggle over. Don't expect me to watch your back for the blade when next we battle for our lives!~
-DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB Sphere9
 ~<CHARNAME>, I see that your hearts is truly black... you haven't a care for those you help, greed alone is what drives you! I did agree to help you and I will but remember, when the quest is done I never want to see your face again.~
-DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXIT
+DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2) SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~
+EXIT
 
 CHAIN VPLEIB Sphere10
 ~I see you have no interest in what I have to say so let us be on our way.~
-DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB Sphere11
 ~I understand that and appreciate your vigilance but since I do not lead the group I look to the sides and to the back which allows me some time to ponder on our surroundings.~
@@ -3674,7 +3649,8 @@ END
 
 CHAIN VPLEIB Sphere29
 ~(*Glancing back*) I heard that... admit it, you were all intrigued by my little tale back there.~
-DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB Sphere30
 ~Oh, <CHARNAME> I'm sorry my thoughts were else where what did you say?~
@@ -3692,7 +3668,8 @@ END
 
 CHAIN VPLEIB Sphere32
 ~Besides the ale, I was thinking a hot bath and a warm fluffy towel would be just so fine. Hey, and the last one to the Coronet pays. (*Leina leaps over the edge and is off before you can respond.*)~
-DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~ EXIT
+DO ~SetGlobal("VP_Ric_Sphere","LOCALS",2)~
+EXIT
 
 CHAIN VPLEIB Sphere33
 ~(*She spins around*) Um... do you think so... better than The Coronet's best ale do you reckon? I'm thinking now would be a good time to put that to the test. What do you say?~
@@ -3701,6 +3678,7 @@ END
  ++ ~Ale? Is that all that is on your mind?~ EXTERN VPLEIB Sphere32
  ++ ~Ale and a hot meal sounds great.~ EXTERN VPLEIB Sphere32
 
+CHAIN
 IF WEIGHT #-9 ~Global("VP_LoveTalk","LOCALS",20)~ THEN VPLEIB PCM9Leina1
 ~(*Dropping her backpack to the ground, she sits down opposite you and begins rubbing her shoulders)... Ah, sweet relief... it's good to sit at last! I swear that pack gets heavier by the hour.~
 END
@@ -3746,9 +3724,9 @@ END
 
 CHAIN VPLEIB PCM9Leina7
 ~(*She touches your hands to her face for a second... then lets them drop*)... I can not deny it, I find myself drawn to you in much the same way the compass needle is drawn to ever point north... and yet, I can not give you love <CHARNAME>. I promised my heart it would never be asked to risk such pain again.~
- = ~Instead, it has filled itself with the joy of music, and in doing so, has shown me a love that surpasses any passion of a materialistic nature... a love that is safe and will never hurt either me, or my heart again. That is all the love I shall ever need.~
- = ~(*Then, putting her finger to your lips*)... Please, say no more for now, all I ask is for you to be honest with your own heart... if you are seeking love, and you feel that what I can give you is not enough, then we need say no more...~
- = ~(*Before turning and making her way to her own bed, she kisses you all too briefly on your mouth*)... Sleep well my dear <CHARNAME>.~
+== VPLEIB ~Instead, it has filled itself with the joy of music, and in doing so, has shown me a love that surpasses any passion of a materialistic nature... a love that is safe and will never hurt either me, or my heart again. That is all the love I shall ever need.~
+== VPLEIB ~(*Then, putting her finger to your lips*)... Please, say no more for now, all I ask is for you to be honest with your own heart... if you are seeking love, and you feel that what I can give you is not enough, then we need say no more...~
+== VPLEIB ~(*Before turning and making her way to her own bed, she kisses you all too briefly on your mouth*)... Sleep well my dear <CHARNAME>.~
 EXIT
 
 CHAIN VPLEIB PCM9Leina8
@@ -3800,8 +3778,8 @@ EXIT
 
 CHAIN VPLEIB PCM9Leina16
 ~(*Standing up, she walks across... settling herself beside you*)... In that case, I am going to have to judge for myself... permission granted...~
- = ~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina's tired muscles. As you feel the tension begin to leave them, you move to her shoulders*)...~
- = ~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
+== VPLEIB ~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina's tired muscles. As you feel the tension begin to leave them, you move to her shoulders*)...~
+== VPLEIB ~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
 END
  ++ ~(*Reaching out, you grasp her hands*) It's very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ EXTERN VPLEIB PCM9Leina7
  ++ ~(*Reaching out, you grasp her hands*) If sleep is the lady's intention, then perhaps the lady shouldn't be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ EXTERN VPLEIB PCM9Leina7
@@ -3809,8 +3787,8 @@ END
 
 CHAIN VPLEIB PCM9Leina17
 ~(*Standing up, she walks across... settling herself beside you*)... The lady is not at all sure she should trust a gift given by the god of murder, but on the other hand, she trusts the man who was granted the gift. So the lady grants her permission...~
- = ~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina's tired muscles. As you feel the tension begin to leave them you move to her shoulders*)...~
- = ~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
+== VPLEIB ~(*You place your hands on the nape of the neck offered you, and you begin to gently massage Leina's tired muscles. As you feel the tension begin to leave them you move to her shoulders*)...~
+== VPLEIB ~(*After a few minutes, you sense her body relax under your hands, she gives a sigh of contentment... making you suddenly aware of your own body as it responds to the scent and the closeness of Leina*)...~
 END
  ++ ~(*You fingers continue to gently knead Leina's shoulders... only a little more slowly*)... So, how is it, am I good... or am I good?~ EXTERN VPLEIB PCM9Leina18
  ++ ~(*You fingers continue to gently knead Leina's shoulders... only a little more slowly*)... I take it the lady is feeling much better now?~ EXTERN VPLEIB PCM9Leina18
@@ -3819,12 +3797,13 @@ END
 
 CHAIN VPLEIB PCM9Leina18
 ~You have wonderful hands <CHARNAME>! I find it hard to believe that the taint of murder runs through them... they feel such good, gentle hands.~
- = ~(*She yawns and smiles at you mischievously*) I feel so deliciously relaxed and tired now... yet, I see you are very much awake. Maybe a lullaby <CHARNAME>... to ease your way to sleep as you have eased mine?~
+== VPLEIB ~(*She yawns and smiles at you mischievously*) I feel so deliciously relaxed and tired now... yet, I see you are very much awake. Maybe a lullaby <CHARNAME>... to ease your way to sleep as you have eased mine?~
 END
  ++ ~(*Reaching out, you grasp her hands*) It's very difficult to feel anything but awake with you standing so close to me. The scent of you beside me... it pervades my senses, permeates every fibre of my body... Leina, you are so beautiful!~ EXTERN VPLEIB PCM9Leina7
  ++ ~(*Reaching out, you grasp her hands*) If sleep is the lady's intention, then perhaps the lady shouldn't be standing quite so close. Surely she is not so blind that she cannot see how the smell of her hair, her smile, the nearness of her sets my heart racing!~ EXTERN VPLEIB PCM9Leina7
  ++ ~(*Reaching out, you grasp her hands*) You take my breath away Leina and yet, you really have no idea of the turmoil you stir within me when you are standing so close beside me... it's all I can do to stop myself from sweeping you in my arms and losing myself in you!~ EXTERN VPLEIB PCM9Leina11
 
+CHAIN
 IF WEIGHT #-10 ~Global("VP_LoveTalk","LOCALS",23)~ THEN VPLEIB PCM10Leina1
 ~(*Looking at the object in her hand, she sighs and starts to walk away from the group*)...~
 END
@@ -3843,7 +3822,7 @@ END
 
 CHAIN VPLEIB PCM10Leina3
 ~(*At the sound of your voice, she jumps and makes a grab for her sword... you'd swear you could just make out tears drying on her cheeks*)...~
- = ~What! Oh, it's you <CHARNAME>, I didn't realise anyone had followed me. I am sorry, I hadn't meant to disturb your rest.~
+== VPLEIB ~What! Oh, it's you <CHARNAME>, I didn't realise anyone had followed me. I am sorry, I hadn't meant to disturb your rest.~
 END
  ++ ~I didn't mean to startle you. You look kinda funny, you sure you are ok?~ EXTERN VPLEIB PCM10Leina4
  ++ ~I was taking a stroll myself when I heard your voice... it sounded kind of strange. You ok?~ EXTERN VPLEIB PCM10Leina4
@@ -3868,8 +3847,8 @@ END
 
 CHAIN VPLEIB PCM10Leina6
 ~The last symbol of my life as wife to Bjorn. The wedding ring he gave to me, a symbol he said of his everlasting love and devotion, which instead, proved to be a symbol of false love and deceit...~
- = ~...well now it lies deep in the mud of the river, a fitting place for it. With it gone there is nothing left to stir the memories of the foolish hopes I once had for the future.~
- = ~Now that I have accepted music is my future, my heart is at last free.~
+== VPLEIB ~...well now it lies deep in the mud of the river, a fitting place for it. With it gone there is nothing left to stir the memories of the foolish hopes I once had for the future.~
+== VPLEIB ~Now that I have accepted music is my future, my heart is at last free.~
 END
  ++ ~(*You take her hand and looking into her eyes*) Leina, you can never be sure that which you are content to accept today, you will be content to accept tomorrow... no one can.~ EXTERN VPLEIB PCM10Leina8
  ++ ~(*You take her hand and looking into her eyes*) You have buried the past in the river, let now be the start of your future. Come, we will walk one step at a time as we greet it.~ EXTERN VPLEIB PCM10Leina9
@@ -3878,10 +3857,10 @@ END
 
 CHAIN VPLEIB PCM10Leina7
 ~(*She touches her hand to your face... a small enough gesture, and yet the slight touch of her hand sets your heart racing*)...~
- = ~Dear <CHARNAME>, the last thing I want is to bring sadness upon you, and yet I fear, through no intention on my part, it has already begun.~
- = ~(*She traces the contours of your face with her fingertips and then slowly withdraws her hand*)... There will be no more tears or thoughts for Bjorn.~
- = ~The wedding ring he gave me, a symbol, proof he said of his everlasting love and devotion, now lies deep in the mud of the river. A fitting resting place for a thing which came to symbolise deceit and false love.~
- = ~With it lies the memories of the foolish hopes I once had for the future... now I have accepted that music is my future my heart is at last free.~
+== VPLEIB ~Dear <CHARNAME>, the last thing I want is to bring sadness upon you, and yet I fear, through no intention on my part, it has already begun.~
+== VPLEIB ~(*She traces the contours of your face with her fingertips and then slowly withdraws her hand*)... There will be no more tears or thoughts for Bjorn.~
+== VPLEIB ~The wedding ring he gave me, a symbol, proof he said of his everlasting love and devotion, now lies deep in the mud of the river. A fitting resting place for a thing which came to symbolise deceit and false love.~
+== VPLEIB ~With it lies the memories of the foolish hopes I once had for the future... now I have accepted that music is my future my heart is at last free.~
 END
  ++ ~(*You take her hand and looking into her eyes*) Leina, you can never be sure that which you are content to accept today, you will be content to accept tomorrow... no one can.~ EXTERN VPLEIB PCM10Leina8
  ++ ~(*You take her hand and looking into her eyes*) You have buried the past in the river, let now be the start of your future. Come, we will walk one step at a time as we greet it.~ EXTERN VPLEIB PCM10Leina9
@@ -3890,20 +3869,21 @@ END
 
 CHAIN VPLEIB PCM10Leina8
 ~(*She returns your gaze for a moment and then moves as if to take her hand from yours, but instead, she entwines her fingers with yours*)...~
- = ~That is true and something for you to also consider <CHARNAME>, but come we need not make any decisions hastily.~
- = ~(*Then, taking a final look at the murky waters, she gently pulls you after her*)... let us just enjoy the walk back.~
+== VPLEIB ~That is true and something for you to also consider <CHARNAME>, but come we need not make any decisions hastily.~
+== VPLEIB ~(*Then, taking a final look at the murky waters, she gently pulls you after her*)... let us just enjoy the walk back.~
 EXIT
 
 CHAIN VPLEIB PCM10Leina9
 ~(*She returns your gaze for a moment. Then, taking a final look at the murky waters, she clasps your hand more firmly and gently pulls you after her*)...~
- = ~Yes, the past is buried and the future begins. Instead of rushing to bring it to us, let us walk slowly as we greet it, as we let it bring to us what it will.~
- = ~Now, before the group start up a search party for us, let us make our way back.~
+== VPLEIB ~Yes, the past is buried and the future begins. Instead of rushing to bring it to us, let us walk slowly as we greet it, as we let it bring to us what it will.~
+== VPLEIB ~Now, before the group start up a search party for us, let us make our way back.~
 EXIT
 
 CHAIN VPLEIB PCM10Leina10
 ~(*Taking a final look at the murky waters before turning to follow you, she sighs*)... Yes it is done... the past is buried and today the future begins.~
 EXIT
 
+CHAIN
 IF WEIGHT #-11 ~Global("VP_LoveTalk","LOCALS",25)~ THEN VPLEIB PCM11L1
 ~(*Turning her pendant over in her hand she looks up as she senses your approach*) Hello <CHARNAME>, a moment to fix this and then I'll be ready to move.~
 END
@@ -3948,13 +3928,14 @@ END
 
 CHAIN VPLEIB PCM11L6
 ~(*Sighing she tucks the pendant inside her armour*) I don't think this is the life my parents envisioned for me, nor I for myself. Still, it may not be my dream, but it is now my choice.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~ EXIT
+DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~
+EXIT
 
 CHAIN VPLEIB PCM11L7
 ~(*Taking your hand, she touches it lightly to the pendant now hanging about her neck*) You think this pendant holds me in the past <CHARNAME>?~
- = ~It is the single most precious thing I own, it is all I have left to remind me of my parents love. Memories of their love for each other and their love for me, their daughter.~
- = ~They had such hopes for me and what have I become...nothing more than a vagabond, a wandering minstrel.~
- = ~No, the past is as it should be, past, but for as long as I draw breath the memories tied to this pendant will live on in my heart.~
+== VPLEIB ~It is the single most precious thing I own, it is all I have left to remind me of my parents love. Memories of their love for each other and their love for me, their daughter.~
+== VPLEIB ~They had such hopes for me and what have I become...nothing more than a vagabond, a wandering minstrel.~
+== VPLEIB ~No, the past is as it should be, past, but for as long as I draw breath the memories tied to this pendant will live on in my heart.~
 END
  ++ ~(*Clasping both her hands a little tighter you gently draw her closer*) A very beautiful vagabond, an asset to this group and a woman any man would be proud to have walk beside him through this life. Leina I...~ EXTERN VPLEIB PCM11L8
  ++ ~(*Clasping both her hands a little tighter you gently draw her closer*) You have become your own woman Leina and a very beautiful one at that. Your parents would be proud of whom their daughter has become. Leina I...~ EXTERN VPLEIB PCM11L8
@@ -3963,9 +3944,10 @@ END
 
 CHAIN VPLEIB PCM11L8
 ~(*Smiling she reaches up and before wriggling from your clasp, kisses you long and hard on your mouth. You find your own mouth yielding to the softness of hers, but all too soon she lets you go.*)~
- = ~Shush, later <CHARNAME>, this is not the time. The future has need of you and we must make the most of the day ahead.~
- = ~(*Then laughing softly*) Besides, the group are eyeing us and I am sure they wondering whether they should sit down again or to make a start without us.~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~ EXIT
+== VPLEIB ~Shush, later <CHARNAME>, this is not the time. The future has need of you and we must make the most of the day ahead.~
+== VPLEIB ~(*Then laughing softly*) Besides, the group are eyeing us and I am sure they wondering whether they should sit down again or to make a start without us.~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~
+EXIT
 
 CHAIN VPLEIB PCM11L9
 ~(*Smiling she hands you a rag*) If you'd be so kind... I doubt my face is the only one in need of a wash this morning. After yesterday's hard march, we all fell abed the minute you called a halt.~
@@ -3978,14 +3960,15 @@ END
 
 CHAIN VPLEIB PCM11L10
 ~(*Laughing, she takes the rag from your hand and gently swats you with it*) Very funny, <CHARNAME>. Now go away and clean your own face. I would offer to do it for you but I shudder at what losing the grime may reveal.~
- = ~Could it be that <CHARNAME> fears the revelation himself and that is why he prefers his dirty face?~
- = ~(*Before you have time to respond, she tosses the rag at you and skips lightly away, leaving you with just the echo of her laughter.*)~
-DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~ EXIT
+== VPLEIB ~Could it be that <CHARNAME> fears the revelation himself and that is why he prefers his dirty face?~
+== VPLEIB ~(*Before you have time to respond, she tosses the rag at you and skips lightly away, leaving you with just the echo of her laughter.*)~
+DO ~SetGlobal("VP_LoveTalk","LOCALS",26)~
+EXIT
 
 CHAIN VPLEIB PCM11L11
 ~No, not cold, <CHARNAME>. The touch of your hand, it... it was a little cold on my neck. (*Taking your hand, she touches it lightly to the pendant now hanging about her neck.*)~
- = ~This... this pendant is the single most precious thing I own, it is all I have left to remind me of my parents love. Their love for each other and their love for me, their daughter.~
- = ~They had such hopes for me and what have I become? Nothing more than a vagabond, a wandering minstrel.~
+== VPLEIB ~This... this pendant is the single most precious thing I own, it is all I have left to remind me of my parents love. Their love for each other and their love for me, their daughter.~
+== VPLEIB ~They had such hopes for me and what have I become? Nothing more than a vagabond, a wandering minstrel.~
 END
  ++ ~(*Clasping both her hands a little tighter you gently draw her closer*) A very beautiful vagabond, an asset to this group and a woman any man would be proud to have walk beside him through this life. Leina I...~ EXTERN VPLEIB PCM11L8
  ++ ~(*Clasping both her hands a little tighter you gently draw her closer*) You have become your own woman Leina and a very beautiful one at that. Your parents would be proud of whom their daughter has become. Leina I...~ EXTERN VPLEIB PCM11L8
@@ -3998,13 +3981,13 @@ EXTERN NJMELB heist11
 
 CHAIN VPLEIB heist8
 ~I am not sure myself. I did as you said and distracted the two guards, pretty easy really. Men... all it takes is the sight of a comely face and figure and they're distracted.~
- = ~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~
- = ~Look, there she is, ask her yourself. (*Leina waves at Imoen, beckoning her over.*)~
+== VPLEIB ~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~
+== VPLEIB ~Look, there she is, ask her yourself. (*Leina waves at Imoen, beckoning her over.*)~
 EXTERN BIMOEN2 heist5
 
 CHAIN VPLEIB heist9
 ~That's ok Melora, I am sure it will all come back to you soon.~
- = ~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now that's a wall I'd love to be a fly on.~
+== VPLEIB ~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now that's a wall I'd love to be a fly on.~
 EXTERN BIMOEN2 heist9
 
 CHAIN VPLEIB heist10
@@ -4017,6 +4000,7 @@ END
  ++ ~Your words may be true, but I will gain immense satisfaction in exacting my revenge. That in itself will suffice.~ EXTERN VPLEIB 23
  ++ ~I could probably forego revenge for what I suffered but I will never forgive him for what he did to Imoen. She is the gentlest and most generous of people I know. We are of the same age but she is still a child in so many ways. She did not deserve the abuse she suffered at Irenicus's hand and that is what he must and will pay for!~ EXTERN VPLEIB 23
 
+CHAIN
 IF WEIGHT #-99 ~Global("VP_Ric_TheatrQuest","LOCALS",1)~ THEN VPLEIB TheatrQ0
 ~<CHARNAME>, wow, that was sure some trip. Traveling with you is really an adventure. One minute we are here in our time and the next we are who knows where?~ [mute]
  ++ ~Slow down Leina. What we do is no sightseeing trip.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ EXTERN VPLEIB TheatrQ1
@@ -4064,7 +4048,7 @@ EXIT
 
 CHAIN VPLEIB TheatrQ7
 ~You must be hard of hearing is all I can say... that, or I suggest you clean out those ears of yours the next time you bathe. Might help you hear all the smart talk that's been going around you!~
- = ~Now, if you'll excuse me, I think you should treat the group to a couple of ales. I am going to speak to Samuel.~
+== VPLEIB ~Now, if you'll excuse me, I think you should treat the group to a couple of ales. I am going to speak to Samuel.~
 END
  ++ ~Leina... Leina, wait up a moment, I want to ask you some thing!~ EXTERN VPLEIB TheatQ13
  ++ ~Oh that wench, I'll have her hide one of these days.~ EXTERN VPLEIB TheatQ13
@@ -4079,7 +4063,7 @@ END
 
 CHAIN VPLEIB TheatrQ9
 ~(*A mischievous glint comes to her eye and she makes as if to tickle you*) I didn't say it tickled, I said it tingled.~
- = ~So you do feel your surroundings... it tickles you, hummmm. I must remember that. The big bad adventurer gets all ticklish!~
+== VPLEIB ~So you do feel your surroundings... it tickles you, hummmm. I must remember that. The big bad adventurer gets all ticklish!~
 END
  ++ ~Hey I'm not made of stone nor am I a troll...I do have feelings!~ EXTERN VPLEIB TheatQ10
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN BIMOEN2 theatr
@@ -4088,7 +4072,7 @@ END
 
 CHAIN VPLEIB TheatQ9a
 ~(*Laughing softly*) Imoen, we must talk soon, I see there is much to learn about the both of you.~
- = ~First, see if you can get <CHARNAME> to buy the first round of ale for everyone, I must speak to Samuel for a minute.~
+== VPLEIB ~First, see if you can get <CHARNAME> to buy the first round of ale for everyone, I must speak to Samuel for a minute.~
 END
  ++ ~Leina... Leina, wait up a moment, I want to ask you some thing!~ EXTERN VPLEIB TheatQ13
  ++ ~Oh that wench, I'll have her hide one of these days.~ EXTERN VPLEIB TheatQ13
@@ -4103,7 +4087,7 @@ END
 
 CHAIN VPLEIB TheatQ11
 ~Oh my, is the big adventurer afraid of little ol' me?~
- = ~Now, whilst I go speak with Samuel, you can buy everyone a tankard.~
+== VPLEIB ~Now, whilst I go speak with Samuel, you can buy everyone a tankard.~
 END
  ++ ~Leina... Leina, wait up a moment, I want to ask you some thing!~ EXTERN VPLEIB TheatQ13
  ++ ~Oh that wench, I'll have her hide one of these days.~ EXTERN VPLEIB TheatQ13
@@ -4111,7 +4095,7 @@ END
 
 CHAIN VPLEIB TheatQ12
 ~I tell you, the time it takes you to finally get around to taking care of the group, they'd die of thirst waiting for you to finish nattering.~
- = ~See how patiently they are waiting for you...now whilst you spend some of that gold we've bagged on a round or two for everyone, I am going to talk to Samuel.~
+== VPLEIB ~See how patiently they are waiting for you...now whilst you spend some of that gold we've bagged on a round or two for everyone, I am going to talk to Samuel.~
 END
  ++ ~Leina... Leina, wait up a moment, I want to ask you some thing!~ EXTERN VPLEIB TheatQ13
  ++ ~Oh that wench, I'll have her hide one of these days.~ EXTERN VPLEIB TheatQ13
@@ -4119,15 +4103,15 @@ END
 
 CHAIN VPLEIB TheatQ13
 ~(*Ignoring you, she hurries over to Samuel*) Samuel, Samuel!~
-EXTERN ~FFBART~ theatr1
+EXTERN FFBART theatr1
 
 CHAIN VPLEIB TheatQ14
 ~(*She shudders but laughs at her friend's words*) Heavens no... no Samuel, never again you know that but <CHARNAME> has just agreed to take on the running of the theatre. Isn't that exciting news, now I will be around more often to see you and to sing for your patrons.~
-EXTERN ~FFBART~ theatr2
+EXTERN FFBART theatr2
 
 CHAIN VPLEIB TheaQ14a
 ~(*She shudders but laughs at her friend's words*) Heavens no... no Samuel, never again you know that but since I am back for a little while, how would you like me to sing for your patrons tonight?~
-EXTERN ~FFBART~ theatr2
+EXTERN FFBART theatr2
 
 CHAIN VPLEIB TheatQ15
 ~(*As you approach Leina excitedly spins around*) This is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel's patrons!~
@@ -4259,9 +4243,9 @@ END
 
 CHAIN VPLEIB TheatQ24
 ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you all wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
- = ~Never mind, I have already had Samuel prepare a bath for each of you and I have been so patient... wouldn't you agree, waiting for my own warm fluffy towel?~
- = ~Ah there, Samuel has signalled that your rooms and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don't forget to thank Samuel, he has reserved his thickest and fluffiest towels for you all.~
- = ~(*She jumps up and scampers to her room*)~
+== VPLEIB ~Never mind, I have already had Samuel prepare a bath for each of you and I have been so patient... wouldn't you agree, waiting for my own warm fluffy towel?~
+== VPLEIB ~Ah there, Samuel has signalled that your rooms and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don't forget to thank Samuel, he has reserved his thickest and fluffiest towels for you all.~
+== VPLEIB ~(*She jumps up and scampers to her room*)~
 END
  ++ ~(*Shaking your head in disbelief*) What the... what has just happened here? Didn't we agree at the stairs that we were going to demand a bath? How is it now she has turned the tables on us? Asking us why *we* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? I'll not let her dangle an ale in my face again!~ EXTERN VPLEIB TheaQ24a
  ++ ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of us yet again! I swear I'll get her, maybe not today, maybe not tomorrow but I'll get her one day!~ EXTERN VPLEIB TheaQ24a
@@ -4269,20 +4253,22 @@ END
 
 CHAIN VPLEIB TheaQ24a
 ~(*Samuel walks over and interrupts you*)~
-EXTERN ~FFBART~ theatr4
+EXTERN FFBART theatr4
 
 CHAIN VPLEIB TheaQ24b
 ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
- = ~Never mind, I have already had Samuel prepare a bath for you and I have been so patient... wouldn't you agree, waiting for my own warm fluffy towel?~
- = ~Ah there, Samuel has signalled that you room and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don't forget to thank Samuel, he has reserved his thickest and fluffiest towels for you.~
- = ~(*She jumps up and scampers to her room*)~
+== VPLEIB ~Never mind, I have already had Samuel prepare a bath for you and I have been so patient... wouldn't you agree, waiting for my own warm fluffy towel?~
+== VPLEIB ~Ah there, Samuel has signalled that you room and hot water are ready, so finish your ale and take your baths before they get cold. I will see you shortly for dinner, after I have bathed and refreshed myself. Oh, and don't forget to thank Samuel, he has reserved his thickest and fluffiest towels for you.~
+== VPLEIB ~(*She jumps up and scampers to her room*)~
 END
  ++ ~(*Shaking your head in disbelief*) What the... what has just happened here? Didn't we agree at the stairs that I was going to demand a bath? How is it now she has turned the tables on me? Asking me why *I* want to sit around talking, drinking and smelling like sweat instead of taking a bathe first since we are in an Inn? I'll not let her dangle an ale in my face again!~ EXTERN VPLEIB TheaQ24a
  ++ ~(*Shaking your head in disbelief*) What the... why that little minx was one step ahead of me yet again! I swear I'll get her, maybe not today, maybe not tomorrow but I'll get her one day!~ EXTERN VPLEIB TheaQ24a
  ++ ~(*Shaking your head in disbelief*) What the... why that cheeky wench! Well, I'm damned if I'm going to take a bath now... on principal!~ EXTERN VPLEIB TheaQ24a
 
+CHAIN
 IF WEIGHT #-98 ~Global("VP_Ric_RadianQuest","LOCALS",2)~ THEN VPLEIB RadianQ0
 ~Arrrrgggg... Yea gods!~ [mute]
+END
  ++ ~What the... what in the nine hells is the matter now Leina?~ EXTERN VPLEIB RadianQ3
  ++ ~(*You look at Leina and think better of asking her what the matter is for she is looking annoyed over something*) Not now Leina. I'm not in the mood for a heated discussion!~ EXTERN VPLEIB RadiaQE
  ++ ~Steady up there Leina. What has just caused such an outburst this time?~ EXTERN VPLEIB RadianQ3
@@ -4290,7 +4276,8 @@ IF WEIGHT #-98 ~Global("VP_Ric_RadianQuest","LOCALS",2)~ THEN VPLEIB RadianQ0
 
 CHAIN VPLEIB RadiaQE
 ~Sorry, <CHARNAME>, just me thinking aloud again.~
-DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB RadianQ2
 ~No, <CHARNAME>, no he did not touch me. It is that accursed dragon that is annoying me.~
@@ -4337,7 +4324,7 @@ END
 
 CHAIN VPLEIB RadianQ7
 ~Oh that cute little dragon familiar you have could never upset me. He is so cuddly and if you don't watch it he might just leave you for me.~
- = ~All jesting aside, didn't the way Firkraag manipulated Garren and us bother you in the slightest?~
+== VPLEIB ~All jesting aside, didn't the way Firkraag manipulated Garren and us bother you in the slightest?~
 END
  ++ ~I hate to be manipulated probably more so than anyone but other then causing us to think we were fighting monsters instead of Paladins I don't think he took any choices away from us. Besides which, we've already extracted quite enough restitution from Firkraag for his manipulations, and left him rotting in a heap for his efforts.~ EXTERN VPLEIB RadiaQ12
  ++ ~Hey, what kind of a group do you think we are? We're in this to see blood flow, so I don't care how the battle starts just as long as it does and it is challenging. Firkraag and his manipulating merely helped open that door.~ EXTERN VPLEIB RadiQ101
@@ -4346,7 +4333,7 @@ END
 
 CHAIN VPLEIB RadiaQ7a
 ~Jest if you must but I doubt any dragon, would take too kindly to being referred to as a pet. The power they wield is immense.~
- = ~All jesting aside didn't it bother you that Firkraag manipulated Garren and you into doing things without giving you a choice?~
+== VPLEIB ~All jesting aside didn't it bother you that Firkraag manipulated Garren and you into doing things without giving you a choice?~
 END
  ++ ~I hate to be manipulated probably more so than anyone but other then causing us to think we were fighting monsters instead of Paladins I don't think he took any choices away from us. Besides which, we've already extracted quite enough restitution from Firkraag for his manipulations, and left him rotting in a heap for his efforts.~ EXTERN VPLEIB RadiaQ12
  ++ ~Hey, what kind of a group do you think we are? We're in this to see blood flow, so I don't care how the battle starts just as long as it does and it is challenging. Firkraag and his manipulating merely helped open that door.~ EXTERN VPLEIB RadiQ101
@@ -4393,8 +4380,9 @@ END
 
 CHAIN VPLEIB RadiaQ11
 ~(*Clearly disturbed by your words*) How ever did I come to allow myself to become involved with such a person?~
- = ~I beg you Melira Taralen, my lady *The Songstress*, goddess of all half-elven bard's, help me for it would seem my life hangs by he who blinks first. I must think more on where my future lies.~
-DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
+== VPLEIB ~I beg you Melira Taralen, my lady *The Songstress*, goddess of all half-elven bard's, help me for it would seem my life hangs by he who blinks first. I must think more on where my future lies.~
+DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB RadiaQ12
 ~What? Can't you see that he caused us to fight those paladins knowing, that if we didn't make amends for our mistake we would have been hunted down by their order.~
@@ -4404,7 +4392,7 @@ END
 
 CHAIN VPLEIB RadiaQ13
 ~Now don't you try and change the subject when you know full well what I mean when I say manipulated.~
- = ~Firkraag used shrewd means to tamper with things in order to make us do something we wouldn't have done had we been able to see the truth of it.~
+== VPLEIB ~Firkraag used shrewd means to tamper with things in order to make us do something we wouldn't have done had we been able to see the truth of it.~
 END
  ++ ~You mean defending ourselves is something we shouldn't have done?~ EXTERN VPLEIB RadiaQ14
  ++ ~Of course, how silly of me, we should have let the illusions, the monsters, stroke, paladins, slaughter us?~ EXTERN VPLEIB RadiaQ14
@@ -4464,7 +4452,7 @@ END
 
 CHAIN VPLEIB RadiaNew
 ~No matter, I have a better idea to show you how perceptive I am.~
- = ~Have you noticed how even though they have female paladins in here, the overall design of this place is definitely overly masculine?~
+== VPLEIB ~Have you noticed how even though they have female paladins in here, the overall design of this place is definitely overly masculine?~
 END
  ++ ~I am used to being gawked at but here is somewhere I don't like drawing any more attention to myself than is necessary. As for this place, it is built with fighters in mind, not to look like a ladies boudoir! So what's your point?~ EXTERN VPLEIB RadiaQ20
  ++ ~This place is just fine, built solid and designed for the warriors it houses. So what is that matter with it?~ EXTERN VPLEIB RadiaQ20
@@ -4514,17 +4502,20 @@ EXTERN BEDWIN LeiRadi2
 
 CHAIN VPLEIB RadiaQ21
 ~Samuel will be so happy to see us all. I shall sing of our latest adventures and I can just feel that warm fluffy towel right now.~
-DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
+DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB RadiaQ22
 ~Oh <CHARNAME>, you know Samuel has the best ale and not to mention the warmest, fluffiest towels around. Besides you can pick up what you want along the way.~
- = ~(*She skips lightly away, leaving you with these words*) As always, last one there gets the ale in.~
-DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
+== VPLEIB ~(*She skips lightly away, leaving you with these words*) As always, last one there gets the ale in.~
+DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB RadiaQ23
 ~Skin flint! Oh alright I will buy the first round of ale and oh how wonderful, the thought of his warm fluffy towels feels. That is unless, of course, how energetic are you feeling?~
- = ~(*She skips lightly away, leaving you with these words*) ...because, as always, last one there gets the ale in.~
-DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~ EXIT
+== VPLEIB ~(*She skips lightly away, leaving you with these words*) ...because, as always, last one there gets the ale in.~
+DO ~SetGlobal("VP_Ric_RadianQuest","LOCALS",3)~
+EXIT
 
 CHAIN VPLEIB N65
 ~Why? Why you considered his life yours to take? Why you murdered a man you knew nothing about?~
@@ -4565,16 +4556,14 @@ END
 
 CHAIN VPLEIB N77
 ~He was not a happy man, his own grief had engulfed him completely. I can no more be certain of his reactions than I can of your intentions that day, so it does not give me the right to judge you <CHARNAME>.~
-EXTERN VPLEIB N78
-
-CHAIN VPLEIB N78
-~I can only hope my father found some release in death and that he gained more than he lost. I will hold the memory of the man I knew as my father before his grief took hold of his mind in my heart always. Now the matter is truly closed and we will speak no more of it.~
+== VPLEIB ~I can only hope my father found some release in death and that he gained more than he lost. I will hold the memory of the man I knew as my father before his grief took hold of his mind in my heart always. Now the matter is truly closed and we will speak no more of it.~
 END
  ++ ~And it will remain closed if that is your wish.~ EXTERN VPLEIB 79
  ++ ~A sensible decision. Loss is a private thing and we must all find our own way of dealing with it.~ EXTERN VPLEIB 79
  ++ ~The loss of a loved one always leaves the need to speak of them for a time. Let us not close the conversation completely Leina, but merely delay further words lest you need to talk some more at a future time.~ EXTERN VPLEIB 80
 
 //Third Path, AR1000
+CHAIN
 IF WEIGHT #1 ~GlobalLT("VP_BPC","LOCALS",12) OR(2) Global("VP_Break_Point","LOCALS",2) Global("VP_MyFatherIsDead","LOCALS",3)~ THEN VPLEIB N64
 ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father's death.~
 END
@@ -4599,13 +4588,13 @@ DO ~SetGlobal("VP_JahiNoDancing","LOCALS",4)~
 == VPLEIB ~Then you have nothing to worry about Jaheira, for I have never led a man on if my intention was to reject him.~
 == BJAHEIR ~Have you no shame girl? <CHARNAME> deserves better than a wanton hussy who has no pride in herself.~
 == VPLEIB ~I would watch that mouth of yours Jaheira, I am no hussy. In fact I can count the number of lovers I have taken since my husband deserted me on half a hand.~
-= ~I may not have room for love in my life but I still take pleasure in the smell of a man's skin and the warmth of a man's embrace.~
-= ~I never promise love nor do I cause pain, unlike numerous men who swear their love and then leave with the dawn.~
+== VPLEIB ~I may not have room for love in my life but I still take pleasure in the smell of a man's skin and the warmth of a man's embrace.~
+== VPLEIB ~I never promise love nor do I cause pain, unlike numerous men who swear their love and then leave with the dawn.~
 == BJAHEIR ~Then if you can not love <CHARNAME>, leave him to find one who can.~
 == VPLEIB ~You mean one like yourself? Is this what this is about, and you only recently widowed? Where is *your* shame Jaheira?~
 == BJAHEIR ~Khalid is and always will be in my heart, but it doesn't mean I can not make room for another. It is more than big enough to allow me to love again when the time is right.~
-= ~That is something you will never understand because your own heart is like ice. Even though you profess it to be warm and alive with music but if truth be known it is a cold thing, devoid of love.~
-= ~So play your games Leina, pretend you are happy, but in the end it is only yourself that you are fooling.~
+== BJAHEIR ~That is something you will never understand because your own heart is like ice. Even though you profess it to be warm and alive with music but if truth be known it is a cold thing, devoid of love.~
+== BJAHEIR ~So play your games Leina, pretend you are happy, but in the end it is only yourself that you are fooling.~
 == VPLEIB ~How little you know me Jaheira, I am content. How many people today can say that and mean it. I seldom hear *you* laugh, which gives me cause to suspect that you have never known how. So maybe the way I conduct my life isn't so wrong after all, because the way I see it, I am happy and you are not.~
 EXIT
 
@@ -4623,13 +4612,13 @@ DO ~SetGlobal("VP_AerieNoDancing","LOCALS",4)~
 == VPLEIB ~(*Laughs softly*) So it is <CHARNAME> that Aerie wishes to dance for is it.~
 == BAERIE ~(*Blushing*) I... um... yes...~
 == VPLEIB ~Aerie please, you are beautiful, any man would have to be blind not to see it. Dancing in the way you want to is only going to make <CHARNAME> or any man see you as thing to be desired, not a beautiful, caring girl to love.~
-= ~If <CHARNAME> wants you, let him discover his love in his own time. Desire and love do not automatically follow each other.~
-= ~Then, if he is blind and chooses another, you still have your dance to share with one who does love you when you meet him.~
+== VPLEIB ~If <CHARNAME> wants you, let him discover his love in his own time. Desire and love do not automatically follow each other.~
+== VPLEIB ~Then, if he is blind and chooses another, you still have your dance to share with one who does love you when you meet him.~
 == BAERIE ~But you didn't seem to mind being desired when you danced, so why should I?~
 == VPLEIB ~Oh, Aerie, the purpose of my dance was to show <CHARNAME> the passion he failed to see in music, not the passion in me.~
-= ~(*Smiling broadly*) I think I did that a little too well don't you?~
+== VPLEIB ~(*Smiling broadly*) I think I did that a little too well don't you?~
 == BAERIE ~(*Giggles*) I think you did too. I saw him stuff your sash inside his shirt when he thought no-one was looking.~
-= ~I would still like to learn to dance, for myself, if you will teach me Leina?~
+== BAERIE ~I would still like to learn to dance, for myself, if you will teach me Leina?~
 == VPLEIB ~Of course I will, but we will do it quietly and away from the others when we next rest.~
 EXIT
 
@@ -4645,11 +4634,11 @@ DO ~SetGlobal("VP_VickyNoDancing","LOCALS",4)~
 == VPLEIB ~Life on the surface is a lot less cruel. We realise that none can choose their gender and as such none should be penalised for their birth. Life is sacred to all and we give respect to those we deem worthy of respect, regardless of sex.~
 == BVICONI ~Yes reproduction does have it flaws. How much simpler it would be if we could choose the ratio of male female births that suited our requirements, say a healthy but small number for breeding and pleasure and enough to make up a strong army. That would rid us of so much waste.~
 == VPLEIB ~And in the meantime your people give those not up to your standards to Lolth to become the monstrosities you call driders.~
-= ~I can see why your kind are, and always will be, shunned by all surface dwellers whether elf or other, there is no place here for the cruel and sadistic nature of the Drow.~
+== VPLEIB ~I can see why your kind are, and always will be, shunned by all surface dwellers whether elf or other, there is no place here for the cruel and sadistic nature of the Drow.~
 == BVICONI ~By other do you mean your kind half elf, and how do you see yourself? You are neither elf nor human. It is this indiscriminate breeding that brings your kind into being that weakens the blood line of all surface elves. We Drow see this for what it is, a portend that the surface elves are doomed and Drow will reign supreme.~
 == VPLEIB ~You show so much contempt I have to wonder why you chose to come to the surface at all Viconia. Your kind will never be accepted, <CHARNAME> should have left you to burn on your pyre.~
 == BVICONI ~Bah! That was <CHARNAME>'s decision, not yours and for a male he showed good sense. As for my place here, that is a matter between <CHARNAME> and myself.~
-= ~Your lack of female pride brings naught but contempt from me and if you have no respect for who you are then you will get no respect from me. You are dismissed.~
+== BVICONI ~Your lack of female pride brings naught but contempt from me and if you have no respect for who you are then you will get no respect from me. You are dismissed.~
 == VPLEIB ~(*Laughs*) I take no orders from you Drow, nor do I want your respect, that I can live well enough without. I will however repay the complement before I leave and say that there is nothing in you that will ever earn my respect either.~
 EXIT
 
@@ -4675,16 +4664,16 @@ DO ~SetGlobal("VP_BJan","LOCALS",3)~
 == BJAN ~Ah, but Leina my girl, would there be enough paper in Amn to cover all of the Jansen clan? More to the point, could I remember them all because if I was to write about some and not others Jan Jansen would be ostracised and sent to Coventry, wherever Coventry is. Only one other Jansen has been sent there and that was when...~
 == VPLEIB ~Now that is exactly what I mean Jan, someone in your family has done just about everything a person can think of and somethings that no-one would want to think of. You would be famous Jan.~
 == BJAN ~Jan Jansen the author and the inventor, now I like the sound of that.~
-= ~The question is what to call this book of mine that is going to make me and the Jansen family famous... maybe "The Lord Of The Turnip Field" or... "The Importance Of Being Jansen", or maybe even... "Three Gnomes In A Boat".~
-= ~Then again, perhaps I should go for something simpler like... "The Life And Times Of The Jansens"? What do you think Leina?~
+== BJAN ~The question is what to call this book of mine that is going to make me and the Jansen family famous... maybe "The Lord Of The Turnip Field" or... "The Importance Of Being Jansen", or maybe even... "Three Gnomes In A Boat".~
+== BJAN ~Then again, perhaps I should go for something simpler like... "The Life And Times Of The Jansens"? What do you think Leina?~
 == VPLEIB ~I would think there are enough tales for you to write several books Jan. Choose which title you like best, you already have your plot or plots and away you go. I can see you will soon have enough books to fill Candlekeep library twice over.~
 == BJAN ~Um! We'd have to change that for starters. Candlekeep is no name for the Jansen's library to be housed!~
-= ~Jankeep or Jansenkeep. Umm, now I like that. In fact that would be a first, no Jansen has ever had a place named after them.~
-= ~Of course it's not as grand as the city old Balduran got named after himself but it'll do for a Jansen.~
+== BJAN ~Jankeep or Jansenkeep. Umm, now I like that. In fact that would be a first, no Jansen has ever had a place named after them.~
+== BJAN ~Of course it's not as grand as the city old Balduran got named after himself but it'll do for a Jansen.~
 == VPLEIB ~(*Laughs*) I think you are getting a bit carried away Jan. First you have write your book and then you have to market it.~
 == BJAN ~With the Jansen contacts marketing is easy, we have contacts in the black market, white market or any colour market you like.~
-= ~Who to write first is the thing. I could start with great-great-great uncle Henry... but then I would have to write about his wives, all of them and I'm not sure I'd remember all their names.~
-= ~It might be best to start with great-great-great grandad Arty and a tale of "The Knights Of The Dinner Table". This story sort of reminds me...~
+== BJAN ~Who to write first is the thing. I could start with great-great-great uncle Henry... but then I would have to write about his wives, all of them and I'm not sure I'd remember all their names.~
+== BJAN ~It might be best to start with great-great-great grandad Arty and a tale of "The Knights Of The Dinner Table". This story sort of reminds me...~
 == VPLEIB ~Oh dear, perhaps this was not such a good idea after all.~
 EXIT
 
@@ -4695,16 +4684,16 @@ DO ~SetGlobal("VP_BAnomen","LOCALS",3)~
 == BANOMEN ~I am sorry my lady. I do not mean to inconvenient anyone with my restlessness, but I see no reason to take to my bed when sleep evades me.~
 == VPLEIB ~Then try and sit or at least pace quietly, the morning is a long way off.~
 == BANOMEN ~I cannot sit when my mind is plagued with thoughts of my father.~
-= ~What if he should be right my lady, what if I am striving for a goal beyond my capability? Surely none know us better than those who raised us?~
+== BANOMEN ~What if he should be right my lady, what if I am striving for a goal beyond my capability? Surely none know us better than those who raised us?~
 == VPLEIB ~No other knows us better than we know ourselves Anomen. Only you can look into your heart and know what lies within.~
-= ~Your dreams are yours and whether they are important enough for you to strive to attain is your choice.~
+== VPLEIB ~Your dreams are yours and whether they are important enough for you to strive to attain is your choice.~
 == BANOMEN ~But my lady, how can I be sure that the things which I strive for are really what I want and not just the dreams of a boy desperate to be free of a hard father!~
 == VPLEIB ~Look into yourself, and be honest with what you see is all I can suggest.~
-= ~Then decide if what you discover is worth all this angst that I see in you.~
+== VPLEIB ~Then decide if what you discover is worth all this angst that I see in you.~
 == BANOMEN ~That is what bothers me so. This desire of mine to become a knight is causing me so much turmoil I begin to think that if I do not think myself worthy, how can I expect others to judge me as such?~
 == VPLEIB ~It seems that your dilemma comes from your dreams being scorned and derided by your father. It was having to listen to him scoff at your aspirations when you were a boy that has made you doubt your own worthiness.~
-= ~After all, if a person is told something often enough then he will come to believe it.~
-= ~You have to forget his scathing words and look to yourself, see your own self worth , then and only then will you be content with your decision.~
+== VPLEIB ~After all, if a person is told something often enough then he will come to believe it.~
+== VPLEIB ~You have to forget his scathing words and look to yourself, see your own self worth , then and only then will you be content with your decision.~
 == BANOMEN ~You are right my lady. I thank you for your council and I am sorry that I have kept you from your rest. Sleep well my lady.~
 EXIT
 
@@ -4717,22 +4706,22 @@ DO ~SetGlobal("VP_BMazzy","LOCALS",3)~
 == BMAZZY ~(*She hesitantly hands Leina the stone she is holding*)~
 == VPLEIB ~How unusual, it's almost in the shape of a heart and very smooth to the touch, not rough and cold like most pebbles. Where did you find such an exquisite thing Mazzy?~
 == BMAZZY ~I... I did not find it, Patrick gave it to me.~
-= ~He found it and gave it to me for safe keeping, he said he could not physically give me his heart but this pebble, as you call it, was very much like it symbolically speaking.~
-= ~Silly children's ideas really.~
+== BMAZZY ~He found it and gave it to me for safe keeping, he said he could not physically give me his heart but this pebble, as you call it, was very much like it symbolically speaking.~
+== BMAZZY ~Silly children's ideas really.~
 == VPLEIB ~Not so Mazzy. Your Patrick obviously thought you worthy to take care of his heart for him to make such a gesture.~
-= ~If only I had given my own heart to a man more worthy than I did, then it would not be like a stone in my breast.~
+== VPLEIB ~If only I had given my own heart to a man more worthy than I did, then it would not be like a stone in my breast.~
 == BMAZZY ~It is easy to let our hearts lead when our heads know that we should not follow.~
-= ~You are not the first nor will you be the last to let a handsome face and pretty words. Carry you away.~
-= ~Patrick was not the most handsome of men but his words were always truth I never knew him to speak what he did not mean to anyone in all the time that I knew him.~
+== BMAZZY ~You are not the first nor will you be the last to let a handsome face and pretty words. Carry you away.~
+== BMAZZY ~Patrick was not the most handsome of men but his words were always truth I never knew him to speak what he did not mean to anyone in all the time that I knew him.~
 == VPLEIB ~Then you were fortunate to have known such a man, for they are few and far between. I do not think you will find the likes of your Patrick again.~
 == BMAZZY ~Maybe not Leina, but there are a lot of good men in the world deserving of love and who are not afraid to love in return.~
-= ~Patrick will always have a place in my heart but one day there may be room for another to dwell there alongside him, as I am sure there will be for you... given time.~
+== BMAZZY ~Patrick will always have a place in my heart but one day there may be room for another to dwell there alongside him, as I am sure there will be for you... given time.~
 == VPLEIB ~There will never be room in my heart for a man!~
-= ~Music fills it to overflowing and I will never forsake that which has given me back my life.~
-= ~No, I will not ask my heart to make room for that which has caused it so much pain before.~
-= ~Here, take your Patrick's gift and treasure it for you may not get a gift as precious again.~
+== VPLEIB ~Music fills it to overflowing and I will never forsake that which has given me back my life.~
+== VPLEIB ~No, I will not ask my heart to make room for that which has caused it so much pain before.~
+== VPLEIB ~Here, take your Patrick's gift and treasure it for you may not get a gift as precious again.~
 == BMAZZY ~(*She takes the stone and sighs*) This simple stone will always be the single, most precious thing I own, no matter what comes to me in the future and that is because of the reason it was given.~
-= ~(*She puts the stone back in her pocket*) Now, no more reminiscing Leina, we must get back to the affairs of today and leave those of the past for a more suitable day.~
+== BMAZZY ~(*She puts the stone back in her pocket*) Now, no more reminiscing Leina, we must get back to the affairs of today and leave those of the past for a more suitable day.~
 EXIT
 
 CHAIN
@@ -4746,10 +4735,10 @@ DO ~SetGlobal("VP_Leina_HaerDalis","LOCALS",3)~
 == BHAERDA ~Ah! But perchance you are right my sweet, in which case this bard needs to place himself in your capable hands and together we will make magic.~
 == VPLEIB ~Magic? I thought you said it was music you had in mind to make.~
 == BHAERDA ~Do not tease me my firefly, together our music will create magic. We must rehearse tonight whilst the others are at their rest.~
-= ~What say you? We will meet when the stars gather to greet the moon, they alone shall be our audience.~
+== BHAERDA ~What say you? We will meet when the stars gather to greet the moon, they alone shall be our audience.~
 == VPLEIB ~(*Laughs softly) I think not Haer'Dalis. I have seen that glint in your eye too many times in the eyes of others not to recognise the intent behind it. I suspect you have something more than the making of music in mind.~
 == BHAERDA ~(*Putting his hand to his breast) Oh! That you should suspect such a thing of me my firefly, it cuts to my heart.~
-= ~Then tonight I fear the stars will miss a magical performance for I must entertain them alone. Perchance I could cheer them with the promise of another night my sweet?~
+== BHAERDA ~Then tonight I fear the stars will miss a magical performance for I must entertain them alone. Perchance I could cheer them with the promise of another night my sweet?~
 == VPLEIB ~(*Still smiling*) It is not wise to promise that which you cannot deliver, and Haer'Dalis, please try not to keep us all awake tonight with your renditions.~
 EXIT
 
@@ -4760,19 +4749,19 @@ DO ~SetGlobal("VP_Leina_Keldorn","LOCALS",3)~
 == BKELDOR ~Often Leina, often, but please I much prefer you to call me Keldorn. The sir makes me sound so pompous.~
 == VPLEIB ~(*Laughs*) You pompous, never si... Keldorn. Yes you take your duties as a Paladin seriously but you also find time to talk to and to advise all who seek your wisdom regardless of their station in life.~
 == BKELDOR ~Ah! If only all those who sought my wisdom actually heeded it Leina, but I suppose my own wisdom has come with age and so it will be for others.~
-= ~We learn as we grow and we therefore expect to learn more the longer we live. Whereas it is true for some, sadly not for all, so I will always be needed to help those who have fallen to find their path again and to fight for those oppressed by the less godly.~
+== BKELDOR ~We learn as we grow and we therefore expect to learn more the longer we live. Whereas it is true for some, sadly not for all, so I will always be needed to help those who have fallen to find their path again and to fight for those oppressed by the less godly.~
 == VPLEIB ~And what of Keldorn the man, surely he has done all that his god could expect of him? Do you not wish that he would now give you leave to finish your life away from the battlefield and in the bosom of your family?~
 == BKELDOR ~If it were for me to decide I would gladly retire and spend what years I have left with my Maria, and be there to watch my daughters grow into their own lives, but I pledged my service to Torm long before I married Maria.~
-= ~As long as he has a need for an old Paladin such as myself I am sworn to do his work and follow whatever path he sets before me.~
+== BKELDOR ~As long as he has a need for an old Paladin such as myself I am sworn to do his work and follow whatever path he sets before me.~
 == VPLEIB ~You are not old Keldorn, You may have the years of the mature man but your mind and your spirit has the vitality of a youth half your age. I am sure that Torm also sees this in you and that is why he is reluctant to let go of so faithful a servant.~
 == BKELDOR ~(*Smiling*) You have made an old Paladin happy with your words Leina. For one so young you have a very sensible and knowing head on your shoulders. This I have observed in you many times as you speak to those around you.~
 == VPLEIB ~No, Keldorn. I would not say that my head is sensible for what I have learned has been through being very unsensible, a hard and painful way to learn and not a way I would recommend.~
-= ~I only wish I had been more sensible, more open to the words of others far wiser than myself. Perhaps I could have saved myself a lot of that pain.~
+== VPLEIB ~I only wish I had been more sensible, more open to the words of others far wiser than myself. Perhaps I could have saved myself a lot of that pain.~
 == BKELDOR ~Ah, but then maybe you would not be the same young woman that you are today.~
-= ~You are talented, beautiful and your heart is good, be proud of who you are and what your experiences have taught you. Never let others persuade you that you are anything less than what you are.~
+== BKELDOR ~You are talented, beautiful and your heart is good, be proud of who you are and what your experiences have taught you. Never let others persuade you that you are anything less than what you are.~
 == VPLEIB ~I am not about to let my heart be swayed again Keldorn, not ever. I am content with my life as it is, I have my music and I am safe in the knowledge that it can never hurt me.~
 == BKELDOR ~Not ever is a very long time Leina, too long to be sure of anything, especially for one with a life span such as your own.~
-= ~Live each day as it unfolds, give thanks for whatever it brings but always look forward to tomorrow and delight in the anticipation of the unknown.~
+== BKELDOR ~Live each day as it unfolds, give thanks for whatever it brings but always look forward to tomorrow and delight in the anticipation of the unknown.~
 == VPLEIB ~(*Laughs softly*) And is that the philosophy of Sir Keldorn? Seriously, your words carry your wisdom Keldorn, and I thank you for sharing them with me.~
 EXIT
 
@@ -4791,9 +4780,9 @@ DO ~SetGlobal("VP_BMelora","LOCALS",3)~
 == NJMELB ~Maybe not, but you do persist in acquiring arcane knowledge. Why do you do that when your talent as a bard brings joy to all and magic is so dark?~
 == VPLEIB ~Music is my life, my only passion that is true. Whereas magic to me is just another useful skill I find I can master easily, but it does not hold the same lure for me as it does to a wizard.~
 == NJMELB ~Then why do you need it if as you say music is your only passion? Is it that magic fills some need that your music does not?~
-= ~Maybe you like the sense of power that comes with knowing you can hurl a fireball or call down a bolt of lightning to strike those who oppose you?~
+== NJMELB ~Maybe you like the sense of power that comes with knowing you can hurl a fireball or call down a bolt of lightning to strike those who oppose you?~
 == VPLEIB ~That is not fair Melora, what of your skills? Do you not set traps and then lure those who oppose you into them, causing just as much pain and harm as any lightning bolt that I can call down?~
-= ~Does it not give you a sense of power, knowing that you can do this?~
+== VPLEIB ~Does it not give you a sense of power, knowing that you can do this?~
 == NJMELB ~I...~
 == VPLEIB ~You what Melora? You did not think of that? Well perhaps next time you will think before you start condemning the harm magic does. Now, if you cannot hold a civil conversation, I will leave you to ponder my words.~
 EXIT
@@ -4811,9 +4800,9 @@ DO ~SetGlobal("VP_BMelora","LOCALS",3)~
 == NJMELB ~Maybe not, but you do persist in acquiring arcane knowledge. Why do you do that when your talent as a bard brings joy to all and magic is so dark?~
 == VPLEIB ~Music is my life, my only passion that is true. Whereas magic to me is just another useful skill I find I can master easily, but it does not hold the same lure for me as it does to a wizard.~
 == NJMELB ~Then why do you need it if as you say music is your only passion? Is it that magic fills some need that your music does not?~
-= ~Maybe you like the sense of power that comes with knowing you can hurl a fireball or call down a bolt of lightning to strike those who oppose you?~
+== NJMELB ~Maybe you like the sense of power that comes with knowing you can hurl a fireball or call down a bolt of lightning to strike those who oppose you?~
 == VPLEIB ~That is not fair Melora, what of your skills? Do you not set traps and then lure those who oppose you into them, causing just as much pain and harm as any lightning bolt that I can call down?~
-= ~Does it not give you a sense of power, knowing that you can do this?~
+== VPLEIB ~Does it not give you a sense of power, knowing that you can do this?~
 == NJMELB ~I...~
 == VPLEIB ~You what Melora? You did not think of that? Well perhaps next time you will think before you start condemning the harm magic does. Now, if you cannot hold a civil conversation, I will leave you to ponder my words.~
 EXIT
@@ -4827,27 +4816,23 @@ DO ~SetGlobal("VP_BMelora","LOCALS",6)~
 == NJMELB ~Then I guess I am sorry too Leina. I know you are a good person but sometimes it is difficult for me to see past the magic.~
 == VPLEIB ~Do you want to tell me what it is that makes you burn with so much hatred for magic?~
 == NJMELB ~It is not so much the magic I abhor but the conceit of all magic users. The power they wield is terrible and they know it.~
-= ~As often as not to the point of arrogance and then, when their own self importance takes them over, all other beings are seen as inferior in their eyes.~
+== NJMELB ~As often as not to the point of arrogance and then, when their own self importance takes them over, all other beings are seen as inferior in their eyes.~
 == VPLEIB ~But that is not true! Yes, there are those that believe as you say, but is that not true of all people?~
-= ~Most magic users respect their craft and the power that comes with it, often only resorting to magic when all else fails.~
+== VPLEIB ~Most magic users respect their craft and the power that comes with it, often only resorting to magic when all else fails.~
 == NJMELB ~(*Scornfully*) I do not speak of what I have not seen Leina. My father is a mage, if father is the correct word to use here!~
-= ~He took my mother, used her and discarded her when she gave birth to me. I was his daughter, but no more worthy of his notice than an ant under his boot!~
-= ~As for my mother, she loved me for a while but she also discarded me when a profitable marriage appeared on the horizon. Turns out she was as selfish as he.~
-= ~I used to hate him and feel sorrow for her, but now I just hate them both!~
+== NJMELB ~He took my mother, used her and discarded her when she gave birth to me. I was his daughter, but no more worthy of his notice than an ant under his boot!~
+== NJMELB ~As for my mother, she loved me for a while but she also discarded me when a profitable marriage appeared on the horizon. Turns out she was as selfish as he.~
+== NJMELB ~I used to hate him and feel sorrow for her, but now I just hate them both!~
 == VPLEIB ~I am sorry Melora. It would appear we have both been let down by the men in our lives. You by your father and me by the bastard I loved and called husband.~
-= ~Maybe this gives us some common ground for us to work on towards becoming friends. What do you say Melora, shall we start again?~
+== VPLEIB ~Maybe this gives us some common ground for us to work on towards becoming friends. What do you say Melora, shall we start again?~
 == NJMELB ~Maybe... if you promise I won't have to learn magic in order to be deemed suitable as friend material for a user of magic.~
 == VPLEIB ~(*Laughs softly*) No, I promise, no learning of magic required, but maybe... just maybe, this bard come magic user can, in time, teach you that it is not a thing to despise and fear so much.~
 == NJMELB ~How many years does a half elf have Leina?~
 EXIT
 
-APPEND BIMOEN2
-
 CHAIN BIMOEN2 theatr
 ~Hey Leina, any time you want, I'll fill you in on all <PRO_HISHER> weak spots. One poke and it's usually all over but for the cry for mercy.~
 EXTERN VPLEIB TheatQ9a
-
-APPEND BHAERDA
 
 CHAIN BHAERDA LeiTheat
 ~(*Looking knowingly towards Leina*) Ah my little fire fly, I believe you are somewhat responsible for this idea of <CHARNAME>'s.~
@@ -4936,8 +4921,6 @@ END
  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
 
-APPEND ~FFBART~
-
 CHAIN FFBART theatr1
 ~(*The hafling's face lights up at the sight of Leina heading towards him*) Leina, whatever has delighted you so lass? Come, tell Samuel what brings this glow to your face... have you found yourself a man? You know there's nothing that would please me more than to hear you have found a man worthy of you at last.~
 END
@@ -4946,7 +4929,7 @@ END
 
 CHAIN FFBART theatr2
 ~Leina, of course lass, my patrons remember your sweet voice and ask about you often. Tell me, your songs, they will be about your travels and your adventures with <CHARNAME>, yes?~
- = ~It will be a splendid time, just like old times. We must make ready for your performance, your old room is exactly as you left it.~
+== VPLEIB ~It will be a splendid time, just like old times. We must make ready for your performance, your old room is exactly as you left it.~
 END
  IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I have an idea.~ EXTERN VPLEIB theatr3a
  IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I think I have her this time.~ EXTERN VPLEIB theatr3a

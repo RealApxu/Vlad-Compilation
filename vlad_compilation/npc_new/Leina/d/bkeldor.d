@@ -1,5 +1,3 @@
-APPEND BKELDOR
-
 CHAIN BKELDOR NEJ0
 ~That hasn't done these old bones of mine much good... which way to my bed?~
 END
@@ -15,12 +13,6 @@ END
 CHAIN BKELDOR NEJ1
 ~I have not danced with another since the day I met my Maria. I knew then that I would never dance or hold another woman in my arms.~
 EXTERN VPLEIB PCF2Leina32a
-
-CHAIN BKELDOR NEJ2
-~(*A little flustered*) I didn't mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
-END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina33a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina33a
 
 CHAIN BKELDOR LeiTheat
 ~So my friend, tell us what has brought so bright a gleam to your eye?~

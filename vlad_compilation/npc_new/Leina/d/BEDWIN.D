@@ -1,15 +1,3 @@
-CHAIN BEDWIN NEJ106
-~What is a bit of mud on the hem of a robe? A small price to pay for the honour of protecting such an exquisite flower. (*Besides, I am not about to let any of these imbeciles pluck the petals from this elven beauty.*)~
-EXTERN VPLEIB 217
-
-CHAIN BEDWIN NEJ107
-~But if you are to inspire us with your fiery renditions, then it is for me to watch that no stray arrows or spells should find their way towards you before the fire is fully aflame.~
-EXTERN VPLEIB 218
-
-CHAIN BEDWIN NEJ108
-~Ah, but it is necessary for my piece of mind, so you will not dissuade me from remaining close beside you my elven flower... (*and for the gratitude she will feel she owes me if I do manage to save the arrogant elf's life.*)~
-EXTERN VPLEIB 219
-
 CHAIN BEDWIN NEJ109
 ~(*To himself*) Yet more displays of the buffoonery of these imbeciles. Still, female are always impressed by a man who looks good on the dance floor. Maybe this one will be impressed enough...~
 END

@@ -417,22 +417,6 @@ CHAIN VPKACB 92
 ~And you do not believe so?~
 EXTERN VPSIMB 108
 
-CHAIN VPKACB 97
-~Leina your music is very beautiful, but why do you sing so often of sadness when your voice is so much more suited to the songs of joy and love?~
-EXTERN VPLEIB 6
-
-CHAIN VPKACB 98
-~Oh Leina! You are too young to have such a hard heart! Do you wish to tell me what has turned your heart to stone?~
-EXTERN VPLEIB 7
-
-CHAIN VPKACB 99
-~I am sorry Leina, I should not have asked. It is plain to see the scars that you still carry are also in your music, but you should not let the actions of one man deny you the warmth and passion that real love brings. That way only leads to bitterness and a life of loneliness.~
-EXTERN VPLEIB 8
-
-CHAIN VPKACB 100
-~As you please Leina, but I truly hope that someday you will feel the joy of love once again, with a man that will not abuse all that you have to give.~
-EXIT
-
 CHAIN VPKACB NEJ0
 ~(*Laughing*) I have to say Yoshimo, that is the first time I have ever had a dance partner stand still while I danced around him. I thought you were going to surprise me with all that you had learnt.~
 EXTERN BYOSHIM NEJ8
