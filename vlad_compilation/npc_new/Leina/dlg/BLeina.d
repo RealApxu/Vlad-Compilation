@@ -52,7 +52,8 @@ END
 
 CHAIN VPLEIB 21
 ~I... I... I did not believe the tales of you being one of the children of Bhaal! I thought them too fantastic, but I see there is sometimes truth in even the wildest tales.~
-EXTERN VPLEIB 24
+== VPLEIB ~(*Looks sadly at you*) Know this <CHARNAME>, the thirst for revenge is told in many a bards tale and it seldom brings the peace that is expected. Have you never listened to them as they tell of the bitter sweet taste it brings so often? No matter who you are, the taste is the same. Be warned, that is all I will say!~
+EXIT
 
 CHAIN VPLEIB 22
 ~I could never put so much trust in one person again <CHARNAME>. I know Hrothgar seems to be an honourable, if some what evasive man, but I could not abandon a true friend to an unknown fate on the word of a man I barely know no matter what lore says of him. I will pray for the sake of your Imoen, that he truly has some insight into what is going to be and that you are not misguided in placing your faith in him.~
@@ -62,9 +63,7 @@ CHAIN VPLEIB 23
 ~I was hoping you would use the time to think on your motives for tracking this Irenicus but I can see that will not be so. Be warned <CHARNAME>, you may not like the bitter sweet taste that revenge so often leaves. I will leave you now to ponder these words.~
 EXIT
 
-CHAIN VPLEIB 24
-~(*Looks sadly at you*) Know this <CHARNAME>, the thirst for revenge is told in many a bards tale and it seldom brings the peace that is expected. Have you never listened to them as they tell of the bitter sweet taste it brings so often? No matter who you are, the taste is the same. Be warned, that is all I will say!~
-EXIT
+
 
 CHAIN
 IF ~Global("VP_BPC","LOCALS",5)~ THEN VPLEIB 34
