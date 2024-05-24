@@ -1573,30 +1573,6 @@ CHAIN VPSIMJ sailoff4
 ~Okay, take this money, and try to do your best.~
 EXTERN VPKACJ sailoff2
 
-CHAIN VPSIMJ NEJ117
-~I know the road to Ulcaster, <CHARNAME>, it was once fraught with bandits until you rid the area of their pestilence. I hope the journey back does not hold too many unpleasant memories for you.~
-END
- IF ~True()~ THEN EXTERN NJHROJ 60
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ57
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ152
- IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ58
- IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ 35
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ 7
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARJ 12
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN VALYGARJ NEJ158
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN MAZZYJ NEJ206
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN NALIAJ NEJ321
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN KELDORJ NEJ252
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN KORGANJ NEJ222
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN EDWINJ NEJ188
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN JANJ NEJ185
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN ANOMENJ NEJ310
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VICONIJ NEJ186
-
-
-
 CHAIN VPSIMJ NEJ119
 ~May Mielikki look into my heart and know I do this only to aid the search for an unfortunate girl.~
 END

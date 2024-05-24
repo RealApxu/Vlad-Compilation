@@ -399,13 +399,6 @@ END
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
 
-CHAIN VPKACJ NEJ58
-~I do not believe I will find Yoshimo Hashimoto among these ruins, <CHARNAME>. I am certain his trail ends somewhere here in Athkatla, but then, I never was very good at tracking, he could be hiding out in such a place, I will follow for now.~
-END
- IF ~True()~ THEN EXTERN NJHROJ 60
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
-
 CHAIN VPKACJ NEJ61
 ~Sure, I'll do it.~
 DO ~SetGlobal("VP_Kachi_EnchQuest","GLOBAL",1)~

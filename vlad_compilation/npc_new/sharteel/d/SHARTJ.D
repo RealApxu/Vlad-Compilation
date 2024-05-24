@@ -7,12 +7,6 @@ CHAIN VPSHAJ kaylsold
 DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~
 EXIT
 
-//NeJ Dialogue - Come back
-CHAIN VPSHAJ comebck1
-~(*As it dawns upon her where she is, the corners of her mouth curl up into a cruel grin*)...~
-== VPSHAJ ~Ho... maybe the gods are looking down on me after all! They sure as hell aren't looking out for that sorcerer by returning me here... his days, make that hours, are numbered. The son of a bitch can run but he can't hide!~
-EXTERN NJHROJ 369
-
 //Promenade Talk
 CHAIN
 IF ~Global("PostCutSpeak","AR0700",1)~ THEN VPSHAJ imytaken
@@ -25,21 +19,6 @@ END
  IF ~ InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ N238
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ N528
  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ N147
-
-//Nej 2 - Go to Ulcaster
-CHAIN VPSHAJ gotoulcr
-~You are off your head if you think you're going discover anything at Ulcaster.~
-== VPSHAJ ~Been there, done that, left everything that bleeds dead and I'm damn sure no stone was left unturned... even the old ghost has deserted his ruins now.~
-== VPSHAJ ~You'll not find anything and there's certainly no glory in going over old ground... but I doubt you'll listen to sense, men never do, so I guess we're going anyway!~
-EXTERN NJHROJ 404
-
-//Nej 2 - Arrival
-CHAIN VPSHAJ arrivhal
-~Phew... for a minute there I thought <CHARNAME> was going to ask him to join us!~
-== VPSHAJ ~Hrothgar and friend of Hrothgar together in one group!? One holier than thou egotistic male is maybe just about tolerable but two... no two would be stretching a girl's need to keep her word too far!~
-END
- IF ~True()~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXIT
- IF ~InParty("njmelora")~ THEN DO ~SetGlobal("VP_Move_To_Halruaa","GLOBAL",4)~ EXTERN NJMELJ 10
 
 //Nej 2 - Iezikiel Quest
 CHAIN VPSHAJ ezequest1
@@ -54,10 +33,6 @@ CHAIN VPSHAJ ezequest2
 == VPSHAJ ~At least we're going after a fresh one this time!~
 == VPSHAJ ~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomach worrying you, you may prefer to wait outside.~
 EXTERN ~TuEzek~ 9
-
-CHAIN VPSHAJ imscared
-~Quit your blubbering you wimp! Can't some one do something to shut the crybaby up before she attracts the sorcerer's attention and he comes flying through this portal here?~
-EXTERN NJHROJ 372
 
 CHAIN VPSHAJ dragoneye
 ~(*Pointing her sword*) I suppose it does somewhat resemble a dragon's head and I can see why some may find it impressive, but in reality... it's just another damp dungeon for us to crawl through.~

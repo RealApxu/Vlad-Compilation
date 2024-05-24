@@ -191,16 +191,6 @@ CHAIN VPLEIJ 34
 ~This is too painful for me to face at this time, <CHARNAME>, for now, I do not wish to speak any further with you.~
 EXTERN BODHI 65
 
-CHAIN VPLEIJ 35
-~Ulcaster is naught but a ruin, <CHARNAME>, and so far away. Surely it has been plundered many times? There cannot possibly be anything left to find.~
-END
- IF ~True()~ THEN EXTERN NJHROJ 60
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
- IF ~InParty("vpkachi") InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ57
- IF ~InParty("Yoshimo") InParty("vpkachi") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ152
- IF ~InParty("vpkachi") !InParty("Yoshimo") !Dead("vpkachi")~ THEN EXTERN VPKACJ NEJ58
-
 CHAIN
 IF WEIGHT #3 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) GlobalLT("VP_Enable_Flirts","LOCALS",3) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ 37
 ~Yes... you need me for something?~
