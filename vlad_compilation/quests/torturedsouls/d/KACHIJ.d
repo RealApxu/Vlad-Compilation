@@ -399,15 +399,6 @@ END
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ546
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN MINSCJ NEJ260
 
-CHAIN VPKACJ NEJ61
-~Sure, I'll do it.~
-DO ~SetGlobal("VP_Kachi_EnchQuest","GLOBAL",1)~
-EXTERN XANH 23
-
-CHAIN VPKACJ NEJ62
-~A girl can only do what a girl can do, and only then if she has the right spells for the task! So less of the sarcasm if you please <CHARNAME>.~
-EXTERN XANH 37
-
 CHAIN VPKACJ NEJ63
 ~Sure, I'll do it.~
 DO ~SetGlobal("VP_Kachi_AbjQuest","GLOBAL",1)~
@@ -422,11 +413,6 @@ CHAIN VPKACJ NEJ65
 ~Sure, I'll do it.~
 DO ~SetGlobal("VP_Kachi_InvQuest","GLOBAL",1)~
 EXTERN TUTHEOD 30
-
-CHAIN VPKACJ NEJ66
-~Sure, I'll do it.~
-DO ~SetGlobal("VP_Kachi_IllQuest","GLOBAL",1)~
-EXTERN TUVASHON 18
 
 CHAIN VPKACJ NEJ67
 ~Ok, I am ready.~
