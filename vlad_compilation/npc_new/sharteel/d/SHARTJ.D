@@ -34,33 +34,6 @@ CHAIN VPSHAJ ezequest2
 == VPSHAJ ~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomach worrying you, you may prefer to wait outside.~
 EXTERN ~TuEzek~ 9
 
-CHAIN VPSHAJ dragoneye
-~(*Pointing her sword*) I suppose it does somewhat resemble a dragon's head and I can see why some may find it impressive, but in reality... it's just another damp dungeon for us to crawl through.~
-END
- IF ~True()~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXIT
- IF ~InParty("Imoen") !Dead("Imoen")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN ~IMOENJ~ NEJ147
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN IMOEN2J VP_FIX63
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN JAHEIRAJ NEJ591
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_DragonsEyeNotes","GLOBAL",2)~ EXTERN MINSCJ NEJ288
-
-CHAIN VPSHAJ lizardking
-~(*Wiping her sword on her sleeve*) That's that... one less slimy reptile hunting for his mistress. If that's the best she can muster then I reckon she and her minions are going to be pretty hungry, not to say angry when we find them... best we stay alert from here lest they see us as their next meal!~
-END
- IF ~True()~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN NJHROJ 273
- IF ~InParty("Accalia") !Dead("Accalia")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN NJACCJ 59
- IF ~InParty("Imoen") !Dead("Imoen")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN ~IMOENJ~ NEJ148
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN IMOEN2J VP_FIX64
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN JAHEIRAJ NEJ627
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN DO ~SetGlobal("VP_LizardKingDead","LOCALS",2)~ EXTERN MINSCJ NEJ291
-
-CHAIN VPSHAJ erevbody
-~(*Scoffs*) Bloody foolish elf you mean! The arrogance of elves, the males especially... well this one certainly got what he deserved!~
-EXTERN NJHROJ sharerev
-
-CHAIN VPSHAJ erevbod2
-~Bravery and courage I can certainly respect, but stupidity... never!~
-EXIT
-
 CHAIN VPSHAJ egenia
 ~If you seriously believe that the gods give a toss about what is going on down here then you are all fools! I trust only my sword and my own eyes, not the off chance that the gods may be watching my back... or my front.~
 END
