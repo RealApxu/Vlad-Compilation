@@ -2,11 +2,6 @@ BEGIN VPSHAJ
 
 //NeJ Dialogue - Hrothgar Avalanche
 
-CHAIN VPSHAJ kaylsold
-~Bah killing that which is already dead, where's the sport in that? Still, if it moves I can kill it and when I'm through with it you can be sure it'll bloody well stay dead... permanently!~
-DO ~SetGlobal("VP_Astrolabe_Talks","GLOBAL",2) RealSetGlobalTimer("VP_Accalia_Hrothgar","GLOBAL",10)~
-EXIT
-
 //Promenade Talk
 CHAIN
 IF ~Global("PostCutSpeak","AR0700",1)~ THEN VPSHAJ imytaken
@@ -47,14 +42,6 @@ DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCutNJ4")~
 EXIT
 
 /*ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() SetGlobal("KickedOut","LOCALS",1) LeaveParty() EscapeAreaMove("AR0086",9,9,9)*/
-
-//NeJ Interjection - starting dialogue
-CHAIN VPSHAJ nejopen1
-~(*Drawing her sword*)... Then it'll be my pleasure to leave the dogs on the floor lapping up their own blood!~ [mute]
-== IMOENJ ~(*Noticeably a shade paler*)... I... I've seen enough blood thank you! Irenicus has the same fascination with it as you Shar-Teel... only he likes to share his depravity!~
-== VPSHAJ ~Still have a weak stomach then thief? You should have stayed in Candlekeep if you can't take the heat.~
-END
- ++ ~This place does feel different, but we should not get our hopes up nor let our guard down because of the way we feel. One thing is for sure, we will not discover anything standing around here so I suggest we move quickly and prepare ourselves for whoever or whatever lies in wait at the bottom of these stairs.~ EXTERN IMOENJ NEJ77
 
 //NeJ Interjection - Avalanche
 CHAIN IMOENJ sharaval
