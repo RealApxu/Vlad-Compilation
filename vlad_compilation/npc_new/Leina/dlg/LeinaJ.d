@@ -347,16 +347,6 @@ END
  IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN YOSHJ NEJ156
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ634
 
-CHAIN VPLEIJ 63
-~But just think Melora, it would also be down on our heads and would you really want to be buried along side so many mages?~
-EXTERN NJMELJ 22
-
-CHAIN VPLEIJ 64
-~Then, for Melora's peace of mind we are in agreement. We don't want to bring the academy down around anyone's head today.~
-END
- IF ~True()~ THEN EXTERN NJHROJ 323
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ 28
-
 CHAIN VPLEIJ 65
 ~I have never seen the likes of it before <CHARNAME>, not even in our present time. I wonder how such technology comes to be found so far in the past?~
 END
@@ -547,36 +537,6 @@ END
  ++ ~There is still so much to do, I can not spare the time but we will, I am sure, return soon. You can visit your friend then.~ EXTERN VPLEIJ 99
  ++ ~I apologise Leina. I didn't forget your request deliberately, but there is still so much I have to do. Please, you must go visit your friend, I know where to find you should I need you. Farewell for now.~ EXTERN VPLEIJ 99
  ++ ~I have neither the inclination nor the time to be visiting this barkeep of yours. Go if you wish but you go alone, just don't expect me to come for you any time soon. Goodbye Leina.~ EXTERN VPLEIJ 101
-
-CHAIN VPLEIJ 125
-~(*Smiling*) Well, you know what they about mages <CHARNAME>. You can go forever and not see one then six come along at once.~
-END
- ++ ~You do come out with the strangest of things sometimes Leina.~ EXTERN VPLEIJ 126
- ++ ~If that is true then I count myself lucky only the one has come along this time.~ EXTERN VPLEIJ 127
- ++ ~Then let us be prepared for the other five to turn up any moment.~ EXTERN VPLEIJ 128
- ++ ~What are you talking about? I have never heard of anything so stupid in all my life.~ EXTERN VPLEIJ 129
-
-CHAIN VPLEIJ 126
-~(*Laughs*) I am a fountain of knowledge <CHARNAME>, stick with me and you will go far.~
-EXTERN ~KHARESSE~ 1
-
-CHAIN VPLEIJ 127
-~Even one is one too many given our present predicament <CHARNAME>.~
-EXTERN ~KHARESSE~ 1
-
-CHAIN VPLEIJ 128
-~(*Laughs*) A wise precaution indeed <CHARNAME>.~
-EXTERN ~KHARESSE~ 1
-
-CHAIN VPLEIJ 129
-~(*Laughs softly*) Then there is still much for you to hear and to learn <CHARNAME>.~
-EXTERN ~KHARESSE~ 1
-
-CHAIN VPLEIJ 130
-~I just knew this was going to come back and haunt us <CHARNAME>?~
-END
- IF ~!Dead("njhroth")~ THEN EXTERN NJHROJ 385
- IF ~Dead("njhroth")~ THEN EXTERN ~KHARESSE~ 2
 
 IF WEIGHT #4 ~GlobalGT("VP_Enable_Flirts","LOCALS",0) Global("VP_Enable_Flirts","LOCALS",4) GlobalLT("VP_LoveTalk","LOCALS",24) Global("VP_MyFlirt_Is_Over","LOCALS",0) !Global("VP_Leina_Samuel","GLOBAL",2) !Global("VP_Leina_Samuel","GLOBAL",4) !Global("VP_Leina_Samuel","GLOBAL",6) !Global("VP_InHalruaa","GLOBAL",1)~ THEN VPLEIJ 131
 ~Yes... you need me for something?~
