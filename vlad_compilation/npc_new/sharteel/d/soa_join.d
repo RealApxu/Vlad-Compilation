@@ -4,8 +4,8 @@ CHAIN
 IF WEIGHT #0 ~Global("VP_ReleaseSharTeel","GLOBAL",1) Gender(Player1,MALE)~ THEN VPSHART r1male
 ~Hey, you girl... quit yammering and get your butt over here! Stop wasting time on that useless specimen and do what you do best... get this door open!~
 DO ~SetGlobal("VP_ReleaseSharTeel","GLOBAL",2)~
-= ~There's a low down, dirty son of a bitch around here somewhere needing to be taught a lesson about how not to take liberties with a girl's freedom!~
-= ~Sheeesh... men are pathetic, just look at where trusting that one has brought us to.~
+== VPSHART ~There's a low down, dirty son of a bitch around here somewhere needing to be taught a lesson about how not to take liberties with a girl's freedom!~
+== VPSHART ~Sheeesh... men are pathetic, just look at where trusting that one has brought us to.~
 == IMOENJ ~Keep your breeches on, I'll get to you in my own time! Hmm... looks like this lock is different to the other. Shame that, you're gonna just have to wait until another way is found... that is if <CHARNAME> here and me can spare the time to search around for it!~
 == VPSHART ~Being here hasn't tempered your snooty disposition, nor your manners has it thief? Come to think of it, it hasn't done a lot for your sense either or you'd have left *him* to rot in his cage. What the heck, suit yourself, I'll not beg.~
 EXIT
@@ -14,7 +14,7 @@ CHAIN
 IF WEIGHT #-1 ~Global("VP_ReleaseSharTeel","GLOBAL",1) Gender(Player1,FEMALE)~ THEN VPSHART r1female
 ~Hey, you girl... quit yammering and get your butt over here! Stop wasting time and do what you do best... get this door open!~
 DO ~SetGlobal("VP_ReleaseSharTeel","GLOBAL",2)~
-= ~There's a low down, dirty son of a bitch around here somewhere needing to be taught a lesson about how not to take liberties with a girl's freedom!~
+== VPSHART ~There's a low down, dirty son of a bitch around here somewhere needing to be taught a lesson about how not to take liberties with a girl's freedom!~
 == IMOENJ ~Keep your breeches on, I'll get to you in my own time! Hmm... looks like this lock is different to the other. Shame that, you're gonna just have to wait until another way is found.~
 == VPSHART ~Being here hasn't tempered your disposition, nor your manners has it thief? Just as snooty as ever I see! Still, suit yourself, I'll not beg.~
 EXIT
@@ -33,7 +33,7 @@ END
 CHAIN VPSHART release7_im
 ~Then what are we waiting for... even now my hands itch to feel the sticky, warmth as I tear his still beating heart out of his chest, and wave it in front of his nose whilst watching his life's blood as it seeps into the dirt.~
 DO ~AddExperienceParty(3000) TakePartyItem("vpshrkey") DestroyItem("vpshrkey") JoinParty()~
-== IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN IMOENJ ~(*Her face pales*)... Please... keep your depraved fantasies to yourself!~
+== IMOENJ IF ~InParty("Imoen") InMyArea("Imoen") !StateCheck("Imoen",CD_STATE_NOTVALID)~ THEN ~(*Her face pales*)... Please... keep your depraved fantasies to yourself!~
 EXIT
 
 CHAIN VPSHART release8

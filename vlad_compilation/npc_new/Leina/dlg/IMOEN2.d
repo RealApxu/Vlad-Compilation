@@ -1,52 +1,31 @@
-ADD_TRANS_TRIGGER IMOEN2 21 ~True()~ DO 0
-
-ALTER_TRANS IMOEN2 // file name
-BEGIN 21 END // state number (can be more than one) BEGIN 0  // transition number (can be more than one) BEGIN // list of changes, see below for flags
-"ACTION" ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~
+INTERJECT_COPY_TRANS IMOEN2 21 vpleinaimoen2join
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*Smiling affectionately*) Ah the infamous Imoen... at last we get to meet.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~I have heard much from <CHARNAME> about the lovable rogue Imoen, but then of course, neither of you knew you were siblings.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~What difference does that make? You think that if <CHARNAME> knew we were related, <PRO_HESHE> wouldn't have spoken so fondly of me?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~No I... heck I didn't mean that at all Imoen. I just meant that maybe lovable rogue is not a term one would use to describe one's sister.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Sounds alright to me and if I don't have a problem with it why should you?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~I don't... Oh dear this is not going at all like it should. Imoen, I just wanted to say that I have heard a lot about <CHARNAME'S> courageous friend.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~I have the greatest respect for you, for what you both have battled through in your short lives, what you are still battling through even now.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Yea well, we have had a tough time of it, but I hear your own life hasn't been a bed of roses either. Seems we both owe our circumstances to male egotism.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Well, in my case a god and a man Bhaal, a power crazed god who thought he could live forever by impregnating every woman he came across, and Irenicus for... well the gods only know what is in his power crazed perverted brain!~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Still, in some small way I suppose we should sympathise with each other. So, you going to tell me your story so's I can start sympathising?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*Laughing softly*) I am not looking for sympathy Imoen.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Just as you will never be the same girl who left Irenicus's dungeon all that time ago, so have my experiences made me the girl I am today and strange as it may sound, for that I am grateful.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*Her eyes light up but she tries to make her face appear tragic*) Aaw come on girl, I sense a real tale of tragedy here, of love unrequited.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Please tell, what manner of beast took your heart and dashed it upon the rocks, leaving it broken, scarred for the whole of eternity?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*She smiles at the young girls romantic interpretation of her life*) Aye Imoen, I took a man once, called him husband, loved him, worshipped him... only to have my heart broken, my dreams shattered in return.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~When my heart finally became whole again, I promised it I would never allow it to suffer such pain again. I swore an oath never to love or to allow a man's love to ever touch it again.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*She looks at Leina, with genuine sadness in her face*) To never love again, how... I mean... never?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*She looks at Imoen and smiles*) Please Imoen, no sad face for me. Love truly doesn't interest me anymore, I have all I need in my music. So come, be happy for me.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Don't you miss the comfort that comes from being loved back, from knowing that someone thinks you are special?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~You of all people know the pain of having a part of you torn away. Would you want to risk the same pain when you are finally made whole again?~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~If I never again let a man into my heart then I know also that pain and deceit will never enter it either.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~(*Sighing*) Surely you don't believe that all men are the same, there are some good honest men in the world... or at least I hope there are.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~I don't want to die an old maid, never having known the rapture of what it is to love and to be loved.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~You are still young and yet to experience love in all its terrible reality. The turmoil, the heat of passion and the pain of deceit when those flames die.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~No doubt if I had only your romantic expectations and not the pain of reality, then I would be a different person to who I am today.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~As it is, the strength and wisdom I have gained through my struggle has helped me to see that this thing called love that we all seek, is not destined for us all.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~I swore off love to protect my heart and in truth, I have never been happier.~
+== VPLEIJ IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~You search for love if it is what you dream of Imoen, but do so with open eyes and remember, that there are none so blind as those blinded by love.~
+== IMOEN2 IF ~InParty("vpleina") InMyArea("vpleina") !StateCheck("vpleina",CD_STATE_NOTVALID)~ THEN ~Thank you, Leina.~
 END
-
-EXTEND_BOTTOM IMOEN2 21
- IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ immy1
-END
-
-CHAIN IMOEN2 leina1
-~What difference does that make? You think that if <CHARNAME> knew we were related, <PRO_HESHE> wouldn't have spoken so fondly of me?~
-EXTERN VPLEIJ immy2
-
-CHAIN IMOEN2 leina2
-~Sounds alright to me and if I don't have a problem with it why should you?~
-EXTERN VPLEIJ immy3
-
-CHAIN IMOEN2 leina3
-~Yea well, we have had a tough time of it, but I hear your own life hasn't been a bed of roses either. Seems we both owe our circumstances to male egotism.~
-== IMOEN2 ~Well, in my case a god and a man Bhaal, a power crazed god who thought he could live forever by impregnating every woman he came across, and Irenicus for... well the gods only know what is in his power crazed perverted brain!~
-== IMOEN2 ~Still, in some small way I suppose we should sympathise with each other. So, you going to tell me your story so's I can start sympathising?~
-EXTERN VPLEIJ immy4
-
-CHAIN IMOEN2 leina4
-~(*Her eyes light up but she tries to make her face appear tragic*) Aaw come on girl, I sense a real tale of tragedy here, of love unrequited.~
-== IMOEN2 ~Please tell, what manner of beast took your heart and dashed it upon the rocks, leaving it broken, scarred for the whole of eternity?~
-EXTERN VPLEIJ immy5
-
-CHAIN IMOEN2 leina5
-~(*She looks at Leina, with genuine sadness in her face*) To never love again, how... I mean... never?~
-EXTERN VPLEIJ immy6
-
-CHAIN IMOEN2 leina6
-~Don't you miss the comfort that comes from being loved back, from knowing that someone thinks you are special?~
-EXTERN VPLEIJ immy7
-
-CHAIN IMOEN2 leina7
-~(*Sighing*) Surely you don't believe that all men are the same, there are some good honest men in the world... or at least I hope there are.~
-== IMOEN2 ~I don't want to die an old maid, never having known the rapture of what it is to love and to be loved.~
-EXTERN VPLEIJ immy8
-
-CHAIN IMOEN2 leina8
-~Thank you, Leina.~
-END
- IF ~True()~ THEN DO ~SetGlobal("VP_Imoen_Returns","GLOBAL",1) AddXPObject(Myself,1000000) JoinParty()~ EXIT
- IF ~Global("Kachiko_Saved","GLOBAL",2) InParty("Yoshimo") !Dead("Yoshimo") InParty("vpkachi") !Dead("vpkachi")~ THEN DO ~SetGlobal("VP_YoshimoExcuse","GLOBAL",1)~ EXTERN VPKACJ N32
- IF ~InParty("Keldorn") !Dead("Keldorn") Global("VP_KeldornMatch","GLOBAL",1)~ THEN EXTERN KELDORJ Imoen0
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN GOTO hrothg1
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFJ immy1
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELJ immy1

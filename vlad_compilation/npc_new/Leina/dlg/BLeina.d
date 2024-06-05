@@ -14,27 +14,27 @@ END
 CHAIN VPLEIB 16
 ~It is the same with all stories, they change with each new telling, but I see by your expression you are tired of being asked about the events. Perhaps you can tell me what brings you here? Nothing as sinister as another war to avert I hope?~
 END
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No such heroics this time. I was about to embark on a search for a friend of mine, Imoen, she was taken by Cowled Wizards to some place only the gods know where, when Hrothgar persuaded me to join him on his quest, assuring me that Imoen would be found safe.~ EXTERN VPLEIB 19
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I had intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double, only Hrothgar persuaded me to postpone my search and join him on his quest.~ EXTERN VPLEIB 20
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard, but first I agreed to aid Hrothgar in his quest and that is why I am here.~ EXTERN VPLEIB 20
- IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double.~ EXTERN VPLEIB 20A
- IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard.~ EXTERN VPLEIB 20A
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~No such heroics this time. I was about to embark on a search for a friend of mine, Imoen, she was taken by Cowled Wizards to some place only the gods know where, when Hrothgar persuaded me to join him on his quest, assuring me that Imoen would be found safe.~ EXTERN VPLEIB 19
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~I had intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double, only Hrothgar persuaded me to postpone my search and join him on his quest.~ EXTERN VPLEIB 20
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard, but first I agreed to aid Hrothgar in his quest and that is why I am here.~ EXTERN VPLEIB 20
+ IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ REPLY ~I am intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double.~ EXTERN VPLEIB 20A
+ IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard.~ EXTERN VPLEIB 20A
 
 CHAIN VPLEIB 17
 ~(*Laughs softly*) Oh no <CHARNAME>, there are tales enough. I do not think another is needed, unless your being here means that we are about to witness another heroic feat.~
 END
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No such heroics this time. I was about to embark on a search for a friend of mine, Imoen, she was taken by Cowled Wizards to some place only the gods know where, when Hrothgar persuaded me to join him on his quest, assuring me that Imoen would be found safe.~ EXTERN VPLEIB 19
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I had intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double, only Hrothgar persuaded me to postpone my search and join him on his quest.~ EXTERN VPLEIB 20
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard, but first I agreed to aid Hrothgar in his quest and that is why I am here.~ EXTERN VPLEIB 20
- IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double.~ EXTERN VPLEIB 20A
- IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ THEN REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard.~ EXTERN VPLEIB 20A
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~No such heroics this time. I was about to embark on a search for a friend of mine, Imoen, she was taken by Cowled Wizards to some place only the gods know where, when Hrothgar persuaded me to join him on his quest, assuring me that Imoen would be found safe.~ EXTERN VPLEIB 19
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~I had intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double, only Hrothgar persuaded me to postpone my search and join him on his quest.~ EXTERN VPLEIB 20
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard, but first I agreed to aid Hrothgar in his quest and that is why I am here.~ EXTERN VPLEIB 20
+ IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ REPLY ~I am intended to seek out a wizard by the name of Irenicus. A very dear friend of mine, Imoen, and myself have suffered a lot of pain by his hand and I intend to pay him back double.~ EXTERN VPLEIB 20A
+ IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ REPLY ~No heroics Leina, I simply have a friend to find and a debt of pain to pay back to an insane wizard.~ EXTERN VPLEIB 20A
 
 CHAIN VPLEIB 18
 ~As you wish <CHARNAME>. I was curious as to the truth behind so many tales. To meet a hero before they pass into legend is always an honour. Will you at least tell me what brings you this way?~
 END
  ++ ~I am here to seek out someone that I owe a debt of pain. He will wish that he had never messed with a child of Bhaal when we next meet, mark my words!~ EXTERN VPLEIB 21
- IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am here for two reasons Leina. One, I allowed myself to be persuaded by Hrothgar to aid him in his search and when that is done comes two, revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ EXTERN VPLEIB 21
- IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ THEN REPLY ~I am here for one reason Leina: to revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ EXTERN VPLEIB 21
+ IF ~OR(2) InParty("njhroth") !Global("StartIWD","GLOBAL",0)~ REPLY ~I am here for two reasons Leina. One, I allowed myself to be persuaded by Hrothgar to aid him in his search and when that is done comes two, revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ EXTERN VPLEIB 21
+ IF ~!InParty("njhroth") Global("StartIWD","GLOBAL",0)~ REPLY ~I am here for one reason Leina: to revenge on an insane wizard who should have known better than to torture a child of Bhaal!~ EXTERN VPLEIB 21
 
 CHAIN VPLEIB 19
 ~To think to take on Cowled wizards or any wizards for that matter is no mean task <CHARNAME>. You worry for the safety of your Imoen at their hands and yet you abandon her on the words of one man. I know you have followed Hrothgar far and you probably know him far better than I, but what warrants such faith may I ask?~
@@ -210,12 +210,12 @@ CHAIN
 IF WEIGHT #0 ~Global("VP_BPC","LOCALS",11) GlobalLT("VP_MyFatherIsDead","LOCALS",3) GlobalLT("VP_Break_Point","LOCALS",2)~ THEN VPLEIB 64
 ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father's death.~
 END
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 65
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N65
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 71
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N71
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~I have already told you, it was a means to an end Leina, nothing more.~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 72
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I have already told you, it was a means to get to you Leina, nothing more.~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N72
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 65
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N65
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 71
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N71
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~I have already told you, it was a means to an end Leina, nothing more.~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB 72
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~I have already told you, it was a means to get to you Leina, nothing more.~ DO ~SetGlobal("VP_BPC","LOCALS",12)~ EXTERN VPLEIB N72
 
 CHAIN VPLEIB 65
 ~Why? Why you considered his life yours to take? Why you allied yourself with a creature such as Bodhi and murdered a man you knew nothing about for her?~
@@ -280,12 +280,12 @@ END
 CHAIN VPLEIB 76
 ~I... I do not know what to believe. His sick mind was such that he would have seen you as an intruder, possibly he even believed that Samuel had sent you to find me and take me from him. I do not want to believe that he was merely a pawn, a life to be played and discarded for the selfish reasons of others.~
 END
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~Then believe in the truth, that in his poor sick mind he saw me as an intruder, someone intent on taking away the only thing he had left in this world, his daughter.~ EXTERN VPLEIB 77
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~All I can say is look back at the state of his mind, his recent behaviour and then judge what you believe his actions would have been faced with an intruder in his home.~ EXTERN VPLEIB 77
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~Only you can decide what to believe and who to trust but you need time to grieve for your father properly before you try to make sense of anything. Stay with the group, give yourself that time.~ EXTERN VPLEIB 77
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~Then believe in the truth, that in his poor sick mind he saw me as an intruder, someone intent on taking away the only thing he had left in this world, his daughter.~ EXTERN VPLEIB N77
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~All I can say is look back at the state of his mind, his recent behaviour and then judge what you believe his actions would have been faced with an intruder in his home.~ EXTERN VPLEIB N77
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~Only you can decide what to believe and who to trust but you need time to grieve for your father properly before you try to make sense of anything. Stay with the group, give yourself that time.~ EXTERN VPLEIB N77
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~Then believe in the truth, that in his poor sick mind he saw me as an intruder, someone intent on taking away the only thing he had left in this world, his daughter.~ EXTERN VPLEIB 77
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~All I can say is look back at the state of his mind, his recent behaviour and then judge what you believe his actions would have been faced with an intruder in his home.~ EXTERN VPLEIB 77
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~Only you can decide what to believe and who to trust but you need time to grieve for your father properly before you try to make sense of anything. Stay with the group, give yourself that time.~ EXTERN VPLEIB 77
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~Then believe in the truth, that in his poor sick mind he saw me as an intruder, someone intent on taking away the only thing he had left in this world, his daughter.~ EXTERN VPLEIB N77
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~All I can say is look back at the state of his mind, his recent behaviour and then judge what you believe his actions would have been faced with an intruder in his home.~ EXTERN VPLEIB N77
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~Only you can decide what to believe and who to trust but you need time to grieve for your father properly before you try to make sense of anything. Stay with the group, give yourself that time.~ EXTERN VPLEIB N77
 
 CHAIN VPLEIB 77
 ~He was not a happy man, his own grief had engulfed him completely. I can no more be certain of his reactions than I can of your intentions that day, so it does not give me the right to judge you <CHARNAME>. One last question and then we will speak no more of it. Why did Bodhi want my father dead?~
@@ -318,9 +318,9 @@ END
 CHAIN VPLEIB 82
 ~And if the situation were reversed? Would you stay your hand if you thought your life was at risk when intruders burst into your home brandishing weapons?~
 END
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~I knew Bodhi would have her spies follow me, I had to be seen to go into the house armed and ready to do as she had asked. Once inside he gave me no chance to sheathe my weapon or speak.~ EXTERN VPLEIB 76
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~I wanted to warn him, to let him know that his dealings with the shadow thieves had made him a powerful enemy, namely Bodhi, but I guess my sudden intrusion scared him too well and he would not listen.~ EXTERN VPLEIB 76
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I only wanted to ask him about you, but I guess my sudden intrusion scared him too well and he would not listen.~ EXTERN VPLEIB 76
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~I knew Bodhi would have her spies follow me, I had to be seen to go into the house armed and ready to do as she had asked. Once inside he gave me no chance to sheathe my weapon or speak.~ EXTERN VPLEIB 76
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~I wanted to warn him, to let him know that his dealings with the shadow thieves had made him a powerful enemy, namely Bodhi, but I guess my sudden intrusion scared him too well and he would not listen.~ EXTERN VPLEIB 76
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~I only wanted to ask him about you, but I guess my sudden intrusion scared him too well and he would not listen.~ EXTERN VPLEIB 76
  ++ ~Murder was not intended, you must believe me. I simply did not stop to consider what his reaction might be to seeing armed intruders burst into his home. I am sorry, I should have.~ EXTERN VPLEIB 76
 
 CHAIN VPLEIB 83
@@ -1201,59 +1201,53 @@ CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",5) Gender(Player1,FEMALE) Global("VP_We_Want_ToDance","LOCALS",1)~ THEN VPLEIB PCF2Leina1a
 ~(*Leina stands dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash*)~
 DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
-EXTERN VPLEIB PCF2LeinaA
+== VPLEIB ~The bard has been asked to play a rousing tune to get your feet a dancing. She has also been told to let it be known that we are all to take part in this merriment. No creeping off to ones bed roll, the order was *all*.~
+END
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ137
+ IF ~!InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 55
+ IF ~InParty("njtaffic") !InParty("njmelora")~ EXTERN NJTAFB 6
+ IF ~InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 48
 
 CHAIN
 IF ~Global("VP_LoveTalk","LOCALS",5) Gender(Player1,FEMALE) Global("VP_We_Want_ToDance","LOCALS",0)~ THEN VPLEIB PCF2Leina1b
 ~(*Leina stands dressed in scarlet skirts and a white bodice. Tied around her trim waist is a bright blue sash*)~
 DO ~SetGlobal("VP_LoveTalk","LOCALS",6)~
-EXTERN VPLEIB PCF2LeinaB
-
-CHAIN VPLEIB PCF2LeinaA
-~The bard has been asked to play a rousing tune to get your feet a dancing. She has also been told to let it be known that we are all to take part in this merriment. No creeping off to ones bed roll, the order was *all*.~
+== VPLEIB ~This is a fine evening, see how the stars shine and the moon is full, a night such as this should not be wasted sleeping. We have fine ale and the bard shall sing a fine tune guaranteed to get your feet a dancing.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
- IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
- IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
- IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
-
-CHAIN VPLEIB PCF2LeinaB
-~This is a fine evening, see how the stars shine and the moon is full, a night such as this should not be wasted sleeping. We have fine ale and the bard shall sing a fine tune guaranteed to get your feet a dancing.~
-END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
- IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
- IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
- IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ137
+ IF ~!InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 55
+ IF ~InParty("njtaffic") !InParty("njmelora")~ EXTERN NJTAFB 6
+ IF ~InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 48
 
 CHAIN VPLEIB PCF2Leina2a
 ~(*She starts to play a rousing tune and then as she starts to sing her feet and body start to move in time to the rhythm.*)~
@@ -1302,180 +1296,180 @@ END
 CHAIN VPLEIB PCF2Leina13a
 ~(*Laughs*) Tomorrow will arrive as it always does. The sun will rise and it will not listen to our pleas for a few more hours of darkness to ease our eyes and our heads. It shows no consideration nor compassion for our own over indulgences. Let us hope with some sleep we will be better prepared to face the glare of the morning.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina14a
 ~<CHARNAME>, I will play for as many nights as you wish, I never need asking twice to sing... or dance if it comes to that. However, we have had the best of this evening so I am to my bed.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina15a
 ~I am more than content with the songs that are in my heart. If the audience want a rousing tune I will sing it gladly and take delight in it, but those tunes are plentiful <CHARNAME>, there is no need for me to add to them. Now we must rest for tomorrow is almost upon us.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina16a
 ~I believe it would be <CHARNAME>. Many a war has been started by head strong stubborn men. Maybe if they listened to and took notice of the truth that the heart speaks, a lot of the bloodshed could have been avoided. Now, let us not end the evening on a sour note, I am to my bed whilst I still feel joy in my own heart.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina17a
 ~Yes, I consider my self very fortunate, for there are also those who because the search seems endless give up and settle for second best. Never knowing that if they searched that little bit further real happiness was waiting to be found. Now <CHARNAME> we must rest for tomorrow is almost upon us.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina18a
 ~Sleep well yourself <CHARNAME> and make the most of the few hours that are left between tonight and tomorrow. I fear tomorrow will not take into account are own over indulgences when it sets our toils for the day.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina19a
 ~We should always make time to play in our lives <CHARNAME>, even if our games are different to those which we played as children. Life would be very mundane and weary if it were nothing but toil.~
 == VPLEIB ~I believe a lot of those who opt out of living do so because their lives have become one long grind and they see nothing to look forward to from one day to the next. They have forgotten how to play and their souls have become melancholy, living only for when death claims them, but come, let us not end the evening on so black a note.~
 == VPLEIB ~I am to my rest whilst my own soul is still light.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina38a
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+ IF ~True()~ EXTERN VPLEIB PCF2Leina38a
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 53
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
 
 CHAIN VPLEIB PCF2Leina22a
 ~As you wish Taffic, but please try and remember whereas you may be small, we are not carrying you tomorrow.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ137
 
 CHAIN VPLEIB PCF2Leina23a
 ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn't matter.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ137
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ137
 
 CHAIN VPLEIB PCF2Leina23c
 ~Then take your boots off Minsc, go bare foot as shall I.~
 == BMINSC ~Oooo... that's not right Leina, Minsc has not got his dancing socks on either, only the ones that let his toes breathe.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
 
 CHAIN VPLEIB PCF2Leina24a
 ~In case you had not noticed Hrothgar we are in the great outdoors, that should be enough space even for you.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
- IF ~InParty("Aerie")~ THEN EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ EXTERN BAERIE NEJ454
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
 
 CHAIN VPLEIB PCF2Leina25a
 ~(*Laughing*) Dar, I told you your name would be known in future times. I can see I have more to add to your life, 'Dar the first half orc person to dance'.~
@@ -1485,139 +1479,139 @@ CHAIN VPLEIB PCF2Leina26a
 ~I forget how much of a toll the road takes on your legs Aerie, but maybe dancing will help strengthen those calves of yours, put some muscle on them.~
 == BAERIE ~I'll get used to walking first before I try dancing thank you Leina.~
 END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~Gender(Player1,FEMALE)~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia") Gender(Player1,FEMALE)~ EXTERN BNALIA NEJ58
+ IF ~InParty("Nalia") Gender(Player1,MALE)~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
 
 CHAIN VPLEIB PCF2Leina27a
 ~Jan, if that is the case then you can lead.~
 == BJAN ~Oh... I can do that.~
 END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~Gender(Player1,FEMALE)~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia") Gender(Player1,FEMALE)~ EXTERN BNALIA NEJ58
+ IF ~InParty("Nalia") Gender(Player1,MALE)~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
 
 CHAIN VPLEIB PCF2Leina28a
 ~Edwin... forget it!~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
 
 CHAIN VPLEIB PCF2Leina29a
 ~No lady is pulling your strings Valygar. You are a fine figure of a man and I am sure any lady here would be proud to dance with you but none are going to pull your strings in order to.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
 
 CHAIN VPLEIB PCF2Leina30a
 ~I'll ignore the lewd suggestion behind that remark dwarf... for now!~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
- IF ~InParty("Viconia")~ THEN EXTERN BVICONI NEJ0
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ EXTERN BVICONI NEJ0
 
 CHAIN VPLEIB PCF2Leina31a
 ~I have no idea what you said Viconia, and as it's come out of your mouth I have no desire to know.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
 
 CHAIN VPLEIB PCF2Leina32a
 ~Come Keldorn, Maria will not think any less of you for we all dance together as friends this night and not as lovers.~
 == BKELDOR ~(*A little flustered*) I didn't mean to imply that there was anything inappropriate in your suggestion Leina. I know that you...~
 END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina33a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina33a
+ IF ~Gender(Player1,FEMALE)~ EXTERN VPLEIB PCF2Leina33a
+ IF ~Gender(Player1,MALE)~ EXTERN VPLEIB PCM4Leina33a
 
 CHAIN VPLEIB PCF2Leina33a
 ~(*Smiling at the paladin's flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
 
 CHAIN VPLEIB PCF2Leina34a
 ~Anomen, if you as gifted in dance as you in the tall stories then I fear you will steal my audience from me tonight.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
 
 CHAIN VPLEIB PCF2Leina35a
 ~(*Smiling at the hafling*) That is up to you Mazzy, seldom does a girl get the chance to wear other than her armour these days.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ58
+ IF ~True()~ EXTERN VPLEIB PCF2Leina2a
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ58
 
 CHAIN VPLEIB PCF2Leina36a
 ~Then tonight we shall all dance in Khalid's memory. Instead of mourning his death Jaheira it is now time to celebrate his life.~
 == BJAHEIR ~(*To herself*) Would you approve dear heart, I wonder?~
 END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~Gender(Player1,FEMALE)~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
 
 CHAIN VPLEIB PCF2Leina37a
 ~I wonder Nalia, how much your aunt's fear for you were due to the circumstances of your mother's death and how much was due to her own escapades as a young girl.~
 == BNALIA ~(*She giggles*) Auntie, and escapades! No, she's always been just auntie.~
 END
- IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
- IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
- IF ~InParty("Jaheira")~ THEN EXTERN BJAHEIR NEJ497
+ IF ~Gender(Player1,FEMALE)~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ EXTERN BJAHEIR NEJ497
 
 CHAIN VPLEIB PCF2Leina38a
 ~Sleep well <CHARNAME>.~
@@ -1996,46 +1990,46 @@ END
 CHAIN VPLEIB PCM4Leina2
 ~(*Laughing*) Ah, but the song is promised now, and the barkeep will not have his patrons disappointed. See they have even made room should any of you wish to join me in the dance.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
  IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
- IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
- IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~!InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 55
+ IF ~InParty("njtaffic") !InParty("njmelora")~ EXTERN NJTAFB 6
+ IF ~InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 48
 
 CHAIN VPLEIB PCM4Leina3
 ~(*Laughing*) Oh, I think you are going to enjoy this one. See, they have even made room should any of you wish to join me in the dance.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
- IF ~InParty("Korgan")~ THEN EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Korgan")~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
  IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
- IF ~!InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 55
- IF ~InParty("njtaffic") !InParty("njmelora")~ THEN EXTERN NJTAFB 6
- IF ~InParty("njtaffic") InParty("njmelora")~ THEN EXTERN NJMELB 48
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
+ IF ~!InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 55
+ IF ~InParty("njtaffic") !InParty("njmelora")~ EXTERN NJTAFB 6
+ IF ~InParty("njtaffic") InParty("njmelora")~ EXTERN NJMELB 48
 
 CHAIN VPLEIB PCM4Leina2a
 ~The question is... are you ready <CHARNAME>?~
@@ -2091,16 +2085,16 @@ CHAIN VPLEIB PCM4Leina7
 == VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 56
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ139
 
 CHAIN VPLEIB PCM4Leina8
 ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
@@ -2110,16 +2104,16 @@ CHAIN VPLEIB PCM4Leina8
 == VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 56
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ139
 
 CHAIN VPLEIB PCM4Leina9
 ~(*As she steps lightly towards you again, you notice a definite twinkle in her eye. You also notice, that unlike yourself, she has hardly broken a sweat.*)~
@@ -2130,149 +2124,149 @@ CHAIN VPLEIB PCM4Leina9
 == VPLEIB ~Oh, and please <CHARNAME>, keep the sash, I have others.~
 END
  IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
- IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
- IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
- IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ139
+ IF ~InParty("njmelora") InParty("njtaffic")~ EXTERN NJMELB 56
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ EXTERN NJHROB 84
+ IF ~InParty("Minsc")~ EXTERN BMINSC NEJ139
 
 CHAIN VPLEIB PCM4Leina22a
 ~As you wish Taffic, but please try and remember whereas you may be small, we are not carrying you tomorrow.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
  IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
 
 CHAIN VPLEIB PCM4Leina23a
 ~I am not one for the jig Melora, but as long as you have fun what the dance is doesn't matter.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
  IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
- IF ~InParty("njhroth")~ THEN EXTERN NJHROB 85
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
+ IF ~InParty("njhroth")~ EXTERN NJHROB 85
 
 CHAIN VPLEIB PCM4Leina24a
 ~I am sure the kindly barkeep will remove some more tables if there is not enough room for you Hrothgar.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
- IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
- IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ EXTERN BJAN NEJ1
  IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
- IF ~InParty("njdar")~ THEN EXTERN NJDARB 127
+ IF ~InParty("njdar")~ EXTERN NJDARB 127
 
 CHAIN VPLEIB PCM4Leina28a
 ~Edwin... forget it!~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
- IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~InParty("Valygar")~ EXTERN BVALYGA NEJ156
 
 CHAIN VPLEIB PCM4Leina29a
 ~No lady is pulling your strings Valygar. You are a fine figure of a man and I am sure any lady here would be proud to dance with you but none are going to pull your strings in order to.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
  IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
 
 CHAIN VPLEIB PCM4Leina30a
 ~I'll ignore the lewd suggestion behind that remark dwarf... for now!~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
  IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
 
 CHAIN VPLEIB PCM4Leina31a
 ~I have no idea what you said Viconia, and as it's come out of your mouth I have no desire to know.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
- IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ EXTERN BKELDOR NEJ1
 
 CHAIN VPLEIB PCM4Leina33a
 ~(*Smiling at the paladin's flustered face*) Keldorn, I would stop there before you put your foot in it any further.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
- IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ EXTERN BANOMEN NEJ1
 
 CHAIN VPLEIB PCM4Leina34a
 ~Anomen, if you as gifted in dance as you in the tall stories then I fear you will steal my audience from me tonight.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
- IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ EXTERN BMAZZY NEJ1
 
 CHAIN VPLEIB PCM4Leina35a
 ~(*Smiling at the hafling*) That is up to you Mazzy, seldom does a girl get the chance to wear other than her armour these days.~
 END
- IF ~True()~ THEN EXTERN VPLEIB PCM4Leina2b
- IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~True()~ EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ EXTERN BYOSHIM NEJ9
  IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
- IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Nalia")~ EXTERN BNALIA NEJ60
 
 CHAIN
 IF ~Global("VP_KorganNoDancing","LOCALS",6)~ THEN VPLEIB PCM4bKorgan1
@@ -2597,8 +2591,8 @@ IF ~Global("VP_LoveTalk","LOCALS",14) Gender(Player1,MALE)~ THEN VPLEIB PCM7Lein
 END
  ++ ~You're welcome Leina, but tell me, what have I done to deserve so pleasurable a reward?~ EXTERN VPLEIB PCM7Leina2
  ++ ~Mmm... tell me what I did and I'll do it again?~ EXTERN VPLEIB PCM7Leina2
- IF ~OR(6) Global("JaheiraRomanceActive","GLOBAL",1) Global("JaheiraRomanceActive","GLOBAL",2) Global("AerieRomanceActive","GLOBAL",1) Global("AerieRomanceActive","GLOBAL",2) Global("ViconiaRomanceActive","GLOBAL",1) Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we don't want to give anyone the wrong impression?~ DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXTERN VPLEIB PCM7Leina11
- IF ~!Global("JaheiraRomanceActive","GLOBAL",1) !Global("JaheiraRomanceActive","GLOBAL",2) !Global("AerieRomanceActive","GLOBAL",1) !Global("AerieRomanceActive","GLOBAL",2) !Global("ViconiaRomanceActive","GLOBAL",1) !Global("ViconiaRomanceActive","GLOBAL",2)~ THEN REPLY ~Please Leina, we don't want to give anyone the wrong impression?~ EXTERN VPLEIB PCM7Leina12
+ IF ~OR(6) Global("JaheiraRomanceActive","GLOBAL",1) Global("JaheiraRomanceActive","GLOBAL",2) Global("AerieRomanceActive","GLOBAL",1) Global("AerieRomanceActive","GLOBAL",2) Global("ViconiaRomanceActive","GLOBAL",1) Global("ViconiaRomanceActive","GLOBAL",2)~ REPLY ~Please Leina, we don't want to give anyone the wrong impression?~ DO ~SetGlobal("VP_MyFlirt_Is_Over","LOCALS",1)~ EXTERN VPLEIB PCM7Leina11
+ IF ~!Global("JaheiraRomanceActive","GLOBAL",1) !Global("JaheiraRomanceActive","GLOBAL",2) !Global("AerieRomanceActive","GLOBAL",1) !Global("AerieRomanceActive","GLOBAL",2) !Global("ViconiaRomanceActive","GLOBAL",1) !Global("ViconiaRomanceActive","GLOBAL",2)~ REPLY ~Please Leina, we don't want to give anyone the wrong impression?~ EXTERN VPLEIB PCM7Leina12
  ++ ~Leina, I didn't know you cared... does this mean we are engaged?~ EXTERN VPLEIB PCM7Leina13
 
 CHAIN VPLEIB PCM7Leina2
@@ -2850,11 +2844,11 @@ CHAIN
 IF WEIGHT #-1 ~Global("VP_Ric_ClericQuest","LOCALS",1)~ THEN VPLEIB ClericQuest1
 ~(*Breathing in deeply*) Oh at last, the sweet smell of fresh air!~ [mute]
 END
- IF ~True()~ THEN EXTERN VPLEIB ClericQuest2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ140
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 58
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 129
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 86
+ IF ~True()~ EXTERN VPLEIB ClericQuest2
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC NEJ140
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB 58
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB 129
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB 86
 
 CHAIN VPLEIB ClericQuest2
 ~Just look at the filth on my boots <CHARNAME>! I don't think we would be welcome at the Mithrest Inn this day, but we could clean up at the Five Flagons, Samuel will understand. What say you?~
@@ -2956,12 +2950,12 @@ CHAIN VPLEIB ClericQuest15a
 ~Keep your voice done!~
 END
  IF ~True()~ EXTERN VPLEIB ClericQuest17
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 59
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ141
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ499
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 87
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB 8
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB 130
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB 59
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC NEJ141
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR NEJ499
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB 87
 
 CHAIN VPLEIB ClericQuest17
 ~If you would just stop and hear me out here <CHARNAME>, we can get out of here with a little dignity and without stinking the place out.~
@@ -2985,15 +2979,15 @@ END
 CHAIN VPLEIB ClericQuest19a
 ~(*Sighs*) Ah, heavenly... and you can of course down a tankard of ale or whatever takes your fancy.~
 END
- IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 9
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 60
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ142
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 131
+ IF ~True()~ EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN NEJ1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB 9
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB 60
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC NEJ142
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB 131
 
 CHAIN VPLEIB ClericQuest20
 ~Then let us away to the Five Flagons, Samuel will understand and have hot water for us all in no time.~
@@ -3356,8 +3350,8 @@ END
 CHAIN VPLEIB Sphere7
 ~That's just it. The size we see on the outside is just that... about two houses. Doesn't it seem strange to you that the distance we walked on the inside was much further then down the hall? For instance take where we fought the dwarves it was like a huge cave and their huts were in it also.~
 END
- IF ~InParty("Korgan") !Dead("Korgan") Gender(Player1,MALE)~ THEN REPLY ~Who really cares? All I'm interested in is gold, ale, power and a warm body to crawl on.~ EXTERN VPLEIB Sphere8
- IF ~OR(2) !InParty("Korgan") Dead("Korgan") Gender(Player1,FEMALE)~ THEN REPLY ~Who really cares? All I'm interested in is gold, ale, power and a warm body to crawl on.~ EXTERN VPLEIB Sphere9
+ IF ~InParty("Korgan") !Dead("Korgan") Gender(Player1,MALE)~ REPLY ~Who really cares? All I'm interested in is gold, ale, power and a warm body to crawl on.~ EXTERN VPLEIB Sphere8
+ IF ~OR(2) !InParty("Korgan") Dead("Korgan") Gender(Player1,FEMALE)~ REPLY ~Who really cares? All I'm interested in is gold, ale, power and a warm body to crawl on.~ EXTERN VPLEIB Sphere9
  ++ ~Can we speed this up? I have other things that need attending to.~ EXTERN VPLEIB Sphere10
  ++ ~Now that you mention it, you are right. We have been teleported so much I do not so much as watch my steps as lookout for who we are about to meet as we pop out.~ EXTERN VPLEIB Sphere11
 
@@ -3390,9 +3384,9 @@ END
 CHAIN VPLEIB Sphere13
 ~Oh, please <CHARNAME>, you have miss interpreted my comment wrongly!~
 END
- IF ~True()~ THEN EXTERN VPLEIB Sphere13a
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher3
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher1
+ IF ~True()~ EXTERN VPLEIB Sphere13a
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiSpher1
 
 CHAIN VPLEIB Sphere13a
 ~I would no more endanger the party then put my own life in peril. I am very fond of the friends I have made in this group. Believe me, I only let my attention wander when the danger has passed and never in unknown territory or during battle.~
@@ -3411,60 +3405,60 @@ END
 CHAIN VPLEIB Sphere15
 ~Dar, that is one that we will have to explain later. Right now I am trying to remember an object that is bigger on the outside then on the inside.~
 END
- IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ THEN REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ THEN REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ THEN REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiSpher1
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiSpher1
 
 CHAIN VPLEIB Sphere16
 ~Please stop side tracking me and think of an object that is bigger on the outside then on the inside for me.~
 END
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiSpher1
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher1
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiSpher1
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiSpher1
 
 CHAIN VPLEIB Sphere17
 ~Not a book or a place I visited but it has to do with a song for I keep getting this tune in my head, now what I need is an object that is bigger on the inside then outside.~
 END
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
- IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ THEN REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiSpher1
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher1
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~An Inn?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~A Windmill?~ EXTERN VPLEIB Sphere18
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar")~ REPLY ~A Dungeon?~ EXTERN VPLEIB Sphere18
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiSpher1
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiSpher1
 
 CHAIN VPLEIB Sphere18
 ~Oh no it is much, much smaller then anything like that.~
 END
- IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A gem bag?~ EXTERN VPLEIB Sphere19
- IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A flask?~ EXTERN VPLEIB Sphere19
- IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A clay jar?~ EXTERN VPLEIB Sphere19
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher3
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher3
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher2
+ IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~A gem bag?~ EXTERN VPLEIB Sphere19
+ IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~A flask?~ EXTERN VPLEIB Sphere19
+ IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~A clay jar?~ EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiSpher2
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiSpher2
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiSpher3
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiSpher3
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiSpher2
 
 CHAIN VPLEIB Sphere19
 ~Now don't be silly I said smaller, not tiny or teeny-weeny. It is not as big as a house nor is it as small as a mouse. It has to be big enough for you to get into. So it is about the dimensions to easily hold a person.~
 END
- IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~A box?~ EXTERN VPLEIB Sphere20
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher3
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher4
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher4
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher3
+ IF ~OR(2) !InParty("Yoshimo") Dead("Yoshimo") OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~A box?~ EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiSpher3
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiSpher4
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiSpher4
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiSpher3
 
 CHAIN VPLEIB Sphere20
 ~That's it, that's it. It's a box!!!~
@@ -3501,10 +3495,10 @@ END
 CHAIN VPLEIB Sphere25
 ~Oh, <CHARNAME>, that is just it. It is no more then a silly song but it does make me wonder now if part of it could be true after seeing this sphere.~
 END
- IF ~True()~ THEN EXTERN VPLEIB Sphere26
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher4
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher4
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiSpher2
+ IF ~True()~ EXTERN VPLEIB Sphere26
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiSpher4
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiSpher4
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiSpher2
 
 CHAIN VPLEIB Sphere26
 ~Oh <CHARNAME> can I ask one more question? (*She touches your arm to get your attention*)~
@@ -3855,25 +3849,6 @@ END
  ++ ~(*Clasping both her hands a little tighter*) Leina you are a beautiful and capable woman, a woman any man would be proud to walk beside and it is my hope that one day...~ EXTERN VPLEIB PCM11L8
  ++ ~(*Smiling*) A vagabond, surely not! How did such a rogue manage to infiltrate my group. Let me look again, unless my eyes deceive me I see no vagabond here, only an angel with a dirty face.~ EXTERN VPLEIB PCM11L9
 
-CHAIN VPLEIB heist7
-~She's ok Melora, we both are no thanks to you! Why did you have to be so greedy and open that other chest?~
-EXTERN NJMELB heist11
-
-CHAIN VPLEIB heist8
-~I am not sure myself. I did as you said and distracted the two guards, pretty easy really. Men... all it takes is the sight of a comely face and figure and they're distracted.~
-== VPLEIB ~Anyway, after you two wacked them on the head and left me to watch the door, the next thing I remember was *BOOM*, bits of chest were flying everywhere, and me with them. The rest I know from Imoen.~
-== VPLEIB ~Look, there she is, ask her yourself. (*Leina waves at Imoen, beckoning her over.*)~
-EXTERN BIMOEN2 heist5
-
-CHAIN VPLEIB heist9
-~That's ok Melora, I am sure it will all come back to you soon.~
-== VPLEIB ~Myself, I am wondering how the two guards are going to explain to their lord how they came to be so distracted and left their post, allowing three women to make off with his gold. Now that's a wall I'd love to be a fly on.~
-EXTERN BIMOEN2 heist9
-
-CHAIN VPLEIB heist10
-~(*Laughs softly*) Very true Melora, you... well you just be Melora.~
-EXIT
-
 CHAIN VPLEIB 20A
 ~You seek revenge <CHARNAME>, do you truly believe that the pain you inflict back will erase the memory of the pain received? Only time will do that and then never completely. You will always carry with you some of the scars, that I know to be true.~
 END
@@ -3883,6 +3858,7 @@ END
 CHAIN
 IF WEIGHT #-99 ~Global("VP_Ric_TheatrQuest","LOCALS",1)~ THEN VPLEIB TheatrQ0
 ~<CHARNAME>, wow, that was sure some trip. Traveling with you is really an adventure. One minute we are here in our time and the next we are who knows where?~ [mute]
+END
  ++ ~Slow down Leina. What we do is no sightseeing trip.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ EXTERN VPLEIB TheatrQ1
  ++ ~Leina, I don't know if being popped from one place to another is all that grand.~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ EXTERN VPLEIB TheatrQ2
  ++ ~Hold on a minute, am I hearing you correctly here? You, who gave such a squeal when we were teleported to who knows where... now thinks it was a big adventure?~ DO ~SetGlobal("VP_Ric_TheatrQuest","LOCALS",2)~ EXTERN VPLEIB TheatrQ3
@@ -3946,9 +3922,13 @@ CHAIN VPLEIB TheatrQ9
 == VPLEIB ~So you do feel your surroundings... it tickles you, hummmm. I must remember that. The big bad adventurer gets all ticklish!~
 END
  ++ ~Hey I'm not made of stone nor am I a troll...I do have feelings!~ EXTERN VPLEIB TheatQ10
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN BIMOEN2 theatr
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2")~ THEN REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN VPLEIB TheatQ11
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN BIMOEN2 theatr
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2")~ REPLY ~I swear you lay one finger on me and you'll wish you hadn't.~ EXTERN VPLEIB TheatQ11
  ++ ~Er... weren't we suppose to be having an ale about now.~ EXTERN VPLEIB TheatQ12
+
+CHAIN BIMOEN2 theatr
+~Hey Leina, any time you want, I'll fill you in on all <PRO_HISHER> weak spots. One poke and it's usually all over but for the cry for mercy.~
+EXTERN VPLEIB TheatQ9a
 
 CHAIN VPLEIB TheatQ9a
 ~(*Laughing softly*) Imoen, we must talk soon, I see there is much to learn about the both of you.~
@@ -3983,7 +3963,10 @@ END
 
 CHAIN VPLEIB TheatQ13
 ~(*Ignoring you, she hurries over to Samuel*) Samuel, Samuel!~
-EXTERN FFBART theatr1
+== FFBART ~(*The hafling's face lights up at the sight of Leina heading towards him*) Leina, whatever has delighted you so lass? Come, tell Samuel what brings this glow to your face... have you found yourself a man? You know there's nothing that would please me more than to hear you have found a man worthy of you at last.~
+END
+ IF ~!Global("Playhouse","GLOBAL",0)~ EXTERN VPLEIB TheatQ14
+ IF ~Global("Playhouse","GLOBAL",0)~ EXTERN VPLEIB TheaQ14a
 
 CHAIN VPLEIB TheatQ14
 ~(*She shudders but laughs at her friend's words*) Heavens no... no Samuel, never again you know that but <CHARNAME> has just agreed to take on the running of the theatre. Isn't that exciting news, now I will be around more often to see you and to sing for your patrons.~
@@ -3993,38 +3976,47 @@ CHAIN VPLEIB TheaQ14a
 ~(*She shudders but laughs at her friend's words*) Heavens no... no Samuel, never again you know that but since I am back for a little while, how would you like me to sing for your patrons tonight?~
 EXTERN FFBART theatr2
 
+CHAIN FFBART theatr2
+~Leina, of course lass, my patrons remember your sweet voice and ask about you often. Tell me, your songs, they will be about your travels and your adventures with <CHARNAME>, yes?~
+== VPLEIB ~It will be a splendid time, just like old times. We must make ready for your performance, your old room is exactly as you left it.~
+END
+ IF ~NumInParty(1)~ REPLY ~(*Having watched Leina race off to Samuel, you smile*) I have an idea.~ EXTERN VPLEIB theatr3a
+ IF ~NumInParty(1)~ REPLY ~(*Having watched Leina race off to Samuel, you smile*) I think I have her this time.~ EXTERN VPLEIB theatr3a
+ IF ~NumInPartyGT(1)~ REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I have an idea.~ EXTERN VPLEIB theatr3b
+ IF ~NumInPartyGT(1)~ REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I think we have her this time.~ EXTERN VPLEIB theatr3c
+ IF ~NumInPartyGT(1)~ REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) Are you with me, we will get Leina this time.~ EXTERN VPLEIB theatr3d
+
 CHAIN VPLEIB TheatQ15
 ~(*As you approach Leina excitedly spins around*) This is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel's patrons!~
-EXTERN VPLEIB TheatQ16
-
-CHAIN VPLEIB TheaQ151
-~(*As the group approaches Leina excitedly spins around*) Everyone, this is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel's patrons!~
-END
- IF ~True()~ THEN EXTERN VPLEIB TheaQ161
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
- IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
- IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
- IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
- IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
- IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
- IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea2
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea2
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea2
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea2
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea2
-
-CHAIN VPLEIB TheatQ16
-~<CHARNAME>, have you nothing to say? Cat go your tongue?~
+== VPLEIB ~<CHARNAME>, have you nothing to say? Cat go your tongue?~
 END
  ++ ~(*You look at Leina confidently... certain you have caught her at her own game. Smile smugly, but say nothing*)~ EXTERN VPLEIB TheatQ17
  ++ ~(*You look at Leina confidently... certain you have caught her at her own game*) I am sure your songs will enthral one and all... they always do.~ EXTERN VPLEIB TheatQ17
  ++ ~(*You look at Leina confidently... certain you have caught her at her own game*) I need no more ballads, you know that Leina.~ EXTERN VPLEIB TheatQ17
  ++ ~(*You look at Leina confidently... certain you have caught her at her own game*) I see you have only your music on your mind, how could I possibly compete with that!~ EXTERN VPLEIB TheatQ17
+
+CHAIN VPLEIB TheaQ151
+~(*As the group approaches Leina excitedly spins around*) Everyone, this is so exciting! Tomorrow I will be able to sing some of the ballads I have written about you for Samuel's patrons!~
+END
+ IF ~True()~ EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea2
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea2
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea2
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea2
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea2
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiThea2
+
+
 
 CHAIN VPLEIB TheaQ161
 ~And you, <CHARNAME>, have you nothing to say? Cat go your tongue?~
@@ -4071,10 +4063,10 @@ END
 CHAIN VPLEIB TheatQ19
 ~So tell me, when did you ever see a play that didn't have a song or two, or should I ask, have you seen a play at all?~
 END
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN REPLY ~Just becasue it seems we are always on the road doesn't mean we haven't taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ EXTERN VPLEIB TheatQ20
- IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ THEN REPLY ~Just becasue it seems we are always on the road doesn't mean we haven't taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ EXTERN VPLEIB TheaQ201
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN REPLY ~When do we have no time to dally with the fantasies of bards... there are more important issues to address.~ EXTERN VPLEIB TheatQ20
- IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ THEN REPLY ~When do we have no time to dally with the fantasies of bards... there are more important issues to address.~ EXTERN VPLEIB TheaQ201
+ IF ~InParty("njhroth") !Dead("njhroth")~ REPLY ~Just becasue it seems we are always on the road doesn't mean we haven't taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ EXTERN VPLEIB TheatQ20
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ REPLY ~Just becasue it seems we are always on the road doesn't mean we haven't taken in the traveling shows we have crossed paths with along the way... we do have more important issues to address.~ EXTERN VPLEIB TheaQ201
+ IF ~InParty("njhroth") !Dead("njhroth")~ REPLY ~When do we have no time to dally with the fantasies of bards... there are more important issues to address.~ EXTERN VPLEIB TheatQ20
+ IF ~OR(2) !InParty("njhroth") Dead("njhroth")~ REPLY ~When do we have no time to dally with the fantasies of bards... there are more important issues to address.~ EXTERN VPLEIB TheaQ201
 
 CHAIN VPLEIB TheatQ20
 ~(*Pretending to pout*) <CHARNAME>, I was not about to give up helping you to finish your quest nor to aiding Hrothgar to whatever end he seeks. The road may be hard but it is that which brings song and music to my lips, to my heart. You would not ask me to leave right now would you? If you should, it would sorely break my heart.~
@@ -4085,10 +4077,10 @@ END
 CHAIN VPLEIB TheaQ201
 ~<CHARNAME>, I was not about to give up helping you to finish your quest. The road may be hard but it is that which brings song and music to my lips, to my heart. You would not ask me to leave right now would you? If you should, it would sorely break my heart.~
 END
- IF ~NumInPartyGT(2)~ THEN REPLY ~I would not ask you to part company with us. Your songs brighten the nights and our hearts on the hard road we tread.~ EXTERN VPLEIB TheatQ21
- IF ~NumInPartyGT(2)~ THEN REPLY ~Never in a heartbeat would I ask that you leave. You have proven to be a truly valuable companion to our group.~ EXTERN VPLEIB TheatQ21
- IF ~NumInPartyLT(3)~ THEN REPLY ~I would not ask you to part company with me. Your songs brighten the nights and my heart on the hard road we tread.~ EXTERN VPLEIB TheaQ21a
- IF ~NumInPartyLT(3)~ THEN REPLY ~Never in a heartbeat would I ask that you leave. You have proven to be a truly valuable companion to our group.~ EXTERN VPLEIB TheaQ21a
+ IF ~NumInPartyGT(2)~ REPLY ~I would not ask you to part company with us. Your songs brighten the nights and our hearts on the hard road we tread.~ EXTERN VPLEIB TheatQ21
+ IF ~NumInPartyGT(2)~ REPLY ~Never in a heartbeat would I ask that you leave. You have proven to be a truly valuable companion to our group.~ EXTERN VPLEIB TheatQ21
+ IF ~NumInPartyLT(3)~ REPLY ~I would not ask you to part company with me. Your songs brighten the nights and my heart on the hard road we tread.~ EXTERN VPLEIB TheaQ21a
+ IF ~NumInPartyLT(3)~ REPLY ~Never in a heartbeat would I ask that you leave. You have proven to be a truly valuable companion to our group.~ EXTERN VPLEIB TheaQ21a
 
 CHAIN VPLEIB TheatQ21
 ~Oh, <CHARNAME>, that is why I enjoy traveling with you so much. Each one of us blends with the other to make us a formidable team for any foe to take on.~
@@ -4112,14 +4104,14 @@ END
 CHAIN VPLEIB TheatQ23
 ~(*You spy Samuel give her a nod and then she turns to you*) Oh, <CHARNAME>, I am so sorry. Forgive me but you know how carried away I get when it comes to my music. Now I am all yours, what is it you wish to say?~
 END
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn't about time we all took a bath and had dinner?~ EXTERN VPLEIB TheatQ24
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, we could all use a bath if you intend getting up before an audience?~ EXTERN VPLEIB TheatQ24
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, we could all do with a bath... that is if you do not wish to chase Samuel's patrons away?~ EXTERN VPLEIB TheatQ24
- IF ~NumInPartyGT(2)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say we all need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ EXTERN VPLEIB TheatQ24
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn't about time we took a bath and had dinner?~ EXTERN VPLEIB TheaQ24b
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, I could use a bath if you intend getting up before an audience?~ EXTERN VPLEIB TheaQ24b
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, I could do with a bath... that is if you do not wish to chase Samuel's patrons away?~ EXTERN VPLEIB TheaQ24b
- IF ~NumInPartyLT(3)~ THEN REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say I need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ EXTERN VPLEIB TheaQ24b
+ IF ~NumInPartyGT(2)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn't about time we all took a bath and had dinner?~ EXTERN VPLEIB TheatQ24
+ IF ~NumInPartyGT(2)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, we could all use a bath if you intend getting up before an audience?~ EXTERN VPLEIB TheatQ24
+ IF ~NumInPartyGT(2)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, we could all do with a bath... that is if you do not wish to chase Samuel's patrons away?~ EXTERN VPLEIB TheatQ24
+ IF ~NumInPartyGT(2)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say we all need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ EXTERN VPLEIB TheatQ24
+ IF ~NumInPartyLT(3)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Leina, isn't about time we took a bath and had dinner?~ EXTERN VPLEIB TheaQ24b
+ IF ~NumInPartyLT(3)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) Surely Leina, I could use a bath if you intend getting up before an audience?~ EXTERN VPLEIB TheaQ24b
+ IF ~NumInPartyLT(3)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) If I may suggest, I could do with a bath... that is if you do not wish to chase Samuel's patrons away?~ EXTERN VPLEIB TheaQ24b
+ IF ~NumInPartyLT(3)~ REPLY ~(*Smiling, satisfied that due to her distraction, you have finally caught her out*) At last... I am trying to say I need a bath, but you are too wrapped up in your damn music to hear what I am saying!~ EXTERN VPLEIB TheaQ24b
 
 CHAIN VPLEIB TheatQ24
 ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you all wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
@@ -4133,7 +4125,8 @@ END
 
 CHAIN VPLEIB TheaQ24a
 ~(*Samuel walks over and interrupts you*)~
-EXTERN FFBART theatr4
+== FFBART ~(*A huge grin covering his face*) That's my Leina, and if truth be told, I doubt you would have the lass any other way!~
+EXIT
 
 CHAIN VPLEIB TheaQ24b
 ~(*Opening her eyes wide... feigning surprise*) Are you sure, <CHARNAME>, I was just being polite. I thought you wanted to talk... although I was wondering way you wanted to stand around with all that grime and sweat on you.~
@@ -4152,7 +4145,7 @@ END
  ++ ~What the... what in the nine hells is the matter now Leina?~ EXTERN VPLEIB RadianQ3
  ++ ~(*You look at Leina and think better of asking her what the matter is for she is looking annoyed over something*) Not now Leina. I'm not in the mood for a heated discussion!~ EXTERN VPLEIB RadiaQE
  ++ ~Steady up there Leina. What has just caused such an outburst this time?~ EXTERN VPLEIB RadianQ3
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN REPLY ~Korgan! You making free with your hands again?!~ EXTERN BKORGAN RadianQ1
+ IF ~InParty("Korgan") !Dead("Korgan")~ REPLY ~Korgan! You making free with your hands again?!~ EXTERN BKORGAN RadianQ1
 
 CHAIN VPLEIB RadiaQE
 ~Sorry, <CHARNAME>, just me thinking aloud again.~
@@ -4162,10 +4155,10 @@ EXIT
 CHAIN VPLEIB RadianQ2
 ~No, <CHARNAME>, no he did not touch me. It is that accursed dragon that is annoying me.~
 END
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
- IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
- IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
+ IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
+ IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
  ++ ~I don't think I would talk that way about him just yet. We are probably still within ear shot of the overgrown lizard. So tell me, what is it about this dragon that has annoyed you so much?~ EXTERN VPLEIB RadianQ9
 
 CHAIN VPLEIB RadianQ3
@@ -4178,28 +4171,28 @@ END
 CHAIN VPLEIB RadianQ4
 ~Oh! I don't mean Garren for he has been most kind to us. (*Angrily*) It is that accursed dragon!~
 END
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
- IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
- IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
+ IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
+ IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
  ++ ~I don't think I would talk that way about him just yet. We are probably still within ear shot of the overgrown lizard. So tell me, what is it about this dragon that has annoyed you so much?~ EXTERN VPLEIB RadianQ9
 
 CHAIN VPLEIB RadianQ5
 ~Oh, I am not worried about The Radiant Heart. It is that accursed dragon!~
 END
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
- IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
- IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
+ IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
+ IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
  ++ ~I don't think I would talk that way about him just yet. We are probably still within ear shot of the overgrown lizard. So tell me, what is it about this dragon that has annoyed you so much?~ EXTERN VPLEIB RadianQ9
 
 CHAIN VPLEIB RadianQ6
 ~Oh, <CHARNAME>, it is that accursed dragon, Firkraag!~
 END
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
- IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
- IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
- IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Yes, a most despicable specimen of his kind I admit. So, what got you so annoyed about Firkraag?~ EXTERN VPLEIB RadianQ8
+ IF ~OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Most dragons are of the evil vile type, so why so steamed up over that one?~ EXTERN VPLEIB RadianQ8
+ IF ~PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadianQ7
+ IF ~!PartyHasItem("FAMFAIR") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~(*Laughing heartily*) So my little pet has upset up. I must tell him to be nicer. Now tell me, what is it that he must change so as not to annoy you so much?~ EXTERN VPLEIB RadiaQ7a
  ++ ~I don't think I would talk that way about him just yet. We are probably still within ear shot of the overgrown lizard. So tell me, what is it about this dragon that has annoyed you so much?~ EXTERN VPLEIB RadianQ9
 
 CHAIN VPLEIB RadianQ7
@@ -4228,6 +4221,13 @@ END
  ++ ~What makes you think we didn't have a choice in what we did?~ EXTERN VPLEIB RadiaQ12
  ++ ~The only one that is manipulating me is that jackass with the mouse and if they can not do a better job I just might have to stick it to them. Don't believe me huh? Well just click here and find out.~ EXTERN VPLEIB RadiaQF
 
+CHAIN VPLEIB RadiaQF
+~Ha-ha, you just couldn't resist could you! This is what is called manipulation 'cause now you're going to be in a loop with no way out other than to go back and pick something else... and to make sure you don't do it again you only get three choices.~
+END
+ ++ ~I hate to be manipulated probably more so than anyone but other then causing us to think we were fighting monsters instead of Paladins I don't think he took any choices away from us. Besides which, we've already extracted quite enough restitution from Firkraag for his manipulations, and left him rotting in a heap for his efforts.~ EXTERN VPLEIB RadiaQ12
+ ++ ~Hey, what kind of a group do you think we are? We're in this to see blood flow, so I don't care how the battle starts just as long as it does and it is challenging. Firkraag and his manipulating merely helped open that door.~ EXTERN VPLEIB RadiQ101
+ ++ ~What makes you think we didn't have a choice in what we did?~ EXTERN VPLEIB RadiaQ12
+
 CHAIN VPLEIB RadianQ9
 ~Do you honestly think he really cares what we say? He is so arrogant that he thinks he will be able to manipulate us the next time we meet and that I find so infuriating!~
 END
@@ -4236,16 +4236,23 @@ END
 CHAIN VPLEIB RadiQ101
 ~<CHARNAME>...~
 END
- IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQA
- IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ
+ IF ~True()~ EXTERN VPLEIB RadiaQ10
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN RadianQA
+ IF ~InParty("vpshart") !Dead("vpshart")~ EXTERN VPSHAB RadianQ
 
-CHAIN VPLEIB RadiaQF
-~Ha-ha, you just couldn't resist could you! This is what is called manipulation 'cause now you're going to be in a loop with no way out other than to go back and pick something else... and to make sure you don't do it again you only get three choices.~
+CHAIN BKORGAN RadianQA
+~<CHARNAME>, ye be talkin' me language now, so let's ditch the bard and find some ale to celebrate, for any ale that ain't drunk 'as missed it's vocation.~
+EXTERN VPLEIB RadiaQ10 
+
+CHAIN VPSHAB RadianQ
+~Finally the stinkin' male is gettin' a brain. Your damn right, <CHARNAME>, who gives a crap who starts it and how. As long as blood flows. So you shut your yammering bard!~
 END
- ++ ~I hate to be manipulated probably more so than anyone but other then causing us to think we were fighting monsters instead of Paladins I don't think he took any choices away from us. Besides which, we've already extracted quite enough restitution from Firkraag for his manipulations, and left him rotting in a heap for his efforts.~ EXTERN VPLEIB RadiaQ12
- ++ ~Hey, what kind of a group do you think we are? We're in this to see blood flow, so I don't care how the battle starts just as long as it does and it is challenging. Firkraag and his manipulating merely helped open that door.~ EXTERN VPLEIB RadiQ101
- ++ ~What makes you think we didn't have a choice in what we did?~ EXTERN VPLEIB RadiaQ12
+ IF ~True()~ THEN EXTERN ~BLEINA~ RadiaQ10 
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN ~BKORGAN~ RadianQB 	
+
+CHAIN BKORGAN RadianQB
+~Shar, ye be a maid after me own heart. If yer not splattered with yer enemy's blood at the end of battle ye ain't had a fight... makes fer a fine toast with fine ale. Now as fer the bard, ye lay off her as I got me eye on that one!~
+EXTERN VPLEIB RadiaQ10 
 
 CHAIN VPLEIB RadiaQ10
 ~I don't know why I stay in this group or why you keep me around, <CHARNAME>? Do you mean you don't care whether you are manipulated into action or not?~
@@ -4253,10 +4260,10 @@ END
  ++ ~Look Leina, I don't give a rats butt how the fight starts. I love the challenge of and seeing my foes laying in their own blood and better still, to be close enough to see the terror in their eyes when they know there is no tomorrow for them!~ EXTERN VPLEIB RadiaQ11
  ++ ~Now you look here, you've been with the group long enough to know that it's never been my way to go and kiss up to some imbecile because they don't know their butt from the end of their sword. Any who get in my way, you included, and I'll hack off an arm first and then ask the questions.~ EXTERN VPLEIB RadiaQ11
  ++ ~Look, I always have a choice and I choose to fight, not back away. So who cares how I get there.~ EXTERN VPLEIB RadiaQ11
- IF ~InParty("Korgan") !Dead("Korgan") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Leina, of course I care whether I'm manipulated into action or not. The dragon's dead for his manipulation. Let it go, already! And lighten up a little bit. Korgan's just funning with you.~ EXTERN VPLEIB RadiaQ11
- IF ~OR(2) !InParty("Korgan") Dead("Korgan") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ THEN REPLY ~Leina, of course I care whether I'm manipulated into action or not. The dragon's dead for his manipulation. Let it go, already! And lighten up a little bit.~ EXTERN VPLEIB RadiaQ11
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("SPRITE_IS_DEADfirkra04","GLOBAL",0) InParty("Korgan") !Dead("Korgan")~ THEN REPLY ~Leina, of course I care whether I'm manipulated into action or not. Let it go, already! And lighten up a little bit. Korgan's just funning with you.~ EXTERN VPLEIB RadiaQ11
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("SPRITE_IS_DEADfirkra04","GLOBAL",0) OR(2) !InParty("Korgan") Dead("Korgan")~ THEN REPLY ~Leina, of course I care whether I'm manipulated into action or not. Let it go, already! And lighten up a little bit.~ EXTERN VPLEIB RadiaQ11
+ IF ~InParty("Korgan") !Dead("Korgan") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Leina, of course I care whether I'm manipulated into action or not. The dragon's dead for his manipulation. Let it go, already! And lighten up a little bit. Korgan's just funning with you.~ EXTERN VPLEIB RadiaQ11
+ IF ~OR(2) !InParty("Korgan") Dead("Korgan") OR(2) Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) Global("SPRITE_IS_DEADfirkra04","GLOBAL",1)~ REPLY ~Leina, of course I care whether I'm manipulated into action or not. The dragon's dead for his manipulation. Let it go, already! And lighten up a little bit.~ EXTERN VPLEIB RadiaQ11
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("SPRITE_IS_DEADfirkra04","GLOBAL",0) InParty("Korgan") !Dead("Korgan")~ REPLY ~Leina, of course I care whether I'm manipulated into action or not. Let it go, already! And lighten up a little bit. Korgan's just funning with you.~ EXTERN VPLEIB RadiaQ11
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("SPRITE_IS_DEADfirkra04","GLOBAL",0) OR(2) !InParty("Korgan") Dead("Korgan")~ REPLY ~Leina, of course I care whether I'm manipulated into action or not. Let it go, already! And lighten up a little bit.~ EXTERN VPLEIB RadiaQ11
 
 CHAIN VPLEIB RadiaQ11
 ~(*Clearly disturbed by your words*) How ever did I come to allow myself to become involved with such a person?~
@@ -4303,32 +4310,32 @@ END
 CHAIN VPLEIB RadiaQ17
 ~(*A twinkle comes to her eye*) Um... evil thoughts you say. Now there's nothing wrong with having a few wicked thoughts being put into one's mind but please we have no need of evil here. So tell me <CHARNAME>, what wicked thoughts does that mind of yours harbour?~
 END
- IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
+ IF ~True()~ EXTERN VPLEIB RadiQ19A
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI RadianQ
+ IF ~InParty("vpshart") !Dead("vpshart")~ EXTERN VPSHAB RadianQ1
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN RadiaQ13
 
 CHAIN VPLEIB RadiaQ18
 ~So, even though I sing of a man's evil doing, you think that I am incapable of thinking of evil plots for myself do you?~
 END
- IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadiaQ13
+ IF ~True()~ EXTERN VPLEIB RadiQ19A
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI RadianQ
+ IF ~InParty("vpshart") !Dead("vpshart")~ EXTERN VPSHAB RadianQ1
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN RadiaQ13
 
 CHAIN VPLEIB RadiQ19A
 ~<CHARNAME>...~
 END
  ++ ~Hey now, I think we need to stop here and leave this conversation where it belongs... in the gutter.~ EXTERN VPLEIB RadiaQ19
  ++ ~Hey, we're in the wrong place for this conversation to continue. I'm ending it now!~ EXTERN VPLEIB RadiaQ19
- IF ~NumInPartyGT(2)~ THEN REPLY ~Excuse me folks, but we seem to be attracting the sort of attention we don't want right now.~ EXTERN VPLEIB RadiaQ19
- IF ~NumInPartyLT(3)~ THEN REPLY ~Excuse me, but we seem to be attracting the sort of attention we don't want right now.~ EXTERN VPLEIB RadiaQ19
+ IF ~NumInPartyGT(2)~ REPLY ~Excuse me folks, but we seem to be attracting the sort of attention we don't want right now.~ EXTERN VPLEIB RadiaQ19
+ IF ~NumInPartyLT(3)~ REPLY ~Excuse me, but we seem to be attracting the sort of attention we don't want right now.~ EXTERN VPLEIB RadiaQ19
 
 CHAIN VPLEIB RadiaQ19
 ~(*She laughs softly*) What's this? You mean to say the champion of the Sword Coast shies away from a few incurious looks?~
 END
- IF ~!Global("PaladinOrder","GLOBAL",0) AreaCheck("AR0903")~ THEN EXTERN VPLEIB RadiaNew
- IF ~Global("PaladinOrder","GLOBAL",0) OR(11) AreaCheck("AR0020") AreaCheck("AR0300") AreaCheck("AR0400") AreaCheck("AR0500") AreaCheck("AR0700") AreaCheck("AR0800") AreaCheck("AR0900") AreaCheck("AR1000") AreaCheck("AR1304") AreaCheck("AR1900") AreaCheck("AR2000")~ THEN REPLY ~I am used to being gawked at but I don't like drawing any more attention to myself than is necessary.~ EXTERN VPLEIB RadiaQ20
+ IF ~!Global("PaladinOrder","GLOBAL",0) AreaCheck("AR0903")~ EXTERN VPLEIB RadiaNew
+ IF ~Global("PaladinOrder","GLOBAL",0) OR(11) AreaCheck("AR0020") AreaCheck("AR0300") AreaCheck("AR0400") AreaCheck("AR0500") AreaCheck("AR0700") AreaCheck("AR0800") AreaCheck("AR0900") AreaCheck("AR1000") AreaCheck("AR1304") AreaCheck("AR1900") AreaCheck("AR2000")~ REPLY ~I am used to being gawked at but I don't like drawing any more attention to myself than is necessary.~ EXTERN VPLEIB RadiaQ20
 
 CHAIN VPLEIB RadiaNew
 ~No matter, I have a better idea to show you how perceptive I am.~
@@ -4341,33 +4348,33 @@ END
 CHAIN VPLEIB RadiaQ20
 ~Well, you know how you are our leader and have to decide on our battle strategy. I just thought it would be nice to finally go to an inn to split a keg or two. It would so soothe the muscles to have a nice hot bath as well, but as I pointed out these over righteous warriors don't indulge in either so why don't we make our way over to Samuel's?~
 END
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~You know Leina, you're right we did have a rough go and since Samuel's is your favorite spot let's get on over there.~ EXTERN VPLEIB RadiaQ21
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~I don't know about Samuel's, the pickings are getting too familiar over there. The ale's great but a little variety does a body good.~ EXTERN VPLEIB RadiaQ22
- IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~When we get there I'm gonna ask Samuel to make a special tub to fit my size better. You know, we must be his best customers so me thinks he shouldn't be charging us rent.~ EXTERN VPLEIB RadiaQ23
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN VPLEIB RadiQ21A
- IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPLEIB RadiQ21A
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~You know Leina, you're right we did have a rough go and since Samuel's is your favorite spot let's get on over there.~ EXTERN VPLEIB RadiaQ21
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~I don't know about Samuel's, the pickings are getting too familiar over there. The ale's great but a little variety does a body good.~ EXTERN VPLEIB RadiaQ22
+ IF ~OR(2) !InParty("Minsc") Dead("Minsc") OR(2) !InParty("Edwin") Dead("Edwin") OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic") OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~When we get there I'm gonna ask Samuel to make a special tub to fit my size better. You know, we must be his best customers so me thinks he shouldn't be charging us rent.~ EXTERN VPLEIB RadiaQ23
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN VPLEIB RadiQ21A
+ IF ~InParty("vpshart") !Dead("vpshart")~ EXTERN VPLEIB RadiQ21A
 
 CHAIN VPLEIB RadiQ21A
 ~Samuel will be so happy to see us all.~
 END
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
- IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB LeiRadia
- IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiRadia
- IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiRadia
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiRadia
+ IF ~InParty("vpshart") !Dead("vpshart")~ EXTERN VPSHAB LeiRadia
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiRadia
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiRadia
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiRadia
 
 CHAIN VPLEIB RadiQ21B
 ~Thank you for your comments. I shall sing of our latest adventures and I can just feel that warm fluffy towel right now.~
@@ -4447,12 +4454,12 @@ CHAIN
 IF WEIGHT #1 ~GlobalLT("VP_BPC","LOCALS",12) OR(2) Global("VP_Break_Point","LOCALS",2) Global("VP_MyFatherIsDead","LOCALS",3)~ THEN VPLEIB N64
 ~<CHARNAME>, I cannot continue further with you until I know the truth of my my father's death.~
 END
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 65
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N65
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 71
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N71
- IF ~Global("BodhiJob","GLOBAL",2)~ THEN REPLY ~I have already told you, it was a means to an end Leina, nothing more.~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 72
- IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ THEN REPLY ~I have already told you, it was a means to get to you Leina, nothing more.~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N72
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 65
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~What do you want to hear Leina?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N65
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 71
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~You want a description, the details of his dying Leina, is that what you are asking me to tell?~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N71
+ IF ~Global("BodhiJob","GLOBAL",2)~ REPLY ~I have already told you, it was a means to an end Leina, nothing more.~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB 72
+ IF ~Global("BodhiJob","GLOBAL",0) Global("VP_Guild_Attacked","GLOBAL",1)~ REPLY ~I have already told you, it was a means to get to you Leina, nothing more.~ DO ~SetGlobal("VP_Break_Point","LOCALS",2)~ EXTERN VPLEIB N72
 
 /////////////////////////CHAINS//////////////////////
 
@@ -4537,16 +4544,192 @@ DO ~SetGlobal("VP_KorganNoDancing","LOCALS",4)~
 == BKORGAN ~(*Stops in his stride*) So, yer got the drop on the dwarf this time elf, but next time yer gets a dwarf all hot under 'is belt, we'll see who gets to drop who.~
 EXIT
 
-CHAIN BIMOEN2 theatr
-~Hey Leina, any time you want, I'll fill you in on all <PRO_HISHER> weak spots. One poke and it's usually all over but for the cry for mercy.~
-EXTERN VPLEIB TheatQ9a
-
 CHAIN BHAERDA LeiTheat
 ~(*Looking knowingly towards Leina*) Ah my little fire fly, I believe you are somewhat responsible for this idea of <CHARNAME>'s.~
 END
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiTheat
+
+CHAIN BHAERDA LeiThea3
+~(*Looks towards Leina*) I wonder... who has who my little fire fly!~
+END
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea3
+
+CHAIN BHAERDA LeiThea4
+~(*Looks towards Leina*) Ah my bright, beautiful fire fly, have you perchance flown a little to close to the fire this time?~
+END
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
+ IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea4
+
+CHAIN BHAERDA LeiThea1
+~I wonder, has my firefly really forgotten or does she only pretend to have?~
+END
+ IF ~True()~ EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea1
+
+CHAIN BHAERDA LeiThea2
+~Ha, ha, I like you even more my little firefly. You have won my heart most fair of all women. Oh yes, sing of the great Haer Dalis and his lady the fair Leina.~
+END
+ IF ~True()~ EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea2
+
+
+
+
+
+CHAIN FFBART theatr3a
+~<CHARNAME>...~
+EXTERN VPLEIB TheatQ15
+
+CHAIN FFBART theatr3b
+~<CHARNAME>...~
+END
+ IF ~True()~ EXTERN VPLEIB TheatQ15
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiTheat
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiTheat
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ EXTERN VPKACB LeiTheaB
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ EXTERN BYOSHIM LeiTheat
+
+CHAIN FFBART theatr3c
+~<CHARNAME>...~
+END
+ IF ~True()~ EXTERN VPLEIB TheatQ15
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ EXTERN BANOMEN LeiThea3
+ IF ~InParty("Aerie") !Dead("Aerie")~ EXTERN BAERIE LeiThea3
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiThea3
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiThea3
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ EXTERN VPKACB LeiThea3
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ EXTERN BYOSHIM LeiThea3
+
+CHAIN FFBART theatr3d
+~<CHARNAME>...~
+END
+ IF ~True()~ EXTERN VPLEIB TheatQ15
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ EXTERN BAERIE LeiThea4
+ IF ~InParty("Edwin") !Dead("Edwin")~ EXTERN BEDWIN LeiThea4
+ IF ~InParty("Minsc") !Dead("Minsc")~ EXTERN BMINSC LeiThea4
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ EXTERN VPKACB LeiThea4
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ EXTERN BYOSHIM LeiThea4
+
+ /////Reactions
+ 
+ 
+CHAIN BAERIE NEJ454
+~I... I will just watch Leina. My legs really hurt from all the walking we have done today.~
+EXTERN VPLEIB PCF2Leina26a
+
+CHAIN BAERIE LeiTheat
+~That look, are you... are you sure it's a good idea?~
+END
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
@@ -4560,13 +4743,16 @@ END
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
 
-CHAIN BHAERDA LeiThea3
-~(*Looks towards Leina*) I wonder... who has who my little fire fly!~
+CHAIN BAERIE LeiThea3
+~Leina... You are talking about Leina, aren't you?~
 END
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
@@ -4580,13 +4766,16 @@ END
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea3
 
-CHAIN BHAERDA LeiThea4
-~(*Looks towards Leina*) Ah my bright, beautiful fire fly, have you perchance flown a little to close to the fire this time?~
+CHAIN BAERIE LeiThea4
+~I don't know... I like Leina and some of your jokes are really bad.~
 END
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN VPLEIB LeiThea1
- IF ~OR(2) !InParty("Imoen2") Dead("Imoen2") OR(2) !InParty("Jaheira") Dead("Jaheira") OR(2) !InParty("Jan") Dead("Jan") OR(2) !InParty("Keldorn") Dead("Keldorn") OR(2) !InParty("Korgan") Dead("Korgan") OR(2) !InParty("Mazzy") Dead("Mazzy") OR(2) !InParty("Nalia") Dead("Nalia") OR(2) !InParty("Valygar") Dead("Valygar") OR(2) !InParty("Viconia") Dead("Viconia") OR(2) !InParty("njhroth") Dead("njhroth") OR(2) !InParty("njdar") Dead("njdar") OR(2) !InParty("njmelora") Dead("njmelora") OR(2) !InParty("njtaffic") Dead("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN VPLEIB LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
@@ -4600,9 +4789,12 @@ END
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
 
-CHAIN BHAERDA LeiThea1
-~I wonder, has my firefly really forgotten or does she only pretend to have?~
+CHAIN BAERIE LeiThea1
+~Oh, we shall be first this time and on her own territory. What will she say!~
 END
  IF ~True()~ THEN EXTERN VPLEIB TheaQ151
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
@@ -4618,40 +4810,1588 @@ END
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
  IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
  IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea1
 
-CHAIN BHAERDA LeiThea2
-~Ha, ha, I like you even more my little firefly. You have won my heart most fair of all women. Oh yes, sing of the great Haer Dalis and his lady the fair Leina.~
+CHAIN BAERIE LeiThea2
+~Oh, you have made a song about me! I never dreamt of such a thing, it is so much more exciting than the circus.~
 END
  IF ~True()~ THEN EXTERN VPLEIB TheaQ161
  IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
  IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
  IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
  IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
 
-CHAIN FFBART theatr1
-~(*The hafling's face lights up at the sight of Leina heading towards him*) Leina, whatever has delighted you so lass? Come, tell Samuel what brings this glow to your face... have you found yourself a man? You know there's nothing that would please me more than to hear you have found a man worthy of you at last.~
+CHAIN BMAZZY NEJ0
+~I am more used to the ups and downs and round and rounds of a hafling jig than the twistings and swayings of whatever that was we just performed. Still, it was... dare I say fun.~
 END
- IF ~!Global("Playhouse","GLOBAL",0)~ THEN EXTERN VPLEIB TheatQ14
- IF ~Global("Playhouse","GLOBAL",0)~ THEN EXTERN VPLEIB TheaQ14a
-
-CHAIN FFBART theatr2
-~Leina, of course lass, my patrons remember your sweet voice and ask about you often. Tell me, your songs, they will be about your travels and your adventures with <CHARNAME>, yes?~
-== VPLEIB ~It will be a splendid time, just like old times. We must make ready for your performance, your old room is exactly as you left it.~
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ 
+CHAIN BMAZZY NEJ1
+~Should we also dress for the occasion Leina, I too have a suitable little number in my backpack? I like to be prepared for all situations when I travel the road. Besides, armour is cumbersome for dancing don't you think?~
 END
- IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I have an idea.~ EXTERN VPLEIB theatr3a
- IF ~NumInParty(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile*) I think I have her this time.~ EXTERN VPLEIB theatr3a
- IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I have an idea.~ EXTERN VPLEIB theatr3b
- IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) I think we have her this time.~ EXTERN VPLEIB theatr3c
- IF ~NumInPartyGT(1)~ THEN REPLY ~(*Having watched Leina race off to Samuel, you smile to the group*) Are you with me, we will get Leina this time.~ EXTERN VPLEIB theatr3d
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina35a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina35a
 
-CHAIN FFBART theatr3a
-~<CHARNAME>...~
-EXTERN VPLEIB TheatQ15
-
-CHAIN FFBART theatr3b
-~<CHARNAME>...~
+CHAIN BMAZZY NEJ2
+~The priests here are, I am sure, aware of where we have trod. Was it not them who sent us below? I am equally as certain that they are anxious to hear our report sooner than later, regardless of how we smell.~
 END
- IF ~True()~ THEN EXTERN VPLEIB TheatQ15
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+
+CHAIN BMAZZY LeiDear1
+~Leina, that would be like asking you to forever stay on one stage to sing your songs. I would not in the least like that idea. There is not a lotvariety here. Trademeet my home, has many travellers who come though bearing tales of those in need they pass on their way.~
+EXTERN BMAZZY LeiDear1a
+
+CHAIN BMAZZY LeiDear1a
+~It is my wish to help wherever I can whenever I can and with the burden of office I would not have the freedom to do so. We are called adventurers not officers.~
+EXTERN VPLEIB DeArnise13
+
+CHAIN BMAZZY LeiDear2
+~(*Laughing*) You bards always see a tale in each encounter. Though I enjoy your songs my talents lay in sensing where the next danger lies for I do not wish to be resting lower then I am.~
+EXTERN VPLEIB DeArnise14
+
+CHAIN BMAZZY LeiDear3
+~After what we have just gone through, it would be a pleasure to bathe.~
+EXTERN VPLEIB DeArnise15
+
+CHAIN BMAZZY LeiTheat
+~I thought the "idea" was to rest and raise a glass or two. We've more than earnt it this time!~
+END
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+
+CHAIN BMAZZY LeiThea3
+~I take it the "her" you refer to is Leina. I am sure no malice is intended but why should you feel the need to jest with her, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+
+CHAIN BMAZZY LeiThea4
+~I sincerely hope this is a jest you have in mind <CHARNAME>. I will not be a party to harming either Leina herself or her feelings!~
+END
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+
+CHAIN BMAZZY LeiThea1
+~Oh... well I... I wasn't expecting that, <CHARNAME>, and I am sure Leina is going to be equally as surprised!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+
+CHAIN BMAZZY LeiThea2
+~Leina please, it is quite unnecessary to sing my praises. I do what I do because it is the right thing, not to make a name for myself.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+
+ CHAIN BANOMEN NEJ0
+~Hmph! When the lady said dance I didn't think she meant it would be the kind of dancing found in a brothel!~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+
+CHAIN BANOMEN NEJ1
+~I think my lady will not find me not lacking in grace when it comes to the dance. I have attended many grand occasions given in honour of The Radiant Heart.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina34a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina34a
+
+CHAIN BANOMEN LeiTheat
+~Tsk... now you have an idea... after the battle is won!~
+END
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+
+CHAIN BANOMEN LeiThea3
+~What is that supposed to mean?~
+END
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+
+CHAIN BANOMEN LeiThea4
+~I have nothing against a bit of fun with the girl but I will make it known that I will not be drawn into anything disrespectable!~
+END
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+
+CHAIN BANOMEN LeiThea1
+~Tsk, whatever next! This group acts on the whim of a child, what this group needs is more mature leadership!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+
+CHAIN BANOMEN LeiThea2
+~Do not include in a ballad with a Bhaalspawn, unless you sing that Anomen held <PRO_HIMHER> to a more righteous path.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+
+ CHAIN BCERND LeiTheat
+~I am almost afraid to ask what you have in mind, but as long as no harm is done to another, I will hear you out.~
+END
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+
+CHAIN BCERND LeiThea3
+~Am I missing something here? (*Have her this time*)... Who do we have?~
+END
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+
+CHAIN BCERND LeiThea4
+~You lead, I will decide to follow, or not, when it is clearer what it is you have in mind <CHARNAME>.~
+END
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+
+CHAIN BCERND LeiThea1
+~Of course, but I wonder, does the cat truly have the drop on the mouse, or does the mouse play with the cat here?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+
+ CHAIN BEDWIN NEJ109
+~(*To himself*) Yet more displays of the buffoonery of these imbeciles. Still, female are always impressed by a man who looks good on the dance floor. Maybe this one will be impressed enough...~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina28a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina28a
+
+CHAIN BEDWIN LeiSpher1
+~It is about time you got rid of the nitwit bard. [I shudder to think of her casting spells.]~
+END
+ IF ~OR(2) !InParty("Viconia") Dead("Viconia")~ THEN EXTERN VPLEIB Sphere13a
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher2
+
+CHAIN BEDWIN LeiSpher2
+~[Oh how did I every join this group there isn't half a brain here even if you combine them all.]~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+
+CHAIN BEDWIN LeiSpher3
+~[Now this imbecile wants something small like a peanut.]~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+
+CHAIN BEDWIN LeiSpher4
+~A coffin. [Just where you should be... inside it and six foot under.]~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+
+CHAIN BEDWIN LeiTheat
+~Some of your ideas are not that good. (An idea... this simian actually thinks it has a brain!)~
+END
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+
+CHAIN BEDWIN LeiThea3
+~Will you be more specific and not beat around the bush! (If any having is to be done, it will certainly not be by this rabble!)~
+END
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea3
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea3
+
+CHAIN BEDWIN LeiThea4
+~(*His voice barely audible*) Ha, if anyone is getting the girl it certainly won't be any of this rabble!~
+END
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
+
+CHAIN BEDWIN LeiThea1
+~I don't believe it. How did I become party to such infantile behaviour?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea1
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea1
+
+CHAIN BEDWIN LeiThea2
+~Bah, you empty-headed girl. Edwin needs no such praise, you insolent woman. Sing of me and I'll scorch the tongue out of your mouth.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+
+CHAIN BEDWIN RadianQ
+~Look at the kettle calling the pot black, neither of you have a brain cell between you!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
+
+CHAIN BEDWIN LeiRadia
+~(Hmm... I wonder if the time is right to suggest we save water by sharing a tub. Always nice to have someone on hand to wash those hard to reach places.)~
+EXTERN VPLEIB LeiRadE1
+
+CHAIN BEDWIN LeiRadi2
+~(Elf... She calls herself ELF! Nerve of the girl she is but a half breed and nothing more! Still, I'm not one to hold that against a pretty face when it comes to warming my bed.)~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+
+ CHAIN BIMOEN2 LeiTheat
+~(*Rolling her eyes*) What... you.. an idea? May the gods protect us.~
+END
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+
+CHAIN BIMOEN2 LeiThea3
+~(*Giggles*) That'll be the day when you get one over on her, <CHARNAME>.~
+END
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+
+CHAIN BIMOEN2 LeiThea4
+~(*Her eyes gleam with mischief*) Ooo... at last, we are going to have some fun! Spill the plan, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+
+CHAIN BIMOEN2 LeiThea1
+~(*Excitedly*) Ooo, yes, let's! She is so excited about her music, for once she has forgotten about a warm fluffy towel. I can't wait to see her face when you suggest a bath, <CHARNAME>!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+
+CHAIN BIMOEN2 LeiThea2
+~(*Her eyes light up*) Oh yes sing about me... you must. Imoen, the slayer of foul beast, mistress of the bow and sleight of hand.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+
+CHAIN BIMOEN2 LeiRadia
+~Leina, I'm liking you more and more. With <CHARNAME> it is always push, push and sleeping in a cave or the mud. That gets pretty hard on a girls nimble fingers, not to mention her other unmentionable parts.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB LeiRadia
+
+CHAIN BIMOEN2 LeiRadi2
+~Minsc, you can tell Boo not to fret, I have just the thing to untangle a girl's hair when it becomes wayward and I am sure it will work just as well on hamster fur.~
+EXTERN BMINSC LeiRadi2
+
+CHAIN BJAHEIR NEJ497
+~Khalid wasn't much of a talker but when we danced... words were not important He said all he had to say with his eyes and the way he held me. I will never dance again.~
+EXTERN VPLEIB PCF2Leina36a
+
+CHAIN BJAHEIR NEJ499
+~(*Clucking her tongue and raising her voice*) Please <CHARNAME> this is a holy place... Gorion would turn in his grave if he could hear you carrying on so!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest17
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 59
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ141
+
+CHAIN BJAHEIR NEJ500
+~Yes well... I doubt they expect to see it walking back to greet them!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+
+CHAIN BJAHEIR LeiSpher1
+~Leina can we not grow up? A guessing game does not make a good impression, but if it will get us out of this sooner then a lodge.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+
+CHAIN BJAHEIR LeiSpher2
+~Child will you make up your mind? We will be here for a fortnight if you keep changing the size.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+
+CHAIN BJAHEIR LeiSpher3
+~(*Rolling her eyes and clicking her tongue*) Tsk... did I say a fortnight?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+
+CHAIN BJAHEIR LeiSpher4
+~Yes what you have said reminds me of a book Khalid, found in the library at Candlekeep. He was laughing very hard over this bard's tale about some man who had a box that was bigger on the inside then the outside.~
+EXTERN VPLEIB Sphere26
+
+CHAIN BJAHEIR LeiTheat
+~I have seen some of your ideas in the past, perhaps it would be wise to sleep on it before you act on this one!~
+END
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+
+CHAIN BJAHEIR LeiThea3
+~(*Smiles to herself*) Do you really think so <CHARNAME>, do you really think so?~
+END
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+
+CHAIN BJAHEIR LeiThea4
+~(*Sighing*) Here was I thinking, that with all that gone before, maybe, just maybe you had grown up a little, <CHARNAME>.~
+END
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+
+CHAIN BJAHEIR LeiThea1
+~Tsk! All of this for what... to see who gets in first and suggests a bath? Silvanus protect me from the whims of children!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+
+CHAIN BJAHEIR LeiThea2
+~Girl, get that silly notion out of your mind. I have no wish to be part of a bard's romantic tale.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+
+ CHAIN BJAN NEJ0
+~Now that has be marketable! I'll have to patent it as soon as we get back to the city, call it The turnip stomp.~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+
+CHAIN BJAN NEJ1
+~Ah, now this might be a good time to tell you when Jan Jansen was tavern dance champion for three years running...~
+EXTERN VPLEIB PCF2Leina27a
+
+CHAIN BJAN LeiTheat
+~(*A gleam comes to the old gnome's eye*) Ha, a jest. Us, Jansens, are always up for a bit of fun, providing we're on the giving and not receiving end that is.~
+END
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+
+CHAIN BJAN LeiThea3
+~A conspiracy eh... Now that's more like it! Nothing like a good honest conspiracy to inspire the makings of a stirring tale.~
+END
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+
+CHAIN BJAN LeiThea4
+~Trickery is it... I can do that. Illusion and trickery, as you know, <CHARNAME>, is my speciality.~
+END
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+
+CHAIN BJAN LeiThea1
+~A bath, and me only having took one a tenday past! Now, if ole Jan here were to cast the illusion that we had already bathed and are all smelling like Petunias that would certainly surprise the little lady.~
+== BJAN ~Unless of course we end up smelling like aunt Petunia, she has the habit of dousing herself in garlic since... Well, since ole Jan here can remember.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+
+CHAIN BJAN LeiThea2
+~Ahh, a ballad about my turnip lotion. I must grow more, business will be brisk.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+
+CHAIN BKELDOR NEJ0
+~That hasn't done these old bones of mine much good... which way to my bed?~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+
+CHAIN BKELDOR NEJ1
+~I have not danced with another since the day I met my Maria. I knew then that I would never dance or hold another woman in my arms.~
+EXTERN VPLEIB PCF2Leina32a
+
+CHAIN BKELDOR LeiTheat
+~So my friend, tell us what has brought so bright a gleam to your eye?~
+END
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+
+CHAIN BKELDOR LeiThea3
+~(*Laughs heartily*) Leina is a clever lass... We are talking about Leina here are we not? Me thinks you are being a little presumptuous with that statement my friend.~
+END
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+
+CHAIN BKELDOR LeiThea4
+~(*Sighing*) I have outgrown such behaviour, but I remember, only just, what it was to be young. I will not spoil the jest.~
+END
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+
+CHAIN BKELDOR LeiThea1
+~That's not quite what I was expecting, but I can see how it may surprise Leina.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+
+CHAIN BKELDOR LeiThea2
+~Leina, child, whereas I am flattered, I go where Torm bids me go and as such, his is the only recognition I seek. Sing of the others as heroes if you must but please, leave my name to me.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+
+CHAIN BKORGAN NEJ0
+~Dwarves aint much fer dancing, but they've nowt against good ale and the sight of dancing females. Must say I appreciate yer making the effort elf.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina30a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina30a 
+
+CHAIN BKORGAN NEJ1
+~We aint bringing back nowt they aint seen before... or do they think elves creep in and empty their privies for 'em?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500 
+
+CHAIN BKORGAN LeiDear1
+~Aah, ha I knew you were keen on me there lassie. This but a spit bucket to what we dwarves build. Ye can nay knock ours down so easily. Shall we find us a room?~
+EXTERN VPLEIB DeArnise9 
+
+CHAIN BKORGAN LeiDear2
+~What? Smell never got in the way before we both been rolling in Umberhulk poo or has ye forgot what's on yer boots and what was in the basement we just come from. I wanna mind an ale and a song either.~
+EXTERN VPLEIB DeArnise10 
+
+CHAIN BKORGAN LeiDear3
+~Oi, just the way I like me lassies feisty. Makes the tussle worth it. We could even put on some water and have boiled rat.~
+END
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan, shut your filthy mouth!~ EXTERN BKORGAN LeiDear4
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ EXTERN BKORGAN LeiDear4
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I best think you had better knock off the remarks. I don't like the idea of being the target of a fireball while I sleep.~ EXTERN BKORGAN LeiDear4
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... You best stand down now Korgan.~ EXTERN BKORGAN LeiDear4
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan, shut your filthy mouth!~ EXTERN BKORGAN LeiDear5a
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I agree with you but I think it will take a lot of ale to get her to follow along.~ EXTERN BKORGAN LeiDear5a
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... Korgan I best think you had better knock off the remarks. I don't like the idea of being the target of a fireball while I sleep.~ EXTERN BKORGAN LeiDear5a
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~(*As Leina turns away in disgust you step in having overheard the dwarf's innuendoes*)... You best stand down now Korgan.~ EXTERN BKORGAN LeiDear5a 
+
+CHAIN BKORGAN LeiDear4
+~Oi, I see I have me a bit of competition here. Want the lassie all to yourself does yer? Let's toss the bow and see who wins... or is it ye wants to toss me out of the group?~
+EXTERN BKORGAN LeiDear5 
+
+CHAIN BKORGAN LeiDear5
+~(*Muttering to himself as he stomps off*) See if I care, just watch your back is all I say.~
+EXTERN VPLEIB DeArnise11 
+
+CHAIN BKORGAN LeiDear5a
+~(*Grinning licentiously*) Oi, I see I have me a bit of competition here... not that Korgan would be one to come between two lassies... unlessing that is we all be taking a tumble together. P'raps we can find that room and toss the bow to see who gets to go first... or is it ye wants to toss me out of the group?~
+EXTERN BKORGAN LeiDear5 
+
+CHAIN BKORGAN LeiSpher1
+~Yer talkin' me language thar. Gold, ale, the power me axe brings I needs but a warm body to tumble with is always a pleasure too, shall we wrestle for the Bard here?~
+END
+ IF ~OR(2) !InParty("Viconia") Dead("Viconia")~ THEN REPLY ~Ye thinks ye can best me do ye dwarf? We should head for the pits at the Copper Coronet then?~ EXTERN BKORGAN LeiSpher2
+ IF ~OR(2) !InParty("Viconia") Dead("Viconia")~ THEN REPLY ~I don't know she ain't too meaty. Is it worth it?~ EXTERN BKORGAN LeiSpher2
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher1 
+
+CHAIN BKORGAN LeiSpher2
+~I doona wanta hurt ya besides she aint got much meat on her for ma liken either, but then worms can be fun... all wiggly like.~
+EXTERN VPLEIB Sphere8a 
+
+CHAIN BKORGAN LeiSpher3
+~Ah <CHARNAME>, afore ye dismiss her can I endanger me life with her for awhile longer?~
+EXTERN VPLEIB Sphere13a 
+
+CHAIN BKORGAN LeiSpher4
+~Who the blazes cares! Let's have some ale.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1 
+
+CHAIN BKORGAN LeiSpher5
+~A haystack, ye and me bard a rollin bout and it would soon be bigger inside.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2 
+
+CHAIN BKORGAN LeiSpher6
+~A bed... even a wee un will be room enough fer the dwarf an the bard.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3 
+
+CHAIN BKORGAN LeiTheat
+~Idea... Who the blazes cares 'bout ideas when there's ale to be 'ad!~
+END
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat 
+
+CHAIN BKORGAN LeiThea3
+~Music to me ears! What ever yer be planning, the dwarf is with yer.~
+END
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3 
+
+CHAIN BKORGAN LeiThea4
+~Oh, she likes to have fun do she... what'll it be, a roll in the hay?~
+END
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN BKORGAN LeiThea1
+ IF ~!IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN BKORGAN LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4 
+
+CHAIN BKORGAN LeiThea1
+~A BATH... Yer gonna tell 'er yer want a bath! Where be the fun in that? Yer all barmy, that's what yer be, bloody barmy!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1 
+
+CHAIN BKORGAN LeiThea2
+~Aye, ther can never be too many songs 'bout Korgon, but don't yer be forgitting the bit me axe played in all the blood letting bard!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2 
+
+CHAIN BKORGAN RadianQ1
+~What?!? Ye accusing the dwarf of touching little miss perfect here?!~
+= ~(*With a lecherous grin*) Ye knows I shan't just want to be touching her backside, nor would I be giving her just a little poke for one measly squeal. What I would really like...~
+END
+ ++ ~Korgan, language! Try and remember where we are. Leina, did this dwarf cause you to holler?~ EXTERN BKORGAN RadiaQ11
+ ++ ~You're all talk Korgan. I should have known better. You'd be holding a stump right now if you had, and I doubt anyone here would be too willing to sew it back on. So, Leina, why your outburst?~ EXTERN BKORGAN RadiaQ12 
+
+CHAIN BKORGAN RadiaQ11
+~Holler?~
+EXTERN VPLEIB RadianQ2 
+
+CHAIN BKORGAN RadiaQ12
+~Tell <PRO_HIMHER>.~
+EXTERN VPLEIB RadianQ3 
+
+CHAIN BKORGAN RadiaQ13
+~<CHARNAME>, oi let the dwarf help with this. I think a keg be called fer and then we shall all have a blasphemous time.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
+ IF ~InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAB RadianQ1 
+
+CHAIN BKORGAN LeiRadia
+~Bard ye be only half right. I aint got no use for water but ale and ye on me lap suits me just fine. Let's set about it.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+
+CHAIN BMINSC NEJ137
+~Boo says Minsc's boots are big and for butt kicking evil, not dancing boots. Boo is very wise so Minsc will do as he says, drink the ale, but not dancing.~
+EXTERN VPLEIB PCF2Leina23c
+
+CHAIN BMINSC NEJ139
+~Ooooo... so much in and out of tables and swayings like the trees in the wind, Minsc's poor head is dizzy from the watching and the drinking. Boo is right, Minsc's boots are made for butt kicking and not dancing, they would be taking Minsc under the tables and not around the tables.~
+ IF ~True()~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
+ IF ~InParty("njhroth")~ THEN EXTERN NJHROB 84
+
+CHAIN BMINSC NEJ140
+~Boo says cover your noses, our boots are smelly through butt kicking so much stinking evil.~
+EXTERN VPLEIB ClericQuest2
+
+CHAIN BMINSC NEJ141
+~(*His voice loud and stern*) Boo says a bit of quiet please, this is not a place to be shouting!~
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest17
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 59
+
+CHAIN BMINSC NEJ142
+~Boo says he is a hamster and not a rat best we clean up.~
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 9
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 60
+
+CHAIN BMINSC LeiDear1
+~Oh, Boo says Minsc shouldn't talk of home, but you are nice so we will. Rasheman is not a green fluffy place. It's climate is harsh and breeds fierce warriors like Minsc, true heros.~
+EXTERN BMINSC LeiDear1a
+
+CHAIN BMINSC LeiDear1a
+~We do not have such squishy things and music is not like that of Leinas. It is made to bring terror into hearts of evil before hero's deliver swift kicks to evil's black butts!~
+EXTERN VPLEIB DeArnise23
+
+CHAIN BMINSC LeiDear2
+~(*The ranger's face lights up*) Oh, Minsc know how to make merry he sings of butt kicking, bring terror to nasty evil nose. Yes?~
+EXTERN VPLEIB DeArnise24
+
+CHAIN BMINSC LeiDear3
+~Oh, you make Boo laugh. Boo says <CHARNAME> singing is stronger then any spell of terror. It make all evil quake. <PRO_HESHE> make good Rasheman warrior.~ [BOONEJ1]
+EXTERN VPLEIB DeArnise25
+
+CHAIN BMINSC LeiDear4
+~Leina, Minsc no make fun of <CHARNAME>, <PRO_HISHER> war cry is amongst the best of those feared in Rasheman... if not the best cause it has that little notie thing in it.~
+EXTERN VPLEIB DeArnise25a
+
+CHAIN BMINSC LeiSpher1
+~Oh, Boo we now play guessing game with Leina but Minsc knows not what to guess.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+
+CHAIN BMINSC LeiSpher2
+~Oh, Boo is small... how about Boo?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+
+CHAIN BMINSC LeiSpher3
+~This game is causing a big pain in Minsc's head... it has too much thinking. He will not play anymore.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+
+CHAIN BMINSC LeiTheat
+~I like Leina's idea... after so much righteous butt kicking, it is time for hamsters rangers and heroes to rejoice.~
+END
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
+
+CHAIN BMINSC LeiThea3
+~(*Scratching his head*) Have who and for what?~
+END
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea3
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea3
+
+CHAIN BMINSC LeiThea4
+~Minsc will have to confer with Boo. He likes the lady Leina and must know more of what "getting" means.~
+END
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea4
+
+CHAIN BMINSC LeiThea1
+~(*A grin spreading across the big man's face*) Ah, now Minsc understands. Leina will find this funny, yes?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea1
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea1
+
+CHAIN BMINSC LeiThea2
+~Oooo... Boo hear that. Our deeds will be sung before all. We are heros. We kick butt now.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea2
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea2
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea2
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea2
+
+CHAIN BMINSC LeiRadia
+~Boo says he will gladly join in the drinking of the ale but he must decline the bath. He says too many baths and he won't be able to do a thing with his fur.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadi2
+
+CHAIN BMINSC LeiRadi2
+~Ooo, do you hear that Boo, you always say how beautiful Imoen's hair is and now you are going to have shiny untangled fur just like Imoen's. Squeak from Boo here.~ [BOONEJ1]
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+
+CHAIN BNALIA NEJ57
+~I believe father and auntie would have been in agreement for once about that not being an appropriate way for a young lady to dance... but it was so much fun!~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+
+CHAIN BNALIA NEJ58
+~I can only guess what Auntie would say if she knew I was dancing under the stars and around a camp fire like a vagabond.~
+EXTERN VPLEIB PCF2Leina37a
+
+CHAIN BNALIA NEJ60
+~I can only guess what Auntie would say if she knew I was dancing like a vagabond in a tavern.~
+EXTERN VPLEIB PCF2Leina37a
+
+CHAIN BNALIA LeiSpher1
+~Oh, I'd love to help... how about a Keep?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+
+CHAIN BNALIA LeiSpher2
+~A locket... it's quite small when closed?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+
+CHAIN BNALIA LeiSpher3
+~(*A look of revulsion on her face*) There... there used to be a cage of sorts, big enough to hold a person in the... the basement of the keep but I can't see anyone volunteering to get inside it.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+
+CHAIN BNALIA LeiTheat
+~Anything I can do to help, you know you only need to ask?~
+END
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+
+CHAIN BNALIA LeiThea3
+~(*Puzzled*) "This time"... What do you mean, this time, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+
+CHAIN BNALIA LeiThea4
+~I think I would prefer to hear what you have in mind <CHARNAME>. My mother was always telling me to beware those who gain their amusement from another's discomfort!~
+END
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+
+CHAIN BNALIA LeiThea1
+~(*Wistfully*) I wish I had something I felt so passionately about. See how her music has deadened her nose to the stench of battle that we carry with us!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+
+CHAIN BVALYGA NEJ156
+~Leina, I seldom refuse a lady but this time I must. I am a ranger not a puppet to dance when the lady pulls the strings.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina29a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina29a
+
+
+CHAIN BVALYGA LeiSpher1
+~Bigger on the inside than the outside? Mmm... my cabin maybe?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+
+
+CHAIN BVALYGA LeiSpher2
+~A wizard's brain... that always holds more hot air than the whole of Zakhara.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
+
+
+CHAIN BVALYGA LeiSpher3
+~I can only think of a closet?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
+
+
+CHAIN BVALYGA LeiSpher4
+~That is why magic leads to corruption. Look what my relative did. He was experimenting on people without them even knowing about it.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere26
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher4
+
+
+CHAIN BVALYGA LeiTheat
+~(*Suspiciously*) What sort of an idea?~
+END
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+
+
+CHAIN BVALYGA LeiThea3
+~If this is some juvenile prank that you have in mind, I suggest we forget it and rest whilst we can.~
+END
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+
+
+CHAIN BVALYGA LeiThea4
+~Are we nothing but children here? I joined this group to see the ways of the world and instead, I am shown the ways of children. Bah!~
+END
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+
+
+CHAIN BVALYGA LeiThea1
+~If it's a bath you seek, why not simply approach the barkeep and ask him for one? I see no need for childish charades over a tub of hot water!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+
+CHAIN BVICONI NEJ0
+~Whilst you persist in leading these males into believing they are a females equal I will have none of your surface games. (*She turns her back and spits out her next words*) Jal shinduago jalilen ph' jal yibin!~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina31a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina31a
+
+CHAIN BVICONI LeiSpher1
+~How pathetic. You surface dwellers are prepared to fight like dogs in heat over such a pitiful female... if that's what you want to call her.~
+EXTERN VPLEIB Sphere8a
+
+CHAIN BVICONI LeiSpher2
+~For once a male has half an idea which is about as good as a half elf, maybe the males should split her in half the whole thing is pathetic.~
+EXTERN VPLEIB Sphere13a
+
+CHAIN BVICONI LeiSpher3
+~You surface dwellers are so stupid. Who really cares?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere10
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+
+CHAIN BVICONI LeiTheat
+~Then keep it yourself, your mundane thoughts are of no interest to me.~
+END
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+
+CHAIN BVICONI LeiThea3
+~Bah! You surfacers and your infantile minds! It is no wonder you have not progressed, unlike the drow! Udos zhal ilstar ultrin... you will see!~
+END
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+
+CHAIN BVICONI LeiThea4
+~Children, you are all nought but children! It's no wonder you surfacers struggle to survive... udos zhal ilstar ultrin!~
+END
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+
+CHAIN BVICONI LeiThea1
+~Go play your foolish prank! If the half elf hasn't sussed you yet then the half breed deserves to be made a fool of.~
+== BVICONI ~(*She spits out her next words*) Kitrye kyuvren ph' nau mzild darthirii taga ph' rothe!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+
+CHAIN BVICONI LeiThea2
+~Leina, I need no such silly songs. But if you must, be sure you tell of how I ripped the beasts hearts out with my bare hands and laid them open for the vultures to feed on their soft parts.~
+EXTERN VPLEIB TheaQ161
+
+CHAIN BVICONI RadianQ
+~Bah! You bard, you couldn't handle an evil thought if one ever took a hold on you, you'd soil your pants and fall down screaming!~
+EXTERN VPLEIB RadiQ19A
+
+CHAIN BVICONI LeiRadia
+~Surfacers! Your fetish for fluffy towels is unhealthy girl, some one needs to give you a good rub down with a horse blanket. That'll cure all this jumping into hot water every spare minute!~
+EXTERN VPLEIB RadiQ21B
+
+CHAIN BYOSHIM LeiSpher1
+~Yoshimo has not seen any such thing.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiSpher1
+
+CHAIN BYOSHIM LeiSpher2
+~Big, small can she not make up her mind?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiSpher2
+
+CHAIN BYOSHIM LeiSpher3
+~A sack... would that suffice as an answer my friend?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiSpher3
+
+CHAIN BYOSHIM LeiTheat
+~You have an idea for what?~
+END
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
@@ -4671,13 +6411,14 @@ END
  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiTheat
- IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiTheaB
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiTheat
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiTheaC
 
-CHAIN FFBART theatr3c
-~<CHARNAME>...~
+CHAIN BYOSHIM LeiThea3
+~Yoshimo does not understand your cryptic words... who is being had?~
 END
- IF ~True()~ THEN EXTERN VPLEIB TheatQ15
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
@@ -4697,13 +6438,14 @@ END
  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea3
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea3
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea3
- IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiThea3
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiThea3
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiTheaC
 
-CHAIN FFBART theatr3d
-~<CHARNAME>...~
+CHAIN BYOSHIM LeiThea4
+~(*Sternly*) Yoshimo has the greatest respect for Leina, he will be watching that you do not upset her <CHARNAME>!~
 END
- IF ~True()~ THEN EXTERN VPLEIB TheatQ15
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("vpkachi") !IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
  IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
  IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
  IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
@@ -4723,9 +6465,1012 @@ END
  IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
  IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea4
  IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea4
- IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiThea4
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiThea4
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiTheaD
 
-CHAIN FFBART theatr4
-~(*A huge grin covering his face*) That's my Leina, and if truth be told, I doubt you would have the lass any other way!~
+CHAIN BYOSHIM LeiThea1
+~Ah, a harmless jest I see... nothing more.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea1
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea1
+ IF ~InParty("vpkachi") !Dead("vpkachi")~ THEN EXTERN VPKACB LeiThea1
+
+
+CHAIN VPKACB NEJ0
+~(*Laughing*) I have to say Yoshimo, that is the first time I have ever had a dance partner stand still while I danced around him. I thought you were going to surprise me with all that you had learnt.~
+EXTERN BYOSHIM NEJ8
+
+CHAIN VPKACB NEJ1
+~(*A gleam comes to her eye*) I too have learnt a lot in your absence Yoshimo.~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+
+CHAIN VPKACB NEJ2
+~Have you learnt to dance at last Yoshimo? I remember watching you and that brother of mine, practising so�s you could impress the girls... you think I didn�t notice? How I pitied those poor girls toes should they ever have the misfortune to dance with either of you.~
+EXTERN BYOSHIM NEJ10
+
+CHAIN VPKACB NEJ3
+~I will dance with you Yoshimo, if only to see what you have learnt, but I will not be dancing bare foot.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+
+CHAIN VPKACB LeiSpher1
+~Yoshimo, just name a large object. You do know one don�t you. A ship Leina.~
+EXTERN VPLEIB Sphere18
+
+CHAIN VPKACB LeiSpher2
+~Yoshimo, show your manners! Guess something small like a sock, which I will put in your mouth if you can�t answer sensibly!~
+EXTERN VPLEIB Sphere19
+
+CHAIN VPKACB LeiSpher3
+~Yoshimo, I am not even going to ask how it is you can get a man comfortably into a sack. Umm, this is not as easy as I first thought... could it perhaps be a barrel Leina?~
+EXTERN VPLEIB Sphere20
+
+CHAIN VPKACB LeiTheaA
+~Shh Yoshimo, I am sure <CHARNAME> is about to tell us... aren�t you, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiTheat
+
+CHAIN VPKACB LeiTheaB
+~(*Smiling secretly*) An idea, now I wonder, who is going to fall foul of this idea of yours, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiTheat
+
+CHAIN VPKACB LeiTheaC
+~You have no need to understand Yoshimo, as I am sure <CHARNAME> is about to explain. Aren�t you, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiTheat
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiTheat
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiTheat
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiTheat
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiTheat
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiTheat
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiTheat
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiTheat
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiTheat
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiTheat
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiTheat
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiTheat
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiTheat
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiTheat
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiTheat
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiTheat
+
+CHAIN VPKACB LeiThea3
+~(*Smiling secretly*) I suspect a certain young lady is about to discover what this idea of yours is. Am I not right, <CHARNAME>?~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea3
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea3
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea3
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea3
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea3
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea3
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea3
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea3
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea3
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea3
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea3
+
+CHAIN VPKACB LeiTheaD
+~I stand with Yoshimo on this! We will both watch that Leina is not upset by your plan, <CHARNAME>!~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea4
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea4
+
+CHAIN VPKACB LeiThea4
+~(*Sternly*) I have the greatest respect for Leina, I will be watching that you do not upset her, <CHARNAME>, in any way!~
+END
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let�s get the jump on her first this time. What say you?~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn�t said anything yet so let�s do it first.~ GOTO LeiThea1
+ IF ~!IsValidForPartyDialogue("Minsc") !IsValidForPartyDialogue("Edwin") !IsValidForPartyDialogue("Aerie") !IsValidForPartyDialogue("Anomen") !IsValidForPartyDialogue("Cernd") !IsValidForPartyDialogue("HaerDalis") !IsValidForPartyDialogue("Imoen2") !IsValidForPartyDialogue("Jaheira") !IsValidForPartyDialogue("Jan") !IsValidForPartyDialogue("Keldorn") !IsValidForPartyDialogue("Korgan") !IsValidForPartyDialogue("Mazzy") !IsValidForPartyDialogue("Nalia") !IsValidForPartyDialogue("Valygar") !IsValidForPartyDialogue("Viconia") !IsValidForPartyDialogue("njhroth") !IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin� battle so let�s ask her first for a fluffy towel. What say you?~ GOTO LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea4
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea4
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea4
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea4
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea4
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea4
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea4
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea4
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea4
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea4
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea4
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea4
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea4
+
+CHAIN VPKACB LeiThea1
+~So the people of this land are not so far from my own. My brother would have liked you, <CHARNAME>.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB LeiThea1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiThea1
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiThea1
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea1
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea1
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea1
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea1
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea1
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea1
+ IF ~InParty("Cernd") !Dead("Cernd")~ THEN EXTERN BCERND LeiThea1
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea1
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiThea1
+
+
+CHAIN NJHROB 84
+~Well that was... ahem... entertaining. Dancing has certainly come a long way since my days.~
+END
+ IF ~Gender(Player1,FEMALE) !InParty("njmelora")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) !InParty("njmelora")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
+ IF ~InParty("njdar")~ THEN EXTERN NJDARB 126
+
+CHAIN NJHROB 85
+~Well, I must say it has been a while since I've kicked up my heels, but if the lady insists... just give me lots of space Leina.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina24a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina24a
+
+CHAIN NJHROB 86
+~I couldn't agree with you more Leina.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ140
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 58
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 129
+
+CHAIN NJHROB 87
+~(*Sternly*) Please, this is a temple, and not the market place! Or have you two forgotten whose presence we stand before!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest17
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 59
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ141
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ499
+
+CHAIN NJHROB 88
+~Well it is up to you <CHARNAME>, do we get our hot baths and Leina her warm fluffy towel now or later?~
+END
+ ++ ~Later.~ EXTERN NJHROB 89
+ ++ ~Better now then later.~ EXTERN NJHROB 90
+
+CHAIN NJHROB 89
+~As you wish <CHARNAME>.~
+EXTERN VPLEIB ClericQuest21
+
+CHAIN NJHROB 90
+~As you wish <CHARNAME>.~
+EXTERN VPLEIB ClericQuest20
+
+CHAIN NJHROB LeiDear1
+~No Leina, we only had small hamlets in my time... (*Coughs several times and scans the looks on the servants faces, relieved to see none has noticed his slip*)... er hem... I mean in the areas I have travelled.~
+EXTERN VPLEIB DeArnise17
+
+CHAIN NJHROB LeiDear2
+~Not in the least, Leina. They were quite civil having the same amenities as the towns around here only on a smaller scale. Why do you ask?~
+EXTERN VPLEIB DeArnise18
+
+CHAIN NJHROB LeiDear3
+~(*Looking at Leina as if she is a little girl up to some prank, he lowers his voice*) Leina just because I lived 100 yrs ago doesn't mean we lived in caves!~
+EXTERN NJHROB LeiDear3a
+
+CHAIN NJHROB LeiDear3a
+~(*Then a little louder*) Oh yes we had many a fine galas. We would dress in our finest, that is after washing off the grime of the day, for only when the grime of hard work was scrubbed away could you smell the fragrance of the many flowers decorating the courtyards. You know Leina, even then after a hard day nothing felt better then a hot bath.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB DeArnise28
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN VPLEIB DeArnise19
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN VPLEIB DeArnise22
+
+CHAIN NJHROB LeiSpher1
+~We had better help her or we will never get any where... a house?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere10
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher1
+ IF ~InParty("njshart") !Dead("njshart")~ THEN EXTERN VPSHAB LeiSpher1
+
+CHAIN NJHROB LeiSpher2
+~Now that you mention it back when I was young there was a tale they use to sing about a man who had a box that was bigger on the inside then the outside. It was sung as a joke to get people laughing. It probably is the same tale. It could be quite true Leina for I am here in your time from the past and we did just come out of this sphere.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere26
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher4
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher4
+
+CHAIN NJHROB LeiTheat
+~I'm thinking we are going to hear this idea whether we want to or not, so go on, <CHARNAME>, tell us what you have in mind.~
+END
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiTheat
+
+CHAIN NJHROB LeiThea3
+~(*Laughs heartily*) How little you know Leina my friend!~
+END
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea3
+
+CHAIN NJHROB LeiThea4
+~(*Laughing to himself*) I am not sure who will be getting who, but it will be fun to observe.~
+END
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJHROB LeiThea1
+ IF ~!IsValidForPartyDialogue("njdar") !IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJHROB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea4
+
+CHAIN NJHROB LeiThea1
+~(*He looks towards Leina. She quickly winks at him and turns again to Samuel*) Well, I never... If I didn't know better, I'd say that young lady is playing with us!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea1
+
+CHAIN NJHROB LeiThea2
+~Leina, I do not do this for fame and my presence in this time must not be known... ever! Do you hear me child?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea2
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea2
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiThea2
+
+CHAIN NJHROB LeiRadia
+~Leina, without you I believe we would spend our lives resting in peasant chambers only.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
+ IF ~InParty("njshart") !Dead("njshart")~ THEN EXTERN VPSHAB LeiRadia
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiRadia
+
+
+CHAIN NJMELB 48
+~(*Unsteadily she gets to her feet, her mug already half empty.*) A jug of ale and a merry jig, next to a good feed there is no better way to a haflings heart.~
+EXTERN NJTAFB 1
+
+CHAIN NJMELB 49
+~(*Clutching her ale*) You are all talk gnome. Why don't you just crawl back under that rock you came from and give us all a break from that bad temper of yours.~
+EXTERN NJTAFB 2
+
+CHAIN NJMELB 50
+~(*Laughs*) That's a gem gnome, you'd have to be able to reach my head in order to chuck something over it.~
+END
+ ++ ~Melora, Taffic please! Can't we just enjoy Leina's song without listening to you two and your petty squabbles!~ EXTERN NJTAFB 3
+ ++ ~Taffic, no one is wasting good ale tonight... and Melora, if you are insistent on wanting a shampoo I will dunk you in the river myself!~ EXTERN NJTAFB 3
+ ++ ~(*Rolling your eyes*) You two again! Taffic, Melora cease this now or I will bang both your heads together. That will ensure you sleep for the next eight hours.~ EXTERN NJTAFB 3
+
+CHAIN NJMELB 51
+~(*Snorts*) I wouldn't touch your back with a the tip of a halberd gnome.~
+END
+ ++ ~I said ENOUGH!~ EXTERN NJMELB 52
+ ++ ~Hey, have you two suddenly become deaf!~ EXTERN NJMELB 52
+ ++ ~One more word out of you two and I will gag you both and tie you together and leave you until the sun rises. Understood?~ EXTERN NJMELB 52
+
+CHAIN NJMELB 52
+~(*She takes a swig from her mug and throws the gnome a look of contempt*) We haven't finished this conversation yet gnome! (*She walks off*)~
+EXTERN NJTAFB 4
+
+CHAIN NJMELB 53
+~(*Trying to swing her hips in a way that hafling's hips aren't designed to swing*) Tee-dum-de-dum... ouch! Now why will Leina's hips go that way and mine won't? Tee-dum-de-dum...~
+EXTERN NJTAFB 5
+
+CHAIN NJMELB 54
+~(*Glares at the gnome and mutters under her breath as she walks past you*)... Another time gnome, another time!~
+END
+ IF ~True()~ THEN DO ~RestParty()~ EXIT
+ IF ~InParty("Minsc")~ THEN EXTERN BMINSC NEJ136
+
+CHAIN NJMELB 55
+~(*Unsteadily she gets to her feet, her mug already half empty.*) A jug of ale and a merry jig, next to a good feed there is no better way to a haflings heart.~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina23a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina23a
+
+CHAIN NJMELB 56
+~(*Trying to swing her hips in a way that hafling's hips aren't designed to swing*) Tee-dum-de-dum... ouch! Now why will Leina's hips go that way and mine won't? Tee-dum-de-dum...~
+EXTERN NJTAFB 7
+
+CHAIN NJMELB 57
+~(*Glares at the gnome and mutters under her breath as she walks past you*)... Another time gnome, another time!~
+DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~
 EXIT
+
+CHAIN NJMELB 58
+~Smelling like this I couldn't pickpocket a blind man... not that I would stoop so low!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ140
+
+CHAIN NJMELB 59
+~(*Raising her voice and screwing up her nose*) Phew... the heat coming from you two is making the smell a darn sight smellier!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest17
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB 130
+
+CHAIN NJMELB 60
+~Why backtrack let's collect and get out of here.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 9
+
+CHAIN NJMELB LeiSpher1
+~I'm betting it's something constructed by a mage... but I've no idea what nor do I wish to know if magic is involved!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
+
+CHAIN NJMELB LeiSpher2
+~I'm sticking to my idea that it's some wizard's contraption!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher3
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher2
+
+CHAIN NJMELB LeiSpher3
+~This is silly Leina! How can we guess given the clue it holds a person comfortably. A lot of things would hold me comfortably but not you!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher4
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher4
+
+
+CHAIN NJMELB LeiTheat
+~Idea, ale, idea, ale? Mmm, no competition really, let's get to the bar!~
+END
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheaA
+
+CHAIN NJMELB LeiTheaA
+~I'll ignore the obvious insult gnome, only because we seem of one mind this time. (*She laughs as Taffic starts to bluster*)~
+EXTERN NJTAFB LeiTheaB
+
+CHAIN NJMELB LeiThea3
+~(*Suspiciously*) I'll not be a party to anything until I hear what it is you have in mind, <CHARNAME>.~
+END
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+
+CHAIN NJMELB LeiThea4
+~OK, but do not blame me if she loses her rag and blows you all to smithereens!~
+END
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJMELB LeiThea1
+ IF ~!IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJMELB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheaC
+
+CHAIN NJMELB LeiThea1
+~Whatever, but I doubt somehow that a bath is as far from Leina's mind as you may be thinking.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+
+CHAIN NJMELB LeiThea2
+~Oh no you don't Leina, the last thing I need are bounty hunters after me.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+
+CHAIN NJMELB LeiTheaN
+~Oh no you don't Leina, the last thing I need are bounty hunters after me.~
+= ~Half-pint am I you gnarled piece of stink wood. At least my part would be the truth, not a lot of hot air.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+
+CHAIN NJMELB LeiRadia
+~Aye, I'm all for a tankard and maybe a meal as well? Look how I'm wasting away here, what with being on the road so long a girl is forced to forgo so many of her in between snacks.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadi1
+
+CHAIN NJMELB LeiRadi1
+~(*Her eyes narrow as she looks at the gnome*) Yea and if that tongue of yours doesn't learn to be civil, you'll be wearing it to warm your neck!~
+EXTERN NJTAFB LeiRadi2
+
+
+CHAIN NJDARB 126
+~I am looking at my feet here and wondering if they have got twisted around backwards. Never before have they moved in so many directions at one time.~
+END
+ IF ~Gender(Player1,FEMALE) OR(2) !InParty("njmelora") !InParty("njtaffic")~ THEN EXTERN VPLEIB PCF2Leina38a
+ IF ~Gender(Player1,MALE) OR(2) !InParty("njmelora") !InParty("njtaffic")~ THEN DO ~SetGlobal("VP_Danicng_Queen","GLOBAL",2)~ EXIT
+ IF ~Gender(Player1,FEMALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 53
+ IF ~Gender(Player1,MALE) InParty("njmelora") InParty("njtaffic")~ THEN EXTERN NJMELB 56
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ0
+ IF ~InParty("vpkachi")~ THEN EXTERN VPKACB NEJ0
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ0
+ IF ~InParty("Nalia")~ THEN EXTERN BNALIA NEJ57
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ0
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ0
+
+CHAIN NJDARB 127
+~The priests never taught dancing and looking at my feet it was probably just as well. I am not even sure that I am built for rhythm Leina, but if you lead I will follow.~
+EXTERN VPLEIB PCF2Leina25a
+
+CHAIN NJDARB 128
+~(*Turning a slightly darker colour than is normal for a half orc*) Leina, please!~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina2b
+ IF ~InParty("Yoshimo")~ THEN EXTERN BYOSHIM NEJ9
+ IF ~InParty("Jaheira")~ THEN DO ~SetGlobal("VP_JahiNoDancing","LOCALS",1)~ EXTERN BJAHEIR NEJ497
+ IF ~InParty("Nalia") Gender(Player1,FEMALE)~ THEN EXTERN BNALIA NEJ58
+ IF ~InParty("Nalia") Gender(Player1,MALE)~ THEN EXTERN BNALIA NEJ60
+ IF ~InParty("Mazzy")~ THEN EXTERN BMAZZY NEJ1
+ IF ~InParty("Anomen")~ THEN EXTERN BANOMEN NEJ1
+ IF ~InParty("Keldorn")~ THEN EXTERN BKELDOR NEJ1
+ IF ~InParty("Viconia")~ THEN DO ~SetGlobal("VP_VickyNoDancing","LOCALS",1)~ EXTERN BVICONI NEJ0
+ IF ~InParty("Korgan")~ THEN DO ~SetGlobal("VP_KorganNoDancing","LOCALS",1)~ EXTERN BKORGAN NEJ0
+ IF ~InParty("Valygar")~ THEN EXTERN BVALYGA NEJ156
+ IF ~InParty("Edwin")~ THEN EXTERN BEDWIN NEJ109
+ IF ~InParty("Jan")~ THEN EXTERN BJAN NEJ1
+ IF ~InParty("Aerie")~ THEN DO ~SetGlobal("VP_AerieNoDancing","LOCALS",1)~ EXTERN BAERIE NEJ454
+
+CHAIN NJDARB 129
+~The underground is one thing but sewer sloshing...that's something else altogether!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ140
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 58
+
+CHAIN NJDARB 130
+~Remember where we are, and whilst we are here, might it not be a bad idea to thank the gods for our safe deliverance instead of yelling the odds at each other!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest17
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 8
+
+CHAIN NJDARB 131
+~<CHARNAME>, I have to agree with Leina we are in a temple and it is not very respectful of us to be bringing the sewer with us.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB 9
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB 60
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC NEJ142
+
+CHAIN NJDARB LeiDear1
+~Now Leina, just because I am half-orc doesn't mean I don't know about being clean. I hope you are not trying to insult me because I never thought you one to judge others solely on their breeding?~
+EXTERN VPLEIB DeArnise20
+
+CHAIN NJDARB LeiDear2
+~(*Looking at his feet*) As would I be honoured to dance with Leina, sadly though I must decline the lady's offer. My feet move swift enough in battle but set to music they become clumsy, almost as bad as <CHARNAME>'s attempts at a song.~
+EXTERN VPLEIB DeArnise21
+
+CHAIN NJDARB LeiSpher1
+~<CHARNAME>, I have listened to many of your conversations and been silent but this once I am quite curious about. These two terms a brain tickle and a brain freeze, tell me, how does one tickle a brain and better yet, why would one want to freeze one's brain?~
+EXTERN VPLEIB Sphere15
+
+CHAIN NJDARB LeiSpher2
+~I do not understand what this guessing is all about but how about a tree like the one in Kuldhar?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+
+CHAIN NJDARB LeiSpher3
+~I am getting this game now... how about a gauntlet, it would need to be big inside to fit Dar's hand?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
+
+CHAIN NJDARB LeiSpher4
+~How big a person are we talking about Leina? Dar would need a bigger something than say Leina if he wanted to get inside it?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher3
+
+CHAIN NJDARB LeiTheat
+~So my friend, what has suddenly inspired this idea of yours?~
+END
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiTheat
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiTheat
+
+CHAIN NJDARB LeiThea3
+~I am not sure I understand your words <CHARNAME>. What does it mean to "have her this time?"~
+END
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea3
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea3
+
+CHAIN NJDARB LeiThea4
+~I take it you mean to play a prank on Leina. I am not very good at games so I will watch and learn the purpose of this prank.~
+END
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJDARB LeiThea1
+ IF ~!IsValidForPartyDialogue("njmelora") !IsValidForPartyDialogue("njtaffic")~ THEN REPLY ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJDARB LeiThea1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea4
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea4
+
+CHAIN NJDARB LeiThea1
+~I am not in so much of a hurry to bathe. I find your baths are not made for one of my stature. In fact I find bathing most uncomfortable, sitting with my feet hanging over the bottom and such.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ151
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea1
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea1
+
+CHAIN NJDARB LeiThea2
+~Leina do you think it wise to bring attention to me? Many of the patrons may not understand.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiThea2
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiThea2
+
+CHAIN NJDARB LeiRadia
+~Leina, it is a joy to have you in the party. For it is times like this and with each of these conversations that I learn more of the ways of your people.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia
+ IF ~InParty("njshart") !Dead("njshart")~ THEN EXTERN VPSHAB LeiRadia
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiRadia
+
+
+CHAIN NJTAFB 1
+~Want a bet hafling, I know a much shorter route to a haflings heart. Anytime you want a demonstration you know where to find me.~
+EXTERN NJMELB 49
+
+CHAIN NJTAFB 2
+~You shut your frelling mouth hafling and give us a break from that harpy tongue of yours, or you might just be wearing that ale over your head.~
+EXTERN NJMELB 50
+
+CHAIN NJTAFB 3
+~Just keep her off my back!~
+EXTERN NJMELB 51
+
+CHAIN NJTAFB 4
+~Good riddance! Perhaps I can drink my ale in piece now!~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~Now that little altercation is settled we can carry on and enjoy our evening. Leina, whenever you are ready.~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,FEMALE)~ THEN REPLY ~I swear I am going to have to lock those two in a room one day and let them sort out their differences. Now where were we... oh yes Leina whenever you are ready.~ EXTERN VPLEIB PCF2Leina2a
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~Now that little altercation is settled we can carry on and enjoy our evening. Leina, whenever you are ready.~ EXTERN VPLEIB PCM4Leina2a
+ IF ~Gender(Player1,MALE)~ THEN REPLY ~I swear I am going to have to lock those two in a room one day and let them sort out their differences. Now where were we... oh yes Leina whenever you are ready.~ EXTERN VPLEIB PCM4Leina2a
+
+CHAIN NJTAFB 5
+~Because you don't have any hips you hafling idiot! Your body's all straight up and down and as thick as a tree stump!~
+EXTERN NJMELB 54
+
+CHAIN NJTAFB 6
+~You get on with your girlish frivolities bard, just leave me in peace with my ale!~
+END
+ IF ~Gender(Player1,FEMALE)~ THEN EXTERN VPLEIB PCF2Leina22a
+ IF ~Gender(Player1,MALE)~ THEN EXTERN VPLEIB PCM4Leina22a
+
+CHAIN NJTAFB 7
+~Because you don't have any hips you hafling idiot! Your body's all straight up and down and as thick as a tree stump!~
+EXTERN NJMELB 57
+
+CHAIN NJTAFB 8
+~Ok so we're a little dirty, but we done what we were asked to do. Tough if we upset their delicate noses, we've only come for what we're due.~
+EXTERN VPLEIB ClericQuest17
+
+CHAIN NJTAFB 9
+~For once the hafling is making sense. After all, it's for the good of their bloody church that we've ended up covered in sewer crap, so it won't hurt them to put up with a little of the same.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB ClericQuest21
+ IF ~InParty("njhroth") !Dead("njhroth")~ THEN EXTERN NJHROB 88
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY NEJ2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR NEJ500
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN NEJ1
+
+CHAIN NJTAFB LeiSpher1
+~Ha simple... a wizards tower of course!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere18
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
+
+CHAIN NJTAFB LeiSpher2
+~Of course it is hafling, the idea is to guess what the contraption is you half wit. Something like a wizard's pocket maybe?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher3
+
+CHAIN NJTAFB LeiSpher3
+~Something like a wizard's pocket maybe?~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere19
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher2
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher3
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher5
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher2
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher2
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher3
+
+CHAIN NJTAFB LeiSpher4
+~Bah... can't you see what the bard is doing? She knows exactly what the item is because she has to change the clue every time one of us guesses right!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere20
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher3
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher3
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher4
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher3
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher6
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher3
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher4
+
+CHAIN NJTAFB LeiTheat
+~An idea... I hope it includes the downing of ale, my throat is fair parched from all that chanting!~
+END
+ ++ ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJTAFB LeiThea1
+ ++ ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJTAFB LeiThea1
+ ++ ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJTAFB LeiThea1
+
+CHAIN NJTAFB LeiTheaA
+~Better make it snappy, loathe as I am to admit it, but this asinine hafling's idea has my vote.~
+EXTERN NJMELB LeiTheaA
+
+CHAIN NJTAFB LeiTheaB
+~What... you... my mind is nothing like yours hafling! Yours couldn't comprehend even the simplest of cantrips! Same mind indeed!~
+END
+ ++ ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJTAFB LeiThea1
+ ++ ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJTAFB LeiThea1
+ ++ ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJTAFB LeiThea1
+
+CHAIN NJTAFB LeiThea3
+~Ho! So the elf is going to get her comeuppance is she? Not before time... Stuck up wench!~
+END
+ ++ ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJTAFB LeiThea1
+ ++ ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJTAFB LeiThea1
+ ++ ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJTAFB LeiThea1
+
+CHAIN NJTAFB LeiTheaC
+~Pay no heed to the hafling. Taffic has enough magic left and will put a stop to any of the bard's shenanigans. Let's be having the stuck up wench, wipe that smug smile from her face once and for all!~
+END
+ ++ ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJTAFB LeiThea1
+ ++ ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJTAFB LeiThea1
+ ++ ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJTAFB LeiThea1
+
+CHAIN NJTAFB LeiThea4
+~Then let's be at it... stuck up wench! Let's wipe that smug smile from her face once and for all!~
+END
+ ++ ~Oh enough with your horse play! Leina always wants a hot bath let's get the jump on her first this time. What say you?~ EXTERN NJTAFB LeiThea1
+ ++ ~Sssssh. Now listen Leina always wants a bath after a battle and she hasn't said anything yet so let's do it first.~ EXTERN NJTAFB LeiThea1
+ ++ ~Hey now, listen Leina is always the first to want a bath after a stinkin' battle so let's ask her first for a fluffy towel. What say you?~ EXTERN NJTAFB LeiThea1
+
+CHAIN NJTAFB LeiThea1
+~Bah, I thought you meant to take the bard down a peg or two, not ask her to bathe!~
+EXTERN VPLEIB TheaQ151
+
+CHAIN NJTAFB LeiThea2
+~At last my quest and destiny will be know to all. I will be immortalized.~
+END
+ IF ~True()~ THEN EXTERN VPLEIB TheaQ161
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiThea2
+ IF ~InParty("Mazzy") !Dead("Mazzy")~ THEN EXTERN BMAZZY LeiThea2
+ IF ~InParty("Keldorn") !Dead("Keldorn")~ THEN EXTERN BKELDOR LeiThea2
+ IF ~InParty("Jan") !Dead("Jan")~ THEN EXTERN BJAN LeiThea2
+ IF ~InParty("HaerDalis") !Dead("HaerDalis")~ THEN EXTERN BHAERDA LeiThea2
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiThea2
+ IF ~InParty("Anomen") !Dead("Anomen")~ THEN EXTERN BANOMEN LeiThea2
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiThea2
+ IF ~InParty("Aerie") !Dead("Aerie")~ THEN EXTERN BAERIE LeiThea2
+ IF ~InParty("Imoen2") !Dead("Imoen2")~ THEN EXTERN BIMOEN2 LeiThea2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiThea2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJTAFB LeiTheaM
+
+CHAIN NJTAFB LeiTheaM
+~Not like some half-pint.~
+EXTERN NJMELB LeiTheaN
+
+CHAIN NJTAFB LeiRadi1
+~Wasting away... if you get any rounder halfling, we'll be rolling you along in front of us!~
+EXTERN NJMELB LeiRadi1
+
+CHAIN NJTAFB LeiRadi2
+~What you going to do? Wait till I'm knocked unconscious because that's the only way you're likely to get close enough? Bah, you're all mouth and no breeches halfling, not worth wasting words on! (*He stomps away*)~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+
+CHAIN NJTAFB LeiRadia
+~What? Another dousing in hot water! Yea gods it's worse than traveling with my mother. Next thing she'll be wanting to check behind my ears!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+
+ 
+//Leina Interactions
+
+CHAIN VPSHAJ LeiSpher1
+~What do you take me for... I am a warrior not a bloody contestant in your guessing game bard!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB Sphere10
+ IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
+ IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
+ IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
+ IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
+ IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher1
+
+CHAIN VPSHAJ RadianQ
+~Finally the stinkin' male is gettin' a brain. Your damn right, <CHARNAME>, who gives a crap who starts it and how. As long as blood flows. So you shut your yammering bard!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQB
+
+CHAIN VPSHAJ RadianQ1
+~I think a snowball has a better chance in hell than this bard being able to change her pie in the sky attitude. For all her, *I've grown* attitude, she still doesn't use her brain!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN RadianQ
+
+CHAIN VPSHAJ LeiRadia
+~Oh suck it up bard, who the hell cares where we sit as long as they have ale and hot water. I'll never know how in the nine hells you ever got into this party. You're such a prig!~
+END
+ IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
+ IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
+ IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
+ IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
+ IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
+ IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
+ IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia

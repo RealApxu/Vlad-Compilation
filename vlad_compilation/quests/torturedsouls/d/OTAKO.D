@@ -3,17 +3,16 @@ BEGIN OTAKO
 CHAIN
 IF ~NumberOfTimesTalkedTo(0)~ THEN OTAKO 0
 ~Yoshimo-san. My great pleasure is to see you again. Uncle often said you will return to help your family and so you did.~
-EXTERN YOSHJ TS173
-
-CHAIN OTAKO 1
-~Your father will explain the things happening around here to you better than I can. Hashimoto's stronghold is just to the east and south from here. Hurry there Yoshimo, for we need help. And you can kill the Nakanishi wench, you have captured. There is no law above us any more but the honor of Hashimoto.~
-EXTERN YOSHJ TS174
-
-CHAIN OTAKO 2
-~As you wish, Yoshimo-san. But you should remember that "one must aim not to disappoint his father." Have you forgotten the teachings of our ancestors in the strange lands?~
-EXTERN YOSHJ TS175
-
-CHAIN OTAKO 3
-~Ha-ha-ha...(*laughs madly*)~
+== YOSHJ ~Otako?!!!! I am pleased to see you... if a bit surprised. I saw a corpse on the road, which was so very much like you, that I thought you were dead... What kind of a sick joke was that?~
+== OTAKO ~Your father will explain the things happening around here to you better than I can. Hashimoto's stronghold is just to the east and south from here. Hurry there Yoshimo, for we need help. And you can kill the Nakanishi wench, you have captured. There is no law above us any more but the honor of Hashimoto.~
+== YOSHJ ~Stand back! Kachiko is under my protection while I live! I will not allow her to be hurt by anyone as MY honor dictates me.~
+== OTAKO ~As you wish, Yoshimo-san. But you should remember that "one must aim not to disappoint his father." Have you forgotten the teachings of our ancestors in the strange lands?~
+== YOSHJ ~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see it's indeed a time for me to talk to my father.~
+== OTAKO ~Ha-ha-ha...(*laughs madly*)~
 DO ~EscapeArea()~
-EXTERN VPKACJ N20
+== VPKACJ ~Yoshimo, I appreciate what you have said. Even if you said it because you were afraid that I'd kill you both if you ever tried anything funny.~ [KACHIQ04]
+== YOSHJ ~Cherry blossom, I am neither afraid of you, nor do I wish to fight you. If that offends you, sorry, but I can do little to help it. <CHARNAME>, would you come with me to my family stronghold? I can feel that madness has overcome my family and they do need help...~
+END
+ ++ ~I'd rather go on a nature hike and observe the flora and fauna of this island. However, I can see that you are eager for a reunion, so we'll follow you.~ EXIT
+ ++ ~Onward! We must investigate what's happening!~ EXIT
+ ++ ~Sure, but let's explore the area first. May be we can find someone from Kachiko's family also? ~ EXIT

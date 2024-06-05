@@ -20,14 +20,14 @@ CHAIN VPSHAJ ezequest1
 ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
 == VPSHAJ ~At least we're going after a fresh one this time! Those of you too morally challenged can stay with the necromancer...~
 == VPSHAJ ~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomachs worrying you, you may prefer to wait outside for our return... wimps!~
-EXTERN ~TuEzek~ 7
+EXTERN TUEZEK 7
 
 //Nej Interjections
 CHAIN VPSHAJ ezequest2
 ~Yea gods, we've carried bodies before... remember the decaying corpse we carried from the sewers of Baldurs Gate for that necromancer... Arkion was it? Phew, that one stunk to the pits!~
 == VPSHAJ ~At least we're going after a fresh one this time!~
 == VPSHAJ ~(*Looking around at the paraphernalia in Ezekial's room*)... Mmm... then again, if it's your delicate stomach worrying you, you may prefer to wait outside.~
-EXTERN ~TuEzek~ 9
+EXTERN TUEZEK 9
 
 CHAIN VPSHAJ egenia
 ~If you seriously believe that the gods give a toss about what is going on down here then you are all fools! I trust only my sword and my own eyes, not the off chance that the gods may be watching my back... or my front.~
@@ -49,45 +49,3 @@ CHAIN IMOENJ sharaval
 END
  IF ~True()~ THEN EXTERN NJHROJ 401
  IF ~InParty ("Jaheira")~ THEN EXTERN JAHEIRAJ sharaval
-
-//Leina Interactions
-
-CHAIN VPSHAJ LeiSpher1
-~What do you take me for... I am a warrior not a bloody contestant in your guessing game bard!~
-END
- IF ~True()~ THEN EXTERN VPLEIB Sphere10
- IF ~InParty("Yoshimo") !Dead("Yoshimo")~ THEN EXTERN BYOSHIM LeiSpher1
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiSpher1
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiSpher2
- IF ~InParty("Jaheira") !Dead("Jaheira")~ THEN EXTERN BJAHEIR LeiSpher1
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiSpher4
- IF ~InParty("Nalia") !Dead("Nalia")~ THEN EXTERN BNALIA LeiSpher1
- IF ~InParty("Valygar") !Dead("Valygar")~ THEN EXTERN BVALYGA LeiSpher1
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiSpher3
- IF ~InParty("njdar") !Dead("njdar")~ THEN EXTERN NJDARB LeiSpher2
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiSpher1
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiSpher1
-
-CHAIN VPSHAJ RadianQ
-~Finally the stinkin' male is gettin' a brain. Your damn right, <CHARNAME>, who gives a crap who starts it and how. As long as blood flows. So you shut your yammering bard!~
-END
- IF ~True()~ THEN EXTERN VPLEIB RadiaQ10
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN RadianQB
-
-CHAIN VPSHAJ RadianQ1
-~I think a snowball has a better chance in hell than this bard being able to change her pie in the sky attitude. For all her, *I've grown* attitude, she still doesn't use her brain!~
-END
- IF ~True()~ THEN EXTERN VPLEIB RadiQ19A
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI RadianQ
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN RadianQ
-
-CHAIN VPSHAJ LeiRadia
-~Oh suck it up bard, who the hell cares where we sit as long as they have ale and hot water. I'll never know how in the nine hells you ever got into this party. You're such a prig!~
-END
- IF ~True()~ THEN EXTERN VPLEIB RadiQ21B
- IF ~InParty("Viconia") !Dead("Viconia")~ THEN EXTERN BVICONI LeiRadia
- IF ~InParty("njtaffic") !Dead("njtaffic")~ THEN EXTERN NJTAFB LeiRadia
- IF ~InParty("njmelora") !Dead("njmelora")~ THEN EXTERN NJMELB LeiRadia
- IF ~InParty("Minsc") !Dead("Minsc")~ THEN EXTERN BMINSC LeiRadia
- IF ~InParty("Edwin") !Dead("Edwin")~ THEN EXTERN BEDWIN LeiRadia
- IF ~InParty("Korgan") !Dead("Korgan")~ THEN EXTERN BKORGAN LeiRadia

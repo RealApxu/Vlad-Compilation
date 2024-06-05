@@ -16,39 +16,6 @@ REPLACE_ACTION_TEXT yoshp
 ~SetGlobal("KickedOut","LOCALS",1)~
 ~SetGlobal("Kicked_Out","LOCALS",1)~
 
-CHAIN YOSHP TS14
-~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, what's going on now?~
-END
- ++ ~Kachiko told me that you had killed her brother. Is that true?~ EXTERN YOSHP TS15
- ++ ~Shut up, Yoshimo, you are about to die for your crimes!~ EXTERN YOSHP TS16
-
-CHAIN YOSHP TS15
-~<CHARNAME>, it's a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
-EXTERN VPKACJ N10
-
-CHAIN YOSHP TS16
-~Kachiko, I won't draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. I'll see you later... Maybe.~
-EXTERN VPKACJ N12
-
-CHAIN YOSHP TS17
-~Kachiko, I promise to come back to Kara-Tur as soon as possible on my own.~
-EXTERN VPKACJ N13
-
-CHAIN YOSHP TS18
-~<CHARNAME>, perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life. Thank you for being so understanding. Kachiko and I will be in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur. Look us up if you require any assistance.~
-DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",ChangeAIScript("",DEFAULT)) ActionOverride("vpkachi",SetLeavePartyDialogFile()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~
-EXIT
-
-CHAIN YOSHP TS19
-~Thank you, <CHARNAME>.~
-DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY) SetGlobal("Kicked_Out","LOCALS",0) JoinParty()~
-EXIT
-
-CHAIN YOSHP TS20
-~<CHARNAME>, what are you doing? I'm not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
-DO ~ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",Enemy()) Enemy()~
-EXIT
-
 // Parting ways
 
 CHAIN
@@ -97,12 +64,16 @@ END
 CHAIN YOSHP partway1
 ~Oh, well that's okay, then.~
 DO ~SetGlobal("Kicked_Out","LOCALS",1)~
-EXTERN VPKACJ partway1
+== VPKACJ ~Yoshimo, wait. I am leaving with you. Alone you will only get into more troubles. Sorry <CHARNAME>, but I told you from the very start that I would follow whenever he goes... and I shall do so now.~ [KACHIL26]
+DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Yoshimo",ChangeAIScript("",DEFAULT)) ActionOverride("Yoshimo",SetLeavePartyDialogFile()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeAreaMove("AR0406",1368,1922,0)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0406",1381,1959,1)~
+EXIT
 
 CHAIN YOSHP partway2
 ~Then return when you can. I will wait if you are sure to return.~
 DO ~SetGlobal("Kicked_Out","LOCALS",1)~
-EXTERN VPKACJ partway2
+== VPKACJ ~Yoshimo, I am staying with you. Alone you will only get into more troubles. Sorry <CHARNAME>, but I told you from the very start that I wouldn't allow him to escape... and I shan't do so now.~
+DO ~SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty()~
+EXIT
 
 CHAIN YOSHP TS21
 ~Oh, well... I suppose we'll meet soon anyway.~

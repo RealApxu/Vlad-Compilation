@@ -17,9 +17,9 @@ EXIT
 CHAIN KILLIAN 2
 ~Govan did not describe you very well to me. Let me see that ring you have there. I need to be sure that you are who you say you are before handing over any gold.~
 END
- IF ~PartyHasItem("GovRing")~ THEN REPLY ~You can see it, Killian, but it is not leaving my hand until I see the gold... (*You show Killian the ring but keep a firm hold on it.*)~ EXTERN KILLIAN 3
- IF ~PartyHasItem("GovRing")~ THEN REPLY ~Oh no, Killian! Do I look that stupid? If you value your head you will not answer that. Here, you can look at the ring but from where you stand. Do not attempt one step closer... (*You show Killian the ring but keep a firm hold on it.*)~ EXTERN KILLIAN 3
- IF ~PartyHasItem("GovRing")~ THEN REPLY ~Here, Killian, I think you will see that this is indeed Govan's ring... (*You give the ring to Killian.*)~ DO ~TakePartyItem("GovRing")~ EXTERN KILLIAN 3
+ IF ~PartyHasItem("GovRing")~ REPLY ~You can see it, Killian, but it is not leaving my hand until I see the gold... (*You show Killian the ring but keep a firm hold on it.*)~ EXTERN KILLIAN 3
+ IF ~PartyHasItem("GovRing")~ REPLY ~Oh no, Killian! Do I look that stupid? If you value your head you will not answer that. Here, you can look at the ring but from where you stand. Do not attempt one step closer... (*You show Killian the ring but keep a firm hold on it.*)~ EXTERN KILLIAN 3
+ IF ~PartyHasItem("GovRing")~ REPLY ~Here, Killian, I think you will see that this is indeed Govan's ring... (*You give the ring to Killian.*)~ DO ~TakePartyItem("GovRing")~ EXTERN KILLIAN 3
  ++ ~The gold first, Killian. Show me the gold!~ EXTERN KILLIAN 3
 
 CHAIN KILLIAN 3
@@ -33,10 +33,7 @@ END
 CHAIN KILLIAN 4
 ~Stand easy, <GABBER>. Do you think I am foolish enough to come here alone? Come friends, make yourselves known.~
 DO ~CreateCreature("KilHelp1",[485.625],15) CreateCreature("KilHelp2",[537.584],0) CreateCreature("KilHelp3",[594.605],1)~
-EXTERN KILLIAN 5
-
-CHAIN KILLIAN 5
-~There is no need for anyone to die, I have a proposition of my own to put to you. You do something for me and you walk away with your life, no gold mind you, just your life. Are you listening?~
+== KILLIAN ~There is no need for anyone to die, I have a proposition of my own to put to you. You do something for me and you walk away with your life, no gold mind you, just your life. Are you listening?~
 END
  ++ ~I will give you three minutes only, Killian, and if I do not like what I hear... well, we shall what happens then.~ EXTERN KILLIAN 6
  ++ ~I am listening and this had better be good because your life depends on it being so, Killian.~ EXTERN KILLIAN 6
@@ -45,14 +42,8 @@ END
 
 CHAIN KILLIAN 6
 ~Duvaine has asked me to take care of his problem, namely you, but I also have a problem of my own that needs taking care of, namely Duvaine.~
-EXTERN KILLIAN 7
-
-CHAIN KILLIAN 7
-~Not Govan himself, his parents. Too long a story to go into here, all you need know is that I owe my present situation to them and I am not talking about the phoney *Keeper Of the Duvaine Finances* Govan spoke of.~
-EXTERN KILLIAN 8
-
-CHAIN KILLIAN 8
-~I now wish to pay them back if you get my meaning, <GABBER>? The deal is this, you pay me 1000 gold pieces to tell Govan that you did not show, then you take care of the parents for me and you get to walk away from here with your life.~
+== KILLIAN ~Not Govan himself, his parents. Too long a story to go into here, all you need know is that I owe my present situation to them and I am not talking about the phoney *Keeper Of the Duvaine Finances* Govan spoke of.~
+== KILLIAN ~I now wish to pay them back if you get my meaning, <GABBER>? The deal is this, you pay me 1000 gold pieces to tell Govan that you did not show, then you take care of the parents for me and you get to walk away from here with your life.~
 END
  ++ ~Let me get this straight, I pay you 1000 gold pieces for the privilege of murdering Duvaine's parents, right?~ EXTERN KILLIAN 9
  ++ ~Should that not be the other way around, you pay me the 1000 gold pieces to spare your life and to murder the Duvaines?~ EXTERN KILLIAN 10
@@ -79,24 +70,16 @@ EXIT
 
 CHAIN KILLIAN 12
 ~Very sensible of you, <GABBER>. The Duvaines are at this moment visiting the Vulova estate. Probably there to offer their condolences to the Vulova girl and to finalise their son's wedding plans.~
-EXTERN KILLIAN 13
-
-CHAIN KILLIAN 13
-~Now you make sure that they know who it was that sent you. Been a real pleasure doing business with you.~
+== KILLIAN ~Now you make sure that they know who it was that sent you. Been a real pleasure doing business with you.~
 DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1) ActionOverride("KilHelp1",EscapeArea()) ActionOverride("KilHelp2",EscapeArea()) ActionOverride("KilHelp3",EscapeArea()) EscapeArea()~
 EXIT
  //If PC leaves for the Vulova estate then => Scenario: Vulova Estate 3
 
 CHAIN KILLIAN 14
 ~Damn you, <GABBER>, here take your gold! It is I suppose a small price to pay for what I have been forced to become.~
-DO ~GivePartyGold(1000)~ EXTERN KILLIAN 15
-
-CHAIN KILLIAN 15
-~You will find the Duvaines at this moment visiting the Vulova estate, probably there to offer their condolences to the Vulova girl and to finalise their son's wedding plans.~
-EXTERN KILLIAN 16
-
-CHAIN KILLIAN 16
-~Now you make sure that they know who it was that sent you. Farewell.~
+DO ~GivePartyGold(1000)~
+== KILLIAN ~You will find the Duvaines at this moment visiting the Vulova estate, probably there to offer their condolences to the Vulova girl and to finalise their son's wedding plans.~
+== KILLIAN ~Now you make sure that they know who it was that sent you. Farewell.~
 DO ~SetGlobal("VP_Killian_Bribes_Me","GLOBAL",1) ActionOverride("KilHelp1",EscapeArea()) ActionOverride("KilHelp2",EscapeArea()) ActionOverride("KilHelp3",EscapeArea()) EscapeArea()~
 EXIT
  //If PC leaves for the Vulova estate then => Scenario: Vulova Estate 3

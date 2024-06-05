@@ -73,39 +73,20 @@ CHAIN
 IF WEIGHT #6 ~Global("Dead_Bodies","GLOBAL",1)~ THEN YOSHJ TS169
 ~Dead bodies? Here? Must be another group stranded on this piece of land. We must step carefully.~
 DO ~SetGlobal("Dead_Bodies","GLOBAL",2)~
-EXTERN VPKACJ N17
-
-CHAIN YOSHJ TS170
-~Kachiko, I can see the resemblance, but that cannot be. Otako was wearing a pendant in a shape of a crescent moon... just like this one... Oh, no! I must be dreaming! Otako...~
+== VPKACJ ~Yoshimo, does not this... man looks a bit familiar to you? It is strange but he reminds me Otako Hashimoto.~ [KACHIQ03]
+== YOSHJ ~Kachiko, I can see the resemblance, but that cannot be. Otako was wearing a pendant in a shape of a crescent moon... just like this one... Oh, no! I must be dreaming! Otako...~
 END
  ++ ~What? What are you both talking about? The dead man is one of your family, Yoshimo? Are you sure we are not in Kara Tur?~ EXTERN YOSHJ TS171
 
 CHAIN YOSHJ TS171
 ~I am afraid he is... he was my nephew, yes. But I have no idea how he came to this place and got killed; neither do I know where this place is...~
-EXTERN VPKACJ N18
+== VPKACJ ~My guess is that the spell might have worked and we are somehow moving towards solving our family feud. But why are we on an island, and not at home?~
+END
+ ++ ~The spell... Harpel must have done something that works for once. Let's go on, and we will have better chance to find some answers. Yoshimo, I am mourn your loss.~ EXTERN YOSHJ TS172
 
 CHAIN YOSHJ TS172
 ~Thank you, <CHARNAME>.~
 EXIT
-
-CHAIN YOSHJ TS173
-~Otako?!!!! I am pleased to see you... if a bit surprised. I saw a corpse on the road, which was so very much like you, that I thought you were dead... What kind of a sick joke was that?~
-EXTERN OTAKO 1
-
-CHAIN YOSHJ TS174
-~Stand back! Kachiko is under my protection while I live! I will not allow her to be hurt by anyone as MY honor dictates me.~
-EXTERN OTAKO 2
-
-CHAIN YOSHJ TS175
-~And you should remember that "one should aim not to hurt a reasoning being." Our ancestors were wise people and did not approve of mindless killing. I see it's indeed a time for me to talk to my father.~
-EXTERN OTAKO 3
-
-CHAIN YOSHJ TS176
-~Cherry blossom, I am neither afraid of you, nor do I wish to fight you. If that offends you, sorry, but I can do little to help it. <CHARNAME>, would you come with me to my family stronghold? I can feel that madness has overcome my family and they do need help...~
-END
- ++ ~I'd rather go on a nature hike and observe the flora and fauna of this island. However, I can see that you are eager for a reunion, so we'll follow you.~ EXIT
- ++ ~Onward! We must investigate what's happening!~ EXIT
- ++ ~Sure, but let's explore the area first. May be we can find someone from Kachiko's family also? ~ EXIT
 
 CHAIN
 IF WEIGHT #7 ~Global("Kachiko_Kidnapped","GLOBAL",1)~ THEN YOSHJ TS177

@@ -62,12 +62,3 @@ CHAIN BODHIAMB vampamb7
 END
  IF ~OR(2) !InPartyAllowDead("vpleina") Dead("vpleina") !Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN BODHIAMB 6
  IF ~InPartyAllowDead("vpleina") !Dead("vpleina") Global("VP_LeinaRomanceAct","GLOBAL",2)~ THEN EXTERN VPLEIJ vampamb0
-
-
-CHAIN BODHIAMB vampamb
-~You misunderstand me completely, bard. I am going to leave him his pathetic life. But yours I shall have. Follow me further <CHARNAME>, and you will lose more than you can imagine. Starting now!~
-DO ~ClearAllActions() StartCutSceneMode() StartCutScene("VPCut53s")~
-JOURNAL ~The Final Battle with Bodhi.
-
-Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me my love, my dear Leina. Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible. I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well! I should get going, no matter how hurt I am... I should get going.~
-EXIT

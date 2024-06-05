@@ -72,62 +72,61 @@ CHAIN
 IF WEIGHT #-4 ~Global("VP_YoshimoSearch","GLOBAL",5) Global("VP_Yosh_WasInParty","GLOBAL",1)~ THEN VPKACJ 9
 ~Ah, here you are, bastard! You thought you could flee far enough? I promised to find you even in Nine Hells! Prepare to die!~
 DO ~SetGlobal("VP_YoshimoSearch","GLOBAL",6)~
-EXTERN YOSHP TS14
+== YOSHP ~Whoa! Kachiko Nakanishi, stop threatening me! I will not give up so easily. <CHARNAME>, what's going on now?~
+END
+ ++ ~Kachiko told me that you had killed her brother. Is that true?~ EXTERN YOSHP TS15
+ ++ ~Shut up, Yoshimo, you are about to die for your crimes!~ EXTERN YOSHP TS16
 
-CHAIN VPKACJ N10
-~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you're not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
+CHAIN YOSHP TS16
+~Kachiko, I won't draw my sword against you. I do not know what she told you, <CHARNAME>, but I have no quarrel with you either. I have to leave. I'll see you later... Maybe.~
+== VPKACJ ~You will not get away that easily! Sorry, <CHARNAME>, but I have to go after him!~
+DO ~ActionOverride("Yoshimo",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() DestroyItem("KASWOR01") DestroyItem("KASWOR02") DestroyItem("NPRING02") GivePartyAllEquipment() LeaveParty() EscapeArea()~
+EXIT
+
+CHAIN YOSHP TS15
+~<CHARNAME>, it's a long bloodshed between clans in Kozakura. We call it Hojo War. God knows how it all started... Her eldest brother, Naoko, was my best friend since childhood. We hoped that one day we might strike peace... I do not know who has assassinated him. I saw just a shadow on the wall. I mourn his loss... And, Kachiko, please, believe me, I did not kill him.~
+== VPKACJ ~Yoshimo, you sound sincere... Hmm... If what you say is true, we must come back to Kara-Tur and try to convince my family that you're not the murderer. But if you lied... <CHARNAME>, we have to leave for Kara-Tur immediately.~
 END
  ++ ~Kachiko, are you going back on your promise to help me?~ EXTERN VPKACJ N11
  ++ ~Of course, Kachiko, I understand. Farewell.~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN YOSHP TS18
 
 CHAIN VPKACJ N11
 ~<CHARNAME>, do you need another companion in your group? May be you let Yoshimo to tag along? Then I can keep an eye on him and we both will help you out...~
-EXTERN YOSHP TS17
-
-CHAIN VPKACJ N12
-~You will not get away that easily! Sorry, <CHARNAME>, but I have to go after him!~
-DO ~ActionOverride("Yoshimo",EscapeArea()) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() DestroyItem("KASWOR01") DestroyItem("KASWOR02") DestroyItem("NPRING02") GivePartyAllEquipment() LeaveParty() EscapeArea()~
-EXIT
-
-CHAIN VPKACJ N13
-~Don't lie to me. You won't escape again. I'll watch you even if I have to break my word to <CHARNAME>.~
+== YOSHP ~Kachiko, I promise to come back to Kara-Tur as soon as possible on my own.~
+== VPKACJ ~Don't lie to me. You won't escape again. I'll watch you even if I have to break my word to <CHARNAME>.~
 END
  ++ ~Of course, I need all help I can get. Welcome back, Yoshimo.~ EXTERN YOSHP TS19
  ++ ~I don't need your help. Go away, both of you.~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN YOSHP TS18
  ++ ~I don't know you, I don't need your problems and I grow tired of this soap opera. Perhaps killing both of you will brighten things up!~ DO ~SetGlobal("Kicked_Out","LOCALS",1)~ EXTERN YOSHP TS20
 
+CHAIN YOSHP TS18
+~<CHARNAME>, perhaps both you and I still have a chance. Believe me, it's the best choice I have ever made in my life. Thank you for being so understanding. Kachiko and I will be in the Sea Bounty Tavern near docks. We will look for a ship to Kara-Tur. Look us up if you require any assistance.~
+DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("vpkachi",ChangeAIScript("",DEFAULT)) ActionOverride("vpkachi",SetLeavePartyDialogFile()) ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",EscapeAreaMove("AR0313",784,333,8)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0313",723,319,14)~
+EXIT
+
+CHAIN YOSHP TS19
+~Thank you, <CHARNAME>.~
+DO ~SetGlobalTimer("VP_KachikoRomance","GLOBAL",ONE_DAY) SetGlobal("Kicked_Out","LOCALS",0) JoinParty()~
+EXIT
+
+CHAIN YOSHP TS20
+~<CHARNAME>, what are you doing? I'm not going to participate in this slaughter! She is my countrywoman, despite all our differences and I shall stand on her side.~
+DO ~ActionOverride("vpkachi",LeaveParty()) ActionOverride("vpkachi",Enemy()) Enemy()~
+EXIT
+
 // Parting ways, initiated by Yoshimo
-
-CHAIN VPKACJ partway1
-~Yoshimo, wait. I am leaving with you. Alone you will only get into more troubles. Sorry <CHARNAME>, but I told you from the very start that I would follow whenever he goes... and I shall do so now.~ [KACHIL26]
-DO ~SetGlobal("Kicked_Out","LOCALS",1) ActionOverride("Yoshimo",ChangeAIScript("",DEFAULT)) ActionOverride("Yoshimo",SetLeavePartyDialogFile()) ActionOverride("Yoshimo",LeaveParty()) ActionOverride("Yoshimo",EscapeAreaMove("AR0406",1368,1922,0)) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty() EscapeAreaMove("AR0406",1381,1959,1)~
-EXIT
-
-CHAIN VPKACJ partway2
-~Yoshimo, I am staying with you. Alone you will only get into more troubles. Sorry <CHARNAME>, but I told you from the very start that I wouldn't allow him to escape... and I shan't do so now.~
-DO ~SetGlobal("Kicked_Out","LOCALS",1) ChangeAIScript("",DEFAULT) SetLeavePartyDialogFile() LeaveParty()~
-EXIT
 
 // Interjections
 
-CHAIN VPKACJ N17
-~Yoshimo, does not this... man looks a bit familiar to you? It is strange but he reminds me Otako Hashimoto.~ [KACHIQ03]
-EXTERN YOSHJ TS170
 
-CHAIN VPKACJ N18
-~My guess is that the spell might have worked and we are somehow moving towards solving our family feud. But why are we on an island, and not at home?~
-END
- ++ ~The spell... Harpel must have done something that works for once. Let's go on, and we will have better chance to find some answers. Yoshimo, I am mourn your loss.~ EXTERN YOSHJ TS172
+
+
 
 CHAIN
 IF ~Global("Dead_Bodies","GLOBAL",3)~ THEN VPKACJ N19
 ~There are more bodies out there. Do you see them? I cannot look, I am afraid to find my kin among them.~
 DO ~SetGlobal("Dead_Bodies","GLOBAL",4)~
 EXIT
-
-CHAIN VPKACJ N20
-~Yoshimo, I appreciate what you have said. Even if you said it because you were afraid that I'd kill you both if you ever tried anything funny.~ [KACHIQ04]
-EXTERN YOSHJ TS176
 
 CHAIN VPKACJ N21
 ~I am surprised by your welcome, my cousin, after all those lies you told my parents to prevent me from going after Yoshimo.~ [KACHIQ05]
@@ -378,19 +377,6 @@ CHAIN VPKACJ Kelem6
 END
  IF ~True()~ THEN EXTERN KELEMVOR 4A
  IF ~InParty("Edwin")~ THEN EXTERN EDWINJ Kelem0
-
-CHAIN VPKACJ NEJ56
-~This land suprises me more and more. To find a man not afraid to lay bare his heart and soul to a woman, to risk rejection is a rare man indeed. This Govan will surely be upset to discover that his love is missing.~
-END
- IF ~True()~ THEN DO ~SetGlobal("VP_NPC_LeinaRoom","GLOBAL",1)~ EXIT
- IF ~InParty("njhroth")~ THEN EXTERN NJHROJ 47
- IF ~InParty("Valygar")~ THEN EXTERN VALYGARJ NEJ157
- IF ~InParty("Minsc")~ THEN EXTERN MINSCJ NEJ259
- IF ~InParty("njdar")~ THEN EXTERN NJDARJ 7
- IF ~InParty("Viconia")~ THEN EXTERN VICONIJ NEJ185
- IF ~InParty("Mazzy")~ THEN EXTERN MAZZYJ NEJ205
- IF ~InParty("Aerie")~ THEN EXTERN AERIEJ NEJ221
- IF ~InParty("Jaheira")~ THEN EXTERN JAHEIRAJ NEJ544
 
 CHAIN VPKACJ NEJ57
 ~Curious, you are worried for another's safety, Yoshimo? I cannot believe that you show concern for a girl you hardly know. Your flight from Kara-Tur was the action of a coward who's only thought was, and always will be, for his own skin.~

@@ -93,6 +93,11 @@ END
  IF ~OR(2) !InParty("vpleina") Dead("vpleina")~ THEN REPLY ~He was a bad lot, Duvaine. I cannot honestly believe that your coin did not uncover the reason your son is dead. Or do you choose to ignore the crime of kidnapping and unlawful imprisonment?~ EXTERN AUBERON 18
  IF ~InParty("vpleina") !Dead("vpleina")~ THEN EXTERN VPLEIJ 23
 
+CHAIN VPLEIJ 23
+~One moment, Duke, your son abducted me and held me prisoner with the intention of forcing a marriage between himself and I.~
+== VPLEIJ ~His death was an unfortunate accident, he refused to see reason and attacked when <CHARNAME> here attempted my rescue.~
+EXTERN AUBERON 18
+
 CHAIN AUBERON 18
 ~My son's conduct may have been wrong, but the matter should have been brought straight to me. I would have reprimanded Govan most severely myself for such abominable behaviour.~
 == AUBERON ~He was my responsibility and it was therefore my duty to deal with him not yours.~

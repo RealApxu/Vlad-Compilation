@@ -237,9 +237,9 @@ CHAIN
 IF WEIGHT #-1 ~NumTimesTalkedTo(0)~ THEN FIRORC02 orcsflee1
 ~Pleeze, mercy on us! Me sorry. Don't kill. Me just following orders. Didn't want to eat children or kick old people. Just job!~
 END
- IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Foul orc! You will suffer the same fate as all your kind!~ EXTERN FIRORC02 2
- IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Flee from here, foul creature, and never harm another!~ EXTERN FIRORC02 1
- IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~Cowardly creature, have some dignity in death even if you had none in life.~ EXTERN FIRORC02 3
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~Foul orc! You will suffer the same fate as all your kind!~ EXTERN FIRORC02 2
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~Flee from here, foul creature, and never harm another!~ EXTERN FIRORC02 1
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~Cowardly creature, have some dignity in death even if you had none in life.~ EXTERN FIRORC02 3
  IF ~OR(2) InParty("vpshart") !Dead("vpshart")~ THEN EXTERN VPSHAJ legacy310
 
 CHAIN VPSHAJ legacy310
@@ -298,8 +298,8 @@ REPLACE ~FIRKRA02~
 
 CHAIN FIRKRA02 24 // from: 23.0
 #43191 /* ~Do you still demand a battle? You shall have one, if you wish, but you will not win. Do not be foolish, <PRO_GIRLBOY>.~ */
- IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43192 /* ~I will leave for now, but I will return.~ */ GOTO 20
- IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ THEN REPLY #43193 /* ~I will fight you, and I shall win. I can do no other.~ */ GOTO 25
+ IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ REPLY #43192 /* ~I will leave for now, but I will return.~ */ GOTO 20
+ IF ~OR(3) !InParty("vpshart") Dead("vpshart") !Global("VP_Lit_Firecracker","GLOBAL",0)~ REPLY #43193 /* ~I will fight you, and I shall win. I can do no other.~ */ GOTO 25
  IF ~InParty("vpshart") !Dead("vpshart") Global("VP_Lit_Firecracker","GLOBAL",0) !Global("VP_AngelosLegacy","GLOBAL",0)~ THEN GOTO firecr01
 END
 
@@ -360,13 +360,13 @@ CHAIN FIRKRA02 firecr06
 = ~(*Turning his attention back to you*) My proposition is one that should not prove too difficult to a capable person such as yourself. If you find and bring to me the thief... No, come to think of it, I have no need of the thief, his body will suffice.~
 = ~Bring me the traitor's body and all that he stole from me, and I shall reward you with riches beyond anything you can imagine. What say you child of Bhaal?~
 END
- IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I can imagine plenty... still I never say no to more. Where might I find this thief?~ EXTERN FIRKRA02 firecr07
- IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I don't care much for treachery myself. Tell me where the coward is hiding and Ill dispatch him for you.~ EXTERN FIRKRA02 firecr07
- IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I'm passing, I'll have a word with him on your behalf.~ EXTERN FIRKRA02 firecr07
- IF ~Global("VP_Know_Durbin","GLOBAL",0)~ THEN REPLY ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ EXTERN FIRKRA02 firecr09
- IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I can imagine plenty, still I never say no to more... The Umar Hills I believe is where Durbin says he is holed up.~ EXTERN FIRKRA02 firecr10
- IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I don't care much for treachery myself. Durbin has already told me where to find this thief... the coward will find no quarter among the trees.~ EXTERN FIRKRA02 firecr10
- IF ~Global("VP_Know_Durbin","GLOBAL",1)~ THEN REPLY ~I am no common assassin, but if I happen to pass through this forest that Durbin mentioned, then I'll maybe have a word with him on your behalf.~ EXTERN FIRKRA02 firecr10
+ IF ~Global("VP_Know_Durbin","GLOBAL",0)~ REPLY ~I can imagine plenty... still I never say no to more. Where might I find this thief?~ EXTERN FIRKRA02 firecr07
+ IF ~Global("VP_Know_Durbin","GLOBAL",0)~ REPLY ~I don't care much for treachery myself. Tell me where the coward is hiding and Ill dispatch him for you.~ EXTERN FIRKRA02 firecr07
+ IF ~Global("VP_Know_Durbin","GLOBAL",0)~ REPLY ~I am no common assassin, but tell me where this thief can be found and maybe if I'm passing, I'll have a word with him on your behalf.~ EXTERN FIRKRA02 firecr07
+ IF ~Global("VP_Know_Durbin","GLOBAL",0)~ REPLY ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ EXTERN FIRKRA02 firecr09
+ IF ~Global("VP_Know_Durbin","GLOBAL",1)~ REPLY ~I can imagine plenty, still I never say no to more... The Umar Hills I believe is where Durbin says he is holed up.~ EXTERN FIRKRA02 firecr10
+ IF ~Global("VP_Know_Durbin","GLOBAL",1)~ REPLY ~I don't care much for treachery myself. Durbin has already told me where to find this thief... the coward will find no quarter among the trees.~ EXTERN FIRKRA02 firecr10
+ IF ~Global("VP_Know_Durbin","GLOBAL",1)~ REPLY ~I am no common assassin, but if I happen to pass through this forest that Durbin mentioned, then I'll maybe have a word with him on your behalf.~ EXTERN FIRKRA02 firecr10
  ++ ~What does she mean... why the concern over these particular trinkets when you are clearly sitting on a sizable hoard already?~ EXTERN FIRKRA02 firecr09
 
 CHAIN FIRKRA02 firecr07
@@ -433,18 +433,18 @@ IF ~NumTimesTalkedTo(0)~ THEN DURBIN D1
 DO ~SetGlobal("VP_Know_Durbin","GLOBAL",1)~
 = ~I fear I don't have anything I can give you in the way of a reward but if you look around I am sure you will find trinkets of value that those beasts have taken from other not so fortunate souls.~
 END
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Tell me Durbin, do you also have business with Lord Firkraag or was it he who locked you in here with these beasts?~ EXTERN DURBIN D2
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~What have we here? Seeing your predicament you certainly can't be another of Lord Firkraag's spies sent to spy on me.~ EXTERN DURBIN D2
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then you'd better hope you have information worth trading for your life!~ EXTERN DURBIN D17
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is holding the child of Garren Windspear, I'll deem that payment enough?~ EXTERN DURBIN D3
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is hiding out, I'll deem that payment enough?~ EXTERN DURBIN D5
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin1
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~If you've come looking for Firkraag, you're too late my friend... he's dead.~ EXTERN DURBIN D19
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ THEN REPLY ~What have we here? If you're a servant of the dragon, consider yourself relieved of your duties... he's dead!~ EXTERN DURBIN D19
- IF ~OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~Then maybe I'll take what little you do have in payment.~ EXTERN DURBIN D23
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin17
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin18
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4)~ THEN REPLY ~So what are you, another of the dragon's servants? I don't see him rushing to save your skin from the Wolfweres.~ EXTERN DURBIN D25
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~Tell me Durbin, do you also have business with Lord Firkraag or was it he who locked you in here with these beasts?~ EXTERN DURBIN D2
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~What have we here? Seeing your predicament you certainly can't be another of Lord Firkraag's spies sent to spy on me.~ EXTERN DURBIN D2
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~Then you'd better hope you have information worth trading for your life!~ EXTERN DURBIN D17
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is holding the child of Garren Windspear, I'll deem that payment enough?~ EXTERN DURBIN D3
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~Well met to you Durbin. If you could tell me where Lord Firkraag is hiding out, I'll deem that payment enough?~ EXTERN DURBIN D5
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) Global("FirkraagDeal","GLOBAL",0) Global("Firmag01Move","GLOBAL",0) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID) GlobalLT("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin1
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ REPLY ~If you've come looking for Firkraag, you're too late my friend... he's dead.~ EXTERN DURBIN D19
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1)~ REPLY ~What have we here? If you're a servant of the dragon, consider yourself relieved of your duties... he's dead!~ EXTERN DURBIN D19
+ IF ~OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~Then maybe I'll take what little you do have in payment.~ EXTERN DURBIN D23
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin17
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin18
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) OR(3) Global("FirkraagDeal","GLOBAL",1) GlobalGT("Firmag01Move","GLOBAL",0) Global("VP_AngelosLegacy","GLOBAL",4)~ REPLY ~So what are you, another of the dragon's servants? I don't see him rushing to save your skin from the Wolfweres.~ EXTERN DURBIN D25
 
 CHAIN DURBIN D2
 ~I was looking for yo... ahem... intruders in the other room. Unfortunately for me, I didn't notice when those beasts were thrown in and the door locked behind them.~
@@ -461,14 +461,14 @@ CHAIN DURBIN D3
 END
  ++ ~One more question, can you tell me where this Lord Firkraag of yours is hiding out?~ EXTERN DURBIN D4
  ++ ~I don't think so. I can't have you warning your master that we are closing in on him now can I?~ EXTERN DURBIN D7
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
 
 CHAIN DURBIN D4
 ~Yes, I'm sure my Lord wouldn't mind my disclosing his whereabouts, not now you are so close. My Lord Firkraag's personal quarters are on the lower floor of this place. The entrance to my Lord's quarters is in the room where the child is imprisoned.~
 = ~Turn left as you walk into this room and there you will find steps leading to the lower floor. He almost certainly knows you are here and is expecting you. I hope you are as prepared for him. Now if that is all, I'll take my leave of you.~
 END
  ++ ~I don't think so. I can't have you warning your master that we are closing in on him now can I?~ EXTERN DURBIN D7
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
 
 CHAIN DURBIN D5
 ~(*Smiles*) I doubt you would have gotten this far if he hadn't meant for you to, so I can safely say he wouldn't mind my disclosing his whereabouts, now that you are so close.~
@@ -477,13 +477,13 @@ CHAIN DURBIN D5
 END
  ++ ~One more question, can you tell me where Garren Windspear's child is being held?~ EXTERN DURBIN D6
  ++ ~I don't think so. I can't have you warning your master that we are closing in on him now can I?~ EXTERN DURBIN D7
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
 
 CHAIN DURBIN D6
 ~The child... of course. You will find the child in the room that holds the entrance to my Lord's private quarters. My Lord will have set guards around the child and even if you manage to overcome them, I don't believe he would have entrusted the key to the child's cell to them. For that you must confront my Lord himself... if you dare. Now if that is all...~
 END
  ++ ~I don't think so. I can't have you warning your master that we are closing in on him now can I?~ EXTERN DURBIN D7
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~Get out of here, but I warn you, if you stand with your master against me I'll not hesitate in taking the life I have just saved.~ EXTERN VPSHAJ durbin11
 
 CHAIN DURBIN D7
 ~(*Sighs*) I can not hope to best you in a fight, and anyway I am tired. I die knowing that I have lived a much longer life than I would have, had I not sworn my fealty to my master. I trust that when you meet him you do nothing foolish and treat him with respect, as that may be the only way to you leaving here alive.~
@@ -559,8 +559,8 @@ CHAIN DURBIN D23
 ~(*Sighs*) So, this rescue is just a reprieve. I escape the bellies of the beasts only to find myself at the mercy of another type of beast. Ah well, I was already resigned to my fate, do as you will.~
 END
  IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN DO ~EscapeArea()~ EXIT
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin17
- IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin18
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",1) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin17
+ IF ~Global("SPRITE_IS_DEADfirkra02","GLOBAL",0) InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I have no need for payment... it's all in a days work for an adventurer. You are free to go.~ EXTERN VPSHAJ durbin18
 
 CHAIN DURBIN D24
 ~(*Haughtily*) You've met my Lord, seen his magnificence for yourself, felt the power surrounding him and yet you still live. I am guessing my Lord Firkraag has some future plans for you... you'll get nothing from me.~
@@ -572,9 +572,9 @@ CHAIN DURBIN D25
 ~I am and have been in the service of Lord Firkraag for many years now, an honour you couldn't possibly begin to understand. However, I don't flatter myself as being important in my Lord's eyes. Certainly not important enough for him to notice I was missing.~
 = ~If in time he discovered he was a servant or two down, he'd merely replace them thinking they'd perished sometime over the years. So you see, until you arrived, I was resigned to ending up in the bellies of those beasts. Now, may I go?~
 END
- IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ THEN REPLY ~I've no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I've no quarrel with you, begone.~ EXTERN VPSHAJ durbin20
- IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ THEN REPLY ~I don't think so. I'm coming back for the dragon and dealing with you will leave me ones less servant hindering my goal.~ EXTERN VPSHAJ durbin20
+ IF ~OR(2) !InParty("vpshart") Dead("vpshart")~ REPLY ~I've no quarrel with you, begone.~ DO ~EscapeArea()~ EXIT
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I've no quarrel with you, begone.~ EXTERN VPSHAJ durbin20
+ IF ~InParty ("vpshart") InMyArea("vpshart") !StateCheck("vpshart",CD_STATE_NOTVALID)~ REPLY ~I don't think so. I'm coming back for the dragon and dealing with you will leave me ones less servant hindering my goal.~ EXTERN VPSHAJ durbin20
  ++ ~(*Lie*) Your lord lays dead below, struck down by my hand. What say you now?~ EXTERN DURBIN D19
 
 CHAIN VPSHAJ durbin1
@@ -652,12 +652,12 @@ CHAIN ESMOND 71
 ~I don't think 5,000 gold is too outrageous a sum to be asking, do you? Not when we consider the price *Old Red* will pay to get his claws back on them.~
 = ~That is of course if that is your intention, not that it's any consequence to me what you do. What say you? Do we have a deal?~
 END
- IF ~PartyGoldGT(4999)~ THEN REPLY ~Fair enough, here's your gold.~ EXTERN ESMOND 8
- IF ~PartyGoldLT(5000)~ THEN REPLY ~Fair enough, here's your gold.~ EXTERN ESMOND 9
- IF ~CheckStatGT(Player1,15,CHR) PartyGoldGT(2999)~ THEN REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 81
- IF ~CheckStatGT(Player1,15,CHR) PartyGoldLT(3000)~ THEN REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 9
- IF ~CheckStatGT(Player1,10,CHR) CheckStatLT(Player1,16,CHR)~ THEN REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 91
- IF ~CheckStatLT(Player1,11,CHR)~ THEN REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 10
+ IF ~PartyGoldGT(4999)~ REPLY ~Fair enough, here's your gold.~ EXTERN ESMOND 8
+ IF ~PartyGoldLT(5000)~ REPLY ~Fair enough, here's your gold.~ EXTERN ESMOND 9
+ IF ~CheckStatGT(Player1,15,CHR) PartyGoldGT(2999)~ REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 81
+ IF ~CheckStatGT(Player1,15,CHR) PartyGoldLT(3000)~ REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 9
+ IF ~CheckStatGT(Player1,10,CHR) CheckStatLT(Player1,16,CHR)~ REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 91
+ IF ~CheckStatLT(Player1,11,CHR)~ REPLY ~I'll give you 3,000 gold and not one gold piece more. Take it or leave it!~ EXTERN ESMOND 10
  ++ ~I give you how much?! I don't think so. Leaving you your miserable life in tact is the only payment you'll get from me!~ EXTERN ESMOND 10
  ++ ~So, it's a deal your looking for is it? Well, I have one for you. You hand over the items and there'll be no need for Shar-Teel here to show you *her* deal!~ EXTERN ESMOND 10
 

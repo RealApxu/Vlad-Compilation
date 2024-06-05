@@ -23,16 +23,9 @@ END
 CHAIN GOVAN 3
 ~Oh, that Leina, stuck up wench! The name Duvaine not good enough for her and her no more than a minstrel singing to keep herself off the streets.~
 DO ~GiveItem("GovanLet",[PC])~
-EXTERN GOVAN 4
-
-CHAIN GOVAN 4
-~Mind you, with her talent, or should that be lack of talent, she would make more if she were on the streets.~
-END
- IF ~IfValidForPartyDialog("njmelora")~ THEN EXTERN NJMELJ 2
- IF ~!IfValidForPartyDialog("njmelora")~ THEN EXTERN GOVAN 5
-
-CHAIN GOVAN 5
-~If you want to speak to that one, The Five Flagons is where you will find her.~
+== GOVAN ~Mind you, with her talent, or should that be lack of talent, she would make more if she were on the streets.~
+== NJMELJ IF ~InParty("njmelora") InMyArea("njmelora") !StateCheck("njmelora",CD_STATE_NOTVALID)~ THEN ~See, it is as I said! Men and their words of love, how easily those words fall from their lips. It is obvious Leina would have nothing to do with this... this man! So he sought to seduce her with promises of love and marriage.~
+== GOVAN ~If you want to speak to that one, The Five Flagons is where you will find her.~
 END
  ++ ~Would I be right in thinking that your intentions towards this Leina were, how shall I put it, less than honourable, only she saw right through you? Made you angry did it?~ EXTERN GOVAN 6
  ++ ~This Leina clearly recognised you for the cad you are and spurned your advances. How does that make you feel Duvaine?~ EXTERN GOVAN 6
@@ -40,10 +33,7 @@ END
 
 CHAIN GOVAN 6
 ~Not that it is any business of yours what my intentions are towards Leina, but I would have married her if she had said yes. In fact, I fully intend to ask her again.~
-EXTERN GOVAN 7
-
-CHAIN GOVAN 7
-~She is pretty enough and a man could do worse. Besides, her father is an influential man, it will be a fine pairing between our families. Now, maybe it is time you told me what your interest in Leina is?~
+== GOVAN ~She is pretty enough and a man could do worse. Besides, her father is an influential man, it will be a fine pairing between our families. Now, maybe it is time you told me what your interest in Leina is?~
 END
  ++ ~She seems to have up and disappeared without a word to a soul. Your letter and *gift* were found in her room and by the crumpled state of them it was clear your attentions were not welcome.~ EXTERN GOVAN 8
  ++ ~She is missing Duvaine and from what I see of you, you are not the sort to take kindly when a lady says no to you.~ EXTERN GOVAN 8
@@ -51,26 +41,14 @@ END
 
 CHAIN GOVAN 8
 ~I know nothing of her disappearance! All I did was send a messenger with the letters and the flowers, I never even saw her myself.~
-EXTERN GOVAN 9
-
-CHAIN GOVAN 9
-~When he returned with her refusal, I thought to leave it for a few days then try my luck again. I was not the only person to think this marriage convenient you know.~
-EXTERN GOVAN 10
-
-CHAIN GOVAN 10
-~It was Leina's father who suggested it to me, he had some notion that if she married me it would put a stop to her wanderings.~
-EXTERN GOVAN 11
-
-CHAIN GOVAN 11
-~He also knows she refused me because I sent the messenger to tell him, but I also sent word that I would not be giving up.~
+== GOVAN ~When he returned with her refusal, I thought to leave it for a few days then try my luck again. I was not the only person to think this marriage convenient you know.~
+== GOVAN ~It was Leina's father who suggested it to me, he had some notion that if she married me it would put a stop to her wanderings.~
+== GOVAN ~He also knows she refused me because I sent the messenger to tell him, but I also sent word that I would not be giving up.~
 EXTERN GOVAN 14
 
 CHAIN GOVAN 12
 ~Now hold on a minute! I am not that short of female company to let one refusal get to me! When the messenger I had sent to Leina with my proposal returned with her refusal, my intentions were to wait a few days and try my luck again.~
-EXTERN GOVAN 13
-
-CHAIN GOVAN 13
-~The marriage was her father's idea you know, not mine! He had some notion that by marrying Leina off to me it would stop her wanderings. He also knew of her refusal because I sent the messenger with word that Leina had refused, but I also said to tell him that I would not be giving up.~
+== GOVAN ~The marriage was her father's idea you know, not mine! He had some notion that by marrying Leina off to me it would stop her wanderings. He also knew of her refusal because I sent the messenger with word that Leina had refused, but I also said to tell him that I would not be giving up.~
 EXTERN GOVAN 14
 
 CHAIN GOVAN 14
@@ -82,10 +60,7 @@ END
 
 CHAIN GOVAN 15
 ~Old man Vulova! I thought everyone knew where to find him. You new to the city? No matter, he has an estate over in the government district. His business takes him away a lot, but he still keeps the house maintained for when he is in Athkatla.~
-EXTERN GOVAN 16
-
-CHAIN GOVAN 16
-~Since the death of his wife, Leina's mother, he spends less and less time there. I think he keeps it more as a shrine to her than a home.~
+== GOVAN ~Since the death of his wife, Leina's mother, he spends less and less time there. I think he keeps it more as a shrine to her than a home.~
 END
  ++ ~Then I will pay this Vulova a visit. In the meantime you had not better get any ideas of not being here should I return, because I will find you and believe me, you will wish you had stayed here when I do!~ UNSOLVED_JOURNAL ~Trouble at The Five Flagons Inn.
 

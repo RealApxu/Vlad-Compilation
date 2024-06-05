@@ -12,7 +12,6 @@ END
 
 I was approached today by a young lad requesting me to speak with Samuel Thunderburp. Proprietor of The Five Flagons ... seems this Samuel Thunderburp is offering gold in exchange for my help. I told the lad that to run and tell him I�d be there shortly. I can always find a use for gold.~ EXTERN IKEY 1
 
-
 CHAIN IKEY 1
 ~Very well, m'<PRO_LADYLORD>. 'E will be 'appy to 'ear that. I will take yer message straight back to 'im.~
 DO ~SetGlobal("VP_ResqueLeina","GLOBAL",1) EscapeArea()~
